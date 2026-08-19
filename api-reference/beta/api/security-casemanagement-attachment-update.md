@@ -56,7 +56,7 @@ Supply a JSON representation of the properties to update.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.caseManagement.attachment](../resources/security-casemanagement-attachment.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -109,31 +109,9 @@ Content-Type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.caseManagement.attachment"
+  "blockType": "response"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.caseManagement.attachment",
-  "id": "1719f11c-21e9-acf2-85db-ade533556fba",
-  "createdDateTime": "2026-05-20T11:12:28Z",
-  "createdBy": "user@contoso.com",
-  "lastModifiedDateTime": "2026-05-20T11:18:45Z",
-  "lastModifiedBy": "user@contoso.com",
-  "displayName": "Case MS-001 Attachment",
-  "description": "Screenshot of suspicious sign-in activity",
-  "fileSize": 1000,
-  "fileExtension": "jpeg",
-  "scanResult": "noThreatsFound",
-  "origin": {
-    "@odata.type": "microsoft.graph.security.caseManagement.attachmentOrigin",
-    "resourceId": "987757fb-6ef4-1061-17e7-9de0d088e1dd",
-    "resourceType": "case"
-  }
-}
+HTTP/1.1 204 No Content
 ```

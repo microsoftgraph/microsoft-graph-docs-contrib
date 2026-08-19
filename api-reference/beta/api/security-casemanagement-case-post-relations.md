@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.caseManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an external resource [relation](../resources/security-casemanagement-relation.md) for a [case](../resources/security-casemanagement-case.md).
+Create a concrete external resource [relation](../resources/security-casemanagement-relation.md) for a [case](../resources/security-casemanagement-case.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -45,15 +45,30 @@ POST /security/caseManagement/cases/{caseId}/relations
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.security.caseManagement.relation](../resources/security-casemanagement-relation.md) object.
+In the request body, supply a JSON representation of a concrete [microsoft.graph.security.caseManagement.relation](../resources/security-casemanagement-relation.md) object. The base **relation** type is abstract and can't be created. Include `@odata.type` with one of the following supported types:
 
-You can specify the following properties when creating a **relation**.
+- [incidentRelation](../resources/security-casemanagement-incidentrelation.md)
+- [recommendationRelation](../resources/security-casemanagement-recommendationrelation.md)
+- [workspaceIndicatorRelation](../resources/security-casemanagement-workspaceindicatorrelation.md)
+
+The required subtype-specific properties are:
+
+|Concrete relation type|Required subtype-specific properties|
+|:---|:---|
+|[incidentRelation](../resources/security-casemanagement-incidentrelation.md)|None.|
+|[recommendationRelation](../resources/security-casemanagement-recommendationrelation.md)|**recommendationType**|
+|[workspaceIndicatorRelation](../resources/security-casemanagement-workspaceindicatorrelation.md)|**subscriptionId**|
+
+You can also supply the following properties as applicable to the selected concrete type.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|The OData type of the concrete relation. To create an incident relation, use `#microsoft.graph.security.caseManagement.incidentRelation`. Required.|
-|displayName|String|The display name of the resource. Required.|
+|@odata.type|String|The OData type of the concrete relation. The supported values are `#microsoft.graph.security.caseManagement.incidentRelation`, `#microsoft.graph.security.caseManagement.recommendationRelation`, and `#microsoft.graph.security.caseManagement.workspaceIndicatorRelation`. Required.|
+|recommendationType|String|The recommendation type associated with the linked recommendation. Required for **recommendationRelation**.|
 |relatedResourceId|String|The identifier of the related external resource. Optional.|
+|resourceGroupName|String|The Azure resource group name. Applies to **recommendationRelation** and **workspaceIndicatorRelation**.|
+|subscriptionId|String|The Azure subscription identifier. Required for **workspaceIndicatorRelation** and supported for **recommendationRelation**.|
+|workspaceName|String|The Log Analytics workspace name. Applies to **workspaceIndicatorRelation**.|
 
 ## Response
 
@@ -76,8 +91,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.caseManagement.incidentRelation",
-  "relatedResourceId": "987654321",
-  "displayName": "Related incident"
+  "relatedResourceId": "987654321"
 }
 ```
 
@@ -113,7 +127,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.caseManagement.relation"
+  "@odata.type": "microsoft.graph.security.caseManagement.incidentRelation"
 }
 -->
 ``` http
@@ -127,7 +141,6 @@ Content-Type: application/json
   "createdBy": "user@contoso.com",
   "lastModifiedDateTime": "2026-05-20T11:18:45Z",
   "lastModifiedBy": "user@contoso.com",
-  "relatedResourceId": "987654321",
-  "displayName": "Related incident"
+  "relatedResourceId": "987654321"
 }
 ```

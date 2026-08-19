@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "3547088c-6080-4202-9e9c-ad28ff7bb2cd",
+          "ApiChange": "Method",
+          "ChangedApiName": "Download content",
+          "ChangeType": "Addition",
+          "Description": "Added the [Download attachment content](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-attachment-download-content?view=graph-rest-beta) method to the [attachment](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-attachment?view=graph-rest-beta) resource to download binary content after malware scanning completes.",
+          "Target": "attachment"
+        },
+        {
+          "Id": "3547088c-6080-4202-9e9c-ad28ff7bb2cd",
+          "ApiChange": "Method",
+          "ChangedApiName": "Upload content",
+          "ChangeType": "Addition",
+          "Description": "Added the [Upload attachment content](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-attachment-upload-content?view=graph-rest-beta) method to the [attachment](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-attachment?view=graph-rest-beta) resource to upload binary content in chunks.",
+          "Target": "attachment"
+        },
+        {
+          "Id": "3547088c-6080-4202-9e9c-ad28ff7bb2cd",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get relation](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-relation-get?view=graph-rest-beta) method to the [relation](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-relation?view=graph-rest-beta) resource to read a relation from a security case.",
+          "Target": "relation"
+        },
+        {
+          "Id": "3547088c-6080-4202-9e9c-ad28ff7bb2cd",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete relation](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-relation-delete?view=graph-rest-beta) method to the [relation](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-relation?view=graph-rest-beta) resource to remove a relation from a security case.",
+          "Target": "relation"
+        },
+        {
+          "Id": "3547088c-6080-4202-9e9c-ad28ff7bb2cd",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete task](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-task-delete?view=graph-rest-beta) method to the [task](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-task?view=graph-rest-beta) resource to remove a task from a security case.",
+          "Target": "task"
+        }
+      ],
+      "Id": "3547088c-6080-4202-9e9c-ad28ff7bb2cd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-19T16:32:58.8605158Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Case management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b9a8de1f-7a39-4c1e-82c8-a992f97049f0",
           "ApiChange": "Relationship",
           "ChangedApiName": "caseTypeConfigurations",

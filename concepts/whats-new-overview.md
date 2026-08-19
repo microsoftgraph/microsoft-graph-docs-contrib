@@ -52,6 +52,12 @@ Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources
 
 - Changed the **members** property on the [distributionList](/graph/api/resources/distributionlist?view=graph-rest-beta&preserve-view=true) resource to an expandable relationship. Use `$expand=members` with the [Get distribution list](/graph/api/distributionlist-get?view=graph-rest-beta&preserve-view=true) method instead of the removed standalone methods for listing and getting members.
 
+### Security | Case management
+
+- Added the [download attachment content](/graph/api/security-casemanagement-attachment-download-content?view=graph-rest-beta&preserve-view=true) and [upload attachment content](/graph/api/security-casemanagement-attachment-upload-content?view=graph-rest-beta&preserve-view=true) methods to the [attachment](/graph/api/resources/security-casemanagement-attachment?view=graph-rest-beta&preserve-view=true) resource type to transfer case evidence in chunks and retrieve it after malware scanning.
+- Added the [get relation](/graph/api/security-casemanagement-relation-get?view=graph-rest-beta&preserve-view=true) and [delete relation](/graph/api/security-casemanagement-relation-delete?view=graph-rest-beta&preserve-view=true) methods to the [relation](/graph/api/resources/security-casemanagement-relation?view=graph-rest-beta&preserve-view=true) resource type to read and remove links between a case and related security resources.
+- Added the [delete task](/graph/api/security-casemanagement-task-delete?view=graph-rest-beta&preserve-view=true) method to the [task](/graph/api/resources/security-casemanagement-task?view=graph-rest-beta&preserve-view=true) resource type to remove a task from a case.
+
 ### Teamwork and communications | Calls and online meetings
 
 - Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta&preserve-view=true) and [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-beta&preserve-view=true) methods to document a service-update issue that can cause paginated requests to return an empty collection followed by duplicate items.

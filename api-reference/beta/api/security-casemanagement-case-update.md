@@ -49,12 +49,16 @@ PATCH /security/caseManagement/cases/{caseId}
 
 Supply a JSON representation of the resource. For polymorphic resources, include `@odata.type` to identify the concrete case type. The properties that can be updated depend on the case type.
 
+To update **customFields**, call [List customFields](../api/security-casemanagement-casetypeconfiguration-list-customfields.md) at `/security/caseManagement/caseTypeConfigurations/{caseTypeConfigurationId}/customFields`, where `{caseTypeConfigurationId}` matches the case type. Use each definition's **displayName**, not its **id**, as the dynamic property name. The name must match exactly one definition. Each dynamic value must be an object that includes the mapped concrete `@odata.type` and the corresponding **value**, **values**, or **valueDateTime** property from the [custom field value mapping](../resources/security-casemanagement-customfieldvalues.md#custom-field-value-mapping); bare values aren't supported.
+
+For [genericCase](../resources/security-casemanagement-genericcase.md) objects, all properties can be updated except `id`, `createdBy`, `createdDateTime`, `lastModifiedBy`, and `lastModifiedDateTime`, which are inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). The API ignores these properties if you include them in the request body.
+
 The following properties can be updated for all case types.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the case.|
-|status|String|The lifecycle status of the case.|
+|status|String|The tenant-defined lifecycle status of the case. Use a **displayName** value returned in the status tree by [List statuses](../api/security-casemanagement-casetypeconfiguration-list-statuses.md) from `/security/caseManagement/caseTypeConfigurations/genericCase/statuses` or `/security/caseManagement/caseTypeConfigurations/incidentCase/statuses`, depending on the case type.|
 
 For [genericCase](../resources/security-casemanagement-genericcase.md) objects, you can also update the following properties.
 
@@ -62,26 +66,37 @@ For [genericCase](../resources/security-casemanagement-genericcase.md) objects, 
 |:---|:---|:---|
 |assignedTo|String|The user assigned to the generic case.|
 |closingNotes|String|Notes recorded when the generic case is closed.|
+|customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by the exact **displayName** of each custom field definition.|
 |description|String|The description of the generic case.|
 |dueDateTime|DateTimeOffset|The target completion date and time for the generic case.|
-|priority|String|The priority assigned to the generic case.|
+|priority|String|The priority assigned to the generic case. Possible values are: `veryLow`, `low`, `medium`, `high`, and `critical`.|
 
-For [incidentCase](../resources/security-casemanagement-incidentcase.md) objects, you can also update the following properties. Changes to incident case properties might be synchronized with the related incident.
+For [incidentCase](../resources/security-casemanagement-incidentcase.md) objects, the following properties are synchronized with the underlying incident. A PATCH request that includes any of these properties returns `202 Accepted` with no response body. The changes might take a few minutes to synchronize and appear on the case.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|assignedTo|String|The user assigned to the incident case.|
 |classification|[microsoft.graph.security.caseManagement.incidentClassification](../resources/security-casemanagement-incidentcase.md#incidentclassification-values)|The classification assigned to the incident.|
 |determination|[microsoft.graph.security.caseManagement.incidentDetermination](../resources/security-casemanagement-incidentcase.md#incidentdetermination-values)|The determination assigned to the incident.|
-|emailNotificationRecipients|String collection|The email notification recipients for the incident.|
-|priorityScore|Int32|The priority score assigned to the incident.|
+|displayName|String|The display name of the incident case.|
 |severity|[microsoft.graph.security.caseManagement.incidentSeverity](../resources/security-casemanagement-incidentcase.md#incidentseverity-values)|The severity assigned to the incident.|
-|summary|String|A summary of the incident.|
+|status|String|The tenant-defined lifecycle status of the incident case. Use a **displayName** value returned in the status tree by [List statuses](../api/security-casemanagement-casetypeconfiguration-list-statuses.md) from `/security/caseManagement/caseTypeConfigurations/incidentCase/statuses`.|
+
+The following incident case properties aren't synchronized with the underlying incident. A PATCH request that updates only these properties returns `200 OK` with the updated [incidentCase](../resources/security-casemanagement-incidentcase.md) object in the response body.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by the exact **displayName** of each custom field definition.|
+|dueDateTime|DateTimeOffset|The target completion date and time for the incident case.|
+
+If a PATCH request includes properties from both groups, the method returns `202 Accepted` with no response body.
 
 ## Response
 
 If successful, this method returns one of the following response codes:
 
-- For [incidentCase](../resources/security-casemanagement-incidentcase.md) objects, changes might be synchronized with the related incident. As a result, this method returns a `202 Accepted` response code, and the changes might take a few minutes to apply.
+- For [incidentCase](../resources/security-casemanagement-incidentcase.md) objects, a request that includes any property synchronized with the underlying incident returns `202 Accepted` with no response body. The changes might take a few minutes to synchronize and appear on the case.
+- For [incidentCase](../resources/security-casemanagement-incidentcase.md) objects, a request that updates only properties that aren't synchronized returns `200 OK` and an updated [microsoft.graph.security.caseManagement.incidentCase](../resources/security-casemanagement-incidentcase.md) object in the response body.
 - For other case types, this method returns a `200 OK` response code and an updated [microsoft.graph.security.caseManagement.case](../resources/security-casemanagement-case.md) object in the response body.
 
 ## Examples
@@ -109,7 +124,13 @@ Content-Type: application/json
   "assignedTo": "john.doe@contoso.com",
   "priority": "high",
   "dueDateTime": "2026-06-29T17:54:43Z",
-  "closingNotes": "Follow up with the account owner."
+  "closingNotes": "Follow up with the account owner.",
+  "customFields": {
+    "Customer impact": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldStringValue",
+      "value": "Multiple executive mailboxes affected"
+    }
+  }
 }
 ```
 
@@ -165,15 +186,21 @@ Content-Type: application/json
   "assignedTo": "john.doe@contoso.com",
   "priority": "high",
   "dueDateTime": "2026-06-29T17:54:43Z",
-  "closingNotes": "Follow up with the account owner."
+  "closingNotes": "Follow up with the account owner.",
+  "customFields": {
+    "Customer impact": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldStringValue",
+      "value": "Multiple executive mailboxes affected"
+    }
+  }
 }
 ```
 
-### Example 2: Update an incident case
+### Example 2: Update synchronized incident case properties
 
 #### Request
 
-The following example shows a request.
+The following example updates properties that are synchronized with the underlying incident.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -190,8 +217,7 @@ Content-Type: application/json
   "status": "InProgress",
   "classification": "truePositive",
   "determination": "phishing",
-  "severity": "high",
-  "summary": "Credential phishing campaign affecting multiple users."
+  "severity": "high"
 }
 ```
 
