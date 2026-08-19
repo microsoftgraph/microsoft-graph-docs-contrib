@@ -43,9 +43,12 @@ Organizations often need to consolidate or reorganize Microsoft 365 environments
 
 ## Permissions
 
-Permissions vary by operation. List and Get operations support `CrossTenantContentMigration.Read.All` as the least privileged permission and `CrossTenantContentMigration.ReadWrite.All` as a higher privileged permission. All other operations require `CrossTenantContentMigration.ReadWrite.All`.
+Permissions vary by operation. For List and Get operations, `CrossTenantContentMigration.Read.All` is the least privileged permission and `CrossTenantContentMigration.ReadWrite.All` is a higher privileged permission. All other operations require `CrossTenantContentMigration.ReadWrite.All`.
 
-Delegated permissions for work or school accounts and application permissions are supported. Delegated permissions for personal Microsoft accounts aren't supported. For delegated access, the signed-in user must also be assigned a supported Microsoft Entra role or a custom role that grants the permissions required for the operation. For the exact permissions and supported roles, see the **Permissions** section of each API operation.
+Delegated permissions for work or school accounts and application permissions are supported. Delegated permissions for personal Microsoft accounts aren't supported.
+
+> [!NOTE]
+> For delegated access, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference) or a custom role that grants the permissions required for the operation. For the exact permissions and supported roles, see the **Permissions** section of each API operation.
 
 ## Related content
 
