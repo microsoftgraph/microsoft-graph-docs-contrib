@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "9dfb98ca-f428-4244-a2cc-efedffada6ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "dataLocationCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **dataLocationCode** property to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "9dfb98ca-f428-4244-a2cc-efedffada6ef",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-19T01:57:40.5485866Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "45d62bf0-4286-4f94-a149-f7cc6bc7466f",
           "ApiChange": "Resource",
           "ChangedApiName": "driveSettings",

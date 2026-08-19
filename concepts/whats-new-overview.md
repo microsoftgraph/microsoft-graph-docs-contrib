@@ -142,6 +142,7 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 
 ### Files
 
+- Added the **dataLocationCode** property to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource type to represent the geographic location of the data for multi-geo tenants.
 - Added the **settings** property of type [driveSettings](/graph/api/resources/drivesettings?view=graph-rest-beta&preserve-view=true) to the [drive](/graph/api/resources/drive?view=graph-rest-beta&preserve-view=true) resource type to retrieve drive-level settings such as the default sensitivity label applied to items.
 - Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to support the optional `reportType` parameter for retrieving throttling metrics. Use `reportType='throttlingReport'` to get throttled request counts via the **throttledRequests** property on the [sharePointApiUsageDataPoint](/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta&preserve-view=true) resource, or use `reportType='egressReport'` (default) to get egress usage via the **usageMB** property.
 - Added the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission) objects per request.
