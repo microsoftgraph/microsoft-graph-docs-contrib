@@ -6,14 +6,12 @@ ms.date: 08/07/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-toc.title: "Microsoft 365 capability base"
+toc.title: "Microsoft 365 capabilities"
 ---
 
 # m365CapabilityBase resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an abstract base type for cross-tenant Microsoft 365 capabilities. This type can't be instantiated directly. Instances are created using specific derived types. All capability instances in a collection are differentiated by the **@odata.type** property.
 

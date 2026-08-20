@@ -13,8 +13,6 @@ toc.title: "Microsoft 365 resource scopes"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Specifies the included and excluded resource scopes for a cross-tenant capability. This type defines which resources are in scope for the capability and which resources are explicitly excluded. This resource is used as the **resourceScopes** property of the [m365CapabilityInboundAccess](../resources/m365capabilityinboundaccess.md) resource.
 
 ## Properties

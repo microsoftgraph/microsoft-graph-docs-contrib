@@ -13,8 +13,6 @@ toc.title: "Microsoft 365 capability inbound access"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the inbound access settings for a cross-tenant Microsoft 365 capability. This type defines whether the capability should be allowed or blocked and specifies the resource scopes for the capability. This resource is used as the **inboundAccess** property of the [m365CapabilityBase](../resources/m365capabilitybase.md) resource.
 
 ## Properties

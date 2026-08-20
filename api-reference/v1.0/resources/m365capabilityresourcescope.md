@@ -13,8 +13,6 @@ toc.title: "Microsoft 365 capability resource scope"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Specifies the resource that a cross-tenant capability policy applies to. This type defines which specific user or group a policy affects. This resource is used by the **included** and **excluded** properties of the [m365CapabilityResourceScopes](../resources/m365capabilityresourcescopes.md) resource.
 
 ## Properties

@@ -1,6 +1,6 @@
 ---
-title: "crossTenantPlacesRoomBooking resource type"
-description: "Represents a cross-tenant capability for room booking in Places."
+title: "crossTenantCalendarAvailabilityBasic resource type"
+description: "Represents a cross-tenant capability for basic calendar availability."
 author: "lasharma"
 ms.date: 08/07/2026
 ms.localizationpriority: medium
@@ -8,13 +8,11 @@ ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
-# crossTenantPlacesRoomBooking resource type
+# crossTenantCalendarAvailabilityBasic resource type
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents authorization for external users from a trusted partner tenant to book rooms in Places.
+Represents authorization for external users from a trusted partner tenant to see basic calendar free/busy status, without meeting details.
 
 Inherits from [m365CapabilityBase](../resources/m365capabilitybase.md).
 
@@ -36,14 +34,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "name",
-  "@odata.type": "microsoft.graph.crossTenantPlacesRoomBooking",
+  "@odata.type": "microsoft.graph.crossTenantCalendarAvailabilityBasic",
   "baseType": "microsoft.graph.m365CapabilityBase",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.crossTenantPlacesRoomBooking",
+  "@odata.type": "#microsoft.graph.crossTenantCalendarAvailabilityBasic",
   "name": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "inboundAccess": {"@odata.type": "microsoft.graph.m365CapabilityInboundAccess"}

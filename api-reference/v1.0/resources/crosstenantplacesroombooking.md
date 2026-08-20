@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents authorization for external users from a trusted partner tenant to book rooms in Places.
 
 Inherits from [m365CapabilityBase](../resources/m365capabilitybase.md).

@@ -3,31 +3,241 @@
     {
       "ChangeList": [
         {
-          "Id": "7aa56ae6-269f-4d96-ac9f-327c7872fba7",
-          "ApiChange": "Method",
-          "ChangedApiName": "PATCH",
+          "Id": "2f7a98c4-222e-4544-8b16-02e5bdda79a7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "m365ResourceType",
           "ChangeType": "Addition",
-          "Description": "Added the [Update m365CapabilityBase](https://learn.microsoft.com/en-us/graph/api/crosstenantaccesspolicyconfigurationdefault-update-m365capabilities?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
+          "Description": "Added the [m365ResourceType](https://learn.microsoft.com/graph/api/resources/m365capabilityresourcescope?view=graph-rest-1.0#m365resourcetype-values) enumeration type.",
+          "Target": "m365ResourceType"
+        },
+        {
+          "Id": "569305aa-40c6-425d-b99d-da2a61950da5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "m365CapabilityInboundAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [m365CapabilityInboundAccess](https://learn.microsoft.com/graph/api/resources/m365capabilityinboundaccess?view=graph-rest-1.0) resource.",
+          "Target": "m365CapabilityInboundAccess"
+        },
+        {
+          "Id": "2190f75b-de45-4e09-999a-7886bff83353",
+          "ApiChange": "Resource",
+          "ChangedApiName": "m365CapabilityResourceScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [m365CapabilityResourceScope](https://learn.microsoft.com/graph/api/resources/m365capabilityresourcescope?view=graph-rest-1.0) resource.",
+          "Target": "m365CapabilityResourceScope"
+        },
+        {
+          "Id": "652fea4d-5123-40e9-ab8d-60c2a7a899ce",
+          "ApiChange": "Resource",
+          "ChangedApiName": "m365CapabilityResourceScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the [m365CapabilityResourceScopes](https://learn.microsoft.com/graph/api/resources/m365capabilityresourcescopes?view=graph-rest-1.0) resource.",
+          "Target": "m365CapabilityResourceScopes"
+        },
+        {
+          "Id": "33b08a3b-0043-4000-b947-ab6445725f5e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "m365Capabilities",
+          "ChangeType": "Addition",
+          "Description": "Added the **m365Capabilities** relationship to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-1.0) resource.",
           "Target": "crossTenantAccessPolicyConfigurationDefault"
         },
         {
-          "Id": "7aa56ae6-269f-4d96-ac9f-327c7872fba7",
-          "ApiChange": "Method",
-          "ChangedApiName": "PATCH",
+          "Id": "e2e571aa-b7b2-4148-bfbf-58e5f7d97ffe",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "m365Capabilities",
           "ChangeType": "Addition",
-          "Description": "Added the [Update m365CapabilityBase](https://learn.microsoft.com/en-us/graph/api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Description": "Added the **m365Capabilities** relationship to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
-          "Id": "7aa56ae6-269f-4d96-ac9f-327c7872fba7",
+          "Id": "83e64320-0dc6-46ed-9220-4f037b83edf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [List m365Capabilities](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities?view=graph-rest-1.0) method to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "df2c02e7-7fc8-4648-8193-ee1dbec6533a",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create m365CapabilityBase](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities?view=graph-rest-1.0) method to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "d00f1568-9ab8-4cae-b010-dd7c2158fc51",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update m365CapabilityBase](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-update-m365capabilities?view=graph-rest-1.0) method to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "c656bb22-07b4-4899-9d07-4bf3be8c8bd6",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [List m365Capabilities](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-list-m365capabilities?view=graph-rest-1.0) method to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "fd615633-2723-4fae-b5fc-2b0339a29aa4",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create m365CapabilityBase](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities?view=graph-rest-1.0) method to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "5aef9156-33f2-4a7a-a34e-9411fbb48218",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update m365CapabilityBase](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities?view=graph-rest-1.0) method to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "d294c929-6254-4569-baec-644b77292e95",
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [Delete m365CapabilityBase](https://learn.microsoft.com/en-us/graph/api/crosstenantaccesspolicyconfigurationpartner-delete-m365capabilities?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Description": "Added the [Delete m365CapabilityBase](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-delete-m365capabilities?view=graph-rest-1.0) method to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "5e57db8d-c1ff-4edf-8a45-9291c87b8f98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantCalendarAvailabilityBasic",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantCalendarAvailabilityBasic](https://learn.microsoft.com/graph/api/resources/crosstenantcalendaravailabilitybasic?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantCalendarAvailabilityBasic"
+        },
+        {
+          "Id": "3c316702-f949-46c3-88fd-66dcb6ed9674",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantCalendarAvailabilityLimitedDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantCalendarAvailabilityLimitedDetails](https://learn.microsoft.com/graph/api/resources/crosstenantcalendaravailabilitylimiteddetails?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantCalendarAvailabilityLimitedDetails"
+        },
+        {
+          "Id": "edebe97a-f6a9-40d8-893b-cbf8127cf7b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantCalendarSharingFreeBusyDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantCalendarSharingFreeBusyDetail](https://learn.microsoft.com/graph/api/resources/crosstenantcalendarsharingfreebusydetail?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantCalendarSharingFreeBusyDetail"
+        },
+        {
+          "Id": "aaa5a1eb-e84c-49f4-8265-407ca3e0f41e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantCalendarSharingFreeBusyReviewer",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantCalendarSharingFreeBusyReviewer](https://learn.microsoft.com/graph/api/resources/crosstenantcalendarsharingfreebusyreviewer?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantCalendarSharingFreeBusyReviewer"
+        },
+        {
+          "Id": "61c22b56-69fe-4826-9144-13b944f5b771",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantCalendarSharingFreeBusySimple",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantCalendarSharingFreeBusySimple](https://learn.microsoft.com/graph/api/resources/crosstenantcalendarsharingfreebusysimple?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantCalendarSharingFreeBusySimple"
+        },
+        {
+          "Id": "dcf876bb-a253-4178-b4aa-6a370e70d68b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantMailTipsAll",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantMailTipsAll](https://learn.microsoft.com/graph/api/resources/crosstenantmailtipsall?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantMailTipsAll"
+        },
+        {
+          "Id": "8f24a8df-f301-4a18-b7a7-e11735d138fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantMailTipsLimited",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantMailTipsLimited](https://learn.microsoft.com/graph/api/resources/crosstenantmailtipslimited?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantMailTipsLimited"
+        },
+        {
+          "Id": "6815773c-c069-4ac6-94f4-882f288d43cf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantMigration](https://learn.microsoft.com/graph/api/resources/crosstenantmigration?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantMigration"
+        },
+        {
+          "Id": "de581e2d-30d8-4029-884e-4e0f109316e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantOpenProfileCard",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantOpenProfileCard](https://learn.microsoft.com/graph/api/resources/crosstenantopenprofilecard?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantOpenProfileCard"
+        },
+        {
+          "Id": "3acc8e91-de94-4f59-801f-cca9f9a444e4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantPlacesDeskBooking",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantPlacesDeskBooking](https://learn.microsoft.com/graph/api/resources/crosstenantplacesdeskbooking?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantPlacesDeskBooking"
+        },
+        {
+          "Id": "e8f6b3be-a240-4576-99a8-00047cb1411f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantPlacesRoomBooking",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantPlacesRoomBooking](https://learn.microsoft.com/graph/api/resources/crosstenantplacesroombooking?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantPlacesRoomBooking"
+        },
+        {
+          "Id": "ca06dd5c-fe1c-49b0-b058-f4bc918a4041",
+          "ApiChange": "Resource",
+          "ChangedApiName": "m365CapabilityBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [m365CapabilityBase](https://learn.microsoft.com/graph/api/resources/m365capabilitybase?view=graph-rest-1.0) resource.",
+          "Target": "m365CapabilityBase"
+        }
+      ],
+      "Id": "cc5429ec-de9b-4121-997e-f893607ae9e3",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-20T07:00:07.0563788Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7c4a742a-8321-4d4a-85f7-249df90e1c17",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update m365CapabilityBase](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-update-m365capabilities?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "099f293a-1f03-45c9-a4e8-b1d87d782a16",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update m365CapabilityBase](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "dddbc1b8-0ff0-4ac0-bad3-465fb503f74a",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete m365CapabilityBase](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-delete-m365capabilities?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         }
       ],
-      "Id": "7aa56ae6-269f-4d96-ac9f-327c7872fba7",
+      "Id": "9f91f2cc-3df6-44ad-b60a-fbfeeafdb16a",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-07-21T10:00:00.0000000Z",
@@ -37,175 +247,175 @@
     {
       "ChangeList": [
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "b724b89f-6fa9-412f-a397-689f227e91d9",
           "ApiChange": "Resource",
           "ChangedApiName": "m365CapabilityInboundAccess",
           "ChangeType": "Addition",
-          "Description": "Added the [m365CapabilityInboundAccess](https://learn.microsoft.com/en-us/graph/api/resources/m365CapabilityInboundAccess?view=graph-rest-beta) resource.",
+          "Description": "Added the [m365CapabilityInboundAccess](https://learn.microsoft.com/graph/api/resources/m365capabilityinboundaccess?view=graph-rest-beta) resource.",
           "Target": "m365CapabilityInboundAccess"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "8176cd6b-f1cf-4ef3-bdce-396be8f32e73",
           "ApiChange": "Resource",
           "ChangedApiName": "m365CapabilityResourceScope",
           "ChangeType": "Addition",
-          "Description": "Added the [m365CapabilityResourceScope](https://learn.microsoft.com/en-us/graph/api/resources/m365CapabilityResourceScope?view=graph-rest-beta) resource.",
+          "Description": "Added the [m365CapabilityResourceScope](https://learn.microsoft.com/graph/api/resources/m365capabilityresourcescope?view=graph-rest-beta) resource.",
           "Target": "m365CapabilityResourceScope"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "eab70da0-51a8-48f9-a12e-a6b2f0037e61",
           "ApiChange": "Resource",
           "ChangedApiName": "m365CapabilityResourceScopes",
           "ChangeType": "Addition",
-          "Description": "Added the [m365CapabilityResourceScopes](https://learn.microsoft.com/en-us/graph/api/resources/m365CapabilityResourceScopes?view=graph-rest-beta) resource.",
+          "Description": "Added the [m365CapabilityResourceScopes](https://learn.microsoft.com/graph/api/resources/m365capabilityresourcescopes?view=graph-rest-beta) resource.",
           "Target": "m365CapabilityResourceScopes"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "2486ba5a-4840-4a4e-b519-e7c186d3776d",
           "ApiChange": "Relationship",
           "ChangedApiName": "m365Capabilities",
           "ChangeType": "Addition",
-          "Description": "Added the **m365Capabilities** relationship to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyConfigurationDefault?view=graph-rest-beta) resource.",
+          "Description": "Added the **m365Capabilities** relationship to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationDefault"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "18395805-151c-4db4-b48c-f8e245658944",
           "ApiChange": "Relationship",
           "ChangedApiName": "m365Capabilities",
           "ChangeType": "Addition",
-          "Description": "Added the **m365Capabilities** relationship to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyConfigurationPartner?view=graph-rest-beta) resource.",
+          "Description": "Added the **m365Capabilities** relationship to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "a20d0808-faba-4edf-b65a-5bc60a99b5db",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the **List m365Capabilities** method to the **crossTenantAccessPolicyConfigurationDefault** resource.",
+          "Description": "Added the [List m365Capabilities](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationDefault"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "3a4969f5-a903-4e13-a7d2-4bd0eba54faa",
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
-          "Description": "Added the **Create m365CapabilityBase** method to the **crossTenantAccessPolicyConfigurationDefault** resource.",
+          "Description": "Added the [Create m365CapabilityBase](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationDefault](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationDefault"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "89846851-e400-4d40-ba8d-a6dcd0126f4c",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the **List m365Capabilities** method to the **crossTenantAccessPolicyConfigurationPartner** resource.",
+          "Description": "Added the [List m365Capabilities](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-list-m365capabilities?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "d2c7f433-4c6c-4098-9e57-e694270631a4",
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
-          "Description": "Added the **Create m365CapabilityBase** method to the **crossTenantAccessPolicyConfigurationPartner** resource.",
+          "Description": "Added the [Create m365CapabilityBase](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationPartner](https://learn.microsoft.com/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "1d15d733-d170-43d5-b600-eb8df4865ea0",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantCalendarAvailabilityBasic",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantCalendarAvailabilityBasic](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantCalendarAvailabilityBasic?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantCalendarAvailabilityBasic](https://learn.microsoft.com/graph/api/resources/crosstenantcalendaravailabilitybasic?view=graph-rest-beta) resource.",
           "Target": "crossTenantCalendarAvailabilityBasic"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "be09be0c-ebaa-4d70-b56c-5a5c4f2eb97e",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantCalendarAvailabilityLimitedDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantCalendarAvailabilityLimitedDetails](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantCalendarAvailabilityLimitedDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantCalendarAvailabilityLimitedDetails](https://learn.microsoft.com/graph/api/resources/crosstenantcalendaravailabilitylimiteddetails?view=graph-rest-beta) resource.",
           "Target": "crossTenantCalendarAvailabilityLimitedDetails"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "823aaf59-fb0d-45eb-afb5-ca83459e0b0d",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantCalendarSharingFreeBusyDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantCalendarSharingFreeBusyDetail](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantCalendarSharingFreeBusyDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantCalendarSharingFreeBusyDetail](https://learn.microsoft.com/graph/api/resources/crosstenantcalendarsharingfreebusydetail?view=graph-rest-beta) resource.",
           "Target": "crossTenantCalendarSharingFreeBusyDetail"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "f5087bb4-f280-4552-85d5-61a825995b5b",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantCalendarSharingFreeBusyReviewer",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantCalendarSharingFreeBusyReviewer](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantCalendarSharingFreeBusyReviewer?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantCalendarSharingFreeBusyReviewer](https://learn.microsoft.com/graph/api/resources/crosstenantcalendarsharingfreebusyreviewer?view=graph-rest-beta) resource.",
           "Target": "crossTenantCalendarSharingFreeBusyReviewer"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "a1a0f53d-3de8-42ca-b0b8-a19ddab91666",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantCalendarSharingFreeBusySimple",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantCalendarSharingFreeBusySimple](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantCalendarSharingFreeBusySimple?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantCalendarSharingFreeBusySimple](https://learn.microsoft.com/graph/api/resources/crosstenantcalendarsharingfreebusysimple?view=graph-rest-beta) resource.",
           "Target": "crossTenantCalendarSharingFreeBusySimple"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "d13e9fcf-397e-4c88-8390-cb0fd0e1f1aa",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantMailTipsAll",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantMailTipsAll](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantMailTipsAll?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantMailTipsAll](https://learn.microsoft.com/graph/api/resources/crosstenantmailtipsall?view=graph-rest-beta) resource.",
           "Target": "crossTenantMailTipsAll"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "440d0817-1d1c-4c2d-a2e4-87b57273ab56",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantMailTipsLimited",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantMailTipsLimited](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantMailTipsLimited?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantMailTipsLimited](https://learn.microsoft.com/graph/api/resources/crosstenantmailtipslimited?view=graph-rest-beta) resource.",
           "Target": "crossTenantMailTipsLimited"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "d4cfe310-27eb-491a-a677-e8841d2d9773",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantMigration",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantMigration](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantMigration?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantMigration](https://learn.microsoft.com/graph/api/resources/crosstenantmigration?view=graph-rest-beta) resource.",
           "Target": "crossTenantMigration"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "744d31c6-cb42-4f1e-979e-e09efc83019b",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantOpenProfileCard",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantOpenProfileCard](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantOpenProfileCard?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantOpenProfileCard](https://learn.microsoft.com/graph/api/resources/crosstenantopenprofilecard?view=graph-rest-beta) resource.",
           "Target": "crossTenantOpenProfileCard"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "9e881cae-ca2c-4754-89c2-2dc5479448b9",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantPlacesDeskBooking",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantPlacesDeskBooking](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantPlacesDeskBooking?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantPlacesDeskBooking](https://learn.microsoft.com/graph/api/resources/crosstenantplacesdeskbooking?view=graph-rest-beta) resource.",
           "Target": "crossTenantPlacesDeskBooking"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "7530ea99-b0a1-490a-89b7-9fc1ef84868d",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantPlacesRoomBooking",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantPlacesRoomBooking](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantPlacesRoomBooking?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantPlacesRoomBooking](https://learn.microsoft.com/graph/api/resources/crosstenantplacesroombooking?view=graph-rest-beta) resource.",
           "Target": "crossTenantPlacesRoomBooking"
         },
         {
-          "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+          "Id": "ac51e570-f981-4a0f-bfa8-376a6d1bbec4",
           "ApiChange": "Enumeration",
           "ChangedApiName": "m365ResourceType",
           "ChangeType": "Addition",
-          "Description": "Added the **m365ResourceType** enumeration type. For details, see [m365CapabilityInboundAccess](https://learn.microsoft.com/en-us/graph/api/resources/m365CapabilityInboundAccess?view=graph-rest-beta).",
+          "Description": "Added the **m365ResourceType** enumeration type. For details, see [m365CapabilityInboundAccess](https://learn.microsoft.com/graph/api/resources/m365capabilityinboundaccess?view=graph-rest-beta).",
           "Target": "m365ResourceType"
         }
       ],
-      "Id": "bd386b48-f0cf-4b48-9bfb-2500f71ee753",
+      "Id": "88329f91-d0c2-401b-8056-0195245e7c32",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-05-04T13:06:28.2230249Z",
