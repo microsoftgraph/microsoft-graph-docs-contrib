@@ -894,6 +894,10 @@ items:
         href: ../../api/externaloriginresourceconnector-update.md
       - name: Delete
         href: ../../api/externaloriginresourceconnector-delete.md
+    - name: Complex types
+      items:
+      - name: External token based sap iag connection info
+        href: ../../resources/externaltokenbasedsapiagconnectioninfo.md
   - name: Lifecycle workflows
     displayName: LCW, Identity Governance, Joiner, Mover, Leaver
     items:
