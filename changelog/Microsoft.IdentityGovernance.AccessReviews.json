@@ -3,6 +3,128 @@
     {
       "ChangeList": [
         {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "reviewerId",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewerId** property to the [accessReviewReviewerScope](https://learn.microsoft.com/graph/api/resources/accessreviewreviewerscope) resource to identify a reviewer directly instead of through a query.",
+          "Target": "accessReviewReviewerScope"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "scopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopeType** property to the [accessReviewReviewerScope](https://learn.microsoft.com/graph/api/resources/accessreviewreviewerscope) resource to specify how a reviewer is resolved as a well-known scope rather than as a query.",
+          "Target": "accessReviewReviewerScope"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "applyDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **applyDescription** property to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitem) resource to describe the result of applying a decision.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "appRoleId",
+          "ChangeType": "Addition",
+          "Description": "Added the **appRoleId** property to the [accessReviewInstanceDecisionItemServicePrincipalResource](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitemserviceprincipalresource) resource to identify the app role under review.",
+          "Target": "accessReviewInstanceDecisionItemServicePrincipalResource"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "appRoleDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **appRoleDisplayName** property to the [accessReviewInstanceDecisionItemServicePrincipalResource](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitemserviceprincipalresource) resource to provide the display name of the app role under review.",
+          "Target": "accessReviewInstanceDecisionItemServicePrincipalResource"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "errors",
+          "ChangeType": "Addition",
+          "Description": "Added the **errors** property to the [accessReviewInstance](https://learn.microsoft.com/graph/api/resources/accessreviewinstance) resource to report errors that occurred during the access review instance lifecycle.",
+          "Target": "accessReviewInstance"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewError",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewError](https://learn.microsoft.com/graph/api/resources/accessreviewerror) resource type to represent an error reported through the **errors** property of an [accessReviewInstance](https://learn.microsoft.com/graph/api/resources/accessreviewinstance).",
+          "Target": "accessReviewError"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewPrincipalScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewPrincipalScope](https://learn.microsoft.com/graph/api/resources/accessreviewprincipalscope) resource type to select a well-known population of principals, such as all guest users, in the **principalScopes** property of a [principalResourceMembershipsScope](https://learn.microsoft.com/graph/api/resources/principalresourcemembershipsscope).",
+          "Target": "accessReviewPrincipalScope"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewResourceScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewResourceScope](https://learn.microsoft.com/graph/api/resources/accessreviewresourcescope) resource type to identify the resource whose access is reviewed in the **resourceScopes** property of a [principalResourceMembershipsScope](https://learn.microsoft.com/graph/api/resources/principalresourcemembershipsscope).",
+          "Target": "accessReviewResourceScope"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewAccessPackageAssignmentPolicyScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewAccessPackageAssignmentPolicyScope](https://learn.microsoft.com/graph/api/resources/accessreviewaccesspackageassignmentpolicyscope) resource type, which derives from [accessReviewResourceScope](https://learn.microsoft.com/graph/api/resources/accessreviewresourcescope), to scope a review to an access package assignment policy.",
+          "Target": "accessReviewAccessPackageAssignmentPolicyScope"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessReviewPrincipalScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewPrincipalScopeType** enumeration type to specify the categories of principals that a review can target.",
+          "Target": "accessReviewPrincipalScopeType"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessReviewResourceScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewResourceScopeType** enumeration type to specify the categories of resources that a review can target.",
+          "Target": "accessReviewResourceScopeType"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessReviewReviewerScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewReviewerScopeType** enumeration type to specify how a reviewer is resolved as a well-known scope.",
+          "Target": "accessReviewReviewerScopeType"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "genericError",
+          "ChangeType": "Addition",
+          "Description": "Added the [genericError](https://learn.microsoft.com/graph/api/resources/genericerror) complex type to the access reviews API surface as the base type of the [accessReviewError](https://learn.microsoft.com/graph/api/resources/accessreviewerror) resource.",
+          "Target": "genericError"
+        }
+      ],
+      "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-20T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoot",

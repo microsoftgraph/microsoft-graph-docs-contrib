@@ -5,7 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 08/10/2026
 ---
 
 # accessReviewScope resource type
@@ -17,7 +17,7 @@ Use **accessReviewScope** to configure what is reviewed in the following propert
 - [accessReviewInstance](../resources/accessreviewinstance.md): **scope**
 - [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md): **scopes**
 
-This abstract type is inherited by [accessReviewQueryScope](../resources/accessreviewqueryscope.md), [principalResourceMembershipsScope](../resources/principalresourcemembershipsscope.md), and [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md).
+This abstract type is inherited by [accessReviewQueryScope](../resources/accessreviewqueryscope.md), [principalResourceMembershipsScope](../resources/principalresourcemembershipsscope.md), [accessReviewPrincipalScope](../resources/accessreviewprincipalscope.md), [accessReviewResourceScope](../resources/accessreviewresourcescope.md), and [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md).
 
 Specifying the OData type in **scope** is highly recommended for all types but required for [principalResourceMembershipsScope](../resources/principalresourcemembershipsscope.md) and [accessReviewInactiveUsersQueryScope](../resources/accessreviewinactiveusersqueryscope.md).
 

@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.keywords: [ access review decisions ]
-ms.date: 07/22/2024
+ms.date: 08/10/2026
 ---
 
 # accessReviewInstanceDecisionItem resource type
@@ -34,6 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |accessReviewId|String|The identifier of the accessReviewInstance parent. Supports `$select`. Read-only.|
 |appliedBy|[userIdentity](../resources/useridentity.md)|The identifier of the user who applied the decision. Read-only.|
 |appliedDateTime|DateTimeOffset|The timestamp when the approval decision was applied.`00000000-0000-0000-0000-000000000000` if the assigned reviewer hasn't applied the decision or it was automatically applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.  Supports `$select`. Read-only.|
+|applyDescription|String|The description of the apply result. Read-only.|
 |applyResult|String|The result of applying the decision. Possible values: `New`, `AppliedSuccessfully`, `AppliedWithUnknownFailure`, `AppliedSuccessfullyButObjectNotFound` and `ApplyNotSupported`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only.|
 |decision|String|Result of the review. Possible values: `Approve`, `Deny`, `NotReviewed`, or `DontKnow`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). |
 |id|String| The identifier of the decision. Inherited from [entity](../resources/entity.md). Supports `$select`. Read-only.|
@@ -69,6 +70,7 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.userIdentity"
   },
   "appliedDateTime": "String (timestamp)",
+  "applyDescription": "String",
   "applyResult": "String",
   "decision": "String",
   "id": "String (identifier)",
