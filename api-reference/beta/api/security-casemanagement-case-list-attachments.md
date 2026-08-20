@@ -120,7 +120,7 @@ Content-Type: application/json
       "displayName": "Case MS-001 Attachment",
       "description": "Screenshot of suspicious sign-in activity",
       "fileSize": 1000,
-      "fileExtension": "jpeg",
+      "fileExtension": ".jpeg",
       "scanResult": "noThreatsFound",
       "origin": {
         "@odata.type": "microsoft.graph.security.caseManagement.attachmentOrigin",

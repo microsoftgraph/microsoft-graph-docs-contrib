@@ -410,6 +410,10 @@ items:
       href: ../../api/security-casemanagement-attachment-get.md
     - name: Update
       href: ../../api/security-casemanagement-attachment-update.md
+    - name: Download content
+      href: ../../api/security-casemanagement-attachment-download-content.md
+    - name: Upload content
+      href: ../../api/security-casemanagement-attachment-upload-content.md
   - name: Relation
     items:
     - name: Relation
@@ -418,8 +422,12 @@ items:
       href: ../../api/security-casemanagement-case-list-relations.md
     - name: Create
       href: ../../api/security-casemanagement-case-post-relations.md
+    - name: Get
+      href: ../../api/security-casemanagement-relation-get.md
     - name: Update
       href: ../../api/security-casemanagement-relation-update.md
+    - name: Delete
+      href: ../../api/security-casemanagement-relation-delete.md
   - name: Incident relation
     href: ../../resources/security-casemanagement-incidentrelation.md
   - name: Recommendation relation
@@ -438,6 +446,8 @@ items:
       href: ../../api/security-casemanagement-task-get.md
     - name: Update
       href: ../../api/security-casemanagement-task-update.md
+    - name: Delete
+      href: ../../api/security-casemanagement-task-delete.md
   - name: Case type configuration
     items:
     - name: Case type configuration

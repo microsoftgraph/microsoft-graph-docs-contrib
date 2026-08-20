@@ -59,7 +59,7 @@ Supply a JSON representation of the resource. Include `@odata.type` to identify 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.caseManagement.activity](../resources/security-casemanagement-activity.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -112,22 +112,9 @@ Content-Type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.caseManagement.activity"
+  "blockType": "response"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.caseManagement.comment",
-  "id": "c5dcf8b0-0732-750b-0e35-7f44188423bf",
-  "createdDateTime": "2026-05-20T11:12:28Z",
-  "createdBy": "user@contoso.com",
-  "lastModifiedDateTime": "2026-05-20T11:18:45Z",
-  "lastModifiedBy": "user@contoso.com",
-  "message": "This is a modified comment."
-}
+HTTP/1.1 204 No Content
 ```

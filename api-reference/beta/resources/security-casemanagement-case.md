@@ -17,6 +17,8 @@ Namespace: microsoft.graph.security.caseManagement
 Represents an abstract security case that tracks an investigation and organizes related tasks, activities, relations, and attachments. Use the [genericCase](../resources/security-casemanagement-genericcase.md) derived type to create case instances. You can't create [incidentCase](../resources/security-casemanagement-incidentcase.md) instances with API requests; incident cases are created by the service. Instances are differentiated by `@odata.type`.
 This is an abstract type.
 
+For cast segments in URLs, use the full type name, for example `microsoft.graph.security.caseManagement.genericCase` or `microsoft.graph.security.caseManagement.incidentCase`.
+
 Inherits from [microsoft.graph.security.caseManagement.caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).
 
 ## Methods
@@ -35,14 +37,14 @@ Use the [Update](../api/security-casemanagement-case-update.md) method to update
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|String|The user or service that created the case. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` (`eq`, `ne`) and `$orderby`.|
-|createdDateTime|DateTimeOffset|The date and time when the case was created. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
-|customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by custom field identifier.|
-|displayName|String|The display name of the case. Supports `$filter` (`eq`, `ne`) and `$orderby`.|
-|id|String|The unique identifier for the case. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`) and `$orderby`.|
-|lastModifiedBy|String|The user or service that last modified the case. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` (`eq`, `ne`) and `$orderby`.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the case was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
-|status|String|The lifecycle status of the case, such as open, in progress, or closed. Supports `$filter` (`eq`, `ne`) and `$orderby`.|
+|createdBy|String|The user or service that created the case. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` and `$orderby`.|
+|createdDateTime|DateTimeOffset|The date and time when the case was created. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` and `$orderby`.|
+|customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by the exact **displayName** of each custom field definition. The property and its dynamic fields don't support `$filter`.|
+|displayName|String|The display name of the case. Supports `$filter` and `$orderby`.|
+|id|String|The unique identifier for the case. Inherited from [entity](../resources/entity.md). Supports `$filter` and `$orderby`.|
+|lastModifiedBy|String|The user or service that last modified the case. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` and `$orderby`.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the case was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` and `$orderby`.|
+|status|String|The tenant-defined lifecycle status of the case. Use a **displayName** value returned in the status tree by [List statuses](../api/security-casemanagement-casetypeconfiguration-list-statuses.md) from `/security/caseManagement/caseTypeConfigurations/genericCase/statuses` or `/security/caseManagement/caseTypeConfigurations/incidentCase/statuses`, depending on the case type. Supports `$filter` (`eq`).|
 
 ## Relationships
 
@@ -73,8 +75,6 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": "String",
   "displayName": "String",
   "status": "String",
-  "customFields": {
-    "@odata.type": "#microsoft.graph.security.caseManagement.customFieldValues"
-  }
+  "customFields": {"@odata.type": "#microsoft.graph.security.caseManagement.customFieldValues"}
 }
 ```

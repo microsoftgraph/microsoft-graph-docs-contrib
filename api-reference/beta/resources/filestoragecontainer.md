@@ -68,17 +68,18 @@ Represents a location where multiple users or a group of users can store files a
 |containerTypeId|GUID|Container type ID of the **fileStorageContainer**. Each container must have only one container type. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of the **fileStorageContainer** creation. Read-only.|
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the **fileStorageContainer**. Read-write.|
+|dataLocationCode|String|The geographic location of the data for multi-geo tenants. This property is only returned when explicitly selected by using `$select`. Read-only.|
 |description|String|Provides a user-visible description of the **fileStorageContainer**. Read-write.|
 |displayName|String|The display name of the **fileStorageContainer**. Read-write.|
 |id|String|The unique stable identifier of the **fileStorageContainer**. Read-only.|
+|informationBarrier|[informationBarrier](../resources/informationBarrier.md)|Information barrier of a **fileStorageContainer**. Read-write.|
+|lockState|siteLockState|Indicates the lock state of the **fileStorageContainer**. The possible values are `unlocked` and `lockedReadOnly`. Read-only.|
 |owners|[userIdentity](../resources/useridentity.md) collection|List of users who own the **fileStorageContainer**. Read-only.|
 |ownershipType|fileStorageContainerOwnershipType|Ownership type of the **fileStorageContainer**. The possible values are: `tenantOwned`. Read-only.|
+|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.|
 |status|fileStorageContainerStatus|Status of the **fileStorageContainer**. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours. The possible values are: `inactive`, `active`. Read-only.|
 |storageUsedInBytes|Int64|Storage used in the **fileStorageContainer**, in bytes. Read-only.|
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
-|lockState|siteLockState|Indicates the lock state of the **fileStorageContainer**. The possible values are `unlocked` and `lockedReadOnly`. Read-only.|
-|settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.|
-|informationBarrier|[informationBarrier](../resources/informationBarrier.md)|Information barrier of a **fileStorageContainer**. Read-write.|
 
 ## Relationships
 
@@ -130,6 +131,7 @@ The following JSON representation shows the resource type.
   "assignedSensitivityLabel": {"@odata.type": "microsoft.graph.assignedLabel"},
   "owners":  [ { "@odata.type": "microsoft.graph.userIdentity" } ],
   "ownershipType": {"@odata.type": "microsoft.graph.fileStorageContainerOwnershipType"},
+  "dataLocationCode": "string",
   "expiryDateTime": "string (timestamp)",
   "lockState": {"@odata.type": "microsoft.graph.siteLockState"},
   "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" },

@@ -38,7 +38,7 @@ GET /security/caseManagement/cases/{caseId}/tasks
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$select` OData query parameters. You can filter by the **assignedTo**, **category**, **closingNotes**, **createdBy**, **createdDateTime**, **description**, **displayName**, **dueDateTime**, **id**, **lastModifiedBy**, **lastModifiedDateTime**, **priority**, and **status** properties. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

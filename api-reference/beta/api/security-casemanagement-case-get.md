@@ -38,7 +38,7 @@ GET /security/caseManagement/cases/{caseId}
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter. On the base case endpoint, `$select` can reference only properties declared on [case](../resources/security-casemanagement-case.md). Derived-only properties require either no `$select` or a casted endpoint, if supported. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

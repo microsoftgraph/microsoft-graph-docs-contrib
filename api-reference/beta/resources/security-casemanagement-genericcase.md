@@ -16,29 +16,31 @@ Namespace: microsoft.graph.security.caseManagement
 
 Represents a generic case with assignment, priority, due date, and closing notes. This resource derives from [case](../resources/security-casemanagement-case.md) and participates in the polymorphic `/security/caseManagement/cases` collection.
 
-Inherited from [case](../resources/security-casemanagement-case.md).
+For cast segments in URLs, use the full type name, for example `microsoft.graph.security.caseManagement.genericCase`.
 
 ## Methods
 This resource is part of a polymorphic collection managed by the [case resource](../resources/security-casemanagement-case.md) base type. Operations are performed through the base type endpoints.
 
 Use the base type [Update](../api/security-casemanagement-case-update.md) method to update **assignedTo**, **closingNotes**, **description**, **displayName**, **dueDateTime**, **priority**, and **status**.
 
+To use a supported query option with a property declared only on **genericCase**, cast the base cases collection to `microsoft.graph.security.caseManagement.genericCase`.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|String|The user assigned to the generic case.|
-|closingNotes|String|Notes recorded when the generic case is closed.|
-|createdBy|String|The user or service that created the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|createdDateTime|DateTimeOffset|The date and time when the resource was created. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by custom field identifier. Inherited from [case](../resources/security-casemanagement-case.md).|
-|description|String|The description of the generic case.|
-|displayName|String|The display name of the generic case. Inherited from [case](../resources/security-casemanagement-case.md).|
-|dueDateTime|DateTimeOffset|The target completion date and time for the generic case.|
-|id|String|The unique identifier for the resource. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|String|The user or service that last modified the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|priority|String|The priority assigned to the generic case.|
-|status|String|The lifecycle status of the generic case. Inherited from [case](../resources/security-casemanagement-case.md).|
+|assignedTo|String|The user assigned to the generic case. Supports `$filter` and `$orderby`.|
+|closingNotes|String|Notes recorded when the generic case is closed. Supports `$filter`.|
+|createdBy|String|The user or service that created the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` and `$orderby`.|
+|createdDateTime|DateTimeOffset|The date and time when the resource was created. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` and `$orderby`.|
+|customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by the exact **displayName** of each custom field definition. The property and its dynamic fields don't support `$filter`. Inherited from [case](../resources/security-casemanagement-case.md).|
+|description|String|The description of the generic case. Supports `$filter`.|
+|displayName|String|The display name of the generic case. Inherited from [case](../resources/security-casemanagement-case.md). Supports `$filter` and `$orderby`.|
+|dueDateTime|DateTimeOffset|The target completion date and time for the generic case. Supports `$filter`.|
+|id|String|The unique identifier for the resource. Inherited from [entity](../resources/entity.md). Supports `$filter` and `$orderby`.|
+|lastModifiedBy|String|The user or service that last modified the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` and `$orderby`.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` and `$orderby`.|
+|priority|String|The priority assigned to the generic case. Possible values are: `veryLow`, `low`, `medium`, `high`, and `critical`. Supports `$filter`.|
+|status|String|The tenant-defined lifecycle status of the generic case. Use a **displayName** value returned in the status tree by [List statuses](../api/security-casemanagement-casetypeconfiguration-list-statuses.md) from `/security/caseManagement/caseTypeConfigurations/genericCase/statuses`. Inherited from [case](../resources/security-casemanagement-case.md). Supports `$filter` (`eq`).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -68,9 +70,7 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": "String",
   "displayName": "String",
   "status": "String",
-  "customFields": {
-    "@odata.type": "#microsoft.graph.security.caseManagement.customFieldValues"
-  },
+  "customFields": {"@odata.type": "#microsoft.graph.security.caseManagement.customFieldValues"},
   "description": "String",
   "closingNotes": "String",
   "assignedTo": "String",

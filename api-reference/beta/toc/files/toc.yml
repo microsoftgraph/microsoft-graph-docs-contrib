@@ -458,6 +458,8 @@ items:
       href: ../../resources/sharepointusermigrationtaskparameters.md
 - name: Complex types
   items:
+  - name: Drive settings
+    href: ../../resources/drivesettings.md
   - name: File storage container type agent settings
     href: ../../resources/filestoragecontainertypeagentsettings.md
   - name: File storage container type registration settings

@@ -36,6 +36,7 @@ Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources
 ### Teamwork and communications | Calls and online meetings
 
 - Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) and [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts) methods to document a service-update issue that can cause paginated requests to return an empty collection followed by duplicate items.
+- Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) method to return a Microsoft Graph URL that you can use to download recording content.
 
 ## August 2026: New in preview only
 
@@ -51,6 +52,12 @@ Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources
 ### Mail
 
 - Changed the **members** property on the [distributionList](/graph/api/resources/distributionlist?view=graph-rest-beta&preserve-view=true) resource to an expandable relationship. Use `$expand=members` with the [Get distribution list](/graph/api/distributionlist-get?view=graph-rest-beta&preserve-view=true) method instead of the removed standalone methods for listing and getting members.
+
+### Security | Case management
+
+- Added the [download attachment content](/graph/api/security-casemanagement-attachment-download-content?view=graph-rest-beta&preserve-view=true) and [upload attachment content](/graph/api/security-casemanagement-attachment-upload-content?view=graph-rest-beta&preserve-view=true) methods to the [attachment](/graph/api/resources/security-casemanagement-attachment?view=graph-rest-beta&preserve-view=true) resource type to transfer case evidence in chunks and retrieve it after malware scanning.
+- Added the [get relation](/graph/api/security-casemanagement-relation-get?view=graph-rest-beta&preserve-view=true) and [delete relation](/graph/api/security-casemanagement-relation-delete?view=graph-rest-beta&preserve-view=true) methods to the [relation](/graph/api/resources/security-casemanagement-relation?view=graph-rest-beta&preserve-view=true) resource type to read and remove links between a case and related security resources.
+- Added the [delete task](/graph/api/security-casemanagement-task-delete?view=graph-rest-beta&preserve-view=true) method to the [task](/graph/api/resources/security-casemanagement-task?view=graph-rest-beta&preserve-view=true) resource type to remove a task from a case.
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -115,6 +122,12 @@ Added support for user-centric (catalog-scope) access reviews through the **unif
 
 ## July 2026: New in preview only
 
+### Backup and recovery | Microsoft 365 Backup and Storage
+
+Added the **createdBy**, **createdDateTime**, **lastModifiedBy**, and **lastModifiedDateTime** properties to the [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem?view=graph-rest-beta&preserve-view=true) resource. Use these properties to get the identity and timestamp details for when a browse item was created and last modified.
+- Added the **optimizedBrowse** parameter to the [sharePointBrowseSession: browse](/graph/api/sharepointbrowsesession-browse?view=graph-rest-beta&preserve-view=true) method of the [sharePointBrowseSession](/graph/api/resources/sharepointbrowsesession?view=graph-rest-beta&preserve-view=true) resource. Set this parameter to `true` to retrieve files and folders in a single request when the backup artifact has a single site and a single document library.
+- Added the **optimizedBrowse** parameter to the [oneDriveForBusinessBrowseSession: browse](/graph/api/onedriveforbusinessbrowsesession-browse?view=graph-rest-beta&preserve-view=true) method of the [oneDriveForBusinessBrowseSession](/graph/api/resources/onedriveforbusinessbrowsesession?view=graph-rest-beta&preserve-view=true) resource. Set this parameter to `true` to retrieve files and folders in a single request when the backup artifact has a single site and a single document library.
+
 ### Change notifications
 
 Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPushEncryptionSecret** properties to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) resource to support encrypted change notifications delivered to browser-native Web Push endpoints (Apple, Mozilla, FCM). Browser-based applications can now register with Microsoft Graph to receive change notifications through the W3C Push API channel without operating a public webhook. See [RFC 8291](https://www.rfc-editor.org/rfc/rfc8291.html) and [RFC 8292](https://www.rfc-editor.org/rfc/rfc8292.html) for the underlying encryption and authentication protocols.
@@ -136,6 +149,7 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 
 ### Files
 
+- Added the **dataLocationCode** property to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource type to represent the geographic location of the data for multi-geo tenants.
 - Added the **settings** property of type [driveSettings](/graph/api/resources/drivesettings?view=graph-rest-beta&preserve-view=true) to the [drive](/graph/api/resources/drive?view=graph-rest-beta&preserve-view=true) resource type to retrieve drive-level settings such as the default sensitivity label applied to items.
 - Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to support the optional `reportType` parameter for retrieving throttling metrics. Use `reportType='throttlingReport'` to get throttled request counts via the **throttledRequests** property on the [sharePointApiUsageDataPoint](/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta&preserve-view=true) resource, or use `reportType='egressReport'` (default) to get egress usage via the **usageMB** property.
 - Added the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission) objects per request.
@@ -196,6 +210,8 @@ Added the optional **workspaceId** parameter to the [runHuntingQuery](/graph/api
 
 ### Security | Data security and compliance
 
+Added the **matchedConditionsDescription** and **complianceUrl** properties to the [policyTipAction](/graph/api/resources/policytipaction?view=graph-rest-beta&preserve-view=true) resource. Use these properties to display a user-friendly summary of the matched DLP conditions and link users to additional compliance guidance.
+
 Added the [embeddingInput](/graph/api/resources/embeddinginput?view=graph-rest-beta&preserve-view=true) resource type and the **embeddings** property on the [textClassificationRequest](/graph/api/resources/textclassificationrequest?view=graph-rest-beta&preserve-view=true) resource, so a caller can supply precomputed embedding vectors when classifying text and let the service skip recomputing them.
 
 ### Security | eDiscovery
@@ -209,6 +225,10 @@ Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](/gra
 ### Reports
 
 Added the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to the [reportRoot](/graph/api/resources/reportroot?view=graph-rest-beta&preserve-view=true) resource to retrieve aggregated OneDrive and SharePoint API usage metrics for a tenant, including egress usage and throttling metrics.
+
+### Reports | Identity and access reports
+
+- Added Global Secure Access support to Microsoft Entra Health monitoring. Use the [health monitoring alert](/graph/api/resources/healthmonitoring-alert?view=graph-rest-beta&preserve-view=true) resource to monitor Global Secure Access-related alerts.
 
 ### Tasks and plans
 

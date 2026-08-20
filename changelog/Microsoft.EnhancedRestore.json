@@ -1,5 +1,31 @@
 {
   "changelog": [
+        {
+          "ChangeList": [
+            {
+              "Id": "a22559ba-bd75-4d84-9ad4-5eaa3795272d",
+              "ApiChange": "Method",
+              "ChangedApiName": "browse",
+              "ChangeType": "Update",
+              "Description": "Added the **optimizedBrowse** optional parameter to the [browse](https://learn.microsoft.com/graph/api/sharepointbrowsesession-browse?view=graph-rest-beta) method of the [sharePointBrowseSession](https://learn.microsoft.com/graph/api/resources/sharepointbrowsesession?view=graph-rest-beta) resource to directly browse files and folders when the artifact has a single site and a single document library.",
+              "Target": "sharePointBrowseSession"
+            },
+            {
+              "Id": "8521e56d-f301-4f1b-a2a9-40acb2b59d8a",
+              "ApiChange": "Method",
+              "ChangedApiName": "browse",
+              "ChangeType": "Update",
+              "Description": "Added the **optimizedBrowse** optional parameter to the [browse](https://learn.microsoft.com/graph/api/onedriveforbusinessbrowsesession-browse?view=graph-rest-beta) method of the [oneDriveForBusinessBrowseSession](https://learn.microsoft.com/graph/api/resources/onedriveforbusinessbrowsesession?view=graph-rest-beta) resource to directly browse files and folders when the artifact has a single site and a single document library.",
+              "Target": "oneDriveForBusinessBrowseSession"
+            }
+          ],
+          "Id": "cce61b61-33c8-47df-ae2b-6c022d2f9dba",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2026-08-19T21:52:42.9632648Z",
+          "WorkloadArea": "Backup and recovery",
+          "SubArea": "Microsoft 365 backup and storage"
+        },
          {
           "ChangeList": [
             {
@@ -77,6 +103,48 @@
       "SubArea": "Microsoft 365 backup and storage"
       },
       {
+        "ChangeList": [
+          {
+            "Id": "f79be107-8d10-49d2-9c66-428931ea9f83",
+            "ApiChange": "Property",
+            "ChangedApiName": "createdBy",
+            "ChangeType": "Addition",
+            "Description": "Added the **createdBy** property to the [browseQueryResponseItem](https://learn.microsoft.com/graph/api/resources/browsequeryresponseitem?view=graph-rest-beta) resource.",
+            "Target": "browseQueryResponseItem"
+          },
+          {
+            "Id": "4fca0f53-1ee7-4329-aeb1-d649052dce76",
+            "ApiChange": "Property",
+            "ChangedApiName": "createdDateTime",
+            "ChangeType": "Addition",
+            "Description": "Added the **createdDateTime** property to the [browseQueryResponseItem](https://learn.microsoft.com/graph/api/resources/browsequeryresponseitem?view=graph-rest-beta) resource.",
+            "Target": "browseQueryResponseItem"
+          },
+          {
+            "Id": "8723e91e-7dd3-4eb8-826d-463b5f05e5f6",
+            "ApiChange": "Property",
+            "ChangedApiName": "lastModifiedBy",
+            "ChangeType": "Addition",
+            "Description": "Added the **lastModifiedBy** property to the [browseQueryResponseItem](https://learn.microsoft.com/graph/api/resources/browsequeryresponseitem?view=graph-rest-beta) resource.",
+            "Target": "browseQueryResponseItem"
+          },
+          {
+            "Id": "82161748-c0cd-4355-9850-c2b79700fe63",
+            "ApiChange": "Property",
+            "ChangedApiName": "lastModifiedDateTime",
+            "ChangeType": "Addition",
+            "Description": "Added the **lastModifiedDateTime** property to the [browseQueryResponseItem](https://learn.microsoft.com/graph/api/resources/browsequeryresponseitem?view=graph-rest-beta) resource.",
+            "Target": "browseQueryResponseItem"
+          }
+        ],
+        "Id": "1bf42bab-5ae1-4fcb-802f-9fdf1b494f74",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2026-08-19T08:06:52.0464983Z",
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
         "ChangeList": [
           {
             "Id": "d3dee94f-3c8b-475f-9aaf-b1a94b873b46",

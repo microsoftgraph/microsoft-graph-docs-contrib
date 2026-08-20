@@ -14,7 +14,9 @@ Namespace: microsoft.graph.security.caseManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a relation between a case and an incident.
+Represents a relation between a case and an incident. Creating an **incidentRelation** for an [incidentCase](../resources/security-casemanagement-incidentcase.md) isn't supported.
+
+For cast segments in URLs, use the full type name, for example `microsoft.graph.security.caseManagement.incidentRelation`.
 
 Inherited from [relation](../resources/security-casemanagement-relation.md).
 
@@ -26,7 +28,6 @@ This resource is part of a polymorphic collection managed by the [relation resou
 |:---|:---|:---|
 |createdBy|String|The user or service that created the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
 |createdDateTime|DateTimeOffset|The date and time when the resource was created. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|displayName|String|The human-friendly name for the linked resource. Inherited from [relation](../resources/security-casemanagement-relation.md).|
 |id|String|The unique identifier for the resource. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|String|The user or service that last modified the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
@@ -53,7 +54,6 @@ The following JSON representation shows the resource type.
   "createdBy": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": "String",
-  "relatedResourceId": "String",
-  "displayName": "String"
+  "relatedResourceId": "String"
 }
 ```

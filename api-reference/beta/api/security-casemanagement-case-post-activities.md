@@ -16,6 +16,9 @@ Namespace: microsoft.graph.security.caseManagement
 
 Create a [comment](../resources/security-casemanagement-comment.md) activity for a [case](../resources/security-casemanagement-case.md).
 
+> [!NOTE]
+> A case supports a maximum of 100 comments.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions

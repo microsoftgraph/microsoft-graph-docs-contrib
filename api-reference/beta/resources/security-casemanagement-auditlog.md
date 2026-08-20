@@ -16,22 +16,26 @@ Namespace: microsoft.graph.security.caseManagement
 
 Represents an audit event that records a change or action in a case.
 
+For cast segments in URLs, use the full type name, for example `microsoft.graph.security.caseManagement.auditLog`.
+
 Inherited from [activity](../resources/security-casemanagement-activity.md).
 
 ## Methods
 This resource is part of a polymorphic collection managed by the [activity](../resources/security-casemanagement-activity.md) base type. Use the [Get activity](../api/security-casemanagement-activity-get.md) endpoint to read audit log activities. Create, update, and delete operations aren't supported for audit logs.
 
+To use a supported query option with a property declared only on **auditLog**, cast the base activities collection to `microsoft.graph.security.caseManagement.auditLog`.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.security.caseManagement.auditAction](#auditaction-values)|The action represented by the audit log activity.|
-|createdBy|String|The user or service that created the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|createdDateTime|DateTimeOffset|The date and time when the resource was created. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
+|action|[microsoft.graph.security.caseManagement.auditAction](#auditaction-values)|The action represented by the audit log activity. Supports `$filter`.|
+|createdBy|String|The user or service that created the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter`.|
+|createdDateTime|DateTimeOffset|The date and time when the resource was created. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter`.|
 |details|[microsoft.graph.security.caseManagement.activityResourceDetails](../resources/security-casemanagement-activityresourcedetails.md)|The target resource details for the audit activity.|
-|id|String|The unique identifier for the resource. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|String|The user or service that last modified the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|modifiedProperties|[microsoft.graph.security.caseManagement.modifiedProperty](../resources/security-casemanagement-modifiedproperty.md) collection|The collection of property changes recorded in the audit log.|
+|id|String|The unique identifier for the resource. Inherited from [entity](../resources/entity.md). Supports `$filter`.|
+|lastModifiedBy|String|The user or service that last modified the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter`.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter`.|
+|modifiedProperties|[microsoft.graph.security.caseManagement.modifiedProperty](../resources/security-casemanagement-modifiedproperty.md) collection|The collection of property changes recorded in the audit log. Supports `$filter`.|
 
 ### auditAction values
 
@@ -69,13 +73,7 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": "String",
   "action": "String",
-  "details": {
-    "@odata.type": "#microsoft.graph.security.caseManagement.activityResourceDetails"
-  },
-  "modifiedProperties": [
-    {
-      "@odata.type": "#microsoft.graph.security.caseManagement.modifiedProperty"
-    }
-  ]
+  "details": {"@odata.type": "#microsoft.graph.security.caseManagement.activityResourceDetails"},
+  "modifiedProperties": [{"@odata.type": "#microsoft.graph.security.caseManagement.modifiedProperty"}]
 }
 ```

@@ -37,6 +37,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /storage/fileStorage/containers/{containerId}
 ```
 
+## Optional query parameters
+
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -49,7 +53,9 @@ If successful, this method returns a `200 OK` response code and a [fileStorageCo
 
 ## Examples
 
-### Request
+### Example 1: Get a fileStorageContainer
+
+#### Request
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
@@ -87,7 +93,7 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -114,6 +120,41 @@ Content-Type: application/json
     "isItemVersioningEnabled": true,
     "itemDefaultSensitivityLabelId": "3d8789ae-7375-4ded-8eeb-d6bc226e42fb"
   }
+}
+```
+
+### Example 2: Get a fileStorageContainer and its dataLocationCode property
+
+The **dataLocationCode** property isn't returned by default. The following example uses `$select` to explicitly request it in the response.
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_filestoragecontainer_datalocationcode"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}?$select=id,dataLocationCode
+```
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fileStorageContainer"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.fileStorageContainer",
+  "id": "b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z",
+  "dataLocationCode": "NAM"
 }
 ```
 
