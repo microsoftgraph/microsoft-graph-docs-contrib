@@ -36,6 +36,7 @@ Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources
 ### Teamwork and communications | Calls and online meetings
 
 - Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) and [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts) methods to document a service-update issue that can cause paginated requests to return an empty collection followed by duplicate items.
+- Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) method to return a Microsoft Graph URL that you can use to download recording content.
 
 ## August 2026: New in preview only
 
