@@ -903,6 +903,13 @@ Namespace: microsoft.graph
 | configured |
 | proposed |
 
+### connectorType values
+
+| Member |
+| ------------------ |
+| sapIag |
+| unknownFutureValue |
+
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
 | Member |

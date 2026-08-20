@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "2f43767d-4db4-4d5d-9f29-751f56d6cd04",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalOriginResourceConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalOriginResourceConnector](https://learn.microsoft.com/en-us/graph/api/resources/externaloriginresourceconnector?view=graph-rest-1.0) resource and its methods.",
+          "Target": "externalOriginResourceConnector"
+        },
+        {
+          "Id": "2f43767d-4db4-4d5d-9f29-751f56d6cd04",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalTokenBasedSapIagConnectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalTokenBasedSapIagConnectionInfo](https://learn.microsoft.com/en-us/graph/api/resources/externaltokenbasedsapiagconnectioninfo?view=graph-rest-1.0) complex type.",
+          "Target": "externalTokenBasedSapIagConnectionInfo"
+        },
+        {
+          "Id": "2f43767d-4db4-4d5d-9f29-751f56d6cd04",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "connectorType",
+          "ChangeType": "Addition",
+          "Description": "Added the **connectorType** enumeration type.",
+          "Target": "connectorType"
+        },
+        {
+          "Id": "2f43767d-4db4-4d5d-9f29-751f56d6cd04",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "externalOriginResourceConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalOriginResourceConnector** relationship to the [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresource?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageResource"
+        },
+        {
+          "Id": "2f43767d-4db4-4d5d-9f29-751f56d6cd04",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "externalOriginResourceConnectors",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalOriginResourceConnectors** relationship to the [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementmanagement?view=graph-rest-1.0) resource.",
+          "Target": "entitlementManagement"
+        }
+      ],
+      "Id": "2f43767d-4db4-4d5d-9f29-751f56d6cd04",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-19T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "01c542b5-f4e5-48ec-9fe8-8b63fdb7ad42",
           "ApiChange": "Resource",
           "ChangedApiName": "externalSapAcConnectionInfo",
