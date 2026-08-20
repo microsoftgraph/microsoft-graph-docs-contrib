@@ -880,6 +880,20 @@ items:
         href: ../../api/entitlementmanagementsettings-get.md
       - name: Update
         href: ../../api/entitlementmanagementsettings-update.md
+    - name: External origin resource connector
+      items:
+      - name: External origin resource connector
+        href: ../../resources/externaloriginresourceconnector.md
+      - name: List
+        href: ../../api/entitlementmanagement-list-externaloriginresourceconnectors.md
+      - name: Create
+        href: ../../api/entitlementmanagement-post-externaloriginresourceconnectors.md
+      - name: Get
+        href: ../../api/externaloriginresourceconnector-get.md
+      - name: Update
+        href: ../../api/externaloriginresourceconnector-update.md
+      - name: Delete
+        href: ../../api/externaloriginresourceconnector-delete.md
   - name: Lifecycle workflows
     displayName: LCW, Identity Governance, Joiner, Mover, Leaver
     items:

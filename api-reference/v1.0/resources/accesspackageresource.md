@@ -42,6 +42,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |environment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Contains the environment information for the resource. This can be set using either the `@odata.bind` annotation or the environment's *originId*.Supports `$expand`.|
+|externalOriginResourceConnector|[externalOriginResourceConnector](../resources/externaloriginresourceconnector.md)|The connector that integrates with external origin systems to provision access to resources from those systems. Read-only. Nullable.|
 |roles|[accessPackageResourceRole](accesspackageresourcerole.md) collection| Read-only. Nullable. Supports `$expand`.|
 |scopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection| Read-only. Nullable. Supports `$expand`.|
 |uploadSessions|[customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) collection|The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.|
