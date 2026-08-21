@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|CaseManagement.Read.All|CaseManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|CaseManagement.Read.All|CaseManagement.ReadWrite.All|
+

@@ -2,7 +2,7 @@
 title: "crossTenantMailTipsAll resource type"
 description: "Represents a cross-tenant capability for sharing all mail tips."
 author: "lasharma"
-ms.date: 04/23/2026
+ms.date: 08/07/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cross-tenant capability for sharing all mail tips. This capability allows tenant administrators to control whether users can share all mail tips across organizations.
+Represents authorization for MailTips to display full information—including automatic replies and mailbox-full notices—to external users from a trusted partner tenant.
 
 Inherits from [m365CapabilityBase](../resources/m365capabilitybase.md).
 
@@ -46,8 +46,6 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.crossTenantMailTipsAll",
   "name": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "inboundAccess": {
-    "@odata.type": "microsoft.graph.m365CapabilityInboundAccess"
-  }
+  "inboundAccess": {"@odata.type": "microsoft.graph.m365CapabilityInboundAccess"}
 }
 ```

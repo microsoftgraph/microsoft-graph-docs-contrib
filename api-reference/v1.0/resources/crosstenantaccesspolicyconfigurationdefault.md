@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Default settings
-ms.date: 07/22/2024
+ms.date: 08/07/2026
 ---
 
 # crossTenantAccessPolicyConfigurationDefault resource type
@@ -22,6 +22,9 @@ Represents the default configuration for cross-tenant access and tenant restrict
 |[Get](../api/crosstenantaccesspolicyconfigurationdefault-get.md)|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Get the default configuration for B2B collaboration and B2B direct connect inbound and outbound settings.|
 |[Update](../api/crosstenantaccesspolicyconfigurationdefault-update.md)|None|Update the default configuration for B2B collaboration and B2B direct connect inbound and outbound settings.|
 |[Reset to system default](../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md)|None|Reset the default configuration for a cross-tenant access policy to the system default settings.|
+|[List Microsoft 365 capabilities](../api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities.md)|[m365CapabilityBase](../resources/m365capabilitybase.md) collection|Get a list of Microsoft 365 cross-tenant capabilities configured for the [default cross-tenant access policy](../resources/crosstenantaccesspolicyconfigurationdefault.md).|
+|[Create Microsoft 365 capability](../api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities.md)|[m365CapabilityBase](../resources/m365capabilitybase.md)|Create a new Microsoft 365 cross-tenant capability for the [default cross-tenant access policy](../resources/crosstenantaccesspolicyconfigurationdefault.md).|
+|[Update Microsoft 365 capability](../api/crosstenantaccesspolicyconfigurationdefault-update-m365capabilities.md)|[m365CapabilityBase](../resources/m365capabilitybase.md)|Update an existing Microsoft 365 cross-tenant capability for the [default cross-tenant access policy](../resources/crosstenantaccesspolicyconfigurationdefault.md).|
 
 ## Properties
 
@@ -42,7 +45,9 @@ Represents the default configuration for cross-tenant access and tenant restrict
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|m365Capabilities|[m365CapabilityBase](../resources/m365capabilitybase.md) collection|Defines the default Microsoft 365 cross-tenant capabilities for inbound access from external organizations.|
 
 ## JSON representation
 
