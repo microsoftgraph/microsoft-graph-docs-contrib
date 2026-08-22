@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|Policy.ReadWrite.CrossTenantCapability|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|Policy.ReadWrite.CrossTenantCapability|Not available.|
+
