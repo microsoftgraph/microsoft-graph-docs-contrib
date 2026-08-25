@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.identityGovernance
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an abstract base type for subjects that can be activated in identity governance lifecycle workflows. The derived types of this object are configured in the following resources:
 - **subject** property of [awaitedWorkflowProcessingResult](../resources/identitygovernance-awaitedworkflowprocessingresult.md)
 - **subject** property of [subjectProcessingResult](../resources/identitygovernance-subjectprocessingresult.md)
@@ -25,6 +23,12 @@ Represents an abstract base type for subjects that can be activated in identity 
 This is an abstract type. It cannot be instantiated directly. Use one of the following derived types:
 - [directoryObjectWorkflowSubject](../resources/identitygovernance-directoryobjectworkflowsubject.md) to represent an existing directory object, such as a user, as the workflow subject.
 - [provisioningObjectWorkflowSubject](../resources/identitygovernance-provisioningobjectworkflowsubject.md) to represent a provisioning object as the workflow subject.
+
+Instances of these derived types are differentiated by the `@odata.type` property.
+
+## Methods
+
+None.
 
 ## Properties
 

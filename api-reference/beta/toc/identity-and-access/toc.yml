@@ -1383,6 +1383,8 @@ items:
             href: ../../api/identitygovernance-taskreport-list-subjectprocessingresults.md
           - name: Get
             href: ../../api/identitygovernance-subjectprocessingresult-get.md
+          - name: Summary
+            href: ../../api/identitygovernance-subjectprocessingresult-summary.md
         - name: Task processing result
           items:
           - name: Task processing result

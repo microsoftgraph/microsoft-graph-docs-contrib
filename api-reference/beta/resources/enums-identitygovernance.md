@@ -12,6 +12,8 @@ ms.date: 04/02/2024
 
 Namespace: microsoft.graph.identityGovernance
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 ### activationTaskScopeType values 
 
 |Member|
@@ -62,8 +64,9 @@ Namespace: microsoft.graph.identityGovernance
 |:---|
 |joiner|
 |leaver|
-|extensibility|
 |unknownFutureValue|
+|mover|
+|extensibility|
 
 ### lifecycleWorkflowCategory values 
 
@@ -73,8 +76,9 @@ Namespace: microsoft.graph.identityGovernance
 |:---|
 |joiner|
 |leaver|
-|extensibility|
 |unknownFutureValue|
+|mover|
+|extensibility|
 
 
 ### valueType values 
@@ -89,6 +93,15 @@ Namespace: microsoft.graph.identityGovernance
 |bool|
 |unknownFutureValue|
 
+
+### subjectType values
+
+|Member|
+|:---|
+|user|
+|agentIdentity|
+|unknownFutureValue|
+|provisioningObject|
 
 ### workflowExecutionType values 
 
