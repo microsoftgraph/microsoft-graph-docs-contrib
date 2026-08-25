@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "ac5c3274-87aa-493f-ad25-51dd98e81881",
+          "ApiChange": "Resource",
+          "ChangedApiName": "createAlertInput",
+          "ChangeType": "Addition",
+          "Description": "Added the [createAlertInput](https://learn.microsoft.com/en-us/graph/api/resources/security-createalertinput?view=graph-rest-beta) resource.",
+          "Target": "createAlertInput"
+        },
+        {
+          "Id": "ac5c3274-87aa-493f-ad25-51dd98e81881",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entityDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [entityDefinition](https://learn.microsoft.com/en-us/graph/api/resources/security-entitydefinition?view=graph-rest-beta) resource.",
+          "Target": "entityDefinition"
+        },
+        {
+          "Id": "ac5c3274-87aa-493f-ad25-51dd98e81881",
+          "ApiChange": "Method",
+          "ChangedApiName": "createAlert",
+          "ChangeType": "Addition",
+          "Description": "Added the [createAlert](https://learn.microsoft.com/en-us/graph/api/security-alert-createalert?view=graph-rest-beta) method to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+          "Target": "alert"
+        }
+      ],
+      "Id": "ac5c3274-87aa-493f-ad25-51dd98e81881",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-23T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "464962b2-410c-44c4-a1bc-c8c12d7e7560",
           "ApiChange": "Parameter",
           "ChangedApiName": "workspaceId",

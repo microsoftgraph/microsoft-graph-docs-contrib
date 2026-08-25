@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 08/17/2026
+ms.date: 08/24/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -233,6 +233,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Read and write quarantined collection in Agent Registry |
 | Description | - | Allows the app to read and update quarantined collection and manage its membership in your organization's Agent Registry on behalf of the signed-in user. |
 | AdminConsentRequired | - | Yes |
+
+---
+
+### AgentCommunicationConfiguration.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 57ff8075-2fb3-4879-8693-5d51ee8d5e9e |
+| DisplayText | - | Read agent communication configuration |
+| Description | - | Allows the app to read the communication configuration of agent blueprints on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### AgentCommunicationConfiguration.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | eccf3f2d-f81a-4718-95d7-ef4a0c42ac43 | - |
+| DisplayText | Read all agent communication configurations | - |
+| Description | Allows the app to read the communication configuration of agent blueprints without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### AgentCommunicationConfiguration.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 15e0db35-0641-4175-b014-c2cb39286338 |
+| DisplayText | - | Read and write agent communication configuration |
+| Description | - | Allows the app to read and update the communication configuration of agent blueprints on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### AgentCommunicationConfiguration.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9c72696d-c77b-4d8d-b59e-dfca4792c9ec | - |
+| DisplayText | Read and write all agent communication configurations | - |
+| Description | Allows the app to read and update the communication configuration of agent blueprints without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -2655,6 +2699,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### DeviceManagementDeploymentPlans.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | c5825671-0390-4bf2-b99b-80496fd4b673 | 700bfe0b-b3bd-4fa4-bec2-6849edd7fb7b |
+| DisplayText | Read Microsoft Intune Deployment Plans | Read Microsoft Intune Deployment Plans |
+| Description | Allows the app to read properties of Microsoft Intune-managed deployment plans and their ring configurations, without a signed-in user. | Allows the app to read properties of Microsoft Intune-managed deployment plans and their ring configurations. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### DeviceManagementDeploymentPlans.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 68356fd1-028d-4ce3-b724-241dec11127a | 9d95843d-67b9-48b2-8e20-e42372db8549 |
+| DisplayText | Read and write Microsoft Intune Deployment Plans | Read and write Microsoft Intune Deployment Plans |
+| Description | Allows the app to read and write properties of Microsoft Intune-managed deployment plans and their ring configurations, without a signed-in user. | Allows the app to read and write properties of Microsoft Intune-managed deployment plans and their ring configurations. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### DeviceManagementManagedDevices.PrivilegedOperations.All
 
 | Category | Application | Delegated |
@@ -4492,6 +4558,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 5facf0c1-8979-4e95-abcf-ff3d079771c0 | f55016cc-149c-447e-8f21-7cf3ec1d6350 |
 | DisplayText | Manage all license assignments | Manage all license assignments |
 | Description | Allows an app to manage license assignments for users and groups, without a signed-in user. | Allows an app to manage license assignments for users and groups, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### LifecyclePolicies-AgentId.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 6343d63f-034f-45b5-832d-9f9d7632e182 | 65857db0-62ac-4279-aa73-c2b5dab186f5 |
+| DisplayText | Read identity lifecycle policies for agent identities | Read identity lifecycle policies for agent identities |
+| Description | Allows the app to read identity lifecycle policies for agent identities in the organization, without a signed-in user. | Allows the app to read identity lifecycle policies for agent identities that the signed-in user has access to in the organization. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### LifecyclePolicies-AgentId.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 00d1c504-8dc7-461b-8a0b-dc15c8f1bd5a | f2292ca5-46fc-4195-9b4d-16491bf9bf7f |
+| DisplayText | Read and write identity lifecycle policies for agent identities | Read and write identity lifecycle policies for agent identities |
+| Description | Allows the app to read, create, update and delete identity lifecycle policies for agent identities in the organization, without a signed-in user. | Allows the app to read, create, update and delete identity lifecycle policies for agent identities that the signed-in user has access to in the organization. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6696,6 +6784,39 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all certificate based authentication configurations | Read and write certificate based authentication configurations |
 | Description | Allows the application to read and write certificate-based authentication configuration such as all public key infrastructures (PKI) and certificate authorities (CA) configured for the organization, without a signed-in user. | Allows the application to read  and write certificate-based authentication configuration such as all public key infrastructures (PKI) and certificate authorities (CA) configured for the organization, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### PullPrintPrinter.FullControl.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | ef6b83cd-f762-47ff-97d7-6f6f2d0486ea |
+| DisplayText | - | Create, read, update and delete pull-print printers and manage member printers |
+| Description | - | Allows the application to create, read, update and delete pull-print printers and manage member printers on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### PullPrintPrinter.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f369d3b8-fe98-4772-85e1-b23e7cf41982 | deac7994-79bc-44c9-8828-01c1a9a96618 |
+| DisplayText | Read pull-print printers | Read pull-print printers |
+| Description | Allows the application to read pull-print printers without a signed-in user.  | Allows the application to read pull-print printers on behalf of the signed-in user.  |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### PullPrintPrinter.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | c628c397-5d7f-4c93-ae0f-4680282fd6d5 |
+| DisplayText | - | Read and update pull-print printers |
+| Description | - | Allows the application to read and update pull-print printers on behalf of the signed-in user. Does not allow creating or deleting  pull-print printers or managing member printers. |
+| AdminConsentRequired | - | Yes |
 
 ---
 
