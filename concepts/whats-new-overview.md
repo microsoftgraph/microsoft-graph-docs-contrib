@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## August 2026: New and generally available
+
+### Security
+
+Updated the retirement date for the legacy Microsoft Graph [security alerts API](/graph/api/resources/alert) from August 31, 2026 to October 15, 2026.
+
 ## July 2026: New and generally available
 
 ### Device and app management | Cloud PC
