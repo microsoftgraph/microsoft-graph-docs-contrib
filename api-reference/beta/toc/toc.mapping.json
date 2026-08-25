@@ -131,7 +131,21 @@
             {
               "name": "Agent identity blueprint",
               "resources": [
+                "agentCommunicationConfiguration",
                 "inheritablePermission"
+              ],
+              "complexTypes": [
+                "agentBlueprintApiBasedEndpointConfigurationDetails",
+                "agentBlueprintBotBasedEndpointConfigurationDetails",
+                "agentConversationConfiguration",
+                "agentEndpointConfiguration",
+                "agentTeamworkConfiguration"
+              ]
+            },
+            {
+              "name": "Agent identity",
+              "resources": [
+                "agentCommunicationConfiguration"
               ]
             }
           ]

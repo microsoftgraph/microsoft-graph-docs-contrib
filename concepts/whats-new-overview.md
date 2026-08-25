@@ -84,6 +84,7 @@ Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources
 
 ### Teamwork and communications | Messaging
 
+- Added the [agentCommunicationConfiguration](/graph/api/resources/agentcommunicationconfiguration?view=graph-rest-beta&preserve-view=true) resource type and related methods to configure how agents send and receive messages in Microsoft Teams. Define default communication settings on an [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true) and override them for a specific agent on [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true).
 - Added the [reorder sections](/graph/api/teamworksection-reorder?view=graph-rest-beta&preserve-view=true) and [reorder section items](/graph/api/teamworksectionitem-reorder?view=graph-rest-beta&preserve-view=true) actions. Use these actions to apply a complete custom order to a user's sections or to the items in a user-defined section.
 
 ## July 2026: New and generally available

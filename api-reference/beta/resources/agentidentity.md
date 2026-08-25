@@ -28,6 +28,10 @@ This resource is an open type that allows additional properties beyond those doc
 |[Get](../api/agentidentity-get.md)|[agentIdentity](../resources/agentidentity.md)|Read the properties and relationships of [agentIdentity](../resources/agentidentity.md) object.|
 |[Update](../api/agentidentity-update.md)|[agentIdentity](../resources/agentidentity.md)|Update the properties of an agentIdentity object.|
 |[Delete](../api/agentidentity-delete.md)|None|Delete an agentIdentity object.|
+|**Communication configuration**|||
+|[Get communicationConfiguration](../api/agentidentity-get-communicationconfiguration.md)|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|Get the effective communication configuration for this agent identity.|
+|[Update communicationConfiguration](../api/agentidentity-update-communicationconfiguration.md)|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|Update the communication configuration override for this agent identity.|
+|[reset](../api/agentcommunicationconfiguration-reset.md)|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|Reset the communication configuration override for this agent identity, restoring effective configuration resolution to the agent blueprint level.|
 |**App role assignments**|||
 |[List appRoleAssignedTo](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity.|
 |[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity is assigned.|
@@ -83,6 +87,7 @@ This resource is an open type that allows additional properties beyond those doc
 |:---|:---|:---|
 |appRoleAssignedTo|[appRoleAssignment](../resources/approleassignment.md) collection|App role assignments for this app or service, granted to users, groups, and other agent identities. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
 |appRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|App role assignment for another app or service, granted to this agent identity. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|communicationConfiguration|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|The effective communication configuration for this agent identity. Represents the agent identity-level override that resolves on top of the configuration inherited from the agent identity blueprint.|
 |createdObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects created by this agent identity. Read-only. Nullable. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
 |inheritedAppRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|Application role assignments that this agent identity inherits from its parent Agent Identity Blueprint service principal. Read-only. Nullable.|
 |inheritedOauth2PermissionGrants|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Delegated permission grants that this agent identity inherits from its parent Agent Identity Blueprint service principal. Read-only. Nullable.|
@@ -122,4 +127,3 @@ The following JSON representation shows the resource type. Only a subset of all 
   ]
 }
 ```
-
