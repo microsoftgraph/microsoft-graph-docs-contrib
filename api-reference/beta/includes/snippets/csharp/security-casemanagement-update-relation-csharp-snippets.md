@@ -9,15 +9,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Models.Security.CaseManagement;
 
-var requestBody = new Relation
+var requestBody = new IncidentRelation
 {
+	OdataType = "#microsoft.graph.security.caseManagement.incidentRelation",
 	RelatedResourceId = "987654321",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"displayName" , "Related incident"
-		},
-	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

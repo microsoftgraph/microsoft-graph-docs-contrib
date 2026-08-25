@@ -98,7 +98,6 @@ POST https://graph.microsoft.com/v1.0/directory/recovery/jobs/3f4a6b60-7c1e-4e7c
 
 ---
 
-
 ### Response
 
 The following example shows the response.

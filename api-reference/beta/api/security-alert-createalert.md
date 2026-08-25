@@ -65,6 +65,7 @@ If successful, this action returns a `201 Created` response code and an [alert](
 #### Request
 
 The following example shows a request that creates an alert and links it to incident 42.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "alert_createalert_linked"
@@ -95,6 +96,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/alert-createalert-linked-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -137,6 +144,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request that creates an alert without specifying an incident, causing the backend to create a new incident.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "alert_createalert_new_incident"
@@ -171,6 +179,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/alert-createalert-new-incident-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

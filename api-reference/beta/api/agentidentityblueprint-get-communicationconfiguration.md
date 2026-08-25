@@ -60,6 +60,7 @@ If successful, this method returns a `200 OK` response code and an [agentCommuni
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agentcommunicationconfiguration_blueprint"
@@ -67,6 +68,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/applications/2a665ec0-9d8b-43ed-9fa3-2b4c5d6e7f80/microsoft.graph.agentIdentityBlueprint/communicationConfiguration
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-agentcommunicationconfiguration-blueprint-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -215,7 +215,7 @@ Content-Type: application/json
     }
 }
 ```
-If successful, these requests return a `204 No Content` response.
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-authenticationbehaviors-coopenforcement-true-option2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -318,7 +318,7 @@ Content-Type: application/json
     }
 }
 ```
-If successful, these requests return a `204 No Content` response. A COOP Report-Only header might still be present. After the application or owning platform is remediated, set the property to `true` for controlled validation or reset it to `null` to use the service default.
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-authenticationbehaviors-coopenforcement-false-option2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -421,7 +421,7 @@ Content-Type: application/json
     }
 }
 ```
-If successful, these requests return a `204 No Content` response. To confirm the reset state, read the application with `$select=id,appId,authenticationBehaviors`. If the application has no other explicit authentication behavior, **authenticationBehaviors** is `null`. If another authentication behavior is configured, the complex object remains present and **coopEnforcement** is omitted.
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-authenticationbehaviors-coopenforcement-null-option2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

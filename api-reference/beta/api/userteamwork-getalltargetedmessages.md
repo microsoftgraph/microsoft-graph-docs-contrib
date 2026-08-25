@@ -114,6 +114,10 @@ GET https://graph.microsoft.com/beta/users/f47b5f54-6968-4706-a522-31e842b12345/
 [!INCLUDE [sample-code](../includes/snippets/php/userteamwork-getalltargetedmessages-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/userteamwork-getalltargetedmessages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/userteamwork-getalltargetedmessages-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -263,6 +267,10 @@ GET https://graph.microsoft.com/beta/users/f47b5f54-6968-4706-a522-31e842b12345/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/userteamwork-getalltargetedmessages-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/userteamwork-getalltargetedmessages-filter-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

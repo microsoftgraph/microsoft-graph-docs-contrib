@@ -11,9 +11,6 @@ from msgraph_beta.generated.models.security.case_management.incident_relation im
 request_body = IncidentRelation(
 	odata_type = "#microsoft.graph.security.caseManagement.incidentRelation",
 	related_resource_id = "987654321",
-	additional_data = {
-			"display_name" : "Related incident",
-	}
 )
 
 result = await graph_client.security.case_management.cases.by_case_id('case-id').relations.post(request_body)

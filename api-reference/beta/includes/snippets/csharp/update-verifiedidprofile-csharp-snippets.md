@@ -8,56 +8,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new VerifiedIdProfile
 {
 	VerifiedIdProfileConfiguration = new VerifiedIdProfileConfiguration
 	{
-		AdditionalData = new Dictionary<string, object>
+		MethodType = VerifiedIdMethodType.TenantCustomCredential,
+		ManifestUrl = "https://verifiedid.contoso.com/manifest",
+	},
+	MobileDriversLicenseConfiguration = new MobileDriversLicenseConfiguration
+	{
+		AcceptedRegions = new List<string>
 		{
-			{
-				"methodType" , "tenantCustomCredential"
-			},
-			{
-				"manifestUrl" , "https://verifiedid.contoso.com/manifest"
-			},
+			"region-code",
 		},
+		DocumentStandard = "document-standard",
+	},
+	SelfServiceIssuance = new VerifiedIdSelfServiceIssuance
+	{
+		IsEnabled = true,
+		IssuanceUrl = "https://verifiedid.contoso.com/issue",
 	},
 	VerifiedIdUsageConfigurations = new List<VerifiedIdUsageConfiguration>
 	{
 		new VerifiedIdUsageConfiguration
 		{
 			IsEnabledForTestOnly = false,
-			Purpose = VerifiedIdUsageConfigurationPurpose.Recovery,
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"mobileDriversLicenseConfiguration" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"acceptedRegions", new UntypedArray(new List<UntypedNode>
-					{
-						new UntypedString("region-code"),
-					})
-				},
-				{
-					"documentStandard", new UntypedString("document-standard")
-				},
-			})
-		},
-		{
-			"selfServiceIssuance" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"isEnabled", new UntypedBoolean(true)
-				},
-				{
-					"issuanceUrl", new UntypedString("https://verifiedid.contoso.com/issue")
-				},
-			})
+			Purpose = VerifiedIdUsageConfigurationPurpose.Verification,
 		},
 	},
 };
