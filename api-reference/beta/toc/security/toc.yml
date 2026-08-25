@@ -34,10 +34,12 @@ items:
       href: ../../api/security-alert-get.md
     - name: Update
       href: ../../api/security-alert-update.md
-    - name: Move alerts
-      href: ../../api/security-alert-movealerts.md
+    - name: Create alert
+      href: ../../api/security-alert-createalert.md
     - name: Create comment
       href: ../../api/security-alert-post-comments.md
+    - name: Move alerts
+      href: ../../api/security-alert-movealerts.md
   - name: Alert evidence
     href: ../../resources/security-alertevidence.md
   - name: Incident
@@ -78,8 +80,12 @@ items:
     items:
     - name: AI agent evidence
       href: ../../resources/security-aiagentevidence.md
+    - name: Create alert input
+      href: ../../resources/security-createalertinput.md
     - name: DNS evidence
       href: ../../resources/security-dnsevidence.md
+    - name: Entity definition
+      href: ../../resources/security-entitydefinition.md
     - name: Entity definition input
       href: ../../resources/security-entitydefinitioninput.md
     - name: File hash evidence

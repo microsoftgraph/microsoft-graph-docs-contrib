@@ -44,6 +44,12 @@ items:
         href: ../../api/federatedidentitycredential-upsert.md
       - name: Delete federated identity credential
         href: ../../api/federatedidentitycredential-delete.md
+    - name: Communication configuration
+      items:
+      - name: Get communicationConfiguration
+        href: ../../api/agentidentityblueprint-get-communicationconfiguration.md
+      - name: Update communicationConfiguration
+        href: ../../api/agentidentityblueprint-update-communicationconfiguration.md
     - name: Deleted items
       items:
       - name: List
@@ -76,6 +82,24 @@ items:
         href: ../../api/agentidentityblueprint-setverifiedpublisher.md
       - name: Unset
         href: ../../api/agentidentityblueprint-unsetverifiedpublisher.md
+    - name: Agent communication configuration
+      items:
+      - name: Agent communication configuration
+        href: ../../resources/agentcommunicationconfiguration.md
+      - name: Agent identity blueprint
+        items:
+        - name: Get
+          href: ../../api/agentidentityblueprint-get-communicationconfiguration.md
+        - name: Update
+          href: ../../api/agentidentityblueprint-update-communicationconfiguration.md
+      - name: Agent identity
+        items:
+        - name: Get
+          href: ../../api/agentidentity-get-communicationconfiguration.md
+        - name: Update
+          href: ../../api/agentidentity-update-communicationconfiguration.md
+        - name: reset
+          href: ../../api/agentcommunicationconfiguration-reset.md
     - name: Inheritable permission
       items:
       - name: Inheritable permission
@@ -90,6 +114,18 @@ items:
         href: ../../api/inheritablepermission-update.md
       - name: Delete
         href: ../../api/agentidentityblueprint-delete-inheritablepermissions.md
+    - name: Complex types
+      items:
+      - name: Agent blueprint API based endpoint configuration details
+        href: ../../resources/agentblueprintapibasedendpointconfigurationdetails.md
+      - name: Agent blueprint bot based endpoint configuration details
+        href: ../../resources/agentblueprintbotbasedendpointconfigurationdetails.md
+      - name: Agent conversation configuration
+        href: ../../resources/agentconversationconfiguration.md
+      - name: Agent endpoint configuration
+        href: ../../resources/agentendpointconfiguration.md
+      - name: Agent teamwork configuration
+        href: ../../resources/agentteamworkconfiguration.md
   - name: Agent identity blueprint principal
     items:
     - name: Agent identity blueprint principal
@@ -172,6 +208,14 @@ items:
       href: ../../api/agentidentity-update.md
     - name: Delete
       href: ../../api/agentidentity-delete.md
+    - name: Communication configuration
+      items:
+      - name: Get communicationConfiguration
+        href: ../../api/agentidentity-get-communicationconfiguration.md
+      - name: Update communicationConfiguration
+        href: ../../api/agentidentity-update-communicationconfiguration.md
+      - name: reset
+        href: ../../api/agentcommunicationconfiguration-reset.md
     - name: App role assignments
       items:
       - name: List appRoleAssignedTo
@@ -228,6 +272,24 @@ items:
         href: ../../api/agentidentity-post-sponsors.md
       - name: Remove sponsors
         href: ../../api/agentidentity-delete-sponsors.md
+    - name: Agent communication configuration
+      items:
+      - name: Agent communication configuration
+        href: ../../resources/agentcommunicationconfiguration.md
+      - name: Agent identity blueprint
+        items:
+        - name: Get
+          href: ../../api/agentidentityblueprint-get-communicationconfiguration.md
+        - name: Update
+          href: ../../api/agentidentityblueprint-update-communicationconfiguration.md
+      - name: Agent identity
+        items:
+        - name: Get
+          href: ../../api/agentidentity-get-communicationconfiguration.md
+        - name: Update
+          href: ../../api/agentidentity-update-communicationconfiguration.md
+        - name: reset
+          href: ../../api/agentcommunicationconfiguration-reset.md
 - name: Agent registry (preview)
   items:
   - name: Agent registry
