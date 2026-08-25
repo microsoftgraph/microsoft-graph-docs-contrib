@@ -6206,6 +6206,22 @@ Possible values for user account types (group membership), per Windows definitio
 |applyNotSupported|
 |unknownFutureValue|
 
+### agentEndpointConfigurationType values
+
+|Member|
+|:---|
+|apiBased|
+|botBased|
+|unknownFutureValue|
+
+### agentMessageNotificationMode values
+
+|Member|
+|:---|
+|atMentionedMessagesOnly|
+|allMessages|
+|unknownFutureValue|
+
 ### mlClassificationMatchTolerance values
 
 |Member|

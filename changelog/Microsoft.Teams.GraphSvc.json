@@ -3,6 +3,136 @@
     {
       "ChangeList": [
         {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "agentEndpointConfigurationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentEndpointConfigurationType** enumeration type.",
+          "Target": "agentEndpointConfigurationType"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "agentMessageNotificationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentMessageNotificationMode** enumeration type.",
+          "Target": "agentMessageNotificationMode"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentBlueprintApiBasedEndpointConfigurationDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentBlueprintApiBasedEndpointConfigurationDetails](https://learn.microsoft.com/en-us/graph/api/resources/agentblueprintapibasedendpointconfigurationdetails?view=graph-rest-beta) resource.",
+          "Target": "agentBlueprintApiBasedEndpointConfigurationDetails"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentBlueprintBotBasedEndpointConfigurationDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentBlueprintBotBasedEndpointConfigurationDetails](https://learn.microsoft.com/en-us/graph/api/resources/agentblueprintbotbasedendpointconfigurationdetails?view=graph-rest-beta) resource.",
+          "Target": "agentBlueprintBotBasedEndpointConfigurationDetails"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentConversationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentConversationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/agentconversationconfiguration?view=graph-rest-beta) resource.",
+          "Target": "agentConversationConfiguration"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentEndpointConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentEndpointConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/agentendpointconfiguration?view=graph-rest-beta) resource.",
+          "Target": "agentEndpointConfiguration"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentTeamworkConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentTeamworkConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/agentteamworkconfiguration?view=graph-rest-beta) resource.",
+          "Target": "agentTeamworkConfiguration"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentCommunicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentCommunicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/agentcommunicationconfiguration?view=graph-rest-beta) resource.",
+          "Target": "agentCommunicationConfiguration"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "communicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **communicationConfiguration** relationship to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "communicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **communicationConfiguration** relationship to the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprint?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprint"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Method",
+          "ChangedApiName": "reset",
+          "ChangeType": "Addition",
+          "Description": "Added the [reset](https://learn.microsoft.com/en-us/graph/api/agentcommunicationconfiguration-reset?view=graph-rest-beta) method to the [agentCommunicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/agentcommunicationconfiguration?view=graph-rest-beta) resource.",
+          "Target": "agentCommunicationConfiguration"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Method",
+          "ChangedApiName": "get communicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [get communicationConfiguration](https://learn.microsoft.com/en-us/graph/api/agentidentity-get-communicationconfiguration?view=graph-rest-beta) method to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Method",
+          "ChangedApiName": "update communicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [update communicationConfiguration](https://learn.microsoft.com/en-us/graph/api/agentidentity-update-communicationconfiguration?view=graph-rest-beta) method to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Method",
+          "ChangedApiName": "get communicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [get communicationConfiguration](https://learn.microsoft.com/en-us/graph/api/agentidentityblueprint-get-communicationconfiguration?view=graph-rest-beta) method to the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprint?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprint"
+        },
+        {
+          "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+          "ApiChange": "Method",
+          "ChangedApiName": "update communicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [update communicationConfiguration](https://learn.microsoft.com/en-us/graph/api/agentidentityblueprint-update-communicationconfiguration?view=graph-rest-beta) method to the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprint?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprint"
+        }
+      ],
+      "Id": "1c84438a-5a7f-4b92-a99d-430e2780a1d7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-24T00:00:00.0000000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cad22815-dad6-4a0e-bc40-88a1b4002d0f",
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessageCitation",
