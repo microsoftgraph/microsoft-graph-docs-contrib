@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0wOC0yNl
 
 ---
 
-
 ### Response
 
 The following example shows the response.

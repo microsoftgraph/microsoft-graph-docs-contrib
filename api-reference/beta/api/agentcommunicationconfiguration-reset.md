@@ -56,6 +56,7 @@ If successful, this action returns a `200 OK` response code and an [agentCommuni
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentcommunicationconfiguration_reset"
@@ -63,6 +64,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentity/1f554dbf-8c7a-42dc-8f92-1a3b4c5d6e7f/communicationConfiguration/reset
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/agentcommunicationconfiguration-reset-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

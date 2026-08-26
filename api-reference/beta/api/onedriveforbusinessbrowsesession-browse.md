@@ -306,6 +306,7 @@ When the browse session targets a single site that contains a single document li
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessbrowsesessionthis.browse.optimized"
@@ -319,6 +320,12 @@ Content-Type: application/json
   "optimizedBrowse": true
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessbrowsesessionthisbrowseoptimized-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -368,6 +375,7 @@ The following example uses the optimized browse flow together with a **filter** 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessbrowsesessionthis.browse.optimizedfilter"
@@ -382,6 +390,12 @@ Content-Type: application/json
   "filter": "(name -contains 'Folder')"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessbrowsesessionthisbrowseoptimizedfilter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

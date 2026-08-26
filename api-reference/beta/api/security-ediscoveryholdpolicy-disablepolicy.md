@@ -87,6 +87,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/c2940e86-57
 [!INCLUDE [sample-code](../includes/snippets/php/ediscoveryholdpolicythisdisablepolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoveryholdpolicythisdisablepolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/ediscoveryholdpolicythisdisablepolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

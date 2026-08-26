@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/reports/identityAnalytics/groups
 [!INCLUDE [sample-code](../includes/snippets/php/list-groupanalytics-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-groupanalytics-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-groupanalytics-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -187,6 +191,10 @@ GET https://graph.microsoft.com/beta/reports/identityAnalytics/groups?$filter=is
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-groupanalytics-filter-guests-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-groupanalytics-filter-guests-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

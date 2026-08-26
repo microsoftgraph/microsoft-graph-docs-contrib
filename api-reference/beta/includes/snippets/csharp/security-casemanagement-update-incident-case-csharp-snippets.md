@@ -17,7 +17,6 @@ var requestBody = new IncidentCase
 	Classification = IncidentClassification.TruePositive,
 	Determination = IncidentDetermination.Phishing,
 	Severity = IncidentSeverity.High,
-	Summary = "Credential phishing campaign affecting multiple users.",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

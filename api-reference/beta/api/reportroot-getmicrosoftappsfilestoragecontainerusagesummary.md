@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/reports/microsoftAppsFileStorageContainerUs
 [!INCLUDE [sample-code](../includes/snippets/php/get-microsoftappsfilestoragecontainerusagesummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-microsoftappsfilestoragecontainerusagesummary-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-microsoftappsfilestoragecontainerusagesummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -154,6 +158,10 @@ GET https://graph.microsoft.com/beta/reports/microsoftAppsFileStorageContainerUs
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-microsoftappsfilestoragecontainerusagesummary-with-geo-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-microsoftappsfilestoragecontainerusagesummary-with-geo-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -232,6 +240,10 @@ GET https://graph.microsoft.com/beta/reports/microsoftAppsFileStorageContainerUs
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-microsoftappsfilestoragecontainerusagesummary-with-apps-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-microsoftappsfilestoragecontainerusagesummary-with-apps-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

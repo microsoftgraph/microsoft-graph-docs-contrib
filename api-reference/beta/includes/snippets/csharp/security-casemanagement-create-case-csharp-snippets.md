@@ -22,10 +22,35 @@ var requestBody = new GenericCase
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"customerImpact" , new CustomFieldStringValue
+				"Customer impact" , new CustomFieldStringValue
 				{
 					OdataType = "#microsoft.graph.security.caseManagement.customFieldStringValue",
 					Value = "Executive mailbox affected",
+				}
+			},
+			{
+				"Affected users" , new CustomFieldNumberValue
+				{
+					OdataType = "#microsoft.graph.security.caseManagement.customFieldNumberValue",
+					Value = 12,
+				}
+			},
+			{
+				"Review date" , new CustomFieldDateTimeValue
+				{
+					OdataType = "#microsoft.graph.security.caseManagement.customFieldDateTimeValue",
+					ValueDateTime = DateTimeOffset.Parse("2026-06-15T09:00:00Z"),
+				}
+			},
+			{
+				"Affected services" , new CustomFieldOptionsValue
+				{
+					OdataType = "#microsoft.graph.security.caseManagement.customFieldOptionsValue",
+					Values = new List<string>
+					{
+						"Exchange Online",
+						"Microsoft Teams",
+					},
 				}
 			},
 		},
