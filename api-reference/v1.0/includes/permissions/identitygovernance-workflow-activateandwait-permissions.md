@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|LifecycleWorkflows-Workflow.Activate|LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|LifecycleWorkflows-Workflow.Activate|LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All|
+

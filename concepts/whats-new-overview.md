@@ -59,6 +59,10 @@ Added support for managing Microsoft 365 cross-tenant capabilities in cross-tena
 
 Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources/mailboxfolder) resource type in v1.0. Use this property to identify folders created by Outlook by using a locale-independent name.
 
+### Security
+
+Updated the retirement date for the legacy Microsoft Graph [security alerts API](/graph/api/resources/alert) from August 31, 2026 to October 15, 2026.
+
 ### Teamwork and communications | Calls and online meetings
 
 - Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) and [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts) methods to document a service-update issue that can cause paginated requests to return an empty collection followed by duplicate items.

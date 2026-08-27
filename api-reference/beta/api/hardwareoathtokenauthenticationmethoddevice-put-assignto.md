@@ -65,7 +65,7 @@ You can specify the following properties when creating a **user**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|odata.id|String|A link to the user entity with using objectId as key. Example: "https://graph.microsoft-ppe.com/beta/users/{usersId}"|
+|odata.id|String|A link to the user entity with using objectId as key. Example: `https://graph.microsoft.com/beta/users/{usersId}`|
 
 ## Response
 
