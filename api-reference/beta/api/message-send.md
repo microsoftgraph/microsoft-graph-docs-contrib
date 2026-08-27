@@ -56,7 +56,7 @@ If successful, this method returns `202 Accepted` response code. It doesn't retu
 ## Examples
 ### Example 1: Send an existing draft message
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 
