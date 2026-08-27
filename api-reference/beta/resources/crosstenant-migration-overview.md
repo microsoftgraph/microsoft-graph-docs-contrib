@@ -43,7 +43,10 @@ Organizations often need to consolidate or reorganize Microsoft 365 environments
 
 ## Permissions
 
-To use this API, the calling app must have appropriate Microsoft Graph permissions. Typically, **Tenant administrator** privileges are required.
+Permissions vary by operation. For the least-privileged permissions and supported permission types (delegated vs. application) for each operation, see the **Permissions** section of the corresponding API operation.
+
+> [!NOTE]
+> For delegated access, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference) or a custom role that grants the permissions required for the operation. For the exact permissions and supported roles, see the **Permissions** section of each API operation.
 
 ## Related content
 
