@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "2859715f-1970-42dd-8668-05c4cd054cc9",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/mailboxfolder-delete-items?view=graph-rest-1.0) method to the [mailboxItem](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItem?view=graph-rest-1.0) resource.",
+          "Target": "mailboxItem"
+        }
+      ],
+      "Id": "2859715f-1970-42dd-8668-05c4cd054cc9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-27T19:05:45.2261413Z",
+      "WorkloadArea": "Mailbox import and export",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "eb857460-af07-4472-bbbf-44066948647d",
           "ApiChange": "Property",
           "ChangedApiName": "wellKnownName",
