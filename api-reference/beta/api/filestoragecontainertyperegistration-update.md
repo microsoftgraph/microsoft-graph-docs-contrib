@@ -20,6 +20,7 @@ Update the properties of a [fileStorageContainerTypeRegistration](../resources/f
 > * [The settings in the fileStorageContainerType](../resources/filestoragecontainertypesettings.md) control which [settings](../resources/filestoragecontainertyperegistrationsettings.md) can be updated.
 > * The updated settings change the behavior of new **fileStorageContainer** objects, but existing containers might require their [settings](../resources/filestoragecontainer.md) to be updated directly. Some settings can't be updated at all, for example, changing the storage capability. 
 > * Agent-related settings have additional restrictions when overriding them in a consuming tenant. An override for `agent.chatEmbedAllowedHosts` must be a subset of the value defined in the [owning container type](../resources/filestoragecontainertype.md). For example, if the owning container type sets `agent.chatEmbedAllowedHosts` to `["https://contoso.com", "https://localhost:5000"]`, an override can be either `["https://contoso.com"]`, `["https://localhost:5000"]`, or even `[]`. However, the setting cannot be overridden to `["https://fabrikam.com"]`. Learn more about [SharePoint Embedded agent](/sharepoint/dev/embedded/development/declarative-agent/spe-da-adv)
+> * Updated settings and permission grants may take up to one hour to propagate.
 
 ETag is used for optimistic concurrency control. It must match the value from [Create](./filestorage-post-containertyperegistrations.md), [Get](./filestoragecontainertyperegistration-get.md) or the previous Update.
 
@@ -36,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainertyperegistration-update-permissions.md)]
 
->**Note:**
+> [!NOTE]
 > * When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
 > * If the `FileStorageContainerTypeReg.Selected` permission is used, changes are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application that makes the call.
 
@@ -64,7 +65,7 @@ PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeR
 |Property|Type|Description|
 |:---|:---|:---|
 |settings|[fileStorageContainerTypeRegistrationSettings](../resources/filestoragecontainertyperegistrationsettings.md)|fileStorageContainerTypeRegistration settings. The subset that can be updated depends on the overridable settings in the [fileStorageContainerTypeSettings](../resources/filestoragecontainertypesettings.md). Optional.|
-|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/fileStorageContainerTypeAppPermissionGrant.md) collection|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
+|applicationPermissionGrants|[fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) collection|define the access privileges of applications on containers of a specific fileStorageContainerType. Optional.|
 |etag|String|Used for optimistic concurrency control. Must match the value returned from a [Create](filestorage-post-containertyperegistrations.md) or [Get](filestoragecontainertyperegistration-get.md) request. Required.|
 
 

@@ -14,10 +14,6 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new IncidentRelation();
 $requestBody->setOdataType('#microsoft.graph.security.caseManagement.incidentRelation');
 $requestBody->setRelatedResourceId('987654321');
-$additionalData = [
-	'displayName' => 'Related incident',
-];
-$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->security()->caseManagement()->cases()->byCaseId('case-id')->relations()->post($requestBody)->wait();
 

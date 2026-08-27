@@ -66,6 +66,7 @@ The following example shows a request to retrieve changes that failed to apply d
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "recoveryjobthis.getfailedchanges.example1"
@@ -74,6 +75,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryJobs/3f4a6b60-7c1e-4e7c-9c7b-13f8d44b20c4/microsoft.graph.entraRecoveryServices.getFailedChanges
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/recoveryjobthisgetfailedchangesexample1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 
@@ -150,6 +157,7 @@ The following example shows a request using the `$top` query parameter to limit 
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "recoveryjobthis.getfailedchanges.example2"
@@ -158,6 +166,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryJobs/3f4a6b60-7c1e-4e7c-9c7b-13f8d44b20c4/microsoft.graph.entraRecoveryServices.getFailedChanges?$top=1
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/recoveryjobthisgetfailedchangesexample2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

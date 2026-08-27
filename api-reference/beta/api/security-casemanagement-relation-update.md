@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.caseManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [relation](../resources/security-casemanagement-relation.md) object.
+Update the properties of a concrete [relation](../resources/security-casemanagement-relation.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -47,16 +47,16 @@ PATCH /security/caseManagement/cases/{caseId}/relations/{relationId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-Supply a JSON representation of the resource. For polymorphic resources, include `@odata.type` to identify the derived type.
+Supply a JSON representation of the resource. Include `@odata.type` in every request body to identify the concrete relation type. The value must match the existing relation type.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the resource.|
+|@odata.type|String|The OData type of the concrete relation. The supported values are `#microsoft.graph.security.caseManagement.incidentRelation`, `#microsoft.graph.security.caseManagement.recommendationRelation`, and `#microsoft.graph.security.caseManagement.workspaceIndicatorRelation`. Required.|
 |relatedResourceId|String|The identifier of the related external resource.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.caseManagement.relation](../resources/security-casemanagement-relation.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -74,8 +74,8 @@ PATCH https://graph.microsoft.com/beta/security/caseManagement/cases/{caseId}/re
 Content-Type: application/json
 
 {
-  "relatedResourceId": "987654321",
-  "displayName": "Related incident"
+  "@odata.type": "#microsoft.graph.security.caseManagement.incidentRelation",
+  "relatedResourceId": "987654321"
 }
 ```
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-update-relation-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-update-relation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-update-relation-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -109,23 +113,9 @@ Content-Type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.caseManagement.relation"
+  "blockType": "response"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.caseManagement.incidentRelation",
-  "id": "790478d8-6402-8452-4584-5d32e6acf31a",
-  "createdDateTime": "2026-05-20T11:12:28Z",
-  "createdBy": "user@contoso.com",
-  "lastModifiedDateTime": "2026-05-20T11:18:45Z",
-  "lastModifiedBy": "user@contoso.com",
-  "relatedResourceId": "987654321",
-  "displayName": "Related incident"
-}
+HTTP/1.1 204 No Content
 ```

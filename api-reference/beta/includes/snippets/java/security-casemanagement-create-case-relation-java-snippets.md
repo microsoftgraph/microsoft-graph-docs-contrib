@@ -11,9 +11,6 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 com.microsoft.graph.beta.models.security.casemanagement.IncidentRelation relation = new com.microsoft.graph.beta.models.security.casemanagement.IncidentRelation();
 relation.setOdataType("#microsoft.graph.security.caseManagement.incidentRelation");
 relation.setRelatedResourceId("987654321");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("displayName", "Related incident");
-relation.setAdditionalData(additionalData);
 com.microsoft.graph.models.security.casemanagement.Relation result = graphClient.security().caseManagement().cases().byCaseId("{case-id}").relations().post(relation);
 
 

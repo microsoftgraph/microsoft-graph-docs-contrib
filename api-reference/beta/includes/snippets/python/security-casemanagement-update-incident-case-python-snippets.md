@@ -18,7 +18,6 @@ request_body = IncidentCase(
 	classification = IncidentClassification.TruePositive,
 	determination = IncidentDetermination.Phishing,
 	severity = IncidentSeverity.High,
-	summary = "Credential phishing campaign affecting multiple users.",
 )
 
 result = await graph_client.security.case_management.cases.by_case_id('case-id').patch(request_body)

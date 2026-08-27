@@ -143,6 +143,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7')?
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-csv-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getsharepointapiusage-csv-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -205,6 +209,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(date=2026-02-
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-json-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getsharepointapiusage-json-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -298,6 +306,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7',a
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-filter-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getsharepointapiusage-filter-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -356,6 +368,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7')?
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-json-format-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -449,6 +465,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7',a
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-json-filter-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getsharepointapiusage-json-filter-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -533,6 +553,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7',r
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-throttling-csv-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getsharepointapiusage-throttling-csv-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -593,6 +617,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7',r
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-throttling-json-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -686,6 +714,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7',r
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-throttling-filter-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getsharepointapiusage-throttling-filter-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -745,6 +777,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(date=2026-02-
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-nodata-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getsharepointapiusage-nodata-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -870,6 +906,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D90')
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-error-invalidperiod-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getsharepointapiusage-error-invalidperiod-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -932,6 +972,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7')
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-error-notonboarded-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getsharepointapiusage-error-notonboarded-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -992,6 +1036,10 @@ GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7',r
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getsharepointapiusage-error-reporttypenotenabled-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

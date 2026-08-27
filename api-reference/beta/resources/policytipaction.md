@@ -23,6 +23,8 @@ Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | action | microsoft.graph.security.dlpAction | The type of DLP action. Inherited from [dlpActionInfo](../resources/dlpactioninfo.md). |
+| complianceUrl | String | A URL that points users to additional compliance guidance or remediation details for the policy tip. |
+| matchedConditionsDescription | String | A user-friendly summary of the matched DLP conditions that triggered the policy tip. |
 | policyTip | String | The text of the policy tip that explains what triggered the DLP policy. Developers can display this information to users in the app. |
 
 ## Relationships
@@ -42,6 +44,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.policyTipAction",
   "action": "policyTip",
+  "complianceUrl": "String",
+  "matchedConditionsDescription": "String",
   "policyTip": "String"
 }
 ```

@@ -49,20 +49,22 @@ PATCH /security/caseManagement/cases/{caseId}/tasks/{taskId}
 
 Supply a JSON representation of the resource. For polymorphic resources, include `@odata.type` to identify the derived type.
 
+You can update all client-managed task properties. The **id**, **createdBy**, **createdDateTime**, **lastModifiedBy**, and **lastModifiedDateTime** properties are server managed and can't be updated.
+
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the resource.|
-|status|[microsoft.graph.security.caseManagement.taskStatus](../resources/security-casemanagement-task.md#taskstatus-values)|The lifecycle status of the resource.|
-|description|String|The description of the resource.|
 |assignedTo|String|The user assigned to the resource.|
+|category|[microsoft.graph.security.caseManagement.caseTaskCategory](../resources/security-casemanagement-task.md#casetaskcategory-values)|The functional category of the task.|
 |closingNotes|String|Notes recorded when the resource is completed or closed.|
+|description|String|The description of the resource.|
+|displayName|String|The display name of the resource.|
 |dueDateTime|DateTimeOffset|The target completion date and time.|
 |priority|[microsoft.graph.security.caseManagement.caseTaskPriority](../resources/security-casemanagement-task.md#casetaskpriority-values)|The priority assigned to the resource.|
-|category|[microsoft.graph.security.caseManagement.caseTaskCategory](../resources/security-casemanagement-task.md#casetaskcategory-values)|The functional category of the task.|
+|status|[microsoft.graph.security.caseManagement.taskStatus](../resources/security-casemanagement-task.md#taskstatus-values)|The lifecycle status of the resource.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.caseManagement.task](../resources/security-casemanagement-task.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -112,6 +114,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-update-task-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-update-task-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-update-task-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -122,29 +128,9 @@ Content-Type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.caseManagement.task"
+  "blockType": "response"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.caseManagement.task",
-  "id": "1601f158-fa4e-ceaa-7789-685b5e916d72",
-  "createdDateTime": "2026-05-20T11:12:28Z",
-  "createdBy": "user@contoso.com",
-  "lastModifiedDateTime": "2026-05-20T11:18:45Z",
-  "lastModifiedBy": "user@contoso.com",
-  "displayName": "Validate affected devices",
-  "status": "new",
-  "description": "Review affected devices and collect evidence",
-  "assignedTo": "user@contoso.com",
-  "closingNotes": "Investigation completed and documented",
-  "dueDateTime": "2026-06-29T17:54:43Z",
-  "priority": "high",
-  "category": "investigate"
-}
+HTTP/1.1 204 No Content
 ```

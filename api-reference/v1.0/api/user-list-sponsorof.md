@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/users/025e5e3e-e5b7-4eb4-ba1f-4e5b0579f1a2/
 [!INCLUDE [sample-code](../includes/snippets/php/get-sponsorof-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-sponsorof-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-sponsorof-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -164,6 +168,10 @@ ConsistencyLevel: eventual
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-sponsorof-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-sponsorof-filter-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

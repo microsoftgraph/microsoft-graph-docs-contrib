@@ -2,7 +2,7 @@
 title: "workflowSubject resource type"
 description: "Represents an abstract base type for subjects that can be activated in identity governance lifecycle workflows."
 author: "masonwolff"
-ms.date: 05/26/2026
+ms.date: 07/22/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
@@ -22,7 +22,9 @@ Represents an abstract base type for subjects that can be activated in identity 
 - **targetSubject** property of [customTaskExtensionCalloutData](../resources/identitygovernance-customtaskextensioncalloutdata.md)
 - **targetSubject** property of [customTaskExtensionResponseData](../resources/identitygovernance-customtaskextensionresponsedata.md)
 
-This is an abstract type. It cannot be instantiated directly. Use the derived type [provisioningObjectWorkflowSubject](../resources/identitygovernance-provisioningobjectworkflowsubject.md) to create a workflow subject for provisioning scenarios.
+This is an abstract type. It cannot be instantiated directly. Use one of the following derived types:
+- [directoryObjectWorkflowSubject](../resources/identitygovernance-directoryobjectworkflowsubject.md) to represent an existing directory object, such as a user, as the workflow subject.
+- [provisioningObjectWorkflowSubject](../resources/identitygovernance-provisioningobjectworkflowsubject.md) to represent a provisioning object as the workflow subject.
 
 ## Properties
 

@@ -38,7 +38,7 @@ GET /security/caseManagement/cases/{caseId}/tasks
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$select` OData query parameters. You can filter by the **assignedTo**, **category**, **closingNotes**, **createdBy**, **createdDateTime**, **description**, **displayName**, **dueDateTime**, **id**, **lastModifiedBy**, **lastModifiedDateTime**, **priority**, and **status** properties. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/security/caseManagement/cases/{caseId}/task
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-list-case-tasks-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-list-case-tasks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

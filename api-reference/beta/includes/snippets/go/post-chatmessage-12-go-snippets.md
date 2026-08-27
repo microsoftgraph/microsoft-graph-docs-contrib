@@ -19,8 +19,8 @@ requestBody := graphmodels.NewChatMessage()
 subject := "Announcement Subheading"
 requestBody.SetSubject(&subject) 
 body := graphmodels.NewChatMessageBody()
-contentType := graphmodels.TEXT_BODYTYPE 
-body.SetContentType(&contentType) 
+messageBodyContentType := graphmodels.TEXT_CHATMESSAGEBODYCONTENTTYPE 
+body.SetMessageBodyContentType(&messageBodyContentType) 
 content := "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text"
 body.SetContent(&content) 
 requestBody.SetBody(body)

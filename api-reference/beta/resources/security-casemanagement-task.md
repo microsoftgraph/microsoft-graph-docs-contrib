@@ -25,25 +25,26 @@ This resource inherits from [caseManagementEntity](../resources/security-caseman
 |[List](../api/security-casemanagement-case-list-tasks.md)|[microsoft.graph.security.caseManagement.task](../resources/security-casemanagement-task.md) collection|Get a list of tasks for a case.|
 |[Create](../api/security-casemanagement-case-post-tasks.md)|[microsoft.graph.security.caseManagement.task](../resources/security-casemanagement-task.md)|Create a task for a case.|
 |[Get](../api/security-casemanagement-task-get.md)|[microsoft.graph.security.caseManagement.task](../resources/security-casemanagement-task.md)|Read the properties and relationships of [microsoft.graph.security.caseManagement.task](../resources/security-casemanagement-task.md) object.|
-|[Update](../api/security-casemanagement-task-update.md)|[microsoft.graph.security.caseManagement.task](../resources/security-casemanagement-task.md)|Update the properties of a task object.|
+|[Update](../api/security-casemanagement-task-update.md)|None|Update all client-managed properties of a task.|
+|[Delete](../api/security-casemanagement-task-delete.md)|None|Delete a task from a case.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|String|The user assigned to the task.|
-|category|[microsoft.graph.security.caseManagement.caseTaskCategory](#casetaskcategory-values)|The functional category of the task.|
-|closingNotes|String|Notes recorded when the task is completed.|
-|createdBy|String|The user or service that created the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|createdDateTime|DateTimeOffset|The date and time when the resource was created. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|description|String|The description of the task.|
-|displayName|String|The title of the task.|
-|dueDateTime|DateTimeOffset|The target completion date and time for the task.|
-|id|String|The unique identifier for the resource. Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|String|The user or service that last modified the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
-|priority|[microsoft.graph.security.caseManagement.caseTaskPriority](#casetaskpriority-values)|The priority assigned to the task.|
-|status|[microsoft.graph.security.caseManagement.taskStatus](#taskstatus-values)|The lifecycle state of the task.|
+|assignedTo|String|The user assigned to the task. Supports `$filter`.|
+|category|[microsoft.graph.security.caseManagement.caseTaskCategory](#casetaskcategory-values)|The functional category of the task. Supports `$filter`.|
+|closingNotes|String|Notes recorded when the task is completed. Supports `$filter`.|
+|createdBy|String|The user or service that created the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter`.|
+|createdDateTime|DateTimeOffset|The date and time when the resource was created. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter`.|
+|description|String|The description of the task. Supports `$filter`.|
+|displayName|String|The title of the task. Supports `$filter`.|
+|dueDateTime|DateTimeOffset|The target completion date and time for the task. Supports `$filter`.|
+|id|String|The unique identifier for the resource. Inherited from [entity](../resources/entity.md). Supports `$filter`.|
+|lastModifiedBy|String|The user or service that last modified the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter`.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter`.|
+|priority|[microsoft.graph.security.caseManagement.caseTaskPriority](#casetaskpriority-values)|The priority assigned to the task. Supports `$filter`.|
+|status|[microsoft.graph.security.caseManagement.taskStatus](#taskstatus-values)|The lifecycle state of the task. Supports `$filter`.|
 
 ### caseTaskCategory values
 

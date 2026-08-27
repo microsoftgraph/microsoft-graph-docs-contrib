@@ -17,12 +17,25 @@ import (
 
 requestBody := graphmodels.NewVerifiedIdProfile()
 verifiedIdProfileConfiguration := graphmodels.NewVerifiedIdProfileConfiguration()
-additionalData := map[string]interface{}{
-	"methodType" : "tenantCustomCredential", 
-	"manifestUrl" : "https://verifiedid.contoso.com/manifest", 
-}
-verifiedIdProfileConfiguration.SetAdditionalData(additionalData)
+methodType := graphmodels.TENANTCUSTOMCREDENTIAL_VERIFIEDIDMETHODTYPE 
+verifiedIdProfileConfiguration.SetMethodType(&methodType) 
+manifestUrl := "https://verifiedid.contoso.com/manifest"
+verifiedIdProfileConfiguration.SetManifestUrl(&manifestUrl) 
 requestBody.SetVerifiedIdProfileConfiguration(verifiedIdProfileConfiguration)
+mobileDriversLicenseConfiguration := graphmodels.NewMobileDriversLicenseConfiguration()
+acceptedRegions := []string {
+	"region-code",
+}
+mobileDriversLicenseConfiguration.SetAcceptedRegions(acceptedRegions)
+documentStandard := "document-standard"
+mobileDriversLicenseConfiguration.SetDocumentStandard(&documentStandard) 
+requestBody.SetMobileDriversLicenseConfiguration(mobileDriversLicenseConfiguration)
+selfServiceIssuance := graphmodels.NewVerifiedIdSelfServiceIssuance()
+isEnabled := true
+selfServiceIssuance.SetIsEnabled(&isEnabled) 
+issuanceUrl := "https://verifiedid.contoso.com/issue"
+selfServiceIssuance.SetIssuanceUrl(&issuanceUrl) 
+requestBody.SetSelfServiceIssuance(selfServiceIssuance)
 
 
 verifiedIdUsageConfiguration := graphmodels.NewVerifiedIdUsageConfiguration()
@@ -35,23 +48,6 @@ verifiedIdUsageConfigurations := []graphmodels.VerifiedIdUsageConfigurationable 
 	verifiedIdUsageConfiguration,
 }
 requestBody.SetVerifiedIdUsageConfigurations(verifiedIdUsageConfigurations)
-additionalData := map[string]interface{}{
-mobileDriversLicenseConfiguration := graph.New()
-	acceptedRegions := []string {
-		"region-code",
-	}
-	mobileDriversLicenseConfiguration.SetAcceptedRegions(acceptedRegions)
-documentStandard := "document-standard"
-mobileDriversLicenseConfiguration.SetDocumentStandard(&documentStandard) 
-	requestBody.SetMobileDriversLicenseConfiguration(mobileDriversLicenseConfiguration)
-selfServiceIssuance := graph.New()
-	isEnabled := true
-selfServiceIssuance.SetIsEnabled(&isEnabled) 
-issuanceUrl := "https://verifiedid.contoso.com/issue"
-selfServiceIssuance.SetIssuanceUrl(&issuanceUrl) 
-	requestBody.SetSelfServiceIssuance(selfServiceIssuance)
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 profiles, err := graphClient.Identity().VerifiedId().Profiles().ByVerifiedIdProfileId("verifiedIdProfile-id").Patch(context.Background(), requestBody, nil)

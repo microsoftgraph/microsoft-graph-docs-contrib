@@ -2,7 +2,7 @@
 title: "List folders"
 description: "Get all the mailboxFolder objects in the specified mailbox, including any search folders."
 author: "cparker-msft"
-ms.date: 02/23/2026
+ms.date: 08/06/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -124,16 +124,18 @@ Content-length: 232
             "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "childFolderCount": 0,
             "totalItemCount": 2,
+            "wellKnownName": "archive",
             "type": "IPF.Note"
         },
         {
             "@odata.type": "#microsoft.graph.mailboxFolder",
             "id": "NJWt2LeVEAAAIBDQAAAA==",
-            "displayName": "Calendar",
+            "displayName": "Project Calendar",
             "parentFolderId": "NJWt2LeVEAAAIBCAAAAA==",
             "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "childFolderCount": 5,
             "totalItemCount": 6,
+            "wellKnownName": null,
             "type": "IPF.Appointment"
         }
     ],
@@ -143,7 +145,7 @@ Content-length: 232
 
 ### Example 2: List folders with query parameters
 
-The following example uses the `$filter`, `$select`, and `$top` query parameters. The `$filter` parameter refines the results and returns only folders of **type** `IPF.Appointment`. The `$select` parameter is specified to return only the **displayName** and **type** properties, and the `$top` parameter sets the page size of the result set to return the first five folders in the mailbox.
+The following example uses the `$filter`, `$select`, and `$top` query parameters. The `$filter` parameter refines the results and returns only folders of **type** `IPF.Appointment`. The `$select` parameter is specified to return only the **displayName**, **type**, and **wellKnownName** properties, and the `$top` parameter sets the page size of the result set to return the first five folders in the mailbox.
 
 #### Request
 
@@ -157,7 +159,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders?$filter=type eq 'IPF.Appointment'&$select=displayName,type&$top=5
+GET https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders?$filter=type eq 'IPF.Appointment'&$select=displayName,type,wellKnownName&$top=5
 ```
 
 # [C#](#tab/csharp)
@@ -173,7 +175,7 @@ GET https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-mailboxfolder-with-query-parameters-javascript-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -207,9 +209,10 @@ Content-length: 232
         {
             "@odata.type": "#microsoft.graph.mailboxFolder",
             "id": "NJWt2LeVEAAAIBDQAAAA==",
-            "displayName": "Calendar",
+            "displayName": "Project Calendar",
             "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
-            "type": "IPF.Appointment"
+            "type": "IPF.Appointment",
+            "wellKnownName": null
         }
     ]
 }

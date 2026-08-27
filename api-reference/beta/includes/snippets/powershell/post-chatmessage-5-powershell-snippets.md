@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	body = @{
-		contentType = "html"
+		messageBodyContentType = "html"
 		content = "Testing with file share link. <attachment id="668f7fa8-8129-4de7-b32b-fe1b442e6ef1"></attachment>"
 	}
 	attachments = @(

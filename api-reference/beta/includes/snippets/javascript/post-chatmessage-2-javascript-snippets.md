@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const chatMessage = {
   body: {
-    contentType: 'html',
+    messageBodyContentType: 'html',
     content: 'Hello World <at id=\"0\">Jane Smith</at>'
   },
   mentions: [

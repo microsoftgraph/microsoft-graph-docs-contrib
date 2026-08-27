@@ -25,9 +25,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainertyperegistration-post-applicationpermissiongrants-permissions.md)]
 
->**Note:**
+> [!NOTE]
 > * When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
 > * If the `FileStorageContainerTypeReg.Selected` permission is used, changes are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application that makes the call.
+> * Created permission grants may take up to one hour to propagate.
 
 ## HTTP request
 
@@ -54,8 +55,8 @@ You can specify the following properties when you create a **fileStorageContaine
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when you use application tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`. Optional.|
-|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](/sharepoint/dev/embedded/development/auth#container-type-application-permissions) when you use delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`. Optional.|
+|applicationPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](/sharepoint/dev/embedded/development/auth#grant-container-type-application-permissions) when you use application tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`. Optional.|
+|delegatedPermissions|fileStorageContainerTypeAppPermission collection|Allowed [permissions](/sharepoint/dev/embedded/development/auth#grant-container-type-application-permissions) when you use delegated tokens. The possible values are: `none`, `readContent`, `writeContent`, `manageContent`, `create`, `delete`, `read`, `write`, `enumeratePermissions`, `addPermissions`, `updatePermissions`, `deletePermissions`, `deleteOwnPermission`, `managePermissions`, `full`, `unknownFutureValue`. Optional.|
 
 ## Response
 

@@ -18,9 +18,24 @@ const _case = {
   assignedTo: 'john.doe@contoso.com',
   priority: 'high',
   customFields: {
-    customerImpact: {
+    'Customer impact': {
       '@odata.type': '#microsoft.graph.security.caseManagement.customFieldStringValue',
       value: 'Executive mailbox affected'
+    },
+    'Affected users': {
+      '@odata.type': '#microsoft.graph.security.caseManagement.customFieldNumberValue',
+      value: 12
+    },
+    'Review date': {
+      '@odata.type': '#microsoft.graph.security.caseManagement.customFieldDateTimeValue',
+      valueDateTime: '2026-06-15T09:00:00Z'
+    },
+    'Affected services': {
+      '@odata.type': '#microsoft.graph.security.caseManagement.customFieldOptionsValue',
+      values: [
+        'Exchange Online',
+        'Microsoft Teams'
+      ]
     }
   }
 };

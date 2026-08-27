@@ -38,7 +38,7 @@ GET /security/caseManagement/cases/{caseId}
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter. On the base case endpoint, `$select` can reference only properties declared on [case](../resources/security-casemanagement-case.md). Derived-only properties require either no `$select` or a casted endpoint, if supported. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/security/caseManagement/cases/{caseId}
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-get-case-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-get-case-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

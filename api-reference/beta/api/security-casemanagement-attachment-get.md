@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/security/caseManagement/cases/{caseId}/atta
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-get-attachment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-get-attachment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-get-attachment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -118,7 +122,7 @@ Content-Type: application/json
   "displayName": "Case MS-001 Attachment",
   "description": "Screenshot of suspicious sign-in activity",
   "fileSize": 1000,
-  "fileExtension": "jpeg",
+  "fileExtension": ".jpeg",
   "scanResult": "noThreatsFound",
   "origin": {
     "@odata.type": "microsoft.graph.security.caseManagement.attachmentOrigin",

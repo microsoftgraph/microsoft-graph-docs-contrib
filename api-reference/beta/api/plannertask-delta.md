@@ -215,7 +215,6 @@ Content-Type: application/json
       },
       "id": "aSOQ0mveu06bTSkfnJQay2QAIn_l",
       "version": "1-Task  @@@@@@@@@@@@@@@H",
-      "details@odata.context": "https://tasks.officeppe.com/taskApi/V3.0/$metadata#plans('-W4K7hIak0WlAwgJCn1sEWQABgjH')/tasks('aSOQ0mveu06bTSkfnJQay2QAIn_l')/details/$entity",
       "details": {
         "@odata.etag": "W/\"JzEtVGFza0RldGFpbHMgQEBAQEBAQEBAQEBAQEBARCc=\"",
         "description": "",
@@ -381,7 +380,6 @@ Content-Type: application/json
       },
       "id": "aSOQ0mveu06bTSkfnJQay2QAIn_l",
       "version": "1-Task  @@@@@@@@@@@@@@@H",
-      "details@odata.context": "https://tasks.officeppe.com/taskApi/V3.0/$metadata#plans('-W4K7hIak0WlAwgJCn1sEWQABgjH')/tasks('aSOQ0mveu06bTSkfnJQay2QAIn_l')/details/$entity",
       "details": {
         "@odata.etag": "W/\"JzEtVGFza0RldGFpbHMgQEBAQEBAQEBAQEBAQEBARCc=\"",
         "description": "",

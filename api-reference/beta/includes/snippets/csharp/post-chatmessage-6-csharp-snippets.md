@@ -13,7 +13,7 @@ var requestBody = new ChatMessage
 {
 	Body = new ChatMessageBody
 	{
-		ContentType = BodyType.Html,
+		MessageBodyContentType = ChatMessageBodyContentType.Html,
 		Content = "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">",
 	},
 	HostedContents = new List<ChatMessageHostedContent>

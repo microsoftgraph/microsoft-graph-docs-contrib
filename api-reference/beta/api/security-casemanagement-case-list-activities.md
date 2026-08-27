@@ -38,7 +38,13 @@ GET /security/caseManagement/cases/{caseId}/activities
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$select` OData query parameters. On the base collection, these query options can reference only properties declared on [activity](../resources/security-casemanagement-activity.md). To reference a property declared only on a derived type, cast the collection to the derived type first.
+
+For an [auditLog](../resources/security-casemanagement-auditlog.md) cast, you can filter by the **action**, **createdBy**, **createdDateTime**, **id**, **lastModifiedBy**, **lastModifiedDateTime**, and **modifiedProperties** properties. For example: `GET /security/caseManagement/cases/{caseId}/activities/microsoft.graph.security.caseManagement.auditLog?$filter=action eq 'update'`.
+
+For a [comment](../resources/security-casemanagement-comment.md) cast, you can filter by the **createdBy**, **createdDateTime**, **id**, **lastModifiedBy**, **lastModifiedDateTime**, and **message** properties. For example: `GET /security/caseManagement/cases/{caseId}/activities/microsoft.graph.security.caseManagement.comment?$filter=message eq 'hello'`.
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -87,6 +93,10 @@ GET https://graph.microsoft.com/beta/security/caseManagement/cases/{caseId}/acti
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-list-case-activities-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-list-case-activities-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

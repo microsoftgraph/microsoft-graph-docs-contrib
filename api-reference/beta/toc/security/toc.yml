@@ -34,10 +34,12 @@ items:
       href: ../../api/security-alert-get.md
     - name: Update
       href: ../../api/security-alert-update.md
-    - name: Move alerts
-      href: ../../api/security-alert-movealerts.md
+    - name: Create alert
+      href: ../../api/security-alert-createalert.md
     - name: Create comment
       href: ../../api/security-alert-post-comments.md
+    - name: Move alerts
+      href: ../../api/security-alert-movealerts.md
   - name: Alert evidence
     href: ../../resources/security-alertevidence.md
   - name: Incident
@@ -78,8 +80,12 @@ items:
     items:
     - name: AI agent evidence
       href: ../../resources/security-aiagentevidence.md
+    - name: Create alert input
+      href: ../../resources/security-createalertinput.md
     - name: DNS evidence
       href: ../../resources/security-dnsevidence.md
+    - name: Entity definition
+      href: ../../resources/security-entitydefinition.md
     - name: Entity definition input
       href: ../../resources/security-entitydefinitioninput.md
     - name: File hash evidence
@@ -410,6 +416,10 @@ items:
       href: ../../api/security-casemanagement-attachment-get.md
     - name: Update
       href: ../../api/security-casemanagement-attachment-update.md
+    - name: Download content
+      href: ../../api/security-casemanagement-attachment-download-content.md
+    - name: Upload content
+      href: ../../api/security-casemanagement-attachment-upload-content.md
   - name: Relation
     items:
     - name: Relation
@@ -418,8 +428,12 @@ items:
       href: ../../api/security-casemanagement-case-list-relations.md
     - name: Create
       href: ../../api/security-casemanagement-case-post-relations.md
+    - name: Get
+      href: ../../api/security-casemanagement-relation-get.md
     - name: Update
       href: ../../api/security-casemanagement-relation-update.md
+    - name: Delete
+      href: ../../api/security-casemanagement-relation-delete.md
   - name: Incident relation
     href: ../../resources/security-casemanagement-incidentrelation.md
   - name: Recommendation relation
@@ -438,6 +452,8 @@ items:
       href: ../../api/security-casemanagement-task-get.md
     - name: Update
       href: ../../api/security-casemanagement-task-update.md
+    - name: Delete
+      href: ../../api/security-casemanagement-task-delete.md
   - name: Case type configuration
     items:
     - name: Case type configuration

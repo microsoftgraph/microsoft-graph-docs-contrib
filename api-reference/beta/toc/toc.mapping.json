@@ -131,7 +131,21 @@
             {
               "name": "Agent identity blueprint",
               "resources": [
+                "agentCommunicationConfiguration",
                 "inheritablePermission"
+              ],
+              "complexTypes": [
+                "agentBlueprintApiBasedEndpointConfigurationDetails",
+                "agentBlueprintBotBasedEndpointConfigurationDetails",
+                "agentConversationConfiguration",
+                "agentEndpointConfiguration",
+                "agentTeamworkConfiguration"
+              ]
+            },
+            {
+              "name": "Agent identity",
+              "resources": [
+                "agentCommunicationConfiguration"
               ]
             }
           ]
@@ -1159,6 +1173,7 @@
         "sharePointGroupMember"
       ],
       "complexTypes": [
+        "driveSettings",
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeAgentSettings",
         "fileStorageContainerTypeSettings",
@@ -2757,7 +2772,9 @@
           ],
           "complexTypes": [
             "microsoft.graph.security.aiAgentEvidence",
+            "microsoft.graph.security.createAlertInput",
             "microsoft.graph.security.dnsEvidence",
+            "microsoft.graph.security.entityDefinition",
             "microsoft.graph.security.entityDefinitionInput",
             "microsoft.graph.security.fileHashEvidence",
             "microsoft.graph.security.gitHubOrganizationEvidence",

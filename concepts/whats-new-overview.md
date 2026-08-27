@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 08/13/2026
+ms.date: 08/20/2026
 ms.topic: whats-new
 ---
 
@@ -29,9 +29,44 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Added the [recovery](/graph/api/resources/entrarecoveryservices-recovery) resource type and related methods to programmatically recover critical Microsoft Entra directory objects from automatically created point-in-time snapshots. Use these APIs to inspect available snapshots, preview and scope changes before restoration, run recovery jobs, monitor progress, and review failed changes.
 
+### Identity and access | Governance
+
+Promoted the **Lifecycle Workflows provisioning and workflow subject** APIs from beta to v1.0, introducing a broader, extensible subject model for workflows and surfacing per-subject processing results. The promoted surface includes:
+
+- [workflowSubject](/graph/api/resources/identitygovernance-workflowsubject) base type and its [provisioningObjectWorkflowSubject](/graph/api/resources/identitygovernance-provisioningobjectworkflowsubject) and [directoryObjectWorkflowSubject](/graph/api/resources/identitygovernance-directoryobjectworkflowsubject) derived types
+- [subjectProcessingResult](/graph/api/resources/identitygovernance-subjectprocessingresult) resource with the **subjectProcessingResults** navigation property on the [run](/graph/api/resources/identitygovernance-run) and [workflow](/graph/api/resources/identitygovernance-workflow) resources
+- [subjectSummary](/graph/api/resources/identitygovernance-subjectsummary) resource and the [summary](/graph/api/identitygovernance-subjectprocessingresult-summary) method on the [subjectProcessingResult](/graph/api/resources/identitygovernance-subjectprocessingresult) resource
+- [activateAndWait](/graph/api/identitygovernance-workflow-activateandwait) action on the [workflow](/graph/api/resources/identitygovernance-workflow) resource, returning the [awaitedWorkflowProcessingResult](/graph/api/resources/identitygovernance-awaitedworkflowprocessingresult) resource
+- [provisioningAttributeMapping](/graph/api/resources/identitygovernance-provisioningattributemapping) and [attributeSetEntry](/graph/api/resources/identitygovernance-attributesetentry) resources
+- [customTaskExtensionResponseData](/graph/api/resources/identitygovernance-customtaskextensionresponsedata) resource, the **replyMode** property on [customTaskExtension](/graph/api/resources/identitygovernance-customtaskextension), and the **targetSubject** property on [customTaskExtensionCalloutData](/graph/api/resources/identitygovernance-customtaskextensioncalloutdata)
+- **targetSubjectType** property on [workflowBase](/graph/api/resources/identitygovernance-workflowbase) and **workflowSubject** property on [taskProcessingResult](/graph/api/resources/identitygovernance-taskprocessingresult)
+- [subjectType](/graph/api/resources/enums-identitygovernance#subjecttype-values) and [customTaskExtensionReplyMode](/graph/api/resources/enums-identitygovernance#customtaskextensionreplymode-values) enumerations, along with the `extensibility` and `extensibilityOnDemand` enumeration members
+
+Added the [externalOriginResourceConnector](/graph/api/resources/externaloriginresourceconnector) resource type and methods to [create](/graph/api/entitlementmanagement-post-externaloriginresourceconnectors), [list](/graph/api/entitlementmanagement-list-externaloriginresourceconnectors), [get](/graph/api/externaloriginresourceconnector-get), [update](/graph/api/externaloriginresourceconnector-update), and [delete](/graph/api/externaloriginresourceconnector-delete) connections from Microsoft Entra entitlement management to SAP Identity Access Governance (SAP IAG). For an SAP IAG connector, specify the SAP IAG endpoint, OAuth token endpoint, and client ID, along with the Azure subscription, resource group, key vault, and secret that identify where its client secret is stored. The connector is associated with an access package resource so that entitlement management can provision access to resources in SAP IAG through access packages.
+
+- Added the **reviewerId** and **scopeType** properties to [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope) to specify a reviewer directly or as a well-known scope instead of through a query.
+- Added the **applyDescription** property to [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem) to describe the result of applying a decision.
+- Added the **appRoleId** and **appRoleDisplayName** properties to [accessReviewInstanceDecisionItemServicePrincipalResource](/graph/api/resources/accessreviewinstancedecisionitemserviceprincipalresource) to identify the app role under review.
+- Added the **errors** property to [accessReviewInstance](/graph/api/resources/accessreviewinstance) and the [accessReviewError](/graph/api/resources/accessreviewerror) resource type to report errors that occur during the review instance lifecycle.
+- Added the [accessReviewPrincipalScope](/graph/api/resources/accessreviewprincipalscope), [accessReviewResourceScope](/graph/api/resources/accessreviewresourcescope), and [accessReviewAccessPackageAssignmentPolicyScope](/graph/api/resources/accessreviewaccesspackageassignmentpolicyscope) resource types. Use them in the **principalScopes** and **resourceScopes** properties of [principalResourceMembershipsScope](/graph/api/resources/principalresourcemembershipsscope) to state which principals have their access to which resources reviewed without writing a query expression.
+- Added the **accessReviewPrincipalScopeType**, **accessReviewResourceScopeType**, and **accessReviewReviewerScopeType** enumeration types to identify well-known principal, resource, and reviewer scopes.
+
+### Identity and access | Identity and sign-in
+
+Added support for managing Microsoft 365 cross-tenant capabilities in cross-tenant access policies. Use the [m365CapabilityBase](/graph/api/resources/m365capabilitybase) resource and the **m365Capabilities** relationship to manage which Microsoft 365 experiences—such as calendar sharing, MailTips, places booking, and cross-tenant migration—are enabled between tenants. For the default policy, you can [list](/graph/api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities), [create](/graph/api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities), and [update](/graph/api/crosstenantaccesspolicyconfigurationdefault-update-m365capabilities) capabilities. For partner policies, you can [list](/graph/api/crosstenantaccesspolicyconfigurationpartner-list-m365capabilities), [create](/graph/api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities), [update](/graph/api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities), and [delete](/graph/api/crosstenantaccesspolicyconfigurationpartner-delete-m365capabilities) capabilities.
+
+### Mailbox import and export
+
+Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources/mailboxfolder) resource type in v1.0. Use this property to identify folders created by Outlook by using a locale-independent name.
+
+### Security
+
+Updated the retirement date for the legacy Microsoft Graph [security alerts API](/graph/api/resources/alert) from August 31, 2026 to October 15, 2026.
+
 ### Teamwork and communications | Calls and online meetings
 
 - Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) and [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts) methods to document a service-update issue that can cause paginated requests to return an empty collection followed by duplicate items.
+- Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) method to return a Microsoft Graph URL that you can use to download recording content.
 
 ## August 2026: New in preview only
 
@@ -48,12 +83,23 @@ Added the [recovery](/graph/api/resources/entrarecoveryservices-recovery) resour
 
 - Changed the **members** property on the [distributionList](/graph/api/resources/distributionlist?view=graph-rest-beta&preserve-view=true) resource to an expandable relationship. Use `$expand=members` with the [Get distribution list](/graph/api/distributionlist-get?view=graph-rest-beta&preserve-view=true) method instead of the removed standalone methods for listing and getting members.
 
+### Security | Alerts and incidents
+
+- Added the [createAlert](/graph/api/security-alert-createalert?view=graph-rest-beta&preserve-view=true) action to the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource for creating Microsoft 365 Defender alerts programmatically, including alert properties, incident-linking options, workspace routing, and inline entity definitions in a single request.
+
+### Security | Case management
+
+- Added the [download attachment content](/graph/api/security-casemanagement-attachment-download-content?view=graph-rest-beta&preserve-view=true) and [upload attachment content](/graph/api/security-casemanagement-attachment-upload-content?view=graph-rest-beta&preserve-view=true) methods to the [attachment](/graph/api/resources/security-casemanagement-attachment?view=graph-rest-beta&preserve-view=true) resource type to transfer case evidence in chunks and retrieve it after malware scanning.
+- Added the [get relation](/graph/api/security-casemanagement-relation-get?view=graph-rest-beta&preserve-view=true) and [delete relation](/graph/api/security-casemanagement-relation-delete?view=graph-rest-beta&preserve-view=true) methods to the [relation](/graph/api/resources/security-casemanagement-relation?view=graph-rest-beta&preserve-view=true) resource type to read and remove links between a case and related security resources.
+- Added the [delete task](/graph/api/security-casemanagement-task-delete?view=graph-rest-beta&preserve-view=true) method to the [task](/graph/api/resources/security-casemanagement-task?view=graph-rest-beta&preserve-view=true) resource type to remove a task from a case.
+
 ### Teamwork and communications | Calls and online meetings
 
 - Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta&preserve-view=true) and [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-beta&preserve-view=true) methods to document a service-update issue that can cause paginated requests to return an empty collection followed by duplicate items.
 
 ### Teamwork and communications | Messaging
 
+- Added the [agentCommunicationConfiguration](/graph/api/resources/agentcommunicationconfiguration?view=graph-rest-beta&preserve-view=true) resource type and related methods to configure how agents send and receive messages in Microsoft Teams. Define default communication settings on an [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true) and override them for a specific agent on [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true).
 - Added the [reorder sections](/graph/api/teamworksection-reorder?view=graph-rest-beta&preserve-view=true) and [reorder section items](/graph/api/teamworksectionitem-reorder?view=graph-rest-beta&preserve-view=true) actions. Use these actions to apply a complete custom order to a user's sections or to the items in a user-defined section.
 
 ## July 2026: New and generally available
@@ -90,6 +136,7 @@ Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to t
   - [customDataProvidedResourceUploadStatus](/graph/api/resources/enums#customdataprovidedresourceuploadstatus-values) enumeration
 
 Added support for user-centric (catalog-scope) access reviews through the **unified** relationship on the [accessReviewSet](/graph/api/resources/accessreviewset) resource. Use it to create and manage reviews that evaluate a principal's access across all groups and applications in an entitlement management catalog from a single review, and to accept recommendations or record decisions in bulk within a review stage.
+
 ### Teamwork and communications | Calls and online meetings
 
  - Added the **meetingType** and **cloudVideoInteropInfo** properties to the [onlineMeetingBase](/graph/api/resources/onlinemeetingbase) resource to help determine the type of an online meeting and retrieve Cloud Video Interop settings.
@@ -110,6 +157,12 @@ Added support for user-centric (catalog-scope) access reviews through the **unif
 - Added the `User.ReadUpdate.All` permission as the least privileged permission to [update a user](/graph/api/user-update).
 
 ## July 2026: New in preview only
+
+### Backup and recovery | Microsoft 365 Backup and Storage
+
+Added the **createdBy**, **createdDateTime**, **lastModifiedBy**, and **lastModifiedDateTime** properties to the [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem?view=graph-rest-beta&preserve-view=true) resource. Use these properties to get the identity and timestamp details for when a browse item was created and last modified.
+- Added the **optimizedBrowse** parameter to the [sharePointBrowseSession: browse](/graph/api/sharepointbrowsesession-browse?view=graph-rest-beta&preserve-view=true) method of the [sharePointBrowseSession](/graph/api/resources/sharepointbrowsesession?view=graph-rest-beta&preserve-view=true) resource. Set this parameter to `true` to retrieve files and folders in a single request when the backup artifact has a single site and a single document library.
+- Added the **optimizedBrowse** parameter to the [oneDriveForBusinessBrowseSession: browse](/graph/api/onedriveforbusinessbrowsesession-browse?view=graph-rest-beta&preserve-view=true) method of the [oneDriveForBusinessBrowseSession](/graph/api/resources/onedriveforbusinessbrowsesession?view=graph-rest-beta&preserve-view=true) resource. Set this parameter to `true` to retrieve files and folders in a single request when the backup artifact has a single site and a single document library.
 
 ### Change notifications
 
@@ -132,7 +185,10 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 
 ### Files
 
-- Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to support the optional **reportType** parameter for retrieving throttling metrics. Use `reportType='throttlingReport'` to get throttled request counts via the **throttledRequests** property on the [sharePointApiUsageDataPoint](/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta&preserve-view=true) resource, or use `reportType='egressReport'` (default) to get egress usage via the **usageMB** property.
+- Added the **dataLocationCode** property to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource type to represent the geographic location of the data for multi-geo tenants.
+- Added the **settings** property of type [driveSettings](/graph/api/resources/drivesettings?view=graph-rest-beta&preserve-view=true) to the [drive](/graph/api/resources/drive?view=graph-rest-beta&preserve-view=true) resource type to retrieve drive-level settings such as the default sensitivity label applied to items.
+- Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to support the optional `reportType` parameter for retrieving throttling metrics. Use `reportType='throttlingReport'` to get throttled request counts via the **throttledRequests** property on the [sharePointApiUsageDataPoint](/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta&preserve-view=true) resource, or use `reportType='egressReport'` (default) to get egress usage via the **usageMB** property.
+- Added the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission) objects per request.
 - Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to the [onPremisesDirectorySynchronizationFeature](/graph/api/resources/onpremisesdirectorysynchronizationfeature?view=graph-rest-beta&preserve-view=true) resource.
 - Added the [getByUser](/graph/api/filestoragecontainer-getbyuser?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource to retrieve a list of file storage containers owned by a user, with optional filtering by role (owner or principalOwner).
 - Added the **isOfficeRestricted** property to the [fileStorageContainerTypeSettings](/graph/api/resources/filestoragecontainertypesettings?view=graph-rest-beta&preserve-view=true) and [fileStorageContainerTypeRegistrationSettings](/graph/api/resources/filestoragecontainertyperegistrationsettings?view=graph-rest-beta&preserve-view=true) resources, and the **fileStorageContainerTypeSettingsOverride** enumeration.
@@ -160,10 +216,12 @@ Added the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?vi
 - Added the [endUserSettings](/graph/api/resources/endusersettings) resource type and related methods for configuring access package suggestion behavior, including related people insight levels and approver detail visibility.
 - Added the [cancelProcessing](/graph/api/identitygovernance-workflow-cancelprocessing) method to the [workflow](/graph/api/resources/identitygovernance-workflow) resource to cancel workflow runs that are currently in progress or queued.
 - Added workflow preview operations to the [workflow](/graph/api/resources/identitygovernance-workflow) resource type in Lifecycle Workflows, enabling you to validate tasks and run workflows in preview mode without affecting production users.
-- Added support for automatically quarantining Lifecycle Workflows to stop a workflow from processing more users than expected. Configure thresholds using the **quarantineConfiguration** property on [lifecycleManagementSettings](/graph/api/resources/identitygovernance-lifecyclemanagementsettings), and clear a quarantine by calling [clearQuarantine](/graph/api/identitygovernance-workflow-clearquarantine).
+- Added support for automatically quarantining Lifecycle Workflows to stop a workflow from processing more users than expected. Configure thresholds using the **quarantineConfiguration** property on [lifecycleManagementSettings](/graph/api/resources/identitygovernance-lifecyclemanagementsettings?view=graph-rest-beta&preserve-view=true), and clear a quarantine by calling [clearQuarantine](/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-beta&preserve-view=true).
 - Added the [externalSapAcConnectionInfo](/graph/api/resources/externalsapacconnectioninfo) complex type, along with the supporting [authenticationInfo](/graph/api/resources/authenticationinfo) and [clientCredentialAuthenticationInfo](/graph/api/resources/clientcredentialauthenticationinfo) types, to configure connections from Microsoft Entra entitlement management to SAP Access Control (AC) systems. Set these on the **connectionInfo** property of an [externalOriginResourceConnector](/graph/api/resources/externaloriginresourceconnector) when its **connectorType** is `sapAc`.
 - Added the [guestSponsorTrigger](/graph/api/resources/identitygovernance-guestsponsortrigger?view=graph-rest-beta&preserve-view=true) resource type to initiate lifecycle workflows when guest users have fewer than the required number of sponsors.
-- Added support for automatically quarantining Lifecycle Workflows to stop a workflow from processing more users than expected. Configure thresholds using the **quarantineConfiguration** property on [lifecycleManagementSettings](/graph/api/resources/identitygovernance-lifecyclemanagementsettings?view=graph-rest-beta&preserve-view=true), and clear a quarantine by calling [clearQuarantine](/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-beta&preserve-view=true).
+- Added the [directoryObjectWorkflowSubject](/graph/api/resources/identitygovernance-directoryobjectworkflowsubject?view=graph-rest-beta&preserve-view=true) resource type, a subtype of [workflowSubject](/graph/api/resources/identitygovernance-workflowsubject?view=graph-rest-beta&preserve-view=true), so that a subject processing result can represent a directory object, such as a user, that a Lifecycle Workflow processes.
+- Added the [subjectSummary](/graph/api/resources/identitygovernance-subjectsummary?view=graph-rest-beta&preserve-view=true) resource type and the [summary](/graph/api/identitygovernance-subjectprocessingresult-summary?view=graph-rest-beta&preserve-view=true) method to the [subjectProcessingResult](/graph/api/resources/identitygovernance-subjectprocessingresult?view=graph-rest-beta&preserve-view=true) resource to get an aggregate count of subject processing results over a specified time period.
+- Added the **subjectType** enumeration type and the **subjectType** property on the [subjectProcessingResult](/graph/api/resources/identitygovernance-subjectprocessingresult?view=graph-rest-beta&preserve-view=true) resource, along with the **targetSubjectType** property on the [workflowBase](/graph/api/resources/identitygovernance-workflowbase?view=graph-rest-beta&preserve-view=true) resource, to indicate the kind of subject that a workflow targets.
 - Added the **parameters** property to the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) resource, typed as the new [accessPackageAssignmentRequestParameters](/graph/api/resources/accesspackageassignmentrequestparameters?view=graph-rest-beta&preserve-view=true) complex type, to bypass the approval requirement configured on the access package policy when creating an assignment request.
 
 ### Identity and access | Identity and sign-in
@@ -190,6 +248,8 @@ Added the optional **workspaceId** parameter to the [runHuntingQuery](/graph/api
 
 ### Security | Data security and compliance
 
+Added the **matchedConditionsDescription** and **complianceUrl** properties to the [policyTipAction](/graph/api/resources/policytipaction?view=graph-rest-beta&preserve-view=true) resource. Use these properties to display a user-friendly summary of the matched DLP conditions and link users to additional compliance guidance.
+
 Added the [embeddingInput](/graph/api/resources/embeddinginput?view=graph-rest-beta&preserve-view=true) resource type and the **embeddings** property on the [textClassificationRequest](/graph/api/resources/textclassificationrequest?view=graph-rest-beta&preserve-view=true) resource, so a caller can supply precomputed embedding vectors when classifying text and let the service skip recomputing them.
 
 ### Security | eDiscovery
@@ -203,6 +263,10 @@ Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](/gra
 ### Reports
 
 Added the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to the [reportRoot](/graph/api/resources/reportroot?view=graph-rest-beta&preserve-view=true) resource to retrieve aggregated OneDrive and SharePoint API usage metrics for a tenant, including egress usage and throttling metrics.
+
+### Reports | Identity and access reports
+
+- Added Global Secure Access support to Microsoft Entra Health monitoring. Use the [health monitoring alert](/graph/api/resources/healthmonitoring-alert?view=graph-rest-beta&preserve-view=true) resource to monitor Global Secure Access-related alerts.
 
 ### Tasks and plans
 

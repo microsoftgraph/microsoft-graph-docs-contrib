@@ -880,6 +880,24 @@ items:
         href: ../../api/entitlementmanagementsettings-get.md
       - name: Update
         href: ../../api/entitlementmanagementsettings-update.md
+    - name: External origin resource connector
+      items:
+      - name: External origin resource connector
+        href: ../../resources/externaloriginresourceconnector.md
+      - name: List
+        href: ../../api/entitlementmanagement-list-externaloriginresourceconnectors.md
+      - name: Create
+        href: ../../api/entitlementmanagement-post-externaloriginresourceconnectors.md
+      - name: Get
+        href: ../../api/externaloriginresourceconnector-get.md
+      - name: Update
+        href: ../../api/externaloriginresourceconnector-update.md
+      - name: Delete
+        href: ../../api/externaloriginresourceconnector-delete.md
+    - name: Complex types
+      items:
+      - name: External token based sap iag connection info
+        href: ../../resources/externaltokenbasedsapiagconnectioninfo.md
   - name: Lifecycle workflows
     displayName: LCW, Identity Governance, Joiner, Mover, Leaver
     items:
@@ -903,6 +921,8 @@ items:
         href: ../../api/identitygovernance-workflow-activate.md
       - name: Activate with scope
         href: ../../api/identitygovernance-workflow-activatewithscope.md
+      - name: Activate and wait
+        href: ../../api/identitygovernance-workflow-activateandwait.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
       - name: Clear quarantine
@@ -966,6 +986,16 @@ items:
             href: ../../api/identitygovernance-userprocessingresult-list-reprocessedruns.md
           - name: Remove reprocessedRuns
             href: ../../api/identitygovernance-userprocessingresult-delete-reprocessedruns.md
+        - name: Subject processing result
+          items:
+          - name: Subject processing result
+            href: ../../resources/identitygovernance-subjectprocessingresult.md
+          - name: List (from run)
+            href: ../../api/identitygovernance-run-list-subjectprocessingresults.md
+          - name: Get
+            href: ../../api/identitygovernance-subjectprocessingresult-get.md
+          - name: Summary
+            href: ../../api/identitygovernance-subjectprocessingresult-summary.md
         - name: Task report
           items:
           - name: Task report
@@ -1048,6 +1078,24 @@ items:
         href: ../../api/identitygovernance-insights-workflowsprocessedsummary.md
       - name: Get workflows processed by category
         href: ../../api/identitygovernance-insights-workflowsprocessedbycategory.md
+    - name: Complex types
+      items:
+      - name: Attribute set entry
+        href: ../../resources/identitygovernance-attributesetentry.md
+      - name: Awaited workflow processing result
+        href: ../../resources/identitygovernance-awaitedworkflowprocessingresult.md
+      - name: Custom task extension response data
+        href: ../../resources/identitygovernance-customtaskextensionresponsedata.md
+      - name: Directory object workflow subject
+        href: ../../resources/identitygovernance-directoryobjectworkflowsubject.md
+      - name: Provisioning attribute mapping
+        href: ../../resources/identitygovernance-provisioningattributemapping.md
+      - name: Provisioning object workflow subject
+        href: ../../resources/identitygovernance-provisioningobjectworkflowsubject.md
+      - name: Subject summary
+        href: ../../resources/identitygovernance-subjectsummary.md
+      - name: Workflow subject
+        href: ../../resources/identitygovernance-workflowsubject.md
   - name: Privileged Identity Management
     items:
     - name: PIM for Microsoft Entra roles

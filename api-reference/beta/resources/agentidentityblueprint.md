@@ -40,6 +40,9 @@ This resource is an open type that allows additional properties beyond those doc
 |[Update federated identity credential](../api/federatedidentitycredential-update.md)|None|Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |[Upsert federated identity credential](../api/federatedidentitycredential-upsert.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |[Delete federated identity credential](../api/federatedidentitycredential-delete.md)|None|Delete a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|**Communication configuration**|||
+|[Get communicationConfiguration](../api/agentidentityblueprint-get-communicationconfiguration.md)|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|Get the default communication configuration for this agent identity blueprint.|
+|[Update communicationConfiguration](../api/agentidentityblueprint-update-communicationconfiguration.md)|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|Update the default communication configuration for this agent identity blueprint.|
 |**Deleted items**|||
 |[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted agent identities. |
 |[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted agent identity. |
@@ -101,6 +104,7 @@ This resource is an open type that allows additional properties beyond those doc
 |Relationship|Type|Description|
 |:---|:---|:---|
 |appManagementPolicies|[appManagementPolicy](../resources/appmanagementpolicy.md) collection|The appManagementPolicy applied to this agent identity blueprint. Inherited from [microsoft.graph.application](../resources/application.md)|
+|communicationConfiguration|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|The default communication configuration for agent identities created from this agent identity blueprint. Agent identities inherit this configuration unless they define their own override.|
 |federatedIdentityCredentials|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Federated identities for agent identity blueprints. Inherited from [microsoft.graph.application](../resources/application.md)|
 |inheritablePermissions|[inheritablePermission](../resources/inheritablepermission.md) collection|Defines scopes of a resource application that may be automatically granted to agent identities without additional consent.|
 |owners|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owners of this agent identity blueprint. The owners are a set of nonadmin users or service principals allowed to modify this object. Read-only. Nullable. Inherited from [microsoft.graph.application](../resources/application.md)|

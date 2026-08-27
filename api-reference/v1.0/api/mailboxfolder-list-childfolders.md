@@ -2,7 +2,7 @@
 title: "List childFolders"
 description: "Get the mailboxFolder collection under the specified mailboxFolder in a mailbox."
 author: "cparker-msft"
-ms.date: 02/23/2026
+ms.date: 08/06/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -124,6 +124,7 @@ Content-length: 232
             "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "childFolderCount": 0,
             "totalItemCount": 20,
+            "wellKnownName": null,
             "type": "IPF.Note"
         },
         {
@@ -134,6 +135,7 @@ Content-length: 232
             "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "childFolderCount": 0,
             "totalItemCount": 1,
+            "wellKnownName": null,
             "type": "IPF.Note"
         }
     ]

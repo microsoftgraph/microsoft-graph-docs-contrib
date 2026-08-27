@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 05/26/2026
+ms.date: 08/10/2026
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ms.custom: sfi-ropc-nochange
@@ -218,6 +218,40 @@ Namespace: microsoft.graph
 |:---|
 |exact|
 |relaxed|
+|unknownFutureValue|
+
+### accessReviewPrincipalScopeType values
+
+|Member|
+|:---|
+|allUsers|
+|guestUsers|
+|inactiveUsers|
+|inactiveGuestUsers|
+|unknownFutureValue|
+
+### accessReviewResourceScopeType values
+
+|Member|
+|:---|
+|group|
+|catalog|
+|servicePrincipal|
+|directoryRole|
+|accessPackageAssignmentPolicy|
+|unknownFutureValue|
+
+### accessReviewReviewerScopeType values
+
+|Member|
+|:---|
+|user|
+|group|
+|self|
+|manager|
+|sponsor|
+|resourceOwner|
+|managerOrSponsor|
 |unknownFutureValue|
 
 ### applicationDataType values
@@ -902,6 +936,13 @@ Namespace: microsoft.graph
 | ---------- |
 | configured |
 | proposed |
+
+### connectorType values
+
+| Member |
+| ------------------ |
+| sapIag |
+| unknownFutureValue |
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 

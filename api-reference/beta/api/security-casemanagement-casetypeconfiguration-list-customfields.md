@@ -18,6 +18,8 @@ Get the [customFieldDefinition](../resources/security-casemanagement-customfield
 
 The **customFieldDefinition** type is abstract. Each returned object is one of the following derived types, differentiated by `@odata.type`: [stringCustomFieldDefinition](../resources/security-casemanagement-stringcustomfielddefinition.md), [numberCustomFieldDefinition](../resources/security-casemanagement-numbercustomfielddefinition.md), [dateTimeCustomFieldDefinition](../resources/security-casemanagement-datetimecustomfielddefinition.md), or [optionsCustomFieldDefinition](../resources/security-casemanagement-optionscustomfielddefinition.md).
 
+When creating or updating a case, use each definition's **displayName**, not its **id**, as the dynamic property name in **customFields**. The name must match exactly one definition. Map the definition type to the required typed object by using the [custom field value mapping](../resources/security-casemanagement-customfieldvalues.md#custom-field-value-mapping).
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -89,6 +91,10 @@ GET https://graph.microsoft.com/beta/security/caseManagement/caseTypeConfigurati
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-list-customfields-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-list-customfields-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

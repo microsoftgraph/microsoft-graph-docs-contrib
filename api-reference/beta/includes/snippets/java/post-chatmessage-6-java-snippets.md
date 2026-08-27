@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
 ChatMessageBody body = new ChatMessageBody();
-body.setContentType(BodyType.Html);
+body.setMessageBodyContentType(ChatMessageBodyContentType.Html);
 body.setContent("<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">");
 chatMessage.setBody(body);
 LinkedList<ChatMessageHostedContent> hostedContents = new LinkedList<ChatMessageHostedContent>();

@@ -32,8 +32,8 @@ user.SetAdditionalData(additionalData)
 from.SetUser(user)
 requestBody.SetFrom(from)
 body := graphmodels.NewChatMessageBody()
-contentType := graphmodels.HTML_BODYTYPE 
-body.SetContentType(&contentType) 
+messageBodyContentType := graphmodels.HTML_CHATMESSAGEBODYCONTENTTYPE 
+body.SetMessageBodyContentType(&messageBodyContentType) 
 content := "Hello World"
 body.SetContent(&content) 
 requestBody.SetBody(body)

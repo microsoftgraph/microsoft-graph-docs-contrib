@@ -13,7 +13,7 @@ var requestBody = new ChatMessage
 {
 	Body = new ChatMessageBody
 	{
-		ContentType = BodyType.Html,
+		MessageBodyContentType = ChatMessageBodyContentType.Html,
 		Content = "<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>",
 	},
 };
