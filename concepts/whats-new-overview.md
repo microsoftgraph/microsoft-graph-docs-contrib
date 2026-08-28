@@ -57,7 +57,8 @@ Added support for managing Microsoft 365 cross-tenant capabilities in cross-tena
 
 ### Mailbox import and export
 
-Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources/mailboxfolder) resource type in v1.0. Use this property to identify folders created by Outlook by using a locale-independent name.
+- Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources/mailboxfolder) resource type in v1.0. Use this property to identify folders created by Outlook by using a locale-independent name.
+- Added the [Delete mailboxItem](/graph/api/mailboxfolder-delete-items) method to the [mailboxItem](/graph/api/resources/mailboxitem) resource type in v1.0. Use this method to delete an individual mailbox item from a mailbox folder with Exchange soft-delete or hard-delete semantics.
 
 ### Security
 

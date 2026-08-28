@@ -20,6 +20,8 @@ items:
     href: ../../api/mailboxfolder-list-items.md
   - name: Get
     href: ../../api/mailboxitem-get.md
+  - name: Delete
+    href: ../../api/mailboxfolder-delete-items.md
   - name: Get delta
     href: ../../api/mailboxitem-delta.md
   - name: Extended properties
@@ -48,6 +50,8 @@ items:
     href: ../../api/mailboxfolder-list-childfolders.md
   - name: List items in folder
     href: ../../api/mailboxfolder-list-items.md
+  - name: Delete item in folder
+    href: ../../api/mailboxfolder-delete-items.md
   - name: Extended properties
     items:
     - name: Create single-value property
