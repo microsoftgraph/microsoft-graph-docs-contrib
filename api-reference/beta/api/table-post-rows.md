@@ -144,7 +144,7 @@ For async features, the user usually needs to issue 2-3 requests. This request, 
 
 #### Request
 
-Here's an example of the async request. Note that `202 Accepted` will only happen when the request takes a long time to respond. If the request is completed quickly, it works like a regular sync request, falling back to [Example 1](#example-1-add-two-rows-to-a-table).
+The following example shows the async request. Note that `202 Accepted` only happens when the request takes a long time to respond. If the request is completed quickly, it works like a regular sync request, falling back to [Example 1](#example-1-add-two-rows-to-a-table).
 
 
 

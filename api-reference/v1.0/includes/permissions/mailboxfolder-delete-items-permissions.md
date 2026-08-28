@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|MailboxItem.ReadWrite|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|MailboxItem.ReadWrite.All|Not available.|
+

@@ -52,7 +52,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 |detectionSource|[microsoft.graph.security.detectionSource](../resources/security-detectionsource.md)| Detection technology or sensor that identified the notable component or activity.|
 |detectorId|String| The ID of the detector that triggered the alert.|
 |productName|String| The name of the product which published this alert.|
-|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)| Specifies the result of the investigation, whether the alert represents a true attack, and if so, the nature of the attack. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)| Specifies the result of the investigation, whether the alert represents a true attack, and if so, the nature of the attack. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |evidence|[microsoft.graph.security.alertEvidence](security-alertEvidence.md) collection| Collection of evidence related to the alert.|
 |firstActivityDateTime|DateTimeOffset| The earliest activity associated with the alert.|
 |id|String| Unique identifier to represent the **alert** resource.|

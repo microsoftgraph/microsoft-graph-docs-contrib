@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [fieldValueSet][] specify
 
 ## Example
 
-Here is an example that updates the Color and Quantity fields of the list item with new values.
+The following example shows a request that updates the Color and Quantity fields of the list item with new values.
 All other values on the listItem are left alone.
 
 

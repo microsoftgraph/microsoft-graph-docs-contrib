@@ -51,10 +51,10 @@ If successful, this method returns a `200 OK` response code and collection of [D
 
 ## Example
 
-Here's and example the retrieves the versions of a file in the current user's drive.
 
 ### Request
 
+The following example shows how to retrieve the versions of a file in the current user's drive.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
@@ -95,7 +95,7 @@ GET /me/drive/items/{item-id}/versions
 
 ### Response
 
-Here's an example of the response that includes a collection of versions:
+The following example shows the response that includes a collection of versions.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItemVersion)", "truncated": true } -->
 

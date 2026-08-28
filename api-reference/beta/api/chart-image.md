@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and base-64 image string in the response body.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 ### Request
 The following example shows a request.
 <!-- { "blockType": "ignored" } -->
