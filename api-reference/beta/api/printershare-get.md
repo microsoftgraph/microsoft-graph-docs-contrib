@@ -121,7 +121,8 @@ Content-type: application/json
 }
 ```
 
-Here's an example of the response, when using $select=id,displayName,capabilities
+The following example shows the response, when using `$select=id,displayName,capabilities`
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

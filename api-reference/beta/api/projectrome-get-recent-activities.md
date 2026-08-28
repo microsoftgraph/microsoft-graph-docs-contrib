@@ -69,7 +69,7 @@ If successful, this method returns the `200 OK` response code with the user's re
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/activities/recent
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "ignored",

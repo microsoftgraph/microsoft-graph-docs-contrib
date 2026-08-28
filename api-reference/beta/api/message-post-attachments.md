@@ -302,7 +302,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here is an example of a full response.
+The following example shows a full response.
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_message",

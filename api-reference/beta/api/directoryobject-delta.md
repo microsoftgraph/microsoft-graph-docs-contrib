@@ -158,7 +158,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?filter=isof('microso
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=isof('{resource type}')`. Note the presence of the _members@delta_ property that includes the IDs of member objects in the group.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=isof('{resource type}')`. Note the presence of the _members@delta_ property that includes the IDs of member objects in the group.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -265,7 +265,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=id eq '87d34
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=id eq '{id}'`.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=id eq '{id}'`.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -356,7 +356,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isof('micros
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization. Both properties are included in the response and it isn't known which ones have changed since the `@odata.deltaLink` was obtained.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization. Both properties are included in the response and it isn't known which ones have changed since the `@odata.deltaLink` was obtained.
 
 <!-- {
   "blockType": "response",
@@ -436,7 +436,7 @@ Prefer: return=minimal
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization. The `microsoft.graph.user/surname` property isn't included, which means it hasn't changed since the last delta query; `microsoft.graph.group/displayName` is included which means its value has changed.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization. The `microsoft.graph.user/surname` property isn't included, which means it hasn't changed since the last delta query; `microsoft.graph.group/displayName` is included which means its value has changed.
 
 <!-- {
   "blockType": "response",
