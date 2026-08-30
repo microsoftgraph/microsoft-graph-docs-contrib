@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 08/01/2024
+ms.date: 05/05/2026
 ---
 
 # List managedDevices
@@ -73,18 +73,10 @@ Content-Length: 5552
       "userId": "User Id value",
       "deviceName": "Device Name value",
       "managedDeviceOwnerType": "company",
-      "deviceActionResults": [
-        {
-          "@odata.type": "microsoft.graph.deviceActionResult",
-          "actionName": "Action Name value",
-          "actionState": "pending",
-          "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
-          "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
-        }
-      ],
+      "deviceActionResults": [], # Value always empty
       "managementState": "retirePending",
-      "enrolledDateTime": "2016-12-31T23:59:43.797191-08:00",
-      "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+      "enrolledDateTime": "2016-12-31T23:59:43-08:00",
+      "lastSyncDateTime": "2017-01-01T00:02:49-08:00",
       "operatingSystem": "Operating System value",
       "complianceState": "compliant",
       "jailBroken": "Jail Broken value",
@@ -92,29 +84,29 @@ Content-Length: 5552
       "osVersion": "Os Version value",
       "easActivated": true,
       "easDeviceId": "Eas Device Id value",
-      "easActivationDateTime": "2016-12-31T23:59:43.4878784-08:00",
+      "easActivationDateTime": "0001-01-01T00:00:00Z", # Fixed value
       "azureADRegistered": true,
       "deviceEnrollmentType": "userEnrollment",
       "activationLockBypassCode": "Activation Lock Bypass Code value",
       "emailAddress": "Email Address value",
       "azureADDeviceId": "Azure ADDevice Id value",
       "deviceRegistrationState": "registered",
-      "deviceCategoryDisplayName": "Device Category Display Name value",
+      "deviceCategoryDisplayName": "Device Category Display Name value", # Returns Unknown if value is empty
       "isSupervised": true,
-      "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45.8803083-08:00",
+      "exchangeLastSuccessfulSyncDateTime": "2017-01-01T00:00:45-08:00",
       "exchangeAccessState": "unknown",
       "exchangeAccessStateReason": "unknown",
-      "remoteAssistanceSessionUrl": "https://example.com/remoteAssistanceSessionUrl/",
-      "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
+      "remoteAssistanceSessionUrl": null, # Returns null when not set
+      "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value", # Returns null when not set
       "isEncrypted": true,
       "userPrincipalName": "User Principal Name value",
       "model": "Model value",
       "manufacturer": "Manufacturer value",
-      "imei": "Imei value",
-      "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
+      "imei": "Imei value", # Returns empty string when not set
+      "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44-08:00",
       "serialNumber": "Serial Number value",
-      "phoneNumber": "Phone Number value",
-      "androidSecurityPatchLevel": "Android Security Patch Level value",
+      "phoneNumber": "Phone Number value", # Returns empty string when not set
+      "androidSecurityPatchLevel": "Android Security Patch Level value", # Returns empty string when not set
       "userDisplayName": "User Display Name value",
       "configurationManagerClientEnabledFeatures": {
         "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures",
@@ -132,7 +124,7 @@ Content-Length: 5552
         "contentNamespaceUrl": "https://example.com/contentNamespaceUrl/",
         "deviceHealthAttestationStatus": "Device Health Attestation Status value",
         "contentVersion": "Content Version value",
-        "issuedDateTime": "2016-12-31T23:58:22.1231038-08:00",
+        "issuedDateTime": "2016-12-31T23:58:22-08:00",
         "attestationIdentityKey": "Attestation Identity Key value",
         "resetCount": 10,
         "restartCount": 12,
@@ -162,19 +154,19 @@ Content-Length: 5552
         "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
       },
       "subscriberCarrier": "Subscriber Carrier value",
-      "meid": "Meid value",
+      "meid": "Meid value", # Returns empty string when not set
       "totalStorageSpaceInBytes": 8,
       "freeStorageSpaceInBytes": 7,
       "managedDeviceName": "Managed Device Name value",
       "partnerReportedThreatState": "activated",
       "requireUserEnrollmentApproval": true,
-      "managementCertificateExpirationDate": "2016-12-31T23:57:59.9789653-08:00",
-      "iccid": "Iccid value",
-      "udid": "Udid value",
+      "managementCertificateExpirationDate": "2016-12-31T23:57:59-08:00",
+      "iccid": "Iccid value", # Returns null when not set
+      "udid": "Udid value", # Returns null when not set
       "notes": "Notes value",
-      "ethernetMacAddress": "Ethernet Mac Address value",
+      "ethernetMacAddress": null, # Returns always null
       "physicalMemoryInBytes": 5,
-      "enrollmentProfileName": "Enrollment Profile Name value"
+      "enrollmentProfileName": null
     }
   ]
 }
