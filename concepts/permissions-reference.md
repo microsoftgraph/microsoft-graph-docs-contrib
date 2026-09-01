@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 08/24/2026
+ms.date: 08/31/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -9858,6 +9858,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserAuthenticationMethod.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 712f5e0d-bc8d-4ae5-8242-cfb9a4921ed3 | - |
+| DisplayText | Delete all users' authentication methods | - |
+| Description | Allows the app to delete authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user's phone numbers and Authenticator app settings. This does not allow the app to read, create, or modify authentication methods. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### UserAuthenticationMethod.Read
 
 | Category | Application | Delegated |
@@ -9899,6 +9910,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all users' authentication methods  | Read and write all users' authentication methods |
 | Description | Allows the application to read and write authentication methods of all users in your organization, without a signed-in user.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods |  Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-Email.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f0e9adfd-ed6b-45f5-b969-324a75286a39 | - |
+| DisplayText | Delete all users' email methods | - |
+| Description | Allows the application to delete email methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify email methods. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -9946,6 +9968,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserAuthMethod-External.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 7fa6d39e-1e4e-44be-bf9c-e8260b12e1f5 | - |
+| DisplayText | Delete all users' external authentication methods | - |
+| Description | Allows the application to delete external authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify external authentication methods. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### UserAuthMethod-External.Read
 
 | Category | Application | Delegated |
@@ -9987,6 +10020,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all users' external authentication methods | Read and write all users' external methods. |
 | Description | Allows the application to read and write external authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write external authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-HardwareOATH.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9d8eb432-7ea3-491a-9ed7-e6361b308f08 | - |
+| DisplayText | Delete all users' HardwareOATH authentication methods | - |
+| Description | Allows the application to delete HardwareOATH authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify HardwareOATH authentication methods. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -10034,6 +10078,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserAuthMethod-MicrosoftAuthApp.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | ae494ca6-9612-417a-972a-ef52efaf2de3 | - |
+| DisplayText | Delete all users' Microsoft Authentication methods | - |
+| Description | Allows the application to delete Microsoft Authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify Microsoft Authentication methods. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### UserAuthMethod-MicrosoftAuthApp.Read
 
 | Category | Application | Delegated |
@@ -10075,6 +10130,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all users' Microsoft Authentication methods | Read and write all users' Microsoft Authentication methods. |
 | Description | Allows the application to read and write Microsoft Authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write Microsoft Authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-Passkey.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9563fbd0-03a7-466e-8042-63d668b7d1a3 | - |
+| DisplayText | Delete all users' passkey authentication methods | - |
+| Description | Allows the application to delete passkey authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify passkey authentication methods. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -10166,6 +10232,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserAuthMethod-Phone.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 59f17651-8b6c-494e-a269-4ac582fbbca0 | - |
+| DisplayText | Delete all users' phone methods | - |
+| Description | Allows the application to delete phone methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify phone methods. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### UserAuthMethod-Phone.Read
 
 | Category | Application | Delegated |
@@ -10207,6 +10284,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all users' phone methods | Read and write all users' phone methods. |
 | Description | Allows the application to read and write phone methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write Phone methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | No |
+
+---
+
+### UserAuthMethod-PlatformCred.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | bd760918-651f-4e67-b66f-8f614384dec2 | - |
+| DisplayText | Delete all users' platform credentials methods | - |
+| Description | Allows the application to delete platform credentials methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify platform credentials methods. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -10254,6 +10342,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserAuthMethod-QR.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e1c34213-26ac-400b-9548-a749f1b1a4e0 | - |
+| DisplayText | Delete all users' QR authentication methods | - |
+| Description | Allows the application to delete QR authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify QR authentication methods. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### UserAuthMethod-QR.Read
 
 | Category | Application | Delegated |
@@ -10298,6 +10397,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserAuthMethod-ResourceKey.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a71aecaf-82f1-47c5-ad0a-5e63503b928f | - |
+| DisplayText | Delete all users' resource key authentication methods | - |
+| Description | Allows the application to delete resource key authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify resource key authentication methods. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### UserAuthMethod-ResourceKey.Read.All
 
 | Category | Application | Delegated |
@@ -10317,6 +10427,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and delete all users' external authentication methods | Read and delete the keys associated with the user representing a resource account. |
 | Description | Allows the app to read and delete the keys associated with the user representing a resource account. | Allows the app to read and delete the keys associated with the user representing a resource account. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-SoftwareOATH.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e5676e10-1a16-452b-ad10-71f54b755852 | - |
+| DisplayText | Delete all users' SoftwareOATH authentication methods | - |
+| Description | Allows the application to delete SoftwareOATH authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify SoftwareOATH authentication methods. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -10364,6 +10485,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserAuthMethod-TAP.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 4f872e9d-d232-4ecd-ab9c-337cbdb184e5 | - |
+| DisplayText | Delete all users' Temporary Access Pass authentication methods | - |
+| Description | Allows the application to delete Temporary Access Pass authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify Temporary Access Pass authentication methods. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### UserAuthMethod-TAP.Read
 
 | Category | Application | Delegated |
@@ -10405,6 +10537,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all users' Temporary Access Pass methods | Read and write all users' Temporary Access Pass methods. |
 | Description | Allows the application to read and write Temporary Access Pass authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write Temporary Access Pass authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-WindowsHello.Delete.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f3197110-aa7f-4acd-a0fd-71981ad68d42 | - |
+| DisplayText | Delete all users' Windows Hello authentication methods | - |
+| Description | Allows the application to delete Windows Hello authentication methods of all users in your organization, without a signed-in user. This does not allow the app to read, create, or modify Windows Hello authentication methods. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
