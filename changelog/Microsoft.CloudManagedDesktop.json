@@ -3,27 +3,61 @@
     {
       "ChangeList": [
         {
+          "Id": "a3f7c2e1-9d84-4b6a-8e2f-1c5d7a3b9e04",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcProvisioningConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcProvisioningConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningconfiguration?view=graph-rest-beta) resource.",
+          "Target": "cloudPcProvisioningConfiguration"
+        },
+        {
+          "Id": "a3f7c2e1-9d84-4b6a-8e2f-1c5d7a3b9e04",
+          "ApiChange": "Property",
+          "ChangedApiName": "provisioningConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **provisioningConfiguration** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "a3f7c2e1-9d84-4b6a-8e2f-1c5d7a3b9e04",
+          "ApiChange": "Property",
+          "ChangedApiName": "domainJoinType",
+          "ChangeType": "Addition",
+          "Description": "Added the **domainJoinType** property to the [cloudPcProvisioningConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningconfiguration?view=graph-rest-beta) resource.",
+          "Target": "cloudPcProvisioningConfiguration"
+        }
+      ],
+      "Id": "a3f7c2e1-9d84-4b6a-8e2f-1c5d7a3b9e04",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-01T00:00:00.0000000Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b3813e0c-1e96-4d6e-8162-cf5c4c5a9063",
           "ApiChange": "Property",
           "ChangedApiName": "snapshotResetMode",
           "ChangeType": "Addition",
-          "Description": "Added the **snapshotResetMode** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) resource.",
+          "Description": "Added the **snapshotResetMode** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
           "Target": "cloudPcProvisioningPolicy"
         },
         {
-        "Id": "b3813e0c-1e96-4d6e-8162-cf5c4c5a9063",
-        "ApiChange": "Enumeration",
-        "ChangedApiName": "cloudPcSnapshotResetMode",
-        "ChangeType": "Addition",
-        "Description": "Added the [cloudPcSnapshotResetMode](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true#cloudpcsnapshotresetmode-values) enumeration type.",
-        "Target": "cloudPcSnapshotResetMode"
+          "Id": "b3813e0c-1e96-4d6e-8162-cf5c4c5a9063",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcSnapshotResetMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcSnapshotResetMode](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta#cloudpcsnapshotresetmode-values) enumeration type.",
+          "Target": "cloudPcSnapshotResetMode"
         }
       ],
       "Id": "b3813e0c-1e96-4d6e-8162-cf5c4c5a9063",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-07-28T00:00:00.000Z",
-      "WorkloadArea": "Devices and app management",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
