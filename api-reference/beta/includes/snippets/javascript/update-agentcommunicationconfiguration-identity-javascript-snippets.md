@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const communicationConfiguration = {
+const agentCommunicationConfiguration = {
   isOverridableAtAgentIdLevel: false,
   endpointConfiguration: {
     configurationType: 'apiBased',
@@ -36,6 +36,6 @@ const communicationConfiguration = {
 
 await client.api('/servicePrincipals/microsoft.graph.agentIdentity/1f554dbf-8c7a-42dc-8f92-1a3b4c5d6e7f/communicationConfiguration')
 	.version('beta')
-	.put(communicationConfiguration);
+	.put(agentCommunicationConfiguration);
 
 ```

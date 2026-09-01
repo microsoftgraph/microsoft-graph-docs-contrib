@@ -13,12 +13,7 @@ var requestBody = new Application
 {
 	AuthenticationBehaviors = new AuthenticationBehaviors
 	{
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"coopEnforcement" , null
-			},
-		},
+		CoopEnforcement = null,
 	},
 };
 

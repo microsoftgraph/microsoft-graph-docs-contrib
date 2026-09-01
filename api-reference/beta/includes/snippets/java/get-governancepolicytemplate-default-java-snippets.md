@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-com.microsoft.graph.models.tenantgovernanceservices.GovernancePolicyTemplate result = graphClient.directory().tenantGovernance().governancePolicyTemplates().byGovernancePolicyTemplateId("{governancePolicyTemplate-id}").get();
+TenantGovernancePolicyTemplate result = graphClient.directory().tenantGovernance().governancePolicyTemplates().byTenantGovernancePolicyTemplateId("{tenantGovernancePolicyTemplate-id}").get();
 
 
 ```

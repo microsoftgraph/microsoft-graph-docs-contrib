@@ -10,10 +10,8 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
 ItemBody body = new ItemBody();
+body.setContentType(BodyType.Html);
 body.setContent("Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("messageBodyContentType", "html");
-body.setAdditionalData(additionalData);
 chatMessage.setBody(body);
 LinkedList<ChatMessageAttachment> attachments = new LinkedList<ChatMessageAttachment>();
 ChatMessageAttachment chatMessageAttachment = new ChatMessageAttachment();

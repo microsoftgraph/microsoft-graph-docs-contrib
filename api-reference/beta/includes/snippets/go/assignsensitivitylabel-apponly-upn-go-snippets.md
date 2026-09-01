@@ -23,13 +23,10 @@ assignmentMethod := graphmodels.STANDARD_SENSITIVITYLABELASSIGNMENTMETHOD
 requestBody.SetAssignmentMethod(&assignmentMethod) 
 justificationText := "test_justification"
 requestBody.SetJustificationText(&justificationText) 
-additionalData := map[string]interface{}{
-appliedByUser := graph.New()
+appliedByUser := graphmodels.NewUserIdentity()
 userPrincipalName := "adelev@contoso.com"
 appliedByUser.SetUserPrincipalName(&userPrincipalName) 
-	requestBody.SetAppliedByUser(appliedByUser)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetAppliedByUser(appliedByUser)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").AssignSensitivityLabel().Post(context.Background(), requestBody, nil)

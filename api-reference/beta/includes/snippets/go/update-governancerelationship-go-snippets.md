@@ -11,11 +11,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodelstenantgovernanceservices "github.com/microsoftgraph/msgraph-beta-sdk-go/models/tenantgovernanceservices"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-requestBody := graphmodelstenantgovernanceservices.NewGovernanceRelationship()
+requestBody := graphmodels.NewGovernanceRelationship()
 status := graphmodels.TERMINATED_RELATIONSHIPSTATUS 
 requestBody.SetStatus(&status) 
 

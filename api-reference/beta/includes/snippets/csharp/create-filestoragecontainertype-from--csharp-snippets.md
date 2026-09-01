@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new FileStorageContainerType
 {
@@ -19,11 +20,18 @@ var requestBody = new FileStorageContainerType
 		IsItemVersioningEnabled = true,
 		IsSharingRestricted = false,
 		ConsumingTenantOverridables = FileStorageContainerTypeSettingsOverride.IsSearchEnabled | FileStorageContainerTypeSettingsOverride.ItemMajorVersionLimit,
-		Agent = new FileStorageContainerTypeAgentSettings
+		AdditionalData = new Dictionary<string, object>
 		{
-			ChatEmbedAllowedHosts = new List<string>
 			{
-				"https://localhost:3000",
+				"agent" , new UntypedObject(new Dictionary<string, UntypedNode>
+				{
+					{
+						"chatEmbedAllowedHosts", new UntypedArray(new List<UntypedNode>
+						{
+							new UntypedString("https://localhost:3000"),
+						})
+					},
+				})
 			},
 		},
 	},

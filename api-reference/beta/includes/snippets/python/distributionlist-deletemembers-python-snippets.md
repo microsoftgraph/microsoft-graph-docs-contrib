@@ -8,14 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.users.item.distributionlists.item.delete_members.delete_members_post_request_body import DeleteMembersPostRequestBody
 from msgraph_beta.generated.models.member import Member
+from msgraph_beta.generated.models.recipient_type import RecipientType
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = DeleteMembersPostRequestBody(
 	members = [
 		Member(
 			key = "MeganB@contoso.com",
-			additional_data = {
-					"type" : "mailbox",
-			}
+			type = RecipientType.Mailbox,
 		),
 	],
 )

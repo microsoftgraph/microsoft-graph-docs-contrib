@@ -14,10 +14,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Application();
 $authenticationBehaviors = new AuthenticationBehaviors();
-$additionalData = [
-	'coopEnforcement' => true,
-];
-$authenticationBehaviors->setAdditionalData($additionalData);
+$authenticationBehaviors->setCoopEnforcement(true);
 $requestBody->setAuthenticationBehaviors($authenticationBehaviors);
 
 $result = $graphServiceClient->applications()->byApplicationId('application-id')->patch($requestBody)->wait();

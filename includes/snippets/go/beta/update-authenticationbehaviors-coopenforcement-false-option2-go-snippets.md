@@ -17,11 +17,8 @@ import (
 
 requestBody := graphmodels.NewApplication()
 authenticationBehaviors := graphmodels.NewAuthenticationBehaviors()
-additionalData := map[string]interface{}{
-	coopEnforcement := false
+coopEnforcement := false
 authenticationBehaviors.SetCoopEnforcement(&coopEnforcement) 
-}
-authenticationBehaviors.SetAdditionalData(additionalData)
 requestBody.SetAuthenticationBehaviors(authenticationBehaviors)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

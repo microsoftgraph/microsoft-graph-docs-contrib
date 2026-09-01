@@ -11,9 +11,7 @@ from msgraph_beta.generated.models.authentication_behaviors import Authenticatio
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = Application(
 	authentication_behaviors = AuthenticationBehaviors(
-		additional_data = {
-				"coop_enforcement" : None,
-		}
+		coop_enforcement = None,
 	),
 )
 

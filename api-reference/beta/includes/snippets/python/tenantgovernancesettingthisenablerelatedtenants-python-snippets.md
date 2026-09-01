@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 
-await graph_client.directory.tenant_governance.settings.microsoft_graph_tenant_governance_services_enable_related_tenants.post()
+await graph_client.directory.tenant_governance.settings.enable_related_tenants.post()
 
 
 ```

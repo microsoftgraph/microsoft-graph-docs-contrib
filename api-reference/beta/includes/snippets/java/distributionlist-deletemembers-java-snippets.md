@@ -12,9 +12,7 @@ com.microsoft.graph.beta.users.item.distributionlists.item.deletemembers.DeleteM
 LinkedList<Member> members = new LinkedList<Member>();
 Member member = new Member();
 member.setKey("MeganB@contoso.com");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("type", "mailbox");
-member.setAdditionalData(additionalData);
+member.setType(RecipientType.Mailbox);
 members.add(member);
 deleteMembersPostRequestBody.setMembers(members);
 var result = graphClient.me().distributionLists().byDistributionListId("{distributionList-id}").deleteMembers().post(deleteMembersPostRequestBody);

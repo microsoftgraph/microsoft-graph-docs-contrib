@@ -46,6 +46,6 @@ $params = @{
 	)
 }
 
-Update-MgBetaDirectoryTenantGovernancePolicyTemplate -GovernancePolicyTemplateId $governancePolicyTemplateId -BodyParameter $params
+Update-MgBetaDirectoryTenantGovernancePolicyTemplate -TenantGovernancePolicyTemplateId $tenantGovernancePolicyTemplateId -BodyParameter $params
 
 ```

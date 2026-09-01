@@ -22,10 +22,8 @@ requestBody := graphusers.NewItemDeleteMembersPostRequestBody()
 member := graphmodels.NewMember()
 key := "MeganB@contoso.com"
 member.SetKey(&key) 
-additionalData := map[string]interface{}{
-	"type" : "mailbox", 
-}
-member.SetAdditionalData(additionalData)
+type := graphmodels.MAILBOX_RECIPIENTTYPE 
+member.SetType(&type) 
 
 members := []graphmodels.Memberable {
 	member,
