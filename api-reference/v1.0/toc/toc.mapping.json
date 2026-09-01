@@ -1323,6 +1323,7 @@
         "mailFolder",
         "mailSearchFolder",
         "messageRule",
+        "note",
         "exchangeMessageTrace"
       ],
       "childNodes": [

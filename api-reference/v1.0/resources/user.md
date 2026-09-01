@@ -105,6 +105,8 @@ This resource supports:
 | [Create rule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) | Create a messageRule object by specifying a set of conditions and actions. |
 | [Send mail](../api/user-sendmail.md) | None | Send the message specified in the request body. |
 | [Get mail tips](../api/user-getmailtips.md) | [mailTips](mailtips.md) collection | Return the MailTips of one or more recipients as available to the signed-in user. |
+| [List notes](../api/user-list-notes.md) | [note](note.md) collection | Get a list of the [note](note.md) objects in the user's *Notes* folder. |
+| [Create note](../api/user-post-notes.md) | [note](note.md) | Create a new [note](note.md) in the user's *Notes* folder. |
 | **Notes** |  |  |
 | [List notebooks](../api/onenote-list-notebooks.md) | [notebook](notebook.md) collection | Retrieve a list of notebook objects. |
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
@@ -329,6 +331,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user's manager. Read-only. Supports `$expand`.|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable. Supports `$expand`. |
 |messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
+|notes|[note](note.md) collection|The notes in the user's *Notes* folder. Read-only. Nullable.|
 |onenote|[onenote](onenote.md)| Read-only.|
 |onlineMeetings|[onlineMeeting](onlinemeeting.md) collection| Information about a meeting, including the URL used to join a meeting, the attendees list, and the description. |
 |outlook|[outlookUser](outlookuser.md)| Read-only.|

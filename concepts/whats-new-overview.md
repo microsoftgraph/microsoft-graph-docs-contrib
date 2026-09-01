@@ -55,6 +55,10 @@ Added the [externalOriginResourceConnector](/graph/api/resources/externaloriginr
 
 Added support for managing Microsoft 365 cross-tenant capabilities in cross-tenant access policies. Use the [m365CapabilityBase](/graph/api/resources/m365capabilitybase) resource and the **m365Capabilities** relationship to manage which Microsoft 365 experiences—such as calendar sharing, MailTips, places booking, and cross-tenant migration—are enabled between tenants. For the default policy, you can [list](/graph/api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities), [create](/graph/api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities), and [update](/graph/api/crosstenantaccesspolicyconfigurationdefault-update-m365capabilities) capabilities. For partner policies, you can [list](/graph/api/crosstenantaccesspolicyconfigurationpartner-list-m365capabilities), [create](/graph/api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities), [update](/graph/api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities), and [delete](/graph/api/crosstenantaccesspolicyconfigurationpartner-delete-m365capabilities) capabilities.
 
+### Mail
+
+- Added the [note](/graph/api/resources/note) resource type and methods to [list](/graph/api/user-list-notes), [create](/graph/api/user-post-notes), [get](/graph/api/note-get), [update](/graph/api/note-update), and [delete](/graph/api/note-delete) quick-capture notes in a user's _Notes_ folder. Use [delta query](/graph/api/note-delta) to synchronize notes that were added, updated, or deleted since the previous request. You can also [list](/graph/api/note-list-attachments), [add](/graph/api/note-post-attachments), and [delete](/graph/api/attachment-delete) inline image attachments, and use open or legacy extended properties to store custom data on a note.
+
 ### Mailbox import and export
 
 - Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources/mailboxfolder) resource type in v1.0. Use this property to identify folders created by Outlook by using a locale-independent name.
