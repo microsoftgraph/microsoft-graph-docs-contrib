@@ -1458,6 +1458,14 @@
                 "microsoft.graph.identityGovernance.lifecycleManagementSettings",
                 "microsoft.graph.identitygovernance.insights"
               ],
+              "complexTypes": [
+                "microsoft.graph.identityGovernance.operatorBetween",
+                "microsoft.graph.identityGovernance.operatorEqualTo",
+                "microsoft.graph.identityGovernance.operatorLessThanEqualTo",
+                "microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
+                "microsoft.graph.identityGovernance.workflowExecutionTriggerOperator",
+                "microsoft.graph.identityGovernance.workflowTriggerTimeBasedOperator"
+              ],
               "childNodes": [
                 {
                   "name": "Workflow",

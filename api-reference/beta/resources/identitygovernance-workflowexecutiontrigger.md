@@ -5,7 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 10/21/2024
+ms.date: 08/10/2026
 ---
 
 # workflowExecutionTrigger resource type
@@ -18,6 +18,7 @@ The derived types of this abstract object are configured in the **trigger** prop
 
 + [userInactivityTrigger](../resources/identitygovernance-userinactivitytrigger.md)
 + [timeBasedAttributeTrigger](../resources/identitygovernance-timebasedattributetrigger.md)
++ [timeBasedAttributeTriggerV2](../resources/identitygovernance-timebasedattributetriggerv2.md)
 + [attributeChangeTrigger](../resources/identitygovernance-attributechangetrigger.md)
 + [membershipChangeTrigger](../resources/identitygovernance-membershipchangetrigger.md)
 + [guestSponsorTrigger](../resources/identitygovernance-guestsponsortrigger.md)
