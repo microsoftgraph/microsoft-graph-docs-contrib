@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workflowTriggerOperatorEventTiming",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflowTriggerOperatorEventTiming** enumeration type.",
+          "Target": "workflowTriggerOperatorEventTiming"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "operatorBetween",
+          "ChangeType": "Addition",
+          "Description": "Added the [operatorBetween](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-operatorbetween?view=graph-rest-beta) resource.",
+          "Target": "operatorBetween"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "operatorEqualTo",
+          "ChangeType": "Addition",
+          "Description": "Added the [operatorEqualTo](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-operatorequalto?view=graph-rest-beta) resource.",
+          "Target": "operatorEqualTo"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "operatorLessThanEqualTo",
+          "ChangeType": "Addition",
+          "Description": "Added the [operatorLessThanEqualTo](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-operatorlessthanequalto?view=graph-rest-beta) resource.",
+          "Target": "operatorLessThanEqualTo"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timeBasedAttributeTriggerV2",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeBasedAttributeTriggerV2](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-timebasedattributetriggerv2?view=graph-rest-beta) resource.",
+          "Target": "timeBasedAttributeTriggerV2"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowExecutionTriggerOperator",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowExecutionTriggerOperator](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowexecutiontriggeroperator?view=graph-rest-beta) resource.",
+          "Target": "workflowExecutionTriggerOperator"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowTriggerTimeBasedOperator",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflowTriggerTimeBasedOperator](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowtriggertimebasedoperator?view=graph-rest-beta) resource.",
+          "Target": "workflowTriggerTimeBasedOperator"
+        }
+      ],
+      "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-02T23:14:26.6914738Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2b8c920e-e91a-4362-82e2-f923a43f96a8",
           "ApiChange": "Resource",
           "ChangedApiName": "guestSponsorTrigger",

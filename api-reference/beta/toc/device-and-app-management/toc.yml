@@ -747,6 +747,8 @@ items:
       href: ../../resources/cloudpcpolicypendingapplystatusresult.md
     - name: Cloud PC pool capability configuration
       href: ../../resources/cloudpcpoolcapabilityconfiguration.md
+    - name: Cloud PC provisioning configuration
+      href: ../../resources/cloudpcprovisioningconfiguration.md
     - name: Cloud PC provisioning policy assignment
       href: ../../resources/cloudpcprovisioningpolicyassignment.md
     - name: Cloud PC provisioning policy autopatch

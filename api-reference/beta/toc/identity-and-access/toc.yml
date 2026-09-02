@@ -1469,6 +1469,20 @@ items:
         href: ../../api/identitygovernance-insights-workflowsprocessedsummary.md
       - name: Get workflows processed by category
         href: ../../api/identitygovernance-insights-workflowsprocessedbycategory.md
+    - name: Complex types
+      items:
+      - name: Operator between
+        href: ../../resources/identitygovernance-operatorbetween.md
+      - name: Operator equal to
+        href: ../../resources/identitygovernance-operatorequalto.md
+      - name: Operator less than equal to
+        href: ../../resources/identitygovernance-operatorlessthanequalto.md
+      - name: Time based attribute trigger v2
+        href: ../../resources/identitygovernance-timebasedattributetriggerv2.md
+      - name: Workflow execution trigger operator
+        href: ../../resources/identitygovernance-workflowexecutiontriggeroperator.md
+      - name: Workflow trigger time based operator
+        href: ../../resources/identitygovernance-workflowtriggertimebasedoperator.md
   - name: Privileged Identity Management iteration 3
     items:
     - name: PIM for Microsoft Entra roles

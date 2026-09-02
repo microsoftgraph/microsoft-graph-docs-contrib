@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
-ms.date: 04/02/2024
+ms.date: 08/12/2026
 ---
 
 # Identity governance enum values
@@ -168,7 +168,14 @@ Namespace: microsoft.graph.identityGovernance
 |multipleConditionsExceeded|
 |unknownFutureValue|
 
+### workflowTriggerOperatorEventTiming values
 
+|Member|
+|:---|
+|before|
+|after|
+|on|
+|unknownFutureValue|
 
 <!--
 {
