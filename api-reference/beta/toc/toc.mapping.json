@@ -190,6 +190,7 @@
             "Enhanced Restore"
           ],
           "resources": [
+            "backupReport",
             "backupRestoreRoot",
             "emailNotificationsSetting",
             "exclusionUnitBase",
@@ -291,6 +292,8 @@
           ],
           "complexTypes": [
             "artifactQuery",
+            "backupCountStatistics",
+            "backupPolicyReport",
             "browseQueryResponseItem",
             "notificationRecipients",
             "protectionPolicyArtifactCount",

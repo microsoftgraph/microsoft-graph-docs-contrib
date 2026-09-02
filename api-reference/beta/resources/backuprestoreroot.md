@@ -54,6 +54,7 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |oneDriveForBusinessRestoreSessions|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) collection|The list of OneDrive for Business restore sessions available in the tenant.|
 |protectionPolicies|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|List of protection policies in the tenant.|
 |protectionUnits|[protectionUnitBase](../resources/protectionunitbase.md) collection|List of protection units in the tenant.|
+|reports|[backupReport](../resources/backupreport.md)|Report corresponding to a protection policy.|
 |restorePoints|[restorePoint](../resources/restorepoint.md) collection|List of restore points in the tenant.|
 |restoreSessions|[restoreSessionBase](../resources/restoresessionbase.md) collection|List of restore sessions in the tenant.|
 |serviceApps|[serviceApp](../resources/serviceapp.md) collection|List of Backup Storage apps in the tenant.|
