@@ -11,6 +11,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->directory()->tenantGovernance()->settings()->microsoftGraphTenantGovernanceServicesEnableRelatedTenants()->post()->wait();
+$graphServiceClient->directory()->tenantGovernance()->settings()->enableRelatedTenants()->post()->wait();
 
 ```

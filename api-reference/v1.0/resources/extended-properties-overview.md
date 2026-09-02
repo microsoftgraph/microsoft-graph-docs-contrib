@@ -24,6 +24,7 @@ You can use extended properties REST API to store or get such custom data in the
 - [mailboxItem](../resources/mailboxitem.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
+- [note](../resources/note.md)
 
 Or, in the following Microsoft 365 group resources:
 

@@ -10,9 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Application application = new Application();
 AuthenticationBehaviors authenticationBehaviors = new AuthenticationBehaviors();
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("coopEnforcement", null);
-authenticationBehaviors.setAdditionalData(additionalData);
+authenticationBehaviors.setCoopEnforcement(null);
 application.setAuthenticationBehaviors(authenticationBehaviors);
 Application result = graphClient.applications().byApplicationId("{application-id}").patch(application);
 

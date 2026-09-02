@@ -12,11 +12,9 @@ com.microsoft.graph.beta.drives.item.items.item.assignsensitivitylabel.AssignSen
 assignSensitivityLabelPostRequestBody.setSensitivityLabelId("5feba255-812e-446a-ac59-a7044ef827b5");
 assignSensitivityLabelPostRequestBody.setAssignmentMethod(SensitivityLabelAssignmentMethod.Standard);
 assignSensitivityLabelPostRequestBody.setJustificationText("test_justification");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
- appliedByUser = new ();
+UserIdentity appliedByUser = new UserIdentity();
 appliedByUser.setId("4a2ec3c4-1b2d-3e4f-5a6b-7c8d9e0f1a2b");
-additionalData.put("appliedByUser", appliedByUser);
-assignSensitivityLabelPostRequestBody.setAdditionalData(additionalData);
+assignSensitivityLabelPostRequestBody.setAppliedByUser(appliedByUser);
 graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").assignSensitivityLabel().post(assignSensitivityLabelPostRequestBody);
 
 

@@ -8,9 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-com.microsoft.graph.beta.models.tenantgovernanceservices.TenantGovernanceSetting tenantGovernanceSetting = new com.microsoft.graph.beta.models.tenantgovernanceservices.TenantGovernanceSetting();
+TenantGovernanceSetting tenantGovernanceSetting = new TenantGovernanceSetting();
 tenantGovernanceSetting.setCanReceiveInvitations(true);
-com.microsoft.graph.models.tenantgovernanceservices.TenantGovernanceSetting result = graphClient.directory().tenantGovernance().settings().patch(tenantGovernanceSetting);
+TenantGovernanceSetting result = graphClient.directory().tenantGovernance().settings().patch(tenantGovernanceSetting);
 
 
 ```

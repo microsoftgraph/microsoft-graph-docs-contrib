@@ -18,12 +18,7 @@ var requestBody = new AddMembersPostRequestBody
 		{
 			DisplayName = "Megan Bowen",
 			Key = "MeganB@contoso.com",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"type" , "mailbox"
-				},
-			},
+			Type = RecipientType.Mailbox,
 		},
 	},
 };

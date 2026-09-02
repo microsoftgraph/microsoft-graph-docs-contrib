@@ -688,6 +688,7 @@
             "cloudPcPartnerAgentInstallResult",
             "cloudPcPolicyPendingApplyStatusResult",
             "cloudPcPoolCapabilityConfiguration",
+            "cloudPcProvisioningConfiguration",
             "cloudPcProvisioningPolicyAssignment",
             "cloudPcProvisioningPolicyAutopatch",
             "cloudPcRegionGroupConfiguration",

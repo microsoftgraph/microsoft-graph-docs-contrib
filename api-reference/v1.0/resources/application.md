@@ -69,6 +69,7 @@ This resource supports:
 | appId | String | The unique identifier for the application that is assigned to an application by Microsoft Entra ID. Not nullable. Read-only. Alternate key. Supports `$filter` (`eq`).  |
 | applicationTemplateId | String | Unique identifier of the [applicationTemplate](../resources/applicationtemplate.md). Supports `$filter` (`eq`, `not`, `ne`). Read-only. `null` if the app wasn't created from an application template.|
 | appRoles | [appRole](approle.md) collection | The collection of roles defined for the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. |
+|authenticationBehaviors|[authenticationBehaviors](../resources/authenticationbehaviors.md)| The set of breaking change behaviors related to token issuance that are configured for the application. Authentication behaviors are unset by default (`null`) and must be explicitly enabled or disabled. Nullable. Returned only on `$select`. Requires `$select` to retrieve. <br/><br/> For more information about authentication behaviors, see [Manage application authenticationBehaviors](/graph/applications-authenticationbehaviors).|
 |certification|[certification](certification.md)|Specifies the certification status of the application.|
 |createdByAppId|String|The **appId** of the application that created this application. Set internally by Microsoft Entra ID. Read-only.|
 | createdDateTime | DateTimeOffset | The date and time the application was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, and `eq` on `null` values) and `$orderby`. |
@@ -159,6 +160,7 @@ The following JSON representation shows the resource type.
   "appId": "String",
   "applicationTemplateId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "authenticationBehaviors": {"@odata.type": "microsoft.graph.authenticationBehaviors"},
   "certification": {"@odata.type": "microsoft.graph.certification"},
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",

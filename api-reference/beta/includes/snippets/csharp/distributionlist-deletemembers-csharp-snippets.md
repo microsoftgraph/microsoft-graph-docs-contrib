@@ -17,12 +17,7 @@ var requestBody = new DeleteMembersPostRequestBody
 		new Member
 		{
 			Key = "MeganB@contoso.com",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"type" , "mailbox"
-				},
-			},
+			Type = RecipientType.Mailbox,
 		},
 	},
 };

@@ -14,7 +14,7 @@ ms.date: 08/29/2025
 
 # Manage application authenticationBehaviors
 
-The [**authenticationBehaviors**](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true) property of the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) object lets you configure breaking change behaviors related to token issuance. Applications can adopt new breaking changes by enabling a behavior or continue using pre-existing behavior by disabling it.
+The [**authenticationBehaviors**](/graph/api/resources/authenticationbehaviors) property of the [application](/graph/api/resources/application) object lets you configure breaking change behaviors related to token issuance. Applications can adopt new breaking changes by enabling a behavior or continue using pre-existing behavior by disabling it.
 
 You can configure the following behaviors:
 
@@ -24,94 +24,33 @@ You can configure the following behaviors:
 - Require multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 
 > [!NOTE]
-> The authenticationBehaviors property of the application object is currently available in `beta` only.
-
+> The **authenticationBehaviors** property (including **coopEnforcement**) is available in Microsoft Graph v1.0 and beta for the global service. **coopEnforcement** isn't available in national cloud deployments.
 ## Read the authenticationBehaviors setting for an application
 
 The **authenticationBehaviors** property is returned only on `$select` requests.
 
 To read the property and other specified properties of all apps in the tenant, run the following sample request. The request returns a `200 OK` response code and a JSON representation of the application object that shows only the selected properties.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_applications_authenticationBehaviors"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications?$select=id,displayName,appId,authenticationBehaviors
+GET https://graph.microsoft.com/v1.0/applications?$select=id,displayName,appId,authenticationBehaviors
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/list-applications-authenticationbehaviors-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/list-applications-authenticationbehaviors-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/list-applications-authenticationbehaviors-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/list-applications-authenticationbehaviors-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/list-applications-authenticationbehaviors-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/list-applications-authenticationbehaviors-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/list-applications-authenticationbehaviors-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 To read only the **authenticationBehaviors** property for a single app, run the following sample request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_application_authenticationBehaviors"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
+GET https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/get-application-authenticationbehaviors-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 You can also use the **appId** property as follows:
@@ -122,7 +61,7 @@ You can also use the **appId** property as follows:
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/applications(appId='37bf1fd4-78b0-4fea-ac2d-6c82829e9365')/authenticationBehaviors
+GET https://graph.microsoft.com/v1.0/applications(appId='37bf1fd4-78b0-4fea-ac2d-6c82829e9365')/authenticationBehaviors
 ```
 
 ## Control Cross-Origin-Opener-Policy enforcement
@@ -150,14 +89,14 @@ The following examples explicitly enable COOP enforcement for an application.
 #### Option 1
 
 This pattern for specifying the property in the request URL allows you to update *only* the specified property in the request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_coopEnforcement_true_option1"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
 Content-Type: application/json
 
 {
@@ -165,48 +104,19 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-coopenforcement-true-option1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Option 2
 
 This pattern for specifying the property in the request body lets you update other peer properties in the same request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_coopEnforcement_true_option2"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
 Content-Type: application/json
 
 {
@@ -215,34 +125,7 @@ Content-Type: application/json
     }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-authenticationbehaviors-coopenforcement-true-option2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/update-authenticationbehaviors-coopenforcement-true-option2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/update-authenticationbehaviors-coopenforcement-true-option2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-coopenforcement-true-option2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/update-authenticationbehaviors-coopenforcement-true-option2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/update-authenticationbehaviors-coopenforcement-true-option2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/update-authenticationbehaviors-coopenforcement-true-option2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+If successful, these requests return a `204 No Content` response.
 
 ---
 
@@ -253,14 +136,14 @@ The following examples explicitly suppress COOP enforcement while the applicatio
 #### Option 1
 
 This pattern for specifying the property in the request URL allows you to update *only* the specified property in the request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_coopEnforcement_false_option1"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
 Content-Type: application/json
 
 {
@@ -268,48 +151,19 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-coopenforcement-false-option1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Option 2
 
 This pattern for specifying the property in the request body lets you update other peer properties in the same request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_coopEnforcement_false_option2"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
 Content-Type: application/json
 
 {
@@ -318,34 +172,7 @@ Content-Type: application/json
     }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-authenticationbehaviors-coopenforcement-false-option2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/update-authenticationbehaviors-coopenforcement-false-option2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/update-authenticationbehaviors-coopenforcement-false-option2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-coopenforcement-false-option2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/update-authenticationbehaviors-coopenforcement-false-option2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/update-authenticationbehaviors-coopenforcement-false-option2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/update-authenticationbehaviors-coopenforcement-false-option2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+If successful, these requests return a `204 No Content` response. A COOP Report-Only header might still be present. After the application or owning platform is remediated, set the property to `true` for controlled validation or reset it to `null` to use the service default.
 
 ---
 
@@ -356,63 +183,33 @@ The following examples remove the explicit override.
 #### Option 1
 
 This pattern for specifying the property in the request URL allows you to update *only* the specified property in the request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_coopEnforcement_null_option1"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
 Content-Type: application/json
 
 {
     "coopEnforcement": null
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-coopenforcement-null-option1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Option 2
 
 This pattern for specifying the property in the request body lets you update other peer properties in the same request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_coopEnforcement_null_option2"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
 Content-Type: application/json
 
 {
@@ -421,34 +218,7 @@ Content-Type: application/json
     }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-authenticationbehaviors-coopenforcement-null-option2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/update-authenticationbehaviors-coopenforcement-null-option2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/update-authenticationbehaviors-coopenforcement-null-option2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-coopenforcement-null-option2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/update-authenticationbehaviors-coopenforcement-null-option2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/update-authenticationbehaviors-coopenforcement-null-option2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/update-authenticationbehaviors-coopenforcement-null-option2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+If successful, these requests return a `204 No Content` response. To confirm the reset state, read the application with `$select=id,appId,authenticationBehaviors`. If the application has no other explicit authentication behavior, **authenticationBehaviors** is `null`. If another authentication behavior is configured, the complex object remains present and **coopEnforcement** is omitted.
 
 ---
 
@@ -468,14 +238,14 @@ Today, the default behavior is to remove email addresses with unverified domain 
 #### Option 1
 
 This pattern for specifying the property in the request URL allows you to update *only* the specified property in the request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_true_option1"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
 Content-Type: application/json
 
 {
@@ -483,48 +253,19 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-removeunverifiedemailclaim-true-option1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Option 2
 
 This pattern for specifying the property in the request body lets you update other peer properties in the same request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_true_option2"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
 Content-Type: application/json
 
 {
@@ -534,48 +275,19 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-authenticationbehaviors-removeunverifiedemailclaim-true-option2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/update-authenticationbehaviors-removeunverifiedemailclaim-true-option2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/update-authenticationbehaviors-removeunverifiedemailclaim-true-option2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-removeunverifiedemailclaim-true-option2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/update-authenticationbehaviors-removeunverifiedemailclaim-true-option2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/update-authenticationbehaviors-removeunverifiedemailclaim-true-option2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/update-authenticationbehaviors-removeunverifiedemailclaim-true-option2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Accept email addresses with unverified domain owners in claims
 
 #### Option 1
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_false_option1"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
 Content-Type: application/json
 
 {
@@ -583,46 +295,17 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-removeunverifiedemailclaim-false-option1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Option 2
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_false_option2"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e
 Content-Type: application/json
 
 {
@@ -632,95 +315,36 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-authenticationbehaviors-removeunverifiedemailclaim-false-option2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/update-authenticationbehaviors-removeunverifiedemailclaim-false-option2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/update-authenticationbehaviors-removeunverifiedemailclaim-false-option2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-removeunverifiedemailclaim-false-option2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/update-authenticationbehaviors-removeunverifiedemailclaim-false-option2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/update-authenticationbehaviors-removeunverifiedemailclaim-false-option2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/update-authenticationbehaviors-removeunverifiedemailclaim-false-option2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Restore the default behavior
 
 #### Option 1
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_null_false_option1"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/authenticationBehaviors
 Content-Type: application/json
 
 {
     "removeUnverifiedEmailClaim": null
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-removeunverifiedemailclaim-null-false-option1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Option 2
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_removeUnverifiedEmailClaim_null_false_option2"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/
+PATCH https://graph.microsoft.com/v1.0/applications/03ef14b0-ca33-4840-8f4f-d6e91916010e/
 Content-Type: application/json
 
 {
@@ -729,34 +353,6 @@ Content-Type: application/json
     }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-authenticationbehaviors-removeunverifiedemailclaim-null-false-option2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/update-authenticationbehaviors-removeunverifiedemailclaim-null-false-option2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/update-authenticationbehaviors-removeunverifiedemailclaim-null-false-option2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-removeunverifiedemailclaim-null-false-option2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/update-authenticationbehaviors-removeunverifiedemailclaim-null-false-option2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/update-authenticationbehaviors-removeunverifiedemailclaim-null-false-option2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/update-authenticationbehaviors-removeunverifiedemailclaim-null-false-option2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -768,13 +364,12 @@ The following request shows how to update an app to enable extended Azure AD Gra
 
 #### Option 1
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_blockazureadgraphaccess_option1"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/applications/5c142e6f-0bd3-4e58-b510-8a106704f44f/authenticationBehaviors
+PATCH https://graph.microsoft.com/v1.0/applications/5c142e6f-0bd3-4e58-b510-8a106704f44f/authenticationBehaviors
 Content-Type: application/json
 
 {
@@ -782,45 +377,16 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-blockazureadgraphaccess-option1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Option 2
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationBehaviors_blockazureadgraphaccess_option2"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/applications/5c142e6f-0bd3-4e58-b510-8a106704f44f
+PATCH https://graph.microsoft.com/v1.0/applications/5c142e6f-0bd3-4e58-b510-8a106704f44f
 Content-Type: application/json
 
 {
@@ -830,38 +396,11 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-authenticationbehaviors-blockazureadgraphaccess-option2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/update-authenticationbehaviors-blockazureadgraphaccess-option2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/update-authenticationbehaviors-blockazureadgraphaccess-option2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/update-authenticationbehaviors-blockazureadgraphaccess-option2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/update-authenticationbehaviors-blockazureadgraphaccess-option2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/update-authenticationbehaviors-blockazureadgraphaccess-option2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/update-authenticationbehaviors-blockazureadgraphaccess-option2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ## Related content
 
-- [authenticationBehaviors resource type](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true)
+- [authenticationBehaviors resource type](/graph/api/resources/authenticationbehaviors)
 - [Migrate away from using email claims for user identification or authorization](/entra/identity-platform/migrate-off-email-claim-authorization)
 - [The false identifier anti-pattern](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/the-false-identifier-anti-pattern/ba-p/3846013)

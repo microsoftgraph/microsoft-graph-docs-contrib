@@ -33,6 +33,9 @@
             "extensionProperty",
             "federatedIdentityCredential"
           ],
+          "complexTypes": [
+            "authenticationBehaviors"
+          ],
           "childNodes": [
             {
               "name": "Policies",
@@ -1323,6 +1326,7 @@
         "mailFolder",
         "mailSearchFolder",
         "messageRule",
+        "note",
         "exchangeMessageTrace"
       ],
       "childNodes": [

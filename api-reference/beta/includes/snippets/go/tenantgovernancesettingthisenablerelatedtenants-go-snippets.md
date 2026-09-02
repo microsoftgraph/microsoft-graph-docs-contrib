@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-graphClient.Directory().TenantGovernance().Settings().MicrosoftGraphTenantGovernanceServicesEnableRelatedTenants().Post(context.Background(), nil)
+graphClient.Directory().TenantGovernance().Settings().EnableRelatedTenants().Post(context.Background(), nil)
 
 
 ```

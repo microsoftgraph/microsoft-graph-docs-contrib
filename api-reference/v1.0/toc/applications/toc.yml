@@ -156,6 +156,10 @@ items:
         href: ../../api/tokenlifetimepolicy-delete.md
       - name: List applied to applications
         href: ../../api/tokenlifetimepolicy-list-appliesto.md
+  - name: Complex types
+    items:
+    - name: Authentication behaviors
+      href: ../../resources/authenticationbehaviors.md
 - name: Application template
   items:
   - name: Application template

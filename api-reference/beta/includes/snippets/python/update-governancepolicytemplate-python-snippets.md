@@ -6,34 +6,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
-from msgraph_beta.generated.models.tenant_governance_services.governance_policy_template import GovernancePolicyTemplate
-from msgraph_beta.generated.models.tenant_governance_services.multi_tenant_applications_to_provision import MultiTenantApplicationsToProvision
-from msgraph_beta.generated.models.tenant_governance_services.required_resource_access import RequiredResourceAccess
-from msgraph_beta.generated.models.tenant_governance_services.resource_permission import ResourcePermission
-from msgraph_beta.generated.models.permission_type import PermissionType
-from msgraph_beta.generated.models.tenant_governance_services.delegated_administration_role_assignment import DelegatedAdministrationRoleAssignment
-from msgraph_beta.generated.models.tenant_governance_services.role_template import RoleTemplate
+from msgraph_beta.generated.models.tenant_governance_policy_template import TenantGovernancePolicyTemplate
+from msgraph_beta.generated.models.multi_tenant_applications_to_provision import MultiTenantApplicationsToProvision
+from msgraph_beta.generated.models.applications_required_resource_access import ApplicationsRequiredResourceAccess
+from msgraph_beta.generated.models.application_resource_permission import ApplicationResourcePermission
+from msgraph_beta.generated.models.application_permission_type import ApplicationPermissionType
+from msgraph_beta.generated.models.delegated_administration_role_assignment import DelegatedAdministrationRoleAssignment
+from msgraph_beta.generated.models.role_template import RoleTemplate
 from msgraph_beta.generated.models.group import Group
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
-request_body = GovernancePolicyTemplate(
+request_body = TenantGovernancePolicyTemplate(
 	multi_tenant_applications_to_provision = [
 		MultiTenantApplicationsToProvision(
 			app_id = "66667777-aaaa-8888-bbbb-9999cccc0000",
 			object_id = "cccccccc-2222-3333-4444-dddddddddddd",
 			display_name = "Mega Monitor",
 			required_resource_accesses = [
-				RequiredResourceAccess(
+				ApplicationsRequiredResourceAccess(
 					resource_app_id = "00000003-0000-0000-c000-000000000000",
 					permissions = [
-						ResourcePermission(
+						ApplicationResourcePermission(
 							id = "633e0fce-8c58-4cfb-9495-12bbd5a24f7c",
 							name = "Policy.Read.ConditionalAccess",
-							type = PermissionType.Scope,
+							type = ApplicationPermissionType.Scope,
 						),
-						ResourcePermission(
+						ApplicationResourcePermission(
 							id = "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
 							name = "User.Read",
-							type = PermissionType.Scope,
+							type = ApplicationPermissionType.Scope,
 						),
 					],
 				),
@@ -55,7 +55,7 @@ request_body = GovernancePolicyTemplate(
 	],
 )
 
-result = await graph_client.directory.tenant_governance.governance_policy_templates.by_governance_policy_template_id('governancePolicyTemplate-id').patch(request_body)
+result = await graph_client.directory.tenant_governance.governance_policy_templates.by_tenant_governance_policy_template_id('tenantGovernancePolicyTemplate-id').patch(request_body)
 
 
 ```

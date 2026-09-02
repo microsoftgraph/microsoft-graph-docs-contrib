@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-com.microsoft.graph.models.tenantgovernanceservices.RelatedTenantCollectionResponse result = graphClient.directory().tenantGovernance().relatedTenants().get();
+RelatedTenantCollectionResponse result = graphClient.directory().tenantGovernance().relatedTenants().get();
 
 
 ```

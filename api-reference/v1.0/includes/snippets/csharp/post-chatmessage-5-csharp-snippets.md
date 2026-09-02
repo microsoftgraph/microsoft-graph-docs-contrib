@@ -13,13 +13,8 @@ var requestBody = new ChatMessage
 {
 	Body = new ItemBody
 	{
+		ContentType = BodyType.Html,
 		Content = "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"messageBodyContentType" , "html"
-			},
-		},
 	},
 	Attachments = new List<ChatMessageAttachment>
 	{

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const governancePolicyTemplate = {
+const tenantGovernancePolicyTemplate = {
   displayName: 'Monitor Entra resource configurations',
   description: 'Grants Global reader and provisions a custom multi-tenant application to monitor conditional access policies',
   multiTenantApplicationsToProvision: [
@@ -54,6 +54,6 @@ const governancePolicyTemplate = {
 
 await client.api('/directory/tenantGovernance/governancePolicyTemplates')
 	.version('beta')
-	.post(governancePolicyTemplate);
+	.post(tenantGovernancePolicyTemplate);
 
 ```
