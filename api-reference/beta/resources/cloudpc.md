@@ -70,6 +70,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |groupDetail|[cloudPcEntraGroupDetail](../resources/cloudpcentragroupdetail.md)|The Microsoft Entra group details (for example, ID and display name) for the Entra ID group associated with the user's Reserve Cloud PC assignment. Read-only.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
+|isDisasterRecoveryActive|Boolean|Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event. `true` if the Cloud PC is currently running in its disaster recovery region; otherwise, `false`. Read-only.|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example, `{ "time": "2014-01-01T00:00:00Z"}`.|
 |lastLogoffDateTime|DateTimeOffset|The date and time when the user last logged off from the Cloud PC session. Returns `null` if the user has never established a session or if a session is currently active. The timestamp is shown in ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Returned only when explicitly selected with `$select`.|
 |lastModifiedDateTime|DateTimeOffset|The last modified date and time of the Cloud PC. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`.|
@@ -91,7 +92,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
 |sharedDeviceDetail|[cloudPcFrontlineSharedDeviceDetail](../resources/cloudpcfrontlineshareddevicedetail.md)|Indicates the Cloud PC device details associated with the frontline shared service plan, including the user's UPN and the session start date and time.|
-|status|[cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. The possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `restoring`, `pendingProvision`, `unknownFutureValue`, `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `refreshPolicyConfiguration`, and `preparing`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `refreshPolicyConfiguration`, and `preparing`.|
+|status|[cloudPcStatus](#cloudpcstatus-values)|The status of the Cloud PC. The possible values are: `notProvisioned`, `provisioning`, `provisioned`, `inGracePeriod`, `deprovisioning`, `failed`, `provisionedWithWarnings`, `resizing`, `restoring`, `pendingProvision`, `unknownFutureValue`, `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `refreshPolicyConfiguration`, `preparing`, `failoverInProgress`, `failbackInProgress`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `refreshPolicyConfiguration`, `preparing`, `failoverInProgress`, `failbackInProgress`.|
 |statusDetail|[cloudPcStatusDetail](../resources/cloudpcstatusdetail.md)|Indicates the detailed status associated with Cloud PC, including error/warning code, error/warning message, additionalInformation. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. |
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |userExperienceType|[cloudPcUserExperienceType](../resources/cloudpcprovisioningpolicy.md#cloudpcuserexperiencetype-values)|Specifies the type of cloud object the end user can access. The possible values are: `cloudPc`, `cloudApp`, `unknownFutureValue`. When set to `cloudPc`, it indicates that the end user can access the entire desktop. When set to `cloudApp`, it indicates that the end user can only access cloud apps published under the associated provisioning policy. Since the cloud app experience also creates Cloud PC devices that appear in the Cloud PC device list, this property helps differentiate them. The default value is `cloudPc`. This property is defined in the provisioning policy.|
@@ -120,7 +121,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |unknown|The Cloud PC status is unknown.|
 
 ### cloudPcStatus values
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `movingRegion`, `resizePendingLicense`, `modifyingSingleSignOn`, `preparing`.
+
 
 |Member|Description|
 |:---|:---|
@@ -132,14 +133,16 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |failed|The operation on Cloud PC failed.|
 |provisionedWithWarnings|The Cloud PC is provisioned and end users can access it with some warnings. The user can continue to use this Cloud PC.|
 |resizing|The Cloud PC is resizing.|
-|pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in the grace period is more than the number of total available licenses. |
 |restoring|The Cloud PC is restoring.|
+|pendingProvision|The provisioning is pending on the Cloud PC. In this case, the number of Cloud PCs in the grace period is more than the number of total available licenses. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 |movingRegion|Indicates that the Cloud PC is being moved from one region to another.|
 |resizePendingLicense|Indicates that the Cloud PC resize process was initiated but can't be completed because the target license hasn't been identified. It's currently awaiting customer action to resolve the licensing issue.|
 |modifyingSingleSignOn|Indicates that the Cloud PC is updating the single sign on setting.|
 |refreshPolicyConfiguration|Indicates that the Cloud PC is in the process of refreshing the new policy configurations.|
 |preparing|Indicates that the Cloud PC is preparing with IT admin defined configuration (Applications, Configuration and Security), appears after provisioning status.​ Only apply to Frontline Shared devices.|
+|failoverInProgress|Indicates that failover to the disaster recovery region is in progress for the Cloud PC.|
+|failbackInProgress|Indicates that failback to the primary region is in progress for the Cloud PC.|
 
 ### frontlineCloudPcAccessState values
 
@@ -196,6 +199,8 @@ The following JSON representation shows the resource type.
   "groupDetail": {"@odata.type": "microsoft.graph.cloudPcEntraGroupDetail"},
   "id": "String (identifier)",
   "imageDisplayName": "String",
+  "isDisasterRecoveryActive": "Boolean",
+  "lastLoginResult": "String",
   "lastLoginResult": {"@odata.type": "microsoft.graph.cloudPcLoginResult"},
   "lastLogoffDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
