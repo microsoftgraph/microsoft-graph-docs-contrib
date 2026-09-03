@@ -5,7 +5,7 @@ author: "zhishending"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 05/27/2024
+ms.date: 08/04/2026
 ---
 
 # alertRecord: getPortalNotifications
@@ -16,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Get a list of all notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

@@ -5,7 +5,7 @@ author: "zhishending"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 05/27/2024
+ms.date: 08/04/2026
 ---
 
 # alertRecord: setPortalNotificationAsSent
@@ -16,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Set the status of the notification associated with the specified [alertRecord](../resources/devicemanagement-alertrecord.md) on the Microsoft EndPoint Manager admin center as sent, by setting the **isPortalNotificationSent** property of the [portal notification](../resources/devicemanagement-portalnotification.md) to `true`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
