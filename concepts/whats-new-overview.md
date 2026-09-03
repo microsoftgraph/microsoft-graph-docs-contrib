@@ -290,6 +290,8 @@ Added the optional **workspaceId** parameter to the [runHuntingQuery](/graph/api
 
 ### Security | Data security and compliance
 
+Added support for evaluating content against Microsoft Purview Data Loss Prevention (DLP) policies before agent-to-tool interactions. Use the [processContent](/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta&preserve-view=true) API to determine whether content should be allowed, blocked, or audited based on the applicable protection scope.
+
 Added the **matchedConditionsDescription** and **complianceUrl** properties to the [policyTipAction](/graph/api/resources/policytipaction?view=graph-rest-beta&preserve-view=true) resource. Use these properties to display a user-friendly summary of the matched DLP conditions and link users to additional compliance guidance.
 
 Added the [embeddingInput](/graph/api/resources/embeddinginput?view=graph-rest-beta&preserve-view=true) resource type and the **embeddings** property on the [textClassificationRequest](/graph/api/resources/textclassificationrequest?view=graph-rest-beta&preserve-view=true) resource, so a caller can supply precomputed embedding vectors when classifying text and let the service skip recomputing them.

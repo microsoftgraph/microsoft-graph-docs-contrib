@@ -24,8 +24,9 @@ Inherits from [policyScopeBase](../resources/policyscopebase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activities|microsoft.graph.security.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Required.  This object is a multi-valued enumeration.|
+|activities|microsoft.graph.security.userActivityTypes|Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Required. This object is a multi-valued enumeration.|
 |executionMode|microsoft.graph.security.executionMode|Policy execution mode for this user.  Possible values are `evaluateInline` and `evaluateOffline`. Inherited from `policyScopeBase`. Required.|
+|locationExclusions|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations excluded from the user-level policy scope. When specified, the effective scope is the set of locations in **locations** minus the locations in **locationExclusions**. Inherited from `policyScopeBase`. Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations protected for this user. Inherited from `policyScopeBase`. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|Enforcement actions applicable to this user. Inherited from `policyScopeBase`. Required.|
 
@@ -48,6 +49,11 @@ The following JSON representation shows the resource type.
   "activities": "String",
   "executionMode": "String",
   "locations": [
+    {
+      "@odata.type": "microsoft.graph.policyLocation"
+    }
+  ],
+  "locationExclusions": [
     {
       "@odata.type": "microsoft.graph.policyLocation"
     }

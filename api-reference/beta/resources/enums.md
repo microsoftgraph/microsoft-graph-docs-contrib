@@ -6206,6 +6206,15 @@ Possible values for user account types (group membership), per Windows definitio
 |applyNotSupported|
 |unknownFutureValue|
 
+### evaluationScopeType values
+
+|Member|
+|:---|
+|tenant|
+|agent|
+|anonymousUser|
+|unknownFutureValue|
+
 ### agentEndpointConfigurationType values
 
 |Member|
