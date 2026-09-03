@@ -53,6 +53,10 @@ When a user signs in to an app, they, or, in some cases, an administrator, get a
 
 *Application permissions*, also called *app roles*, work in the app-only access scenario, without a signed-in user present. The application can access *any* data that the permission is associated with. For example, an application granted the *Files.Read.All* application permission can read any file in the organization.
 
+With the *User.ReadWrite.All* application permission, an application can update many of the writable user properties supported by Microsoft Graph, including for users assigned privileged admin roles.
+
+Application permissions are highly privileged because they allow applications to access and modify resources without requiring a signed-in user. From a least-privilege perspective, the delegated permission model is the recommended approach whenever it meets the application's requirements.
+
 For apps that access resources and APIs without a signed-in user, an administrator consents to the application permissions when the app is installed in the tenant or through the Microsoft Entra admin center. Only Privileged Role Administrator and Global Administrator can consent to application permissions.
 
 Apart from being assigned Microsoft Graph application permissions, an app might also be granted the privileges it needs through one of the following conditions:
@@ -243,4 +247,3 @@ The **appRoles**, **oauth2PermissionScopes**, and **resourceSpecificApplicationP
 - [Microsoft Graph permissions reference](permissions-reference.md).
 - [Overview of role-based access control in Microsoft Entra ID](/azure/active-directory/roles/custom-overview).
 - [Understanding delegated access](/azure/active-directory/develop/delegated-access-primer)
-
