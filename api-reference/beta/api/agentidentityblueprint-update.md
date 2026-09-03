@@ -58,6 +58,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property | Type | Description |
 |:---------|:-----|:------------|
 | displayName | String | The display name for the agent identity blueprint. The least privileged permission to update this property is *AgentIdentityBlueprint.UpdateBranding.All*. |
+| isDisabled | Boolean | Specifies whether the service principal associated with the agent identity blueprint can obtain new access tokens or access protected resources. When set to `true`, existing tokens remain valid until they expire based on their configured lifetimes. `true` if the agent identity blueprint is deactivated; otherwise `false`. |
 | managerApplications | Guid collection | A collection of application IDs for applications designated as managers of this agent identity blueprint. Manager applications can create agent blueprint principals, agent identities, and agent users for their managed blueprints without requiring high-privileged permissions such as `AgentIdentityBlueprintPrincipal.ReadWrite.All`. Currently, only Microsoft first-party application IDs can be set as values. Maximum of 10 values. Not nullable. |
 
 ## Response
