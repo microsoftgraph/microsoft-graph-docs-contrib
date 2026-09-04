@@ -226,16 +226,6 @@
     "cloud": "UsGov"
   },
   {
-    "apiPath": "/teams/{team-id}/channels/getAllMessages()",
-    "operation": "GET",
-    "cloud": "UsGov"
-  },
-  {
-    "apiPath": "/users/{user-id}/chats/getAllMessages()",
-    "operation": "GET",
-    "cloud": "UsGov"
-  },
-  {
     "apiPath": "/teams/{team-id}/channels/{channel-id}/messages/{chatMessage-id}",
     "operation": "PATCH",
     "cloud": "UsGov"
