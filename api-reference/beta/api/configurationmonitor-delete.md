@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a [configurationMonitor](../resources/configurationmonitor.md) object permanently. When deleted, the **configurationMonitor** data can't be restored.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

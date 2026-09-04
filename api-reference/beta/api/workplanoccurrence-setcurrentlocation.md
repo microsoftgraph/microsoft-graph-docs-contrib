@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update your [work](../resources/workplanoccurrence.md) location for the current day or current active segment. This action allows you to quickly update your work location without modifying individual occurrences.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

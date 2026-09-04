@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a [workPlanOccurrence](../resources/workplanoccurrence.md) object from your own work plan. Only time-off occurrences can be deleted. Occurrences generated from recurrences can't be deleted.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

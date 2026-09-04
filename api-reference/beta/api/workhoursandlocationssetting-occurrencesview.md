@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get [work plan occurrences](../resources/workplanoccurrence.md) from your own work plan within a specified date range. This function requires the **startDateTime** and **endDateTime** parameters.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

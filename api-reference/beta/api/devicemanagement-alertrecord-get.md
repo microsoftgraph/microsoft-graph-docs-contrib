@@ -16,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Read the properties and relationships of an [alertRecord](../resources/devicemanagement-alertrecord.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

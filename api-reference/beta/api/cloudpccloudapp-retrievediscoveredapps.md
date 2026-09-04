@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of [cloudPcDiscoveredApp](../resources/cloudpcdiscoveredapp.md) objects whose [appdetails](../resources/cloudpccloudappdetail.md) can be used to map to a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

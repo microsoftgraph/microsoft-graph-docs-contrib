@@ -18,6 +18,8 @@ Upload binary content for an [attachment](../resources/security-casemanagement-a
 
 The maximum file size is 100 MB. Upload files in chunks of no more than 1 MB. For files larger than 1 MB, send one PUT request for each chunk until all byte ranges are uploaded.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

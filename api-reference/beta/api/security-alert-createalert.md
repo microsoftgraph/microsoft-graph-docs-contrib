@@ -16,6 +16,8 @@ Namespace: microsoft.graph.security
 
 Create a Microsoft 365 Defender alert by invoking a bound action on the `alerts_v2` collection and returning the created [alert](../resources/security-alert.md) resource. The action accepts a [createAlertInput](../resources/security-createalertinput.md) complex type that combines alert metadata and creation-specific options in one request object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
