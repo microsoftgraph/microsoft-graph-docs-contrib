@@ -51,6 +51,12 @@ items:
 - name: Microsoft 365 backup and storage
   displayName: M365 Backup Storage, Microsoft 365 Backup Storage, Enhanced Restore
   items:
+  - name: Backup report
+    items:
+    - name: Backup report
+      href: ../../resources/backupreport.md
+    - name: Get statistics by policy
+      href: ../../api/backupreport-getstatisticsbypolicy.md
   - name: Backup restore
     items:
     - name: Backup restore
@@ -492,6 +498,10 @@ items:
     items:
     - name: Artifact query
       href: ../../resources/artifactquery.md
+    - name: Backup count statistics
+      href: ../../resources/backupcountstatistics.md
+    - name: Backup policy report
+      href: ../../resources/backuppolicyreport.md
     - name: Browse query response item
       href: ../../resources/browsequeryresponseitem.md
     - name: Notification recipients

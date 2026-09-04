@@ -174,7 +174,7 @@ configuration:
       then:
       - removeLabel:
           label: ready for content review
-    - description: When Security, Identity, & Compliance-related label is added to a pull request, request review from FaithOmbongi
+    - description: When Security, Identity, & Compliance-related label is added to a pull request, request review from CelesteDG
       if:
       - payloadType: Pull_Request
       - or:
@@ -235,7 +235,7 @@ configuration:
       - isOpen
       then:
       - requestReview:
-          reviewer: 'FaithOmbongi '
+          reviewer: 'CelesteDG'
     - description: When changes requested label is added remove review feedback addressed label
       if:
       - payloadType: Pull_Request

@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "evaluationScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **evaluationScopeType** enumeration type.",
+          "Target": "evaluationScopeType"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Resource",
+          "ChangedApiName": "evaluationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluationScope](https://learn.microsoft.com/en-us/graph/api/resources/evaluationscope?view=graph-rest-beta) resource.",
+          "Target": "evaluationScope"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyLocationTool",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyLocationTool](https://learn.microsoft.com/en-us/graph/api/resources/policylocationtool?view=graph-rest-beta) resource.",
+          "Target": "policyLocationTool"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Property",
+          "ChangedApiName": "locationExclusions",
+          "ChangeType": "Addition",
+          "Description": "Added the **locationExclusions** property to the [policyScopeBase](https://learn.microsoft.com/en-us/graph/api/resources/policyscopebase?view=graph-rest-beta) resource.",
+          "Target": "policyScopeBase"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Property",
+          "ChangedApiName": "evaluationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **evaluationScope** property to the [processContentRequest](https://learn.microsoft.com/en-us/graph/api/resources/processcontentrequest?view=graph-rest-beta) resource.",
+          "Target": "processContentRequest"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Property",
+          "ChangedApiName": "sourceLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **sourceLocation** property to the [protectedApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/protectedapplicationmetadata?view=graph-rest-beta) resource.",
+          "Target": "protectedApplicationMetadata"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "evaluationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the `evaluationScope` parameter to the [compute](https://learn.microsoft.com/en-us/graph/api/tenantprotectionscopecontainer-compute?view=graph-rest-beta) method.",
+          "Target": "compute"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Method",
+          "ChangedApiName": "processContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [processContent](https://learn.microsoft.com/en-us/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta) method to the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantdatasecurityandgovernance?view=graph-rest-beta) resource.",
+          "Target": "tenantDataSecurityAndGovernance"
+        }
+      ],
+      "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-03T00:19:48.5682322Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e845e70f-0e71-4ef3-ab89-4b1bbb9d9953",
           "ApiChange": "Property",
           "ChangedApiName": "complianceUrl",

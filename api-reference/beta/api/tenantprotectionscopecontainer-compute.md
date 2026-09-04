@@ -28,6 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /security/dataSecurityAndGovernance/protectionScopes/compute
 ```
@@ -48,9 +49,10 @@ In the request body, provide JSON object with the following parameters.
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | activities            | microsoft.graph.security.userActivityTypes                                                   | Optional. Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. This object is a multi-valued enumeration.|
 | deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                    | Optional. Information about the device context (type, OS) used for contextual policy evaluation.                                                                   |
+|evaluationScope|[evaluationScope](../resources/evaluationscope.md)|Optional. Specifies the evaluation context for the request. For Agent-to-Tool (A2T) scenarios, set **type** to `agent`. If omitted, the request is evaluated using the default tenant context.|
 | integratedAppMetadata | [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)      | Optional. Information about the calling application (name, version) integrating with Microsoft Purview.                                                                    |
-| locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations the application is interested in. If provided, results are trimmed to policies covering these locations. Use [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, or [policy location URL](../resources/policylocationurl.md) for URL locations. You must specify the `@odata.type` property to declare the type of policyLocation. For example, `"@odata.type": "microsoft.graph.policyLocationApplication"`.|
-| pivotOn               | microsoft.graph.policyPivotProperty                          | Optional. Specifies how the results should be aggregated. If omitted or `none`, results might be less aggregated. Possible values are `activity`,`location`, `none`.|                
+| locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations the application is interested in. If provided, results are trimmed to policies covering these locations. Use [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, [policy location tool](../resources/policylocationtool.md) for tool locations, or [policy location URL](../resources/policylocationurl.md) for URL locations. You must specify the `@odata.type` property to declare the type of policyLocation. For example, `"@odata.type": "microsoft.graph.policyLocationApplication"`.|
+| pivotOn               | microsoft.graph.policyPivotProperty                          | Optional. Specifies how the results should be aggregated. If omitted or `none`, results might be less aggregated. Possible values are `activity`, `location`, `none`.|
 
 ## Response
 
@@ -68,10 +70,17 @@ Content-type: application/json
 
 {
     "activities": "uploadText,downloadText",
+    "evaluationScope": {
+        "type": "agent"
+    },
     "locations": [
         {
             "@odata.type": "microsoft.graph.policyLocationApplication",
             "value": "be121c8f-ecd8-4026-b699-669e0ce1bcbf"
+        },
+        {
+            "@odata.type": "microsoft.graph.policyLocationTool",
+            "value": "search@mcp"
         }
     ]
 }

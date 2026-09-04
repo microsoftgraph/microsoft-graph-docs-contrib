@@ -5,7 +5,7 @@ author: "zhishending"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 05/27/2024
+ms.date: 08/04/2026
 ---
 
 # Get alertRule
@@ -16,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Read the properties and relationships of an [alertRule](../resources/devicemanagement-alertrule.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

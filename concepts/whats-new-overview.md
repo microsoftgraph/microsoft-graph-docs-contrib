@@ -24,6 +24,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Added the **onPremisesExtensionAttributes** property to the [group](/graph/api/resources/group) resource. Use it to access extension attributes 1-15 synchronized from on-premises Active Directory.
 
+### Identity and access | Governance
+
+Clarified that the [List resources](/graph/api/accesspackagecatalog-list-resources) method returns SharePoint Online resources only when it's called with delegated permissions. To retrieve SharePoint site information with application permissions, use the [sites: getAllSites](/graph/api/site-getallsites) method.
+
 ## September 2026: New in preview only
 
 ### Agents
@@ -38,6 +42,10 @@ Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy?
 
 - Added the **isDisasterRecoveryActive** property to the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to indicate whether the Cloud PC currently runs in its disaster recovery region after a failover event.
 - Use `failoverInProgress` and `failbackInProgress` as supported values for the **status** property on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) and [cloudPcStatusSummary](/graph/api/resources/cloudpcstatussummary?view=graph-rest-beta&preserve-view=true) resources.
+
+### Identity and access | Governance
+
+Clarified that the [Get accessPackageResourceEnvironment](/graph/api/accesspackageresourceenvironment-get?view=graph-rest-beta&preserve-view=true) method returns SharePoint Online resource environments only when it's called with delegated permissions. A SharePoint Online resource environment corresponds to a SharePoint root site, so to retrieve root site information with application permissions, use the [List sites](/graph/api/site-list?view=graph-rest-beta&preserve-view=true) method with the `$filter=siteCollection/root ne null` query option.
 
 ## August 2026: New and generally available
 
@@ -281,6 +289,8 @@ Added the optional **workspaceId** parameter to the [runHuntingQuery](/graph/api
 - Added the [correlationReason](/graph/api/resources/security-correlationreason) enumeration and [mergeResponse](/graph/api/resources/security-mergeresponse) resource type.
 
 ### Security | Data security and compliance
+
+Added support for evaluating content against Microsoft Purview Data Loss Prevention (DLP) policies before agent-to-tool interactions. Use the [processContent](/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta&preserve-view=true) API to determine whether content should be allowed, blocked, or audited based on the applicable protection scope.
 
 Added the **matchedConditionsDescription** and **complianceUrl** properties to the [policyTipAction](/graph/api/resources/policytipaction?view=graph-rest-beta&preserve-view=true) resource. Use these properties to display a user-friendly summary of the matched DLP conditions and link users to additional compliance guidance.
 
