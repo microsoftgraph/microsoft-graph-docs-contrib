@@ -28,6 +28,10 @@ Added the **onPremisesExtensionAttributes** property to the [group](/graph/api/r
 
 Clarified that the [List resources](/graph/api/accesspackagecatalog-list-resources) method returns SharePoint Online resources only when it's called with delegated permissions. To retrieve SharePoint site information with application permissions, use the [sites: getAllSites](/graph/api/site-getallsites) method.
 
+### Teamwork and communications | Messaging
+
+Updated the [getAllRetainedMessages](/graph/api/channel-getallretainedmessages) method to support exporting retained versions of private-channel messages that were edited or deleted after the tenant completed private-channel storage migration.
+
 ## September 2026: New in preview only
 
 ### Agents
@@ -46,6 +50,10 @@ Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy?
 ### Identity and access | Governance
 
 Clarified that the [Get accessPackageResourceEnvironment](/graph/api/accesspackageresourceenvironment-get?view=graph-rest-beta&preserve-view=true) method returns SharePoint Online resource environments only when it's called with delegated permissions. A SharePoint Online resource environment corresponds to a SharePoint root site, so to retrieve root site information with application permissions, use the [List sites](/graph/api/site-list?view=graph-rest-beta&preserve-view=true) method with the `$filter=siteCollection/root ne null` query option.
+
+### Teamwork and communications | Messaging
+
+Updated the [getAllRetainedMessages](/graph/api/channel-getallretainedmessages?view=graph-rest-beta&preserve-view=true) method to document support for retained private-channel message versions captured after the tenant's private-channel storage migration completed.
 
 ## August 2026: New and generally available
 
