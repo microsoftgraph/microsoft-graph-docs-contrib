@@ -652,6 +652,8 @@ items:
     items:
     - name: Tenant data security and governance
       href: ../../resources/tenantdatasecurityandgovernance.md
+    - name: Process content
+      href: ../../api/tenantdatasecurityandgovernance-processcontent.md
     - name: Process content async
       href: ../../api/tenantdatasecurityandgovernance-processcontentasync.md
   - name: User data security and governance
@@ -702,6 +704,8 @@ items:
       href: ../../resources/dlpactioninfo.md
     - name: Embedding input
       href: ../../resources/embeddinginput.md
+    - name: Evaluation scope
+      href: ../../resources/evaluationscope.md
     - name: Group scope
       href: ../../resources/groupscope.md
     - name: Integrated application metadata
@@ -722,6 +726,8 @@ items:
       href: ../../resources/policylocationapplication.md
     - name: Policy location domain
       href: ../../resources/policylocationdomain.md
+    - name: Policy location tool
+      href: ../../resources/policylocationtool.md
     - name: Policy location URL
       href: ../../resources/policylocationurl.md
     - name: Policy scope base
