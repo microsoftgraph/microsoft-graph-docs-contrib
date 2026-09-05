@@ -21,7 +21,9 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 > This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Learn about retention for Microsoft Teams](/purview/retention-policies-teams).
 
 > [!NOTE]
-> This endpoint doesn't support retrieving retained messages from Teams private channels.
+> Teams migrated private-channel message storage from individual user mailboxes to group mailboxes, where standard channel messages are stored. For private channels, this API supports retained message history for messages edited or deleted after the tenant's storage migration completed, provided an applicable retention policy captured the versions. Edits or deletions that occurred before migration aren't returned because retained-history support wasn't available through this API during the legacy user-mailbox storage period.
+>
+> A tenant administrator can run [Get-TenantPrivateChannelMigrationStatus](/powershell/module/microsoftteams/get-tenantprivatechannelmigrationstatus?view=teams-ps&preserve-view=true) to verify that `MigrationStatus` is `Completed` and identify the tenant's `MigrationCompletionTimeStamp`. If `MigrationStatus` isn't `Completed`, `MigrationCompletionTimeStamp` isn't available and can't be used as a tenant-wide cutoff. For more information about the storage change, see [Migration of private channel messages in 2025](/purview/retention-policies-teams#migration-of-private-channel-messages-in-2025).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
