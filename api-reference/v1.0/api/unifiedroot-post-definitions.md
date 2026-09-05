@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a new user-centric (catalog-scope) [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object through the [unified](../resources/unifiedroot.md) route. With a user-centric review, a reviewer evaluates a principal's access to every group and application contained in an [entitlement management catalog](../resources/accesspackagecatalog.md) in a single review. The catalog is identified in the **resourceScopes** collection of the [principalResourceMembershipsScope](../resources/principalresourcemembershipsscope.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 

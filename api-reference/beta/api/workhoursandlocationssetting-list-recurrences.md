@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the [recurrences](../resources/workplanrecurrence.md) from your own work plan via the **recurrences** navigation property.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

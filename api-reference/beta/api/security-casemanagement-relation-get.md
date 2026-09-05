@@ -16,6 +16,8 @@ Namespace: microsoft.graph.security.caseManagement
 
 Read a concrete [relation](../resources/security-casemanagement-relation.md) from a [case](../resources/security-casemanagement-case.md). The response is an [incidentRelation](../resources/security-casemanagement-incidentrelation.md), [recommendationRelation](../resources/security-casemanagement-recommendationrelation.md), or [workspaceIndicatorRelation](../resources/security-casemanagement-workspaceindicatorrelation.md), identified by `@odata.type`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

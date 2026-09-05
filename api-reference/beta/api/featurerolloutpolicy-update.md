@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Update the properties of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph.deviceManagement
 
 Get a list of the [alertRule](../resources/devicemanagement-alertrule.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
