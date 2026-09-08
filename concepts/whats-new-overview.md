@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 09/08/2026
+ms.date: 06/23/2026
 ms.topic: whats-new
 ---
 
@@ -17,12 +17,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
-
-## September 2026: New in preview only
-
-### Identity and access | Identity and sign-in
-
-Added the [onAttributeCollectionProfileUpdate](/graph/api/resources/onattributecollectionprofileupdate?view=graph-rest-beta&preserve-view=true) resource and related configuration types to support progressive profiling in Microsoft Entra External ID external tenants. Use progressive profiling to collect additional user profile attributes during sign-in based on attribute and identity provider conditions.
 
 ## July 2026: New and generally available
 
