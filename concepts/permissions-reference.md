@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 08/31/2026
+ms.date: 09/07/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -4006,6 +4006,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 432e76f0-8af6-4315-a853-66ab9538f480 | b3e5ebc6-1c23-4337-8286-3f27165addb4 |
 | DisplayText | Read and write all scenario monitoring alerts | Read and write all scenario monitoring alert configurations. |
 | Description | Allows the app to read and write all scenario monitoring alerts, without a signed-in user. | Allows the app to read and write all scenario monitoring alert configurations, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### IdentityDiagnostic.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 3839e465-e636-4c8e-b959-340182fb0567 |
+| DisplayText | - | Read your identity diagnostics |
+| Description | - | Allows the app to read own identity diagnostics information, including symptoms, runs, statuses, and results for the signed-in user |
+| AdminConsentRequired | - | No |
+
+---
+
+### IdentityDiagnostic.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | bb1e8ab4-fe40-4b26-82ec-65dfaf4d367b | 9181fb3f-4b8e-45ef-98ae-41774b813b80 |
+| DisplayText | Read all identity diagnostics | Read all identity diagnostics |
+| Description | Allows the app to read all identity diagnostics information, including symptoms, runs, statuses, and results for all users in the organization, without a signed-in user. | Allows the app to read all identity diagnostics information, including symptoms, runs, statuses, and results for all users in the organization, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### IdentityDiagnostic.StartDiagnosis
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 1ad58246-a11b-4ea3-9b75-8b6c315cbe21 |
+| DisplayText | - | Start identity diagnostics |
+| Description | - | Allows the app to start identity diagnostic processes for the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
+### IdentityDiagnostic.StartDiagnosis.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2607bb8b-0a9b-4f53-9d2f-6f81b99ac145 | 51470ff5-62b6-4aef-9a3a-d8c8a1e66d09 |
+| DisplayText | Start identity diagnostics for all users | Start identity diagnostics for all users |
+| Description | Allows the app to start identity diagnostic processes for all users in the organization, without a signed-in user. | Allows the app to start identity diagnostic processes for all users in the organization, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
