@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the operation and conditions used to determine when a progressive profiling flow collects a group of attributes.
+Defines the operation and conditions used to determine when a progressive profiling flow collects a group of attributes. All conditions within a rule must be satisfied for the rule to apply. Multiple rules are evaluated independently.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |attributeIds|String collection|Required. The identifiers of the attributes to collect. Each value references the **id** property of an [attributeConfiguration](../resources/attributeconfiguration.md) object in the same handler.|
-|conditions|[attributeCollectionRuleCondition](../resources/attributecollectionrulecondition.md)|The conditions that must be satisfied for the rule to run.|
+|conditions|[attributeCollectionRuleCondition](../resources/attributecollectionrulecondition.md)|The conditions that must all be satisfied for the rule to run. If this property is `null`, the rule is unconditional.|
 |operation|attributeCollectionOperation|Required. The operation to perform for the referenced attributes. The possible values are: `add`, `update`, and `unknownFutureValue`.|
 
 ## Relationships

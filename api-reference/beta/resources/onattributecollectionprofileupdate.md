@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration for collecting additional user profile attributes during sign-in in a Microsoft Entra External ID external tenant. The configuration defines the attributes to collect, the rules that determine when to collect them, and how to present them.
+Represents the configuration for incrementally collecting additional user profile attributes during sign-in in a Microsoft Entra External ID external tenant. Use this resource to reduce the information requested during sign-up and collect profile information later, when configured conditions are met. The configuration defines the attributes to collect, the rules that determine when to collect them, and the pages that present them to the user.
 
 Inherits from [onAttributeCollectionHandler](../resources/onattributecollectionhandler.md).
 
@@ -22,9 +22,9 @@ Inherits from [onAttributeCollectionHandler](../resources/onattributecollectionh
 
 |Property|Type|Description|
 |:---|:---|:---|
-|attributeCollectionRules|[attributeCollectionRule](../resources/attributecollectionrule.md) collection|Required. The rules that determine which attributes to collect and when to collect them.|
-|attributes|[attributeConfiguration](../resources/attributeconfiguration.md) collection|Required. The attributes that the flow can collect.|
-|pageViews|[pageView](../resources/pageview.md) collection|Required. The ordered pages used to present attributes to the user.|
+|attributeCollectionRules|[attributeCollectionRule](../resources/attributecollectionrule.md) collection|Required. The rules that determine which attributes to collect and when to collect them. Rules are evaluated independently.|
+|attributes|[attributeConfiguration](../resources/attributeconfiguration.md) collection|Required. The self-contained catalog of attributes that the flow can collect. Rules and page views reference attributes in this collection by ID.|
+|pageViews|[pageView](../resources/pageview.md) collection|Required. The ordered pages used to present attributes to the user. An empty collection presents the attributes on a single default page.|
 
 ## Relationships
 

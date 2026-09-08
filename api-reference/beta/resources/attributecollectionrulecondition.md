@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the conditions that must be satisfied for a progressive profiling attribute collection rule to run. All conditions in the object are evaluated together.
+Defines the conditions that must be satisfied for a progressive profiling attribute collection rule to run. Identity provider and attribute conditions in the object are combined with AND logic.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |attributeConditions|[attributeCondition](../resources/attributecondition.md) collection|Required. The conditions evaluated against user attributes.|
-|identityProviders|String collection|Required. The identity providers for which the rule applies. An empty collection applies the rule to all identity providers.|
+|identityProviders|String collection|Required. The identity providers for which the rule applies. An empty collection applies the rule regardless of the identity provider used to sign in.|
 
 ## Relationships
 

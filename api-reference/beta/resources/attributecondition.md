@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines a condition evaluated against a user attribute in a progressive profiling attribute collection rule.
+Defines a comparison against the current value of a user attribute in a progressive profiling attribute collection rule.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|attributeId|String|Required. The identifier of the user attribute to evaluate.|
+|attributeId|String|Required. The identifier of the user attribute to evaluate. The value references an attribute available to the progressive profiling flow.|
 |operator|conditionOperator|Required. The comparison operator. The possible values are: `equals`, `notEquals`, `contains`, `notContains`, `startsWith`, `endsWith`, `greaterThan`, `lessThan`, `greaterThanOrEquals`, `lessThanOrEquals`, `isEmpty`, `isNotEmpty`, and `unknownFutureValue`.|
 |value|String|The value to compare with the user attribute. This property isn't required for the `isEmpty` and `isNotEmpty` operators.|
 
