@@ -13,6 +13,32 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### attributeCollectionOperation values
+
+|Member|
+|:---|
+|add|
+|update|
+|unknownFutureValue|
+
+### conditionOperator values
+
+|Member|
+|:---|
+|equals|
+|notEquals|
+|contains|
+|notContains|
+|startsWith|
+|endsWith|
+|greaterThan|
+|lessThan|
+|greaterThanOrEquals|
+|lessThanOrEquals|
+|isEmpty|
+|isNotEmpty|
+|unknownFutureValue|
+
 ### meetingEngagementType values
 
 |Member|

@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "9a2d10dc-d909-49a3-a42b-a03e3f2e67be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onAttributeCollectionProfileUpdate",
+          "ChangeType": "Addition",
+          "Description": "Added the [onAttributeCollectionProfileUpdate](https://learn.microsoft.com/en-us/graph/api/resources/onattributecollectionprofileupdate?view=graph-rest-beta) resource.",
+          "Target": "onAttributeCollectionProfileUpdate"
+        },
+        {
+          "Id": "9a2d10dc-d909-49a3-a42b-a03e3f2e67be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/attributeconfiguration?view=graph-rest-beta) resource.",
+          "Target": "attributeConfiguration"
+        },
+        {
+          "Id": "9a2d10dc-d909-49a3-a42b-a03e3f2e67be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeCollectionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeCollectionRule](https://learn.microsoft.com/en-us/graph/api/resources/attributecollectionrule?view=graph-rest-beta) resource.",
+          "Target": "attributeCollectionRule"
+        },
+        {
+          "Id": "9a2d10dc-d909-49a3-a42b-a03e3f2e67be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeCollectionRuleCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeCollectionRuleCondition](https://learn.microsoft.com/en-us/graph/api/resources/attributecollectionrulecondition?view=graph-rest-beta) resource.",
+          "Target": "attributeCollectionRuleCondition"
+        },
+        {
+          "Id": "9a2d10dc-d909-49a3-a42b-a03e3f2e67be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeCondition](https://learn.microsoft.com/en-us/graph/api/resources/attributecondition?view=graph-rest-beta) resource.",
+          "Target": "attributeCondition"
+        },
+        {
+          "Id": "9a2d10dc-d909-49a3-a42b-a03e3f2e67be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pageView",
+          "ChangeType": "Addition",
+          "Description": "Added the [pageView](https://learn.microsoft.com/en-us/graph/api/resources/pageview?view=graph-rest-beta) resource.",
+          "Target": "pageView"
+        },
+        {
+          "Id": "9a2d10dc-d909-49a3-a42b-a03e3f2e67be",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attributeCollectionOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeCollectionOperation](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#attributecollectionoperation-values) enumeration type.",
+          "Target": "attributeCollectionOperation"
+        },
+        {
+          "Id": "9a2d10dc-d909-49a3-a42b-a03e3f2e67be",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "conditionOperator",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionOperator](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#conditionoperator-values) enumeration type.",
+          "Target": "conditionOperator"
+        }
+      ],
+      "Id": "9a2d10dc-d909-49a3-a42b-a03e3f2e67be",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-08T18:53:23.8017158Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a51cd56b-d8c8-4f5d-919a-018e18211bb6",
           "ApiChange": "Resource",
           "ChangedApiName": "onVerifiedIdClaimValidationCustomExtensionHandler",
