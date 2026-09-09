@@ -150,6 +150,10 @@ Updated the retirement date for the legacy Microsoft Graph [security alerts API]
 - Added the [get relation](/graph/api/security-casemanagement-relation-get?view=graph-rest-beta&preserve-view=true) and [delete relation](/graph/api/security-casemanagement-relation-delete?view=graph-rest-beta&preserve-view=true) methods to the [relation](/graph/api/resources/security-casemanagement-relation?view=graph-rest-beta&preserve-view=true) resource type to read and remove links between a case and related security resources.
 - Added the [delete task](/graph/api/security-casemanagement-task-delete?view=graph-rest-beta&preserve-view=true) method to the [task](/graph/api/resources/security-casemanagement-task?view=graph-rest-beta&preserve-view=true) resource type to remove a task from a case.
 
+### Security | Data security and compliance
+
+- Replaced the **offsetChunks** property and **embeddingOffsetChunk** resource type with the **chunkOffsets** property and [chunkOffsets](/graph/api/resources/chunkoffsets?view=graph-rest-beta&preserve-view=true) complex type in [embeddingInput](/graph/api/resources/embeddinginput?view=graph-rest-beta&preserve-view=true). Use **chunkOffsets** to associate precomputed embedding vectors with their source text ranges by using base64-encoded start positions and lengths.
+
 ### Teamwork and communications | Calls and online meetings
 
 - Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta&preserve-view=true) and [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-beta&preserve-view=true) methods to document a service-update issue that can cause paginated requests to return an empty collection followed by duplicate items.

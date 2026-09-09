@@ -2941,6 +2941,7 @@
             "autoLabeling",
             "binaryContent",
             "blockAccessAction",
+            "chunkOffsets",
             "classifcationErrorBase",
             "classificationError",
             "classificationInnerError",
