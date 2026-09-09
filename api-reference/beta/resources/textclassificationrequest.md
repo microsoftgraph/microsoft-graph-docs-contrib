@@ -2,7 +2,7 @@
 title: "textClassificationRequest resource type"
 description: "Represents a request to classify text for sensitive information types, with optional caller-supplied precomputed embeddings."
 author: "jcksonhe"
-ms.date: 07/10/2026
+ms.date: 08/31/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
@@ -57,7 +57,12 @@ The following JSON representation shows the resource type.
     {
       "@odata.type": "microsoft.graph.embeddingInput",
       "modelType": "String",
-      "data": "String"
+      "data": "String",
+      "chunkOffsets": {
+        "@odata.type": "microsoft.graph.chunkOffsets",
+        "starts": "String",
+        "lengths": "String"
+      }
     }
   ],
   "fileExtension": "String",
@@ -73,4 +78,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

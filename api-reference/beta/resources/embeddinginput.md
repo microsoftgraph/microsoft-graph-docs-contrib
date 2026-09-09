@@ -2,7 +2,7 @@
 title: "embeddingInput resource type"
 description: "A set of precomputed embedding vectors produced by a single embedding model for the request text."
 author: "jcksonhe"
-ms.date: 07/10/2026
+ms.date: 08/31/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
@@ -23,6 +23,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|chunkOffsets|[chunkOffsets](../resources/chunkoffsets.md)|Optional offset metadata for the text chunks that produced this embedding data. The **starts** property is required when **chunkOffsets** is present. When **lengths** is also present, the decoded element counts must match and pair by index.|
 |data|String|The embedding vectors the model produced for the text, encoded as a base64 string of little-endian 32-bit floats. Every vector the model emitted (for example, one per text chunk) is concatenated in order; each contributes exactly the modelType's embedding dimension worth of float components, so the decoded length must be a whole multiple of that dimension.|
 |modelType|String|The embedding model identifier drawn from the service allow-list (for example: text-embedding-3-small-512). Unique (case-insensitive) within the embeddings collection; entries whose modelType is outside the allow-list are rejected with a 400.|
 
@@ -40,7 +41,9 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.embeddingInput",
   "modelType": "String",
-  "data": "String"
+  "data": "String",
+  "chunkOffsets": {
+    "@odata.type": "microsoft.graph.chunkOffsets"
+  }
 }
 ```
-

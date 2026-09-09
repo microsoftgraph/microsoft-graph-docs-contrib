@@ -145,6 +145,12 @@ items:
       href: ../../resources/m365-cross-tenant-access-policy-overview.md
     - name: Microsoft 365 capability base
       href: ../../resources/m365capabilitybase.md
+    - name: Anonymous calendar sharing free busy detail
+      href: ../../resources/anonymouscalendarsharingfreebusydetail.md
+    - name: Anonymous calendar sharing free busy reviewer
+      href: ../../resources/anonymouscalendarsharingfreebusyreviewer.md
+    - name: Anonymous calendar sharing free busy simple
+      href: ../../resources/anonymouscalendarsharingfreebusysimple.md
     - name: Cross-tenant calendar availability basic
       href: ../../resources/crosstenantcalendaravailabilitybasic.md
     - name: Cross-tenant calendar availability limited details

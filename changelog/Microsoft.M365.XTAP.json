@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "767692fb-eb65-41c2-bdd7-eb78b272d564",
+          "ApiChange": "Resource",
+          "ChangedApiName": "anonymousCalendarSharingFreeBusyDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [anonymousCalendarSharingFreeBusyDetail](https://learn.microsoft.com/en-us/graph/api/resources/anonymouscalendarsharingfreebusydetail?view=graph-rest-beta) resource.",
+          "Target": "anonymousCalendarSharingFreeBusyDetail"
+        },
+        {
+          "Id": "767692fb-eb65-41c2-bdd7-eb78b272d564",
+          "ApiChange": "Resource",
+          "ChangedApiName": "anonymousCalendarSharingFreeBusyReviewer",
+          "ChangeType": "Addition",
+          "Description": "Added the [anonymousCalendarSharingFreeBusyReviewer](https://learn.microsoft.com/en-us/graph/api/resources/anonymouscalendarsharingfreebusyreviewer?view=graph-rest-beta) resource.",
+          "Target": "anonymousCalendarSharingFreeBusyReviewer"
+        },
+        {
+          "Id": "767692fb-eb65-41c2-bdd7-eb78b272d564",
+          "ApiChange": "Resource",
+          "ChangedApiName": "anonymousCalendarSharingFreeBusySimple",
+          "ChangeType": "Addition",
+          "Description": "Added the [anonymousCalendarSharingFreeBusySimple](https://learn.microsoft.com/en-us/graph/api/resources/anonymouscalendarsharingfreebusysimple?view=graph-rest-beta) resource.",
+          "Target": "anonymousCalendarSharingFreeBusySimple"
+        }
+      ],
+      "Id": "767692fb-eb65-41c2-bdd7-eb78b272d564",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-08T05:51:57.8203465Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2f7a98c4-222e-4544-8b16-02e5bdda79a7",
           "ApiChange": "Enumeration",
           "ChangedApiName": "m365ResourceType",

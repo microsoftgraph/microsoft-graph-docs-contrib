@@ -2941,6 +2941,7 @@
             "autoLabeling",
             "binaryContent",
             "blockAccessAction",
+            "chunkOffsets",
             "classifcationErrorBase",
             "classificationError",
             "classificationInnerError",
@@ -3818,6 +3819,9 @@
               "overview": "../../resources/m365-cross-tenant-access-policy-overview.md",
               "resources": [
                 "m365CapabilityBase",
+                "anonymousCalendarSharingFreeBusyDetail",
+                "anonymousCalendarSharingFreeBusyReviewer",
+                "anonymousCalendarSharingFreeBusySimple",
                 "crossTenantCalendarAvailabilityBasic",
                 "crossTenantCalendarAvailabilityLimitedDetails",
                 "crossTenantCalendarSharingFreeBusyDetail",
