@@ -19,6 +19,9 @@ Represents an abstract base type for cross-tenant Microsoft 365 capabilities. Th
 
 The following types derive from **m365CapabilityBase**:
 
+- [anonymousCalendarSharingFreeBusyDetail](../resources/anonymouscalendarsharingfreebusydetail.md)
+- [anonymousCalendarSharingFreeBusyReviewer](../resources/anonymouscalendarsharingfreebusyreviewer.md)
+- [anonymousCalendarSharingFreeBusySimple](../resources/anonymouscalendarsharingfreebusysimple.md)
 - [crossTenantCalendarAvailabilityBasic](../resources/crosstenantcalendaravailabilitybasic.md)
 - [crossTenantCalendarAvailabilityLimitedDetails](../resources/crosstenantcalendaravailabilitylimiteddetails.md)
 - [crossTenantCalendarSharingFreeBusyDetail](../resources/crosstenantcalendarsharingfreebusydetail.md)

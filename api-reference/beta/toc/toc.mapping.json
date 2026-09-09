@@ -3818,6 +3818,9 @@
               "overview": "../../resources/m365-cross-tenant-access-policy-overview.md",
               "resources": [
                 "m365CapabilityBase",
+                "anonymousCalendarSharingFreeBusyDetail",
+                "anonymousCalendarSharingFreeBusyReviewer",
+                "anonymousCalendarSharingFreeBusySimple",
                 "crossTenantCalendarAvailabilityBasic",
                 "crossTenantCalendarAvailabilityLimitedDetails",
                 "crossTenantCalendarSharingFreeBusyDetail",

@@ -132,6 +132,10 @@ Updated the retirement date for the legacy Microsoft Graph [security alerts API]
 
 - Added support for configurable time-based lifecycle workflow triggers through the [timeBasedAttributeTriggerV2](/graph/api/resources/identitygovernance-timebasedattributetriggerv2?view=graph-rest-beta&preserve-view=true) resource. Select a date-type user attribute and configure an operator to run workflows on an exact date, within a rolling window, or between two offsets before or after that date.
 
+### Identity and access | Identity and sign-in
+
+- Added the [anonymousCalendarSharingFreeBusySimple](/graph/api/resources/anonymouscalendarsharingfreebusysimple?view=graph-rest-beta&preserve-view=true), [anonymousCalendarSharingFreeBusyDetail](/graph/api/resources/anonymouscalendarsharingfreebusydetail?view=graph-rest-beta&preserve-view=true), and [anonymousCalendarSharingFreeBusyReviewer](/graph/api/resources/anonymouscalendarsharingfreebusyreviewer?view=graph-rest-beta&preserve-view=true) capabilities that derive from [m365CapabilityBase](/graph/api/resources/m365capabilitybase?view=graph-rest-beta&preserve-view=true). Use these capabilities in cross-tenant access policies to authorize anonymous external users to view calendar free/busy information at simple, detailed, or reviewer fidelity.
+
 ### Mail
 
 - Changed the **members** property on the [distributionList](/graph/api/resources/distributionlist?view=graph-rest-beta&preserve-view=true) resource to an expandable relationship. Use `$expand=members` with the [Get distribution list](/graph/api/distributionlist-get?view=graph-rest-beta&preserve-view=true) method instead of the removed standalone methods for listing and getting members.
