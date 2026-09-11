@@ -161,6 +161,7 @@ Updated the retirement date for the legacy Microsoft Graph [security alerts API]
 
 ### Security | Data security and compliance
 
+- Added the `privacyDataMatch`, `aiPowered`, and `unknownFutureValue` members to the **classificationMethod** enumeration for the [sensitiveType](/graph/api/resources/sensitivetype?view=graph-rest-beta&preserve-view=true) resource. These members support privacy data matching based on tenant data, AI-powered classification that can benefit from supported caller-supplied embeddings, and forward-compatible handling of future values.
 - Replaced the **offsetChunks** property and **embeddingOffsetChunk** resource type with the **chunkOffsets** property and [chunkOffsets](/graph/api/resources/chunkoffsets?view=graph-rest-beta&preserve-view=true) complex type in [embeddingInput](/graph/api/resources/embeddinginput?view=graph-rest-beta&preserve-view=true). Use **chunkOffsets** to associate precomputed embedding vectors with their source text ranges by using base64-encoded start positions and lengths.
 
 ### Teamwork and communications | Calls and online meetings

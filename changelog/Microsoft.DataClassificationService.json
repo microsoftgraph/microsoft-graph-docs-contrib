@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "0ce048fe-8751-4864-bbb6-eba9552614dd",
+          "ApiChange": "Member",
+          "ChangedApiName": "privacyDataMatch",
+          "ChangeType": "Addition",
+          "Description": "Added the `privacyDataMatch` member to the **classificationMethod** enumeration for the **sensitiveType** resource to support privacy data matching based on tenant data.",
+          "Target": "classificationMethod"
+        },
+        {
+          "Id": "0ce048fe-8751-4864-bbb6-eba9552614dd",
+          "ApiChange": "Member",
+          "ChangedApiName": "aiPowered",
+          "ChangeType": "Addition",
+          "Description": "Added the `aiPowered` member to the **classificationMethod** enumeration for the **sensitiveType** resource to support AI-powered classification that can benefit from supported caller-supplied embeddings.",
+          "Target": "classificationMethod"
+        },
+        {
+          "Id": "0ce048fe-8751-4864-bbb6-eba9552614dd",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknownFutureValue` member to the **classificationMethod** enumeration for the **sensitiveType** resource to support forward-compatible handling of future values.",
+          "Target": "classificationMethod"
+        }
+      ],
+      "Id": "0ce048fe-8751-4864-bbb6-eba9552614dd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-11T19:48:46.3390947Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e210704c-83c6-4a49-ab52-b565204f3126",
           "ApiChange": "ComplexType",
           "ChangedApiName": "chunkOffsets",
