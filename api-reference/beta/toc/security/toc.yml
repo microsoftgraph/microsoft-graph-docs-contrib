@@ -682,6 +682,8 @@ items:
       href: ../../resources/binarycontent.md
     - name: Block access action
       href: ../../resources/blockaccessaction.md
+    - name: Chunk offsets
+      href: ../../resources/chunkoffsets.md
     - name: Classifcation error base
       href: ../../resources/classifcationerrorbase.md
     - name: Classification error
