@@ -38,6 +38,11 @@ Updated the [getAllRetainedMessages](/graph/api/channel-getallretainedmessages) 
 
 Added the **isDisabled** property to the [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true) resource. Use it to deactivate an agent identity blueprint without deleting it.
 
+### Backup and recovery | Microsoft 365 backup and storage
+
+- Added the **policyId** property to the [restoreSessionBase](/graph/api/resources/restoresessionbase?view=graph-rest-beta&preserve-view=true) resource type to scope restore sessions to a protection policy.
+- Added the optional **policyId** parameter to the [restorePoint: search](/graph/api/restorepoint-search?view=graph-rest-beta&preserve-view=true) method to validate protection-unit membership and improve policy-scoped routing. You can also filter the restore points collection by `protectionUnit/policyId`.
+
 ### Backup storage
 
 Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy?view=graph-rest-beta&preserve-view=true) method to retrieve policy-level protection statistics for Microsoft 365 Backup Storage. Use the report to monitor protected and unprotected artifacts across completed, in-progress, and failed states, review offboarding activity, and determine when the metrics were last calculated.

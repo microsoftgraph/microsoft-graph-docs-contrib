@@ -116,6 +116,7 @@ Content-Type: application/json
   "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
   "status": "active",
   "restoreJobType": "standard",
+  "policyId": "99999999-aaaa-bbbb-cccc-dddddddddddd",
   "restoreSessionArtifactCount": {
     "total": 2,
     "completed": 1,

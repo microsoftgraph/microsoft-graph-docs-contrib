@@ -39,7 +39,8 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restore session fails or is completed with error.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
-|restoreJobType|[restoreJobType](../resources/enums.md#restorejobtype-values)|Indicates whether the restore is standard or bulk or granular restore. The possible values are `standard`,`bulk`,`unknownFutureValue`,`granular`. . Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `granular`.|
+|policyId|String|The identifier of the protection policy that scopes the restore session. Inherited from [restoreSessionBase](../resources/restoresessionbase.md).|
+|restoreJobType|[restoreJobType](../resources/enums.md#restorejobtype-values)|Indicates whether the restore is standard or bulk or granular restore. The possible values are `standard`,`bulk`,`unknownFutureValue`,`granular`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `granular`.|
 |restoreSessionArtifactCount|[restoreSessionArtifactCount](../resources/restoresessionartifactcount.md)|The number of metadata artifacts that belong to this restore session.|
 |status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of restore artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
@@ -94,6 +95,7 @@ The following JSON representation shows the resource type.
   },
   "error": {
     "@odata.type": "microsoft.graph.publicError"
-  }
+  },
+  "policyId": "String"
 }
 ```

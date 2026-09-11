@@ -3,6 +3,50 @@
     {
       "ChangeList": [
         {
+          "Id": "7bd19147-f81e-47de-9ed8-ea52768e7127",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyId",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyId** property to the [restoreSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/restoresessionbase?view=graph-rest-beta) resource.",
+          "Target": "restoreSessionBase"
+        },
+        {
+          "Id": "7bd19147-f81e-47de-9ed8-ea52768e7127",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "policyId",
+          "ChangeType": "Addition",
+          "Description": "Added the `policyId` parameter to the [search](https://learn.microsoft.com/en-us/graph/api/restorepoint-search?view=graph-rest-beta) method.",
+          "Target": "search"
+        }
+      ],
+      "Id": "7bd19147-f81e-47de-9ed8-ea52768e7127",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-11T13:04:30.5819246Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a2f40e30-f6e1-4882-8c1f-2566a187067c",
+          "ApiChange": "Property",
+          "ChangedApiName": "protectionUnit/policyId",
+          "ChangeType": "Addition",
+          "Description": "Added support for `$filter` on the **protectionUnit/policyId** property to the [list restorePoints](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-list-restorepoints?view=graph-rest-beta) method.",
+          "Target": "restorePoint"
+        }
+      ],
+      "Id": "a2f40e30-f6e1-4882-8c1f-2566a187067c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-11T14:07:25.1782378Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2de8d8e2-93f6-4445-8b33-3213e55fafa1",
           "ApiChange": "Resource",
           "ChangedApiName": "backupCountStatistics",

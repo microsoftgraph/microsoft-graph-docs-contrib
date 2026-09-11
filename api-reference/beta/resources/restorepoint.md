@@ -51,7 +51,7 @@ The following limitations apply to this API:
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|protectionUnit|[protectionUnitBase](../resources/protectionunitbase.md)|The site, drive, or mailbox units that are protected under a protection policy.|
+|protectionUnit|[protectionUnitBase](../resources/protectionunitbase.md)|The site, drive, or mailbox unit protected under a protection policy. Supports `$expand` and `$filter` on **protectionUnit/policyId** using the `eq` operator.|
 
 ## JSON representation
 
