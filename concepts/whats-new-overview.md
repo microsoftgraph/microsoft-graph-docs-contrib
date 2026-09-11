@@ -38,6 +38,11 @@ Updated the [getAllRetainedMessages](/graph/api/channel-getallretainedmessages) 
 
 Added the **isDisabled** property to the [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true) resource. Use it to deactivate an agent identity blueprint without deleting it.
 
+### Backup and recovery | Microsoft 365 backup and storage
+
+- Added the **policyId** property to the [restoreSessionBase](/graph/api/resources/restoresessionbase?view=graph-rest-beta&preserve-view=true) resource type to scope restore sessions to a protection policy.
+- Added the optional **policyId** parameter to the [restorePoint: search](/graph/api/restorepoint-search?view=graph-rest-beta&preserve-view=true) method to validate protection-unit membership and improve policy-scoped routing. You can also filter the restore points collection by `protectionUnit/policyId`.
+
 ### Backup storage
 
 Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy?view=graph-rest-beta&preserve-view=true) method to retrieve policy-level protection statistics for Microsoft 365 Backup Storage. Use the report to monitor protected and unprotected artifacts across completed, in-progress, and failed states, review offboarding activity, and determine when the metrics were last calculated.
@@ -76,6 +81,8 @@ Updated the [getAllRetainedMessages](/graph/api/channel-getallretainedmessages?v
 - Added the **appliedByUser** parameter to the [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) action on the [driveItem](/graph/api/resources/driveitem) resource. This parameter allows app-only callers to specify the user identity on whose behalf the sensitivity label is applied.
 
 ### Identity and access | Directory management
+
+- Added the **managerApplications** property to the [agentIdentity](/graph/api/resources/agentidentity) and [agentIdentityBlueprintPrincipal](/graph/api/resources/agentidentityblueprintprincipal) resources to identify the applications that manage the backing agent identity blueprint.
 
 Added the [recovery](/graph/api/resources/entrarecoveryservices-recovery) resource type and related methods to programmatically recover critical Microsoft Entra directory objects from automatically created point-in-time snapshots. Use these APIs to inspect available snapshots, preview and scope changes before restoration, run recovery jobs, monitor progress, and review failed changes.
 
@@ -156,6 +163,7 @@ Updated the retirement date for the legacy Microsoft Graph [security alerts API]
 
 ### Security | Data security and compliance
 
+- Added the `privacyDataMatch`, `aiPowered`, and `unknownFutureValue` members to the **classificationMethod** enumeration for the [sensitiveType](/graph/api/resources/sensitivetype?view=graph-rest-beta&preserve-view=true) resource. These members support privacy data matching based on tenant data, AI-powered classification that can benefit from supported caller-supplied embeddings, and forward-compatible handling of future values.
 - Replaced the **offsetChunks** property and **embeddingOffsetChunk** resource type with the **chunkOffsets** property and [chunkOffsets](/graph/api/resources/chunkoffsets?view=graph-rest-beta&preserve-view=true) complex type in [embeddingInput](/graph/api/resources/embeddinginput?view=graph-rest-beta&preserve-view=true). Use **chunkOffsets** to associate precomputed embedding vectors with their source text ranges by using base64-encoded start positions and lengths.
 
 ### Teamwork and communications | Calls and online meetings

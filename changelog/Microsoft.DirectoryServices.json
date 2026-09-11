@@ -47,6 +47,32 @@
     {
       "ChangeList": [
         {
+          "Id": "c35e45d4-3a8f-487a-bff1-d913edc8fa3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "managerApplications",
+          "ChangeType": "Addition",
+          "Description": "Added the **managerApplications** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-1.0) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "c35e45d4-3a8f-487a-bff1-d913edc8fa3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "managerApplications",
+          "ChangeType": "Addition",
+          "Description": "Added the **managerApplications** property to the [agentIdentityBlueprintPrincipal](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-1.0) resource.",
+          "Target": "agentIdentityBlueprintPrincipal"
+        }
+      ],
+      "Id": "c35e45d4-3a8f-487a-bff1-d913edc8fa3f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-27T20:28:39.6387385Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "af422b2e-b42f-4f2d-84e4-68d9f2bab7a7",
           "ApiChange": "Property",
           "ChangedApiName": "managerApplications",

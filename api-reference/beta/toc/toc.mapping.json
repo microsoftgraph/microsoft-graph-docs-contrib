@@ -2929,9 +2929,10 @@
           "resources": [
             "contentActivity",
             "microsoft.graph.security.sensitivityLabel",
+            "sensitiveType",
             "tenantDataSecurityAndGovernance",
-            "userDataSecurityAndGovernance",
-            "textClassificationRequest"
+            "textClassificationRequest",
+            "userDataSecurityAndGovernance"
           ],
           "complexTypes": [
             "aiAgentInfo",

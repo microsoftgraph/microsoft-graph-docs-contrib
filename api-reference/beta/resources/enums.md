@@ -6231,6 +6231,18 @@ Possible values for user account types (group membership), per Windows definitio
 |allMessages|
 |unknownFutureValue|
 
+### classificationMethod values
+
+|Member|
+|:---|
+|patternMatch|
+|exactDataMatch|
+|fingerprint|
+|machineLearning|
+|privacyDataMatch|
+|aiPowered|
+|unknownFutureValue|
+
 ### mlClassificationMatchTolerance values
 
 |Member|
@@ -6244,6 +6256,13 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |fullDocument|
 |partialDocument|
+
+### sensitiveTypeSource values
+
+|Member|
+|:---|
+|outOfBox|
+|tenant|
 
 ### mipWorkloads values
 

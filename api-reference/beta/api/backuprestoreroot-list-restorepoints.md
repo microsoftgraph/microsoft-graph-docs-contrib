@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq '{ProtectionUnitID}')&$filter=protectionDateTime lt YYYY-MM-DDTHH:mm:ssZ
+GET /solutions/backupRestore/restorePoints?$expand=protectionUnit&$filter=protectionDateTime lt YYYY-MM-DDTHH:mm:ssZ and protectionUnit/id eq '{protectionUnitId}' and protectionUnit/policyId eq '{policyId}'
 ```
 
 ## Optional query parameters
@@ -46,6 +46,8 @@ GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 
 This method supports the `$expand`, `$filter` and `orderBy` [OData query parameters](/graph/query-parameters), as shown in the [example](../api/backuprestoreroot-list-restorepoints.md#request) later in this topic.
 
 The `$expand` and `$filter` query parameters are required.
+
+Use `$filter` with `lt` on **protectionDateTime** and with `eq` on **protectionUnit/id** and **protectionUnit/policyId**. You can combine these expressions with `and`.
 
 ## Request headers
 
@@ -75,7 +77,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853')&$filter=protectionDateTime lt 2024-05-12T10:01:00Z
+GET https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints?$expand=protectionUnit&$filter=protectionDateTime lt 2024-05-12T10:01:00Z and protectionUnit/id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853' and protectionUnit/policyId eq '9fec8e78-bce4-4aaf-ab1b-5451cc387264'
 ```
 
 # [C#](#tab/csharp)

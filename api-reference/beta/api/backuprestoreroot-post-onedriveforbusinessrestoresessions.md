@@ -59,6 +59,7 @@ You can specify the following properties when you create a **oneDriveForBusiness
 |@microsoft.graph.conflictBehavior|String|The conflict resolution behavior when restoring each granular restore artifact in a session. The possible values are: `fail` (default), `replace`, `rename`. Only supported for granular restore sessions. Optional.|
 |driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|A collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) objects. Required.|
 |granularDriveRestoreArtifacts|[granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) collection| A collection of [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) objects. Required.|
+|policyId|String|The identifier of the protection policy that scopes the restore session. The service validates that the referenced protection units belong to this policy. Optional.|
 
 ## Response
 
@@ -86,6 +87,7 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusines
 Content-Type: application/json
 
 {
+  "policyId": "99999999-aaaa-bbbb-cccc-dddddddddddd",
   "driveRestoreArtifacts": [
     {
       "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
@@ -150,6 +152,7 @@ Content-Type: application/json
   "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
   "status": "draft",
   "restoreJobType": "standard",
+  "policyId": "99999999-aaaa-bbbb-cccc-dddddddddddd",
   "restoreSessionArtifactCount": {
     "total": 2,
     "completed": 0,
