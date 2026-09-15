@@ -44,6 +44,7 @@ Use the [Update](../api/security-casemanagement-case-update.md) method to update
 |id|String|The unique identifier for the case. Inherited from [entity](../resources/entity.md). Supports `$filter` and `$orderby`.|
 |lastModifiedBy|String|The user or service that last modified the case. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` and `$orderby`.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the case was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter` and `$orderby`.|
+|slaPolicies|[microsoft.graph.security.caseManagement.caseSlaPolicyEntry](../resources/security-casemanagement-caseslapolicyentry.md) collection|A denormalized, read-only collection of SLA (service level agreement) policy status entries for the case. Each entry represents one SLA policy applied to the case, including its current status and breach target time. Computed by the service; any value supplied in a create or update request is silently ignored. Supports `$filter` using the `any()` lambda operator only, for example, `$filter=slaPolicies/any(p: p/status eq 'breached')`. The `all()` lambda operator and other collection functions aren't supported. Doesn't support `$orderby`.|
 |status|String|The tenant-defined lifecycle status of the case. Use a **displayName** value returned in the status tree by [List statuses](../api/security-casemanagement-casetypeconfiguration-list-statuses.md) from `/security/caseManagement/caseTypeConfigurations/genericCase/statuses` or `/security/caseManagement/caseTypeConfigurations/incidentCase/statuses`, depending on the case type. Supports `$filter` (`eq`).|
 
 ## Relationships
@@ -75,6 +76,9 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": "String",
   "displayName": "String",
   "status": "String",
-  "customFields": {"@odata.type": "#microsoft.graph.security.caseManagement.customFieldValues"}
+  "customFields": {"@odata.type": "#microsoft.graph.security.caseManagement.customFieldValues"},
+  "slaPolicies": [
+    {"@odata.type": "microsoft.graph.security.caseManagement.caseSlaPolicyEntry"}
+  ]
 }
 ```

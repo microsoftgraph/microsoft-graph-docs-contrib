@@ -129,6 +129,14 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.security.caseManagement.customFieldStringValue",
       "value": "Executive mailbox affected"
     }
-  }
+  },
+  "slaPolicies": [
+    {
+      "policyId": "c1f6b40d-3a90-4f8e-a06c-0542b16fb86f",
+      "policyDisplayName": "Auto Assign Order",
+      "status": "active",
+      "breachTargetDateTime": "2026-08-08T11:11:30.9892467Z"
+    }
+  ]
 }
 ```

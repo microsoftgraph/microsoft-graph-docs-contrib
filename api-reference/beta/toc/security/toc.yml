@@ -348,6 +348,8 @@ items:
       href: ../../api/security-casemanagement-case-update.md
     - name: Delete
       href: ../../api/security-casemanagementroot-delete-cases.md
+  - name: Case sla policy entry
+    href: ../../resources/security-casemanagement-caseslapolicyentry.md
   - name: Generic case
     href: ../../resources/security-casemanagement-genericcase.md
   - name: Incident case
@@ -648,6 +650,8 @@ items:
       href: ../../api/sensitivitylabel-get.md
     - name: Get usage rights included
       href: ../../api/usagerightsincluded-get.md
+  - name: Sensitive type
+    href: ../../resources/sensitivetype.md
   - name: Tenant data security and governance
     items:
     - name: Tenant data security and governance
@@ -656,6 +660,8 @@ items:
       href: ../../api/tenantdatasecurityandgovernance-processcontent.md
     - name: Process content async
       href: ../../api/tenantdatasecurityandgovernance-processcontentasync.md
+  - name: Text classification request
+    href: ../../resources/textclassificationrequest.md
   - name: User data security and governance
     items:
     - name: User data security and governance
@@ -664,8 +670,6 @@ items:
       href: ../../api/userprotectionscopecontainer-compute.md
     - name: Process content
       href: ../../api/userdatasecurityandgovernance-processcontent.md
-  - name: Text classification request
-    href: ../../resources/textclassificationrequest.md
   - name: Complex types
     items:
     - name: Activity metadata

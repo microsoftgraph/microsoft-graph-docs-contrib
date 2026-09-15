@@ -29,6 +29,7 @@ For the list of supported methods, see [place](./place.md).
 |bookingType |[bookingType](#bookingtype-values) |Specifies how the **room** can be booked. The possible values are:<ul><li>`unknown` - Unspecified booking behavior. We don't recommend that you use this value.</li><li>`standard` - Available for general booking.</li><li>`reserved` - Reserved for specific users or purposes.</li></ul> |
 |building |String |The name or identifier of the [building](./building.md) where the **room** is located. |
 |capacity |Int32 |The maximum number of people the **room** can accommodate. |
+|customProperties |[stringDictionary](../resources/stringdictionary.md) |Custom properties for the **room**. Each property has a string key and a string value. Inherited from [place](../resources/place.md). Nullable.|
 |displayDeviceName |String |The name of the display device (for example, `monitor` or `projector`) that is available in the **room**. |
 |displayName |String |The name that is associated with the **room**. Inherited from [place](../resources/place.md).|
 |emailAddress |String |The email address associated with the **room**. This email address is used for booking. |
@@ -39,6 +40,7 @@ For the list of supported methods, see [place](./place.md).
 |isTeamsEnabled |Boolean |Indicates whether the **room** is configured with the Microsoft Teams Rooms system. |
 |isWheelChairAccessible |Boolean |Indicates whether the **room** is wheelchair accessible. Inherited from [place](../resources/place.md).|
 |label |String |User-defined description of the **room**. Inherited from [place](../resources/place.md). |
+|lastUpdatedTime |DateTimeOffset |The date and time when the **room** was last updated. The timestamp is in ISO 8601 format and is always in UTC. Inherited from [place](../resources/place.md). Read-only. Nullable.|
 |nickname |String |A short, friendly name for the **room**, often used for easier identification or display in UI. |
 |parentId |String |The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](../resources/place.md). |
 |phone |String |The phone number of the **room**. Inherited from [place](../resources/place.md).|
@@ -78,6 +80,7 @@ The following JSON representation shows the resource type.
   "bookingType": "String",
   "building": "String",
   "capacity": "Int32",
+  "customProperties": {"String": "String"},
   "displayDeviceName": "String",
   "displayName": "String",
   "emailAddress": "String",
@@ -88,6 +91,7 @@ The following JSON representation shows the resource type.
   "isTeamsEnabled": "Boolean",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
+  "lastUpdatedTime": "String (timestamp)",
   "nickname": "String",
   "parentId": "String",
   "phone": "String",
@@ -97,4 +101,3 @@ The following JSON representation shows the resource type.
   "videoDeviceName": "String"
 }
 ```
-

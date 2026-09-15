@@ -2,7 +2,7 @@
 title: "place resource type"
 description: "Represents different space types within a tenant."
 author: tiwarisakshi02
-ms.date: 08/06/2025
+ms.date: 08/31/2026
 ms.localizationpriority: medium
 ms.subservice: outlook
 doc_type: resourcePageType
@@ -22,12 +22,12 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 
 |Method |Return type |Description |
 |:--|:--|:--|
-|[List](../api/place-list.md) |[place](./place.md) collection |Get a collection of the specified type of [place](../resources/place.md) objects defined in a tenant. |
-|[Create](../api/place-post.md) |[place](./place.md) |Create a new [place](../resources/place.md) object.| 
-|[Get](../api/place-get.md) |[place](./place.md) |Read the properties of a [place](../resources/place.md) object. Returns the requested, derived type of **place**.|
-|[Update](../api/place-update.md) |[place](./place.md) |Update the properties of [place](../resources/place.md) object that can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [desk](../resources/desk.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). |
-|[Delete](../api/place-delete.md) |None |Delete a [place](../resources/place.md) object. |
-|[Descendants](../api/place-descendants.md) |[place](./place.md) collection|Get all the descendants of a specific type under a [place](../resources/place.md). | 
+|[List places](../api/place-list.md) |[place](./place.md) collection |Get a collection of the specified type of [place](../resources/place.md) objects defined in a tenant. |
+|[Create place](../api/place-post.md) |[place](./place.md) |Create a new [place](../resources/place.md) object.|
+|[Get place](../api/place-get.md) |[place](./place.md) |Read the properties of a [place](../resources/place.md) object. Returns the requested, derived type of **place**.|
+|[Update place](../api/place-update.md) |[place](./place.md) |Update the properties of [place](../resources/place.md) object that can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [desk](../resources/desk.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). |
+|[Delete place](../api/place-delete.md) |None |Delete a [place](../resources/place.md) object. |
+|[List descendants](../api/place-descendants.md) |[place](./place.md) collection|Get all the descendants of a specific type under a [place](../resources/place.md). |
 |[Create check-in claim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a [desk](../resources/desk.md), [room](../resources/room.md), or [workspace](../resources/workspace.md), associated with a specific calendar reservation.|
 |[Upsert places](../api/place-patch-places.md)|Location header|Upsert one or more [place](../resources/place.md) objects in async mode.|
 |[Get operation](../api/place-getoperation.md)|[placeOperation](../resources/placeoperation.md)|Get a [placeOperation](../resources/placeoperation.md) by ID.|
@@ -38,11 +38,13 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |Property |Type |Description |
 |:--|:--|:--|
 |address |[physicalAddress](./physicaladdress.md) |The physical address of the **place**, including the street, city, state, country or region, and postal code. |
+|customProperties |[stringDictionary](../resources/stringdictionary.md) |Custom properties for the **place**. Each property has a string key and a string value. Nullable.|
 |displayName |String |The name that is associated with the **place**. |
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates.|
 |id |String |The unique identifier for the **place**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. |
 |isWheelChairAccessible |Boolean |Indicates whether the **place** is wheelchair accessible. |
 |label |String |User-defined description of the **place**.|
+|lastUpdatedTime |DateTimeOffset |The date and time when the **place** was last updated. The timestamp is in ISO 8601 format and is always in UTC. Read-only. Nullable.|
 |parentId |String |The ID of a parent **place**. |
 |phone |String |The phone number of the **place**. |
 |placeId |String |A stable service-level identifier for the **place** object used by Places workloads. |
@@ -69,11 +71,13 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.place",
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "customProperties": {"String": "String"},
   "displayName": "String",
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
+  "lastUpdatedTime": "String (timestamp)",
   "parentId": "String",
   "phone": "String",
   "placeId": "String (alternative identifier)",

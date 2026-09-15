@@ -45,12 +45,22 @@ Added the **isDisabled** property to the [agentIdentityBlueprint](/graph/api/res
 
 ### Backup storage
 
-Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy?view=graph-rest-beta&preserve-view=true) method to retrieve policy-level protection statistics for Microsoft 365 Backup Storage. Use the report to monitor protected and unprotected artifacts across completed, in-progress, and failed states, review offboarding activity, and determine when the metrics were last calculated.
+- Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy?view=graph-rest-beta&preserve-view=true) method to retrieve policy-level protection statistics for Microsoft 365 Backup Storage. Use the report to monitor protected and unprotected artifacts across completed, in-progress, and failed states, review offboarding activity, and determine when the metrics were last calculated.
+
+### Calendar | Places
+
+- Added the [stringDictionary](/graph/api/resources/stringdictionary?view=graph-rest-beta&preserve-view=true) resource type to represent custom string key-value pairs.
+- Added the **customProperties** property to the [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) resource type to store customer-defined string key-value pairs.
+- Added the read-only **lastUpdatedTime** property to the [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) resource type to indicate when the place was last updated.
 
 ### Device and app management | Cloud PC
 
 - Added the **isDisasterRecoveryActive** property to the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to indicate whether the Cloud PC currently runs in its disaster recovery region after a failover event.
 - Use `failoverInProgress` and `failbackInProgress` as supported values for the **status** property on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) and [cloudPcStatusSummary](/graph/api/resources/cloudpcstatussummary?view=graph-rest-beta&preserve-view=true) resources.
+
+### Files
+
+- Added the **userObjectId** parameter to the [getByUser](/graph/api/filestoragecontainer-getbyuser?view=graph-rest-beta&preserve-view=true) method on the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource to retrieve a list of file storage containers owned by a user by passing the user's Microsoft Entra ID object ID.
 
 ### Identity and access | Governance
 
@@ -157,6 +167,7 @@ Updated the retirement date for the legacy Microsoft Graph [security alerts API]
 
 ### Security | Case management
 
+- Added the **slaPolicies** property to the [case](/graph/api/resources/security-casemanagement-case?view=graph-rest-beta&preserve-view=true) resource type, a read-only collection of [caseSlaPolicyEntry](/graph/api/resources/security-casemanagement-caseslapolicyentry?view=graph-rest-beta&preserve-view=true) objects that report the current status and breach target time of each SLA policy applied to a case.
 - Added the [download attachment content](/graph/api/security-casemanagement-attachment-download-content?view=graph-rest-beta&preserve-view=true) and [upload attachment content](/graph/api/security-casemanagement-attachment-upload-content?view=graph-rest-beta&preserve-view=true) methods to the [attachment](/graph/api/resources/security-casemanagement-attachment?view=graph-rest-beta&preserve-view=true) resource type to transfer case evidence in chunks and retrieve it after malware scanning.
 - Added the [get relation](/graph/api/security-casemanagement-relation-get?view=graph-rest-beta&preserve-view=true) and [delete relation](/graph/api/security-casemanagement-relation-delete?view=graph-rest-beta&preserve-view=true) methods to the [relation](/graph/api/resources/security-casemanagement-relation?view=graph-rest-beta&preserve-view=true) resource type to read and remove links between a case and related security resources.
 - Added the [delete task](/graph/api/security-casemanagement-task-delete?view=graph-rest-beta&preserve-view=true) method to the [task](/graph/api/resources/security-casemanagement-task?view=graph-rest-beta&preserve-view=true) resource type to remove a task from a case.

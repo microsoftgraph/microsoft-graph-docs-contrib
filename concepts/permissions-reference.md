@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 09/07/2026
+ms.date: 09/14/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -4768,6 +4768,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Access selected Lists without a signed in user. | Access selected Lists, on behalf of the signed-in user |
 | Description | Allow the application to access a subset of lists without a signed in user.  The specific lists and the permissions granted will be configured in SharePoint Online. | Allow the application to access a subset of lists on behalf of the signed in user.  The specific lists and the permissions granted will be configured in SharePoint Online. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### LockboxRequest.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | a368a3ce-713b-46d9-9c93-bb559acf38ca |
+| DisplayText | - | Read lockbox requests |
+| Description | - | Allows the app to read lockbox requests on behalf of the signed-in user |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### LockboxRequest.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 524d6259-f823-43c4-964a-97e3b8ddb56c |
+| DisplayText | - | Read and manage lockbox requests |
+| Description | - | Allows the app to read and manage lockbox requests on behalf of the signed-in user |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### LockboxSettings.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 2ea429a7-d1fa-4f96-b451-e91ecc5e5fe2 |
+| DisplayText | - | Read lockbox settings |
+| Description | - | Allows the app to read lockbox configuration settings on behalf of the signed-in user |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### LockboxSettings.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | bdc52289-9ed7-4339-83ab-772ae618713c |
+| DisplayText | - | Read and write lockbox settings |
+| Description | - | Allows the app to read and modify lockbox configuration settings on behalf of the signed-in user |
+| AdminConsentRequired | - | Yes |
 
 ---
 

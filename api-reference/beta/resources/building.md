@@ -2,7 +2,7 @@
 title: "building resource type"
 description: "Represents a building within the tenant."
 author: tiwarisakshi02
-ms.date: 06/12/2025
+ms.date: 08/31/2026
 ms.localizationpriority: medium
 ms.subservice: outlook
 doc_type: resourcePageType
@@ -29,12 +29,14 @@ For more supported methods, see [place](./place.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **building**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md). |
+|customProperties|[stringDictionary](../resources/stringdictionary.md)|Custom properties for the **building**. Each property has a string key and a string value. Inherited from [place](./place.md). Nullable.|
 |displayName|String|The name that is associated with the building. Inherited from [place](./place.md). |
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **building** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md). |
 |hasWiFi|Boolean|Indicates whether the **building** has a wireless network. |
 |id|String|The unique identifier for the building. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md).|
 |isWheelChairAccessible|Boolean|Indicates whether the **building** is wheelchair accessible. Inherited from [place](./place.md). |
 |label |String |User-defined description of the building. Inherited from [place](./place.md). |
+|lastUpdatedTime|DateTimeOffset|The date and time when the **building** was last updated. The timestamp is in ISO 8601 format and is always in UTC. Inherited from [place](./place.md). Read-only. Nullable.|
 |parentId|String|Currently, buildings don't have a parent. Don't use. Inherited from [place](./place.md).|
 |phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
 |resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **building**. Inherited from [place](./place.md). |
@@ -61,12 +63,14 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.building",
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "customProperties": {"String": "String"},
   "displayName": "String",
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "hasWiFi": "Boolean",
   "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
+  "lastUpdatedTime": "String (timestamp)",
   "parentId": "String",
   "phone": "String",
   "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
@@ -74,4 +78,3 @@ The following JSON representation shows the resource type.
   "wifiState": "String"
 }
 ```
-
