@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 The return type of the **onPremisesExtensionAttributes** property of the [user](user.md) object and **extensionAttributes** property of the [device](device.md) object. Returns 15 custom extension attribute properties. Each attribute can store up to 1024 characters.
 
-On the [user](user.md) entity and for an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises Active Directory that is synchronized to Microsoft Entra ID, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is `false` or `null`), these properties can be set during [creation](../api/user-post-users.md) or [update](../api/user-update.md). If a cloud-only user was previously synced from on-premises Active Directory, these properties can't be managed via the Microsoft Graph API. Instead, they can be managed through the Exchange Admin Center or the Exchange Online V2 module in PowerShell.
+On the [user](user.md) entity and for an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises Active Directory that is synchronized to Microsoft Entra ID, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is `false` or `null`), these properties can be set during [creation](../api/user-post-users.md) or [update](../api/user-update.md) (this includes if the user originally was synched from on-premises and subsequently converted via SOA to a cloud-only user).
 
 The **extensionAttributes** property of the [device](device.md) entity is managed only in Microsoft Entra ID during device [creation](../api/device-post-devices.md) or [update](../api/device-update.md).
 
