@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "546fffa6-9ea5-43ca-9379-7278f50a7683",
+          "ApiChange": "Property",
+          "ChangedApiName": "slaPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **slaPolicies** property to the [case](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-case?view=graph-rest-beta) resource to expose a read-only collection of [caseSlaPolicyEntry](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-caseslapolicyentry?view=graph-rest-beta) objects reporting the status and breach target time of each SLA policy applied to a case.",
+          "Target": "case"
+        },
+        {
+          "Id": "546fffa6-9ea5-43ca-9379-7278f50a7683",
+          "ApiChange": "Resource",
+          "ChangedApiName": "caseSlaPolicyEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [caseSlaPolicyEntry](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-caseslapolicyentry?view=graph-rest-beta) complex type.",
+          "Target": "caseSlaPolicyEntry"
+        },
+        {
+          "Id": "546fffa6-9ea5-43ca-9379-7278f50a7683",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "caseSlaPolicyStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseSlaPolicyStatus** enumeration type.",
+          "Target": "caseSlaPolicyStatus"
+        }
+      ],
+      "Id": "546fffa6-9ea5-43ca-9379-7278f50a7683",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-09T09:29:40.3410000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Case management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3547088c-6080-4202-9e9c-ad28ff7bb2cd",
           "ApiChange": "Method",
           "ChangedApiName": "Download content",

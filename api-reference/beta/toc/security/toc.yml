@@ -348,6 +348,8 @@ items:
       href: ../../api/security-casemanagement-case-update.md
     - name: Delete
       href: ../../api/security-casemanagementroot-delete-cases.md
+  - name: Case sla policy entry
+    href: ../../resources/security-casemanagement-caseslapolicyentry.md
   - name: Generic case
     href: ../../resources/security-casemanagement-genericcase.md
   - name: Incident case

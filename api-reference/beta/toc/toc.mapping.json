@@ -3188,6 +3188,7 @@
           "resources": [
             "microsoft.graph.security.caseManagement.caseManagementEntity",
             "microsoft.graph.security.caseManagement.case",
+            "microsoft.graph.security.caseManagement.caseSlaPolicyEntry",
             "microsoft.graph.security.caseManagement.genericCase",
             "microsoft.graph.security.caseManagement.incidentCase",
             "microsoft.graph.security.caseManagement.activity",
