@@ -360,7 +360,8 @@
             "unavailablePlaceMode",
             "resourceLink",
             "placeExecutionResult",
-            "placeOperationProgress"
+            "placeOperationProgress",
+            "stringDictionary"
           ],
           "childNodes": [
             {

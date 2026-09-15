@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "ba111eab-9d66-43d8-9213-c945ce890b0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stringDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [stringDictionary](https://learn.microsoft.com/en-us/graph/api/resources/stringdictionary?view=graph-rest-beta) resource.",
+          "Target": "stringDictionary"
+        },
+        {
+          "Id": "ba111eab-9d66-43d8-9213-c945ce890b0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "customProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the **customProperties** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "ba111eab-9d66-43d8-9213-c945ce890b0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastUpdatedTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastUpdatedTime** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "ba111eab-9d66-43d8-9213-c945ce890b0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Dictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [Dictionary](https://learn.microsoft.com/en-us/graph/api/resources/dictionary?view=graph-rest-beta) resource.",
+          "Target": "Dictionary"
+        }
+      ],
+      "Id": "ba111eab-9d66-43d8-9213-c945ce890b0f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-10T06:52:03.1528589Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b1f2e0a4-55d4-4e5c-95cb-7d21a2b8db74",
           "ApiChange": "Resource",
           "ChangedApiName": "placeServicePlanInfo",
