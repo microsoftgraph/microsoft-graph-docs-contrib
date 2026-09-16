@@ -19,4 +19,4 @@ jobs:
         repoToken: ${{ secrets.GITHUB_TOKEN }}
         excludeFiles: '**/**.{png,PNG,jpg,JPG,jpeg,JPEG,gif,GIF,bmp,BMP}'
       id: validate
-      uses: microsoftgraph/eol-blocker@v1.0.15
+      uses: microsoftgraph/eol-blocker@14648e1b1978662860dcc551e70aeb13ad741486 # v1.0.15
