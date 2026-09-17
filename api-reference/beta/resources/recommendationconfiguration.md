@@ -2,7 +2,7 @@
 title: "recommendationConfiguration resource type"
 description: "Represents the configuration for recommendation notifications."
 author: "mbrndiar"
-ms.date: 04/23/2025
+ms.date: 07/22/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
@@ -29,6 +29,7 @@ It allows you to enable or disable notifications for recommendations, which can 
 |Property|Type|Description|
 |:---|:---|:---|
 |isNotificationEnabled|Boolean|Indicates whether notifications for recommendations are enabled.|
+|lastRefreshedDateTime|DateTimeOffset|The date and time of the most recent refresh cycle in which every pipeline that populates Microsoft Entra recommendations completed successfully for the tenant's region. The value advances only when all contributing pipelines succeed and remains at the last fully successful cycle if any contributing pipeline is unhealthy. A successful refresh doesn't imply that any individual recommendation changed. Is `null` when no fully successful refresh has been recorded yet. Read-only.|
 
 ## Relationships
 
@@ -48,6 +49,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.recommendationConfiguration",
-  "isNotificationEnabled": "Boolean"
+  "isNotificationEnabled": "Boolean",
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
