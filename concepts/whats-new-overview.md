@@ -95,6 +95,11 @@ Updated the [getAllRetainedMessages](/graph/api/channel-getallretainedmessages?v
 - Added the [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) resource type and the **coopEnforcement** property to the v1.0 endpoint. Application owners can use the property to explicitly test Cross-Origin-Opener-Policy enforcement, temporarily suppress enforcement while remediating an incompatible browser authentication flow, or return to the service default. The property is available in the global service only and isn't available in national cloud deployments.
 - Added the **authenticationBehaviors** property to the [application](/graph/api/resources/application) resource type in v1.0. Returned only on `$select`.
 
+### Change notifications | Subscription
+
+- Added support for delivering change notifications to Web Push endpoints (RFC 8291) for the [subscription](/graph/api/resources/subscription) resource type.
+- Added the [getVapidPublicKey](/graph/api/subscription-getvapidpublickey) method to obtain the VAPID public key (RFC 8292) used when creating Web Push subscriptions.
+
 ### Files
 
 - Added the [Upsert columns](/graph/api/filestoragecontainer-patch-columns) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer) resource type to create or update up to 20 columnDefinition objects in a single request.
