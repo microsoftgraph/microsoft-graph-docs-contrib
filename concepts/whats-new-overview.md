@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 06/23/2026
+ms.date: 09/18/2026
 ms.topic: whats-new
 ---
 
@@ -17,6 +17,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
+
+## September 2026: New and generally available
+
+### Security | Compliance
+
+Added the **approximateReturnedRecordCount**, **isRecordCountLimitExceeded**, and **recordCountLimit** properties to the [auditLogQuery](/graph/api/resources/security-auditlogquery) resource. Use these properties to determine whether a query exceeded its record-count limit and review the applicable threshold and approximate number of records returned.
 
 ## July 2026: New and generally available
 
