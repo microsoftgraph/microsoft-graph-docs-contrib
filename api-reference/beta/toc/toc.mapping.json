@@ -2528,8 +2528,17 @@
               "overview": "../../resources/recommendations-api-overview.md",
               "resources": [
                 "recommendation",
-                "impactedResource",
-                "recommendationConfiguration"
+                "impactedResource"
+              ],
+              "childNodes": [
+                {
+                  "name": "Supporting types",
+                  "resources": [
+                    "recommendationConfiguration",
+                    "recommendationTag",
+                    "nistClassification"
+                  ]
+                }
               ]
             },
             {

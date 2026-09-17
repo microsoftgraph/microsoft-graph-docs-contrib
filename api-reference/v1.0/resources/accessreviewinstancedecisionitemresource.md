@@ -18,14 +18,16 @@ An [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstanced
 - [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](../resources/accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource.md)
 - [accessReviewInstanceDecisionItemAccessPackageResource](../resources/accessreviewinstancedecisionitemaccesspackageresource.md)
 - [accessReviewInstanceDecisionItemAzureRoleResource](../resources/accessreviewinstancedecisionitemazureroleresource.md)
+- [accessReviewInstanceDecisionItemCustomDataProvidedResource](../resources/accessreviewinstancedecisionitemcustomdataprovidedresource.md)
 - [accessReviewInstanceDecisionItemServicePrincipalResource](../resources/accessreviewinstancedecisionitemserviceprincipalresource.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|description|String|Description of the resource.|
 |displayName|String|Display name of the resource|
 |id|String|Identifier of the resource|
-|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackage`, `AccessPackageAssignmentPolicy`.|
+|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackage`, `AccessPackageAssignmentPolicy`, and `CustomDataProvidedResource`.|
 
 ## Relationships
 None.
@@ -37,9 +39,10 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
 }
 -->
-``` json
+```json
 {
   "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemResource",
+  "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
   "type": "String"

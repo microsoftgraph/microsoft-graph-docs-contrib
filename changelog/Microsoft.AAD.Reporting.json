@@ -3,6 +3,248 @@
     {
       "ChangeList": [
         {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "recommendationCategoryGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **recommendationCategoryGroup** enumeration type.",
+          "Target": "recommendationCategoryGroup"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Member",
+          "ChangedApiName": "critical",
+          "ChangeType": "Addition",
+          "Description": "Added the `critical` member to the **recommendationPriority** enumeration.",
+          "Target": "recommendationPriority"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Member",
+          "ChangedApiName": "needsMoreAction",
+          "ChangeType": "Addition",
+          "Description": "Added the `needsMoreAction` member to the **recommendationStatus** enumeration.",
+          "Target": "recommendationStatus"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftEntraSuite",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftEntraSuite` member to the **requiredLicenses** enumeration.",
+          "Target": "requiredLicenses"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Resource",
+          "ChangedApiName": "nistClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the [nistClassification](https://learn.microsoft.com/en-us/graph/api/resources/nistClassification?view=graph-rest-beta) resource.",
+          "Target": "nistClassification"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tags",
+          "ChangeType": "Addition",
+          "Description": "Added the **tags** relationship to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Property",
+          "ChangedApiName": "categoryGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **categoryGroup** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Property",
+          "ChangedApiName": "completedBySystemDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **completedBySystemDateTime** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Property",
+          "ChangedApiName": "completedByUserDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **completedByUserDateTime** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Property",
+          "ChangedApiName": "failedReviewDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **failedReviewDateTime** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Property",
+          "ChangedApiName": "needsMoreActionResourceCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **needsMoreActionResourceCount** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Property",
+          "ChangedApiName": "nistClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added the **nistClassifications** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Property",
+          "ChangedApiName": "remediatedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **remediatedDateTime** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Property",
+          "ChangedApiName": "statusModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **statusModifiedDateTime** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tags",
+          "ChangeType": "Addition",
+          "Description": "Added the **tags** relationship to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastRefreshedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastRefreshedDateTime** property to the [recommendationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/recommendationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "recommendationConfiguration"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendationTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendationTag](https://learn.microsoft.com/en-us/graph/api/resources/recommendationTag?view=graph-rest-beta) resource.",
+          "Target": "recommendationTag"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "acceptRisk",
+          "ChangeType": "Addition",
+          "Description": "Added the [acceptRisk](https://learn.microsoft.com/en-us/graph/api/impactedResource-acceptRisk?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "acceptRisk",
+          "ChangeType": "Addition",
+          "Description": "Added the [acceptRisk](https://learn.microsoft.com/en-us/graph/api/recommendation-acceptRisk?view=graph-rest-beta) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource.",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "addTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [addTag](https://learn.microsoft.com/en-us/graph/api/impactedResource-addTag?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "addTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [addTag](https://learn.microsoft.com/en-us/graph/api/impactedResource-addTag?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "addTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [addTag](https://learn.microsoft.com/en-us/graph/api/recommendation-addTag?view=graph-rest-beta) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource.",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "applyAlternateMitigation",
+          "ChangeType": "Addition",
+          "Description": "Added the [applyAlternateMitigation](https://learn.microsoft.com/en-us/graph/api/impactedResource-applyAlternateMitigation?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "applyAlternateMitigation",
+          "ChangeType": "Addition",
+          "Description": "Added the [applyAlternateMitigation](https://learn.microsoft.com/en-us/graph/api/recommendation-applyAlternateMitigation?view=graph-rest-beta) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource.",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "markPlanned",
+          "ChangeType": "Addition",
+          "Description": "Added the [markPlanned](https://learn.microsoft.com/en-us/graph/api/impactedResource-markPlanned?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "markPlanned",
+          "ChangeType": "Addition",
+          "Description": "Added the [markPlanned](https://learn.microsoft.com/en-us/graph/api/recommendation-markPlanned?view=graph-rest-beta) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource.",
+          "Target": "recommendation"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeTag](https://learn.microsoft.com/en-us/graph/api/impactedResource-removeTag?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeTag](https://learn.microsoft.com/en-us/graph/api/impactedResource-removeTag?view=graph-rest-beta) method to the [impactedResource](https://learn.microsoft.com/en-us/graph/api/resources/impactedResource?view=graph-rest-beta) resource.",
+          "Target": "impactedResource"
+        },
+        {
+          "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeTag](https://learn.microsoft.com/en-us/graph/api/recommendation-removeTag?view=graph-rest-beta) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource.",
+          "Target": "recommendation"
+        }
+      ],
+      "Id": "c5005eaf-7166-43a6-877d-1ebd2f1cc906",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-15T00:00:00.0000000Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1aa30cd5-36f9-4569-a810-eda9a538cfc3",
           "ApiChange": "Member",
           "ChangedApiName": "internetAppBlockedByPolicy",

@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Application.ReadWrite.All|AgentIdentity.ReadWrite.All, Directory.ReadWrite.All|
+|Delegated (work or school account)|DirectoryRecommendations.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Application.ReadWrite.OwnedBy|AgentIdentity.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All|
-
+|Application|DirectoryRecommendations.ReadWrite.All|Not available.|

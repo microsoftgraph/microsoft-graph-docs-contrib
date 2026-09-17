@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "7f6c0e08-f231-492e-81b8-561c519a0f6c",
+          "ApiChange": "Property",
+          "ChangedApiName": "vapidPublicKey",
+          "ChangeType": "Addition",
+          "Description": "Added the **vapidPublicKey** property to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "7f6c0e08-f231-492e-81b8-561c519a0f6c",
+          "ApiChange": "Property",
+          "ChangedApiName": "webPushEncryptionP256dhPublicKey",
+          "ChangeType": "Addition",
+          "Description": "Added the **webPushEncryptionP256dhPublicKey** property to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "7f6c0e08-f231-492e-81b8-561c519a0f6c",
+          "ApiChange": "Property",
+          "ChangedApiName": "webPushEncryptionSecret",
+          "ChangeType": "Addition",
+          "Description": "Added the **webPushEncryptionSecret** property to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "7f6c0e08-f231-492e-81b8-561c519a0f6c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getVapidPublicKey",
+          "ChangeType": "Addition",
+          "Description": "Added the [getVapidPublicKey](https://learn.microsoft.com/en-us/graph/api/subscription-getVapidPublicKey?view=graph-rest-1.0) method to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource.",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "7f6c0e08-f231-492e-81b8-561c519a0f6c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-22T04:16:58.9666420Z",
+      "WorkloadArea": "Change notifications",
+      "SubArea": "Subscription"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8f2a1c4d-1b3e-4f5a-9c2d-7e8a3b4c5d6e",
           "ApiChange": "Property",
           "ChangedApiName": "vapidPublicKey",

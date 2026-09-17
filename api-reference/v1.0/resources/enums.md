@@ -944,6 +944,17 @@ Namespace: microsoft.graph
 | sapIag |
 | unknownFutureValue |
 
+### accessReviewInstanceDecisionItemApplyResult values
+
+| Member |
+| ------------------ |
+| new |
+| appliedSuccessfully |
+| appliedWithUnknownFailure |
+| appliedSuccessfullyButObjectNotFound |
+| applyNotSupported |
+| unknownFutureValue |
+
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
 | Member |

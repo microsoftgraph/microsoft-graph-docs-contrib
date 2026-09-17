@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "8b3eefbc-8142-426c-94c8-836c7a05232a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRecordCountLimitExceeded",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRecordCountLimitExceeded** property to the [auditLogQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-auditlogquery?view=graph-rest-beta) resource.",
+          "Target": "auditLogQuery"
+        },
+        {
+          "Id": "8b3eefbc-8142-426c-94c8-836c7a05232a",
+          "ApiChange": "Property",
+          "ChangedApiName": "recordCountLimit",
+          "ChangeType": "Addition",
+          "Description": "Added the **recordCountLimit** property to the [auditLogQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-auditlogquery?view=graph-rest-beta) resource.",
+          "Target": "auditLogQuery"
+        },
+        {
+          "Id": "8b3eefbc-8142-426c-94c8-836c7a05232a",
+          "ApiChange": "Property",
+          "ChangedApiName": "approximateReturnedRecordCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **approximateReturnedRecordCount** property to the [auditLogQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-auditlogquery?view=graph-rest-beta) resource.",
+          "Target": "auditLogQuery"
+        }
+      ],
+      "Id": "8b3eefbc-8142-426c-94c8-836c7a05232a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-14T13:04:40.4775174Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fe0668f3-6222-48fa-947e-69403922beba",
           "ApiChange": "Member",
           "ChangedApiName": "AlertSubmission",

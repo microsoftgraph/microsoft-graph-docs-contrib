@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemPermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemPermission](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitempermission) complex type to represent the permission that grants a principal access to the resource under review.",
+          "Target": "accessReviewInstanceDecisionItemPermission"
+        },
+        {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemCustomDataProvidedResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemCustomDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitemcustomdataprovidedresource) complex type to represent a decision item resource whose entitlement data is supplied by the customer rather than discovered by Microsoft Entra.",
+          "Target": "accessReviewInstanceDecisionItemCustomDataProvidedResource"
+        },
+        {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Property",
+          "ChangedApiName": "permission",
+          "ChangeType": "Addition",
+          "Description": "Added the **permission** property to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitem) resource to describe the permission that grants the principal access to the resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [accessReviewInstanceDecisionItemResource](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitemresource) resource to describe the resource under review.",
+          "Target": "accessReviewInstanceDecisionItemResource"
+        },
+        {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessReviewInstanceDecisionItemApplyResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewInstanceDecisionItemApplyResult** enumeration type to represent the result of applying a recorded decision to the target resource.",
+          "Target": "accessReviewInstanceDecisionItemApplyResult"
+        },
+        {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Method",
+          "ChangedApiName": "batchApplyCustomDataProvidedResourceDecisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstance: batchApplyCustomDataProvidedResourceDecisions](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions) method to set the apply result on all decision items that match a customer-provided resource in one call.",
+          "Target": "accessReviewInstance"
+        }
+      ],
+      "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-09T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
           "ApiChange": "Property",
           "ChangedApiName": "reviewerId",

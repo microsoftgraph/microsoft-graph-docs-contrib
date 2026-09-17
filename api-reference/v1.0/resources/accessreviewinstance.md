@@ -31,6 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |[Stop](../api/accessreviewinstance-stop.md) | None | Manually stop an accessReviewInstance. |
 |[Accept recommendations](../api/accessreviewinstance-acceptrecommendations.md) | None | Allows the calling user to accept the decision recommendation for each **accessReviewInstanceDecisionItem** that is marked as `NotReviewed` and for which the caller is a reviewer of the associated **accessReviewInstance**. |
 |[Apply decisions](../api/accessreviewinstance-applydecisions.md) | None | Manually apply decisions on an **accessReviewInstance**. |
+|[Apply custom data provided resource decisions](../api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions.md)|None|Set the `applyResult` on all decisions for a specific custom data provided resource in one call.|
 |[Batch record decisions](../api/accessreviewinstance-batchrecorddecisions.md)|None|Review batches of principals or resources in one call.|
 |[Reset decisions](../api/accessreviewinstance-resetdecisions.md)|None|Resets all decision items on an instance to `notReviewed`.|
 |[List stages](../api/accessreviewinstance-list-stages.md)|[accessReviewStage](../resources/accessreviewstage.md) collection| Retrieve the stages in a multi-stage access review instance.|

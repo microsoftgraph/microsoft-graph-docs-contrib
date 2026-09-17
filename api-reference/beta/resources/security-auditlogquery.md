@@ -5,7 +5,7 @@ author: "arishojaswi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 09/10/2024
+ms.date: 09/14/2026
 ---
 
 # auditLogQuery resource type
@@ -30,18 +30,24 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |administrativeUnitIdFilters|String collection|The administrative units tagged to an audit log record.|
+|approximateReturnedRecordCount|Int64|The approximate number of records retrieved by the query. This value can be higher or lower than **recordCountLimit** due to distributed counting. Read-only.|
 |displayName|String|The display name of the saved audit log query.|
 |filterEndDateTime|DateTimeOffset|The end date of the date range in the query.|
 |filterStartDateTime|DateTimeOffset|The start date of the date range in the query.|
 |id|String|Unique identifier for the audit log query. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |ipAddressFilters|String collection|The IP address of the device that was used when the activity was logged.|
+|isRecordCountLimitExceeded|Boolean|Indicates whether the query exceeded the per-search record-count limit. The default value is `false`. A value of `true` is authoritative and isn't derived from **approximateReturnedRecordCount**. Read-only.|
 |keywordFilter|String|Free text field to search non-indexed properties of the audit log.|
 |objectIdFilters|String collection|For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet.|
 |operationFilters|String collection|The name of the user or admin activity. For a description of the most common operations/activities, see [Search the audit log in the Office 365 Protection Center](https://go.microsoft.com/fwlink/p/?LinkId=708432).|
+|recordCountLimit|Int64|The record-count threshold used to limit query result retrieval. Read-only.|
 |recordTypeFilters|[microsoft.graph.security.auditLogRecordType](../resources/security-auditlogrecordtype.md) collection|The type of operation indicated by the record. For the list of member values, see [auditLogRecordType](../resources/security-auditlogrecordtype.md).|
 |serviceFilter|String|Refers to the workload property in the audit record. This is the Microsoft service where the activity occurred. Optional.|
 |status|microsoft.graph.security.auditLogQueryStatus|Describes the current status of the query. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `cancelled`, `unknownFutureValue`.|
 |userPrincipalNameFilters|String collection|The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, _my_name@my_domain_name_.|
+
+> [!NOTE]
+> An audit log query can complete successfully after exceeding its record-count limit. Use **isRecordCountLimitExceeded** to determine whether the limit was exceeded. For information about tenant and per-query allocations, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#security-audit-log-query-service-limits).
 
 ## Relationships
 
@@ -87,6 +93,9 @@ The following JSON representation shows the resource type.
   "administrativeUnitIdFilters": [
     "String"
   ],
-  "status": "String"
+  "status": "String",
+  "isRecordCountLimitExceeded": "Boolean",
+  "recordCountLimit": "Int64",
+  "approximateReturnedRecordCount": "Int64"
 }
 ```

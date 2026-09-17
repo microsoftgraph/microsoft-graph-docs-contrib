@@ -5,7 +5,7 @@ author: "ddeeps2610"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 07/22/2026
 ---
 
 # impactedResource resource type
@@ -27,6 +27,13 @@ Inherits from [entity](entity.md).
 |[Dismiss](../api/impactedresource-dismiss.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `dismissed`.|
 |[Complete](../api/impactedresource-complete.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `completedByUser`.|
 |[Reactivate](../api/impactedresource-reactivate.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `active`.|
+|[Mark planned](../api/impactedresource-markplanned.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `planned`.|
+|[Accept risk](../api/impactedresource-acceptrisk.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `riskAccepted`.|
+|[Apply alternate mitigation](../api/impactedresource-applyalternatemitigation.md)|[impactedResource](../resources/impactedresource.md)|Mark the status of an [impactedResource](../resources/impactedresource.md) object as `alternateMitigation`.|
+|[Add tag](../api/impactedresource-addtag.md)|[recommendationTag](../resources/recommendationtag.md)|Add a user-defined tag to an [impactedResource](../resources/impactedresource.md).|
+|[Remove tag](../api/impactedresource-removetag.md)|[impactedResource](../resources/impactedresource.md)|Remove a user-defined tag from an [impactedResource](../resources/impactedresource.md).|
+|[Add tag to multiple resources](../api/impactedresource-addtag-collection.md)|[impactedResource](../resources/impactedresource.md) collection|Add the same tag to up to 50 [impactedResource](../resources/impactedresource.md) objects in a single request.|
+|[Remove tag from multiple resources](../api/impactedresource-removetag-collection.md)|[impactedResource](../resources/impactedresource.md) collection|Remove the same tag from up to 50 [impactedResource](../resources/impactedresource.md) objects in a single request.|
 
 ## Properties
 |Property|Type|Description|
@@ -44,11 +51,13 @@ Inherits from [entity](entity.md).
 |rank|Int32|Indicates the importance of the resource. A resource with a rank equal to 1 is of the highest importance.|
 |recommendationId|String|The unique identifier of the [recommendation](../resources/recommendation.md) that the resource is associated with.|
 |resourceType|String|Indicates the type of Microsoft Entra resource. Examples include `user`, `application`.|
-|status|recommendationStatus|Indicates whether a resource needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`, `riskAccepted`, `thirdParty`, `planned`, `alternateMitigation`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `riskAccepted` , `thirdParty` , `planned` , `alternateMitigation`. By default, a recommendation's **status** is set to `active` when the recommendation is first generated. **Status** is set to `completedBySystem` when our service detects that a resource which was once active no longer applies.|
+|status|recommendationStatus|Indicates whether a resource needs to be addressed. The possible values are: `active`, `completedBySystem`, `completedByUser`, `dismissed`, `postponed`, `unknownFutureValue`, `riskAccepted`, `thirdParty`, `planned`, `alternateMitigation`, `needsMoreAction`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `riskAccepted` , `thirdParty` , `planned` , `alternateMitigation` , `needsMoreAction`. By default, a recommendation's **status** is set to `active` when the recommendation is first generated. **Status** is set to `completedBySystem` when our service detects that a resource which was once active no longer applies.|
 |subjectId|String|The related unique identifier, depending on the **resourceType**. For example, this property is set to the `applicationId` if the **resourceType** is an `application`.|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|tags|[recommendationTag](../resources/recommendationtag.md) collection|The user-defined free-form labels applied to the [impactedResource](../resources/impactedresource.md). The collection isn't directly writable; tags are created and removed through the [addTag](../api/impactedresource-addtag.md) and [removeTag](../api/impactedresource-removetag.md) actions.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

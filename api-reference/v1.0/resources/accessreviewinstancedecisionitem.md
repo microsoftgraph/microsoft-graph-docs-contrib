@@ -39,6 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |decision|String|Result of the review. Possible values: `Approve`, `Deny`, `NotReviewed`, or `DontKnow`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). |
 |id|String| The identifier of the decision. Inherited from [entity](../resources/entity.md). Supports `$select`. Read-only.|
 |justification|String|Justification left by the reviewer when they made the decision.|
+|permission|[accessReviewInstanceDecisionItemPermission](../resources/accessreviewinstancedecisionitempermission.md)|The permission that grants the principal access to a resource. Read-only.|
 |principal|[identity](../resources/identity.md)|Every decision item in an access review represents a principal's access to a resource. This property represents details of the principal. For example, if a decision item represents access of User "Bob" to Group "Sales" - The principal is "Bob" and the resource is "Sales". Principals can be of two types - userIdentity and servicePrincipalIdentity. Supports `$select`. Read-only.|
 |principalLink|String|A link to the principal object. For example, `https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`. Read-only.|
 |recommendation|String|A system-generated recommendation for the approval decision based off last interactive sign-in to tenant. The value is `Approve` if the sign-in is fewer than 30 days after the start of review, `Deny` if the sign-in is greater than 30 days after, or `NoInfoAvailable`. Possible values: `Approve`, `Deny`, or `NoInfoAvailable`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only.|
@@ -62,7 +63,7 @@ The following JSON representation shows the resource type.
   "openType": true
 }
 -->
-``` json
+```json
 {
   "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
   "accessReviewId": "String",
@@ -75,6 +76,9 @@ The following JSON representation shows the resource type.
   "decision": "String",
   "id": "String (identifier)",
   "justification": "String",
+  "permission": {
+    "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemPermission"
+  },
   "principal": {
     "@odata.type": "microsoft.graph.identity"
   },

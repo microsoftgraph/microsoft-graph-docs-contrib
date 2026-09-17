@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 01/28/2026
+ms.date: 07/22/2026
 ms.custom: sfi-ropc-nochange
 ---
 
@@ -671,6 +671,7 @@ Namespace: microsoft.graph
 | microsoftEntraWorkloadId |
 | unknownFutureValue |
 | aatp |
+| microsoftEntraSuite |
 
 ### recommendationCategory values
 
@@ -680,6 +681,18 @@ Namespace: microsoft.graph
 | identitySecureScore |
 | unknownFutureValue |
 | mdiSecureScore |
+
+### recommendationCategoryGroup values
+
+| Member |
+| ------------------------------- |
+| strengthenAuthentication |
+| detectAndRespondToThreats |
+| enforceLeastPrivilege |
+| governAppsCredentialsAndAgents |
+| hardenInfrastructure |
+| defenderForIdentity |
+| unknownFutureValue |
 
 ### recommendationFeatureAreas values
 
@@ -701,6 +714,8 @@ Namespace: microsoft.graph
 | low |
 | medium |
 | high |
+| critical |
+| unknownFutureValue |
 
 ### recommendationStatus values
 
@@ -716,6 +731,7 @@ Namespace: microsoft.graph
 | thirdParty |
 | planned |
 | alternateMitigation |
+| needsMoreAction |
 
 ### recommendationType values
 

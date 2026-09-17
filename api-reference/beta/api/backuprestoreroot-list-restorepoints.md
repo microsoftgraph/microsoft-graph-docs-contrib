@@ -33,6 +33,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+To filter the expanded **protectionUnit** by ID:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq '{ProtectionUnitID}')&$filter=protectionDateTime lt YYYY-MM-DDTHH:mm:ssZ
+```
+
+To filter **restorePoint** objects by protection unit and policy:
+
 <!-- {
   "blockType": "ignored"
 }
@@ -47,7 +59,7 @@ This method supports the `$expand`, `$filter` and `orderBy` [OData query paramet
 
 The `$expand` and `$filter` query parameters are required.
 
-Use `$filter` with `lt` on **protectionDateTime** and with `eq` on **protectionUnit/id** and **protectionUnit/policyId**. You can combine these expressions with `and`.
+Use `$filter` with `lt` on **protectionDateTime**. To filter the expanded **protectionUnit** by ID, use `eq` on **id** within `$expand`. To filter **restorePoint** objects by protection unit and policy, use `eq` on **protectionUnit/id** and **protectionUnit/policyId** and combine the expressions with `and`.
 
 ## Request headers
 
@@ -71,6 +83,15 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 The following example shows a request.
 # [HTTP](#tab/http)
+To filter the expanded **protectionUnit** by ID:
+
+
+``` http
+GET https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853')&$filter=protectionDateTime lt 2024-05-12T10:01:00Z
+```
+
+To filter **restorePoint** objects by protection unit and policy:
+
 <!-- {
   "blockType": "request",
   "name": "list_restorepoint"
