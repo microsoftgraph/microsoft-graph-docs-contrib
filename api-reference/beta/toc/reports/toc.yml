@@ -26,6 +26,16 @@ items:
         href: ../../api/recommendation-complete.md
       - name: Reactivate
         href: ../../api/recommendation-reactivate.md
+      - name: Mark planned
+        href: ../../api/recommendation-markplanned.md
+      - name: Accept risk
+        href: ../../api/recommendation-acceptrisk.md
+      - name: Apply alternate mitigation
+        href: ../../api/recommendation-applyalternatemitigation.md
+      - name: Add tag
+        href: ../../api/recommendation-addtag.md
+      - name: Remove tag
+        href: ../../api/recommendation-removetag.md
       - name: Get tenant Secure Score
         href: ../../api/recommendation-tenantsecurescores.md
     - name: Impacted resource
@@ -44,14 +54,34 @@ items:
         href: ../../api/impactedresource-complete.md
       - name: Reactivate
         href: ../../api/impactedresource-reactivate.md
-    - name: Recommendation configuration
+      - name: Mark planned
+        href: ../../api/impactedresource-markplanned.md
+      - name: Accept risk
+        href: ../../api/impactedresource-acceptrisk.md
+      - name: Apply alternate mitigation
+        href: ../../api/impactedresource-applyalternatemitigation.md
+      - name: Add tag
+        href: ../../api/impactedresource-addtag.md
+      - name: Remove tag
+        href: ../../api/impactedresource-removetag.md
+      - name: Add tag to multiple resources
+        href: ../../api/impactedresource-addtag-collection.md
+      - name: Remove tag from multiple resources
+        href: ../../api/impactedresource-removetag-collection.md
+    - name: Supporting types
       items:
       - name: Recommendation configuration
-        href: ../../resources/recommendationconfiguration.md
-      - name: Get
-        href: ../../api/recommendationconfiguration-get.md
-      - name: Update
-        href: ../../api/recommendationconfiguration-update.md
+        items:
+        - name: Recommendation configuration
+          href: ../../resources/recommendationconfiguration.md
+        - name: Get
+          href: ../../api/recommendationconfiguration-get.md
+        - name: Update
+          href: ../../api/recommendationconfiguration-update.md
+      - name: Recommendation tag
+        href: ../../resources/recommendationtag.md
+      - name: Nist classification
+        href: ../../resources/nistclassification.md
   - name: Microsoft Entra activity reports
     items:
     - name: AD FS application activity
