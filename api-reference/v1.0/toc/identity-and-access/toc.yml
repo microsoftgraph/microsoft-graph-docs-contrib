@@ -479,6 +479,8 @@ items:
         href: ../../api/accessreviewinstance-acceptrecommendations.md
       - name: Apply decisions
         href: ../../api/accessreviewinstance-applydecisions.md
+      - name: Apply custom data provided resource decisions
+        href: ../../api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions.md
       - name: Batch record decisions
         href: ../../api/accessreviewinstance-batchrecorddecisions.md
       - name: Reset decisions
