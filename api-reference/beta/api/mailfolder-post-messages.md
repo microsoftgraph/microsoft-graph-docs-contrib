@@ -46,6 +46,9 @@ In the request body, supply a JSON representation of [Message](../resources/mess
 
 If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
 
+> [!NOTE]
+> *Archive mailboxes with autoexpanded folders:* When the target folder physically resides in an auxiliary (autoexpanded) archive mailbox, this API might return a redirect response that points to the correct mailbox endpoint. For details, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
+
 ## Example
 ### Request
 The following example shows a request.
@@ -142,5 +145,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

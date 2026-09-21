@@ -68,6 +68,9 @@ _id_ property is always returned.
 
 If successful, this method returns a `200 OK` response code and [mailFolder](../resources/mailfolder.md) collection object in the response body.
 
+> [!NOTE]
+> *Archive mailboxes with autoexpanded folders:* When the target folder physically resides in an auxiliary (autoexpanded) archive mailbox, this API might return a redirect response that points to the correct mailbox endpoint. For details, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
+
 ## Example
 ### Request
 The following example shows how to make a single **delta** function call, and limit the maximum number of mail folders
@@ -152,5 +155,4 @@ Content-type: application/json
   ]
 }
 -->
-
 
