@@ -16,7 +16,7 @@ Namespace: microsoft.graph.tenantGovernanceServices
 
 Get a list of the [governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) objects and their properties. Policy templates define the configuration that is applied when establishing governance relationships.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

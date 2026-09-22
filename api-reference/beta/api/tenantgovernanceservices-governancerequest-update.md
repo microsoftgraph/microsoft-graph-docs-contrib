@@ -16,7 +16,7 @@ Namespace: microsoft.graph.tenantGovernanceServices
 
 Update the **status** property of a [governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) to accept or reject the governance request. Only the governed tenant can update the request status.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

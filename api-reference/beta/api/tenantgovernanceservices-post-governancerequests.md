@@ -16,7 +16,7 @@ Namespace: microsoft.graph.tenantGovernanceServices
 
 Create a new [governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) to establish a governance relationship with a governed tenant. The governed tenant can then accept or reject the request.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

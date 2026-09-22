@@ -16,7 +16,7 @@ Namespace: microsoft.graph.tenantGovernanceServices
 
 Get a list of the [governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) objects and their properties. This API method returns all governance requests where the calling tenant is either the governing tenant or the governed tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

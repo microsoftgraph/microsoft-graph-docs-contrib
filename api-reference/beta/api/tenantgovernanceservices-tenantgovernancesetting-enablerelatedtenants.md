@@ -19,7 +19,7 @@ Enable the related tenants feature for tenant discovery. After calling this acti
 > [!IMPORTANT]
 > This action must be called before using any related tenant APIs. Related tenant APIs won't run successfully unless this feature is explicitly enabled.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
