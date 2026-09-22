@@ -1,0 +1,22 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "8a54c31b-e184-40d7-9f07-17150b344e07",
+          "ApiChange": "Method",
+          "ChangedApiName": "getHuntingSchemaTables",
+          "ChangeType": "Addition",
+          "Description": "Added the [getHuntingSchemaTables](https://learn.microsoft.com/en-us/graph/api/security-security-gethuntingschematables?view=graph-rest-beta) method to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        }
+      ],
+      "Id": "8a54c31b-e184-40d7-9f07-17150b344e07",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-03T07:59:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Advanced hunting"
+    }
+  ]
+}

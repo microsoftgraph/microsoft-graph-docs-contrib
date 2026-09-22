@@ -5,7 +5,7 @@ author: "nitzanfrogel"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 05/13/2026
+ms.date: 08/26/2026
 ---
 
 # huntingSchemaTable resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an advanced hunting table accessible to the user. Part of the [huntingSchemaResult](../resources/security-huntingschemaresult.md) returned by the [getHuntingSchema](../api/security-security-gethuntingschema.md) function.
+Represents an advanced hunting table accessible to the user. Part of the [huntingSchemaResult](../resources/security-huntingschemaresult.md) returned by the [getHuntingSchema](../api/security-security-gethuntingschema.md) function, and returned as a collection by the [getHuntingSchemaTables](../api/security-security-gethuntingschematables.md) function.
 
 ## Properties
 

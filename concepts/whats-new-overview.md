@@ -192,6 +192,10 @@ Updated the retirement date for the legacy Microsoft Graph [security alerts API]
 - Updated [Manage profile source precedence in Microsoft 365](/graph/profilepriority-configure-profilepropertysetting) to clarify supported data sources for HR and work position data, explain how source precedence affects single-value versus multi-value properties, and add guidance on correctly configuring and removing tenant-level settings using the Microsoft Graph API or PowerShell.
 - Added the [People data sources in Microsoft 365](/graph/people-data-sources) concept article that describes the data sources that build the Microsoft 365 user profile, including Microsoft Entra ID, Copilot connectors, Organizational data, SharePoint, People Skills, user edits, and the API user source. The article also provides a reference table of built-in source IDs (GUIDs) and explains how source metadata appears in the profile API output.
 
+### Security | Advanced hunting
+
+- Added the [getHuntingSchemaTables](/graph/api/security-security-gethuntingschematables?view=graph-rest-beta&preserve-view=true) function to the [security](/graph/api/resources/security?view=graph-rest-beta&preserve-view=true) resource. Use it to retrieve only the advanced hunting tables that the signed-in user can access, returned as a collection so that you can apply OData query parameters to request a targeted subset of tables and columns.
+
 ### Security | Alerts and incidents
 
 - Added the [createAlert](/graph/api/security-alert-createalert?view=graph-rest-beta&preserve-view=true) action to the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource for creating Microsoft 365 Defender alerts programmatically, including alert properties, incident-linking options, workspace routing, and inline entity definitions in a single request.
