@@ -1386,6 +1386,15 @@
               ]
             },
             {
+              "name": "Custom data",
+              "overview": "../../resources/customdatacontainer.md",
+              "resources": [
+                "customDataContainer",
+                "customObjectDefinition",
+                "customObject"
+              ]
+            },
+            {
               "name": "Entitlement management",
               "overview": "../../resources/entitlementmanagement-overview.md",
               "resources": [

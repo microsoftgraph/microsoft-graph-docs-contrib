@@ -20,6 +20,7 @@ The identity governance singleton is the container for the following Microsoft E
 + [Entitlement management](entitlementmanagement-overview.md)
 + [Catalogs](../resources/accesspackagecatalog.md)
 + [App consent](consentrequests-overview.md)
++ [Custom data](../resources/customdatacontainer.md)
 + [Lifecycle Workflows](identitygovernance-lifecycleworkflows-overview.md)
 + [Terms of use](agreement.md)
 + [Privileged Identity Management](privilegedidentitymanagementv3-overview.md)
@@ -39,6 +40,7 @@ None.
 |accessReviews|[accessReviewSet](accessreviewset.md)| Container for the base resources that expose the access reviews API and features.|
 |appConsent|[appConsent](appconsentapprovalroute.md)| Container for base resources that expose the app consent request API and features. Currently exposes only the [appConsentRequests](appconsentrequest.md) resource.|
 |catalogs|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection| A container of access packages.|
+|customData|[customDataContainer](../resources/customdatacontainer.md)|Container for custom data object definitions and objects.|
 |entitlementManagement|[entitlementManagement](entitlementmanagement.md)| Container for entitlement management resources, including [accessPackageCatalog](accesspackagecatalog.md), [connectedOrganization](connectedorganization.md), and [entitlementManagementSettings](entitlementmanagementsettings.md).|
 |termsOfUse|[termsOfUseContainer](termsofusecontainer.md)| Container for the resources that expose the terms of use API and its features, including [agreements](agreement.md) and [agreementAcceptances](agreementacceptance.md). |
 |lifecycleWorkflows|[microsoft.graph.identityGovernance.lifecycleWorkflowsContainer](identitygovernance-lifecycleworkflowscontainer.md)| Container for Lifecycle Workflow resources, including [workflow](identitygovernance-workflow.md), [customTaskExtension](identitygovernance-customtaskextension.md), and [lifecycleManagementSettings](identitygovernance-lifecyclemanagementsettings.md).|

@@ -13,6 +13,17 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### customObjectFieldType values
+
+|Member|
+|:---|
+|string|
+|boolean|
+|datetime|
+|int64|
+|double|
+|unknownFutureValue|
+
 ### meetingEngagementType values
 
 |Member|
