@@ -56,6 +56,7 @@ PATCH /identityGovernance/customData/definitions(objectType='{objectType}')
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description of the definition.|
+|displayName|String|Display name of the definition.|
 |fields|customObjectFieldDefinition collection|Additive updates only. Change field descriptions or add optional nullable fields.|
 
 
@@ -77,17 +78,10 @@ The following example shows a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/customData/definitions/1f9e2d04-bc62-49f8-ae15-4b5de0d1bca1
 Content-Type: application/json
+If-Match: W/"definition-etag-1"
 
 {
-  "@odata.type": "#microsoft.graph.customObjectDefinition",
-  "objectType": "Contoso Seattle Store",
-  "displayName": "Contoso Seattle Store",
-  "description": "Contoso Seattle Store",
-  "fields": [
-    {
-      "@odata.type": "microsoft.graph.customObjectFieldDefinition"
-    }
-  ]
+  "displayName": "Organizational department"
 }
 ```
 
@@ -104,19 +98,29 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+ETag: W/"definition-etag-2"
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/customData/definitions/$entity",
   "@odata.type": "#microsoft.graph.customObjectDefinition",
   "id": "1f9e2d04-bc62-49f8-ae15-4b5de0d1bca1",
-  "objectType": "Contoso Seattle Store",
-  "displayName": "Contoso Seattle Store",
-  "description": "Contoso Seattle Store",
+  "@odata.etag": "W/\"definition-etag-2\"",
+  "objectType": "Department",
+  "displayName": "Organizational department",
+  "description": "Organizational department lookup records.",
   "fields": [
     {
-      "@odata.type": "microsoft.graph.customObjectFieldDefinition"
+      "name": "code",
+      "dataType": "string",
+      "isRequired": true,
+      "isFilterable": true,
+      "isUnique": true,
+      "isImmutable": true,
+      "isCaseSensitive": false,
+      "isNullable": false
     }
   ],
-  "createdDateTime": "2026-09-22T10:00:00Z",
-  "lastModifiedDateTime": "2026-09-22T10:00:00Z"
+  "createdDateTime": "2026-07-10T00:00:00Z",
+  "lastModifiedDateTime": "2026-07-10T00:00:00Z"
 }
 ```

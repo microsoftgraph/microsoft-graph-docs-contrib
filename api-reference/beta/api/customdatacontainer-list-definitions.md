@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/customData/definitions
+GET https://graph.microsoft.com/beta/identityGovernance/customData/definitions?$top=50
 ```
 
 
@@ -85,20 +85,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/customData/definitions(id,displayName)",
   "value": [
     {
       "@odata.type": "#microsoft.graph.customObjectDefinition",
       "id": "1f9e2d04-bc62-49f8-ae15-4b5de0d1bca1",
-      "objectType": "Contoso Seattle Store",
-      "displayName": "Contoso Seattle Store",
-      "description": "Contoso Seattle Store",
-      "fields": [
-        {
-          "@odata.type": "microsoft.graph.customObjectFieldDefinition"
-        }
-      ],
-      "createdDateTime": "2026-09-22T10:00:00Z",
-      "lastModifiedDateTime": "2026-09-22T10:00:00Z"
+      "displayName": "Department"
     }
   ]
 }

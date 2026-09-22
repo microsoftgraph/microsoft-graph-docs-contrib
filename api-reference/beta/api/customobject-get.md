@@ -40,7 +40,7 @@ GET /identityGovernance/customData/objects('{objectId}')
 
 ## Optional query parameters
 
-This method doesn't support OData query parameters.
+This method doesn't support OData query parameters. The object ID identifies the resource; don't include a `definitionId` filter.
 
 ## Request headers
 
@@ -68,6 +68,7 @@ The following example shows a request.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/customData/objects/b20fd2d9-79e3-4d26-8a03-3ca2e57e6a33
+client-request-id: 8f2f5b78-4e33-45c7-9d57-8a7df6bb6f31
 ```
 
 
@@ -84,18 +85,21 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+ETag: W/"abc123"
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.customObject",
-    "id": "b20fd2d9-79e3-4d26-8a03-3ca2e57e6a33",
-    "definitionId": "Contoso Seattle Store",
-    "displayName": "Contoso Seattle Store",
-    "customProperties": {
-      "@odata.type": "microsoft.graph.customObjectProperties"
-    },
-    "createdDateTime": "2026-09-22T10:00:00Z",
-    "lastModifiedDateTime": "2026-09-22T10:00:00Z"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/customData/objects/$entity",
+  "@odata.type": "#microsoft.graph.customObject",
+  "@odata.etag": "W/\"abc123\"",
+  "id": "b20fd2d9-79e3-4d26-8a03-3ca2e57e6a33",
+  "definitionId": "1f9e2d04-bc62-49f8-ae15-4b5de0d1bca1",
+  "displayName": "Engineering",
+  "customProperties": {
+    "code": "ENG",
+    "name": "Engineering",
+    "costCenter": "CC-1001"
+  },
+  "createdDateTime": "2026-07-10T00:00:00Z",
+  "lastModifiedDateTime": "2026-07-10T00:00:00Z"
 }
 ```

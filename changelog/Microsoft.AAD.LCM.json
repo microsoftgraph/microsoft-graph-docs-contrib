@@ -3,56 +3,6 @@
     {
       "ChangeList": [
         {
-          "ChangeType": "Addition",
-          "ChangedApiName": "customObjectFieldType",
-          "Description": "Added the **customObjectFieldType** enumeration type.",
-          "Id": "29fd50fb-d1a0-49ef-b7ff-28d6feed3330",
-          "Target": "customObjectFieldType",
-          "ApiChange": "Enumeration"
-        },
-        {
-          "ChangeType": "Addition",
-          "ChangedApiName": "customDataContainer",
-          "Description": "Added the [customDataContainer](https://learn.microsoft.com/en-us/graph/api/resources/customdatacontainer?view=graph-rest-beta) resource.",
-          "Id": "29fd50fb-d1a0-49ef-b7ff-28d6feed3330",
-          "Target": "customDataContainer",
-          "ApiChange": "Resource"
-        },
-        {
-          "ChangeType": "Addition",
-          "ChangedApiName": "customObject",
-          "Description": "Added the [customObject](https://learn.microsoft.com/en-us/graph/api/resources/customobject?view=graph-rest-beta) resource.",
-          "Id": "29fd50fb-d1a0-49ef-b7ff-28d6feed3330",
-          "Target": "customObject",
-          "ApiChange": "Resource"
-        },
-        {
-          "ChangeType": "Addition",
-          "ChangedApiName": "customObjectDefinition",
-          "Description": "Added the [customObjectDefinition](https://learn.microsoft.com/en-us/graph/api/resources/customobjectdefinition?view=graph-rest-beta) resource.",
-          "Id": "29fd50fb-d1a0-49ef-b7ff-28d6feed3330",
-          "Target": "customObjectDefinition",
-          "ApiChange": "Resource"
-        },
-        {
-          "ChangeType": "Addition",
-          "ChangedApiName": "customData",
-          "Description": "Added the **customData** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance?view=graph-rest-beta) resource.",
-          "Id": "29fd50fb-d1a0-49ef-b7ff-28d6feed3330",
-          "Target": "identityGovernance",
-          "ApiChange": "Relationship"
-        }
-      ],
-      "Id": "29fd50fb-d1a0-49ef-b7ff-28d6feed3330",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2026-09-22T10:11:44.8923038Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Governance"
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
           "ApiChange": "Member",
           "ChangedApiName": "quarantined",

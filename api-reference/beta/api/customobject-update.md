@@ -44,6 +44,8 @@ PATCH /identityGovernance/customData/objects('{objectId}')
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
+|If-Match|Current ETag. Required. A stale ETag returns `412 PreconditionFailed`.|
+|Prefer|`return=minimal`. Optional. Returns `204 No Content` with a new `ETag`.|
 
 ## Request body
 
@@ -59,7 +61,7 @@ PATCH /identityGovernance/customData/objects('{objectId}')
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [customObject](../resources/customobject.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [customObject](../resources/customobject.md) object in the response body. With `Prefer: return=minimal`, this method returns `204 No Content` and a new `ETag`.
 
 ## Examples
 
@@ -74,13 +76,13 @@ The following example shows a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/customData/objects/b20fd2d9-79e3-4d26-8a03-3ca2e57e6a33
 Content-Type: application/json
+If-Match: W/"abc123"
+Prefer: return=minimal
 
 {
-  "@odata.type": "#microsoft.graph.customObject",
-  "definitionId": "Contoso Seattle Store",
-  "displayName": "Contoso Seattle Store",
+  "displayName": "Engineering and Product",
   "customProperties": {
-    "@odata.type": "microsoft.graph.customObjectProperties"
+    "costCenter": "CC-2002"
   }
 }
 ```
@@ -96,18 +98,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.customObject",
-  "id": "b20fd2d9-79e3-4d26-8a03-3ca2e57e6a33",
-  "definitionId": "Contoso Seattle Store",
-  "displayName": "Contoso Seattle Store",
-  "customProperties": {
-    "@odata.type": "microsoft.graph.customObjectProperties"
-  },
-  "createdDateTime": "2026-09-22T10:00:00Z",
-  "lastModifiedDateTime": "2026-09-22T10:00:00Z"
-}
+HTTP/1.1 204 No Content
+ETag: W/"def456"
 ```

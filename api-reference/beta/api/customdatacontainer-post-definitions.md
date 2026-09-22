@@ -78,13 +78,20 @@ POST https://graph.microsoft.com/beta/identityGovernance/customData/definitions
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.customObjectDefinition",
-  "objectType": "Contoso Seattle Store",
-  "displayName": "Contoso Seattle Store",
-  "description": "Contoso Seattle Store",
+  "objectType": "Department",
+  "displayName": "Department",
+  "description": "Organizational department lookup records.",
   "fields": [
     {
-      "@odata.type": "microsoft.graph.customObjectFieldDefinition"
+      "name": "code",
+      "dataType": "string",
+      "description": "Department code.",
+      "isRequired": true,
+      "isFilterable": true,
+      "isUnique": true,
+      "isImmutable": true,
+      "isCaseSensitive": false,
+      "isNullable": false
     }
   ]
 }
@@ -104,19 +111,30 @@ The following example shows the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+Location: /beta/identityGovernance/customData/definitions/1f9e2d04-bc62-49f8-ae15-4b5de0d1bca1
+ETag: W/"definition-etag-1"
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/customData/definitions/$entity",
   "@odata.type": "#microsoft.graph.customObjectDefinition",
   "id": "1f9e2d04-bc62-49f8-ae15-4b5de0d1bca1",
-  "objectType": "Contoso Seattle Store",
-  "displayName": "Contoso Seattle Store",
-  "description": "Contoso Seattle Store",
+  "objectType": "Department",
+  "displayName": "Department",
+  "description": "Organizational department lookup records.",
   "fields": [
     {
-      "@odata.type": "microsoft.graph.customObjectFieldDefinition"
+      "name": "code",
+      "dataType": "string",
+      "description": "Department code.",
+      "isRequired": true,
+      "isFilterable": true,
+      "isUnique": true,
+      "isImmutable": true,
+      "isCaseSensitive": false,
+      "isNullable": false
     }
   ],
-  "createdDateTime": "2026-09-22T10:00:00Z",
-  "lastModifiedDateTime": "2026-09-22T10:00:00Z"
+  "createdDateTime": "2026-07-10T00:00:00Z",
+  "lastModifiedDateTime": "2026-07-10T00:00:00Z"
 }
 ```

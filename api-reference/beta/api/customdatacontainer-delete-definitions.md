@@ -44,6 +44,7 @@ DELETE /identityGovernance/customData/definitions(objectType='{objectType}')
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|If-Match|Current ETag. Required.|
 
 ## Request body
 
@@ -65,6 +66,7 @@ The following example shows a request.
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/identityGovernance/customData/definitions/1f9e2d04-bc62-49f8-ae15-4b5de0d1bca1
+If-Match: W/"definition-etag-2"
 ```
 
 

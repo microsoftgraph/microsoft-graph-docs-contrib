@@ -43,6 +43,7 @@ DELETE /identityGovernance/customData/objects('{objectId}')
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|If-Match|Current ETag. Required.|
 
 ## Request body
 
@@ -64,6 +65,7 @@ The following example shows a request.
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/identityGovernance/customData/objects/b20fd2d9-79e3-4d26-8a03-3ca2e57e6a33
+If-Match: W/"def456"
 ```
 
 
