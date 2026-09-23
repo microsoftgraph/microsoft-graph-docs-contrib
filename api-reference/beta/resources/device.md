@@ -32,6 +32,7 @@ This resource supports:
 |[Get](../api/device-get.md) | [device](device.md) |Read properties and relationships of device object.|
 |[Update](../api/device-update.md) | [device](device.md)  |Update the properties of the device object. |
 |[Delete](../api/device-delete.md) | None |Delete the device object. |
+|[Provision](../api/device-provision.md) | [provisionResponse](provisionresponse.md) |Provision a device on behalf of an approved Virtual Desktop Infrastructure (VDI) provider. |
 |[Get delta](../api/device-delta.md)|[device](device.md) collection| Get incremental changes for devices. |
 |[List member of](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a direct member of. |
 |[List transitive member of](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a member of. This operation is transitive. |
