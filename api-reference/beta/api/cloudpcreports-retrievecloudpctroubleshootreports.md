@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get Cloud PC troubleshooting reports. You can get tenant-level reports, configuration reports, user and device reports, and view data table reports. For the report types grouped by scope, including the mandatory filter parameters and response columns per `reportName`, see [Cloud PC troubleshoot report types](/graph/cloudpc-troubleshoot-report-types).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

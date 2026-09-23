@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract base type that represents metadata for a content entry being processed in a [processContentRequest](../resources/processcontentrequest.md), including identifiers, content details, and timestamps. Use the following derived types: [processConversationMetadata](../resources/processconversationmetadata.md) for conversation content, [processFileMetadata](../resources/processfilemetadata.md) for file content, and [contentActivityMetadata](../resources/contentactivitymetadata.md) for content activity.
+An abstract base type that represents metadata for a content entry being processed in a [processContentRequest](../resources/processcontentrequest.md), including identifiers, content details, and timestamps. Use the following derived types: [processConversationMetadata](../resources/processconversationmetadata.md) for conversation content, [processFileMetadata](../resources/processfilemetadata.md) for file content, [contentActivityMetadata](../resources/contentactivitymetadata.md) for a DLP enforcement result submitted through the ContentActivity API, and [evaluationIncompleteActivityMetadata](../resources/evaluationincompleteactivitymetadata.md) for an incomplete evaluation submitted through the ContentActivity API. The ContentActivity-specific derived types aren't supported by the **processContent** or **processContentAsync** APIs.
 
 
 ## Properties

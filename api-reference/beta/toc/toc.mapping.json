@@ -2963,6 +2963,8 @@
             "customMetadataDictionary",
             "deviceMetadata",
             "dlpActionInfo",
+            "evaluationErrorDetail",
+            "evaluationIncompleteActivityMetadata",
             "evaluationScope",
             "embeddingInput",
             "groupScope",

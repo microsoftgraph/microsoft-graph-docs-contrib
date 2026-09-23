@@ -16,7 +16,7 @@ Namespace: microsoft.graph.tenantGovernanceServices
 
 Update the **canReceiveInvitations** property of the [tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md) singleton. This property controls whether the tenant can receive governance invitations.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

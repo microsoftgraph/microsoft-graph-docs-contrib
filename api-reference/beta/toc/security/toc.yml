@@ -16,6 +16,8 @@ items:
       href: ../../api/security-security-runhuntingquery.md
     - name: Get hunting schema
       href: ../../api/security-security-gethuntingschema.md
+    - name: Get hunting schema tables
+      href: ../../api/security-security-gethuntingschematables.md
   - name: Hunting query results
     href: ../../resources/security-huntingqueryresults.md
   - name: Hunting row result

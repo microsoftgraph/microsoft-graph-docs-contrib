@@ -16,7 +16,7 @@ Namespace: microsoft.graph.tenantGovernanceServices
 
 Delete a [governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) object. You can't delete the default template or templates currently used by active relationships.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -13,6 +13,56 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### errorActions values
+
+This flagged enumeration identifies the actions taken when policy evaluation couldn't be completed. Values can be combined; for example, `audit,block` indicates that the activity was audited and blocked. Don't combine `none` with another value.
+
+|Member|
+|:---|
+|none|
+|audit|
+|block|
+|unknownFutureValue|
+
+### evaluationErrorCategory values
+
+|Member|
+|:---|
+|unknown|
+|systemLimit|
+|systemError|
+|enforcementError|
+|unknownFutureValue|
+
+### evaluationErrorType values
+
+|Member|
+|:---|
+|unsupportedFile|
+|passwordProtectedFile|
+|fileTooLarge|
+|archiveSizeTooLarge|
+|textExceedsMceThreshold|
+|partiallyScannedArchive|
+|partialImageExtraction|
+|imageOcrPartialResult|
+|ocrProcessingFailure|
+|ocrQuotaExhausted|
+|classificationServiceError|
+|sitExtractionFailure|
+|textExtractionFailure|
+|archiveTextExtractionError|
+|missingOrInvalidConfiguration|
+|agentFailure|
+|enforcementTimeout|
+|osOverride|
+|processNonExistent|
+|other|
+|serviceTimeout|
+|serviceError|
+|serviceUnavailable|
+|unknownFutureValue|
+
 ### meetingEngagementType values
 
 |Member|

@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "evaluationIncompleteActivityMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluationIncompleteActivityMetadata](https://learn.microsoft.com/en-us/graph/api/resources/evaluationincompleteactivitymetadata?view=graph-rest-beta) complex type to the [contentActivity](https://learn.microsoft.com/en-us/graph/api/resources/contentactivity?view=graph-rest-beta) resource for reporting Secure by Default policy evaluations that couldn't be completed.",
+          "Target": "evaluationIncompleteActivityMetadata"
+        },
+        {
+          "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "evaluationErrorDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluationErrorDetail](https://learn.microsoft.com/en-us/graph/api/resources/evaluationerrordetail?view=graph-rest-beta) complex type.",
+          "Target": "evaluationErrorDetail"
+        },
+        {
+          "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "errorActions",
+          "ChangeType": "Addition",
+          "Description": "Added the [errorActions](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#erroractions-values) enumeration type.",
+          "Target": "errorActions"
+        },
+        {
+          "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "evaluationErrorCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluationErrorCategory](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#evaluationerrorcategory-values) enumeration type.",
+          "Target": "evaluationErrorCategory"
+        },
+        {
+          "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "evaluationErrorType",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluationErrorType](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#evaluationerrortype-values) enumeration type.",
+          "Target": "evaluationErrorType"
+        }
+      ],
+      "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-21T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0ce048fe-8751-4864-bbb6-eba9552614dd",
           "ApiChange": "Member",
           "ChangedApiName": "privacyDataMatch",
@@ -583,14 +633,14 @@
           "Target": "resourceAccessDetail"
         }
       ],
-        "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2026-01-14T00:00:00.0000000Z",
-        "WorkloadArea": "Security",
-        "SubArea": "Data security and compliance"
-      },
-      {
+      "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-14T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
       "ChangeList": [
         {
           "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
@@ -625,14 +675,14 @@
           "Target": "processFileMetadata"
         }
       ],
-        "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2026-02-18T00:00:00.0000000Z",
-        "WorkloadArea": "Security",
-        "SubArea": "Data security and compliance"
-      },
-      {
+      "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-02-18T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
       "ChangeList": [
         {
           "Id": "1bcf0683-8da5-49e2-ad7b-939947ea200d",
@@ -1256,7 +1306,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
-        {
+    {
       "ChangeList": [
         {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
@@ -1346,7 +1396,7 @@
           "Description": "Added the [blockAccessAction](https://learn.microsoft.com/en-us/graph/api/resources/blockAccessAction?view=graph-rest-beta) resource.",
           "Target": "blockAccessAction"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classifcationErrorBase",
@@ -1354,7 +1404,7 @@
           "Description": "Added the [classifcationErrorBase](https://learn.microsoft.com/en-us/graph/api/resources/classifcationErrorBase?view=graph-rest-beta) resource.",
           "Target": "classifcationErrorBase"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classificationError",
@@ -1362,7 +1412,7 @@
           "Description": "Added the [classificationError](https://learn.microsoft.com/en-us/graph/api/resources/classificationError?view=graph-rest-beta) resource.",
           "Target": "classificationError"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classificationInnerError",
@@ -1370,7 +1420,7 @@
           "Description": "Added the [classificationInnerError](https://learn.microsoft.com/en-us/graph/api/resources/classificationInnerError?view=graph-rest-beta) resource.",
           "Target": "classificationInnerError"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "customMetadataDictionary",
@@ -1442,7 +1492,7 @@
           "Description": "Added the **isDefault** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "isEnabled",
@@ -1450,7 +1500,7 @@
           "Description": "Added the **isEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "isEndpointProtectionEnabled",
@@ -1458,7 +1508,7 @@
           "Description": "Added the **isEndpointProtectionEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "labelActions",
@@ -1466,7 +1516,7 @@
           "Description": "Added the **labelActions** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "priority",
@@ -1926,7 +1976,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
-      {
+    {
       "ChangeList": [
         {
           "Id": "c27c982e-a5f0-4ce9-af0d-7ad5ee81f354",
