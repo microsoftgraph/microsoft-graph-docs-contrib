@@ -170,6 +170,10 @@ Updated the retirement date for the legacy Microsoft Graph [security alerts API]
 
 - Added the **coopEnforcement** property to the [authenticationBehaviors](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true) resource. Application owners can use it to explicitly test Cross-Origin-Opener-Policy enforcement, temporarily suppress enforcement while remediating an incompatible browser authentication flow, or return to the service default.
 
+### Device and app management | Cloud PC
+
+- Added the [retrieveCloudPcPerformanceMetricsReport](/graph/api/cloudpcreports-retrievecloudpcperformancemetricsreport?view=graph-rest-beta&preserve-view=true) method to the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource type. Use it to get VM-level utilization and performance metrics for a specific Cloud PC, including CPU, memory, and network metrics.
+
 ### Files
 
 - Added the [Upsert columns](/graph/api/filestoragecontainer-patch-columns?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource type to create or update up to 20 columnDefinition objects in a single request.

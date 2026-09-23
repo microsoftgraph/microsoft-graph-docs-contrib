@@ -32,6 +32,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[Get real-time remote connection status reports](../api/cloudpcreports-getrealtimeremoteconnectionstatus.md)|Stream|Get the real-time remote connection status reports like sign-in status or days since the last use of a Cloud PC.|
 |[Get remote connection historical reports](../api/cloudpcreports-getremoteconnectionhistoricalreports.md)|Stream|Get a Cloud PC's remote connection historical reports, such as **signInDateTime**, **signOutDateTime**, or **usageInHour**, in a given period.|
 |[Get total aggregated remote connection reports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports, like usage and **daysSinceLastUse**, in a given period.|
+|[Retrieve Cloud PC performance metrics report](../api/cloudpcreports-retrievecloudpcperformancemetricsreport.md)|Stream|Get VM-level utilization and performance metrics for a specific Cloud PC, including CPU, memory, and network metrics.|
 |[Retrieve Cloud PC tenant metrics report](../api/cloudpcreports-retrievecloudpctenantmetricsreport.md)|Stream|Get a report related to the performance of Cloud PCs.|
 |[Retrieve cross-region disaster recovery report](../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md)|Stream| Retrieve the Windows 365 cross-region disaster recovery report, including cloudPcId, userId, deviceId, cloudPCDeviceDisplayName, userPrincipalName, enabledDRType, disasterRecoveryStatus, licenseType, drHealthStatus, currentRestorePointDateTime, backupCloudPcStatus, and activationExpirationDateTime.|
 |[Retrieve connection quality reports](../api/cloudpcreports-retrieveconnectionqualityreports.md)|Stream|Get the overall connection quality reports for all devices in the current tenant, the regional connection quality trend report, and the regional connection quality insight report, including round trip time, available bandwidth, UPD usage, and dropped connections.|
@@ -96,6 +97,33 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | troubleshootMatchedCloudPCReport | Indicates report of Cloud PCs matched to specified troubleshoot criteria. |
 | troubleshootUserListReport | Indicates list report of users with troubleshoot details. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+### cloudPcPerformanceMetricNamesType values
+
+|Member|Description|
+|:---|:---|
+|cpuUsageInPercentage|Indicates the percentage of allocated compute units in use by the Cloud PC (0-100).|
+|availableMemoryInPercentage|Indicates the percentage of physical memory available to the guest OS (0-100). Lower values signal memory pressure.|
+|networkInboundInBytes|Indicates the total bytes received across all network interfaces during the aggregation interval.|
+|networkOutboundInBytes|Indicates the total bytes sent across all network interfaces during the aggregation interval.|
+|inboundFlowsCount|Indicates the number of active inbound network flows.|
+|outboundFlowsCount|Indicates the number of active outbound network flows.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+
+### cloudPcVmPerformanceMetricsTimeRange values
+
+|Member|Description|
+|:---|:---|
+|last2Hours|Indicates a time range of the last 2 hours.|
+|last4Hours|Indicates a time range of the last 4 hours.|
+|last12Hours|Indicates a time range of the last 12 hours.|
+|last24Hours|Default. Indicates a time range of the last 24 hours.|
+|last48Hours|Indicates a time range of the last 48 hours.|
+|last4Days|Indicates a time range of the last 4 days.|
+|last7Days|Indicates a time range of the last 7 days.|
+|last14Days|Indicates a time range of the last 14 days.|
+|last28Days|Indicates a time range of the last 28 days.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
