@@ -64,6 +64,7 @@ This resource supports:
 |alternativeNames|String collection|List of alternative names for the device.|
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`). |
 |approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, and `eq` on `null` values) and `$orderby`. |
+|cloudLicensing|[microsoft.graph.cloudLicensing.deviceCloudLicensing](cloudlicensing-devicecloudlicensing.md)|The cloud licensing relationships for this device, including assignments, usage rights, and waiting members.|
 |complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 |deviceCategory|String|User-defined property set by Intune to automatically add devices to groups and simplify managing devices.|
 |deviceId|String| Unique identifier set by Azure Device Registration Service at the time of registration. This ID is an alternate key that can be used to reference the device object. Also supports `$filter` (`eq`, `ne`, `not`, `startsWith`). |
@@ -132,6 +133,9 @@ The following JSON representation shows the resource type.
   "accountEnabled": "Boolean",
   "alternativeNames": ["String"],
   "approximateLastSignInDateTime": "String (timestamp)",
+  "cloudLicensing": {
+    "@odata.type": "microsoft.graph.cloudLicensing.deviceCloudLicensing"
+  },
   "complianceExpirationDateTime": "String (timestamp)",
   "deviceCategory": "String",
   "deviceId": "String",

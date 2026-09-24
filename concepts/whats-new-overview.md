@@ -174,6 +174,15 @@ Updated the retirement date for the legacy Microsoft Graph [security alerts API]
 
 - Added the **coopEnforcement** property to the [authenticationBehaviors](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true) resource. Application owners can use it to explicitly test Cross-Origin-Opener-Policy enforcement, temporarily suppress enforcement while remediating an incompatible browser authentication flow, or return to the service default.
 
+### Device and app management | Cloud licensing
+
+Added cloud licensing support for devices, enabling license assignment and usage tracking for device-based licensing scenarios. The new capabilities include:
+
+- Added the [deviceCloudLicensing](/graph/api/resources/cloudlicensing-devicecloudlicensing?view=graph-rest-beta&preserve-view=true) resource type and the **cloudLicensing** property to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource.
+- Use the [List usageRights for device](/graph/api/cloudlicensing-devicecloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true) method to retrieve usage rights granted to a device through direct assignments and transitive group-based assignments.
+- Use the [Create assignment for device](/graph/api/cloudlicensing-devicecloudlicensing-post-assignments?view=graph-rest-beta&preserve-view=true) method to assign licenses directly to devices.
+- Use the [List waitingMembers for device](/graph/api/cloudlicensing-devicecloudlicensing-list-waitingmembers?view=graph-rest-beta&preserve-view=true) method to retrieve devices in the waiting room due to license capacity limits.
+
 ### Device and app management | Cloud PC
 
 - Added the [retrieveCloudPcPerformanceMetricsReport](/graph/api/cloudpcreports-retrievecloudpcperformancemetricsreport?view=graph-rest-beta&preserve-view=true) method to the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource type. Use it to get VM-level utilization and performance metrics for a specific Cloud PC, including CPU, memory, and network metrics.

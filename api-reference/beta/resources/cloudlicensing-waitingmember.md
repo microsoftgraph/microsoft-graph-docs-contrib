@@ -23,6 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List for allotment](../api/cloudlicensing-allotment-list-waitingmembers.md)|[microsoft.graph.cloudLicensing.waitingMember](../resources/cloudlicensing-waitingmember.md) collection|Get a list of over-assigned [users](../resources/cloudlicensing-waitingmember.md) who are in the waiting room due to license capacity limits. |
 |[List for user](../api/cloudlicensing-usercloudlicensing-list-waitingmembers.md)|[microsoft.graph.cloudLicensing.waitingMember](../resources/cloudlicensing-waitingmember.md) collection|Get a list of the [waitingMember](../resources/cloudlicensing-waitingmember.md) objects granted to a user.|
+|[List for device](../api/cloudlicensing-devicecloudlicensing-list-waitingmembers.md)|[microsoft.graph.cloudLicensing.waitingMember](../resources/cloudlicensing-waitingmember.md) collection|Get a list of the [waitingMember](../resources/cloudlicensing-waitingmember.md) objects for a device.|
 |[Get](../api/cloudlicensing-waitingmember-get.md)|[microsoft.graph.cloudLicensing.waitingMember](../resources/cloudlicensing-waitingmember.md)|Read the properties and relationships of [waitingMember](../resources/cloudlicensing-waitingmember.md) object.|
 
 ## Properties
@@ -35,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |allotment|[microsoft.graph.cloudLicensing.allotment](../resources/cloudlicensing-allotment.md)|The allotment from which licenses are assigned. Not nullable.|
-|assignedTo|[directoryObject](../resources/directoryobject.md)|The user or group to which licenses are assigned. Not nullable.|
+|assignedTo|[directoryObject](../resources/directoryobject.md)|The user or device to which licenses are assigned. Not nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

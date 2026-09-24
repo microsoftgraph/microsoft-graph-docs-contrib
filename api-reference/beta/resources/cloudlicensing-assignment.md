@@ -1,6 +1,6 @@
 ---
 title: "assignment resource type"
-description: "Represents a license assignment that grants a license for the product-SKU contained within an allotment directly to the assigned user or indirectly to each member of the assigned group."
+description: "Represents a license assignment that grants a license for the product-SKU contained within an allotment directly to the assigned user or device, or indirectly to each member of the assigned group."
 author: "patrick-starrin"
 ms.date: 07/18/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a license assignment that grants a license for the product-SKU contained within an allotment directly to the assigned user or indirectly to each member of the assigned group. Each unique user consumes one license from each allotment to which they're directly or indirectly assigned.
+Represents a license assignment that grants a license for the product-SKU contained within an allotment directly to the assigned user or device, or indirectly to each member of the assigned group. Each unique user or device consumes one license from each allotment to which they're directly or indirectly assigned.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -29,8 +29,9 @@ Inherits from [entity](../resources/entity.md).
 |[Create for allotment](../api/cloudlicensing-allotment-post-assignments.md)|[microsoft.graph.cloudLicensing.assignment](../resources/cloudlicensing-assignment.md)|Create a new license [assignment](../resources/cloudlicensing-assignment.md) by posting to the **assignments** collection of an [allotment](../resources/cloudlicensing-allotment.md).|
 |[Create for user](../api/cloudlicensing-usercloudlicensing-post-assignments.md)|[microsoft.graph.cloudLicensing.assignment](../resources/cloudlicensing-assignment.md)|Create a new license [assignment](../resources/cloudlicensing-assignment.md) by posting to a [user](../resources/user.md)'s **assignments** collection.|
 |[Create for group](../api/cloudlicensing-groupcloudlicensing-post-assignments.md)|[microsoft.graph.cloudLicensing.assignment](../resources/cloudlicensing-assignment.md)|Create a new license [assignment](../resources/cloudlicensing-assignment.md) by posting to the **assignments** collection for a [group](../resources/group.md).|
+|[Create for device](../api/cloudlicensing-devicecloudlicensing-post-assignments.md)|[microsoft.graph.cloudLicensing.assignment](../resources/cloudlicensing-assignment.md)|Create a new license [assignment](../resources/cloudlicensing-assignment.md) by posting to the **assignments** collection for a [device](../resources/device.md).|
 |[Reprocess assignments](../api/cloudlicensing-assignment-reprocessassignments.md)|None|Reprocess existing license [assignments](../resources/cloudlicensing-assignment.md) for a user by calling the **reprocessAssignments** action on a user's assignments.|
-|[Get assignedTo](../api/cloudlicensing-assignment-get-assignedto.md)|[directoryObject](../resources/directoryobject.md)| Get a [user](../resources/directoryobject.md) or [group](../resources/directoryobject.md) object for a given [assignment](../resources/cloudlicensing-assignment.md) to which licenses are assigned.|
+|[Get assignedTo](../api/cloudlicensing-assignment-get-assignedto.md)|[directoryObject](../resources/directoryobject.md)| Get a [user](../resources/user.md), [group](../resources/group.md), or [device](../resources/device.md) object for a given [assignment](../resources/cloudlicensing-assignment.md) to which licenses are assigned.|
 |[Get allotment for assignment](../api/cloudlicensing-assignment-get-allotment.md)|[microsoft.graph.cloudLicensing.allotment](../resources/cloudlicensing-allotment.md)|Get the [allotment](../resources/cloudlicensing-allotment.md) that is the source of the licenses used in the assignment.|
 
 ## Properties
@@ -43,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |allotment|[microsoft.graph.cloudLicensing.allotment](../resources/cloudlicensing-allotment.md)|The allotment from which licenses are assigned. Not nullable.|
-|assignedTo|[directoryObject](../resources/directoryobject.md)|The user or group to which licenses are assigned. Not nullable.|
+|assignedTo|[directoryObject](../resources/directoryobject.md)|The user, group, or device to which licenses are assigned. Not nullable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

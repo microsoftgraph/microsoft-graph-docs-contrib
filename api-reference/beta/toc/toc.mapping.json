@@ -592,6 +592,7 @@
             "microsoft.graph.cloudLicensing.waitingMember"
           ],
           "complexTypes": [
+            "microsoft.graph.cloudLicensing.deviceCloudLicensing",
             "microsoft.graph.cloudLicensing.groupCloudLicensing",
             "microsoft.graph.cloudLicensing.service",
             "microsoft.graph.cloudLicensing.subscription",
