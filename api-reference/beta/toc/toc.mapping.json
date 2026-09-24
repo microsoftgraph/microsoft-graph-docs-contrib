@@ -1292,6 +1292,9 @@
             "deviceTemplate",
             "mutualTlsOauthConfiguration"
           ],
+          "complexTypes": [
+            "provisionResponse"
+          ],
           "childNodes": [
             {
               "name": "Mobility management policy",
