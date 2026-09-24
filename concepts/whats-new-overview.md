@@ -167,6 +167,10 @@ Updated the retirement date for the legacy Microsoft Graph [security alerts API]
 - Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) and [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts) methods to document a service-update issue that can cause paginated requests to return an empty collection followed by duplicate items.
 - Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) method to return a Microsoft Graph URL that you can use to download recording content.
 
+### Tenants | Tenant governance
+
+- Promoted the [tenantGovernance](/graph/api/resources/tenantgovernanceservices-tenantgovernance) resource type and related methods from beta to v1.0 for discovering related tenants and managing governance invitations, requests, relationships, settings, and policy templates across Microsoft Entra tenants.
+
 ## August 2026: New in preview only
 
 

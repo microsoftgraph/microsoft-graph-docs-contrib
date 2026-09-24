@@ -3,6 +3,522 @@
     {
       "ChangeList": [
         {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tenantGovernance",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantGovernance** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-v1.0) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "applicationPermissionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationPermissionType** enumeration type.",
+          "Target": "applicationPermissionType"
+        },
+
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "relationshipCreationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **relationshipCreationType** enumeration type.",
+          "Target": "relationshipCreationType"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "relationshipStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **relationshipStatus** enumeration type.",
+          "Target": "relationshipStatus"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "requestStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **requestStatus** enumeration type.",
+          "Target": "requestStatus"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdministrationRoleAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdministrationRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-delegatedadministrationroleassignment?view=graph-rest-v1.0) resource.",
+          "Target": "delegatedAdministrationRoleAssignment"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdministrationRoleAssignmentSnapshot",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdministrationRoleAssignmentSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-delegatedadministrationroleassignmentsnapshot?view=graph-rest-v1.0) resource.",
+          "Target": "delegatedAdministrationRoleAssignmentSnapshot"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "group",
+          "ChangeType": "Addition",
+          "Description": "Added the **group** relationship to the [delegatedAdministrationRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-delegatedadministrationroleassignment?view=graph-rest-v1.0) resource.",
+          "Target": "delegatedAdministrationRoleAssignment"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantApplicationsToProvision",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantApplicationsToProvision](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-multitenantapplicationstoprovision?view=graph-rest-v1.0) resource.",
+          "Target": "multiTenantApplicationsToProvision"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantApplicationsToProvisionSnapshot",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantApplicationsToProvisionSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-multitenantapplicationstoprovisionsnapshot?view=graph-rest-v1.0) resource.",
+          "Target": "multiTenantApplicationsToProvisionSnapshot"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relationshipPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [relationshipPolicy](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-relationshippolicy?view=graph-rest-v1.0) resource.",
+          "Target": "relationshipPolicy"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationResourcePermission",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationResourcePermission** resource.",
+          "Target": "applicationResourcePermission"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleTemplate](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-roletemplate?view=graph-rest-v1.0) resource.",
+          "Target": "roleTemplate"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2bRegistrationMetrics",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2bRegistrationMetrics](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-b2bregistrationmetrics?view=graph-rest-v1.0) resource.",
+          "Target": "b2bRegistrationMetrics"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2BRegistrationMetricsBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2BRegistrationMetricsBase](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-b2bregistrationmetricsbase?view=graph-rest-v1.0) resource.",
+          "Target": "b2BRegistrationMetricsBase"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2BRegistrationMetricsInitial",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2BRegistrationMetricsInitial](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-b2bregistrationmetricsinitial?view=graph-rest-v1.0) resource.",
+          "Target": "b2BRegistrationMetricsInitial"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2BRegistrationMetricsRecent",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2BRegistrationMetricsRecent](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-b2bregistrationmetricsrecent?view=graph-rest-v1.0) resource.",
+          "Target": "b2BRegistrationMetricsRecent"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2BSignInActivityMetrics",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2BSignInActivityMetrics](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-b2bsigninactivitymetrics?view=graph-rest-v1.0) resource.",
+          "Target": "b2BSignInActivityMetrics"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2BSignInActivityMetricsBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2BSignInActivityMetricsBase](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-b2bsigninactivitymetricsbase?view=graph-rest-v1.0) resource.",
+          "Target": "b2BSignInActivityMetricsBase"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2BSignInActivityMetricsInitial",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2BSignInActivityMetricsInitial](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-b2bsigninactivitymetricsinitial?view=graph-rest-v1.0) resource.",
+          "Target": "b2BSignInActivityMetricsInitial"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2BSignInActivityMetricsRecent",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2BSignInActivityMetricsRecent](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-b2bsigninactivitymetricsrecent?view=graph-rest-v1.0) resource.",
+          "Target": "b2BSignInActivityMetricsRecent"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billingMetrics",
+          "ChangeType": "Addition",
+          "Description": "Added the [billingMetrics](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-billingmetrics?view=graph-rest-v1.0) resource.",
+          "Target": "billingMetrics"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billingMetricsBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [billingMetricsBase](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-billingmetricsbase?view=graph-rest-v1.0) resource.",
+          "Target": "billingMetricsBase"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billingMetricsInitial",
+          "ChangeType": "Addition",
+          "Description": "Added the [billingMetricsInitial](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-billingmetricsinitial?view=graph-rest-v1.0) resource.",
+          "Target": "billingMetricsInitial"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billingMetricsRecent",
+          "ChangeType": "Addition",
+          "Description": "Added the [billingMetricsRecent](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-billingmetricsrecent?view=graph-rest-v1.0) resource.",
+          "Target": "billingMetricsRecent"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "governanceInvitation",
+          "ChangeType": "Addition",
+          "Description": "Added the [governanceInvitation](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-governanceinvitation?view=graph-rest-v1.0) resource.",
+          "Target": "governanceInvitation"
+        },
+
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantGovernancePolicyTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantGovernancePolicyTemplate** resource.",
+          "Target": "tenantGovernancePolicyTemplate"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "governanceRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the [governanceRelationship](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-governancerelationship?view=graph-rest-v1.0) resource.",
+          "Target": "governanceRelationship"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "governanceRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [governanceRequest](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-governancerequest?view=graph-rest-v1.0) resource.",
+          "Target": "governanceRequest"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantApplicationMetrics",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantApplicationMetrics](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-multitenantapplicationmetrics?view=graph-rest-v1.0) resource.",
+          "Target": "multiTenantApplicationMetrics"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantApplicationMetricsBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantApplicationMetricsBase](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-multitenantapplicationmetricsbase?view=graph-rest-v1.0) resource.",
+          "Target": "multiTenantApplicationMetricsBase"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantApplicationMetricsInitial",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantApplicationMetricsInitial](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-multitenantapplicationmetricsinitial?view=graph-rest-v1.0) resource.",
+          "Target": "multiTenantApplicationMetricsInitial"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "multiTenantApplicationMetricsRecent",
+          "ChangeType": "Addition",
+          "Description": "Added the [multiTenantApplicationMetricsRecent](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-multitenantapplicationmetricsrecent?view=graph-rest-v1.0) resource.",
+          "Target": "multiTenantApplicationMetricsRecent"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relatedTenant",
+          "ChangeType": "Addition",
+          "Description": "Added the [relatedTenant](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-relatedtenant?view=graph-rest-v1.0) resource.",
+          "Target": "relatedTenant"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relatedTenantsRefreshRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [relatedTenantsRefreshRequest](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-relatedtenantsrefreshrequest?view=graph-rest-v1.0) resource.",
+          "Target": "relatedTenantsRefreshRequest"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantGovernanceSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantGovernanceSetting](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-tenantgovernancesetting?view=graph-rest-v1.0) resource.",
+          "Target": "tenantGovernanceSetting"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "enableRelatedTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the [enableRelatedTenants](https://learn.microsoft.com/en-us/graph/api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants?view=graph-rest-v1.0) method to the [tenantGovernanceSetting](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-tenantgovernancesetting?view=graph-rest-v1.0) resource.",
+          "Target": "tenantGovernanceSetting"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "refresh",
+          "ChangeType": "Addition",
+          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/tenantgovernanceservices-relatedtenant-refresh?view=graph-rest-v1.0) method to the [relatedTenant](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-relatedtenant?view=graph-rest-v1.0) resource.",
+          "Target": "relatedTenant"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationsRequiredResourceAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationsRequiredResourceAccess** resource.",
+          "Target": "applicationsRequiredResourceAccess"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **groupDisplayName** property to the [delegatedAdministrationRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-delegatedadministrationroleassignment?view=graph-rest-v1.0) resource.",
+          "Target": "delegatedAdministrationRoleAssignment"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **groupDisplayName** property to the [delegatedAdministrationRoleAssignmentSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-delegatedadministrationroleassignmentsnapshot?view=graph-rest-v1.0) resource.",
+          "Target": "delegatedAdministrationRoleAssignmentSnapshot"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMicrosoftInfrastructure",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMicrosoftInfrastructure** property to the [relatedTenant](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-relatedtenant?view=graph-rest-v1.0) resource.",
+          "Target": "relatedTenant"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantGovernance",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-tenantgovernance?view=graph-rest-v1.0) resource.",
+          "Target": "tenantGovernance"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete tenantGovernancePolicyTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **Delete tenantGovernancePolicyTemplate** method to the **tenantGovernancePolicyTemplate** resource.",
+          "Target": "tenantGovernancePolicyTemplate"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete governanceInvitation",
+          "ChangeType": "Addition",
+          "Description": "Added the **Delete governanceInvitation** method to the **governanceInvitation** resource.",
+          "Target": "governanceInvitation"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get governanceInvitation",
+          "ChangeType": "Addition",
+          "Description": "Added the **Get governanceInvitation** method to the **governanceInvitation** resource.",
+          "Target": "governanceInvitation"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get tenantGovernancePolicyTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **Get tenantGovernancePolicyTemplate** method to the **tenantGovernancePolicyTemplate** resource.",
+          "Target": "tenantGovernancePolicyTemplate"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update tenantGovernancePolicyTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **Update tenantGovernancePolicyTemplate** method to the **tenantGovernancePolicyTemplate** resource.",
+          "Target": "tenantGovernancePolicyTemplate"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get governanceRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the **Get governanceRelationship** method to the **governanceRelationship** resource.",
+          "Target": "governanceRelationship"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update governanceRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the **Update governanceRelationship** method to the **governanceRelationship** resource.",
+          "Target": "governanceRelationship"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get governanceRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the **Get governanceRequest** method to the **governanceRequest** resource.",
+          "Target": "governanceRequest"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update governanceRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the **Update governanceRequest** method to the **governanceRequest** resource.",
+          "Target": "governanceRequest"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "List governanceInvitations",
+          "ChangeType": "Addition",
+          "Description": "Added the **List governanceInvitations** method to the **governanceInvitation** resource.",
+          "Target": "governanceInvitation"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "List governancePolicyTemplates",
+          "ChangeType": "Addition",
+          "Description": "Added the **List governancePolicyTemplates** method to the **tenantGovernancePolicyTemplate** resource.",
+          "Target": "tenantGovernancePolicyTemplate"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "List governanceRelationships",
+          "ChangeType": "Addition",
+          "Description": "Added the **List governanceRelationships** method to the **governanceRelationship** resource.",
+          "Target": "governanceRelationship"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "List governanceRequests",
+          "ChangeType": "Addition",
+          "Description": "Added the **List governanceRequests** method to the **governanceRequest** resource.",
+          "Target": "governanceRequest"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "List relatedTenants",
+          "ChangeType": "Addition",
+          "Description": "Added the **List relatedTenants** method to the **relatedTenant** resource.",
+          "Target": "relatedTenant"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create governanceInvitation",
+          "ChangeType": "Addition",
+          "Description": "Added the **Create governanceInvitation** method to the **governanceInvitation** resource.",
+          "Target": "governanceInvitation"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create tenantGovernancePolicyTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **Create tenantGovernancePolicyTemplate** method to the **tenantGovernancePolicyTemplate** resource.",
+          "Target": "tenantGovernancePolicyTemplate"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create governanceRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the **Create governanceRequest** method to the **governanceRequest** resource.",
+          "Target": "governanceRequest"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get relatedTenant",
+          "ChangeType": "Addition",
+          "Description": "Added the **Get relatedTenant** method to the **relatedTenant** resource.",
+          "Target": "relatedTenant"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get tenantGovernanceSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the **Get tenantGovernanceSetting** method to the **tenantGovernanceSetting** resource.",
+          "Target": "tenantGovernanceSetting"
+        },
+        {
+          "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update tenantGovernanceSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the **Update tenantGovernanceSetting** method to the **tenantGovernanceSetting** resource.",
+          "Target": "tenantGovernanceSetting"
+        }
+      ],
+      "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-13T20:46:53.4701010Z",
+      "WorkloadArea": "Tenants",
+      "SubArea": "Tenant governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "359964dc-981e-4695-896f-496cc6debbbc",
           "ApiChange": "Resource",
           "ChangedApiName": "actionStep",

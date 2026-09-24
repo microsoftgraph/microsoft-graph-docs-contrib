@@ -3,6 +3,8 @@ title: "Create governanceInvitation"
 description: "Create a new governance invitation to establish a relationship with a governed tenant."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,7 +12,7 @@ doc_type: apiPageType
 
 # Create governanceInvitation
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +48,7 @@ POST /directory/tenantGovernance/governanceInvitations
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.tenantGovernanceServices.governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) object.
 
 You can specify the following properties when creating a **governanceInvitation**.
 
@@ -58,7 +60,7 @@ You can specify the following properties when creating a **governanceInvitation*
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.tenantGovernanceServices.governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) object in the response body.
 
 ## Examples
 
@@ -117,7 +119,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.governanceInvitation"
+  "@odata.type": "microsoft.graph.governanceInvitation"
 }
 -->
 ``` http
@@ -125,7 +127,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.governanceInvitation",
+  "@odata.type": "#microsoft.graph.governanceInvitation",
   "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
   "governingTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
   "governedTenantId": "bbbbcccc-1111-dddd-2222-eeee3333ffff",
@@ -135,4 +137,3 @@ Content-Type: application/json
   "expirationDateTime": "2026-01-31T18:25:09.4212828Z"
 }
 ```
-

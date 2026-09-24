@@ -1,0 +1,29 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/resources/tenantgovernanceservices-actionstep.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-investigationactionstep?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/tenantgovernanceservices-actionurl.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-investigationactionurl?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/tenantgovernanceservices-governancepolicytemplate.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-tenantgovernancepolicytemplate?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/tenantgovernanceservices-requiredresourceaccess.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-applicationsrequiredresourceaccess?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/tenantgovernanceservices-resourcepermission.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-applicationresourcepermission?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    }
+  ]
+}

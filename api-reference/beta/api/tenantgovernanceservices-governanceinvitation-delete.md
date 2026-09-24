@@ -3,6 +3,8 @@ title: "Delete governanceInvitation"
 description: "Delete a governance invitation."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,7 +12,7 @@ doc_type: apiPageType
 
 # Delete governanceInvitation
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -107,4 +109,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

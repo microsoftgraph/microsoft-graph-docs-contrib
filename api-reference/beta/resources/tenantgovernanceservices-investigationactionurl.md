@@ -1,20 +1,22 @@
 ---
-title: "actionUrl resource type"
+title: "investigationActionUrl resource type"
 description: "Represents a follow-on API reference for an investigation step returned with related tenant metrics."
 author: "akhil-potturi"
 ms.date: 07/09/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
 ---
 
-# actionUrl resource type
+# investigationActionUrl resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a follow-on API reference for an investigation step returned with [related tenant](../resources/tenantgovernanceservices-relatedtenant.md) metrics. It identifies an existing Microsoft Graph or Azure Resource Manager (ARM) API that a client can call to reveal more detail behind an aggregate metric. The **actionUrl** property of the [actionStep](../resources/tenantgovernanceservices-actionstep.md) resource uses this type.
+Represents a follow-on API reference for an investigation step returned with [related tenant](../resources/tenantgovernanceservices-relatedtenant.md) metrics. It identifies an existing Microsoft Graph or Azure Resource Manager (ARM) API that a client can call to reveal more detail behind an aggregate metric. The **actionUrl** property of the [investigationActionStep](../resources/tenantgovernanceservices-investigationactionstep.md) resource uses this type.
 
 ## Properties
 
@@ -32,12 +34,12 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.actionUrl"
+  "@odata.type": "microsoft.graph.investigationActionUrl"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.actionUrl",
+  "@odata.type": "#microsoft.graph.investigationActionUrl",
   "displayName": "String",
   "url": "String"
 }

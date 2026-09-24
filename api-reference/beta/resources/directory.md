@@ -4,6 +4,8 @@ description: "Deleted items remain available to restore for up to 30 days. After
 ms.localizationpriority: medium
 author: "FaithOmbongi"
 ms.date: 11/17/2025
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Deleted item
@@ -75,7 +77,7 @@ Inherits from [entity](entity.md).
 | remoteTenantGroups | [remoteTenantGroup](remotetenantgroup.md) collection | Collection of groups in remote Microsoft Entra tenants that are available in the directory. |
 | subscriptions | [companySubscription](companysubscription.md) collection | List of commercial subscriptions that an organization has. |
 |templates|[template](../resources/template.md) |A container for templates, such as device templates used for onboarding devices in Microsoft Entra ID. |
-|tenantGovernance|[microsoft.graph.tenantGovernanceServices.tenantGovernance](../resources/tenantgovernanceservices-tenantgovernance.md)|Container for Microsoft Entra Tenant Governance capabilities.|
+|tenantGovernance|[microsoft.graph.tenantGovernance](../resources/tenantgovernanceservices-tenantgovernance.md)|Container for Microsoft Entra Tenant Governance capabilities.|
 
 ## JSON representation
 

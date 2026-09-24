@@ -3,6 +3,8 @@ title: "Create governanceRequest"
 description: "Create a new governance request to establish a relationship with a governed tenant."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,7 +12,7 @@ doc_type: apiPageType
 
 # Create governanceRequest
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,20 +48,20 @@ POST /directory/tenantGovernance/governanceRequests
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.tenantGovernanceServices.governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) object.
 
 You can specify the following properties when creating a **governanceRequest**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |governedTenantId|String|The Microsoft Entra tenant ID of the governed tenant. Required.|
-|governancePolicyTemplate@odata.bind|[microsoft.graph.tenantGovernanceServices.governancePolicyTemplate](../resources/tenantgovernanceservices-governancePolicyTemplate.md)|Provide the governance policy template ID that is used to generate the `policySnapshot`. Required.|
+|governancePolicyTemplate@odata.bind|[microsoft.graph.tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md)|Provide the governance policy template ID that is used to generate the `policySnapshot`. Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.tenantGovernanceServices.governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) object in the response body.
 
 ## Examples
 
@@ -119,7 +121,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.governanceRequest"
+  "@odata.type": "microsoft.graph.governanceRequest"
 }
 -->
 ``` http
@@ -127,7 +129,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.governanceRequest",
+  "@odata.type": "#microsoft.graph.governanceRequest",
   "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
   "governingTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
   "governingTenantName": "Contoso, Inc",
@@ -178,4 +180,3 @@ Content-Type: application/json
   }
 }
 ```
-

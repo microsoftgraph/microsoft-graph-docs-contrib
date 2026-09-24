@@ -1,20 +1,22 @@
 ---
-title: "Delete governancePolicyTemplate"
+title: "Delete tenantGovernancePolicyTemplate"
 description: "Delete a governance policy template."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
 ---
 
-# Delete governancePolicyTemplate
+# Delete tenantGovernancePolicyTemplate
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) object. You can't delete the default template or templates currently used by active relationships.
+Delete a [tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md) object. You can't delete the default template or templates currently used by active relationships.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -107,4 +109,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

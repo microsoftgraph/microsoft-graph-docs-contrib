@@ -1,20 +1,22 @@
 ---
-title: "Create governancePolicyTemplate"
+title: "Create tenantGovernancePolicyTemplate"
 description: "Create a new governance policy template."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
 ---
 
-# Create governancePolicyTemplate
+# Create tenantGovernancePolicyTemplate
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) that defines the configuration for establishing governance relationships, including role assignments and applications to provision.
+Create a new [tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md) that defines the configuration for establishing governance relationships, including role assignments and applications to provision.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -46,22 +48,22 @@ POST /directory/tenantGovernance/governancePolicyTemplates
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.tenantGovernanceServices.governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md) object.
 
-You can specify the following properties when creating a **governancePolicyTemplate**.
+You can specify the following properties when creating a **tenantGovernancePolicyTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the policy template. Required.|
 |description|String|A description of the policy template. Required.|
-|multiTenantApplicationsToProvision|[microsoft.graph.tenantGovernanceServices.multiTenantApplicationsToProvision](../resources/tenantgovernanceservices-multitenantapplicationstoprovision.md) collection|A collection of multitenant applications to be provisioned in the governed tenant when the governance relationship is established. Required.|
-|delegatedAdministrationRoleAssignments|[microsoft.graph.tenantGovernanceServices.delegatedAdministrationRoleAssignment](../resources/tenantgovernanceservices-delegatedadministrationroleassignment.md) collection|A collection of delegated administration role assignments to be applied in the governed tenant when the governance relationship is established. Required.|
+|multiTenantApplicationsToProvision|[microsoft.graph.multiTenantApplicationsToProvision](../resources/tenantgovernanceservices-multitenantapplicationstoprovision.md) collection|A collection of multitenant applications to be provisioned in the governed tenant when the governance relationship is established. Required.|
+|delegatedAdministrationRoleAssignments|[microsoft.graph.delegatedAdministrationRoleAssignment](../resources/tenantgovernanceservices-delegatedadministrationroleassignment.md) collection|A collection of delegated administration role assignments to be applied in the governed tenant when the governance relationship is established. Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.tenantGovernanceServices.governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md) object in the response body.
 
 ## Examples
 
@@ -158,7 +160,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.governancePolicyTemplate"
+  "@odata.type": "microsoft.graph.tenantGovernancePolicyTemplate"
 }
 -->
 ``` http
@@ -166,7 +168,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.governancePolicyTemplate",
+  "@odata.type": "#microsoft.graph.tenantGovernancePolicyTemplate",
   "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
   "displayName": "Monitor Entra resource configurations",
   "description": "Grants Global reader and provisions a custom multi-tenant application to monitor conditional access policies",
@@ -212,4 +214,3 @@ Content-Type: application/json
   ]
 }
 ```
-

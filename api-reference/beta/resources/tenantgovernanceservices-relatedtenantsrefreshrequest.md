@@ -3,6 +3,8 @@ title: "relatedTenantsRefreshRequest resource type"
 description: "Represents a request to refresh related tenants data."
 author: "akhil-potturi"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
@@ -10,7 +12,7 @@ doc_type: resourcePageType
 
 # relatedTenantsRefreshRequest resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,14 +37,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.relatedTenantsRefreshRequest",
+  "@odata.type": "microsoft.graph.relatedTenantsRefreshRequest",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.relatedTenantsRefreshRequest",
+  "@odata.type": "#microsoft.graph.relatedTenantsRefreshRequest",
   "id": "String (identifier)",
   "location": "String"
 }
