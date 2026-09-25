@@ -1,20 +1,22 @@
 ---
-title: "List governancePolicyTemplates"
+title: "List tenantGovernancePolicyTemplates"
 description: "Get a list of governance policy templates."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
 ---
 
-# List governancePolicyTemplates
+# List tenantGovernancePolicyTemplates
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) objects and their properties. Policy templates define the configuration that is applied when establishing governance relationships.
+Get a list of the [tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md) objects and their properties. Policy templates define the configuration that is applied when establishing governance relationships.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -53,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md) objects in the response body.
 
 ## Examples
 
@@ -107,7 +109,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.tenantGovernanceServices.governancePolicyTemplate)"
+  "@odata.type": "Collection(microsoft.graph.tenantGovernancePolicyTemplate)"
 }
 -->
 ``` http
@@ -117,7 +119,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.tenantGovernanceServices.governancePolicyTemplate",
+      "@odata.type": "#microsoft.graph.tenantGovernancePolicyTemplate",
         "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
         "displayName": "Monitor Entra resource configurations",
         "description": "Grants Global reader and provisions a custom multi-tenant application to monitor conditional access policies",
@@ -165,4 +167,3 @@ Content-Type: application/json
   ]
 }
 ```
-

@@ -2347,6 +2347,47 @@
             "multiTenantOrganizationPartnerConfigurationTemplate",
             "multiTenantOrganizationIdentitySyncPolicyTemplate"
           ]
+        },
+        {
+          "name": "Tenant governance",
+          "overview": "../../resources/tenantgovernanceservices-tenantgovernance-overview.md",
+          "resources": [
+            "microsoft.graph.governanceInvitation",
+            "microsoft.graph.governanceRelationship",
+            "microsoft.graph.governanceRequest",
+
+            "microsoft.graph.relatedTenant",
+            "microsoft.graph.tenantGovernance",
+            "microsoft.graph.tenantGovernancePolicyTemplate",
+            "microsoft.graph.tenantGovernanceSetting"
+          ],
+          "complexTypes": [
+            "microsoft.graph.applicationResourcePermission",
+            "microsoft.graph.applicationsRequiredResourceAccess",
+            "microsoft.graph.b2bRegistrationMetrics",
+            "microsoft.graph.b2BRegistrationMetricsBase",
+            "microsoft.graph.b2BRegistrationMetricsInitial",
+            "microsoft.graph.b2BRegistrationMetricsRecent",
+            "microsoft.graph.b2BSignInActivityMetrics",
+            "microsoft.graph.b2BSignInActivityMetricsBase",
+            "microsoft.graph.b2BSignInActivityMetricsInitial",
+            "microsoft.graph.b2BSignInActivityMetricsRecent",
+            "microsoft.graph.billingMetrics",
+            "microsoft.graph.billingMetricsBase",
+            "microsoft.graph.billingMetricsInitial",
+            "microsoft.graph.billingMetricsRecent",
+            "microsoft.graph.delegatedAdministrationRoleAssignment",
+            "microsoft.graph.delegatedAdministrationRoleAssignmentSnapshot",
+            "microsoft.graph.multiTenantApplicationMetrics",
+            "microsoft.graph.multiTenantApplicationMetricsBase",
+            "microsoft.graph.multiTenantApplicationMetricsInitial",
+            "microsoft.graph.multiTenantApplicationMetricsRecent",
+            "microsoft.graph.multiTenantApplicationsToProvision",
+            "microsoft.graph.multiTenantApplicationsToProvisionSnapshot",
+            "microsoft.graph.relatedTenantsRefreshRequest",
+            "microsoft.graph.relationshipPolicy",
+            "microsoft.graph.roleTemplate"
+          ]
         }
       ]
     },

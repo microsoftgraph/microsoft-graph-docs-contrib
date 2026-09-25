@@ -1,16 +1,18 @@
 ---
-title: "actionStep resource type"
+title: "investigationActionStep resource type"
 description: "Represents an ordered investigation step returned with related tenant metrics to help callers drill into the signals behind an aggregate metric."
 author: "akhil-potturi"
 ms.date: 07/09/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
 ---
 
-# actionStep resource type
+# investigationActionStep resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ Represents an ordered investigation step returned with [related tenant](../resou
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionUrl|[microsoft.graph.tenantGovernanceServices.actionUrl](../resources/tenantgovernanceservices-actionurl.md)|The follow-on API reference for the step, containing the URL template and a machine-readable execution directive that a client uses to retrieve the drill-in data.|
+|actionUrl|[microsoft.graph.investigationActionUrl](../resources/tenantgovernanceservices-investigationactionurl.md)|The follow-on API reference for the step, containing the URL template and a machine-readable execution directive that a client uses to retrieve the drill-in data.|
 |stepNumber|String|The one-based order, as a string, in which the step should be evaluated by a client. Steps are intended to be run in ascending **stepNumber** order because later steps can depend on the output of earlier steps. This value is the key of the resource.|
 |text|String|Human-readable guidance that explains what the step does and why it's useful for investigating the related metric.|
 
@@ -34,17 +36,17 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "stepNumber",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.actionStep",
+  "@odata.type": "microsoft.graph.investigationActionStep",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.actionStep",
+  "@odata.type": "#microsoft.graph.investigationActionStep",
   "stepNumber": "String (identifier)",
   "text": "String",
   "actionUrl": {
-    "@odata.type": "microsoft.graph.tenantGovernanceServices.actionUrl"
+    "@odata.type": "microsoft.graph.investigationActionUrl"
   }
 }
 ```

@@ -102,6 +102,8 @@ items:
       href: ../../api/cloudlicensing-usercloudlicensing-post-assignments.md
     - name: Create for group
       href: ../../api/cloudlicensing-groupcloudlicensing-post-assignments.md
+    - name: Create for device
+      href: ../../api/cloudlicensing-devicecloudlicensing-post-assignments.md
     - name: Reprocess assignments
       href: ../../api/cloudlicensing-assignment-reprocessassignments.md
     - name: Get assignedTo
@@ -128,6 +130,8 @@ items:
       href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
     - name: List for user
       href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
+    - name: List for device
+      href: ../../api/cloudlicensing-devicecloudlicensing-list-usagerights.md
     - name: Get
       href: ../../api/cloudlicensing-usageright-get.md
     - name: List assignments
@@ -140,10 +144,14 @@ items:
       href: ../../api/cloudlicensing-allotment-list-waitingmembers.md
     - name: List for user
       href: ../../api/cloudlicensing-usercloudlicensing-list-waitingmembers.md
+    - name: List for device
+      href: ../../api/cloudlicensing-devicecloudlicensing-list-waitingmembers.md
     - name: Get
       href: ../../api/cloudlicensing-waitingmember-get.md
   - name: Complex types
     items:
+    - name: Device cloud licensing
+      href: ../../resources/cloudlicensing-devicecloudlicensing.md
     - name: Group cloud licensing
       href: ../../resources/cloudlicensing-groupcloudlicensing.md
     - name: Service

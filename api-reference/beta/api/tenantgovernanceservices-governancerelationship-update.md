@@ -3,6 +3,8 @@ title: "Update governanceRelationship"
 description: "Update the status property to initiate termination of a governance relationship."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,7 +12,7 @@ doc_type: apiPageType
 
 # Update governanceRelationship
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,11 +57,11 @@ PATCH /directory/tenantGovernance/governanceRelationships/{governanceRelationshi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|microsoft.graph.tenantGovernanceServices.relationshipStatus|The current status of the governance relationship. The possible values are: `active`, `terminated`, `terminationRequestedByGoverningTenant`, `unknownFutureValue`. Required.|
+|status|microsoft.graph.relationshipStatus|The current status of the governance relationship. The possible values are: `active`, `terminated`, `terminationRequestedByGoverningTenant`, `unknownFutureValue`. Required.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.tenantGovernanceServices.governanceRelationship](../resources/tenantgovernanceservices-governancerelationship.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.governanceRelationship](../resources/tenantgovernanceservices-governancerelationship.md) object in the response body.
 
 ## Examples
 
@@ -118,7 +120,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.governanceRelationship"
+  "@odata.type": "microsoft.graph.governanceRelationship"
 }
 -->
 ``` http
@@ -126,7 +128,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.governanceRelationship",
+  "@odata.type": "#microsoft.graph.governanceRelationship",
   "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
   "status": "terminated",
   "governingTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
@@ -177,4 +179,3 @@ Content-Type: application/json
   "creationDateTime": "2025-09-11T17:07:41.2019694Z"
 }
 ```
-

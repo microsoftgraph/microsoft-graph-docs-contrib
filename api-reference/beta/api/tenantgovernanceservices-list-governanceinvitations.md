@@ -3,6 +3,8 @@ title: "List governanceInvitations"
 description: "Get a list of governance invitations."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,7 +12,7 @@ doc_type: apiPageType
 
 # List governanceInvitations
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -107,7 +109,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.tenantGovernanceServices.governanceInvitation)"
+  "@odata.type": "Collection(microsoft.graph.governanceInvitation)"
 }
 -->
 ``` http
@@ -117,7 +119,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.tenantGovernanceServices.governanceInvitation",
+      "@odata.type": "#microsoft.graph.governanceInvitation",
       "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
       "governingTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
       "governedTenantId": "bbbbcccc-1111-dddd-2222-eeee3333ffff",
@@ -129,4 +131,3 @@ Content-Type: application/json
   ]
 }
 ```
-

@@ -3,6 +3,8 @@ title: "Get governanceRelationship"
 description: "Read the properties of a governance relationship."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,7 +12,7 @@ doc_type: apiPageType
 
 # Get governanceRelationship
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.tenantGovernanceServices.governanceRelationship](../resources/tenantgovernanceservices-governancerelationship.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.governanceRelationship](../resources/tenantgovernanceservices-governancerelationship.md) object in the response body.
 
 ## Examples
 
@@ -107,7 +109,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.governanceRelationship"
+  "@odata.type": "microsoft.graph.governanceRelationship"
 }
 -->
 ``` http
@@ -115,7 +117,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.governanceRelationship",
+  "@odata.type": "#microsoft.graph.governanceRelationship",
   "createdType": "approvedByAdmin",
   "creationDateTime": "2025-09-11T17:07:41.2019694Z",
   "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
@@ -166,4 +168,3 @@ Content-Type: application/json
   }
 }
 ```
-

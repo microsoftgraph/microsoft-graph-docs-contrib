@@ -3,6 +3,8 @@ title: "roleTemplate resource type"
 description: "Represents a Microsoft Entra role template definition."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
@@ -10,7 +12,7 @@ doc_type: resourcePageType
 
 # roleTemplate resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,14 +32,13 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.roleTemplate"
+  "@odata.type": "microsoft.graph.roleTemplate"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.roleTemplate",
+  "@odata.type": "#microsoft.graph.roleTemplate",
   "id": "String",
   "name": "String"
 }
 ```
-

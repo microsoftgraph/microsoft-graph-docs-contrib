@@ -3,6 +3,8 @@ title: "governanceInvitation resource type"
 description: "Represents an invitation sent by a governing tenant to establish a governance relationship with a governed tenant."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
@@ -10,7 +12,7 @@ doc_type: resourcePageType
 
 # governanceInvitation resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +25,9 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/tenantgovernanceservices-list-governanceinvitations.md)|[microsoft.graph.tenantGovernanceServices.governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) collection|Get a list of the [governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) objects and their properties.|
-|[Create](../api/tenantgovernanceservices-post-governanceinvitations.md)|[microsoft.graph.tenantGovernanceServices.governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md)|Create a new governance invitation.|
-|[Get](../api/tenantgovernanceservices-governanceinvitation-get.md)|[microsoft.graph.tenantGovernanceServices.governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md)|Read the properties of a [governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) object.|
+|[List](../api/tenantgovernanceservices-list-governanceinvitations.md)|[microsoft.graph.governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) collection|Get a list of the [governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) objects and their properties.|
+|[Create](../api/tenantgovernanceservices-post-governanceinvitations.md)|[microsoft.graph.governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md)|Create a new governance invitation.|
+|[Get](../api/tenantgovernanceservices-governanceinvitation-get.md)|[microsoft.graph.governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md)|Read the properties of a [governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) object.|
 |[Delete](../api/tenantgovernanceservices-governanceinvitation-delete.md)|None|Delete a governance invitation.|
 
 ## Properties
@@ -47,14 +49,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.governanceInvitation",
+  "@odata.type": "microsoft.graph.governanceInvitation",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.governanceInvitation",
+  "@odata.type": "#microsoft.graph.governanceInvitation",
   "id": "String (identifier)",
   "governingTenantId": "String",
   "governedTenantId": "String",
@@ -64,4 +66,3 @@ The following JSON representation shows the resource type.
   "expirationDateTime": "String (timestamp)"
 }
 ```
-

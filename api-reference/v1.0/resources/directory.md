@@ -6,7 +6,9 @@ author: "vimranga"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Deleted item
-ms.date: 06/23/2025
+ms.date: 08/13/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ---
 
 # directory resource type
@@ -57,6 +59,7 @@ Inherits from [entity](entity.md).
 |publicKeyInfrastructure|[publicKeyInfrastructureRoot](../resources/publickeyinfrastructureroot.md)|The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.|
 | remoteTenantGroups | [remoteTenantGroup](remotetenantgroup.md) collection | Collection of groups in remote Microsoft Entra tenants that are available in the directory. |
 | subscriptions                      | [companySubscription](companysubscription.md) collection                                 | List of commercial subscriptions that an organization acquired.                                                       |
+| tenantGovernance | [microsoft.graph.tenantGovernance](tenantgovernanceservices-tenantgovernance.md) | Container for Microsoft Entra Tenant Governance capabilities. |
 
 ## JSON representation
 

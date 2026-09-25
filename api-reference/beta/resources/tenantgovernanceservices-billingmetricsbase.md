@@ -3,6 +3,8 @@ title: "billingMetricsBase resource type"
 description: "Abstract base type for billing metrics."
 author: "akhil-potturi"
 ms.date: 03/16/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
@@ -10,7 +12,7 @@ doc_type: resourcePageType
 
 # billingMetricsBase resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,14 +51,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.billingMetricsBase",
+  "@odata.type": "microsoft.graph.billingMetricsBase",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ```json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.billingMetricsBase",
+  "@odata.type": "#microsoft.graph.billingMetricsBase",
   "id": "String (identifier)",
   "watermarkDateTime": "String (timestamp)",
   "localAssociatedTenantCount": "String",

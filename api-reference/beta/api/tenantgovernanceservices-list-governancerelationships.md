@@ -3,6 +3,8 @@ title: "List governanceRelationships"
 description: "Get a list of governance relationships."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,7 +12,7 @@ doc_type: apiPageType
 
 # List governanceRelationships
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -107,7 +109,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.tenantGovernanceServices.governanceRelationship)"
+  "@odata.type": "Collection(microsoft.graph.governanceRelationship)"
 }
 -->
 ``` http
@@ -117,7 +119,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.tenantGovernanceServices.governanceRelationship",
+      "@odata.type": "#microsoft.graph.governanceRelationship",
         "createdType": "approvedByAdmin",
         "creationDateTime": "2025-09-11T17:07:41.2019694Z",
         "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
@@ -170,4 +172,3 @@ Content-Type: application/json
   ]
 }
 ```
-

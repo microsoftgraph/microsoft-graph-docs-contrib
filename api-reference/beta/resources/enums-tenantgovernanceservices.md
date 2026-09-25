@@ -3,6 +3,8 @@ title: "Tenant governance enum values"
 description: "Microsoft Graph tenant governance enumeration values"
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: enumTypes
@@ -10,9 +12,11 @@ doc_type: enumTypes
 
 # Microsoft Graph tenant governance enumeration values
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
-### permissionType values 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+### applicationPermissionType values
 
 |Member|
 |:---|
@@ -48,6 +52,6 @@ Namespace: microsoft.graph.tenantGovernanceServices
 
 <!-- {
   "type": "#page.annotation",
-  "namespace": "microsoft.graph.tenantGovernanceServices"
+  "namespace": "microsoft.graph"
 }
 -->

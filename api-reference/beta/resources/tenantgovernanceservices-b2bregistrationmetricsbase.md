@@ -3,6 +3,8 @@ title: "b2BRegistrationMetricsBase resource type"
 description: "Abstract base type for B2B registration metrics."
 author: "akhil-potturi"
 ms.date: 03/16/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
@@ -10,7 +12,7 @@ doc_type: resourcePageType
 
 # b2BRegistrationMetricsBase resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,14 +45,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.b2BRegistrationMetricsBase",
+  "@odata.type": "microsoft.graph.b2BRegistrationMetricsBase",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ```json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.b2BRegistrationMetricsBase",
+  "@odata.type": "#microsoft.graph.b2BRegistrationMetricsBase",
   "id": "String (identifier)",
   "watermarkDateTime": "String (timestamp)",
   "inboundTotalUsers": "String",
