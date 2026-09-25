@@ -176,10 +176,12 @@ Use an API testing tool like [Graph Explorer](https://aka.ms/ge) to validate you
 
 ## Known differences and limitations
 
-- **Microsoft Sentinel coverage**: Sentinel-generated alerts aren't returned by the v2 API unless your Sentinel workspace is connected to the Microsoft Defender portal. In the interim, use the [Sentinel REST API](/rest/api/loganalytics/) to retrieve these alerts.
-- **Standalone alerts**: Alerts that exist outside of the Microsoft 365 Defender incident model—including standalone detections not promoted to an incident—aren't returned by the v2 API.
-- **Tuned alerts**: Alerts suppressed by alert-tuning rules aren't returned through the `alerts_v2` endpoint.
-- **Low-signal Exchange Online events**: Certain low-signal Exchange Online events, such as mailbox rule creation and message delays, aren't included in `alerts_v2`. Retrieve these through audit logs or other relevant data sources.
+- **Microsoft Sentinel coverage**: Sentinel\-generated alerts aren't returned by the v2 API unless your Microsoft Sentinel workspace is connected to the Microsoft Defender portal. In the interim, use the [Sentinel REST API](/rest/api/loganalytics/) to retrieve these alerts.
+- **Standalone alerts**: Alerts that exist outside of the Microsoft 365 Defender incident model, including standalone detections not promoted to an incident, aren't returned by the v2 API. Retrieve alerts through the originating product's API or data source.
+- **Tuned alerts**: Alerts suppressed by alert\-tuning rules aren't returned through the alerts\_v2 endpoint. Review the relevant alert\-tuning configuration and use the originating product's API or data source if needed.
+- **Low\-signal Exchange Online events**: Certain low\-signal Exchange Online events, such as mailbox rule creation and message delays, aren't included in alerts\_v2. Retrieve these through audit logs or other relevant Exchange Online data sources, such as [Microsoft Purview Audit](/purview/audit-search) for mailbox\-rule activity and [Exchange Online Message Trace](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac) for message\-delivery and delay investigations.
+- **Intune\-originated alerts**: Intune\-originated alerts aren't available through alerts\_v2. Retrieve the relevant data through the Microsoft Graph Intune APIs that correspond to your specific scenario. See [Working with Intune in Microsoft Graph](/graph/api/resources/intune-graph-overview) and [Intune devices and apps API overview](/graph/intune-concept-overview).
+
 
 ## Related content
 
