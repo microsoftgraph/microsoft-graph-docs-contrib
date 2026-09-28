@@ -6,7 +6,7 @@ ms.author: anusreenandy
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
 ms.custom: scenarios:getting-started
-ms.date: 07/10/2026
+ms.date: 09/25/2026
 ms.topic: concept-article
 doc_type: conceptualPageType
 ---
@@ -68,9 +68,34 @@ Microsoft 365 cross-tenant access policy is an inbound control: the resource ten
 
 The API is the recommended path away from the legacy OrgRel model for MailTips, calendar sharing, and free/busy. It's designed for organizations that collaborate with external partners through Microsoft 365 apps, operate multiple Microsoft 365 tenants, or go through mergers, acquisitions, and reorganizations that require secure cross-tenant resource sharing.
 
-### High-level access or permission considerations
+### Roles and prerequisites
 
-Configuring cross-tenant capabilities requires a privileged administrator role (such as Global Administrator) on the resource tenant and delegated Microsoft Graph permissions, including `Policy.ReadWrite.CrossTenantAccess` and `Policy.ReadWrite.CrossTenantCapability`. A Microsoft Entra cross-tenant access trust with the partner must already exist: most capabilities require Microsoft 365 collaboration trust, Shared Channels require B2B direct connect, and mailbox migration requires app service connect. For authentication details, see [Authentication and authorization basics](/graph/auth/auth-concepts). Configuration is available through Microsoft Graph and the Microsoft Graph PowerShell SDK, with Microsoft Admin Center support planned after general availability.
+Before you configure Microsoft 365 cross-tenant access policy, make sure the following are in place on the resource tenant.
+
+#### Microsoft Entra cross-tenant trust (prerequisite)
+
+A Microsoft Entra cross-tenant access trust is **required** before any Microsoft 365 capability can take effect. The type of trust depends on the capability:
+
+- **Microsoft 365 collaboration trust** — required for every Microsoft 365 capability configured through this API. Either the tenant's default Microsoft 365 collaboration settings or a partner-specific configuration satisfies this requirement. Without it, the capability is authored but has no effect at runtime.
+- **B2B direct connect** — required for cross-tenant Teams Shared Channels, which are configured directly in Microsoft Entra rather than through this API.
+- **App service connect** — required for mailbox migration between tenants.
+
+For how to establish the trust, see [Microsoft Entra cross-tenant access overview](/entra/external-id/cross-tenant-access-overview).
+
+#### Required Microsoft Entra roles
+
+Configuring the Entra trust and configuring the Microsoft 365 capability are two separate operations and require different roles on the resource tenant.
+
+| Operation | Required Microsoft Entra role |
+| --- | --- |
+| Configure the Microsoft Entra cross-tenant access trust with the partner. | **Security Administrator** or **Global Administrator** |
+| Configure Microsoft 365 capabilities through this API (create, update, or delete `m365Capability`). | **Exchange Administrator** or **Global Administrator** |
+
+Assign the least-privileged role that matches the operation.
+
+#### Microsoft Graph permissions
+
+Calls to the API also require delegated Microsoft Graph permissions, including `Policy.ReadWrite.CrossTenantAccess` and `Policy.ReadWrite.CrossTenantCapability`. For details, see [Authentication and authorization basics](/graph/auth/auth-concepts). Configuration is available today through Microsoft Graph and the Microsoft Graph PowerShell SDK, with Microsoft Admin Center support planned after general availability.
 
 ### Integration opportunities with other APIs
 
