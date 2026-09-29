@@ -29,6 +29,7 @@ Inherits from [policyScopeBase](../resources/policyscopebase.md).
 |locationExclusions|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations excluded from the user-level policy scope. When specified, the effective scope is the set of locations in **locations** minus the locations in **locationExclusions**. Inherited from `policyScopeBase`. Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations protected for this user. Inherited from `policyScopeBase`. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|Enforcement actions applicable to this user. Inherited from `policyScopeBase`. Required.|
+|policyConfiguration|[policyConfiguration](../resources/policyconfiguration.md)|The effective configuration for policy evaluation scenarios. This property can be omitted or `null` when no configuration is available or applicable. Inherited from `policyScopeBase`.|
 
 ## Relationships
 
@@ -62,6 +63,9 @@ The following JSON representation shows the resource type.
     {
       "@odata.type": "microsoft.graph.dlpActionInfo"
     }
-  ]
+  ],
+  "policyConfiguration": {
+    "@odata.type": "#microsoft.graph.policyConfiguration"
+  }
 }
 ```

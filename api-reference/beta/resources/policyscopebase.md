@@ -27,6 +27,7 @@ Used as a base type for more specific policy scopes like [policyTenantScope](../
 |locationExclusions|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations excluded from the policy scope. When specified, the effective scope is the set of locations in **locations** minus the locations in **locationExclusions**. Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|The locations (like domains or URLs) to be protected. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|The enforcement actions to take if the policy conditions are met within this scope. Required.|
+|policyConfiguration|[policyConfiguration](../resources/policyconfiguration.md)|The effective configuration for policy evaluation scenarios. This property can be omitted or `null` when no configuration is available or applicable.|
 
 ## Relationships
 
@@ -60,6 +61,9 @@ The following JSON representation shows the resource type.
     {
       "@odata.type": "microsoft.graph.dlpActionInfo"
     }
-  ]
+  ],
+  "policyConfiguration": {
+    "@odata.type": "#microsoft.graph.policyConfiguration"
+  }
 }
 ```
