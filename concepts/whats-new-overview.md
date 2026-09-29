@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## September 2026: New and generally available
 
+### Files
+
+Added the **isPatternToken** property to the [fileStorageContainerCustomPropertyValue](/graph/api/resources/filestoragecontainercustompropertyvalue) resource to indicate whether a custom property value is a `urlTemplate` pattern that consumers must resolve before use, rather than a literal value.
+
 ### Groups
 
 Added the **onPremisesExtensionAttributes** property to the [group](/graph/api/resources/group) resource. Use it to access extension attributes 1-15 synchronized from on-premises Active Directory.
@@ -67,6 +71,7 @@ Added the **isDisabled** property to the [agentIdentityBlueprint](/graph/api/res
 ### Files
 
 - Added the **userObjectId** parameter to the [getByUser](/graph/api/filestoragecontainer-getbyuser?view=graph-rest-beta&preserve-view=true) method on the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource to retrieve a list of file storage containers owned by a user by passing the user's Microsoft Entra ID object ID.
+- Added the **isPatternToken** property to the [fileStorageContainerCustomPropertyValue](/graph/api/resources/filestoragecontainercustompropertyvalue?view=graph-rest-beta&preserve-view=true) resource to indicate whether a custom property value is a `urlTemplate` pattern that consumers must resolve before use, rather than a literal value.
 
 ### Identity and access | Directory management
 
