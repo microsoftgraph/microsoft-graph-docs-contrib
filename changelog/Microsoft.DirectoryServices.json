@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "10ba31ea-f389-4d87-811d-a64335a59673",
+          "ApiChange": "Property",
+          "ChangedApiName": "disableNesting",
+          "ChangeType": "Addition",
+          "Description": "Added the **disableNesting** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "10ba31ea-f389-4d87-811d-a64335a59673",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-04T18:20:57.3566900Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3c36af46-909a-4c94-a101-6c77c48c9d66",
           "ApiChange": "Property",
           "ChangedApiName": "onPremisesExtensionAttributes",
