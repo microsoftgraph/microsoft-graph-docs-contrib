@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "0c0ae1fe-3b89-4b87-a7e0-81804d84b6a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "anonymousCalendarSharingFreeBusyDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [anonymousCalendarSharingFreeBusyDetail](https://learn.microsoft.com/en-us/graph/api/resources/anonymouscalendarsharingfreebusydetail?view=graph-rest-1.0) resource.",
+          "Target": "anonymousCalendarSharingFreeBusyDetail"
+        },
+        {
+          "Id": "0c0ae1fe-3b89-4b87-a7e0-81804d84b6a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "anonymousCalendarSharingFreeBusyReviewer",
+          "ChangeType": "Addition",
+          "Description": "Added the [anonymousCalendarSharingFreeBusyReviewer](https://learn.microsoft.com/en-us/graph/api/resources/anonymouscalendarsharingfreebusyreviewer?view=graph-rest-1.0) resource.",
+          "Target": "anonymousCalendarSharingFreeBusyReviewer"
+        },
+        {
+          "Id": "0c0ae1fe-3b89-4b87-a7e0-81804d84b6a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "anonymousCalendarSharingFreeBusySimple",
+          "ChangeType": "Addition",
+          "Description": "Added the [anonymousCalendarSharingFreeBusySimple](https://learn.microsoft.com/en-us/graph/api/resources/anonymouscalendarsharingfreebusysimple?view=graph-rest-1.0) resource.",
+          "Target": "anonymousCalendarSharingFreeBusySimple"
+        }
+      ],
+      "Id": "0c0ae1fe-3b89-4b87-a7e0-81804d84b6a1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-15T18:20:39.1328015Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "767692fb-eb65-41c2-bdd7-eb78b272d564",
           "ApiChange": "Resource",
           "ChangedApiName": "anonymousCalendarSharingFreeBusyDetail",
