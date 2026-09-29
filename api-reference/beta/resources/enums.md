@@ -6261,6 +6261,16 @@ Possible values for user account types (group membership), per Windows definitio
 |performance|
 |unknownFutureValue|
 
+### retentionPeriodChangeStatus values
+
+|Member|
+|:---|
+|none|
+|inProgress|
+|failed|
+|completed|
+|unknownFutureValue|
+
 ### accessReviewInstanceDecisionItemApplyResult values
 
 |Member|

@@ -1,6 +1,12 @@
-<!-- This file is auto-generated. Do not edit manually. -->
-|Permission type|Least privileged permission|Higher privileged permissions|
+---
+description: "Automatically generated file. DO NOT MODIFY"
+ms.topic: include
+ms.localizationpriority: medium
+---
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|CloudLicensing-Allotment.Read|CloudLicensing-Allotment.ReadWrite|
+|Delegated (work or school account)|Device-CloudLicensing.Read|Device-CloudLicensing.Read.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|CloudLicensing-Allotment.Read.All|CloudLicensing-Allotment.ReadWrite.All|
+|Application|Device-CloudLicensing.Read.All|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+

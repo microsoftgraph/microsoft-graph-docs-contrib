@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "errorSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [errorSettings](https://learn.microsoft.com/en-us/graph/api/resources/errorsettings?view=graph-rest-beta) complex type to represent enforcement behavior when policy evaluation can't be completed.",
+          "Target": "errorSettings"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorAction** property to the [errorSettings](https://learn.microsoft.com/en-us/graph/api/resources/errorsettings?view=graph-rest-beta) complex type.",
+          "Target": "errorSettings"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isEnabled** property to the [errorSettings](https://learn.microsoft.com/en-us/graph/api/resources/errorsettings?view=graph-rest-beta) complex type.",
+          "Target": "errorSettings"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "policyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/policyconfiguration?view=graph-rest-beta) complex type to represent configuration that applies to policy evaluation scenarios.",
+          "Target": "policyConfiguration"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorSettings** property to the [policyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/policyconfiguration?view=graph-rest-beta) complex type.",
+          "Target": "policyConfiguration"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [policyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/policyconfiguration?view=graph-rest-beta) complex type.",
+          "Target": "policyConfiguration"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyConfiguration** property to the [policyScopeBase](https://learn.microsoft.com/en-us/graph/api/resources/policyscopebase?view=graph-rest-beta) resource type to expose the effective Secure by Default configuration returned by the protection scope APIs.",
+          "Target": "policyScopeBase"
+        }
+      ],
+      "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-23T18:06:29.0888048Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
           "ApiChange": "ComplexType",
           "ChangedApiName": "evaluationIncompleteActivityMetadata",

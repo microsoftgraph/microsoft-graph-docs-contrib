@@ -21,6 +21,7 @@ Contains the custom property values that are stored in a [fileStorageContainerCu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|isPatternToken|Boolean|Indicates whether **value** is a `urlTemplate` pattern (for example, a token such as `{itemId}` used to configure redirect behavior when opening files), rather than a literal value that consumers must resolve before use. Optional. The default value is `false`.|
 |isSearchable|Boolean|Indicates whether the custom property is searchable. Optional. The default value is `false`.|
 |value|String|The value of the custom property. Required.|
 
@@ -39,8 +40,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fileStorageContainerCustomPropertyValue",
-  "value": "String",
-  "isSearchable": "Boolean"
+  "isPatternToken": "Boolean",
+  "isSearchable": "Boolean",
+  "value": "String"
 }
 ```
 

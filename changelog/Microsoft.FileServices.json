@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "dbb55514-22af-42cd-bfb2-24cc634d50bb",
+          "ApiChange": "Property",
+          "ChangedApiName": "isPatternToken",
+          "ChangeType": "Addition",
+          "Description": "Added the **isPatternToken** property to the [fileStorageContainerCustomPropertyValue](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertyvalue?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerCustomPropertyValue"
+        }
+      ],
+      "Id": "dbb55514-22af-42cd-bfb2-24cc634d50bb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-23T22:31:57.8802635Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8eb79a5b-1816-4896-a341-f6574cd40f5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "isPatternToken",
+          "ChangeType": "Addition",
+          "Description": "Added the **isPatternToken** property to the [fileStorageContainerCustomPropertyValue](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertyvalue?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainerCustomPropertyValue"
+        }
+      ],
+      "Id": "8eb79a5b-1816-4896-a341-f6574cd40f5f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-23T22:31:57.8809144Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "913ce585-2e2b-49cd-a644-e4701c3b8846",
           "ApiChange": "Parameter",
           "ChangedApiName": "userObjectId",

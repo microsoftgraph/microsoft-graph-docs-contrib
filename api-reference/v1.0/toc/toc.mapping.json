@@ -2314,6 +2314,9 @@
               "name": "Microsoft 365 capabilities",
               "overview": "../../resources/m365-cross-tenant-access-policy-overview.md",
               "resources": [
+                "anonymousCalendarSharingFreeBusyDetail",
+                "anonymousCalendarSharingFreeBusyReviewer",
+                "anonymousCalendarSharingFreeBusySimple",
                 "crossTenantCalendarAvailabilityBasic",
                 "crossTenantCalendarAvailabilityLimitedDetails",
                 "crossTenantCalendarSharingFreeBusyDetail",

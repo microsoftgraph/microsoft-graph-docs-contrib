@@ -126,6 +126,12 @@ items:
     items:
     - name: Overview
       href: ../../resources/m365-cross-tenant-access-policy-overview.md
+    - name: Anonymous calendar sharing free busy detail
+      href: ../../resources/anonymouscalendarsharingfreebusydetail.md
+    - name: Anonymous calendar sharing free busy reviewer
+      href: ../../resources/anonymouscalendarsharingfreebusyreviewer.md
+    - name: Anonymous calendar sharing free busy simple
+      href: ../../resources/anonymouscalendarsharingfreebusysimple.md
     - name: Cross-tenant calendar availability basic
       href: ../../resources/crosstenantcalendaravailabilitybasic.md
     - name: Cross-tenant calendar availability limited details
@@ -213,6 +219,132 @@ items:
       href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
     - name: Reset
       href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
+- name: Tenant governance
+  items:
+  - name: Overview
+    href: ../../resources/tenantgovernanceservices-tenantgovernance-overview.md
+  - name: Governance invitation
+    items:
+    - name: Governance invitation
+      href: ../../resources/tenantgovernanceservices-governanceinvitation.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governanceinvitations.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governanceinvitations.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governanceinvitation-get.md
+    - name: Delete
+      href: ../../api/tenantgovernanceservices-governanceinvitation-delete.md
+  - name: Governance relationship
+    items:
+    - name: Governance relationship
+      href: ../../resources/tenantgovernanceservices-governancerelationship.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancerelationships.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancerelationship-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancerelationship-update.md
+  - name: Governance request
+    items:
+    - name: Governance request
+      href: ../../resources/tenantgovernanceservices-governancerequest.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancerequests.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governancerequests.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancerequest-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancerequest-update.md
+  - name: Related tenant
+    items:
+    - name: Related tenant
+      href: ../../resources/tenantgovernanceservices-relatedtenant.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-relatedtenants.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-relatedtenant-get.md
+    - name: Refresh
+      href: ../../api/tenantgovernanceservices-relatedtenant-refresh.md
+  - name: Tenant governance
+    href: ../../resources/tenantgovernanceservices-tenantgovernance.md
+  - name: Tenant governance policy template
+    items:
+    - name: Tenant governance policy template
+      href: ../../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancepolicytemplates.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governancepolicytemplates.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancepolicytemplate-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancepolicytemplate-update.md
+    - name: Delete
+      href: ../../api/tenantgovernanceservices-delete-governancepolicytemplates.md
+  - name: Tenant governance setting
+    items:
+    - name: Tenant governance setting
+      href: ../../resources/tenantgovernanceservices-tenantgovernancesetting.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-update.md
+    - name: Enable related tenants
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants.md
+  - name: Complex types
+    items:
+    - name: Application resource permission
+      href: ../../resources/tenantgovernanceservices-applicationresourcepermission.md
+    - name: Applications required resource access
+      href: ../../resources/tenantgovernanceservices-applicationsrequiredresourceaccess.md
+    - name: B 2 b registration metrics
+      href: ../../resources/tenantgovernanceservices-b2bregistrationmetrics.md
+    - name: B 2 b registration metrics base
+      href: ../../resources/tenantgovernanceservices-b2bregistrationmetricsbase.md
+    - name: B 2 b registration metrics initial
+      href: ../../resources/tenantgovernanceservices-b2bregistrationmetricsinitial.md
+    - name: B 2 b registration metrics recent
+      href: ../../resources/tenantgovernanceservices-b2bregistrationmetricsrecent.md
+    - name: B 2 b sign in activity metrics
+      href: ../../resources/tenantgovernanceservices-b2bsigninactivitymetrics.md
+    - name: B 2 b sign in activity metrics base
+      href: ../../resources/tenantgovernanceservices-b2bsigninactivitymetricsbase.md
+    - name: B 2 b sign in activity metrics initial
+      href: ../../resources/tenantgovernanceservices-b2bsigninactivitymetricsinitial.md
+    - name: B 2 b sign in activity metrics recent
+      href: ../../resources/tenantgovernanceservices-b2bsigninactivitymetricsrecent.md
+    - name: Billing metrics
+      href: ../../resources/tenantgovernanceservices-billingmetrics.md
+    - name: Billing metrics base
+      href: ../../resources/tenantgovernanceservices-billingmetricsbase.md
+    - name: Billing metrics initial
+      href: ../../resources/tenantgovernanceservices-billingmetricsinitial.md
+    - name: Billing metrics recent
+      href: ../../resources/tenantgovernanceservices-billingmetricsrecent.md
+    - name: Delegated administration role assignment
+      href: ../../resources/tenantgovernanceservices-delegatedadministrationroleassignment.md
+    - name: Delegated administration role assignment snapshot
+      href: ../../resources/tenantgovernanceservices-delegatedadministrationroleassignmentsnapshot.md
+    - name: Multitenant application metrics
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationmetrics.md
+    - name: Multitenant application metrics base
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationmetricsbase.md
+    - name: Multitenant application metrics initial
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationmetricsinitial.md
+    - name: Multitenant application metrics recent
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationmetricsrecent.md
+    - name: Multitenant applications to provision
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationstoprovision.md
+    - name: Multitenant applications to provision snapshot
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationstoprovisionsnapshot.md
+    - name: Related tenants refresh request
+      href: ../../resources/tenantgovernanceservices-relatedtenantsrefreshrequest.md
+    - name: Relationship policy
+      href: ../../resources/tenantgovernanceservices-relationshippolicy.md
+    - name: Role template
+      href: ../../resources/tenantgovernanceservices-roletemplate.md
 - name: Tenant information
   items:
   - name: Tenant information

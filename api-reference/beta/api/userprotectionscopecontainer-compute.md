@@ -100,7 +100,7 @@ Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
 
 ### Response
 
-The following example shows the response. It indicates that for the `uploadText` activity to `public.contoso.com`, policies require inline evaluation and trigger a `browserRestriction` action (likely blocking uploads based on sensitive content).
+The following example shows the response. It includes the effective Secure by Default configuration, which indicates that incomplete policy evaluations are audited and blocked.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -120,7 +120,14 @@ Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
           "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
         }
       ],
-      "policyActions": []
+      "policyActions": [],
+      "policyConfiguration": {
+        "errorSettings": {
+          "errorAction": "audit,block",
+          "isEnabled": true
+        },
+        "lastModifiedDateTime": "2026-09-22T12:00:00Z"
+      }
     },
     {
       "activities": "uploadText",

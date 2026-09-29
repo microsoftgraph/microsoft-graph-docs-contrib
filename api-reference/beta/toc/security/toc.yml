@@ -712,6 +712,10 @@ items:
       href: ../../resources/dlpactioninfo.md
     - name: Embedding input
       href: ../../resources/embeddinginput.md
+    - name: Evaluation error detail
+      href: ../../resources/evaluationerrordetail.md
+    - name: Evaluation incomplete activity metadata
+      href: ../../resources/evaluationincompleteactivitymetadata.md
     - name: Evaluation scope
       href: ../../resources/evaluationscope.md
     - name: Group scope

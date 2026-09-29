@@ -88,7 +88,7 @@ Content-type: application/json
 
 ### Response
 
-The following example shows the response. It indicates that for uploads to `public.contoso.com`, there's a policy applicable to "All" users (tenant scope) that requires inline evaluation and triggers a browser restriction.
+The following example shows the response. It includes the effective Secure by Default configuration, which indicates that incomplete policy evaluations are audited and blocked.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -117,7 +117,14 @@ Content-type: application/json
                 }
             ],
             "policyActions": [
-            ]
+            ],
+            "policyConfiguration": {
+                "errorSettings": {
+                    "errorAction": "audit,block",
+                    "isEnabled": true
+                },
+                "lastModifiedDateTime": "2026-09-22T12:00:00Z"
+            }
         }
     ]
 }
