@@ -297,6 +297,7 @@
             "browseQueryResponseItem",
             "notificationRecipients",
             "protectionPolicyArtifactCount",
+            "retentionPeriodChange",
             "retentionSetting",
             "restorePointSearchResponse",
             "restorePointSearchResult",

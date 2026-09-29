@@ -514,6 +514,8 @@ items:
       href: ../../resources/restorepointsearchresult.md
     - name: Restore search artifact query expression
       href: ../../resources/restoresearchartifactqueryexpression.md
+    - name: Retention period change
+      href: ../../resources/retentionperiodchange.md
     - name: Retention setting
       href: ../../resources/retentionsetting.md
     - name: Service status

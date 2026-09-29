@@ -151,7 +151,11 @@ HTTP/1.1 200 OK
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null,
-      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z",
+      "pendingRetentionPeriodChange": {
+        "status": "inProgress",
+        "targetRetentionPeriodInDays": 720
+      }
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
@@ -188,7 +192,12 @@ HTTP/1.1 200 OK
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null,
-      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z",
+      "pendingRetentionPeriodChange": {
+        "status": "none",
+        "targetRetentionPeriodInDays": 90,
+        "effectiveFromDateTime": "2026-04-29T12:01:03.45Z"
+      }
     },
     {
       "@odata.type": "#microsoft.graph.driveProtectionUnit",
