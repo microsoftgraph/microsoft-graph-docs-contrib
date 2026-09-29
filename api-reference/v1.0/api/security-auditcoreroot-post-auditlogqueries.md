@@ -5,7 +5,7 @@ author: "arishojaswi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.date: 10/29/2024
+ms.date: 09/18/2026
 ---
 
 # Create auditLogQuery
@@ -62,6 +62,9 @@ You can specify the following properties when creating a **auditLogQuery**.
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [auditLogQuery](../resources/security-auditlogquery.md) object in the response body.
+
+> [!NOTE]
+> This method is subject to tenant-level daily submission and concurrent-query limits. A tenant receives a baseline allocation, and tenants with more eligible licenses can receive a higher allocation. For details and retry guidance, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#security-audit-log-query-service-limits).
 
 ## Examples
 
