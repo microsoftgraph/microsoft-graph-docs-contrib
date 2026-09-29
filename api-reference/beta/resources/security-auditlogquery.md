@@ -35,7 +35,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |filterStartDateTime|DateTimeOffset|The start date of the date range in the query.|
 |id|String|Unique identifier for the audit log query. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |ipAddressFilters|String collection|The IP address of the device that was used when the activity was logged.|
-|keywordFilter|String|Free text field to search non-indexed properties of the audit log.|
+|keywordFilter|String|Free text to match against the non-indexed content of each record: the workload-specific properties inside **auditData**, including its `AppAccessContext` object. The indexed common-schema properties, such as the operation name, aren't matched by keyword; use their own filters, such as **operationFilters**, for those.|
 |objectIdFilters|String collection|For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet.|
 |operationFilters|String collection|The name of the user or admin activity. For a description of the most common operations/activities, see [Search the audit log in the Office 365 Protection Center](https://go.microsoft.com/fwlink/p/?LinkId=708432).|
 |recordTypeFilters|[microsoft.graph.security.auditLogRecordType](../resources/security-auditlogrecordtype.md) collection|The type of operation indicated by the record. For the list of member values, see [auditLogRecordType](../resources/security-auditlogrecordtype.md).|
