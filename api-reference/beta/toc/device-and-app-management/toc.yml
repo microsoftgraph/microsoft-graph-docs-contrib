@@ -122,20 +122,6 @@ items:
       href: ../../api/cloudlicensing-assignmenterror-get-assignedto.md
     - name: Get usageRight
       href: ../../api/cloudlicensing-assignmenterror-get-usageright.md
-  - name: Usage right
-    items:
-    - name: Usage right
-      href: ../../resources/cloudlicensing-usageright.md
-    - name: List for group
-      href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
-    - name: List for user
-      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
-    - name: List for device
-      href: ../../api/cloudlicensing-devicecloudlicensing-list-usagerights.md
-    - name: Get
-      href: ../../api/cloudlicensing-usageright-get.md
-    - name: List assignments
-      href: ../../api/cloudlicensing-usageright-list-assignments.md
   - name: Waiting member
     items:
     - name: Waiting member
@@ -588,6 +574,8 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC performance metrics report
+      href: ../../api/cloudpcreports-retrievecloudpcperformancemetricsreport.md
     - name: Retrieve Cloud PC tenant metrics report
       href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
     - name: Retrieve cross-region disaster recovery report
