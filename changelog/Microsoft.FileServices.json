@@ -39,6 +39,40 @@
     {
       "ChangeList": [
         {
+          "Id": "14e0763b-a717-45d7-96c9-705180a8add3",
+          "ApiChange": "Member",
+          "ChangedApiName": "isOfficeRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the `isOfficeRestricted` member to the **fileStorageContainerTypeSettingsOverride** enumeration.",
+          "Target": "fileStorageContainerTypeSettingsOverride"
+        },
+        {
+          "Id": "14e0763b-a717-45d7-96c9-705180a8add3",
+          "ApiChange": "Property",
+          "ChangedApiName": "isOfficeRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isOfficeRestricted** property to the [fileStorageContainerTypeRegistrationSettings](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainertyperegistrationsettings) resource.",
+          "Target": "fileStorageContainerTypeRegistrationSettings"
+        },
+        {
+          "Id": "14e0763b-a717-45d7-96c9-705180a8add3",
+          "ApiChange": "Property",
+          "ChangedApiName": "isOfficeRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isOfficeRestricted** property to the [fileStorageContainerTypeSettings](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainertypesettings) resource.",
+          "Target": "fileStorageContainerTypeSettings"
+        }
+      ],
+      "Id": "14e0763b-a717-45d7-96c9-705180a8add3",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-21T17:05:42.0119258Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "913ce585-2e2b-49cd-a644-e4701c3b8846",
           "ApiChange": "Parameter",
           "ChangedApiName": "userObjectId",
