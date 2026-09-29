@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|TenantGovernance-PolicyTemplate.Read.All|TenantGovernance-PolicyTemplate.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|TenantGovernance-PolicyTemplate.Read.All|Not available.|
+
