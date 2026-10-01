@@ -29,6 +29,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Added the **onPremisesExtensionAttributes** property to the [group](/graph/api/resources/group) resource. Use it to access extension attributes 1-15 synchronized from on-premises Active Directory.
 
+### Identity and access | Directory management
+
+- Added the [provision](/graph/api/device-provision) action to the [device](/graph/api/resources/device) resource in v1.0 to enable approved Virtual Desktop Infrastructure (VDI) providers to provision devices in a customer's directory.
+
 ### Identity and access | Governance
 
 - Promoted the **access reviews customer-provided data** APIs from beta to v1.0. Use them to review entitlement data that you upload for resources that Microsoft Entra doesn't discover itself, such as third-party applications. The promoted surface includes:
