@@ -712,6 +712,8 @@ items:
       href: ../../resources/dlpactioninfo.md
     - name: Embedding input
       href: ../../resources/embeddinginput.md
+    - name: Error settings
+      href: ../../resources/errorsettings.md
     - name: Evaluation error detail
       href: ../../resources/evaluationerrordetail.md
     - name: Evaluation incomplete activity metadata
@@ -734,6 +736,8 @@ items:
       href: ../../resources/operatingsystemspecifications.md
     - name: Policy binding
       href: ../../resources/policybinding.md
+    - name: Policy configuration
+      href: ../../resources/policyconfiguration.md
     - name: Policy location application
       href: ../../resources/policylocationapplication.md
     - name: Policy location domain
