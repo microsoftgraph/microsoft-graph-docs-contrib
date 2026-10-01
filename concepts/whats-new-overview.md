@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## September 2026: New and generally available
 
+### Change notifications
+
+Promoted the `unknownFutureValue` member of the **changeType** enumeration from beta to v1.0. The enumeration is used by the [changeNotification](/graph/api/resources/changenotification) and [commsNotification](/graph/api/resources/commsnotification) resources to identify notification change types.
+
 ### Files
 
 - Added the **isPatternToken** property to the [fileStorageContainerCustomPropertyValue](/graph/api/resources/filestoragecontainercustompropertyvalue) resource to indicate whether a custom property value is a `urlTemplate` pattern that consumers must resolve before use, rather than a literal value.
@@ -75,6 +79,10 @@ Added the **isDisabled** property to the [agentIdentityBlueprint](/graph/api/res
 - Added the [stringDictionary](/graph/api/resources/stringdictionary?view=graph-rest-beta&preserve-view=true) resource type to represent custom string key-value pairs.
 - Added the **customProperties** property to the [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) resource type to store customer-defined string key-value pairs.
 - Added the read-only **lastUpdatedTime** property to the [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) resource type to indicate when the place was last updated.
+
+### Change notifications
+
+Added the `unknownFutureValue` member to the **changeType** enumeration used by the [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) resource to support forward-compatible notification change types.
 
 ### Device and app management | Cloud PC
 

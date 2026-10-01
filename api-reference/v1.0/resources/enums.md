@@ -1029,8 +1029,10 @@ Namespace: microsoft.graph
 
 | Member |
 | ------------------- |
-| clientIpAddress |
-| authenticatorAppGps |
+| created |
+| updated |
+| deleted |
+| unknownFutureValue |
 
 ### countryLookupMethodType values
 
