@@ -820,6 +820,9 @@
             "deviceLocalCredentialInfo",
             "remoteTenantGroup"
           ],
+          "complexTypes": [
+            "provisionResponse"
+          ],
           "childNodes": [
             {
               "name": "Custom security attributes",

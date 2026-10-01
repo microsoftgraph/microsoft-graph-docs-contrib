@@ -28,11 +28,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-GET  /sites/{site-id}/lists/{list-id}/permissions
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/permissions
 ```
 
 ## Optional query parameters
-This method supports $select, $filter, $count, and $top OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
