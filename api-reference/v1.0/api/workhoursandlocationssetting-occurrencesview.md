@@ -1,6 +1,6 @@
 ---
 title: "workHoursAndLocationsSetting: occurrencesView"
-description: "Get work plan occurrences from your own work plan within a specified date range."
+description: "Get work plan occurrences from a user's work plan within a specified date range."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -12,7 +12,7 @@ ms.date: 12/19/2025
 
 Namespace: microsoft.graph
 
-Get [work plan occurrences](../resources/workplanoccurrence.md) from your own work plan within a specified date range. This function requires the **startDateTime** and **endDateTime** parameters.
+Get [work plan occurrences](../resources/workplanoccurrence.md) from a user's work plan within a specified date range. This function requires the **startDateTime** and **endDateTime** parameters.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "workhoursandlocationssetting_occurrencesview" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workhoursandlocationssetting-occurrencesview-permissions.md)]
+
+>**Note:** Application permissions are supported only when using the `/users/{id}` endpoint.
 
 ## HTTP request
 
@@ -35,7 +37,7 @@ GET /me/settings/workHoursAndLocations/occurrencesView(startDateTime='{startDate
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-When using the `/users/{id}` endpoint, the ID must be your own user ID.
+When using delegated permissions with the `/users/{id}` endpoint, the ID must be the signed-in user's ID.
 
 <!-- { "blockType": "ignored" } -->
 ```http

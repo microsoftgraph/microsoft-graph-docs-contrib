@@ -1,6 +1,6 @@
 ---
 title: "Update workPlanRecurrence"
-description: "Update the properties of a workPlanRecurrence object in your own work plan."
+description: "Update the properties of a workPlanRecurrence object in a user's work plan."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
+Update the properties of a [workPlanRecurrence](../resources/workplanrecurrence.md) object in a user's work plan. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "workplanrecurrence_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workplanrecurrence-update-permissions.md)]
 
+>**Note:** Application permissions are supported only when using the `/users/{id}` endpoint.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +36,7 @@ PUT /me/settings/workHoursAndLocations/recurrences/{id}
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-When using the `/users/{id}` endpoint, the ID must be your own user ID.
+When using delegated permissions with the `/users/{id}` endpoint, the ID must be the signed-in user's ID.
 
 <!-- { "blockType": "ignored" } -->
 ```http

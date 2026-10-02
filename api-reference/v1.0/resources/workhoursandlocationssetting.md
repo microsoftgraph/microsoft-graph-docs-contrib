@@ -1,6 +1,6 @@
 ---
 title: "workHoursAndLocationsSetting resource type"
-description: "Represents your working hours and location preferences for modern hybrid work scenarios."
+description: "Represents a user's working hours and location preferences for modern hybrid work scenarios."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -12,20 +12,20 @@ ms.date: 12/19/2025
 
 Namespace: microsoft.graph
 
-Represents your working hours and location preferences for modern hybrid work scenarios.
+Represents a user's working hours and location preferences for modern hybrid work scenarios.
 
-Work hours and location information are useful in scenarios that involve planning in-office days with colleagues and scheduling meetings across different working hours and time zones. You can [get](../api/workhoursandlocationssetting-get.md) and [update](../api/workhoursandlocationssetting-update.md) your work hours and locations as part of your personal work planning. Use these APIs to set different work locations and schedules to accommodate your flexible work arrangements.
+Work hours and location information are useful in scenarios that involve planning in-office days with colleagues and scheduling meetings across different working hours and time zones. You can [get](../api/workhoursandlocationssetting-get.md) and [update](../api/workhoursandlocationssetting-update.md) a user's work hours and locations. Use these APIs to set different work locations and schedules to accommodate flexible work arrangements.
 
 ## Methods
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
-| [Get](../api/workhoursandlocationssetting-get.md) | [workHoursAndLocationsSetting](workhoursandlocationssetting.md) | Get the properties and relationships of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md). |
-| [Update](../api/workhoursandlocationssetting-update.md) | [workHoursAndLocationsSetting](workhoursandlocationssetting.md) | Update the properties of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md). |
-| [Occurrences view](../api/workhoursandlocationssetting-occurrencesview.md) | [workPlanOccurrence](workplanoccurrence.md) collection | Get [work plan occurrences](../resources/workplanoccurrence.md) from your own work plan within a specified date range. |
-| [List recurrences](../api/workhoursandlocationssetting-list-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) collection | Get the [recurrences](../resources/workplanrecurrence.md) from your own work plan via the **recurrences** navigation property. |
-| [Create recurrence](../api/workhoursandlocationssetting-post-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) | Create a new [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan. |
-| [Create occurrence](../api/workhoursandlocationssetting-post-occurrences.md) | [workPlanOccurrence](workplanoccurrence.md) | Create a new [workPlanOccurrence](../resources/workplanoccurrence.md) object in your own work plan. |
+| [Get](../api/workhoursandlocationssetting-get.md) | [workHoursAndLocationsSetting](workhoursandlocationssetting.md) | Get the properties and relationships of a user's [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md). |
+| [Update](../api/workhoursandlocationssetting-update.md) | [workHoursAndLocationsSetting](workhoursandlocationssetting.md) | Update the properties of a user's [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md). |
+| [Occurrences view](../api/workhoursandlocationssetting-occurrencesview.md) | [workPlanOccurrence](workplanoccurrence.md) collection | Get [work plan occurrences](../resources/workplanoccurrence.md) from a user's work plan within a specified date range. |
+| [List recurrences](../api/workhoursandlocationssetting-list-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) collection | Get the [recurrences](../resources/workplanrecurrence.md) from a user's work plan via the **recurrences** navigation property. |
+| [Create recurrence](../api/workhoursandlocationssetting-post-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) | Create a new [workPlanRecurrence](../resources/workplanrecurrence.md) object in a user's work plan. |
+| [Create occurrence](../api/workhoursandlocationssetting-post-occurrences.md) | [workPlanOccurrence](workplanoccurrence.md) | Create a new [workPlanOccurrence](../resources/workplanoccurrence.md) object in a user's work plan. |
 
 ## Properties
 
