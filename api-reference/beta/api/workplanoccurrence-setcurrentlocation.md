@@ -1,6 +1,6 @@
 ---
 title: "workPlanOccurrence: setCurrentLocation"
-description: "Update your work location for the current day or current active segment."
+description: "Update a user's work location for the current day or current active segment."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update your [work](../resources/workplanoccurrence.md) location for the current day or current active segment. This action allows you to quickly update your work location without modifying individual occurrences.
+Update a user's [work](../resources/workplanoccurrence.md) location for the current day or current active segment. This action quickly updates the user's work location without modifying individual occurrences.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "workplanoccurrence_setcurrentlocation" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workplanoccurrence-setcurrentlocation-permissions.md)]
 
+>**Note:** Application permissions are supported only when using the `/users/{id}` endpoint.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +36,7 @@ POST /me/settings/workHoursAndLocations/occurrences/setCurrentLocation
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-When using the `/users/{id}` endpoint, the ID must be your own user ID.
+When using delegated permissions with the `/users/{id}` endpoint, the ID must be the signed-in user's ID.
 
 <!-- { "blockType": "ignored" } -->
 ```http

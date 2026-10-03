@@ -1,6 +1,6 @@
 ---
 title: "List recurrences"
-description: "Get the recurrences from your own work plan via the recurrences navigation property."
+description: "Get the recurrences from a user's work plan via the recurrences navigation property."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [recurrences](../resources/workplanrecurrence.md) from your own work plan via the **recurrences** navigation property.
+Get the [recurrences](../resources/workplanrecurrence.md) from a user's work plan via the **recurrences** navigation property.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "workhoursandlocationssetting_list_recurrences" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workhoursandlocationssetting-list-recurrences-permissions.md)]
+
+>**Note:** Application permissions are supported only when using the `/users/{id}` endpoint.
 
 ## HTTP request
 
@@ -37,7 +39,7 @@ GET /me/settings/workHoursAndLocations/recurrences
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-When using the `/users/{id}` endpoint, the ID must be your own user ID.
+When using delegated permissions with the `/users/{id}` endpoint, the ID must be the signed-in user's ID.
 
 <!-- { "blockType": "ignored" } -->
 ```http

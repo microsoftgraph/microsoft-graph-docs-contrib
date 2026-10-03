@@ -115,6 +115,10 @@ Added support for configurable time-based lifecycle workflow triggers through th
 
 Changed the **members** property on the [distributionList](/graph/api/resources/distributionlist?view=graph-rest-beta&preserve-view=true) resource to an expandable relationship. Use `$expand=members` with the [Get distribution list](/graph/api/distributionlist-get?view=graph-rest-beta&preserve-view=true) method instead of the removed standalone methods for listing and getting members.
 
+### People and workplace intelligence | People
+
+Added the **relationshipLabel** property to the [relatedPerson](/graph/api/resources/relatedperson?view=graph-rest-beta&preserve-view=true) resource to provide additional context about the relationship between people.
+
 ### Security | Advanced hunting
 
 Added the [getHuntingSchemaTables](/graph/api/security-security-gethuntingschematables?view=graph-rest-beta&preserve-view=true) function to the [security](/graph/api/resources/security?view=graph-rest-beta&preserve-view=true) resource. Use it to retrieve only the advanced hunting tables that the signed-in user can access, returned as a collection so that you can apply OData query parameters to request a targeted subset of tables and columns.
