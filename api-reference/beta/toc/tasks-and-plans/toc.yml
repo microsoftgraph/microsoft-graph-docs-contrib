@@ -20,6 +20,8 @@ items:
     href: ../../api/plannerplan-archive.md
   - name: Unarchive plan
     href: ../../api/plannerplan-unarchive.md
+  - name: Extend expiry
+    href: ../../api/plannerplan-extendexpiry.md
   - name: Move to container
     href: ../../api/plannerplan-movetocontainer.md
   - name: List plan buckets

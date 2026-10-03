@@ -26,6 +26,7 @@ Represents a plan in Microsoft 365. Either a [group](../resources/group.md) or a
 |[Delete](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
 |[Archive plan](../api/plannerplan-archive.md) | [plannerPlan](../resources/plannerplan.md) | Archive a **plannerPlan** object.|
 |[Unarchive plan](../api/plannerplan-unarchive.md) | [plannerPlan](../resources/plannerplan.md) | Unarchive an archived **plannerPlan** object.|
+|[Extend expiry](../api/plannerplan-extendexpiry.md) | None | Extend the expiry of a meeting roster **plannerPlan** object, resetting its inactivity clock.|
 |[Move to container](../api/plannerplan-movetocontainer.md) | [plannerPlan](../resources/plannerplan.md) | Move a **plannerPlan** object from one **plannerPlanContainer** to another. |
 |[List plan buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](../resources/plannerbucket.md) collection| Get a **plannerBucket** object collection.|
 |[List plan goals](../api/plannerplan-list-goals.md) |[plannerGoal](../resources/plannergoal.md) collection| Get the goals associated with the plan.|

@@ -2187,6 +2187,24 @@
       "CreatedDateTime": "2025-05-08T21:36:09.3765749Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "010f53aa-e166-4d86-834e-a6499c76e7d1",
+          "ApiChange": "Method",
+          "ChangedApiName": "extendExpiry",
+          "ChangeType": "Addition",
+          "Description": "Added the [extendExpiry](https://learn.microsoft.com/graph/api/plannerplan-extendexpiry?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        }
+      ],
+      "Id": "010f53aa-e166-4d86-834e-a6499c76e7d1",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-03T00:00:00.0000000Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }
