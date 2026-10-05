@@ -34,7 +34,7 @@ jobs:
           6.x
           8.x
     - name: Install NuGet
-      uses: NuGet/setup-nuget@v4
+      uses: NuGet/setup-nuget@fd55a6f3b34392fa83fde1454582407d8c714123 # v4.0
     - name: Install ApiDoctor from NuGet
       run: nuget install ApiDoctor -Version $Env:APIDOCTOR_VERSION -OutputDirectory ./nuget -NonInteractive -DisableParallelProcessing
     - name: Validate v1.0 docs
