@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "becb256e-8507-4642-a926-0e03b057201a",
+          "ApiChange": "Property",
+          "ChangedApiName": "incidentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **incidentConfiguration** property to the [detectionAction](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionaction?view=graph-rest-beta) resource.",
+          "Target": "detectionAction"
+        },
+        {
+          "Id": "becb256e-8507-4642-a926-0e03b057201a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "incidentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [incidentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-incidentconfiguration?view=graph-rest-beta) resource.",
+          "Target": "incidentConfiguration"
+        }
+      ],
+      "Id": "becb256e-8507-4642-a926-0e03b057201a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-09T10:18:32.4892573Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ac5c3274-87aa-493f-ad25-51dd98e81881",
           "ApiChange": "Resource",
           "ChangedApiName": "createAlertInput",
