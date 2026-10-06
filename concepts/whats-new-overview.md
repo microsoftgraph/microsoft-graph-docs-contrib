@@ -117,6 +117,87 @@ Clarified that the [Get accessPackageResourceEnvironment](/graph/api/accesspacka
 - Added public preview support for lifecycle policies that govern agent identities and guest users. Use [lifecyclePolicy](/graph/api/resources/identitygovernance-lifecyclepolicy?view=graph-rest-beta&preserve-view=true) and its derived policy types to configure scope, rules, workflow enforcement, impact evaluation, and processing reports.
 - Added guest-user lifecycle actions to [attest](/graph/api/user-attest?view=graph-rest-beta&preserve-view=true), [add the signed-in user as a sponsor](/graph/api/user-addselfassponsor?view=graph-rest-beta&preserve-view=true), and [remove the signed-in user as a sponsor](/graph/api/user-removeselfassponsor?view=graph-rest-beta&preserve-view=true).
 
+### Identity and access | Identity and sign-in
+
+Added the **requireCertificateSidAlignment** property to the [x509CertificateAuthenticationMethodConfiguration](/graph/api/resources/x509certificateauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) resource. Use it to require certificate SID alignment for hybrid and cloud-only users during certificate-based authentication.
+
+### People and workplace intelligence | Analytics
+
+Added the **sensitivityLabel** property to the [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) resource type to provide sensitivity-label information for the search result resource.
+
+### Security | Data security and compliance
+
+Added the `contentFiltering` member to the [userActivityTypes](/graph/api/resources/enums-security?view=graph-rest-beta&preserve-view=true#useractivitytypes-values) enumeration used by the [compute protection scopes for a user](/graph/api/userprotectionscopecontainer-compute?view=graph-rest-beta&preserve-view=true) and [compute protection scopes for a tenant](/graph/api/tenantprotectionscopecontainer-compute?view=graph-rest-beta&preserve-view=true) APIs, enabling applications to determine whether data loss prevention policies govern content filtering before evaluating content.
+
+Updated the [contentActivity](/graph/api/resources/contentactivity?view=graph-rest-beta&preserve-view=true) resource to support reporting Secure by Default policy evaluations that couldn't be completed. Enforcement planes can submit structured incomplete-inspection reasons through the existing content activity ingestion API.
+
+### Security | Audit log query
+
+- Added the **isRecordCountLimitExceeded**, **recordCountLimit**, and **approximateReturnedRecordCount** properties to the [auditLogQuery](/graph/api/resources/security-auditlogquery?view=graph-rest-beta&preserve-view=true) resource. Use these properties to determine whether a completed query exceeded the per-search record-count limit and to inspect the applicable limit and approximate returned record count.
+### Teamwork and communications | Messaging
+
+Updated the [getAllRetainedMessages](/graph/api/channel-getallretainedmessages?view=graph-rest-beta&preserve-view=true) method to document support for retained private-channel message versions captured after the tenant's private-channel storage migration completed.
+
+## August 2026: New and generally available
+
+### Applications
+
+- Added the [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) resource type and the **coopEnforcement** property to the v1.0 endpoint. Application owners can use the property to explicitly test Cross-Origin-Opener-Policy enforcement, temporarily suppress enforcement while remediating an incompatible browser authentication flow, or return to the service default. The property is available in the global service only and isn't available in national cloud deployments.
+- Added the **authenticationBehaviors** property to the [application](/graph/api/resources/application) resource type in v1.0. Returned only on `$select`.
+
+### Change notifications | Subscription
+
+- Added support for delivering change notifications to Web Push endpoints (RFC 8291) for the [subscription](/graph/api/resources/subscription) resource type.
+- Added the [getVapidPublicKey](/graph/api/subscription-getvapidpublickey) method to obtain the VAPID public key (RFC 8292) used when creating Web Push subscriptions.
+
+### Files
+
+- Added the [Upsert columns](/graph/api/filestoragecontainer-patch-columns) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer) resource type to create or update up to 20 columnDefinition objects in a single request.
+- Added the **appliedByUser** parameter to the [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) action on the [driveItem](/graph/api/resources/driveitem) resource. This parameter allows app-only callers to specify the user identity on whose behalf the sensitivity label is applied.
+
+### Identity and access | Directory management
+
+- Added the **managerApplications** property to the [agentIdentity](/graph/api/resources/agentidentity) and [agentIdentityBlueprintPrincipal](/graph/api/resources/agentidentityblueprintprincipal) resources to identify the applications that manage the backing agent identity blueprint.
+
+Added the [recovery](/graph/api/resources/entrarecoveryservices-recovery) resource type and related methods to programmatically recover critical Microsoft Entra directory objects from automatically created point-in-time snapshots. Use these APIs to inspect available snapshots, preview and scope changes before restoration, run recovery jobs, monitor progress, and review failed changes.
+
+### Identity and access | Governance
+
+- Added the [externalSapAcConnectionInfo](/graph/api/resources/externalsapacconnectioninfo) complex type, along with the supporting [authenticationInfo](/graph/api/resources/authenticationinfo) and [clientCredentialAuthenticationInfo](/graph/api/resources/clientcredentialauthenticationinfo) types, to configure connections from Microsoft Entra entitlement management to SAP Access Control (AC) systems. Set these on the **connectionInfo** property of an [externalOriginResourceConnector](/graph/api/resources/externaloriginresourceconnector) when its **connectorType** is `sapAc`.
+- Promoted the **Lifecycle Workflows provisioning and workflow subject** APIs from beta to v1.0, introducing a broader, extensible subject model for workflows and surfacing per-subject processing results. The promoted surface includes:
+  - [workflowSubject](/graph/api/resources/identitygovernance-workflowsubject) base type and its [provisioningObjectWorkflowSubject](/graph/api/resources/identitygovernance-provisioningobjectworkflowsubject) and [directoryObjectWorkflowSubject](/graph/api/resources/identitygovernance-directoryobjectworkflowsubject) derived types
+  - [subjectProcessingResult](/graph/api/resources/identitygovernance-subjectprocessingresult) resource with the **subjectProcessingResults** navigation property on the [run](/graph/api/resources/identitygovernance-run) and [workflow](/graph/api/resources/identitygovernance-workflow) resources
+  - [subjectSummary](/graph/api/resources/identitygovernance-subjectsummary) resource and the [summary](/graph/api/identitygovernance-subjectprocessingresult-summary) method on the [subjectProcessingResult](/graph/api/resources/identitygovernance-subjectprocessingresult) resource
+  - [activateAndWait](/graph/api/identitygovernance-workflow-activateandwait) action on the [workflow](/graph/api/resources/identitygovernance-workflow) resource, returning the [awaitedWorkflowProcessingResult](/graph/api/resources/identitygovernance-awaitedworkflowprocessingresult) resource
+  - [provisioningAttributeMapping](/graph/api/resources/identitygovernance-provisioningattributemapping) and [attributeSetEntry](/graph/api/resources/identitygovernance-attributesetentry) resources
+  - [customTaskExtensionResponseData](/graph/api/resources/identitygovernance-customtaskextensionresponsedata) resource, the **replyMode** property on [customTaskExtension](/graph/api/resources/identitygovernance-customtaskextension), and the **targetSubject** property on [customTaskExtensionCalloutData](/graph/api/resources/identitygovernance-customtaskextensioncalloutdata)
+  - **targetSubjectType** property on [workflowBase](/graph/api/resources/identitygovernance-workflowbase) and **workflowSubject** property on [taskProcessingResult](/graph/api/resources/identitygovernance-taskprocessingresult)
+  - [subjectType](/graph/api/resources/enums-identitygovernance#subjecttype-values) and [customTaskExtensionReplyMode](/graph/api/resources/enums-identitygovernance#customtaskextensionreplymode-values) enumerations, along with the `extensibility` and   `extensibilityOnDemand` enumeration members
+- Added the [externalOriginResourceConnector](/graph/api/resources/externaloriginresourceconnector) resource type and methods to [create](/graph/api/entitlementmanagement-post-externaloriginresourceconnectors), [list](/graph/api/entitlementmanagement-list-externaloriginresourceconnectors), [get](/graph/api/externaloriginresourceconnector-get), [update](/graph/api/externaloriginresourceconnector-update), and [delete](/graph/api/externaloriginresourceconnector-delete) connections from Microsoft Entra entitlement management to SAP Identity Access Governance (SAP IAG). For an SAP IAG connector, specify the SAP IAG endpoint, OAuth token endpoint, and client ID, along with the Azure subscription, resource group, key vault, and secret that identify where its client secret is stored. The connector is associated with an access package resource so that entitlement management can provision access to resources in SAP IAG through access packages.
+- Added the **reviewerId** and **scopeType** properties to [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope) to specify a reviewer directly or as a well-known scope instead of through a query.
+- Added the **applyDescription** property to [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem) to describe the result of applying a decision.
+- Added the **appRoleId** and **appRoleDisplayName** properties to [accessReviewInstanceDecisionItemServicePrincipalResource](/graph/api/resources/accessreviewinstancedecisionitemserviceprincipalresource) to identify the app role under review.
+- Added the **errors** property to [accessReviewInstance](/graph/api/resources/accessreviewinstance) and the [accessReviewError](/graph/api/resources/accessreviewerror) resource type to report errors that occur during the review instance lifecycle.
+- Added the [accessReviewPrincipalScope](/graph/api/resources/accessreviewprincipalscope), [accessReviewResourceScope](/graph/api/resources/accessreviewresourcescope), and [accessReviewAccessPackageAssignmentPolicyScope](/graph/api/resources/accessreviewaccesspackageassignmentpolicyscope) resource types. Use them in the **principalScopes** and **resourceScopes** properties of [principalResourceMembershipsScope](/graph/api/resources/principalresourcemembershipsscope) to state which principals have their access to which resources reviewed without writing a query expression.
+- Added the **accessReviewPrincipalScopeType**, **accessReviewResourceScopeType**, and **accessReviewReviewerScopeType** enumeration types to identify well-known principal, resource, and reviewer scopes.
+
+### Identity and access | Identity and sign-in
+
+Added support for managing Microsoft 365 cross-tenant capabilities in cross-tenant access policies. Use the [m365CapabilityBase](/graph/api/resources/m365capabilitybase) resource and the **m365Capabilities** relationship to manage which Microsoft 365 experiences—such as calendar sharing, MailTips, places booking, and cross-tenant migration—are enabled between tenants. For the default policy, you can [list](/graph/api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities), [create](/graph/api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities), and [update](/graph/api/crosstenantaccesspolicyconfigurationdefault-update-m365capabilities) capabilities. For partner policies, you can [list](/graph/api/crosstenantaccesspolicyconfigurationpartner-list-m365capabilities), [create](/graph/api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities), [update](/graph/api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities), and [delete](/graph/api/crosstenantaccesspolicyconfigurationpartner-delete-m365capabilities) capabilities.
+
+### Mail
+
+- Added the [note](/graph/api/resources/note) resource type and methods to [list](/graph/api/user-list-notes), [create](/graph/api/user-post-notes), [get](/graph/api/note-get), [update](/graph/api/note-update), and [delete](/graph/api/note-delete) quick-capture notes in a user's _Notes_ folder. Use [delta query](/graph/api/note-delta) to synchronize notes that were added, updated, or deleted since the previous request. You can also [list](/graph/api/note-list-attachments), [add](/graph/api/note-post-attachments), and [delete](/graph/api/attachment-delete) inline image attachments, and use open or legacy extended properties to store custom data on a note.
+
+### Mailbox import and export
+
+- Added the **wellKnownName** property to the [mailboxFolder](/graph/api/resources/mailboxfolder) resource type in v1.0. Use this property to identify folders created by Outlook by using a locale-independent name.
+- Added the [Delete mailboxItem](/graph/api/mailboxfolder-delete-items) method to the [mailboxItem](/graph/api/resources/mailboxitem) resource type in v1.0. Use this method to delete an individual mailbox item from a mailbox folder with Exchange soft-delete or hard-delete semantics.
+
+### Security
+
+Updated the retirement date for the legacy Microsoft Graph [security alerts API](/graph/api/resources/alert) from August 31, 2026 to October 15, 2026.
+
 ### Identity and access | Monitoring & health
 
 - Added support for tagging Microsoft Entra recommendations and their impacted resources. Use the [recommendation: addTag](/graph/api/recommendation-addtag?view=graph-rest-beta&preserve-view=true), [recommendation: removeTag](/graph/api/recommendation-removetag?view=graph-rest-beta&preserve-view=true), [impactedResource: addTag](/graph/api/impactedresource-addtag?view=graph-rest-beta&preserve-view=true), and [impactedResource: removeTag](/graph/api/impactedresource-removetag?view=graph-rest-beta&preserve-view=true) methods to manage the **tags** relationship, backed by the new [recommendationTag](/graph/api/resources/recommendationtag?view=graph-rest-beta&preserve-view=true) resource. You can also add or remove a tag on up to 50 impacted resources in a single request by using the [impactedResource: addTag](/graph/api/impactedresource-addtag-collection?view=graph-rest-beta&preserve-view=true) and [impactedResource: removeTag](/graph/api/impactedresource-removetag-collection?view=graph-rest-beta&preserve-view=true) methods.
