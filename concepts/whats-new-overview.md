@@ -102,6 +102,11 @@ Added the `unknownFutureValue` member to the **changeType** enumeration used by 
 - Added the **userObjectId** parameter to the [getByUser](/graph/api/filestoragecontainer-getbyuser?view=graph-rest-beta&preserve-view=true) method on the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource to retrieve a list of file storage containers owned by a user by passing the user's Microsoft Entra ID object ID.
 - Added the **isPatternToken** property to the [fileStorageContainerCustomPropertyValue](/graph/api/resources/filestoragecontainercustompropertyvalue?view=graph-rest-beta&preserve-view=true) resource to indicate whether a custom property value is a `urlTemplate` pattern that consumers must resolve before use, rather than a literal value.
 
+### Identity and access | Directory management
+
+- Added the [directoryRoleManagementDeletedItemContainer](/graph/api/resources/directoryrolemanagementdeleteditemcontainer?view=graph-rest-beta&preserve-view=true) resource type and related methods for recovering custom role definitions that have been deleted. Use these APIs to list and inspect soft-deleted custom roles, restore them to the active role definitions collection, or permanently delete them.
+- Added the [provision](/graph/api/device-provision?view=graph-rest-beta&preserve-view=true) action to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to enable approved Virtual Desktop Infrastructure (VDI) providers to provision devices in a customer's directory.
+
 ### Groups
 
 - Added the **disableNesting** property to the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource. Use it to prevent other groups from being added as members of a security group.

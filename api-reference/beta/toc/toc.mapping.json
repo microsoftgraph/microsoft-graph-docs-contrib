@@ -1346,6 +1346,7 @@
                 "Unified RBAC"
               ],
               "resources": [
+                "directoryRoleManagementDeletedItemContainer",
                 "roleManagement",
                 "unifiedRoleDefinition",
                 "unifiedRoleAssignment",
