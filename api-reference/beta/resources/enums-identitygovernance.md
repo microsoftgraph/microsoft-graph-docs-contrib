@@ -30,6 +30,24 @@ Namespace: microsoft.graph.identityGovernance
 |failedUsers|
 |unknownFutureValue|
 
+### agentBuilderPlatforms values
+
+|Member|
+|:---|
+|microsoftCopilotStudio|
+|foundry|
+|unknownFutureValue|
+
+### complianceState values
+
+|Member|
+|:---|
+|compliant|
+|warning|
+|warningNotify|
+|nonCompliant|
+|unknownFutureValue|
+
 ### customTaskExtensionOperationStatus values 
 
 |Member|
@@ -54,6 +72,107 @@ Namespace: microsoft.graph.identityGovernance
 |none|
 |callback|
 |response|
+|unknownFutureValue|
+
+### lifecyclePolicyComplianceStatus values
+
+|Member|
+|:---|
+|notEvaluated|
+|compliant|
+|nonCompliant|
+|unknownFutureValue|
+
+### lifecyclePolicyEnforcementActionState values
+
+|Member|
+|:---|
+|none|
+|warningStateEnabled|
+|nonComplianceNotificationSent|
+|firstNotificationSent|
+|secondNotificationSent|
+|finalNotificationSent|
+|disabled|
+|deleted|
+|complianceRestored|
+|unknownFutureValue|
+
+### lifecyclePolicyEnforcementStatus values
+
+|Member|
+|:---|
+|notRequired|
+|notStarted|
+|processing|
+|waiting|
+|actionDue|
+|complete|
+|unknown|
+|unknownFutureValue|
+
+### lifecyclePolicyImpactActionType values
+
+|Member|
+|:---|
+|objectCoveredByPolicy|
+|attestationNeededWarning|
+|attestationNeededNotificationSent|
+|disabledDueToAttestationNonCompliance|
+|deletedDueToAttestationNonCompliance|
+|unknownFutureValue|
+
+### lifecyclePolicyNextEnforcementAction values
+
+|Member|
+|:---|
+|nonComplianceNotification|
+|firstNotification|
+|secondNotification|
+|finalNotification|
+|disable|
+|disableNotification|
+|delete|
+|unknownFutureValue|
+
+### lifecyclePolicyRelationship values
+
+|Member|
+|:---|
+|effective|
+|inScopeButIneffective|
+|pending|
+|unknownFutureValue|
+
+### lifecyclePolicyScopeProcessingAttemptStatus values
+
+|Member|
+|:---|
+|notStarted|
+|evaluating|
+|processing|
+|completed|
+|failed|
+|timedOut|
+|invalidScope|
+|unknownFutureValue|
+
+### lifecyclePolicyScopeProcessingStatus values
+
+|Member|
+|:---|
+|idle|
+|notStarted|
+|evaluating|
+|processing|
+|unknownFutureValue|
+
+### lifecyclePolicySource values
+
+|Member|
+|:---|
+|userCreated|
+|systemDefault|
 |unknownFutureValue|
 
 ### lifecycleTaskCategory values 
@@ -167,6 +286,15 @@ Namespace: microsoft.graph.identityGovernance
 |percentageBasedThresholdExceeded|
 |multipleConditionsExceeded|
 |unknownFutureValue|
+
+### subjectType values
+
+|Member|
+|:---|
+|user|
+|agentIdentity|
+|unknownFutureValue|
+|provisioningObject|
 
 ### workflowTriggerOperatorEventTiming values
 
