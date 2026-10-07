@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object of an RBAC provider. 
+Get the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object of an RBAC provider. For the directory provider, you can also get a soft-deleted custom role definition from the deleted-items collection.
 
 The following RBAC providers are currently supported:
 - Cloud PC 
@@ -108,6 +108,13 @@ Get a role definition for a directory provider:
 
 ```http
 GET /roleManagement/directory/roleDefinitions/{id}
+```
+
+Get a soft-deleted custom role definition for a directory provider:
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/directory/deletedItems/roleDefinitions/{id}
 ```
 
 Get a role definition for the entitlement management provider:
@@ -662,6 +669,55 @@ Content-type: application/json
             ],
         }
     ]
+}
+```
+
+### Example 7: Get a soft-deleted custom role for a directory provider
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_deleted_custom_role_unifiedroledefinition",
+  "sampleKeys": ["a1b2c3d4-5678-90ab-cdef-1234567890ab"]
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/roleManagement/directory/deletedItems/roleDefinitions/a1b2c3d4-5678-90ab-cdef-1234567890ab
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/deletedItems/roleDefinitions/$entity",
+  "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
+  "description": "Can manage basic aspects of application registrations.",
+  "displayName": "Application Support Administrator",
+  "isBuiltIn": false,
+  "isEnabled": true,
+  "rolePermissions": [
+    {
+      "allowedResourceActions": [
+        "microsoft.directory/applications/basic/update"
+      ]
+    }
+  ]
 }
 ```
 

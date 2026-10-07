@@ -172,6 +172,9 @@ Content-Type: application/json
           "deviceIdColumn": "DeviceId"
         }
       ]
+    },
+    "incidentConfiguration": {
+      "isExcludedFromIncidentCorrelation": true
     }
   }
 }

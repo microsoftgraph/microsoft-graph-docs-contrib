@@ -131,6 +131,9 @@ Content-Type: application/json
           ]
         }
       ]
+    },
+    "incidentConfiguration": {
+      "isExcludedFromIncidentCorrelation": true
     }
   }
 }
@@ -236,6 +239,9 @@ Location: https://graph.microsoft.com/beta/security/rules/detectionRules/office-
           "deviceIdColumn": "DeviceId"
         }
       ]
+    },
+    "incidentConfiguration": {
+      "isExcludedFromIncidentCorrelation": true
     }
   }
 }

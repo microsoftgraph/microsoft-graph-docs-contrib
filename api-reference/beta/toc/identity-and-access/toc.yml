@@ -1475,6 +1475,70 @@ items:
         href: ../../api/identitygovernance-insights-workflowsprocessedsummary.md
       - name: Get workflows processed by category
         href: ../../api/identitygovernance-insights-workflowsprocessedbycategory.md
+    - name: Lifecycle policy
+      items:
+      - name: Lifecycle policy
+        href: ../../resources/identitygovernance-lifecyclepolicy.md
+      - name: Get lifecyclePolicy
+        href: ../../api/identitygovernance-lifecyclepolicy-get.md
+      - name: Update lifecyclePolicy
+        href: ../../api/identitygovernance-lifecyclepolicy-update.md
+      - name: Delete lifecyclePolicy
+        href: ../../api/identitygovernance-lifecyclepolicy-delete.md
+      - name: 'lifecyclePolicy: restore'
+        href: ../../api/identitygovernance-lifecyclepolicy-restore.md
+      - name: List rules
+        href: ../../api/identitygovernance-lifecyclepolicy-list-rules.md
+    - name: Agent identity lifecycle policy
+      href: ../../resources/identitygovernance-agentidentitylifecyclepolicy.md
+    - name: Lifecycle policy rule
+      items:
+      - name: Lifecycle policy rule
+        href: ../../resources/identitygovernance-lifecyclepolicyrule.md
+      - name: List rules
+        href: ../../api/identitygovernance-lifecyclepolicy-list-rules.md
+      - name: Get lifecyclePolicyRule
+        href: ../../api/identitygovernance-lifecyclepolicyrule-get.md
+      - name: Update lifecyclePolicyRule
+        href: ../../api/identitygovernance-lifecyclepolicyrule-update.md
+    - name: Periodic attestation rule
+      href: ../../resources/identitygovernance-periodicattestationrule.md
+    - name: Sponsor presence rule
+      href: ../../resources/identitygovernance-sponsorpresencerule.md
+    - name: Inactivity rule
+      href: ../../resources/identitygovernance-inactivityrule.md
+    - name: Lifecycle policy priority configuration
+      items:
+      - name: Lifecycle policy priority configuration
+        href: ../../resources/identitygovernance-lifecyclepolicypriorityconfiguration.md
+      - name: List lifecyclePolicyPriorityConfigurations
+        href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-lifecyclepolicypriorityconfigurations.md
+      - name: Get lifecyclePolicyPriorityConfiguration
+        href: ../../api/identitygovernance-lifecyclepolicypriorityconfiguration-get.md
+      - name: Update lifecyclePolicyPriorityConfiguration
+        href: ../../api/identitygovernance-lifecyclepolicypriorityconfiguration-update.md
+    - name: Identity lifecycle
+      items:
+      - name: Identity lifecycle
+        href: ../../resources/identitygovernance-identitylifecycle.md
+      - name: Get identityLifecycle
+        href: ../../api/identitygovernance-identitylifecycle-get.md
+      - name: Update identityLifecycle
+        href: ../../api/identitygovernance-identitylifecycle-update.md
+      - name: List complianceIssues
+        href: ../../api/identitygovernance-identitylifecycle-list-complianceissues.md
+    - name: Agent identity lifecycle
+      href: ../../resources/identitygovernance-agentidentitylifecycle.md
+    - name: Compliance issue
+      items:
+      - name: Compliance issue
+        href: ../../resources/identitygovernance-complianceissue.md
+      - name: List complianceIssues
+        href: ../../api/identitygovernance-identitylifecycle-list-complianceissues.md
+      - name: Get complianceIssue
+        href: ../../api/identitygovernance-complianceissue-get.md
+    - name: Attestation compliance issue
+      href: ../../resources/identitygovernance-attestationcomplianceissue.md
     - name: Complex types
       items:
       - name: Operator between
