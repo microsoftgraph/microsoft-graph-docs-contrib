@@ -285,6 +285,7 @@ property will contain the information about the account that redeemed the permis
 | [Update permission](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete permission](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 | [Grant access to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
+| [Revoke grants on sharing link](../api/permission-revokegrants.md) | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
