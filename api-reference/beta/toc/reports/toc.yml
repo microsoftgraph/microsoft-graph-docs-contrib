@@ -914,6 +914,12 @@ items:
   items:
   - name: Overview
     href: ../../resources/partners-billing-api-overview.md
+  - name: Billed aggregated usage
+    items:
+    - name: Billed aggregated usage
+      href: ../../resources/partners-billing-billedaggregatedusage.md
+    - name: Export
+      href: ../../api/partners-billing-billedaggregatedusage-export.md
   - name: Billed reconciliation
     items:
     - name: Billed reconciliation
