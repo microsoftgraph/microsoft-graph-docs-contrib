@@ -2339,6 +2339,12 @@
         "Outlook",
         "Outlook mail"
       ],
+      "additionalLinks": [
+        {
+          "name": "Handle archive mailbox redirects",
+          "href": "/graph/handle-archive-mailbox-redirects"
+        }
+      ],
       "resources": [
         "message",
         "attachment",
@@ -2382,6 +2388,12 @@
         "Exchange Import-Export",
         "Mailbox",
         "Mailbox import and export"
+      ],
+      "additionalLinks": [
+        {
+          "name": "Handle archive mailbox redirects",
+          "href": "/graph/handle-archive-mailbox-redirects"
+        }
       ],
       "resources": [
         "mailbox",
