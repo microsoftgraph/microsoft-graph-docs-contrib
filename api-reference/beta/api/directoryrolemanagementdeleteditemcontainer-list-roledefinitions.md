@@ -20,11 +20,7 @@ List custom [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objec
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "directoryrolemanagementdeleteditemcontainer-list-roledefinitions-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "directoryrolemanagementdeleteditemcontainer_list_roledefinitions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryrolemanagementdeleteditemcontainer-list-roledefinitions-permissions.md)]
 
 [!INCLUDE [rbac-role-definition-apis-read](../includes/rbac-for-apis/rbac-role-definition-apis-read.md)]
