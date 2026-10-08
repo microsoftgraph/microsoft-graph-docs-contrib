@@ -133,7 +133,7 @@ Content-type: application/json
 
 The following example shows a request.
 
-> **Note:** Requests for the raw value does not support [OData query parameters](/graph/query-parameters) to customize the response.
+> **Note:** Requests for the raw value doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
 
 
 # [HTTP](#tab/http)

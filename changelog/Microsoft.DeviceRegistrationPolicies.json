@@ -147,7 +147,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedGroups",
           "ChangeType": "Deletion",
-          "Description": "Removed the `allowedGroups` property from the [azureADJoinPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADJoinPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement [Important: Update to deviceRegistrationPolicy resource type](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-update-to-deviceregistrationpolicy-resource-type-for/ba-p/3912000).",
+          "Description": "Removed the `allowedGroups` property from the [azureADJoinPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADJoinPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement **Important: Update to deviceRegistrationPolicy resource type**.",
           "Target": "azureADJoinPolicy"
         },
         {
@@ -163,7 +163,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedUsers",
           "ChangeType": "Deletion",
-          "Description": "Removed the `allowedUsers` property from the [azureADJoinPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADJoinPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement [Important: Update to deviceRegistrationPolicy resource type](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-update-to-deviceregistrationpolicy-resource-type-for/ba-p/3912000).",
+          "Description": "Removed the `allowedUsers` property from the [azureADJoinPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADJoinPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement **Important: Update to deviceRegistrationPolicy resource type**.",
           "Target": "azureADJoinPolicy"
         },
         {
@@ -171,7 +171,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "appliesTo",
           "ChangeType": "Deletion",
-          "Description": "Removed the `appliesTo` property from the [azureADJoinPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADJoinPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement [Important: Update to deviceRegistrationPolicy resource type](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-update-to-deviceregistrationpolicy-resource-type-for/ba-p/3912000).",
+          "Description": "Removed the `appliesTo` property from the [azureADJoinPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADJoinPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement **Important: Update to deviceRegistrationPolicy resource type**.",
           "Target": "azureADJoinPolicy"
         },
         {
@@ -179,7 +179,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedGroups",
           "ChangeType": "Deletion",
-          "Description": "Removed the `allowedGroups` property from the [azureADRegistrationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADRegistrationPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement [Important: Update to deviceRegistrationPolicy resource type](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-update-to-deviceregistrationpolicy-resource-type-for/ba-p/3912000).",
+          "Description": "Removed the `allowedGroups` property from the [azureADRegistrationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADRegistrationPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement **Important: Update to deviceRegistrationPolicy resource type**.",
           "Target": "azureADRegistrationPolicy"
         },
         {
@@ -195,7 +195,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedUsers",
           "ChangeType": "Deletion",
-          "Description": "Removed the `allowedUsers` property from the [azureADRegistrationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADRegistrationPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement [Important: Update to deviceRegistrationPolicy resource type](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-update-to-deviceregistrationpolicy-resource-type-for/ba-p/3912000).",
+          "Description": "Removed the `allowedUsers` property from the [azureADRegistrationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADRegistrationPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement **Important: Update to deviceRegistrationPolicy resource type**.",
           "Target": "azureADRegistrationPolicy"
         },
         {
@@ -203,7 +203,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "appliesTo",
           "ChangeType": "Deletion",
-          "Description": "Removed the `appliesTo` property from the [azureADRegistrationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADRegistrationPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement [Important: Update to deviceRegistrationPolicy resource type](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-update-to-deviceregistrationpolicy-resource-type-for/ba-p/3912000).",
+          "Description": "Removed the `appliesTo` property from the [azureADRegistrationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/azureADRegistrationPolicy?view=graph-rest-beta) resource. For more information about this change, see the announcement **Important: Update to deviceRegistrationPolicy resource type**.",
           "Target": "azureADRegistrationPolicy"
         },
         {

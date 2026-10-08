@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
 
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -159,7 +159,8 @@ Content-Type: application/json
     "userSettingsPersistenceConfiguration": {
         "userSettingsPersistenceEnabled": false,
         "userSettingsPersistenceStorageSizeCategory": "fourGB"
-    }
+    },
+    "snapshotResetMode": "notApplicable"
 }
 ```
 
@@ -275,7 +276,8 @@ Content-Type: application/json
     "userSettingsPersistenceConfiguration": {
         "userSettingsPersistenceEnabled": false,
         "userSettingsPersistenceStorageSizeCategory": "fourGB"
-    }
+    },
+    "snapshotResetMode": "notApplicable"
 }
 ```
 

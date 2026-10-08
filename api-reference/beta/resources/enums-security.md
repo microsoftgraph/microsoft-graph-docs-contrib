@@ -166,6 +166,14 @@ Namespace: microsoft.graph.security
 |unknown|
 |unknownFutureValue|
 
+### entityDefinitionInputRole values
+
+|Member|
+|:---|
+|impacted|
+|related|
+|unknownFutureValue|
+
 ### entityType values 
 
 |Member|
@@ -186,6 +194,29 @@ Namespace: microsoft.graph.security
 |ewsSettings|
 |mailDelegation|
 |userInboxRule|
+|unknownFutureValue|
+
+### manualAlertEntityType values
+
+|Member|
+|:---|
+|user|
+|device|
+|file|
+|ip|
+|url|
+|cloudApplication|
+|mailbox|
+|securityGroup|
+|azureResource|
+|amazonResource|
+|googleCloudResource|
+|oAuthApplication|
+|emailMessage|
+|emailCluster|
+|process|
+|registryKey|
+|registryValue|
 |unknownFutureValue|
 
 ### logDataProvider values 
@@ -343,6 +374,15 @@ Namespace: microsoft.graph.security
 | blocked
 | prevented
 | unknownFutureValue
+
+### detectionRuleStatus values
+
+| Member             |
+| :----------------- |
+| enabled            |
+| disabled           |
+| autoDisabled       |
+| unknownFutureValue |
 
 ### eventPropagationStatus values
 
@@ -718,6 +758,7 @@ Namespace: microsoft.graph.security
 |sPSharingNotifyUser|
 |sPSharingGenerateIncidentReport|
 |restrictWebGrounding|
+|policyTip|
 
 ### executionMode values
 
@@ -765,6 +806,11 @@ Namespace: microsoft.graph.security
 |downloadText|
 |downloadFile|
 |unknownFutureValue|
+|copyToClipboard|
+|pasteFromClipboard|
+|print|
+|accessDebugTools|
+|contentFiltering|
 
 ### userActivityType values
 
@@ -774,6 +820,7 @@ Namespace: microsoft.graph.security
 |uploadFile|
 |downloadText|
 |downloadFile|
+|copyToClipboard|
 |unknownFutureValue|
 
 ### labelActionSource values
@@ -851,6 +898,38 @@ Namespace: microsoft.graph.security
 |automated|
 |unknownFutureValue|
 
+### migrationState values
+
+|Member|
+|:---|
+|readyForMigration|
+|notReadyForMigration|
+|upToDate|
+|migrationFailed|
+|migrating|
+|unknownFutureValue|
+
+### sensorHealthStatus values
+
+|Member|
+|:---|
+|healthy|
+|notHealthyLow|
+|notHealthyMedium|
+|notHealthyHigh|
+|unknownFutureValue|
+
+### sensorType values
+
+|Member|
+|:---|
+|adConnectIntegrated|
+|adcsIntegrated|
+|adfsIntegrated|
+|domainControllerIntegrated|
+|domainControllerStandalone|
+|unknownFutureValue|
+
 ### serviceStatus values
 
 |Member|
@@ -880,6 +959,7 @@ Namespace: microsoft.graph.security
 |microsoftDefenderForCloud|
 |microsoftSentinel|
 |microsoftThreatIntelligence|
+|microsoftSecurityForAI|
 
 ### environmentKind values 
 

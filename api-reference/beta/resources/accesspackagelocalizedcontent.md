@@ -16,6 +16,12 @@ Namespace: microsoft.graph
 
 A complex type used to represent a text in multiple localized forms. It includes a default text, which is used in any case where the requested localization isn't available.
 
+In entitlement management, this object is configured in the following properties and relationships:
+- **displayValue** property of [accessPackageAnswerChoice](../resources/accesspackageanswerchoice.md)
+- **text** property of [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md)
+- **text** property of [accessPackageQuestion](../resources/accesspackagequestion.md)
+- **text** property of [accessPackageTextInputQuestion](../resources/accesspackagetextinputquestion.md)
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

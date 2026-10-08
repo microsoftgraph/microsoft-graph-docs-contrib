@@ -1,7 +1,7 @@
 ---
 title: "multiTenantOrganization resource type"
 description: "Defines an organization with more than one instance of Microsoft Entra ID."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

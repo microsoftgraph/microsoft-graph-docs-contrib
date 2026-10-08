@@ -70,7 +70,7 @@ _id_ property is always returned.
 - There is limited support for `$filter` and `$orderby`:
   * The only supported `$filter` expresssions are `$filter=receivedDateTime+ge+{value}`
   or `$filter=receivedDateTime+gt+{value}`.
-  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
+  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you don't include
   an `$orderby` expression, the return order is not guaranteed.
 - There is no support for `$search`.
 
@@ -98,7 +98,7 @@ _id_ property is always returned.
 If successful, this method returns a `200 OK` response code and [message](../resources/message.md) collection object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows how to make a single **delta** function call, and limit the maximum number of messages
 in the response body to 2.
 
@@ -148,7 +148,7 @@ Prefer: odata.maxpagesize=2
 
 ---
 
-##### Response
+### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_
 (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header).
 Respectively, they indicate whether you should continue with the round or you have completed

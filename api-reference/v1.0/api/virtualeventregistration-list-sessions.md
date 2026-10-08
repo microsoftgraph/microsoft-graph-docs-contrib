@@ -1,6 +1,6 @@
 ---
 title: "List sessions for a virtual event registration"
-description: "Get a list of sessions that a registrant registered for in a webinar."
+description: "Get a list of sessions that a registrant registered for in a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,13 +11,13 @@ ms.date: 08/06/2024
 # List sessions for a virtual event registration
 Namespace: microsoft.graph
 
-Get a list of [sessions](../resources/virtualeventsession.md) summaries that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md). A session summary contains only the **endDateTime**, **id**, **joinWebUrl**, **startDateTime**, and **subject** of a virtual event session. The remaining session properties are `null`.
+Get a list of [sessions](../resources/virtualeventsession.md) summaries that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). A session summary contains only the **endDateTime**, **id**, **joinWebUrl**, **startDateTime**, and **subject** of a virtual event session. The remaining session properties are `null`.
 
 To get all the properties of a **virtualEventSession**, use the [Get virtualEventSession](../api/virtualeventsession-get.md) method. 
 
 > [!NOTE]
 > 
-> Virtual event webinars can only have a singular virtual event session. A single session summary will be returned in the collection.
+> Virtual event webinars and town halls can only have a singular virtual event session. A single session summary will be returned in the collection.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,8 +37,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To list the session registrations of a webinar:
+
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/sessions
+```
+
+To list the session registrations of a town hall:
+
+```http
+GET /solutions/virtualEvents/townhalls/{townhallId}/registrations/{registrationId}/sessions
 ```
 
 ## Request headers
@@ -47,7 +56,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -105,8 +114,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-5
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-virtualeventregistrationsessions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

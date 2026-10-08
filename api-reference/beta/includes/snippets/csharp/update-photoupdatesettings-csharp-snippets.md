@@ -11,15 +11,13 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new PhotoUpdateSettings
 {
-	OdataType = "#microsoft.graph.photoUpdateSettings",
 	AllowedRoles = new List<string>
 	{
-		"String",
 	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"source" , "String"
+			"source" , "cloud"
 		},
 	},
 };

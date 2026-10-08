@@ -23,12 +23,13 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |[List](../api/applicationtemplate-list.md)|[applicationTemplate](applicationtemplate.md)|Retrieve a list of applicationTemplate objects.|
 | [Get](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Read properties and relationships of applicationTemplate object. |
 |[Instantiate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Microsoft Entra application gallery into your directory. The application template with ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` can be used to add a non-gallery app that you can configure different single sign-on (SSO) modes like SAML SSO and password-based SSO.|
+|[categories](../api/applicationtemplate-categories.md)|[applicationTemplateCategory](../resources/applicationtemplatecategory.md) collection|Get the list of supported categories that can appear in the **categories** property of an [applicationTemplate](applicationtemplate.md).|
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`. <br/><br/> Supports `$filter` (`contains`).|
+|categories|String collection|The list of categories for the application. To get the full list of supported values, use the [applicationTemplate: categories](../api/applicationtemplate-categories.md) function. Supports `$filter` (`contains`).|
 |configurationUris|[configurationUri](../resources/configurationuri.md) collection|The URIs required for the single sign-on configuration of a preintegrated application.|
 |deprecationDate|Date|Deprecation date for this application. If specified, the application will be removed from the Microsoft Entra application gallery on this date.|
 |description|String|A description of the application.|

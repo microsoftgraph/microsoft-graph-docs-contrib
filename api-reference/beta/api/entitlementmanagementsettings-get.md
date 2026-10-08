@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of an [entitlementManagementSettings](../resources/entitlementManagementSettings.md) object.
+Retrieve the properties of an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -37,7 +37,7 @@ GET /identityGovernance/entitlementManagement/settings
 
 ## Optional query parameters
 
-This method does not support the OData query parameters to customize the response.
+This method doesn't support the OData query parameters to customize the response.
 
 ## Request headers
 

@@ -13,8 +13,9 @@ var requestBody = new CloudPcCloudApp
 {
 	OdataType = "#microsoft.graph.cloudPcCloudApp",
 	DisplayName = "Cloud App example3",
-	AppDetail = new CloudPcCloudAppDetail
+	AppDetail = new CloudPcAutomaticDiscoveredAppDetail
 	{
+		OdataType = "#microsoft.graph.cloudPcAutomaticDiscoveredAppDetail",
 		IconPath = "C:\Windows\system32\WindowsPowerShell\v1.0\powershell_ise.exe",
 	},
 };

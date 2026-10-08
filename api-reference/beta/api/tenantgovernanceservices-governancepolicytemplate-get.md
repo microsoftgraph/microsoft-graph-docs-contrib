@@ -1,22 +1,24 @@
 ---
-title: "Get governancePolicyTemplate"
+title: "Get tenantGovernancePolicyTemplate"
 description: "Read the properties of a governance policy template."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
 ---
 
-# Get governancePolicyTemplate
+# Get tenantGovernancePolicyTemplate
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of a [governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) object.
+Read the properties of a [tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -54,7 +56,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.tenantGovernanceServices.governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md) object in the response body.
 
 ## Examples
 
@@ -93,6 +95,10 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/governancePolicy
 [!INCLUDE [sample-code](../includes/snippets/php/get-governancepolicytemplate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-governancepolicytemplate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-governancepolicytemplate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -106,7 +112,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.governancePolicyTemplate"
+  "@odata.type": "microsoft.graph.tenantGovernancePolicyTemplate"
 }
 -->
 ``` http
@@ -114,7 +120,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.governancePolicyTemplate",
+  "@odata.type": "#microsoft.graph.tenantGovernancePolicyTemplate",
   "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
   "displayName": "Monitor Entra resource configurations",
   "description": "Grants Global reader and provisions a custom multi-tenant application to monitor conditional access policies",
@@ -196,6 +202,10 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/governancePolicy
 [!INCLUDE [sample-code](../includes/snippets/php/get-governancepolicytemplate-default-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-governancepolicytemplate-default-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-governancepolicytemplate-default-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -209,7 +219,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.governancePolicyTemplate"
+  "@odata.type": "microsoft.graph.tenantGovernancePolicyTemplate"
 }
 -->
 ``` http
@@ -217,7 +227,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.governancePolicyTemplate",
+  "@odata.type": "#microsoft.graph.tenantGovernancePolicyTemplate",
   "id": "default",
   "displayName": "Default Policy Template",
   "description": "The system-provided default governance policy template",
@@ -228,4 +238,3 @@ Content-Type: application/json
   "delegatedAdministrationRoleAssignments": []
 }
 ```
-

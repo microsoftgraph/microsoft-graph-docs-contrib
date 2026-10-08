@@ -58,6 +58,16 @@ Don't supply a request body for this method.
 
 If successful, this function returns a `200 OK` response code and a [callTranscript](../resources/calltranscript.md) collection in the response body.
 
+### Error responses
+
+This API is governed by tenant administrator settings for transcript access. Branch on the `innerError.code` value, not the message text — messages are subject to change.
+
+| Status | Error code (`innerError.code`) | Condition |
+|--------|--------------------------------|-----------|
+| `403 Forbidden` | `GraphAccessToTranscriptsDisabled` | A tenant administrator has turned off Graph API access to transcripts. No retry succeeds until access is re-enabled. |
+
+The `transcriptContentUrl` returned by this function points at the transcript `/content` endpoint, which is additionally subject to the tenant's speaker-attribution setting. For that error and an example error payload, see [Get callTranscript](../api/calltranscript-get.md#error-responses).
+
 ## Examples
 
 ### Request
@@ -69,6 +79,7 @@ The following example shows a request.
   "name": "adhoccallthis.getalltranscripts"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/v1.0/adhocCalls/getAllTranscripts(userId=d4220f1b-4c12-436c-8a03-dc3e362f9d54,startDateTime=2025-10-07T07:25:21.9730833Z,endDateTime=2025-10-07T07:25:52.4130833Z)
 ```
@@ -76,13 +87,16 @@ GET https://graph.microsoft.com/v1.0/adhocCalls/getAllTranscripts(userId=d4220f1
 ### Response
 
 The following example shows the response.
+
 > **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.callTranscript)"
 }
 -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json

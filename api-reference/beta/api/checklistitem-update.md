@@ -79,7 +79,7 @@ If successful, this method returns a `200 OK` response code and an updated [chec
 
 ### Request 1
 
-Here is an example to update a **checklistItem** associated to a **todoTask**.
+The following example shows how to update a **checklistItem** associated to a **todoTask**.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -151,7 +151,7 @@ Content-Type: application/json
 
 ### Request 2
 
-Here is an example to update a **checklistItem** associated to a **baseTask** (deprecated).
+The following example shows how to update a **checklistItem** associated to a **baseTask** (deprecated).
 
 # [HTTP](#tab/http)
 <!-- {

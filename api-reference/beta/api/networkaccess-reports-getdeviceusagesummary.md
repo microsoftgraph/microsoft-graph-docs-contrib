@@ -44,7 +44,7 @@ The following table shows the parameters that can be used with this function.
 |startDateTime|DateTimeOffset|The date and time when the reporting period begins.|
 |endDateTime|DateTimeOffset|The date and time when the reporting period ends.|
 |activityPivotDateTime|DateTimeOffset|The time that defines what is an active or inactive device.|
-|trafficType|String|Traffic classification. The possible values are: `microsoft365`, `private`,`internet`. Required.
+|trafficType|String|Traffic classification. The possible values are: `microsoft365`, `private`,`internet`. Required.|
 
 ## Request headers
 |Name|Description|

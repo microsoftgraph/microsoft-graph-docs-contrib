@@ -63,12 +63,12 @@ This API returns the standard HTTP error codes. In addition, it returns the foll
 
 |Error code     | Error message         | Details             |
 |:--------------| :---------------------|:--------------------|
-| 400 BadRequest| RoleSettingNotFound   | The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.
-| 400 BadRequest| InvalidRoleSetting    | The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.
+| 400 BadRequest| RoleSettingNotFound   | The [governanceRoleSetting](../resources/governancerolesetting.md) doesn't exist in system. |
+| 400 BadRequest| InvalidRoleSetting    | The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid. |
 
 ## Example 
 This example updates the role setting for Custom Role 3 in the subscription Wingtip Toys - Prod.
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,7 +119,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response"
 } -->

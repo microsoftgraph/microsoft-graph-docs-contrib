@@ -1,7 +1,7 @@
 ---
 title: "Update allowedValue"
 description: "Update the properties of an allowedValue object."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

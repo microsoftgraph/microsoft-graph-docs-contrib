@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Defines how a given object should be synchronized from source directory to target directory. In particular, it defines how object in source directory should be matched with an object in target directory, what (if any) scoping filters should be used to decide if we want to provision a given object, and how object attributes should be transformed going from source to target directory.
 
-Object mappings are the main part of the [synchronization rule](synchronization-synchronizationrule.md) and are updated as part of [synchronization schema](synchronization-synchronizationschema.md).
+Object mappings are the main part of the **objectMappings** property of [synchronizationRule](../resources/synchronization-synchronizationrule.md) and are updated as part of [synchronizationSchema](../resources/synchronization-synchronizationschema.md).
 
 ## Properties
 

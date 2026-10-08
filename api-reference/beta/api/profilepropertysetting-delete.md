@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [profilePropertySetting](../resources/profilepropertysetting.md) object.
+Delete a [profilePropertySetting](../resources/profilepropertysetting.md) object. You shouldn't delete a **profilePropertySetting** that includes a source precedence configuration. Instead, patch it to a default state that contains only the Microsoft Entra ID source reference. This **delete** operation is supported but fails unless the **prioritizedSourceUrls** property contains only the Entra ID source reference.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

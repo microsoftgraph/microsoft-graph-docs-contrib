@@ -50,7 +50,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2Methods
 ```
 
 ## Optional query parameters
-This method does not support optional query parameters to customize the response.
+This method doesn't support optional query parameters to customize the response.
 
 ## Request headers
 |Name|Description|

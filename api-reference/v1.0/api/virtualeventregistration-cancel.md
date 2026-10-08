@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistration: cancel"
-description: "Cancel a registrant's registration record for a webinar."
+description: "Cancel a registrant's registration record for a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,7 @@ ms.date: 08/06/2024
 # virtualEventRegistration: cancel
 Namespace: microsoft.graph
 
-Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). 
+Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -33,8 +33,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To cancel the registration of a webinar:
+
 ```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/cancel
+```
+
+To cancel the registration of a town hall:
+
+```http
+POST /solutions/virtualEvents/townhalls/{townhallId}/registrations/{registrationId}/cancel
 ```
 
 ## Request headers
@@ -90,8 +99,6 @@ POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/virtualeventregistrationthiscancel-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

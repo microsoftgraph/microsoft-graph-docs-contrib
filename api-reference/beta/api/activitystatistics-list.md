@@ -36,7 +36,7 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+This method doesn't support optional query parameters to customize the response.
 
 ## Request headers
 

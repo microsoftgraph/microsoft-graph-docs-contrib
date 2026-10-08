@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a single secret value. 
+Represents a single secret value. This object is configured in the **secrets** property of [synchronization](../resources/synchronization-synchronization.md).
 
 ## Properties
 | Property       | Type    |Description|

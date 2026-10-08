@@ -38,11 +38,11 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## Function parameters
 
-| Parameter      | Type               | Description
-|:---------------|:-------------------|:---------------------------------------
-| startDateTime  | string (timestamp) | The start time over which to aggregate activities.
-| endDateTime    | string (timestamp) | The end time over which to aggregate activities.
-| interval       | string             | The aggregation interval.
+| Parameter      | Type               | Description|
+|:---------------|:-------------------|:---------------------------------------|
+| startDateTime  | string (timestamp) | The start time over which to aggregate activities.|
+| endDateTime    | string (timestamp) | The end time over which to aggregate activities.|
+| interval       | string             | The aggregation interval.|
 
 >**Note:** This API only supports a time range of 90 days for daily counts. The value of the `startDateTime` and `endDateTime` parameters must represent a time range of less than 90 days.
 

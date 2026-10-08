@@ -11,12 +11,30 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new VerifiedIdProfile
 {
+	VerifiedIdProfileConfiguration = new VerifiedIdProfileConfiguration
+	{
+		MethodType = VerifiedIdMethodType.TenantCustomCredential,
+		ManifestUrl = "https://verifiedid.contoso.com/manifest",
+	},
+	MobileDriversLicenseConfiguration = new MobileDriversLicenseConfiguration
+	{
+		AcceptedRegions = new List<string>
+		{
+			"region-code",
+		},
+		DocumentStandard = "document-standard",
+	},
+	SelfServiceIssuance = new VerifiedIdSelfServiceIssuance
+	{
+		IsEnabled = true,
+		IssuanceUrl = "https://verifiedid.contoso.com/issue",
+	},
 	VerifiedIdUsageConfigurations = new List<VerifiedIdUsageConfiguration>
 	{
 		new VerifiedIdUsageConfiguration
 		{
 			IsEnabledForTestOnly = false,
-			Purpose = VerifiedIdUsageConfigurationPurpose.Recovery,
+			Purpose = VerifiedIdUsageConfigurationPurpose.Verification,
 		},
 	},
 };

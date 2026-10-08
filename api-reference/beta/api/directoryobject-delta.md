@@ -106,7 +106,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 - If the property has changed, the new value is included in the response. This includes properties being set to null value.
 - If the property hasn't changed, the property isn't included in the response at all. (Different from the default behavior.)
 
-> **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See [Example 4](#example-4-retrieve-specific-properties-only-if-they-changed-for-a-collection-of-users-and-groups).
+> **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it doesn't affect how the delta query is executed. See [Example 4](#example-4-retrieve-specific-properties-only-if-they-changed-for-a-collection-of-users-and-groups).
 
 ## Examples
 
@@ -158,7 +158,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?filter=isof('microso
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=isof('{resource type}')`. Note the presence of the _members@delta_ property that includes the IDs of member objects in the group.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=isof('{resource type}')`. Note the presence of the _members@delta_ property that includes the IDs of member objects in the group.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -265,7 +265,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=id eq '87d34
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=id eq '{id}'`.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization with `$filter=id eq '{id}'`.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -356,7 +356,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isof('micros
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization. Both properties are included in the response and it isn't known which ones have changed since the `@odata.deltaLink` was obtained.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization. Both properties are included in the response and it isn't known which ones have changed since the `@odata.deltaLink` was obtained.
 
 <!-- {
   "blockType": "response",
@@ -436,7 +436,7 @@ Prefer: return=minimal
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization. The `microsoft.graph.user/surname` property isn't included, which means it hasn't changed since the last delta query; `microsoft.graph.group/displayName` is included which means its value has changed.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization. The `microsoft.graph.user/surname` property isn't included, which means it hasn't changed since the last delta query; `microsoft.graph.group/displayName` is included which means its value has changed.
 
 <!-- {
   "blockType": "response",

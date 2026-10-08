@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of an existing [sectionMap](../resources/sectionmap.md) object in IMDF format on a specified floor, or create one if it doesn't exist.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

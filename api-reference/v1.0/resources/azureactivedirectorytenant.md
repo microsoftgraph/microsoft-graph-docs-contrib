@@ -12,13 +12,13 @@ ms.date: 07/22/2024
 Namespace: microsoft.graph
 
 
-Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.azureActiveDirectoryTenant` indicates that this type identifies another Microsoft Entra tenant as an identity source for a connected organization.
+Used in the **identitySources** property of a [connectedOrganization](../resources/connectedorganization.md). The `@odata.type` value `#microsoft.graph.azureActiveDirectoryTenant` indicates that this type identifies another Microsoft Entra tenant as an identity source for a connected organization.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the Microsoft Entra tenant. Read only. |
-|tenantId|String|The ID of the Microsoft Entra tenant. Read only. |
+|displayName|String|The name of the Microsoft Entra tenant. Read-only. |
+|tenantId|String|The ID of the Microsoft Entra tenant. Read-only. |
 
 ## Relationships
 None.

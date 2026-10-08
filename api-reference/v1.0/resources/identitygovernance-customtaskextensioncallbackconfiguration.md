@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Defines if, and in, which time span a callback is expected from the Azure Logic App.
+Defines if, and in, which time span a callback is expected from the Azure Logic App. This object is configured in the **callbackConfiguration** property of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) resource.
 
 Inherits from  [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
 
@@ -20,7 +20,7 @@ Inherits from  [customExtensionCallbackConfiguration](../resources/customextensi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|timeoutDuration|Duration| Callback time out in ISO 8601 time duration. Accepted time durations are between five minutes to three hours. For example, PT5M for five minutes and PT3H for three hours. Inherited from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).|
+|timeoutDuration|Duration| Callback time out in ISO 8601 time duration. Accepted time durations are between 30 minutes to 3 hours. For example, PT30M for 30 minutes and PT3H for three hours. Inherited from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).|
 |authorizedApps|microsoft.graph.application collection| A collection of unique identifiers or **appIds** of the applications that are allowed to [resume](../api/identitygovernance-taskprocessingresult-resume.md) a task processing result.|
 
 

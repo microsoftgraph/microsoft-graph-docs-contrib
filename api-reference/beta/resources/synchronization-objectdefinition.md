@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an object and its attributes. Object definitions are part of [directoryDefinition](synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](synchronization-synchronizationschema.md).
+Describes an object and its attributes. Object definitions are part of the **objects** property of [directoryDefinition](../resources/synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](../resources/synchronization-synchronizationschema.md).
 
 ## Properties
 

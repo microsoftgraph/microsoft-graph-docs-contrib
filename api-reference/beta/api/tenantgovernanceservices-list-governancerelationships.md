@@ -3,6 +3,8 @@ title: "List governanceRelationships"
 description: "Get a list of governance relationships."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,13 +12,13 @@ doc_type: apiPageType
 
 # List governanceRelationships
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [governanceRelationship](../resources/tenantgovernanceservices-governancerelationship.md) objects and their properties. This API method returns all governance relationships where the calling tenant is either the governing tenant or the governed tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -90,6 +92,10 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/governanceRelati
 [!INCLUDE [sample-code](../includes/snippets/php/list-governancerelationship-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-governancerelationship-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-governancerelationship-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,7 +109,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.tenantGovernanceServices.governanceRelationship)"
+  "@odata.type": "Collection(microsoft.graph.governanceRelationship)"
 }
 -->
 ``` http
@@ -113,7 +119,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.tenantGovernanceServices.governanceRelationship",
+      "@odata.type": "#microsoft.graph.governanceRelationship",
         "createdType": "approvedByAdmin",
         "creationDateTime": "2025-09-11T17:07:41.2019694Z",
         "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
@@ -166,4 +172,3 @@ Content-Type: application/json
   ]
 }
 ```
-

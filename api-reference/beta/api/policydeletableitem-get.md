@@ -32,8 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "permissions",
   "name": "policydeletableitem-get-permissions",
   "requestUrls": ["GET /policies/deletedItems/crossTenantPartners/{id}", "GET /policies/deletedItems/crossTenantSyncPolicyPartners/{id}"],
-  "mergePermissions": true 
-  
+  "mergePermissions": true
+
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-get-permissions.md)]
@@ -46,8 +46,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "permissions",
   "name": "policydeletableitem-get-permissions",
   "requestUrls": ["GET /identity/conditionalAccess/deletedItems/policies/{id}", "GET /identity/conditionalAccess/deletedItems/namedLocations/{id}"],
-  "mergePermissions": true 
-  
+  "mergePermissions": true
+
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-get-2-permissions.md)]
@@ -172,7 +172,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantPartners/$entity",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
   "deletedDateTime": "2025-06-18T22:58:04Z",
   "displayName": null,
@@ -262,7 +261,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantSyncPolicyPartners/$entity",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
   "displayName": null,
   "deletedDateTime": "2025-06-18T23:11:01Z",

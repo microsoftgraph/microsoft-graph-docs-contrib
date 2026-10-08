@@ -14,9 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables reviewers to set the `applyResult` and `applyDescription` on all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in batches by using **customDataProvidedResourceId**.
+Enables reviewers to set the **applyResult** and **applyDescription** on all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in a specific [accessReviewInstance](../resources/accessreviewinstance.md) in batches by using **customDataProvidedResourceId**.
 
 **NOTE:** The access review instance must be in an `Applying` state.
+
+This action is part of the unified access reviews surface and is available only through the `/identityGovernance/accessReviews/unified` route. For more information, see [unifiedRoot](../resources/unifiedroot.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -39,8 +41,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/batchApplyCustomDataProvidedResourceDecisions
+```http
+POST /identityGovernance/accessReviews/unified/instances/{accessReviewInstanceId}/batchApplyCustomDataProvidedResourceDecisions
 ```
 
 ## Request headers
@@ -49,7 +51,6 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
-|x-accessreviews-version|`vNext`. Required.|
 
 ## Request body
 
@@ -79,8 +80,8 @@ The following example shows a request.
   "name": "accessreviewinstancethis.batchapplycustomdataprovidedresourcedecisions"
 }
 -->
-``` http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/batchApplyCustomDataProvidedResourceDecisions
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/unified/instances/{accessReviewInstanceId}/batchApplyCustomDataProvidedResourceDecisions
 Content-Type: application/json
 
 {
@@ -116,7 +117,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 The following example shows the response.
@@ -126,7 +126,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 

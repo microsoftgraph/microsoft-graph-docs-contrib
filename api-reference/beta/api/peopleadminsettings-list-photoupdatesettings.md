@@ -1,6 +1,6 @@
 ---
 title: "List photoUpdateSettings"
-description: "Get a list of the photoUpdateSettings objects and their properties."
+description: "Get the properties of a photoUpdateSettings object."
 author: "fondieki"
 ms.localizationpriority: medium
 ms.subservice: "people"
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [photoUpdateSettings](../resources/photoupdatesettings.md) objects and their properties.
+Get the properties of a [photoUpdateSettings](../resources/photoupdatesettings.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -37,7 +37,7 @@ GET /admin/people/photoUpdateSettings
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -51,35 +51,69 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [photoUpdateSettings](../resources/photoupdatesettings.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [photoUpdateSettings](../resources/photoupdatesettings.md) object in the response body.
 
 ## Examples
 
 ### Request
+The following example shows a request.
 
-
-```http
-GET /admin/people/photoUpdateSettings
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_photoupdatesettings"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/admin/people/photoUpdateSettings
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-photoupdatesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-photoupdatesettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-photoupdatesettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-photoupdatesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-photoupdatesettings-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-photoupdatesettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-photoupdatesettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
-If successful, this method returns a 200 OK response code and an photoUpdateSettings object in the response body.
-
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.photoUpdateSettings"
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.photoUpdateSettings",
-      "id": "20a03e03-52a3-3c97-6c4f-db600fca32ba",
-      "source": "String",
-      "allowedRoles": [
-        "String"
-      ]
-    }
-  ]
+    "source": "cloud",
+    "allowedRoles": []
 }
 ```

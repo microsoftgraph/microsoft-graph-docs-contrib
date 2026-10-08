@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [photoUpdateSettings](../resources/photoupdatesettings.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -73,11 +73,8 @@ PATCH https://graph.microsoft.com/beta/admin/people/photoUpdateSettings
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.photoUpdateSettings",
-  "source": "String",
-  "allowedRoles": [
-    "String"
-  ]
+    "source": "cloud",
+    "allowedRoles": []
 }
 ```
 
@@ -126,12 +123,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.photoUpdateSettings",
-  "id": "20a03e03-52a3-3c97-6c4f-db600fca32ba",
-  "source": "String",
-  "allowedRoles": [
-    "String"
-  ]
+    "source": "cloud",
+    "allowedRoles": []
 }
 ```
 

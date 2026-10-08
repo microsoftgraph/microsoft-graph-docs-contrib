@@ -1,0 +1,136 @@
+---
+title: "Update task"
+description: "Update the properties of a task object."
+author: "alfeldsh"
+ms.date: 05/29/2026
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: apiPageType
+---
+
+# Update task
+
+Namespace: microsoft.graph.security.caseManagement
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a [task](../resources/security-casemanagement-task.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_casemanagement_task_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-casemanagement-task-update-permissions.md)]
+[!INCLUDE [rbac-case-management-apis](../includes/rbac-for-apis/rbac-case-management-apis.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /security/caseManagement/cases/{caseId}/tasks/{taskId}
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+Supply a JSON representation of the resource. For polymorphic resources, include `@odata.type` to identify the derived type.
+
+You can update all client-managed task properties. The **id**, **createdBy**, **createdDateTime**, **lastModifiedBy**, and **lastModifiedDateTime** properties are server managed and can't be updated.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|assignedTo|String|The user assigned to the resource.|
+|category|[microsoft.graph.security.caseManagement.caseTaskCategory](../resources/security-casemanagement-task.md#casetaskcategory-values)|The functional category of the task.|
+|closingNotes|String|Notes recorded when the resource is completed or closed.|
+|description|String|The description of the resource.|
+|displayName|String|The display name of the resource.|
+|dueDateTime|DateTimeOffset|The target completion date and time.|
+|priority|[microsoft.graph.security.caseManagement.caseTaskPriority](../resources/security-casemanagement-task.md#casetaskpriority-values)|The priority assigned to the resource.|
+|status|[microsoft.graph.security.caseManagement.taskStatus](../resources/security-casemanagement-task.md#taskstatus-values)|The lifecycle status of the resource.|
+
+## Response
+
+If successful, this method returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "security_casemanagement_update_task"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/security/caseManagement/cases/{caseId}/tasks/{taskId}
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.security.caseManagement.task",
+  "displayName": "Validate affected devices",
+  "status": "new",
+  "description": "Review affected devices and collect evidence",
+  "assignedTo": "user@contoso.com",
+  "closingNotes": "Investigation completed and documented",
+  "dueDateTime": "2026-06-29T17:54:43Z",
+  "priority": "high",
+  "category": "investigate"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/security-casemanagement-update-task-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/security-casemanagement-update-task-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/security-casemanagement-update-task-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-casemanagement-update-task-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-update-task-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-update-task-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-update-task-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```

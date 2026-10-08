@@ -44,7 +44,7 @@ The following table lists common use cases for the Copilot connectors API.
 The following are current known limitations:
 
 - An application is limited to 25 concurrent operations on a connection.
-- Maximum size of an `externalItem` entity is 4 MB.
+- Maximum size of an `externalItem` entity is 30 MB.
 
 ## Related content
 

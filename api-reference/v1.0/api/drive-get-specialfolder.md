@@ -192,7 +192,7 @@ Content-Type: application/json
 
 If your app has read-only permissions, the request to get a special folder or
 the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden`
-error if the special folder does not already exist.
+error if the special folder doesn't already exist.
 
 <!-- {
   "type": "#page.annotation",

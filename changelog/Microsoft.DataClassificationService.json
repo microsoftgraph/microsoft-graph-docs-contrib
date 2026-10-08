@@ -1,5 +1,419 @@
-﻿{
+{
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "errorSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [errorSettings](https://learn.microsoft.com/en-us/graph/api/resources/errorsettings?view=graph-rest-beta) complex type to represent enforcement behavior when policy evaluation can't be completed.",
+          "Target": "errorSettings"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorAction** property to the [errorSettings](https://learn.microsoft.com/en-us/graph/api/resources/errorsettings?view=graph-rest-beta) complex type.",
+          "Target": "errorSettings"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isEnabled** property to the [errorSettings](https://learn.microsoft.com/en-us/graph/api/resources/errorsettings?view=graph-rest-beta) complex type.",
+          "Target": "errorSettings"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "policyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/policyconfiguration?view=graph-rest-beta) complex type to represent configuration that applies to policy evaluation scenarios.",
+          "Target": "policyConfiguration"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorSettings** property to the [policyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/policyconfiguration?view=graph-rest-beta) complex type.",
+          "Target": "policyConfiguration"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [policyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/policyconfiguration?view=graph-rest-beta) complex type.",
+          "Target": "policyConfiguration"
+        },
+        {
+          "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyConfiguration** property to the [policyScopeBase](https://learn.microsoft.com/en-us/graph/api/resources/policyscopebase?view=graph-rest-beta) resource type to expose the effective Secure by Default configuration returned by the protection scope APIs.",
+          "Target": "policyScopeBase"
+        }
+      ],
+      "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-23T18:06:29.0888048Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "evaluationIncompleteActivityMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluationIncompleteActivityMetadata](https://learn.microsoft.com/en-us/graph/api/resources/evaluationincompleteactivitymetadata?view=graph-rest-beta) complex type to the [contentActivity](https://learn.microsoft.com/en-us/graph/api/resources/contentactivity?view=graph-rest-beta) resource for reporting Secure by Default policy evaluations that couldn't be completed.",
+          "Target": "evaluationIncompleteActivityMetadata"
+        },
+        {
+          "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "evaluationErrorDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluationErrorDetail](https://learn.microsoft.com/en-us/graph/api/resources/evaluationerrordetail?view=graph-rest-beta) complex type.",
+          "Target": "evaluationErrorDetail"
+        },
+        {
+          "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "errorActions",
+          "ChangeType": "Addition",
+          "Description": "Added the [errorActions](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#erroractions-values) enumeration type.",
+          "Target": "errorActions"
+        },
+        {
+          "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "evaluationErrorCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluationErrorCategory](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#evaluationerrorcategory-values) enumeration type.",
+          "Target": "evaluationErrorCategory"
+        },
+        {
+          "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "evaluationErrorType",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluationErrorType](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#evaluationerrortype-values) enumeration type.",
+          "Target": "evaluationErrorType"
+        }
+      ],
+      "Id": "41bbb982-77dd-4adf-8205-46edd1c26b36",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-21T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0ce048fe-8751-4864-bbb6-eba9552614dd",
+          "ApiChange": "Member",
+          "ChangedApiName": "privacyDataMatch",
+          "ChangeType": "Addition",
+          "Description": "Added the `privacyDataMatch` member to the **classificationMethod** enumeration for the **sensitiveType** resource to support privacy data matching based on tenant data.",
+          "Target": "classificationMethod"
+        },
+        {
+          "Id": "0ce048fe-8751-4864-bbb6-eba9552614dd",
+          "ApiChange": "Member",
+          "ChangedApiName": "aiPowered",
+          "ChangeType": "Addition",
+          "Description": "Added the `aiPowered` member to the **classificationMethod** enumeration for the **sensitiveType** resource to support AI-powered classification that can benefit from supported caller-supplied embeddings.",
+          "Target": "classificationMethod"
+        },
+        {
+          "Id": "0ce048fe-8751-4864-bbb6-eba9552614dd",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknownFutureValue` member to the **classificationMethod** enumeration for the **sensitiveType** resource to support forward-compatible handling of future values.",
+          "Target": "classificationMethod"
+        }
+      ],
+      "Id": "0ce048fe-8751-4864-bbb6-eba9552614dd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-11T19:48:46.3390947Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e210704c-83c6-4a49-ab52-b565204f3126",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "chunkOffsets",
+          "ChangeType": "Addition",
+          "Description": "Added the [chunkOffsets](https://learn.microsoft.com/en-us/graph/api/resources/chunkoffsets?view=graph-rest-beta) complex type.",
+          "Target": "chunkOffsets"
+        },
+        {
+          "Id": "e210704c-83c6-4a49-ab52-b565204f3126",
+          "ApiChange": "Property",
+          "ChangedApiName": "chunkOffsets",
+          "ChangeType": "Addition",
+          "Description": "Added the **chunkOffsets** property to the [embeddingInput](https://learn.microsoft.com/en-us/graph/api/resources/embeddinginput?view=graph-rest-beta) resource.",
+          "Target": "embeddingInput"
+        }
+      ],
+      "Id": "e210704c-83c6-4a49-ab52-b565204f3126",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-09T16:32:59.9686382Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f0da4038-76fa-42a9-a297-c857c83fd695",
+          "ApiChange": "Member",
+          "ChangedApiName": "contentFiltering",
+          "ChangeType": "Addition",
+          "Description": "Added the `contentFiltering` member to the [userActivityTypes](https://learn.microsoft.com/graph/api/resources/enums-security?view=graph-rest-beta#useractivitytypes-values) enumeration.",
+          "Target": "userActivityTypes"
+        }
+      ],
+      "Id": "f0da4038-76fa-42a9-a297-c857c83fd695",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-08T20:51:00.2923818Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "evaluationScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **evaluationScopeType** enumeration type.",
+          "Target": "evaluationScopeType"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Resource",
+          "ChangedApiName": "evaluationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluationScope](https://learn.microsoft.com/en-us/graph/api/resources/evaluationscope?view=graph-rest-beta) resource.",
+          "Target": "evaluationScope"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyLocationTool",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyLocationTool](https://learn.microsoft.com/en-us/graph/api/resources/policylocationtool?view=graph-rest-beta) resource.",
+          "Target": "policyLocationTool"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Property",
+          "ChangedApiName": "locationExclusions",
+          "ChangeType": "Addition",
+          "Description": "Added the **locationExclusions** property to the [policyScopeBase](https://learn.microsoft.com/en-us/graph/api/resources/policyscopebase?view=graph-rest-beta) resource.",
+          "Target": "policyScopeBase"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Property",
+          "ChangedApiName": "evaluationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **evaluationScope** property to the [processContentRequest](https://learn.microsoft.com/en-us/graph/api/resources/processcontentrequest?view=graph-rest-beta) resource.",
+          "Target": "processContentRequest"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Property",
+          "ChangedApiName": "sourceLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **sourceLocation** property to the [protectedApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/protectedapplicationmetadata?view=graph-rest-beta) resource.",
+          "Target": "protectedApplicationMetadata"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "evaluationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the `evaluationScope` parameter to the [compute](https://learn.microsoft.com/en-us/graph/api/tenantprotectionscopecontainer-compute?view=graph-rest-beta) method.",
+          "Target": "compute"
+        },
+        {
+          "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+          "ApiChange": "Method",
+          "ChangedApiName": "processContent",
+          "ChangeType": "Addition",
+          "Description": "Added the [processContent](https://learn.microsoft.com/en-us/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta) method to the [tenantDataSecurityAndGovernance](https://learn.microsoft.com/en-us/graph/api/resources/tenantdatasecurityandgovernance?view=graph-rest-beta) resource.",
+          "Target": "tenantDataSecurityAndGovernance"
+        }
+      ],
+      "Id": "45f4597a-e518-43e0-992e-c778d399e853",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-03T00:19:48.5682322Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e845e70f-0e71-4ef3-ab89-4b1bbb9d9953",
+          "ApiChange": "Property",
+          "ChangedApiName": "complianceUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **complianceUrl** property to the [policyTipAction](https://learn.microsoft.com/en-us/graph/api/resources/policyTipAction?view=graph-rest-beta) resource.",
+          "Target": "policyTipAction"
+        },
+        {
+          "Id": "e845e70f-0e71-4ef3-ab89-4b1bbb9d9953",
+          "ApiChange": "Property",
+          "ChangedApiName": "matchedConditionsDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **matchedConditionsDescription** property to the [policyTipAction](https://learn.microsoft.com/en-us/graph/api/resources/policyTipAction?view=graph-rest-beta) resource.",
+          "Target": "policyTipAction"
+        }
+      ],
+      "Id": "e845e70f-0e71-4ef3-ab89-4b1bbb9d9953",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-19T05:18:33.5364712Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "86651b97-6020-453d-9460-572f5efeb88b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "embeddingInput",
+          "ChangeType": "Addition",
+          "Description": "Added the [embeddingInput](https://learn.microsoft.com/en-us/graph/api/resources/embeddinginput?view=graph-rest-beta) resource.",
+          "Target": "embeddingInput"
+        },
+        {
+          "Id": "86651b97-6020-453d-9460-572f5efeb88b",
+          "ApiChange": "Property",
+          "ChangedApiName": "embeddings",
+          "ChangeType": "Addition",
+          "Description": "Added the **embeddings** property to the [textClassificationRequest](https://learn.microsoft.com/en-us/graph/api/resources/textclassificationrequest?view=graph-rest-beta) resource.",
+          "Target": "textClassificationRequest"
+        }
+      ],
+      "Id": "86651b97-6020-453d-9460-572f5efeb88b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-10T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c9d06e62-9da2-47bc-9a90-6940b8078c55",
+          "ApiChange": "Member",
+          "ChangedApiName": "policyTip",
+          "ChangeType": "Addition",
+          "Description": "Added the `policyTip` member to the **dlpAction** enumeration.",
+          "Target": "dlpAction"
+        },
+        {
+          "Id": "c9d06e62-9da2-47bc-9a90-6940b8078c55",
+          "ApiChange": "Property",
+          "ChangedApiName": "overrideOption",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **overrideOption** property from the [notifyUserAction](https://learn.microsoft.com/en-us/graph/api/resources/notifyUserAction?view=graph-rest-beta) resource.",
+          "Target": "notifyUserAction"
+        },
+        {
+          "Id": "c9d06e62-9da2-47bc-9a90-6940b8078c55",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyTip",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **policyTip** property from the [notifyUserAction](https://learn.microsoft.com/en-us/graph/api/resources/notifyUserAction?view=graph-rest-beta) resource.",
+          "Target": "notifyUserAction"
+        },
+        {
+          "Id": "c9d06e62-9da2-47bc-9a90-6940b8078c55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyTipAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyTipAction](https://learn.microsoft.com/en-us/graph/api/resources/policyTipAction?view=graph-rest-beta) resource.",
+          "Target": "policyTipAction"
+        }
+      ],
+      "Id": "c9d06e62-9da2-47bc-9a90-6940b8078c55",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-19T16:29:50.6220555Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c6ec8d31-b2e6-463a-a440-1461b2fddf86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentActivityMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentActivityMetadata](https://learn.microsoft.com/graph/api/resources/contentactivitymetadata?view=graph-rest-beta) resource type.",
+          "Target": "contentActivityMetadata"
+        },
+        {
+          "Id": "c6ec8d31-b2e6-463a-a440-1461b2fddf86",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "enforcementResultStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **enforcementResultStatus** enumeration type.",
+          "Target": "enforcementResultStatus"
+        }
+      ],
+      "Id": "c6ec8d31-b2e6-463a-a440-1461b2fddf86",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-13T16:52:44.8032878Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6557ba0e-e152-4737-acad-833397b3e369",
+          "ApiChange": "Member",
+          "ChangedApiName": "copyToClipboard",
+          "ChangeType": "Addition",
+          "Description": "Added the `copyToClipboard` member to the **userActivityType** enumeration.",
+          "Target": "userActivityType"
+        },
+        {
+          "Id": "6557ba0e-e152-4737-acad-833397b3e369",
+          "ApiChange": "Member",
+          "ChangedApiName": "copyToClipboard",
+          "ChangeType": "Addition",
+          "Description": "Added the `copyToClipboard` member to the **userActivityTypes** enumeration.",
+          "Target": "userActivityTypes"
+        }
+      ],
+      "Id": "6557ba0e-e152-4737-acad-833397b3e369",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-26T17:15:06.1799522Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
@@ -285,14 +699,14 @@
           "Target": "resourceAccessDetail"
         }
       ],
-        "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2026-01-14T00:00:00.0000000Z",
-        "WorkloadArea": "Security",
-        "SubArea": "Data security and compliance"
-      },
-      {
+      "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-14T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
       "ChangeList": [
         {
           "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
@@ -327,14 +741,14 @@
           "Target": "processFileMetadata"
         }
       ],
-        "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2026-02-18T00:00:00.0000000Z",
-        "WorkloadArea": "Security",
-        "SubArea": "Data security and compliance"
-      },
-      {
+      "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-02-18T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
       "ChangeList": [
         {
           "Id": "1bcf0683-8da5-49e2-ad7b-939947ea200d",
@@ -897,7 +1311,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "computeRightsAndInheritance",
           "ChangeType": "Addition",
-          "Description": "Added the [computeRightsAndInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeRightsAndInheritance?view=graph-rest-1.0) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-1.0) resource.",
+          "Description": "Added the [computeRightsAndInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeRightsAndInheritance?view=graph-rest-1.0) method to the **sensitivityLabel** resource.",
           "Target": "sensitivityLabel"
         },
         {
@@ -921,7 +1335,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "computeInheritance",
           "ChangeType": "Addition",
-          "Description": "Added the [computeInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeInheritance?view=graph-rest-1.0) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-1.0) resource.",
+          "Description": "Added the [computeInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeInheritance?view=graph-rest-1.0) method to the **sensitivityLabel** resource.",
           "Target": "sensitivityLabel"
         },
         {
@@ -958,7 +1372,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
-        {
+    {
       "ChangeList": [
         {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
@@ -1048,7 +1462,7 @@
           "Description": "Added the [blockAccessAction](https://learn.microsoft.com/en-us/graph/api/resources/blockAccessAction?view=graph-rest-beta) resource.",
           "Target": "blockAccessAction"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classifcationErrorBase",
@@ -1056,7 +1470,7 @@
           "Description": "Added the [classifcationErrorBase](https://learn.microsoft.com/en-us/graph/api/resources/classifcationErrorBase?view=graph-rest-beta) resource.",
           "Target": "classifcationErrorBase"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classificationError",
@@ -1064,7 +1478,7 @@
           "Description": "Added the [classificationError](https://learn.microsoft.com/en-us/graph/api/resources/classificationError?view=graph-rest-beta) resource.",
           "Target": "classificationError"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classificationInnerError",
@@ -1072,7 +1486,7 @@
           "Description": "Added the [classificationInnerError](https://learn.microsoft.com/en-us/graph/api/resources/classificationInnerError?view=graph-rest-beta) resource.",
           "Target": "classificationInnerError"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "customMetadataDictionary",
@@ -1144,7 +1558,7 @@
           "Description": "Added the **isDefault** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "isEnabled",
@@ -1152,7 +1566,7 @@
           "Description": "Added the **isEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "isEndpointProtectionEnabled",
@@ -1160,7 +1574,7 @@
           "Description": "Added the **isEndpointProtectionEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "labelActions",
@@ -1168,7 +1582,7 @@
           "Description": "Added the **labelActions** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "priority",
@@ -1628,7 +2042,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
-      {
+    {
       "ChangeList": [
         {
           "Id": "c27c982e-a5f0-4ce9-af0d-7ad5ee81f354",

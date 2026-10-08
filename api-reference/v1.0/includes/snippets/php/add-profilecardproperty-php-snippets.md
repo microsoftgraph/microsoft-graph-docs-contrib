@@ -14,7 +14,6 @@ use Microsoft\Graph\Generated\Models\DisplayNameLocalization;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ProfileCardProperty();
-$requestBody->setDirectoryPropertyName('CustomAttribute1');
 $annotationsProfileCardAnnotation1 = new ProfileCardAnnotation();
 $annotationsProfileCardAnnotation1->setDisplayName('Cost Center');
 $localizationsDisplayNameLocalization1 = new DisplayNameLocalization();
@@ -26,6 +25,8 @@ $annotationsProfileCardAnnotation1->setLocalizations($localizationsArray);
 $annotationsArray []= $annotationsProfileCardAnnotation1;
 $requestBody->setAnnotations($annotationsArray);
 
+$requestBody->setDirectoryPropertyName('CustomAttribute1');
+$requestBody->setIsVisible(true);
 
 $result = $graphServiceClient->admin()->people()->profileCardProperties()->post($requestBody)->wait();
 

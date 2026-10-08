@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object for an RBAC provider. You cannot delete built-in roles. This feature requires a Microsoft Entra ID P1 or P2 license.
+Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object for an RBAC provider. You cannot delete built-in roles. For the directory provider, deleting an active custom role definition soft-deletes it. You can then restore the role or permanently delete it from the deleted-items collection. This feature requires a Microsoft Entra ID P1 or P2 license.
 
 
 The following RBAC providers are currently supported:
@@ -69,6 +69,12 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 ```
 
+To permanently delete a soft-deleted custom role definition for a directory provider:
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /roleManagement/directory/deletedItems/roleDefinitions/{id}
+```
+
 To delete a role definition for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -96,7 +102,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example 1: Delete a **unifiedRoleDefinition** resource for a directory provider
+## Example 1: Soft-delete a **unifiedRoleDefinition** resource for a directory provider
 
 ### Request
 
@@ -154,6 +160,33 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
+## Example 2: Permanently delete a soft-deleted **unifiedRoleDefinition** resource for a directory provider
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "permanently_delete_unifiedroledefinition",
+  "sampleKeys": ["a1b2c3d4-5678-90ab-cdef-1234567890ab"]
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/roleManagement/directory/deletedItems/roleDefinitions/a1b2c3d4-5678-90ab-cdef-1234567890ab
+```
+
+### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -164,7 +197,7 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
-## Example 2: Delete a **unifiedRoleDefinition** resource for a Cloud PC provider
+## Example 3: Delete a **unifiedRoleDefinition** resource for a Cloud PC provider
 ### Request
 
 
@@ -222,7 +255,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## Example 3: Delete a **unifiedRoleDefinition** resource for a Defender provider
+## Example 4: Delete a **unifiedRoleDefinition** resource for a Defender provider
 
 ### Request
 

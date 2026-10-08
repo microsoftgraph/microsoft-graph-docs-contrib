@@ -17,14 +17,14 @@ The mailbox import and export APIs in Microsoft Graph allow your application to 
 These APIs support access to data in users' primary, shared, and archive mailboxes on Exchange Online. Items can be imported to the same mailbox or a different one.
 
 > [!Important]
-> The mailbox import and export APIs in Microsoft Graph are not designed for mailbox backup and restore. For mailbox backup and restore in Microsoft 365, see [Microsoft 365 Backup](/microsoft-365/backup/backup-overview) or the [Microsoft Graph Backup Storage overview](/graph/backup-storage-concept-overview).
+> The mailbox import and export APIs in Microsoft Graph aren't designed for mailbox backup and restore. For mailbox backup and restore in Microsoft 365, see [Microsoft 365 Backup](/microsoft-365/backup/backup-overview) and [Microsoft 365 Backup storage in Microsoft Graph](/graph/backup-storage-concept-overview).
 
 ## How to use the mailbox import and export APIs
 
 The following steps allow your app to systematically export and import contents from Exchange mailboxes:
 
 1. [Get a list of mailboxes that belong to a particular user](../api/usersettings-list-exchange.md).
-2. Discover the contents of the mailbox as a set of [folders](./mailboxfolder.md) and [items](./mailboxitem.md).
+2. Discover the contents of the mailbox as a set of [folders](./mailboxfolder.md) and [items](./mailboxitem.md). Use the **id** property returned by [List folders](../api/mailbox-list-folders.md) as the folder identifier for mailbox import and export operations. For example, filter folders by class with `$filter=type eq 'IPF.Appointment'` to find calendar-class folders.
 3. [Export items from a mailbox](../api/mailbox-exportitems.md).
 4. Create or update mailbox [folders](./mailboxfolder.md).
 5. [Import an item into the same or a different mailbox](../api/mailbox-createimportsession.md).

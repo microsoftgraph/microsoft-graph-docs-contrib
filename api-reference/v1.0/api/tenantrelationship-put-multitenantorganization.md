@@ -1,7 +1,7 @@
 ---
 title: "Create multiTenantOrganization"
 description: "Create a new multitenant organization."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

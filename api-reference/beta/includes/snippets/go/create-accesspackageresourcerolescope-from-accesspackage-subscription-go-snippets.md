@@ -39,10 +39,8 @@ accessPackageResource.SetOriginSystem(&originSystem)
 accessPackageResourceRole.SetAccessPackageResource(accessPackageResource)
 originSystem := "AzureResources"
 accessPackageResourceRole.SetOriginSystem(&originSystem) 
-additionalData := map[string]interface{}{
-	"type" : "active", 
-}
-accessPackageResourceRole.SetAdditionalData(additionalData)
+type := graphmodels.ACTIVE_ROLETYPE 
+accessPackageResourceRole.SetType(&type) 
 requestBody.SetAccessPackageResourceRole(accessPackageResourceRole)
 accessPackageResourceScope := graphmodels.NewAccessPackageResourceScope()
 id := "e1e0ec8c-472d-4ec5-a8f9-29e0bc275640"

@@ -112,6 +112,8 @@ items:
       href: ../../resources/directory.md
     - name: List
       href: ../../api/directory-deleteditems-list.md
+    - name: List remote tenant groups
+      href: ../../api/directory-list-remotetenantgroups.md
     - name: Get
       href: ../../api/directory-deleteditems-get.md
     - name: Restore
@@ -134,6 +136,8 @@ items:
       href: ../../api/device-update.md
     - name: Delete
       href: ../../api/device-delete.md
+    - name: Provision
+      href: ../../api/device-provision.md
     - name: Get delta
       href: ../../api/device-delta.md
     - name: List member of
@@ -386,6 +390,8 @@ items:
       href: ../../api/uxsetting-update.md
   - name: Mobility management policy
     items:
+    - name: Mobility management policy
+      href: ../../resources/mobilitymanagementpolicy.md
     - name: Mobile app management policy
       items:
       - name: Mobile app management policy
@@ -584,21 +590,23 @@ items:
         href: ../../api/admintodo-get.md
       - name: Update
         href: ../../api/admintodo-update.md
-    - name: Complex types
-      items:
-      - name: Admin
-        href: ../../resources/admin.md
-      - name: Apps and services settings
-        href: ../../resources/appsandservicessettings.md
-      - name: Customer voice settings
-        href: ../../resources/customervoicesettings.md
-      - name: Forms settings
-        href: ../../resources/formssettings.md
-      - name: To-do settings
-        href: ../../resources/todosettings.md
+  - name: Remote tenant group
+    items:
+    - name: Remote tenant group
+      href: ../../resources/remotetenantgroup.md
+    - name: List
+      href: ../../api/directory-list-remotetenantgroups.md
+    - name: Get
+      href: ../../api/remotetenantgroup-get.md
   - name: Role management
     displayName: Unified RBAC
     items:
+    - name: Directory role management deleted item container
+      items:
+      - name: Directory role management deleted item container
+        href: ../../resources/directoryrolemanagementdeleteditemcontainer.md
+      - name: List role definitions
+        href: ../../api/directoryrolemanagementdeleteditemcontainer-list-roledefinitions.md
     - name: Role management
       href: ../../resources/rolemanagement.md
     - name: Role definition
@@ -615,6 +623,8 @@ items:
         href: ../../api/unifiedroledefinition-update.md
       - name: Delete
         href: ../../api/unifiedroledefinition-delete.md
+      - name: Restore
+        href: ../../api/unifiedroledefinition-restore.md
       - name: List assigned principals
         href: ../../api/unifiedroledefinition-assignedprincipals.md
     - name: Role assignment
@@ -677,14 +687,10 @@ items:
         href: ../../api/customappscope-update.md
       - name: Delete for Exchange Online
         href: ../../api/customappscope-delete.md
-  - name: Tenant information
+  - name: Complex types
     items:
-    - name: Tenant information
-      href: ../../resources/tenantinformation.md
-    - name: Find tenant by domain name
-      href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
-    - name: Find tenant by tenant ID
-      href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
+    - name: Provision response
+      href: ../../resources/provisionresponse.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
@@ -758,6 +764,10 @@ items:
         href: ../../api/accessreviewstage-update.md
       - name: Stop
         href: ../../api/accessreviewstage-stop.md
+      - name: Accept recommendations
+        href: ../../api/accessreviewstage-acceptrecommendations.md
+      - name: Batch record decisions
+        href: ../../api/accessreviewstage-batchrecorddecisions.md
       - name: Filter by current user
         href: ../../api/accessreviewstage-filterbycurrentuser.md
       - name: List decisions from a stage of an instance
@@ -805,78 +815,14 @@ items:
         href: ../../api/accessreviewpolicy-get.md
       - name: Update
         href: ../../api/accessreviewpolicy-update.md
-    - name: Complex types
+    - name: Unified root
       items:
-      - name: Access review apply action
-        href: ../../resources/accessreviewapplyaction.md
-      - name: Access review error
-        href: ../../resources/accessreviewerror.md
-      - name: Access review history schedule settings
-        href: ../../resources/accessreviewhistoryschedulesettings.md
-      - name: Access review inactive users query scope
-        href: ../../resources/accessreviewinactiveusersqueryscope.md
-      - name: Access review instance decision item access package assignment policy resource
-        href: ../../resources/accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource.md
-      - name: Access review instance decision item Azure role resource
-        href: ../../resources/accessreviewinstancedecisionitemazureroleresource.md
-      - name: Access review instance decision item resource
-        href: ../../resources/accessreviewinstancedecisionitemresource.md
-      - name: Access review instance decision item service principal resource
-        href: ../../resources/accessreviewinstancedecisionitemserviceprincipalresource.md
-      - name: Access review instance decision item service principal target
-        href: ../../resources/accessreviewinstancedecisionitemserviceprincipaltarget.md
-      - name: Access review instance decision item target
-        href: ../../resources/accessreviewinstancedecisionitemtarget.md
-      - name: Access review instance decision item user target
-        href: ../../resources/accessreviewinstancedecisionitemusertarget.md
-      - name: Access review notification recipient item
-        href: ../../resources/accessreviewnotificationrecipientitem.md
-      - name: Access review notification recipient query scope
-        href: ../../resources/accessreviewnotificationrecipientqueryscope.md
-      - name: Access review notification recipient scope
-        href: ../../resources/accessreviewnotificationrecipientscope.md
-      - name: Access review query scope
-        href: ../../resources/accessreviewqueryscope.md
-      - name: Access review recommendation insight setting
-        href: ../../resources/accessreviewrecommendationinsightsetting.md
-      - name: Access review reviewer
-        href: ../../resources/accessreviewreviewer.md
-      - name: Access review reviewer scope
-        href: ../../resources/accessreviewreviewerscope.md
-      - name: Access review schedule settings
-        href: ../../resources/accessreviewschedulesettings.md
-      - name: Access review scope
-        href: ../../resources/accessreviewscope.md
-      - name: Access review set
-        href: ../../resources/accessreviewset.md
-      - name: Access review stage settings
-        href: ../../resources/accessreviewstagesettings.md
-      - name: App consent approval route
-        href: ../../resources/appconsentapprovalroute.md
-      - name: App consent request scope
-        href: ../../resources/appconsentrequestscope.md
-      - name: Decision item principal resource membership
-        href: ../../resources/decisionitemprincipalresourcemembership.md
-      - name: Disable and delete user apply action
-        href: ../../resources/disableanddeleteuserapplyaction.md
-      - name: Group peer outlier recommendation insight settings
-        href: ../../resources/grouppeeroutlierrecommendationinsightsettings.md
-      - name: Patterned recurrence
-        href: ../../resources/patternedrecurrence.md
-      - name: Principal resource memberships scope
-        href: ../../resources/principalresourcemembershipsscope.md
-      - name: Recurrence pattern
-        href: ../../resources/recurrencepattern.md
-      - name: Recurrence range
-        href: ../../resources/recurrencerange.md
-      - name: Remove access apply action
-        href: ../../resources/removeaccessapplyaction.md
-      - name: Request
-        href: ../../resources/request.md
-      - name: User last sign-in recommendation insight setting
-        href: ../../resources/userlastsignInrecommendationinsightsetting.md
-      - name: User sign-in insight
-        href: ../../resources/usersigninInsight.md
+      - name: Unified root
+        href: ../../resources/unifiedroot.md
+      - name: List definitions
+        href: ../../api/unifiedroot-list-definitions.md
+      - name: Create definition
+        href: ../../api/unifiedroot-post-definitions.md
   - name: Access reviews (deprecated)
     items:
     - name: Overview
@@ -1167,6 +1113,8 @@ items:
         href: ../../resources/customdataprovidedresource.md
       - name: Create
         href: ../../api/customdataprovidedresource-post-uploadsessions.md
+    - name: Custom data provided resource access review upload session
+      href: ../../resources/customdataprovidedresourceaccessreviewuploadsession.md
     - name: Access package resource environment
       items:
       - name: Access package resource environment
@@ -1345,144 +1293,8 @@ items:
         href: ../../api/accesspackageresource-delete-uploadsessions.md
     - name: Complex types
       items:
-      - name: Access package answer
-        href: ../../resources/accesspackageanswer.md
-      - name: Access package answer choice
-        href: ../../resources/accesspackageanswerchoice.md
-      - name: Access package answer string
-        href: ../../resources/accesspackageanswerstring.md
-      - name: Access package assignment request callback data
-        href: ../../resources/accesspackageassignmentrequestcallbackdata.md
-      - name: Access package assignment request requirements
-        href: ../../resources/accesspackageassignmentrequestrequirements.md
-      - name: Access package localized content
-        href: ../../resources/accesspackagelocalizedcontent.md
-      - name: Access package localized text
-        href: ../../resources/accesspackagelocalizedtext.md
-      - name: Access package multiple choice question
-        href: ../../resources/accesspackagemultiplechoicequestion.md
-      - name: Access package question
-        href: ../../resources/accesspackagequestion.md
-      - name: Access package resource attribute
-        href: ../../resources/accesspackageresourceattribute.md
-      - name: Access package resource attribute destination
-        href: ../../resources/accesspackageresourceattributedestination.md
-      - name: Access package resource attribute question
-        href: ../../resources/accesspackageresourceattributequestion.md
-      - name: Access package resource attribute source
-        href: ../../resources/accesspackageresourceattributesource.md
-      - name: Access package resource scope
-        href: ../../resources/accesspackageresourcescope.md
-      - name: Access package suggestion reason
-        href: ../../resources/accesspackagesuggestionreason.md
-      - name: Access package suggestion related people based
-        href: ../../resources/accesspackagesuggestionrelatedpeoplebased.md
-      - name: Access package suggestion self assignment history based
-        href: ../../resources/accesspackagesuggestionselfassignmenthistorybased.md
-      - name: Access package text input question
-        href: ../../resources/accesspackagetextinputquestion.md
-      - name: Access package user directory attribute store
-        href: ../../resources/accesspackageuserdirectoryattributestore.md
-      - name: Access review data upload trigger callback data
-        href: ../../resources/accessreviewdatauploadtriggercallbackdata.md
-      - name: Approval settings
-        href: ../../resources/approvalsettings.md
-      - name: Approval stage
-        href: ../../resources/approvalstage.md
-      - name: Assignment review settings
-        href: ../../resources/assignmentreviewsettings.md
-      - name: Azure active directory tenant
-        href: ../../resources/azureactivedirectorytenant.md
-      - name: Connected organization members
-        href: ../../resources/connectedorganizationmembers.md
-      - name: Connection info
-        href: ../../resources/connectioninfo.md
-      - name: Cross cloud Azure active directory tenant
-        href: ../../resources/crosscloudazureactivedirectorytenant.md
-      - name: Custom callout extension
-        href: ../../resources/customcalloutextension.md
-      - name: Custom data provided resource file
-        href: ../../resources/customdataprovidedresourcefile.md
-      - name: Custom data provided resource upload session request
-        href: ../../resources/customdataprovidedresourceuploadsessionrequest.md
-      - name: Custom extension authentication configuration
-        href: ../../resources/customextensionauthenticationconfiguration.md
-      - name: Custom extension callback configuration
-        href: ../../resources/customextensioncallbackconfiguration.md
-      - name: Custom extension callout instance
-        href: ../../resources/customextensioncalloutinstance.md
-      - name: Custom extension client configuration
-        href: ../../resources/customextensionclientconfiguration.md
-      - name: Custom extension data
-        href: ../../resources/customextensiondata.md
-      - name: Custom extension endpoint configuration
-        href: ../../resources/customextensionendpointconfiguration.md
-      - name: Custom extension handler
-        href: ../../resources/customextensionhandler.md
-      - name: Custom extension handler instance
-        href: ../../resources/customextensionhandlerinstance.md
-      - name: Custom extension stage setting
-        href: ../../resources/customextensionstagesetting.md
-      - name: Domain identity source
-        href: ../../resources/domainidentitysource.md
-      - name: Entitlement management
-        href: ../../resources/entitlementmanagement.md
-      - name: Expiration pattern
-        href: ../../resources/expirationpattern.md
-      - name: External domain federation
-        href: ../../resources/externaldomainfederation.md
-      - name: External sponsors
-        href: ../../resources/externalsponsors.md
-      - name: Group members
-        href: ../../resources/groupmembers.md
-      - name: Identity source
-        href: ../../resources/identitysource.md
-      - name: Internal sponsors
-        href: ../../resources/internalsponsors.md
-      - name: Logic app trigger endpoint configuration
-        href: ../../resources/logicapptriggerendpointconfiguration.md
-      - name: Microsoft Entra pop token authentication
-        href: ../../resources/azureadpoptokenauthentication.md
-      - name: Microsoft Entra token authentication
-        href: ../../resources/azureadtokenauthentication.md
-      - name: Patterned recurrence
-        href: ../../resources/patternedrecurrence.md
-      - name: Recurrence pattern
-        href: ../../resources/recurrencepattern.md
-      - name: Recurrence range
-        href: ../../resources/recurrencerange.md
-      - name: Request schedule
-        href: ../../resources/requestschedule.md
-      - name: Requestor manager
-        href: ../../resources/requestormanager.md
-      - name: Requestor settings
-        href: ../../resources/requestorsettings.md
-      - name: Single user
-        href: ../../resources/singleuser.md
-      - name: Social identity source
-        href: ../../resources/socialidentitysource.md
-      - name: Subject set
-        href: ../../resources/subjectset.md
-      - name: Target user sponsors
-        href: ../../resources/targetusersponsors.md
-      - name: User set
-        href: ../../resources/userset.md
-      - name: Verifiable credential required
-        href: ../../resources/verifiablecredentialrequired.md
-      - name: Verifiable credential requirement status
-        href: ../../resources/verifiablecredentialrequirementstatus.md
-      - name: Verifiable credential retrieved
-        href: ../../resources/verifiablecredentialretrieved.md
-      - name: Verifiable credential settings
-        href: ../../resources/verifiablecredentialsettings.md
-      - name: Verifiable credential type
-        href: ../../resources/verifiablecredentialtype.md
-      - name: Verifiable credential verified
-        href: ../../resources/verifiablecredentialverified.md
-      - name: Verified credential claims
-        href: ../../resources/verifiedcredentialclaims.md
-      - name: Verified credential data
-        href: ../../resources/verifiedcredentialdata.md
+      - name: Access package assignment request parameters
+        href: ../../resources/accesspackageassignmentrequestparameters.md
   - name: Lifecycle workflows
     displayName: LCW, Identity Governance, Joiner, Mover, Leaver
     items:
@@ -1504,12 +1316,16 @@ items:
         href: ../../api/identitygovernance-workflow-delete.md
       - name: Activate
         href: ../../api/identitygovernance-workflow-activate.md
+      - name: Activate and wait
+        href: ../../api/identitygovernance-workflow-activateandwait.md
       - name: Activate with scope
         href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
       - name: Cancel workflow processing
         href: ../../api/identitygovernance-workflow-cancelprocessing.md
+      - name: Clear quarantine
+        href: ../../api/identitygovernance-workflow-clearquarantine.md
       - name: preview task failures
         href: ../../api/identitygovernance-workflow-previewtaskfailures.md
       - name: preview workflow
@@ -1553,6 +1369,54 @@ items:
         items:
         - name: Overview
           href: ../../resources/identitygovernance-lifecycleworkflows-reporting-overview.md
+        - name: Run
+          items:
+          - name: Run
+            href: ../../resources/identitygovernance-run.md
+          - name: List runs
+            href: ../../api/identitygovernance-workflow-list-runs.md
+          - name: Get runs
+            href: ../../api/identitygovernance-run-get.md
+          - name: Get summary
+            href: ../../api/identitygovernance-run-summary.md
+          - name: List subjectProcessingResults
+            href: ../../api/identitygovernance-run-list-subjectprocessingresults.md
+          - name: List task processing results
+            href: ../../api/identitygovernance-run-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-run-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-run-delete-reprocessedruns.md
+        - name: Subject processing result
+          items:
+          - name: Subject processing result
+            href: ../../resources/identitygovernance-subjectprocessingresult.md
+          - name: List (from run)
+            href: ../../api/identitygovernance-run-list-subjectprocessingresults.md
+          - name: List (from taskReport)
+            href: ../../api/identitygovernance-taskreport-list-subjectprocessingresults.md
+          - name: Get
+            href: ../../api/identitygovernance-subjectprocessingresult-get.md
+          - name: Summary
+            href: ../../api/identitygovernance-subjectprocessingresult-summary.md
+        - name: Task processing result
+          items:
+          - name: Task processing result
+            href: ../../resources/identitygovernance-taskprocessingresult.md
+          - name: Resume
+            href: ../../api/identitygovernance-taskprocessingresult-resume.md
+        - name: Task report
+          items:
+          - name: Task report
+            href: ../../resources/identitygovernance-taskreport.md
+          - name: List task reports
+            href: ../../api/identitygovernance-workflow-list-taskreports.md
+          - name: Get summary
+            href: ../../api/identitygovernance-taskreport-summary.md
+          - name: List subjectProcessingResults
+            href: ../../api/identitygovernance-taskreport-list-subjectprocessingresults.md
+          - name: List task processing results
+            href: ../../api/identitygovernance-taskreport-list-taskprocessingresults.md
         - name: User processing result
           items:
           - name: User processing result
@@ -1569,38 +1433,6 @@ items:
             href: ../../api/identitygovernance-userprocessingresult-list-reprocessedruns.md
           - name: Remove reprocessedRuns
             href: ../../api/identitygovernance-userprocessingresult-delete-reprocessedruns.md
-        - name: Task report
-          items:
-          - name: Task report
-            href: ../../resources/identitygovernance-taskreport.md
-          - name: List task reports
-            href: ../../api/identitygovernance-workflow-list-taskreports.md
-          - name: Get summary
-            href: ../../api/identitygovernance-taskreport-summary.md
-          - name: List task processing results
-            href: ../../api/identitygovernance-taskreport-list-taskprocessingresults.md
-        - name: Run
-          items:
-          - name: Run
-            href: ../../resources/identitygovernance-run.md
-          - name: List runs
-            href: ../../api/identitygovernance-workflow-list-runs.md
-          - name: Get runs
-            href: ../../api/identitygovernance-run-get.md
-          - name: Get summary
-            href: ../../api/identitygovernance-run-summary.md
-          - name: List task processing results
-            href: ../../api/identitygovernance-run-list-taskprocessingresults.md
-          - name: List reprocessedRuns
-            href: ../../api/identitygovernance-run-list-reprocessedruns.md
-          - name: Remove reprocessedRuns
-            href: ../../api/identitygovernance-run-delete-reprocessedruns.md
-        - name: Task processing result
-          items:
-          - name: Task processing result
-            href: ../../resources/identitygovernance-taskprocessingresult.md
-          - name: Resume
-            href: ../../api/identitygovernance-taskprocessingresult-resume.md
     - name: Workflow template
       items:
       - name: Workflow template
@@ -1651,70 +1483,112 @@ items:
         href: ../../api/identitygovernance-insights-workflowsprocessedsummary.md
       - name: Get workflows processed by category
         href: ../../api/identitygovernance-insights-workflowsprocessedbycategory.md
+    - name: Lifecycle policy
+      items:
+      - name: Lifecycle policy
+        href: ../../resources/identitygovernance-lifecyclepolicy.md
+      - name: Get lifecyclePolicy
+        href: ../../api/identitygovernance-lifecyclepolicy-get.md
+      - name: Update lifecyclePolicy
+        href: ../../api/identitygovernance-lifecyclepolicy-update.md
+      - name: Delete lifecyclePolicy
+        href: ../../api/identitygovernance-lifecyclepolicy-delete.md
+      - name: 'lifecyclePolicy: restore'
+        href: ../../api/identitygovernance-lifecyclepolicy-restore.md
+      - name: List rules
+        href: ../../api/identitygovernance-lifecyclepolicy-list-rules.md
+      - name: Evaluate impact
+        href: ../../api/identitygovernance-lifecyclepolicy-impact.md
+      - name: Get report
+        href: ../../api/identitygovernance-lifecyclepolicy-list-report.md
+    - name: Agent identity lifecycle policy
+      href: ../../resources/identitygovernance-agentidentitylifecyclepolicy.md
+    - name: Lifecycle policy rule
+      items:
+      - name: Lifecycle policy rule
+        href: ../../resources/identitygovernance-lifecyclepolicyrule.md
+      - name: List rules
+        href: ../../api/identitygovernance-lifecyclepolicy-list-rules.md
+      - name: Get lifecyclePolicyRule
+        href: ../../api/identitygovernance-lifecyclepolicyrule-get.md
+      - name: Update lifecyclePolicyRule
+        href: ../../api/identitygovernance-lifecyclepolicyrule-update.md
+    - name: Periodic attestation rule
+      href: ../../resources/identitygovernance-periodicattestationrule.md
+    - name: Sponsor presence rule
+      href: ../../resources/identitygovernance-sponsorpresencerule.md
+    - name: Inactivity rule
+      href: ../../resources/identitygovernance-inactivityrule.md
+    - name: Lifecycle policy priority configuration
+      items:
+      - name: Lifecycle policy priority configuration
+        href: ../../resources/identitygovernance-lifecyclepolicypriorityconfiguration.md
+      - name: List lifecyclePolicyPriorityConfigurations
+        href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-lifecyclepolicypriorityconfigurations.md
+      - name: Get lifecyclePolicyPriorityConfiguration
+        href: ../../api/identitygovernance-lifecyclepolicypriorityconfiguration-get.md
+      - name: Update lifecyclePolicyPriorityConfiguration
+        href: ../../api/identitygovernance-lifecyclepolicypriorityconfiguration-update.md
+    - name: Identity lifecycle
+      items:
+      - name: Identity lifecycle
+        href: ../../resources/identitygovernance-identitylifecycle.md
+      - name: Get identityLifecycle
+        href: ../../api/identitygovernance-identitylifecycle-get.md
+      - name: Update identityLifecycle
+        href: ../../api/identitygovernance-identitylifecycle-update.md
+      - name: List complianceIssues
+        href: ../../api/identitygovernance-identitylifecycle-list-complianceissues.md
+    - name: Agent identity lifecycle
+      href: ../../resources/identitygovernance-agentidentitylifecycle.md
+    - name: Compliance issue
+      items:
+      - name: Compliance issue
+        href: ../../resources/identitygovernance-complianceissue.md
+      - name: List complianceIssues
+        href: ../../api/identitygovernance-identitylifecycle-list-complianceissues.md
+      - name: Get complianceIssue
+        href: ../../api/identitygovernance-complianceissue-get.md
+    - name: Attestation compliance issue
+      href: ../../resources/identitygovernance-attestationcomplianceissue.md
+    - name: Access package assignment required rule
+      href: ../../resources/identitygovernance-accesspackageassignmentrequiredrule.md
+    - name: Guest lifecycle policy
+      href: ../../resources/identitygovernance-guestlifecyclepolicy.md
+    - name: Invitation redemption rule
+      href: ../../resources/identitygovernance-invitationredemptionrule.md
+    - name: Lifecycle policy impact summary
+      href: ../../resources/identitygovernance-lifecyclepolicyimpactsummary.md
+    - name: Lifecycle policy report
+      items:
+      - name: Lifecycle policy report
+        href: ../../resources/identitygovernance-lifecyclepolicyreport.md
+      - name: Get report
+        href: ../../api/identitygovernance-lifecyclepolicy-list-report.md
+      - name: List subjects
+        href: ../../api/identitygovernance-lifecyclepolicyreport-list-subjects.md
+    - name: Lifecycle policy subject report
+      items:
+      - name: Lifecycle policy subject report
+        href: ../../resources/identitygovernance-lifecyclepolicysubjectreport.md
+      - name: List subjects
+        href: ../../api/identitygovernance-lifecyclepolicyreport-list-subjects.md
+    - name: User identity lifecycle
+      href: ../../resources/identitygovernance-useridentitylifecycle.md
     - name: Complex types
       items:
-      - name: Custom callout extension
-        href: ../../resources/customcalloutextension.md
-      - name: Custom extension authentication configuration
-        href: ../../resources/customextensionauthenticationconfiguration.md
-      - name: Custom extension callback configuration
-        href: ../../resources/customextensioncallbackconfiguration.md
-      - name: Custom extension callout request
-        href: ../../resources/customextensioncalloutrequest.md
-      - name: Custom extension callout response
-        href: ../../resources/customextensioncalloutresponse.md
-      - name: Custom extension client configuration
-        href: ../../resources/customextensionclientconfiguration.md
-      - name: Custom extension data
-        href: ../../resources/customextensiondata.md
-      - name: Custom extension endpoint configuration
-        href: ../../resources/customextensionendpointconfiguration.md
-      - name: Custom task extension callback configuration
-        href: ../../resources/identitygovernance-customtaskextensioncallbackconfiguration.md
-      - name: Custom task extension callback data
-        href: ../../resources/identitygovernance-customtaskextensioncallbackdata.md
-      - name: Custom task extension callout data
-        href: ../../resources/identitygovernance-customtaskextensioncalloutdata.md
-      - name: Email settings
-        href: ../../resources/emailsettings.md
-      - name: Identity
-        href: ../../resources/identity.md
-      - name: Identity governance
-        href: ../../resources/identitygovernance.md
-      - name: Key value pair
-        href: ../../resources/keyvaluepair.md
-      - name: Lifecycle workflows container
-        href: ../../resources/identitygovernance-lifecycleworkflowscontainer.md
-      - name: Logic app trigger endpoint configuration
-        href: ../../resources/logicapptriggerendpointconfiguration.md
-      - name: Microsoft Entra pop token authentication
-        href: ../../resources/azureadpoptokenauthentication.md
-      - name: Microsoft Entra token authentication
-        href: ../../resources/azureadtokenauthentication.md
-      - name: On demand execution only
-        href: ../../resources/identitygovernance-ondemandexecutiononly.md
-      - name: Parameter
-        href: ../../resources/identitygovernance-parameter.md
-      - name: Rule based subject set
-        href: ../../resources/identitygovernance-rulebasedsubjectset.md
-      - name: Run summary
-        href: ../../resources/identitygovernance-runsummary.md
-      - name: Subject set
-        href: ../../resources/subjectset.md
-      - name: Task report summary
-        href: ../../resources/identitygovernance-taskreportsummary.md
-      - name: Time based attribute trigger
-        href: ../../resources/identitygovernance-timebasedattributetrigger.md
-      - name: Trigger and scope based conditions
-        href: ../../resources/identitygovernance-triggerandscopebasedconditions.md
-      - name: User summary
-        href: ../../resources/identitygovernance-usersummary.md
-      - name: Workflow base
-        href: ../../resources/identitygovernance-workflowbase.md
-      - name: Workflow execution conditions
-        href: ../../resources/identitygovernance-workflowexecutionconditions.md
-      - name: Workflow execution trigger
-        href: ../../resources/identitygovernance-workflowexecutiontrigger.md
+      - name: Operator between
+        href: ../../resources/identitygovernance-operatorbetween.md
+      - name: Operator equal to
+        href: ../../resources/identitygovernance-operatorequalto.md
+      - name: Operator less than equal to
+        href: ../../resources/identitygovernance-operatorlessthanequalto.md
+      - name: Time based attribute trigger v2
+        href: ../../resources/identitygovernance-timebasedattributetriggerv2.md
+      - name: Workflow execution trigger operator
+        href: ../../resources/identitygovernance-workflowexecutiontriggeroperator.md
+      - name: Workflow trigger time based operator
+        href: ../../resources/identitygovernance-workflowtriggertimebasedoperator.md
   - name: Privileged Identity Management iteration 3
     items:
     - name: PIM for Microsoft Entra roles
@@ -2160,12 +2034,6 @@ items:
         href: ../../api/agreement-post-files.md
       - name: List localized files
         href: ../../api/agreementfile-list-localizations.md
-    - name: Complex types
-      items:
-      - name: Agreement file data
-        href: ../../resources/agreementfiledata.md
-      - name: Terms expiration
-        href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
   - name: App role assignment
@@ -2368,6 +2236,16 @@ items:
         href: ../../api/platformcredentialauthenticationmethod-get.md
       - name: Delete
         href: ../../api/platformcredentialauthenticationmethod-delete.md
+    - name: Resource account key authentication method
+      items:
+      - name: Resource account key authentication method
+        href: ../../resources/resourceaccountkeyauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-resourceaccountkeyauthenticationmethods.md
+      - name: Get
+        href: ../../api/resourceaccountkeyauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/resourceaccountkeyauthenticationmethod-delete.md
     - name: Software OATH
       items:
       - name: Software OATH
@@ -2872,162 +2750,6 @@ items:
         href: ../../api/continuousaccessevaluationpolicy-get.md
       - name: Update
         href: ../../api/continuousaccessevaluationpolicy-update.md
-  - name: Cross-tenant access
-    displayName: Cross-tenant access settings, XTAP
-    items:
-    - name: Overview
-      href: ../../resources/crosstenantaccesspolicy-overview.md
-    - name: Policy
-      items:
-      - name: Policy
-        href: ../../resources/crosstenantaccesspolicy.md
-      - name: Get
-        href: ../../api/crosstenantaccesspolicy-get.md
-      - name: Update
-        href: ../../api/crosstenantaccesspolicy-update.md
-    - name: Default settings
-      items:
-      - name: Default settings
-        href: ../../resources/crosstenantaccesspolicyconfigurationdefault.md
-      - name: Get
-        href: ../../api/crosstenantaccesspolicyconfigurationdefault-get.md
-      - name: Update
-        href: ../../api/crosstenantaccesspolicyconfigurationdefault-update.md
-      - name: Reset to system default
-        href: ../../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
-      - name: List Microsoft 365 capabilities
-        href: ../../api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities.md
-      - name: Create Microsoft 365 capability
-        href: ../../api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities.md
-    - name: Partner settings
-      items:
-      - name: Partner settings
-        href: ../../resources/crosstenantaccesspolicyconfigurationpartner.md
-      - name: List
-        href: ../../api/crosstenantaccesspolicy-list-partners.md
-      - name: Create
-        href: ../../api/crosstenantaccesspolicy-post-partners.md
-      - name: Get
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-get.md
-      - name: Update
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
-      - name: Delete
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
-      - name: List deleted policies
-        href: ../../api/policydeletableitem-list.md
-      - name: Get deleted policy
-        href: ../../api/policydeletableitem-get.md
-      - name: Permanently delete deleted policy
-        href: ../../api/policydeletableitem-delete.md
-      - name: Restore deleted policy
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-restore.md
-      - name: List Microsoft 365 capabilities
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-list-m365capabilities.md
-      - name: Create Microsoft 365 capability
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities.md
-    - name: Partner user and group sync settings
-      items:
-      - name: Partner user and group sync settings
-        href: ../../resources/crosstenantidentitysyncpolicypartner.md
-      - name: Create
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
-      - name: Get
-        href: ../../api/crosstenantidentitysyncpolicypartner-get.md
-      - name: Update
-        href: ../../api/crosstenantidentitysyncpolicypartner-update.md
-      - name: Delete
-        href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
-      - name: List deleted policies
-        href: ../../api/policydeletableitem-list.md
-      - name: Get deleted policy
-        href: ../../api/policydeletableitem-get.md
-      - name: Permanently delete deleted policy
-        href: ../../api/policydeletableitem-delete.md
-      - name: Restore deleted policy
-        href: ../../api/crosstenantidentitysyncpolicypartner-restore.md
-    - name: Microsoft 365 capabilities
-      href: ../../resources/m365capabilitybase.md
-      items:
-      - name: Cross-tenant calendar availability basic
-        href: ../../resources/crosstenantcalendaravailabilitybasic.md
-      - name: Cross-tenant calendar availability limited details
-        href: ../../resources/crosstenantcalendaravailabilitylimiteddetails.md
-      - name: Cross-tenant calendar sharing free busy detail
-        href: ../../resources/crosstenantcalendarsharingfreebusydetail.md
-      - name: Cross-tenant calendar sharing free busy reviewer
-        href: ../../resources/crosstenantcalendarsharingfreebusyreviewer.md
-      - name: Cross-tenant calendar sharing free busy simple
-        href: ../../resources/crosstenantcalendarsharingfreebusysimple.md
-      - name: Cross-tenant mail tips all
-        href: ../../resources/crosstenantmailtipsall.md
-      - name: Cross-tenant mail tips limited
-        href: ../../resources/crosstenantmailtipslimited.md
-      - name: Cross-tenant migration
-        href: ../../resources/crosstenantmigration.md
-      - name: Cross-tenant open profile card
-        href: ../../resources/crosstenantopenprofilecard.md
-      - name: Cross-tenant places desk booking
-        href: ../../resources/crosstenantplacesdeskbooking.md
-      - name: Cross-tenant places room booking
-        href: ../../resources/crosstenantplacesroombooking.md
-      - name: Complex types
-        items:
-        - name: Microsoft 365 capability inbound access
-          href: ../../resources/m365capabilityinboundaccess.md
-        - name: Microsoft 365 capability resource scope
-          href: ../../resources/m365capabilityresourcescope.md
-        - name: Microsoft 365 resource scopes
-          href: ../../resources/m365capabilityresourcescopes.md
-  - name: Cross-tenant migration
-    items:
-    - name: Overview
-      href: ../../resources/crosstenant-migration-overview.md
-    - name: Cross-tenant migration job
-      items:
-      - name: Cross-tenant migration job
-        href: ../../resources/crosstenantmigrationjob.md
-      - name: List
-        href: ../../api/migrationsroot-list-crosstenantmigrationjobs.md
-      - name: Create
-        href: ../../api/migrationsroot-post-crosstenantmigrationjobs.md
-      - name: Get
-        href: ../../api/crosstenantmigrationjob-get.md
-      - name: Update
-        href: ../../api/crosstenantmigrationjob-update.md
-      - name: Delete
-        href: ../../api/migrationsroot-delete-crosstenantmigrationjobs.md
-      - name: cancel
-        href: ../../api/crosstenantmigrationjob-cancel.md
-      - name: validate
-        href: ../../api/crosstenantmigrationjob-validate.md
-      - name: List users
-        href: ../../api/crosstenantmigrationjob-list-users.md
-    - name: Cross-tenant migration task
-      items:
-      - name: Cross-tenant migration task
-        href: ../../resources/crosstenantmigrationtask.md
-      - name: List
-        href: ../../api/crosstenantmigrationjob-list-users.md
-      - name: Get
-        href: ../../api/crosstenantmigrationtask-get.md
-      - name: cancel
-        href: ../../api/crosstenantmigrationtask-cancel.md
-    - name: Migrations root
-      items:
-      - name: Migrations root
-        href: ../../resources/migrationsroot.md
-      - name: List crossTenantMigrationJobs
-        href: ../../api/migrationsroot-list-crosstenantmigrationjobs.md
-      - name: Create crossTenantMigrationJob
-        href: ../../api/migrationsroot-post-crosstenantmigrationjobs.md
-    - name: Complex types
-      items:
-      - name: Cross-tenant migration service status details
-        href: ../../resources/crosstenantmigrationservicestatusdetails.md
-      - name: Error
-        href: ../../resources/error.md
-      - name: Exchange online Cross-tenant migration settings
-        href: ../../resources/exchangeonlinecrosstenantmigrationsettings.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile
@@ -3294,63 +3016,6 @@ items:
         href: ../../api/identityprovider-list-availableprovidertypes.md
     - name: OpenID Connect identity provider (deprecated)
       href: ../../resources/openidconnectprovider.md
-  - name: Multitenant organization
-    displayName: MTO
-    items:
-    - name: Overview
-      href: ../../resources/multitenantorganization-overview.md
-    - name: Multitenant organization
-      items:
-      - name: Multitenant organization
-        href: ../../resources/multitenantorganization.md
-      - name: Create
-        href: ../../api/tenantrelationship-put-multitenantorganization.md
-      - name: Get
-        href: ../../api/multitenantorganization-get.md
-      - name: Update
-        href: ../../api/multitenantorganization-update.md
-    - name: Member
-      items:
-      - name: Member
-        href: ../../resources/multitenantorganizationmember.md
-      - name: List
-        href: ../../api/multitenantorganization-list-tenants.md
-      - name: Add
-        href: ../../api/multitenantorganization-post-tenants.md
-      - name: Get
-        href: ../../api/multitenantorganizationmember-get.md
-      - name: Update
-        href: ../../api/multitenantorganizationmember-update.md
-      - name: Remove
-        href: ../../api/multitenantorganization-delete-tenants.md
-    - name: Join request
-      items:
-      - name: Join request
-        href: ../../resources/multitenantorganizationjoinrequestrecord.md
-      - name: Get
-        href: ../../api/multitenantorganizationjoinrequestrecord-get.md
-      - name: Update
-        href: ../../api/multitenantorganizationjoinrequestrecord-update.md
-    - name: Partner configuration template
-      items:
-      - name: Partner configuration template
-        href: ../../resources/multitenantorganizationpartnerconfigurationtemplate.md
-      - name: Get
-        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-get.md
-      - name: Update
-        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-update.md
-      - name: Reset
-        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
-    - name: Identity sync policy template
-      items:
-      - name: Identity sync policy template
-        href: ../../resources/multitenantorganizationidentitysyncpolicytemplate.md
-      - name: Get
-        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-get.md
-      - name: Update
-        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
-      - name: Reset
-        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
   - name: OAuth 2 permission grant
     items:
     - name: OAuth 2 permission grant
@@ -3878,6 +3543,12 @@ items:
         href: ../../api/verifiedidprofile-update.md
       - name: Delete
         href: ../../api/identityverifiedidroot-delete-profiles.md
+    - name: Complex types
+      items:
+      - name: Mobile drivers license configuration
+        href: ../../resources/mobiledriverslicenseconfiguration.md
+      - name: Verified id self service issuance
+        href: ../../resources/verifiedidselfserviceissuance.md
   - name: Web application firewall
     items:
     - name: Web application firewall provider

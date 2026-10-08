@@ -39,7 +39,7 @@ GET /roleManagement/exchange/customAppScopes/{id}
 
 ## Optional query parameters
 
-This method does not support [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 

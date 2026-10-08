@@ -64,6 +64,7 @@ This operation doesn't support the [OData query parameters](/graph/query-paramet
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| ConsistencyLevel | Optional. Set to `eventual` to retrieve hosted content for edited or deleted messages. Hosted content retrieval isn't supported for messages in deleted threads. |
 
 ## Request body
 
@@ -215,5 +216,4 @@ content-type: image/png
   "suppressions": [
   ]
 }-->
-
 

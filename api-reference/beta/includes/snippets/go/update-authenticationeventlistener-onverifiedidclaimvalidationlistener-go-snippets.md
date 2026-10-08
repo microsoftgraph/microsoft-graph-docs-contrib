@@ -18,21 +18,18 @@ import (
 requestBody := graphmodels.NewAuthenticationEventListener()
 displayName := "Verified ID Claim Validation Listener (updated)"
 requestBody.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-handler := graph.New()
-configuration := graph.New()
-clientConfiguration := graph.New()
+handler := graphmodels.NewOnVerifiedIdClaimValidationCustomExtensionHandler()
+configuration := graphmodels.NewCustomExtensionOverwriteConfiguration()
+clientConfiguration := graphmodels.NewCustomExtensionClientConfiguration()
 maximumRetries := int32(1)
 clientConfiguration.SetMaximumRetries(&maximumRetries) 
 timeoutInMilliseconds := int32(2000)
 clientConfiguration.SetTimeoutInMilliseconds(&timeoutInMilliseconds) 
-	configuration.SetClientConfiguration(clientConfiguration)
-behaviorOnError := graph.New()
-	configuration.SetBehaviorOnError(behaviorOnError)
-	handler.SetConfiguration(configuration)
-	requestBody.SetHandler(handler)
-}
-requestBody.SetAdditionalData(additionalData)
+configuration.SetClientConfiguration(clientConfiguration)
+behaviorOnError := graphmodels.NewCustomExtensionBehaviorOnError()
+configuration.SetBehaviorOnError(behaviorOnError)
+handler.SetConfiguration(configuration)
+requestBody.SetHandler(handler)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 authenticationEventListeners, err := graphClient.Identity().AuthenticationEventListeners().ByAuthenticationEventListenerId("authenticationEventListener-id").Patch(context.Background(), requestBody, nil)

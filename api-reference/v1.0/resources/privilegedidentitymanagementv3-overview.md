@@ -1,8 +1,7 @@
 ---
 title: "Manage Microsoft Entra role assignments using the PIM APIs"
 description: "PIM is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization."
-author: FaithOmbongi
-ms.author: ombongifaith
+author: "ilyalushnikov"
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
 doc_type: conceptualPageType

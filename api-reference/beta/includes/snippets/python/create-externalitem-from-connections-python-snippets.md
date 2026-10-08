@@ -14,6 +14,7 @@ from msgraph_beta.generated.models.identity_source_type import IdentitySourceTyp
 from msgraph_beta.generated.models.external_connectors.properties import Properties
 from msgraph_beta.generated.models.external_connectors.external_item_content import ExternalItemContent
 from msgraph_beta.generated.models.external_item_content_type import ExternalItemContentType
+from msgraph_beta.generated.models.external_connectors.external_item_information_protection_label import ExternalItemInformationProtectionLabel
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ExternalItem(
 	acl = [
@@ -32,14 +33,17 @@ request_body = ExternalItem(
 	],
 	properties = Properties(
 		additional_data = {
-				"title" : "Error in the payment gateway",
+				"title" : "Fix issues with Payment gateway",
 				"priority" : 1,
 				"assignee" : "john@contoso.com",
 		}
 	),
 	content = ExternalItemContent(
-		value = "Error in payment gateway...",
+		value = "Payment gateway module has the following tasks to be completed...",
 		type = ExternalItemContentType.Text,
+	),
+	information_protection_label = ExternalItemInformationProtectionLabel(
+		sensitivity_label_id = "b6a62c3c-d471-4a3e-9f5f-93c1f928b02d",
 	),
 )
 

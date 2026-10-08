@@ -37,7 +37,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | timeClockEnabled          | Boolean            | Indicates whether time clock is enabled for the schedule.                                                        |
 | timeClockSettings         | [timeClockSettings](../resources/timeclocksettings.md) | The time clock location settings for this schedule.   
 | timeOffRequestsEnabled			        |Boolean | Indicates whether time off requests are enabled for the schedule.             | 
-| timeZone 		        |string  | Indicates the time zone of the schedule team using tz database format. Required.|
+| timeZone 		        |string  | The time zone of the schedule team as an IANA time zone database (tz database) name; for example, `America/Chicago`. For the full list of valid values, see [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). Required.|
 | workforceIntegrationIds   | String collection | The IDs for the workforce integrations associated with this schedule.
 
 ## Relationships

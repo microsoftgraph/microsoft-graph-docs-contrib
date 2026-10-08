@@ -10,7 +10,7 @@ from msgraph.generated.identity_governance.lifecycle_workflows.workflows.item.ru
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = TaskProcessingResultsRequestBuilder.TaskProcessingResultsRequestBuilderGetQueryParameters(
-		select = ["id","failureReason","processingStatus","subject"],
+		select = ["id","failureReason","processingStatus","subject","task"],
 )
 
 request_configuration = RequestConfiguration(

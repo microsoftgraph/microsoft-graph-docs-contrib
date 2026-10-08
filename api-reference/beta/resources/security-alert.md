@@ -30,8 +30,9 @@ Security providers create an alert in the system when they detect a threat. Micr
 |[List](../api/security-list-alerts_v2.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources that track suspicious activities in an organization.|
 |[Get](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **ID** property.|
 |[Update](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **ID** property.|
-|[Move alerts](../api/security-alert-movealerts.md)|[microsoft.graph.security.mergeResponse](security-mergeresponse.md)|Move one or more [alert](../resources/security-alert.md) resources to an existing or a new [incident](../resources/security-incident.md).|
+|[Create alert](../api/security-alert-createalert.md)|[microsoft.graph.security.alert](security-alert.md)|Create a Microsoft 365 Defender alert by invoking a bound action on the alerts_v2 collection.|
 |[Create comment](../api/security-alert-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [alert](../resources/security-alert.md) based on the specified alert **ID** property.|
+|[Move alerts](../api/security-alert-movealerts.md)|[microsoft.graph.security.mergeResponse](security-mergeresponse.md)|Move one or more [alert](../resources/security-alert.md) resources to an existing or a new [incident](../resources/security-incident.md).|
 
 ## Properties
 
@@ -51,7 +52,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 |detectionSource|[microsoft.graph.security.detectionSource](../resources/security-detectionsource.md)| Detection technology or sensor that identified the notable component or activity.|
 |detectorId|String| The ID of the detector that triggered the alert.|
 |productName|String| The name of the product which published this alert.|
-|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)| Specifies the result of the investigation, whether the alert represents a true attack, and if so, the nature of the attack. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)| Specifies the result of the investigation, whether the alert represents a true attack, and if so, the nature of the attack. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |evidence|[microsoft.graph.security.alertEvidence](security-alertEvidence.md) collection| Collection of evidence related to the alert.|
 |firstActivityDateTime|DateTimeOffset| The earliest activity associated with the alert.|
 |id|String| Unique identifier to represent the **alert** resource.|

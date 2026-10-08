@@ -49,7 +49,8 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-Here's an example of a request.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +93,8 @@ DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/9563a605
 ---
 
 ### Response
-Here's an example of the response.
+
+The following example shows the response.
 
 >
 <!-- {

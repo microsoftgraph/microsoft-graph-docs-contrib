@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the allowed arguments that are defined in a [taskDefinition](../resources/identitygovernance-taskdefinition.md) for built-in lifecycle workflow tasks.
+Represents the allowed arguments that are defined in the **parameters** property of the [taskDefinition](../resources/identitygovernance-taskdefinition.md) resource for built-in lifecycle workflow tasks.
 
 ## Properties
 

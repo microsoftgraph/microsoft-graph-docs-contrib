@@ -449,10 +449,10 @@ Content-type: application/json
         "description": "/resourceGroups/rg",
         "displayName": "/resourceGroups/rg",
         "isRootScope": false,
-                "originSystem": "AzureResources",
-                "originId": "/subscriptions/828b526f-c769-4b19-9797-734b4843b978/resourceGroups/rg"
-            }
-        }
+        "originSystem": "AzureResources",
+        "originId": "/subscriptions/828b526f-c769-4b19-9797-734b4843b978/resourceGroups/rg"
+    }
+}
 ```
 
 # [C#](#tab/csharp)

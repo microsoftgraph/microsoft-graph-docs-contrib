@@ -113,7 +113,9 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 
 ### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_beta",
@@ -144,7 +146,7 @@ Content-Length: 735
 
 ### Request
 
-Here is an example which attaches an event with another event as an item attachment.
+The following example shows a request that attaches an event with another event as an item attachment.
 
 
 # [HTTP](#tab/http)
@@ -212,7 +214,9 @@ Content-type: application/json
 
 ### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",
@@ -297,7 +301,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of a full response.
+The following example shows a full response.
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_event",

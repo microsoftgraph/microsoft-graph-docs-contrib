@@ -45,6 +45,6 @@ The authentication method policies APIs are used to manage policy settings. For 
 |:---------------------------|:------------|
 |[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Define users who should be reminded to set up an authentication method (currently only supported for the Microsoft Authenticator).|
 
-## Next steps
+## Next step
 
 * Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

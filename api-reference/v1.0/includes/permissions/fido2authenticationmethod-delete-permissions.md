@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|UserAuthMethod-Passkey.ReadWrite|UserAuthMethod-Passkey.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|UserAuthenticationMethod.ReadWrite.All|UserAuthMethod-Passkey.ReadWrite.All|
+|Application|UserAuthMethod-Passkey.ReadWrite.All|UserAuthenticationMethod.ReadWrite.All|
 

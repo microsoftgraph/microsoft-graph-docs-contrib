@@ -3,6 +3,8 @@ title: "relatedTenant: refreshStatus"
 description: "Get the status of the related tenants refresh action"
 author: "akhil-potturi"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,7 +12,7 @@ doc_type: apiPageType
 
 # relatedTenant: refreshStatus
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -86,6 +88,10 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/relatedTenants/r
 [!INCLUDE [sample-code](../includes/snippets/php/relatedtenantthisrefreshstatus-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/relatedtenantthisrefreshstatus-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/relatedtenantthisrefreshstatus-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,7 +105,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.relatedTenantsRefreshStatus"
+  "@odata.type": "microsoft.graph.relatedTenantsRefreshStatus"
 }
 -->
 ``` http
@@ -107,10 +113,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.relatedTenantsRefreshStatus",
+  "@odata.type": "#microsoft.graph.relatedTenantsRefreshStatus",
   "mostRecentRefreshTime": "2025-03-10T14:30:00Z",
   "mostRecentRefreshRequestStatus": "Completed",
   "isFirstRefresh": true
 }
 ```
-

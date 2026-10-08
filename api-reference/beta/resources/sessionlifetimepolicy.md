@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the session lifetime policies Microsoft Entra ID applied to a sign-in event. 
+Describes the session lifetime policies Microsoft Entra ID applied to a sign-in event. This object is configured in the **sessionLifetimePolicies** property of [signIn](../resources/signin.md).
 
 For more details about session management with conditional access in Microsoft Entra ID, see the [conditional access session management documentation](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime). 
 

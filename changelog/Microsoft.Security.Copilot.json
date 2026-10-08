@@ -95,7 +95,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "evaluation",
           "ChangeType": "Addition",
-          "Description": "Added the [evaluation](https://learn.microsoft.com/en-us/graph/api/resources/security.securityCopilot-evaluation?view=graph-rest-beta) resource.",
+          "Description": "Added the **evaluation** resource.",
           "Target": "evaluation"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plugin",
           "ChangeType": "Addition",
-          "Description": "Added the [plugin](https://learn.microsoft.com/en-us/graph/api/resources/security.securityCopilot-plugin?view=graph-rest-beta) resource.",
+          "Description": "Added the **plugin** resource.",
           "Target": "plugin"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "prompt",
           "ChangeType": "Addition",
-          "Description": "Added the [prompt](https://learn.microsoft.com/en-us/graph/api/resources/security.securityCopilot-prompt?view=graph-rest-beta) resource.",
+          "Description": "Added the **prompt** resource.",
           "Target": "prompt"
         },
         {
@@ -119,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "session",
           "ChangeType": "Addition",
-          "Description": "Added the [session](https://learn.microsoft.com/en-us/graph/api/resources/security.securityCopilot-session?view=graph-rest-beta) resource.",
+          "Description": "Added the **session** resource.",
           "Target": "session"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workspace",
           "ChangeType": "Addition",
-          "Description": "Added the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/security.securityCopilot-workspace?view=graph-rest-beta) resource.",
+          "Description": "Added the **workspace** resource.",
           "Target": "workspace"
         }
       ],

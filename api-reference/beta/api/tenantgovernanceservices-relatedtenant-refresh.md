@@ -3,6 +3,8 @@ title: "relatedTenant: refresh"
 description: "Refresh the related tenants list"
 author: "akhil-potturi"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,13 +12,13 @@ doc_type: apiPageType
 
 # relatedTenant: refresh
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Manually refresh the list of [related tenants](../resources/tenantgovernanceservices-relatedtenant.md). The list is also automatically refreshed daily.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -86,6 +88,10 @@ POST https://graph.microsoft.com/beta/directory/tenantGovernance/relatedTenants/
 [!INCLUDE [sample-code](../includes/snippets/php/relatedtenantthisrefresh-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/relatedtenantthisrefresh-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/relatedtenantthisrefresh-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,4 +109,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

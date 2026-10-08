@@ -11,4 +11,6 @@ ms.topic: include
 > - Manage global and local settings for groups; manage `Group.Unified.Guest` and `Group.Unified` settings - *Groups Administrator*
 > - Update `Password Rule Settings` - *Authentication Policy Administrator*
 > - Update settings, Read basic properties on setting templates and settings - *User Administrator*
+>
+> When an app is granted delegated *Directory.Read.All* or *Directory.ReadWrite.All* permissions, the signed-in user only needs the default member role. No additional Microsoft Entra role is required. The Microsoft Entra roles listed above are required only when the calling app is granted a more limited delegated permission, such as *GroupSettings.Read.All*. In that case, the signed-in user must hold one of the listed roles.
 

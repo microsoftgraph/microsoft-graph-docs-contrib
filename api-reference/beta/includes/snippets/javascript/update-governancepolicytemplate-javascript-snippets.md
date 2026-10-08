@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const governancePolicyTemplate = {
+const tenantGovernancePolicyTemplate = {
   multiTenantApplicationsToProvision: [
     {
         appId: '66667777-aaaa-8888-bbbb-9999cccc0000',
@@ -52,6 +52,6 @@ const governancePolicyTemplate = {
 
 await client.api('/directory/tenantGovernance/governancePolicyTemplates/aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb')
 	.version('beta')
-	.update(governancePolicyTemplate);
+	.update(tenantGovernancePolicyTemplate);
 
 ```

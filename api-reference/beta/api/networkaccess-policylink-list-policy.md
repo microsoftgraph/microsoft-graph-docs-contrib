@@ -36,7 +36,7 @@ GET /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters.
+This method doesn't support OData query parameters.
 
 ## Request headers
 |Name|Description|

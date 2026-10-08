@@ -13,7 +13,7 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
-Represents a single secret value. 
+Represents a single secret value. This object is configured in the **secrets** property of [synchronization](../resources/synchronization-synchronization.md).
 
 ## Properties
 | Property       | Type    |Description|

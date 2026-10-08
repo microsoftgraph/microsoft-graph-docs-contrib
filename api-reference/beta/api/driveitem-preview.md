@@ -55,13 +55,13 @@ POST /shares/{shareId}/driveItem/preview
 The body of the request defines properties of the embeddable URL your application is requesting.
 The request should be a JSON object with the following properties.
 
-|   Name      |  Type         | Description
-|:------------|:--------------|:-----------------------------------------------
-| viewer      | string        | Optional. Preview app to use. `onedrive` or `office`. If null, a suitable viewer will be chosen automatically.
-| chromeless  | Boolean       | Optional. If `true` (default), the embedded view will not include any controls.
-| allowEdit   | Boolean       | Optional. If `true`, the file can be edited from the embedded UI.
-| page        | string/number | Optional. Page number of document to start at, if applicable. Specified as string for future use cases around file types such as ZIP.
-| zoom        | number        | Optional. Zoom level to start at, if applicable.
+|   Name      |  Type         | Description |
+|:------------|:--------------|:-----------------------------------------------|
+| viewer      | string        | Optional. Preview app to use. `onedrive` or `office`. If null, a suitable viewer will be chosen automatically. |
+| chromeless  | Boolean       | Optional. If `true` (default), the embedded view will not include any controls. |
+| allowEdit   | Boolean       | Optional. If `true`, the file can be edited from the embedded UI. |
+| page        | string/number | Optional. Page number of document to start at, if applicable. Specified as string for future use cases around file types such as ZIP. |
+| zoom        | number        | Optional. Zoom level to start at, if applicable. |
 
 ## Response
 
@@ -75,11 +75,11 @@ The request should be a JSON object with the following properties.
 
 The response will be a JSON object containing the following properties:
 
-| Name           | Type   | Description
-|:---------------|:-------|:---------------------------------------------------
-| getUrl         | string | URL suitable for embedding using HTTP GET (iframes, etc.)
-| postUrl        | string | URL suitable for embedding using HTTP POST (form post, JS, etc.)
-| postParameters | string | POST parameters to include if using postUrl
+| Name           | Type   | Description |
+|:---------------|:-------|:---------------------------------------------------|
+| getUrl         | string | URL suitable for embedding using HTTP GET (iframes, etc.) |
+| postUrl        | string | URL suitable for embedding using HTTP POST (form post, JS, etc.) |
+| postParameters | string | POST parameters to include if using postUrl |
 
 Either getUrl, postUrl, or both might be returned depending on the current state of embed support for the specified options.
 
@@ -97,11 +97,11 @@ param1=value&param2=another%20value
 
 The following values are allowed for the **viewer** parameter.
 
-| Type value | Description
-|:-----------|:----------------------------------------------------------------
-| (null)     | Chooses an appropriate app for rendering the file. In most cases this will use the `onedrive` previewer, but may vary by file type.
-| `onedrive` | Use the OneDrive previewer app to render the file.
-| `office`   | Use the web version of Office to render the file. Only valid for Office documents.
+| Type value | Description |
+|:-----------|:----------------------------------------------------------------|
+| (null)     | Chooses an appropriate app for rendering the file. In most cases this will use the `onedrive` previewer, but may vary by file type. |
+| `onedrive` | Use the OneDrive previewer app to render the file. |
+| `office`   | Use the web version of Office to render the file. Only valid for Office documents. |
 
 ### Chrome vs chromeless
 >**Note:** This parameter is deprecated and will not be made available on the v1.0 endpoint.

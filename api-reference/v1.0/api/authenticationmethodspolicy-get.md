@@ -35,7 +35,7 @@ GET /policies/authenticationMethodsPolicy
 ```
 
 ## Optional query parameters
-This method does not support any optional query parameters.
+This method doesn't support any optional query parameters.
 
 ## Request headers
 |Name|Description|

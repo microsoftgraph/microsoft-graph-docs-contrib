@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the system that a user was provisioned to or from. For example, when provisioning a user from Microsoft Entra ID to ServiceNow, the source system is Microsoft Entra ID, and the target system is ServiceNow.
+Represents the system that a user was provisioned to or from. For example, when provisioning a user from Microsoft Entra ID to ServiceNow, the source system is Microsoft Entra ID, and the target system is ServiceNow. This object is configured in the **sourceSystem** and **targetSystem** properties of [provisioningObjectSummary](../resources/provisioningobjectsummary.md).
 
 Inherits from [identity](../resources/identity.md).
 
@@ -22,7 +22,7 @@ Inherits from [identity](../resources/identity.md).
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|details|[detailsInfo](detailsinfo.md)|Details of the system.|
+|details|[detailsInfo](../resources/detailsinfo.md)|Details of the system.|
 |displayName|String|Name of the system that a user was provisioned to or from. Inherited from [identity](../resources/identity.md). Supports `$filter` (`eq`, `contains`).|
 |id|String|Identifier of the system that a user was provisioned to or from. Inherited from [identity](../resources/identity.md).|
 

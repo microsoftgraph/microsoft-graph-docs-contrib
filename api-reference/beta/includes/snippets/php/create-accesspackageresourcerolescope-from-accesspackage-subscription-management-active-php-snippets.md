@@ -9,6 +9,7 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceRoleScope;
 use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceRole;
 use Microsoft\Graph\Beta\Generated\Models\AccessPackageResource;
+use Microsoft\Graph\Beta\Generated\Models\RoleType;
 use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceScope;
 
 
@@ -28,10 +29,7 @@ $accessPackageResourceRoleAccessPackageResource->setOriginId('/subscriptions/828
 $accessPackageResourceRoleAccessPackageResource->setOriginSystem('AzureResources');
 $accessPackageResourceRole->setAccessPackageResource($accessPackageResourceRoleAccessPackageResource);
 $accessPackageResourceRole->setOriginSystem('AzureResources');
-$additionalData = [
-	'type' => 'active',
-];
-$accessPackageResourceRole->setAdditionalData($additionalData);
+$accessPackageResourceRole->setType(new RoleType('active'));
 $requestBody->setAccessPackageResourceRole($accessPackageResourceRole);
 $accessPackageResourceScope = new AccessPackageResourceScope();
 $accessPackageResourceScope->setId('c66c1e22-1093-46fb-a8a8-c0e334113ca4');

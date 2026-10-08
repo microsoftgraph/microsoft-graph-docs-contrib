@@ -41,7 +41,7 @@ GET /security/collaboration/analyzedEmails
 
 In the request URL, provide the following required query parameters with values.
 
-|Parameter|Type|Description
+|Parameter|Type|Description |
 |:---|:---|:---|
 |startTime|DateTime|The start time of the email search. |
 |endTime|DateTime|The end time of the email search. |

@@ -33,7 +33,8 @@ const virtualEventWebinar = {
     ],
     settings: {
       isAttendeeEmailNotificationEnabled: false
-    }
+    },
+    isRegistrationRequired: true
 };
 
 await client.api('/solutions/virtualEvents/webinars')

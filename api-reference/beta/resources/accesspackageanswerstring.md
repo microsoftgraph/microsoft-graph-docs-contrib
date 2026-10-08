@@ -18,6 +18,11 @@ Indicates the string input answer to an [accessPackageTextInputQuestion](../reso
 
 Inherits from [accessPackageAnswer](../resources/accesspackageanswer.md).
 
+In entitlement management, this subtype is used in the:
+- **answers** property of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)
+- **answers** property of [accessPackageAssignmentRequestCalloutData](../resources/accesspackageassignmentrequestcalloutdata.md)
+- **existingAnswers** property of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md)
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

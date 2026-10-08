@@ -95,6 +95,8 @@ Content-Type: application/json
 
 ---
 
+---
+
 #### Response
 
 The following example shows the response.
@@ -135,6 +137,8 @@ Content-Type: application/json
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventwebinarsetexternaleventinformation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

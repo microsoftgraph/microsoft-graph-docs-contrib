@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of risk factor categories that describe different aspects of an [application's](../resources/applicationtemplate.md) trust and compliance posture. These factors are used to evaluate the overall security, operational, and legal risk level of the application.
+Represents a collection of risk factor categories that describe different aspects of an application's trust and compliance posture. These factors are used to evaluate the overall security, operational, and legal risk level of the application. The **riskFactors** property of the [applicationTemplate](applicationtemplate.md) resource is an **applicationRiskFactors** object.
 
 ## Properties
 |Property|Type|Description|

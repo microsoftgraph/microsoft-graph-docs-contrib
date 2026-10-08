@@ -12,7 +12,7 @@ ms.date: 07/26/2024
 
 Namespace: microsoft.graph
 
-Defines the settings of an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object.
+In an [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md), the **scheduleSettings** property configures the schedule settings for a recurring access review history definition series.
 
 ## Properties
 

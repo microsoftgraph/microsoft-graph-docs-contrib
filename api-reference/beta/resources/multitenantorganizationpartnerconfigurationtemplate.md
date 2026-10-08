@@ -1,7 +1,7 @@
 ---
 title: "multiTenantOrganizationPartnerConfigurationTemplate resource type"
 description: "Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for multitenant organization tenants."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

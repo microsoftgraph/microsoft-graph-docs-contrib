@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
 ## Examples
 
 This example lists all resources I can currently access.
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.

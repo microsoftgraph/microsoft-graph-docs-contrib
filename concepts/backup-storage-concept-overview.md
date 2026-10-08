@@ -12,9 +12,9 @@ ms.topic: concept-article
 
 Business continuity assurance is a top-of-mind concern for many companies. Microsoft 365 Backup delivers business continuity peace of mind by providing performance and restore reliability. When evaluating a backup and restore offering, what really matters isn't only the backup, but the ability to restore your data to a healthy state quickly when you need to. Recovering large volumes of content is difficult when data is copied at scale from a remote, air-gapped location. It can take weeks or even months to get your business back up and running.
 
-In cases such as a ransomware attack that encrypts large swaths of your data, or an internal accidental or malicious data deletion or overwrite event, you need to be able to get your business back to a healthy state as soon as possible. This is what Microsoft 365 Backup offers, both through the Microsoft 365 admin center, and via partner applications built with the Microsoft 365 Backup Storage API.
+In cases such as a ransomware attack that encrypts large swaths of your data, or an internal accidental or malicious data deletion or overwrite event, you need to be able to get your business back to a healthy state as soon as possible. This ability to restore data quickly is what Microsoft 365 Backup offers, both through the Microsoft 365 admin center, and via partner applications built with the Microsoft 365 Backup Storage API.
 
-To learn more about Microsoft 365 Backup, see [Microsoft 365 Backup (preview) documentation](/microsoft-365/backup/backup-overview?view=o365-worldwide).
+To learn more about Microsoft 365 Backup, see [Microsoft 365 Backup documentation](/microsoft-365/backup/storage/backup-3p-overview?view=o365-worldwide).
 
 ## Why integrate with Microsoft 365 Backup?
 

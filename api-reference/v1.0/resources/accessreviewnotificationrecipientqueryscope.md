@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Specifies a static list of recipients (for example, specific users, group owners, or group members) to receive access review notifications.
+In an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md), the **scope** property can be configured with this type to review only inactive users. The duration of inactivity is calculated based on the user's last sign-in date against the access review instance's start date as defined in the **settings** property.
 
 Inherits from [accessReviewNotificationRecipientScope](../resources/accessreviewnotificationrecipientscope.md).
 

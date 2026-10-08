@@ -48,7 +48,7 @@ If successful, this method returns the `204 No Content` response code if the his
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -93,7 +93,7 @@ DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response.
 

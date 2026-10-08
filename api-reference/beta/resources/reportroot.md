@@ -214,6 +214,18 @@ For details about report views and names, see [Microsoft 365 reports - SharePoin
 | [Get storage](../api/reportroot-getsharepointsiteusagestorage.md)        | Stream      | Get the trend of storage allocated and consumed during the reporting period.                                                                                                                                    |
 | [Get pages](../api/reportroot-getsharepointsiteusagepages.md)            | Stream      | Get the number of pages viewed across all sites.                                                                                                                                                                |
 
+### SharePoint API usage
+
+| Method                                                                                     | Return type | Description                                                                           |
+| :----------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------ |
+| [Get SharePoint API usage](../api/reportroot-getsharepointapiusage.md)                     | Stream      | Get aggregated OneDrive and SharePoint API usage metrics for a tenant. |
+
+### SharePoint Embedded
+
+| Method                                                                                     | Return type | Description                                                                           |
+| :----------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------ |
+| [Get SharePoint Embedded file storage container usage summary](../api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary.md) | [microsoftAppsFileStorageContainerUsage](../resources/microsoftappsfilestoragecontainerusage.md) | Get storage usage data for SharePoint Embedded file storage containers in a tenant. |
+
 ### Skype for Business activity
 
 For details about report views and names, see [Skype for Business activity](/skypeforbusiness/skype-for-business-online-reporting/activity-report).
@@ -306,10 +318,12 @@ None.
 | applicationSignInDetailedSummary  | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) collection    | Represents a detailed summary of an application sign-in.                                                                                 |
 | authenticationMethods             | [authenticationMethodsRoot](authenticationmethodsroot.md)                             | Container for navigation properties for Microsoft Entra authentication methods resources.                                                |
 | azureADPremiumLicenseInsight      | [azureADPremiumLicenseInsight](azureadpremiumlicenseinsight.md)                       | Provides insight into the Microsoft Entra ID P1 and P2 premium license utilization for the tenant.                                       |
+| correlations                      | [identityCorrelation](identitycorrelation.md) collection                              | The identity correlation reports in the tenant.                                                                                          |
 | credentialUserRegistrationDetails | [credentialUserRegistrationDetails](credentialuserregistrationdetails.md) collection  | Details of the usage of self-service password reset and multifactor authentication (MFA) for all registered users.                       |
 | dailyPrintUsageByPrinter          | [printUsageByPrinter](printusagebyprinter.md) collection                              | Retrieve a list of daily print usage summaries, grouped by printer.                                                                      |
 | dailyPrintUsageByUser             | [printUsageByUser](printusagebyuser.md) collection                                    | Retrieve a list of daily print usage summaries, grouped by user.                                                                         |
 | healthMonitoring             | [microsoft.graph.healthMonitoring.healthMonitoringRoot](healthmonitoring-healthmonitoringroot.md) collection                                    | Reports for Microsoft Entra Health Monitoring.                                                                         |
+| identityAnalytics                 | [identityAnalyticsRoot](../resources/identityanalyticsroot.md)                                     | Microsoft Entra identity analytics for the tenant, including its groups.                                              |
 | monthlyPrintUsageByPrinter        | [printUsageByPrinter](printusagebyprinter.md) collection                              | Retrieve a list of monthly print usage summaries, grouped by printer.                                                                    |
 | monthlyPrintUsageByUser           | [printUsageByUser](printusagebyuser.md) collection                                    | Retrieve a list of monthly print usage summaries, grouped by user.                                                                       |
 | partners                          | [partners](partners.md)                                                               | Represents billing details for a Microsoft direct partner.                                                                               |

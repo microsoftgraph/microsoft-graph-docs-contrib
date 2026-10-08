@@ -8,9 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new AuthenticationEventListener
+var requestBody = new OnVerifiedIdClaimValidationListener
 {
 	OdataType = "#microsoft.graph.onVerifiedIdClaimValidationListener",
 	DisplayName = "Verified ID Claim Validation Listener",
@@ -34,56 +33,32 @@ var requestBody = new AuthenticationEventListener
 		},
 	},
 	AuthenticationEventsFlowId = "5a8e8f57-82b2-4cbf-b145-3e6e0c154897",
+	Handler = new OnVerifiedIdClaimValidationCustomExtensionHandler
+	{
+		OdataType = "#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler",
+		Configuration = new CustomExtensionOverwriteConfiguration
+		{
+			OdataType = "#microsoft.graph.customExtensionOverwriteConfiguration",
+			ClientConfiguration = new CustomExtensionClientConfiguration
+			{
+				OdataType = "#microsoft.graph.customExtensionClientConfiguration",
+				MaximumRetries = 1,
+				TimeoutInMilliseconds = 2000,
+			},
+			BehaviorOnError = new CustomExtensionBehaviorOnError
+			{
+				OdataType = "#microsoft.graph.customExtensionBehaviorOnError",
+			},
+		},
+		CustomExtension = new OnVerifiedIdClaimValidationCustomExtension
+		{
+			Id = "6a0a3429-be77-0aed-951e-1c8aed62bf8a",
+		},
+	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
 			"priority" , 500
-		},
-		{
-			"handler" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"@odata.type", new UntypedString("#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler")
-				},
-				{
-					"configuration", new UntypedObject(new Dictionary<string, UntypedNode>
-					{
-						{
-							"@odata.type", new UntypedString("#microsoft.graph.customExtensionOverwriteConfiguration")
-						},
-						{
-							"clientConfiguration", new UntypedObject(new Dictionary<string, UntypedNode>
-							{
-								{
-									"@odata.type", new UntypedString("#microsoft.graph.customExtensionClientConfiguration")
-								},
-								{
-									"maximumRetries", new UntypedString("1")
-								},
-								{
-									"timeoutInMilliseconds", new UntypedString("2000")
-								},
-							})
-						},
-						{
-							"behaviorOnError", new UntypedObject(new Dictionary<string, UntypedNode>
-							{
-								{
-									"@odata.type", new UntypedString("#microsoft.graph.customExtensionBehaviorOnError")
-								},
-							})
-						},
-					})
-				},
-				{
-					"customExtension", new UntypedObject(new Dictionary<string, UntypedNode>
-					{
-						{
-							"id", new UntypedString("6a0a3429-be77-0aed-951e-1c8aed62bf8a")
-						},
-					})
-				},
-			})
 		},
 	},
 };

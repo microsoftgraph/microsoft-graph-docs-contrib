@@ -60,7 +60,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter             | Type                                                                                                                 | Description                                                                                                                                                         |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| activities            | microsoft.graph.security.userActivityTypes                                                   | Optional. Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. This object is a multi-valued enumeration.|
+| activities            | microsoft.graph.security.userActivityTypes                                                   | Optional. Specifies the user activities the calling application supports or is interested in. This flagged enumeration allows multiple members to be selected simultaneously. The possible values are: `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`, `contentFiltering`. The `contentFiltering` value represents evaluating application content against data loss prevention policies.|
 | deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                    | Optional. Information about the user's device (type, OS) used for contextual policy evaluation.                                                                    |
 | integratedAppMetadata | [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)      | Optional. Information about the calling application (name, version) integrating with Microsoft Purview.                                                                    |
 | locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations the application is interested in. If provided, results are trimmed to policies covering these locations. Use [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, or [policy location URL](../resources/policylocationurl.md) for URL locations. You must specify the `@odata.type` property to declare the type of policyLocation. For example, `"@odata.type": "microsoft.graph.policyLocationApplication"`.|
@@ -100,7 +100,7 @@ Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
 
 ### Response
 
-The following example shows the response. It indicates that for the `uploadText` activity to `public.contoso.com`, policies require inline evaluation and trigger a `browserRestriction` action (likely blocking uploads based on sensitive content).
+The following example shows the response. It includes the effective Secure by Default configuration, which indicates that incomplete policy evaluations are audited and blocked.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -120,7 +120,14 @@ Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
           "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
         }
       ],
-      "policyActions": []
+      "policyActions": [],
+      "policyConfiguration": {
+        "errorSettings": {
+          "errorAction": "audit,block",
+          "isEnabled": true
+        },
+        "lastModifiedDateTime": "2026-09-22T12:00:00Z"
+      }
     },
     {
       "activities": "uploadText",

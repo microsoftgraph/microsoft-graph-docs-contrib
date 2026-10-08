@@ -151,13 +151,19 @@ PATCH /subscriptions/{id}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+The request body must contain either the `expirationDateTime` or `notificationUrl` property and its value.
+
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | expirationDateTime  | DateTimeOffset  | Specifies the date and time in UTC when the subscription expires. For the maximum supported subscription, the length of time varies depending on the resource. For more information, see [Subscription lifetime](../resources/subscription.md#subscription-lifetime). |
+| notificationUrl  |  String  | This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
+
+> [!NOTE]
+> A `404 Not Found` response indicates that the subscription no longer exists. For example, it already expired and was removed by the service, or it was deleted. The subscription can't be renewed in this state, so retrying the update keeps failing. To avoid missing change notifications, [create a new subscription](subscription-post-subscriptions.md) instead of retrying the update. To reduce how often this happens, renew subscriptions well before they expire and use [lifecycle notifications](/graph/change-notifications-lifecycle-events) to renew subscriptions proactively.
 
 For details about how errors are returned, see [Error responses][error-response].
 

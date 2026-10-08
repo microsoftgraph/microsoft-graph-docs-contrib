@@ -3,6 +3,8 @@ title: "List relatedTenants"
 description: "Get a list of relatedTenant objects and their properties."
 author: "akhil-potturi"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,13 +12,13 @@ doc_type: apiPageType
 
 # List relatedTenants
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) objects and their properties, including relationship metrics.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -90,6 +92,10 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/relatedTenants
 [!INCLUDE [sample-code](../includes/snippets/php/list-relatedtenants-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-relatedtenants-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-relatedtenants-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,7 +109,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.tenantGovernanceServices.relatedTenant)"
+  "@odata.type": "Collection(microsoft.graph.relatedTenant)"
 }
 -->
 ``` http
@@ -114,7 +120,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/tenantGovernance/relatedTenants",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.tenantGovernanceServices.relatedTenant",
+      "@odata.type": "#microsoft.graph.relatedTenant",
       "id": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
       "createdDateTime": "2026-02-15T05:34:29.4426526Z",
       "b2BRegistrationMetrics": {
@@ -171,7 +177,7 @@ Content-Type: application/json
       "billingMetrics": null
     },
     {
-      "@odata.type": "#microsoft.graph.tenantGovernanceServices.relatedTenant",
+      "@odata.type": "#microsoft.graph.relatedTenant",
       "id": "bbbbcccc-1111-dddd-2222-eeee3333ffff",
       "createdDateTime": "2026-02-16T05:35:45.2357127Z",
       "b2BRegistrationMetrics": null,

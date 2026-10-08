@@ -16,6 +16,10 @@ Retrieve a collection of [person](../resources/person.md) objects ordered by the
 
 You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
 
+> [!NOTE]
+> For new development, we recommend using the Microsoft Search API (`POST /search/query` with `entityTypes: ["person"]`) instead of the People API (`GET /me/people` and `GET /users/{id | userPrincipalName}/people`). The People API is in maintenance mode.
+> For more information, see [searchEntity: query](../api/search-query.md) and [Use the Microsoft Search API to search people](/graph/search-concept-person).
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions

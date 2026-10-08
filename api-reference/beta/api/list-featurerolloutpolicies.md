@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

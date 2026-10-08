@@ -17,7 +17,7 @@ Get all [messages](../resources/chatmessage.md) from all [chats](../resources/ch
 To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -61,10 +61,6 @@ This method supports the `$filter` query parameter. The following table lists ex
 ## Response
 
 If successful, this method returns a `200 OK` response code and a list of [chatMessages](../resources/chatmessage.md) in the response body.
-
-### Errors
-
-[!INCLUDE [teams-model-A-and-B-errors](../../includes/teams-model-A-and-B-errors.md)]
 
 ## Example
 

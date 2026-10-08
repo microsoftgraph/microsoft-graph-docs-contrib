@@ -9,7 +9,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ProfileCardProperty profileCardProperty = new ProfileCardProperty();
-profileCardProperty.setDirectoryPropertyName("CustomAttribute1");
 LinkedList<ProfileCardAnnotation> annotations = new LinkedList<ProfileCardAnnotation>();
 ProfileCardAnnotation profileCardAnnotation = new ProfileCardAnnotation();
 profileCardAnnotation.setDisplayName("Cost Center");
@@ -21,6 +20,8 @@ localizations.add(displayNameLocalization);
 profileCardAnnotation.setLocalizations(localizations);
 annotations.add(profileCardAnnotation);
 profileCardProperty.setAnnotations(annotations);
+profileCardProperty.setDirectoryPropertyName("CustomAttribute1");
+profileCardProperty.setIsVisible(true);
 ProfileCardProperty result = graphClient.admin().people().profileCardProperties().post(profileCardProperty);
 
 

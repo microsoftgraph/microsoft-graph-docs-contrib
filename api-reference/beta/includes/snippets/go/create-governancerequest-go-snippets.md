@@ -11,11 +11,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodelstenantgovernanceservices "github.com/microsoftgraph/msgraph-beta-sdk-go/models/tenantgovernanceservices"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-requestBody := graphmodelstenantgovernanceservices.NewGovernanceRequest()
+requestBody := graphmodels.NewGovernanceRequest()
 governedTenantId := "bbbbcccc-1111-dddd-2222-eeee3333ffff"
 requestBody.SetGovernedTenantId(&governedTenantId) 
 additionalData := map[string]interface{}{

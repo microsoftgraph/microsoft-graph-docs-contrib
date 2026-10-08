@@ -65,7 +65,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following example gets the occurrences and exceptions of a master event for a recurring series, within a specified time range.
 
 # [HTTP](#tab/http)
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hM
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 <!-- {
   "blockType": "response",

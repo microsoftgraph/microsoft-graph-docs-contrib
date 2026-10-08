@@ -53,7 +53,7 @@ The following table shows the properties that are required when you activate a d
 If successful, this method returns `201 Created` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -101,7 +101,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.
-##### Response
+### Response
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

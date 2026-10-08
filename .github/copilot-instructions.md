@@ -8,6 +8,7 @@ Before doing any docs work, determine the task type and read the matching prompt
 
 - **Authoring or updating docs:** read `.github/prompts/author-api-docs.prompt.md`
 - **Reviewing docs changes:** read `.github/prompts/review-api-docs.prompt.md`
+- **Schema changes (additions, updates, deprecations, or retirements of any property, resource, method, enum, or enum member):** Before starting work, ask the author whether a changelog entry and What's New update are needed. Default to yes unless told otherwise.
 
 Then read the scenario-specific files that those prompt files direct you to use.
 
@@ -81,7 +82,7 @@ These rules apply across authoring and review scenarios:
 8. **API and resource topics must keep the standard section order** for their file type.
 9. **Tables must preserve required ordering rules**, including alphabetical ordering where the detailed guidance requires it.
 10. **Enum changes must be checked across all exposed documentation surfaces**, not only the enum definition itself.
-11. **Customer-visible API changes require changelog review and may require What's New updates.**
+11. **Schema changes — additions, updates, deprecations, and retirements of any property, resource, method, or enum member — require a changelog entry and What's New update. Omit either only with explicit author confirmation.**
 
 ## Core standards
 
@@ -113,7 +114,7 @@ Use the linked prompt files for the full standards. The rules below are the most
 
 ## Common change patterns
 
-- **New schema in beta:** update affected API/resource docs, enum docs, changelog, TOC, and What's New if the change is customer-visible.
+- **Schema changes (additions, updates, deprecations, retirements):** update affected API/resource docs, enum docs, changelog, TOC, and What's New. Omit changelog or What's New only with explicit author confirmation.
 - **Promotion to v1.0:** use the GA workflow, keep beta and v1.0 aligned where intended, remove beta-only content, update changelog, and add a What's New entry.
 - **Enum member additions:** update the enum definition, any inline value listings, and every API/resource page that enumerates supported values.
 - **Deprecation or retirement:** update banners and table entries, related references, changelog, What's New, redirects, and TOC as applicable.

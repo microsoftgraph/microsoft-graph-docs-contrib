@@ -46,7 +46,7 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [agreement](../resources/agreement.md) objects in the response body.
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

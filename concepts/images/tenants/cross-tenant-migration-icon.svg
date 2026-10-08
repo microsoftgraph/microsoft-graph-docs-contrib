@@ -1,0 +1,38 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left tenant (black - source) - larger scale -->
+  <g transform="translate(8, 32) scale(2)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.34755 0.997922C8.16487 0.784786 7.83513 0.784786 7.65245 0.997922L0.110251 9.79715C-0.0732239 10.0112 -0.0214546 10.3386 0.219108 10.4856L7.7613 15.0948C7.90784 15.1843 8.09216 15.1843 8.2387 15.0948L15.7809 10.4856C16.0215 10.3386 16.0732 10.0112 15.8898 9.79715L8.34755 0.997922ZM7.54224 2.53326L2.66926 8.2184L7.54224 11.2172V2.53326ZM8.45776 2.53326V11.2172L13.3307 8.21841L8.45776 2.53326ZM7.54224 12.2921L2.06604 8.92217L1.15522 9.98479L7.54224 13.888V12.2921ZM8.45776 13.888V12.2921L13.934 8.92217L14.8448 9.98479L8.45776 13.888Z" fill="#000000" />
+  </g>
+  
+  <!-- Two thinner arrows with data flow -->
+  <g>
+    <!-- Top arrow -->
+    <g transform="translate(50, 44)">
+      <!-- Arrow shaft (thinner) -->
+      <rect x="-10" y="-1" width="20" height="2" fill="#0078D4" rx="0.5"/>
+      <!-- Arrow head (smaller) -->
+      <path d="M 10,-4 L 16,0 L 10,4 Z" fill="#0078D4"/>
+      <!-- Data flow dots -->
+      <circle cx="-14" cy="0" r="1.2" fill="#0078D4" opacity="0.6"/>
+      <circle cx="-8" cy="0" r="1.2" fill="#0078D4" opacity="0.8"/>
+      <circle cx="-2" cy="0" r="1.2" fill="#0078D4"/>
+    </g>
+    
+    <!-- Bottom arrow -->
+    <g transform="translate(50, 56)">
+      <!-- Arrow shaft (thinner) -->
+      <rect x="-10" y="-1" width="20" height="2" fill="#0078D4" rx="0.5"/>
+      <!-- Arrow head (smaller) -->
+      <path d="M 10,-4 L 16,0 L 10,4 Z" fill="#0078D4"/>
+      <!-- Data flow dots -->
+      <circle cx="-14" cy="0" r="1.2" fill="#0078D4" opacity="0.6"/>
+      <circle cx="-8" cy="0" r="1.2" fill="#0078D4" opacity="0.8"/>
+      <circle cx="-2" cy="0" r="1.2" fill="#0078D4"/>
+    </g>
+  </g>
+  
+  <!-- Right tenant (Microsoft blue - destination) - larger scale -->
+  <g transform="translate(68, 32) scale(2)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.34755 0.997922C8.16487 0.784786 7.83513 0.784786 7.65245 0.997922L0.110251 9.79715C-0.0732239 10.0112 -0.0214546 10.3386 0.219108 10.4856L7.7613 15.0948C7.90784 15.1843 8.09216 15.1843 8.2387 15.0948L15.7809 10.4856C16.0215 10.3386 16.0732 10.0112 15.8898 9.79715L8.34755 0.997922ZM7.54224 2.53326L2.66926 8.2184L7.54224 11.2172V2.53326ZM8.45776 2.53326V11.2172L13.3307 8.21841L8.45776 2.53326ZM7.54224 12.2921L2.06604 8.92217L1.15522 9.98479L7.54224 13.888V12.2921ZM8.45776 13.888V12.2921L13.934 8.92217L14.8448 9.98479L8.45776 13.888Z" fill="#0078D4" />
+  </g>
+</svg>

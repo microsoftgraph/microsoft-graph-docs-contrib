@@ -1,8 +1,10 @@
 ---
 title: "Get relatedTenant"
-description: "Read the properties and relationships of microsoft.graph.tenantGovernanceServices.relatedTenant object."
+description: "Read the properties and relationships of microsoft.graph.relatedTenant object."
 author: "akhil-potturi"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,13 +12,13 @@ doc_type: apiPageType
 
 # Get relatedTenant
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.tenantGovernanceServices.relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) object.
+Read the properties and relationships of [microsoft.graph.relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -53,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.tenantGovernanceServices.relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) object in the response body.
 
 ## Examples
 
@@ -90,6 +92,10 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/relatedTenants/{
 [!INCLUDE [sample-code](../includes/snippets/php/get-relatedtenant-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-relatedtenant-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-relatedtenant-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,7 +109,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.relatedTenant"
+  "@odata.type": "microsoft.graph.relatedTenant"
 }
 -->
 ``` http
@@ -111,7 +117,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.relatedTenant",
+  "@odata.type": "#microsoft.graph.relatedTenant",
   "id": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
   "createdDateTime": "2026-02-15T05:34:29.4426526Z",
   "b2BRegistrationMetrics": {
@@ -211,4 +217,3 @@ Content-Type: application/json
   }
 }
 ```
-

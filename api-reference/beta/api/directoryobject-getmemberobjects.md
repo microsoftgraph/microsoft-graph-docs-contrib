@@ -151,7 +151,7 @@ If successful, this method returns `200 OK` response code and String collection 
 
 ## Example
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -197,7 +197,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

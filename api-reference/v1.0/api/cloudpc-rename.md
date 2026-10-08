@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Rename a specific [cloudPC](../resources/cloudpc.md) object. Use this API to update the **displayName** of a Cloud PC entity.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the effective permissions of the currently authenticated user, helping UX hide or disable content that the current user doesn't have access to.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

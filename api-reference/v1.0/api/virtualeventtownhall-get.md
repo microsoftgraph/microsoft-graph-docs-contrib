@@ -104,8 +104,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/fc6e8c15-
 
 ---
 
----
-
 ### Response
 
 The following example shows the response.
@@ -149,6 +147,7 @@ Content-Type: application/json
     }
   },
   "audience": "everyone",
+  "capacity": 5000,
   "coOrganizers": [
     {
       "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
@@ -168,6 +167,7 @@ Content-Type: application/json
     }
   ],
   "isInviteOnly": false,
+  "isRegistrationRequired": false,
   "externalEventInformation": [
     {
       "applicationId" : "1b7ba4d1-c377-4b2f-ad0e-a3fc50bc987b",

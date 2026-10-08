@@ -1,6 +1,6 @@
 ---
 title: "List questions"
-description: "Get a list of all registration questions for a webinar."
+description: "Get a list of all registration questions for a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,7 @@ ms.date: 08/13/2024
 # List questions
 Namespace: microsoft.graph
 
-Get a list of all [registration](../resources/virtualeventregistration.md) questions for a [webinar](../resources/virtualeventwebinar.md).
+Get a list of all [registration](../resources/virtualeventregistration.md) questions for a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).
 
 The list can include either [predefined registration questions](../resources/virtualeventregistrationpredefinedquestion.md) or [custom registration questions](../resources/virtualeventregistrationcustomquestion.md).
 
@@ -34,13 +34,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To list the questions from the registration configuration of a webinar:
+
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/questions
 ```
 
+To list the questions from the registration configuration of a town hall:
+
+```http
+GET /solutions/virtualEvents/townhalls/{townhallId}/registrationConfiguration/questions
+```
+
 ## Optional query parameters
 
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -97,8 +106,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-5
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-questions-virtualeventregistration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code and an [educ
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -99,7 +99,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response.
 

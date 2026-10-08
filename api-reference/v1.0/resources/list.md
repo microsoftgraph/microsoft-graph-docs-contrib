@@ -27,7 +27,8 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | [Create item](../api/listitem-create.md)              | [listItem](../resources/listitem.md)                                            | Create a new [listItem]( ../resources/listitem.md) in a **list**.                                                                |
 | [Get websocket endpoint](../api/subscriptions-socketio.md) | [subscription](../resources/subscription.md)                                    | Get near-real-time change notifications for a [drive](../resources/drive.md) and **list** using [socket.io](https://socket.io/). |
 | [List operations](../api/list-list-operations.md)          | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a **list**.               |
-
+| [List permissions](../api/list-list-permissions.md) | [permission](../resources/permission.md) collection | Get a list of the [permission](../resources/permission.md) objects associated with a [list](../resources/list.md). |
+| [Create permission](../api/list-post-permissions.md) | [permission](../resources/permission.md) | Create a new [permission](../resources/permission.md) object on a [list](../resources/list.md). |
 
 ## Properties
 
@@ -57,6 +58,7 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | drive         | [drive](drive.md)                                                               | Allows access to the list as a **drive** resource with [driveItems](driveitem.md). Only present on document libraries. |
 | items         | [listItem](listitem.md) collection                                              | All items contained in the list.                                                                                       |
 | operations    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the list.                                                                 |
+| permissions   | [permission](permission.md) collection                                          | The set of permissions for the item. Read-only. Nullable.                                                              |
 | subscriptions | [subscription](subscription.md) collection                                      | The set of subscriptions on the list.                                                                                  |
 
 ## JSON representation

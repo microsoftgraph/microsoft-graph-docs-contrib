@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Temporarily stop a running synchronization job. All the progress, including job state, is persisted, and the job continues from where it left off when a [start](../api/synchronization-synchronizationjob-start.md) call is made.
+Temporarily stop a running [synchronizationJob](../resources/synchronization-synchronizationjob.md). All the progress, including job state, is persisted, and the job continues from where it left off when a [start](../api/synchronization-synchronizationjob-start.md) call is made.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -49,7 +49,7 @@ If successful, returns a `204 No Content` response. It doesn't return anything i
 ## Example
 
 ### Request
-Here's an example  of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ---
 
 ### Response
-Here's an example  of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example deletes a **trustFrameworkPolicy**.
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -94,7 +94,7 @@ DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAnd
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

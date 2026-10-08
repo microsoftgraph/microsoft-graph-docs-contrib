@@ -16,7 +16,7 @@ Defines how the synchronization should be performed for the synchronization engi
 
 >**Note:** Synchronization rules define synchronization in one direction - from the source directory to the target directory. The source and target directories are defined as part of the rule properties.
 
-Synchronization rules are updated as part of the [synchronization schema](synchronization-synchronizationschema.md).
+Synchronization rules are configured in the **synchronizationRules** property of [synchronizationSchema](../resources/synchronization-synchronizationschema.md).
 
 ## Properties
 

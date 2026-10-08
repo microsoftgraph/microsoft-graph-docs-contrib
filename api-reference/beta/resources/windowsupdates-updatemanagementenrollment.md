@@ -1,6 +1,6 @@
 ---
 title: "updateManagementEnrollment resource type"
-description: "Represents enrollment into management by Windows Autopatch of a certain update category."
+description: "Represents per-category enrollment information for Windows Updates across supported update categories."
 author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
@@ -14,14 +14,15 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents enrollment into management by Windows Autopatch of a certain update category.
+Represents per-category enrollment information for Windows Updates across supported update categories.
 
 Inherits from [updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md).
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates that Windows Autopatch manages. Supports a subset of the values for **updateCategory**. The possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
+|driver|[microsoft.graph.windowsUpdates.updateCategoryEnrollmentInformation](../resources/windowsupdates-updatecategoryenrollmentinformation.md)|Information about the enrollment state of the device in driver update management.|
+|feature|[microsoft.graph.windowsUpdates.updateCategoryEnrollmentInformation](../resources/windowsupdates-updatecategoryenrollmentinformation.md)|Information about the enrollment state of the device in feature update management.|
+|quality|[microsoft.graph.windowsUpdates.updateCategoryEnrollmentInformation](../resources/windowsupdates-updatecategoryenrollmentinformation.md)|Information about the enrollment state of the device in quality update management.|
 
 ## Relationships
 None.
@@ -36,6 +37,14 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updateManagementEnrollment",
-  "updateCategory": "String"
+  "driver": {
+    "@odata.type": "microsoft.graph.windowsUpdates.updateCategoryEnrollmentInformation"
+  },
+  "feature": {
+    "@odata.type": "microsoft.graph.windowsUpdates.updateCategoryEnrollmentInformation"
+  },
+  "quality": {
+    "@odata.type": "microsoft.graph.windowsUpdates.updateCategoryEnrollmentInformation"
+  }
 }
 ```

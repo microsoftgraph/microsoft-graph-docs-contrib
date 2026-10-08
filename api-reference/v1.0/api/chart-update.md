@@ -53,7 +53,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 
 If successful, this method returns a `200 OK` response code and updated [workbookChart](../resources/workbookchart.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example shows the request.
 
 # [HTTP](#tab/http)
@@ -97,7 +97,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

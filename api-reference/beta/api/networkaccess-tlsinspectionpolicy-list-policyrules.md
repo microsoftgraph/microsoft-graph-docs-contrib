@@ -49,7 +49,7 @@ This method supports the `$top`, `$count`, `$skip`, `$expand`, `$filter` and `$s
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -133,7 +133,7 @@ Content-Type: application/json
           {
             "@odata.type": "#microsoft.graph.networkaccess.tlsInspectionFqdnDestination",
             "values": [
-              "www.contoso.test.com",
+              "www.contoso.com",
               "*.contoso.org"
             ]
           },

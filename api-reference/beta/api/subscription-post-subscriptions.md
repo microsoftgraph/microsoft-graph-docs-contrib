@@ -29,7 +29,7 @@ Creating a subscription requires read permission to the resource. For example, t
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing the permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 > [!NOTE]
-> - Due to security restrictions, Microsoft Graph subscriptions do not support write access permissions when only read access permissions are needed.
+> - Due to security restrictions, Microsoft Graph subscriptions don't support write access permissions when only read access permissions are needed.
 > - Some resources support change notifications in multiple scenarios, each of which may require different permissions. In those cases, use the resource path to differentiate the scenarios.
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
@@ -290,6 +290,37 @@ Content-type: application/json
   "notificationContentType": "application/json"
 }
 ```
+
+### Example 2: Create a subscription targeting a Web Push endpoint
+
+The following example creates a subscription that delivers encrypted change notifications to a browser-native Web Push endpoint (such as `web.push.apple.com`, `fcm.googleapis.com`, or `updates.push.services.mozilla.com`).
+
+Before creating this subscription, the browser-based application must:
+
+1. Call the [getVapidPublicKey](subscription-getvapidpublickey.md) function on the subscription collection to obtain Microsoft Graph's VAPID public key (RFC 8292).
+2. Call `PushManager.subscribe({ applicationServerKey: <vapidPublicKey> })` to register with the browser's push service. The browser returns a `PushSubscription` containing `endpoint`, `p256dh`, and `auth` values.
+
+The application then creates the subscription with the **notificationUrl** set to the bare push service endpoint URL, and the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPushEncryptionSecret** properties set to the values returned by the browser. After creation, Microsoft Graph encrypts each notification per RFC 8291 using the stored keys and signs the request with VAPID before posting to the push service.
+
+#### Request
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://web.push.apple.com/QKmFUwSBFK8g7iY4t1...",
+  "resource": "me/mailFolders('Inbox')/messages",
+  "expirationDateTime": "2026-12-31T11:00:00.0000000Z",
+  "clientState": "secretClientValue",
+  "vapidPublicKey": "BNKm...base64url-encoded-server-vapid-public-key...",
+  "webPushEncryptionP256dhPublicKey": "BNcR...base64url-encoded-client-public-key...",
+  "webPushEncryptionSecret": "tBHI...base64url-encoded-auth-secret..."
+}
+```
+
+> **Note:** The **webPushEncryptionSecret** property is write-only. It's never returned in `GET` responses (returned as `null`). Treat the value as a secret.
 
 #### Notification endpoint validation
 

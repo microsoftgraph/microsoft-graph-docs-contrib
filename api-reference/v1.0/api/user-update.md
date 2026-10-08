@@ -13,7 +13,7 @@ ms.date: 01/10/2025
 
 Namespace: microsoft.graph
 
-Update the properties of a [user](../resources/user.md) object.
+Update the properties of a [user](../resources/user.md) object. To use this API to update an [agentUser](../resources/agentuser.md), specify an **@odata.type** property with a value of `#microsoft.graph.agentUser` in the request body.
 
 - Not all properties can be updated by Member or Guest users with their default permissions without administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions) to see properties they can manage.
 - Microsoft Entra External ID in external tenants can also use this API operation to update their details. See [Default user permissions in external tenants](../resources/users.md#default-user-permissions-in-external-tenants) for the list of properties they can update.
@@ -28,6 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/user-update-permissions.md)]
 
 ### Permissions for specific scenarios
+- *User.ReadWrite* is the least privileged permission to update details for the signed-in user.
 - Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
 - To update the **employeeLeaveDateTime** property:
   - In delegated scenarios, the admin needs the *Global Administrator* role; the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* delegated permissions.
@@ -42,6 +43,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 - *User.ManageIdentities.All* is *required* to update the **identities** property.
 
 ## HTTP request
+
+Update your own user properties.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /me
+```
+
+Update another user's properties.
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id | userPrincipalName}
@@ -55,6 +68,8 @@ PATCH /users/{id | userPrincipalName}
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+To use this API to update an [agentUser](../resources/agentUser.md), you must specify the **@odata.type** as `#microsoft.graph.agentUser` in the request body.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|

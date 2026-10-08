@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [onPremisesApplicationSegment](onPremisesApplicationSegment.md) object when publishing an on-premises wildcard application with Microsoft Entra application proxy. This resource is used for setting an application segment for a particular wildcard application.
+Represents an on-premises wildcard application segment published with Microsoft Entra application proxy. This resource is used for setting an application segment for a particular wildcard application. This object is configured in the **onPremisesApplicationSegments** property (deprecated) of [onPremisesPublishing](../resources/onpremisespublishing.md).
 
 
 ## Properties

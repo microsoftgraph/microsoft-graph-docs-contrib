@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the synchronization templates associated with a given application or service principal.
+List [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) objects associated with a given application or service principal.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example
 
 ##### Request
-Here's an example  of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 ---
 
 ##### Response
-Here's an example  of a response.
+The following example shows a response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

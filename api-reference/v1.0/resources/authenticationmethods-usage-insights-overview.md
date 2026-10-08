@@ -3,8 +3,7 @@ title: "Working with the authentication methods usage report API"
 description: "Authentication methods activity reports provides information on the registration and usage of authentication methods in your tenant."
 ms.localizationpriority: medium
 ms.subservice: entra-monitoring-health
-author: faithombongi
-ms.author: ombongifaith
+author: "jpettere"
 ms.reviewer: egreenberg
 doc_type: "conceptualPageType"
 ms.topic: overview

@@ -58,11 +58,11 @@ This example shows how to get details of role definition DNS Zone Contributor in
   "blockType": "request",
   "name": "get_governanceroledefinition"
 }-->
-##### Request
+### Request
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions/00efc9e0-1b96-4e9a-99a3-a3df0735cf88
 ```
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": false,

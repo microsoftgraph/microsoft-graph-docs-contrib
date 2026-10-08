@@ -3,6 +3,8 @@ title: "Update governanceRequest"
 description: "Update the status property to accept or reject a governance request."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,13 +12,13 @@ doc_type: apiPageType
 
 # Update governanceRequest
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the **status** property of a [governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) to accept or reject the governance request. Only the governed tenant can update the request status.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -51,13 +53,13 @@ PATCH /directory/tenantGovernance/governanceRequests/{governanceRequestId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|microsoft.graph.tenantGovernanceServices.requestStatus|The current status of the governance request. The possible values are: `pending`, `accepted`, `rejected`, `unknownFutureValue`. Required.|
+|status|microsoft.graph.requestStatus|The current status of the governance request. The possible values are: `pending`, `accepted`, `rejected`, `unknownFutureValue`. Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.tenantGovernanceServices.governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) object in the response body.
 
 ## Examples
 
@@ -99,6 +101,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-governancerequest-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-governancerequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-governancerequest-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -112,7 +118,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.governanceRequest"
+  "@odata.type": "microsoft.graph.governanceRequest"
 }
 -->
 ``` http
@@ -120,7 +126,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.governanceRequest",
+  "@odata.type": "#microsoft.graph.governanceRequest",
   "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
   "governingTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
   "governingTenantName": "Contoso, Inc",
@@ -171,4 +177,3 @@ Content-Type: application/json
   }
 }
 ```
-

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-AuthenticationEventListener authenticationEventListener = new AuthenticationEventListener();
+OnVerifiedIdClaimValidationListener authenticationEventListener = new OnVerifiedIdClaimValidationListener();
 authenticationEventListener.setOdataType("#microsoft.graph.onVerifiedIdClaimValidationListener");
 authenticationEventListener.setDisplayName("Verified ID Claim Validation Listener");
 AuthenticationConditions conditions = new AuthenticationConditions();
@@ -24,25 +24,25 @@ applications.setAdditionalData(additionalData);
 conditions.setApplications(applications);
 authenticationEventListener.setConditions(conditions);
 authenticationEventListener.setAuthenticationEventsFlowId("5a8e8f57-82b2-4cbf-b145-3e6e0c154897");
-HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
-additionalData1.put("priority", 500);
- handler = new ();
+OnVerifiedIdClaimValidationCustomExtensionHandler handler = new OnVerifiedIdClaimValidationCustomExtensionHandler();
 handler.setOdataType("#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler");
- configuration = new ();
+CustomExtensionOverwriteConfiguration configuration = new CustomExtensionOverwriteConfiguration();
 configuration.setOdataType("#microsoft.graph.customExtensionOverwriteConfiguration");
- clientConfiguration = new ();
+CustomExtensionClientConfiguration clientConfiguration = new CustomExtensionClientConfiguration();
 clientConfiguration.setOdataType("#microsoft.graph.customExtensionClientConfiguration");
 clientConfiguration.setMaximumRetries(1);
 clientConfiguration.setTimeoutInMilliseconds(2000);
 configuration.setClientConfiguration(clientConfiguration);
- behaviorOnError = new ();
+CustomExtensionBehaviorOnError behaviorOnError = new CustomExtensionBehaviorOnError();
 behaviorOnError.setOdataType("#microsoft.graph.customExtensionBehaviorOnError");
 configuration.setBehaviorOnError(behaviorOnError);
 handler.setConfiguration(configuration);
- customExtension = new ();
+OnVerifiedIdClaimValidationCustomExtension customExtension = new OnVerifiedIdClaimValidationCustomExtension();
 customExtension.setId("6a0a3429-be77-0aed-951e-1c8aed62bf8a");
 handler.setCustomExtension(customExtension);
-additionalData1.put("handler", handler);
+authenticationEventListener.setHandler(handler);
+HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
+additionalData1.put("priority", 500);
 authenticationEventListener.setAdditionalData(additionalData1);
 AuthenticationEventListener result = graphClient.identity().authenticationEventListeners().post(authenticationEventListener);
 

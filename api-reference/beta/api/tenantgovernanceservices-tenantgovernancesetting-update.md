@@ -3,6 +3,8 @@ title: "Update tenantGovernanceSetting"
 description: "Update the canReceiveInvitations property of the tenant governance settings."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,13 +12,13 @@ doc_type: apiPageType
 
 # Update tenantGovernanceSetting
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the **canReceiveInvitations** property of the [tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md) singleton. This property controls whether the tenant can receive governance invitations.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -57,7 +59,7 @@ PATCH /directory/tenantGovernance/settings
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md) object in the response body.
 
 ## Examples
 
@@ -99,6 +101,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-tenantgovernancesetting-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tenantgovernancesetting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-tenantgovernancesetting-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -112,7 +118,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting"
+  "@odata.type": "microsoft.graph.tenantGovernanceSetting"
 }
 -->
 ``` http
@@ -120,9 +126,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting",
+  "@odata.type": "#microsoft.graph.tenantGovernanceSetting",
   "isRelatedTenantsEnabled": true,
   "canReceiveInvitations": true
 }
 ```
-

@@ -60,7 +60,7 @@ The following table lists the parameters that are optional when you call this ac
 If successful, this method returns `200 OK` response code and [domain](../resources/domain.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +101,7 @@ POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 
 ---
 
-##### Response
+### Response
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

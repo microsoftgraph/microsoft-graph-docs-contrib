@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Represents an identity of an _actor_. For example, an actor can be a user, device, or application. Multiple Microsoft Graph APIs share this resource and the data they return varies depending on the API.
 
-Base type of [userIdentity](useridentity.md).
+Base type of [userIdentity](useridentity.md). 
 
 ## Properties
 

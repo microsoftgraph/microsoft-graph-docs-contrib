@@ -14,6 +14,10 @@ items:
       href: ../../resources/security.md
     - name: Run hunting query
       href: ../../api/security-security-runhuntingquery.md
+    - name: Get hunting schema
+      href: ../../api/security-security-gethuntingschema.md
+    - name: Get hunting schema tables
+      href: ../../api/security-security-gethuntingschematables.md
   - name: Hunting query results
     href: ../../resources/security-huntingqueryresults.md
   - name: Hunting row result
@@ -32,10 +36,12 @@ items:
       href: ../../api/security-alert-get.md
     - name: Update
       href: ../../api/security-alert-update.md
-    - name: Move alerts
-      href: ../../api/security-alert-movealerts.md
+    - name: Create alert
+      href: ../../api/security-alert-createalert.md
     - name: Create comment
       href: ../../api/security-alert-post-comments.md
+    - name: Move alerts
+      href: ../../api/security-alert-movealerts.md
   - name: Alert evidence
     href: ../../resources/security-alertevidence.md
   - name: Incident
@@ -66,12 +72,46 @@ items:
       href: ../../api/security-incidenttask-update.md
     - name: Execute response action
       href: ../../api/security-incidenttask-executeresponseaction.md
+  - name: Manual alert
+    items:
+    - name: Manual alert
+      href: ../../resources/security-manualalert.md
+    - name: Create
+      href: ../../api/security-alert-post-manualalert.md
   - name: Complex types
     items:
     - name: AI agent evidence
       href: ../../resources/security-aiagentevidence.md
+    - name: Create alert input
+      href: ../../resources/security-createalertinput.md
+    - name: DNS evidence
+      href: ../../resources/security-dnsevidence.md
+    - name: Entity definition
+      href: ../../resources/security-entitydefinition.md
+    - name: Entity definition input
+      href: ../../resources/security-entitydefinitioninput.md
+    - name: File hash evidence
+      href: ../../resources/security-filehashevidence.md
+    - name: GitHub organization evidence
+      href: ../../resources/security-githuborganizationevidence.md
+    - name: GitHub repo evidence
+      href: ../../resources/security-githubrepoevidence.md
+    - name: GitHub user evidence
+      href: ../../resources/security-githubuserevidence.md
+    - name: Host logon session evidence
+      href: ../../resources/security-hostlogonsessionevidence.md
+    - name: Malware evidence
+      href: ../../resources/security-malwareevidence.md
+    - name: Network connection evidence
+      href: ../../resources/security-networkconnectionevidence.md
+    - name: SAS token evidence
+      href: ../../resources/security-sastokenevidence.md
     - name: Security group evidence
       href: ../../resources/security-securitygroupevidence.md
+    - name: Service principal evidence
+      href: ../../resources/security-serviceprincipalevidence.md
+    - name: Submission mail evidence
+      href: ../../resources/security-submissionmailevidence.md
     - name: Teams message evidence
       href: ../../resources/security-teamsmessageevidence.md
     - name: User account
@@ -228,6 +268,232 @@ items:
       href: ../../resources/security-auditlogrecord.md
     - name: List
       href: ../../api/security-auditlogquery-list-records.md
+  - name: Complex types
+    items:
+    - name: AI span outputs audit record
+      href: ../../resources/security-aispanoutputsauditrecord.md
+    - name: Alert submission audit record
+      href: ../../resources/security-alertsubmissionauditrecord.md
+    - name: Alert submission result detail audit record
+      href: ../../resources/security-alertsubmissionresultdetailauditrecord.md
+    - name: Audit data
+      href: ../../resources/security-auditdata.md
+    - name: Audit record type dictionary
+      href: ../../resources/security-auditrecordtypedictionary.md
+    - name: Azure AI Search audit record
+      href: ../../resources/security-azureaisearchauditrecord.md
+    - name: Compliance policy grading SharePoint audit record
+      href: ../../resources/security-compliancepolicygradingsharepointauditrecord.md
+    - name: Compliance SIT grading SharePoint audit record
+      href: ../../resources/security-compliancesitgradingsharepointauditrecord.md
+    - name: Copilot session sharing audit record
+      href: ../../resources/security-copilotsessionsharingauditrecord.md
+    - name: Defender Security for AI configuration audit record
+      href: ../../resources/security-defendersecurityforaiconfigurationauditrecord.md
+    - name: Dragon Copilot access record
+      href: ../../resources/security-dragoncopilotaccessrecord.md
+    - name: Dragon Copilot admin record
+      href: ../../resources/security-dragoncopilotadminrecord.md
+    - name: Dragon Copilot clinical data record
+      href: ../../resources/security-dragoncopilotclinicaldatarecord.md
+    - name: Dragon Copilot session record
+      href: ../../resources/security-dragoncopilotsessionrecord.md
+    - name: EOP submission feed entity audit record
+      href: ../../resources/security-eopsubmissionfeedentityauditrecord.md
+    - name: Fabric policy record
+      href: ../../resources/security-fabricpolicyrecord.md
+    - name: MDASH audit record
+      href: ../../resources/security-mdashauditrecord.md
+    - name: Microsoft Teams user concern audit record
+      href: ../../resources/security-microsoftteamsuserconcernauditrecord.md
+    - name: MOS agent info record V2
+      href: ../../resources/security-mosagentinforecordv2.md
+    - name: MSP vector search content metadata audit record
+      href: ../../resources/security-mspvectorsearchcontentmetadataauditrecord.md
+    - name: P4 AI risk score record
+      href: ../../resources/security-p4airiskscorerecord.md
+    - name: Security Copilot identity management audit record
+      href: ../../resources/security-securitycopilotidentitymanagementauditrecord.md
+    - name: Security Development Lifecycle AI log audit record
+      href: ../../resources/security-securitydevelopmentlifecycleailogauditrecord.md
+    - name: Sonar detonation entity audit record
+      href: ../../resources/security-sonardetonationentityauditrecord.md
+    - name: Sonar file detonation entity audit record
+      href: ../../resources/security-sonarfiledetonationentityauditrecord.md
+    - name: Sonar submission entity audit record
+      href: ../../resources/security-sonarsubmissionentityauditrecord.md
+    - name: Sonar URL detonation entity audit record
+      href: ../../resources/security-sonarurldetonationentityauditrecord.md
+    - name: Spark Core custom live pool record
+      href: ../../resources/security-sparkcorecustomlivepoolrecord.md
+    - name: Submission entity audit record
+      href: ../../resources/security-submissionentityauditrecord.md
+    - name: Viva Glint agentic campaign audit record
+      href: ../../resources/security-vivaglintagenticcampaignauditrecord.md
+- name: Case management
+  items:
+  - name: Overview
+    href: ../../resources/security-casemanagementroot.md
+  - name: Case management entity
+    href: ../../resources/security-casemanagement-casemanagemententity.md
+  - name: Case
+    items:
+    - name: Case
+      href: ../../resources/security-casemanagement-case.md
+    - name: List
+      href: ../../api/security-casemanagementroot-list-cases.md
+    - name: Create
+      href: ../../api/security-casemanagementroot-post-cases.md
+    - name: Get
+      href: ../../api/security-casemanagement-case-get.md
+    - name: Update
+      href: ../../api/security-casemanagement-case-update.md
+    - name: Delete
+      href: ../../api/security-casemanagementroot-delete-cases.md
+  - name: Case sla policy entry
+    href: ../../resources/security-casemanagement-caseslapolicyentry.md
+  - name: Generic case
+    href: ../../resources/security-casemanagement-genericcase.md
+  - name: Incident case
+    href: ../../resources/security-casemanagement-incidentcase.md
+  - name: Activity
+    items:
+    - name: Activity
+      href: ../../resources/security-casemanagement-activity.md
+    - name: List
+      href: ../../api/security-casemanagement-case-list-activities.md
+    - name: Create
+      href: ../../api/security-casemanagement-case-post-activities.md
+    - name: Get
+      href: ../../api/security-casemanagement-activity-get.md
+    - name: Update
+      href: ../../api/security-casemanagement-activity-update.md
+    - name: Delete
+      href: ../../api/security-casemanagement-activity-delete.md
+  - name: Comment
+    href: ../../resources/security-casemanagement-comment.md
+  - name: Audit log
+    href: ../../resources/security-casemanagement-auditlog.md
+  - name: Activity resource details
+    href: ../../resources/security-casemanagement-activityresourcedetails.md
+  - name: Modified property
+    href: ../../resources/security-casemanagement-modifiedproperty.md
+  - name: Value property
+    href: ../../resources/security-casemanagement-valueproperty.md
+  - name: String value property
+    href: ../../resources/security-casemanagement-stringvalueproperty.md
+  - name: Boolean value property
+    href: ../../resources/security-casemanagement-booleanvalueproperty.md
+  - name: Alert counts
+    href: ../../resources/security-casemanagement-alertcounts.md
+  - name: Alert status counts
+    href: ../../resources/security-casemanagement-alertstatuscounts.md
+  - name: Incident severity counts
+    href: ../../resources/security-casemanagement-incidentseveritycounts.md
+  - name: Impacted assets counts
+    href: ../../resources/security-casemanagement-impactedassetscounts.md
+  - name: Investigation
+    href: ../../resources/security-casemanagement-investigation.md
+  - name: Custom field values
+    href: ../../resources/security-casemanagement-customfieldvalues.md
+  - name: Custom field value
+    href: ../../resources/security-casemanagement-customfieldvalue.md
+  - name: Custom field string value
+    href: ../../resources/security-casemanagement-customfieldstringvalue.md
+  - name: Custom field number value
+    href: ../../resources/security-casemanagement-customfieldnumbervalue.md
+  - name: Custom field date time value
+    href: ../../resources/security-casemanagement-customfielddatetimevalue.md
+  - name: Custom field options value
+    href: ../../resources/security-casemanagement-customfieldoptionsvalue.md
+  - name: Attachment origin
+    href: ../../resources/security-casemanagement-attachmentorigin.md
+  - name: Attachment
+    items:
+    - name: Attachment
+      href: ../../resources/security-casemanagement-attachment.md
+    - name: List
+      href: ../../api/security-casemanagement-case-list-attachments.md
+    - name: Create
+      href: ../../api/security-casemanagement-case-post-attachments.md
+    - name: Get
+      href: ../../api/security-casemanagement-attachment-get.md
+    - name: Update
+      href: ../../api/security-casemanagement-attachment-update.md
+    - name: Download content
+      href: ../../api/security-casemanagement-attachment-download-content.md
+    - name: Upload content
+      href: ../../api/security-casemanagement-attachment-upload-content.md
+  - name: Relation
+    items:
+    - name: Relation
+      href: ../../resources/security-casemanagement-relation.md
+    - name: List
+      href: ../../api/security-casemanagement-case-list-relations.md
+    - name: Create
+      href: ../../api/security-casemanagement-case-post-relations.md
+    - name: Get
+      href: ../../api/security-casemanagement-relation-get.md
+    - name: Update
+      href: ../../api/security-casemanagement-relation-update.md
+    - name: Delete
+      href: ../../api/security-casemanagement-relation-delete.md
+  - name: Incident relation
+    href: ../../resources/security-casemanagement-incidentrelation.md
+  - name: Recommendation relation
+    href: ../../resources/security-casemanagement-recommendationrelation.md
+  - name: Workspace indicator relation
+    href: ../../resources/security-casemanagement-workspaceindicatorrelation.md
+  - name: Task
+    items:
+    - name: Task
+      href: ../../resources/security-casemanagement-task.md
+    - name: List
+      href: ../../api/security-casemanagement-case-list-tasks.md
+    - name: Create
+      href: ../../api/security-casemanagement-case-post-tasks.md
+    - name: Get
+      href: ../../api/security-casemanagement-task-get.md
+    - name: Update
+      href: ../../api/security-casemanagement-task-update.md
+    - name: Delete
+      href: ../../api/security-casemanagement-task-delete.md
+  - name: Case type configuration
+    items:
+    - name: Case type configuration
+      href: ../../resources/security-casemanagement-casetypeconfiguration.md
+    - name: List
+      href: ../../api/security-casemanagementroot-list-casetypeconfigurations.md
+    - name: Get
+      href: ../../api/security-casemanagement-casetypeconfiguration-get.md
+    - name: List customFields
+      href: ../../api/security-casemanagement-casetypeconfiguration-list-customfields.md
+    - name: List statuses
+      href: ../../api/security-casemanagement-casetypeconfiguration-list-statuses.md
+  - name: Custom field definition
+    items:
+    - name: Custom field definition
+      href: ../../resources/security-casemanagement-customfielddefinition.md
+    - name: List
+      href: ../../api/security-casemanagement-casetypeconfiguration-list-customfields.md
+    - name: Get
+      href: ../../api/security-casemanagement-customfielddefinition-get.md
+  - name: String custom field definition
+    href: ../../resources/security-casemanagement-stringcustomfielddefinition.md
+  - name: Number custom field definition
+    href: ../../resources/security-casemanagement-numbercustomfielddefinition.md
+  - name: Date time custom field definition
+    href: ../../resources/security-casemanagement-datetimecustomfielddefinition.md
+  - name: Options custom field definition
+    href: ../../resources/security-casemanagement-optionscustomfielddefinition.md
+  - name: Status definition
+    items:
+    - name: Status definition
+      href: ../../resources/security-casemanagement-statusdefinition.md
+    - name: List
+      href: ../../api/security-casemanagement-casetypeconfiguration-list-statuses.md
+    - name: Get
+      href: ../../api/security-casemanagement-statusdefinition-get.md
 - name: Cloud zones or scopes (preview)
   items:
   - name: Zone
@@ -260,6 +526,98 @@ items:
     items:
     - name: Audit info
       href: ../../resources/security-auditinfo.md
+- name: Custom detection rules
+  items:
+  - name: Detection rule
+    items:
+    - name: Detection rule
+      href: ../../resources/security-detectionrule.md
+    - name: List
+      href: ../../api/security-rulesroot-list-detectionrules.md
+    - name: Create
+      href: ../../api/security-rulesroot-post-detectionrules.md
+    - name: Get
+      href: ../../api/security-detectionrule-get.md
+    - name: Update
+      href: ../../api/security-detectionrule-update.md
+    - name: Delete
+      href: ../../api/security-rulesroot-delete-detectionrules.md
+  - name: Complex types
+    items:
+    - name: Account entity mapping
+      href: ../../resources/security-accountentitymapping.md
+    - name: Account object id action
+      href: ../../resources/security-accountobjectidaction.md
+    - name: Account sid action
+      href: ../../resources/security-accountsidaction.md
+    - name: Alert custom details
+      href: ../../resources/security-alertcustomdetails.md
+    - name: Alert template
+      href: ../../resources/security-alerttemplate.md
+    - name: Amazon resource entity mapping
+      href: ../../resources/security-amazonresourceentitymapping.md
+    - name: Automated action
+      href: ../../resources/security-automatedaction.md
+    - name: Automated action set
+      href: ../../resources/security-automatedactionset.md
+    - name: Azure resource entity mapping
+      href: ../../resources/security-azureresourceentitymapping.md
+    - name: Cloud application entity mapping
+      href: ../../resources/security-cloudapplicationentitymapping.md
+    - name: Detection action
+      href: ../../resources/security-detectionaction.md
+    - name: Device action
+      href: ../../resources/security-deviceaction.md
+    - name: DNS entity mapping
+      href: ../../resources/security-dnsentitymapping.md
+    - name: Email action
+      href: ../../resources/security-emailaction.md
+    - name: Entity mapping
+      href: ../../resources/security-entitymapping.md
+    - name: Entity mapping configuration
+      href: ../../resources/security-entitymappingconfiguration.md
+    - name: File action
+      href: ../../resources/security-fileaction.md
+    - name: File entity mapping
+      href: ../../resources/security-fileentitymapping.md
+    - name: Google cloud resource entity mapping
+      href: ../../resources/security-googlecloudresourceentitymapping.md
+    - name: Host entity mapping
+      href: ../../resources/security-hostentitymapping.md
+    - name: Impacted asset
+      href: ../../resources/security-impactedasset.md
+    - name: IP entity mapping
+      href: ../../resources/security-ipentitymapping.md
+    - name: Isolate device action
+      href: ../../resources/security-isolatedeviceaction.md
+    - name: Mail cluster entity mapping
+      href: ../../resources/security-mailclusterentitymapping.md
+    - name: Mail message entity mapping
+      href: ../../resources/security-mailmessageentitymapping.md
+    - name: Mailbox entity mapping
+      href: ../../resources/security-mailboxentitymapping.md
+    - name: Mitre tactic
+      href: ../../resources/security-mitretactic.md
+    - name: Mitre technique
+      href: ../../resources/security-mitretechnique.md
+    - name: OAuth application entity mapping
+      href: ../../resources/security-oauthapplicationentitymapping.md
+    - name: Process entity mapping
+      href: ../../resources/security-processentitymapping.md
+    - name: Query condition
+      href: ../../resources/security-querycondition.md
+    - name: Registry value entity mapping
+      href: ../../resources/security-registryvalueentitymapping.md
+    - name: Response action
+      href: ../../resources/security-responseaction.md
+    - name: Rule schedule
+      href: ../../resources/security-ruleschedule.md
+    - name: Security group entity mapping
+      href: ../../resources/security-securitygroupentitymapping.md
+    - name: Stop and quarantine file action
+      href: ../../resources/security-stopandquarantinefileaction.md
+    - name: URL entity mapping
+      href: ../../resources/security-urlentitymapping.md
 - name: Data security and compliance
   items:
   - name: Content activity
@@ -294,12 +652,18 @@ items:
       href: ../../api/sensitivitylabel-get.md
     - name: Get usage rights included
       href: ../../api/usagerightsincluded-get.md
+  - name: Sensitive type
+    href: ../../resources/sensitivetype.md
   - name: Tenant data security and governance
     items:
     - name: Tenant data security and governance
       href: ../../resources/tenantdatasecurityandgovernance.md
+    - name: Process content
+      href: ../../api/tenantdatasecurityandgovernance-processcontent.md
     - name: Process content async
       href: ../../api/tenantdatasecurityandgovernance-processcontentasync.md
+  - name: Text classification request
+    href: ../../resources/textclassificationrequest.md
   - name: User data security and governance
     items:
     - name: User data security and governance
@@ -324,14 +688,20 @@ items:
       href: ../../resources/binarycontent.md
     - name: Block access action
       href: ../../resources/blockaccessaction.md
+    - name: Chunk offsets
+      href: ../../resources/chunkoffsets.md
     - name: Classifcation error base
       href: ../../resources/classifcationerrorbase.md
     - name: Classification error
       href: ../../resources/classificationerror.md
     - name: Classification inner error
       href: ../../resources/classificationinnererror.md
+    - name: Classification request content meta data
+      href: ../../resources/classificationrequestcontentmetadata.md
     - name: Compute rights and inheritance result
       href: ../../resources/computerightsandinheritanceresult.md
+    - name: Content activity metadata
+      href: ../../resources/contentactivitymetadata.md
     - name: Content base
       href: ../../resources/contentbase.md
     - name: Custom metadata dictionary
@@ -340,6 +710,16 @@ items:
       href: ../../resources/devicemetadata.md
     - name: Dlp action info
       href: ../../resources/dlpactioninfo.md
+    - name: Embedding input
+      href: ../../resources/embeddinginput.md
+    - name: Error settings
+      href: ../../resources/errorsettings.md
+    - name: Evaluation error detail
+      href: ../../resources/evaluationerrordetail.md
+    - name: Evaluation incomplete activity metadata
+      href: ../../resources/evaluationincompleteactivitymetadata.md
+    - name: Evaluation scope
+      href: ../../resources/evaluationscope.md
     - name: Group scope
       href: ../../resources/groupscope.md
     - name: Integrated application metadata
@@ -356,10 +736,14 @@ items:
       href: ../../resources/operatingsystemspecifications.md
     - name: Policy binding
       href: ../../resources/policybinding.md
+    - name: Policy configuration
+      href: ../../resources/policyconfiguration.md
     - name: Policy location application
       href: ../../resources/policylocationapplication.md
     - name: Policy location domain
       href: ../../resources/policylocationdomain.md
+    - name: Policy location tool
+      href: ../../resources/policylocationtool.md
     - name: Policy location URL
       href: ../../resources/policylocationurl.md
     - name: Policy scope base
@@ -400,20 +784,6 @@ items:
       href: ../../resources/textcontent.md
     - name: User scope
       href: ../../resources/userscope.md
-- name: Detection rule
-  items:
-  - name: Detection rule
-    href: ../../resources/security-detectionrule.md
-  - name: List
-    href: ../../api/security-detectionrule-list.md
-  - name: Get
-    href: ../../api/security-detectionrule-get.md
-  - name: Create
-    href: ../../api/security-detectionrule-post-detectionrules.md
-  - name: Update
-    href: ../../api/security-detectionrule-update.md
-  - name: Delete
-    href: ../../api/security-detectionrule-delete.md
 - name: Discovered cloud apps (preview)
   items:
   - name: Overview
@@ -618,6 +988,10 @@ items:
       href: ../../api/security-ediscoverycase-delete-legalholds.md
     - name: Retry policy
       href: ../../api/security-ediscoveryholdpolicy-retrypolicy.md
+    - name: Enable policy
+      href: ../../api/security-ediscoveryholdpolicy-enablepolicy.md
+    - name: Disable policy
+      href: ../../api/security-ediscoveryholdpolicy-disablepolicy.md
     - name: Site sources
       items:
       - name: List
@@ -840,6 +1214,14 @@ items:
       href: ../../api/security-autoauditingconfiguration-get.md
     - name: Update
       href: ../../api/security-autoauditingconfiguration-update.md
+  - name: Sensor migration
+    items:
+    - name: Sensor migration
+      href: ../../resources/security-sensormigration.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-sensormigration.md
+    - name: Migrate
+      href: ../../api/security-sensormigration-migrate.md
   - name: Complex types
     items:
     - name: Account

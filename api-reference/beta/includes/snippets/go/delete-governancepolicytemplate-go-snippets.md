@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-graphClient.Directory().TenantGovernance().GovernancePolicyTemplates().ByGovernancePolicyTemplateId("governancePolicyTemplate-id").Delete(context.Background(), nil)
+graphClient.Directory().TenantGovernance().GovernancePolicyTemplates().ByTenantGovernancePolicyTemplateId("tenantGovernancePolicyTemplate-id").Delete(context.Background(), nil)
 
 
 ```

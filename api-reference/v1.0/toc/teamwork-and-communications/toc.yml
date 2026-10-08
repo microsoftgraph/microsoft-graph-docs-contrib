@@ -416,6 +416,10 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentremindersms.md
       - name: Send virtual appointment SMS
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
+    - name: Complex types
+      items:
+      - name: Cloud video interop info
+        href: ../../resources/cloudvideointeropinfo.md
   - name: Presence
     items:
     - name: Presence
@@ -478,6 +482,12 @@ items:
         href: ../../resources/virtualeventwebinarregistrationconfiguration.md
       - name: Get
         href: ../../api/virtualeventwebinarregistrationconfiguration-get.md
+    - name: Virtual event townhall registration configuration
+      items:
+      - name: Virtual event townhall registration configuration
+        href: ../../resources/virtualeventtownhallregistrationconfiguration.md
+      - name: Get
+        href: ../../api/virtualeventtownhallregistrationconfiguration-get.md
     - name: Virtual event registration question
       items:
       - name: Virtual event registration question
@@ -653,6 +663,8 @@ items:
       href: ../../api/channel-update-members.md
     - name: Remove channel member
       href: ../../api/channel-delete-members.md
+    - name: Start migration
+      href: ../../api/channel-startmigration.md
     - name: Complete migration
       href: ../../api/channel-completemigration.md
     - name: List tabs in channel
@@ -717,6 +729,10 @@ items:
         href: ../../api/userscopeteamsappinstallation-get-chat.md
       - name: Remove all access for user
         href: ../../api/chat-removeallaccessforuser.md
+      - name: Start migration
+        href: ../../api/chat-startmigration.md
+      - name: Complete migration
+        href: ../../api/chat-completemigration.md
     - name: Messages
       items:
       - name: List messages in a chat
@@ -763,6 +779,14 @@ items:
         href: ../../api/chat-post-pinnedmessages.md
       - name: Unpin message
         href: ../../api/chat-delete-pinnedmessages.md
+  - name: Deleted chat
+    items:
+    - name: Deleted chat
+      href: ../../resources/deletedchat.md
+    - name: Get
+      href: ../../api/deletedchat-get.md
+    - name: Undo delete
+      href: ../../api/deletedchat-undodelete.md
   - name: Chat message
     items:
     - name: Chat message
@@ -849,14 +873,18 @@ items:
       href: ../../api/chat-post-pinnedmessages.md
     - name: Unpin message
       href: ../../api/chat-delete-pinnedmessages.md
-  - name: Deleted chat
+  - name: Targeted chat message
     items:
-    - name: Deleted chat
-      href: ../../resources/deletedchat.md
-    - name: Get
-      href: ../../api/deletedchat-get.md
-    - name: Undo delete
-      href: ../../api/deletedchat-undodelete.md
+    - name: Targeted chat message
+      href: ../../resources/targetedchatmessage.md
+    - name: Get all targeted messages
+      href: ../../api/userteamwork-getalltargetedmessages.md
+    - name: Get all retained targeted messages
+      href: ../../api/userteamwork-getallretainedtargetedmessages.md
+    - name: Delete targeted message from channel
+      href: ../../api/userteamwork-deletetargetedmessage.md
+    - name: Delete targeted message from chat
+      href: ../../api/chat-delete-targetedmessages.md
   - name: Team
     items:
     - name: Team
@@ -985,6 +1013,12 @@ items:
         href: ../../resources/userteamwork.md
       - name: Get
         href: ../../api/userteamwork-get.md
+      - name: Get all targeted messages
+        href: ../../api/userteamwork-getalltargetedmessages.md
+      - name: Get all retained targeted messages
+        href: ../../api/userteamwork-getallretainedtargetedmessages.md
+      - name: Delete targeted message
+        href: ../../api/userteamwork-deletetargetedmessage.md
 - name: Shift management
   items:
   - name: Day note

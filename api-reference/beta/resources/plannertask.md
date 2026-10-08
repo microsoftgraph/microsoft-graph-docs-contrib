@@ -46,12 +46,15 @@ Represents a planner task in Microsoft 365. A planner task is contained in a [pl
 |createdDateTime|DateTimeOffset|Read-only. The date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Information about the origin of the task.|
 |dueDateTime|DateTimeOffset|The date and time at which the task is due. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|goalIds|String collection|Read-only. The IDs of the goals associated with the task.|
 |hasChat|Boolean|Read-only. This value is `true` if the task has chat messages associated with it. Otherwise, `false`.|
 |hasDescription|Boolean|Read-only. This value is `true` if the details object of the task has a nonempty description. Otherwise, `false`.|
 |id|String|Read-only. The unique identifier of the task. The value of this property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |isArchived|Boolean|Read-only. If set to `true`, the task is archived. An archived task is read-only.|
 |isOnMyDay|Boolean|Indicates whether to show this task in the MyDay view. If `true`, it shows the task.|
 |isOnMyDayLastModifiedDate|Date|Read-only. The date on which task is added to or removed from MyDay.|
+|lastModifiedBy|[identitySet](identityset.md)|Read-only. User ID by which this is last modified.|
+|lastModifiedDateTime|DateTimeOffset|Read-only. Date and time at which this is last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |orderHint|String|The hint used to order items of this type in a list view. For more information, see [Using order hints in planner](planner-order-hint-format.md).|
 |percentComplete|Int32|The percentage of task completion. When set to `100`, the task is completed. |
 |priority|Int32|The priority of the task. Valid values are between `0` and `10`, inclusive. Larger values indicate lower priority. For example, `0` has the highest priority and `10` has the lowest priority. Currently, planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low". Currently, planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
@@ -111,11 +114,14 @@ The following JSON representation shows the resource type.
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "dueDateTime": "String (timestamp)",
+  "goalIds": ["String"],
   "hasChat": "Boolean",
   "hasDescription": "Boolean",
   "id": "String (identifier)",
   "isOnMyDay": "Boolean",
   "isOnMyDayLastModifiedDate": "Date",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
   "orderHint": "String",
   "percentComplete": "Int32",
   "planId": "String",

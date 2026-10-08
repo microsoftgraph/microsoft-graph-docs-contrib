@@ -20,6 +20,8 @@ Consider the following points when completing migration for new and existing cha
 
 - When a channel is created in migration mode for the initial import flow, the property **migrationMode** for a [channel](../resources/channel.md) in a team is updated to `completed` instead of being dropped, and the state is permanently marked for chats or channels. Migration mode is a special state that prevents certain operations, such as sending messages and adding members, during the data migration process. The parent team isn't marked with migration mode, as teams can't enter migration mode; only their child channels (general, standard, private, and shared) can.
 - For *existing* channels that are already in migration mode, the API completes the message migration process by updating **migrationMode** to `completed` for a [channel](../resources/channel.md) in a team.
+- The application that calls **completeMigration** must be the same application that initiated the migration session by calling [startMigration](channel-startmigration.md) on the target channel. This is the same application that is allowed to call [import message](channel-post-messages.md#example-2-import-a-message) during the migration session.
+- Calling **completeMigration** removes the import mode banner visible to Teams client users, making the channel fully available again.
 
 After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [channel: startMigration](channel-startmigration.md).
 
@@ -193,7 +195,7 @@ HTTP/1.1 400 Bad Request
 ## Related content
 
 - [channel: startMigration](channel-startmigration.md)
-- [Import message with older timestamp](channel-post-messages.md#example-2-import-messages).
+- [Import a message](channel-post-messages.md#example-2-import-a-message)
 - [Get channel migration status](channel-get.md#example-1-get-a-channel).
 - [chat: completeMigration](chat-completemigration.md)
 - [chat: startMigration](chat-startmigration.md)

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call transcripts from private chat meetings and channel meetings. Access to this API is governed by tenant administrator settings. See [Error responses](#error-responses).
 
 > [!NOTE]
 >
@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat|Not available.|
 
->  [!NOTE]
+> [!NOTE]
 >
 > The application permissions `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `OnlineMeetingTranscript.Read.Chat` permission applies only to scheduled private chat meetings, not to channel meetings.
 
@@ -70,7 +70,28 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [callTranscript](../resources/callTranscript.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [callTranscript](../resources/calltranscript.md) objects in the response body.
+
+
+### Error responses
+
+If a tenant administrator has turned off Graph API access to transcripts for the tenant, this request returns `403 Forbidden` with the `GraphAccessToTranscriptsDisabled` inner-error code. There is no request-side workaround; the app receives this response until an administrator re-enables access.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+
+{
+  "error": {
+    "code": "Forbidden",
+    "message": "Graph API access to transcripts is disabled for this tenant.",
+    "innerError": {
+      "code": "GraphAccessToTranscriptsDisabled"
+    }
+  }
+}
+```
 
 ## Examples
 
@@ -82,6 +103,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ"]
 }
 -->
+
 # [HTTP](#tab/http)
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts
@@ -120,7 +142,6 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 ### Response
 
 > [!NOTE]
->
 > The response object shown here might be shortened for readability.
 
 <!-- {

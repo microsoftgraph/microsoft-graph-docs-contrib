@@ -24,7 +24,7 @@ Rich relationship connecting a user to documents that are trending around the us
 
 | Property      | Type          	 				| Description  |
 | ------------- |---------------	 				| -------------|
-| id      				| String	 				| Unique identifier of the relationship. Read only. 	   |
+| id      				| String	 				| Unique identifier of the relationship. Read-only. 	   |
 | lastModifiedDateTime  | DateTimeOffset            | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 | resourceReference     | [resourceReference](insights-resourcereference.md)  		| Reference properties of the trending document, such as the url and type of the document. |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)   	| Properties that you can use to visualize the document in your experience. |
