@@ -26,8 +26,6 @@ determination := graphmodels.PHISHING_INCIDENTDETERMINATION
 requestBody.SetDetermination(&determination) 
 severity := graphmodels.HIGH_INCIDENTSEVERITY 
 requestBody.SetSeverity(&severity) 
-summary := "Credential phishing campaign affecting multiple users."
-requestBody.SetSummary(&summary) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 cases, err := graphClient.Security().CaseManagement().Cases().ByCaseId("case-id").Patch(context.Background(), requestBody, nil)

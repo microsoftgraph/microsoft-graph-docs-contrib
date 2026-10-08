@@ -5,7 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 07/15/2024
+ms.date: 08/10/2026
 ---
 
 # accessReviewInstance resource type
@@ -31,6 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |[Stop](../api/accessreviewinstance-stop.md) | None | Manually stop an accessReviewInstance. |
 |[Accept recommendations](../api/accessreviewinstance-acceptrecommendations.md) | None | Allows the calling user to accept the decision recommendation for each **accessReviewInstanceDecisionItem** that is marked as `NotReviewed` and for which the caller is a reviewer of the associated **accessReviewInstance**. |
 |[Apply decisions](../api/accessreviewinstance-applydecisions.md) | None | Manually apply decisions on an **accessReviewInstance**. |
+|[Apply custom data provided resource decisions](../api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions.md)|None|Set the `applyResult` on all decisions for a specific custom data provided resource in one call.|
 |[Batch record decisions](../api/accessreviewinstance-batchrecorddecisions.md)|None|Review batches of principals or resources in one call.|
 |[Reset decisions](../api/accessreviewinstance-resetdecisions.md)|None|Resets all decision items on an instance to `notReviewed`.|
 |[List stages](../api/accessreviewinstance-list-stages.md)|[accessReviewStage](../resources/accessreviewstage.md) collection| Retrieve the stages in a multi-stage access review instance.|
@@ -40,6 +41,7 @@ Inherits from [entity](../resources/entity.md).
 | Property | Type | Description |
 | :-------------------------| :---------------------------------- | :---------- |
 | endDateTime | DateTimeOffset | DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$select`. Read-only.|
+| errors | [accessReviewError](../resources/accessreviewerror.md) collection| Collection of errors in an access review instance lifecycle. Read-only. |
 | fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. Supports `$select`.|
 | id | String | Unique identifier of the instance. Supports `$select`. Read-only.|
 | reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of access review scopes is used to define who the reviewers are. Supports `$select`. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).|
@@ -77,6 +79,11 @@ The following JSON representation shows the resource type.
     }
   ],
  "endDateTime": "string (timestamp)",
+ "errors": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewError"
+    }
+  ],
  "fallbackReviewers": [
     {
       "@odata.type": "microsoft.graph.accessReviewReviewerScope"

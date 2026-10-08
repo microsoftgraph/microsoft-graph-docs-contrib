@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "entrarecoveryservices_snapshot_post_recoverypreviewjobs" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entrarecoveryservices-snapshot-post-recoverypreviewjobs-permissions.md)]
 
-[!INCLUDE [rbac-entrarecoveryservices-apis-read](../includes/rbac-for-apis/rbac-entrarecoveryservices-apis-read.md)]
+[!INCLUDE [rbac-entrarecoveryservices-apis-write](../includes/rbac-for-apis/rbac-entrarecoveryservices-apis-write.md)]
 
 ## HTTP request
 

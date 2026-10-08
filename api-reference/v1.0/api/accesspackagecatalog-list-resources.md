@@ -25,6 +25,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
+> [!NOTE]
+> SharePoint Online resources are returned only when this API is called with delegated permissions. This scenario isn't supported with application permissions. To retrieve SharePoint site information using application permissions, use the [sites: getAllSites](../api/site-getallsites.md) API, which returns equivalent site information.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

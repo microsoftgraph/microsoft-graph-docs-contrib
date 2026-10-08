@@ -43,6 +43,17 @@ Depending on the resource, use the least privileged permission specified in the 
 |[event](/graph/api/resources/event)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
 |[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 
+### Resource path
+
+The **resource** value identifies the mailbox to subscribe to, for example `users/{id}/messages`. Provide a user identifier that resolves to a single, unambiguous mailbox; otherwise, subscription creation might fail intermittently with a `503 ServiceUnavailable` error, such as "Mailbox info is stale."
+
+> [!IMPORTANT]
+> We recommend that you identify the user by object ID (OID) rather than by user principal name (UPN), because the OID always maps to a single user.
+
+If you prefer to use a UPN and the UPN begins with a GUID, such as `3f8c2a71-6d45-4e9b-a237-81c5f0d762ae@contoso.com`, the portion before the `@` symbol can be misinterpreted as a mailbox GUID rather than a UPN. To prevent this, prefix the value with `AAD-UPN:` so that it's always treated as a UPN. Use the `AAD-UPN:` prefix only when the value is the UPN of a work or school account.
+
+For an example that uses the `AAD-UPN:` prefix, see [Example 2](#example-2-create-a-subscription-using-a-upn-that-begins-with-a-guid).
+
 ### Include resource data in notification payload
 
 To have resource data included in a change notification, you **must** specify the following properties, in addition to those you normally include when creating a subscription:
@@ -56,11 +67,11 @@ To have resource data included in a change notification, you **must** specify th
 - **encryptionCertificate**: This property contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](change-notifications-with-resource-data.md#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId**: This property is your own identifier for the certificate. Use this ID to match in each change notification which certificate to use for decryption.
 
-See an [example](#example-2-create-a-subscription-to-get-change-notifications-with-resource-data-when-the-user-receives-a-new-message) for subscribing to change notifications with resource data for the **message** resource.
+See an [example](#example-3-create-a-subscription-to-get-change-notifications-with-resource-data-when-the-user-receives-a-new-message) for subscribing to change notifications with resource data for the **message** resource.
 
 
 ### Refine the conditions for a notification
-You can further refine the conditions for a notification by using the `$filter` query parameter. See an [example](#example-3-create-a-subscription-to-get-change-notifications-with-resource-data-for-a-message-based-on-a-condition).
+You can further refine the conditions for a notification by using the `$filter` query parameter. See an [example](#example-4-create-a-subscription-to-get-change-notifications-with-resource-data-for-a-message-based-on-a-condition).
 
 One common application of `$filter` is to get notified upon a change in a specific resource property. For example, you can use `$filter` to subscribe to unread messages in a folder (the **isRead** property is `false`), and include all the change types:
 - A message added to or marked unread in the folder would trigger a `Created` notification.
@@ -232,7 +243,67 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a subscription to get change notifications with resource data when the user receives a new message
+### Example 2: Create a subscription using a UPN that begins with a GUID
+
+The following example subscribes to notifications for a message being created in the mailbox of a user whose UPN begins with a GUID. The `resource` value uses the `AAD-UPN:` prefix so that Exchange treats the value as a UPN. For more information, see [Resource path](#resource-path).
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription_withoutresourcedata_for_message_resource_using_upn"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-type: application/json
+{
+    "changeType": "created",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "resource": "users/AAD-UPN:3f8c2a71-6d45-4e9b-a237-81c5f0d762ae@contoso.com/messages",
+    "expirationDateTime": "2021-07-07T21:42:18.2257768+00:00",
+    "clientState": "secretClientState"
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.subscription"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
+    "id": "5522bd62-7c96-4530-85b0-00b916f6151a",
+    "resource": "users/AAD-UPN:3f8c2a71-6d45-4e9b-a237-81c5f0d762ae@contoso.com/messages",
+    "applicationId": "507c3b9a-67b8-463d-88a2-15a8cefb2111",
+    "changeType": "created",
+    "clientState": "secretClientState",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "notificationQueryOptions": null,
+    "notificationContentType": null,
+    "lifecycleNotificationUrl": null,
+    "expirationDateTime": "2022-01-01T21:42:18.2257768Z",
+    "creatorId": "a4c7bd34-4f3b-46b7-a25d-b63c1e2a2842",
+    "includeResourceData": null,
+    "latestSupportedTlsVersion": "v1_2",
+    "encryptionCertificate": null,
+    "encryptionCertificateId": null,
+    "notificationUrlAppId": null
+}
+```
+
+### Example 3: Create a subscription to get change notifications with resource data when the user receives a new message
 The following example subscribes to notifications with resource data for a message being created in the user's mailbox. The properties of the **message** resource to be included in the notification payload are specified using the `$select` query parameter.
 
 #### Request
@@ -294,7 +365,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a subscription to get change notifications with resource data for a message based on a condition
+### Example 4: Create a subscription to get change notifications with resource data for a message based on a condition
 The following example subscribes to notifications with resource data for a message being created in the Drafts folder, containing one or more attachments, and of high importance.
 
 #### Request

@@ -76,7 +76,7 @@ POST https://graph.microsoft.com/beta/users/f47b5f54-6968-4706-a522-31e842b12345
 Content-Type: application/json
 
 {
-  "teamId": "3Aeeaa4e946d674c4f8d4dded613780f45@thread.v2",
+  "teamId": "9dda0ae1-e007-4a1d-81ec-2cf4b1274610",
   "channelId": "19:eeaa4e946d674c4f8d4dded613780f45@thread.v2",
   "messageId": "1580849738240"
 }
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/userteamwork-deletetargetedmessage-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/userteamwork-deletetargetedmessage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -40,6 +40,9 @@ This resource is an open type that allows additional properties beyond those doc
 |[Update federated identity credential](../api/federatedidentitycredential-update.md)|None|Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |[Upsert federated identity credential](../api/federatedidentitycredential-upsert.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |[Delete federated identity credential](../api/federatedidentitycredential-delete.md)|None|Delete a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|**Communication configuration**|||
+|[Get communicationConfiguration](../api/agentidentityblueprint-get-communicationconfiguration.md)|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|Get the default communication configuration for this agent identity blueprint.|
+|[Update communicationConfiguration](../api/agentidentityblueprint-update-communicationconfiguration.md)|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|Update the default communication configuration for this agent identity blueprint.|
 |**Deleted items**|||
 |[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted agent identities. |
 |[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted agent identity. |
@@ -76,7 +79,8 @@ This resource is an open type that allows additional properties beyond those doc
 |groupMembershipClaims|String|Configures the `groups` claim issued in a user or OAuth 2.0 access token that the agent identity blueprint expects. To set this attribute, use one of the following string values: `None`, `SecurityGroup` (for security groups and Microsoft Entra roles), `All` (this gets all security groups, distribution groups, and Microsoft Entra directory roles that the signed-in user is a member of). Inherited from [application](../resources/application.md).|
 |id|String|Unique identifier for the agent identity blueprint object. This property is referred to as **Object ID** in the Microsoft Entra admin center. Key. Not nullable. Read-only. Inherited from [directoryObject](../resources/directoryobject.md).|
 |identifierUris|String collection| Also known as App ID URI, this value is set when an agent identity blueprint is used as a resource app. The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique across Microsoft Entra ID. Not nullable. Inherited from [application](../resources/application.md).|
-|info|[informationalUrl](../resources/informationalurl.md)|Basic profile information of the agent identity blueprint, such as it's marketing, support, terms of service, and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. Inherited from [application](../resources/application.md).|
+|info|[informationalUrl](../resources/informationalurl.md)|Basic profile information of the agent identity blueprint, such as its marketing, support, terms of service, and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. Inherited from [application](../resources/application.md).|
+|isDisabled|Boolean|Deactivate an agent identity blueprint without deleting it. This configuration specifies whether the service principal associated with the agent identity blueprint can obtain new access tokens or access protected resources. When set to `true`, existing tokens remain valid until they expire based on their configured lifetimes. `true` if the agent identity blueprint is deactivated; otherwise `false`. Inherited from [application](../resources/application.md).|
 |keyCredentials|[keyCredential](../resources/keycredential.md) collection|The collection of key credentials associated with the agent identity blueprint. Not nullable. The least privileged permission to update this property is *AgentIdentityBlueprint.AddRemoveCreds.All*. Inherited from [application](../resources/application.md).|
 |managerApplications|Guid collection|A collection of application IDs for applications designated as managers of this agent identity blueprint. Manager applications can create agent blueprint principals, agent identities, and agent users for their managed blueprints — without requiring high-privileged permissions such as `AgentIdentityBlueprintPrincipal.ReadWrite.All`. Currently, only Microsoft first-party application IDs can be set as values. Maximum of 10 values. Not nullable.|
 |optionalClaims|[optionalClaims](../resources/optionalclaims.md)|Application developers can configure optional claims in their Microsoft Entra agent identity blueprints to specify the claims that are sent to their application by the Microsoft security token service. Inherited from [application](../resources/application.md).|
@@ -101,6 +105,7 @@ This resource is an open type that allows additional properties beyond those doc
 |Relationship|Type|Description|
 |:---|:---|:---|
 |appManagementPolicies|[appManagementPolicy](../resources/appmanagementpolicy.md) collection|The appManagementPolicy applied to this agent identity blueprint. Inherited from [microsoft.graph.application](../resources/application.md)|
+|communicationConfiguration|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|The default communication configuration for agent identities created from this agent identity blueprint. Agent identities inherit this configuration unless they define their own override.|
 |federatedIdentityCredentials|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Federated identities for agent identity blueprints. Inherited from [microsoft.graph.application](../resources/application.md)|
 |inheritablePermissions|[inheritablePermission](../resources/inheritablepermission.md) collection|Defines scopes of a resource application that may be automatically granted to agent identities without additional consent.|
 |owners|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owners of this agent identity blueprint. The owners are a set of nonadmin users or service principals allowed to modify this object. Read-only. Nullable. Inherited from [microsoft.graph.application](../resources/application.md)|
@@ -152,6 +157,7 @@ The following JSON representation shows the resource type.
   "info": {
     "@odata.type": "microsoft.graph.informationalUrl"
   },
+  "isDisabled": "Boolean",
   "keyCredentials": [
     {
       "@odata.type": "microsoft.graph.keyCredential"
@@ -171,4 +177,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

@@ -64,15 +64,18 @@ Before an application can add items to the search index, it must create and conf
    > **Note:** For more information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
 ## Connection settings
-You can configure the default connection settings for each enabled content experience. When enabled, these settings affect the content experiences.
-
-### Search settings
-You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content in [searchSettings](/graph/api/resources/externalconnectors-searchsettings). A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout is applied to the search result and displayed on the results page.
+You can configure the default connection settings for each enabled content experience. When enabled, these settings affect the content experiences in Microsoft Search and Microsoft 365 Copilot.
 
 ### Activity settings
-In [activity settings](/graph/api/resources/externalconnectors-activitysettings), you can provide a way for Microsoft 365 apps to detect share activity, which enables your content to be recommended to users who interact with that content the most. To do this, add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase). This allows a URL from the connection detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem).
+Activity settings](/graph/api/resources/externalconnectors-activitysettings)rovide the URL-to-ExternalItem mapping metadata that allows Microsoft 365 to recognise that a URL corresponds to a specific indexed item in a Copilot connector connection.
 
-The following image shows how your item might appear within recommendation experiences across Microsoft 365.
+- **URL Resolution in Microsoft 365 Experiences**
+  - When a user searches for, pastes, or shares a URL in Microsoft 365 experiences such as Microsoft Search or Microsoft 365 Copilot, Microsoft 365 can use the configured `urlToItemResolvers` to resolve the URL to the corresponding `externalItem`. This enables Microsoft 365 to identify the indexed item represented by the URL and associate detected interactions with the correct external item. 
+
+- **Activity Signal Capture through the Microsoft 365 Copilot Extension**
+  - Activity signals can be captured using the [Microsoft 365 Copilot extension](https://learn.microsoft.com/microsoft-365/copilot/connectors/copilot-extension), a browser-based extension for Microsoft 365 Copilot. When activity settings are configured and the extension is enabled, the extension can automatically capture activity signals and associate them with indexed connector items. These signals help improve personalization and relevance across Microsoft 365 Copilot by prioritizing content users engage with in connected systems.
+
+Activity settings provide the URL-to-item mapping required for these signals to be associated with the correct indexed item. To do this, add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase). This allows a URL from the connection detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem). The following image shows how your item might appear within recommendation experiences across Microsoft 365.
 
 ![Screenshot of a recommended item with share activity](./images/connectors-images/share-activity-recommendation-example.png)
 
@@ -119,6 +122,10 @@ You can supply a list of up to eight **itemIdResolver** resources in the **urlTo
 When a link is shared, the **urlMatchInfo** objects that belong to the resolvers are applied in the order that the **priority** values specify. In ascending **priority** order, the URL is first compared to the URLs in the **baseUrls** list in the **urlMatchInfo** property. Then, if the base of the link URL is in the **baseUrls** list, the **urlPattern** regular expression is applied to the URL. If this pattern matches, no further resolvers are applied. If either the base of the link URL isn't in the **baseUrls** list, or the **urlPattern** fails to match,  the next **urlToItemResolver** is evaluated until a match is found or there are no more **urltoItemResolver** resources to apply.
 
 To learn more about **urlMatchInfo** resources, see [urlMatchInfo type](/graph/api/resources/externalconnectors-urlmatchinfo).
+
+### Search settings
+You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content in [searchSettings](/graph/api/resources/externalconnectors-searchsettings). A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout is applied to the search result and displayed on the results page.
+
 ## Update a connection
 
 To change the display name, description, or enabled content experiences for an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).

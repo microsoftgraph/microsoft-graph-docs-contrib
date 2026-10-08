@@ -5,7 +5,7 @@ author: "nitzanfrogel"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 05/13/2026
+ms.date: 08/26/2026
 ---
 
 # huntingSchemaTableColumn resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a column in an advanced hunting table. Part of the [huntingSchemaTable](../resources/security-huntingschematable.md) returned by the [getHuntingSchema](../api/security-security-gethuntingschema.md) function.
+Represents a column in an advanced hunting table. Part of the [huntingSchemaTable](../resources/security-huntingschematable.md) returned by the [getHuntingSchema](../api/security-security-gethuntingschema.md) and [getHuntingSchemaTables](../api/security-security-gethuntingschematables.md) functions.
 
 ## Properties
 

@@ -51,6 +51,30 @@ If successful, this method returns a `204 No Content`. It doesn't return anythin
 HTTP/1.1 204 No Content
 ```
 
+## Example
+The following is an example of how to call this API.
+
+### Request
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "publish_sitepage" } -->
+```http
+POST https://graph.microsoft.com/v1.0/sites/{siteId}/pages/{pageId}/microsoft.graph.sitePage/publish
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/publish-sitepage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+The following example shows the response.
+<!-- { "blockType": "response", "name": "publish_sitepage", "isEmpty": true } -->
+```http
+HTTP/1.1 204 No Content
+```
 
 <!--
 {

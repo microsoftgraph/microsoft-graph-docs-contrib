@@ -16,9 +16,9 @@ import (
 )
 
 requestBody := graphmodels.NewChatMessage()
-body := graphmodels.NewItemBody()
-contentType := graphmodels.HTML_BODYTYPE 
-body.SetContentType(&contentType) 
+body := graphmodels.NewChatMessageBody()
+messageBodyContentType := graphmodels.HTML_CHATMESSAGEBODYCONTENTTYPE 
+body.SetMessageBodyContentType(&messageBodyContentType) 
 content := "<at id=\"0\">GraphTesting</at>&nbsp;Hello team"
 body.SetContent(&content) 
 requestBody.SetBody(body)

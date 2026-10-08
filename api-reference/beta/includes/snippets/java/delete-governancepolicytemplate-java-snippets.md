@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.directory().tenantGovernance().governancePolicyTemplates().byGovernancePolicyTemplateId("{governancePolicyTemplate-id}").delete();
+graphClient.directory().tenantGovernance().governancePolicyTemplates().byTenantGovernancePolicyTemplateId("{tenantGovernancePolicyTemplate-id}").delete();
 
 
 ```
