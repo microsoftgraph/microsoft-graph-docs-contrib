@@ -38,7 +38,11 @@ GET /security/caseManagement/cases
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top` OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$orderby`, `$select`, `$skip`, and `$top` OData query parameters. The `$count` query parameter isn't supported. On the base collection, `$filter`, `$orderby`, and `$select` can reference only properties declared on [case](../resources/security-casemanagement-case.md). A request that references a property declared only on a derived type, such as **incidentId**, is rejected. To use a supported query option with a derived property, cast the collection to the derived type first.
+
+For example: `GET /security/caseManagement/cases/microsoft.graph.security.caseManagement.incidentCase?$filter=incidentId eq 1006`.
+
+The `$filter` query parameter doesn't support the **customFields** property or its dynamic fields. The maximum value for `$top` is 100; requests with a larger value return `400 Bad Request`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -87,6 +91,10 @@ GET https://graph.microsoft.com/beta/security/caseManagement/cases
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-list-cases-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-list-cases-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

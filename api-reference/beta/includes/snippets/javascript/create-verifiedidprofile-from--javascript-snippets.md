@@ -18,7 +18,9 @@ const verifiedIdProfile = {
   verifierDid: 'did:web:eu.did-dev.contoso.io',
   priority: 0,
   verifiedIdProfileConfiguration: {
+      methodType: 'tenantCustomCredential',
       type: 'verifiedIdentity',
+      manifestUrl: 'https://verifiedid.contoso.com/manifest',
       acceptedIssuer: 'did:web:eu.did-dev.contoso.io',
       claimBindingSource: 'directory',
       claimBindings: [
@@ -36,12 +38,22 @@ const verifiedIdProfile = {
       isEnabled: true,
       sourcePhotoClaimName: 'portrait'
   },
+  mobileDriversLicenseConfiguration: {
+      acceptedRegions: [
+          'region-code'
+      ],
+      documentStandard: 'document-standard'
+  },
   verifiedIdUsageConfigurations: [
       {
           isEnabledForTestOnly: true,
-          purpose: 'recovery'
+          purpose: 'verification'
       }
-  ]
+  ],
+  selfServiceIssuance: {
+      isEnabled: true,
+      issuanceUrl: 'https://verifiedid.contoso.com/issue'
+  }
 };
 
 await client.api('/identity/verifiedId/profiles')

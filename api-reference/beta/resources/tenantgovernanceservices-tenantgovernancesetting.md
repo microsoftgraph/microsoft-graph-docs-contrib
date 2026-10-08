@@ -3,6 +3,8 @@ title: "tenantGovernanceSetting resource type"
 description: "Represents the tenant governance settings that control related tenant discovery and invitation capabilities."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
@@ -10,7 +12,7 @@ doc_type: resourcePageType
 
 # tenantGovernanceSetting resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/tenantgovernanceservices-tenantgovernancesetting-get.md)|[microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md)|Read the properties of the [tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md) singleton.|
-|[Update](../api/tenantgovernanceservices-tenantgovernancesetting-update.md)|[microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md)|Update the **canReceiveInvitations** property of the tenant governance settings.|
+|[Get](../api/tenantgovernanceservices-tenantgovernancesetting-get.md)|[microsoft.graph.tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md)|Read the properties of the [tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md) singleton.|
+|[Update](../api/tenantgovernanceservices-tenantgovernancesetting-update.md)|[microsoft.graph.tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md)|Update the **canReceiveInvitations** property of the tenant governance settings.|
 |[Enable related tenants](../api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants.md)|None|Enable the related tenants feature for tenant discovery.|
 
 ## Properties
@@ -41,16 +43,15 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting",
+  "@odata.type": "microsoft.graph.tenantGovernanceSetting",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting",
+  "@odata.type": "#microsoft.graph.tenantGovernanceSetting",
   "isRelatedTenantsEnabled": "Boolean",
   "canReceiveInvitations": "Boolean"
 }
 ```
-

@@ -4,6 +4,8 @@
 items:
 - name: Overview
   href: ../../resources/mail-api-overview.md
+- name: Handle archive mailbox redirects
+  href: /graph/handle-archive-mailbox-redirects
 - name: Message
   items:
   - name: Message

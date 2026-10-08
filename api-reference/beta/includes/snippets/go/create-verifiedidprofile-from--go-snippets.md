@@ -29,8 +29,12 @@ requestBody.SetVerifierDid(&verifierDid)
 priority := int32(0)
 requestBody.SetPriority(&priority) 
 verifiedIdProfileConfiguration := graphmodels.NewVerifiedIdProfileConfiguration()
+methodType := graphmodels.TENANTCUSTOMCREDENTIAL_VERIFIEDIDMETHODTYPE 
+verifiedIdProfileConfiguration.SetMethodType(&methodType) 
 type := "verifiedIdentity"
 verifiedIdProfileConfiguration.SetType(&type) 
+manifestUrl := "https://verifiedid.contoso.com/manifest"
+verifiedIdProfileConfiguration.SetManifestUrl(&manifestUrl) 
 acceptedIssuer := "did:web:eu.did-dev.contoso.io"
 verifiedIdProfileConfiguration.SetAcceptedIssuer(&acceptedIssuer) 
 claimBindingSource := graphmodels.DIRECTORY_CLAIMBINDINGSOURCE 
@@ -60,18 +64,32 @@ faceCheckConfiguration.SetIsEnabled(&isEnabled)
 sourcePhotoClaimName := "portrait"
 faceCheckConfiguration.SetSourcePhotoClaimName(&sourcePhotoClaimName) 
 requestBody.SetFaceCheckConfiguration(faceCheckConfiguration)
+mobileDriversLicenseConfiguration := graphmodels.NewMobileDriversLicenseConfiguration()
+acceptedRegions := []string {
+	"region-code",
+}
+mobileDriversLicenseConfiguration.SetAcceptedRegions(acceptedRegions)
+documentStandard := "document-standard"
+mobileDriversLicenseConfiguration.SetDocumentStandard(&documentStandard) 
+requestBody.SetMobileDriversLicenseConfiguration(mobileDriversLicenseConfiguration)
 
 
 verifiedIdUsageConfiguration := graphmodels.NewVerifiedIdUsageConfiguration()
 isEnabledForTestOnly := true
 verifiedIdUsageConfiguration.SetIsEnabledForTestOnly(&isEnabledForTestOnly) 
-purpose := graphmodels.RECOVERY_VERIFIEDIDUSAGECONFIGURATIONPURPOSE 
+purpose := graphmodels.VERIFICATION_VERIFIEDIDUSAGECONFIGURATIONPURPOSE 
 verifiedIdUsageConfiguration.SetPurpose(&purpose) 
 
 verifiedIdUsageConfigurations := []graphmodels.VerifiedIdUsageConfigurationable {
 	verifiedIdUsageConfiguration,
 }
 requestBody.SetVerifiedIdUsageConfigurations(verifiedIdUsageConfigurations)
+selfServiceIssuance := graphmodels.NewVerifiedIdSelfServiceIssuance()
+isEnabled := true
+selfServiceIssuance.SetIsEnabled(&isEnabled) 
+issuanceUrl := "https://verifiedid.contoso.com/issue"
+selfServiceIssuance.SetIssuanceUrl(&issuanceUrl) 
+requestBody.SetSelfServiceIssuance(selfServiceIssuance)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 profiles, err := graphClient.Identity().VerifiedId().Profiles().Post(context.Background(), requestBody, nil)

@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/contacts/delta
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -233,7 +233,7 @@ GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization. All three properties are included in the response and it isn't known which ones have changed since the `@odata.deltaLink` was obtained.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization. All three properties are included in the response and it isn't known which ones have changed since the `@odata.deltaLink` was obtained.
 
 <!-- {
   "blockType": "response",
@@ -309,7 +309,7 @@ Prefer: return=minimal
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization. The `mail` property isn't included, which means it hasn't changed since the last delta query; `displayName` and `jobTitle` are included, which means their values have changed.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization. The `mail` property isn't included, which means it hasn't changed since the last delta query; `displayName` and `jobTitle` are included, which means their values have changed.
 
 <!-- {
   "blockType": "response",

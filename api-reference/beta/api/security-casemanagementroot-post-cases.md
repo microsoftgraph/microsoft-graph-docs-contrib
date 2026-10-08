@@ -50,15 +50,20 @@ POST /security/caseManagement/cases
 
 In the request body, supply a JSON representation of the [case](../resources/security-casemanagement-case.md) object. Include `@odata.type` to identify a supported derived type. The `microsoft.graph.security.caseManagement.incidentCase` derived type isn't supported for create requests.
 
-You can specify the following properties when creating a **case**.
+When creating a [genericCase](../resources/security-casemanagement-genericcase.md) object, you can specify all its properties except `id`, `createdBy`, `createdDateTime`, `lastModifiedBy`, and `lastModifiedDateTime`, which are inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). The API ignores these properties if you include them in the request body.
 
-The **customFields** property is an open object keyed by custom field identifier. Each value must include an `@odata.type` annotation for the concrete custom field value type.
+Before constructing **customFields**, call [List customFields](../api/security-casemanagement-casetypeconfiguration-list-customfields.md) at `/security/caseManagement/caseTypeConfigurations/genericCase/customFields`. Use each definition's **displayName**, not its **id**, as the dynamic property name. The name must match exactly one definition. Each dynamic value must be an object that includes the mapped concrete `@odata.type` and the corresponding **value**, **values**, or **valueDateTime** property from the [custom field value mapping](../resources/security-casemanagement-customfieldvalues.md#custom-field-value-mapping); bare values aren't supported.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by custom field identifier. Optional.|
+|assignedTo|String|The user assigned to the generic case. Optional.|
+|closingNotes|String|Notes recorded when the generic case is closed. Optional.|
+|customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by the exact **displayName** of each custom field definition. Optional.|
+|description|String|The description of the generic case. Optional.|
 |displayName|String|The display name of the resource. Required.|
-|status|String|The lifecycle status of the resource. Required.|
+|dueDateTime|DateTimeOffset|The target completion date and time for the generic case. Optional.|
+|priority|String|The priority assigned to the generic case. Possible values are: `veryLow`, `low`, `medium`, `high`, and `critical`. Optional.|
+|status|String|The tenant-defined lifecycle status of the generic case. Use a **displayName** value returned in the status tree by [List statuses](../api/security-casemanagement-casetypeconfiguration-list-statuses.md) from `/security/caseManagement/caseTypeConfigurations/genericCase/statuses`. Required.|
 
 ## Response
 
@@ -87,9 +92,24 @@ Content-Type: application/json
   "assignedTo": "john.doe@contoso.com",
   "priority": "high",
   "customFields": {
-    "customerImpact": {
+    "Customer impact": {
       "@odata.type": "#microsoft.graph.security.caseManagement.customFieldStringValue",
       "value": "Executive mailbox affected"
+    },
+    "Affected users": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldNumberValue",
+      "value": 12
+    },
+    "Review date": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldDateTimeValue",
+      "valueDateTime": "2026-06-15T09:00:00Z"
+    },
+    "Affected services": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldOptionsValue",
+      "values": [
+        "Exchange Online",
+        "Microsoft Teams"
+      ]
     }
   }
 }
@@ -113,6 +133,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-create-case-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-create-case-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -147,9 +171,24 @@ Content-Type: application/json
   "assignedTo": "john.doe@contoso.com",
   "priority": "high",
   "customFields": {
-    "customerImpact": {
+    "Customer impact": {
       "@odata.type": "#microsoft.graph.security.caseManagement.customFieldStringValue",
       "value": "Executive mailbox affected"
+    },
+    "Affected users": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldNumberValue",
+      "value": 12
+    },
+    "Review date": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldDateTimeValue",
+      "valueDateTime": "2026-06-15T09:00:00Z"
+    },
+    "Affected services": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldOptionsValue",
+      "values": [
+        "Exchange Online",
+        "Microsoft Teams"
+      ]
     }
   }
 }

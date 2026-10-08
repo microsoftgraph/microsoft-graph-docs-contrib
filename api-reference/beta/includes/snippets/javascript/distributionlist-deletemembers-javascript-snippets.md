@@ -14,8 +14,7 @@ const distributionList = {
   members: [
     {
       key: 'MeganB@contoso.com',
-      routingType: 'SMTP',
-      recipientType: 'contact'
+      type: 'mailbox'
     }
   ]
 };

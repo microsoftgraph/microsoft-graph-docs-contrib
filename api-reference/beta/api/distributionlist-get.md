@@ -38,11 +38,9 @@ GET /users/{id | userPrincipalName}/distributionLists/{distributionList-id}
 
 ## Optional query parameters
 
-This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-The **members** property isn't returned by default. Use `$select=members` to include it in the response.
-
-Use `$expand=distributionListMembers` to include the expanded member list in the response.
+The **members** relationship isn't returned by default. Use `$expand=members` to include it in the response.
 
 ## Request headers
 

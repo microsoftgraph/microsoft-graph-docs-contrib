@@ -24,10 +24,8 @@ displayName := "Megan Bowen"
 member.SetDisplayName(&displayName) 
 key := "MeganB@contoso.com"
 member.SetKey(&key) 
-routingType := "SMTP"
-member.SetRoutingType(&routingType) 
-recipientType := graphmodels.MAILBOX_RECIPIENTTYPE 
-member.SetRecipientType(&recipientType) 
+type := graphmodels.MAILBOX_RECIPIENTTYPE 
+member.SetType(&type) 
 
 members := []graphmodels.Memberable {
 	member,

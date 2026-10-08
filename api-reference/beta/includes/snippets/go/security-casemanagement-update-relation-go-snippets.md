@@ -18,10 +18,6 @@ import (
 requestBody := graphmodelssecuritycasemanagement.NewRelation()
 relatedResourceId := "987654321"
 requestBody.SetRelatedResourceId(&relatedResourceId) 
-additionalData := map[string]interface{}{
-	"displayName" : "Related incident", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 relations, err := graphClient.Security().CaseManagement().Cases().ByCaseId("case-id").Relations().ByRelationId("relation-id").Patch(context.Background(), requestBody, nil)

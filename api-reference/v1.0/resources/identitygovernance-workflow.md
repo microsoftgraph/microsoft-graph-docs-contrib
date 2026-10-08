@@ -29,6 +29,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |[Delete](../api/identitygovernance-workflow-delete.md)|None|Deletes a [workflow](../resources/identitygovernance-workflow.md) object.|
 |[Activate](../api/identitygovernance-workflow-activate.md)|None|Run a workflow on-demand.|
 |[Activate with scope](../api/identitygovernance-workflow-activatewithscope.md)|None|Run a workflow on-demand with a specific scope.|
+|[Activate and wait](../api/identitygovernance-workflow-activateandwait.md)|[microsoft.graph.identityGovernance.awaitedWorkflowProcessingResult](../resources/identitygovernance-awaitedworkflowprocessingresult.md)|Activate a workflow for a subject and synchronously wait for completion.|
 |[List users in scope](../api/workflow-list-executionscope.md)|[microsoft.graph.user](../resources/user.md) collection|Get a list of users who are in the scope of the execution conditions of a [workflow](../resources/identitygovernance-workflow.md) object.|
 |[Clear quarantine](../api/identitygovernance-workflow-clearquarantine.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Release a quarantined workflow so that it resumes processing.|
 |[Preview task failures](../api/identitygovernance-workflow-previewtaskfailures.md)|[microsoft.graph.identityGovernance.previewFailedTask](../resources/identitygovernance-previewfailedtask.md) collection|Validate the tasks configured in a workflow to check for configuration errors.|
@@ -43,7 +44,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `mover`, `unknownFutureValue`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.<br><br>Supports `$filter`(`eq`,`ne`) and `$orderby`|
+|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `unknownFutureValue`, `mover`, `extensibility`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mover`, `extensibility`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.<br><br>Supports `$filter`(`eq`,`ne`) and `$orderby`|
 |createdDateTime|DateTimeOffset|When the `workflow` was created. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |deletedDateTime|DateTimeOffset|When the workflow was deleted.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |description|String|The description of the `workflow`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional.|
@@ -68,6 +69,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |previewScope|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|The preview scope for the workflow.|
 |runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Workflow runs.|
+|subjectProcessingResults|[microsoft.graph.identityGovernance.subjectProcessingResult](../resources/identitygovernance-subjectprocessingresult.md) collection|Per-subject workflow execution results.|
 |taskReports|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|Represents the aggregation of task execution data for tasks within a [workflow](../resources/identitygovernance-workflow.md) object.|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Represents the configured tasks to execute and their execution sequence within a [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.|
 |userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|Per-user workflow execution results.|

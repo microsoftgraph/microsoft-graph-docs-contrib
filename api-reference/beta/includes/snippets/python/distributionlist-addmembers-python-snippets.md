@@ -15,8 +15,7 @@ request_body = AddMembersPostRequestBody(
 		Member(
 			display_name = "Megan Bowen",
 			key = "MeganB@contoso.com",
-			routing_type = "SMTP",
-			recipient_type = RecipientType.Mailbox,
+			type = RecipientType.Mailbox,
 		),
 	],
 )

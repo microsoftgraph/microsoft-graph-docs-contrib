@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents an individual chat message within a [channel](channel.md) or [chat](chat.md). The message can be a root message or part of a thread that is defined by the **replyToId** property in the message.
 
+The [targetedChatMessage](targetedchatmessage.md) resource is a specialized type of chat message that is visible only to specified recipients. For more information, see [targetedChatMessage](targetedchatmessage.md).
+
 > **Note**: This resource supports subscribing to changes (create, update, and delete) using [change notifications](../resources/change-notifications-api-overview.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatMessage).
 
 ## Methods
@@ -72,9 +74,9 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only. If present, represents details of an event that happened in a **chat**, a **channel**, or a **team**, for example, adding new members. For event messages, the **messageType** property will be set to `systemEventMessage`.|
 |from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Details of the sender of the chat message. Can only be set during [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).|
 |id|String| Read-only. Unique ID of the message. IDs are unique within a chat/channel/reply-to-message, but might be duplicated in other chats/channels/reply-to-messages. |
-|importance|string | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
-|lastModifiedDateTime|dateTimeOffset|Read-only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed. |
+|importance|chatMessageImportance|The importance of the message. The possible values are: `normal`, `high`, `urgent`, `unknownFutureValue`. |
 |lastEditedDateTime|dateTimeOffset|Read-only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Teams UI. If no edits are made the value is `null`.|
+|lastModifiedDateTime|dateTimeOffset|Read-only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed. |
 |locale|string|Locale of the chat message set by the client. Always set to `en-us`.|
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, chat, and tag.|
 |messageHistory|[chatMessageHistoryItem](../resources/chatmessagehistoryitem.md) collection|List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.

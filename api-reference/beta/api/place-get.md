@@ -2,7 +2,7 @@
 title: "Get place"
 description: "Read the properties of a place object specified by its ID."
 author: tiwarisakshi02
-ms.date: 06/11/2025
+ms.date: 08/31/2026
 ms.localizationpriority: medium
 ms.subservice: outlook
 doc_type: apiPageType
@@ -129,6 +129,12 @@ Content-Type: application/json
   "id": "ca147fcf-ae27-43bb-9d91-f11e626e58bf",
   "placeId": "ca147fcf-ae27-43bb-9d91-f11e626e58bf",
   "displayName": "B06",
+  "customProperties": {
+    "@odata.type": "microsoft.graph.stringDictionary",
+    "campusCode": "SEA",
+    "costCenter": "CC-2048"
+  },
+  "lastUpdatedTime": "2026-08-31T15:24:00Z",
   "phone": "+1 (425) 615 8888 Ext 06",
   "isWheelChairAccessible": true,
   "label": "This is a building for demo",
@@ -566,4 +572,3 @@ Content-Type: application/json
   "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
 }
 ```
-

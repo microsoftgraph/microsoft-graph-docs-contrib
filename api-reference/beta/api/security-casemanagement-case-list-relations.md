@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.caseManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of external resource [relation](../resources/security-casemanagement-relation.md) objects for a [case](../resources/security-casemanagement-case.md).
+Get a list of external resource [relation](../resources/security-casemanagement-relation.md) objects for a [case](../resources/security-casemanagement-case.md). Each relation is an [incidentRelation](../resources/security-casemanagement-incidentrelation.md), [recommendationRelation](../resources/security-casemanagement-recommendationrelation.md), or [workspaceIndicatorRelation](../resources/security-casemanagement-workspaceindicatorrelation.md), identified by `@odata.type`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,7 +38,11 @@ GET /security/caseManagement/cases/{caseId}/relations
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter. On the base collection, `$select` can reference only properties declared on [relation](../resources/security-casemanagement-relation.md). To select a property declared only on a derived type, cast the collection to the derived type first.
+
+For example: `GET /security/caseManagement/cases/{caseId}/relations/microsoft.graph.security.caseManagement.recommendationRelation?$select=recommendationType`.
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -89,6 +93,10 @@ GET https://graph.microsoft.com/beta/security/caseManagement/cases/{caseId}/rela
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-list-case-relations-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-list-case-relations-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-list-case-relations-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -117,8 +125,7 @@ Content-Type: application/json
       "createdBy": "user@contoso.com",
       "lastModifiedDateTime": "2026-05-20T11:18:45Z",
       "lastModifiedBy": "user@contoso.com",
-      "relatedResourceId": "987654321",
-      "displayName": "Related incident"
+      "relatedResourceId": "987654321"
     }
   ]
 }

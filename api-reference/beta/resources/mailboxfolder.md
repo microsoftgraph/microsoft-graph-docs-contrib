@@ -42,6 +42,7 @@ This resource supports [delta query](/graph/delta-query-overview) to track incre
 |childFolderCount|Int32|The number of immediate child folders in the current folder.|
 |displayName|String|The display name of the folder.|
 |id|String|The unique identifier for the folder.|
+|isHidden|Boolean|Indicates whether the folder is hidden. The default value is `false`. This property can be set only when you create the folder; it can't be updated using PATCH. By default, [listing folders](../api/mailbox-list-folders.md) or [listing child folders](../api/mailboxfolder-list-childfolders.md) returns only folders that aren't hidden. To include hidden folders in the response, use the optional query parameter `includeHiddenFolders=true`. The response includes both hidden and nonhidden folders. If you use `$select` to limit the returned properties, include **isHidden** in the selection. |
 |parentFolderId|String|The unique identifier for the parent folder of this folder.|
 |parentMailboxUrl|String|The routing link to the actual underlying mailbox where the folder physically resides. The folder can be accessed using `GET {parentMailboxUrl}/folders/{id}`, which treats the entire URL as an opaque string. <br><br> This method is especially important when auto-expanding archiving is enabled for a user's in-place archive mailbox. The user's archive content can span across multiple mailboxes in such scenarios.|
 |totalItemCount|Int32|The number of items in the folder.|
@@ -71,6 +72,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "childFolderCount": "Int32",
   "id": "String (identifier)",
+  "isHidden": "Boolean",
   "parentFolderId": "String",
   "parentMailboxUrl": "String",
   "totalItemCount": "Int32",

@@ -19,7 +19,7 @@ import (
 startDateTime , err := time.Parse(time.RFC3339, "{startDateTime}")
 endDateTime , err := time.Parse(time.RFC3339, "{endDateTime}")
 aggregatedBy := "transactions"
-microsoftGraphNetworkaccessUsageProfiling, err := graphClient.NetworkAccess().Reports().MicrosoftGraphNetworkaccessUsageProfilingWithStartDateTimeWithEndDateTimeWithAggregatedByWithDiscoveredApplicationSegmentIdWithApplicationId(&startDateTime, &endDateTime, &aggregatedBy, &discoveredApplicationSegmentId, &applicationId).GetAsUsageProfilingWithStartDateTimeWithEndDateTimeWithAggregatedByGetResponse(context.Background(), nil)
+microsoftGraphNetworkaccessUsageProfiling, err := graphClient.NetworkAccess().Reports().MicrosoftGraphNetworkaccessUsageProfilingWithStartDateTimeWithEndDateTimeWithAggregatedByWithDiscoveredApplicationSegmentIdWithApplicationIdWithAiAgentIdWithAiAgentNameWithAgentTypeIdWithAgentVirtualIdWithDestinationUrl(&startDateTime, &endDateTime, &aggregatedBy, &discoveredApplicationSegmentId, &applicationId, &aiAgentId, &aiAgentName, &agentTypeId, &agentVirtualId, &destinationUrl).GetAsUsageProfilingWithStartDateTimeWithEndDateTimeWithAggregatedByGetResponse(context.Background(), nil)
 
 
 ```

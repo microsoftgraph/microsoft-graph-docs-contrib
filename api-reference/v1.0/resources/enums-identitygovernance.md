@@ -36,6 +36,15 @@ Namespace: microsoft.graph.identityGovernance
 |failed|
 |unknownFutureValue|
 
+### customTaskExtensionReplyMode values
+
+|Member|
+|:---|
+|none|
+|callback|
+|response|
+|unknownFutureValue|
+
 ### lifecycleTaskCategory values 
 
 
@@ -45,6 +54,8 @@ Namespace: microsoft.graph.identityGovernance
 |joiner|
 |leaver|
 |unknownFutureValue|
+|mover|
+|extensibility|
 
 ### lifecycleWorkflowCategory values 
 
@@ -55,6 +66,8 @@ Namespace: microsoft.graph.identityGovernance
 |joiner|
 |leaver|
 |unknownFutureValue|
+|mover|
+|extensibility|
 
 ### valueType values 
 
@@ -69,6 +82,16 @@ Namespace: microsoft.graph.identityGovernance
 |unknownFutureValue|
 
 
+### subjectType values
+
+The **subjectType** enumeration is an evolvable enumeration marked with the `IsFlags` attribute. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `provisioningObject`.
+
+|Member|
+|:---|
+|user|
+|unknownFutureValue|
+|provisioningObject|
+
 ### workflowExecutionType values 
 
 
@@ -80,6 +103,7 @@ Namespace: microsoft.graph.identityGovernance
 |unknownFutureValue|
 |activatedWithScope|
 |preview|
+|extensibilityOnDemand|
 
 
 ### workflowTriggerTimeBasedAttribute values 
