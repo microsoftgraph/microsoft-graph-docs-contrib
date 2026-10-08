@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-var result = graphClient.directory().tenantGovernance().relatedTenants().microsoftGraphTenantGovernanceServicesRefreshStatus().get();
+var result = graphClient.directory().tenantGovernance().relatedTenants().refreshStatus().get();
 
 
 ```

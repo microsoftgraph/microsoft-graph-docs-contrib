@@ -15,7 +15,6 @@ caseEscaped.setStatus("InProgress");
 caseEscaped.setClassification(com.microsoft.graph.beta.models.security.casemanagement.IncidentClassification.TruePositive);
 caseEscaped.setDetermination(com.microsoft.graph.beta.models.security.casemanagement.IncidentDetermination.Phishing);
 caseEscaped.setSeverity(com.microsoft.graph.beta.models.security.casemanagement.IncidentSeverity.High);
-caseEscaped.setSummary("Credential phishing campaign affecting multiple users.");
 com.microsoft.graph.models.security.casemanagement.Case result = graphClient.security().caseManagement().cases().byCaseId("{case-id}").patch(caseEscaped);
 
 

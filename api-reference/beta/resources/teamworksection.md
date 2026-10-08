@@ -25,6 +25,7 @@ Represents a section in a user's Microsoft Teams chat list that organizes chats,
 | [Get](../api/teamworksection-get.md) | [teamworkSection](teamworksection.md) | Read the properties of a [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). |
 | [Update](../api/teamworksection-update.md) | [teamworkSection](teamworksection.md) | Update the properties of a [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). |
 | [Delete](../api/teamworksection-delete.md) | None | Delete a user-defined [section](../resources/teamworksection.md) from a user's [teamwork](../resources/userteamwork.md). |
+| [Reorder](../api/teamworksection-reorder.md) | [teamworkSection](teamworksection.md) collection | Reorder all [sections](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). |
 | [List items](../api/teamworksection-list-items.md) | [teamworkSectionItem](teamworksectionitem.md) collection | Get the list of [items](../resources/teamworksectionitem.md) in a [section](../resources/teamworksection.md) of a user's [teamwork](../resources/userteamwork.md). |
 
 ## Properties
@@ -84,7 +85,7 @@ Instance attributes are properties with special behaviors. These properties are 
 | Property name | Type | Description |
 |:-----------|:-----|:------------|
 | @microsoft.graph.sectionsOrder | String collection | An ordered array of section IDs that represent the user's preferred section order. |
-| @microsoft.graph.sectionsVersion | String | The current section hierarchy version. Use this value as the `If-Match` header for optimistic concurrency control on mutation operations (create, update, or delete sections, and add, remove, or move items). |
+| @microsoft.graph.sectionsVersion | String | The current section hierarchy version. Use this value as the `If-Match` header for optimistic concurrency control on mutation operations (create, update, delete, or reorder sections, and add, remove, move, or reorder items). |
 
 ## Relationships
 

@@ -15,8 +15,7 @@ const distributionList = {
     {
       displayName: 'Megan Bowen',
       key: 'MeganB@contoso.com',
-      routingType: 'SMTP',
-      recipientType: 'mailbox'
+      type: 'mailbox'
     }
   ]
 };

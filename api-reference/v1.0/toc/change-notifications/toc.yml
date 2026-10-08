@@ -20,6 +20,8 @@ items:
     href: ../../api/subscription-delete.md
   - name: Reauthorize
     href: ../../api/subscription-reauthorize.md
+  - name: Get VAPID
+    href: ../../api/subscription-getvapidpublickey.md
 - name: Complex types
   items:
   - name: Change notification

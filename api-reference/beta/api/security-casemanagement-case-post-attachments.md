@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.caseManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an [attachment](../resources/security-casemanagement-attachment.md) for a [case](../resources/security-casemanagement-case.md).
+Create [attachment](../resources/security-casemanagement-attachment.md) metadata for a [case](../resources/security-casemanagement-case.md). This method doesn't upload the file content. After creating the attachment, use [Upload attachment content](../api/security-casemanagement-attachment-upload-content.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -51,12 +51,12 @@ You can specify the following properties when creating an **attachment**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the resource. Required.|
 |description|String|The description of the resource. Optional.|
-|fileSize|Int64|The size of the attachment in bytes. Optional.|
-|fileExtension|String|The file extension of the attachment. Optional.|
-|scanResult|[microsoft.graph.security.caseManagement.attachmentScanResult](../resources/security-casemanagement-attachment.md#attachmentscanresult-values)|The malware scan result for the attachment. Required.|
-|origin|[microsoft.graph.security.caseManagement.attachmentOrigin](../resources/security-casemanagement-attachmentorigin.md)|The origin reference for the attachment. Optional.|
+|displayName|String|The display name of the attachment. The value must be unique among attachments in the same case; creating another attachment with the same display name isn't allowed. Required.|
+|fileExtension|String|The file extension of the attachment. The service normalizes the value to include a leading period. Optional.|
+|fileSize|Int64|The size of the attachment in bytes. The maximum file size is 100 MB. Required.|
+
+The **origin** and **scanResult** properties are service controlled and can't be supplied.
 
 ## Response
 
@@ -82,13 +82,7 @@ Content-Type: application/json
   "displayName": "Case MS-001 Attachment",
   "description": "Screenshot of suspicious sign-in activity",
   "fileSize": 1000,
-  "fileExtension": "jpeg",
-  "scanResult": "noThreatsFound",
-  "origin": {
-    "@odata.type": "microsoft.graph.security.caseManagement.attachmentOrigin",
-    "resourceId": "987757fb-6ef4-1061-17e7-9de0d088e1dd",
-    "resourceType": "case"
-  }
+  "fileExtension": "jpeg"
 }
 ```
 
@@ -110,6 +104,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-create-case-attachment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-create-case-attachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -141,12 +139,7 @@ Content-Type: application/json
   "displayName": "Case MS-001 Attachment",
   "description": "Screenshot of suspicious sign-in activity",
   "fileSize": 1000,
-  "fileExtension": "jpeg",
-  "scanResult": "noThreatsFound",
-  "origin": {
-    "@odata.type": "microsoft.graph.security.caseManagement.attachmentOrigin",
-    "resourceId": "987757fb-6ef4-1061-17e7-9de0d088e1dd",
-    "resourceType": "case"
-  }
+  "fileExtension": ".jpeg",
+  "scanResult": "unscanned"
 }
 ```

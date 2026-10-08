@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/getByUser
 
 ---
 
-
 ### Response
 
 The following example shows the response.

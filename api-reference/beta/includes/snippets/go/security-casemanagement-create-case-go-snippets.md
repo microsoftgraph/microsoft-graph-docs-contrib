@@ -28,10 +28,25 @@ priority := "high"
 requestBody.SetPriority(&priority) 
 customFields := graphmodelssecuritycasemanagement.NewCustomFieldValues()
 additionalData := map[string]interface{}{
-customerImpact := graphmodelssecuritycasemanagement.NewCustomFieldStringValue()
+customer impact := graphmodelssecuritycasemanagement.NewCustomFieldStringValue()
 value := "Executive mailbox affected"
-customerImpact.SetValue(&value) 
-	customFields.SetCustomerImpact(customerImpact)
+customer impact.SetValue(&value) 
+	customFields.SetCustomer impact(customer impact)
+affected users := graphmodelssecuritycasemanagement.NewCustomFieldNumberValue()
+value := int32(12)
+affected users.SetValue(&value) 
+	customFields.SetAffected users(affected users)
+review date := graphmodelssecuritycasemanagement.NewCustomFieldDateTimeValue()
+valueDateTime , err := time.Parse(time.RFC3339, "2026-06-15T09:00:00Z")
+review date.SetValueDateTime(&valueDateTime) 
+	customFields.SetReview date(review date)
+affected services := graphmodelssecuritycasemanagement.NewCustomFieldOptionsValue()
+	values := []string {
+		"Exchange Online",
+		"Microsoft Teams",
+	}
+	affected services.SetValues(values)
+	customFields.SetAffected services(affected services)
 }
 customFields.SetAdditionalData(additionalData)
 requestBody.SetCustomFields(customFields)

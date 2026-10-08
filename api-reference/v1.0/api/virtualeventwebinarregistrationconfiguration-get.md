@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/88b245ac-b
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -265,6 +265,34 @@ Represents the type of operation indicated by an audit log record.
 | FilteringDocScan | Filtering doc scan audit log record. |
 | TimeTravelFilteringDocScan | Time travel filtering doc scan audit log record. |
 | MAPGOnboard | MAPG onboard audit log record. |
+| AlertSubmission | AlertSubmission audit log record. |
+| AlertSubmissionResultDetail | AlertSubmissionResultDetail audit log record. |
+| ComplianceSitGradingSharePoint | ComplianceSitGradingSharePoint audit log record. |
+| CompliancePolicyGradingSharePoint | CompliancePolicyGradingSharePoint audit log record. |
+| AzureAISearchAudit | AzureAISearchAudit audit log record. |
+| P4AIRiskScoreRecord | P4AIRiskScoreRecord audit log record. |
+| DragonCopilotAdmin | DragonCopilotAdmin audit log record. |
+| AISpanOutputs | AISpanOutputs audit log record. |
+| EopSubmissionFeedEntity | EopSubmissionFeedEntity audit log record. |
+| SonarFileDetonationEntity | SonarFileDetonationEntity audit log record. |
+| SonarSubmissionEntity | SonarSubmissionEntity audit log record. |
+| SonarUrlDetonationEntity | SonarUrlDetonationEntity audit log record. |
+| SubmissionEntity | SubmissionEntity audit log record. |
+| SonarDetonationEntity | SonarDetonationEntity audit log record. |
+| MicrosoftTeamsUserConcern | MicrosoftTeamsUserConcern audit log record. |
+| VivaGlintAgenticCampaign | VivaGlintAgenticCampaign audit log record. |
+| MSPVectorSearchContentMetadata | MSPVectorSearchContentMetadata audit log record. |
+| FabricPolicy | FabricPolicy audit log record. |
+| SecurityCopilotAgentIdentityManagement | SecurityCopilotAgentIdentityManagement audit log record. |
+| CopilotSessionSharing | CopilotSessionSharing audit log record. |
+| DragonCopilotAccess | DragonCopilotAccess audit log record. |
+| DragonCopilotClinicalData | DragonCopilotClinicalData audit log record. |
+| DragonCopilotSession | DragonCopilotSession audit log record. |
+| MosAgentInfoRecordV2 | MosAgentInfoRecordV2 audit log record. |
+| SecurityDevelopmentLifecycleAILog | SecurityDevelopmentLifecycleAILog audit log record. |
+| MDASH | MDASH audit log record. |
+| DefenderSecurityForAIConfiguration | DefenderSecurityForAIConfiguration audit log record. |
+| SparkCoreCustomLivePool | SparkCoreCustomLivePool audit log record. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation

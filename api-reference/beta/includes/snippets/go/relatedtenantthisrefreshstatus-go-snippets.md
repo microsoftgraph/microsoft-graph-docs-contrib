@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-microsoftGraphTenantGovernanceServicesRefreshStatus, err := graphClient.Directory().TenantGovernance().RelatedTenants().MicrosoftGraphTenantGovernanceServicesRefreshStatus().Get(context.Background(), nil)
+refreshStatus, err := graphClient.Directory().TenantGovernance().RelatedTenants().RefreshStatus().Get(context.Background(), nil)
 
 
 ```

@@ -3,6 +3,8 @@ title: "delegatedAdministrationRoleAssignmentSnapshot resource type"
 description: "Represents a snapshot of a delegated administration role assignment configuration stored in a governance relationship or request."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
@@ -10,7 +12,7 @@ doc_type: resourcePageType
 
 # delegatedAdministrationRoleAssignmentSnapshot resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ Represents a snapshot of a delegated administration role assignment configuratio
 |:---|:---|:---|
 |groupDisplayName|String|The display name of the security group identified by **groupId** at the time the snapshot was created. Read-only.|
 |groupId|String|The object ID of the role-assignable security group in the governing tenant that will be assigned the specified roles.|
-|roleTemplates|[microsoft.graph.tenantGovernanceServices.roleTemplate](../resources/tenantgovernanceservices-roletemplate.md) collection|The collection of role templates that define the Microsoft Entra roles to be assigned.|
+|roleTemplates|[microsoft.graph.roleTemplate](../resources/tenantgovernanceservices-roletemplate.md) collection|The collection of role templates that define the Microsoft Entra roles to be assigned.|
 
 ## Relationships
 None.
@@ -30,17 +32,17 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.delegatedAdministrationRoleAssignmentSnapshot"
+  "@odata.type": "microsoft.graph.delegatedAdministrationRoleAssignmentSnapshot"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.delegatedAdministrationRoleAssignmentSnapshot",
+  "@odata.type": "#microsoft.graph.delegatedAdministrationRoleAssignmentSnapshot",
   "groupDisplayName": "String",
   "groupId": "String",
   "roleTemplates": [
     {
-      "@odata.type": "microsoft.graph.tenantGovernanceServices.roleTemplate"
+      "@odata.type": "microsoft.graph.roleTemplate"
     }
   ]
 }

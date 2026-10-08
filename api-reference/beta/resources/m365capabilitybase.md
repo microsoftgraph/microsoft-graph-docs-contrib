@@ -2,11 +2,11 @@
 title: "m365CapabilityBase resource type"
 description: "Represents an abstract base type for cross-tenant Microsoft 365 capabilities."
 author: "lasharma"
-ms.date: 04/23/2026
+ms.date: 08/07/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-toc.title: "Microsoft 365 capabilities"
+toc.title: "Microsoft 365 capability base"
 ---
 
 # m365CapabilityBase resource type
@@ -19,6 +19,9 @@ Represents an abstract base type for cross-tenant Microsoft 365 capabilities. Th
 
 The following types derive from **m365CapabilityBase**:
 
+- [anonymousCalendarSharingFreeBusyDetail](../resources/anonymouscalendarsharingfreebusydetail.md)
+- [anonymousCalendarSharingFreeBusyReviewer](../resources/anonymouscalendarsharingfreebusyreviewer.md)
+- [anonymousCalendarSharingFreeBusySimple](../resources/anonymouscalendarsharingfreebusysimple.md)
 - [crossTenantCalendarAvailabilityBasic](../resources/crosstenantcalendaravailabilitybasic.md)
 - [crossTenantCalendarAvailabilityLimitedDetails](../resources/crosstenantcalendaravailabilitylimiteddetails.md)
 - [crossTenantCalendarSharingFreeBusyDetail](../resources/crosstenantcalendarsharingfreebusydetail.md)
@@ -59,8 +62,6 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.m365CapabilityBase",
   "name": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "inboundAccess": {
-    "@odata.type": "microsoft.graph.m365CapabilityInboundAccess"
-  }
+  "inboundAccess": {"@odata.type": "microsoft.graph.m365CapabilityInboundAccess"}
 }
 ```
