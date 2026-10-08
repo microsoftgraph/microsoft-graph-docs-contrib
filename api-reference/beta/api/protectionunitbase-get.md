@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/backupRestore/protectionUnits/{protectionUnitBaseId}
 ```
 
@@ -62,16 +62,12 @@ The following example shows a request.
   "name": "protectionunitbase_get"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/protectionunitbase-get-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/protectionunitbase-get-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -109,13 +105,14 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionUnitBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 
 {
   "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
   "siteId": "contoso-jpn.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e900900",
   "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+  "backupRetentionPeriodInDays": 180,
   "status": "protectRequested",
   "protectionSources": "manual",
   "createdBy": {
@@ -142,5 +139,10 @@ HTTP/1.1 200 OK
     }
   },
   "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
+  "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z",
+  "pendingRetentionPeriodChange": {
+    "status": "inProgress",
+    "targetRetentionPeriodInDays": 720
+  }
 }
 ```

@@ -6,6 +6,8 @@ author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
+ms.topic: how-to
 ---
 
 # Set up a demo education tenant
@@ -54,7 +56,7 @@ For information about tenant licensing and user permissions, see the following:
 - [Unassign licenses from users](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide&preserve-view=true)
 - [Buy or remove licenses from your subscription](/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide&preserve-view=true)
 
-## Next steps
+## Next step
 
 - [Set up School Data Sync](/graph/msgraph-onboarding-sds)
 

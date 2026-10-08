@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}
 ```
 
@@ -57,14 +57,17 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-Here's an example of a request.
 
-``` http
+The following example shows a request.
+
+```http
 GET https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/dc6a7efd-6b2b-4c6a-84e7-5dcf97e62e04
 ```
 
 ### Response
-Here's an example of the response.
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -72,7 +75,7 @@ Here's an example of the response.
   "@odata.type": "microsoft.graph.networkaccess.remoteNetwork"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

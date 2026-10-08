@@ -1,0 +1,15 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+com.microsoft.graph.beta.models.security.securitycopilot.Evaluation evaluation = new com.microsoft.graph.beta.models.security.securitycopilot.Evaluation();
+com.microsoft.graph.models.security.securitycopilot.Evaluation result = graphClient.security().securityCopilot().workspaces().byWorkspaceId("{workspace-id}").sessions().bySessionId("{session-id}").prompts().byPromptId("{prompt-id}").evaluations().post(evaluation);
+
+
+```

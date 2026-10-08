@@ -16,17 +16,13 @@ Namespace: microsoft.graph
 
 Get a list of [sharePointGroup](../resources/sharepointgroup.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestoragecontainer-list-sharepointgroups-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_list_sharepointgroups" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-sharepointgroups-permissions.md)]
 
 > [!NOTE]
@@ -38,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups
 ```
 
@@ -67,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Retrieve all the existing sharePointGroup objects that are local to a fileStorageContainer
 
-The following example retrieves all the **sharePointGroup** objects that are local to a **fileStoragecontainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+The following example retrieves all the **sharePointGroup** objects that are local to a **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 
 #### Request
 
@@ -78,16 +74,12 @@ The following example shows a request.
   "blockType": "request",
   "name": "list_sharepointgroups_1"
 }-->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sharepointgroups-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-sharepointgroups-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -121,7 +113,7 @@ The following example shows the response that contains the collection of **share
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.sharePointGroup)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -129,15 +121,17 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.sharePointGroup",
-      "id": "7",
+      "id": "ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0",
       "title": "sampleTitle1",
-      "description": "sampleDescription1"
+      "description": "sampleDescription1",
+      "principalId": "7"
     },
     {
       "@odata.type": "#microsoft.graph.sharePointGroup",
-      "id": "9",
+      "id": "ZGYwZTEzYTgtOTExOS00PdjfPUHzNjktOTdjOWM3YjNlYjcyOpo8",
       "title": "sampleTitle2",
-      "description": "sampleDescription2"
+      "description": "sampleDescription2",
+      "principalId": "9"
     }
   ]
 }
@@ -145,7 +139,7 @@ Content-Type: application/json
 
 ### Example 2: Attempt to retrieve all the existing sharePointGroup objects that are local to a fileStorageContainer
 
-The following example attempts to retrieve all the **sharePointGroup** objects that are local to a **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the **fileStorageContainer** contains no **sharePointGroup** objects.
+The following example attempts to retrieve all the **sharePointGroup** objects that are local to a **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_6A`; however, the **fileStorageContainer** contains no **sharePointGroup** objects.
 
 #### Request
 
@@ -156,16 +150,12 @@ The following example shows a request.
   "blockType": "request",
   "name": "list_sharepointgroups_2"
 }-->
-``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_6A/sharePointGroups
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sharepointgroups-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-sharepointgroups-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -192,14 +182,14 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0
 
 #### Response
 
-The following example shows the response. Because no **sharePointGroup** objects exist in the **fileStorageContainer**, the response has an empty list.
+The following example shows the response. The response has an empty list, because no **sharePointGroup** objects exist in the **fileStorageContainer**. 
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.sharePointGroup)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -34,13 +34,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 For localizations based on a business scenario ID:
 
-``` http
+```http
 GET /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration/localizations
 ```
 
 For localizations based on the unique name of a business scenario:
 
-``` http
+```http
 GET /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfiguration/localizations
 ```
 
@@ -79,16 +79,12 @@ The following example shows a request.
   "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration/localizations
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-plannerplanconfigurationlocalization-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-plannerplanconfigurationlocalization-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -127,7 +123,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.plannerPlanConfigurationLocalization)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -208,16 +204,12 @@ The following example shows a request.
   "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration/localizations?$filter=languageTag eq 'en-us'
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-plannerplanconfigurationlocalization-e2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-plannerplanconfigurationlocalization-e2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -256,7 +248,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.plannerPlanConfigurationLocalization)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

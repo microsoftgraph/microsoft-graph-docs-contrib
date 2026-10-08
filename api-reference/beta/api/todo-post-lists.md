@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/todo/lists
 POST /users/{id|userPrincipalName}/todo/lists
 ```
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [todoTask
   "name": "create_todotasklist_from_lists"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/todo/lists
 Content-Type: application/json
 
@@ -77,10 +77,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-todotasklist-from-lists-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-todotasklist-from-lists-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -117,7 +113,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.todoTaskList"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

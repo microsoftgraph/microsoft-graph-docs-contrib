@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get insights into the GCP storage buckets that are accessible externally. 
 
 Inherits from [finding](../resources/finding.md).
@@ -58,4 +60,5 @@ The following JSON representation shows the resource type.
   "encryptionManagedBy": "String"
 }
 ```
+
 

@@ -73,7 +73,7 @@ If successful, this method returns `201 Created` response code and the [Attachme
 
 ## Example (file attachment)
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -95,10 +95,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-message-beta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-file-attachment-from-message-beta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -128,7 +124,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -155,7 +151,7 @@ Content-type: application/json
 
 ## Example (item attachment)
 
-##### Request
+### Request
 The following example shows a request.
 
 
@@ -197,10 +193,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-item-attachment-from-message-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-item-attachment-from-message-beta-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-item-attachment-from-message-beta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -227,8 +219,10 @@ Content-type: application/json
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_beta",
@@ -251,7 +245,7 @@ Content-type: application/json
 
 ## Example (reference attachment)
 
-##### Request
+### Request
 The following example shows a request that adds a reference attachment to an existing message.
 The attachment points to a folder on OneDrive.
 
@@ -281,10 +275,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-reference-attachment-from-message-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-reference-attachment-from-message-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -311,8 +301,8 @@ Content-type: application/json
 
 ---
 
-##### Response
-Here is an example of a full response.
+### Response
+The following example shows a full response.
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_message",

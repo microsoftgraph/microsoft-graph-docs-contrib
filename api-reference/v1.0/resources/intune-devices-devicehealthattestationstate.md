@@ -1,11 +1,11 @@
 ---
 title: "deviceHealthAttestationState resource type"
-description: "Not yet documented"
+description: "Intune Devices Devicehealthattestationstate Resources ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # deviceHealthAttestationState resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Properties
 |Property|Type|Description|
@@ -39,7 +39,7 @@ Not yet documented
 |safeMode|String|Safe mode is a troubleshooting option for Windows that starts your computer in a limited state|
 |windowsPE|String|Operating system running with limited services that is used to prepare a computer for Windows|
 |earlyLaunchAntiMalwareDriverProtection|String|ELAM provides protection for the computers in your network when they start up|
-|virtualSecureMode|String|VSM is a container that protects high value assets from a compromised kernel|
+|virtualSecureMode|String|Indicates whether the device has Virtual Secure Mode (VSM) enabled. Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel. This property will be deprecated in beta from August 2023. Support for this property will end in August 2025 for v1.0 API. A new property virtualizationBasedSecurity is added and used instead. The value used for virtualSecureMode will be passed by virtualizationBasedSecurity during the deprecation process. Possible values are "enabled", "disabled" and "notApplicable". "enabled" indicates Virtual Secure Mode (VSM) is enabled. "disabled" indicates Virtual Secure Mode (VSM) is disabled. "notApplicable" indicates the device is not a Windows 11 device. Default value is "notApplicable".|
 |pcrHashAlgorithm|String|Informational attribute that identifies the HASH algorithm that was used by TPM|
 |bootAppSecurityVersion|String|The security version number of the Boot Application|
 |bootManagerSecurityVersion|String|The security version number of the Boot Application|

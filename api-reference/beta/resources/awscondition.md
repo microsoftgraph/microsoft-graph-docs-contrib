@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 An OpenType to represent AWS conditions JSON that's used in an [awsStatement](../resources/awsstatement.md).
 
 ## Properties
@@ -35,4 +37,5 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.awsCondition"
 }
 ```
+
 

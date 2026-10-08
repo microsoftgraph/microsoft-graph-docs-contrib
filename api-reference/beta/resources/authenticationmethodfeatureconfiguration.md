@@ -22,7 +22,7 @@ Defines the features that are allowed for different authentication methods. For 
 |:---|:---|:---|
 |excludeTarget|[featureTarget](../resources/featuretarget.md)|A single entity that's excluded from using this feature.|
 |includeTarget|[featureTarget](../resources/featuretarget.md)|A single entity that's allowed to use this feature.|
-|state|advancedConfigState|Enable or disable the feature. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set and uses the default behavior of Microsoft Entra ID for the setting. The default value is `disabled`.|
+|state|advancedConfigState|Enable or disable the feature. The possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set and uses the default behavior of Microsoft Entra ID for the setting. The default value is `disabled`.|
 
 ## Relationships
 None.

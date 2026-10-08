@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/virtualEvents/webinars
 ```
 
@@ -52,11 +52,12 @@ You can specify the following properties when you create a [virtualEventWebinar]
 
 |Property|Type|Description|
 |:---|:---|:---|
-| audience | meetingAudience | The audience to whom the webinar is visible. Possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
+| audience | meetingAudience | The audience to whom the webinar is visible. The possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
 | coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the webinar. |
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar ends. |
+| isRegistrationRequired | Boolean | Indicates whether attendee registration is enabled for the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar starts. |
 
@@ -76,7 +77,7 @@ The following example shows a request.
   "name": "create_virtualeventwebinar"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars
 Content-Type: application/json
 
@@ -103,13 +104,10 @@ Content-Type: application/json
     ],
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
-    }
+    },
+    "isRegistrationRequired": true
 }
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventwebinar-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventwebinar-javascript-snippets.md)]
@@ -127,7 +125,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventWebinar"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -167,6 +165,7 @@ Content-Type: application/json
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     },
+    "isRegistrationRequired": true,
     "externalEventInformation": []
 }
 ```

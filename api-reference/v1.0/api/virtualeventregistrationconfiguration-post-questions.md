@@ -1,6 +1,6 @@
 ---
 title: "Create virtualEventRegistrationCustomQuestion"
-description: "Create a registration question for a webinar."
+description: "Create a registration question for a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,7 @@ ms.date: 08/13/2024
 # Create virtualEventRegistrationCustomQuestion
 Namespace: microsoft.graph
 
-Create a [registration question](../resources/virtualeventregistrationquestionbase.md) for a [webinar](../resources/virtualeventwebinar.md).
+Create a [registration question](../resources/virtualeventregistrationquestionbase.md) for a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).
 
 You can create either a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md).
 
@@ -30,8 +30,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+
+To create a question in the registration configuration of a webinar:
+
+```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/questions
+```
+
+To create a question in the registration configuration of a town hall:
+
+```http
+POST /solutions/virtualEvents/townhalls/{townhallId}/registrationConfiguration/questions
 ```
 
 ## Request headers
@@ -77,7 +86,7 @@ The following example shows a request.
   "name": "post_custom_question_virtualeventregistration"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrationConfiguration/questions
 Content-Type: application/json
 
@@ -95,10 +104,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-custom-question-virtualeventregistration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-custom-question-virtualeventregistration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -124,8 +129,6 @@ Content-Type: application/json
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/post-custom-question-virtualeventregistration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -169,16 +172,12 @@ The following example shows a request.
   "name": "post_predefined_question_virtualeventregistration"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrationConfiguration/questions
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-predefined-question-virtualeventregistration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-predefined-question-virtualeventregistration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -207,9 +206,7 @@ POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-
 
 ---
 
----
-
-``` http
+```http
 Content-Type: application/json
 
 {

@@ -33,7 +33,7 @@ GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.i
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "get_inactiveawsrolefinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxJbmFjdGl2ZUF3c1JvbGVGaW5kaW5nLDY1MTY0MA/microsoft.graph.inactiveAwsRoleFinding
 ```
 
@@ -77,7 +77,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.inactiveAwsRoleFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

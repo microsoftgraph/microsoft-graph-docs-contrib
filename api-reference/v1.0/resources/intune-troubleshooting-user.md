@@ -1,11 +1,11 @@
 ---
 title: "user resource type"
-description: "Not yet documented"
+description: "Intune Troubleshooting User Resources ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 03/14/2024
+ms.date: 08/01/2024
 ---
 
 # user resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Methods
 |Method|Return Type|Description|
@@ -24,6 +24,7 @@ Not yet documented
 |[Create user](../api/intune-troubleshooting-user-create.md)|[user](../resources/intune-troubleshooting-user.md)|Create a new [user](../resources/intune-troubleshooting-user.md) object.|
 |[Delete user](../api/intune-troubleshooting-user-delete.md)|None|Deletes a [user](../resources/intune-troubleshooting-user.md).|
 |[Update user](../api/intune-troubleshooting-user-update.md)|[user](../resources/intune-troubleshooting-user.md)|Update the properties of a [user](../resources/intune-troubleshooting-user.md) object.|
+|[getManagedDevicesWithAppFailures function](../api/intune-troubleshooting-user-getmanageddeviceswithappfailures.md)|String collection|Retrieves the list of devices with failed apps|
 
 ## Properties
 |Property|Type|Description|

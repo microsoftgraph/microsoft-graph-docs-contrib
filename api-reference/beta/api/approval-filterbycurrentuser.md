@@ -15,29 +15,29 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), return a collection of [access package assignment approvals](../resources/approval.md). The objects returned are those that are in scope for approval by the calling user.
 
-In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), return a collection of [assignment approvals](../resources/approval.md). The objects returned are those that are in scope for approval by the calling user.
+In [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), return a collection of [assignment approvals](../resources/approval.md). The objects returned are those that are in scope for approval by the calling user.
 
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For entitlement management
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+### For Entitlement Management
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_filterbycurrentuser", 
+  "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/filterByCurrentUser(on='approver')"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approval-filterbycurrentuser-permissions.md)]
 
-### For PIM for groups
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+### For PIM for Groups
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_filterbycurrentuser_2", 
+  "requestUrls": ["GET /identityGovernance/privilegedAccess/group/assignmentApprovals/filterByCurrentUser(on='approver')"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approval-filterbycurrentuser-2-permissions.md)]
 
 ## HTTP request
 
@@ -50,7 +50,7 @@ To retrieve the approval resources in entitlement management:
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/filterByCurrentUser(on='approver')
 ```
 
-To retrieve the approval resources in PIM for groups:
+To retrieve the approval resources in PIM for Groups:
 <!-- {
   "blockType": "ignored"
 }
@@ -60,7 +60,7 @@ GET /identityGovernance/privilegedAccess/group/assignmentApprovals/filterByCurre
 ```
 
 ## Function parameters
-This method supports the OData query parameters for paging through a large result set. For general information, see [OData query parameters](/graph/query-parameters).
+In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -95,10 +95,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/approvalthis-filterbycurrentuser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/approvalthis-filterbycurrentuser-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -149,7 +145,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve the approval resources in PIM for groups
+### Example 2: Retrieve the approval resources in PIM for Groups
 
 #### Request
 
@@ -165,10 +161,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/a
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/approvalthis-filterbycurrentuser-azureadgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/approvalthis-filterbycurrentuser-azureadgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

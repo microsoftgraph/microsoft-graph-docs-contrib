@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const virtualEventRegistration = {
   externalRegistrationInformation: {
-    referrer: 'Facebook',
+    referrer: 'Fabrikam',
     registrationId: 'myExternalRegistrationId'
   },
   preferredTimezone: 'Pacific Standard Time',

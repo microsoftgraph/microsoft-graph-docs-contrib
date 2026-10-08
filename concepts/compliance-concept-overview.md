@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "ediscovery"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Overview of compliance and privacy APIs in Microsoft Graph
@@ -18,7 +19,7 @@ The compliance and privacy APIs are intended to help deliver on the vision of he
 
 ### Develop applications that ensure a repeatable, predictable, and standard process
 
-Organizations rely on [Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) capabilities to meet requirements to find the truth about what happened in their organization when they need to. The need to find the truth may be based on internal or external requirements such as litigation, investigation, or regulatory compliance.
+Organizations rely on [Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) capabilities to meet requirements to find the truth about what happened in their organization when they need to. The need to find the truth might be based on internal or external requirements such as litigation, investigation, or regulatory compliance.
 
 In many organizations, eDiscovery workflows are frequent, critical, and high volume. In the cases where there are common repeated tasks or a high volume of activities, the APIs help provide a scalable way to repeat processes consistently and effectively.
 

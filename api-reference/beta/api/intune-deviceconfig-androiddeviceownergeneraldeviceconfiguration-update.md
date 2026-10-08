@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
@@ -110,6 +110,7 @@ The following table shows the properties that are required when you create the [
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|A list of managed apps that will be shown when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |kioskModeWallpaperUrl|String|URL to a publicly accessible image to use for the wallpaper when the device is in Kiosk Mode.|
 |kioskModeExitCode|String|Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.|
+|isKioskModeExitCodeSet|Boolean|Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.|
 |kioskModeVirtualHomeButtonEnabled|Boolean|Whether or not to display a virtual home button when the device is in Kiosk Mode.|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Indicates whether the virtual home button is a swipe up home button or a floating home button. Possible values are: `notConfigured`, `swipeUp`, `floating`.|
 |kioskModeBluetoothConfigurationEnabled|Boolean|Whether or not to allow a user to configure Bluetooth settings in Kiosk Mode.|
@@ -132,6 +133,7 @@ The following table shows the properties that are required when you create the [
 |kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) collection|A list of managed folders for a device in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) collection|The ordering of items on Kiosk Mode Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |kioskModeManagedHomeScreenAutoSignout|Boolean|Whether or not to automatically sign-out of MHS and Shared device mode applications after inactive for Managed Home Screen.|
+|kioskModeManagedHomeScreenAppSettings|[androidDeviceOwnerKioskModeApp](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapp.md) collection|Indicates the list of managed applications and associated settings, which will be applied when android device is run on kiosk mode with Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|Number of seconds to give user notice before automatically signing them out for Managed Home Screen. Valid values 0 to 9999999|
 |kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|Number of seconds device is inactive before automatically signing user out for Managed Home Screen. Valid values 0 to 9999999|
 |kioskModeManagedHomeScreenPinComplexity|[kioskModeManagedHomeScreenPinComplexity](../resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)|Complexity of PIN for sign-in session for Managed Home Screen. Possible values are: `notConfigured`, `simple`, `complex`.|
@@ -213,10 +215,10 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10717
+Content-length: 11089
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -310,8 +312,12 @@ Content-length: 10717
   ],
   "factoryResetBlocked": true,
   "globalProxy": {
-    "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
-    "proxyAutoConfigURL": "Proxy Auto Config URL value"
+    "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyDirect",
+    "host": "Host value",
+    "port": 4,
+    "excludedHosts": [
+      "Excluded Hosts value"
+    ]
   },
   "googleAccountsBlocked": true,
   "kioskCustomizationDeviceSettingsBlocked": true,
@@ -335,6 +341,7 @@ Content-length: 10717
   ],
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
+  "isKioskModeExitCodeSet": true,
   "kioskModeVirtualHomeButtonEnabled": true,
   "kioskModeVirtualHomeButtonType": "swipeUp",
   "kioskModeBluetoothConfigurationEnabled": true,
@@ -382,6 +389,15 @@ Content-length: 10717
     }
   ],
   "kioskModeManagedHomeScreenAutoSignout": true,
+  "kioskModeManagedHomeScreenAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeApp",
+      "package": "Package value",
+      "className": "Class Name value",
+      "offlineAppAccessEnabled": true,
+      "preSignInAppAccessEnabled": true
+    }
+  ],
   "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 7,
   "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 8,
   "kioskModeManagedHomeScreenPinComplexity": "simple",
@@ -502,10 +518,10 @@ Content-length: 10717
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10889
+Content-Length: 11261
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -602,8 +618,12 @@ Content-Length: 10889
   ],
   "factoryResetBlocked": true,
   "globalProxy": {
-    "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
-    "proxyAutoConfigURL": "Proxy Auto Config URL value"
+    "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyDirect",
+    "host": "Host value",
+    "port": 4,
+    "excludedHosts": [
+      "Excluded Hosts value"
+    ]
   },
   "googleAccountsBlocked": true,
   "kioskCustomizationDeviceSettingsBlocked": true,
@@ -627,6 +647,7 @@ Content-Length: 10889
   ],
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
+  "isKioskModeExitCodeSet": true,
   "kioskModeVirtualHomeButtonEnabled": true,
   "kioskModeVirtualHomeButtonType": "swipeUp",
   "kioskModeBluetoothConfigurationEnabled": true,
@@ -674,6 +695,15 @@ Content-Length: 10889
     }
   ],
   "kioskModeManagedHomeScreenAutoSignout": true,
+  "kioskModeManagedHomeScreenAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeApp",
+      "package": "Package value",
+      "className": "Class Name value",
+      "offlineAppAccessEnabled": true,
+      "preSignInAppAccessEnabled": true
+    }
+  ],
   "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 7,
   "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 8,
   "kioskModeManagedHomeScreenPinComplexity": "simple",

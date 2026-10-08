@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata for the given object.
+Metadata for the given object. This object is configured in the **metadata** property of [objectDefinition](../resources/synchronization-objectdefinition.md).
 
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|key|objectDefinitionMetadata|Possible values are: `PropertyNameAccountEnabled`, `PropertyNameSoftDeleted`, `IsSoftDeletionSupported`, `IsSynchronizeAllSupported`, `ConnectorDataStorageRequired`, `Extensions`, `LinkTypeName`. |
+|key|objectDefinitionMetadata|The possible values are: `PropertyNameAccountEnabled`, `PropertyNameSoftDeleted`, `IsSoftDeletionSupported`, `IsSynchronizeAllSupported`, `ConnectorDataStorageRequired`, `Extensions`, `LinkTypeName`. |
 |value|String|Value of the metadata property.|
 
 ### Supported key-value pairs

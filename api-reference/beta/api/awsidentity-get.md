@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.
 
 ## Permissions
@@ -99,4 +101,5 @@ Content-Type: application/json
   }
 }
 ```
+
 

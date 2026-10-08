@@ -56,7 +56,7 @@ If successful, this method returns `202 Accepted` response code. It doesn't retu
 ## Examples
 ### Example 1: Send an existing draft message
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 
@@ -74,10 +74,6 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/send
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-send-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/message-send-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

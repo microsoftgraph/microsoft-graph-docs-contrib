@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -60,3 +60,5 @@ Remote actions Intune supports.
 |initiateDeviceAttestation|38|Indicates remote device action to intiate Mobile Device Management (MDM) attestation if device is capable for it.|
 |changeAssignments|39|Indicates remote device action to override assignments for a Device.|
 |delete|40|Indicates remote device action to delete a device from Intune portal.|
+|suspendManagedHomeScreen|41|Indicates remote device action to temporarily suspend the Managed Home Screen kiosk app.|
+|restoreManagedHomeScreen|42|Indicates remote device action to restore the Managed Home Screen kiosk app.|

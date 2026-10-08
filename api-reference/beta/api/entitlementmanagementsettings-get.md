@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of an [entitlementManagementSettings](../resources/entitlementManagementSettings.md) object.
+Retrieve the properties of an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -37,7 +37,7 @@ GET /identityGovernance/entitlementManagement/settings
 
 ## Optional query parameters
 
-This method does not support the OData query parameters to customize the response.
+This method doesn't support the OData query parameters to customize the response.
 
 ## Request headers
 
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/se
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-entitlementmanagementsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-entitlementmanagementsettings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

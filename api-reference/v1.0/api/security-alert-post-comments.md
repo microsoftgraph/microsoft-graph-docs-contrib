@@ -21,13 +21,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_alert_post_comments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-alert-post-comments-permissions.md)]
 
+[!INCLUDE [rbac-security-alerts-apis-write](../includes/rbac-for-apis/rbac-security-alerts-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/alerts_v2/{alertId}/comments
 ```
 
@@ -61,7 +63,7 @@ The following example shows a request.
   "name": "alert_v2_addcomment"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/alerts_v2/da637865765418431569_-773071023/comments
 Content-Type: application/json
 
@@ -73,10 +75,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/alert-v2-addcomment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/alert-v2-addcomment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -115,12 +113,12 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/alerts_v2('da637865765418431569_-773071023')/comments",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/alerts_v2('da637865765418431569_-773071023')/comments",
     "value": [
         {
             "comment": "test",

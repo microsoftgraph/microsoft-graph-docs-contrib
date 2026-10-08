@@ -1,11 +1,11 @@
 ---
 title: "List provisioningFlow objects"
 description: "Get a list of the provisioningFlow objects and their properties."
-author: "cristobal-buenrostro"
+author: "mohanrajc"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: apiPageType
-ms.date: 06/22/2024
+ms.date: 06/30/2025
 ---
 
 # List provisioningFlow objects
@@ -59,6 +59,9 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [provisioningFlow](../resources/industrydata-provisioningflow.md) objects in the response body.
 
+> [!CAUTION]
+> The **markAllStudentsAsMinors** property of **additionalOptions** under **managementOptions** in [userProvisioningFlow](../resources/industrydata-userprovisioningflow.md) is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property.
+
 ## Examples
 
 ### Request
@@ -78,10 +81,6 @@ GET https://graph.microsoft.com/beta/external/industryData/outboundProvisioningF
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningflow-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-provisioningflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -253,7 +252,8 @@ Content-Type: application/json
                 ],
                 "additionalOptions": {
                     "markAllStudentsAsMinors": true,
-                    "allowStudentContactAssociation": false
+                    "allowStudentContactAssociation": false,
+                    "studentAgeGroup": "minor"
                 }
             },
             "creationOptions": {

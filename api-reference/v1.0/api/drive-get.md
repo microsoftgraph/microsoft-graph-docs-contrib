@@ -47,7 +47,7 @@ If a user's OneDrive isn't provisioned but the user has a license to use OneDriv
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/users/{idOrUserPrincipalName}/drive
+GET /users/{idOrUserPrincipalName}/drive
 ```
 
 #### Path parameters
@@ -134,10 +134,6 @@ GET /me/drive
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-default-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-drive-default-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

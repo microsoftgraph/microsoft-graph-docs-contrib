@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -33,6 +33,7 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |[shareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|None||
 |[unshareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|None||
 |[getExpiringVppTokenCount function](../api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount.md)|Int32||
+|[releaseAppleDevices action](../api/intune-enrollment-deponboardingsetting-releaseappledevices.md)|None||
 
 ## Properties
 |Property|Type|Description|

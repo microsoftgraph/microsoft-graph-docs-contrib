@@ -37,7 +37,7 @@ GET /contacts/{id}/transitiveReports/$count
 
 ## Optional query parameters
 
-This method does not support the use of query parameters, but does require the `$count` query segment.
+This method doesn't support the use of query parameters, but does require the `$count` query segment.
 
 ## Request headers
 
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/contacts/45b7d2e7-b882-4a80-ba97-10b7a63b8f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-transitivereports-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-transitivereports-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

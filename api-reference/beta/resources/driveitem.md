@@ -45,6 +45,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Get item](../api/driveitem-get.md)                                          | [driveItem](../resources/driveitem.md) |Retrieve the metadata for a **driveItem** in a drive.|
 | [Get analytics][]                                                            | [itemAnalytics][] | Get analytics for this resource.|
 | [Get activities by interval][]                                               | [itemActivityStat](../resources/itemactivitystat.md) | Get a collection of **itemActivityStats** within the specified time interval.|
+| [Get recent activities](../api/itemactivity-list.md)       | [itemActivity](../resources/itemactivity.md) collection | List the recent [activities](../resources/itemactivity.md) that took place on a [drive](../resources/drive.md), [list](../resources/list.md), item, or within an item hierarchy. |
 | [List children](../api/driveitem-list-children.md)                           | [driveItem](../resources/driveitem.md) collection | Return a collection of **driveItems** in the children relationship of a **driveItem**.|
 | [List versions](../api/driveitem-list-versions.md)                           | [driveItemVersion][] collection | Retrieve the versions of a file in the current user's drive.|
 | [Create folder](../api/driveitem-post-children.md)                             | [driveItem](../resources/driveitem.md) | Create a **driveItem** in the specified drive.|
@@ -53,6 +54,9 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Download file content](../api/driveitem-get-contentstream.md) | Stream |Download the contents of the primary stream (file) of a **driveItem**. |
 | [Download specific file format][download-format]                             | download URL | Download content of a **driveItem** with a specific format.|
 | [Delete item](../api/driveitem-delete.md)                                    | None | Delete a **driveItem**.|
+| [Archive](../api/driveitem-archive.md)                                       | None         | Archive a **driveItem** |
+| [Unarchive](../api/driveitem-unarchive.md)                                   | None         | Unarchive a **driveItem** |
+| [Restore item](../api/driveitem-restore.md)                                    | [driveItem](../resources/driveitem.md) | Restore a deleted [driveItem](../resources/driveitem.md) that is currently in the [recycle bin](../resources/recyclebin.md).|
 | [Permanently delete item](../api/driveitem-permanentdelete.md)                  | None | Permanently delete a **driveItem** by using its ID. |
 | [Move item](../api/driveitem-move.md)                                        | [driveItem](../resources/driveitem.md) | Move a **driveItem** to a new parent item.|
 | [Copy item](../api/driveitem-copy.md)                                        | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy | Create a copy of a **driveItem** (including any children).|
@@ -78,6 +82,8 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Set retention label](../api/driveitem-setretentionlabel.md)                 | [itemRetentionLabel](../resources/itemretentionlabel.md) | Apply (set) a retention label on a **driveItem** (files and folders). |
 | [Remove retention label](../api/driveitem-removeretentionlabel.md)           | None | Remove a retention label from a **driveItem**. |
 | [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | [itemRetentionLabel](../resources/itemretentionlabel.md) | Lock or unlock a retention label on a **driveItem** that classifies content as records. |
+| [Lock file](../api/driveitem-lock.md)                                        | [lockInfo](../resources/lockinfo.md) | Acquire an exclusive lock on a file (**driveItem**), or extend an existing lock held by the calling user. |
+| [Release lock on file](../api/driveitem-releaselock.md)                      | None | Release the exclusive lock held by the calling user on a file (**driveItem**). |
 |[Create upload session](../api/driveitem-createuploadsession.md)              |[uploadSession](../resources/uploadsession.md)|Create an upload session to allow your app to upload files up to the maximum file size.|
 | [Download file (deprecated)](../api/driveitem-get-content.md)                          | download URL | Download content of a **driveItem**.|
 |**Open extensions**|||
@@ -106,6 +112,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application, which last modified the item. Read-only.
 | lastModifiedDateTime | DateTimeOffset     | Date and time at which the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
+| lockInfo             | [lockInfo][]       | Lock metadata for the item, including the lock type, when it was created, when it expires, and which users currently hold the lock. Read-only.
 | malware              | [malware][]        | Malware metadata, if the item was detected to contain malware. Read-only.
 | media                | [media][]          | Information about the media (audio or video) item. Read-write. Only on OneDrive for Business and SharePoint.
 | name                 | String             | The name of the item (filename and extension). Read-write.
@@ -177,7 +184,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
-       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
+       "location", "lockInfo", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content","contentStream", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds", "source", "media", "extensions"],
        "keyProperty": "id", "openType": true } -->
@@ -196,6 +203,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "lockInfo": { "@odata.type": "microsoft.graph.lockInfo" },
   "malware": { "@odata.type": "microsoft.graph.malware" },
   "media": { "@odata.type": "microsoft.graph.media" },
   "package": { "@odata.type": "microsoft.graph.package" },
@@ -267,8 +275,8 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [itemReference]: itemreference.md
 [itemRetentionLabel]: itemretentionlabel.md
 [geoCoordinates]: geocoordinates.md
-[List activities]: ../api/activities-list.md
 [listItem]: listitem.md
+[lockInfo]: lockinfo.md
 [malware]: malware.md
 [media]: media.md
 [package]: package.md

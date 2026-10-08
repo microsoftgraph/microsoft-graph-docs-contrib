@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/threatIntelligence/hosts/{hostId}/passiveDns
 ```
 
@@ -56,7 +56,7 @@ This method supports the `$count`, `$select`, `$filter`, `$orderBy`, `$top`, and
 
 The following properties can be used for `$filter` calls:
 
-| Property    | Example                                   
+| Property    | Example |
 | :---------- | :----------------------------------------- |
 | recordType       | `$filter=recordType eq 'A'`          |
 
@@ -65,7 +65,7 @@ The following properties can be used for `$filter` calls:
 
 The following properties can be used for `$orderby` calls.
 
-| Property             | Example                              
+| Property             | Example |
 | :------------------- | :-----------------------------------  |
 | firstSeenDateTime   | `$orderby=firstSeenDateTime desc`   |
 | lastSeenDateTime | `$orderby=lastSeenDateTime desc` |   
@@ -96,16 +96,12 @@ The following example shows a request.
   "sampleKeys": ["contoso.com"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/passiveDns
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-passivedns-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-passivedns-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

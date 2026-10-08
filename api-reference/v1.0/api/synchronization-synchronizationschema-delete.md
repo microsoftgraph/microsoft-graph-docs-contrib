@@ -12,9 +12,9 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Delete the customized schema and resets the schema to the default configuration. If the schema is deleted in the context of the template, it resets the schema to the default one associated with the template's `factoryTag`.
+Delete the customized [synchronizationSchema](../resources/synchronization-synchronizationschema.md) and resets the schema to the default configuration. If the schema is deleted in the context of the template, it resets the schema to the default one associated with the template's `factoryTag`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -43,18 +43,18 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `201 No Content` response code. It does not return anything in response body.
+If successful, this method returns a `201 No Content` response code. It doesn't return anything in response body.
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

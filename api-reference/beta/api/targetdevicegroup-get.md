@@ -1,11 +1,11 @@
 ---
 title: "Get targetDeviceGroup"
 description: "Read the properties and relationships of a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
-author: "SanDeo-MSFT"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/19/2024
+ms.date: 01/02/2026
 ---
 
 # Get targetDeviceGroup
@@ -27,12 +27,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups/{targetDeviceGroupId}
+GET /servicePrincipals/{id}/remoteDesktopSecurityConfiguration/targetDeviceGroups/{targetDeviceGroupId}
+GET /servicePrincipals(appId='{appId}')/remoteDesktopSecurityConfiguration/targetDeviceGroups/{targetDeviceGroupId}
 ```
 
 ## Optional query parameters
@@ -66,10 +69,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-targetdevicegroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-targetdevicegroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -112,10 +111,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.targetDeviceGroup",
-    "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
-    "displayName": "Device Group A"
-  }
+  "@odata.type": "#microsoft.graph.targetDeviceGroup",
+  "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
+  "displayName": "Device Group A"
 }
 ```

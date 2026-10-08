@@ -13,7 +13,7 @@ ms.date: 04/04/2024
 Namespace: microsoft.graph
 
 Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive by setting its **isActive** property.
-This method does not remove the [schedulingGroup](../resources/schedulinggroup.md) from the schedule. Existing [shift](../resources/shift.md) instances assigned to the scheduling group remain part of the group.
+This method doesn't remove the [schedulingGroup](../resources/schedulinggroup.md) from the schedule. Existing [shift](../resources/shift.md) instances assigned to the scheduling group remain part of the group.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,7 +37,7 @@ DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 Don't supply a request body for this method.
@@ -64,10 +64,6 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-delete-schedulinggroups-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/schedule-delete-schedulinggroups-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

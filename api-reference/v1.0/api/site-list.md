@@ -16,9 +16,9 @@ List all available [sites][] in an organization.
 
 Specific filter criteria and query options are also supported and described below:
 
-| Filter statement             | Select statement        | Description
-|:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | Lists all root-level site collections in the organization. Useful for discovering the home site for each geography.
+| Filter statement             | Select statement        | Description|
+|:-----------------------------|:------------------------|:--------------------|
+|`siteCollection/root ne null` | `siteCollection,webUrl` | Lists all root-level site collections in the organization. Useful for discovering the home site for each geography.|
 
 In addition, you can use a **[$search][]** query against the `/sites` collection to find sites matching given keywords.
 If you want to list all sites across all geographies, refer to [getAllSites][].
@@ -47,7 +47,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
+| Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Sites.Read.All, Sites.ReadWrite.All         |
 
@@ -92,10 +92,6 @@ GET https://graph.microsoft.com/v1.0/sites?$select=siteCollection,webUrl&$filter
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-example1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-sites-example1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -175,10 +171,6 @@ GET https://graph.microsoft.com/v1.0/sites
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-example2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-sites-example2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

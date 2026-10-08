@@ -14,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object.
+Parse a string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object for a [synchronizationSchema](../resources/synchronization-synchronizationschema.md).
 
 For more information about expressions, see [Writing Expressions for Attribute Mappings in Microsoft Entra ID](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [parseExpressi
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -117,17 +117,13 @@ Content-type: application/json
 }
 ```
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/synchronizationschema-parseexpression-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.

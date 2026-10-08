@@ -24,7 +24,9 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |[List](../api/exchangeprotectionpolicy-list-mailboxinclusionrules.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|Get a list of the [mailboxProtectionRule](../resources/mailboxprotectionrule.md) objects and their properties.|
 |[Create](../api/protectionrulebase-post.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Create a new [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
 |[Get](../api/protectionrulebase-get.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Read the properties and relationships of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
+|[Update](../api/protectionrulebase-update.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Update the properties of a [mailboxProtectionRule](../resources/mailboxprotectionrule.md) object.|
 |[Delete](../api/protectionrulebase-delete.md)|None|Delete a [mailboxProtectionRule](../resources/mailboxprotectionrule.md).|
+|[Delete and unprotect](../api/protectionrulebase-deleteandunprotect.md)|[mailboxProtectionRule](../resources/mailboxprotectionrule.md)|Delete and unprotect all the artifacts protected by a dynamic rule.|
 |[Run](../api/protectionrulebase-run.md)|[protectionRuleBase](../resources/protectionrulebase.md)|Activate a mailbox protection rule.|
 
 ## Properties
@@ -39,7 +41,7 @@ Inherits from [protectionRuleBase](../resources/protectionrulebase.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification to the rule.|
 |mailboxExpression|String|Contains a mailbox expression. For examples, see [mailboxExpression examples](../resources/mailboxprotectionrule.md#mailboxexpression-examples).|
-|status|[protectionRuleStatus](../resources/mailboxprotectionrule.md#protectionrulestatus-values )|Status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. The `draft` member is currently unsupported.|
+|status|[protectionRuleStatus](../resources/protectionrulebase.md#protectionrulestatus-values)|The status of the protection rule. The possible values are: `draft`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`, `updateRequested`, `deleteRequested`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `updateRequested` , `deleteRequested`. The `draft` member is currently unsupported. Inherited from [protectionRuleBase](../resources/protectionrulebase.md). |
 
 ### mailboxExpression examples
 
@@ -49,16 +51,6 @@ The following table shows the possible formats for the mailbox expression.
 | ------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------- |
 | `memberOf`      | `-any` |  `(memberOf -any (group.id -in ['d7f5150a-0c6f-4894-a6a1-6df77b26f375']))`         |
 | `group.id` | `-in` |   `(memberOf -any (group.id -in ['d7f5150a-0c6f-4894-a6a1-6df77b26f375', '363cdbd0-f091-4644-93e4-64c1020c94d8']))`              |  
-
-### protectionRuleStatus values
-
-|Member | Description |
-|:------|:------------|
-|draft | The initial status of the protection rule upon creation. The `draft` member is currently unsupported. |
-|active | The status of the protection rule upon using the `/run` API.|
-|completed |The status of the protection rule after it's successfully applied to the corresponding policy.|
-|completedWithErrors | The status of the protection rule after it's applied to the corresponding policy and any failures occurred.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 

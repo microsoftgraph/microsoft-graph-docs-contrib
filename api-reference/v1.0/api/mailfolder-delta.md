@@ -67,7 +67,7 @@ _id_ property is always returned.
 If successful, this method returns a `200 OK` response code and [mailFolder](../resources/mailfolder.md) collection object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows how to make a single **delta** function call, and limit the maximum number of mail folders
 in the response body to 2.
 
@@ -91,17 +91,13 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/delta
 Prefer: odata.maxpagesize=2
 ```
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/mailfolder-delta-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
+### Response
 
 If the request is successful, the response would include a state token, which is either a _skipToken_
 (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header).

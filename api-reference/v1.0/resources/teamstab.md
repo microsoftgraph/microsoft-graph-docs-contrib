@@ -33,8 +33,8 @@ For more information about tabs, see [Build tabs for Teams](/microsoftteams/plat
 |:---------------|:--------|:----------|
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
 |  displayName            |   string                  |  Name of the tab.     |
-|  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read only.     |
-|  webUrl          |   string                  |  Deep link URL of the tab instance. Read only.     |
+|  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read-only.     |
+|  webUrl          |   string                  |  Deep link URL of the tab instance. Read-only.     |
 
 ## Relationships
 

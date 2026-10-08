@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity.
+Indicates the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity. This object is configured in the **excludeRulesSatisfied** and **includeRulesSatisfied** properties of [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md).
 
 ## Properties
 

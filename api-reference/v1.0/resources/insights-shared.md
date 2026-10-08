@@ -23,14 +23,14 @@ An insight representing files shared with or by a specific user. The following s
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List shared](../api/insights-list-shared.md) |[sharedInsight](insights-shared.md) collection| Get a list of shared files.|
+|[List shared (deprecated)](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection| Get a list of shared files. This API is deprecated and will stop returning data after November 2026.|
 
 ## Properties
 
 | Property              | Type          	 		| Description  |
 | -------------         |---------------	 		| -------------|
-| id      				| String	 				| Unique identifier of the relationship. Read only. 	   |
-| lastShared			| [sharingDetail](insights-sharingdetail.md)				| Details about the shared item. Read only. 	   |
+| id      				| String	 				| Unique identifier of the relationship. Read-only. 	   |
+| lastShared			| [sharingDetail](insights-sharingdetail.md)				| Details about the shared item. Read-only. 	   |
 | resourceReference		| [resourceReference](insights-resourcereference.md)                      | Reference properties of the shared document, such as the url and type of the document. Read-only	   |
 | resourceVisualization	| [resourceVisualization](insights-resourcevisualization.md)				| Properties that you can use to visualize the document in your experience. Read-only	   |
 

@@ -56,7 +56,7 @@ _id_ property is always returned.
 - There is limited support for `$filter` and `$orderby`:
   * The only supported `$filter` expressions are `$filter=receivedDateTime+ge+{value}` 
   or `$filter=receivedDateTime+gt+{value}`.
-  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
+  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you don't include
   an `$orderby` expression, the return order is not guaranteed. 
 - There is no support for `$search`.
 
@@ -78,7 +78,7 @@ To track changes in the **todoTask** resources in a **todoTaskList** since the l
 
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM
 Prefer: odata.maxpagesize=2
 ```

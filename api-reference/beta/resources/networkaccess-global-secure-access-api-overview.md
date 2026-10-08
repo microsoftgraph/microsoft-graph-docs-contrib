@@ -27,7 +27,9 @@ The network access APIs provide a framework to configure how you want to forward
 | [remoteNetwork](../resources/networkaccess-remotenetwork.md) | Represents the physical location from where users and devices connect to access the cloud, public, or private apps. Each remote network comprises devices and the connection of devices in a remote network is maintained via customer-premises equipment (CPE).|
 | [filteringProfile](../resources/networkaccess-filteringprofile.md) | Groups filtering policies, which are then associated with Conditional Access policies in Microsoft Entra to leverage a rich set of user-context conditions.|
 | [filteringPolicy](../resources/networkaccess-filteringpolicy.md) | Encapsulates various policies configured by administrators, such as network filtering policies, data loss prevention, and threat protection.|
+| [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) | Encapsulates Transport Layer Security inspection configurations that can be linked to filtering profiles in Global Secure Access. See [What is Transport Layer Security inspection?](/entra/global-secure-access/concept-transport-layer-security).|
 | [filteringPolicLink](../resources/networkaccess-filteringpolicylink.md) | Represents the relationship between a filtering profile and a filtering policy, and maintains the current state of the connection.|
+| [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) | Represents the relationship between a filtering profile and a TLS inspection policy, and maintains the current state of the connection.|
 
 ## Onboard to the service process
 
@@ -80,19 +82,38 @@ Use the [compliantNetworkNamedLocation resource type](../resources/compliantnetw
 
 Forwarding options allows administrators to enable or disable the ability to skip DNS lookup at the edge and forward Microsoft 365 traffic directly to Front Door using the client-resolved destination IP. Use the [forwardingOptions resource type](../resources/networkaccess-forwardingoptions.md) and its associated APIs to manage forwarding options.
 
-## Audit logs
+## Cloud firewall
 
-Monitoring and auditing of events within your environment is crucial for maintaining security, compliance, and operational efficiency. The Global Secure Access events are logged in the [directory logs](../resources/directoryaudit.md) and [sign-in logs](../resources/signin.md) can be retrieved using associated APIs.
+Cloud firewall in Global Secure Access provides Layer 3 (Network) protection by monitoring and controlling all network traffic. Use the cloud firewall APIs to:
 
-## Traffic logs and reports
+- Secure branch traffic acquired using remote networks connectivity for Internet traffic.
+- Define firewall policies with granular and prioritized firewall filtering rules to govern outbound traffic, where you can define the source and destination traffic matching conditions and an action in case the traffic matches.
+- Create cloud firewall policies with default **allow** action. The default action is applied to all traffic that doesn't match any of the rules in the policy.
+- Define a 5-tuple firewall rule with source IP, source port, destination IP, destination port, destination protocol (TCP and/or UDP) matching conditions. IP ranges/CIDRs are supported in IP matching conditions.
+- Define an action between **allow** and **block**.
+- Link a firewall policy for remote networks for Internet traffic to the baseline security profile for policy enforcement.
+- Access traffic logs from Entra/GSA portal for cloud firewall.
 
-You can browse through the network traffic connection logs to see a breakdown of the types of network traffic through the Global Secure Access services. Use the [networkAccessTraffic resource type](../resources/networkaccess-networkaccesstraffic.md) and its associated APIs to view granular network traffic logs.
+The following table lists the core entities for managing cloud firewall resources.
 
-You can also retrieve summarized counts of traffic relating to devices, users, transactions and cross-tenant access requests through the Global Secure Access services. Use the [reports resource type](../resources/networkaccess-reports.md) and its associated APIs to view summarized network traffic statistics.
+| Entities | Description |
+|--|--|
+| [cloudFirewallPolicy](../resources/networkaccess-cloudfirewallpolicy.md) | Represents a cloud firewall policy that provides Layer 3 (Network) protection. A cloud firewall policy takes effect once linked to a filtering profile. |
+| [cloudFirewallRule](../resources/networkaccess-cloudfirewallrule.md) | Defines conditions and actions for network traffic filtering within a cloud firewall policy. Each rule specifies matching conditions for source and destination addresses, ports, and protocols. |
+| [cloudFirewallPolicyLink](../resources/networkaccess-cloudfirewallpolicylink.md) | Links a cloud firewall policy to a filtering profile. Use the [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) operations to manage cloud firewall policy links. |
 
-## Enriched Microsoft 365 traffic logs
+## Logs and monitoring
 
-The Global Secure Access services enable you to enrich the [Microsoft 365 audit logs](/microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true) with network traffic information. With enriched traffic logs, you can review network diagnostic data, performance data, and security events relevant to Microsoft 365 apps. Traffic relating to the following three Microsoft 365 workloads can be enriched with network traffic information: SharePoint, Microsoft Teams, and Exchange Online.
+Monitoring and auditing of events within your environment is crucial for maintaining security, compliance, and operational efficiency. The Global Secure Access events can be accessed through the following resources:
+
+- [directory logs](../resources/directoryaudit.md) for changes to the Global Secure Access service
+- [sign-in logs](../resources/signin.md) for sign-in events routed through Global Secure Access
+- [networkAccessTraffic resource type](../resources/networkaccess-networkaccesstraffic.md), and [connection resource type](../resources/networkaccess-connection.md) and its associated APIs for insights into who is accessing what resources, where they're accessing them from, and what action took place.
+- [remoteNetworkHealthEvent resource type](../resources/networkaccess-remotenetworkHealthEvent.md) and its associated APIs to monitor the health and status of IPSec tunnel and the Border Gateway Protocol (BGP)
+- [reports resource type](../resources/networkaccess-reports.md) and its associated APIs for summarized network traffic statistics relating to devices, users, transactions and cross-tenant access requests
+- [deployment resource type](../resources/networkaccess-deployment.md) and its associated APIs for monitoring configuration changes to the service
+
+For more information, see [Global Secure Access logs and monitoring](/entra/global-secure-access/concept-global-secure-access-logs-monitoring).
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
@@ -102,4 +123,4 @@ The Global Secure Access services enable you to enrich the [Microsoft 365 audit 
 
 ## Related content
 
-- [What is Global Secure Access?](/azure/global-secure-access/overview-what-is-global-secure-access)
+- [What is Global Secure Access?](/entra/global-secure-access/overview-what-is-global-secure-access)

@@ -44,7 +44,7 @@ PATCH /education/classes/{id}/assignmentDefaults
 
 |Property|Type|Description|
 |:---|:---|:---|
-|addedStudentAction|educationAddedStudentAction|Class-level default behavior for handling students who are added after the assignment is published. Possible values are: `none`, `assignIfOpen`. The default value is `none`.|
+|addedStudentAction|educationAddedStudentAction|Class-level default behavior for handling students who are added after the assignment is published. The possible values are: `none`, `assignIfOpen`. The default value is `none`.|
 |dueTime|TimeOfDay|Class-level default value for due time field. Default value is `23:59:00`|
 |notificationChannelUrl|String|Default Teams channel to which notifications will be sent. Default value is `null`.|
 
@@ -77,10 +77,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignmentdefaults-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-educationassignmentdefaults-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

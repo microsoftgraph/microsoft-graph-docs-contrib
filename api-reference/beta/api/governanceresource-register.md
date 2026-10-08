@@ -1,5 +1,5 @@
 ---
-title: "governanceResource: register"
+title: "governanceResource: register (deprecated)"
 description: "Register a governanceResource object in PIM."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 03/08/2024
 ---
 
-# governanceResource: register
+# governanceResource: register (deprecated)
 
 Namespace: microsoft.graph
 

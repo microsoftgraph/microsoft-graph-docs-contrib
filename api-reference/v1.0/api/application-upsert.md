@@ -1,7 +1,7 @@
 ---
 title: "Upsert application"
 description: "Create a new application object if it doesn't exist, or update the properties of an existing application object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a new [application](../resources/application.md) object if it doesn't exist, or update the properties of an existing [application](../resources/application.md) object.
 
+This API can also create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object if it doesn't exist, or update properties of an existing [agentIdentityBlueprint](../resources/agentidentityblueprint.md), when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprint`.
+
 > [!IMPORTANT]
 > Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password or secret for an application.
 
@@ -24,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "application_upsert" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-upsert-permissions.md)]
+
+[!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
 
 ## HTTP request
 
@@ -47,11 +51,11 @@ In the request body, supply a JSON representation of the [application](../resour
 
 ## Response
 
-If an application object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [application](../resources/application.md) object in the response body. The application is assigned the uniqueName value.
+If an application or agentIdentityBlueprint object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [application](../resources/application.md) or [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object with the assigned the **uniqueName** value in the response body.
 
-If an application object with **uniqueName** doesn't exist and the `Prefer: create-if-missing` header is *not* specified, this method returns a `404 Not Found` error code.
+If an application or agentIdentityBlueprint object with **uniqueName** doesn't exist and the `Prefer: create-if-missing` header is *not* specified, this method returns a `404 Not Found` error code.
 
-If an application object with **uniqueName** already exists, this method updates the [application](../resources/application.md) object and returns a `204 No Content` response code.
+If an application or agentIdentityBlueprint object with **uniqueName** already exists, this method updates the [application](../resources/application.md) or [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object and returns a `204 No Content` response code.
 
 ## Examples
 
@@ -70,7 +74,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/applications(uniqueName='app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
@@ -82,10 +86,6 @@ Prefer: create-if-missing
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/upsert-application-create-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/upsert-application-create-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -199,7 +199,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/applications(uniqueName='app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
@@ -211,10 +211,6 @@ Prefer: create-if-missing
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-upsert-update-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/application-upsert-update-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -247,6 +243,6 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

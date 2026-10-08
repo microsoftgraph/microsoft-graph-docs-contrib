@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Microsoft Authenticator
-ms.date: 07/22/2024
+ms.date: 07/28/2025
 ---
 
 # microsoftAuthenticatorAuthenticationMethod resource type
@@ -28,7 +28,7 @@ This type that inherits from the [authenticationMethod](authenticationmethod.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time that this app was registered. This property is null if the device isn't registered for passwordless Phone Sign-In.|
+|createdDateTime|DateTimeOffset|The date and time that this app was registered. This property is null if the device isn't registered for passwordless Phone Sign-In. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |deviceTag|String|Tags containing app metadata.|
 |displayName|String|The name of the device on which this app is registered.|
 |id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|

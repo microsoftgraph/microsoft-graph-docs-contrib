@@ -51,7 +51,7 @@ If successful, this method returns `200 OK` response code and a [identityProvide
 
 The following example retrieves a specific **identityProvider**.
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-identityprovider-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

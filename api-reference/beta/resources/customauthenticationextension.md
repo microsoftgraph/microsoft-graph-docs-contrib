@@ -20,10 +20,12 @@ Custom authentication extensions define interactions with external systems durin
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) resource type.
+- [onPasswordSubmitCustomExtension](../resources/onpasswordsubmitcustomextension.md) resource type.
+- [onVerifiedIdClaimValidationCustomExtension](../resources/onverifiedidclaimvalidationcustomextension.md) resource type.
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
-Learn how to use this API when [Configuring a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context).
+[Learn more about custom authentication extensions](/entra/identity-platform/custom-extension-overview) and how to use this API when [Configuring a custom claim provider token issuance event (preview)](/entra/identity-platform/custom-extension-tokenissuancestart-configuration?toc=/graph/toc.json&context=graph/context).
 
 > [!NOTE]
 >

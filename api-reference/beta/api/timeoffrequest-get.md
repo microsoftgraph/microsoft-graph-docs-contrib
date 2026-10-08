@@ -25,9 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timeoffrequest_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timeoffrequest-get-permissions.md)]
 
-> [!NOTE]
-> The Schedule.Read.All and Schedule.ReadWrite.All application permissions are currently in private preview only and aren't available for public use.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +42,7 @@ This method doesn't support OData query parameters to customize the response.
 | Name      |Description|
 |:----------|:----------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 
@@ -73,10 +70,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/{ti
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-timeoffrequest-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-timeoffrequest-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

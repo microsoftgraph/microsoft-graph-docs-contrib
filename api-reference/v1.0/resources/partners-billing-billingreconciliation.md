@@ -1,11 +1,11 @@
 ---
 title: "billingReconciliation resource type"
-description: "Represents details for billed invoice reconciliation and unbilled non-usage reconciliation data."
-author: "sourishdeb"
+description: "Represents details for billed invoice reconciliation and unbilled invoice reconciliation data."
+author: "tingh-msft"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: resourcePageType
-ms.date: 03/06/2024
+ms.date: 06/11/2025
 ---
 
 # billingReconciliation resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
-Represents details for billed invoice reconciliation and unbilled non-usage reconciliation data.
+Represents details for billed invoice reconciliation and unbilled invoice reconciliation data.
 
 ## Methods
 
@@ -29,6 +29,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |billed|[microsoft.graph.partners.billing.billedReconciliation](partners-billing-billedreconciliation.md)|Represents details for billed invoice reconciliation data.|
+|unbilled|[microsoft.graph.partners.billing.unbilledReconciliation](../resources/partners-billing-unbilledreconciliation.md)|Represents details for unbilled invoice reconciliation data.|
 
 ## JSON representation
 

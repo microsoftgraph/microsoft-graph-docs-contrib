@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Get change notifications for messages in Teams channels and chats using Microsoft Graph
@@ -24,8 +25,6 @@ To track all changes related to messages in a tenant, you can use subscriptions 
 ### Subscribe to messages across all channels
 
 To get change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
-
-[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 #### Permissions
 
@@ -56,8 +55,6 @@ Content-Type: application/json
 ### Subscribe to messages across all chats
 
 To get change notifications for all messages across chats in a tenant, subscribe to `/chats/getAllMessages`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
-
-[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 #### Permissions
 
@@ -266,8 +263,6 @@ To track messages across all chats a particular user is part of, you can create 
 
 User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
 
-[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
-
 ### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -296,8 +291,6 @@ Content-Type: application/json
 ## Subscribe to messages of any chat in a tenant where a specific Teams app is installed
 
 To get change notifications for all messages across chats in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllMessages`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
-
-[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
 ### Permissions
 
@@ -429,7 +422,8 @@ The **resource** and **@odata.id** properties can be used to make calls to Micro
 ## Related content
 - [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
-- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+- [Get change notifications for membership changes in channels using Microsoft Graph](teams-changenotifications-channelmembership.md)
+- [Get change notifications for membership changes in teams using Microsoft Graph](teams-changenotifications-teammembership.md)
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
 - [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)

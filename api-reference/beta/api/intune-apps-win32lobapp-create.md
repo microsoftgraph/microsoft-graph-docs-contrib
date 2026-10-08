@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -25,16 +25,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/mobileApps
 ```
 
@@ -76,7 +76,8 @@ The following table shows the properties that are required when you create the w
 |size|Int64|The total size, including all uploaded files. This property is read-only. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |installCommandLine|String|Indicates the command line to install this app. Used to install the Win32 app. Example: `msiexec /i "Orca.Msi" /qn`.|
 |uninstallCommandLine|String|Indicates the command line to uninstall this app. Used to uninstall the app. Example: `msiexec /x "{85F4CBCB-9BBC-4B50-A7D8-E1106771498D}" /qn`.|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) for which this app can run on. Value `arm64` is not supported via this property. Higher order of precedence is given to `allowedArchitectures` property as compared to `applicableArchitectures` to indicate usage of arm64 win32 LOB apps model/process. When both property values (applicableArchitectures and allowedArchitectures) are provided only `allowedArchitectures` value is used and `applicableArchitectures` will be set to `none`. Default value is `none`. Possible values are: `none`, `x86`, `x64`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) this app should be installed on. The app will be treated as not applicable for devices with architectures not matching the selected value. When a non-null value is provided for the `allowedArchitectures` property, the value of the `applicableArchitectures` property is set to `none`. Default value is `none`. Possible values are: `none`, `x86`, `x64`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|allowedArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) this app should be installed on. The app will be treated as not applicable for devices with architectures not matching the selected value. When a non-null value is provided for the `allowedArchitectures` property, the value of the `applicableArchitectures` property is set to `none`. Possible values are: `null`, `x86`, `x64`, `arm64`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Indicates the value for the minimum applicable operating system.|
 |minimumFreeDiskSpaceInMB|Int32|Indicates the value for the minimum free disk space which is required to install this app. Allowed range from `0` to `driver's maximum available free space`.|
 |minimumMemoryInMB|Int32|Indicates the value for the minimum physical memory which is required to install this app. Allowed range from `0` to `total physical memory from WMI helper`.|
@@ -92,7 +93,8 @@ The following table shows the properties that are required when you create the w
 |minimumSupportedWindowsRelease|String|Indicates the value for the minimum supported windows release. Example: `Windows11_23H2`.|
 |displayVersion|String|Indicates the version displayed in the UX for this app. Used to set the version of the app. Example: `1.0.3.215`.|
 |allowAvailableUninstall|Boolean|Indicates whether the uninstall is supported from the company portal for the Win32 app with an available assignment. When TRUE, indicates that uninstall is supported from the company portal for the Windows app (Win32) with an available assignment. When FALSE, indicates that uninstall is not supported for the Windows app (Win32) with an Available assignment. Default value is FALSE.|
-|allowedArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) this app can run on. Value `arm64` is supported only via this property. Default value is null. Null value skips the applicability rule. Higher order of precedence is given to `allowedArchitectures` property as compared to `applicableArchitectures` to indicate usage of arm64 win32 LOB apps model/process. When both property values (applicableArchitectures and allowedArchitectures) are provided only `allowedArchitectures` value is used and `applicableArchitectures` will be set to `none`. Possible values are: `none`, `x86`, `x64`, `arm64`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|activeInstallScript|[mobileAppScriptReference](../resources/intune-apps-mobileappscriptreference.md)|Contains the unique identifier of the associated install script for this Win32 app to be used instead of the install command line by the managed device during app installation. When null, the install command line is used instead.|
+|activeUninstallScript|[mobileAppScriptReference](../resources/intune-apps-mobileappscriptreference.md)|Contains the unique identifier of the associated uninstall script for this Win32 app to be used instead of the uninstall command line by the managed device during app uninstallation. When null, the uninstall command line is used instead.|
 
 
 
@@ -103,10 +105,10 @@ If successful, this method returns a `201 Created` response code and a [win32Lob
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 3552
+Content-length: 3820
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -139,6 +141,7 @@ Content-length: 3552
   "installCommandLine": "Install Command Line value",
   "uninstallCommandLine": "Uninstall Command Line value",
   "applicableArchitectures": "x86",
+  "allowedArchitectures": "x86",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
     "v8_0": true,
@@ -220,16 +223,23 @@ Content-length: 3552
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
   "displayVersion": "Display Version value",
   "allowAvailableUninstall": true,
-  "allowedArchitectures": "x86"
+  "activeInstallScript": {
+    "@odata.type": "microsoft.graph.mobileAppScriptReference",
+    "targetId": "Target Id value"
+  },
+  "activeUninstallScript": {
+    "@odata.type": "microsoft.graph.mobileAppScriptReference",
+    "targetId": "Target Id value"
+  }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3724
+Content-Length: 3992
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -265,6 +275,7 @@ Content-Length: 3724
   "installCommandLine": "Install Command Line value",
   "uninstallCommandLine": "Uninstall Command Line value",
   "applicableArchitectures": "x86",
+  "allowedArchitectures": "x86",
   "minimumSupportedOperatingSystem": {
     "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
     "v8_0": true,
@@ -346,6 +357,13 @@ Content-Length: 3724
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
   "displayVersion": "Display Version value",
   "allowAvailableUninstall": true,
-  "allowedArchitectures": "x86"
+  "activeInstallScript": {
+    "@odata.type": "microsoft.graph.mobileAppScriptReference",
+    "targetId": "Target Id value"
+  },
+  "activeUninstallScript": {
+    "@odata.type": "microsoft.graph.mobileAppScriptReference",
+    "targetId": "Target Id value"
+  }
 }
 ```

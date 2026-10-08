@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|The date and time when the user was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |effectivePolicyAssignments|[microsoft.graph.teamsAdministration.effectivePolicyAssignment](../resources/teamsadministration-effectivepolicyassignment.md) collection|Contains the user's effective policy assignments, with each assignment including **policyType** and **policyAssignment** details.|
 |featureTypes|String collection|The Teams features enabled for a given user based on licensing or service plan.|
-|id|String|The unique identifier (GUID) for a user in Microsoft Entra. Inherits from [entity](../resources/entity.md).|
+|id|String|The unique identifier (GUID) for a user in Microsoft Entra. Inherited from [entity](../resources/entity.md).|
 |isEnterpriseVoiceEnabled|Boolean|Indicates whether voice capability is enabled.|
 |modifiedDateTime|DateTimeOffset|The date and time when the user's details were last modified. The system updates this value each time the user's details are changed. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |telephoneNumbers|[microsoft.graph.teamsAdministration.assignedTelephoneNumber](../resources/teamsadministration-assignedtelephonenumber.md) collection|Includes both the phone number and its corresponding assignment category. The assignment category can include values such as `primary`, `private`, and `alternate`.|

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of an existing [accessPackageSubject](../resources/accesspackagesubject.md) object.
+Get the properties of an external directory user represented by an existing [accessPackageSubject](../resources/accesspackagesubject.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-GET /identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUser}')
+GET /identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfExternalDirectoryUser}')
 ```
 
 ## Request headers
@@ -60,16 +60,12 @@ If successful, this method returns a `200 OK` response code and the requested [a
   "name": "get_accesspackagesubject"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUser}')
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfExternalDirectoryUser}')
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackagesubject-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-accesspackagesubject-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

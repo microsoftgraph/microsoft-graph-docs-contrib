@@ -1,11 +1,11 @@
 ---
 title: "Get targetDeviceGroup"
 description: "Read the properties and relationships of a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
-author: "SanDeo-MSFT"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/18/2024
+ms.date: 01/02/2026
 ---
 
 # Get targetDeviceGroup
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups/{targetDeviceGroupId}
 ```
 
@@ -58,16 +58,12 @@ The following example shows a request.
   "name": "get_targetdevicegroup"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/targetDeviceGroups/b9e4eae4-b781-45a1-ce65-f2dd8ac3b696
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-targetdevicegroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-targetdevicegroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -105,15 +101,13 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.targetDeviceGroup"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.targetDeviceGroup",
-    "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
-    "displayName": "Device Group A"
-  }
+  "@odata.type": "#microsoft.graph.targetDeviceGroup",
+  "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
+  "displayName": "Device Group A"
 }
 ```

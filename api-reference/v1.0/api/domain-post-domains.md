@@ -50,7 +50,7 @@ In the request body, supply a JSON representation of [domain](../resources/domai
 If successful, this method returns `201 Created` response code and [domain](../resources/domain.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 
 In the request body, supply a JSON representation of [domain](../resources/domain.md) object.
 
@@ -71,10 +71,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-domain-from-domains-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-domain-from-domains-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -103,7 +99,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

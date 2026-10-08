@@ -1,7 +1,7 @@
 ---
 title: "directoryObject: getByIds"
 description: "Returns the directory objects specified in a list of IDs."
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -91,10 +91,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getbyid-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/directoryobject-getbyid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

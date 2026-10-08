@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /termStore/sets
 ```
 
@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [set](../
 ## Examples
 
 ### Request
-``` http
+```http
 POST https://graph.microsoft.com/beta/termStore/sets
 Content-Type: application/json
 
@@ -86,7 +86,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.termstore.set"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 {

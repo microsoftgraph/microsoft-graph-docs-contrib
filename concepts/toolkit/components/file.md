@@ -4,11 +4,15 @@ description: "The file component is used to display a file by showing the icon, 
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # File component in Microsoft Graph Toolkit
 
-The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview). The component displays information such as the file or folder name, the file type icon, and the author and last modified date. You can provide the identifiers for a file and the component generates the query to retrieve the file based on the identifiers provided. This component can be used on its own or as part of the [mgt-file-list](./file-list.md) components.
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
+The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview). The component displays information such as the file or folder name, the file type icon, and the author and last modified date. You can provide the identifiers for a file, and the component generates the query to retrieve the file based on the identifiers provided. This component can be used on its own or as part of the [mgt-file-list](./file-list.md) components.
 
 ## Example
 
@@ -152,8 +156,8 @@ This control uses the following Microsoft Graph APIs and permissions. For each A
 | Developer provides `{user-id}` AND `{item-id}`                                                   | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /users/{user-id}/drive/items/{item-id}](/graph/api/driveitem-get)                      |
 | Developer provides `{user-id}` AND `{item-path}`                                                 | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | [GET /users/{user-id}/drive/root:/{item-path}](/graph/api/driveitem-get)                    |
 | `insight-type` is set to `trending` AND developer provides `{insight-id}`                        | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | [GET /me/insights/trending/{insight-id}/resource](/graph/api/insights-list-trending)        |
-| `insight-type` is set to `used` AND developer provides `{insight-id}`                            | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | [GET /me/insights/used/{id}/resource](/graph/api/insights-list-used)                        |
-| `insight-type` is `shared` AND developer provides `{insight-id}`                                 | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | [GET /me/insights/shared/{id}/resource](/graph/api/insights-list-shared)                    |
+| `insight-type` is set to `used` AND developer provides `{insight-id}`                            | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | [GET /me/insights/used/{id}/resource (deprecated)](/graph/api/insights-list-used)                        |
+| `insight-type` is `shared` AND developer provides `{insight-id}`                                 | Sites.Read.All, Sites.ReadWrite.All                                                                                                        | [GET /me/insights/shared/{id}/resource (deprecated)](/graph/api/insights-list-shared)                    |
 
 ## Templates
 

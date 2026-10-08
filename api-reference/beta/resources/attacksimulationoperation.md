@@ -36,7 +36,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 |status|longRunningOperationStatus|Operation status. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |statusDetail|String|Status detail of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |tenantId|String|Tenant identifier.|
-|type|[attackSimulationOperationType](#attacksimulationoperationtype-values)|The attack simulation operation type. Possible values are: `createSimulation`, `updateSimulation`, `unknownFutureValue`.|
+|type|[attackSimulationOperationType](#attacksimulationoperationtype-values)|The attack simulation operation type. The possible values are: `createSimulation`, `updateSimulation`, `unknownFutureValue`.|
 
 ### attackSimulationOperationType values
 

@@ -52,7 +52,7 @@ The following JSON representation shows the resource type.
 |locations|[location](location.md) collection|An array that specifies the name and geographic location of each meeting location for this meeting suggestion.|
 |meetingTimeSlot|[timeSlot](timeslot.md)|A time period suggested for the meeting.|
 |order|Int32|Order of meeting time suggestions sorted by their computed confidence value from high to low, then by chronology if there are suggestions with the same confidence. |
-|organizerAvailability|freeBusyStatus| Availability of the meeting organizer for this meeting suggestion. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|organizerAvailability|freeBusyStatus| Availability of the meeting organizer for this meeting suggestion. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |suggestionReason|String|Reason for suggesting the meeting time.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

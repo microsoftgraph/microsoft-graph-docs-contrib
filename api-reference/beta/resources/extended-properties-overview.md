@@ -16,20 +16,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access
-custom data for Outlook MAPI properties when these properties aren't already exposed in the Microsoft Graph API metadata_.
-You can use extended properties REST API to store or get such custom data in the following user resources:
+Extended properties allow storing custom data and serve as a fallback mechanism for apps to access custom data for Outlook MAPI properties when these properties aren't already exposed in Microsoft Graph API metadata. You can use the extended properties REST API to store or get custom data in the following resources:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
+User resources:
+
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
+- [event](../resources/event.md)
+- [mailboxFolder](../resources/mailboxfolder.md)
+- [mailboxItem](../resources/mailboxitem.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
+- [note](../resources/note.md)
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
+- [todoTask](../resources/todotask.md)
+- [todoTaskList](../resources/todotasklist.md)
 
-Or, in the following Microsoft 365 group resources:
+Microsoft 365 group resources:
 
 - group [event](../resources/event.md)
 - group [calendar](../resources/calendar.md)
@@ -56,7 +61,7 @@ a single-value extended property to get all the instances that have that propert
 **Note** You can't use the REST API to get all the extended properties of a specific instance in one call.
 
 
-### id formats
+### ID formats
 
 You can specify **id** of an extended property in one of three formats:
 
@@ -66,7 +71,7 @@ You can specify **id** of an extended property in one of three formats:
 
 The next two tables describe these formats as applied to single and multi-value extended properties. {_type_} represents the type of the value or values of the extended property. Shown in the examples are string, integer, and arrays of these types.
 
-**Valid id formats for single-value extended properties**
+**Valid ID formats for single-value extended properties**
 
 |**Format**|**Example**|**Description**|
 |:---------|:----------|:--------------|
@@ -74,7 +79,7 @@ The next two tables describe these formats as applied to single and multi-value 
 | "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and a numeric identifier.  |
 | "{_type_} {_proptag_}"                    | ```"String 0x4001"```                                           | Identifies a predefined property by its property tag. |
 
-**Valid id formats for multi-value extended properties**
+**Valid ID formats for multi-value extended properties**
 
 |**Format**|**Example**|**Description**|
 |:---------|:----------|:--------------|

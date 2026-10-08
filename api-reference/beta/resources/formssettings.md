@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Company-wide settings for Microsoft Forms. 
+Company-wide settings for Microsoft Forms. This object is configured in the **settings** property of [adminForms](../resources/adminforms.md).
 
 ## Properties
 |Property|Type|Description|

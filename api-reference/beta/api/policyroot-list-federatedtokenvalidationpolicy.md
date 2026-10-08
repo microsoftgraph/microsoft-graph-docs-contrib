@@ -1,7 +1,7 @@
 ---
 title: "List federatedTokenValidationPolicy"
 description: "Get a list of the federatedTokenValidationPolicy objects and their properties."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -20,11 +20,7 @@ Get a list of the [federatedTokenValidationPolicy](../resources/federatedtokenva
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "policyroot-list-federatedtokenvalidationpolicy-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "policyroot_list_federatedtokenvalidationpolicy" } -->
 [!INCLUDE [permissions-table](../includes/permissions/policyroot-list-federatedtokenvalidationpolicy-permissions.md)]
 
 [!INCLUDE [rbac-federatedtokenvalidationpolicy-apis](../includes/rbac-for-apis/rbac-federatedtokenvalidationpolicy-apis.md)]
@@ -35,12 +31,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/federatedTokenValidationPolicy
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -64,16 +60,12 @@ The following example shows a request.
   "name": "list_federatedtokenvalidationpolicy"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/federatedTokenValidationPolicy
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-federatedtokenvalidationpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-federatedtokenvalidationpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -111,7 +103,7 @@ The following example shows the response
   "@odata.type": "Collection(microsoft.graph.federatedTokenValidationPolicy)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

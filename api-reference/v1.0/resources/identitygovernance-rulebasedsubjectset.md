@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Specifies the rules to define the subjects that are the scope of a lifecycle workflow [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerandscopebasedconditions.md) configuration.
+Specifies the rules that define the subjects in scope for a lifecycle workflow. This object is configured in the **scope** property of the [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerandscopebasedconditions.md) resource.
 
 Inherits from [subjectSet](../resources/subjectset.md).
 
@@ -20,7 +20,7 @@ Inherits from [subjectSet](../resources/subjectset.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|rule|String|The rule for the subject set. Lifecycle Workflows supports a rich set of [user properties](user.md#properties) for configuring the rules using `$filter` query expressions. For more information, see [supported user and query parameters](#supported-user-properties-and-query-parameters). |
+|rule|String|The rule for the subject set. Lifecycle Workflows supports a rich set of [user properties](../resources/user.md#properties) for configuring the rules using `$filter` query expressions. For more information, see [supported user and query parameters](#supported-user-properties-and-query-parameters). |
 
 ### Supported user properties and query parameters
 
@@ -83,6 +83,7 @@ You can also configure rules using [Directory (Microsoft Entra ID) extensions](/
 | `"rule": "(otherMails/any(p:startsWith(p, 'Av')))"`                    | Run the workflow for users whose **otherMails** starts with `Av`.                       |
 | `"rule": "(department eq 'Marketing') and (accountEnabled in (true))"` | Run the workflow for users in the marketing department and whose account is enabled.    |
 | `"rule": "(department eq 'Marketing') or (not (city eq 'Redmond'))"`   | Run the workflow for users in the marketing department and whose city is not "Redmond". |
+| `"rule": "(customSecurityAttributes/OnsightLocation/CustomerOnsite eq true)"`    | Run the workflow for users who have the custom security attribute for **CustomerOnSite** set as `true`. |
 
 ## Relationships
 

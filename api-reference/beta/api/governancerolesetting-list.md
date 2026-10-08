@@ -1,5 +1,5 @@
 ---
-title: "List governanceRoleSettings"
+title: "List governanceRoleSettings (deprecated)"
 description: "Retrieve a collection of governanceRoleSettings on a resource."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/13/2024
 ---
 
-# List governanceRoleSettings
+# List governanceRoleSettings (deprecated)
 
 Namespace: microsoft.graph
 
@@ -59,11 +59,11 @@ This example shows how an administrator lists role settings for the resource Win
   "blockType": "request",
   "name": "get_governancerolesettings"
 }-->
-##### Request
+### Request
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleSettings
 ```
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true,

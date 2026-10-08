@@ -7,7 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	directoryPropertyName = "CustomAttribute1"
 	annotations = @(
 		@{
 			displayName = "Cost Center"
@@ -19,6 +18,8 @@ $params = @{
 			)
 		}
 	)
+	directoryPropertyName = "CustomAttribute1"
+	isVisible = $true
 }
 
 New-MgAdminPeopleProfileCardProperty -BodyParameter $params

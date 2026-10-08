@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.domainIdentitySource` indicates that this type identifies a domain as an identity source for a connected organization.
-
+Used in the **identitySources** property of [connectedOrganization](../resources/connectedorganization.md). The `@odata.type` value `#microsoft.graph.domainIdentitySource` indicates that this type identifies a domain as an identity source for a connected organization.
 
 ## Properties
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |String | The name of the identity source, typically also the domain name. Read only. |
-| domainName |String | The domain name. Read only. |
+| displayName |String | The name of the identity source, typically also the domain name. Read-only. |
+| domainName |String | The domain name. Read-only. |
 
 ## Relationships
 
@@ -30,7 +29,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

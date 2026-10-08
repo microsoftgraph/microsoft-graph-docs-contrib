@@ -25,7 +25,7 @@ Represents information about any Microsoft Entra policy that defines access rule
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|conditionalAccessPolicyState|String|The state for the conditional access policy. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Required. Read-only.|
+|conditionalAccessPolicyState|String|The state for the conditional access policy. The possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Required. Read-only.|
 |id|String|The unique identifier for this entity. Required. Read-only.|
 |latestPolicyModifiedDateTime|DateTimeOffset|The date and time the conditional access policy was last modified. Required. Read-only.|
 |requiresDeviceCompliance|Boolean|A flag indicating whether the conditional access policy requires device compliance. Required. Read-only.|

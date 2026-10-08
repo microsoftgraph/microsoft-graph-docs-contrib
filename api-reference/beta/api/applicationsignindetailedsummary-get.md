@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /reports/applicationSignInDetailedSummary/{id}
 ```
 
@@ -64,10 +64,6 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{i
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationsignindetailedsummary-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-applicationsignindetailedsummary-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

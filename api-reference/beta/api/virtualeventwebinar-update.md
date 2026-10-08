@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/virtualEvents/webinars/{id}
 ```
 
@@ -55,6 +55,7 @@ PATCH /solutions/virtualEvents/webinars/{id}
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. |
 | displayName | String | Display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar ends. |
+| isRegistrationRequired |Boolean| Indicates whether attendee registration is enabled for the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the webinar starts. |
 
@@ -72,7 +73,7 @@ The following example shows a request.
   "name": "update_virtualeventwebinar"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba
 Content-Type: application/json
 
@@ -90,10 +91,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-virtualeventwebinar-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-virtualeventwebinar-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -132,7 +129,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventWebinar"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -171,6 +168,7 @@ Content-Type: application/json
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ],
+  "isRegistrationRequired": false,
   "settings": {
       "isAttendeeEmailNotificationEnabled": false
   },

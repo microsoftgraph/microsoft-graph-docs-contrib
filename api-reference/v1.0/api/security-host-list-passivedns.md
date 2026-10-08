@@ -56,7 +56,7 @@ This method supports the `$count`, `$select`, `$filter`, `$orderBy`, `$top`, and
 
 The following properties can be used for `$filter` calls:
 
-| Property    | Example                                   
+| Property    | Example|
 | :---------- | :----------------------------------------- |
 | recordType       | `$filter=recordType eq 'A'`          |
 
@@ -65,7 +65,7 @@ The following properties can be used for `$filter` calls:
 
 The following properties can be used for `$orderby` calls.
 
-| Property             | Example                              
+| Property             | Example|
 | :------------------- | :-----------------------------------  |
 | firstSeenDateTime   | `$orderby=firstSeenDateTime desc`   |
 | lastSeenDateTime | `$orderby=lastSeenDateTime desc` |   
@@ -104,10 +104,6 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.c
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-passivedns-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-passivedns-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

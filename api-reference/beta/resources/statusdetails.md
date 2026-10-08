@@ -22,7 +22,7 @@ Describes the status of the provisioning event and the associated errors. It's i
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|statusBase|Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`. Inherited from statusBase.|
+|status|statusBase|The possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`. Inherited from statusBase.|
 |additionalDetails|String|Additional details if there is an error.|
 |errorCategory|String|Categorizes the error code. Possible values are `Failure`, `NonServiceFailure`, `Success`.|
 |errorCode|String|Unique error code if any occurred. [Learn more](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|

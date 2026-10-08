@@ -34,6 +34,11 @@ Namespace: microsoft.graph.healthMonitoring
 |compliantDeviceSignInFailure|
 |unknownFutureValue|
 |conditionalAccessBlockedSignIn|
+|samlSignInFailure|
+|internetAppBlockedByPolicy|
+|privateAppBlockedByConnector|
+|remoteNetworkTunnelConnectivity|
+|remoteNetworkBgpConnectivity|
 
 ### category values 
 
@@ -67,6 +72,8 @@ Namespace: microsoft.graph.healthMonitoring
 |devices|
 |unknownFutureValue|
 |conditionalAccess|
+|saml|
+|gsa|
 
 <!--
 {

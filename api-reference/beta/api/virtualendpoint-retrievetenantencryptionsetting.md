@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the encryption setting of the tenant associated with the current authenticated user. This information can help users to determine whether to trigger an encryption change based on the current setting.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /deviceManagement/virtualEndpoint/retrieveTenantEncryptionSetting
 ```
 
@@ -56,7 +56,7 @@ If successful, this function returns a `200 OK` response code and a [cloudPcTena
 
 The following example shows the request.
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveTenantEncryptionSetting
 ```
 

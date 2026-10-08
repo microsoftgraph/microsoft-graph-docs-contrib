@@ -40,7 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/todo/lists/{id}/tasks/{id}/attachments/createUploadSession
 POST /users/{id}/todo/lists/{id}/tasks/{id}/attachments/createUploadSession
 ```
@@ -76,7 +76,7 @@ The following example shows a request to create an upload session.
   "sampleKeys": ["AAMDiFkfh=", "AAMkADliMm="]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/me/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachments/createUploadSession
 Content-Type: application/json
 
@@ -91,10 +91,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/attachmentbasethiscreateuploadsession-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/attachmentbasethiscreateuploadsession-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -132,7 +128,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.uploadSession"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -1,0 +1,204 @@
+{
+  "redirections": [
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/aiinteractionhistory-getallenterpriseinteractions",
+      "source_path_from_root": "/api-reference/beta/api/aiinteractionhistory-getallenterpriseinteractions.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction",
+      "source_path_from_root": "/api-reference/beta/resources/aiinteraction.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractionattachment",
+      "source_path_from_root": "/api-reference/beta/resources/aiinteractionattachment.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractioncontext",
+      "source_path_from_root": "/api-reference/beta/resources/aiinteractioncontext.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractionhistory",
+      "source_path_from_root": "/api-reference/beta/resources/aiinteractionhistory.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractionlink",
+      "source_path_from_root": "/api-reference/beta/resources/aiinteractionlink.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractionmention",
+      "source_path_from_root": "/api-reference/beta/resources/aiinteractionmention.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractionmentionedidentityset",
+      "source_path_from_root": "/api-reference/beta/resources/aiinteractionmentionedidentityset.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/resources/aiuser",
+      "source_path_from_root": "/api-reference/beta/resources/aiuser.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/resources/copilotroot",
+      "source_path_from_root": "/api-reference/beta/resources/copilotroot.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/aiinteractionhistory-getallenterpriseinteractions",
+      "source_path_from_root": "/api-reference/v1.0/api/aiinteractionhistory-getallenterpriseinteractions.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction",
+      "source_path_from_root": "/api-reference/v1.0/resources/aiinteraction.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractionattachment",
+      "source_path_from_root": "/api-reference/v1.0/resources/aiinteractionattachment.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractioncontext",
+      "source_path_from_root": "/api-reference/v1.0/resources/aiinteractioncontext.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractionhistory",
+      "source_path_from_root": "/api-reference/v1.0/resources/aiinteractionhistory.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractionlink",
+      "source_path_from_root": "/api-reference/v1.0/resources/aiinteractionlink.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractionmention",
+      "source_path_from_root": "/api-reference/v1.0/resources/aiinteractionmention.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteractionmentionedidentityset",
+      "source_path_from_root": "/api-reference/v1.0/resources/aiinteractionmentionedidentityset.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/resources/aiuser",
+      "source_path_from_root": "/api-reference/v1.0/resources/aiuser.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/resources/copilotroot",
+      "source_path_from_root": "/api-reference/v1.0/resources/copilotroot.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/aiinteraction-changenotifications",
+      "source_path_from_root": "/concepts/aiinteraction-changenotifications-overview.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/callaiinsight-get",
+      "source_path_from_root": "/api-reference/beta/api/callaiinsight-get.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/onlinemeeting-list-aiinsights",
+      "source_path_from_root": "/api-reference/beta/api/onlinemeeting-list-aiinsights.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight",
+      "source_path_from_root": "/api-reference/beta/resources/callaiinsight.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsightviewpoint",
+      "source_path_from_root": "/api-reference/beta/resources/callaiinsightviewpoint.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/resources/mentionevent",
+      "source_path_from_root": "/api-reference/beta/resources/mentionevent.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/resources/actionitem",
+      "source_path_from_root": "/api-reference/beta/resources/actionitem.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/resources/aionlinemeeting",
+      "source_path_from_root": "/api-reference/beta/resources/aionlinemeeting.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/resources/meetingnote",
+      "source_path_from_root": "/api-reference/beta/resources/meetingnote.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/resources/meetingnotesubpoint",
+      "source_path_from_root": "/api-reference/beta/resources/meetingnotesubpoint.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/copilotadminlimitedmode-get",
+      "source_path_from_root": "/api-reference/beta/api/copilotadminlimitedmode-get.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/copilotadminlimitedmode-update",
+      "source_path_from_root": "/api-reference/beta/api/copilotadminlimitedmode-update.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadmin",
+      "source_path_from_root": "/api-reference/beta/resources/copilotadmin.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadminlimitedmode",
+      "source_path_from_root": "/api-reference/beta/resources/copilotadminlimitedmode.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadminsetting",
+      "source_path_from_root": "/api-reference/beta/resources/copilotadminsetting.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/copilotadminlimitedmode-get",
+      "source_path_from_root": "/api-reference/v1.0/api/copilotadminlimitedmode-get.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/copilotadminlimitedmode-update",
+      "source_path_from_root": "/api-reference/v1.0/api/copilotadminlimitedmode-update.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadmin",
+      "source_path_from_root": "/api-reference/v1.0/resources/copilotadmin.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadminlimitedmode",
+      "source_path_from_root": "/api-reference/v1.0/resources/copilotadminlimitedmode.md",
+      "redirect_document_id": false
+    },
+    {
+      "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadminsetting",
+      "source_path_from_root": "/api-reference/v1.0/resources/copilotadminsetting.md",
+      "redirect_document_id": false
+    }
+  ]
+}

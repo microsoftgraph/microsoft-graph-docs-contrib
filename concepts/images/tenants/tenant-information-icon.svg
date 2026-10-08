@@ -1,0 +1,10 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main tenant icon (scaled from 16x16 to 100x100) -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M52.172 6.237C50.978 4.905 49.022 4.905 47.828 6.237L0.689 61.232C-0.457 62.57 -0.134 64.616 1.369 65.535L48.508 94.342C49.424 94.902 50.576 94.902 51.492 94.342L98.631 65.535C100.134 64.616 100.457 62.57 99.311 61.232L52.172 6.237ZM47.139 15.833L16.683 51.365L47.139 70.108V15.833ZM52.861 15.833V70.108L83.317 51.365L52.861 15.833ZM47.139 76.826L12.913 55.763L7.220 62.405L47.139 86.8V76.826ZM52.861 86.8V76.826L87.087 55.763L92.78 62.405L52.861 86.8Z" fill="#0078D4" />
+  
+  <!-- Info badge circle (bottom-right) -->
+  <circle cx="78" cy="78" r="18" fill="#FFF" stroke="#0078D4" stroke-width="2"/>
+  
+  <!-- Question mark -->
+  <text x="78" y="87" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="bold" fill="#0078D4" text-anchor="middle">?</text>
+</svg>

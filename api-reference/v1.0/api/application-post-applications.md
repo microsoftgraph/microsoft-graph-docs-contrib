@@ -1,7 +1,7 @@
 ---
 title: "Create application"
 description: "Create a new application."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
@@ -12,11 +12,11 @@ ms.date: 05/14/2024
 
 Namespace: microsoft.graph
 
-Create a new [application](../resources/application.md) object.
+Create a new [application](../resources/application.md) object. This API can also create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprint`.
 
 > [!IMPORTANT]
 >
-> Do not share application client IDs (**appId**) in API documentation or code samples.
+> Don't share application client IDs (**appId**) in API documentation or code samples.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "application_post_applications" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-post-applications-permissions.md)]
+
+[!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,11 +42,13 @@ POST /applications
 | Content-Type   | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property.
+In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property. To create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md), also set the **@odata.type** property to `#microsoft.graph.agentIdentityBlueprint`.
+
+You can optionally set the **managerApplications** property when creating an [agentIdentityBlueprint](../resources/agentidentityblueprint.md). This property is only supported on agent identity blueprint objects. Setting **managerApplications** on non-agent-blueprint applications returns a `400 Bad Request` error. Only Microsoft first-party application IDs can be added as managers; adding a third-party application returns a `400 Bad Request` error. The maximum allowed is 10 manager applications; exceeding this limit returns a `400 Bad Request` error.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [application](../resources/application.md) or [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object in the response body.
 
 ## Examples
 
@@ -70,10 +74,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-application-from-applications-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-application-from-applications-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -195,10 +195,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-application-with-passwordcredentials-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-application-with-passwordcredentials-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents an identity that's requesting permissions in an authorization system, either directly or indirectly.
 
 ## Methods
@@ -49,4 +51,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

@@ -11,24 +11,26 @@ ms.date: 07/26/2024
 
 # appScope resource type
 
-The scope of a role assignment determines the set of resources for which the principal has been granted access. An app scope is a scope defined and understood by a specific application, unlike directory scopes that are shared scopes stored in the directory and understood by multiple applications.
+Namespace: microsoft.graph
 
-This may be in both the following principal and scope scenarios:
+The scope of a role assignment determines the set of resources for which the principal has access. An app scope is a scope defined and understood by a specific application, unlike directory scopes that are shared scopes stored in the directory and understood by multiple applications.
+
+App scopes support the following principal and scope scenarios:
 + A single principal and a single scope
 + Multiple principals and multiple scopes.
 	
 Inherits from [entity](entity.md).
 
 ## Methods
-None
+None.
 
 ## Properties
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| displayName | string | Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only. |
-| id | string | Identifier of an app-specific container or resource representing the scope of the assignment. Usually the immutable id of the resource. The scope of an assignment determines the set of resources for which the principal has been granted access. Required. |
-| type | String | Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only. |
+| displayName | string | Provides the display name of the app-specific resource represented by the app scope. Read-only. |
+| id | string | ID of an app-specific container or resource representing the scope of the assignment. Usually the immutable ID of the resource. The scope of an assignment determines the set of resources for which the principal is granted access. Required. Read-only. |
+| type | String | Describes the type of app-specific resource represented by the app scope. Read-only. |
 
 ## Relationships
 

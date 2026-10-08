@@ -2,7 +2,7 @@
 title: "Microsoft Entra application management policy API overview"
 description: "Application management policies allow administrators to set rules on how Entra apps in their tenant can be configured."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 11/12/2024
@@ -43,7 +43,7 @@ When the tenant default policy and an app management policy define the same rest
 
 ## What restrictions can be managed in Microsoft Graph?
 
-The application authentication methods policy API offers the following restrictions:
+The application authentication methods policy API offers the following restrictions. [Learn more about configuring these restrictions](/entra/identity/enterprise-apps/configure-app-management-policies).
 
 | Restriction name            | Description                                                             | Examples                                                                                                                                      |
 | :-------------------------- | :---------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -56,6 +56,12 @@ The application authentication methods policy API offers the following restricti
 | symmetricKeyAddition        | Restrict symmetric keys on applications.                                | Block new symmetric keys on applications created on or after 01/01/2019.                                                                      |
 | symmetricKeyLifetime        | Enforce a max lifetime range for a symmetric key.                       | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.                                            |
 | trustedCertificateAuthority | Enforce the list of trusted certificate authorities.                    | Block all new asymmetric key credentials if the issuer is not listed in the trusted certificate authority list.                               |
+| uriWithBlockedScheme        | Block specific URI schemes in redirect URIs globally or per platform.   | Block `http` and `ftp` redirect URIs for all apps; allow `msal` only for SPA apps.                                                          |
+| uriWithoutAllowedScheme     | Allow only specific URI schemes in redirect URIs.                       | Allow only `https` redirect URIs; permit `myapp` scheme for public client apps.                                                             |
+| uriWithBlockedDomain        | Block specific redirect URI domains globally or per platform.           | Block `short.contoso.com` and `tempuri.org` redirect URIs for all apps.                                                                     |
+| uriWithoutAllowedDomain     | Allow only specific redirect URI domains.                               | Allow redirect URIs only for `contoso.com` and `login.microsoftonline.com`; permit `app.contoso.com` for web apps.                          |
+| uriWithWildcard             | Restrict wildcard usage in redirect URIs with configurable exceptions.  | Block wildcards in redirect URI paths except for `contoso.com` and `fabrikam.com` domains.                                                  |
+| uriAdditionWithoutUniqueTenantIdentifier | Block new identifier URIs for apps unless they are one of the [secure formats](https://aka.ms/identifier-uri-policy). | Block new identifier URIs for apps unless they contain a unique tenant identifier like the tenant ID, appId (client ID), or verified domain. |
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).

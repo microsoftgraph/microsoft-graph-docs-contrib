@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents an Azure role in an Azure authorization system.
 
 Inherits from [entity](../resources/entity.md).
@@ -59,4 +61,5 @@ The following JSON representation shows the resource type.
   ]
 }
 ```
+
 

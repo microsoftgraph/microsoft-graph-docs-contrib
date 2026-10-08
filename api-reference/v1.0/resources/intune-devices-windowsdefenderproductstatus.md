@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
-ms.date: 10/10/2024
+ms.date: 08/01/2024
 ---
 
 # windowsDefenderProductStatus enum type
@@ -24,9 +24,9 @@ Product Status of Windows Defender
 |serviceStartedWithoutMalwareProtection|2|Service started without any malware protection engine|
 |pendingFullScanDueToThreatAction|4|Pending full scan due to threat action|
 |pendingRebootDueToThreatAction|8|Pending reboot due to threat action|
-|pendingManualStepsDueToThreatAction|16|Pending manual steps due to threat action |
-|avSignaturesOutOfDate|32|AV signatures out of date|
-|asSignaturesOutOfDate|64|AS signatures out of date|
+|pendingManualStepsDueToThreatAction|16|Pending manual steps due to threat action|
+|avSignaturesOutOfDate|32|Antivirus (AV) signatures out of date|
+|asSignaturesOutOfDate|64|Antisypware (AS) signatures out of date|
 |noQuickScanHappenedForSpecifiedPeriod|128|No quick scan has happened for a specified period|
 |noFullScanHappenedForSpecifiedPeriod|256|No full scan has happened for a specified period|
 |systemInitiatedScanInProgress|512|System initiated scan in progress|
@@ -45,10 +45,3 @@ Product Status of Windows Defender
 |platformAboutToBeOutdated|4194304|Platform is about to be outdated|
 |signatureOrPlatformEndOfLifeIsPastOrIsImpending|8388608|Signature or platform end of life is past or is impending|
 |windowsSModeSignaturesInUseOnNonWin10SInstall|16777216|Windows SMode signatures still in use on non-Win10S install|
-
-The "ProductStatus" is a bit-mask flag value.  Thus, the values can represent one or multiple product states from the list above.
-
-Examples of multiple product states:\
-524800 = 524288 (noStatusFlagsSet) + 512 (systemInitiatedScanInProgress)  = 0x000**8**0**2**00\
-524544 = 524288 (noStatusFlagsSet) + 256 (noFullScanHappenedForSpecifiedPeriod) = 0x000**8**0**1**00\
-524416 = 524288 (noStatusFlagsSet) + 128 (noQuickScanHappenedForSpecifiedPeriod) = 0x000**8**00**8**0

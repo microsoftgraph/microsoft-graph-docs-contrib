@@ -5,6 +5,7 @@ author: "mmast-msft"
 ms.localizationpriority: high
 ms.subservice: "education"
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Education rubric overview
@@ -27,7 +28,7 @@ An example of a grading rubric might be:
 
 Grading using a rubric involves selecting one *level* for each *quality* in the rubric.
 
-A rubric *may* have points associated with each level, and a weight associated with each quality.  If present, weights must add up to 100.
+A rubric *might* have points associated with each level, and a weight associated with each quality.  If present, weights must add up to 100.
 
 | &nbsp;                           | Good (2 points)                                                   | Poor (1 point)                                            |
 |:---------------------------------|:------------------------------------------------------------------|:----------------------------------------------------------|

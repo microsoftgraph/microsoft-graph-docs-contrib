@@ -39,7 +39,7 @@ GET /roleManagement/exchange/customAppScopes/{id}
 
 ## Optional query parameters
 
-This method does not support [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes/a6a
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-customappscope-exchangeonlineprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-customappscope-exchangeonlineprovider-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

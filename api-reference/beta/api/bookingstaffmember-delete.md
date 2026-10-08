@@ -43,7 +43,7 @@ Don't supply a request body for this method.
 If successful, this method returns `204, No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -58,10 +58,6 @@ DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunch
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-bookingstaffmember-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-bookingstaffmember-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -86,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunch
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

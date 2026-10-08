@@ -1,0 +1,69 @@
+---
+title: "section resource type"
+description: "Represents a section within a floor."
+author: tiwarisakshi02
+ms.date: 08/31/2026
+ms.localizationpriority: medium
+ms.subservice: outlook
+doc_type: resourcePageType
+---
+
+# section resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a section within a [floor](./floor.md). A [floor](./floor.md) is always the parent of a [section](./section.md).
+
+Inherits from [place](./place.md).
+
+## Methods
+For the list of supported methods, see [place](./place.md).
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|address|[physicalAddress](./physicaladdress.md)|The physical address of the **section**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
+|customProperties|[stringDictionary](../resources/stringdictionary.md)|Custom properties for the **section**. Each property has a string key and a string value. Inherited from [place](./place.md). Nullable.|
+|displayName|String|The name that is associated with the **section**. Inherited from [place](./place.md).|
+|geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **section** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
+|id|String|The unique identifier for the section. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md). |
+|isWheelChairAccessible|Boolean|Indicates whether the **section** is wheelchair accessible. Inherited from [place](./place.md).|
+|label |String |User-defined description of the **section**. Inherited from [place](./place.md). |
+|lastUpdatedTime|DateTimeOffset|The date and time when the **section** was last updated. The timestamp is in ISO 8601 format and is always in UTC. Inherited from [place](./place.md). Read-only. Nullable.|
+|parentId|String|The ID of a parent [floor](./floor.md). Inherited from [place](./place.md).|
+|phone|String|The phone number of the **section**. Inherited from [place](./place.md).|
+|tags|String collection|Custom tags that are associated with the section for categorization or filtering. Inherited from [place](./place.md).|
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Upsert places](../api/place-patch-places.md) API. The children of a section can be of type [room](../resources/room.md), [desk](../resources/desk.md), or [workspace](../resources/workspace.md). Inherited from [place](../resources/place.md).|
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.section",
+  "baseType": "microsoft.graph.place",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.section",
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "customProperties": {"String": "String"},
+  "displayName": "String",
+  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "id": "String (identifier)",
+  "isWheelChairAccessible": "Boolean",
+  "label": "String",  
+  "lastUpdatedTime": "String (timestamp)",
+  "parentId": "String",
+  "phone": "String",
+  "tags": ["String"]
+}
+```

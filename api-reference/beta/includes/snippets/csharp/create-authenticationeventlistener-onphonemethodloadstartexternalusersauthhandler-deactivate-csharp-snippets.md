@@ -7,10 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // Dependencies
-using Microsoft.Graph.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new AuthenticationEventListener
+var requestBody = new OnPhoneMethodLoadStartListener
 {
 	OdataType = "#microsoft.graph.onPhoneMethodLoadStartListener",
 	Conditions = new AuthenticationConditions
@@ -23,36 +22,21 @@ var requestBody = new AuthenticationEventListener
 			},
 		},
 	},
-	AdditionalData = new Dictionary<string, object>
+	Priority = 500,
+	Handler = new OnPhoneMethodLoadStartExternalUsersAuthHandler
 	{
+		OdataType = "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler",
+		SmsOptions = new PhoneOptions
 		{
-			"priority" , 500
-		},
-		{
-			"handler" , new UntypedObject(new Dictionary<string, UntypedNode>
+			IncludeAdditionalRegions = new List<Number>
 			{
-				{
-					"@odata.type", new UntypedString("#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler")
-				},
-				{
-					"smsOptions", new UntypedObject(new Dictionary<string, UntypedNode>
-					{
-						{
-							"includeAdditionalRegions", new UntypedArray(new List<UntypedNode>
-							{
-							})
-						},
-						{
-							"excludeRegions", new UntypedArray(new List<UntypedNode>
-							{
-								new UntypedString("1001"),
-								new UntypedString("99"),
-								new UntypedString("777"),
-							})
-						},
-					})
-				},
-			})
+			},
+			ExcludeRegions = new List<Number>
+			{
+				1001,
+				99,
+				777,
+			},
 		},
 	},
 };

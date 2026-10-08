@@ -22,9 +22,9 @@ Inherits from [endUserNotificationSetting](../resources/endusernotificationsetti
 
 |Property|Type|Description|
 |:---|:---|:---|
-|notificationPreference|endUserNotificationPreference|Notification preference. Possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
+|notificationPreference|endUserNotificationPreference|Notification preference. The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
 |positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|Notification for users who reported the phish email. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
-|settingType|endUserNotificationSettingType|The setting type. Possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
+|settingType|endUserNotificationSettingType|The setting type. The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
 |simulationNotification|[simulationNotification](../resources/simulationnotification.md)|The notification for the user who is part of the simulation.|
 
 ## Relationships

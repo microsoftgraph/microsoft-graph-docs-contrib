@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information related to the subject of a content search. This resource is an open type and supports adding addition properties; for example, customer ID.
+Contains information related to the subject of a content search. This resource is an open type that allows additional properties beyond those documented here.
 
 ## Properties
 |Property|Type|Description|

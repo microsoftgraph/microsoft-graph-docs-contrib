@@ -4,6 +4,7 @@ description: "Get an overview of the integration patterns that you can apply to 
 author: "OlgaPodo"
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Common integration patterns with Microsoft Graph
@@ -15,7 +16,7 @@ Microsoft Graph is a technology platform that allows organizations to connect th
 - Microsoft Graph Data Connect - A bulk data export mechanism that follows an ETL (extract, transform & load) pattern, with a data gathering phase that stages data before transferring it in bulk to the customers' provided storage, and serves data with high latency.  
 - Event-driven integration APIs - Allows client applications to receive notifications of changes or full object data after an event in the Microsoft 365 ecosystem. This push mechanism is supported by webhooks and doesn’t guarantee message delivery or message order. 
 - Event streaming integration APIs - Allows client applications to react to activities in Microsoft 365 at their own pace and guarantees the persistence of immutable event data. Microsoft Graph change notifications with Azure Event Hubs support this pull mechanism. 
-- Microsoft Graph connectors - Enable the ingestion of large amounts of customer data into Microsoft 365 storage, which enriches Microsoft 365 Copilot, the augmentation loop, and search-based Microsoft 365 experiences. These connectors are available through product-specific connectors, such as Microsoft Graph connector for ServiceNow, or generic-content REST APIs.
+- Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) - Enable the ingestion of large amounts of customer data into Microsoft 365 storage, which enriches Microsoft 365 Copilot, the augmentation loop, and search-based Microsoft 365 experiences. These connectors are available through product-specific connectors, such as Copilot connector for ServiceNow, or generic-content REST APIs.
 
 The following image shows the Microsoft Graph integration patterns, their associated architectural characteristic, and the types of solutions they map to.
 
@@ -43,7 +44,7 @@ Use the following decision tree to choose an integration option based on your ar
     - For high data latency and low data volume - Use Microsoft Graph APIs or notifications
     - For low data latency and high data volume -Use Microsoft Graph notifications via Event Hub.
     - For low data latency and low data volume - Use Microsoft Graph notifications via webhooks.
-  - Inbound flow of custom data - Use Microsoft Graph connectors.
+  - Inbound flow of custom data - Use Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors).
 
 Many business scenarios require multiple integration building blocks to implement a solution. For example, Data Loss Prevention (DLP) scenarios might need Microsoft Graph Data Connect for the initial data collection and malicious behavior patterns analysis, and subsequent event streaming integration for near real-time data ingestion and processing to recognize a potential security incident. Choose your integration options based on your constraints and requirements such as complexity, cost, and time to market, to best accelerate your path to value.
 

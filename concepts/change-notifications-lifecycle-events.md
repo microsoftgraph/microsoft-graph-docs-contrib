@@ -3,7 +3,7 @@ title: "Reduce missing change notifications and removed subscriptions"
 description: "Subscribe to Microsoft Graph lifecycle notifications to help you minimize the risk of missed change notifications or removed subscriptions."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: jessieli-ad
 ms.topic: how-to
 ms.localizationpriority: high
 ms.subservice: change-notifications
@@ -59,10 +59,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -153,18 +149,21 @@ The following steps represent the flow of an authorization challenge for an acti
 
 1. Microsoft Graph requires a subscription to be reauthorized.
 
-    The reasons may vary from resource to resource and may change over time. To maintain the subscription, you must respond to a reauthorization event no matter what caused it.
+    The reasons might vary from resource to resource and might change over time. To maintain the subscription, you must respond to a reauthorization event no matter what caused it.
 
 2. Microsoft Graph sends an authorization challenge notification to the **lifecycleNotificationUrl**.
 
-    The flow of change notifications may continue for a while, giving you extra time to respond. However, eventually change notification delivery pauses, until you take the required action. Any notifications about resource changes that happen when the change notification delivery pauses and the time when the app successfully creates the subscription again are lost. In such cases, the app should separately fetch those changes, for example using the [delta query](/graph/delta-query-overview).
+    The flow of change notifications might continue for a while, giving you extra time to respond. However, eventually change notification delivery pauses, until you take the required action. Any notifications about resource changes that happen when the change notification delivery pauses and the time when the app successfully creates the subscription again are lost. In such cases, the app should separately fetch those changes, for example using the [delta query](/graph/delta-query-overview).
 
 ### Responding to reauthorizationRequired notifications
 
 1. Acknowledge receipt of the lifecycle notification by responding to the POST call with `202 - Accepted` response code.
 2. Validate the authenticity of the lifecycle notification.
 3. Ensure that the app has a valid access token to take the next step.
-4. Call either of the following two APIs. If the API call succeeds, the change notification flow resumes.
+4. Call *either* of the following two APIs. If the API call succeeds, the change notification flow resumes.
+
+    > [!IMPORTANT]
+    > Don't issue a reauthorize request (`POST /subscriptions/{id}/reauthorize`) and an update request (`PATCH /subscriptions/{id}`) for the same subscription within a 10-minute window. Sending these requests concurrently or in rapid succession can result in subscription state inconsistencies. To reauthorize and renew a subscription in the same request, use a single `PATCH /subscriptions/{id}` request with an updated **expirationDateTime**, which performs both actions in one operation.
 
     - Call the `/reauthorize` action to reauthorize the subscription without extending its expiration date.
         
@@ -191,14 +190,14 @@ The following steps represent the flow of an authorization challenge for an acti
         }
         ```
 
-      Renewing may fail if the app is no longer authorized to access to the resource. It may then be necessary for the app to obtain a new access token to successfully reauthorize a subscription.
+      Renewing might fail if the app is no longer authorized to access to the resource. It might then be necessary for the app to obtain a new access token to successfully reauthorize a subscription.
 
-      You may retry these actions later, at any time, and succeed if the conditions of access change.
+      You might retry these actions later, at any time, and succeed if the conditions of access change.
 
 ### Additional information
 
 - Authorization challenges don't replace the need to renew a subscription before it expires.
-    The lifecycles of access tokens and subscription expiration aren't the same. Your access token may expire before your subscription. It's important to be prepared to regularly reauthorize your endpoint to refresh your access token. Reauthorizing your endpoint doesn't renew your subscription. However, [renewing your subscription](/graph/api/subscription-update) also reauthorizes your endpoint.
+    The lifecycles of access tokens and subscription expiration aren't the same. Your access token might expire before your subscription. It's important to be prepared to regularly reauthorize your endpoint to refresh your access token. Reauthorizing your endpoint doesn't renew your subscription. However, [renewing your subscription](/graph/api/subscription-update) also reauthorizes your endpoint.
 
 - The frequency of authorization challenges is subject to change.
 

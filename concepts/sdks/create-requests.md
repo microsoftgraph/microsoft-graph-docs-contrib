@@ -4,6 +4,7 @@ description: "Provides instructions for creating Microsoft Graph HTTP requests u
 ms.localizationpriority: medium
 author: DarrelMiller
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 <!-- markdownlint-disable MD025 MD051 -->

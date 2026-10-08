@@ -2,7 +2,7 @@
 title: "Microsoft Entra application management policy API overview"
 description: "Application management policies allow administrators to set rules on how Entra apps in their tenant can be configured."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 09/13/2024
@@ -41,16 +41,18 @@ When the tenant default policy and an app management policy define the same rest
 
 ## What restrictions can be managed in Microsoft Graph?
 
-The application authentication methods policy API offers the following restrictions:
+The application authentication methods policy API offers the following restrictions. [Learn more about configuring these restrictions](/entra/identity/enterprise-apps/configure-app-management-policies).
 
 | Restriction name       | Description                                                            | Examples                                                                                                    |
 | :--------------------- | :--------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key credentials to a maximum of 30 days for applications created after 01/01/2019.  |
+| customPasswordAddition | Restrict a custom password secret on application or service principal. | Restrict all new custom (non-Azure AD generated) password secrets on applications created after 01/01/2015. |
+| nonDefaultUriAddition       | Block new identifier URIs for apps except the "default" URI format.     | Block new identifier URIs for apps unless they are of the format `api://{appId}` or `api://{tenantId}/{appId}`.                               |
 | passwordAddition       | Restrict password secrets on applications altogether.                  | Block new passwords on applications created on or after '01/01/2019'.                                       |
 | passwordLifetime       | Enforce a max lifetime range for a password secret.                    | Restrict all new password secrets to a maximum of 30 days for applications created after 01/01/2015.        |
-| customPasswordAddition | Restrict a custom password secret on application or service principal. | Restrict all new custom (non-Azure AD generated) password secrets on applications created after 01/01/2015. |
 | symmetricKeyAddition   | Restrict symmetric keys on applications.                               | Block new symmetric keys on applications created on or after 01/01/2019.                                    |
 | symmetricKeyLifetime   | Enforce a max lifetime range for a symmetric key.                      | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.          |
-| asymmetricKeyLifetime  | Enforce a max lifetime range for an asymmetric key (certificate).      | Restrict all new asymmetric key credentials to a maximum of 30 days for applications created after 01/01/2019.  |
+| uriAdditionWithoutUniqueTenantIdentifier | Block new identifier URIs for apps unless they are one of the [secure formats](https://aka.ms/identifier-uri-policy). | Block new identifier URIs for apps unless they contain a unique tenant identifier like the tenant ID, appId (client ID), or verified domain. |
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).

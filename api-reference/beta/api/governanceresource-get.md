@@ -1,5 +1,5 @@
 ---
-title: "Get governanceResource"
+title: "Get governanceResource (deprecated)"
 description: "Retrieve the properties and relationships of a governanceResource object."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/02/2024
 ---
 
-# Get governanceResource
+# Get governanceResource (deprecated)
 
 Namespace: microsoft.graph
 
@@ -58,11 +58,11 @@ This example shows how to get the details of the subscription Wingtip Toys - Pro
   "blockType": "request",
   "name": "get_governanceresource"
 }-->
-##### Request
+### Request
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5
 ```
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": false,

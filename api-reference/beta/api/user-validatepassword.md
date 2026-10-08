@@ -6,7 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
-ms.date: 10/09/2024
+ms.date: 4/15/2026
 ---
 
 # user: validatePassword
@@ -24,8 +24,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "user_validatepassword" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-validatepassword-permissions.md)]
 
->[!IMPORTANT]
->This API operation doesn't require the calling user to be assigned any Microsoft Entra admin roles.
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation:
+> - Password Administrator 
+> - Helpdesk Administrator
+> - User Administrator
+> - Global Administrator
 
 ## HTTP request
 
@@ -33,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/validatePassword
 ```
 
@@ -66,7 +71,7 @@ If successful, this action returns a `200 OK` response code and a [passwordValid
   "name": "user_validatepassword"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/validatePassword
 Content-Type: application/json
 
@@ -77,10 +82,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-validatepassword-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-validatepassword-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -118,7 +119,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.passwordValidationInformation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

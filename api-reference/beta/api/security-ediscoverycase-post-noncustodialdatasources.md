@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_post_noncustodialdatasources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-post-noncustodialdatasources-permissions.md)]
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
 
 ## HTTP request
 
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources
 ```
 
@@ -46,11 +47,7 @@ You can specify the following properties when creating an **ediscoveryNoncustodi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|dataSource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Required. Either a [microsoft.graph.security.userSource](../resources/security-usersource.md) or [microsoft.graph.security.siteSource](../resources/security-sitesource.md).
-
-For userSource, use `"dataSource" : { "@odata.type" : "microsoft.graph.security.userSource", "email" : "SMTP address"}`.  
-For siteSource use `"dataSource" : { "@odata.type" : "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" }`,
-Alternatively use the webUrl directly, `"dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"}}`
+|dataSource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Required. Either a [microsoft.graph.security.userSource](../resources/security-usersource.md) or [microsoft.graph.security.siteSource](../resources/security-sitesource.md). <ul><li>For userSource, use `"dataSource" : { "@odata.type" : "microsoft.graph.security.userSource", "email" : "SMTP address"}`.</li><li>For siteSource, use `"dataSource" : { "@odata.type" : "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" }`.</li><li>Alternatively, use the webUrl directly: `"dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": "https://contoso.sharepoint.com/sites/Design-topsecret"}}`.</li><li>SharePoint site URLs must use the standard `.sharepoint.com` format.</li></ul>|
 
 ## Response
 
@@ -67,7 +64,7 @@ The following example shows a request.
   "name": "create_ediscoverynoncustodialdatasource_from__wesite_url"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialDataSources
 Content-Type: application/json
 
@@ -83,10 +80,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverynoncustodialdatasource-from--wesite-url-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-ediscoverynoncustodialdatasource-from--wesite-url-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -124,7 +117,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryNoncustodialDataSource"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

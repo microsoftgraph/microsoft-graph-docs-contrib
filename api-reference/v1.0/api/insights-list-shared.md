@@ -1,5 +1,5 @@
 ---
-title: "List shared"
+title: "List shared (deprecated)"
 description: "Calculated insight that returns the list of files shared with a user."
 author: "simonhult"
 ms.localizationpriority: medium
@@ -8,9 +8,12 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# List shared
+# List shared (deprecated)
 
 Namespace: microsoft.graph
+
+> [!CAUTION]
+> The `/insights/shared` API is deprecated and will stop returning data after November 2026.
 
 Calculated insight that includes the list of documents shared with a user.
 
@@ -37,7 +40,7 @@ GET /users/{id | userPrincipalName}/insights/shared
 Expand the resource referenced by a **shared** insight:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
+GET /me/insights/shared/{id}/resource
 ```
 
 ## Optional query parameters
@@ -88,10 +91,6 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/insights-list-shared-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/insights-list-shared-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

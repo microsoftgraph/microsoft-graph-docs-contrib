@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [playPromptOpe
 ## Example
 The following example shows how to call this API.
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -88,10 +88,6 @@ Content-Length: 166
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-playprompt-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/call-playprompt-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-playprompt-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -118,7 +114,7 @@ Content-Length: 166
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.

@@ -2,10 +2,10 @@
 title: "Use the Microsoft Graph API to get change notifications"
 description: "Deliver change notifications to clients."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 doc_type: conceptualPageType
 ms.subservice: change-notifications
-ms.date: 06/07/2024
+ms.date: 05/05/2026
 ---
 
 # Use the Microsoft Graph API to get change notifications
@@ -28,9 +28,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][] (preview), [contact][], [conversation][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [openShiftChangeRequest][], [presence][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [todoTask][], [user][], [baseTask][] (deprecated) |
+| Delegated - work or school account     | [aiInsights][], [aiInteraction][], [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][] (preview), [contact][], [conversation][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [openShiftChangeRequest][], [presence][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [todoTask][], [user][], [baseTask][] (deprecated) |
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [list][], [message][], [todoTask][], [baseTask][] (deprecated) |
-| Application                            | [alert][], [callRecord][], [approvals][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][], [contact][],  [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [onlineMeeting][], [openShiftChangeRequest][], [printer][], [printTaskDefinition][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [user][] |
+| Application                            | [aiInsights][], [aiInteraction][], [alert][], [callRecord][], [approvals][], [callRecording][], [callTranscript][], [channel][], [chat][], [chatMessage][], [contact][],  [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [offerShiftRequest][], [onlineMeeting][], [openShiftChangeRequest][], [printer][], [printTaskDefinition][], [shift][], [swapShiftsChangeRequest][], [team][], [timeOffRequest][], [user][] |
 
 ## Related content
 
@@ -41,6 +41,8 @@ In general, subscription operations require read permission to the resource. For
 - [Change notifications Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/nodejs)
 
 <!-- Links -->
+[aiInsights]: /microsoft-365/copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight
+[aiInteraction]: /microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction
 [chat]: ./chat.md
 [chatMessage]: ./chatmessage.md
 [contact]: ./contact.md
@@ -70,3 +72,13 @@ In general, subscription operations require read permission to the resource. For
 [callTranscript]: ./calltranscript.md
 [callRecording]: ./callrecording.md
 [approvals]: ./approvalitem.md
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "suppressions": [
+    "Error: /resources/change-notifications-api-overview.md:\n      Exception processing links.\n      Link Definition was null. Link text: !div class='mx-tableFixed' (Parameter 'Definition')"
+  ]
+} -->

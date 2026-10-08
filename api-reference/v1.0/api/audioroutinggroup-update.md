@@ -40,7 +40,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | receivers | String collection | The target participants in the audioRoutingGroup. |
-| routingMode | String | Possible values are: `oneToOne`, `multicast`. |
+| routingMode | String | The possible values are: `oneToOne`, `multicast`. |
 | sources | String collection | The source participant in the audioRoutingGroup. |
 
 ## Response
@@ -76,10 +76,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-audioroutinggroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-audioroutinggroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

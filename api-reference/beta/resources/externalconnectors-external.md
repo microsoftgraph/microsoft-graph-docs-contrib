@@ -15,6 +15,8 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 The base container for resource types such as the industry data ETL and Microsoft Entra Permissions Management for interacting with external data sources.
 
 ## Methods
@@ -44,4 +46,5 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.externalConnectors.external"
 }
 ```
+
 

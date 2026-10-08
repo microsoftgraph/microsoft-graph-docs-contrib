@@ -1,0 +1,22 @@
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#1f6feb', 'primaryTextColor':'#ffffff', 'primaryBorderColor':'#1f6feb', 'lineColor':'#58a6ff', 'secondaryColor':'#238636', 'tertiaryColor':'#58a6ff', 'actorBkg':'#1f6feb', 'actorBorder':'#58a6ff', 'actorTextColor':'#ffffff', 'actorLineColor':'#58a6ff', 'signalColor':'#c9d1d9', 'signalTextColor':'#c9d1d9', 'labelBoxBkgColor':'#0d1117', 'labelBoxBorderColor':'#30363d', 'labelTextColor':'#c9d1d9', 'loopTextColor':'#c9d1d9', 'noteBorderColor':'#58a6ff', 'noteBkgColor':'#161b22', 'noteTextColor':'#c9d1d9', 'activationBorderColor':'#58a6ff', 'activationBkgColor':'#1f6feb', 'sequenceNumberColor':'#0d1117'}}}%%
+sequenceDiagram
+    actor User
+    participant Client
+    participant MCPServer as MCP Server
+
+    rect rgb(31, 110, 251)
+    note over Client,MCPServer: Tool Discovery Phase
+    Client->>MCPServer: Request available tools
+    MCPServer-->>Client: Return tool metadata
+    Client->>Client: Parse and register tools
+    Client-->>User: Tools are now available for use
+    end
+
+    rect rgb(35, 134, 54)
+    note over Client,MCPServer: Tool Usage Phase
+    User->>Client: Provides prompt
+    Client->>MCPServer: Invoke selected tool
+    MCPServer-->>Client: Return tool result
+    Client-->>User: Present tool output
+    end

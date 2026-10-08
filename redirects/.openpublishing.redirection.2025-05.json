@@ -1,0 +1,74 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/cloudpc-bulkresize.md",
+      "redirect_url": "/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/manageddevice-bulkreprovisioncloudpc.md",
+      "redirect_url": "/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/manageddevice-bulkrestorecloudpc.md",
+      "redirect_url": "/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/manageddevice-bulksetcloudpcreviewstatus.md",
+      "redirect_url": "/graph/api/resources/cloudpcbulksetreviewstatus?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/manageddevice-getcloudpcremoteactionresults.md",
+      "redirect_url": "/graph/api/cloudpc-retrievecloudpcremoteactionresults?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/manageddevice-getcloudpcreviewstatus.md",
+      "redirect_url": "/graph/api/cloudpc-retrievereviewstatus?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/manageddevice-setcloudpcreviewstatus.md",
+      "redirect_url": "/graph/api/cloudpc-setreviewstatus?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/virtualendpoint-list-snapshots.md",
+      "redirect_url": "/graph/api/cloudpc-retrievesnapshots?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/concepts/connecting-external-content-connectors-overview.md",
+      "redirect_url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/overview-copilot-connector?toc=/graph/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/concepts/connecting-external-content-connectors-api-postman.md",
+      "redirect_url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/overview-copilot-connector?toc=/graph/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/concepts/connecting-external-content-deploy-teams.md",
+      "redirect_url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/overview-copilot-connector?toc=/graph/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/concepts/connecting-external-content-build-quickstart.md",
+      "redirect_url": "https://learn.microsoft.com/graph/custom-connector-sdk-sample-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/educationclass-post-assignment.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/educationassignment-post-resource.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/educationassignment-post-resources?view=graph-rest-1.0",
+      "redirect_document_id": false
+    }
+  ]
+}

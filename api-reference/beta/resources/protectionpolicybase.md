@@ -8,6 +8,7 @@ ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Protection policy
 ms.date: 07/04/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # protectionPolicyBase resource type
@@ -26,7 +27,7 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |:---|:---|:---|
 |[List](../api/backuprestoreroot-list-protectionpolicies.md)|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|Get a list of the [protectionPolicyBase](../resources/protectionpolicybase.md) and their properties.|
 |[Get](../api/protectionpolicybase-get.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Read the properties and relationships of a [protectionPolicyBase](../resources/protectionpolicybase.md).|
-|[Delete](../api/protectionpolicybase-delete.md)|None|Delete a [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|[Delete](../api/protectionpolicybase-delete.md)|None|Delete a [protectionPolicyBase](../resources/protectionpolicybase.md) object.|
 |[Activate](../api/protectionpolicybase-activate.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Activate an inactive protection policy.|
 |[Deactivate](../api/protectionpolicybase-deactivate.md)|[protectionPolicyBase](../resources/protectionpolicybase.md)|Deactivate an active protection policy.|
 
@@ -34,14 +35,18 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 
 |Property|Type|Description|
 |:---|:---|:---|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the policy.|
+|createdDateTime|DateTimeOffset|The date and time when the policy was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|displayName|String|The name of the policy.|
 |id|String|The unique identifier of the protection rule associated with the policy.|
-|displayName|String|The name of the policy to be created.|
-|createdDateTime|DateTimeOffset|The time of creation of the policy.|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
+|isEnabled|Boolean|Indicates whether the policy is enabled.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
-|lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification of the policy.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|offboardRequestedDateTime|DateTimeOffset|The date and time when offboarding was requested for the protection policy. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|protectionMode|[backupPolicyProtectionMode](../resources/enums.md#backuppolicyprotectionmode-values)|The backup mode for the protection policy. The possible values are: `standard`, `fullServiceBackup`, `unknownFutureValue`. When set to `fullServiceBackup`, the entire workload is backed up and specific items can be excluded using exclusion units. When set to `standard`, only the items explicitly added as protection units are backed up.|
+|protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`.|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy.|
-|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of the protection units associated with the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
+|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of the protection units associated with the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`, `offboardRequested`, `offboarded`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `offboardRequested`, `offboarded`.|
 
 ### protectionPolicyStatus values
 
@@ -52,6 +57,8 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |inactive | All units are unprotected.|
 |updating | Some or all units are in a `protectRequested`, `unprotectRequested`, or `removeRequested` state.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+|offboardRequested | Offboarding was requested for the protection policy.|
+|offboarded | The protection policy was successfully offboarded.|
 
 ## Relationships
 None.
@@ -69,22 +76,18 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.protectionPolicyBase",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "status": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isEnabled": "Boolean",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "retentionSettings": [
-    {
-      "@odata.type": "microsoft.graph.retentionSetting"
-    }
-  ]
+  "offboardRequestedDateTime": "String (timestamp)",
+  "protectionMode": "String",
+  "protectionPolicyArtifactCount": {"@odata.type": "microsoft.graph.protectionPolicyArtifactCount"},
+  "retentionSettings": [{"@odata.type": "microsoft.graph.retentionSetting"}],
+  "status": "String"
 }
 ```
 

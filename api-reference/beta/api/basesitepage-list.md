@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the collection of [baseSitePage][] objects from the site pages [list][] in a [site][]. All pages in the site are returned (with pagination). Sort alphabetically by **name** in ascending order.
 
-> **Note:** The [baseSitePage][] specified is a parent type and does not have any instance. As a result, the returned data only consists of available subtypes that are provided as a list.
+> **Note:** The [baseSitePage][] specified is a parent type and doesn't have any instance. As a result, the returned data only consists of available subtypes that are provided as a list.
 
 **The following table lists the available subtypes.**
 
@@ -88,10 +88,6 @@ GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-basesitepages-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-basesitepages-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -53,10 +53,10 @@ In the request body, supply the values for relevant fields that should be update
 | surname          | String             | Surname of user                                                                                                                                 |
 | mail             | String             | email address                                                                                                                                   |
 | mobilePhone      | String             | Mobile number of users                                                                                                                           |
-| externalSource   | string             | Where this user was created from. Possible values are: `sis`, `manual`, or `lms`.                                                               |
+| externalSource   | string             | Where this user was created from. The possible values are: `sis`, `manual`, or `lms`.                                                               |
 | mailingAddress   | [physicalAddress]  | Mail address of user. Note: `type` and `postOfficeBox` aren't supported for `educationUser` resources.                                         |
 | residenceAddress | [physicalAddress]  | Address where user lives. Note: `type` and `postOfficeBox` aren't supported for `educationUser` resources.                                     |
-| primaryRole      | string             | Default Role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`. |
+| primaryRole      | string             | Default Role for a user. The user's role might be different in an individual class. The possible values are: `student`, `teacher`, `enum_sentinel`. |
 | student          | [educationStudent] | If the primary role is student, this block contains student specific data.                                                                  |
 | teacher          | [educationTeacher](../resources/educationteacher.md) | If the primary role is teacher, this block contains teacher specific data.                                                                  |
 
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and updated [educati
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -92,10 +92,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-names-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-educationuser-names-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -124,9 +120,11 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

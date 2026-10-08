@@ -39,7 +39,7 @@ Assign and activate a hardware OATH authentication method for yourself by using 
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/authentication/hardwareOathMethods/assignAndActivateBySerialNumber
 ```
 
@@ -50,7 +50,7 @@ Assign and activate a hardware OATH authentication method for another user by us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{usersId}/authentication/hardwareOathMethods/assignAndActivateBySerialNumber
 ```
 
@@ -90,7 +90,7 @@ The following example shows a request.
   "name": "hardwareoathauthenticationmethodthis.assignandactivatebyserialnumber"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/assignAndActivateBySerialNumber
 Content-Type: application/json
 
@@ -103,10 +103,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/hardwareoathauthenticationmethodthisassignandactivatebyserialnumber-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/hardwareoathauthenticationmethodthisassignandactivatebyserialnumber-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -143,7 +139,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

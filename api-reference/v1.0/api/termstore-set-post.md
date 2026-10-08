@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /sites/{site-id}/termStore/sets
 ```
 
@@ -62,7 +62,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
   "blockType": "request",
   "name": "create_termStore_set_v1_e1"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/sites/6a742cee-9216-4db5-8046-13a595684e74/termStore/sets
 Content-Type: application/json
 
@@ -82,10 +82,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-termstore-set-v1-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-termstore-set-v1-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -122,7 +118,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.termStore.set"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

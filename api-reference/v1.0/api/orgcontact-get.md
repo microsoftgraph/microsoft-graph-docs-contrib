@@ -44,7 +44,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [orgContact](../resources/orgcontact.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 
@@ -59,10 +59,6 @@ GET https://graph.microsoft.com/v1.0/contacts/25caf6a2-d5cb-470d-8940-20ba795ef6
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-orgcontact-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-orgcontact-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/contacts/25caf6a2-d5cb-470d-8940-20ba795ef6
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 >**Note**: The response object shown here might be shortened for readability. 
 <!-- {

@@ -12,9 +12,9 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Create new synchronization job with a default synchronization schema. The job is created in a disabled state. Call [Start job](synchronization-synchronizationjob-start.md) to start synchronization.
+Create a new [synchronizationJob](../resources/synchronization-synchronizationjob.md) with a default synchronization schema. The job is created in a disabled state. Call [Start job](../api/synchronization-synchronizationjob-start.md) to start synchronization.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -46,7 +46,7 @@ If successful, returns a `201 Created` response code and a [synchronizationJob](
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -65,10 +65,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-synchronizationjob-from-synchronization-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-synchronizationjob-from-synchronization-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -97,7 +93,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.

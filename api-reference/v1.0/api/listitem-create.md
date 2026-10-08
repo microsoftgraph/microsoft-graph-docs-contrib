@@ -43,6 +43,8 @@ In the request body, supply a JSON representation of the [listItem][] resource t
 
 ## Example
 
+### Request
+
 Here is an example of how to create a new generic list item.
 
 
@@ -64,10 +66,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-listitem-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -96,7 +94,7 @@ Content-Type: application/json
 
 ---
 
-## Response
+### Response
 
 If successful, this method returns a [listItem][] in the response body for the created list item.
 

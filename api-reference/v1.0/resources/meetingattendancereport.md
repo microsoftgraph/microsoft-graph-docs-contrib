@@ -29,6 +29,7 @@ The policies that apply to the [Teams attendance report](https://support.microso
 
 | Property              | Type                                               | Description                     |
 |:----------------------|:---------------------------------------------------|:--------------------------------|
+| externalEventInformation | [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) collection | The external information of a virtual event. Returned only for event organizers or coorganizers. Read-only. |
 | id                    | String   | Unique identifier for the attendance report. Read-only. |
 | meetingEndDateTime    | DateTimeOffset | UTC time when the meeting ended. Read-only.   |
 | meetingStartDateTime  | DateTimeOffset | UTC time when the meeting started. Read-only.   |
@@ -56,11 +57,10 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.meetingAttendanceReport",
+  "externalEventInformation": [{"@odata.type": "microsoft.graph.virtualEventExternalInformation"}],
   "id": "String(identifier)",
   "meetingEndDateTime": "String (timestamp)",
   "meetingStartDateTime": "String (timestamp)",
-  "totalParticipantCount": "Int32",
-
-  "attendanceRecords": [{"@odata.type": "#microsoft.graph.attendanceRecord"}]
+  "totalParticipantCount": "Int32"
 }
 ```

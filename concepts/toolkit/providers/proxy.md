@@ -4,13 +4,17 @@ description: "The proxy provider allows you to use your own server-side authenti
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Proxy provider
 
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
 When you use the proxy provider, you can use your backend authentication (such as Auth2.0 On-Behalf-Of flow) to power the Microsoft Graph Toolkit by routing all calls to Microsoft Graph through your own backend.
 
-Your backend service must expose an API that will be called for every call to Microsoft Graph. For example, when a component attempts to get a resource, the ProxyProvider will instead call your base API and append that resource.
+Your backend service must expose an API that is called for every call to Microsoft Graph. For example, when a component attempts to get a resource, the ProxyProvider instead calls your base API and appends that resource.
 
 <pre>https://graph.microsoft.com/v1.0/me => https://myurl.com/api/GraphProxy/v1.0/me</pre>
 
@@ -22,11 +26,11 @@ To learn more about authentication providers, see [providers](./providers.md).
 
 ## Get started
 
-You can initialize the proxy provider in HTML or JavaScript. You should do this only once per page.
+You can initialize the proxy provider in HTML or JavaScript. You should do it only once per page.
 
 ### Initialize in your HTML page
 
-Initializing the proxy provider in HTML is the simplest way to define your own route for custom server-side authentication. Use the `mgt-proxy-provider` component to set the **graph-proxy-url**. This will set the defined proxy provider as the global provider.
+Initializing the proxy provider in HTML is the simplest way to define your own route for custom server-side authentication. Use the `mgt-proxy-provider` component to set the **graph-proxy-url**. It sets the defined proxy provider as the global provider.
 
 ```html
 <mgt-proxy-provider
@@ -68,9 +72,9 @@ Providers.globalProvider = new ProxyProvider(
 );
 ```
 
-This is useful when you need to pass tokens or other headers to your backend.
+It's useful when you need to pass tokens or other headers to your backend.
 
-If you will be using the `mgt-login` component, you should also specify the `login` and `logout` functions for the provider:
+If you're using the `mgt-login` component, you should also specify the `login` and `logout` functions for the provider:
 
 ```ts
 import { Providers } from "@microsoft/mgt-element";

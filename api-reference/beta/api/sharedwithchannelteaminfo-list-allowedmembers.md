@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the list of [conversationMembers](../resources/conversationmember.md) who can access a shared [channel](../resources/channel.md).
 
-This method does not return the following [conversationMembers](../resources/conversationmember.md) from the [team](../resources/team.md):
+This method doesn't return the following [conversationMembers](../resources/conversationmember.md) from the [team](../resources/team.md):
 - Users with `Guest` role
 - Users who are externally authenticated in the tenant
 
@@ -41,7 +41,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-channel-team-info-id}/allowedMembers
 ```
 
@@ -72,16 +72,12 @@ The following example shows a request.
   "sampleKeys": ["893075dd-2487-5634-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2", "893075dd-2487-5634-925f-022c42e20265"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/sharedWithTeams/893075dd-2487-5634-925f-022c42e20265/allowedMembers
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-conversationmember-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-conversationmember-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -120,7 +116,7 @@ The following example shows the response.
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

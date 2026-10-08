@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /policies/adminConsentRequestPolicy 
 ```
 
@@ -68,7 +68,7 @@ If successful, this method returns a `204 No content` response code.
   "name": "update_adminconsentrequestpolicy"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/policies/adminConsentRequestPolicy 
 Content-Type: application/json
 
@@ -102,7 +102,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 Content-Type: text/plain
 ```

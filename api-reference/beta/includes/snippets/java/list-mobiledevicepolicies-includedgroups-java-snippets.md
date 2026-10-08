@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-GroupCollectionResponse result = graphClient.policies().mobileDeviceManagementPolicies().byMobilityManagementPolicyId("{mobilityManagementPolicy-id}").includedGroups().get();
+GroupCollectionResponse result = graphClient.policies().mobileDeviceManagementPolicies().byMobileDeviceManagementPolicyId("{mobileDeviceManagementPolicy-id}").includedGroups().get();
 
 
 ```

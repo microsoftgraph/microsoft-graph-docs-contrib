@@ -36,7 +36,7 @@ Inherits from [searchAnswer](../resources/search-searchanswer.md).
 |lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user who created or last modified the acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the acronym was created or last edited. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only.|
 |standsFor|String|What the acronym stands for.|
-|state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
+|state|microsoft.graph.search.answerState|State of the acronym. The possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
 |webUrl|String|The URL of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Relationships

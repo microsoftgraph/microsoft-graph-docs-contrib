@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/settings/storage/quota
 GET /users/{user-id}/settings/storage/quota
 ```
@@ -53,23 +53,19 @@ If successful, this method returns a `200 OK` response code and a [unifiedStorag
 
 ### Example 1: Get the unified quota information for the current user
 #### Request
-Here's an example  of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedstoragequota"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/storage/quota
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedstoragequota-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedstoragequota-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,7 +95,7 @@ GET https://graph.microsoft.com/beta/me/settings/storage/quota
 ---
 
 #### Response
-Here's an example  of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -107,7 +103,7 @@ Here's an example  of the response
   "@odata.type": "microsoft.graph.unifiedStorageQuota"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -125,7 +121,7 @@ Content-Type: application/json
 
 ### Example 2: Get the unified quota information for the current user
 #### Request
-Here's an example  of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -133,16 +129,12 @@ Here's an example  of a request.
   "sampleKeys": ["1234BBS1121YY95"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/1234BBS1121YY95/settings/storage/quota
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedstoragequotabyuserid-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedstoragequotabyuserid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -172,7 +164,7 @@ GET https://graph.microsoft.com/beta/users/1234BBS1121YY95/settings/storage/quot
 ---
 
 #### Response
-Here's an example  of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -180,7 +172,7 @@ Here's an example  of the response
   "@odata.type": "microsoft.graph.unifiedStorageQuota"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -198,23 +190,19 @@ Content-Type: application/json
 
 ### Example 3: Get the unified quota information, along with the service breakdowns, for the current user
 #### Request
-Here's an example  of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedstoragequotaandservices"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/storage/quota?$expand=services
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedstoragequotaandservices-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedstoragequotaandservices-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -244,7 +232,7 @@ GET https://graph.microsoft.com/beta/me/settings/storage/quota?$expand=services
 ---
 
 #### Response
-Here's an example  of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -252,7 +240,7 @@ Here's an example  of the response
   "@odata.type": "microsoft.graph.unifiedStorageQuota"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

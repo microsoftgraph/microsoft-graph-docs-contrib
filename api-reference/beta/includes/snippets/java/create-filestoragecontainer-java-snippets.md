@@ -14,6 +14,9 @@ fileStorageContainer.setDescription("Description of My Application Storage Conta
 fileStorageContainer.setContainerTypeId(UUID.fromString("91710488-5756-407f-9046-fbe5f0b4de73"));
 FileStorageContainerSettings settings = new FileStorageContainerSettings();
 settings.setIsOcrEnabled(true);
+settings.setItemMajorVersionLimit(50);
+settings.setIsItemVersioningEnabled(true);
+settings.setItemDefaultSensitivityLabelId("3d8789ae-7375-4ded-8eeb-d6bc226e42fb");
 fileStorageContainer.setSettings(settings);
 FileStorageContainer result = graphClient.storage().fileStorage().containers().post(fileStorageContainer);
 

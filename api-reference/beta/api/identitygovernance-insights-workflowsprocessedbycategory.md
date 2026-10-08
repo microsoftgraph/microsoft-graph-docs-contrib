@@ -14,9 +14,9 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a summary of workflows processed, by category, in a tenant. This allows you to quickly get category information, by numerical value, bypassing other information found in the [WorkflowsProcessedSummary](identitygovernance-insights-workflowsprocessedsummary.md) call.
+Provide a summary from the [insights](../resources/identitygovernance-insights.md) resource of [workflow](../resources/identitygovernance-workflow.md) objects processed by category in a tenant. This allows you to quickly get category information, by numerical value, without retrieving the other information included in the [workflowsProcessedSummary](../api/identitygovernance-insights-workflowsprocessedsummary.md) call.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/insights/workflowsProcessedByCategory(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
@@ -75,16 +75,12 @@ The following example shows a request.
   "name": "insightsthis.workflowsprocessedbycategory"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/insights/workflowsProcessedByCategory(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/insightsthisworkflowsprocessedbycategory-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/insightsthisworkflowsprocessedbycategory-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -123,7 +119,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflowsInsightsByCategory"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

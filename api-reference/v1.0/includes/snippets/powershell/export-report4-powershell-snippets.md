@@ -10,7 +10,7 @@ $params = @{
 	displayName = "Export 4"
 	exportCriteria = "partiallyIndexed"
 	exportLocation = "responsiveLocations, nonresponsiveLocations"
-	additionalOptions = "teamsAndYammerConversations, cloudAttachments, allDocumentVersions, subfolderContents, listAttachments"
+	additionalOptions = "advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments"
 }
 
 Export-MgSecurityCaseEdiscoveryCaseSearchReport -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params

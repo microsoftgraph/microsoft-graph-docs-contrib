@@ -20,8 +20,8 @@ Indicates the reason or reasons why media content from a participant is restrict
 
 |Property|Type|Description|
 |:-------|:---|:----------|
-|contentSharingDisabled|[onlineMeetingContentSharingDisabledReason](#onlinemeetingcontentsharingdisabledreason-values)|Specifies the reason why shared content from this participant is disabled. Possible values are: `watermarkProtection`, `unknownFutureValue`.|
-|videoDisabled|[onlineMeetingVideoDisabledReason](#onlinemeetingvideodisabledreason-values)|Specifies the reason why video from this participant is disabled. Possible values are: `watermarkProtection`, `unknownFutureValue`.|
+|contentSharingDisabled|[onlineMeetingContentSharingDisabledReason](#onlinemeetingcontentsharingdisabledreason-values)|Specifies the reason why shared content from this participant is disabled. The possible values are: `watermarkProtection`, `unknownFutureValue`.|
+|videoDisabled|[onlineMeetingVideoDisabledReason](#onlinemeetingvideodisabledreason-values)|Specifies the reason why video from this participant is disabled. The possible values are: `watermarkProtection`, `unknownFutureValue`.|
 
 ### onlineMeetingContentSharingDisabledReason values
 

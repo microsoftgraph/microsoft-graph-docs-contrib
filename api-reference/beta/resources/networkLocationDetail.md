@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the name and type of network from which the user signed in.
+Provides the name and type of network from which the user signed in. This object is configured in the **networkLocationDetails** property of [signIn](../resources/signin.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |networkNames|String collection|Provides the name of the network used when signing in.|
-|networkType|networkType| Provides the type of network used when signing in. Possible values are: `intranet`, `extranet`, `namedNetwork`, `trusted`, `unknownFutureValue`.|
+|networkType|networkType| Provides the type of network used when signing in. The possible values are: `intranet`, `extranet`, `namedNetwork`, `trusted`, `unknownFutureValue`.|
 
 ## JSON representation
 
@@ -52,4 +52,3 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -26,7 +26,7 @@ messageIds := []string {
 }
 requestBody.SetMessageIds(messageIds)
 additionalMessage := graphmodels.NewChatMessage()
-body := graphmodels.NewItemBody()
+body := graphmodels.NewChatMessageBody()
 content := "Hello World"
 body.SetContent(&content) 
 additionalMessage.SetBody(body)

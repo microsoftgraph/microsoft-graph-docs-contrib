@@ -37,7 +37,7 @@ GET /identity/conditionalAccess/authenticationContextClassReferences/{id}
 ```
 ## Optional query parameters
 
-This method does not support OData query parameters.
+This method doesn't support OData query parameters.
 
 ## Request headers
 
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-identity-conditionalaccess-authenticationcontextclassreferences-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-identity-conditionalaccess-authenticationcontextclassreferences-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

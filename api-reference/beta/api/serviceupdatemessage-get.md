@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.
 
-This operation retrieves a specified service update message for the tenant. The operation returns an error if the message does not exist for the tenant.
+This operation retrieves a specified service update message for the tenant. The operation returns an error if the message doesn't exist for the tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}
 ```
 
@@ -62,16 +62,12 @@ If successful, this method returns a `200 OK` response code and a [serviceUpdate
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC172851
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceupdatemessage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-serviceupdatemessage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -109,7 +105,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC172851
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

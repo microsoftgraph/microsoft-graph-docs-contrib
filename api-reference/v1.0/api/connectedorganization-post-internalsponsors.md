@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Add a user or a group to the connected organization's internal sponsors. The [internal sponsors](../resources/internalsponsors.md) are a set of users who can approve requests on behalf of other users from that connected organization.
+Add a user or a group to the **internalSponsors** relationship of a [connectedOrganization](../resources/connectedorganization.md). Internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -65,10 +65,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-internalsponsor-from-connectedorganization-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-internalsponsor-from-connectedorganization-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

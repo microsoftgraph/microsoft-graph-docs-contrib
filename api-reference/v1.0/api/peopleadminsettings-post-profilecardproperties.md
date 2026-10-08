@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "rwaithera"
 ms.subservice: "people"
 doc_type: "apiPageType"
-ms.date: 09/18/2024
+ms.date: 05/19/2026
 ---
 
 # Create profileCardProperty
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "peopleadminsettings_post_profilecardproperties" } -->
 [!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-post-profilecardproperties-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or People Administrator role.
+[!INCLUDE [rbac-peopleadmin-apis-write](../includes/rbac-for-apis/rbac-peopleadmin-apis-write.md)]
 
 ## HTTP request
 
@@ -54,8 +54,9 @@ You can specify the following properties when you create a **profileCardProperty
 
 |Property|Type|Description|
 |:---|:---|:---|
-|annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection|Any alternative or localized labels that an administrator chose to specify.|
-|directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card.|
+|annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection|Any alternative or localized labels that an administrator chose to specify. Optional.|
+|directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card. Required.|
+|isVisible|Boolean|Indicates whether the given directory property should be shown on a user’s profile card. Optional.|
 
 ## Response
 
@@ -66,7 +67,6 @@ If successful, this method returns a `201 Created` response code and a new [prof
 ### Request
 
 The following example shows a request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -77,7 +77,6 @@ POST https://graph.microsoft.com/v1.0/admin/people/profileCardProperties
 Content-type: application/json; charset=utf-8
 
 {
-  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
       "displayName": "Cost Center",
@@ -88,16 +87,14 @@ Content-type: application/json; charset=utf-8
         }
       ]
     }
-  ]
+  ],
+  "directoryPropertyName": "CustomAttribute1",
+  "isVisible": true
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-profilecardproperty-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/add-profilecardproperty-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -143,7 +140,6 @@ HTTP/1.1 201 Created
 Content-type: application/json; charset=utf-8
 
 {
-  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
       "displayName": "Cost Center",
@@ -154,6 +150,8 @@ Content-type: application/json; charset=utf-8
         }
       ]
     }
-  ]
+  ],
+  "directoryPropertyName": "CustomAttribute1",
+  "isVisible": true
 }
 ```

@@ -65,7 +65,7 @@ If successful, this method returns the `200 OK` response code with the user's ac
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -81,10 +81,6 @@ GET https://graph.microsoft.com/v1.0/me/activities
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-activities-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-activities-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -113,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/me/activities
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response.
 

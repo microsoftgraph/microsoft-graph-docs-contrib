@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_close" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-close-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-apis-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
 
 ## HTTP request
 
@@ -32,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/close
 ```
 
@@ -61,16 +62,12 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/061b9a92-8926-4bd9-b41d-abf35edc7583/close
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/close-ediscoverycase-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/close-ediscoverycase-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -107,6 +104,6 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/061b9a92-89
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

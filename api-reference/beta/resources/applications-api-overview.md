@@ -1,9 +1,8 @@
 ---
 title: Manage Microsoft Entra Applications Using Microsoft Graph
 description: Discover API operations to register, update, and manage Microsoft Entra applications and service principals with Microsoft Graph.
-author: FaithOmbongi
-ms.author: ombongifaith
-ms.reviewer: sureshja
+author: "Jackson-Woods"
+ms.reviewer: Jackson-Woods
 ms.date: 04/29/2025
 ms.topic: concept-article
 ms.localizationpriority: medium
@@ -24,6 +23,8 @@ The application object is located in the tenant where the app is registered. A s
 
 In Microsoft Graph, an application is represented by the [application resource type](application.md), and a service principal is represented by the [servicePrincipal resource type](serviceprincipal.md). The details of the two objects can be accessed on the Microsoft Entra admin center through the **Entra ID** > **App registrations** and **Entra ID** > **Enterprise applications** menus respectively.
 
+Service principals inherit specific properties from their associated app registrations. These properties are synchronized from the app registration, but the synchronization isn't immediate or continuous. Sometimes, updating a service principal may prompt the directory to refresh properties from the app registration, causing updates that weren't part of the original request.
+
 ## API use cases for managing applications
 
 The following API use cases are supported for managing applications through the [application resource type](../resources/application.md) in Microsoft Graph.
@@ -31,7 +32,7 @@ The following API use cases are supported for managing applications through the 
 | Use cases | API operations |
 | -- | -- |
 | Register an application and configure its basic properties | [Create application](../api/application-post-applications.md) |
-| Configure properties for a registered application including:  <ul><li>Basic properties such as display name, logo, and tags</li><li>Permissions</li><li>Assign apps to users</li><li>Set the basic identifier URIs</li><li>The Microsoft accounts that the app supports</li><li>App roles</li></ul> | [Update application](../api/application-update.md) |
+| Configure properties for a registered application including:  <ul><li>Basic properties such as display name, logo, and tags</li><li>Permissions</li><li>Assign apps to users</li><li>Set the basic identifier URIs</li><li>The Microsoft accounts that the app supports</li><li>Deactivate an app without deleting it</li><li>App roles</li><li>Allow the app to be used in any Entra tenant or restrict to specific Entra tenants</li></ul> | [Update application](../api/application-update.md) |
 | Delete an application | [Delete application](../api/application-delete.md) |
 | Manage deleted applications | <ul><li>[List deletedItems](../api/directory-deleteditems-list.md)</li><li>[List deletedItems owners by a user](../api/directory-deleteditems-getuserownedobjects.md)</li><li>[Get deleted item](../api/directory-deleteditems-get.md)</li><li>[Permanently delete item](../api/directory-deleteditems-delete.md)</li><li>[Restore deleted item](../api/directory-deleteditems-restore.md)</li></ul> |
 | Manage password credentials for an application | <ul><li>[application: addPassword](../api/application-addpassword.md)</li><li>[application: removePassword](../api/application-removepassword.md)</li></ul> |
@@ -49,15 +50,15 @@ The following API use cases are supported for managing service principals throug
 | Use cases | API operations |
 |--|--|
 | Register service principal | [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) |
-| Configure properties for a service principal including:  <li> Basic properties such as display name and logo  <li> Permissions  <li> Configure SSO mode | [Update servicePrincipal](../api/serviceprincipal-update.md) |
+| Configure properties for a service principal including:  <ul><li> Basic properties such as display name and logo  </li><li> Permissions  </li><li> Configure SSO mode | [Update servicePrincipal](../api/serviceprincipal-update.md)</li></ul> |
 | Delete a service principal | [Delete servicePrincipal](../api/serviceprincipal-delete.md) |
-| Manage deleted service principals: view, restore, or permanently delete |  <li> [List deletedItems](../api/directory-deleteditems-list.md)  <li> [List deletedItems owned by a user](../api/directory-deleteditems-getuserownedobjects.md)  <li> [Get deleted item](../api/directory-deleteditems-get.md)  <li> [Permanently delete item](../api/directory-deleteditems-delete.md)  <li> [Restore deleted item](../api/directory-deleteditems-restore.md) |
-| Manage password credentials for a service principal |  <li> [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)  <li> [servicePrincipal: removePassword](../api/serviceprincipal-removepassword.md) |
-| Manage certificate-based credentials for a service principal |  <li> [servicePrincipal: addKey](../api/serviceprincipal-addkey.md)  <li> [servicePrincipal: removeKey](../api/serviceprincipal-removekey.md) |
-| Add a SAML token signing certificate |  <li> [servicePrincipal: addTokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md) |
-| Track changes to a service principal |  <li> [servicePrincipal: delta](../api/serviceprincipal-delta.md)  <li> [directoryObject: delta](../api/directoryobject-delta.md) with the following filter: `..?$filter=isof('microsoft.graph.servicePrincipal')` |
-| Manage owners |  <li> [List owners](../api/serviceprincipal-list-owners.md)  <li> [Add owner](../api/serviceprincipal-post-owners.md)  <li> [Remove owner](../api/serviceprincipal-delete-owners.md) |
-| Manage password-based SSO credentials (preview) |  <li> [Create](../api/serviceprincipal-createpasswordsinglesignoncredentials.md), [Get](../api/serviceprincipal-getpasswordsinglesignoncredentials.md), [Update](../api/serviceprincipal-updatepasswordsinglesignoncredentials.md), [Delete](../api/serviceprincipal-deletepasswordsinglesignoncredentials.md) |
+| Manage deleted service principals: view, restore, or permanently delete |  <ul><li> [List deletedItems](../api/directory-deleteditems-list.md)  </li><li> [List deletedItems owned by a user](../api/directory-deleteditems-getuserownedobjects.md)  </li><li> [Get deleted item](../api/directory-deleteditems-get.md)  </li><li> [Permanently delete item](../api/directory-deleteditems-delete.md)  </li><li> [Restore deleted item](../api/directory-deleteditems-restore.md)</li></ul> |
+| Manage password credentials for a service principal |  <ul><li> [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)  </li><li> [servicePrincipal: removePassword](../api/serviceprincipal-removepassword.md)</li></ul> |
+| Manage certificate-based credentials for a service principal |  <ul><li> [servicePrincipal: addKey](../api/serviceprincipal-addkey.md)  </li><li> [servicePrincipal: removeKey](../api/serviceprincipal-removekey.md)</li></ul> |
+| Add a SAML token signing certificate |  <ul><li> [servicePrincipal: addTokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)</li></ul> |
+| Track changes to a service principal |  <ul><li> [servicePrincipal: delta](../api/serviceprincipal-delta.md)  </li><li> [directoryObject: delta](../api/directoryobject-delta.md) with the following filter: `..?$filter=isof('microsoft.graph.servicePrincipal')`</li></ul> |
+| Manage owners |  <ul><li> [List owners](../api/serviceprincipal-list-owners.md)  </li><li> [Add owner](../api/serviceprincipal-post-owners.md)  </li><li> [Remove owner](../api/serviceprincipal-delete-owners.md)</li></ul> |
+| Manage password-based SSO credentials (preview) |  <ul><li> [Create](../api/serviceprincipal-createpasswordsinglesignoncredentials.md), [Get](../api/serviceprincipal-getpasswordsinglesignoncredentials.md), [Update](../api/serviceprincipal-updatepasswordsinglesignoncredentials.md), [Delete](../api/serviceprincipal-deletepasswordsinglesignoncredentials.md)</li></ul> |
 
 ## Application templates
 

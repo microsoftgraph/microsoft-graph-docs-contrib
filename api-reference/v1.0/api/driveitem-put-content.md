@@ -25,6 +25,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_put_content" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-put-content-permissions.md)]
 
+> [!NOTE]
+> Replacing the contents of a file protected with a sensitivity label is not supported with app-only authentication. Use delegated permissions (user context) instead.
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 ### To replace an existing item
@@ -65,7 +70,11 @@ The contents of the request body should be the binary stream of the file to be u
 
 If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.
 
-## Example (upload a new file)
+## Examples
+
+### Example 1: Upload a new file
+
+#### Request
 
 This example uploads the string "The contents of the file goes here." to a file in the signed-in user's drive under FolderA named FileB.txt.
 
@@ -78,7 +87,7 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### Response
+#### Response
 
 If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
 
@@ -96,7 +105,9 @@ Content-Type: application/json
 }
 ```
 
-## Example (updating an existing file)
+### Example 2: Updating an existing file
+
+#### Request
 
 This example replaces the contents of a file with a known ID.
 
@@ -111,10 +122,6 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/upload-via-put-id-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/upload-via-put-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -125,7 +132,7 @@ The contents of the file goes here.
 
 ---
 
-### Response
+#### Response
 
 If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
 

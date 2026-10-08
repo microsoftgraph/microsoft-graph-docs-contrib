@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 
-Represents a Microsoft Entra [access review](accessreviewsv2-overview.md) notification event on an instance of a review. This item contains an email template type and recipient properties to enable sending certain type of notifications for a given [access review instance](accessreviewinstance.md).
+In an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md), the **additionalNotificationRecipients** property configures **accessReviewNotificationRecipientItem** objects for access review notifications. Each item contains an email template type and recipient properties for a given [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## Properties
 

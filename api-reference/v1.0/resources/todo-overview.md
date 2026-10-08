@@ -46,7 +46,7 @@ GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklist
 
 ## Linked resource
 
-A [linkedResource](linkedresource.md) represents any item from a partner application related to the task, e.g. an item like email from where a task was created. You can use it to store information and the link back to the related item in your app. To get a linked resource from a task, make the following HTTP request:
+A [linkedResource](linkedresource.md) represents any item from a partner application related to the task, for example, an item like email from where a task was created. You can use it to store information and the link back to the related item in your app. To get a linked resource from a task, make the following HTTP request:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedResourceId}
 ```

@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 POST /planner/plans
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_plannerplan_from_planner_e1"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
 
@@ -83,10 +83,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-plannerplan-from-planner-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-plannerplan-from-planner-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -126,7 +122,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerPlan"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

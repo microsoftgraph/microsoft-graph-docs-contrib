@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -25,18 +25,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
+> [!NOTE]
+> SharePoint Online resource environments are returned only when this API is called with delegated permissions. This scenario isn't supported with application permissions.
+>
+> A SharePoint Online resource environment corresponds to a SharePoint root site. To retrieve root site information using application permissions, use the [List sites](../api/site-list.md) API and filter on the `siteCollection/root` property: `GET /sites?$select=siteCollection,webUrl&$filter=siteCollection/root ne null`. Most organizations have a single root site; multi-geo organizations have a root site for each geo location.
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/{accessPackageResourceEnvironmentId}
 ```
 
 ## Optional query parameters
-This method does not currently support [OData query parameters](/graph/query-parameters).
+This method doesn't currently support [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -60,16 +65,12 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
   "name": "get_accesspackageresourceenvironment"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceEnvironments/{accessPackageResourceEnvironmentId}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageresourceenvironment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-accesspackageresourceenvironment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -106,7 +107,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
   "@odata.type": "microsoft.graph.accessPackageResourceEnvironment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

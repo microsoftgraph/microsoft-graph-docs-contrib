@@ -35,10 +35,10 @@ GET /subscribedSkus
 
 ## Optional query parameters
 
-This method supports only the `$select` [OData query parameter](/graph//query-parameters) to help customize the response. It does not support `$filter`.
+This method supports only the `$select` [OData query parameter](/graph//query-parameters) to help customize the response. It doesn't support `$filter`.
 
 > [!NOTE]
-> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search` parameter.
+> This API has a [known issue](/graph/known-issues#use-of-specific-query-parameters-on-subscribedskus-and-domains-doesnt-return-the-expected-results) related to the `$search` parameter.
 
 ## Request headers
 
@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscribedskus-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-subscribedskus-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-subscribedskus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -107,7 +103,9 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus
 
 ### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

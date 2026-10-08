@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -21,14 +21,15 @@ An abstract class containing the base properties for Intune mobile apps. Note: L
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List mobileApps](../api/intune-apps-mobileapp-list.md)|[mobileApp](../resources/intune-apps-mobileapp.md) collection|List properties and relationships of the [mobileApp](../resources/intune-apps-mobileapp.md) objects.|
-|[Get mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune-apps-mobileapp.md) object.|
+|[List mobileApps](../api/intune-apps-mobileapp-list.md)|[mobileApp](../resources/intune-shared-mobileapp.md) collection|List properties and relationships of the [mobileApp](../resources/intune-shared-mobileapp.md) objects.|
+|[Get mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-shared-mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune-shared-mobileapp.md) object.|
 |[assign action](../api/intune-apps-mobileapp-assign.md)|None||
 |[validateXml action](../api/intune-apps-mobileapp-validatexml.md)|String||
-|[createCatalogApp action](../api/intune-apps-mobileapp-createcatalogapp.md)|[mobileApp](../resources/intune-apps-mobileapp.md)||
-|[convertFromMobileAppCatalogPackage function](../api/intune-apps-mobileapp-convertfrommobileappcatalogpackage.md)|[mobileApp](../resources/intune-apps-mobileapp.md)||
+|[createCatalogApp action](../api/intune-apps-mobileapp-createcatalogapp.md)|[mobileApp](../resources/intune-shared-mobileapp.md)||
+|[convertFromMobileAppCatalogPackage function](../api/intune-apps-mobileapp-convertfrommobileappcatalogpackage.md)|[mobileApp](../resources/intune-shared-mobileapp.md)||
 |[updateRelationships action](../api/intune-apps-mobileapp-updaterelationships.md)|None||
 |[getPublishingConstraints function](../api/intune-apps-mobileapp-getpublishingconstraints.md)|[mobileAppPublishingConstraints](../resources/intune-apps-mobileapppublishingconstraints.md)||
+|[configureAssignments action](../api/intune-apps-mobileapp-configureassignments.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -59,6 +60,7 @@ An abstract class containing the base properties for Intune mobile apps. Note: L
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app.|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|The list of group assignments for this mobile app.|
+|targetAssignments|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|The list of target assignments for this mobile app. Initially, this property will just expose deployment assignments.|
 |relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|The set of direct relationships for this app.|
 
 ## JSON Representation

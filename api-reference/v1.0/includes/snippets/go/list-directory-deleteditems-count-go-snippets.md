@@ -25,7 +25,7 @@ requestCount := true
 requestParameters := &graphdirectory.DeletedItemsGraph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"deletedDateTime asc"},
-	Select: [] string {"id","DisplayName","deletedDateTime"},
+	Select: [] string {"id","displayName","deletedDateTime"},
 }
 configuration := &graphdirectory.DeletedItemsGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,

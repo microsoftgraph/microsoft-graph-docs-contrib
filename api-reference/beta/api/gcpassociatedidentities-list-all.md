@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get a list of the [gcpIdentity](../resources/gcpidentity.md) objects and their properties.
 
 ## Permissions
@@ -28,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/associatedIdentities/all
 ```
 
@@ -57,7 +59,7 @@ The following example shows a request.
   "name": "list_gcpidentity"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/associatedIdentities/all
 ```
 
@@ -76,7 +78,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.gcpIdentity)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -107,4 +109,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

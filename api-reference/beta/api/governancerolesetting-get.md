@@ -1,5 +1,5 @@
 ---
-title: "Get governanceRoleSetting"
+title: "Get governanceRoleSetting (deprecated)"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/13/2024
 --- 
 
-# Get governanceRoleSetting
+# Get governanceRoleSetting (deprecated)
 
 Namespace: microsoft.graph
 
@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [governanceRoleSetting](../resources/governancerolesetting.md) object in the response body.
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-governancerolesetting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-governancerolesetting-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -97,7 +93,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": false,

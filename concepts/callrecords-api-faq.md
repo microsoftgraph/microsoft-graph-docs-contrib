@@ -5,6 +5,7 @@ author: "MirraRaine"
 ms.localizationpriority: high
 ms.subservice: "cloud-communications"
 ms.date: 11/07/2024
+ms.topic: faq
 ---
 
 # Microsoft Graph call records API FAQ

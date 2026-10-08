@@ -23,7 +23,7 @@ exportCriteria := graphmodels.PARTIALLYINDEXED_EXPORTCRITERIA
 requestBody.SetExportCriteria(&exportCriteria) 
 exportLocation := graphmodels.RESPONSIVELOCATIONS, NONRESPONSIVELOCATIONS_EXPORTLOCATION 
 requestBody.SetExportLocation(&exportLocation) 
-additionalOptions := graphmodels.TEAMSANDYAMMERCONVERSATIONS, CLOUDATTACHMENTS, ALLDOCUMENTVERSIONS, SUBFOLDERCONTENTS, LISTATTACHMENTS_ADDITIONALOPTIONS 
+additionalOptions := graphmodels.ADVANCEDINDEXING, SUBFOLDERCONTENTS, ALLITEMSINFOLDER, LISTATTACHMENTS, TEAMSANDYAMMERCONVERSATIONS, HTMLTRANSCRIPTS, CLOUDATTACHMENTS_ADDITIONALOPTIONS 
 requestBody.SetAdditionalOptions(&additionalOptions) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

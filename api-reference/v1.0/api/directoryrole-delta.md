@@ -72,7 +72,7 @@ This method supports OData query parameters to help customize the response.
 
 Don't supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
 
@@ -80,9 +80,9 @@ If successful, this method returns a `200 OK` response code and [directoryRole](
 
 - If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Save `@odata.deltaLink` URL and apply it in the next **delta** call to learn about changes to the resource in the future.
 
-### Example
+## Examples
 
-#### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -97,10 +97,6 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryrole-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/directoryrole-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -129,7 +125,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 
 ---
 
-#### Response
+### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- { 

@@ -15,7 +15,7 @@ var requestBody = new SendActivityNotificationPostRequestBody
 	Topic = new TeamworkActivityTopic
 	{
 		Source = TeamworkActivityTopicSource.EntityUrl,
-		Value = "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}",
+		Value = "https://graph.microsoft.com/v1.0/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}",
 	},
 	ActivityType = "reservationStatusUpdated",
 	PreviewText = new ItemBody

@@ -54,7 +54,7 @@ If successful, this method returns a `201 Created` response code.
 
 This is an example of updating a one-time (not reoccurring) access review with another reviewer.
 
-##### Request
+### Request
 In the request body, supply a JSON representation of the id of the user object.
 
 
@@ -74,10 +74,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-accessreview-reviewer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/add-accessreview-reviewer-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -106,7 +102,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -17,6 +17,7 @@ sendActivityNotificationPostRequestBody.setActivityType("announcementPosted");
 ItemBody previewText = new ItemBody();
 previewText.setContent("new announcemnet posted");
 sendActivityNotificationPostRequestBody.setPreviewText(previewText);
+sendActivityNotificationPostRequestBody.setIconId("announcementCreated");
 AadUserNotificationRecipient recipient = new AadUserNotificationRecipient();
 recipient.setOdataType("microsoft.graph.aadUserNotificationRecipient");
 recipient.setUserId("jacob@contoso.com");
@@ -31,9 +32,6 @@ keyValuePair1.setName("currentSlot");
 keyValuePair1.setValue("23");
 templateParameters.add(keyValuePair1);
 sendActivityNotificationPostRequestBody.setTemplateParameters(templateParameters);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("iconId", "announcementCreated");
-sendActivityNotificationPostRequestBody.setAdditionalData(additionalData);
 graphClient.teams().byTeamId("{team-id}").sendActivityNotification().post(sendActivityNotificationPostRequestBody);
 
 

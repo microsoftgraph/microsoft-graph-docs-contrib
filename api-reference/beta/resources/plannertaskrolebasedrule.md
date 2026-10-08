@@ -20,7 +20,7 @@ Represents the rules for editing [tasks](../resources/businessscenariotask.md) c
 
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultRule|String|Default rule that applies when a property or action-specific rule is not provided. Possible values are: `Allow`, `Block`|
+|defaultRule|String|Default rule that applies when a property or action-specific rule is not provided. The possible values are: `Allow`, `Block`|
 |propertyRule|[plannerTaskPropertyRule](../resources/plannertaskpropertyrule.md)|Rules for specific properties and actions.|
 |role|[plannerTaskConfigurationRoleBase](../resources/plannertaskconfigurationrolebase.md)|The role these rules apply to.|
 

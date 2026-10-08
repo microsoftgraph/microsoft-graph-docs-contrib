@@ -5,7 +5,7 @@ author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 07/09/2024
+ms.date: 05/18/2026
 ---
 
 # Create linkedResource
@@ -19,19 +19,35 @@ You can also create a **linkedResource** object while [creating a todoTask](/gra
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+### Permissions acting on self
 
 <!-- { "blockType": "permissions", "name": "todotask_post_linkedresources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/todotask-post-linkedresources-permissions.md)]
 
+### Permissions acting on other users
+
+<!-- { "blockType": "permissions", "name": "todotask_post_linkedresources_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/todotask-post-linkedresources-2-permissions.md)]
+
 ## HTTP request
 
+Permissions to create a linkedResource in a task of the signed-in user:
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
+```
+
+Permissions to create a linkedResource in a task of another user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
 POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
 ```
 
@@ -71,7 +87,7 @@ If successful, this method returns a `201 Created` response code and a [linkedRe
   "name": "create_linkedresource_from_linkedresources"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources
 Content-Type: application/json
 
@@ -85,10 +101,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-linkedresource-from-linkedresources-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-linkedresource-from-linkedresources-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -121,7 +133,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.linkedResource"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

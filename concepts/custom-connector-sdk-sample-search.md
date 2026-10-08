@@ -5,8 +5,9 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Follow the steps in this article to add Microsoft Graph connectors SDK data to Microsoft Search."
+description: "Follow the steps in this article to add Microsoft 365 Copilot connectors SDK data to Microsoft Search."
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Surface the data in Microsoft Search

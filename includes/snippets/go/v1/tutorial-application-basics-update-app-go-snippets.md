@@ -23,7 +23,7 @@ tags := []string {
 }
 requestBody.SetTags(tags)
 info := graphmodels.NewInformationalUrl()
-logoUrl := "https://cdn.pixabay.com/photo/2016/03/21/23/25/link-1271843_1280.png"
+logoUrl := "https://cdn.contoso.com/photo/2016/03/21/23/25/link-1271843_1280.png"
 info.SetLogoUrl(&logoUrl) 
 marketingUrl := "https://www.contoso.com/app/marketing"
 info.SetMarketingUrl(&marketingUrl) 

@@ -2,7 +2,7 @@
 title: "appIdentity resource type"
 description: "Indicates the identity of the application that performed the action or was changed. This resource is called by the directoryAudit API"
 ms.localizationpriority: medium
-author: "dhanyahk"
+author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 08/08/2024
@@ -12,7 +12,7 @@ ms.date: 08/08/2024
 
 Namespace: microsoft.graph
 
-Indicates the identity of the application that performed the action or was changed. Includes the application ID, name, and service principal ID and name. This resource is used by the [directoryAudit](../api/directoryaudit-get.md) operation.
+Indicates the identity of the application that performed the action or was changed. Includes the application ID, name, and service principal ID and name. This object is configured in the **app** property of [auditActivityInitiator](../resources/auditactivityinitiator.md).
 
 ## Properties
 

@@ -13,9 +13,9 @@ var requestBody = new ActivityBasedTimeoutPolicy
 {
 	Definition = new List<string>
 	{
-		"definition-value",
+		"{\"ActivityBasedTimeoutPolicy\":{\"Version\":1,\"ApplicationPolicies\":[{\"ApplicationId\":\"default\",\"WebSessionIdleTimeout\":\"00:05:00\"}]}}",
 	},
-	DisplayName = "displayName-value",
+	DisplayName = "activityBasedTimeoutPolicies test",
 	IsOrganizationDefault = true,
 };
 

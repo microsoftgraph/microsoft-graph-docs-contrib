@@ -52,10 +52,10 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return a response body.
+If successful, this method returns `204 No Content` response code. It doesn't return a response body.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -70,10 +70,6 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-domain-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-domain-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -102,7 +98,7 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 
 ---
 
-##### Response
+### Response
 
 Note: The response object shown here might be shortened for readability.
 <!-- {

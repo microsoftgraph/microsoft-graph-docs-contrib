@@ -9,6 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 OpenShiftChangeRequest openShiftChangeRequest = new OpenShiftChangeRequest();
+openShiftChangeRequest.setSenderUserId("3fe0bc21-1398-4fd9-9713-52511b434c1e");
 openShiftChangeRequest.setSenderMessage("Can I take this shift?");
 openShiftChangeRequest.setOpenShiftId("577b75d2-a927-48c0-a5d1-dc984894e7b8");
 OpenShiftChangeRequest result = graphClient.teams().byTeamId("{team-id}").schedule().openShiftChangeRequests().post(openShiftChangeRequest, requestConfiguration -> {

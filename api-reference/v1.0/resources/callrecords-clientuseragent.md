@@ -23,8 +23,8 @@ the [userAgent](callrecords-useragent.md) type.
 |azureADAppId|String|The unique identifier of the Microsoft Entra application used by this endpoint.|
 |communicationServiceId|String|Immutable resource identifier of the Azure Communication Service associated with this endpoint based on [Communication Services APIs](https://azure.microsoft.com/services/communication-services/).|
 |headerValue|String|User-agent header value reported by this endpoint.|
-|platform|microsoft.graph.callRecords.clientPlatform|Identifies the platform used by this endpoint. Possible values are: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
-|productFamily|microsoft.graph.callRecords.productFamily|Identifies the family of application software used by this endpoint. Possible values are: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`, `azureCommunicationServices`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `azureCommunicationServices`.|
+|platform|microsoft.graph.callRecords.clientPlatform|Identifies the platform used by this endpoint. The possible values are: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
+|productFamily|microsoft.graph.callRecords.productFamily|Identifies the family of application software used by this endpoint. The possible values are: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`, `azureCommunicationServices`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `azureCommunicationServices`.|
 
 ## JSON representation
 

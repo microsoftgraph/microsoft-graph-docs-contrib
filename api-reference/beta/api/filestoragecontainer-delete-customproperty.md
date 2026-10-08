@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /storage/fileStorage/containers/{containerId}/customProperties
 ```
 
@@ -56,7 +56,7 @@ The following example deletes multiple custom properties.
   "name": "delete_filestoragecontainer_customproperty"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/customProperties
 Content-type: application/json
 
@@ -79,7 +79,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 Ok
 ```
 

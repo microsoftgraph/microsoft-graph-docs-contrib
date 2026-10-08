@@ -5,6 +5,7 @@ author: "ananmishr"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Create or join online meetings

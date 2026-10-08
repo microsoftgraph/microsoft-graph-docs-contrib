@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [printService]
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/beta/print/services/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printservice-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-printservice-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,7 +97,7 @@ GET https://graph.microsoft.com/beta/print/services/{id}
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response.
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update one or multiple custom properties on a [fileStorageContainer](../resources/filestoragecontainer.md). Only the **value** and **isSearchable** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. If a custom property specified in the request body doesn't exist on the container, it will be created. 
+Update one or multiple custom properties on a [fileStorageContainer](../resources/filestoragecontainer.md). Only the **value**, **isSearchable**, and **isPatternToken** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. If a custom property specified in the request body doesn't exist on the container, it will be created. 
 
 Updating a custom property to a `null` value deletes the property from the container.
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /storage/fileStorage/containers/{containerId}/customProperties
 ```
 
@@ -51,8 +51,9 @@ The following properties on custom properties can be modified.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|The value of the custom property.|
+|isPatternToken|Boolean|Indicates whether **value** is a `urlTemplate` pattern (for example, a token such as `{itemId}` used to configure redirect behavior when opening files), rather than a literal value that consumers must resolve before use. |
 |isSearchable|Boolean|Indicates whether the property is searchable.|
+|value|String|The value of the custom property.|
 
 ## Response
 
@@ -68,7 +69,7 @@ The following example updates the `value` property of the custom properties `cli
   "name": "update_filestoragecontainer_customproperty"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties
 Content-type: application/json
 
@@ -96,7 +97,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainerCustomPropertyDictionary"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 Ok
 
 {

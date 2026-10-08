@@ -1,5 +1,5 @@
 ---
-title: "List governanceRoleAssignmentRequests"
+title: "List governanceRoleAssignmentRequests (deprecated)"
 description: "Retrieve a collection of governanceRoleAssignmentRequests. "
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/02/2024
 ---
 
-# List governanceRoleAssignmentRequests
+# List governanceRoleAssignmentRequests (deprecated)
 
 Namespace: microsoft.graph
 
@@ -85,12 +85,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_governanceroleassignmentrequests"
 }-->
 Administrators query pending role assignment requests for subscription Wingtip Toys - Prod.
-##### Request
+### Request
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
-##### Response
+### Response
 The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.

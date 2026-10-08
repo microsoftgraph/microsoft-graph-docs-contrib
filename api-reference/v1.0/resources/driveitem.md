@@ -41,6 +41,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Get item](../api/driveitem-get.md)                                          | [driveItem](../resources/driveitem.md) |Retrieve the metadata for a **driveItem** in a drive.|
 | [Get analytics][]                                                            | [itemAnalytics][] | Get analytics for this resource.|
 | [Get activities by interval][]                                               | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.|
+| [Get recent activities](../api/itemactivity-list.md)       | [itemActivity](../resources/itemactivity.md) collection | List the recent [activities](../resources/itemactivity.md) that took place on a [drive](../resources/drive.md), [list](../resources/list.md), item, or within an item hierarchy. |
 | [List children](../api/driveitem-list-children.md)                           | [driveItem](../resources/driveitem.md) collection | Return a collection of **driveItems** in the children relationship of a **driveItem**.|
 | [List versions](../api/driveitem-list-versions.md)                           | [driveItemVersion][] collection | Retrieve the versions of a file in the current user's drive.|
 | [Create folder](../api/driveitem-post-children.md)                             | [driveItem](../resources/driveitem.md) | Create a **driveItem** in the specified drive.|
@@ -49,6 +50,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Download file](../api/driveitem-get-content.md)                          | download Url | Download content of a **driveItem**.|
 | [Download specific file format][download-format]                             | download Url | Download content of a **driveItem** with a specific format.|
 | [Delete item](../api/driveitem-delete.md)                                    | None | Delete a **driveItem**.|
+| [Restore item](../api/driveitem-restore.md)                                    | [driveItem](../resources/driveitem.md) | Restore a deleted [driveItem](../resources/driveitem.md) that is currently in the [recycle bin](../resources/recyclebin.md).|
 | [Permanently delete item](../api/driveitem-permanentdelete.md)                  | None | Permanently delete a **driveItem** by using its ID. |
 | [Move item](../api/driveitem-move.md)                                        | [driveItem](../resources/driveitem.md) | Move a **driveItem** to a new parent item.|
 | [Copy item](../api/driveitem-copy.md)                                        | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy | Create a copy of a **driveItem** (including any children).|
@@ -60,7 +62,9 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Create sharing link](../api/driveitem-createlink.md)                        | sharing link | Create a link to share the **driveItem**.|
 | [Add permissions](../api/driveitem-invite.md)                                | [permission][] collection | Send a sharing invite to a user.|
 | [List permissions](../api/driveitem-list-permissions.md)                     | [permission][] collection | Retrieve the collection of permissions on an **driveItem**.|
+| [Create permission](../api/driveitem-post-permissions.md)                    | [permission][] | Create a new [permission](../resources/permission.md) object on a [driveItem](../resources/driveitem.md).|
 | [Delete permission](../api/permission-delete.md)                             | None | Remove the permission from the **driveItem**.|
+| [Revoke grants on sharing link](../api/permission-revokegrants.md)           | [permission][] | Revoke access to a [listItem](../resources/listitem.md) or [driveItem](../resources/driveitem.md) granted via a sharing link by removing the specified [driveRecipient](../resources/driverecipient.md) entries from the link.|
 | [Get WebSocket channel][getWebSocket]                                        | [subscription][] | Receive near-real-time change notifications for a drive using socket.io.|
 | [Preview item][item-preview]                                                 | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.|
 | [Check in files](../api/driveitem-checkin.md)                                      | None| Check in a checked out **driveItem** resource, which makes the version of the document available to others. |

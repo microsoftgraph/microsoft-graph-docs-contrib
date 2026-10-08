@@ -5,7 +5,7 @@ author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 08/16/2024
+ms.date: 01/08/2026
 ---
 
 # alert resource type
@@ -18,67 +18,76 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 
 [!INCLUDE [alerts-callout-two-types](../includes/alerts-callout-two-types.md)]
 
+> [!IMPORTANT]
+> To view Sentinel alerts and incidents you must onboard Sentinel to the Defender Portal. For more information see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard).
+
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/security-list-alerts_v2.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources created to track suspicious activities in an organization.|
 |[Get](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 |[Update](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 |[Create comment](../api/security-alert-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [alert](../resources/security-alert.md) based on the specified alert **id** property.|
+|[Move alerts](../api/security-alert-movealerts.md)|[microsoft.graph.security.mergeResponse](../resources/security-mergeresponse.md)|Move one or more [alert](../resources/security-alert.md) resources to a new or existing [incident](../resources/security-incident.md).|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |actorDisplayName|String| The adversary or activity group that is associated with this alert.|
-|additionalData|microsoft.graph.security.dictionary| A collection of other alert properties, including user-defined properties. Any custom details defined in the alert, and any dynamic content in the alert details, are stored here.|         
+|additionalData|microsoft.graph.security.dictionary| A collection of other alert properties, including user-defined properties. Any custom details defined in the alert, and any dynamic content in the alert details, are stored here.|
 |alertPolicyId|String| The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.|
 |alertWebUrl|String|URL for the Microsoft 365 Defender portal alert page.|
 |assignedTo|String| Owner of the **alert**, or null if no owner is assigned.|
-|category|String| The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
-|classification|[microsoft.graph.security.alertClassification](#alertclassification-values)| Specifies whether the alert represents a true threat. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
+|categories|String collection| The attack kill-chain categories that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
+|classification|[microsoft.graph.security.alertClassification](#alertclassification-values)| Specifies whether the alert represents a true threat. The possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection| Array of comments created by the Security Operations (SecOps) team during the alert management process.|
 |createdDateTime|DateTimeOffset| Time when Microsoft 365 Defender created the alert.|
+|customDetails|microsoft.graph.security.dictionary| User defined custom fields with string values. |
 |description|String| String value describing each alert.|
-|detectionSource|[microsoft.graph.security.detectionSource](#detectionsource-values)| Detection technology or sensor that identified the notable component or activity. Possible values are: `unknown`, `microsoftDefenderForEndpoint`, `antivirus`, `smartScreen`, `customTi`, `microsoftDefenderForOffice365`, `automatedInvestigation`, `microsoftThreatExperts`, `customDetection`, `microsoftDefenderForIdentity`, `cloudAppSecurity`, `microsoft365Defender`, `azureAdIdentityProtection`, `manual`, `microsoftDataLossPrevention`, `appGovernancePolicy`, `appGovernanceDetection`, `unknownFutureValue`, `microsoftDefenderForCloud`, `microsoftDefenderForIoT`, `microsoftDefenderForServers`, `microsoftDefenderForStorage`, `microsoftDefenderForDNS`, `microsoftDefenderForDatabases`, `microsoftDefenderForContainers`, `microsoftDefenderForNetwork`, `microsoftDefenderForAppService`, `microsoftDefenderForKeyVault`, `microsoftDefenderForResourceManager`, `microsoftDefenderForApiManagement`, `microsoftSentinel`, `nrtAlerts`, `scheduledAlerts`, `microsoftDefenderThreatIntelligenceAnalytics`, `builtInMl`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoftDefenderForCloud`, `microsoftDefenderForIoT`, `microsoftDefenderForServers`, `microsoftDefenderForStorage`, `microsoftDefenderForDNS`, `microsoftDefenderForDatabases`, `microsoftDefenderForContainers`, `microsoftDefenderForNetwork`, `microsoftDefenderForAppService`, `microsoftDefenderForKeyVault`, `microsoftDefenderForResourceManager`, `microsoftDefenderForApiManagement`, `microsoftSentinel`, `nrtAlerts`, `scheduledAlerts`, `microsoftDefenderThreatIntelligenceAnalytics`, `builtInMl`.|
+|detectionSource|[microsoft.graph.security.detectionSource](../resources/security-detectionsource.md)| Detection technology or sensor that identified the notable component or activity.|
 |detectorId|String| The ID of the detector that triggered the alert.|
-|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)| Specifies the result of the investigation, whether the alert represents a true attack and if so, the nature of the attack. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)| Specifies the result of the investigation, whether the alert represents a true attack and if so, the nature of the attack. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |evidence|[microsoft.graph.security.alertEvidence](security-alertEvidence.md) collection| Collection of evidence related to the alert.|
 |firstActivityDateTime|DateTimeOffset| The earliest activity associated with the alert.|
 |id|String| Unique identifier to represent the **alert** resource.|
 |incidentId|String| Unique identifier to represent the [incident](security-incident.md) this **alert** resource is associated with.|
 |incidentWebUrl|String| URL for the incident page in the Microsoft 365 Defender portal.|
+|investigationState|[microsoft.graph.security.investigationState](#investigationstate-values)| Information on the current status of the investigation. The possible values are: `unknown`, `terminated`, `successfullyRemediated`, `benign`, `failed`, `partiallyRemediated`, `running`, `pendingApproval`, `pendingResource`, `queued`, `innerFailure`, `preexistingAlert`, `unsupportedOs`, `unsupportedAlertType`, `suppressedAlert`, `partiallyInvestigated`, `terminatedByUser`, `terminatedBySystem`, `unknownFutureValue`.|
 |lastActivityDateTime|DateTimeOffset| The oldest activity associated with the alert.|
 |lastUpdateDateTime|DateTimeOffset| Time when the alert was last updated at Microsoft 365 Defender.|
-|mitreTechniques|Collection(Edm.String)| The attack techniques, as aligned with the MITRE ATT&CK framework.|
+|mitreTechniques|String collection| The attack techniques, as aligned with the MITRE ATT&CK framework.|
 |productName|String|The name of the product which published this alert.|
 |providerAlertId|String| The ID of the alert as it appears in the security provider product that generated the alert.|
 |recommendedActions|String| Recommended response and remediation actions to take in the event this alert was generated.|
 |resolvedDateTime|DateTimeOffset| Time when the alert was resolved.|
-|serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)| The service or product that created this alert. Possible values are: `unknown`, `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftDefenderForCloudApps`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `azureAdIdentityProtection`, `microsoftAppGovernance`, `dataLossPrevention`, `unknownFutureValue`, `microsoftDefenderForCloud`, `microsoftSentinel`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoftDefenderForCloud`, `microsoftSentinel`.|
-|severity|[microsoft.graph.security.alertSeverity](#alertseverity-values)| Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|status|[microsoft.graph.security.alertStatus](#alertstatus-values)| The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
+|serviceSource|[microsoft.graph.security.serviceSource](enums-security.md#servicesource-values)| The service or product that created this alert. For more information, see [serviceSource values](enums-security.md#servicesource-values).|
+|severity|[microsoft.graph.security.alertSeverity](#alertseverity-values)| Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. The possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|status|[microsoft.graph.security.alertStatus](enums-security.md#alertstatus-values)| The status of the alert. For more information, see [alertStatus values](enums-security.md#alertstatus-values).|
 |tenantId|String| The Microsoft Entra tenant the alert was created in.|
 |threatDisplayName|String| The threat associated with this alert.|
 |threatFamilyName|String| Threat family associated with this alert.|
 |title|String| Brief identifying string value describing the alert.|
 |systemTags|String collection| The system tags associated with the alert.|
+|category (deprecated)|String| The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework. This property is in the process of being deprecated. Use the **categories** property instead.|
 
-### alertClassification values 
+### alertClassification values
 
 | Member                             | Description                                                                                                                         |
 | :----------------------------------| :---------------------------------------------------------------------------------------------------------------------------------- |
-| unknown		                     | The alert isn't classified yet.																				                       |
+| unknown                       | The alert isn't classified yet.                                           |
 | falsePositive                      | The alert is a false positive and didn't detect malicious activity.                                                                 |
 | truePositive                       | The alert is true positive and detected malicious activity.                                                                         |
 | informationalExpectedActivity      | The alert is benign positive and detected potentially malicious activity by a trusted/internal user, for example, security testing. |
 | unknownFutureValue                 | Evolvable enumeration sentinel value. Don't use.                                                                                   |
 
-### alertDetermination values 
+### alertDetermination values
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
-| unknown		             | No determination value was set yet.                                                                                          |
-| apt			             | A true positive alert that detected an advanced persistent threat.                                                           |
+| unknown               | No determination value was set yet.                                                                                          |
+| apt                | A true positive alert that detected an advanced persistent threat.                                                           |
 | malware                    | A true positive alert that detected malicious software.                                                                      |
 | securityPersonnel          | A true positive alert that detected valid suspicious activity that someone on the customer's security team performed. |
 | securityTesting            | The alert detected valid suspicious activity that was performed as part of a known security testing.                         |
@@ -94,91 +103,47 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 | lineOfBusinessApplication  | The alert caught a true suspicious activity that is considered OK because it's a known and confirmed internal application.  |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.                                                                            |
 
-### alertSeverity values 
+### investigationState values
+
+| Member                 | Description                                                                 |
+|:-----------------------|:----------------------------------------------------------------------------|
+| unknown                | Unknown investigation state.                                                |
+| terminated             | Investigation was terminated before completion.                             |
+| successfullyRemediated | Investigation completed successfully with all remediation actions performed. |
+| benign                 | Investigation completed without any remediation attempts.                   |
+| failed                 | A problem interrupted the investigation and now it can't be completed.     |
+| partiallyRemediated    | Investigation completed with some remediation plans successfully performed. |
+| running                | Investigation is currently ongoing.                                         |
+| pendingApproval        | Investigation paused; some actions require user review and approval.        |
+| pendingResource        | Investigation is paused until required resources are available.        |
+| queued                 | Investigation is queued and waiting to start.                                      |
+| innerFailure           | Investigation encountered an internal system failure.                       |
+| preexistingAlert       | Investigation wasn't started because a similar alert already exists.       |
+| unsupportedOs          | Investigation can't proceed because the operating system isn't supported. |
+| unsupportedAlertType   | Investigation can't proceed because the alert type isn't supported.       |
+| suppressedAlert        | Investigation was suppressed based on configured rules or policies.         |
+| partiallyInvestigated  | Investigation was partially completed.                                      |
+| terminatedByUser       | Investigation was stopped by the user before it was completed.              |
+| terminatedBySystem     | Investigation was stopped by the system before it was completed.               |
+| unknownFutureValue     | Evolvable enumeration sentinel value. Don't use.                            |
+
+### alertSeverity values
 
 | Member                     | Description                                                                                                                  |
 | :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
-| unknown		     | Unknown severity.       |
-| informational		 | Alerts that might not be actionable or considered harmful to the network but can drive organizational security awareness on potential security issues.     |
+| unknown       | Unknown severity.       |
+| informational   | Alerts that might not be actionable or considered harmful to the network but can drive organizational security awareness on potential security issues.     |
 | low                | Alerts on threats associated with prevalent malware. For example, hack-tools, nonmalware hack tools, such as running exploration commands and clearing logs, that often don't indicate an advanced threat that targets the organization. It can also come from an isolated security tool that a user in your organization is testing.  |
 | medium             | Alerts generated from detections and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This severity level includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be due to internal security testing, they're valid detections and require investigation as they might be a part of an advanced attack. |
 | high               | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk because of the severity of damage they can inflict on assets. Some examples are: credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
-
-### alertStatus values 
-
-| Member              | Description                                           |
-| :-------------------| :---------------------------------------------------- |
-| unknown		      | Unknown status. 							          |
-| new                 | New alert.                                            |
-| inProgress          | The alert is in mitigation progress.                  |
-| resolved            | The alert is in resolved state.                       |
-| unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.     |
-
-
-### serviceSource values 
-
-| Value                        | Description                                    |
-| :----------------------------| :----------------------------------------------|
-| unknown                      | Unknown service source.                        |
-| microsoftDefenderForEndpoint | Microsoft Defender for Endpoint.               |
-| microsoftDefenderForIdentity | Microsoft Defender for Identity.               |
-| microsoftDefenderForCloudApps| Microsoft Defender for Cloud Apps.             |
-| microsoftDefenderForOffice365| Microsoft Defender For Office365.              |
-| microsoft365Defender         | Microsoft 365 Defender.                        |
-| azureAdIdentityProtection    | Microsoft Entra ID Protection.    |
-| microsoftAppGovernance       | Microsoft app governance.                      |
-| dataLossPrevention           | Microsoft Purview Data Loss Prevention.        |
-| unknownFutureValue           | Evolvable enumeration sentinel value. Don't use.|
-| microsoftDefenderForCloud    | Microsoft Defender for Cloud.                  |
-| microsoftSentinel                           | Microsoft Sentinel.                             |
-
-
-### detectionSource values 
-
-| Value                                        | Description                                       |
-|:---------------------------------------------|:--------------------------------------------------|
-| unknown                                      | Unknown detection source.                         |
-| microsoftDefenderForEndpoint                 | Microsoft Defender For Endpoint.                  |
-| antivirus                                    | Antivirus software.                               |
-| smartScreen                                  | Microsoft Defender SmartScreen.                   |
-| customTi                                     | Custom threat intelligence.                       |
-| microsoftDefenderForOffice365                | Microsoft Defender for Office 365.                |
-| automatedInvestigation                       | Automated investigation.                          |
-| microsoftThreatExperts                       | Microsoft Threat Experts.                         |
-| customDetection                              | Custom detection.                                 |
-| microsoftDefenderForIdentity                 | Microsoft Defender for Identity.                  |
-| cloudAppSecurity                             | Cloud app security.                               |
-| microsoft365Defender                         | Microsoft 365 Defender.                           |
-| azureAdIdentityProtection                    | Microsoft Entra ID Protection.                    |
-| manual                                       | Manual detection.                                 |
-| microsoftDataLossPrevention                  | Microsoft Purview Data Loss Prevention.           |
-| appGovernancePolicy                          | App governance policy.                            |
-| appGovernanceDetection                       | App governance detection.                         |
-| unknownFutureValue                           | Evolvable enumeration sentinel value. Don't use.  |
-| microsoftDefenderForCloud                    | Microsoft Defender for Cloud.                     |
-| microsoftDefenderForIoT                      | Microsoft Defender for IoT.                       |
-| microsoftDefenderForServers                  | Microsoft Defender for Servers.                   |
-| microsoftDefenderForStorage                  | Microsoft Defender for Storage.                   |
-| microsoftDefenderForDNS                      | Microsoft Defender for DNS.                       |
-| microsoftDefenderForDatabases                | Microsoft Defender for Databases.                 |
-| microsoftDefenderForContainers               | Microsoft Defender for Containers.                |
-| microsoftDefenderForNetwork                  | Microsoft Defender for Network.                   |
-| microsoftDefenderForAppService               | Microsoft Defender for App Service.               |
-| microsoftDefenderForKeyVault                 | Microsoft Defender for Key Vault.                 |
-| microsoftDefenderForResourceManager          | Microsoft Defender for Resource Manager.          |
-| microsoftDefenderForApiManagement            | Microsoft Defender for Api Management.            |
-| microsoftSentinel                            | Microsoft Sentinel.                               |
-| nrtAlerts                                    | Sentinel NRT Alerts.                              |
-| scheduledAlerts                              | Sentinel Scheduled Alerts.                        |
-| microsoftDefenderThreatIntelligenceAnalytics | Sentinel Threat Intelligence Alerts.              |
-| builtInMl                                    | Sentinel Built-in ML.                             |
-
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -192,53 +157,41 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.alert",
-  "id": "String (identifier)",
-  "providerAlertId": "String",
-  "incidentId": "String",
-  "status": "String",
-  "severity": "String",
-  "classification": "String",
-  "determination": "String",
-  "serviceSource": "String",
-  "detectionSource": "String",
-  "productName": "String",
-  "detectorId": "String",
-  "tenantId": "String",
-  "title": "String",
-  "description": "String",
-  "recommendedActions": "String",
-  "category": "String",
-  "assignedTo": "String",
-  "alertWebUrl": "String",
-  "incidentWebUrl": "String",
   "actorDisplayName": "String",
+  "additionalData": {"@odata.type": "microsoft.graph.security.dictionary"},
+  "alertWebUrl": "String",
+  "assignedTo": "String",
+  "category": "String",
+  "categories": ["String"],
+  "classification": "String",
+  "comments": [{"@odata.type": "microsoft.graph.security.alertComment"}],
+  "createdDateTime": "String (timestamp)",
+  "customDetails": {"@odata.type": "microsoft.graph.security.dictionary"},
+  "description": "String",
+  "detectionSource": "String",
+  "detectorId": "String",
+  "determination": "String",
+  "evidence": [{"@odata.type": "microsoft.graph.security.alertEvidence"}],
+  "firstActivityDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "incidentId": "String",
+  "incidentWebUrl": "String",
+  "investigationState": "String",
+  "lastActivityDateTime": "String (timestamp)",
+  "lastUpdateDateTime": "String (timestamp)",
+  "mitreTechniques": ["String"],
+  "productName": "String",
+  "providerAlertId": "String",
+  "recommendedActions": "String",
+  "resolvedDateTime": "String (timestamp)",
+  "serviceSource": "String",
+  "severity": "String",
+  "status": "String",
+  "systemTags" : ["String"],
+  "tenantId": "String",
   "threatDisplayName": "String",
   "threatFamilyName": "String",
-  "mitreTechniques": [
-    "String"
-  ],
-  "createdDateTime": "String (timestamp)",
-  "lastUpdateDateTime": "String (timestamp)",
-  "resolvedDateTime": "String (timestamp)",
-  "firstActivityDateTime": "String (timestamp)",
-  "lastActivityDateTime": "String (timestamp)",
-  "comments": [
-    {
-      "@odata.type": "microsoft.graph.security.alertComment"
-    }
-  ],
-  "evidence": [
-    {
-      "@odata.type": "microsoft.graph.security.alertEvidence"
-    }
-  ],
-  "systemTags" : [
-    "String",
-    "String"
-  ],
-  "additionalData": {
-    "@odata.type": "microsoft.graph.security.dictionary"
-  }
+  "title": "String"
 }
 ```
 

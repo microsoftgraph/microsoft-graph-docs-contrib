@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Get the metadata for the location where the files of a [channel](../resources/channel.md) are stored.
 
 > [!NOTE]
-> Some special characters in the channel name will cause this API to return an error. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=16692).
+> Some special characters in the channel name will cause this API to return an error. For details, see [Known issues](/graph/known-issues#create-channel-can-return-an-error-response).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -53,6 +53,14 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
 
+> [!NOTE]
+>
+> * For private channels created before the move to group compliance as part of enhancements, a dedicated folder that matches the channel name may still exist. Any files uploaded before the enhancement remain in this folder.
+>
+> * After a private channel is migrated, the default file location changes to the root folder, and the `GET /teams/{team-id}/channels/{channel-id}/filesFolder` API returns the root folder’s `driveItem`. Newly created private channels (post‑migration) no longer create a dedicated folder. All files are stored in the root folder, and the API returns the root folder’s `driveItem`.
+>
+> For more details about private channel enhancements and migration, see [New enhancements in private channels in Microsoft Teams](https://techcommunity.microsoft.com/blog/microsoftteamsblog/new-enhancements-in-private-channels-in-microsoft-teams-unlock-their-full-potent/4438767).
+
 ## Example
 ### Request
 The following example shows a request.
@@ -68,10 +76,6 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-filesfolder-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-filesfolder-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

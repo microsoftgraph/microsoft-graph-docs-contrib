@@ -16,6 +16,9 @@ Not all files can be converted into all formats.
 
 To download the item in its original format, see [download an item's contents](driveitem-get-content.md).
 
+> [!NOTE]
+> The maximum size limit for files to use format conversion is 2 MB.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -25,14 +28,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_get_content_format" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-get-content-format-permissions.md)]
 
-> [!NOTE]
-> The maximum size limit for files to use format conversion is 2 MB.
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
+GET /me/drive/items/{item-id}/content?format={format}
+GET /me/drive/root:/{path and filename}:/content?format={format}
 GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
@@ -41,16 +45,19 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 | Parameter      | Type  | Description                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
-| _format_  | string | Specify the format the item's content should be downloaded as. |
+| format | String | Specify the format the item's content should be downloaded as. |
+| height | Int32  | The desired height of the converted image in pixels. Required when `format=jpg`. |
+| width | Int32  | The desired width of the converted image in pixels. Required when `format=jpg`. |
 
 ### Format options
 
 The following values are valid for the **format** parameter:
 
-| Format value | Description                        | Supported source extensions
-|:-------------|:-----------------------------------|----------------------------
-| pdf          | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
-| html         | Converts the item into HTML format.| loop, fluid, wbtx
+| Format value | Description                        | Supported source extensions|
+|:-------------|:-----------------------------------|----------------------------|
+| jpg          | Converts the item into JPG format. | 3g2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, cool, cpp, cr2, crw, cs, css, csv, cur, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, dwg, eml, epi, eps, epsf, epsi, epub, erf, fbx, fppx, gif, glb, h, hcp, heic, heif, htm, html, ico, icon, java, jfif, jpeg, jpg, js, json, key, log, m2ts, m4a, m4v, markdown, md, mef, mov, movie, mp3, mp4, mp4v, mrw, msg, mts, nef, nrw, numbers, obj, odp, odt, ogg, orf, pages, pano, pdf, pef, php, pict, pl, ply, png, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, psb, psd, py, raw, rb, rtf, rw1, rw2, sh, sketch, sql, sr2, stl, tif, tiff, ts, txt, vb, webm, wma, wmv, xaml, xbm, xcf, xd, xml, xpm, yaml, yml|
+| pdf          | Converts the item into PDF format. | doc, docx, dot, dotx, dotm, dsn, dwg, eml, epub, fluidframework, form, htm, html, loop, loot, markdown, md, msg, note, odp, ods, odt, page, pps, ppsx, ppt, pptx, pulse, rtf, task, tif, tiff, wbtx, whiteboard, xls, xlsm, xlsx|
+| html         | Converts the item into HTML format.| loop, fluid, wbtx, whiteboard|
 
 ## Request headers
 
@@ -61,6 +68,10 @@ The following values are valid for the **format** parameter:
 
 ## Example
 
+### Request
+
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
@@ -70,10 +81,6 @@ GET /me/drive/items/{item-id}/content?format={format}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-item-content-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/convert-item-content-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -102,13 +109,13 @@ GET /me/drive/items/{item-id}/content?format={format}
 
 ---
 
-## Response
+### Response
 
-Returns a `302 Found` response redirecting to a pre-authenticated download URL for the converted file.
+The following example shows the response. It returns a `302 Found` response redirecting to a preauthenticated download URL for the converted file.
 
 To download the converted file, your app must follow the `Location` header in the response.
 
-Pre-authenticated URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to access.
+Preauthenticated URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header to access.
 
 <!-- { "blockType": "response" } -->
 
@@ -119,7 +126,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ### Error responses
 
-See [Error Responses][error-response] for more information about how errors are returned.
+For more information about how errors are returned, see [Error responses][error-response].
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md
@@ -133,4 +140,3 @@ See [Error Responses][error-response] for more information about how errors are 
   "suppressions": [
   ]
 } -->
-

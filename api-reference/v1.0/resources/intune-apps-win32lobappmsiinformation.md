@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # win32LobAppMsiInformation resource type
@@ -23,7 +23,7 @@ Contains MSI app properties for a Win32 App.
 |productVersion|String|The MSI product version.|
 |upgradeCode|String|The MSI upgrade code.|
 |requiresReboot|Boolean|Whether the MSI app requires the machine to reboot to complete installation.|
-|packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|The MSI package type. Possible values are: `perMachine`, `perUser`, `dualPurpose`.|
+|packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|The MSI package type. The possible values are: `perMachine`, `perUser`, `dualPurpose`.|
 |productName|String|The MSI product name.|
 |publisher|String|The MSI publisher.|
 

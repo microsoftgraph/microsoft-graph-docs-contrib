@@ -53,7 +53,7 @@ The following table shows the properties that can be supplied when you update a 
 If successful, this method returns a `204, Accepted` response code and [program](../resources/program.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 In the request body, supply a JSON representation of the [program](../resources/program.md) object parameters to change.
 
 
@@ -73,10 +73,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-program-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-program-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -105,7 +101,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,7 +109,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.program"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 Content-type: application/json
 
 {

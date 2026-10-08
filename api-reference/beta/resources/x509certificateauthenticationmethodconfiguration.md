@@ -20,6 +20,8 @@ Represents the details of the Microsoft Entra native Certificate-Based Authentic
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
+To manage the PKI instances, use the [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) resource.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -38,6 +40,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The identifier for the authentication method policy. The value is always `X509Certificate`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). |
 |issuerHintsConfiguration|[x509CertificateIssuerHintsConfiguration](../resources/x509certificateissuerhintsconfiguration.md)|Determines whether issuer(CA) hints are sent back to the client side to filter the certificates shown in certificate picker. |
+|requireCertificateSidAlignment|Boolean|When set to `true`, Microsoft Entra ID matches the SID in the Security Identifier (SID) extension or the SAN URI SID value from the user's X.509 certificate to the user's on-premises SID attribute for hybrid users and cloud SID for cloud-only users. Certificate-based authentication fails if the values don't match. The value can't be `null`. The default value is `false`.|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`. |
 
 
@@ -84,6 +87,7 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.x509CertificateAuthorityScope"
     }
-  ]
+  ],
+  "requireCertificateSidAlignment": "Boolean"
 }
 ```

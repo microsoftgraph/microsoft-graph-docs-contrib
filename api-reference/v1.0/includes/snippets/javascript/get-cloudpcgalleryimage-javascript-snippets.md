@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let cloudPcGalleryImage = await client.api('/deviceManagement/virtualEndpoint/galleryImages/MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os')
+let cloudPcGalleryImage = await client.api('/deviceManagement/virtualEndpoint/galleryImages/microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc-m365')
 	.get();
 
 ```

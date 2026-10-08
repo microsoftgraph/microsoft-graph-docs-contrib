@@ -41,7 +41,7 @@ GET /identity/conditionalAccess/authenticationStrength/policies/{authenticationS
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters.
+This method doesn't support OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationSt
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-authenticationcombinationconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-authenticationcombinationconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

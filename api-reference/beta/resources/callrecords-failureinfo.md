@@ -28,7 +28,7 @@ If one or more media streams have any of these failures, that failure is propaga
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |reason|String|Classification of why a call or portion of a call failed.|
-|stage|microsoft.graph.callRecords.failureStage|The stage when the failure occurred. Possible values are: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
+|stage|microsoft.graph.callRecords.failureStage|The stage when the failure occurred. The possible values are: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
 
 ## JSON representation
 

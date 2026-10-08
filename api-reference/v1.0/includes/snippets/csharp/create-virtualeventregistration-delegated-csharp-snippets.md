@@ -13,7 +13,7 @@ var requestBody = new VirtualEventRegistration
 {
 	ExternalRegistrationInformation = new VirtualEventExternalRegistrationInformation
 	{
-		Referrer = "Facebook",
+		Referrer = "Fabrikam",
 		RegistrationId = "myExternalRegistrationId",
 	},
 	PreferredTimezone = "Pacific Standard Time",

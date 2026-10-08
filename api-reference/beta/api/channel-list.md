@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
 
->**Note:** Guest users can't see private or shared channels that they aren't members of in the response for this API.
+>**Note:** Teams members can't see private or shared channels that they aren't members of in the response for this API.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -46,7 +46,7 @@ This method supports the `$filter` and `$select` [OData query parameters](/graph
 ### Use $select for better performance
 Populating the **email** property for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** property to improve performance.
 
-> **Note**: This API does not return the **moderationSettings** property for a channel by default. To get this property, use the `$select` query parameter.
+> **Note**: This API doesn't return the **moderationSettings** property for a channel by default. To get this property, use the `$select` query parameter.
 
 
 ## Request headers
@@ -61,7 +61,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [channel](../resources/channel.md) objects in the response body. 
+
+When the result set spans multiple pages, the response includes an **@odata.nextLink** property with a URL for retrieving the next page of results. For details about how to page through results, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Examples
 
@@ -83,10 +85,6 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-channels-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -139,6 +137,7 @@ Content-type: application/json
       "displayName": "General",
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
       "membershipType": "standard",
+      "layoutType": null,
       "email": "someperson@microsoft.com",
       "moderationSettings": null,
       "isArchived": false
@@ -146,6 +145,9 @@ Content-type: application/json
   ]
 }
 ```
+
+> [!NOTE]
+> This API has a [known issue](/graph/known-issues#layouttype-property-returns-null-when-listing-all-channels) related to listing channels. The **layoutType** property returns `null` when listing channels. To get the layout type of a specific channel, use the [Get channel](../api/channel-get.md) API.
 
 ### Example 2: List all private channels
 
@@ -166,10 +168,6 @@ GET https://graph.microsoft.com/beta/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-private-channels-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-private-channels-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -222,6 +220,7 @@ Content-type: application/json
       "displayName": "General",
       "description": "test private team",
       "membershipType": "private",
+      "layoutType": null,
       "isArchived": false,
     }
   ]
@@ -247,10 +246,6 @@ GET https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-shared-channels-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-shared-channels-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -308,6 +303,7 @@ Content-length: 262
             "isFavoriteByDefault": null,
             "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
             "membershipType": "shared",
+            "layoutType": null,
             "email": "someperson@microsoft.com",
             "isArchived": false,
             "moderationSettings": null

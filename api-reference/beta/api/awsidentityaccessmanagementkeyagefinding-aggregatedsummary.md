@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get a raw count of AWS IAM Access Keys and their ages in an AWS environment.
 
 ## Permissions
@@ -92,3 +94,4 @@ Content-Type: application/json
     "findingsCountOverLimit": 15
 }
 ```
+

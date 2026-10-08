@@ -10,9 +10,9 @@ from msgraph_beta.generated.models.activity_based_timeout_policy import Activity
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ActivityBasedTimeoutPolicy(
 	definition = [
-		"definition-value",
+		"{\"ActivityBasedTimeoutPolicy\":{\"Version\":1,\"ApplicationPolicies\":[{\"ApplicationId\":\"default\",\"WebSessionIdleTimeout\":\"00:05:00\"}]}}",
 	],
-	display_name = "displayName-value",
+	display_name = "activityBasedTimeoutPolicies test",
 	is_organization_default = True,
 )
 

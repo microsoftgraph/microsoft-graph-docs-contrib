@@ -64,14 +64,14 @@ The value of the **contentType** property in the request body should be supporte
 For **OXPS to PDF** conversion, you need to pass `application/oxps` as contentType for printer/printerShare that supports `application/pdf`. 
 Universal Print converts **OXPS to PDF**, when **all** the following conditions are met: 
 1.	The printer/printer share supports `application/pdf` in **printerCapabilities**. 
-2.	The printer/printer share does NOT support `application/oxps` in **printerCapabilities**. 
+2.	The printer/printer share doesn't support `application/oxps` in **printerCapabilities**. 
 3.	The value for the **contentType** property in the request body is `application/oxps`.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a new [uploadSession](../resources/uploadsession.md) object in the response body.
 
->**Note**: The **uploadUrl** property returned as part of the **uploadSession** response object is an opaque URL for subsequent `PUT` queries to upload byte ranges of the file. It contains the appropriate auth token for subsequent `PUT` queries that expire by **expirationDateTime**. Do not change this URL.
+>**Note**: The **uploadUrl** property returned as part of the **uploadSession** response object is an opaque URL for subsequent `PUT` queries to upload byte ranges of the file. It contains the appropriate auth token for subsequent `PUT` queries that expire by **expirationDateTime**. Don't change this URL.
 
 ## Examples
 
@@ -85,7 +85,7 @@ The following example shows how to create an upload session that you can use in 
   "name": "printdocument_createuploadsession"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/createUploadSession
 Content-Type: application/json
 
@@ -100,10 +100,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/printdocument-createuploadsession-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/printdocument-createuploadsession-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -140,7 +136,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.uploadSession"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

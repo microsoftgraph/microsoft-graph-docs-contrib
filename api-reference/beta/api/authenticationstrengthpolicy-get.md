@@ -37,7 +37,7 @@ GET /policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters.
+This method doesn't support OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/000
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationstrengthpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-authenticationstrengthpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

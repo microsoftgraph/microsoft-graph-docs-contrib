@@ -4,8 +4,48 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
-- name: Administration (preview)
+- name: Administration
   items:
+  - name: Number assignment
+    items:
+    - name: Number assignment
+      href: ../../resources/teamsadministration-numberassignment.md
+    - name: List
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
+    - name: Get
+      href: ../../api/teamsadministration-numberassignment-get.md
+    - name: assignNumber
+      href: ../../api/teamsadministration-numberassignment-assignnumber.md
+    - name: unassignNumber
+      href: ../../api/teamsadministration-numberassignment-unassignnumber.md
+    - name: updateNumber
+      href: ../../api/teamsadministration-numberassignment-updatenumber.md
+  - name: Telephone number long running operation
+    items:
+    - name: Telephone number long running operation
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
+    - name: Get
+      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
+  - name: Telephone number management root
+    items:
+    - name: Telephone number management root
+      href: ../../resources/teamsadministration-telephonenumbermanagementroot.md
+    - name: List number assignments
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
+  - name: Teams policy assignment
+    items:
+    - name: Teams policy assignment
+      href: ../../resources/teamsadministration-teamspolicyassignment.md
+    - name: Get policy ID
+      href: ../../api/teamsadministration-teamspolicyassignment-getpolicyid.md
+  - name: Teams policy user assignment
+    items:
+    - name: Teams policy user assignment
+      href: ../../resources/teamsadministration-teamspolicyuserassignment.md
+    - name: Assign
+      href: ../../api/teamsadministration-teamspolicyuserassignment-assign.md
+    - name: Unassign
+      href: ../../api/teamsadministration-teamspolicyuserassignment-unassign.md
   - name: Teams user configuration
     items:
     - name: Teams user configuration
@@ -14,6 +54,12 @@ items:
       href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
     - name: Get
       href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Telephone number long running operation
+    items:
+    - name: Telephone number long running operation
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
+    - name: Get
+      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
   - name: Complex types
     items:
     - name: Assigned telephone number
@@ -22,30 +68,10 @@ items:
       href: ../../resources/teamsadministration-effectivepolicyassignment.md
     - name: Policy assignment
       href: ../../resources/teamsadministration-policyassignment.md
-- name: AI interactions (preview)
-  items:
-  - name: AI interaction history
-    items:
-    - name: AI interaction history
-      href: ../../resources/aiinteractionhistory.md
-    - name: List all enterprise interactions
-      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
-  - name: Complex types
-    items:
-    - name: AI interaction
-      href: ../../resources/aiinteraction.md
-    - name: AI interaction attachment
-      href: ../../resources/aiinteractionattachment.md
-    - name: AI interaction context
-      href: ../../resources/aiinteractioncontext.md
-    - name: AI interaction link
-      href: ../../resources/aiinteractionlink.md
-    - name: AI interaction mention
-      href: ../../resources/aiinteractionmention.md
-    - name: AI interaction mentioned identity set
-      href: ../../resources/aiinteractionmentionedidentityset.md
-    - name: AI user
-      href: ../../resources/aiuser.md
+    - name: Policy identifier detail
+      href: ../../resources/teamsadministration-policyidentifierdetail.md
+    - name: Telephone number long running operation details
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperationdetails.md
 - name: Approvals
   items:
   - name: Approval item
@@ -112,6 +138,14 @@ items:
     items:
     - name: Teams app
       href: ../../resources/teamsapp.md
+    - name: List apps in channel
+      href: ../../api/channel-list-enabledapps.md
+    - name: Get app in channel
+      href: ../../api/teamsapp-get.md
+    - name: Add app to channel
+      href: ../../api/channel-post-enabledapps.md
+    - name: Remove app from channel
+      href: ../../api/channel-delete-enabledapps.md
     - name: List apps in catalog
       href: ../../api/appcatalogs-list-teamsapps.md
     - name: Publish apps to catalog
@@ -208,6 +242,18 @@ items:
       href: ../../api/team-list-permissiongrants.md
     - name: List permission grants of a user
       href: ../../api/user-list-permissiongrants.md
+  - name: Complex types
+    items:
+    - name: Custom app settings
+      href: ../../resources/customappsettings.md
+    - name: Group chat teams app installation scope info
+      href: ../../resources/groupchatteamsappinstallationscopeinfo.md
+    - name: Personal teams app installation scope info
+      href: ../../resources/personalteamsappinstallationscopeinfo.md
+    - name: Team teams app installation scope info
+      href: ../../resources/teamteamsappinstallationscopeinfo.md
+    - name: Teams app installation scope info
+      href: ../../resources/teamsappinstallationscopeinfo.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -230,6 +276,24 @@ items:
       href: ../../api/presence-clearuserpreferredpresence.md
     - name: Set user status message
       href: ../../api/presence-setstatusmessage.md
+    - name: Set automatic location
+      href: ../../api/presence-setautomaticlocation.md
+    - name: Set manual location
+      href: ../../api/presence-setmanuallocation.md
+    - name: Clear automatic location
+      href: ../../api/presence-clearautomaticlocation.md
+    - name: Clear location
+      href: ../../api/presence-clearlocation.md
+  - name: Ad hoc call
+    items:
+    - name: Ad hoc call
+      items:
+      - name: Ad hoc call
+        href: ../../resources/adhoccall.md
+      - name: Get all recordings
+        href: ../../api/adhoccall-getallrecordings.md
+      - name: Get all transcripts
+        href: ../../api/adhoccall-getalltranscripts.md
   - name: Calls
     items:
     - name: Call
@@ -342,6 +406,8 @@ items:
         href: ../../api/participant-mute.md
       - name: Mute all participants
         href: ../../api/participant-muteall.md
+      - name: Report synthetic media
+        href: ../../api/participant-reportsyntheticmedia.md
       - name: Start hold music
         href: ../../api/participant-startholdmusic.md
       - name: Stop hold music
@@ -352,6 +418,22 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+    - name: Complex types
+      items:
+      - name: Audio metadata
+        href: ../../resources/audiometadata.md
+      - name: Media metadata
+        href: ../../resources/mediametadata.md
+      - name: Media segment
+        href: ../../resources/mediasegment.md
+      - name: Streaming metadata
+        href: ../../resources/streamingmetadata.md
+      - name: Synthetic media detection detail
+        href: ../../resources/syntheticmediadetectiondetail.md
+      - name: Synthetic media detection info
+        href: ../../resources/syntheticmediadetectioninfo.md
+      - name: Video metadata
+        href: ../../resources/videometadata.md
   - name: Call delegation
     items:
     - name: Overview
@@ -386,6 +468,10 @@ items:
       href: ../../resources/callevent.md
     - name: Emergency call event
       href: ../../resources/emergencycallevent.md
+    - name: Complex types
+      items:
+      - name: Emergency caller info
+        href: ../../resources/emergencycallerinfo.md
   - name: Call records
     items:
     - name: Overview
@@ -450,24 +536,6 @@ items:
         href: ../../resources/callrecords-smslogrow.md
       - name: Get SMS log
         href: ../../api/callrecords-callrecord-getsmslog.md
-  - name: Copilot settings
-    items:
-    - name: Copilot admin limited mode
-      items:
-      - name: Copilot admin limited mode
-        href: ../../resources/copilotadminlimitedmode.md
-      - name: Get
-        href: ../../api/copilotadminlimitedmode-get.md
-      - name: Update
-        href: ../../api/copilotadminlimitedmode-update.md
-    - name: Complex types
-      items:
-      - name: Copilot admin
-        href: ../../resources/copilotadmin.md
-      - name: Copilot admin setting
-        href: ../../resources/copilotadminsetting.md
-      - name: Copilot root
-        href: ../../resources/copilotroot.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -498,10 +566,18 @@ items:
         href: ../../api/onlinemeeting-delete.md
       - name: Create or get
         href: ../../api/onlinemeeting-createorget.md
-      - name: List transcripts
-        href: ../../api/onlinemeeting-list-transcripts.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
+      - name: List transcripts
+        href: ../../api/onlinemeeting-list-transcripts.md
+    - name: Online meeting engagement conversation
+      items:
+      - name: Online meeting engagement conversation
+        href: ../../resources/onlinemeetingengagementconversation.md
+      - name: Get all online meeting messages
+        href: ../../api/cloudcommunications-getallonlinemeetingmessages.md
+      - name: List reactions
+        href: ../../api/engagementconversationdiscussionmessage-list-reactions.md
     - name: External meeting registration (deprecated)
       items:
       - name: External meeting registration (deprecated)
@@ -536,6 +612,8 @@ items:
         href: ../../api/callrecording-delta.md
       - name: List recordings by organizer
         href: ../../api/onlinemeeting-getallrecordings.md
+      - name: Get recordings initiated by a specified user
+        href: ../../api/adhoccall-getallrecordings.md
     - name: Call transcript
       items:
       - name: Call transcript
@@ -548,6 +626,8 @@ items:
         href: ../../api/calltranscript-delta.md
       - name: List transcripts by organizer
         href: ../../api/onlinemeeting-getalltranscripts.md
+      - name: Get transcripts initiated by a specified user
+        href: ../../api/adhoccall-getalltranscripts.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link
@@ -556,6 +636,12 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentremindersms.md
       - name: Send virtual appointment SMS
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
+    - name: Complex types
+      items:
+      - name: Cloud video interop info
+        href: ../../resources/cloudvideointeropinfo.md
+      - name: Identity set
+        href: ../../resources/identityset.md
   - name: Virtual events
     items:
     - name: Virtual event presenter
@@ -592,6 +678,12 @@ items:
         href: ../../resources/virtualeventwebinarregistrationconfiguration.md
       - name: Get
         href: ../../api/virtualeventwebinarregistrationconfiguration-get.md
+    - name: Virtual event townhall registration configuration
+      items:
+      - name: Virtual event townhall registration configuration
+        href: ../../resources/virtualeventtownhallregistrationconfiguration.md
+      - name: Get
+        href: ../../api/virtualeventtownhallregistrationconfiguration-get.md
     - name: Virtual event registration question
       items:
       - name: Virtual event registration question
@@ -658,6 +750,12 @@ items:
       items:
       - name: Virtual event external information
         href: ../../resources/virtualeventexternalinformation.md
+  - name: Complex types
+    items:
+    - name: Out of office settings
+      href: ../../resources/outofofficesettings.md
+    - name: User work location
+      href: ../../resources/userworklocation.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
@@ -724,6 +822,8 @@ items:
         href: ../../api/teamwork-list-teamtemplates.md
       - name: Get teamwork
         href: ../../api/teamwork-get.md
+      - name: Determine if interaction is allowed
+        href: ../../api/teamwork-determineifinteractionisallowed.md
   - name: User settings
     items:
     - name: User teamwork
@@ -734,6 +834,14 @@ items:
         href: ../../api/userteamwork-list-installedapps.md
       - name: Get
         href: ../../api/userteamwork-get.md
+      - name: List sections
+        href: ../../api/userteamwork-list-sections.md
+      - name: Get all targeted messages
+        href: ../../api/userteamwork-getalltargetedmessages.md
+      - name: Get all retained targeted messages
+        href: ../../api/userteamwork-getallretainedtargetedmessages.md
+      - name: Delete targeted message
+        href: ../../api/userteamwork-deletetargetedmessage.md
 - name: Employee learning
   displayName: Viva Learning
   items:
@@ -825,6 +933,8 @@ items:
       href: ../../api/channel-list-members.md
     - name: List all members
       href: ../../api/channel-list-allmembers.md
+    - name: Get member from channel allMembers collection
+      href: ../../api/channel-get-allmembers.md
     - name: Add channel member
       href: ../../api/channel-post-members.md
     - name: Get channel member
@@ -837,6 +947,8 @@ items:
       href: ../../api/channel-update-members.md
     - name: Remove channel member
       href: ../../api/channel-delete-members.md
+    - name: Start migration
+      href: ../../api/channel-startmigration.md
     - name: Complete migration
       href: ../../api/channel-completemigration.md
     - name: List tabs in channel
@@ -849,6 +961,12 @@ items:
       href: ../../api/channel-patch-tabs.md
     - name: Remove tab from channel
       href: ../../api/channel-delete-tabs.md
+    - name: List apps in channel
+      href: ../../api/channel-list-enabledapps.md
+    - name: Add app to channel
+      href: ../../api/channel-post-enabledapps.md
+    - name: Remove app from channel
+      href: ../../api/channel-delete-enabledapps.md
     - name: Provision channel email address
       href: ../../api/channel-provisionemail.md
     - name: Remove channel email address
@@ -875,13 +993,13 @@ items:
       href: ../../resources/chat.md
     - name: Chat management
       items:
-      - name: List chats
+      - name: List
         href: ../../api/chat-list.md
-      - name: Create chat
+      - name: Create
         href: ../../api/chat-post.md
-      - name: Get chat
+      - name: Get
         href: ../../api/chat-get.md
-      - name: Update chat
+      - name: Update
         href: ../../api/chat-patch.md
       - name: Delete
         href: ../../api/chat-delete.md
@@ -905,6 +1023,10 @@ items:
         href: ../../api/chat-hideforuser.md
       - name: Unhide chat
         href: ../../api/chat-unhideforuser.md
+      - name: Start migration
+        href: ../../api/chat-startmigration.md
+      - name: Complete migration
+        href: ../../api/chat-completemigration.md
     - name: Messages
       items:
       - name: List messages in a chat
@@ -957,6 +1079,14 @@ items:
         href: ../../api/chat-post-pinnedmessages.md
       - name: Unpin message
         href: ../../api/chat-delete-pinnedmessages.md
+  - name: Deleted chat
+    items:
+    - name: Deleted chat
+      href: ../../resources/deletedchat.md
+    - name: Get
+      href: ../../api/deletedchat-get.md
+    - name: Undo delete
+      href: ../../api/deletedchat-undodelete.md
   - name: Chat message
     items:
     - name: Chat message
@@ -1045,14 +1175,18 @@ items:
       href: ../../api/chat-post-pinnedmessages.md
     - name: Unpin message
       href: ../../api/chat-delete-pinnedmessages.md
-  - name: Deleted chat
+  - name: Targeted chat message
     items:
-    - name: Deleted chat
-      href: ../../resources/deletedchat.md
-    - name: Get
-      href: ../../api/deletedchat-get.md
-    - name: Undo delete
-      href: ../../api/deletedchat-undodelete.md
+    - name: Targeted chat message
+      href: ../../resources/targetedchatmessage.md
+    - name: Get all targeted messages
+      href: ../../api/userteamwork-getalltargetedmessages.md
+    - name: Get all retained targeted messages
+      href: ../../api/userteamwork-getallretainedtargetedmessages.md
+    - name: Delete targeted message from channel
+      href: ../../api/userteamwork-deletetargetedmessage.md
+    - name: Delete targeted message from chat
+      href: ../../api/chat-delete-targetedmessages.md
   - name: Team
     items:
     - name: Team
@@ -1161,8 +1295,70 @@ items:
       href: ../../api/userteamwork-sendactivitynotification.md
     - name: Send notification to multiple users in bulk
       href: ../../api/teamwork-sendactivitynotificationtorecipients.md
+  - name: Sections (preview)
+    items:
+    - name: Teamwork section
+      items:
+      - name: Teamwork section
+        href: ../../resources/teamworksection.md
+      - name: List
+        href: ../../api/userteamwork-list-sections.md
+      - name: Create
+        href: ../../api/userteamwork-post-sections.md
+      - name: Get
+        href: ../../api/teamworksection-get.md
+      - name: Update
+        href: ../../api/teamworksection-update.md
+      - name: Delete
+        href: ../../api/teamworksection-delete.md
+      - name: Reorder
+        href: ../../api/teamworksection-reorder.md
+      - name: List items
+        href: ../../api/teamworksection-list-items.md
+    - name: Teamwork section item
+      items:
+      - name: Teamwork section item
+        href: ../../resources/teamworksectionitem.md
+      - name: List
+        href: ../../api/teamworksection-list-items.md
+      - name: Add
+        href: ../../api/teamworksection-post-items.md
+      - name: Remove
+        href: ../../api/teamworksectionitem-delete.md
+      - name: Move
+        href: ../../api/teamworksectionitem-move.md
+      - name: Reorder
+        href: ../../api/teamworksectionitem-reorder.md
+    - name: Complex types
+      items:
+      - name: Section display icon
+        href: ../../resources/sectiondisplayicon.md
+  - name: Custom emoji (preview)
+    items:
+    - name: Teamwork messaging
+      items:
+      - name: Teamwork messaging
+        href: ../../resources/teamworkmessaging.md
+      - name: List customEmojis
+        href: ../../api/teamworkmessaging-list-customemojis.md
+      - name: Create teamworkCustomEmoji
+        href: ../../api/teamworkmessaging-post-customemojis.md
+    - name: Teamwork custom emoji
+      items:
+      - name: Teamwork custom emoji
+        href: ../../resources/teamworkcustomemoji.md
+      - name: List
+        href: ../../api/teamworkmessaging-list-customemojis.md
+      - name: Create
+        href: ../../api/teamworkmessaging-post-customemojis.md
+    - name: Complex types
+      items:
+      - name: Custom emoji from identity set
+        href: ../../resources/customemojifromidentityset.md
   - name: Complex types
     items:
+    - name: Chat message body
+      href: ../../resources/chatmessagebody.md
     - name: Forward to chat result
       href: ../../resources/forwardtochatresult.md
 - name: Shift management
@@ -1193,8 +1389,12 @@ items:
       href: ../../api/offershiftrequest-list.md
     - name: Approve
       href: ../../api/offershiftrequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/offershiftrequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Open shift
     items:
     - name: Open shift
@@ -1225,8 +1425,12 @@ items:
       href: ../../api/openshiftchangerequest-get.md
     - name: Approve
       href: ../../api/openshiftchangerequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/openshiftchangerequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Schedule
     items:
     - name: Schedule
@@ -1237,6 +1441,14 @@ items:
       href: ../../api/schedule-get.md
     - name: Share
       href: ../../api/schedule-share.md
+  - name: Schedule change request
+    items:
+    - name: Schedule change request
+      href: ../../resources/schedulechangerequest.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Scheduling group
     items:
     - name: Scheduling group
@@ -1295,8 +1507,12 @@ items:
       href: ../../api/swapshiftschangerequest-get.md
     - name: Approve
       href: ../../api/swapshiftschangerequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/swapshiftschangerequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Time card
     items:
     - name: Time card
@@ -1321,6 +1537,8 @@ items:
       href: ../../api/timecard-endbreak.md
     - name: Confirm
       href: ../../api/timecard-confirm.md
+    - name: Confirm for user
+      href: ../../api/timecard-confirmforuser.md
   - name: Time off
     items:
     - name: Time off
@@ -1357,14 +1575,20 @@ items:
       href: ../../resources/timeoffrequest.md
     - name: List
       href: ../../api/timeoffrequest-list.md
+    - name: Create
+      href: ../../api/timeoffrequest-post.md
     - name: Get
       href: ../../api/timeoffrequest-get.md
     - name: Delete
       href: ../../api/timeoffrequest-delete.md
     - name: Approve
       href: ../../api/timeoffrequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
     - name: Decline
       href: ../../api/timeoffrequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
   - name: Workforce integration
     items:
     - name: Workforce integration

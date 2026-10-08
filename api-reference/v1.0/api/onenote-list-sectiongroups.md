@@ -13,6 +13,8 @@ ms.date: 06/21/2024
 Namespace: microsoft.graph
 
 Retrieve a list of [sectionGroup](../resources/sectiongroup.md) objects.
+> [!IMPORTANT]
+> A section group in SharePoint is a folder object. If you request site/siteID/oneNote/section groups, you request to list all subfolders in the site root pages folder, and it lists all of them, including possibly existing non-OneNote folders. If your goal is to only retrieve noteBooks section groups, add a filter "/sites/{id}/onenote/sectionGroups?$filter=parentNotebook ne null".
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -50,7 +52,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [sectionGroup](../resources/sectiongroup.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -64,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/onenote-get-sectiongroups-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/onenote-get-sectiongroups-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -96,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here's truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-listmessagereplies-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-listmessagereplies-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-listmessagereplies-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -150,6 +146,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "text",
+                "messageBodyContentType": "text",
                 "content": "Reply3"
             },
             "channelIdentity": {
@@ -192,6 +189,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "text",
+                "messageBodyContentType": "text",
                 "content": "Reply2"
             },
             "channelIdentity": {
@@ -234,6 +232,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "text",
+                "messageBodyContentType": "text",
                 "content": "Reply1"
             },
             "channelIdentity": {

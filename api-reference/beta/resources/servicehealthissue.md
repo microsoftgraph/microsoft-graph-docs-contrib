@@ -32,7 +32,7 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|classification|serviceHealthClassificationType|The type of service health issue. Possible values are: `advisory`, `incident`, `unknownFutureValue`.|
+|classification|serviceHealthClassificationType|The type of service health issue. The possible values are: `advisory`, `incident`, `unknownFutureValue`.|
 |details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about the service health issue. This property doesn't support filters. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|The end time of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |feature|String|The feature name of the service issue.|
@@ -41,11 +41,11 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |impactDescription|String|The description of the service issue impact.|
 |isResolved|Boolean|Indicates whether the issue is resolved.|
 |lastModifiedDateTime|DateTimeOffset|The last modified time of the issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|origin|serviceHealthOrigin|Indicates the origin of the service issue. Possible values are: `microsoft`, `thirdParty`, `customer`, `unknownFutureValue`.|
+|origin|serviceHealthOrigin|Indicates the origin of the service issue. The possible values are: `microsoft`, `thirdParty`, `customer`, `unknownFutureValue`.|
 |posts|Collection([serviceHealthIssuePost](../resources/servicehealthissuepost.md))|Collection of historical posts for the service issue.|
 |service|String|Indicates the service affected by the issue.|
 |startDateTime|DateTimeOffset|The start time of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|status|serviceHealthStatus|The status of the service issue. Possible values are: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceRestored`, `postIncidentReviewPublished`, `serviceDegradation`, `serviceInterruption`, `extendedRecovery`, `falsePositive`, `investigationSuspended`, `resolved`, `mitigatedExternal`, `mitigated`, `resolvedExternal`, `confirmed`, `reported`, `unknownFutureValue`. For more details, see [serviceHealthStatus values](#servicehealthstatus-values).|
+|status|serviceHealthStatus|The status of the service issue. The possible values are: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceRestored`, `postIncidentReviewPublished`, `serviceDegradation`, `serviceInterruption`, `extendedRecovery`, `falsePositive`, `investigationSuspended`, `resolved`, `mitigatedExternal`, `mitigated`, `resolvedExternal`, `confirmed`, `reported`, `unknownFutureValue`. For more details, see [serviceHealthStatus values](#servicehealthstatus-values).|
 |title|String|The title of the service issue. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 
 ### serviceHealthStatus values

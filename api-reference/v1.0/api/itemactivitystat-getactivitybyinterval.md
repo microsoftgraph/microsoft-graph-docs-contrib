@@ -17,7 +17,7 @@ Get a collection of [itemActivityStats][] resources for the activities that took
 
 Analytics aggregates might not be available for all action types.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -38,11 +38,11 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## Function parameters
 
-| Parameter      | Type               | Description
-|:---------------|:-------------------|:---------------------------------------
-| startDateTime  | string (timestamp) | The start time over which to aggregate activities.
-| endDateTime    | string (timestamp) | The end time over which to aggregate activities.
-| interval       | string             | The aggregation interval.
+| Parameter      | Type               | Description|
+|:---------------|:-------------------|:---------------------------------------|
+| startDateTime  | string (timestamp) | The start time over which to aggregate activities.|
+| endDateTime    | string (timestamp) | The end time over which to aggregate activities.|
+| interval       | string             | The aggregation interval.|
 
 >**Note:** This API only supports a time range of 90 days for daily counts. The value of the `startDateTime` and `endDateTime` parameters must represent a time range of less than 90 days.
 
@@ -77,10 +77,6 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-activities-by-interval-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-activities-by-interval-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents a user identity under review in an [accessReviewInstance](accessreviewinstance.md).
+In an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md), the **target** property can contain an **accessReviewInstanceDecisionItemUserTarget** object for a user under review.
 
 Inherits from [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
 

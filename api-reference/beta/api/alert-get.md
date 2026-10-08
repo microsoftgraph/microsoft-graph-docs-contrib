@@ -1,18 +1,21 @@
 ---
-title: "Get alert"
+title: "Get alert (deprecated)"
 description: "Retrieve the properties and relationships of an alert object"
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 04/05/2024
+ROBOTS: NOINDEX
 ---
 
-# Get alert
+# Get alert (deprecated)
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Retrieve the properties and relationships of an [alert](../resources/alert.md) object.
 
@@ -65,10 +68,6 @@ GET https://graph.microsoft.com/beta/security/alerts/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alert-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-alert-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

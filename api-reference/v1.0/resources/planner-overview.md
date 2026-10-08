@@ -20,6 +20,9 @@ group members will be able to create, edit, resolve, and delete tasks in the pla
 
 The most common type of container is a Microsoft 365 group.
 
+>[!IMPORTANT]
+>Premium plans and tasks aren't available on the Planner API in Microsoft Graph. Only basic plans may be accessed using this API.
+
 ### Container type: Microsoft 365 groups
 
 Plans are commonly contained in Microsoft 365 groups in the Planner API.

@@ -5,7 +5,7 @@ author: "jaLuthra"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 04/09/2026
 ---
 
 # driveItem: assignSensitivityLabel
@@ -13,12 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Asynchronously assign a sensitivity label to a [driveItem][item-resource]. 
+Asynchronously assign a sensitivity label to a [driveItem][item-resource].
 
-This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered a protected API. Protected APIs require you to have more validation, beyond permission and consent, before you can use them. 
+This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered as protected. Protected APIs require you to have more validations, beyond permission and consent, before you can use them.
 
-> [!NOTE] 
-> This is a metered API and some charges for use may apply. For details, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview). Before you call this API, you must [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup?tabs=azurecloudshell). 
+For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
+
+> [!NOTE]
+> This is a metered API and some charges for use may apply. For details, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview). Before you call this API, you must [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup?tabs=azurecloudshell).
 
 This API applies sensitivity labels to files at rest. Office clients don't apply watermarks, headers, or footers to files that contain the label information. For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
 
@@ -29,6 +31,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_assignsensitivitylabel" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-assignsensitivitylabel-permissions.md)]
+
+> [!NOTE]
+> For Microsoft SharePoint Embedded containers, application-only requests require the `appliedByUser` parameter.
 
 ## HTTP request
 
@@ -62,6 +67,7 @@ In the request body, provide the ID for the sensitivity label that is to be assi
 | sensitivityLabelId  | String  | Required. ID of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
 | assignmentMethod    | [sensitivityLabelAssignmentMethod](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-beta&preserve-view=true#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Indicates whether the assignment of the label was done automatically, standard, or as a privileged operation (the equivalent of an administrator operation).     |
 | justificationText   | String | Optional. Justification text for audit purposes. Required when downgrading or removing a label.  |
+| appliedByUser       | [userIdentity](/graph/api/resources/useridentity?view=graph-rest-beta&preserve-view=true) | Optional. The identity of the user on whose behalf the label is applied. Supported only in application (app-only) context. Specify either `id` (Microsoft Entra object ID) or `userPrincipalName`. |
 
 ## Response
 
@@ -69,7 +75,7 @@ If successful, the API returns a `202 Accepted` HTTP response code with an empty
 For more information about how to monitor the progress of an assign sensitivity label operation, see [monitoring long-running operations](/graph/long-running-actions-overview).
 
 In addition to general errors that apply to Microsoft Graph, this API returns the `423 Locked` response code, which indicates that the file being accessed is locked. In such cases, the **code** property of the response object indicates the error type that blocks the operation.
-Also, Few Irm Protected sensitivity labels can't be updated by Application and need delegated user access to validate if the user has proper rights. For these scenarios, the API throws `Not Supported` response code.
+Also, some IRM Protected sensitivity labels can't be updated in app-only mode and need delegated user access to validate if the user has proper rights. For these scenarios, the API throws `Not Supported` response code.
 
 The following table lists the possible values for the error types.
 
@@ -82,7 +88,9 @@ The following table lists the possible values for the error types.
 
 ## Examples
 
-### Request
+### Example 1: Assign a sensitivity label
+
+#### Request
 
 The following example shows a request.
 
@@ -100,13 +108,37 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/assignsensitivitylabel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -115,10 +147,132 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/QXNzaWduU2Vuc2l0aXZpdHlMYWJlbCxiMzc3ODY3OS04OWQ3LTRkYmYtYjg0MC1jYWM1NzRhY2FlNmE?tempAuth=eyJ0eXAiOiJKV1QiLCJhb....
 ```
-The value of the `Location` header provides a URL for a service that will return the current state of the assign sensitivity label operation.
-You can use this information to [determine when the assign sensitivity label operation has finished](/graph/long-running-actions-overview).
+
+The value of the `Location` header provides a URL for a service that will return the current state of the assignSensitivityLabel operation.
+You can use this information to [determine when the assignSensitivityLabel operation has finished](/graph/long-running-actions-overview).
+
+### Example 2: Assign a sensitivity label on behalf of a user (app-only)
+
+#### Request
+
+The following example shows an app-only request that assigns a label on behalf of a specific user, identified by Microsoft Entra object ID.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "assignSensitivityLabel_apponly_id", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
+``` http
+POST https://graph.microsoft.com/beta/drives/{drive-id}/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
+Content-Type: application/json
+
+{
+  "sensitivityLabelId": "5feba255-812e-446a-ac59-a7044ef827b5",
+  "assignmentMethod": "standard",
+  "justificationText": "test_justification",
+  "appliedByUser": {
+    "id": "4a2ec3c4-1b2d-3e4f-5a6b-7c8d9e0f1a2b"
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/assignsensitivitylabel-apponly-id-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/assignsensitivitylabel-apponly-id-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/assignsensitivitylabel-apponly-id-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assignsensitivitylabel-apponly-id-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/assignsensitivitylabel-apponly-id-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/assignsensitivitylabel-apponly-id-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/assignsensitivitylabel-apponly-id-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/QXNzaWduU2Vuc2l0aXZpdHlMYWJlbCxiMzc3ODY3OS04OWQ3LTRkYmYtYjg0MC1jYWM1NzRhY2FlNmE?tempAuth=******
+```
+
+### Example 3: Assign a sensitivity label on behalf of a user using a user principal name (app-only)
+
+#### Request
+
+The following example shows an app-only request that identifies the user by their user principal name.
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "assignSensitivityLabel_apponly_upn", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
+``` http
+POST https://graph.microsoft.com/beta/drives/{drive-id}/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
+Content-Type: application/json
+
+{
+  "sensitivityLabelId": "5feba255-812e-446a-ac59-a7044ef827b5",
+  "assignmentMethod": "standard",
+  "justificationText": "test_justification",
+  "appliedByUser": {
+    "userPrincipalName": "adelev@contoso.com"
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/assignsensitivitylabel-apponly-upn-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/assignsensitivitylabel-apponly-upn-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/assignsensitivitylabel-apponly-upn-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assignsensitivitylabel-apponly-upn-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/assignsensitivitylabel-apponly-upn-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/assignsensitivitylabel-apponly-upn-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/assignsensitivitylabel-apponly-upn-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/QXNzaWduU2Vuc2l0aXZpdHlMYWJlbCxiMzc3ODY3OS04OWQ3LTRkYmYtYjg0MC1jYWM1NzRhY2FlNmE?tempAuth=******
+```
 
 ### Remarks
-The response from the API only indicates that the assign sensitivity label operation was accepted or rejected. The operation might be rejected, for example, if the file type isn't supported, or the file is double encrypted.
+
+The response from the API only indicates that the assignSensitivityLabel operation was accepted or rejected. The operation might be rejected, for example, if the file type isn't supported, or the file is double encrypted. Audit events for both success and failure cases are logged. For more information, see [Audit log activities](/purview/audit-log-activities#sensitivity-label-activities).
 
 [item-resource]: ../resources/driveitem.md

@@ -18,7 +18,7 @@ $requestBody = new ExportReportPostRequestBody();
 $requestBody->setDisplayName('Export 4');
 $requestBody->setExportCriteria(new ExportCriteria('partiallyIndexed'));
 $requestBody->setExportLocation(new ExportLocation('responsiveLocations, nonresponsiveLocations'));
-$requestBody->setAdditionalOptions(new AdditionalOptions('teamsAndYammerConversations, cloudAttachments, allDocumentVersions, subfolderContents, listAttachments'));
+$requestBody->setAdditionalOptions(new AdditionalOptions('advancedIndexing, subfolderContents, allItemsInFolder, listAttachments, teamsAndYammerConversations, htmlTranscripts, cloudAttachments'));
 
 $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->searches()->byEdiscoverySearchId('ediscoverySearch-id')->microsoftGraphSecurityExportReport()->post($requestBody)->wait();
 

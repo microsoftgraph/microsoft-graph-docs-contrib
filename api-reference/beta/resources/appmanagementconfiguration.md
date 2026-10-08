@@ -1,7 +1,7 @@
 ---
 title: "appManagementConfiguration resource type"
 description: "App management configuration object that contains properties which can be configured to enable various restrictions for applications and service principals."
-author: "madansr7"
+author: "aricrowe57"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -20,14 +20,14 @@ Base app management configuration object that contains properties that can be co
 
 ## Properties
 
-None.
-
-## Relationships
-
-| Relationship | Type | Description |
+| Property | Type | Description |
 |:-------------|:-----|:------------|
 | keyCredentials | [keyCredentialConfiguration](../resources/keycredentialconfiguration.md) collection | Collection of certificate restrictions settings to be applied to an application or service principal. |
 | passwordCredentials | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

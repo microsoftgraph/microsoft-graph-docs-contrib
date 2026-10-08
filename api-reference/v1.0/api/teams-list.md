@@ -46,8 +46,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.
 
-> [!Note]
-> Currently, this API call returns only the **id**, **displayName**, and **description** properties of a [team](../resources/team.md). To get all properties, use the [Get team](../api/team-get.md) operation. 
+> [!NOTE]
+> Currently, this API call returns all properties of a [team](../resources/team.md) object, but only populates the **id**, **displayName**, **description**, and **visibility** properties. All other properties are returned as `null`. To get all populated properties, use the [Get team](../api/team-get.md) operation. 
 
 ## Examples
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/v1.0/teams
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teams-in-org-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-teams-in-org-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -100,11 +96,8 @@ GET https://graph.microsoft.com/v1.0/teams
 
 ---
 
----
-
 #### Response
-Here's an example  of a response.
-
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -117,21 +110,47 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams",
   "value": [
     {
       "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
+      "createdDateTime": null,
       "displayName": "Contoso Team",
-      "description": "This is a Contoso team, used to showcase the range of properties supported by this API"
+      "description": "This is a Contoso team, used to showcase the range of properties supported by this API",
+      "internalId": null,
+      "classification": null,
+      "specialization": null,
+      "visibility": "public",
+      "webUrl": null,
+      "isArchived": null,
+      "isMembershipLimitedToOwners": null,
+      "memberSettings": null,
+      "guestSettings": null,
+      "messagingSettings": null,
+      "funSettings": null,
+      "discoverySettings": null,
+      "tagSettings": null,
+      "summary": null
     },
     {
       "id": "890972b0cce-e65d-44ce-9a49-568hhsd7n",
+      "createdDateTime": null,
       "displayName": "Contoso General Team",
-      "description": "This is a general Contoso team"
-    },
-    {
-      "id": "98678abcce0-e65d-44ce-9a49-9980bj8kl0e",
-      "displayName": "Contoso API Team",
-      "description": "This is Contoso API team"
+      "description": "This is a general Contoso team",
+      "internalId": null,
+      "classification": null,
+      "specialization": null,
+      "visibility": "private",
+      "webUrl": null,
+      "isArchived": null,
+      "isMembershipLimitedToOwners": null,
+      "memberSettings": null,
+      "guestSettings": null,
+      "messagingSettings": null,
+      "funSettings": null,
+      "discoverySettings": null,
+      "tagSettings": null,
+      "summary": null
     }
   ]
 }
@@ -141,7 +160,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -155,10 +174,6 @@ GET https://graph.microsoft.com/v1.0/teams?$filter=startswith(displayName, 'A')&
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teams-filter-top-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-teams-filter-top-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -187,11 +202,9 @@ GET https://graph.microsoft.com/v1.0/teams?$filter=startswith(displayName, 'A')&
 
 ---
 
----
-
 #### Response
 
-Here's an example  of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -205,16 +218,47 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams",
   "value": [
     {
       "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
+      "createdDateTime": null,
       "displayName": "A Contoso Team",
-      "description": "This is a Contoso team, used to showcase the range of properties supported by this API"
+      "description": "This is a Contoso team, used to showcase the range of properties supported by this API",
+      "internalId": null,
+      "classification": null,
+      "specialization": null,
+      "visibility": "public",
+      "webUrl": null,
+      "isArchived": null,
+      "isMembershipLimitedToOwners": null,
+      "memberSettings": null,
+      "guestSettings": null,
+      "messagingSettings": null,
+      "funSettings": null,
+      "discoverySettings": null,
+      "tagSettings": null,
+      "summary": null
     },
     {
       "id": "890972b0cce-e65d-44ce-9a49-568hhsd7n",
+      "createdDateTime": null,
       "displayName": "A Contoso Notification Team",
-      "description": "This is a notification Contoso team"
+      "description": "This is a notification Contoso team",
+      "internalId": null,
+      "classification": null,
+      "specialization": null,
+      "visibility": "private",
+      "webUrl": null,
+      "isArchived": null,
+      "isMembershipLimitedToOwners": null,
+      "memberSettings": null,
+      "guestSettings": null,
+      "messagingSettings": null,
+      "funSettings": null,
+      "discoverySettings": null,
+      "tagSettings": null,
+      "summary": null
     }
   ]
 }
@@ -224,7 +268,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -237,10 +281,6 @@ GET https://graph.microsoft.com/v1.0/teams?$filter=displayName eq 'A Contoso Tea
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teams-filter-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-teams-filter-select-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -272,7 +312,7 @@ GET https://graph.microsoft.com/v1.0/teams?$filter=displayName eq 'A Contoso Tea
 ---
 
 #### Response
-Here's an example  of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -286,6 +326,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams(id,description)",
   "value": [
     {
       "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",

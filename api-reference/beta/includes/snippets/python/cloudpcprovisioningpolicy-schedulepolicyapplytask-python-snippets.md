@@ -12,6 +12,9 @@ request_body = SchedulePolicyApplyTaskPostRequestBody(
 	additional_data = {
 			"reserve_percentage" : 50,
 			"cron_schedule_expression" : "0 0 0 20 * *",
+			"start_date_time" : "2025-03-12 00:00:00",
+			"end_date_time" : None,
+			"timezone" : "cst",
 	}
 )
 

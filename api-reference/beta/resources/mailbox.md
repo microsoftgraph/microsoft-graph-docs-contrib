@@ -21,13 +21,13 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create import session](../api/mailbox-createimportsession.md)|[mailboxItemImportSession](../resources/mailboxitemimportsession.md)|Create a session to [import an Exchange mailbox item](/graph/import-exchange-mailbox-item) using its [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format.|
-|[Export items](../api/mailbox-exportitems.md)|[exportItemResponse](../resources/exportitemresponse.md) collection|Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full-fidelity [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450) format for backup purposes. |
+|[Create import session](../api/mailbox-createimportsession.md)|[mailboxItemImportSession](../resources/mailboxitemimportsession.md)|Create a session to [import an Exchange mailbox item](/graph/import-exchange-mailbox-item).|
+|[Export items](../api/mailbox-exportitems.md)|[exportItemResponse](../resources/exportitemresponse.md) collection|Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full-fidelity.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
+|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object isn't deleted. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2024, is `2024-01-01T00:00:00Z`. Inherited from [directoryObject](../resources/directoryobject.md).|
 |id|String|The unique identifier for the **mailbox**. Inherited from [directoryObject](../resources/directoryobject.md).|
 
 ## Relationships

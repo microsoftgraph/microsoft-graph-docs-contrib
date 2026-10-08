@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of an [externalConnection](../
 
 If successful, this method returns `201 Created` response code and a new [externalConnection](../resources/externalconnectors-externalconnection.md) object in the response body.
 
->**Note:** When you create an external connection with a broken adaptive card for the result layout, the first call will fail with a `503 Service Unavailable`. When you try the call again, the second call will fail with a `409 Conflict` response that states that a connection with the same name already exists. This happens because the connection was created even though the first call failed with `503 Service Unavailable`. For more details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19908).
+>**Note:** When you create an external connection with a broken adaptive card for the result layout, the first call will fail with a `503 Service Unavailable`. When you try the call again, the second call will fail with a `409 Conflict` response that states that a connection with the same name already exists. This happens because the connection was created even though the first call failed with `503 Service Unavailable`. For more details, see [Known issues](/graph/known-issues#creating-an-externalconnection-with-a-broken-adaptive-card-returns-a-503-service-unavailable-response-followed-by-a-409-conflict-error).
 
 ## Examples
 
@@ -75,10 +75,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-connection-from-external-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-connection-from-external-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

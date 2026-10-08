@@ -34,13 +34,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 For the plan configuration based on a business scenario ID:
 
-``` http
+```http
 PATCH /solutions/businessScenarios/{businessScenarioId}/planner/planConfiguration
 ```
 
 For the plan configuration based on the unique name of a business scenario:
 
-``` http
+```http
 PATCH /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfiguration
 ```
 
@@ -78,7 +78,7 @@ The following example shows a request.
   "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/planConfiguration
 Content-Type: application/json
 
@@ -153,10 +153,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannerplanconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-plannerplanconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-plannerplanconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -193,7 +189,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.plannerPlanConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

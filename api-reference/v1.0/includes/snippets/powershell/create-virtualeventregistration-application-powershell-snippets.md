@@ -11,7 +11,7 @@ $params = @{
 	lastName = "Demoss"
 	email = "DianeDemoss@contoso.com"
 	externalRegistrationInformation = @{
-		referrer = "Facebook"
+		referrer = "Fabrikam"
 		registrationId = "myExternalRegistrationId"
 	}
 	preferredTimezone = "Pacific Standard Time"

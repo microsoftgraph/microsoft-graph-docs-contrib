@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the [instances](../resources/accessreviewhistoryinstance.md) of an [access review history definition](../resources/accessreviewhistorydefinition.md) created in the last 30 days.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewhistoryinstance-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-accessreviewhistoryinstance-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewhistoryinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,7 +100,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 
 ### Response
 
->**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability. The URL in this example is shortened and uses placeholder values.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +122,7 @@ Content-Type: application/json
             "reviewHistoryPeriodStartDate": "2021-02-01T00:00:00Z",
             "reviewHistoryPeriodEndDate": "2021-03-01T00:00:00Z",
             "fulfilledDateTime": "2021-03-01T01:38:15.7998393Z",
-            "downloadUri": "https://dfermconsolreportusc.blob.core.windows.net/df-erm-reports/Last quarter's reviews - via graph 2-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-03-01T19:39:38.0000000Z&se=2021-03-02T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D"
+            "downloadUri": "https://contoso.blob.core.windows.net/reports/sample.csv?sv=<redacted>&sp=<redacted>&sig=<redacted>"
         }
     ]
 }

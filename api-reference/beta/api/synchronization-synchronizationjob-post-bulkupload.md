@@ -4,7 +4,7 @@ description: "Perform a new bulkUpload."
 author: "cmmdesai"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
-doc_type: apiPageType 
+doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform a new bulk upload using the synchronization job. Use this API endpoint to ingest data into the Microsoft Entra synchronization service. The synchronization service applies the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
+Perform a new [bulkUpload](../resources/synchronization-bulkupload.md) using the synchronization job. Use this API endpoint to ingest data into the Microsoft Entra synchronization service. The synchronization service applies the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
 
 > [!NOTE]
 > This API is in public preview and available for use only with [API-driven inbound provisioning apps](/azure/active-directory/app-provisioning/inbound-provisioning-api-configure-app).
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
 ```
 
@@ -488,7 +488,7 @@ Content-Type: application/scim+json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd20f6-fcc3-5d61-098e-a6dd35e460ef

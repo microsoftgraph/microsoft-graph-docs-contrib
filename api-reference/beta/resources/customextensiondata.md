@@ -14,8 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type noting the data being sent and received as part of extensibility scenarios based on [custom callout extensions](../resources/customcalloutextension.md). The following types are derived from this abstract type:
+This abstract type represents the data sent and received as part of extensibility scenarios based on [customCalloutExtension](../resources/customcalloutextension.md). The derived types of this object are configured in the **data** property of the [customExtensionCalloutRequest](../resources/customextensioncalloutrequest.md) and [customExtensionCalloutResponse](../resources/customextensioncalloutresponse.md) resources. The following types are derived from this abstract type:
+
+- [accessPackageAssignmentCalloutData](../resources/accesspackageassignmentcalloutdata.md)
 - [accessPackageAssignmentRequestCallbackData](../resources/accesspackageassignmentrequestcallbackdata.md)
+- [accessPackageAssignmentRequestCalloutData](../resources/accesspackageassignmentrequestcalloutdata.md)
 - [customTaskExtensionCalloutData](../resources/identitygovernance-customtaskextensioncalloutdata.md)
 - [customTaskExtensionCallbackData](../resources/identitygovernance-customtaskextensioncallbackdata.md)
 
@@ -37,4 +40,5 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.customExtensionData"
 }
 ```
+
 

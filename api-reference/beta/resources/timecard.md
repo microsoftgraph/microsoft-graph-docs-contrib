@@ -30,6 +30,7 @@ Represents a timecard entry in the schedule.
 |[Start break](../api/timecard-startbreak.md) | None | Start a **timeCardBreak** in a specific **timecard**.|
 |[End break](../api/timecard-endbreak.md) | None | End the open **timeCardBreak** in a specific **timecard**.|
 |[Confirm](../api/timecard-confirm.md) | None | Confirm a **timecard** record.|
+|[Confirm for user](../api/timecard-confirmforuser.md) | [timeCard](timecard.md) | Confirm a specific **timeCard** for a user.|
 
 ## Properties
 |Property               |Type           |Description                                                                |
@@ -45,7 +46,7 @@ Represents a timecard entry in the schedule.
 |lastModifiedDateTime|DateTimeOffset| The timestamp in which the **timeCard** was last modified.|
 | notes			        | [itemBody](itembody.md)  |Notes about the **timeCard**. |
 | originalEntry| [timeCardEntry](../resources/timecardentry.md) | The original **timeCardEntry** of the **timeCard**, before user edits. |
-| state 		        |timeCardState  | The current state of the **timeCard** during its life cycle.Possible values are: `clockedIn`, `onBreak`, `clockedOut`, `unknownFutureValue`.|
+| state 		        |timeCardState  | The current state of the **timeCard** during its life cycle. The possible values are: `clockedIn`, `onBreak`, `clockedOut`, `unknownFutureValue`.|
 | userId			        |String |User ID to which  the **timeCard** belongs. |
 
 ## JSON representation

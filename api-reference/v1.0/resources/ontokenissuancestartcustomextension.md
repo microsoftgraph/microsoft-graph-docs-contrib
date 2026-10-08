@@ -16,6 +16,8 @@ Custom extension to invoke when handling the event when a token is about to be i
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
+[Try out this event in the Woodgrove demo tenant](/entra/identity-platform/custom-extension-overview#token-issuance-start).
+
 ## Methods
 None.
 

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /print/shares/{printerShareId}/jobs
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [printJob
   "name": "create_printjob_from__2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/jobs
 Content-Type: application/json
 
@@ -103,10 +103,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-from--2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-printjob-from--2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-printjob-from--2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -141,7 +137,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.printJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

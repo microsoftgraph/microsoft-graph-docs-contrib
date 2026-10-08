@@ -5,7 +5,7 @@ author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 05/18/2026
 ---
 
 # Delete todoTaskList
@@ -17,19 +17,35 @@ Deletes a [todoTaskList](../resources/todotasklist.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+### Permissions acting on self
 
 <!-- { "blockType": "permissions", "name": "todotasklist_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/todotasklist-delete-permissions.md)]
 
+### Permissions acting on other users
+
+<!-- { "blockType": "permissions", "name": "todotasklist_delete_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/todotasklist-delete-2-permissions.md)]
+
 ## HTTP request
 
+Permissions to delete a task list of the signed-in user:
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /me/todo/lists/{todoTaskListId}
+```
+
+Permissions to delete a task list of another user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
 DELETE /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}
 ```
 
@@ -56,16 +72,12 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_todotasklist"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAhrbPXAAA=
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-todotasklist-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-todotasklist-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,7 +113,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

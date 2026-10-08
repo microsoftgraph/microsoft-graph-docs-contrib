@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/virtualEvents/webinars
 ```
 
@@ -45,6 +45,7 @@ POST /solutions/virtualEvents/webinars
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
+|Accept-Language| [Acceptable human languages for the response](/concepts/search-concept-acceptlanguage-header.md). Required. |
 
 ## Request body
 
@@ -59,6 +60,7 @@ You can specify the following properties when you create a [virtualEventWebinar]
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar ends. |
+| isRegistrationRequired |Boolean| Indicates whether attendee registration is enabled for the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar starts. |
 
@@ -78,9 +80,10 @@ The following example shows a request.
   "name": "create_virtualeventwebinar"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars
 Content-Type: application/json
+Accept-Language: en-US
 
 {     
     "displayName": "The Impact of Tech on Our Lives",
@@ -103,15 +106,12 @@ Content-Type: application/json
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
     ],
+    "isRegistrationRequired": true,
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     }
 }
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventwebinar-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventwebinar-javascript-snippets.md)]
@@ -129,9 +129,10 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventWebinar"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+Accept-Language: en-US
 
 { 
     "id": "a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
@@ -169,6 +170,7 @@ Content-Type: application/json
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     },
+    "isRegistrationRequired": true,
     "externalEventInformation": []
 }
 ```

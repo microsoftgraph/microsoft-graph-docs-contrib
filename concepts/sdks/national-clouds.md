@@ -4,6 +4,7 @@ description: "Provides instructions for accessing national cloud deployments usi
 ms.localizationpriority: medium
 author: jasonjoh
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 <!-- markdownlint-disable MD051 -->

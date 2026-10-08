@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /communications/calls/{id}/participants
 ```
-> **Note:** This request does not support peer-to-peer calls.
+> **Note:** This request doesn't support peer-to-peer calls.
 
 ## Optional query parameters
 
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participants-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-participants-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

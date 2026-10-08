@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) collection object in the response body.
 
 > [!IMPORTANT]
-> educationClass deltas do not include deleted classes.
+> educationClass deltas don't include deleted classes.
 
 ## Example
 
@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/education/classes/delta
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationclass-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/educationclass-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return all [accessReviewStage](../resources/accessReviewStage.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) where the calling user is a reviewer on one or more [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects.
+Return all [accessReviewStage](../resources/accessreviewstage.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) where the calling user is a reviewer on one or more [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/filterByCurrentUser(on='reviewer')
 ```
 
@@ -39,9 +39,12 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|accessReviewStageFilterByCurrentUserOptions|Filters results based on the calling user. Allowed value is `reviewer`. This returns all accessReviewStage objects on the accessReviewInstance where the calling user is a reviewer. Required.|
+|on|accessReviewStageFilterByCurrentUserOptions|Filters results based on the calling user. Possible values are `reviewer`, `unknownFutureValue`, `directReviewer`, and `delegatedReviewer`. Use the `Prefer: include-unknown-enum-members` request header to get the `directReviewer` and `delegatedReviewer` values in this evolvable enumeration. `reviewer` returns all accessReviewStage objects on the accessReviewInstance where the calling user is a reviewer, `directReviewer` returns only stages with decisions directly assigned to the current user, and `delegatedReviewer` returns only stages with decisions delegated to the current user. Required.|
 
 This function also supports the `$select`, `$filter`, `$orderby`, `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+>[!NOTE]
+>The `delegatedBy` property isn't returned for **accessReviewStage** responses. Use `delegatedReviewer` only to filter the returned stages.
 
 ## Request headers
 |Name|Description|
@@ -65,16 +68,12 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
   "name": "accessreviewstage_filterbycurrentuser"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/08531375-eff6-4e21-b1a8-de0eb37ec913/instances/86889534-b102-4226-bfce-0c2aeee845df/stages/filterByCurrentUser(on='reviewer')
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewstage-filterbycurrentuser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/accessreviewstage-filterbycurrentuser-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -111,7 +110,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
   "@odata.type": "Collection(microsoft.graph.accessReviewStage)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -148,4 +147,3 @@ Content-Type: application/json
     ]
 }
 ```
-

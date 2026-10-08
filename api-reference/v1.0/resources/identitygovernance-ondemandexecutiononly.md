@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Represents the execution condition of a [lifecycle workflow](../resources/identitygovernance-workflow.md) running on-demand only instead of by schedule.
+Represents the execution condition for a lifecycle workflow that runs on-demand only instead of by schedule. This object is configured in the **executionConditions** property of the [workflow](../resources/identitygovernance-workflow.md), [workflowVersion](../resources/identitygovernance-workflowversion.md), and [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) resources.
 
 Inherits from [workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md).
 

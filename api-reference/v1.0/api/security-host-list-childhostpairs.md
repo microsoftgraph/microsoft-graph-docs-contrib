@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/threatIntelligence/hosts/{hostId}/childHostPairs
 ```
 
@@ -55,8 +55,8 @@ The following properties can be used for `$select` calls.
 |Property|Example|Notes|
 |:---|:---|:---|
 |All [hostPair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostPair](../resources/security-hostpair.md) resource.|
-|parentHost|`$select=parentHost`|Does not support selecting on nested properties (for example `parentHost/id`).|
-|childHost|`$select=childHost`|Does not support selecting on nested properties (for example `childHost/id`).|
+|parentHost|`$select=parentHost`|Doesn't support selecting on nested properties (for example `parentHost/id`).|
+|childHost|`$select=childHost`|Doesn't support selecting on nested properties (for example `childHost/id`).|
 
 ## Request headers
 |Name|Description|
@@ -81,16 +81,12 @@ The following example shows a request.
   "sampleKeys": ["contoso.com"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.com/childHostPairs
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-childhostpair-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-childhostpair-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -130,7 +126,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.security.hostPair)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

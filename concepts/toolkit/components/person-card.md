@@ -4,9 +4,13 @@ description: "A Person-Card component is a component to display more information
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Person-Card component in Microsoft Graph Toolkit
+
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 A Person-Card component is a responsive component to display more information related to a person. It's used as a flyout on the `mgt-person` component.
 
@@ -66,7 +70,7 @@ The following properties are available.
 
 | Property             | Description                                                                                                                                                    |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| useContactApis       | `boolean` - Indicates whether the person card component can use Microsoft Graph Contact API to search for contact details and photos. Default value is `true`. |
+| useContactApis       | `boolean` - Indicates whether the person card component can use the Microsoft Graph Contact API to search for contact details and photos. Default value is `true`. |
 | sections             | `object` - Configures what sections are shown in the person card.                                                                                              |
 | isSendMessageVisible | `boolean` - Indicates whether the send message button is visible. Default value is `true`.                                                                     |
 
@@ -76,8 +80,8 @@ The person card contains several configurable sections for displaying person det
 
 - Contact - Contact information such as email, phone, position, location, and more.
 - Organization - Organizational graph with managers, direct reports, and relevant people.
-- Messages - Most relevant email messages with the current signed in user.
-- Files - Most relevant shared files with the current signed in user.
+- Messages - Most relevant email messages with the current signed-in user.
+- Files - Most relevant shared files with the current signed-in user.
 - Profile - Profile information such as projects, skills, languages, and more.
 
 Sections are loaded by default, but they can be disabled globally via the `MgtPersonCardConfig.sections` object property. The following properties are available.
@@ -276,7 +280,7 @@ The Person-Card control uses the following Microsoft Graph APIs and permissions.
 | `sections.organization` enabled (default)                                                              | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All                                 | [/users/{id}?$expand=manager($levels=max)](/graph/api/user-list-manager), [/users/${id}/directReports](/graph/api/user-list-manager) | Organization |
 | `sections.organization.showWorksWith` set (default)                                                    | People.Read.All                                                                                                                    | [/users/{id}/people](/graph/api/user-list-people)                                                             | Organization |
 | `sections.mailMessages` enabled (default)                                                              | Mail.ReadBasic, Mail.Read, Mail.ReadWrite                                                                                          | [/me/messages](/graph/api/user-list-messages)                                                                 | Messages     |
-| `sections.files` enabled (default)                                                                     | Sites.Read.All, Sites.ReadWrite.All                                                                                                | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files        |
+| `sections.files` enabled (default)                                                                     | Sites.Read.All, Sites.ReadWrite.All                                                                                                | [/me/insights/shared (deprecated)](/graph/api/insights-list-shared) and [/me/insights/used (deprecated)](/graph/api/insights-list-used) | Files        |
 | `sections.profile` enabled (default)                                                                   | User.Read.All, User.ReadWrite.All                                                                                                  | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true)                         | Profile      |
 
 The `getMgtPersonCardScopes()` function returns an array of scopes required for the person card to function based on the global person card configuration.

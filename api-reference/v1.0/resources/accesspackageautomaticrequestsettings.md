@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Specifies information about an automatic access package assignment. 
+Specifies information about an automatic access package assignment. This object is configured in the **automaticRequestSettings** property of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 ## Properties
 |Property|Type|Description|

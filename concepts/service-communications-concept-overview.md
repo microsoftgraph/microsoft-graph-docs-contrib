@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "service-communications"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Access service health and communications in Microsoft Graph
@@ -17,7 +18,7 @@ You can use the service communications API in Microsoft Graph to access the heal
 ### Get service health and message center posts for a tenant
 Customers can get current or historical health data of supported Microsoft services. When experiencing problems with a Microsoft service, they can check its health status to verify if an issue has been identified with a resolution in progress, before calling for support or spending time troubleshooting. 
 
-Customers can regularly review message center posts to keep track of upcoming new features and updates, and other important announcements. They can then anticipate how these changes may affect users and plan accordingly.
+Customers can regularly review message center posts to keep track of upcoming new features and updates, and other important announcements. They can then anticipate how these changes might affect users and plan accordingly.
 
 ### Integrate service communications data into custom workflows
 App developers can integrate active service health issues directly into custom applications, allowing administrators to triage and share status information with impacted audiences.

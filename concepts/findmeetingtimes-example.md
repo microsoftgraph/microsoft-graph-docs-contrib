@@ -3,6 +3,7 @@ title: "Find possible meeting times on the Outlook calendar"
 description: "Use findMeetingTimes to identify a meeting time that satisfies time, location, and other constraints. Includes an example involving two users."
 ms.localizationpriority: high
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Find possible meeting times on the Outlook calendar
@@ -18,7 +19,7 @@ during the work hours of the organizer and attendees, and suggestions where requ
 In Microsoft 365, work hours and time zones are configurable per mailbox. The **findMeetingTimes** action handles time zone variations among the organizer
 and attendees. By default, **findMeetingTimes** returns suggestions in UTC. You can use the following request header to have **findMeetingTimes** return suggestions
 expressed in a specific time zone.
-``` http
+```http
 Prefer: outlook.timezone="{time-zone-string}}"
 ```
 

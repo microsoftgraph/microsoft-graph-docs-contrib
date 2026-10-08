@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 View AWS resources that have privileges to read, modify, or delete secret information.
 
 Inherits from [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md).
@@ -62,4 +64,5 @@ The following JSON representation shows the resource type.
   "lastActiveDateTime": "String (timestamp)"
 }
 ```
+
 

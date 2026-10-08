@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters.
+This method doesn't support any OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -63,16 +63,12 @@ The following example shows a request.
   "name": "list_forwardingprofiles_branchsite"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-forwardingprofiles-branchsite-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-forwardingprofiles-branchsite-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -110,7 +106,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.forwardingProfile)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

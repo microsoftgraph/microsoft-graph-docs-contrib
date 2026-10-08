@@ -52,8 +52,8 @@ Don't supply a request body for this method.
 If successful, this method returns `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Example
-Here's an example of how to call this API.
-##### Request
+The following example shows how to call this API.
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -67,10 +67,6 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-unsubscribe-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/message-unsubscribe-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,7 +95,7 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

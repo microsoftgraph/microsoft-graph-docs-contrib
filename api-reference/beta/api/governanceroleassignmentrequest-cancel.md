@@ -1,5 +1,5 @@
 ---
-title: "Cancel governanceRoleAssignmentRequest"
+title: "Cancel governanceRoleAssignmentRequest (deprecated)"
 description: "Cancel a governanceRoleAssignmentRequest."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 03/13/2024
 ---
 
-# Cancel governanceRoleAssignmentRequest
+# Cancel governanceRoleAssignmentRequest (deprecated)
 
 Namespace: microsoft.graph
 
@@ -85,10 +85,6 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cancel-governanceroleassignmentrequest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cancel-governanceroleassignmentrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

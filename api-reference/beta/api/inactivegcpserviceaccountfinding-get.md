@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Read the properties and relationships of an [inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) object, representing the inactive service accounts in GCP authorization systems.
 
 ## Permissions
@@ -33,7 +35,7 @@ GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.i
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -58,7 +60,7 @@ The following example shows a request.
   "name": "get_inactivegcpserviceaccountfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxJbmFjdGl2ZUdjcFNlcnZpY2VBY2NvdW50RmluZGluZywxNDM1NjM/microsoft.graph.inactiveGcpServiceAccountFinding
 ```
 
@@ -77,7 +79,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.inactiveGcpServiceAccountFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -117,3 +119,4 @@ Content-Type: application/json
     }
 }
 ```
+

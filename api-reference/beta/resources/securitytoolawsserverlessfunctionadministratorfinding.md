@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 View AWS serverless functions that can administer security tools.
 
 
@@ -60,4 +62,5 @@ The following JSON representation shows the resource type.
   "lastActiveDateTime": "String (timestamp)"
 }
 ```
+
 

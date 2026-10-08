@@ -18,7 +18,7 @@ Get details about Microsoft 365 Groups activity by group.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -119,7 +119,7 @@ Here's an example  that outputs CSV.
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(pe
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -165,7 +165,7 @@ Here's an example  that returns JSON.
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -180,7 +180,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(pe
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

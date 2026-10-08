@@ -1,11 +1,11 @@
 ---
 title: "Get remoteDesktopSecurityConfiguration"
 description: "Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal."
-author: "SanDeo-MSFT"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/18/2024
+ms.date: 01/02/2026
 ---
 
 # Get remoteDesktopSecurityConfiguration
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration
 ```
 
@@ -58,16 +58,12 @@ The following example shows a request.
   "name": "get_remotedesktopsecurityconfiguration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-remotedesktopsecurityconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-remotedesktopsecurityconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -105,21 +101,19 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.remoteDesktopSecurityConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
-    "id": "ca738153-c98a-f822-a7d1-5a6e1058462b",
-    "isRemoteDesktopProtocolEnabled": true,
-    "targetDeviceGroups": [
-      {
-        "id": "1a9db3ab-0acf-4808-99ae-e8ed581cb2e0",
-        "displayName": "Device Group A"
-      }
-    ]
-  }
+  "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
+  "id": "ca738153-c98a-f822-a7d1-5a6e1058462b",
+  "isRemoteDesktopProtocolEnabled": true,
+  "targetDeviceGroups": [
+    {
+      "id": "1a9db3ab-0acf-4808-99ae-e8ed581cb2e0",
+      "displayName": "Device Group A"
+    }
+  ]
 }
 ```

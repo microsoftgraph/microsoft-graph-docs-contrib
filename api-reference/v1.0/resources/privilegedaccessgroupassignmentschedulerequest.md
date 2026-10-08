@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupAssignmentScheduleRequest resource type"
-description: "Represents requests for operations to create, update, delete, extend, and renew a membership or ownership assignment in PIM for groups."
+description: "Represents requests for operations to create, update, delete, extend, and renew a membership or ownership assignment in PIM for Groups."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -13,7 +13,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents requests for operations to create, update, delete, extend, and renew a membership or ownership assignment in PIM for groups. The privilegedAccessGroupAssignmentScheduleRequest object is also created when an authorized principal requests a just-in-time activation of an eligible access assignment to a group's membership or ownership.
+Represents requests for operations to create, update, delete, extend, and renew a membership or ownership assignment in PIM for Groups. The privilegedAccessGroupAssignmentScheduleRequest object is also created when an authorized principal requests a just-in-time activation of an eligible access assignment to a group's membership or ownership.
 
 Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md).
 
@@ -36,11 +36,11 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 |createdBy|[identitySet](../resources/identityset.md)|The principal that created this request. Inherited from [request](../resources/request.md). Read-only. Supports `$filter` (`eq`, `ne`, and on `null` values).|
 |createdDateTime|DateTimeOffset|The request creation date time. Inherited from [request](../resources/request.md). Read-only.|
 |customData|String|Free text field to define any custom data for the request. Not used. Inherited from [request](../resources/request.md).|
-|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups. Required.|
+|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for Groups. Required.|
 |id|String|The unique identifier for the **privilegedAccessGroupAssignmentScheduleRequest** object. Key, not nullable, Read-only. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
 |isValidationOnly|Boolean|Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
 |justification|String|A message provided by users and administrators when they create the **privilegedAccessGroupAssignmentScheduleRequest** object.|
-|principalId|String|The identifier of the principal whose membership or ownership assignment to the group is managed through PIM for groups. Supports `$filter` (`eq`, `ne`).|
+|principalId|String|The identifier of the principal whose membership or ownership assignment to the group is managed through PIM for Groups. Supports `$filter` (`eq`, `ne`).|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the group membership or ownership assignment. Recurring schedules are currently unsupported.|
 |status|String|The status of the group membership or ownership assignment request. Inherited from [request](../resources/request.md). Read-only. Supports `$filter` (`eq`, `ne`).|
 |targetScheduleId|String| The identifier of the schedule that's created from the membership or ownership assignment request. Supports `$filter` (`eq`, `ne`).|
@@ -49,8 +49,8 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request activates a membership or ownership assignment in PIM for groups, this object represents the eligibility policy for the group. Otherwise, it is `null`. Supports `$expand`.|
-|group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment request through PIM for groups. Supports `$expand` and `$select` nested in `$expand` for select properties like **id**, **displayName**, and **mail**.|
+|activatedUsing|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|When the request activates a membership or ownership assignment in PIM for Groups, this object represents the eligibility policy for the group. Otherwise, it is `null`. Supports `$expand`.|
+|group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment request through PIM for Groups. Supports `$expand` and `$select` nested in `$expand` for select properties like **id**, **displayName**, and **mail**.|
 |principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM. Supports `$expand` and `$select` nested in `$expand` for **id** only.|
 |targetSchedule|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md)|Schedule created by this request. Supports `$expand`.|
 

@@ -52,7 +52,7 @@ If successful, this method returns a `202 Accepted` response code, and all parti
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 
@@ -73,10 +73,6 @@ Content-Length: 24
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-changescreensharingrole-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/call-changescreensharingrole-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -105,7 +101,7 @@ Content-Length: 24
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 
 <!-- {

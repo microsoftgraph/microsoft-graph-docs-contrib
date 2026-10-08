@@ -40,7 +40,12 @@ const cloudPcProvisioningPolicy = {
     windowsSetting: {
         locale: 'en-US'
     },
-    provisioningType: 'dedicated'
+    provisioningType: 'dedicated',
+    userExperienceType: 'cloudPc',
+    userSettingsPersistenceConfiguration: {
+        userSettingsPersistenceEnabled: true,
+        userSettingsPersistenceStorageSizeCategory: 'fourGB'
+    }
 };
 
 await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies')

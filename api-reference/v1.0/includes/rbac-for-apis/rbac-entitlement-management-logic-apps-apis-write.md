@@ -9,7 +9,7 @@ ms.topic: include
 -->
 
 > [!TIP]
-> In delegated scenarios with work or school accounts, the signed-in user must also be assigned an administrator role with supported role permissions through one of the following options:
+> For delegated access using work or school accounts, the signed-in user must be assigned an administrator role with supported role permissions through one of the following options:
 > 
 > - One of the following [Azure role](/azure/role-based-access-control/built-in-roles) assignments are required either on the Logic App itself, or on a higher scope such as the resource group, subscription or management group:
 >     - Logic App contributor

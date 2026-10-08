@@ -57,7 +57,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 
->**Note:** Use the ID returned from the [List published apps](./appcatalogs-list-teamsapps.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./appcatalogs-list-teamsapps.md) call for to reference the app you'd like to update. Don't use the ID from the manifest of the zip app package.
 
 ## Response
 
@@ -83,10 +83,6 @@ Content-type: application/zip
 
 app.zip
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-teamsapp-beta-e1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-beta-e1-javascript-snippets.md)]
@@ -129,10 +125,6 @@ Content-type: application/zip
 
 app.zip
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-teamsapp-beta-e2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-beta-e2-javascript-snippets.md)]

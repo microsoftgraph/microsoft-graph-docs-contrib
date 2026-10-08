@@ -4,11 +4,15 @@ description: "You can use the `mgt-people` web component to display a group of p
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # People component in Microsoft Graph Toolkit
 
-You can use the `mgt-people` web component to display a group of people or contacts by using their photos or initials. By default, it displays the most frequent contacts for the signed in user.
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
+You can use the `mgt-people` web component to display a group of people or contacts by using their photos or initials. By default, it displays the most frequent contacts for the signed-in user.
 
 This component uses multiple [mgt-person](./person.md) controls, but it can be bound to a set of people descriptors. If there are more people to display than the `show-max` value, a number is added to indicate the number of other contacts.
 
@@ -41,10 +45,10 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | group-id         | groupId               | The ID of a Microsoft Entra ID group. This property is used to retrieve the direct members of the group. This property is optional.                                                     |
 | user-ids         | userIds               | An array of user IDs to display. This property is optional.                                                                                                                     |
 | people-queries   | peopleQueries         | Microsoft Graph queries for customizing the people query response.                                                                                                     |
-| person-card      | personCardInteraction | Sets the behavior to show the person card on a rendered person. Default value is set to show the person card on hover(PersonCardInteraction.hover).                   |
-| show-presence    | showPresence          | Determines if a person component should render the presence badge. Default value is false.                                                                             |
+| person-card      | personCardInteraction | Sets the behavior to show the person card on a rendered person. The default value is set to show the person card on hover(PersonCardInteraction.hover).                   |
+| show-presence    | showPresence          | Determines if a person component should render the presence badge. The default value is false.                                                                             |
 | resource         | resource              | The resource URL to get from Microsoft Graph (for example, `/me/people`).                                                                                              |
-| scopes           | scopes                | A comma delimited string with permissions to be granted to the component. This property is optional.                                                                            |
+| scopes           | scopes                | A comma-delimited string with permissions to be granted to the component. This property is optional.                                                                            |
 | version          | version               | The API version to use when making the request. Default value is `v1.0`.                                                                                           |
 | fallback-details | fallbackDetails       | Array of Microsoft Graph person objects representing a person or multiple people when no user/person/contact is found in the graph.                                    |
 

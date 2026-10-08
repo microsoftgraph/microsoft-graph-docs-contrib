@@ -22,6 +22,8 @@ Represents information about positions related to entities within a user's [prof
 |:-------|:---|:----------|
 |company|[companyDetail](companydetail.md)|Information about the company or employer.|
 |description|String|A description for the position in question.|
+|employeeId|String|The identifier assigned to the employee.|
+|employeeType|String|The type of employment for the position.|
 |endMonthYear|Date|The date when the position ended.|
 |jobTitle|String|The title of the position.|
 |layer|Int32|The place where the employee is within the organizational hierarchy.|
@@ -49,9 +51,11 @@ The following JSON representation shows the resource type.
 {
   "company": {"@odata.type": "microsoft.graph.companyDetail"},
   "description": "String",
+  "employeeId": "String",
+  "employeeType": "String",
   "endMonthYear": "String (timestamp)",
   "jobTitle": "String",
-  "layer": "Integer",
+  "layer": "Int32",
   "level": "String",
   "role": "String",
   "secondaryJobTitle": "String",

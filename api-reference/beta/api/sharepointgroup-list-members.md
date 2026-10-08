@@ -1,5 +1,5 @@
 ---
-title: "List members"
+title: "List members for sharePointGroup"
 description: "Get a list of the sharePointGroupMember objects and their properties."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# List members
+# List members for sharePointGroup
 
 Namespace: microsoft.graph
 
@@ -16,17 +16,13 @@ Namespace: microsoft.graph
 
 Get a list of the [sharePointGroupMember](../resources/sharepointgroupmember.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointgroup-list-members-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "sharepointgroup_list_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-list-members-permissions.md)]
 
 > [!NOTE]
@@ -38,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{sharePointGroupId}/members
 ```
 
@@ -74,16 +70,12 @@ The following example shows a request.
   "blockType": "request",
   "name": "list_sharepointgroup_members"
 }-->
-``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0/members
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sharepointgroup-members-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-sharepointgroup-members-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -117,7 +109,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.sharePointGroupMember)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -153,9 +145,5 @@ Content-Type: application/json
   "description": "List members",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-      "Error: /api/sharepointgroup-list-members.md:
-      Failed to parse enumeration values for type microsoft.graph.list. Table requires a column header named one of the following: Member, Name, Value"
-  ]
+  "tocPath": ""
 }-->

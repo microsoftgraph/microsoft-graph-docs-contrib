@@ -1,0 +1,43 @@
+---
+title: "userProtectionScopeContainer resource type"
+description: "Container for user-specific  Microsoft Purview protection scope computation actions."
+author: "kylemar"
+ms.date: 04/08/2025
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: resourcePageType
+---
+
+# userProtectionScopeContainer resource type
+
+Namespace: microsoft.graph
+
+Container for user-specific  Microsoft Purview protection scope computation actions.
+
+## Methods
+
+| Method                                          | Return Type                                                                                   | Description                                                           |
+| :---------------------------------------------- | :-------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------- |
+| [Compute protection scopes](../api/userprotectionscopecontainer-compute.md) | [policyUserScope](../resources/policyuserscope.md) collection | Compute the data protection policies applicable to the specific user. |
+
+## Properties
+
+None. This type primarily serves as a container for actions.
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.userProtectionScopeContainer",
+  "openType": false
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.userProtectionScopeContainer"
+}
+```

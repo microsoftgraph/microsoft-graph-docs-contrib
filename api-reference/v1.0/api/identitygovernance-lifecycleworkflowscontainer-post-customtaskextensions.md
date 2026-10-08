@@ -1,7 +1,7 @@
 ---
 title: "Create Custom Task Extension"
 description: "Create a new customTaskExtension object."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Create a new [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -101,17 +101,13 @@ Content-length: 588
     },
     "callbackConfiguration": {
         "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT5M"
+        "timeoutDuration": "PT30M"
     }
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-create-customtaskextension-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-create-customtaskextension-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -178,7 +174,7 @@ Content-Type: application/json
     },
     "callbackConfiguration": {
         "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT5M"
+        "timeoutDuration": "PT30M"
     }
 }
 ```

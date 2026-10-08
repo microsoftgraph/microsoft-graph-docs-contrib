@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 List the [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) objects and their properties for a provided GCP authorization system.
 
 ## Permissions
@@ -32,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/resources
 ```
 
@@ -61,7 +63,7 @@ The following example shows a request.
   "name": "list_gcpauthorizationsystemresource"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/resources
 ```
 
@@ -80,7 +82,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.gcpAuthorizationSystemResource)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -108,4 +110,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

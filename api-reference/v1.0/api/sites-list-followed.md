@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 List the [sites](../resources/site.md) that have been followed by the signed in user.
 
-> **Note:** This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=15193) and might return incorrect results.
+> **Note:** This API has a [known issue](/graph/known-issues#followunfollow-sites-is-not-in-sync-with-sharepoint-following) and might return incorrect results.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/me/followedSites
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/sites-list-followed-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/sites-list-followed-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

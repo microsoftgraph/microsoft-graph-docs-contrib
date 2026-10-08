@@ -16,7 +16,7 @@ Soft-delete a [chat](../resources/chat.md). When invoked with delegated permissi
 > **Notes:** 
 > This operation is not supported for non-admin users.
 > Only tenant admins for the user who initiated the chat can delete the chat. For example, if a user from tenant A creates a thread and then adds a user from tenant B, only the admin from tenant A can delete the thread.
-> This API deletes 1:1 chats, meeting chats, and group chat threads. It does not delete channel chat threads.
+> This API deletes 1:1 chats, meeting chats, and group chat threads. It doesn't delete channel chat threads.
 > After chats are deleted, tenant admins have seven days to restore them. Chats deleted for more than seven days can't be restored.
 > One delete request per second per tenant is allowed. 
 
@@ -67,10 +67,6 @@ DELETE https://graph.microsoft.com/v1.0/chats/19:7d898072-792c-4006-bb10-5ca9f25
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-delete-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/chat-delete-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

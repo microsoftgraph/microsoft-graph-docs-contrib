@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ms.date: 06/03/2024
+ms.custom: sfi-ga-nochange
 ---
 # localAdminSettings resource type
 
@@ -13,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Controls local administrators on Microsoft Entra-joined devices.
+Controls local administrators on Microsoft Entra-joined devices in a device registration policy. Configured on the **localAdmins** property of [azureADJoinPolicy](../resources/azureadjoinpolicy.md).
 
 ## Properties
 
@@ -39,7 +40,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.localAdminSettings",
   "enableGlobalAdmins": "Boolean",
   "registeringUsers": {
-    "@odata.type": "microsoft.graph.deviceRegistrationMembership",
+    "@odata.type": "microsoft.graph.deviceRegistrationMembership"
   }
 }
 ```

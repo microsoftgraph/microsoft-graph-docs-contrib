@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Retrieve a list of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects, representing delegated permissions which have been granted for client applications to access APIs on behalf of signed-in users.
 
 > [!NOTE]
-> This request might have replication delays for delegated permission grants that were recently created, updated, or deleted. This delay will be minimized if a filter on `clientId` is specified.
+> This request might have replication delays for delegated permission grants that were recently created, updated, or deleted. This delay will be minimized if a filter on `clientId` is specified. Learn more in [Designing for eventual consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-oauth2permissiongrants-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-oauth2permissiongrants-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

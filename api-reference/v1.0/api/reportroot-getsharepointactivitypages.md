@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the number of unique pages visited by users.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint activity](/microsoft-365/admin/activity-reports/sharepoint-activity-ww).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -55,7 +55,7 @@ In the request URL, provide the following parameter with a valid value.
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityPages(period='
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getsharepointactivitypages-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/reportroot-getsharepointactivitypages-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

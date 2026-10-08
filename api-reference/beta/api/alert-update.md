@@ -1,18 +1,21 @@
 ---
-title: "Update alert"
+title: "Update alert (deprecated)"
 description: "Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 04/05/2024
+ROBOTS: NOINDEX
 ---
 
-# Update alert
+# Update alert (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions. This method updates any solution that has a record of the referenced alert ID.
 
@@ -43,15 +46,15 @@ PATCH /security/alerts/{alert_id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the values for relevant fields that should be updated. The body **must** contain the **vendorInformation** property with valid `provider` and `vendor` fields. The following table lists the fields that can be updated for an alert. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |assignedTo|String|Name of the analyst the alert is assigned to for triage, investigation, or remediation.|
 |closedDateTime|DateTimeOffset|Time at which the alert was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |comments|String collection|Analyst comments on the alert (for customer alert management). This method can update the **comments** field with the following values only: `Closed in IPC`, `Closed in MCAS`.|
-|feedback|alertFeedback enum|Analyst feedback on the alert. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
-|status|alertStatus enum|Alert life cycle status (stage). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.|
+|feedback|alertFeedback enum|Analyst feedback on the alert. The possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
+|status|alertStatus enum|Alert life cycle status (stage). The possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.|
 |tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW").|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Complex type that contains details about the security product/service vendor, provider, and subprovider (for example, `vendor=Microsoft`; `provider=Windows Defender ATP`; `subProvider=AppLocker`). **Provider and vendor fields are required.**|
 
@@ -98,10 +101,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-alert-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-alert-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -132,7 +131,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of a successful response.
+The following example shows a successful response.
 <!-- {
   "blockType": "response"
 } -->
@@ -178,10 +177,6 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-alert-2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-alert-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -210,7 +205,7 @@ Prefer: return=representation
 
 #### Response
 
-The following is an example of the response when the optional `Prefer: return=representation` request header is used.
+The following example shows a response when the optional `Prefer: return=representation` request header is used.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -1,6 +1,6 @@
 ---
 title: "chats: getAllMessages"
-description: "Get messages from all chats that a user is a participant in."
+description: "Get all messages from all chats in which a user is a participant."
 author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -12,11 +12,12 @@ ms.date: 05/22/2024
 
 Namespace: microsoft.graph
 
-Get all [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
+Get all [messages](../resources/chatmessage.md) from all [chats](../resources/chat.md) in which a user is a participant, including one-on-one chats, group chats, and meeting chats.
 
-[!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
+To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -33,17 +34,6 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
 ## Optional query parameters
-
-You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
-as shown in the following examples.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
-GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
-```
-
-If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
 
 This method also supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 
@@ -72,10 +62,6 @@ This method supports the `$filter` query parameter. The following table lists ex
 
 If successful, this method returns a `200 OK` response code and a list of [chatMessages](../resources/chatmessage.md) in the response body.
 
-### Errors
-
-[!INCLUDE [teams-model-A-and-B-errors](../../includes/teams-model-A-and-B-errors.md)]
-
 ## Example
 
 ### Request
@@ -91,10 +77,6 @@ GET https://graph.microsoft.com/v1.0/users/0b4f1cf6-54c8-4820-bbb7-2a1f4257ade5/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-getallmessages-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/chat-getallmessages-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

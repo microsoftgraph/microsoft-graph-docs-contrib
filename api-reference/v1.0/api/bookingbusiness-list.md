@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a collection of [bookingBusiness](../resources/bookingbusiness.md) objects that has been created for the tenant.
 
-This operation returns only the **id** and **displayName** of each Microsoft Bookings business in the collection. For performance considerations, it does not return other properties. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness-get.md) operation.
+This operation returns only the **id** and **displayName** of each Microsoft Bookings business in the collection. For performance considerations, it doesn't return other properties. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness-get.md) operation.
 
 > **Note:** Results are limited to 500 mailboxes. Pagination of the results is not currently supported.
 
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusinesslist-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/bookingbusinesslist-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

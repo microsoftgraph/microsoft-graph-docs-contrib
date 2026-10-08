@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_get_content" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-get-content-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -62,10 +64,6 @@ GET /me/drive/items/{item-id}/content
 [!INCLUDE [sample-code](../includes/snippets/csharp/download-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/download-item-content-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/download-item-content-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,12 +92,12 @@ GET /me/drive/items/{item-id}/content
 
 ### Response
 
-Returns a `302 Found` response redirecting to a preauthenticated download URL for the file, which is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
+Returns a `302 Found` response redirecting to a preauthenticated download URL for the file, which is the same URL available through the `@microsoft.graph.downloadUrl` property on the **driveItem**.
 
 To download the contents of the file your application needs to follow the `Location` header in the response.
 Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header to download.
+Preauthenticated download URLs are valid for a limited time. Use them immediately, as they might expire within minutes. You don't need to include an `Authorization` header when you access the download URL.
 
 <!-- { "blockType": "response" } -->
 

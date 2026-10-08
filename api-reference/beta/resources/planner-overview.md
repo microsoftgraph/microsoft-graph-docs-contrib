@@ -29,7 +29,7 @@ Group members are able to create, edit, resolve, and delete tasks in the plan. G
 
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
-``` http
+```http
 GET /groups/{group-id}/planner/plans
 ```
 
@@ -107,7 +107,7 @@ Alternatively, you can specify the URL for a user.
 ```json
 {
     "container": {
-        "url": "https://graph.microsoft.com/beta/users/me"
+        "url": "https://graph.microsoft.com/beta/users/{id}"
     }
 }
 ```
@@ -121,9 +121,21 @@ To [create a task in a plan](../api/planner-post-tasks.md), set the **planId** p
 Tasks currently can't be created without plans.
 To [retrieve the tasks in a plan](../api/plannerplan-list-tasks.md), make the following HTTP request.
 
-``` http
+```http
 GET /planner/plans/{plan-id}/tasks
 ```
+
+## Goals
+
+[Goals](../resources/plannergoal.md) express the high-level outcomes that a set of tasks in a plan is intended to accomplish. A plan can have multiple goals, and a task can be associated with multiple goals.
+
+To [retrieve the goals in a plan](../api/plannerplan-list-goals.md), make the following HTTP request.
+
+```http
+GET /planner/plans/{plan-id}/goals
+```
+
+Use the read-only **goalIds** property on a [plannerTask](../resources/plannertask.md) object to identify the goals associated with the task.
 
 ## Tasks
 
@@ -158,7 +170,7 @@ Users are subscribed to the following objects.
 
 | Planner resource type | Subscribed instances                                                                                                                                                                                    |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **tasks**                 | <ul><li>Created by the user</li><li>Assigned to the user</li><li>Belong to a plan that the user owns</li><li>Contained in a plan shared with the user through the plan's **sharedWith** collection</li> |
+| **tasks**                 | <ul><li>Created by the user</li><li>Assigned to the user</li><li>Belong to a plan that the user owns</li><li>Contained in a plan shared with the user through the plan's **sharedWith** collection</li></ul> |
 | **plans**                 | <ul><li>Shared with the user through the plan's **sharedWith** collection</li></ul>                                                                                                                     |
 | **buckets**               | <ul><li>Contained in a plan shared with the user through the plan's **sharedWith** collection</li></ul>                                                                                                 |
 
@@ -178,6 +190,11 @@ The delta payload objects that the Planner delta query can currently return are 
 * [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)
 
 Use the corresponding `GET` methods on the resource to obtain the initial state of objects to be populated into the local cache.
+
+
+### Looking at history for the plan
+
+Planner supports an [API](../api/plannerplan-list-historyitems.md) to get the [history](plannerhistoryitem.md) of changes made to [tasks](plannertask.md) within a [plan](plannerplan.md).
 
 ### Differentiating between object creation and object modification
 
@@ -247,4 +264,3 @@ The following are the possible values for the limit types.
 
 All Planner API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
 The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
-

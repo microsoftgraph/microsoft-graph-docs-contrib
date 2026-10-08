@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 03/14/2024
+ms.date: 08/01/2024
 ---
 
 # deviceManagementTroubleshootingEvent resource type

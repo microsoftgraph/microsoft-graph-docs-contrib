@@ -5,7 +5,7 @@ author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 12/06/2024
+ms.date: 07/02/2025
 ---
 
 # Create hardwareOathTokenAuthenticationMethodDevice
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new hardwareOathTokenAuthenticationMethodDevice object. You can optionally create and assign to a user in the same request; Or assign to a user via the [assign](authentication-post-hardwareoathmethods.md) API.
+Create a new [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) object. This API supports two scenarios:
+- Create the new hardware token without assigning to a user. You can then [assign to a user](authentication-post-hardwareoathmethods.md).
+- Create and assign a hardware token to a user in the same request. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -22,10 +24,15 @@ Create a new hardwareOathTokenAuthenticationMethodDevice object. You can optiona
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { "blockType": "permissions", "name": "authenticationmethoddevice_post_hardwareoathdevices" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authenticationmethoddevice-post-hardwareoathdevices-permissions.md)]
 
-[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
+> [!IMPORTANT]
+> When using delegated permissions with work or school accounts, the signed-in user must have an appropriate [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the necessary permissions. The least privileged built-in role required for this operation is *Authentication Policy Administrator*.
+> 
+> To create and assign a hardware OATH token to a user in a single request, the signed-in user must also have:
+> - The *UserAuthenticationMethod.ReadWrite.All* delegated permission.
+> - Either *Authentication Administrator* (least privileged role for assigning hardware tokens to nonadmin users) or *Privileged Authentication Administrator* (least privileged role for assigning hardware tokens to admin users) role.
 
 ## HTTP request
 
@@ -56,8 +63,8 @@ You can specify the following properties when creating a **hardwareOathTokenAuth
 |manufacturer|String|Manufacturer name of the hardware token. Required.|
 |model|String|Model name of the hardware token. Required.|
 |secretKey|String|Secret key of the specific hardware token, provided by the vendor. Required.|
-|timeIntervalInSeconds|Int32|Refresh interval of the 6-digit verification code, in seconds. The possible values are: 30 or 60. Required.|
-|hashFunction|hardwareOathTokenHashFunction|Hash function of the hardrware token. The possible values are: `hmacsha1` or `hmacsha256`. Default value is: `hmacsha1`. Optional.|
+|timeIntervalInSeconds|Int32|Refresh interval of the six-digit verification code, in seconds. The possible values are: 30 or 60. Required.|
+|hashFunction|hardwareOathTokenHashFunction|Hash function of the hardware token. The possible values are: `hmacsha1` or `hmacsha256`. Default value is: `hmacsha1`. Optional.|
 |assignTo|[identity](../resources/identity.md)|User ID if you want to directly assign the token to a user. Optional.|
 |displayName|String|Name that can be provided to the Hardware OATH token. Optional.|
 
@@ -95,10 +102,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-hardwareoathtokenauthenticationmethoddevice-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-hardwareoathtokenauthenticationmethoddevice-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -188,10 +191,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-hardwareoathtokenauthenticationmethoddevice-from-and-assign-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-hardwareoathtokenauthenticationmethoddevice-from-and-assign-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

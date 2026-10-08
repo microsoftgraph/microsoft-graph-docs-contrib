@@ -15,7 +15,7 @@ var requestBody = new ReferenceCreate
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"].IncludedGroups.Ref.PostAsync(requestBody);
+await graphClient.Policies.MobileDeviceManagementPolicies["{mobileDeviceManagementPolicy-id}"].IncludedGroups.Ref.PostAsync(requestBody);
 
 
 ```

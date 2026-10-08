@@ -38,7 +38,7 @@ GET /domains
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
-> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search`, `$top`, and `$filter` query parameters.
+> This API has a [known issue](/graph/known-issues#use-of-specific-query-parameters-on-subscribedskus-and-domains-doesnt-return-the-expected-results) related to the `$search`, `$top`, and `$filter` query parameters.
 
 ## Request headers
 
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/domains
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-domains-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-domains-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -124,6 +120,7 @@ Content-type: application/json
       "isDefault": true,
       "isInitial": true,
       "isRoot": true,
+      "isVerified": true,
       "name": "contoso.com",
       "supportedServices": [
         "Email",

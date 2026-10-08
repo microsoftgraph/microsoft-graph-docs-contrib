@@ -16,17 +16,13 @@ Namespace: microsoft.graph
 
 Restore a deleted [fileStorageContainer](../resources/filestoragecontainer.md) from the deleted container collection.  
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestoragecontainer-restore-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_restore" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-restore-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
@@ -37,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/deletedContainers/{containerId}/restore
 ```
 
@@ -67,16 +63,12 @@ The following example shows a request.
   "name": "filestoragecontainerthis.restore"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/restore
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/filestoragecontainerthisrestore-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/filestoragecontainerthisrestore-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -113,7 +105,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainer"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -122,8 +114,7 @@ Content-Type: application/json
   "id": "b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z",
   "displayName": "My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
-  "createdDateTime": "2021-11-24T15:41:52.347Z",
-  "deletedDateTime": "2022-08-11T12:35:16.300Z"
+  "createdDateTime": "2021-11-24T15:41:52.347Z"
 }
 ```
 

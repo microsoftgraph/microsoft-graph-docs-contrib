@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-hardwareoathtokenauthenticationmethoddevice-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-hardwareoathtokenauthenticationmethoddevice-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-hardwareoathtokenauthenticationmethoddevice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -183,10 +179,6 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-hardwareoathtokenauthenticationmethoddevice-filter-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-hardwareoathtokenauthenticationmethoddevice-filter-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-hardwareoathtokenauthenticationmethoddevice-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -269,10 +261,6 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -20,7 +20,7 @@ The availability of an attendee.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |attendee|[attendeeBase](attendeebase.md)|The email address and type of attendee - whether it's a person or a resource, and whether required or optional if it's a person.|
-|availability|freeBusyStatus| The availability status of the attendee. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|availability|freeBusyStatus| The availability status of the attendee. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 
 ## Relationships
 None.

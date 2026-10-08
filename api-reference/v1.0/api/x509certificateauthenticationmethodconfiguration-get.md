@@ -5,7 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 03/10/2025
+ms.date: 12/09/2025
 ---
 
 # Get x509CertificateAuthenticationMethodConfiguration
@@ -28,12 +28,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
 
 ## Optional query parameters
-This method does not support the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,23 +50,18 @@ If successful, this method returns a `200 OK` response code and a [x509Certifica
 ## Examples
 
 ### Request
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_x509certificateauthenticationmethodconfiguration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-x509certificateauthenticationmethodconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-x509certificateauthenticationmethodconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -104,7 +99,7 @@ The following response object shows an x509CertificateAuthenticationMethodConfig
   "@odata.type": "microsoft.graph.x509CertificateAuthenticationMethodConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -133,6 +128,18 @@ Content-Type: application/json
         "state": "disabled",
         "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []
     },
+    "certificateAuthorityScopes": [
+        {
+            "subjectKeyIdentifier": "aaaaaaaabbbbcccc111122222222222222333333",
+            "publicKeyInfrastructureIdentifier": "Contoso PKI",
+            "includeTargets": [
+            {
+                "id": "aaaaaaaa-bbbb-cccc-1111-222222222222",
+                "targetType": "group"
+            }
+            ]
+        } 
+    ],
     "includeTargets": [
         {
             "targetType": "group",
@@ -143,4 +150,3 @@ Content-Type: application/json
     "excludeTargets": []
 }
 ```
-

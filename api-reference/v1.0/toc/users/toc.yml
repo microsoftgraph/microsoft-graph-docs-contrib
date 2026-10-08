@@ -58,6 +58,18 @@ items:
       href: ../../api/user-list-calendarview.md
     - name: Reminder view
       href: ../../api/user-reminderview.md
+  - name: Cloud PC
+    items:
+    - name: List Cloud PCs
+      href: ../../api/user-list-cloudpcs.md
+  - name: Data security and governance
+    items:
+    - name: Compute protection scopes
+      href: ../../api/userprotectionscopecontainer-compute.md
+    - name: Create content activity
+      href: ../../api/activitiescontainer-post-contentactivities.md
+    - name: Process content
+      href: ../../api/userdatasecurityandgovernance-processcontent.md
   - name: Delegated permission grants
     items:
     - name: List delegated permission grants
@@ -100,6 +112,10 @@ items:
       href: ../../api/drive-get.md
     - name: List children
       href: ../../api/driveitem-list-children.md
+  - name: Employee experience
+    items:
+    - name: List assigned roles
+      href: ../../api/employeeexperienceuser-list-assignedroles.md
   - name: Groups
     items:
     - name: List joined teams
@@ -110,16 +126,16 @@ items:
       href: ../../api/user-list-transitivememberof.md
   - name: Insights
     items:
-    - name: List shared
-      href: ../../api/insights-list-shared.md
     - name: List trending
       href: ../../api/insights-list-trending.md
-    - name: List used
-      href: ../../api/insights-list-used.md
     - name: Get content discovery settings
       href: ../../api/usersettings-get.md
     - name: Update content discovery settings
       href: ../../api/usersettings-update.md
+    - name: List shared (deprecated)
+      href: ../../api/insights-list-shared.md
+    - name: List used (deprecated)
+      href: ../../api/insights-list-used.md
   - name: License management
     items:
     - name: Assign license
@@ -150,6 +166,10 @@ items:
       href: ../../api/user-sendmail.md
     - name: Get mail tips
       href: ../../api/user-getmailtips.md
+    - name: List notes
+      href: ../../api/user-list-notes.md
+    - name: Create note
+      href: ../../api/user-post-notes.md
   - name: Notes
     items:
     - name: List notebooks
@@ -214,6 +234,8 @@ items:
       href: ../../api/user-post-sponsors.md
     - name: List
       href: ../../api/user-list-sponsors.md
+    - name: List sponsorOf
+      href: ../../api/user-list-sponsorof.md
     - name: Remove
       href: ../../api/user-delete-sponsors.md
   - name: Teamwork

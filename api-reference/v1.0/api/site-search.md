@@ -26,13 +26,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "site_search" } -->
 [!INCLUDE [permissions-table](../includes/permissions/site-search-permissions.md)]
 
->**Note:** This method does not support the Sites.Selected application permission.
+>**Note:** This method doesn't support the Sites.Selected application permission.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
-``` http
+```http
 GET /sites?search={query}
 ```
 
@@ -58,16 +58,12 @@ If successful, this method returns a `200 OK` response code and the collection o
   "name": "list_permission_for_site"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites?search={query}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-for-site-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-permission-for-site-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

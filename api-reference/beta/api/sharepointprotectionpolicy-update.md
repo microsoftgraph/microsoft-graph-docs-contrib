@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}
 ```
 
@@ -49,7 +49,8 @@ In the request body, provide a JSON representation of following properties to up
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Optional|
+|displayName|String|Display name of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Optional|
+|siteExclusionUnits@delta|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|Optional. Collection of [siteExclusionUnit](../resources/siteexclusionunit.md) objects to be added to or removed from the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Use this property to modify the exclusion list for policies configured with [backupPolicyProtectionMode](../resources/enums.md#backuppolicyprotectionmode-values) set to `fullServiceBackup`. |
 |siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of siteProtectionUnit objects to be added to or removed from the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Required.|
 
 To remove a **siteProtectionUnit** from the policy, specify the `@removed` annotation in the request body for the protection unit together with the ID of the [siteProtectionUnit](../resources/siteprotectionunit.md).
@@ -72,7 +73,7 @@ The following example shows a request.
   "name": "sharepointprotectionpolicy_update"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 Content-Type: application/json
 
@@ -117,10 +118,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/sharepointprotectionpolicy-update-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/sharepointprotectionpolicy-update-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/sharepointprotectionpolicy-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -152,7 +149,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.sharePointProtectionPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 
 {

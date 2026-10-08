@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /sites/{site-id}/pages/{pageId}/microsoft.graph.newsLinkPage
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "update_newslinkpage"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/sites/c1370818-f5e0-4a40-a99b-be4520640642/pages/637c601e-0d0e-43c0-b50f-b18513bb9de2/microsoft.graph.newsLinkPage
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -105,7 +105,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

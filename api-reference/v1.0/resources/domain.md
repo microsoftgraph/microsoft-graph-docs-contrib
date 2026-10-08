@@ -22,7 +22,7 @@ To associate a domain with a tenant:
 
 2. [Retrieve](../api/domain-list-verificationdnsrecords.md) the domain verification records. Add the verification record details to the domain's zone file using the domain registrar or DNS server configuration.
 
-3. [Verify](../api/domain-verify.md) the ownership of the domain. This verifies the domain and sets the **isVerified** property to `true`.
+3. [Verify](../api/domain-verify.md) the ownership of the domain, including executing external admin takeover. This operation sets the **isVerified** property to `true`.
 
 4. [Indicate](../api/domain-update.md) the supported services you plan to use with the domain.
 
@@ -49,7 +49,7 @@ To associate a domain with a tenant:
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-|authenticationType|String| Indicates the configured authentication type for the domain. The value is either `Managed` or `Federated`. `Managed` indicates a cloud managed domain where Microsoft Entra ID performs user authentication. `Federated` indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable.  <br/><br/>To update this property in delegated scenarios, the calling app must be assigned the *Directory.AccessAsUser.All* delegated permission.  |
+|authenticationType|String| Indicates the configured authentication type for the domain. The value is either `Managed` or `Federated`. `Managed` indicates a cloud managed domain where Microsoft Entra ID performs user authentication. `Federated` indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable.  <br/><br/>To update this property in delegated scenarios, the calling app must be assigned the *Domain-InternalFederation.ReadWrite.All* permission.  |
 |availabilityStatus|String| This property is always `null` except when the [verify](../api/domain-verify.md) action is used. When the [verify](../api/domain-verify.md) action is used, a **domain** entity is returned in the response. The **availabilityStatus** property of the **domain** entity in the response is either `AvailableImmediately` or `EmailVerifiedDomainTakeoverScheduled`.|
 |id|String| The fully qualified name of the domain. Key, immutable, not nullable, unique. |
 |isAdminManaged|Boolean| The value of the property is `false` if the DNS record management of the domain is delegated to Microsoft 365. Otherwise, the value is `true`. Not nullable |

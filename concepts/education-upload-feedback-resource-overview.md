@@ -6,6 +6,7 @@ author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Upload feedback files for education submissions using the Microsoft Graph API

@@ -2,10 +2,10 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on a Microsoft Graph resource changes."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 doc_type: apiPageType
 ms.subservice: change-notifications
-ms.date: 07/26/2024
+ms.date: 05/05/2026
 ---
 
 # Create subscription
@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 
 Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
 
-To identify the resources for which you can create subscriptions and the limitations on subscriptions, see [Set up notifications for changes in resource data: Supported resources](/graph/webhooks#supported-resources).
+To identify the resources for which you can create subscriptions and the limitations on subscriptions, see [Set up notifications for changes in resource data: Supported resources](/graph/change-notifications-overview#supported-resources).
 
-Some resources support rich notifications, that is, notifications that include resource data. For more information about these resources, see [Set up change notifications that include resource data: Supported resources](/graph/webhooks-with-resource-data#supported-resources).
+Some resources support rich notifications, that is, notifications that include resource data. For more information about these resources, see [Set up change notifications that include resource data: Supported resources](/graph/change-notifications-with-resource-data#supported-resources).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -29,13 +29,15 @@ Creating a subscription requires read permission to the resource. For example, t
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing the permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 > [!NOTE]
-> - Due to security restrictions, Microsoft Graph subscriptions do not support write access permissions when only read access permissions are needed.
+> - Due to security restrictions, Microsoft Graph subscriptions don't support write access permissions when only read access permissions are needed.
 > - Some resources support change notifications in multiple scenarios, each of which may require different permissions. In those cases, use the resource path to differentiate the scenarios.
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-|[aiInteraction](../resources/aiinteraction.md)  <br /> `copilot/users/{userId}/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions that a particular user is part of. | AiEnterpriseInteraction.Read  | Not supported.  | AiEnterpriseInteraction.Read.All, AiEnterpriseInteraction.Read.User  |
-|[aiInteraction](../resources/aiinteraction.md)  <br /> `copilot/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions in an organization. | Not supported.  | Not supported.  | AiEnterpriseInteraction.Read.All  |
+|[aiInsights](/microsoft-365/copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight) <br /> `/copilot/users/{userId}/onlineMeetings/getAllAiInsights` <br /> Copilot AI insights from meetings that a particular user is part of. | OnlineMeetingAiInsight.Read.All    | Not supported.  | OnlineMeetingAiInsight.Read.All |
+|[aiInsights](/microsoft-365/copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight) <br/> `/copilot/users/{userId}/onlineMeetings/{onlineMeetingId}/aiInsights` <br/> Copilot AI insights for a particular meeting. | OnlineMeetingAiInsight.Read.All    | Not supported.  | OnlineMeetingAiInsight.Read.All |
+|[aiInteraction](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction)  <br /> `copilot/users/{userId}/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions that a particular user is part of. | AiEnterpriseInteraction.Read  | Not supported.  | AiEnterpriseInteraction.Read.All, AiEnterpriseInteraction.Read.User  |
+|[aiInteraction](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction)  <br /> `copilot/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions in an organization. | Not supported.  | Not supported.  | AiEnterpriseInteraction.Read.All  |
 |[approvalItems](../resources/approvalItem.md) | Not supported.  | Not supported.  | ApprovalSolution.ReadWrite.All  |
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported.  | Not supported.  | CallRecords.Read.All  |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/getAllRecordings` <br /> Any recording becomes available in the tenant. | Not supported. | Not supported. | OnlineMeetingRecording.Read.All |
@@ -71,6 +73,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Not supported.  | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported.  | Not supported.  |
+|[Microsoft Entra Health monitoring alert](../resources/healthmonitoring-alert.md) <br />`/reports/healthmonitoring/alerts`| HealthMonitoringAlertConfig.ReadWrite.All | Not supported. | HealthMonitoringAlertConfig.ReadWrite.All |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported.  | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
 |[offerShiftRequest](../resources/offershiftrequest.md) <br />`/teams/{id}/schedule/offerShiftRequests` <br />Changes to any offer shift request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported. | Schedule.Read.All, Schedule.ReadWrite.All |
@@ -85,9 +88,10 @@ Depending on the resource and the permission type (delegated or application) req
 |[team](../resources/team.md) <br />`/teams` <br />All teams in an organization. | Not supported.  | Not supported.  | Team.ReadBasic.All, TeamSettings.Read.All |
 |[team](../resources/team.md) <br />`/teams/{id}` <br />A particular team. | Team.ReadBasic.All, TeamSettings.Read.All | Not supported.  | Team.ReadBasic.All, TeamSettings.Read.All |
 |[timeOffRequest](../resources/timeoffrequest.md) <br />`/teams/{id}/schedule/timeOffRequests` <br />Changes to any time off request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported. | Schedule.Read.All, Schedule.ReadWrite.All |
-|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported.  |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All  |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 |[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
+|[virtualEventTownhall](../resources/virtualeventtownhall.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported.  |
 
 > [!NOTE]
@@ -102,6 +106,9 @@ Depending on the resource and the permission type (delegated or application) req
 > - AiEnterpriseInteraction.Read.User
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
+
+<!-- ### aiInsights -->
+[!INCLUDE [copilot-aiinsights-subscription-notes.md](../../includes/copilot-aiinsights-subscription-notes.md)]
 
 <!-- ### aiInteraction -->
 [!INCLUDE [copilot-aiinteraction-subscription-notes.md](../../includes/copilot-aiinteraction-subscription-notes.md)]
@@ -122,10 +129,10 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 
 ### onlineMeetings, presence
 
-Subscriptions on **onlineMeetings** and **presence** require the **encryptionCertificate** and **encryptionCertificateId** property when [creating a subscription](/graph/webhooks-with-resource-data#creating-a-subscription) for notifications with encrypted resource data. For more information, see [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
+Subscriptions on **onlineMeetings** and **presence** require the **encryptionCertificate** and **encryptionCertificateId** property when [creating a subscription](/graph/change-notifications-with-resource-data#creating-a-subscription) for notifications with encrypted resource data. For more information, see [setting up change notifications to include resource data](/graph/change-notifications-with-resource-data).
 For details about online meeting subscriptions, see [Get change notifications for online meetings](/graph/changenotifications-for-onlinemeeting).
 
-### virtualEventWebinar
+### virtualEventWebinar and virtualEventTownhall
 
 Subscriptions on virtual events support only basic notifications and are limited to a few entities of a virtual event. For more information about the supported subscription types, see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtualevent).
 
@@ -186,10 +193,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-subscription-from-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-subscription-from-subscriptions-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -242,6 +245,7 @@ The following are valid values for the resource property.
 |[event](../resources/event.md)|`me/events`|
 |[group](../resources/group.md)|`groups`|
 |[group conversation](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[health monitoring alert](../resources/healthmonitoring-alert.md)|`reports/healthmonitoring/alerts`|
 |[list](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[message](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[onlineMeeting](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`|
@@ -287,9 +291,40 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Create a subscription targeting a Web Push endpoint
+
+The following example creates a subscription that delivers encrypted change notifications to a browser-native Web Push endpoint (such as `web.push.apple.com`, `fcm.googleapis.com`, or `updates.push.services.mozilla.com`).
+
+Before creating this subscription, the browser-based application must:
+
+1. Call the [getVapidPublicKey](subscription-getvapidpublickey.md) function on the subscription collection to obtain Microsoft Graph's VAPID public key (RFC 8292).
+2. Call `PushManager.subscribe({ applicationServerKey: <vapidPublicKey> })` to register with the browser's push service. The browser returns a `PushSubscription` containing `endpoint`, `p256dh`, and `auth` values.
+
+The application then creates the subscription with the **notificationUrl** set to the bare push service endpoint URL, and the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPushEncryptionSecret** properties set to the values returned by the browser. After creation, Microsoft Graph encrypts each notification per RFC 8291 using the stored keys and signs the request with VAPID before posting to the push service.
+
+#### Request
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://web.push.apple.com/QKmFUwSBFK8g7iY4t1...",
+  "resource": "me/mailFolders('Inbox')/messages",
+  "expirationDateTime": "2026-12-31T11:00:00.0000000Z",
+  "clientState": "secretClientValue",
+  "vapidPublicKey": "BNKm...base64url-encoded-server-vapid-public-key...",
+  "webPushEncryptionP256dhPublicKey": "BNcR...base64url-encoded-client-public-key...",
+  "webPushEncryptionSecret": "tBHI...base64url-encoded-auth-secret..."
+}
+```
+
+> **Note:** The **webPushEncryptionSecret** property is write-only. It's never returned in `GET` responses (returned as `null`). Treat the value as a secret.
+
 #### Notification endpoint validation
 
-The subscription notification endpoint (specified in the **notificationUrl** property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
+The subscription notification endpoint (specified in the **notificationUrl** property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/change-notifications-overview#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
 
 [error-response]: /graph/errors
 

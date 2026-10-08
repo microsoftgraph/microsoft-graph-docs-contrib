@@ -18,7 +18,7 @@ Retrieve the properties and relationships of a [callRecord](../resources/callrec
 
 There are two ways to get the **id** of a **callRecord**:
 
-* Subscribe to [change notifications](/graph/api/resources/webhooks) to the `/communications/callRecords` endpoint.
+* Subscribe to [change notifications](/graph/api/resources/change-notifications-api-overview) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
 > [!WARNING]
@@ -96,10 +96,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/e523d2ed-2966-4b
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-callrecord-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -190,10 +186,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/e523d2ed-2966-4b
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-expanded-sessions-and-segments-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-callrecord-expanded-sessions-and-segments-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -361,10 +353,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/e523d2ed-2966-4b
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-expanded-participants-v2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-callrecord-expanded-participants-v2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

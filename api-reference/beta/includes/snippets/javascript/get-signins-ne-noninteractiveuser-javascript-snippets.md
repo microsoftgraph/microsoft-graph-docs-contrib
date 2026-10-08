@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let signIns = await client.api('/auditLogs/signins')
+let signIns = await client.api('/auditLogs/signins?&$filter=(signInEventTypes/any(t: t ne \'interactiveUser\'))&$orderby=createdDateTime DESC&$top=10')
 	.version('beta')
 	.filter('(signInEventTypes/any(t: t ne \'interactiveUser\'))')
 	.orderby('createdDateTime DESC')

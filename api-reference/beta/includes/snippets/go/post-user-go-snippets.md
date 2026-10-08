@@ -25,8 +25,8 @@ additionalAttributes := []graphmodelsindustrydata.AdditionalUserAttributesable {
 }
 managementOptions.SetAdditionalAttributes(additionalAttributes)
 additionalOptions := graphmodelsindustrydata.NewAdditionalUserOptions()
-markAllStudentsAsMinors := true
-additionalOptions.SetMarkAllStudentsAsMinors(&markAllStudentsAsMinors) 
+studentAgeGroup := graphmodels.MINOR_STUDENTAGEGROUP 
+additionalOptions.SetStudentAgeGroup(&studentAgeGroup) 
 allowStudentContactAssociation := false
 additionalOptions.SetAllowStudentContactAssociation(&allowStudentContactAssociation) 
 managementOptions.SetAdditionalOptions(additionalOptions)

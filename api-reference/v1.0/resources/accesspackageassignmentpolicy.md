@@ -27,13 +27,14 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedTargetScope|allowedTargetScope|Principals that can be assigned the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`.|
+|accessPackageNotificationSettings|[accessPackageNotificationSettings](../resources/accesspackagenotificationsettings.md)|Represents the settings for email notifications for requests to an access package.|
+|allowedTargetScope|allowedTargetScope|Principals that can be assigned the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `allDirectoryAgentIdentities`, `unknownFutureValue`.|
 |automaticRequestSettings|[accessPackageAutomaticRequestSettings](../resources/accessPackageAutomaticRequestSettings.md)|This property is only present for an auto assignment policy; if absent, this is a request-based policy.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|The description of the policy.|
 |displayName|String|The display name of the policy.|
 |expiration|[expirationPattern](../resources/expirationpattern.md)|The expiration date for assignments created in this policy.|
-|id|String|Read only.|
+|id|String|Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Specifies the settings for approval of requests for an access package assignment through this policy. For example, if approval is required for new requests.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Provides additional settings to select who can create a request for an access package assignment through this policy, and what they can include in their request.|
@@ -43,10 +44,10 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Read-only.  Supports `$expand`.|
+|accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Read-only. Supports `$expand`.|
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Catalog of the access package containing this policy. Read-only.|
-|questions|[accessPackageQuestion](../resources/accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
 |customExtensionStageSettings|[customExtensionStageSetting](../resources/customextensionstagesetting.md) collection|The collection of stages when to execute one or more custom access package workflow extensions. Supports `$expand`.|
+|questions|[accessPackageQuestion](../resources/accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -86,10 +87,13 @@ The following JSON representation shows the resource type.
   "reviewSettings": {
     "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
   },
+    "accessPackageNotificationSettings": {
+    "@odata.type": "microsoft.graph.accessPackageNotificationSettings"
+  },
   "specificAllowedTargets": [
     {
       "@odata.type": "microsoft.graph.singleUser"
-    }
+    },
   ]
  
 }

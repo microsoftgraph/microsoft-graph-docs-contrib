@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. 
 
-By default, this operation does not return the **key** property that represents the actual recovery key. To include the **key** property in the response, use the `$select` OData query parameter. Including the `$select` query parameter triggers a Microsoft Entra audit of the operation and generates an audit log. You can find the log in [Microsoft Entra audit logs](/azure/active-directory/reports-monitoring/concept-audit-logs) under the KeyManagement category.
+By default, this operation doesn't return the **key** property that represents the actual recovery key. To include the **key** property in the response, use the `$select` OData query parameter. Including the `$select` query parameter triggers a Microsoft Entra audit of the operation and generates an audit log. You can find the log in [Microsoft Entra audit logs](/azure/active-directory/reports-monitoring/concept-audit-logs) under the KeyManagement category.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -78,7 +78,7 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 ### Example 1: Get the BitLocker key by specifying the key **id**
 
 #### Request
-The following example shows a request. This example does not return the **key** property.
+The following example shows a request. This example doesn't return the **key** property.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,10 +96,6 @@ ocp-client-version: 1.2
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-bitlockerrecoverykey-3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -174,10 +170,6 @@ ocp-client-version: 1.2
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-4-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-bitlockerrecoverykey-4-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

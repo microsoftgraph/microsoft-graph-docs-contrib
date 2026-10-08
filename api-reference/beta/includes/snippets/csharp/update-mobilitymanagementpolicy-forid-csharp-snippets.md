@@ -9,16 +9,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Models;
 
-var requestBody = new MobilityManagementPolicy
+var requestBody = new MobileDeviceManagementPolicy
 {
-	OdataType = "#microsoft.graph.mobilityManagementPolicy",
+	OdataType = "#microsoft.graph.mobileDeviceManagementPolicy",
 	ComplianceUrl = "https://portal.uem.contoso.com/?portalAction=Compliance",
 	DiscoveryUrl = "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc",
 	TermsOfUseUrl = "https://portal.uem.contoso.com/TermsofUse.aspx",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"].PatchAsync(requestBody);
+var result = await graphClient.Policies.MobileDeviceManagementPolicies["{mobileDeviceManagementPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

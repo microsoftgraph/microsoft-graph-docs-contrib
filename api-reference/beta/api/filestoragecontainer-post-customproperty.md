@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /storage/fileStorage/containers/{containerId}/customProperties
 ```
 
@@ -48,12 +48,13 @@ You can specify the following properties when you create a custom property.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|The value of the custom property. Required.|
+|isPatternToken|Boolean|Indicates whether **value** is a `urlTemplate` pattern (for example, a token such as `{itemId}` used to configure redirect behavior when opening files), rather than a literal value that consumers must resolve before use. Optional. The default value is `false`.|
 |isSearchable|Boolean|A flag to indicate whether the property is searchable. Optional. The default value is `false`.|
+|value|String|The value of the custom property. Required.|
 
 ## Response
 
-If successful, this method returns a `200 Created` response code.
+If successful, this method returns a `201 Created` response code.
 
 ## Examples
 
@@ -67,7 +68,7 @@ The following example shows how to create a custom property called `clientUnique
   "name": "post_filestoragecontainer_customproperty_1"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties
 Content-Type: application/json
 
@@ -91,8 +92,8 @@ The following example shows the response. By default, the property isn't searcha
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 200 Created
+```http
+HTTP/1.1 201 Created
 ```
 ### Example 2: Create a custom searchable property
 
@@ -104,7 +105,7 @@ The following example shows how to create a searchable custom property called `c
   "name": "post_filestoragecontainer_customproperty_2"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties
 Content-Type: application/json
 
@@ -129,8 +130,8 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 200 Created
+```http
+HTTP/1.1 201 Created
 ```
 
 

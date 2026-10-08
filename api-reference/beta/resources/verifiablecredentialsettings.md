@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Settings for verifiable credential types that a requestor must present to a service such as Entitlement Management.
 
-Used for the **verifiableCredentialSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md).
+Used for the **verifiableCredentialSettings** property of an [access package assignment policy](../resources/accesspackageassignmentpolicy.md).
 
 
 ## Properties

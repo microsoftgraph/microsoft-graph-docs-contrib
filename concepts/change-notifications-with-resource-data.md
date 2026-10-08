@@ -3,7 +3,7 @@ title: "Set up Microsoft Graph change notifications with resource data"
 description: "Learn how to set up Microsoft Graph change notifications with resource data to receive updated resources directly in the notification payload."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: jessieli-ad
 ms.topic: concept-article
 ms.subservice: "change-notifications"
 ms.localizationpriority: high
@@ -28,6 +28,14 @@ Rich notifications include resource data with these details:
 - The ID and type of the changed resource instance, found in the **resourceData** property.
 - All property values of the resource instance, encrypted as specified in the subscription, found in the **encryptedContent** property.
 - Specific properties of the resource, depending on the resource, or if requested using a `$select` parameter in the **resource** URL of the subscription.
+
+### Application configuration for notifications
+
+Before creating a subscription with resource data, configure application access for the service principal object representing the tenant-app pair by setting the **appRoleAssignmentRequired** property as follows::
+- [Recommended] Setting it to `false`. [Learn how to configure this property](./tutorial-applications-basics.md#restrict-sign-in-to-only-users-assigned-all-roles-on-the-app).
+- Alternatively, if the property must remain `true`, explicitly assign the *Microsoft Graph Change Tracking* service principal (**appId** is `0bf30f3b-4a52-48df-9a82-234910c4a086`) a resource app role supported by the Microsoft Graph resource. [Learn how to grant app roles to a service principal](./permissions-grant-via-msgraph.md?pivots=grant-application-permissions#step-2-grant-an-app-role-to-a-client-service-principal).
+
+If neither condition is met, the notification payload will contain a `null` [validation token](#validation-tokens-in-the-change-notification).
 
 ## Create a subscription
 
@@ -101,9 +109,12 @@ For basic notifications, validate them using the **clientState** value as explai
 Rich notifications include a **validationTokens** property, which contains an array of [JSON Web Tokens](https://datatracker.ietf.org/doc/html/rfc7519) (JWT). Each token is unique to the app and tenant pair. A change notification might contain a mix of items for various apps and tenants that subscribed using the same **notificationUrl**.
 
 > [!NOTE]
-> Microsoft Graph doesn't send validation tokens for [change notifications delivered through Azure Event Hubs](change-notifications-delivery.md) because the subscription service doesn't need to validate the **notificationUrl** for Event Hubs.
+> Microsoft Graph doesn't send validation tokens for [change notifications delivered through Azure Event Hubs](change-notifications-delivery-event-hubs.md) because the subscription service doesn't need to validate the **notificationUrl** for Event Hubs.
 
 In the following example, the change notification contains two items for the same app, and for two different tenants, therefore the **validationTokens** array contains two tokens that need to be validated.
+
+> [!TIP]
+> A `null` value for **validationTokens** indicates Microsoft Graph couldn't encrypt the resource data due to incorrect app configuration. Review the [Application configuration for notifications](#application-configuration-for-notifications) section to fix this issue.
 
 ```json
 {
@@ -159,11 +170,16 @@ Follow these steps to validate tokens and the apps that generate them:
     - Validate the "audience" in the token matches your app ID.
     - If you have more than one app receiving change notifications, make sure to check for multiple IDs.
 
-4. Validate that the token's `azp` property matches the expected value of `0bf30f3b-4a52-48df-9a82-234910c4a086`, which represents the Microsoft Graph change notification publisher.
+4. Validate the token's caller identity to ensure the notification originates from the Microsoft Graph change notification service. The expected caller identity is `0bf30f3b-4a52-48df-9a82-234910c4a086`. The claim used to represent the caller application depends on the token's version:
+    - For v1.0 tokens (`ver` = `"1.0"`), the caller identity is represented by the `appid` claim.
+    - For v2.0 tokens (`ver` = `"2.0"`), the caller identity is represented by the `azp` claim.
+
+    > [!IMPORTANT]
+    > Failure to validate the appropriate claim may result in accepting notifications from an untrusted publisher.
 
 ### Example JWT token
 
-The following example shows the properties in the JWT token needed for validation.
+The following example shows the properties in a v2.0 JWT token needed for validation.
 
 ```json
 {
@@ -319,7 +335,7 @@ export function isTokenValid(token, appId, tenantId) {
 }
 ```
 
---- 
+---
 
 ## Decrypting resource data from change notifications
 
@@ -388,7 +404,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 
 1. Use the symmetric key to calculate the HMAC-SHA256 signature for the value in **data**. Compare it to the value in **dataSignature**. If they don't match, assume the payload is tampered with, and don't decrypt it.
 
-1. Decrypt the **data** proeprty using the symmetric key with Advanced Encryption Standard (AES), such as the .NET [Aes](/dotnet/api/system.security.cryptography.aes?view=netframework-4.8&preserve-view=true).
+1. Decrypt the **data** property using the symmetric key with Advanced Encryption Standard (AES), such as the .NET [Aes](/dotnet/api/system.security.cryptography.aes?view=netframework-4.8&preserve-view=true).
 
     - Use the following decryption parameters for the AES algorithm:
 

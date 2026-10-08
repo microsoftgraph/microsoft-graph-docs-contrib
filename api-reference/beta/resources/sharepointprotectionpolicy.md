@@ -26,34 +26,35 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |:---|:---|:---|
 |[Create](../api/backuprestoreroot-post-sharepointprotectionpolicies.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Create a new [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
 |[Update](../api/sharepointprotectionpolicy-update.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Update the properties of a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[List site exclusion units](../api/sharepointprotectionpolicy-list-siteexclusionunits.md)|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|Get a list of [site exclusion units](../resources/siteexclusionunit.md) associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).|
+|[Get site exclusion unit](../api/siteexclusionunit-get.md)|[siteExclusionUnit](../resources/siteexclusionunit.md)|Get a [site exclusion unit](../resources/siteexclusionunit.md) associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).|
+|[List site exclusion units bulk addition jobs](../api/sharepointprotectionpolicy-list-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|Get a list of [site exclusion units bulk addition jobs](../resources/siteexclusionunitsbulkadditionjob.md) associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).|
+|[Create site exclusion units bulk addition job](../api/sharepointprotectionpolicy-post-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Create a [site exclusion units bulk addition job](../resources/siteexclusionunitsbulkadditionjob.md) for a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).|
+|[Get site exclusion units bulk addition job](../api/siteexclusionunitsbulkadditionjob-get.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Get a [site exclusion units bulk addition job](../resources/siteexclusionunitsbulkadditionjob.md) associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the protection rule associated to the policy.|
-|displayName|String|The name of the policy being created.|
-|createdDateTime|DateTimeOffset|The time of creation of the policy.|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who modified the policy.|
-|lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification of the policy.|
-|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Retention settings for the policy.|
-|status|[protectionPolicyStatus](../resources/sharepointprotectionpolicy.md#protectionpolicystatus-values)|The status of the policy. The value is an aggregated status of the protection units. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
-
-### protectionPolicyStatus values
-
-|Member | Description |
-|:------|:------------|
-|active | All units are protected.|
-|activeWithErrors | Some units are protected while others are unprotected.|
-|inactive | All units are unprotected.|
-|updating | Some or all units are in a `protectRequested`, `unprotectRequested`, or `removeRequested` state.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|createdDateTime|DateTimeOffset|The date and time when the policy was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|displayName|String|The name of the policy being created. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|id|String|The unique identifier of the protection rule associated to the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|isEnabled|Boolean|Indicates whether the policy is enabled. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who modified the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|offboardRequestedDateTime|DateTimeOffset|The date and time when offboarding was requested for the protection policy. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|protectionMode|[backupPolicyProtectionMode](../resources/enums.md#backuppolicyprotectionmode-values)|The backup mode for the protection policy. The possible values are: `standard`, `fullServiceBackup`, `unknownFutureValue`. When set to `fullServiceBackup`, the entire workload is backed up and specific sites can be excluded using exclusion units. When set to `standard`, only the sites explicitly added as protection units are backed up. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Retention settings for the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The status of the policy. The value is an aggregated status of the protection units. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`, `offboardRequested`, `offboarded`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `offboardRequested`, `offboarded`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|siteExclusionUnits|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|The site exclusion units associated with the SharePoint protection policy.|
+|siteExclusionUnitsBulkAdditionJobs|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|The list of bulk addition jobs for site exclusion units associated with the SharePoint protection policy.|
 |siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|The rules associated with the SharePoint Protection policy.|
 |siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection| The protection units (sites) that are protected under the site protection policy.|
 
@@ -71,21 +72,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointProtectionPolicy",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "status": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isEnabled": "Boolean",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "retentionSettings": [
-    {
-      "@odata.type": "microsoft.graph.retentionSetting"
-    }
-  ]
+  "offboardRequestedDateTime": "String (timestamp)",
+  "protectionMode": "String",
+  "protectionPolicyArtifactCount": {"@odata.type": "microsoft.graph.protectionPolicyArtifactCount"},
+  "retentionSettings": [{"@odata.type": "microsoft.graph.retentionSetting"}],
+  "status": "String"
 }
 ```

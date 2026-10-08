@@ -12,9 +12,9 @@ ms.date: 10/28/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Provide a summary of all workflows processed within a tenant for a specified period. Because the amount of results for listed workflows as returned by the [List workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md) does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
+Provide a summary from the [insights](../resources/identitygovernance-insights.md) resource of [workflow](../resources/identitygovernance-workflow.md) objects processed within a tenant for a specified period. Because the list returned by [List workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md) doesn't indicate which workflows were processed, this summary gives you a quick overview based on counts.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -80,10 +80,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/insig
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/insightsthisworkflowsprocessedsummary-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/insightsthisworkflowsprocessedsummary-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

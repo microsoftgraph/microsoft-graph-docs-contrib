@@ -81,10 +81,6 @@ GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-list-calendarpermissions-get-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/calendar-list-calendarpermissions-get-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/calendar-list-calendarpermissions-get-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

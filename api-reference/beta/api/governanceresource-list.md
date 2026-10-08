@@ -1,5 +1,5 @@
 ---
-title: "List governanceResources"
+title: "List governanceResources (deprecated)"
 description: "Retrieve a collection of governanceResource that the requestor has access to."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/13/2024
 ---
 
-# List governanceResources
+# List governanceResources (deprecated)
 
 Namespace: microsoft.graph
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
 ## Examples
 
 This example lists all resources I can currently access.
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -64,10 +64,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-governanceresources-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-governanceresources-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -96,7 +92,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 
 >**Note:** The response object shown here might be shortened for readability.

@@ -1,7 +1,7 @@
 ---
 title: "multiTenantOrganizationMemberTransitionDetails resource type"
 description: "Details of the processing status for a tenant in a multitenant organization."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

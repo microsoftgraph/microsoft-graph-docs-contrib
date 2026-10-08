@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/mailFolders/{mailFolderId}/updateAllMessagesReadState
 POST /users/{userId}/mailFolders/{mailFolderId}/updateAllMessagesReadState
 ```
@@ -57,13 +57,13 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code. The response contains a `Location` header that specifies the location of the [mailFolderOperation](./mailfolderoperation-get.md) that was created to handle the updating read state of the messages. Check the status of the updating operation by making a GET request to this location.
 
 ## Examples
 
 ### Request
 
-The following example shows a request.
+The following example marks messages in the mail folder as read.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -71,22 +71,18 @@ The following example shows a request.
   "sampleKeys": ["AAMkAGVmMDEzM"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/updateAllMessagesReadState
 Content-Type: application/json
 
 {
-  "isRead": "true",
-  "suppressReadReceipts": "true"
+  "isRead": true,
+  "suppressReadReceipts": true
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolderthisupdateallmessagesreadstate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/mailfolderthisupdateallmessagesreadstate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -124,6 +120,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 204 No Content
+```http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/users('95de90d3-2e59-4c87-9303-8cbc24ec3985')/mailFolders('AAMkAGRkZTFiMD')/operations('5667fd27-dc59-4e78-9ad2-857dbb437841')
 ```

@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -90,6 +90,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|A list of managed apps that will be shown when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |kioskModeWallpaperUrl|String|URL to a publicly accessible image to use for the wallpaper when the device is in Kiosk Mode.|
 |kioskModeExitCode|String|Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.|
+|isKioskModeExitCodeSet|Boolean|Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.|
 |kioskModeVirtualHomeButtonEnabled|Boolean|Whether or not to display a virtual home button when the device is in Kiosk Mode.|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Indicates whether the virtual home button is a swipe up home button or a floating home button. Possible values are: `notConfigured`, `swipeUp`, `floating`.|
 |kioskModeBluetoothConfigurationEnabled|Boolean|Whether or not to allow a user to configure Bluetooth settings in Kiosk Mode.|
@@ -112,6 +113,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) collection|A list of managed folders for a device in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) collection|The ordering of items on Kiosk Mode Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |kioskModeManagedHomeScreenAutoSignout|Boolean|Whether or not to automatically sign-out of MHS and Shared device mode applications after inactive for Managed Home Screen.|
+|kioskModeManagedHomeScreenAppSettings|[androidDeviceOwnerKioskModeApp](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapp.md) collection|Indicates the list of managed applications and associated settings, which will be applied when android device is run on kiosk mode with Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|Number of seconds to give user notice before automatically signing them out for Managed Home Screen. Valid values 0 to 9999999|
 |kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|Number of seconds device is inactive before automatically signing user out for Managed Home Screen. Valid values 0 to 9999999|
 |kioskModeManagedHomeScreenPinComplexity|[kioskModeManagedHomeScreenPinComplexity](../resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)|Complexity of PIN for sign-in session for Managed Home Screen. Possible values are: `notConfigured`, `simple`, `complex`.|
@@ -299,8 +301,12 @@ Here is a JSON representation of the resource.
   ],
   "factoryResetBlocked": true,
   "globalProxy": {
-    "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
-    "proxyAutoConfigURL": "String"
+    "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyDirect",
+    "host": "String",
+    "port": 1024,
+    "excludedHosts": [
+      "String"
+    ]
   },
   "googleAccountsBlocked": true,
   "kioskCustomizationDeviceSettingsBlocked": true,
@@ -324,6 +330,7 @@ Here is a JSON representation of the resource.
   ],
   "kioskModeWallpaperUrl": "String",
   "kioskModeExitCode": "String",
+  "isKioskModeExitCodeSet": true,
   "kioskModeVirtualHomeButtonEnabled": true,
   "kioskModeVirtualHomeButtonType": "String",
   "kioskModeBluetoothConfigurationEnabled": true,
@@ -371,6 +378,15 @@ Here is a JSON representation of the resource.
     }
   ],
   "kioskModeManagedHomeScreenAutoSignout": true,
+  "kioskModeManagedHomeScreenAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeApp",
+      "package": "String",
+      "className": "String",
+      "offlineAppAccessEnabled": true,
+      "preSignInAppAccessEnabled": true
+    }
+  ],
   "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 1024,
   "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 1024,
   "kioskModeManagedHomeScreenPinComplexity": "String",

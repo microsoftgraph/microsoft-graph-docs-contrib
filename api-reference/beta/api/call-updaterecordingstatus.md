@@ -46,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter       | Type    | Description                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
 | clientContext   | String  | Unique Client Context string. Max limit is 256 chars.                                 |
-| status          | String  | The recording status. Possible values are: `notRecording`, `recording`, or `failed`.  |
+| status          | String  | The recording status. The possible values are: `notRecording`, `recording`, or `failed`.  |
 
 ## Response
 This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) object created for this request.
@@ -76,10 +76,6 @@ Content-Length: 79
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-updaterecordingstatus-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/call-updaterecordingstatus-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

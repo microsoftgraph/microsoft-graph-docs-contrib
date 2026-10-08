@@ -1,18 +1,21 @@
 ---
-title: "alertHistoryState resource type"
+title: "alertHistoryState resource type (deprecated)"
 description: "Stores changes made to alerts."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 07/22/2024
+ROBOTS: NOINDEX
 ---
 
-# alertHistoryState resource type
+# alertHistoryState resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Stores changes made to alerts.
 
@@ -23,8 +26,8 @@ Stores changes made to alerts.
 |appId|String| The Application ID of the calling application that submitted an update (PATCH) to the alert. The appId should be extracted from the auth token and not entered manually by the calling application. |
 |assignedTo|String| UPN of user the alert was assigned to (note: alert.assignedTo only stores the last value/UPN). |
 |comments|String collection|Comment entered by signed-in user.|
-|feedback|String| Analyst feedback on the alert in this update. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
-|status|String| Alert status value (if updated). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`, `dismissed`.|
+|feedback|String| Analyst feedback on the alert in this update. The possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
+|status|String| Alert status value (if updated). The possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`, `dismissed`.|
 |updatedDateTime|DateTimeOffset| Date and time of the alert update. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |user|String| UPN of the signed-in user that updated the alert (taken from the bearer token - if in user/delegated auth mode). |
 

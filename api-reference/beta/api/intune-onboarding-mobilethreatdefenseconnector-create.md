@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -25,16 +25,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/mobileThreatDefenseConnectors
 ```
 
@@ -70,6 +70,8 @@ The following table shows the properties that are required when you create the m
 |allowPartnerToCollectIOSApplicationMetadata|Boolean|When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for iOS devices. When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about installed applications from Intune for iOS devices. Default value is FALSE.|
 |allowPartnerToCollectIOSPersonalApplicationMetadata|Boolean|When TRUE, indicates the Mobile Threat Defense partner may collect metadata about personally installed applications from Intune for iOS devices. When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about personally installed applications from Intune for iOS devices. Default value is FALSE.|
 |microsoftDefenderForEndpointAttachEnabled|Boolean|When TRUE, inidicates that configuration profile management via Microsoft Defender for Endpoint is enabled. When FALSE, inidicates that configuration profile management via Microsoft Defender for Endpoint is disabled. Default value is FALSE.|
+|allowPartnerToCollectIosCertificateMetadata|Boolean|When TRUE, allows the Mobile Threat Defense partner to request a list of installed certificates on iOS/iPadOS devices from Intune to use for threat analysis. This list of installed certificates will be sent from enrolled iOS/iPadOS devices and will include unmanaged certificates (certificates not deployed through Intune). When FALSE, indicates that metadata about installed certificates will not be collected. Default value is FALSE.|
+|allowPartnerToCollectIosPersonalCertificateMetadata|Boolean|When TRUE, allows the Mobile Threat Defense partner to request a list of installed certificates on personally owned iOS/iPadOS devices from Intune to use for threat analysis. This list of installed certificates will be sent from enrolled personally owned iOS/iPadOS devices and will include unmanaged certificates (certificates not deployed through Intune). When FALSE, no metadata for installed certificates is sent for personally owned iOS/iPadOS devices. Default value is FALSE.|
 
 
 
@@ -80,10 +82,10 @@ If successful, this method returns a `201 Created` response code and a [mobileTh
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors
 Content-type: application/json
-Content-length: 898
+Content-length: 1018
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -104,16 +106,18 @@ Content-length: 898
   "partnerUnresponsivenessThresholdInDays": 6,
   "allowPartnerToCollectIOSApplicationMetadata": true,
   "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
-  "microsoftDefenderForEndpointAttachEnabled": true
+  "microsoftDefenderForEndpointAttachEnabled": true,
+  "allowPartnerToCollectIosCertificateMetadata": true,
+  "allowPartnerToCollectIosPersonalCertificateMetadata": true
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 947
+Content-Length: 1067
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -135,6 +139,8 @@ Content-Length: 947
   "partnerUnresponsivenessThresholdInDays": 6,
   "allowPartnerToCollectIOSApplicationMetadata": true,
   "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
-  "microsoftDefenderForEndpointAttachEnabled": true
+  "microsoftDefenderForEndpointAttachEnabled": true,
+  "allowPartnerToCollectIosCertificateMetadata": true,
+  "allowPartnerToCollectIosPersonalCertificateMetadata": true
 }
 ```

@@ -4,7 +4,7 @@
 items:
 - name: Overview
   href: ../../resources/complianceapioverview.md
-- name: eDiscovery (preview)
+- name: eDiscovery (deprecated)
   items:
   - name: Overview
     href: ../../resources/ediscovery-ediscoveryapioverview.md

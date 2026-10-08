@@ -37,7 +37,7 @@ GET /policies/authenticationMethodsPolicy
 ```
 
 ## Optional query parameters
-This method does not support any optional query parameters.
+This method doesn't support any optional query parameters.
 
 ## Request headers
 |Name|Description|
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationmethodspolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-authenticationmethodspolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and an [educationSchool](../resources/educationschool.md) collection object in the response body.
 
 > [!IMPORTANT]
-> educationSchool deltas do not include deleted schools.
+> educationSchool deltas don't include deleted schools.
 
 ## Example
 
@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/education/schools/delta
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationschool-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/educationschool-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

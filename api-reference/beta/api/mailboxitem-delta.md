@@ -1,6 +1,6 @@
 ---
 title: "mailboxItem: delta"
-description: "Get a set of mailboxItem objects that have been added, deleted, or updated in a specified folder."
+description: "Get a set of mailboxItem objects that were added, deleted, or updated in a specified folder."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of [mailboxItem](../resources/mailboxitem.md) objects that have been added, deleted, or updated in a specified [mailboxFolder](../resources/mailboxfolder.md).
+Get a set of [mailboxItem](../resources/mailboxitem.md) objects that were added, deleted, or updated in a specified [mailboxFolder](../resources/mailboxfolder.md).
 
 A **delta** function call for items in a folder is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can [query for incremental changes in the items in that folder](/graph/delta-query-messages). This approach allows you to maintain and synchronize a local store of a user's mailbox items without having to fetch the entire set of items from the server every time.
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items/delta
 ```
 
@@ -60,7 +60,7 @@ Tracking changes in items incurs a round of one or more **delta** function calls
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Prefer|odata.maxpagesize={x}. Optional.|
+|Prefer|odata.maxpagesize={x}. Optional. Controls page size.|
 
 ## Request body
 
@@ -69,6 +69,9 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [mailboxItem](../resources/mailboxitem.md) objects in the response body.
+
+> [!NOTE]
+> *Archive mailboxes with autoexpanded folders:* When the target folder or items physically reside in an auxiliary (autoexpanded) archive mailbox, this API might return a redirect response that points to the correct mailbox endpoint. For details, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
 
 ## Examples
 
@@ -87,17 +90,13 @@ For an example that shows a round of delta query calls, see [Get incremental cha
   "sampleKeys": ["MBX:e0643f21@a7809c93", "AAMkAGUwNjQ4ZyTAAA="]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/AAMkAGUwNjQ4ZyTAAA=/items/delta
 Prefer: odata.maxpagesize=2
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailboxitemthisdelta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/mailboxitemthisdelta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -135,7 +134,7 @@ The following example shows a `$skipToken` in an **@odata.nextLink** response he
   "@odata.type": "Collection(microsoft.graph.mailboxItem)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-length: 337

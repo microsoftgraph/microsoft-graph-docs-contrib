@@ -21,10 +21,10 @@ Represents a condition in a sorting operation.
 |:---------------|:--------|:----------|
 |ascending|Boolean|Represents whether the sorting is done in an ascending fashion.|
 |color|string|Represents the color that is the target of the condition if the sorting is on font or cell color.|
-|dataOption|string|Represents additional sorting options for this field. Possible values are: `Normal`, `TextAsNumber`.|
+|dataOption|string|Represents additional sorting options for this field. The possible values are: `Normal`, `TextAsNumber`.|
 |icon|[workbookIcon](workbookicon.md)|Represents the icon that is the target of the condition if the sorting is on the cell's icon.|
 |key|int|Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).|
-|sortOn|string|Represents the type of sorting of this condition. Possible values are: `Value`, `CellColor`, `FontColor`, `Icon`.|
+|sortOn|string|Represents the type of sorting of this condition. The possible values are: `Value`, `CellColor`, `FontColor`, `Icon`.|
 
 ## Relationships
 None.

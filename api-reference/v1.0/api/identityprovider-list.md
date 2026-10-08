@@ -51,7 +51,7 @@ If successful, this method returns `200 OK` response code and a collection of [i
 
 The following example retrieves all **identityProvider**.
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/identityProviders
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-identityproviders-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -98,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

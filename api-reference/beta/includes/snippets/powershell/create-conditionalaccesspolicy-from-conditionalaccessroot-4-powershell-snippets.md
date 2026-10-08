@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
-	displayName = "Require MFA to EXO from non-complaint devices."
+	displayName = "Require MFA to EXO from non-compliant devices."
 	state = "enabled"
 	conditions = @{
 		applications = @{

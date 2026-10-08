@@ -20,7 +20,7 @@ An encryption entity defining the protocol and secret for a [workforceintegratio
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|protocol|String| Possible values are: `sharedSecret`, `unknownFutureValue`.|
+|protocol|String| The possible values are: `sharedSecret`, `unknownFutureValue`.|
 |secret|String|Encryption shared secret.|
 
 ## Relationships

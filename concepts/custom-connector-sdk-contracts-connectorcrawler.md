@@ -1,17 +1,18 @@
 ---
-title: "Microsoft Graph connectors SDK contracts connector crawler API and models"
+title: "Microsoft 365 Copilot connectors SDK contracts connector crawler API and models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Learn about the contracts connector crawler API and models in the Microsoft Graph connectors SDK."
+description: "Learn about the contracts connector crawler API and models in the Copilot connectors SDK."
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
-# Microsoft Graph connectors SDK contracts connector crawler API and models
+# Copilot connectors SDK contracts connector crawler API and models
 
-The Microsoft Graph connectors SDK contracts connector crawler API and models are called during a crawl.
+The Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) SDK contracts connector crawler API and models are called during a crawl.
 
 ## Connector crawler API
 

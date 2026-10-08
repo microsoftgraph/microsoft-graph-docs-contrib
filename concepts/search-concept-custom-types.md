@@ -1,15 +1,16 @@
 ---
-title: "Use the Microsoft Search API to search custom types imported using connectors"
-description: "Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by Microsoft Graph connectors."
+title: "Use the Microsoft Search API to search custom types imported using cMicrosoft 365 Copilot connectors"
+description: "Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by Copilot connectors."
 author: "njerigrevious"
 ms.localizationpriority: medium
 ms.subservice: "search"
-ms.date: 11/07/2024
+ms.date: 12/01/2025
+ms.topic: how-to
 ---
 
-# Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors
+# Use the Microsoft Search API to search custom types imported using Copilot connectors
 
-Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview). The content is imported either via [built-in connectors](https://www.microsoft.com/microsoft-search/connectors) provided by Microsoft, or via custom connectors implemented by using the [Microsoft Graph connectors ingestion API](/graph/api/resources/connectors-api-overview).
+Use the Microsoft Search API in Microsoft Graph to search across external content ingested and indexed by [Microsoft 365 Copilot connectors](/microsoftsearch/connectors-overview) (formerly Microsoft Graph connectors). The content is imported either via [built-in connectors](https://www.microsoft.com/microsoft-search/connectors) provided by Microsoft, or via custom connectors implemented by using the [Copilot connectors ingestion API](/graph/api/resources/connectors-api-overview).
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -25,9 +26,9 @@ TODOSEARCHAPI - Bug 1653398
 
 - The **entityTypes** property as `externalItem`.
 
-- The **fields** property to include the fields in the external item to retrieve. Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.
+- The **fields** property to include the fields in the external item to retrieve. Note that if you do not include any **fields** in the request, the response will contain some of the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.
 
-In addition, you can aggregate search results based on properties in an [externalItem](/graph/api/resources/externalitem) that are numeric or string type, and that are set to be refinable in the [schema](/graph/api/resources/schema). For more information, see [Refine search results using aggregations](search-concept-aggregation.md).
+In addition, you can aggregate search results based on properties in an [externalItem](/graph/api/resources/externalconnectors-externalitem) that are numeric or string type, and that are set to be refinable in the [schema](/graph/api/resources/externalconnectors-schema). For more information, see [Refine search results using aggregations](search-concept-aggregation.md).
 
 ## Example 1: Retrieve items using Azure SQL built-in connector
 

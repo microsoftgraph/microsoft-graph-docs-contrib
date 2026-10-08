@@ -1,20 +1,25 @@
 ---
-title: "cloudPcNotificationSetting resource type"
+title: "cloudPcNotificationSetting resource type (deprecated)"
 description: "Represents specific settings of notification prompt."
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ms.date: 10/09/2024
+toc.title: "Cloud PC notification setting (deprecated)"
+ROBOTS: NOINDEX
 ---
 
-# cloudPcNotificationSetting resource type
+# cloudPcNotificationSetting resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the settings of a point-in-time restore of a Cloud PC.
+> [!CAUTION]
+> The **cloudPcNotificationSetting** resource is deprecated and will stop returning data on July 14, 2026.
+
+Represents specific settings of notification prompt.
 
 ## Properties
 

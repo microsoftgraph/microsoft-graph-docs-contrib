@@ -1,11 +1,11 @@
 ---
 title: "updatableAssetGroup: addMembers"
 description: "Add members to an updatableAssetGroup."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-update-business
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 01/27/2026
 ---
 
 # updatableAssetGroup: addMembers
@@ -17,7 +17,7 @@ Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableass
 
 You can add [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources as members, but may not add **updatableAssetGroup** resources as members.
 
-Adding a Microsoft Entra device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
+Adding a Microsoft Entra device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it doesn't already exist.
 
 You can also use the method [addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md) to add members.
 
@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembers
 ```
 
@@ -70,7 +70,7 @@ If successful, this action returns a `202 Accepted` response code. It doesn't re
   "name": "updatableassetgroup_addmembers"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5ba7065-7065-f5ba-6570-baf56570baf5/addMembers
 Content-Type: application/json
 
@@ -86,10 +86,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/updatableassetgroup-addmembers-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/updatableassetgroup-addmembers-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -125,6 +121,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

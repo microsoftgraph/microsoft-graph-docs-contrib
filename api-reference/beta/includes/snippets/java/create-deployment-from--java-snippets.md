@@ -24,9 +24,7 @@ com.microsoft.graph.beta.models.windowsupdates.RateDrivenRolloutSettings gradual
 gradualRollout.setOdataType("#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings");
 PeriodAndDuration durationBetweenOffers = PeriodAndDuration.ofDuration(Duration.parse("P7D"));
 gradualRollout.setDurationBetweenOffers(durationBetweenOffers);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("devicePerOffer", 100);
-gradualRollout.setAdditionalData(additionalData);
+gradualRollout.setDevicesPerOffer(100);
 schedule.setGradualRollout(gradualRollout);
 settings.setSchedule(schedule);
 com.microsoft.graph.beta.models.windowsupdates.MonitoringSettings monitoring = new com.microsoft.graph.beta.models.windowsupdates.MonitoringSettings();

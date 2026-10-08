@@ -2,7 +2,7 @@
 title: "Get claimsMappingPolicy"
 description: "Retrieve the properties and relationships of claimsMappingPolicy object."
 ms.localizationpriority: medium
-author: "paulgarn"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 04/05/2024
@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/claimsmappingpolicy-get-permissions.md)]
 
 > [!IMPORTANT]
-> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13678) and may require consent to both permissions.
+> This method has a [known permissions issue](/graph/known-issues#claims-mapping-policy-might-require-consent-to-additional-permissions) and may require consent to both permissions.
 
 ## HTTP request
 
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-claimsmappingpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-claimsmappingpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -3,6 +3,418 @@
     {
       "ChangeList": [
         {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemPermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemPermission](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitempermission) complex type to represent the permission that grants a principal access to the resource under review.",
+          "Target": "accessReviewInstanceDecisionItemPermission"
+        },
+        {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemCustomDataProvidedResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemCustomDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitemcustomdataprovidedresource) complex type to represent a decision item resource whose entitlement data is supplied by the customer rather than discovered by Microsoft Entra.",
+          "Target": "accessReviewInstanceDecisionItemCustomDataProvidedResource"
+        },
+        {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Property",
+          "ChangedApiName": "permission",
+          "ChangeType": "Addition",
+          "Description": "Added the **permission** property to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitem) resource to describe the permission that grants the principal access to the resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [accessReviewInstanceDecisionItemResource](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitemresource) resource to describe the resource under review.",
+          "Target": "accessReviewInstanceDecisionItemResource"
+        },
+        {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessReviewInstanceDecisionItemApplyResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewInstanceDecisionItemApplyResult** enumeration type to represent the result of applying a recorded decision to the target resource.",
+          "Target": "accessReviewInstanceDecisionItemApplyResult"
+        },
+        {
+          "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+          "ApiChange": "Method",
+          "ChangedApiName": "batchApplyCustomDataProvidedResourceDecisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstance: batchApplyCustomDataProvidedResourceDecisions](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions) method to set the apply result on all decision items that match a customer-provided resource in one call.",
+          "Target": "accessReviewInstance"
+        }
+      ],
+      "Id": "a8edf52b-dc7e-471b-a09a-b1d937fc9221",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-09T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "reviewerId",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewerId** property to the [accessReviewReviewerScope](https://learn.microsoft.com/graph/api/resources/accessreviewreviewerscope) resource to identify a reviewer directly instead of through a query.",
+          "Target": "accessReviewReviewerScope"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "scopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopeType** property to the [accessReviewReviewerScope](https://learn.microsoft.com/graph/api/resources/accessreviewreviewerscope) resource to specify how a reviewer is resolved as a well-known scope rather than as a query.",
+          "Target": "accessReviewReviewerScope"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "applyDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **applyDescription** property to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitem) resource to describe the result of applying a decision.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "appRoleId",
+          "ChangeType": "Addition",
+          "Description": "Added the **appRoleId** property to the [accessReviewInstanceDecisionItemServicePrincipalResource](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitemserviceprincipalresource) resource to identify the app role under review.",
+          "Target": "accessReviewInstanceDecisionItemServicePrincipalResource"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "appRoleDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **appRoleDisplayName** property to the [accessReviewInstanceDecisionItemServicePrincipalResource](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitemserviceprincipalresource) resource to provide the display name of the app role under review.",
+          "Target": "accessReviewInstanceDecisionItemServicePrincipalResource"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "errors",
+          "ChangeType": "Addition",
+          "Description": "Added the **errors** property to the [accessReviewInstance](https://learn.microsoft.com/graph/api/resources/accessreviewinstance) resource to report errors that occurred during the access review instance lifecycle.",
+          "Target": "accessReviewInstance"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewError",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewError](https://learn.microsoft.com/graph/api/resources/accessreviewerror) resource type to represent an error reported through the **errors** property of an [accessReviewInstance](https://learn.microsoft.com/graph/api/resources/accessreviewinstance).",
+          "Target": "accessReviewError"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewPrincipalScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewPrincipalScope](https://learn.microsoft.com/graph/api/resources/accessreviewprincipalscope) resource type to select a well-known population of principals, such as all guest users, in the **principalScopes** property of a [principalResourceMembershipsScope](https://learn.microsoft.com/graph/api/resources/principalresourcemembershipsscope).",
+          "Target": "accessReviewPrincipalScope"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewResourceScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewResourceScope](https://learn.microsoft.com/graph/api/resources/accessreviewresourcescope) resource type to identify the resource whose access is reviewed in the **resourceScopes** property of a [principalResourceMembershipsScope](https://learn.microsoft.com/graph/api/resources/principalresourcemembershipsscope).",
+          "Target": "accessReviewResourceScope"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewAccessPackageAssignmentPolicyScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewAccessPackageAssignmentPolicyScope](https://learn.microsoft.com/graph/api/resources/accessreviewaccesspackageassignmentpolicyscope) resource type, which derives from [accessReviewResourceScope](https://learn.microsoft.com/graph/api/resources/accessreviewresourcescope), to scope a review to an access package assignment policy.",
+          "Target": "accessReviewAccessPackageAssignmentPolicyScope"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessReviewPrincipalScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewPrincipalScopeType** enumeration type to specify the categories of principals that a review can target.",
+          "Target": "accessReviewPrincipalScopeType"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessReviewResourceScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewResourceScopeType** enumeration type to specify the categories of resources that a review can target.",
+          "Target": "accessReviewResourceScopeType"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessReviewReviewerScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewReviewerScopeType** enumeration type to specify how a reviewer is resolved as a well-known scope.",
+          "Target": "accessReviewReviewerScopeType"
+        },
+        {
+          "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "genericError",
+          "ChangeType": "Addition",
+          "Description": "Added the [genericError](https://learn.microsoft.com/graph/api/resources/genericerror) complex type to the access reviews API surface as the base type of the [accessReviewError](https://learn.microsoft.com/graph/api/resources/accessreviewerror) resource.",
+          "Target": "genericError"
+        }
+      ],
+      "Id": "b70d247a-ca61-4d52-a892-6dfc2a7441b8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-20T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoot](https://learn.microsoft.com/graph/api/resources/unifiedroot) resource type to group the unified (vNext) access review collections under the `accessReviews/unified` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "unified",
+          "ChangeType": "Addition",
+          "Description": "Added the **unified** relationship to the [accessReviewSet](https://learn.microsoft.com/graph/api/resources/accessreviewset) resource as the entry point for the unified (vNext) access reviews API surface, routed through the dedicated `accessReviews/unified` path segment.",
+          "Target": "accessReviewSet"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Method",
+          "ChangedApiName": "listDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoot: list definitions](https://learn.microsoft.com/graph/api/unifiedroot-list-definitions) method to retrieve user-centric (catalog-scope) [accessReviewScheduleDefinition](https://learn.microsoft.com/graph/api/resources/accessreviewscheduledefinition) objects through the unified route.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Method",
+          "ChangedApiName": "postDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoot: create definition](https://learn.microsoft.com/graph/api/unifiedroot-post-definitions) method to create a new user-centric (catalog-scope) [accessReviewScheduleDefinition](https://learn.microsoft.com/graph/api/resources/accessreviewscheduledefinition) object through the unified route.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "decisions",
+          "ChangeType": "Addition",
+          "Description": "Added the **decisions** relationship to the [unifiedRoot](https://learn.microsoft.com/graph/api/resources/unifiedroot) resource to list the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitem) objects across the unified (vNext) access reviews, routed through the `accessReviews/unified/decisions` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "definitions",
+          "ChangeType": "Addition",
+          "Description": "Added the **definitions** relationship to the [unifiedRoot](https://learn.microsoft.com/graph/api/resources/unifiedroot) resource to list the [accessReviewScheduleDefinition](https://learn.microsoft.com/graph/api/resources/accessreviewscheduledefinition) objects across the unified (vNext) access reviews, routed through the `accessReviews/unified/definitions` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "instances",
+          "ChangeType": "Addition",
+          "Description": "Added the **instances** relationship to the [unifiedRoot](https://learn.microsoft.com/graph/api/resources/unifiedroot) resource to list the [accessReviewInstance](https://learn.microsoft.com/graph/api/resources/accessreviewinstance) objects across the unified (vNext) access reviews, routed through the `accessReviews/unified/instances` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Method",
+          "ChangedApiName": "acceptRecommendations",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewStage: acceptRecommendations](https://learn.microsoft.com/graph/api/accessreviewstage-acceptrecommendations) method to accept the recommendations on all decision items that haven't been reviewed within a single [accessReviewStage](https://learn.microsoft.com/graph/api/resources/accessreviewstage).",
+          "Target": "accessReviewStage"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Method",
+          "ChangedApiName": "batchRecordDecisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewStage: batchRecordDecisions](https://learn.microsoft.com/graph/api/accessreviewstage-batchrecorddecisions) method to record decisions in bulk for all decision items within a single [accessReviewStage](https://learn.microsoft.com/graph/api/resources/accessreviewstage).",
+          "Target": "accessReviewStage"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemAccessPackageResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemAccessPackageResource](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitemaccesspackageresource) resource type to represent an access package for which access is reviewed through an [accessReviewInstanceDecisionItem](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitem).",
+          "Target": "accessReviewInstanceDecisionItemAccessPackageResource"
+        }
+      ],
+      "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-10T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "891dd626-981e-4ed6-869d-6491d883f388",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoot](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroot?view=graph-rest-beta) resource type to group the unified (vNext) access review collections under the `accessReviews/unified` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "891dd626-981e-4ed6-869d-6491d883f388",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "unified",
+          "ChangeType": "Addition",
+          "Description": "Added the **unified** relationship to the [accessReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewset?view=graph-rest-beta) resource as the entry point for the unified (vNext) access reviews API surface, routed through the dedicated `accessReviews/unified` path segment.",
+          "Target": "accessReviewSet"
+        },
+        {
+          "Id": "891dd626-981e-4ed6-869d-6491d883f388",
+          "ApiChange": "Method",
+          "ChangedApiName": "list definitions",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoot: list definitions](https://learn.microsoft.com/en-us/graph/api/unifiedroot-list-definitions?view=graph-rest-beta) method to retrieve user-centric (catalog-scope) [accessReviewScheduleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta) objects through the unified route.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "891dd626-981e-4ed6-869d-6491d883f388",
+          "ApiChange": "Method",
+          "ChangedApiName": "post definitions",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoot: create definition](https://learn.microsoft.com/en-us/graph/api/unifiedroot-post-definitions?view=graph-rest-beta) method to create a new user-centric (catalog-scope) [accessReviewScheduleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta) object through the unified route.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "891dd626-981e-4ed6-869d-6491d883f388",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "decisions",
+          "ChangeType": "Addition",
+          "Description": "Added the **decisions** relationship to the [unifiedRoot](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroot?view=graph-rest-beta) resource to list the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta) objects across the unified (vNext) access reviews, routed through the `accessReviews/unified/decisions` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "891dd626-981e-4ed6-869d-6491d883f388",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "definitions",
+          "ChangeType": "Addition",
+          "Description": "Added the **definitions** relationship to the [unifiedRoot](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroot?view=graph-rest-beta) resource to list the [accessReviewScheduleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta) objects across the unified (vNext) access reviews, routed through the `accessReviews/unified/definitions` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "891dd626-981e-4ed6-869d-6491d883f388",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "instances",
+          "ChangeType": "Addition",
+          "Description": "Added the **instances** relationship to the [unifiedRoot](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroot?view=graph-rest-beta) resource to list the [accessReviewInstance](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta) objects across the unified (vNext) access reviews, routed through the `accessReviews/unified/instances` path segment.",
+          "Target": "unifiedRoot"
+        }
+      ],
+      "Id": "891dd626-981e-4ed6-869d-6491d883f388",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-24T00:48:14.0472244Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3c5f9a17-4e2b-4d8a-9f6c-2a1b7e8d4c30",
+          "ApiChange": "Method",
+          "ChangedApiName": "acceptRecommendations",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewStage: acceptRecommendations](https://learn.microsoft.com/en-us/graph/api/accessreviewstage-acceptrecommendations?view=graph-rest-beta) method to accept the recommendations on all decision items that haven't been reviewed within a single [accessReviewStage](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewstage?view=graph-rest-beta).",
+          "Target": "accessReviewStage"
+        },
+        {
+          "Id": "3c5f9a17-4e2b-4d8a-9f6c-2a1b7e8d4c30",
+          "ApiChange": "Method",
+          "ChangedApiName": "batchRecordDecisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewStage: batchRecordDecisions](https://learn.microsoft.com/en-us/graph/api/accessreviewstage-batchrecorddecisions?view=graph-rest-beta) method to record decisions in bulk for all decision items within a single [accessReviewStage](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewstage?view=graph-rest-beta).",
+          "Target": "accessReviewStage"
+        },
+        {
+          "Id": "3c5f9a17-4e2b-4d8a-9f6c-2a1b7e8d4c30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemAccessPackageResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemAccessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitemaccesspackageresource?view=graph-rest-beta) resource type to represent an access package for which access is reviewed through an [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta).",
+          "Target": "accessReviewInstanceDecisionItemAccessPackageResource"
+        }
+      ],
+      "Id": "3c5f9a17-4e2b-4d8a-9f6c-2a1b7e8d4c30",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-24T00:48:14.0472244Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f3dcf90b-1d60-48dd-a438-b10e1072b087",
+          "ApiChange": "Property",
+          "ChangedApiName": "delegatedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedBy** property to the [accessReviewInstance](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta) resource to identify the users who delegated an access review to the current reviewer.",
+          "Target": "accessReviewInstance"
+        },
+        {
+          "Id": "f3dcf90b-1d60-48dd-a438-b10e1072b087",
+          "ApiChange": "Property",
+          "ChangedApiName": "delegatedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedBy** property to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta) resource to identify the users who delegated an access review to the current reviewer.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "f3dcf90b-1d60-48dd-a438-b10e1072b087",
+          "ApiChange": "Member",
+          "ChangedApiName": "directReviewer",
+          "ChangeType": "Addition",
+          "Description": "Added the `directReviewer` member to the filter options for the [accessReviewScheduleDefinition: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-filterbycurrentuser?view=graph-rest-beta), [accessReviewInstance: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta), [accessReviewStage: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta), and [accessReviewInstanceDecisionItem: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-filterbycurrentuser?view=graph-rest-beta) APIs to return items directly assigned to the current reviewer.",
+          "Target": "filterByCurrentUser"
+        },
+        {
+          "Id": "f3dcf90b-1d60-48dd-a438-b10e1072b087",
+          "ApiChange": "Member",
+          "ChangedApiName": "delegatedReviewer",
+          "ChangeType": "Addition",
+          "Description": "Added the `delegatedReviewer` member to the filter options for the [accessReviewScheduleDefinition: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-filterbycurrentuser?view=graph-rest-beta), [accessReviewInstance: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta), [accessReviewStage: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta), and [accessReviewInstanceDecisionItem: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-filterbycurrentuser?view=graph-rest-beta) APIs to return items delegated to the current reviewer.",
+          "Target": "filterByCurrentUser"
+        }
+      ],
+      "Id": "f3dcf90b-1d60-48dd-a438-b10e1072b087",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-11T21:43:31.0560040Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
           "ApiChange": "EnumType",
           "ChangedApiName": "accessReviewStageFilterByCurrentUserOptions",
@@ -1267,6 +1679,170 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-25T20:53:38.0340041Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewAccessPackageAssignmentPolicyScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewAccessPackageAssignmentPolicyScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewAccessPackageAssignmentPolicyScope?view=graph-rest-beta) resource.",
+          "Target": "accessReviewAccessPackageAssignmentPolicyScope"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemCustomDataProvidedResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemCustomDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemCustomDataProvidedResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemCustomDataProvidedResource"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemPermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemPermission](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemPermission?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemPermission"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [accessReviewInstanceDecisionItemResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemResource"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "appRoleDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **appRoleDisplayName** property to the [accessReviewInstanceDecisionItemServicePrincipalResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemServicePrincipalResource"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "appRoleId",
+          "ChangeType": "Addition",
+          "Description": "Added the **appRoleId** property to the [accessReviewInstanceDecisionItemServicePrincipalResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemServicePrincipalResource"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewPrincipalScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewPrincipalScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewPrincipalScope?view=graph-rest-beta) resource.",
+          "Target": "accessReviewPrincipalScope"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewResourceScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewResourceScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewResourceScope?view=graph-rest-beta) resource.",
+          "Target": "accessReviewResourceScope"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "reviewerId",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewerId** property to the [accessReviewReviewerScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewReviewerScope?view=graph-rest-beta) resource.",
+          "Target": "accessReviewReviewerScope"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "scopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopeType** property to the [accessReviewReviewerScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewReviewerScope?view=graph-rest-beta) resource.",
+          "Target": "accessReviewReviewerScope"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "applyDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **applyDescription** property to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "permission",
+          "ChangeType": "Addition",
+          "Description": "Added the **permission** property to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "instances",
+          "ChangeType": "Addition",
+          "Description": "Added the **instances** relationship to the [accessReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewSet?view=graph-rest-beta) resource.",
+          "Target": "accessReviewSet"
+        }
+      ],
+      "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-17T08:38:23.4725989Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e3e2dc54-14da-4e16-b729-f02376c0eef7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessReviewInstanceDecisionItemApplyResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewInstanceDecisionItemApplyResult** enumeration type.",
+          "Target": "accessReviewInstanceDecisionItemApplyResult"
+        },
+        {
+          "Id": "e3e2dc54-14da-4e16-b729-f02376c0eef7",
+          "ApiChange": "Property",
+          "ChangedApiName": "customData",
+          "ChangeType": "Addition",
+          "Description": "Added the **customData** property to the [accessReviewInstanceDecisionItemCustomDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemCustomDataProvidedResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemCustomDataProvidedResource"
+        },
+        {
+          "Id": "e3e2dc54-14da-4e16-b729-f02376c0eef7",
+          "ApiChange": "Property",
+          "ChangedApiName": "scopeDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopeDisplayName** property to the [accessReviewInstanceDecisionItemCustomDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemCustomDataProvidedResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemCustomDataProvidedResource"
+        },
+        {
+          "Id": "e3e2dc54-14da-4e16-b729-f02376c0eef7",
+          "ApiChange": "Property",
+          "ChangedApiName": "scopeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopeId** property to the [accessReviewInstanceDecisionItemCustomDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemCustomDataProvidedResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemCustomDataProvidedResource"
+        },
+        {
+          "Id": "e3e2dc54-14da-4e16-b729-f02376c0eef7",
+          "ApiChange": "Method",
+          "ChangedApiName": "batchApplyCustomDataProvidedResourceDecisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [batchApplyCustomDataProvidedResourceDecisions](https://learn.microsoft.com/en-us/graph/api/accessReviewInstance-batchApplyCustomDataProvidedResourceDecisions?view=graph-rest-beta) method to the [accessReviewInstance](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstance"
+        }
+      ],
+      "Id": "e3e2dc54-14da-4e16-b729-f02376c0eef7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-28T21:42:23.4163366Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }

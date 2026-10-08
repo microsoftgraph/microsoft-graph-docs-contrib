@@ -3,6 +3,182 @@
     {
       "ChangeList": [
         {
+          "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "readingCoachStoryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **readingCoachStoryType** enumeration type.",
+          "Target": "readingCoachStoryType"
+        },
+        {
+          "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "readingCoachPassage",
+          "ChangeType": "Addition",
+          "Description": "Added the [readingCoachPassage](https://learn.microsoft.com/en-us/graph/api/resources/readingCoachPassage?view=graph-rest-1.0) resource and an associated method.",
+          "Target": "readingCoachPassage"
+        },
+        {
+          "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "readingCoachPassages",
+          "ChangeType": "Addition",
+          "Description": "Added the **readingCoachPassages** relationship to the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportsRoot"
+        },
+        {
+          "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "speakerAssignmentSubmissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **speakerAssignmentSubmissions** relationship to the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportsRoot"
+        },
+        {
+          "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "speakerAssignmentSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [speakerAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/speakerAssignmentSubmission?view=graph-rest-1.0) resource and an associated method.",
+          "Target": "speakerAssignmentSubmission"
+        }
+      ],
+      "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-24T00:38:30.5375258Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9f6b31a2-8e3b-495a-b9ec-d2c10271295e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "readingCoachStoryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **readingCoachStoryType** enumeration type.",
+          "Target": "readingCoachStoryType"
+        },
+        {
+          "Id": "9f6b31a2-8e3b-495a-b9ec-d2c10271295e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "readingCoachPassage",
+          "ChangeType": "Addition",
+          "Description": "Added the [readingCoachPassage](https://learn.microsoft.com/en-us/graph/api/resources/readingCoachPassage?view=graph-rest-beta) resource and an associated method.",
+          "Target": "readingCoachPassage"
+        },
+        {
+          "Id": "9f6b31a2-8e3b-495a-b9ec-d2c10271295e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "readingCoachPassages",
+          "ChangeType": "Addition",
+          "Description": "Added the **readingCoachPassages** relationship to the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-beta) resource.",
+          "Target": "reportsRoot"
+        }
+      ],
+      "Id": "9f6b31a2-8e3b-495a-b9ec-d2c10271295e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-26T17:01:30.1461295Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3c70e755-0efe-4847-8420-951382846f69",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "responseEmotionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **responseEmotionType** enumeration type.",
+          "Target": "responseEmotionType"
+        },
+        {
+          "Id": "3c70e755-0efe-4847-8420-951382846f69",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "responseFeedbackType",
+          "ChangeType": "Addition",
+          "Description": "Added the **responseFeedbackType** enumeration type.",
+          "Target": "responseFeedbackType"
+        },
+        {
+          "Id": "3c70e755-0efe-4847-8420-951382846f69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "challengingWord",
+          "ChangeType": "Addition",
+          "Description": "Added the [challengingWord](https://learn.microsoft.com/en-us/graph/api/resources/challengingWord?view=graph-rest-1.0) resource.",
+          "Target": "challengingWord"
+        },
+        {
+          "Id": "3c70e755-0efe-4847-8420-951382846f69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationRoot](https://learn.microsoft.com/en-us/graph/api/resources/educationRoot?view=graph-rest-1.0) resource.",
+          "Target": "educationRoot"
+        },
+        {
+          "Id": "3c70e755-0efe-4847-8420-951382846f69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "readingAssignmentSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [readingAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/readingAssignmentSubmission?view=graph-rest-1.0) resource and an associated method.",
+          "Target": "readingAssignmentSubmission"
+        },
+        {
+          "Id": "3c70e755-0efe-4847-8420-951382846f69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reflectCheckInResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [reflectCheckInResponse](https://learn.microsoft.com/en-us/graph/api/resources/reflectCheckInResponse?view=graph-rest-1.0) resource and an associated method.",
+          "Target": "reflectCheckInResponse"
+        },
+        {
+          "Id": "3c70e755-0efe-4847-8420-951382846f69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reportsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportsRoot"
+        }
+      ],
+      "Id": "3c70e755-0efe-4847-8420-951382846f69",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-06-24T17:52:46.7502641Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0e199dee-0ffd-4682-9496-4402772111cf",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "speakerAssignmentSubmissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **speakerAssignmentSubmissions** relationship to the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-beta) resource.",
+          "Target": "reportsRoot"
+        },
+        {
+          "Id": "0e199dee-0ffd-4682-9496-4402772111cf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "speakerAssignmentSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [speakerAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/speakerAssignmentSubmission?view=graph-rest-beta) resource and an associated method.",
+          "Target": "speakerAssignmentSubmission"
+        }
+      ],
+      "Id": "0e199dee-0ffd-4682-9496-4402772111cf",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-12T17:27:41.6390047Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "48758d0e-8d2e-4449-bb7f-78e4bf01e242",
           "ApiChange": "Resource",
           "ChangedApiName": "ReportsRoot",

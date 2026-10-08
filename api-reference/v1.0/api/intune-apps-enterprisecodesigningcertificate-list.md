@@ -21,16 +21,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 
 <!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_list_list_enterprisecodesigningcertificates" }-->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
@@ -61,7 +61,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.enterpriseCodeSigningCertificate" }-->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 512

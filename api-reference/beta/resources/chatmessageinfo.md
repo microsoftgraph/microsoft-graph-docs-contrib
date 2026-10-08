@@ -19,7 +19,7 @@ Represents a preview of a [chatMessage](../resources/chatmessage.md) resource. T
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|body|[itemBody](../resources/itembody.md)|Body of the [chatMessage](../resources/chatmessage.md). This will still contain markers for @mentions and attachments even though the object doesn't return @mentions and attachments.|
+|body|[chatMessageBody](../resources/chatmessagebody.md)|Body of the [chatMessage](../resources/chatmessage.md). This will still contain markers for @mentions and attachments even though the object doesn't return @mentions and attachments.|
 |createdDateTime|DateTimeOffset|Date time object representing the time at which message was created.|
 |eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only.  If present, represents details of an event that happened in a chat, a channel, or a team, for example, members were added, and so on. For event messages, the **messageType** property is set to `systemEventMessage`.|
 |from|[chatMessageFromIdentitySet](../resources/chatmessagefromidentityset.md)|Information about the sender of the message.|
@@ -45,7 +45,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.chatMessageInfo",
   "id": "String (identifier)",
   "body": {
-    "@odata.type": "microsoft.graph.itemBody"
+    "@odata.type": "microsoft.graph.chatMessageBody"
   },
   "from": {
     "@odata.type": "microsoft.graph.chatMessageFromIdentitySet"

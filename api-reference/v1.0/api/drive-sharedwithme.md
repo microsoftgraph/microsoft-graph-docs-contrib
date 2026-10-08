@@ -1,16 +1,19 @@
 ---
 author: "spgraph-docs-team"
 description: "Get a list of driveItem objects shared with the owner of a drive."
-title: "drive: sharedWithMe"
+title: "drive: sharedWithMe (deprecated)"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# drive: sharedWithMe
+# drive: sharedWithMe (deprecated)
 
 Namespace: microsoft.graph
+
+> [!CAUTION]
+> The **sharedWithMe** API is deprecated and will operate in a degraded state until November, 2026, after which it will stop returning data.
 
 Get a list of [driveItem](../resources/driveitem.md) objects shared with the owner of a [drive](../resources/drive.md).
 
@@ -35,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/drive/sharedWithMe
 ```
 
@@ -79,10 +82,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/sharedWithMe
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-driveitems-shared-with-me-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-driveitems-shared-with-me-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-driveitems-shared-with-me-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -106,6 +105,8 @@ GET https://graph.microsoft.com/v1.0/me/drive/sharedWithMe
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-driveitems-shared-with-me-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 
@@ -191,10 +192,6 @@ GET https://graph.microsoft.com/v1.0/drives/987def/items/987def!654
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/drives-get-remoteitem-metadata-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/drives-get-remoteitem-metadata-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

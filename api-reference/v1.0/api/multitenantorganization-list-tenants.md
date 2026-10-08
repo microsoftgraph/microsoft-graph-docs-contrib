@@ -1,11 +1,11 @@
 ---
 title: "List multiTenantOrganizationMembers"
 description: "List the tenants and their properties in the multitenant organization."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 06/21/2024
+ms.date: 05/14/2026
 ---
 
 # List multiTenantOrganizationMembers
@@ -21,7 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "multitenantorganization_list_tenants" } -->
 [!INCLUDE [permissions-table](../includes/permissions/multitenantorganization-list-tenants-permissions.md)]
 
-If called with MultiTenantOrganization.Read.All or MultiTenantOrganization.ReadWrite.All permissions, this API returns both active and pending tenants. If called with MultiTenantOrganization.ReadBasic.All permission, the caller can only read the **displayName** and **tenantId** properties.
+The properties returned depend on the permission granted:
+
+- *MultiTenantOrganization.ReadBasic.All* (delegated): Returns only the **displayName** and **tenantId** properties. Only active tenants are returned.
+- *MultiTenantOrganization.Read.All*, *MultiTenantOrganization.ReadWrite.All*, or *Directory.Read.All* (delegated or application): Returns all properties for both active and pending tenants.
 
 [!INCLUDE [rbac-multitenantorganization-apis-read](../includes/rbac-for-apis/rbac-multitenantorganization-apis-read.md)]
 
@@ -31,7 +34,7 @@ If called with MultiTenantOrganization.Read.All or MultiTenantOrganization.ReadW
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /tenantRelationships/multiTenantOrganization/tenants
 ```
 
@@ -62,16 +65,12 @@ The following example lists the tenants and their properties in the multitenant 
   "name": "list_multitenantorganizationmember"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenants
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-multitenantorganizationmember-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-multitenantorganizationmember-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -108,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization
   "@odata.type": "Collection(microsoft.graph.multiTenantOrganizationMember)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/simulations/{simulationId}/report/simulationUsers
 ```
 
@@ -43,7 +43,7 @@ The following are examples of their use:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/simulations/{simulationId}/report/simulationUsers?$count=true
 GET /security/attackSimulation/simulations/{simulationId}/report/simulationUsers?$skipToken={skipToken}
 GET /security/attackSimulation/simulations/{simulationId}/report/simulationUsers?$top=1
@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "list_usersimulationdetails"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/report/simulationUsers
 ```
 
@@ -94,7 +94,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.userSimulationDetails)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

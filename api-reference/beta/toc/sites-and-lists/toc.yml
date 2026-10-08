@@ -8,9 +8,11 @@ items:
   items:
   - name: Site
     href: ../../resources/site.md
-  - name: Get root site
+  - name: Create
+    href: ../../api/site-post-sites.md
+  - name: Get
     href: ../../api/site-get.md
-  - name: Get site
+  - name: Get root site
     href: ../../api/site-get.md
   - name: Get site by path
     href: ../../api/site-getbypath.md
@@ -64,10 +66,22 @@ items:
     href: ../../api/site-post-documentprocessingjobs.md
   - name: List operations
     href: ../../api/site-list-operations.md
+  - name: Get operation status
+    href: ../../api/site-getoperationstatus.md
   - name: Get site settings
     href: ../../api/sitesettings-get.md
   - name: Get delta
     href: ../../api/site-delta.md
+  - name: Open extensions
+    items:
+    - name: Create open extension
+      href: ../../api/opentypeextension-post-opentypeextension.md
+    - name: Get open extension
+      href: ../../api/opentypeextension-get.md
+    - name: Update open extension
+      href: ../../api/opentypeextension-update.md
+    - name: Delete open extension
+      href: ../../api/opentypeextension-delete.md
 - name: List
   items:
   - name: List
@@ -80,8 +94,8 @@ items:
     href: ../../api/listitem-list.md
   - name: Get lists in a site
     href: ../../api/list-list.md
-  - name: Get recent activities
-    href: ../../api/activities-list.md
+  - name: List activities
+    href: ../../api/itemactivity-list.md
   - name: Create item
     href: ../../api/listitem-create.md
   - name: Update item
@@ -164,6 +178,8 @@ items:
     href: ../../api/listitem-delete.md
   - name: Get analytics
     href: ../../api/itemanalytics-get.md
+  - name: Get recent activities
+    href: ../../api/itemactivity-list.md
   - name: Get column values
     href: ../../api/listitem-get.md
   - name: Update column values
@@ -213,8 +229,8 @@ items:
   - name: List
     href: ../../api/recyclebin-list-items.md
   - name: Delete
-    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
-  - name: Restore
+    href: ../../api/recyclebinitem-delete.md
+  - name: Restore recycleBinItem by driveItemId
     href: ../../api/filestoragecontainer-restore-recyclebinitem.md
 - name: Rich long running operation
   items:
@@ -246,6 +262,16 @@ items:
     href: ../../api/permission-grant.md
   - name: Revoke grants on sharing link
     href: ../../api/permission-revokegrants.md
+- name: SharePoint report settings
+  items:
+  - name: SharePoint report settings
+    href: ../../resources/sharepointreportsettings.md
+  - name: List
+    href: ../../api/sharepointreportsettings-list-apiusagereportmetrics.md
+  - name: Enable API usage report
+    href: ../../api/sharepointreportsettings-enableapiusagereport.md
+  - name: Disable API usage report
+    href: ../../api/sharepointreportsettings-disableapiusagereport.md
 - name: SharePoint settings
   items:
   - name: SharePoint settings
@@ -448,3 +474,9 @@ items:
       href: ../../api/termstore-term-list-relations.md
     - name: Create
       href: ../../api/termstore-relation-post.md
+- name: Complex types
+  items:
+  - name: API usage report enablement status
+    href: ../../resources/apiusagereportenablementstatus.md
+  - name: Identity input
+    href: ../../resources/identityinput.md

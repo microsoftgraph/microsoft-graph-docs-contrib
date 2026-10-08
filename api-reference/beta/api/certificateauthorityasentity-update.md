@@ -51,7 +51,7 @@ PATCH /directory/certificateAuthorities/certificateBasedApplicationConfiguration
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code and doesn't return anything in the response body.
 
 ## Examples
 
@@ -75,10 +75,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-certificateauthorityasentity-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-certificateauthorityasentity-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

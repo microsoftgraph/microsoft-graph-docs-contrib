@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [horizontalSection](../resources/horizontalSection.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -56,7 +58,7 @@ The following example shows a request.
 
 <!-- { "blockType": "ignored" } -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/sites/a69edae4-9208-4f60-9aa3-cd0911ff0ce1/pages/7f7a2740-2d74-47ba-af0c-71ed3a3384ca/microsoft.graph.sitePage/canvasLayout/horizontalSections/1
 
 Content-Type: application/json

@@ -2,7 +2,7 @@
 title: "Assign appliesTo"
 description: "Assign an appManagementPolicy to an application or service principal object."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 07/30/2024
@@ -76,10 +76,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/assign-appliesto-ex1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/assign-appliesto-ex1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/assign-appliesto-ex1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -131,7 +127,7 @@ The following example shows a request to assign an appManagementPolicy to a serv
   "name": "assign_appliesTo_ex2"
 }-->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appManagementPolicies/$ref
 
 {
@@ -140,10 +136,6 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appManagementPolici
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

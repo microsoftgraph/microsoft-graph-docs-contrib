@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "cloud-communications"
 ms.custom: "scenarios:getting-started"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Get change notifications for presence updates in Microsoft Teams
@@ -16,6 +17,12 @@ Use webhooks to subscribe to users' presence information and get notifications w
 
 > [!NOTE]
 > Effective June 30 2024, to get changes that occurred to an active meeting call, we recommend that you subscribe to [rich notifications](#rich-presence-notifications).
+
+This API is available in the following [national cloud deployments](/graph/deployments).
+
+| Global service     | US Government L4 | US Government L5 (DOD) | China operated by 21Vianet |
+|--------------------|------------------|------------------------|----------------------------|
+| :white_check_mark: | :x:              | :x:                    | :x:                        |
 
 ## Permissions
 
@@ -108,7 +115,7 @@ For basic presence notifications, you receive information about which user's pre
 
 ### Rich presence notifications
 
-Rich notifications notify subscribers about the changes that occurred to a resource. For rich presence notifications, subscribers are notified when the user's `Availability` and `Activity` changes in `encryptedContent.data`. For information about subscribing to rich notifications and decrypting data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
+Rich notifications notify subscribers about the changes that occurred to a resource. For rich presence notifications, subscribers are notified when the user's `Availability` and `Activity` changes in `encryptedContent.data`. For information about subscribing to rich notifications and decrypting data, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data).
 
 > [!NOTE]
 > The availability and activity can be the same value.

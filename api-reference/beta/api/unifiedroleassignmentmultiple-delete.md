@@ -20,6 +20,7 @@ Delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmulti
 This is applicable for a RBAC application that supports multiple principals and scopes. The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
+- Defender (Microsoft Defender XDR Unified RBAC)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -37,7 +38,10 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_delete_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-delete-2-permissions.md)]
 
+### For Defender provider
 
+<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_delete_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-delete-3-permissions.md)]
 
 ## HTTP request
 
@@ -53,6 +57,13 @@ To delete a **unifiedRoleAssignmentMultiple** for an Intune provider:
 
 ```http
 DELETE /roleManagement/deviceManagement/roleAssignments/{id}
+```
+
+To delete a **unifiedRoleAssignmentMultiple** for a Defender provider:
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/defender/roleAssignments/{id}
 ```
 
 ## Request headers
@@ -93,10 +104,6 @@ DELETE https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssi
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroleassignmentmultiple-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-unifiedroleassignmentmultiple-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -160,10 +167,6 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/{
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroleassignmentmultiple-cloudpc-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-unifiedroleassignmentmultiple-cloudpc-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroleassignmentmultiple-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -213,4 +216,63 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
+### Example 3: Delete a unifiedRoleAssignmentMultiple in a Defender provider
 
+The following example shows how to delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) in a Defender provider.
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delete_unifiedroleassignmentMultiple_defender"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/roleManagement/defender/roleAssignments/{id}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroleassignmentmultiple-defender-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroleassignmentmultiple-defender-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroleassignmentmultiple-defender-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-unifiedroleassignmentmultiple-defender-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-unifiedroleassignmentmultiple-defender-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-unifiedroleassignmentmultiple-defender-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```

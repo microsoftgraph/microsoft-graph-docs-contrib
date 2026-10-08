@@ -17,6 +17,9 @@ Namespace: microsoft.graph
 
 Activate a [serviceApp](../resources/serviceapp.md).
 
+> [!NOTE]
+> This API is intended for use by registered backup controller applications. If it's called via Microsoft Graph PowerShell, it returns a `403 Forbidden` response code because the Microsoft Graph PowerShell SDK isn't a supported client for this operation.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -32,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/serviceApps/{serviceAppId}/activate
 ```
 
@@ -67,7 +70,7 @@ The following example shows a request.
   "name": "serviceappthis.activate"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/serviceApps/{71633878-8321-4950-bfaf-ed285bdd1461}/activate
 Authorization: Bearer <Access-Token>
 
@@ -78,10 +81,6 @@ Authorization: Bearer <Access-Token>
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceappthisactivate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceappthisactivate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -120,7 +119,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.serviceApp"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Location: /solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461
 

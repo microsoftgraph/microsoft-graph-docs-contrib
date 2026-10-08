@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/triggerTypes/retentionEventTypes
 ```
 
@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
   "name": "create_retentioneventtype_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventTypes
 Content-Type: application/json
 Content-length: 199
@@ -81,10 +81,6 @@ Content-length: 199
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-retentioneventtype-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-retentioneventtype-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -121,7 +117,7 @@ Content-length: 199
   "@odata.type": "microsoft.graph.security.retentionEventType"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

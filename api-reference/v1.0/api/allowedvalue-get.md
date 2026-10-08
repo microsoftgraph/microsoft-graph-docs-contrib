@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ms.date: 10/24/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Get allowedValue
@@ -28,7 +29,7 @@ The signed-in user must also be assigned one of the following [directory roles](
 + Attribute Definition Reader
 + Attribute Definition Administrator
 
-By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+By default, Global Administrator and other administrator roles don't have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 
@@ -36,7 +37,7 @@ By default, Global Administrator and other administrator roles do not have permi
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues/{allowedValueId}
 ```
 
@@ -75,16 +76,12 @@ The following example gets the properties of a predefined value for a custom sec
   "sampleKeys": ["Engineering_Project", "Alpine"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues/Alpine
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-allowedvalue-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-allowedvalue-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -123,7 +120,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.allowedValue"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -21,13 +21,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_alert_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-alert-update-permissions.md)]
 
+[!INCLUDE [rbac-security-alerts-apis-write](../includes/rbac-for-apis/rbac-security-alerts-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/alerts_v2/{alertId}
 ```
 
@@ -43,9 +45,10 @@ PATCH /security/alerts_v2/{alertId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|microsoft.graph.security.alertStatus|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
-|classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
-|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|status|microsoft.graph.security.alertStatus|The status of the alert. The possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
+|classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. The possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
+|customDetails|microsoft.graph.security.dictionary| User defined custom fields with string values. |
+|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the alert. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |assignedTo|String|Owner of the incident, or `null` if no owner is assigned.|
 
 
@@ -65,7 +68,7 @@ The following example shows a request.
   "name": "update_alert_v2"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/security/alerts_v2/da637551227677560813_-961444813
 Content-Type: application/json
 Content-length: 2450
@@ -80,10 +83,6 @@ Content-length: 2450
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-v2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-alert-v2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -122,7 +121,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -159,6 +158,14 @@ Content-type: application/json
     "lastActivityDateTime": "2021-05-02T07:56:58.222Z",
     "comments": [],
     "evidence": [],
-    "systemTags" : []
+    "systemTags" : [],
+    "customDetails": {
+      "threatIntelligenceVerdict": "KnownMalicious",
+      "matchedThreatActor": "DEV-0537",
+      "automationPlaybookName": "BlockIPAndIsolateHost",
+      "automationExecutionStatus": "Succeeded",
+      "iocTypeMatched": "IPAddress",
+      "firstSeenInOrg": "2026-04-14T08:12:00Z"
+    }
 }
 ```

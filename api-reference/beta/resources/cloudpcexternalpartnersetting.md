@@ -1,20 +1,24 @@
 ---
-title: "cloudPcExternalPartnerSetting resource type"
+title: "cloudPcExternalPartnerSetting resource type (deprecated)"
 description: "Represents an external partner setting on Cloud PC."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ms.date: 05/23/2024
+toc.title: "Cloud PC external partner setting (deprecated)"
 ---
 
-# cloudPcExternalPartnerSetting resource type
+# cloudPcExternalPartnerSetting resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an external partner setting on Cloud PC.
+
+> [!CAUTION]
+> The external partner setting API is deprecated and will stop returning data on **March 31, 2026**. Please use the new [external partner APIs](../resources/cloudpcexternalpartner.md).
 
 ## Methods
 |Method|Return type|Description|

@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "update_adminreportsettings"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/reportSettings
 Content-Type: application/json
 Content-length: 37
@@ -77,10 +77,6 @@ Content-length: 37
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-adminreportsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-adminreportsettings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

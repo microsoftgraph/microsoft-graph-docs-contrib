@@ -64,7 +64,7 @@ The following table describes the restrictions you can further specify in the **
 |work| Suggestions are within the user's work hours which are defined in the user’s calendar configuration and can be customized by the user or administrator. The default work hours are Monday to Friday, 8am to 5pm in the time zone set for the mailbox. This is the default value if no **activityDomain** is specified. |
 |personal| Suggestions are within the user's work hours, and Saturday and Sunday. The default is Monday to Sunday, 8am to 5pm, in the time zone setting for the mailbox.|
 |unrestricted | Suggestions can be from all hours of a day, all days of a week.|
-|unknown | Do not use this value as it will be deprecated in the future. Currently behaves the same as `work`. Change any existing code to use `work`, `personal` or `unrestricted` as appropriate.|
+|unknown | Don't use this value as it will be deprecated in the future. Currently behaves the same as `work`. Change any existing code to use `work`, `personal` or `unrestricted` as appropriate.|
 
 
 Based on the specified parameters,**findMeetingTimes** checks the free/busy status in the primary calendars of the organizer and attendees. The action
@@ -94,7 +94,7 @@ based on each of their individual free/busy status:
 high to low. If there are suggestions with the same confidence, the action then orders these suggestions chronologically.
 - You can use the **minimumAttendeePercentage** optional parameter for **findMeetingTimes** to specify only meeting time suggestions of at least
 certain confidence level should be returned. For example, you can specify a **minimumAttendeePercentage** of 80% if you want only
-suggestions that have an 80% chance or more that all the attendees are attending. If you do not specify **minimumAttendeePercentage**,
+suggestions that have an 80% chance or more that all the attendees are attending. If you don't specify **minimumAttendeePercentage**,
 **findMeetingTimes** assumes a value of 50%.
 
 As an example, if a meeting time suggestion involves 3 attendees with the following free/busy status:
@@ -125,7 +125,7 @@ By setting the **returnSuggestionReasons** parameter, you also get an explanatio
 
 Notice that the request specifies time in the PST time zone. By default, the response returns meeting time suggestions in UTC. You can use the `Prefer: outlook.timezone` request header to specify PST as well for the time values in the response.
 
-##### Request
+### Request
 Here is the example request.
 
 # [HTTP](#tab/http)
@@ -184,10 +184,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-findmeetingtimes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-findmeetingtimes-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-findmeetingtimes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -204,14 +200,18 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/user-findmeetingtimes-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-findmeetingtimes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/user-findmeetingtimes-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
-Here is an example response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

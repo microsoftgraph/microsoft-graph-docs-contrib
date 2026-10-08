@@ -52,7 +52,7 @@ In the request body, supply a JSON representation of [outlookTask](../resources/
 If successful, this method returns `201 Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -82,10 +82,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlooktask-from-outlooktaskfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-outlooktask-from-outlooktaskfolder-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-outlooktask-from-outlooktaskfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -113,7 +109,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
-##### Response
+### Response
 The POST method ignores the time portion in the request body and assumes the time to be always midnight in the specified time zone (PST). 
 Then, by default, the POST method converts and shows all the date-related properties in UTC in the response.
 

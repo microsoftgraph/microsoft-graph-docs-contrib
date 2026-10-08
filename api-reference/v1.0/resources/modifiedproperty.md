@@ -2,7 +2,7 @@
 title: "modifiedProperty resource type"
 description: "Indicates all the properties on a Microsoft Entra resource that have been modified, including the old and new values."
 ms.localizationpriority: medium
-author: "dhanyahk"
+author: "egreenberg14"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ms.date: 07/22/2024
@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Indicates all the properties on a Microsoft Entra resource that have been modified, including the old and new values.
+Indicates all the properties on a Microsoft Entra resource that have been modified, including the old and new values. This object is configured in the **modifiedProperties** property of [provisioningObjectSummary](../resources/provisioningobjectsummary.md) and [targetResource](../resources/targetresource.md).
 
 ## Properties
 

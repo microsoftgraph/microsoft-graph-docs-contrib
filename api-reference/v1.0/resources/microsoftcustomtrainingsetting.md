@@ -23,7 +23,7 @@ Inherits from [trainingSetting](../resources/trainingsetting.md).
 |completionDateTime|DateTimeOffset|The completion date and time of the training. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |settingType|trainingSettingType|Type of training setting that indicates which setting to use to configure a training. The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`. Inherited from [trainingSetting](../resources/trainingsetting.md).|
 |trainingAssignmentMappings|[microsoftTrainingAssignmentMapping](../resources/microsofttrainingassignmentmapping.md) collection| The mapping details of the associated training.|
-|trainingCompletionDuration|trainingCompletionDuration|The training completion duration that needs to be provided before scheduling the training. Possible values are: `week`, `fortnite`, `month`, `unknownFutureValue`.|
+|trainingCompletionDuration|trainingCompletionDuration|The training completion duration that needs to be provided before scheduling the training. The possible values are: `week`, `fortnite`, `month`, `unknownFutureValue`.|
 
 ## Relationships
 

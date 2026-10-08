@@ -1,19 +1,19 @@
 ---
 title: "workbookCommentReply resource type"
-description: "Definition of workbookCommentReply resource type"
+description: "Represents a reply to an Excel comment."
 ms.localizationpriority: medium
-author: "grangeryy"
+author: "AmandaHan123"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
 toc.title: Comment reply
-ms.date: 07/30/2024
+ms.date: 09/05/2025
 ---
 
 # workbookCommentReply resource type
 
 Namespace: microsoft.graph
 
-Represents a reply to an excel comment.
+Represents a reply to an Excel comment.
 
 ## Methods
 
@@ -27,9 +27,11 @@ Represents a reply to an excel comment.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String|The content of the reply.|
-|contentType|String|The content type for the reply.|
+|content|String|The content of the reply that is the displayed to end-users.|
+|contentType|String|The content type for the reply. Supported values are: `plain`, `mention`.|
 |id|String|The unique identifier for the reply. Read-only.|
+|mentions|[workbookCommentMention](workbookcommentmention.md) collection|A collection that contains all the people mentioned within the reply. When **contentType** is `plain`, this property is an empty array. Read-only.|
+|richContent|String|The rich content of the reply (for example, reply content with mentions, where the first mentioned entity has an ID attribute of `0` and the second has an ID attribute of `1`). When **contentType** is `plain`, this property is empty. Read-only.|
 
 ## Relationships
 
@@ -54,7 +56,9 @@ The following JSON representation shows the resource type.
 {
   "content": "String",
   "contentType": "String",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "mentions": [{ "@odata.type": "microsoft.graph.workbookCommentMention" }],
+  "richContent": "String"
 }
 ```
 

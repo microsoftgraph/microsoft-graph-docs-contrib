@@ -18,22 +18,13 @@ var requestBody = new SecureScoreControlProfile
 		SubProvider = null,
 		Vendor = "Microsoft",
 	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"assignedTo" , ""
-		},
-		{
-			"comment" , "control is reviewed"
-		},
-		{
-			"state" , "Reviewed"
-		},
-	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Security.SecureScoreControlProfiles["{secureScoreControlProfile-id}"].PatchAsync(requestBody);
+var result = await graphClient.Security.SecureScoreControlProfiles["{secureScoreControlProfile-id}"].PatchAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Prefer", "return=representation");
+});
 
 
 ```

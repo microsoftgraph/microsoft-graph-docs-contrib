@@ -1,7 +1,7 @@
 ---
 title: "Update fido2AuthenticationMethodConfiguration"
 description: "Update the properties of a fido2AuthenticationMethodConfiguration object."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 
@@ -65,23 +65,51 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
   "name": "update_fido2authenticationmethodconfiguration"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-    "state": "enabled",
-    "isAttestationEnforced": "true"
+    "id": "Fido2",
+    "state": "disabled",
+    "isSelfServiceRegistrationAllowed": true,
+    "isAttestationEnforced": true,
+    "keyRestrictions": {
+        "isEnforced": false,
+        "enforcementType": "block",
+        "aaGuids": []
+    },
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "allowedPasskeyProfiles": [
+                "00000000-0000-0000-0000-000000000001"
+            ]
+        }
+    ],
+    "excludeTargets": [],
+    "passkeyProfiles": [
+        {
+            "id": "00000000-0000-0000-0000-000000000001",
+            "name": "Default passkey profile",
+            "passkeyTypes": "deviceBound,synced",
+            "attestationEnforcement": "disabled",
+            "keyRestrictions": {
+                "isEnforced": false,
+                "enforcementType": "allow",
+                "aaGuids": [
+                ]
+            }
+        }
+    ]
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-fido2authenticationmethodconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-fido2authenticationmethodconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -116,6 +144,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

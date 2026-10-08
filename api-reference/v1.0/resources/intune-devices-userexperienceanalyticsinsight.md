@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # userExperienceAnalyticsInsight resource type
@@ -22,7 +22,7 @@ The user experience analytics insight is the recomendation to improve the user e
 |userExperienceAnalyticsMetricId|String|The unique identifier of the user experience analytics metric.|
 |insightId|String|The unique identifier of the user experience analytics insight.|
 |values|[userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md) collection|The value of the user experience analytics insight.|
-|severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|The severity of the user experience analytics insight. Possible values are: none, informational, warning, error. None by default. Possible values are: `none`, `informational`, `warning`, `error`, `unknownFutureValue`.|
+|severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|The severity of the user experience analytics insight. The possible values are: none, informational, warning, error. None by default. The possible values are: `none`, `informational`, `warning`, `error`, `unknownFutureValue`.|
 
 ## Relationships
 None

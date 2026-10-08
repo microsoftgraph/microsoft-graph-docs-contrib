@@ -50,6 +50,7 @@ PATCH /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId
 |Property|Type|Description|
 |:---|:---|:---|
 |mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|A collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects. Required.|
+|policyId|String|The identifier of the protection policy that scopes the restore session. When supplied, the service validates that referenced protection units belong to this policy.|
 
 To remove an **exchangeRestoreSession**, specify the @removed annotation in the request body for the restore point artifact with the ID of the [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md).
 
@@ -75,6 +76,7 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSe
 Content-Type: application/json
 
 {
+  "policyId": "99999999-aaaa-bbbb-cccc-dddddddddddd",
   "mailboxRestoreArtifacts@delta": [
     {
       "restorePoint": { "id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" }, //Create a new mailbox restore artifact and add it under the Restore Session.
@@ -116,10 +118,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-update-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/exchangerestoresession-update-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -204,4 +202,3 @@ Content-Type: application/json
   ]
 }
 ```
-

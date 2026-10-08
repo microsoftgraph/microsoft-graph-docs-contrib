@@ -1,11 +1,11 @@
 ---
 title: "Get multiTenantOrganizationMember"
 description: "Get a tenant and its properties in the multitenant organization."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 06/21/2024
+ms.date: 05/14/2026
 ---
 
 # Get multiTenantOrganizationMember
@@ -21,7 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "multitenantorganizationmember_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/multitenantorganizationmember-get-permissions.md)]
 
-If called with MultiTenantOrganization.ReadBasic.All permission, the caller can only read the **displayName** and **tenantId** properties.
+The properties returned depend on the permission granted:
+
+- *MultiTenantOrganization.ReadBasic.All* (delegated): Returns only the **displayName** and **tenantId** properties.
+- *MultiTenantOrganization.Read.All*, *MultiTenantOrganization.ReadWrite.All*, or *Directory.Read.All* (delegated or application): Returns all properties.
 
 [!INCLUDE [rbac-multitenantorganization-apis-read](../includes/rbac-for-apis/rbac-multitenantorganization-apis-read.md)]
 
@@ -31,7 +34,7 @@ If called with MultiTenantOrganization.ReadBasic.All permission, the caller can 
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 ```
 
@@ -62,16 +65,12 @@ The following example gets a tenant and its properties in the multitenant organi
   "name": "get_multitenantorganizationmember"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenants/1fd6544e-e994-4de2-9f1b-787b51c7d325
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-multitenantorganizationmember-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-multitenantorganizationmember-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -108,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization
   "@odata.type": "microsoft.graph.multiTenantOrganizationMember"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -127,7 +126,7 @@ Content-Type: application/json
 
 If an update is in progress, `transitionDetails` lists information about the update. The following response indicates the role is being changed from member to owner.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -148,4 +147,3 @@ Content-Type: application/json
     }
 }
 ```
-

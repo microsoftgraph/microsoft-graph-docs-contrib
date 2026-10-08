@@ -5,7 +5,7 @@ author: "arishojaswi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.date: 10/29/2024
+ms.date: 09/18/2026
 ---
 
 # Create auditLogQuery
@@ -27,7 +27,7 @@ Auditing data can be accessed through Microsoft Purview Audit Search API via the
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/auditLog/queries
 ```
 
@@ -63,17 +63,21 @@ You can specify the following properties when creating a **auditLogQuery**.
 
 If successful, this method returns a `201 Created` response code and a [auditLogQuery](../resources/security-auditlogquery.md) object in the response body.
 
+> [!NOTE]
+> This method is subject to tenant-level daily submission and concurrent-query limits. A tenant receives a baseline allocation, and tenants with more eligible licenses can receive a higher allocation. For details and retry guidance, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#security-audit-log-query-service-limits).
+
 ## Examples
 
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_auditlogquery_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/auditLog/queries
 Content-Type: application/json
 
@@ -105,6 +109,37 @@ Content-Type: application/json
   "status": "String"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-auditlogquery-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-auditlogquery-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-auditlogquery-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-auditlogquery-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-auditlogquery-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-auditlogquery-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-auditlogquery-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 ### Response
@@ -116,7 +151,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.auditLogQuery"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

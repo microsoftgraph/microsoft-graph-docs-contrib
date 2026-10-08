@@ -1,14 +1,14 @@
 ---
-title: "cloudPcDeviceImage: reupload"
+title: "cloudPcDeviceImage: reupload (deprecated)"
 description: "Reupload a cloudPcDeviceImage object."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 02/25/2026
 ---
 
-# cloudPcDeviceImage: reupload
+# cloudPcDeviceImage: reupload (deprecated)
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,10 @@ Namespace: microsoft.graph
 
 Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+> [!CAUTION]
+> This API is deprecated and will stop returning data on June 25, 2026. Going forward, use the [cloudPcDeviceImage: retryUpload](cloudpcdeviceimage-retryupload.md) API instead.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -68,10 +71,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceIma
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reupload-deviceimages-from-virtualendpoint-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/reupload-deviceimages-from-virtualendpoint-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

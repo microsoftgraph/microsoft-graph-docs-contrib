@@ -4,6 +4,7 @@ description: "Learn about Microsoft Graph interaction patterns for non-interacti
 author: "OlgaPodo"
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Analyze Microsoft Graph data in your data storage

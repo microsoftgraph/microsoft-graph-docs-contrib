@@ -12,9 +12,9 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is.
+Stop the [synchronizationJob](../resources/synchronization-synchronizationjob.md), and permanently delete all the state associated with it. Synchronized accounts are left as-is.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -46,7 +46,7 @@ If successful, returns a `204 No Content` response. It doesn't return anything i
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -60,10 +60,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/j
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-synchronizationjob-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-synchronizationjob-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -92,7 +88,7 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/j
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 <!-- {

@@ -1,7 +1,7 @@
 ---
 title: "Get application"
 description: "Get the properties and relationships of an application object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: high
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Get the properties and relationships of an [application](../resources/application.md) object.
+Get the properties and relationships of an [application](../resources/application.md) object. This API can be used to get [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects as well by their ID.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-get-permissions.md)]
 
-
+[!INCLUDE [rbac-application-apis-read](../includes/rbac-for-apis/rbac-application-apis-read.md)]
 
 ## HTTP request
 
@@ -42,6 +42,8 @@ By default, this API doesn't return the public key value of the **key** in the *
 
 The use of `$select` to get **keyCredentials** for applications has a throttling limit of 150 requests per minute for every tenant.
 
+The **managerApplications** property is not returned by default. To retrieve it, use `$select=managerApplications` or include it in a `$select` query with other properties. For example, `$select=id,appId,managerApplications`.
+
 ## Request headers
 
 | Name           | Description                |
@@ -54,7 +56,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [application](../resources/application.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [application](../resources/application.md) or [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object in the response body.
 
 ## Examples
 
@@ -74,10 +76,6 @@ GET https://graph.microsoft.com/v1.0/applications/acc848e9-e8ec-4feb-a521-8d58b5
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -127,6 +125,7 @@ Content-type: application/json
     "appId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
     "applicationTemplateId": null,
     "identifierUris": [],
+    "createdByAppId": "748fe028-bb3d-4f2c-a015-4789781fe0f1",
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "disabledByMicrosoftStatus": null,
     "displayName": "Display name",
@@ -205,10 +204,6 @@ GET https://graph.microsoft.com/v1.0/applications(appId='46e6adf4-a9cf-4b60-9390
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-application-by-appid-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-application-by-appid-select-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

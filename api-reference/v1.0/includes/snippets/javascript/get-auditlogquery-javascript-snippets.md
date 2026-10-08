@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let auditLogQuery = await client.api('/security/auditLog/queries/{auditLogQueryId}')
-	.version('beta')
 	.get();
 
 ```

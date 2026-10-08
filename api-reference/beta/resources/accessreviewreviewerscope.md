@@ -16,9 +16,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-The **accessReviewReviewerScope** defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) or [user consent requests](consentrequests-overview.md). 
+Use **accessReviewReviewerScope** to configure reviewers in the following properties:
+- [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md): **reviewers**, **fallbackReviewers**, **backupReviewers**
+- [accessReviewInstance](../resources/accessreviewinstance.md): **reviewers**, **fallbackReviewers**
+- [accessReviewStage](../resources/accessreviewstage.md): **reviewers**, **fallbackReviewers**
 
-Reviewers can be specified as a static list of users (that is, specific users, group owners, and group members) or dynamically in which every user is reviewed by their manager, group or application owners. To create a self-review (where users review their own access) in Microsoft Entra access reviews, the **reviewers** property of the [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) should be an empty collection.
+This type is also used for [user consent requests](../resources/consentrequests-overview.md).
+
+Reviewers can be specified as a static list of users (that is, specific users, group owners, and group members) or dynamically, in which every user is reviewed by their manager, group owners, or application owners. To create a self-review (where users review their own access) in Microsoft Entra access reviews, the **reviewers** property of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) should be an empty collection.
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
@@ -28,6 +33,8 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 | query | String | The query specifying who will be the reviewer. |
 | queryType | String | The type of query. Examples include `MicrosoftGraph` and `ARM`. |
 | queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, `./manager`, is specified. Possible value: `decisions`. |
+reviewerId | String | The identifier of the reviewer. |
+|scopeType|accessReviewReviewerScopeType| The type of the reviewer scope. The possible values are: `user`, `group`, `self`, `manager`, `sponsor`, `resourceOwner`, `managerOrSponsor`, `unknownFutureValue`.|
 
 For more about configuration options for **reviewers**, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept).
 
@@ -47,7 +54,9 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.accessReviewReviewerScope",
   "query": "String",
   "queryType": "String",
-  "queryRoot": "String"
+  "queryRoot": "String",
+  "reviewerId": "String",
+  "scopeType": "String"
 }
 ```
 

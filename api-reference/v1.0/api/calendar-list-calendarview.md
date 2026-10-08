@@ -63,7 +63,7 @@ This method also supports some of the [OData Query Parameters](/graph/query-para
 **CalendarView** with `$top` has a minimum value of 1 and maximum of 1000. 
 
 > [!NOTE]
-> The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
+> The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) don't support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
 
 ## Request headers
 | Name       | Type | Description |
@@ -95,10 +95,6 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-calendarview-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

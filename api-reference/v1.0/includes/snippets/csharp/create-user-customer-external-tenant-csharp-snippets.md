@@ -25,7 +25,7 @@ var requestBody = new User
 	PasswordProfile = new PasswordProfile
 	{
 		Password = "passwordValue",
-		ForceChangePasswordNextSignIn = false,
+		ForceChangePasswordNextSignIn = true,
 	},
 	PasswordPolicies = "DisablePasswordExpiration",
 };

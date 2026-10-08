@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/labels/authorities/{authorityTemplateId}
 GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/authorityTemplate
 ```
@@ -50,7 +50,8 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-Here's an example of a request.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -58,16 +59,12 @@ Here's an example of a request.
   "name": "get_authoritytemplate"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/labels/authorities/a94af2e3-853b-6fcc-c898-d61d3a6d9efc
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authoritytemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-authoritytemplate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -97,7 +94,8 @@ GET https://graph.microsoft.com/v1.0/security/labels/authorities/a94af2e3-853b-6
 ---
 
 ### Response
-Here's an example of the response.
+
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -106,7 +104,7 @@ Here's an example of the response.
   "@odata.type": "microsoft.graph.security.authorityTemplate"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

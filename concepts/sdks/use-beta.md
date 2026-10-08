@@ -4,6 +4,7 @@ description: "Describes how to use the Microsoft Graph SDKs with the beta versio
 ms.localizationpriority: medium
 author: jasonjoh
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 <!-- markdownlint-disable MD051 -->

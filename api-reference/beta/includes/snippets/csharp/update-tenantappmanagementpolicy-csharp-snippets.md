@@ -74,6 +74,167 @@ var requestBody = new TenantAppManagementPolicy
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2024-01-01T10:37:00Z"),
 				ExcludeAppsReceivingV2Tokens = true,
 				ExcludeSaml = true,
+				ExcludeActors = new AppManagementPolicyActorExemptions
+				{
+					CustomSecurityAttributes = new List<CustomSecurityAttributeExemption>
+					{
+						new CustomSecurityAttributeStringValueExemption
+						{
+							OdataType = "microsoft.graph.customSecurityAttributeStringValueExemption",
+							Id = "PolicyExemptions_AppManagementExemption",
+							Operator = CustomSecurityAttributeComparisonOperator.Equals,
+							Value = "ExemptFromIdentifierUriAdditionRestriction",
+						},
+					},
+				},
+			},
+		},
+		RedirectUris = new RedirectUriConfiguration
+		{
+			UriWithBlockedScheme = new RedirectUriBlockedSchemeConfiguration
+			{
+				State = AppManagementRestrictionState.Enabled,
+				BlockedSchemes = new List<string>
+				{
+					"http",
+					"ftp",
+				},
+				ExemptFormats = new List<string>
+				{
+					"http://example.com/login",
+				},
+				Web = new RedirectUriPlatformBlockedSchemeConfiguration
+				{
+					BlockedSchemes = new List<string>
+					{
+						"custom-ftps",
+					},
+				},
+				Spa = new RedirectUriPlatformBlockedSchemeConfiguration
+				{
+					BlockedSchemes = new List<string>
+					{
+						"myapp",
+					},
+					ExemptFormats = new List<string>
+					{
+						"https://spa.example.com/auth",
+					},
+				},
+				PublicClient = new RedirectUriPlatformBlockedSchemeConfiguration
+				{
+					BlockedSchemes = new List<string>
+					{
+						"msauth",
+					},
+					ExemptFormats = new List<string>
+					{
+						"https://public.example.com/auth",
+					},
+				},
+			},
+			UriWithoutAllowedScheme = new RedirectUriAllowedSchemeConfiguration
+			{
+				State = AppManagementRestrictionState.Enabled,
+				AllowedSchemes = new List<string>
+				{
+					"https",
+				},
+				Web = new RedirectUriPlatformAllowedSchemeConfiguration
+				{
+					AllowedSchemes = new List<string>
+					{
+						"https",
+					},
+				},
+				Spa = new RedirectUriPlatformAllowedSchemeConfiguration
+				{
+					AllowedSchemes = new List<string>
+					{
+						"https",
+						"msal",
+					},
+				},
+				PublicClient = new RedirectUriPlatformAllowedSchemeConfiguration
+				{
+					AllowedSchemes = new List<string>
+					{
+						"myapp",
+					},
+				},
+			},
+			UriWithBlockedDomain = new RedirectUriBlockedDomainConfiguration
+			{
+				State = AppManagementRestrictionState.Enabled,
+				BlockedDomains = new List<string>
+				{
+					"contoso-short.com",
+					"tempuri.org",
+				},
+				Web = new RedirectUriPlatformBlockedDomainConfiguration
+				{
+					BlockedDomains = new List<string>
+					{
+						"short.contoso.com",
+					},
+				},
+				Spa = new RedirectUriPlatformBlockedDomainConfiguration
+				{
+					BlockedDomains = new List<string>
+					{
+						"contoso.dev",
+					},
+				},
+				PublicClient = new RedirectUriPlatformBlockedDomainConfiguration
+				{
+					BlockedDomains = new List<string>
+					{
+						"mspreview.contoso.com",
+					},
+				},
+			},
+			UriWithoutAllowedDomain = new RedirectUriAllowedDomainConfiguration
+			{
+				State = AppManagementRestrictionState.Enabled,
+				AllowedDomains = new List<string>
+				{
+					"contoso.com",
+					"login.microsoftonline.com",
+				},
+				Web = new RedirectUriPlatformAllowedDomainConfiguration
+				{
+					AllowedDomains = new List<string>
+					{
+						"app.contoso.com",
+					},
+				},
+				Spa = new RedirectUriPlatformAllowedDomainConfiguration
+				{
+					AllowedDomains = new List<string>
+					{
+						"spa.contoso.com",
+					},
+				},
+				PublicClient = new RedirectUriPlatformAllowedDomainConfiguration
+				{
+					AllowedDomains = new List<string>
+					{
+						"app://contoso",
+					},
+				},
+			},
+			UriWithWildcard = new RedirectUriWildcardConfiguration
+			{
+				State = AppManagementRestrictionState.Enabled,
+				ExcludeFormats = new RedirectUriWildcardExcludeFormats
+				{
+					ExcludeWildcardsInPath = true,
+					ExcludeWildcardsInPathWithDomains = new List<string>
+					{
+						"contoso.com",
+						"fabrikam.com",
+					},
+				},
 			},
 		},
 	},

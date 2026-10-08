@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines how groups should be considered in scope for a synchronization rule. This object is only used by Azure Active Directory Connect cloud sync scenarios.
+Defines how groups should be considered in scope for a [synchronizationRule](../resources/synchronization-synchronizationrule.md) (**groupFilter** property). This object is only used by Azure Active Directory Connect cloud sync scenarios.
 
 ## Properties
 |Property|Type|Description|

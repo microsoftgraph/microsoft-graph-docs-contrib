@@ -81,10 +81,6 @@ GET https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsO
 [!INCLUDE [sample-code](../includes/snippets/csharp/certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

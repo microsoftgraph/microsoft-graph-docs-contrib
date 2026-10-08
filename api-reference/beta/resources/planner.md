@@ -34,10 +34,11 @@ The **planner** resource is the entry point for the Planner object model. It ret
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) collection| Read-only. Nullable. Returns a collection of the specified buckets|
-|plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns a collection of the specified plans|
-|rosters|[plannerRoster](plannerroster.md) collection|Read-only. Nullable. Returns a collection of the specified rosters|
-|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns a collection of the specified tasks|
+|buckets|[plannerBucket](../resources/plannerbucket.md) collection| Read-only. Nullable. Returns a collection of the specified buckets|
+|goals|[plannerGoal](../resources/plannergoal.md) collection| Read-only. Nullable. Returns a collection of the specified goals|
+|plans|[plannerPlan](../resources/plannerplan.md) collection| Read-only. Nullable. Returns a collection of the specified plans|
+|rosters|[plannerRoster](../resources/plannerroster.md) collection|Read-only. Nullable. Returns a collection of the specified rosters|
+|tasks|[plannerTask](../resources/plannertask.md) collection| Read-only. Nullable. Returns a collection of the specified tasks|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -71,5 +72,3 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-
-

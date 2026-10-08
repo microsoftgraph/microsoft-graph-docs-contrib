@@ -1,7 +1,7 @@
 ---
 title: "Delete certificateAuthorityDetail"
 description: "Delete a certificateAuthorityDetail object."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -68,10 +68,6 @@ DELETE https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certif
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-certificateauthoritydetail-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-certificateauthoritydetail-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

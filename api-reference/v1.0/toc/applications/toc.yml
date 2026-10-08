@@ -79,9 +79,9 @@ items:
     - name: Federated identity credential
       href: ../../resources/federatedidentitycredential.md
     - name: List
-      href: ../../api/application-list-federatedidentitycredentials.md
+      href: ../../api/federatedidentitycredential-list.md
     - name: Create
-      href: ../../api/application-post-federatedidentitycredentials.md
+      href: ../../api/federatedidentitycredential-post.md
     - name: Get
       href: ../../api/federatedidentitycredential-get.md
     - name: Update
@@ -156,6 +156,10 @@ items:
         href: ../../api/tokenlifetimepolicy-delete.md
       - name: List applied to applications
         href: ../../api/tokenlifetimepolicy-list-appliesto.md
+  - name: Complex types
+    items:
+    - name: Authentication behaviors
+      href: ../../resources/authenticationbehaviors.md
 - name: Application template
   items:
   - name: Application template
@@ -342,6 +346,8 @@ items:
         items:
         - name: Remote desktop security configuration
           href: ../../resources/remotedesktopsecurityconfiguration.md
+        - name: List
+          href: ../../api/serviceprincipal-list-remotedesktopsecurityconfiguration.md
         - name: Create
           href: ../../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
         - name: Get
@@ -350,6 +356,20 @@ items:
           href: ../../api/remotedesktopsecurityconfiguration-update.md
         - name: Delete
           href: ../../api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+      - name: Approved client app
+        items:
+        - name: Approved client app
+          href: ../../resources/approvedclientapp.md
+        - name: List
+          href: ../../api/remotedesktopsecurityconfiguration-list-approvedclientapps.md
+        - name: Create
+          href: ../../api/remotedesktopsecurityconfiguration-post-approvedclientapps.md
+        - name: Get
+          href: ../../api/approvedclientapp-get.md
+        - name: Update
+          href: ../../api/approvedclientapp-update.md
+        - name: Delete
+          href: ../../api/remotedesktopsecurityconfiguration-delete-approvedclientapps.md
       - name: Target device group
         items:
         - name: Target device group

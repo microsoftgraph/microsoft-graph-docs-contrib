@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # mobileApp resource type
@@ -21,25 +21,25 @@ An abstract class containing the base properties for Intune mobile apps. Note: L
 |:---|:---|:---|
 |[List mobileApps](../api/intune-apps-mobileapp-list.md)|[mobileApp](../resources/intune-apps-mobileapp.md) collection|List properties and relationships of the [mobileApp](../resources/intune-apps-mobileapp.md) objects.|
 |[Get mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|Read properties and relationships of the [mobileApp](../resources/intune-apps-mobileapp.md) object.|
-|[assign action](../api/intune-apps-mobileapp-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-apps-mobileapp-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
+|id|String|Key of the entity. This property is read-only.|
 |displayName|String|The admin provided or imported title of the app.|
 |description|String|The description of the app.|
 |publisher|String|The publisher of the app.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon.|
-|createdDateTime|DateTimeOffset|The date and time the app was created.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified.|
+|createdDateTime|DateTimeOffset|The date and time the app was created. This property is read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. This property is read-only.|
 |isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin.|
 |privacyInformationUrl|String|The privacy statement Url.|
 |informationUrl|String|The more information Url.|
 |owner|String|The owner of the app.|
 |developer|String|The developer of the app.|
 |notes|String|Notes for the app.|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. The possible values are: `notPublished`, `processing`, `published`.|
 
 ## Relationships
 |Relationship|Type|Description|

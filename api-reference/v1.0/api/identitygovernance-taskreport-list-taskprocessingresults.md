@@ -1,7 +1,7 @@
 ---
 title: "List taskProcessingResult"
 description: "Get a list of taskProcessingResult objects and their properties for a taskReport."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get the task processing result resources from the [taskReport](../resources/identitygovernance-taskreport.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskreport-taskprocessingresult-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-taskreport-taskprocessingresult-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-taskreport-taskprocessingresult-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -129,6 +125,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2022-08-24T23:28:05.1234966Z",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
@@ -152,6 +149,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2022-08-24T23:28:05.1438145Z",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
                 "id": "8cdf25a8-c9d2-423e-a03d-3f39f03c3e97"
@@ -190,10 +188,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskreport-taskprocessingresult-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-taskreport-taskprocessingresult-select-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

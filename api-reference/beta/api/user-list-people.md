@@ -88,10 +88,6 @@ GET https://graph.microsoft.com/beta/me/people
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-person-collection-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-person-collection-beta-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-person-collection-beta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -212,7 +208,7 @@ Content-type: application/json
 
 #### Requesting a subsequent page of people
 
-If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request more pages of information. If the previous request has additional information, the following request gets the next page of people from the server.
+If the first response doesn't contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request more pages of information. If the previous request has additional information, the following request gets the next page of people from the server.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=10&$skip=10

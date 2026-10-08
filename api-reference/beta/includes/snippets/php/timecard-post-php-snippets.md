@@ -16,6 +16,7 @@ use Microsoft\Graph\Beta\Generated\Models\TimeCardBreak;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new TimeCard();
+$requestBody->setUserId('a3601044-a1b5-438e-b742-f78d01d68a67');
 $clockInEvent = new TimeCardEvent();
 $clockInEvent->setDateTime(new \DateTime('2019-03-18T00:00:00.000Z'));
 $clockInEvent->setIsAtApprovedLocation(true);
@@ -45,10 +46,6 @@ $breaksTimeCardBreak1->setStart($breaksTimeCardBreak1Start);
 $breaksArray []= $breaksTimeCardBreak1;
 $requestBody->setBreaks($breaksArray);
 
-$additionalData = [
-'onBehalfOfUserId' => 'a3601044-a1b5-438e-b742-f78d01d68a67',
-];
-$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timeCards()->post($requestBody)->wait();
 

@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_post_reviewsets" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-post-reviewsets-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-reviewset-tag-apis](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
 
 ## HTTP request
 
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets
 ```
 
@@ -46,6 +47,7 @@ You can specify the following properties when you create an **ediscoveryReviewSe
 
 |Property|Type|Description|
 |:---|:---|:---|
+|description|String|The description of the review set.|
 |displayName|String|The name of the review set. Required.|
 
 
@@ -64,7 +66,7 @@ The following example shows a request.
   "name": "create_ediscoveryreviewset_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/reviewSets
 Content-Type: application/json
 
@@ -75,10 +77,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewset-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-ediscoveryreviewset-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -116,7 +114,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryReviewSet"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

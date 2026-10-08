@@ -6,6 +6,7 @@ ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Address resources in a drive on OneDrive

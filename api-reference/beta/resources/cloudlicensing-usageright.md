@@ -1,6 +1,6 @@
 ---
-title: "usageRight resource type"
-description: "Represents the right of a user or group to use a particular set of services, as granted by the combination of their assigned licenses for the same subscribedSku."
+title: "cloudLicensing usageRight resource type"
+description: "Represents a principal's right to use a particular set of services, as granted by the combination of their assigned licenses for the same subscribedSku."
 author: "patrick-starrin"
 ms.localizationpriority: medium
 ms.subservice: "cloud-licensing"
@@ -8,13 +8,13 @@ doc_type: resourcePageType
 ms.date: 10/17/2024
 ---
 
-# usageRight resource type
+# cloudLicensing usageRight resource type
 
 Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the right of a user or group to use a particular set of services, as granted by the combination of their assigned licenses for the same [subscribedSku](../resources/subscribedsku.md).
+Represents a principal's right to use a particular set of services, as granted by the combination of their assigned licenses for the same [subscribedSku](../resources/subscribedsku.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,7 +23,9 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List for group](../api/cloudlicensing-groupcloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a group.|
 |[List for user](../api/cloudlicensing-usercloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a user.|
-|[Get](../api/cloudlicensing-usageright-get.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) for a [user](../resources/user.md) or [group](../resources/group.md).|
+|[List for device](../api/cloudlicensing-devicecloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a device.|
+|[Get](../api/cloudlicensing-usageright-get.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) for a [user](../resources/user.md), [group](../resources/group.md), or [device](../resources/device.md).|
+|[List assignments](../api/cloudlicensing-usageright-list-assignments.md)|[microsoft.graph.cloudLicensing.assignment](../resources/cloudlicensing-assignment.md) collection|Get a list of the [assignment](../resources/cloudlicensing-assignment.md) objects which combine to form this [usageRight](../resources/cloudlicensing-usageright.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +36,10 @@ Inherits from [entity](../resources/entity.md).
 |skuPartNumber|String| Unique SKU display name that is equal to the **skuPartNumber** on the related [subscribedSku](subscribedsku.md) object; for example, `AAD_Premium`. Read-only. |
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|allotments|[microsoft.graph.cloudLicensing.allotment](../resources/cloudlicensing-allotment.md) collection|The set of allotments associated with the assignments that combine to form this **usageRight**.|
+|assignments|[microsoft.graph.cloudLicensing.assignment](../resources/cloudlicensing-assignment.md) collection|The set of assignments that combine to form this **usageRight**, including both direct assignments and assignments inherited through group membership.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

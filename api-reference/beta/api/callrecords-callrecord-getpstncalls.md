@@ -17,7 +17,7 @@ Namespace: microsoft.graph.callRecords
 Get a log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
 
 > [!NOTE]
-> This API doesn't return information for **Telstra** or **Softbank** calling plans.
+> This API doesn't return information for **Telstra** calling plans.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/callrecord-getpstncalls-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/callrecord-getpstncalls-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

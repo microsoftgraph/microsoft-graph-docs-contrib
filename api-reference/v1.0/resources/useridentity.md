@@ -2,7 +2,7 @@
 title: "userIdentity resource type"
 description: "In the context of a Microsoft Entra audit log, the resource represents the user information that initiated or was affected by an audit activity."
 ms.localizationpriority: medium
-author: "dhanyahk"
+author: "egreenberg14"
 ms.subservice: entra-users
 doc_type: resourcePageType
 ms.date: 08/08/2024
@@ -12,9 +12,11 @@ ms.date: 08/08/2024
 
 Namespace: microsoft.graph
 
-In the context of a Microsoft Entra audit log, this resource represents the user information that initiated or was affected by an audit activity. In the context of [callRecords](callrecords-callrecord.md), this resource represents the identity of a [participant](callrecords-participant.md) or [organizer](callrecords-organizer.md) in a call.
+In the context of a Microsoft Entra audit log, this resource represents the user information that initiated or was affected by an audit activity.
+- In the context of [callRecords](../resources/callrecords-callrecord.md), this resource represents the identity of a [participant](../resources/callrecords-participant.md) or [organizer](../resources/callrecords-organizer.md) in a call.
+- It's also returned in the **user** property of [auditActivityInitiator](../resources/auditactivityinitiator.md).
 
-Inherits from [identity](identity.md).
+Inherits from [identity](../resources/identity.md).
 
 ## Properties
 

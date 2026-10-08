@@ -22,12 +22,8 @@ Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualeventsroot-post-virtualevents-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventsroot-post-virtualevents-permissions.md)]
+<!-- { "blockType": "permissions", "name": "virtualeventsroot_post_townhalls" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventsroot-post-townhalls-permissions.md)]
 
 ## HTTP request
 
@@ -35,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/virtualEvents/townhalls
 ```
 
@@ -45,6 +41,7 @@ POST /solutions/virtualEvents/townhalls
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
+|Accept-Language| [Acceptable human languages for the response](/concepts/search-concept-acceptlanguage-header.md). Required. |
 
 ## Request body
 
@@ -55,12 +52,14 @@ You can specify the following properties when you create a [virtualEventTownhall
 |Property|Type|Description|
 |:---|:---|:---|
 | audience | [meetingAudience](../resources/virtualeventtownhall.md#meetingaudience-values) | The audience to whom the town hall is visible. |
+| capacity | Integer | Represents the expected number of attendees for virtual events. |
 | coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the town hall. |
 | description | [itemBody](../resources/itembody.md) | A description of the town hall. |
 | displayName | String | Display name of the town hall. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
+| isRegistrationRequired |Boolean| Indicates if the attendees must complete the registration flow before they can attend. Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The town hall settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall starts. |
 
@@ -79,9 +78,10 @@ The following example shows a request.
   "name": "create_virtualeventtownhall"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls
 Content-Type: application/json
+Accept-Language: en-US
 
 {     
     "displayName": "The Impact of Tech on Our Lives",
@@ -104,15 +104,13 @@ Content-Type: application/json
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
     ],
+    "isRegistrationRequired": false,
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
-    }
+    },
+    "capacity": 5000
 }
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventtownhall-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventtownhall-javascript-snippets.md)]
@@ -130,9 +128,10 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventTownhall"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+Accept-Language: en-US
 
 { 
     "id": "bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
@@ -151,6 +150,7 @@ Content-Type: application/json
       "timeZone": "Pacific Standard Time" 
     },
     "audience": "organization",
+    "capacity": 5000,
     "createdBy": {
       "application": null,
       "device": null,
@@ -171,6 +171,7 @@ Content-Type: application/json
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     },
+    "isRegistrationRequired": false,
     "isInviteOnly": false,
     "externalEventInformation": []
 }

@@ -18,7 +18,7 @@ const provisioningFlow = {
         additionalAttributes: ['userGradeLevel'],
         additionalOptions: 
         {
-            markAllStudentsAsMinors: true,
+            studentAgeGroup: 'minor',
             allowStudentContactAssociation: false
         }
     },

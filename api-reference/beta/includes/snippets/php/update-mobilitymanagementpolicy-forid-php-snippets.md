@@ -6,17 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\MobilityManagementPolicy;
+use Microsoft\Graph\Beta\Generated\Models\MobileDeviceManagementPolicy;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new MobilityManagementPolicy();
-$requestBody->setOdataType('#microsoft.graph.mobilityManagementPolicy');
+$requestBody = new MobileDeviceManagementPolicy();
+$requestBody->setOdataType('#microsoft.graph.mobileDeviceManagementPolicy');
 $requestBody->setComplianceUrl('https://portal.uem.contoso.com/?portalAction=Compliance');
 $requestBody->setDiscoveryUrl('https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc');
 $requestBody->setTermsOfUseUrl('https://portal.uem.contoso.com/TermsofUse.aspx');
 
-$result = $graphServiceClient->policies()->mobileDeviceManagementPolicies()->byMobilityManagementPolicyId('mobilityManagementPolicy-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->policies()->mobileDeviceManagementPolicies()->byMobileDeviceManagementPolicyId('mobileDeviceManagementPolicy-id')->patch($requestBody)->wait();
 
 ```

@@ -23,7 +23,7 @@ requestBody.SetLastName(&lastName)
 email := "DianeDemoss@contoso.com"
 requestBody.SetEmail(&email) 
 externalRegistrationInformation := graphmodels.NewVirtualEventExternalRegistrationInformation()
-referrer := "Facebook"
+referrer := "Fabrikam"
 externalRegistrationInformation.SetReferrer(&referrer) 
 registrationId := "myExternalRegistrationId"
 externalRegistrationInformation.SetRegistrationId(&registrationId) 

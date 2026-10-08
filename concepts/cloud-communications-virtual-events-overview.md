@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 ms.date: 11/18/2024
+ms.topic: article
 ---
 
 # Choose the right Teams meeting type

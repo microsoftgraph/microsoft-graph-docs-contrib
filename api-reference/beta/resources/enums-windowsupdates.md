@@ -44,6 +44,17 @@ Namespace: microsoft.graph.windowsUpdates
 |archived|
 |unknownFutureValue|
 
+### enrollmentState values
+
+|Member|
+|:---|
+|notEnrolled|
+|enrolled|
+|enrolledWithPolicy|
+|enrolling|
+|unenrolling|
+|unknownFutureValue|
+
 ### monitoringAction values 
 
 |Member|
@@ -128,6 +139,20 @@ Namespace: microsoft.graph.windowsUpdates
 | text   |
 | html   |
 | unknownFutureValue |
+
+### remediationType values
+| Member |
+|:-------|
+| inPlaceUpgrade   |
+| unknownFutureValue |
+
+### approvalStatus values
+
+|Member|
+|:---|
+|approved|
+|suspended|
+|unknownFutureValue|
 
 <!--
 {

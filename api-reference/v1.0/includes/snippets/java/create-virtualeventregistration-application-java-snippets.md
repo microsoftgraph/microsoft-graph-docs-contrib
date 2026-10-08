@@ -13,7 +13,7 @@ virtualEventRegistration.setFirstName("Diane");
 virtualEventRegistration.setLastName("Demoss");
 virtualEventRegistration.setEmail("DianeDemoss@contoso.com");
 VirtualEventExternalRegistrationInformation externalRegistrationInformation = new VirtualEventExternalRegistrationInformation();
-externalRegistrationInformation.setReferrer("Facebook");
+externalRegistrationInformation.setReferrer("Fabrikam");
 externalRegistrationInformation.setRegistrationId("myExternalRegistrationId");
 virtualEventRegistration.setExternalRegistrationInformation(externalRegistrationInformation);
 virtualEventRegistration.setPreferredTimezone("Pacific Standard Time");

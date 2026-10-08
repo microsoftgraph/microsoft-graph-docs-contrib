@@ -52,7 +52,7 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 |customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](../resources/datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
-|invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, and `corrective`.|
+|invoiceStatus|string| The status of the invoice. The possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, and `corrective`.|
 |isCustomerAllowedToManageBooking|Boolean|Indicates that the customer can manage bookings created by the staff. The default value is `false`.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment. Required.|
 |isLocationOnline|Boolean|`True` indicates that the appointment is held online. The default value is `false`.|
@@ -61,7 +61,7 @@ PATCH /solutions/bookingBusinesses/{id}/appointments/{id}
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
 |price|Double|The regular price for an appointment for the specified [bookingService](../resources/bookingservice.md).|
-|priceType|bookingPriceType| A setting to provide flexibility for the pricing structure of services. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
+|priceType|bookingPriceType| A setting to provide flexibility for the pricing structure of services. The possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |reminders|[bookingReminder](../resources/bookingreminder.md) collection|The collection of customer reminders sent for this appointment. The value of this property is available only when reading this **bookingAppointment** by its ID.|
 |selfServiceAppointmentId|String|Another tracking ID for the appointment, if the appointment was created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of the customer.|
 |serviceId|String|The ID of the [bookingService](../resources/bookingservice.md) associated with this appointment.|
@@ -83,12 +83,16 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ## Examples
 
-### Request
+### Example 1: Change the date of service
+
+#### Request
 
 The following example changes the date of service by a day.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "name": "update_bookingappointment_date",
   "sampleKeys": ["AAMkADKnAAA=", "Contosolunchdelivery@contoso.com"]
 }-->
 ```http
@@ -110,7 +114,120 @@ Content-type: application/json
 }
 ```
 
-### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingappointment-date-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingappointment-date-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-bookingappointment-date-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingappointment-date-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-bookingappointment-date-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingappointment-date-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-bookingappointment-date-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Update the customers for an appointment
+
+The following example updates the customers array for a multi-customer appointment. The **customers** property is a full replacement array — include all customers that should be part of the appointment, not just the new ones.
+
+> [!NOTE]
+> - Each object in the **customers** array must include `@odata.type` set to `#microsoft.graph.bookingCustomerInformation`. Omitting this property causes the request to fail.
+> - Include customer details such as **name**, **emailAddress**, and **phone** for each entry. The API doesn't automatically populate these fields from the **customerId** — if omitted, they will be blank on the appointment.
+> - The **customerId** must reference a valid [bookingCustomer](../resources/bookingcustomer.md) that exists in the Booking Calendar. If it doesn't exist, create one using the [Create bookingCustomer](bookingbusiness-post-customers.md) operation.
+> - The associated [bookingService](../resources/bookingservice.md) must have **maximumAttendeesCount** greater than 1 to support multiple customers.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_bookingappointment_customers",
+  "sampleKeys": ["AAMkADKoAAA=", "Contosolunchdelivery@contoso.com"]
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.com/appointments/AAMkADKoAAA=
+Content-type: application/json
+
+{
+    "@odata.type":"#microsoft.graph.bookingAppointment",
+    "customers": [
+        {
+            "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+            "customerId": "cd56bb19-c348-42c6-af5c-09818c87fb8c",
+            "name": "John Doe",
+            "emailAddress": "john.doe@example.com",
+            "phone": "313-555-5555"
+        },
+        {
+            "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+            "customerId": "72f148fa-9a86-4c59-b277-f5089d9ea0e7",
+            "name": "Jane Smith",
+            "emailAddress": "jane.smith@example.com",
+            "phone": "248-555-5678"
+        }
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingappointment-customers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingappointment-customers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-bookingappointment-customers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingappointment-customers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-bookingappointment-customers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingappointment-customers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-bookingappointment-customers-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 
 The following example shows the response.
 <!-- {

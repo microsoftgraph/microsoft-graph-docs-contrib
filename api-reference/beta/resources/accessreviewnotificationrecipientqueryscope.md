@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Specifies a static list of recipients (for example, specific users, group owners, or group members) to receive access review notifications.
+In an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md), the **additionalNotificationRecipients** property configures [accessReviewNotificationRecipientItem](../resources/accessreviewnotificationrecipientitem.md) objects, and each item's **notificationRecipientScope** property can use **accessReviewNotificationRecipientQueryScope** to specify a static list of recipients (for example, specific users, group owners, or group members).
 
 Inherits from [accessReviewNotificationRecipientScope](../resources/accessreviewnotificationrecipientscope.md).
 

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/threatSubmission/emailThreats
 ```
 
@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and an [emailTh
   "name": "create_emailthreatsubmission_from_emailthreats"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreats
 Content-type: application/json
 
@@ -78,10 +78,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-emailthreatsubmission-from-emailthreats-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-emailthreatsubmission-from-emailthreats-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -120,7 +116,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.security.emailThreatSubmission"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -196,7 +192,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.security.emailThreatSubmission"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -272,7 +268,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.security.emailThreatSubmission"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

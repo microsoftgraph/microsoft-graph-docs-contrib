@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /applications/{applicationObjectId}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments/{applicationSegment-id}
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "get_ipapplicationsegment"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/dcc40202-6223-488b-8e64-28aa1a803d6c/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments/df8cb1a6-4bbf-4da3-8f85-fe2fc439ab80
 ```
 
@@ -86,7 +86,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.ipApplicationSegment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -120,7 +120,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.ipApplicationSegment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

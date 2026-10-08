@@ -54,7 +54,7 @@ If successful, this function returns an `200 OK` response code and an [education
 For details, see [Using delta query](/graph/delta-query-overview). For example requests, see [Get incremental changes for users](/graph/delta-query-users).
 
 > [!IMPORTANT]
-> educationClass deltas do not include deleted classes.
+> educationClass deltas don't include deleted classes.
 
 ## Examples
 
@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/delta
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationclass-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/educationclass-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

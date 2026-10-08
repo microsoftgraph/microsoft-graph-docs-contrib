@@ -1,6 +1,6 @@
 ---
 title: "Delete userFlowLanguagePage"
-description: "Deletes the values in a userFlowLanguagePage object."
+description: "Delete the values in a userFlowLanguagePage object."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -12,7 +12,7 @@ ms.date: 07/09/2024
 
 Namespace: microsoft.graph
 
-Deletes the values in an [userFlowLanguagePage](../resources/userflowlanguagepage.md) object. You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
+Delete the values in an [userFlowLanguagePage](../resources/userflowlanguagepage.md) object. You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ To reference the content within the object, you must use `$value`, which returns
 }
 -->
 
-``` http
+```http
 DELETE /identity/b2cUserFlows/{id}/languages/{id}/overridesPages/$value
 DELETE /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/$value
 ```
@@ -55,8 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-Here's an example  of the request.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,16 +65,12 @@ Here's an example  of the request.
 }
 -->
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/languages/en/overridesPages/phonefactor/$value
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-userflowlanguagepage-beta-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-userflowlanguagepage-beta-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -106,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/lan
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -114,6 +109,6 @@ Here's an example  of the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

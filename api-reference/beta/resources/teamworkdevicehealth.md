@@ -12,6 +12,8 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the health details of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). The device health is calculated based on the device configuration and other device parameters.

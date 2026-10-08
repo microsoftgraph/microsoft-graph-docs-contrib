@@ -18,7 +18,7 @@ Lock a [fileStorageContainer](../resources/filestoragecontainer.md) to prevent m
 
 This action updates the [lockState](../resources/enums.md#sitelockstate-values).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-``` http
+```http
 POST /storage/fileStorage/containers/{containerId}/lock
 ```
 
@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following example shows how to lock a fileStorageContainer.
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/lock
 
 {
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro
 ### Response
 The following example shows the response.
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

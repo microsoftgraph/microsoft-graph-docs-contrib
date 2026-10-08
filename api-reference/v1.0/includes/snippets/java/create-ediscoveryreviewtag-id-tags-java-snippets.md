@@ -12,6 +12,9 @@ com.microsoft.graph.models.security.EdiscoveryReviewTag ediscoveryReviewTag = ne
 ediscoveryReviewTag.setDisplayName("My tag API");
 ediscoveryReviewTag.setDescription("Use Graph API to create tags");
 ediscoveryReviewTag.setChildSelectability(com.microsoft.graph.models.security.ChildSelectability.Many);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("parent@odata.bind", "https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseID}/tags/{parentTagID}");
+ediscoveryReviewTag.setAdditionalData(additionalData);
 com.microsoft.graph.models.security.EdiscoveryReviewTag result = graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").tags().post(ediscoveryReviewTag);
 
 

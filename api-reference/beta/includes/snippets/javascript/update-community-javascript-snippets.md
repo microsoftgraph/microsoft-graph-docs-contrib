@@ -16,7 +16,7 @@ const community = {
   privacy: 'public'
 };
 
-await client.api('/employeeExperience/communities/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0')
+await client.api('/employeeExperience/communities/eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0')
 	.version('beta')
 	.update(community);
 

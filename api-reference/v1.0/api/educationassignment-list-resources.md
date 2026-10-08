@@ -51,9 +51,11 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [educationAssignmentResource](../resources/educationassignmentresource.md) objects in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: List all resources
+
+#### Request
 
 The following example shows a request.
 
@@ -71,10 +73,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-resources-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -103,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -155,7 +153,7 @@ Content-type: application/json
 
 ### Example 2: Using `$filter` to get resources
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -172,10 +170,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-6
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-with-filter-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-resources-with-filter-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -204,7 +198,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-6
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -258,7 +252,7 @@ Content-type: application/json
 
 ### Example 3: Using `$orderby` to get resources
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -275,10 +269,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-6
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-with-orderby-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-resources-with-orderby-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -307,7 +297,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-6
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 

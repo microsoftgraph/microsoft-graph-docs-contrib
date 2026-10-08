@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Create a new [mailboxFolder](../resources/mailboxfolder.md) or child **mailboxFolder** in a user's mailbox.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -29,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/exchange/mailboxes/{mailboxId}/folders
 POST /admin/exchange/mailboxes/{mailboxId}/folders/inbox/childFolders
 ```
@@ -50,6 +52,7 @@ You can specify the following properties when you create a **mailboxFolder**.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the folder. Required.|
+|isHidden|Boolean|Indicates whether the folder is hidden. Optional. The default value is `false`. Set to `true` to create a hidden folder. This property can't be updated after the folder is created.|
 |type|String|Describes the folder class type. Required.|
 
 ## Response
@@ -61,18 +64,19 @@ If successful, this method returns a `201 Created` response code and a [mailboxF
 ### Request
 
 The following example shows how to create a new mailbox folder.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_mailboxfolder_from_",
   "sampleKeys": ["MBX:e0648f21@aab09c93"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders
 
 {
   "displayName": "Announcements",
+  "isHidden": false,
   "type": "IPF.Note",
   "singleValueExtendedProperties": [
         {
@@ -82,12 +86,6 @@ POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab0
     ]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-mailboxfolder-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -99,19 +97,20 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxFolder"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
   "id": "AQMkAGUw==",
   "displayName": "Announcements",
+  "isHidden": false,
   "parentFolderId": "AQMkAGUc==",
   "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93",
   "childFolderCount": 0,
   "totalItemCount": 0,
+  "wellKnownName": null,
   "type": "IPF.Note"
 }
 ```

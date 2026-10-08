@@ -69,9 +69,11 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 
 If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.
 
-## Example (file attachment)
+## Examples
 
-##### Request
+### Example 1: File attachment
+
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -93,10 +95,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-v1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-file-attachment-from-event-v1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -127,7 +125,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
-##### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -154,9 +152,9 @@ Content-type: application/json
 }
 ```
 
-## Example (item attachment)
+### Example 2: Item attachment
 
-##### Request
+#### Request
 
 Here is an example which attaches an event with another event as an item attachment.
 
@@ -198,10 +196,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-item-attachment-from-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-item-attachment-from-event-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-item-attachment-from-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -228,7 +222,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

@@ -11,7 +11,9 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents requirements that a caller must fulfill in order to successfully create an **accessPackageAssignmentRequest** for the **accessPackage** specified as part of the URL. Requirements are determined by evaluating policies associated with the **accessPackage**. 
+Represents requirements that a caller must fulfill in order to successfully create an **accessPackageAssignmentRequest** for the **accessPackage** specified as part of the URL. Requirements are determined by evaluating policies associated with the **accessPackage**.
+
+This object is returned by the [accessPackage](../resources/accesspackage.md) [getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md) action for the **accessPackage** in the request URL.
 
 ## Properties
 |Property|Type|Description|
@@ -19,6 +21,7 @@ Represents requirements that a caller must fulfill in order to successfully crea
 |allowCustomAssignmentSchedule|Boolean|Indicates whether the requestor is allowed to set a custom schedule.|
 |isApprovalRequiredForAdd|Boolean|Indicates whether a request to add must be approved by an approver.|
 |isApprovalRequiredForUpdate|Boolean|Indicates whether a request to update must be approved by an approver.|
+|isRequestorJustificationRequired|Boolean|Indicates whether requestors must justify requesting access to an access package.|
 |policyDescription|String|The description of the policy that the user is trying to request access using.|
 |policyDisplayName|String|The display name of the policy that the user is trying to request access using.|
 |policyId|String|The identifier of the policy that these requirements are associated with. This identifier can be used when creating a new assignment request.|
@@ -40,6 +43,7 @@ The following JSON representation shows the resource type.
   "allowCustomAssignmentSchedule": "Boolean",
   "isApprovalRequiredForAdd": "Boolean",
   "isApprovalRequiredForUpdate": "Boolean",
+  "isRequestorJustificationRequired": "Boolean",
   "policyDisplayName": "String",
   "policyDescription": "String",
   "policyId": "String",

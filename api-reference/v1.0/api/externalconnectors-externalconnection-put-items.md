@@ -39,7 +39,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [externalItem](../resources/externalconnectors-externalitem.md) object.
+In the request body, supply a JSON representation of the [externalItem](../resources/externalconnectors-externalitem.md) object. The payload is limited to 30 MB.
 
 You can specify the following properties when creating an [externalItem](../resources/externalconnectors-externalitem.md).
 
@@ -122,10 +122,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-externalitem-from-externalconnections-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-externalitem-from-externalconnections-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

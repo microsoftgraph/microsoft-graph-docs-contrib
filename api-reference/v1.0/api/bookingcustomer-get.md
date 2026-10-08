@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /solutions/bookingBusinesses/{id}/customers/{id}
 ```
-> **Note:** This method currently requires the ID to be Base64 encoded. GUID IDs do not work.
+> **Note:** This method currently requires the ID to be Base64 encoded. GUID IDs don't work.
 
 ## Optional query parameters
 
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingcustomerget-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/bookingcustomerget-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

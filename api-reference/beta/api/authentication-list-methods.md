@@ -45,7 +45,7 @@ The following tables show the least privileged permission or permissions require
 
 List your own authentication methods.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/methods
 ```
 
@@ -53,13 +53,13 @@ GET /me/authentication/methods
 
 List your own or another user's authentication methods.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/methods
 ```
 
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+This method doesn't support optional query parameters to customize the response.
 
 ## Request headers
 
@@ -93,10 +93,6 @@ GET https://graph.microsoft.com/beta/me/authentication/methods
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-methods-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-methods-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

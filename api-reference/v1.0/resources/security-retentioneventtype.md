@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Represents a single group for the same type of retention events.
 
-When a [retention event](../resources/security-retentionevent.md) is created, it's associated with a specific event type that in turn is associated with a [retention label](/graph/api-reference/beta/resources/security-retentionlabel.md). Only content with that retention label applied will be retained for the specified retention period.
+When a [retention event](../resources/security-retentionevent.md) is created, it's associated with a specific event type that in turn is associated with a [retention label](/graph/api-reference/v1.0/resources/security-retentionlabel.md). Only content with that retention label applied will be retained for the specified retention period.
 For details, see [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
 
 

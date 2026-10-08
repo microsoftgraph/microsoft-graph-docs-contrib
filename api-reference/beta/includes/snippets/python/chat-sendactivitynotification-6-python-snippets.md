@@ -22,6 +22,7 @@ request_body = SendActivityNotificationPostRequestBody(
 	preview_text = ItemBody(
 		content = "new task created",
 	),
+	icon_id = "taskCreatedIcon",
 	recipient = ChatMembersNotificationRecipient(
 		odata_type = "microsoft.graph.chatMembersNotificationRecipient",
 		chat_id = "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2",
@@ -32,9 +33,6 @@ request_body = SendActivityNotificationPostRequestBody(
 			value = "Task 12322",
 		),
 	],
-	additional_data = {
-			"icon_id" : "taskCreatedIcon",
-	}
 )
 
 await graph_client.chats.by_chat_id('chat-id').send_activity_notification.post(request_body)

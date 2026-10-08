@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -62,10 +62,6 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers/{id}/$ref
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-registeredusers-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-registeredusers-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -94,7 +90,7 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers/{id}/$ref
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

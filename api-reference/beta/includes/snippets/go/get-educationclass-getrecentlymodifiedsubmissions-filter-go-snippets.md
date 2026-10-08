@@ -16,7 +16,7 @@ import (
 )
 
 
-requestFilter := "status eq 'working'"
+requestFilter := "lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z"
 
 requestParameters := &grapheducation.ClassesItemGetRecentlyModifiedSubmissionsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

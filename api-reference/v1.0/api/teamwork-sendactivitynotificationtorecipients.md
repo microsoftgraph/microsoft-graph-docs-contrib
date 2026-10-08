@@ -5,7 +5,6 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.subservice: teams
 doc_type: apiPageType
-
 ms.date: 05/10/2024
 ---
 
@@ -35,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /teamwork/sendActivityNotificationToRecipients
 ```
 
@@ -56,13 +55,14 @@ The following table shows the parameters that can be used with this action.
 
 | Parameter          | Type                                                         | Description                                                  |
 | :----------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| topic              | [teamworkActivityTopic](../resources/teamworkactivitytopic.md) | The topic of the notification. Specifies the resource being talked about. |
 | activityType       | String                                                       | The activity type must be declared in the [Teams app manifest](/microsoftteams/platform/overview), except for the `systemDefault` [Reserved activity type](/graph/teams-send-activityfeednotifications/#reserved-activity-types), which provides free-form text in the `Actor+Reason` line of the notification. |
 | chainId            | Int64                                                        | Optional. The chain ID of the notification. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification. |
+| iconId | String | Optional. The unique icon ID that allows apps to send customized icons per activity type. Icon IDs must be present in the Teams app manifest schema. If the icon ID is specified in the manifest but missing from the API request body, the icon falls back to the default icon for the app. |
 | previewText        | [itemBody](../resources/itembody.md)                         | The preview text for the notification. Microsoft Teams only shows the first 150 characters. |
-| templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection      | The values for the template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview). |
-| teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user. Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
 | recipients         | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) collection | Recipients of the notification. Only recipients of type [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) are supported. There's an upper limit of 100 recipients in a single request. |
+| teamsAppId         | String                                                       | Optional. The Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra ID app ID are installed for the same recipient user. Avoid sharing Microsoft Entra ID app IDs between Teams apps. |
+| templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection      | The values for the template variables defined in the activity feed entry corresponding to `activityType` in the [Teams app manifest](/microsoftteams/platform/overview). |
+| topic              | [teamworkActivityTopic](../resources/teamworkactivitytopic.md) | The topic of the notification. Specifies the resource being talked about. |
 
 The following resource is supported when setting the `source` value of the **topic** property to `entityUrl`:
 
@@ -85,7 +85,7 @@ The following example shows how to send an activity feed notification to multipl
   "name": "teamworksendactivitynotificationtorecipients_v1_e1"
 }-->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teamwork/sendActivityNotificationToRecipients
 Content-Type: application/json
 
@@ -125,10 +125,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamworksendactivitynotificationtorecipients-v1-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/teamworksendactivitynotificationtorecipients-v1-e1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamworksendactivitynotificationtorecipients-v1-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -166,7 +162,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 
@@ -182,7 +178,7 @@ If you want to link an aspect that isn't represented by Microsoft Graph, or you 
   "name": "teamworksendactivitynotificationtorecipients_notifymultipleusers_v1_e2"
 }-->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teamwork/sendActivityNotificationToRecipients
 Content-Type: application/json
 
@@ -223,10 +219,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamworksendactivitynotificationtorecipients-notifymultipleusers-v1-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/teamworksendactivitynotificationtorecipients-notifymultipleusers-v1-e2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamworksendactivitynotificationtorecipients-notifymultipleusers-v1-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -265,6 +257,101 @@ Content-Type: application/json
 -->
 
 
-``` http
+```http
+HTTP/1.1 202 Accepted
+```
+
+### Example 3: Notify multiple users about an event using a custom icon
+
+If you want to notify multiple users with a customized icon instead of the default app icon, you can set the optional **iconId** property in the request body.
+
+>**Note:** The `activityType` in the manifest must contain the list of allowed icon IDs in order to use this parameter. The request validation fails if the app manifest is missing the customized list of icons. For more information, see [Public developer preview app manifest](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview).
+
+#### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "teamwork_sendactivitynotificationtorecipients_3"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/teamwork/sendActivityNotificationToRecipients
+Content-Type: application/json
+
+{
+  "topic": {
+    "source": "text",
+    "value": "Deployment Approvals Channel",
+    "webUrl": "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000"
+  },
+  "activityType": "announcementPosted",
+  "previewText": {
+    "content": "new announcemnet posted"
+  },
+  "iconId": "announcementCreated",
+  "templateParameters": [
+    {
+      "name": "deploymentId",
+      "value": "6788662"
+    }
+  ],
+  "recipients": [
+    {
+      "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+      "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
+    },
+    {
+      "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+      "userId": "ab88234e-0874-477c-9638-d144296ed04f"
+    },
+    {
+      "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+      "userId": "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
+    }
+  ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-sendactivitynotificationtorecipients-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/teamwork-sendactivitynotificationtorecipients-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamwork-sendactivitynotificationtorecipients-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/teamwork-sendactivitynotificationtorecipients-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/teamwork-sendactivitynotificationtorecipients-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+```http
 HTTP/1.1 202 Accepted
 ```

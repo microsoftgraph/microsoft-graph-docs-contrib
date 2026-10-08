@@ -29,7 +29,7 @@ The audio routing group stores a private audio route between participants in a m
 | :----------   | :---------------- | :--------------------------------------------------------------------|
 | id            | string            | Read-only.                                                           |
 | receivers     | collection(string) | List of receiving participant ids.                                   |
-| routingMode   | string            | Routing group mode.  Possible values are: `oneToOne`, `multicast`.   |
+| routingMode   | string            | Routing group mode.  The possible values are: `oneToOne`, `multicast`.   |
 | sources       | collection(string) | List of source participant ids.                                      |
 
 > **Note:** Routing mode determines the restrictions on the sources and receivers. Only the following routing groups are supported.

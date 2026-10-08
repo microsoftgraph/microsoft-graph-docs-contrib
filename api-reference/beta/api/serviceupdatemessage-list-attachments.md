@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "service-communications"
 doc_type: apiPageType
 ms.date: 08/01/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # List attachments
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}/attachments
 ```
 
@@ -61,16 +62,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "sampleKeys" : ["MC54091"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/attachments
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-attachments-for-servicemessage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-attachments-for-servicemessage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -107,7 +104,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/
   "@odata.type": "Collection(microsoft.graph.serviceAnnouncementAttachment)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -145,16 +142,12 @@ Content-Type: application/json
   "sampleKeys" : ["MC54091"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/attachmentsArchive
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-zip-of-serviceannouncementattachment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-zip-of-serviceannouncementattachment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -191,7 +184,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/
   "@odata.type": "Edm.Stream"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

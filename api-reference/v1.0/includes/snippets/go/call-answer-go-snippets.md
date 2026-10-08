@@ -33,6 +33,8 @@ isContentSharingNotificationEnabled := true
 callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
 isDeltaRosterEnabled := true
 callOptions.SetIsDeltaRosterEnabled(&isDeltaRosterEnabled) 
+isInteractiveRosterEnabled := true
+callOptions.SetIsInteractiveRosterEnabled(&isInteractiveRosterEnabled) 
 requestBody.SetCallOptions(callOptions)
 participantCapacity := int32(200)
 requestBody.SetParticipantCapacity(&participantCapacity) 

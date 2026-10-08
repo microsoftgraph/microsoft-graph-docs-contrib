@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/settings/storage/quota/services/{serviceStorageQuotaBreakdownId}
 GET /users/{usersId}/settings/storage/quota/services/{serviceStorageQuotaBreakdownId}
 ```
@@ -52,23 +52,19 @@ If successful, this method returns a `200 OK` response code and a [serviceStorag
 ## Examples
 
 ### Request
-Here's an example  of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_servicestoragequotabreakdown"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/storage/quota/services/OneDrive
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-servicestoragequotabreakdown-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-servicestoragequotabreakdown-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -98,7 +94,7 @@ GET https://graph.microsoft.com/beta/me/settings/storage/quota/services/OneDrive
 ---
 
 ### Response
-Here's an example  of the response
+The following example shows the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -106,7 +102,7 @@ Here's an example  of the response
   "@odata.type": "microsoft.graph.serviceStorageQuotaBreakdown"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

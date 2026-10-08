@@ -5,7 +5,7 @@ author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 05/18/2026
 ---
 
 # Create todoTask
@@ -17,19 +17,35 @@ Create a new task object in a specified [todoTaskList](../resources/todotasklist
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+### Permissions acting on self
 
 <!-- { "blockType": "permissions", "name": "todotasklist_post_tasks" } -->
 [!INCLUDE [permissions-table](../includes/permissions/todotasklist-post-tasks-permissions.md)]
 
+### Permissions acting on other users
+
+<!-- { "blockType": "permissions", "name": "todotasklist_post_tasks_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/todotasklist-post-tasks-2-permissions.md)]
+
 ## HTTP request
 
+Permissions to create a task for the signed-in user:
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/todo/lists/{todoTaskListId}/tasks
+```
+
+Permissions to create a task for another user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
 POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ```
 
@@ -51,12 +67,12 @@ The following table lists the properties that are required when you create the [
 |categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](../resources/outlookcategory.md) that the user has defined.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task was finished.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
-|importance|importance|The importance of the task. Possible values are: `low`, `normal`, `high`.|
+|importance|importance|The importance of the task. The possible values are: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the task.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time for a reminder alert of the task to occur.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone at which the task is scheduled to start.|
-|status|taskStatus|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|status|taskStatus|Indicates the state or progress of the task. The possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|A brief description of the task.|
 |createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
@@ -80,7 +96,7 @@ The following example creates a **todoTask** in the specified task list, and inc
   "name": "create_todotask_from_tasks"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks
 Content-Type: application/json
 
@@ -99,10 +115,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-todotask-from-tasks-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-todotask-from-tasks-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -139,7 +151,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.todoTask"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

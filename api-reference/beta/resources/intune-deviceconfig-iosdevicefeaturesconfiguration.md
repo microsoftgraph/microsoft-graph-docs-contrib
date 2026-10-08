@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -232,68 +232,32 @@ Here is a JSON representation of the resource.
     "value": "binary"
   },
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "String",
-    "domains": [
-      "String"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "String"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "String",
-    "credentialBundleIdAccessControlList": [
+    "urlPrefixes": [
       "String"
-    ],
-    "domainRealms": [
-      "String"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 1024,
-    "passwordExpirationNotificationDays": 1024,
-    "userPrincipalName": "String",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 1024,
-    "passwordMinimumLength": 1024,
-    "passwordMinimumAgeDays": 1024,
-    "passwordRequirementsDescription": "String",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "String",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String",
-    "signInHelpText": "String",
-    "managedAppsInBundleIdACLIncluded": true
+    ]
   },
   "iosSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "String",
-    "domains": [
-      "String"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "String"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "String",
-    "credentialBundleIdAccessControlList": [
+    "urlPrefixes": [
       "String"
-    ],
-    "domainRealms": [
-      "String"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 1024,
-    "passwordExpirationNotificationDays": 1024,
-    "userPrincipalName": "String",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 1024,
-    "passwordMinimumLength": 1024,
-    "passwordMinimumAgeDays": 1024,
-    "passwordRequirementsDescription": "String",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "String",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String",
-    "signInHelpText": "String",
-    "managedAppsInBundleIdACLIncluded": true
+    ]
   }
 }
 ```

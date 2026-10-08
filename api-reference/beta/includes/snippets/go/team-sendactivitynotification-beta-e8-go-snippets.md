@@ -29,6 +29,8 @@ previewText := graphmodels.NewItemBody()
 content := "new announcemnet posted"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
+iconId := "announcementCreated"
+requestBody.SetIconId(&iconId) 
 recipient := graphmodels.NewAadUserNotificationRecipient()
 userId := "jacob@contoso.com"
 recipient.SetUserId(&userId) 
@@ -51,10 +53,6 @@ templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair1,
 }
 requestBody.SetTemplateParameters(templateParameters)
-additionalData := map[string]interface{}{
-	"iconId" : "announcementCreated", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Teams().ByTeamId("team-id").SendActivityNotification().Post(context.Background(), requestBody, nil)

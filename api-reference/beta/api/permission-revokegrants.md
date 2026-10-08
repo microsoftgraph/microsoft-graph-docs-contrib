@@ -1,29 +1,30 @@
 ---
 title: "permission: revokeGrants"
-description: "Update an item's sharing permissions"
+description: "Revoke access to a listItem or driveItem granted via a sharing link by removing the specified driveRecipient entries from the link."
 author: "learafa"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 09/27/2026
 ---
 
 # permission: revokeGrants
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
+Revoke access to a [listItem](../resources/listitem.md) or [driveItem](../resources/driveitem.md) granted via a sharing link by removing the specified [driveRecipient](../resources/driverecipient.md) entries from the link.
 
->**Note:** This functionality is only available for sharing links scoped to users.
+Recipients who already redeemed the link and recipients who only received an invitation both lose access. Revoking a grant removes the recipient from this sharing link only; it doesn't remove any access the recipient has through a different sharing link, a direct grant, or membership in a group that has access.
 
-[listItem]: ../resources/listitem.md
-[driveItem]: ../resources/driveitem.md
-[recipient]: ../resources/driverecipient.md
+> [!NOTE]
+> This action is only supported on sharing links that are scoped to specific users.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "permission_revokegrants" } -->
@@ -35,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /drives/{drive-id}/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
@@ -45,36 +46,48 @@ POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|grantees|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will be revoked access to the sharing link.|
+|grantees|[driveRecipient](../resources/driverecipient.md) collection|Required. A collection of recipients whose access to the sharing link is revoked.|
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [permission](../resources/permission.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [permission](../resources/permission.md) in the response body that represents the updated state of the sharing link.
+
+The **grantedToIdentitiesV2** property of the returned permission lists the recipients on the link after the specified grants are revoked.
+
+This action applies only to sharing links. It can't be used to revoke a direct grant on an item; use [Delete permission](../api/permission-delete.md) instead. Supplying the identifier of a permission that isn't a sharing link returns a `400 Bad Request` response code.
+
+The sharing link must be scoped to specific users. Links whose **scope** is `anonymous` or `organization` don't track individual grantees. Because these links have no individual grants to revoke, the request returns a `400 Bad Request` response code.
+
+For more information about how errors are returned, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
 ### Request
 
-# [HTTP](#tab/http)
+The following example shows how to revoke access for a single user on a sharing link.
+
 <!-- {
   "blockType": "request",
-  "name": "permission-revokegrants"
+  "name": "permission-revokegrants",
+  "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U", "2687a7e0-1b4d-4656-ae32-a4ea393321e1"]
 }
 -->
-``` http
-POST https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/permissions/2687a7e0-1b4d-4656-ae32-a4ea393321e1/revokeGrants
 Content-Type: application/json
 
 {
@@ -86,43 +99,9 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/permission-revokegrants-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/permission-revokegrants-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/permission-revokegrants-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/permission-revokegrants-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/permission-revokegrants-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/permission-revokegrants-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/permission-revokegrants-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/permission-revokegrants-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
-If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the sharing link.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -133,21 +112,30 @@ If successful, this method returns a [Permission](../resources/permission.md) re
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "123ABC",
+  "id": "2687a7e0-1b4d-4656-ae32-a4ea393321e1",
   "roles": ["write"],
+  "grantedToIdentitiesV2": [
+    {
+      "user": {
+        "id": "e6842c7e-33a1-4207-8b5a-2710922ac2b2",
+        "displayName": "Megan Bowen"
+      },
+      "siteUser": {
+        "id": "12",
+        "displayName": "Megan Bowen",
+        "loginName": "Megan Bowen"
+      }
+    }
+  ],
   "link": {
     "type": "edit",
     "scope": "users",
-    "webUrl": "https://contoso-my.sharepoint.com/personal/ellen_contoso_com/...",
-    "application": {
-      "id": "1234",
-      "displayName": "Sample Application"
-    },
+    "webUrl": "https://contoso-my.sharepoint.com/personal/ellen_contoso_com/..."
   }
 }
 ```
@@ -155,8 +143,8 @@ Content-Type: application/json
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Update an item's sharing permissions",
-  "keywords": "permission, permissions, sharing, change permissions, update permission",
+  "description": "Revoke access to a sharing link for the specified recipients",
+  "keywords": "permission, permissions, sharing, revoke, revoke access, sharing link",
   "section": "documentation",
-  "tocPath": "Sharing/Update permission"
+  "tocPath": "Sharing/Revoke grants"
 } -->

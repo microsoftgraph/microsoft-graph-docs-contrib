@@ -57,7 +57,7 @@ In the request body, provide a JSON representation of a [pendingExternalUserProf
 |department|String|The department of the pending external user profile. |
 |displayName|String|The display name of the pending external user profile. **Required**.|
 |epoch|Int|The version number of the pending external user profile. Incremented with each update to the entity. Read-only. Not nullable.|
-|id|String|The unique identifier for the pending external user profile. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and do not rely on it being a GUID. Key. Not nullable. Read-only.|
+|id|String|The unique identifier for the pending external user profile. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and don't rely on it being a GUID. Key. Not nullable. Read-only.|
 |isDiscoverable|Boolean|Represents whether the pending external user profile is discoverable in the directory.|
 |isEnabled|Boolean|Represents whether the pending external user profile is enabled in the directory.|
 |jobTitle|String|The job title of the external user profile.|
@@ -93,10 +93,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-pendingexternaluserprofile-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-pendingexternaluserprofile-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

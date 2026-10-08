@@ -21,7 +21,7 @@ Describes the response format of an update recording status action.
 | clientContext       | String                      | Unique client context string. Max limit is 256 chars.                              |
 | id                  | String                      | Read-only.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only.                                                 |
-| status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
+| status              | String                      | The possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships
 None.

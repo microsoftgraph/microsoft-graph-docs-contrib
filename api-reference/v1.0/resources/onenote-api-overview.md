@@ -5,15 +5,15 @@ ms.localizationpriority: high
 author: "jewan-microsoft"
 ms.subservice: "onenote"
 doc_type: conceptualPageType
-ms.date: 03/11/2024
+ms.date: 06/30/2025
 ---
 
 # Use the OneNote REST API
 
-Microsoft Graph lets your app get authorized access to a user's OneNote notebooks, sections, and pages in a personal or organization account. With the [appropriate delegated or application permissions](/graph/permissions-reference#notes-permissions), your app can access the OneNote data of the signed-in user or any user in a tenant.
+Microsoft Graph lets your app get authorized access to a user's OneNote notebooks, sections, and pages in a personal or organization account. With the [appropriate delegated permissions](/graph/permissions-reference#notes-permissions), your app can access the OneNote data of the signed-in user or any user in a tenant. 
 
 > [!NOTE]
-> The Microsoft Graph OneNote API will no longer support app-only authentication effective March 31, 2025. We recommend that you update your solutions to use [delegated authentication](/graph/auth-v2-user).
+> The Microsoft Graph OneNote API doesn't support app-only authentication.
 
 ## Root URL
 The OneNote service root URL uses the following format for all calls to the OneNote API.

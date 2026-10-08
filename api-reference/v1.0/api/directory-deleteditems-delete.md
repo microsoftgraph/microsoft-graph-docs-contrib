@@ -1,18 +1,30 @@
 ---
-title: "Permanently delete an item (directory object)"
+title: "Permanently delete item (directory object)"
+ms.date: 11/17/2025
 description: "Permanently delete a recently deleted application, group, service principal, or user from deleted items."
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 12/23/2024
 ---
 
-# Permanently delete an item (directory object)
+# Permanently delete item (directory object)
 
 Namespace: microsoft.graph
 
-Permanently delete a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). After an item is permanently deleted, it **cannot** be restored.
+Permanently delete a recently deleted directory object from [deleted items](../resources/directory.md). The following types are supported:
+- [application](../resources/application.md)
+- [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
+- [agentIdentity](../resources/agentidentity.md)
+- [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
+- [agentUser](../resources/agentuser.md)
+- [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
+- [group](../resources/group.md)
+- [servicePrincipal](../resources/serviceprincipal.md)
+- [user](../resources/user.md)
+
+After an item is permanently deleted, it **cannot** be restored.
 
 Administrative units **cannot** be permanently deleted by using the **deletedItems** API. Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
@@ -25,17 +37,24 @@ The following table shows the least privileged permission or permissions require
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
+| [agentIdentity](../resources/agentidentity.md) | AgentIdentity.ReadWrite.All | Not supported. | AgentIdentity.ReadWrite.All |
+| [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.ReadWrite.All | Not supported. | AgentIdentityBlueprint.ReadWrite.All |
+| [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.ReadWrite.All | Not supported. | AgentIdentityBlueprintPrincipal.ReadWrite.All |
+| [agentUser](../resources/agentuser.md) | AgentIdUser.ReadWrite.IdentityParentedBy | Not supported. | AgentIdUser.ReadWrite.IdentityParentedBy |
+| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Not supported. |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
-| [user](../resources/user.md) | User.DeleteRestore.All | Not supported. | User.DeleteRestore.All |
+| [user](../resources/user.md) | User.DeleteRestore.All | Not supported. |  User.DeleteRestore.All |
 
-[!INCLUDE [rbac-deleted-items-delete-apis](../includes/rbac-for-apis/rbac-deleted-items-delete-apis.md)]
+[!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directory/deletedItems/{id}
 ```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -50,7 +69,7 @@ Don't supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -64,10 +83,6 @@ DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directory-deleteditem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-directory-deleteditem-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -96,7 +111,7 @@ DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 
 ---
 
-##### Response
+### Response
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -108,7 +123,8 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete directory",
   "keywords": "",
@@ -116,5 +132,7 @@ HTTP/1.1 204 No Content
   "tocPath": "",
   "suppressions": [
   ]
-}-->
+}
+-->
+
 

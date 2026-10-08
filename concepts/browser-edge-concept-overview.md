@@ -5,6 +5,7 @@ author: "edward-day-vii"
 ms.localizationpriority: medium
 ms.subservice: "edge-browser-management"
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Use the Edge API in Microsoft Graph to manage browsers

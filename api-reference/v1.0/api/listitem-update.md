@@ -42,7 +42,7 @@ PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
-| _if-match_ | `etag`. If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.
+| _if-match_ | `etag`. If this request header is included and the eTag provided doesn't match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.|
 
 ## Request body
 In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
@@ -73,10 +73,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-listitem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-listitem-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

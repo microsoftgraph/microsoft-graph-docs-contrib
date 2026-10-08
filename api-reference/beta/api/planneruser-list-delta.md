@@ -64,7 +64,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -81,10 +81,6 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -113,7 +109,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown might be shortened for readability. All the changed properties will be returned from an actual call.

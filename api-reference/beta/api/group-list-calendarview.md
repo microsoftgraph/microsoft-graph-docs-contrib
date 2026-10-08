@@ -47,7 +47,7 @@ The values of `startDateTime` and `endDateTime` are interpreted using the timezo
 This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
-> The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
+> The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) don't support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
 
 ## Request headers
 
@@ -85,10 +85,6 @@ Prefer: outlook.body-content-type="text"
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-calendarviews-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/group-get-calendarviews-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

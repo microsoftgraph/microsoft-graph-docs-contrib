@@ -5,7 +5,7 @@ author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 05/18/2026
 ---
 
 # Create checklistItem
@@ -18,19 +18,35 @@ Create a new [checklistItem](../resources/checklistitem.md) object as a subtask 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+### Permissions acting on self
 
 <!-- { "blockType": "permissions", "name": "todotask_post_checklistitems" } -->
 [!INCLUDE [permissions-table](../includes/permissions/todotask-post-checklistitems-permissions.md)]
 
+### Permissions acting on other users
+
+<!-- { "blockType": "permissions", "name": "todotask_post_checklistitems_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/todotask-post-checklistitems-2-permissions.md)]
+
 ## HTTP request
 
+Permissions to create a checklistItem in a task of the signed-in user:
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems
+```
+
+Permissions to create a checklistItem in a task of another user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
 POST /users/{id | userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems
 ```
 
@@ -68,7 +84,7 @@ If successful, this method returns a `201 Created` response code and a [checklis
   "sampleKeys": ["AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA=", "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA=/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA/checklistItems/
 Content-Type: application/json
 
@@ -79,10 +95,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-checklistitem-as-substask-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-checklistitem-as-substask-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -119,7 +131,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.checklistItem"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

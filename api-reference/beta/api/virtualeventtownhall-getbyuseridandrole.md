@@ -20,7 +20,7 @@ Get a list of [virtualEventTownhall](../resources/virtualeventtownhall.md) objec
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "virtualeventtownhall_getbyuseridandrole" } -->
+<!-- { "blockType": "ignored", "name": "virtualeventtownhall_getbyuseridandrole" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventtownhall-getbyuseridandrole-permissions.md)]
 
 > [!IMPORTANT]
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/townhalls/getByUserIdAndRole(userId='{userId}', role='{role}')
 ```
 
@@ -43,7 +43,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|role|String|User role of the specified user in the **virtualEventTownhall**. Possible values are: `organizer`, `coOrganizer`.|
+|role|String|User role of the specified user in the **virtualEventTownhall**. The possible values are: `organizer`, `coOrganizer`.|
 |userId|String|The ID of the specified user in Microsoft Entra.|
 
 ## Request headers
@@ -72,16 +72,12 @@ The following example shows a request.
   "name": "virtualeventtownhallthis.getbyuseridandrole"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUserIdAndRole(userId='b7ef013a-c73c-4ec7-8ccb-e56290f45f68', role='organizer')
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/virtualeventtownhallthisgetbyuseridandrole-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/virtualeventtownhallthisgetbyuseridandrole-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -120,7 +116,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventTownhall)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -161,6 +157,7 @@ Content-Type: application/json
           "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
         }
       ],
+      "isRegistrationRequired": false,
       "settings": {
         "isAttendeeEmailNotificationEnabled": false
       },

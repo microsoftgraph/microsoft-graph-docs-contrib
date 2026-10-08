@@ -1,11 +1,11 @@
 ---
 title: "List updatableAssets"
 description: "Get a list of updatableAsset objects and their properties."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # List updatableAssets
@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-updatableasset-fromupdates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-updatableasset-fromupdates-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-fromupdates-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -122,14 +118,21 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "983f03cd-03cd-983f-cd03-3f98cd033f98",
       "errors": [],
-      "enrollments": [
-        {
-          "@odata.type": "microsoft.graph.windowsUpdates.updateManagementEnrollment",
-          "updateCategory": "feature"
+      "enrollment": {
+        "feature": {
+          "enrollmentState": "enrolled",
+          "lastModifiedDateTime": "2024-01-31T23:34:50.3183446Z"
+        },
+        "quality": {
+          "enrollmentState": "notEnrolled",
+          "lastModifiedDateTime": "2024-03-31T23:34:50.3183446Z"
+        },
+        "driver": {
+          "enrollmentState": "enrolling",
+          "lastModifiedDateTime": "2024-03-31T23:34:50.3183446Z"
         }
-      ]
+      }
     }
   ]
 }
 ```
-

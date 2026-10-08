@@ -60,16 +60,16 @@ However, for creating a forward draft using MIME format, provide the MIME conten
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [Message](../resources/message.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [message](../resources/message.md) object in the response body.
 
 If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".
 
 ## Examples
 
 ### Example 1: Create a draft message in JSON format to forward an existing message
-Here's an example of how to call this API.
+The following example shows how to call this API.
 
-##### Request
+#### Request
 
 The following example shows a request.
 
@@ -80,15 +80,27 @@ The following example shows a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAH5JaLAAA=/createForward
+Content-Type: application/json
+
+{
+  "message":{
+    "isDeliveryReceiptRequested": true,
+    "toRecipients":[
+      {
+        "emailAddress": {
+          "address":"danas@contoso.com",
+          "name":"Dana Swope"
+        }
+      }
+     ]
+  },
+  "comment": "Dana, just want to make sure you get this; you'll need this if the project gets approved."
+}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createforward-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/message-createforward-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -117,9 +129,10 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 
 ---
 
-##### Response
+#### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -143,8 +156,8 @@ Content-type: application/json
 }
 ```
 
-### Example 2 Create a draft message in MIME format to forward an existing message
-##### Request
+### Example 2: Create a draft message in MIME format to forward an existing message
+#### Request
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.message",
@@ -164,7 +177,7 @@ ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCArMDAwMApNZXNzYWdlLUlEOgoJPE1XSFBSMTMw
 MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASF
 ```
 
-##### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -260,4 +273,6 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+
 

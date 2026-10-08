@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a collection of discoveredApplicationSegmentReport based on aggregated traffic logs for a given period.
+Returns a collection of [discovered application segments](../resources/networkaccess-discoveredapplicationsegmentreport.md) based on aggregated traffic logs for a given period.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/reports/getDiscoveredApplicationSegmentReport(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
@@ -46,7 +46,7 @@ In the request URL, provide the following query parameters with values.
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|Start of the period for aggregating traffic logs. Required.|
 |endDateTime|DateTimeOffset|End of the period for aggregating traffic logs. Required.|
-|userId|String|The Azure Active Directory (AAD) user ID of the user in GUID format. Optional. When used, it will return only the discovered application segments accessed by the user.|
+|userId|String|The Microsoft Entra ID user ID of the user in GUID format. Optional. When used, it will return only the discovered application segments accessed by the user.|
 
 
 ## Request headers
@@ -74,16 +74,12 @@ The following example shows a request.
   "name": "reportsthis.getdiscoveredapplicationsegmentreport"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/reports/getDiscoveredApplicationSegmentReport(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T23:59:59Z,userId=null)
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportsthisgetdiscoveredapplicationsegmentreport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/reportsthisgetdiscoveredapplicationsegmentreport-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -123,7 +119,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.discoveredApplicationSegmentReport)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

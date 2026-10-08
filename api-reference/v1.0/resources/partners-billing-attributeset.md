@@ -5,7 +5,7 @@ author: "sourishdeb"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: enumPageTypes
-ms.date: 03/06/2024
+ms.date: 06/11/2024
 ---
 
 # attributeSet enum type
@@ -18,11 +18,11 @@ Represents attributes for exported data sets in the Microsoft Graph partner bill
 
 ## Members
 
-| Member             | Value | Description                                      |
-|:-------------------|:------|:-------------------------------------------------|
-| full               | 1     | All attributes in the exported data.             |
-| basic              | 2     | Only basic attributes in the exported data.      |
-| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use. |
+| Member             | Description                                      |
+|:-------------------|:-------------------------------------------------|
+| full               | All attributes in the exported data.             |
+| basic              | Only basic attributes in the exported data.      |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### Attributes
 
@@ -84,6 +84,58 @@ The [billedUsage: export](../api/partners-billing-billedusage-export.md) or [unb
 | UnitPrice                     | Yes  | Yes   |
 | UnitType                      | Yes  | Yes   |
 | UsageDate                     | Yes  | Yes   |
+
+The [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) or [unbilledReconciliation: export](../api/partners-billing-unbilledreconciliation-export.md) API response with the `full` or `basic` request parameter returns the following attributes.
+
+| Attribute                     | Full | Basic |
+|:------------------------------|:-----|:------|
+|PartnerId                      | Yes  | Yes   |
+|CustomerId                     | Yes  | Yes   |
+|CustomerName                   | Yes  | Yes   |
+|CustomerDomainName             | Yes  | No    |
+|CustomerCountry                | Yes  | No    |
+|InvoiceNumber                  | Yes  | Yes   |
+|MpnId                          | Yes  | No    |
+|Tier2MpnId                     | Yes  | Yes   |
+|OrderId                        | Yes  | Yes   |
+|OrderDate                      | Yes  | Yes   |
+|ProductId                      | Yes  | Yes   |
+|SkuId                          | Yes  | Yes   |
+|AvailabilityId                 | Yes  | Yes   |
+|SkuName                        | Yes  | Yes   |
+|ProductName                    | Yes  | Yes   |
+|ChargeType                     | Yes  | Yes   |
+|UnitPrice                      | Yes  | Yes   |
+|Quantity                       | Yes  | No    |
+|Subtotal                       | Yes  | Yes   |
+|TaxTotal                       | Yes  | Yes   |
+|Total                          | Yes  | Yes   |
+|Currency                       | Yes  | Yes   |
+|PriceAdjustmentDescription     | Yes  | Yes   |
+|PublisherName                  | Yes  | Yes   |
+|PublisherId                    | Yes  | No    |
+|SubscriptionDescription        | Yes  | No    |
+|SubscriptionId                 | Yes  | Yes   |
+|ChargeStartDate                | Yes  | Yes   |
+|ChargeEndDate                  | Yes  | Yes   |
+|TermAndBillingCycle            | Yes  | Yes   |
+|EffectiveUnitPrice             | Yes  | Yes   |
+|UnitType                       | Yes  | No    |
+|AlternateId                    | Yes  | No    |
+|BillableQuantity               | Yes  | Yes   |
+|BillingFrequency               | Yes  | No    |
+|PricingCurrency                | Yes  | Yes   |
+|PCToBCExchangeRate             | Yes  | Yes   |
+|PCToBCExchangeRateDate         | Yes  | No    |
+|MeterDescription               | Yes  | No    |
+|ReservationOrderId             | Yes  | Yes   |
+|CreditReasonCode               | Yes  | Yes   |
+|SubscriptionStartDate          | Yes  | Yes   |
+|SubscriptionEndDate            | Yes  | Yes   |
+|ReferenceId                    | Yes  | Yes   |
+|ProductQualifiers              | Yes  | No    |
+|PromotionId                    | Yes  | Yes   |
+|ProductCategory                | Yes  | Yes   |
 
 <!-- {
   "type": "#page.annotation",

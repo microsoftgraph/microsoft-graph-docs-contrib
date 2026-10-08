@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generates a URI for an [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) object the **status** for which is `done`. Each URI can be used to retrieve the instance's review history data. Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) object.
+Generates a URI for an [accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) object the **status** for which is `done`. Each URI can be used to retrieve the instance's review history data. Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the [accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -50,7 +50,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and an [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) in the response body.
+If successful, this action returns a `200 OK` response code and an [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) in the response body.
 
 ## Examples
 
@@ -70,10 +70,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDe
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewhistoryinstance-generatedownloaduri-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/accessreviewhistoryinstance-generatedownloaduri-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

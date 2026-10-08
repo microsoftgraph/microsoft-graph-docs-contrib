@@ -35,10 +35,7 @@ $settingsSchedule = new ScheduleSettings();
 $settingsScheduleGradualRollout = new RateDrivenRolloutSettings();
 $settingsScheduleGradualRollout->setOdataType('#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings');
 $settingsScheduleGradualRollout->setDurationBetweenOffers(new \DateInterval('P7D'));
-$additionalData = [
-	'devicePerOffer' => 100,
-];
-$settingsScheduleGradualRollout->setAdditionalData($additionalData);
+$settingsScheduleGradualRollout->setDevicesPerOffer(100);
 $settingsSchedule->setGradualRollout($settingsScheduleGradualRollout);
 $settings->setSchedule($settingsSchedule);
 $settingsMonitoring = new MonitoringSettings();

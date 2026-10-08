@@ -12,8 +12,7 @@ ms.date: 11/14/2024
 
 Namespace: microsoft.graph
 
-Remove a user or a group from the connected organization's internal sponsors. The [internal sponsors](../resources/internalsponsors.md) are a set of users who can approve requests on behalf of other users from that connected organization.
-
+Remove a user or a group from the **internalSponsors** relationship of a [connectedOrganization](../resources/connectedorganization.md). Internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -61,10 +60,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-internalsponsor-from-connectedorganization-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-internalsponsor-from-connectedorganization-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

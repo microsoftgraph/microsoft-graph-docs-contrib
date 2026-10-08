@@ -12,7 +12,7 @@ from msgraph_beta.generated.models.virtual_event_registration_question_answer im
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = VirtualEventRegistration(
 	external_registration_information = VirtualEventExternalRegistrationInformation(
-		referrer = "Facebook",
+		referrer = "Fabrikam",
 		registration_id = "myExternalRegistrationId",
 	),
 	preferred_timezone = "Pacific Standard Time",

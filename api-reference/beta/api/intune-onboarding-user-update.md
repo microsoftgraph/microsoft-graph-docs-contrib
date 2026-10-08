@@ -12,11 +12,11 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [user](../resources/intune-onboarding-user.md) object.
+Update the properties of a [user](../resources/intune-shared-user.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /users/{usersId}
 ```
 
@@ -45,9 +45,9 @@ PATCH /users/{usersId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [user](../resources/intune-onboarding-user.md) object.
+In the request body, supply a JSON representation for the [user](../resources/intune-shared-user.md) object.
 
-The following table shows the properties that are required when you create the [user](../resources/intune-onboarding-user.md).
+The following table shows the properties that are required when you create the [user](../resources/intune-shared-user.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -57,13 +57,13 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune-onboarding-user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [user](../resources/intune-shared-user.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/{usersId}
 Content-type: application/json
 Content-length: 77
@@ -76,7 +76,7 @@ Content-length: 77
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 126

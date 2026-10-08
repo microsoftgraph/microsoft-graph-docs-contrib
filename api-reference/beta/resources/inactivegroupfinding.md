@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Contains analytic information for an inactive group in an authorization system, including actions granted to the group and its members in the last 90 days.
 
 Inherits from [finding](../resources/finding.md).
@@ -64,3 +66,4 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+

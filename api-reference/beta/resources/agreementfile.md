@@ -60,7 +60,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "fileData": {"@odata.type": "microsoft.graph.agreementFileData"},
+  "fileData": {"@odata.type": "microsoft.graph.agreementFile"},
   "fileName": "String",
   "id": "String (identifier)",
   "isDefault": true,

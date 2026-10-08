@@ -12,7 +12,7 @@ using Microsoft.Graph.Models;
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.AppConsent.AppConsentRequests["{appConsentRequest-id}"].UserConsentRequests.FilterByCurrentUserWithOn("reviewer").GetAsFilterByCurrentUserWithOnGetResponseAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = " (status eq 'Completed')";
+	requestConfiguration.QueryParameters.Filter = "(status eq 'Completed')";
 });
 
 

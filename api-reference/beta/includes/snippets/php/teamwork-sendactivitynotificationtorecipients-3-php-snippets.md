@@ -27,6 +27,7 @@ $requestBody->setActivityType('announcementPosted');
 $previewText = new ItemBody();
 $previewText->setContent('new announcemnet posted');
 $requestBody->setPreviewText($previewText);
+$requestBody->setIconId('announcementCreated');
 $templateParametersKeyValuePair1 = new KeyValuePair();
 $templateParametersKeyValuePair1->setName('deploymentId');
 $templateParametersKeyValuePair1->setValue('6788662');
@@ -47,10 +48,6 @@ $recipientsTeamworkNotificationRecipient3->setUserId('01c64f53-69aa-42c7-9b7f-9f
 $recipientsArray []= $recipientsTeamworkNotificationRecipient3;
 $requestBody->setRecipients($recipientsArray);
 
-$additionalData = [
-'iconId' => 'announcementCreated',
-];
-$requestBody->setAdditionalData($additionalData);
 
 $graphServiceClient->teamwork()->sendActivityNotificationToRecipients()->post($requestBody)->wait();
 

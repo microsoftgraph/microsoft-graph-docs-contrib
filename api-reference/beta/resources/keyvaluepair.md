@@ -14,9 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Key-value pair for action parameters. The configuration of this resource is shared by the following objects:
-+ The **synchronizationJobSettings** property of [synchronizationJob](synchronization-synchronizationjob.md).
-+ The **arguments** property of [Lifecycle Workflows tasks](identitygovernance-task.md).
+Key-value pair for action parameters. This object is configured in the following resources:
+- **synchronizationJobSettings** property of [synchronizationJob](../resources/synchronization-synchronizationjob.md)
+- **arguments** property of [task](../resources/identitygovernance-task.md) (Lifecycle Workflows)
+- **parameters** property of [securityAction](../resources/securityaction.md)
 
 ## Properties
 

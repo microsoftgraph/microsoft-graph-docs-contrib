@@ -44,6 +44,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | externalEventInformation | [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) collection | The external information of a webinar. Returned only for event organizers or coorganizers; otherwise, `null`. |
 | id | String | Unique identifier of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
+| isRegistrationRequired | Boolean | Indicates whether attendee registration is enabled for the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the webinar. |
@@ -95,6 +96,7 @@ The following JSON representation shows the resource type.
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "externalEventInformation" : [{"@odata.type": "microsoft.graph.virtualEventExternalInformation"}],
   "id": "String (identifier)",
+  "isRegistrationRequired": "Boolean",
   "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "status": "String"

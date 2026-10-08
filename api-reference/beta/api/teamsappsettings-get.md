@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teamwork/teamsAppSettings
 ```
 
@@ -60,16 +60,12 @@ The following example shows a request that gets the tenant-wide settings for all
   "name": "get_teamsappsettings"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teamsappsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-teamsappsettings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -109,7 +105,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.teamsAppSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -119,11 +115,15 @@ Content-Type: application/json
     "id": "65bdf003-0c4c-4bca-b102-0821ab0d1364",
     "allowUserRequestsForAppAccess": true,
     "isChatResourceSpecificConsentEnabled": "true",
-    "isUserPersonalScopeResourceSpecificConsentEnabled": "true"
+    "isUserPersonalScopeResourceSpecificConsentEnabled": "true",
+    "isUserPersonalScopeResourceSpecificConsentEnabled": "true",
+    "customAppSettings": {
+      "developerToolsForShowingAppUsageMetrics": "developerPortal"
+    }
   }
 }
 ```
 
 ## Related content
 
-- [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+[Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

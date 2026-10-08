@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/triggers/retentionEvents
 ```
 
@@ -59,7 +59,8 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
-Here's an example of a request.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,7 +68,7 @@ Here's an example of a request.
   "name": "create_retentionevent_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/triggers/retentionEvents
 Content-Type: application/json
 Content-length: 616
@@ -101,10 +102,6 @@ Content-length: 616
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-retentionevent-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-retentionevent-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-retentionevent-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -132,7 +129,9 @@ Content-length: 616
 ---
 
 ### Response
-Here's an example of the response.
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -140,7 +139,7 @@ Here's an example of the response.
   "@odata.type": "microsoft.graph.security.retentionEvent"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [unmutePartici
 
 ## Example
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -79,10 +79,6 @@ Content-Length: 46
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-unmute-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/call-unmute-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -111,7 +107,7 @@ Content-Length: 46
 
 ---
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 

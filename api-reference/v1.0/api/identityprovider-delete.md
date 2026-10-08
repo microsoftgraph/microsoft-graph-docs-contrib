@@ -51,7 +51,7 @@ If successful, this method returns `204 No Content` response code.
 
 The following example deletes an **identityProvider**.
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -67,10 +67,6 @@ DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-amazon-oauth-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-identityprovider-amazon-oauth-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,7 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

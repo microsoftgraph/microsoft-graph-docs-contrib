@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}
 ```
 
@@ -49,7 +49,7 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. Optional. Updatable.|
+|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist. Optional. Updatable.|
 |reviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|This collection of access review scopes is used to define who the reviewers are. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept). Optional. Updatable.|
 |scope|[accessReviewScope](../resources/accessreviewscope.md)|Created based on **scope** and **instanceEnumerationScope** at the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) level. Defines the scope of users reviewed in a group. Read-only. Required but not updated.|
 
@@ -93,7 +93,7 @@ Content-Type: application/json
         "resourceScopes": [
             {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                "query": "/v1.0/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
                 "queryType": "MicrosoftGraph"
             }
         ]
@@ -131,7 +131,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.accessReviewInstance"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -160,7 +160,7 @@ Content-Type: application/json
         "resourceScopes": [
             {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                "query": "/v1.0/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
                 "queryType": "MicrosoftGraph",
                 "queryRoot": null
             }

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
 
-An issue only with status of `PostIncidentReviewPublished` indicates that the PIR document exists for the issue. The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
+An issue only with status of `PostIncidentReviewPublished` indicates that the PIR document exists for the issue. The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document doesn't exist for the issue.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/serviceAnnouncement/issues/{serviceHealthIssueId}/incidentReport
 ```
 
@@ -58,16 +58,12 @@ If successful, this function returns a `200 OK` response code and a file stream 
   "name": "servicehealthissue_incidentreport"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO248163/incidentReport
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/servicehealthissue-incidentreport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/servicehealthissue-incidentreport-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -104,7 +100,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO248163/i
   "@odata.type": "Edm.Stream"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

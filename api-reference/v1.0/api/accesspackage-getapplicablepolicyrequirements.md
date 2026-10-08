@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 Namespace: microsoft.graph
 
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), this action retrieves a list of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) objects that the currently signed-in user can use to create an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), this action retrieves [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) objects for an [accessPackage](../resources/accesspackage.md) that the currently signed-in user can use to create an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md). Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -21,15 +21,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackage_getapplicablepolicyrequirements" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-getapplicablepolicyrequirements-permissions.md)]
 
-[!INCLUDE [rbac-entitlement-access-package-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-manager-apis-write.md)]
-
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}/getApplicablePolicyRequirements
 ```
 
@@ -54,16 +52,12 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
   "name": "accesspackage_getapplicablepolicyrequirements"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/{accessPackageId}/getApplicablePolicyRequirements
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/accesspackage-getapplicablepolicyrequirements-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/accesspackage-getapplicablepolicyrequirements-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -103,14 +97,40 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.accessPackageAssignmentRequestRequirements"
+      "policyId": "d6322c23-04d6-eb11-b22b-c8d9d21f4e9a",
+      "policyDisplayName": "Initial Policy",
+      "policyDescription": "Initial Policy",
+      "isApprovalRequiredForAdd": false,
+      "isApprovalRequiredForUpdate": false,
+      "isRequestorJustificationRequired": false,
+      "allowCustomAssignmentSchedule": true,
+      "schedule": {
+        "expiration": {
+          "endDateTime": null,
+          "duration": "P365D",
+          "type": "afterDuration"
+        }
+      },
+      "questions": [
+        {
+          "@odata.type": "#microsoft.graph.textInputQuestion",
+          "id": "0fd349e2-a3a7-4712-af08-660f29c12b90",
+          "isRequired": true,
+          "sequence": 0,
+          "isSingleLineQuestion": true,
+          "text": {
+            "defaultText": "What is your display name",
+            "localizedTexts": []
+          }
+        }
+      ]
     }
   ]
 }

@@ -4,7 +4,7 @@ description: "Represents a custom behavior that a consuming service can use to c
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 04/22/2024
 ---
 

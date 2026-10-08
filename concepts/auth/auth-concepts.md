@@ -44,8 +44,8 @@ An app can access data in one of two ways as illustrated in the following image.
 In this access scenario, a user signs into a client application which calls Microsoft Graph on their behalf. *Both the client app and the user must be authorized to make the request*.
 
 For the client app to be authorized to access the data on behalf of the signed-in user, it must have the required permissions, which it receives through a combination of two factors:
-- *Delegated permissions*, also referred to as *scopes*: The permissions exposed by Microsoft Graph and that represent the operations that the app can perform on behalf of the signed-in user. The app might be allowed to perform an operation on behalf of one user but not another.
-- *User permissions*: The permissions that the signed-in user has to the resource. The user might be the owner of the resource, the resource might be shared with them, or they might be assigned permissions through a role-based access control system (RBAC) such as [Microsoft Entra RBAC](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+- *Delegated permissions*, also referred to as *scopes*: The permissions exposed by Microsoft Graph and that represent the operations that the app can perform on behalf of the signed-in user. The app is allowed to perform an operation on behalf of the signed in user but not another.
+- *User permissions*: The permissions that the signed-in user has to the resource. The user can be the owner of the resource, the resource can be shared with them, or they can be assigned permissions through a role-based access control system (RBAC) such as [Microsoft Entra RBAC](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 #### Sample scenario: Delegated access in Microsoft Graph
 
@@ -87,7 +87,7 @@ As a developer, you decide which Microsoft Graph permissions to request for your
 
 - May be preauthorized for the application by an administrator.
 - May be consented by the user directly.
-- If not preauthorized, may require administrator privileges to grant consent. For example, for permissions with a greater potential security impact.
+- If not preauthorized, requires administrator privileges to grant consent. For example, for permissions with a greater potential security impact.
 
 For more information about permissions and consent, see [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview#consent).
 

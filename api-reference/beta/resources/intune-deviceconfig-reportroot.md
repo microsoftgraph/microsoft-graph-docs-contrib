@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -21,10 +21,10 @@ The resource that represents an instance of History Reports.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get reportRoot](../api/intune-deviceconfig-reportroot-get.md)|[reportRoot](../resources/intune-deviceconfig-reportroot.md)|Read properties and relationships of the [reportRoot](../resources/intune-deviceconfig-reportroot.md) object.|
-|[Update reportRoot](../api/intune-deviceconfig-reportroot-update.md)|[reportRoot](../resources/intune-deviceconfig-reportroot.md)|Update the properties of a [reportRoot](../resources/intune-deviceconfig-reportroot.md) object.|
-|[deviceConfigurationUserActivity function](../api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity.md)|[report](../resources/intune-deviceconfig-report.md)|Metadata for the device configuration user activity report|
-|[deviceConfigurationDeviceActivity function](../api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity.md)|[report](../resources/intune-deviceconfig-report.md)|Metadata for the device configuration device activity report|
+|[Get reportRoot](../api/intune-deviceconfig-reportroot-get.md)|[reportRoot](../resources/intune-shared-reportroot.md)|Read properties and relationships of the [reportRoot](../resources/intune-shared-reportroot.md) object.|
+|[Update reportRoot](../api/intune-deviceconfig-reportroot-update.md)|[reportRoot](../resources/intune-shared-reportroot.md)|Update the properties of a [reportRoot](../resources/intune-shared-reportroot.md) object.|
+|[deviceConfigurationUserActivity function](../api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity.md)|[report](../resources/intune-shared-report.md)|Metadata for the device configuration user activity report|
+|[deviceConfigurationDeviceActivity function](../api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity.md)|[report](../resources/intune-shared-report.md)|Metadata for the device configuration device activity report|
 
 ## Properties
 |Property|Type|Description|

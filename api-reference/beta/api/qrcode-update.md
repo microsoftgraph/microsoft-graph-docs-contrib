@@ -16,34 +16,39 @@ Namespace: microsoft.graph
 
 Create a standard or temporary QR code, if there is no active QR code, or update a standard QR code. Only the **expireDateTime** property can be updated for a standard QR code.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-### Permissions acting on self
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "qrcode_update", 
+  "requestUrls": ["PATCH /users/{id}/authentication/qrCodePinMethod/standardQRCode", "PATCH /users/{id}/authentication/qrCodePinMethod/standardQRCode"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcode-update-permissions.md)]
-
-### Permissions acting on other users
-
-<!-- { "blockType": "ignored"  } -->
-[!INCLUDE [permissions-table](../includes/permissions/qrcode-update-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
 Update your own QR Code.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 PATCH /me/authentication/qrCodePinMethod/standardQRCode
 PATCH /me/authentication/qrCodePinMethod/temporaryQRCode
 ```
 
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
 Update another user's QR Code.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 PATCH /users/{id}/authentication/qrCodePinMethod/standardQRCode
 PATCH /users/{id}/authentication/qrCodePinMethod/temporaryQRCode
 ```
@@ -80,7 +85,7 @@ The following example shows a request.
   "@odata.type": "microsoft.graph.qrCode"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod/standardQRCode
 Content-Type: application/json
 
@@ -93,10 +98,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-qrcode-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-qrcode-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -115,6 +116,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-qrcode-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-qrcode-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-qrcode-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -131,7 +136,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.qrCode"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -164,7 +169,7 @@ The following example shows a request.
   "@odata.type": "microsoft.graph.qrCode"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/me/authentication/qrCodePinMethod/standardQRCode
 Content-Type: application/json
 
@@ -176,10 +181,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-qrcode-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-qrcode-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -198,6 +199,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-qrcode-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-qrcode-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-qrcode-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -214,7 +219,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.qrCode"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

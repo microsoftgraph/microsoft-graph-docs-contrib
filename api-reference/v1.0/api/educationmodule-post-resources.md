@@ -75,9 +75,9 @@ If successful, this method returns a `201 Created` response code and an [educati
 
 ## Examples
 
-## Example 1: Create an educationLinkResource
+### Example 1: Create an educationLinkResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -102,10 +102,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationlinkresource-from-educationmodule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationlinkresource-from-educationmodule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -134,7 +130,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -179,9 +175,9 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Create an educationWordResource
+### Example 2: Create an educationWordResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -210,10 +206,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationwordresource-from-educationmodule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationwordresource-from-educationmodule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-educationwordresource-from-educationmodule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -240,7 +232,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -285,9 +277,9 @@ Content-type: application/json
 }
 ```
 
-## Example 3: Create an educationFileResource
+### Example 3: Create an educationFileResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -316,10 +308,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationfileresource-from-educationmodule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationfileresource-from-educationmodule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-educationfileresource-from-educationmodule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -346,7 +334,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -391,9 +379,9 @@ Content-type: application/json
 }
 ```
 
-## Example 4: Create an educationExcelResource
+### Example 4: Create an educationExcelResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -422,10 +410,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationexcelresource-from-educationmodule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationexcelresource-from-educationmodule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-educationexcelresource-from-educationmodule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -452,7 +436,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -497,9 +481,9 @@ Content-type: application/json
 }
 ```
 
-## Example 5: Create an educationPowerPointResource
+### Example 5: Create an educationPowerPointResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -524,10 +508,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationpowerpointresource-from-educationmodule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationpowerpointresource-from-educationmodule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -556,7 +536,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -601,9 +581,9 @@ Content-type: application/json
 }
 ```
 
-## Example 6: Create an educationMediaResource
+### Example 6: Create an educationMediaResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -628,10 +608,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationmediaresource-from-educationmodule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationmediaresource-from-educationmodule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -660,7 +636,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -705,9 +681,9 @@ Content-type: application/json
 }
 ```
 
-## Example 7: Create an educationChannelResource
+### Example 7: Create an educationChannelResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -732,10 +708,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationchannelresource-from-educationmodule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationchannelresource-from-educationmodule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -764,7 +736,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -809,9 +781,9 @@ Content-type: application/json
 }
 ```
 
-## Example 8: Create an educationLinkedAssignmentResource
+### Example 8: Create an educationLinkedAssignmentResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -836,10 +808,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationlinkedassignmentresource-from-educationmodule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationlinkedassignmentresource-from-educationmodule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -868,7 +836,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 

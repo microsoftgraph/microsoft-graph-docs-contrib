@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/trainingCampaigns/{trainingCampaignId}/report/campaignUsers
 ```
 
@@ -43,7 +43,7 @@ The following list shows some examples of requests that use the supported OData 
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/trainingCampaigns/{trainingCampaignId}/report/campaignUsers?$count=true
 GET /security/attackSimulation/trainingCampaigns/{trainingCampaignId}/report/campaignUsers?$skipToken={skipToken}
 GET /security/attackSimulation/trainingCampaigns/{trainingCampaignId}/report/campaignUsers?$top=1
@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "list_campaignusersdetails"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/f1b13829-3829-f1b1-2938-b1f12938b1a/report/campaignUsers
 ```
 
@@ -95,7 +95,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.userSimulationDetails)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

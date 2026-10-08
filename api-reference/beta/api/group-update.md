@@ -6,7 +6,7 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
-ms.date: 08/20/2024
+ms.date: 06/05/2026
 ---
 
 # Update group
@@ -17,6 +17,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [group](../resources/group.md) object.
 
+> [!NOTE]
+> When you use `members@odata.bind` to add members via `PATCH`, this request might have replication delays for groups that were recently created. It can take a short time for the group object to fully replicate across Microsoft Entra ID directory replicas. During this window, requests to add members to the group might return a `400 Bad Request` error with the message: *"The source resource object or one of the objects being referenced don't exist."*
+>
+> To mitigate this behavior:
+> - **Retry after a brief delay** — wait a few seconds and retry the request. The delay is typically brief.
+>
+> For more information, see [Designing for Eventual Consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -25,6 +33,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "group_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-update-permissions.md)]
+
+### Permissions for specific scenarios
+
+- *Group.ManageProtection.All* delegated permission is the least privileged permission to update the **assignedLabels** property for cloud security groups and **writebackConfiguration** property for all groups. App-only scenarios aren't supported.
 
 ## HTTP request
 
@@ -49,7 +61,7 @@ The following table specifies the properties that can be updated.
 | Property                | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | :---------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | allowExternalSenders    | Boolean | Default is `false`. Indicates whether people external to the organization can send messages to the group.                                                                                                                                                                                                                                                                                                                                                                                    |
-| assignedLabels                | [assignedLabel](../resources/assignedlabel.md) collection                             | The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and [a supported administrator role](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels).|
+| assignedLabels                | [assignedLabel](../resources/assignedlabel.md) collection                             | The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group or a cloud security group. Requires a Microsoft Entra ID P1 license. This property can be specified during group creation or update. However, for cloud security groups, it's immutable once set. <br/><ul><li>For Microsoft 365 groups, this property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and [a supported administrator role](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels). </li><li>*Group.ManageProtection.All* delegated permission is the least privileged permission to update this property for cloud security groups. App-only scenarios aren't supported.</li><li>See [Key differences from Microsoft 365 group labeling](/entra/identity/users/groups-sensitivity-labels#key-differences-from-microsoft-365-group-labeling) to learn more about managing this property for Microsoft 365 vs. cloud security groups.</li></ul>|
 | autoSubscribeNewMembers | Boolean | Default is `false`. Indicates whether new members added to the group will be auto-subscribed to receive email notifications. **autoSubscribeNewMembers** can't be `true` when **subscriptionEnabled** is set to `false` on the group.                                                                                                                                                                                                                                                        |
 | description             | String  | An optional description for the group.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | displayName             | String  | The display name for the group. This property is required when a group is created and it cannot be cleared during updates.                                                                                                                                                                                                                                                                                                                                                                   |
@@ -57,14 +69,17 @@ The following table specifies the properties that can be updated.
 | preferredDataLocation   | String  | The preferred data location for the Microsoft 365 group. To update this property, the calling user must be assigned at least one of the following Microsoft Entra roles: <br><ul><li> User Account Administrator <li> Directory Writer <li> Exchange Administrator <li> SharePoint Administrator </ul> <br/>For more information about this property, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | securityEnabled         | Boolean | Specifies whether the group is a security group, including Microsoft 365 groups.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | uniqueName                     | String                                                                   | The unique identifier that can be assigned to a group and used as an alternate key. Can updated only if `null` and is immutable once set. |
-| visibility              | String  | Specifies the visibility of a Microsoft 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).                                                                                                                                                                                                                                                                                                                                              |
+| visibility              | String  | Specifies the visibility of a Microsoft 365 group. The possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).                                                                                                                                                                                                                                                                                                                                              |
+| welcomeMessageEnabled   | Boolean | Default is `true`. Indicates whether a welcome message is sent to new members when they are added to the Microsoft 365 group.                                                                                                                                                                                                                                                                                    |
 | writebackConfiguration                     | [groupWritebackConfiguration](../resources/groupwritebackconfiguration.md)                                                                  | Specifies whether or not a group is configured to write back group object properties to on-premise Active Directory. These properties are used when group writeback is configured in the [Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-group-writeback-v2) sync client.|  
 
 > [!IMPORTANT]
-> - To update the following properties, you must specify them in their own PATCH request, without including the other properties listed in the previous table: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
+> - To update these properties (**accessType**, **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isFavorite**, **isSubscribedByMail**, **unseenConversationsCount**, **unseenCount**, **unseenMessagesCount**, **welcomeMessageEnabled**), you must:
+>    - Specify them in their own PATCH request without including other properties from the previous table
+>    - Have the Group.ReadWrite.All permission (*Directory.ReadWrite.All* is not supported for these properties)
 > - Only a subset of the group API that pertains to core group administration and management supports application and delegated permissions. All other members of the group API, including updating **autoSubscribeNewMembers**, support only delegated permissions.
 > - The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
-> - Application permissions are not supported when updating assignedLabels.
+> - Application permissions are not supported when updating assignedLabels. *Group.ManageProtection.All* is the least privileged permission to update **assignedLabels** for cloud security groups.
 
 
 ### Manage extensions and associated data
@@ -76,7 +91,13 @@ Use this API to manage the [directory, schema, and open extensions](/graph/exten
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code—except a `200 OK` response code when updating the following properties: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
+If successful, this method returns a `204 No Content` response code—except a `200 OK` response code when updating the following properties: **accessType**, **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isFavorite**, **isSubscribedByMail**, **unseenConversationsCount**, **unseenCount**, **unseenMessagesCount**, **welcomeMessageEnabled**.
+
+### Errors
+
+| Status code | Error code | Error message | Description |
+|-------------|------------|---------------|-------------|
+| `400 Bad Request` | `Request_BadRequest` | "The source resource object or one of the objects being referenced don't exist." | The group was recently created and hasn't fully replicated across all directory replicas. This error is specific to link-write operations (adding members via `members@odata.bind`). Retry the request after a brief delay. |
 
 ## Examples
 
@@ -104,10 +125,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-group-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -179,10 +196,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-group-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get the details of an [inactiveUserFinding](../resources/inactiveuserfinding.md) object in an authorization system onboarded to Permissions Management.
 
 
@@ -54,7 +56,7 @@ GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.i
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -138,3 +140,4 @@ Content-type: application/json
     }
 }
 ```
+

@@ -5,7 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
-ms.date: 05/16/2024
+ms.date: 04/03/2026
 ---
 
 # identityContainer resource type
@@ -34,6 +34,8 @@ None.
 |customAuthenticationExtensions|[customAuthenticationExtension](customauthenticationextension.md) collection| Represents custom extensions to authentication flows in Azure AD for workforce and customers.|
 |identityProvider|[identityProviderBase](identityProviderBase.md) collection| Represents entry point for identity provider base.|
 |userFlowAttributes|[identityUserFlowAttribute](identityUserFlowAttribute.md) collection| Represents entry point for identity userflow attributes.|
+|riskPrevention|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Represents the entry point for fraud and risk prevention configurations in Microsoft Entra External ID, including third-party provider settings.|
+|verifiedId|[identityVerifiedIdRoot](identityverifiedidroot.md)|Entry point for verified ID operations.|
 
 ## JSON representation
 

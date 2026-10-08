@@ -58,6 +58,10 @@ The rest of this article provides an overview of the service-specific throttling
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
 
+## Exchange message trace service limits
+  
+[!INCLUDE [Exchange message trace throttling documentation](../includes/throttling-exchange-messagetrace.md)]
+
 ## Files and lists service limits
 
 [!INCLUDE [Files and lists throttling documentation](../includes/throttling-files-and-lists.md)]
@@ -73,6 +77,10 @@ The rest of this article provides an overview of the service-specific throttling
 ## Identity and access data policy operation service limits
 
 [!INCLUDE [Identity and access data policy operation documentation](../includes/throttling-datapolicy-operation.md)]
+
+## Identity and access device operation service limits
+
+[!INCLUDE [Identity and access device operation throttling documentation](../includes/throttling-device-operation.md)]
 
 ## Identity protection and conditional access service limits
 
@@ -182,9 +190,17 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 
 [!INCLUDE [Outlook throttling documentation](../includes/throttling-outlook.md)]
 
+## Places service limits
+
+[!INCLUDE [Places throttling documentation](../includes/throttling-places.md)]
+
 ## Project Rome service limits
 
 [!INCLUDE [Project Rome throttling documentation](../includes/throttling-project-rome.md)]
+
+## Security audit log query service limits
+
+[!INCLUDE [Security audit log query throttling documentation](../includes/throttling-security-audit-log-query.md)]
 
 ## Security detections and incidents service limits
 
@@ -209,6 +225,10 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 ## Viva Engage service limits
 
 [!INCLUDE [Viva Engage throttling documentation](../includes/throttling-viva-engage.md)]
+
+## Windows 365 service limits
+
+[!INCLUDE [Windows 365 throttling documentation](../includes/throttling-windows-365.md)]
 
 ## Related content
 

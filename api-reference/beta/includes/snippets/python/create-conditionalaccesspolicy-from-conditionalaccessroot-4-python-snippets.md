@@ -16,7 +16,7 @@ from msgraph_beta.generated.models.conditional_access_grant_controls import Cond
 from msgraph_beta.generated.models.conditional_access_grant_control import ConditionalAccessGrantControl
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ConditionalAccessPolicy(
-	display_name = "Require MFA to EXO from non-complaint devices.",
+	display_name = "Require MFA to EXO from non-compliant devices.",
 	state = ConditionalAccessPolicyState.Enabled,
 	conditions = ConditionalAccessConditionSet(
 		applications = ConditionalAccessApplications(

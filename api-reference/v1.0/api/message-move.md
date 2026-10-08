@@ -57,7 +57,7 @@ If successful, this method returns `201 Created` response code and a [message](.
 
 Here is an example of how to call this API.
 
-##### Request
+### Request
 
 The following request moves the specified message to the Deleted Items folder, identified by its well-known folder name `deleteditems`.
 
@@ -79,10 +79,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-move-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/message-move-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -111,7 +107,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response.
 

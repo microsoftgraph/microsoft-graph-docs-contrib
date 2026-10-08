@@ -31,7 +31,7 @@ The authentication method policies APIs are used to manage policy settings. For 
 |Authentication method policy       | Description |
 |:---------------------------|:------------|
 |[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Define users who can use email OTP on the Microsoft Entra tenant.|
-|[externalauthenticationmethodconfiguration](externalauthenticationmethodconfiguration.md) (preview)|Define users who can use an external authentication method to satisfy the second factor of Microsoft Entra ID multifactor authentication requirements.|
+|[externalauthenticationmethodconfiguration](externalauthenticationmethodconfiguration.md) (preview)|Define users who can use an external MFA to satisfy the second factor of Microsoft Entra ID multifactor authentication requirements.|
 |[fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)| Define FIDO2 security key restrictions and users who can use them to sign in to Microsoft Entra ID.|
 |[hardwareOathAuthenticationMethodConfiguration](hardwareoathauthenticationmethodconfiguration.md)| Define users who can use hardware OATH tokens to sign in to Microsoft Entra ID.|
 |[hardwareOathAuthenticationMethodDevice](hardwareoathtokenauthenticationmethoddevice.md)| Manage the inventory of  hardware OATH tokens, e.g. create, delete and get tokens.|
@@ -42,6 +42,7 @@ The authentication method policies APIs are used to manage policy settings. For 
 |[voiceAuthenticationMethodConfiguration](voiceAuthenticationMethodConfiguration.md)|Define users or groups that are enabled to use the voice call authentication method.|
 |[x509CertificateAuthenticationMethodConfiguration](x509CertificateAuthenticationMethodConfiguration.md)|Define users who can use X.509 certificate to sign in to Microsoft Entra ID.|
 |[qrCodePinAuthenticationMethodConfiguration](qrCodePinAuthenticationMethodConfiguration.md)|Define users who can use QRCodePin to sign in to Microsoft Entra ID.|
+|[x509CertificateAuthenticationMethodConfiguration](x509CertificateAuthenticationMethodConfiguration.md)|Define users who can use X.509 certificates to sign in to Microsoft Entra ID.|
 
 ## Policies available to push users to set up authentication methods:
 |Policy       | Description |

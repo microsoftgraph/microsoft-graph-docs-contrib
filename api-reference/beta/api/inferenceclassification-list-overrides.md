@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the [Focused Inbox](../resources/manage-focused-inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.
 
-Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
+Each override corresponds to an SMTP address of a sender. Initially, a user doesn't have any overrides.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -45,7 +45,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -59,10 +59,6 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-overrides-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-overrides-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,8 +87,10 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

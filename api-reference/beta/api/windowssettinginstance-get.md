@@ -37,9 +37,9 @@ For a specific user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{user-id}@{tenant-id}/settings/windows/{windowsSettingId}/instances/{windowsSettingInstanceId}
-````
+```
 
 > [!NOTE]
 > The `{tenant-id}` value must match the tenant ID of the calling user. To find your tenant ID, see [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant).
@@ -90,10 +90,6 @@ GET https://graph.microsoft.com/beta/me/settings/windows/{windowsSettingId}/inst
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-windowssettinginstance-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-windowssettinginstance-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

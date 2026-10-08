@@ -12,7 +12,7 @@ use Microsoft\Graph\Generated\Drives\Item\Items\Item\Workbook\Worksheets\Add\Add
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AddPostRequestBody();
-$requestBody->setName('name-value');
+$requestBody->setName('Sheet1');
 
 $result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->worksheets()->add()->post($requestBody)->wait();
 

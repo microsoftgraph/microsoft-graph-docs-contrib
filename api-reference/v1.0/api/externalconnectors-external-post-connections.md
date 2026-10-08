@@ -57,7 +57,7 @@ You can specify the following properties when creating an [externalConnection](.
 
 If successful, this method returns a `201 Created` response code and an [externalConnection](../resources/externalconnectors-externalconnection.md) object in the response body.
 
->**Note:** When you create an external connection with a broken adaptive card for the result layout, the first call will fail with a `503 Service Unavailable`. When you try the call again, the second call will fail with a `409 Conflict` response that states that a connection with the same name already exists. This happens because the connection was created even though the first call failed with `503 Service Unavailable`. For more details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19908).
+>**Note:** When you create an external connection with a broken adaptive card for the result layout, the first call will fail with a `503 Service Unavailable`. When you try the call again, the second call will fail with a `409 Conflict` response that states that a connection with the same name already exists. This happens because the connection was created even though the first call failed with `503 Service Unavailable`. For more details, see [Known issues](/graph/known-issues#creating-an-externalconnection-with-a-broken-adaptive-card-returns-a-503-service-unavailable-response-followed-by-a-409-conflict-error).
 
 ## Examples
 
@@ -82,10 +82,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-externalconnection-from-connections-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-externalconnection-from-connections-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -123,14 +119,14 @@ The following example shows the response. Note that the **id**, **name**, and **
 }
 -->
 ``` http
-HTTP/1.1 200 Created
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "0a4f4e74-4e74-0a4f-744e-4f0a744e4f0a",
-  "name": "String",
-  "description": "String",
-  "state": "ready",
+  "id": "contosohr",
+  "name": "Contoso HR",
+  "description": "Connection to index Contoso HR system",
+  "state": "draft",
   "configuration": {
     "authorizedAppIds": [
       "d310d35d-72ec-47dd-92f2-fb9c40936555"

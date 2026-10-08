@@ -1,6 +1,6 @@
 ---
 title: "List virtualEventRegistrations"
-description: "Get a list of all registration records of a webinar."
+description: "Get a list of all registration records of a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).
+Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -35,11 +35,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+
+To list the registrations of a webinar:
+
+```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=userId eq '{userId}'
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=email eq '{email}'
 ```
+
+To list the registrations of a town hall:
+
+```http
+GET /solutions/virtualEvents/townhalls/{townhallId}/registrations
+GET /solutions/virtualEvents/townhalls/{townhallId}/registrations?$filter=userId eq '{userId}'
+GET /solutions/virtualEvents/townhalls/{townhallId}/registrations?$filter=email eq '{email}'
+```
+
 ## Optional query parameters
 
 This method supports a filter from the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -83,16 +95,12 @@ The following example shows a request.
   "sampleKeys": ["f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-virtualeventregistrations-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-virtualeventregistrations-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -132,7 +140,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventRegistration)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -146,7 +154,7 @@ Content-Type: application/json
       "lastName": "Pham",
       "email": "EmileeMPham@contoso.com",
       "externalRegistrationInformation": {
-        "referrer": "Facebook",
+        "referrer": "Fabrikam",
         "registrationId": "myExternalRegistrationId"
       },
       "status": "registered",
@@ -207,10 +215,6 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-5
 [!INCLUDE [sample-code](../includes/snippets/csharp/virtualeventregistration-get-byuserid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/virtualeventregistration-get-byuserid-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/virtualeventregistration-get-byuserid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -248,7 +252,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.virtualEventRegistration)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -262,7 +266,7 @@ Content-Type: application/json
       "lastName": "Pham",
       "email": "EmileeMPham@contoso.com",
       "externalRegistrationInformation": {
-        "referrer": "Facebook",
+        "referrer": "Fabrikam",
         "registrationId": "myExternalRegistrationId"
       },
       "status": "registered",
@@ -323,10 +327,6 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-5
 [!INCLUDE [sample-code](../includes/snippets/csharp/virtualeventregistration-get-byemail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/virtualeventregistration-get-byemail-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/virtualeventregistration-get-byemail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -364,7 +364,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.virtualEventRegistration)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -378,7 +378,7 @@ Content-Type: application/json
       "lastName": "Pham",
       "email": "EmileeMPham@contoso.com",
       "externalRegistrationInformation": {
-        "referrer": "Facebook",
+        "referrer": "Fabrikam",
         "registrationId": "myExternalRegistrationId"
       },
       "status": "registered",

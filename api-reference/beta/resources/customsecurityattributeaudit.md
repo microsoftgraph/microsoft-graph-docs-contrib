@@ -1,7 +1,7 @@
 ---
 title: "customSecurityAttributeAudit resource type"
 description: "Represents a custom security attribute audit log."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType

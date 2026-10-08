@@ -1,17 +1,21 @@
 ---
 author: spgraph-docs-team
 ms.date: 09/10/2017
-title: List Recent Files
+title: "drive: recent (deprecated)"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
-description: "List a set of items that have been recently used by the signed in user."
+description: "List a set of items recently used by the signed-in user."
 doc_type: apiPageType
 ---
-# List recent files
+
+# drive: recent (deprecated)
 
 Namespace: microsoft.graph
 
-List a set of items that have been recently used by the signed in user.
+> [!CAUTION]
+> The **recent** API is deprecated and will operate in a degraded state until November, 2026, after which it stops returning data.
+
+List a set of items recently used by the signed-in user.
 This collection includes items that are in the user's drive and items they have access to from other drives.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -37,11 +41,13 @@ GET /me/drive/recent
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
-This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive has recently accessed.
+This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive recently accessed.
 
 ## Examples
 
 ### Request
+
+THe following example shows the request. 
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "view-recent-files" } -->
@@ -52,10 +58,6 @@ GET /me/drive/recent
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/view-recent-files-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/view-recent-files-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -84,7 +86,11 @@ GET /me/drive/recent
 
 ---
 
+---
+
 ### Response
+
+THe following example shows the response. 
 
 <!-- {
     "blockType": "response",
@@ -135,7 +141,7 @@ Content-Type: application/json
 ## Remarks
 
 Some driveItems returned from the **recent** action includes the **remoteItem** facet that indicates that items are from another drive.
-To access the original driveItem object, you'll need to make a request using the information provided in **remoteItem** in the following format:
+To access the original **driveItem** object, you need to make a request using the information provided in **remoteItem** in the following format:
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 

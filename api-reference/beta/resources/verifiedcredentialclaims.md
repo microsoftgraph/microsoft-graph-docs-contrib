@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Open type containing the key-value pair of the claims retrieved from the verifiable credentials. Names must be valid property names and values may be restricted to a list of types via an annotation with the term `Validation.OpenPropertyTypeConstraint`.
-Used for the **claims** property of [verified credential data](verifiedCredentialData.md).
+Used for the **claims** property of [verified credential data](../resources/verifiedcredentialdata.md).
 
 ## Properties
 None.

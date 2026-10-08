@@ -1,6 +1,6 @@
 ---
 title: "Update column"
-description: "Update a columnDefinition in a fileStorageContainer."
+description: "Update an existing column represented as a columnDefinition in a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -16,18 +16,14 @@ Namespace: microsoft.graph
 
 Update an existing column represented as a [columnDefinition](../resources/columndefinition.md) in a [fileStorageContainer](../resources/filestoragecontainer.md). 
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestoragecontainer-update-columns-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-update-columns-permissions.md)]
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_update_column" } -->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-update-column-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
@@ -37,8 +33,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
-PATCH /storage/fileStorage/containers/{containerId}/columns/{column-id}
+```http
+PATCH /storage/fileStorage/containers/{containerId}/columns/{columnId}
 ```
 
 ## Request headers
@@ -50,7 +46,7 @@ PATCH /storage/fileStorage/containers/{containerId}/columns/{column-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [columnDefinition](../resources/columndefinition.md) object with the properties to update. The `id` property can't be changed. Existing properties not included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
+In the request body, supply a JSON representation of the [columnDefinition](../resources/columndefinition.md) object with the properties to update. The **id** property can't be changed. Existing properties not included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
 
 ## Response
 
@@ -68,7 +64,7 @@ The following example shows a request.
   "name": "update_columndefinition_for_fileStorageContainer"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/11dfef35-e2f7-4f17-82b0-6fba34445103
 Content-Type: application/json
 
@@ -80,10 +76,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-columndefinition-for-filestoragecontainer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-columndefinition-for-filestoragecontainer-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -120,7 +112,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.columnDefinition"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -131,6 +123,7 @@ Content-type: application/json
   "hidden": false,
   "id": "11dfef35-e2f7-4f17-82b0-6fba34445103",
   "indexed": false,
+  "isSearchable": false,
   "name": "Custom Column",
   "readOnly": false,
   "required": true,
@@ -142,4 +135,3 @@ Content-type: application/json
   }
 }
 ```
-

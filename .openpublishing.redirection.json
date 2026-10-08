@@ -1,6 +1,26 @@
 {
     "redirections": [
         {
+            "source_path": "api-reference/beta/resources/accessreviewdatauploadtriggercallbackdata.md",
+            "redirect_url": "/graph/api/resources/customdataprovidedresourcepayloads-data?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/resources/accessreviewresourcedatauploadsessioncontextdata.md",
+            "redirect_url": "/graph/api/resources/customdataprovidedresourcepayloads-accessreviewcontextdata?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/api/readingassignmentsubmission-get.md",
+            "redirect_url": "api-reference/beta/api/reportsroot-list-readingassignmentsubmissions.md",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/api/reflectcheckinresponse-get.md",
+            "redirect_url": "api-reference/beta/api/reportsroot-list-reflectcheckinresponses.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "api-reference/v1.0/resources/printreleasemechanism.md",
             "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/printer",
             "redirect_document_id": true
@@ -268,6 +288,11 @@
         {
             "source_path": "api-reference/v1.0/resources/formatprotection.md",
             "redirect_url": "/graph/api/resources/workbookformatprotection.md?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "concepts/teams-licenses.md",
+            "redirect_url": "/graph/",
             "redirect_document_id": false
         }
     ]

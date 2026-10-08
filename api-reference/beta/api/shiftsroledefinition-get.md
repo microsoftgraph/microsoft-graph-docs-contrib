@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /team/{teamId}/schedule/shiftsRoleDefinitions/{roleId}
 ```
 
@@ -58,7 +58,7 @@ This method doesn't support OData query parameters to customize the response.
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 
@@ -78,7 +78,7 @@ The following example shows a request.
   "name": "get_shiftsroledefinition"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/team/10c2c1cc-6384-48f6-aeba-ef7486344550/schedule/shiftsRoleDefinitions/scheduleowner
 ```
 
@@ -93,7 +93,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.shiftsRoleDefinition"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

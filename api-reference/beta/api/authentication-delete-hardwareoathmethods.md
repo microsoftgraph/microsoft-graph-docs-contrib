@@ -39,7 +39,7 @@ Unassign yourself a hardware OATH authentication method.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -50,7 +50,7 @@ Unassign another user their hardware OATH authentication method.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -79,16 +79,12 @@ The following example shows a request.
   "name": "delete_hardwareoathauthenticationmethod"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-hardwareoathauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-hardwareoathauthenticationmethod-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -125,7 +121,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

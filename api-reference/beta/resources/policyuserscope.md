@@ -1,0 +1,71 @@
+---
+title: "policyUserScope resource type"
+description: "Defines the scope of a data governance policy as it applies to a specific user."
+author: "ArunGedela"
+ms.date: 04/08/2025
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: resourcePageType
+---
+
+# policyUserScope resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Defines the scope of a data governance policy as it applies to a specific user.
+
+Returned from [compute protection scopes](../api/userprotectionscopecontainer-compute.md).
+
+Inherits from [policyScopeBase](../resources/policyscopebase.md).
+
+## Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+|activities|microsoft.graph.security.userActivityTypes|Specifies the user activities the calling application supports or is interested in. This flagged enumeration allows multiple members to be selected simultaneously. The possible values are: `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`, `contentFiltering`. The `contentFiltering` value represents evaluating application content against data loss prevention policies. Required.|
+|executionMode|microsoft.graph.security.executionMode|Policy execution mode for this user.  Possible values are `evaluateInline` and `evaluateOffline`. Inherited from `policyScopeBase`. Required.|
+|locationExclusions|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations excluded from the user-level policy scope. When specified, the effective scope is the set of locations in **locations** minus the locations in **locationExclusions**. Inherited from `policyScopeBase`. Required.|
+|locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations protected for this user. Inherited from `policyScopeBase`. Required.|
+|policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|Enforcement actions applicable to this user. Inherited from `policyScopeBase`. Required.|
+|policyConfiguration|[policyConfiguration](../resources/policyconfiguration.md)|The effective configuration for policy evaluation scenarios. This property can be omitted or `null` when no configuration is available or applicable. Inherited from `policyScopeBase`.|
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.policyScopeBase",
+  "@odata.type": "microsoft.graph.policyUserScope"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.policyUserScope",
+  "activities": "String",
+  "executionMode": "String",
+  "locations": [
+    {
+      "@odata.type": "microsoft.graph.policyLocation"
+    }
+  ],
+  "locationExclusions": [
+    {
+      "@odata.type": "microsoft.graph.policyLocation"
+    }
+  ],
+  "policyActions": [
+    {
+      "@odata.type": "microsoft.graph.dlpActionInfo"
+    }
+  ],
+  "policyConfiguration": {
+    "@odata.type": "#microsoft.graph.policyConfiguration"
+  }
+}
+```

@@ -1,5 +1,5 @@
 ---
-title: "Update governanceRoleAssignmentRequests"
+title: "Update governanceRoleAssignmentRequests (deprecated)"
 description: "Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on governanceRoleAssignmentRequests that are in status of `PendingAdminDecision`."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/02/2024
 ---
 
-# Update governanceRoleAssignmentRequests
+# Update governanceRoleAssignmentRequests (deprecated)
 
 Namespace: microsoft.graph
 
@@ -59,7 +59,7 @@ This method can only be applied to requests that are in status of `PendingAdminD
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -72,10 +72,6 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/updaterequest-governanceroleassignmentrequest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/updaterequest-governanceroleassignmentrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -114,7 +110,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 }
 ```
 
-##### Response
+### Response
 <!-- {
   "blockType": "response"
 } -->

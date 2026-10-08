@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "rwaithera"
 ms.subservice: "people"
 doc_type: "apiPageType"
-ms.date: 09/18/2024
+ms.date: 05/19/2026
 ---
 
 # List profileCardProperties
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/v1.0/admin/people/profileCardProperties
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-profilecardproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-profilecardproperties-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-profilecardproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -118,7 +114,6 @@ Content-type: application/json
 {
   "value": [
     {
-      "directoryPropertyName": "CustomAttribute1",
       "annotations": [
         {
           "displayName": "Cost Center",
@@ -129,7 +124,9 @@ Content-type: application/json
             }
           ]
         }
-      ]
+      ],
+      "directoryPropertyName": "CustomAttribute1",
+      "isVisible": true
     }
   ]
 }

@@ -5,6 +5,7 @@
         "/aspnet",
         "/azure",
         "/compliance",
+        "/copilot",
         "/cloud-app-security",
         "/concepts",
         "/defender",
@@ -19,6 +20,7 @@
         "/legal",
         "/mem",
         "/microsoft-365",
+        "/microsoft-agent-365",
         "/microsoftsearch",
         "/microsoftteams",
         "/office",
@@ -39,6 +41,7 @@
         "/viva",
         "/windows",
         "/windows-hardware",
+        "/unified-secops",
         "/universal-print"
     ]
 }

@@ -1,4 +1,4 @@
----
+﻿---
 title: "whatIfAnalysisResult resource type"
 toc.title: "What If evaluation"
 description: "Represents the result of a Conditional Access What If evaluation, which indicates the policies that would apply based on the sign-in details you provide."
@@ -30,7 +30,7 @@ Inherits from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|analysisReasons|whatIfAnalysisReasons|Specifies the reasons why a policy didn't apply. `analysisReasons` is set to `notSet` when `policyApplies` is `true` and one of the following values when `policyApplies` is `false`: `notEnoughInformation`, `invalidCondition`, `users`, `workloadIdentities`, `application`, `userActions`, `authenticationContext`, `devicePlatform`, `devices`, `clientApps`, `location`, `signInRisk`, `emptyPolicy`, `invalidPolicy`, `policyNotEnabled`, `userRisk`, `time`, `insiderRisk`, `authenticationFlow`, `unknownFutureValue`.|
+|analysisReasons|whatIfAnalysisReasons|Specifies the reasons why a policy didn't apply. `analysisReasons` is set to `notSet` when `policyApplies` is `true` and one of the following values when `policyApplies` is `false`: `notEnoughInformation`, `invalidCondition`, `users`, `workloadIdentities`, `application`, `userActions`, `authenticationContext`, `devicePlatform`, `devices`, `clientApps`, `location`, `signInRisk`, `emptyPolicy`, `invalidPolicy`, `policyNotEnabled`, `userRisk`, `time`, `insiderRisk`, `authenticationFlow`, `unknownFutureValue`, `agentIdRisk`, `agentIdentities`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `agentIdRisk`, `agentIdentities`.|
 |conditions|[conditionalAccessConditionSet](../resources/conditionalaccessconditionset.md)|Specifies the rules that must be met for the policy to apply. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
 |description|String|Not used. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
@@ -41,6 +41,7 @@ Inherits from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
 |policyApplies|Boolean|Specifies whether the policy applies to the sign-in properties provided in the request body. If `policyApplies` is `true`, the policy applies to the sign-in based on the sign-in properties provided. If `policyApplies` is `false`, the policy doesn't apply to the sign-in based on the sign-in properties provided and the `analysisReasons` property is populated to show the reason for the policy not applying. |
 |sessionControls|[conditionalAccessSessionControls](../resources/conditionalaccesssessioncontrols.md)|Specifies the session controls that are enforced after sign-in. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
 |state|conditionalAccessPolicyState|Specifies the state of the conditionalAccessPolicy object. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md). The possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`, `unknownFutureValue`.|
+|templateId|String|Specifies the unique identifier of a Conditional Access template. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
@@ -77,4 +78,3 @@ The following JSON representation shows the resource type.
   "analysisReasons": "String"
 }
 ```
-

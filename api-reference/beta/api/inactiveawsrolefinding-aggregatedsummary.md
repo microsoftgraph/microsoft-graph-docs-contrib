@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Retrieve the raw count of inactive roles relative to the total roles in an AWS authorization system onboarded to Permissions Management.
 
 
@@ -62,7 +64,7 @@ The following example shows a request.
   "name": "inactiveawsrolefindingthis.aggregatedsummary"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
@@ -90,3 +92,4 @@ Content-type: application/json
     "findingsCount": 295
 }
 ```
+

@@ -20,7 +20,7 @@ Delete an open extension ([openTypeExtension](../resources/opentypeextension.md)
 
 For the list of resources that support open extensions, see the table in the [Permissions](#permissions) section.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -35,8 +35,10 @@ Depending on the resource you're deleting the extension from and the permission 
 | [group event](../resources/event.md) | Group.ReadWrite.All | Not supported. | Not supported |
 | [group post](../resources/post.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite.All |
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [site](../resources/site.md) | Sites.ReadWrite.All | Not supported. | Not supported. |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [user](../resources/user.md) | User.ReadWrite | Not supported. | User.ReadWrite.All |
@@ -57,17 +59,19 @@ DELETE /groups/{groupId}/extensions/{extensionId}
 DELETE /groups/{groupId}/events/{eventId}/extensions/{extensionId}
 DELETE /groups/{groupId}/threads/{threadIid}/posts/{postId}/extensions/{extensionId}
 DELETE /users/{userIid|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/notes/{noteId}/extensions/{extensionId}
 DELETE /organization/{organizationId}/extensions/{extensionId}
 DELETE /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
 DELETE /users/{userId|userPrincipalName}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{listId}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{listId}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 DELETE /drive/items/{itemId}/extensions/{extensionId}
+DELETE /sites/{site-id}/extensions/{extensionId}
 ```
 
->**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
+>**Note:** The previous syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
 All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
 
 ## Request headers
@@ -99,10 +103,6 @@ DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-opentypeextension-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-opentypeextension-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -182,10 +182,6 @@ DELETE https://graph.microsoft.com/beta/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTI
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-opentypeextension-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-opentypeextension-3-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -213,6 +209,62 @@ DELETE https://graph.microsoft.com/beta/drive/items/01FWCEC553UUOHTOAGBVE2IXBQTI
 ---
 
 ### Response 3
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+****
+
+### Request 4
+
+The following example shows how to delete an extension by its name from the specified **site**.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delete_opentypeextension_4",
+  "sampleKeys": ["8f52f9ad-4f4f-4739-b682-7c0283207937", "Com.Contoso.Referral"]
+}-->
+```http
+DELETE https://graph.microsoft.com/beta/sites/8f52f9ad-4f4f-4739-b682-7c0283207937/extensions/Com.Contoso.Referral
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-opentypeextension-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-opentypeextension-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-opentypeextension-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/delete-opentypeextension-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-opentypeextension-4-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response 4
 The following example shows the response.
 <!-- {
   "blockType": "response",

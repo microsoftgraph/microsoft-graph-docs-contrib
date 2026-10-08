@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [user](../resources/user.md) object.
+Update the properties of a [user](../resources/user.md). To use this API to update an [agentUser](../resources/agentuser.md), specify an **@odata.type** property with a value of `#microsoft.graph.agentUser` in the request body.
 
 - Not all properties can be updated by Member or Guest users with their default permissions without administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions) to see properties they can manage.
 - Customers through Microsoft Entra External ID in external tenants can also use this API operation to update their details. See [Default user permissions in external tenants](../resources/users.md#default-user-permissions-in-external-tenants) for the list of properties they can update.
@@ -26,10 +26,13 @@ Update the properties of a [user](../resources/user.md) object.
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions to update users
+
 <!-- { "blockType": "ignored", "name": "user_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-update-permissions.md)]
 
-### Permissions for specific scenarios
+#### Permissions for specific scenarios
+- *User.ReadWrite* is the least privileged permission to update details for the signed-in user.
 - Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
 - To update the **employeeLeaveDateTime** property:
   - In delegated scenarios, the admin needs the *Global Administrator* role; the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* delegated permissions.
@@ -44,6 +47,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 - *User.ManageIdentities.All* is *required* to update the **identities** property.
 
 ## HTTP request
+
+Update your own user properties.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /me
+```
+
+Update another user's properties.
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id | userPrincipalName}
@@ -57,6 +72,8 @@ PATCH /users/{id | userPrincipalName}
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+To use this API to update an [agentUser](../resources/agentUser.md), you must specify the **@odata.type** as `#microsoft.graph.agentUser` in the request body.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
@@ -78,7 +95,7 @@ PATCH /users/{id | userPrincipalName}
 |givenName|String|The given name (first name) of the user.|
 |employeeHireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |employeeLeaveDateTime|DateTimeOffset|The date and time when the user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.<br><li> To update this property, the calling app must be assigned the *User-LifeCycleInfo.Read.All* and *User.Read.All* permissions. <li> To update this property in delegated scenarios, the admin needs the Global Administrator role. |
-|employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md) |Represents organization data (for example, division and costCenter) associated with a user. |
+|employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md) |Represents organization data (for example, division and costCenter) associated with a user. Include both property values when updating **employeeOrgData**; if you omit any, the system sets them to `null`.|
 |identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** replaces the entire collection and you must supply the userPrincipalName **signInType** identity in the collection. <br/><br/> **NOTE:** Adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object isn't allowed, unless the **user** object already contains a local account identity.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user's job title.|
@@ -123,6 +140,8 @@ Use this API to manage the directory, schema, and open extensions and their data
 
 If successful, this method returns a `204 No Content` response code.
 
+If the ID belongs to an [agentUser](../resources/agentUser.md) and you don't specify the **@odata.type** as `#microsoft.graph.agentUser` in the request body, this method returns a `400 Bad Request` error code.
+
 ## Example
 
 ### Example 1: Update properties of the signed-in user
@@ -150,10 +169,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -192,11 +207,11 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update properties of the specified user
+### Example 2: Update properties of a specified user by ID
 
 #### Request
 
-The following example shows a request.
+The following example shows a request. Because the request doesn't contain the **@odata.type** property, Microsoft Graph expects the {id} of a user object and not an **agentUser** object.
 
 
 # [HTTP](#tab/http)
@@ -223,10 +238,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-other-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-other-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -293,10 +304,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-user-passwordprofile-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-user-passwordprofile-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -374,10 +381,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/assign-user-customsecurityattribute-string-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/assign-user-customsecurityattribute-string-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/assign-user-customsecurityattribute-string-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -437,10 +440,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-properties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-schemaextension-properties-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

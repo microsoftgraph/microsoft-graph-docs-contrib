@@ -6,6 +6,7 @@ ms.subservice: change-notifications
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Get incremental changes to messages in a folder

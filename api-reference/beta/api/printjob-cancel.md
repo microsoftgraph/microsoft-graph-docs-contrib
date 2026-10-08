@@ -38,7 +38,7 @@ POST /print/printers/{id}/jobs/{id}/cancel
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body with this method.
+Don't supply a request body with this method.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
@@ -60,10 +60,6 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/printjob-cancel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/printjob-cancel-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

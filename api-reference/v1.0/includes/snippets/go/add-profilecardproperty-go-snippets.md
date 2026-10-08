@@ -16,8 +16,6 @@ import (
 )
 
 requestBody := graphmodels.NewProfileCardProperty()
-directoryPropertyName := "CustomAttribute1"
-requestBody.SetDirectoryPropertyName(&directoryPropertyName) 
 
 
 profileCardAnnotation := graphmodels.NewProfileCardAnnotation()
@@ -40,6 +38,10 @@ annotations := []graphmodels.ProfileCardAnnotationable {
 	profileCardAnnotation,
 }
 requestBody.SetAnnotations(annotations)
+directoryPropertyName := "CustomAttribute1"
+requestBody.SetDirectoryPropertyName(&directoryPropertyName) 
+isVisible := true
+requestBody.SetIsVisible(&isVisible) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 profileCardProperties, err := graphClient.Admin().People().ProfileCardProperties().Post(context.Background(), requestBody, nil)

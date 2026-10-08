@@ -1,6 +1,6 @@
 ---
 title: "Create virtualEventRegistration"
-description: "Create a registration record for a webinar registrant."
+description: "Create a registration record for a registrant of a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,7 @@ ms.date: 10/22/2024
 # Create virtualEventRegistration
 Namespace: microsoft.graph
 
-Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md). This method registers the person for the webinar. 
+Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). This method registers the person for the webinar or town hall. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -19,12 +19,11 @@ Create a [registration record](../resources/virtualeventregistration.md) for a r
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualeventregistration-post-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-post-permissions.md)]
+<!-- { "blockType": "permissions", "name": "virtualeventwebinar_post_registrations" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventwebinar-post-registrations-permissions.md)]
+
+> [!NOTE]
+> The `VirtualEventRegistration-Anon.ReadWrite.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -32,8 +31,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+
+To create a registration of a webinar:
+
+```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrations
+```
+
+To create a registration of a town hall:
+
+```http
+POST /solutions/virtualEvents/townhalls/{townhallId}/registrations
 ```
 
 ## Request headers
@@ -87,13 +95,13 @@ The following example shows a request.
   "@odata.type": "microsoft.graph.virtualEventRegistration"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations
 Content-Type: application/json
 
 {
   "externalRegistrationInformation": {
-    "referrer": "Facebook",
+    "referrer": "Fabrikam",
     "registrationId": "myExternalRegistrationId"
   },
   "preferredTimezone":"Pacific Standard Time",
@@ -129,10 +137,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventregistration-delegated-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventregistration-delegated-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -172,7 +176,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventRegistration"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -184,7 +188,7 @@ Content-Type: application/json
   "lastName": "Pham",
   "email": "EmileeMPham@contoso.com",
   "externalRegistrationInformation": {
-    "referrer": "Facebook",
+    "referrer": "Fabrikam",
     "registrationId": "myExternalRegistrationId"
   },
   "status": "registered",
@@ -226,7 +230,7 @@ Content-Type: application/json
 
 ### Example 2: Creating registration record with application permission
 
-Use application permission to create a registration record for a person who does not have a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
+Use application permission to create a registration record for a person who doesn't have a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
 
 #### Request
 The following example shows a request.
@@ -238,7 +242,7 @@ The following example shows a request.
   "@odata.type": "microsoft.graph.virtualEventRegistration"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations
 Content-Type: application/json
 
@@ -247,7 +251,7 @@ Content-Type: application/json
   "lastName" : "Demoss",
   "email" : "DianeDemoss@contoso.com",
   "externalRegistrationInformation": {
-    "referrer": "Facebook",
+    "referrer": "Fabrikam",
     "registrationId": "myExternalRegistrationId"
   },
   "preferredTimezone":"Pacific Standard Time",
@@ -282,10 +286,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventregistration-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventregistration-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -324,6 +324,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

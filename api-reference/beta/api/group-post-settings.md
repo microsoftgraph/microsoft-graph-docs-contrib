@@ -6,7 +6,7 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 06/05/2026
 ---
 
 # Create settings
@@ -15,9 +15,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new setting based on the templates available in [directorySettingTemplates](../resources/directorysettingtemplate.md). These settings can be at the tenant-level or at the group level.
+Create a new [directory setting](../resources/directorysetting.md) based on the templates available in [directorySettingTemplates](../resources/directorysettingtemplate.md). These settings can be at the tenant-level or at the group level.
 
-Group settings apply to only Microsoft 365 groups. The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.
+The following setting templates are available for groups:
+
+- `Group.Unified`: Configure settings for all or specific Microsoft 365 groups.
+- `Group.Unified.Guest`: Configure guest access settings for a specific Microsoft 365 group.
+- `Group.Security`: Configure settings for all or specific cloud security groups, such as enabling MIP sensitivity labels. Requires a Microsoft Entra ID P1 license.
+- `Group.Security.Policies`: Configure settings for a specific cloud security group. Requires a Microsoft Entra ID P1 license.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,10 +30,15 @@ Group settings apply to only Microsoft 365 groups. The template named `Group.Uni
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Create tenant-wide settings
 <!-- { "blockType": "permissions", "name": "group_post_settings" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-post-settings-permissions.md)]
 
 [!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
+
+### Create group-specific settings
+<!-- { "blockType": "permissions", "name": "group_post_settings_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-post-settings-2-permissions.md)]
 
 ## HTTP request
 
@@ -94,10 +104,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-groupsetting-from-groupsettings-for-guests-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -198,10 +204,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-directorysettings-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-directorysettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -261,6 +263,92 @@ Content-type: application/json
         {
             "name": "PrefixSuffixNamingRequirement",
             "value": "[Contoso-][GroupName]"
+        }
+    ]
+}
+```
+
+### Example 3: Enable sensitivity labels for all cloud security groups in the tenant
+
+> [!NOTE]
+> This feature requires a Microsoft Entra ID P1 license.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_directorysetting_security_miplabels"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/settings
+Content-type: application/json
+
+{
+    "templateId": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f",
+    "values": [
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        }
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysetting-security-miplabels-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-directorysetting-security-miplabels-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-directorysetting-security-miplabels-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-security-miplabels-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-directorysetting-security-miplabels-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-directorysetting-security-miplabels-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-directorysetting-security-miplabels-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directorySetting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+    "id": "3e4a9b9d-1234-5678-abcd-1234567890ab",
+    "displayName": null,
+    "templateId": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f",
+    "values": [
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
         }
     ]
 }

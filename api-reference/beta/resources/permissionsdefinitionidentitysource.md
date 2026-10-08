@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 An abstract type that defines the source of an identity that's requesting permissions through Permissions Management.
 This is an abstract type from which the following resources are derived:
 
@@ -41,4 +43,5 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.permissionsDefinitionIdentitySource"
 }
 ```
+
 

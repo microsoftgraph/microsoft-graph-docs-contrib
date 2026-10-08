@@ -53,7 +53,7 @@ If successful, this method returns `200 OK` response code. If the group is remov
 
 ## Example
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -72,10 +72,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/grouplifecyclepolicy-removegroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/grouplifecyclepolicy-removegroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -104,7 +100,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 <!-- { "blockType": "response" } -->
 

@@ -40,6 +40,11 @@ var requestBody = new CloudPcProvisioningPolicy
 		ApplicationTimeoutInMinutes = 30,
 		OnFailureDeviceAccessDenied = false,
 	},
+	UserSettingsPersistenceConfiguration = new CloudPcUserSettingsPersistenceConfiguration
+	{
+		UserSettingsPersistenceEnabled = false,
+		UserSettingsPersistenceStorageSizeCategory = CloudPcUserSettingsPersistenceStorageSizeCategory.FourGB,
+	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{

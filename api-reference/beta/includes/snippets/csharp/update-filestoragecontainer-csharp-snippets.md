@@ -16,6 +16,7 @@ var requestBody = new FileStorageContainer
 	Settings = new FileStorageContainerSettings
 	{
 		IsOcrEnabled = false,
+		ItemDefaultSensitivityLabelId = "3d8789ae-7375-4ded-8eeb-d6bc226e42fb",
 	},
 };
 

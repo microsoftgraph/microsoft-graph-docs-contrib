@@ -3,7 +3,7 @@ title: "Use delta query to track changes in Microsoft Graph data"
 description: "Use delta query to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: jessieli-ad
 ms.topic: concept-article
 ms.subservice: change-notifications
 ms.localizationpriority: high
@@ -127,6 +127,7 @@ Delta query is currently supported for the following resources. Some resources t
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [application](/graph/api/resources/application)                     | [application: delta](/graph/api/application-delta) function                     |
 | [administrativeUnit](/graph/api/resources/administrativeunit)       | [administrativeUnit: delta](/graph/api/administrativeunit-delta) function       |
+| [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint)                     | [application: delta](/graph/api/application-delta) function                     |
 | [callRecording](/graph/api/resources/callrecording)                 | [callRecording: delta](/graph/api/callrecording-delta) function                 |
 | [callTranscript](/graph/api/resources/calltranscript)               | [callTranscript: delta](/graph/api/calltranscript-delta) function               |
 | [chatMessage](/graph/api/resources/chatmessage)                     | [chatMessage: delta](/graph/api/chatmessage-delta) function                     |
@@ -144,8 +145,8 @@ Delta query is currently supported for the following resources. Some resources t
 | [event](/graph/api/resources/event)                                 | [event: delta](/graph/api/event-delta) function                                 |
 | [group](/graph/api/resources/group)                                 | [group: delta](/graph/api/group-delta) function                                 |
 | [listItem](/graph/api/resources/listitem) <sup>1</sup>              | [listItem: delta](/graph/api/listitem-delta) function                           |
-| [mailboxFolder](/graph/api/resources/mailboxfolder) *               | [mailboxFolder: delta](/graph/api/mailboxfolder-delta) function                 |
-| [mailboxItem](/graph/api/resources/mailboxitem) *                   | [mailboxItem: delta](/graph/api/mailboxitem-delta) function                     |
+| [mailboxFolder](/graph/api/resources/mailboxfolder)                 | [mailboxFolder: delta](/graph/api/mailboxfolder-delta) function                 |
+| [mailboxItem](/graph/api/resources/mailboxitem)                     | [mailboxItem: delta](/graph/api/mailboxitem-delta) function                     |
 | [mailFolder](/graph/api/resources/mailfolder)                       | [mailFolder: delta](/graph/api/mailfolder-delta) function                       |
 | [message](/graph/api/resources/message)                             | [message: delta](/graph/api/message-delta) function                             |
 | [orgContact](/graph/api/resources/orgcontact)                       | [orgContact: delta](/graph/api/orgcontact-delta) function                       |
@@ -180,7 +181,7 @@ For more information about properties stored outside of the main data store, see
 
 Expect varying delays between the time a resource instance changes, and the time the tracked change is reflected in a delta query response.
 
-Sometimes, due to replication delays, the changes to the object might not show up immediately when you select the `@odata.nextLink` or the `@odata.deltaLink`. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
+Sometimes, due to replication delays, the changes to the object do not show up immediately when you select the `@odata.nextLink` or the `@odata.deltaLink`. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes. Learn more in [Designing for eventual consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
 
 ### Replays
 
@@ -194,7 +195,7 @@ Delta query can return a response code of `410 Gone` and a **Location** header c
 
 Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again.
 
-- For [directory objects](/graph/api/resources/directoryobject), the limit is seven days. 
+- For [directory objects](/graph/api/resources/directoryobject), the limit is seven days.
 - For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is seven days.
 - For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit isn't fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
 
@@ -206,7 +207,7 @@ When a change is made to a directory extension property, all directory extension
 
 ## Combine delta query and change notifications
 
-An app can use Microsoft Graph [change notifications](./webhooks.md) to subscribe to be notified when a specific resource changes. The application can then use delta query to request all changes since the last time it made the request.
+An app can use Microsoft Graph [change notifications](change-notifications-overview.md) to subscribe to be notified when a specific resource changes. The application can then use delta query to request all changes since the last time it made the request.
 
 Applications can use this strategy to nearly eliminate (only for supported resources) the need to frequently poll Microsoft Graph and process those changes to keep a local data store in sync, greatly reducing the chances for their requests to be throttled.
 

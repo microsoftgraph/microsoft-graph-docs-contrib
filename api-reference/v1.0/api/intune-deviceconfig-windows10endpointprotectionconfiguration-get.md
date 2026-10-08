@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
@@ -55,52 +55,13 @@ If successful, this method returns a `200 OK` response code and [windows10Endpoi
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10endpointprotectionconfiguration_get_get_windows10endpointprotectionconfiguration" }-->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windows10endpointprotectionconfiguration-get-get-windows10endpointprotectionconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-windows10endpointprotectionconfiguration-get-get-windows10endpointprotectionconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windows10endpointprotectionconfiguration-get-get-windows10endpointprotectionconfiguration-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-windows10endpointprotectionconfiguration-get-get-windows10endpointprotectionconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-windows10endpointprotectionconfiguration-get-get-windows10endpointprotectionconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windows10endpointprotectionconfiguration-get-get-windows10endpointprotectionconfiguration-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windows10endpointprotectionconfiguration-get-get-windows10endpointprotectionconfiguration-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windows10endpointprotectionconfiguration-get-get-windows10endpointprotectionconfiguration-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windows10EndpointProtectionConfiguration" }-->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 4628
@@ -114,6 +75,38 @@ Content-Length: 4628
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "applicationGuardEnabled": true,
+    "applicationGuardBlockFileTransfer": "blockImageAndTextFile",
+    "applicationGuardBlockNonEnterpriseContent": true,
+    "applicationGuardAllowPersistence": true,
+    "applicationGuardForceAuditing": true,
+    "applicationGuardBlockClipboardSharing": "blockBoth",
+    "applicationGuardAllowPrintToPDF": true,
+    "applicationGuardAllowPrintToXPS": true,
+    "applicationGuardAllowPrintToLocalPrinters": true,
+    "applicationGuardAllowPrintToNetworkPrinters": true,
+    "appLockerApplicationControl": "enforceComponentsAndStoreApps",
+    "bitLockerDisableWarningForOtherDiskEncryption": true,
+    "bitLockerEnableStorageCardEncryptionOnMobile": true,
+    "bitLockerEncryptDevice": true,
+    "bitLockerRemovableDrivePolicy": {
+      "@odata.type": "microsoft.graph.bitLockerRemovableDrivePolicy",
+      "encryptionMethod": "aesCbc256",
+      "requireEncryptionForWriteAccess": true,
+      "blockCrossOrganizationWriteAccess": true
+    },
+    "defenderAttackSurfaceReductionExcludedPaths": [
+      "Defender Attack Surface Reduction Excluded Paths value"
+    ],
+    "defenderGuardedFoldersAllowedAppPaths": [
+      "Defender Guarded Folders Allowed App Paths value"
+    ],
+    "defenderAdditionalGuardedFolders": [
+      "Defender Additional Guarded Folders value"
+    ],
+    "defenderExploitProtectionXml": "ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA==",
+    "defenderExploitProtectionXmlFileName": "Defender Exploit Protection Xml File Name value",
+    "defenderSecurityCenterBlockExploitProtectionOverride": true,
     "firewallBlockStatefulFTP": true,
     "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
     "firewallPreSharedKeyEncodingMethod": "none",
@@ -169,40 +162,8 @@ Content-Length: 4628
       "securedPacketExemptionAllowed": true,
       "policyRulesFromGroupPolicyMerged": true
     },
-    "defenderAttackSurfaceReductionExcludedPaths": [
-      "Defender Attack Surface Reduction Excluded Paths value"
-    ],
-    "defenderGuardedFoldersAllowedAppPaths": [
-      "Defender Guarded Folders Allowed App Paths value"
-    ],
-    "defenderAdditionalGuardedFolders": [
-      "Defender Additional Guarded Folders value"
-    ],
-    "defenderExploitProtectionXml": "ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA==",
-    "defenderExploitProtectionXmlFileName": "Defender Exploit Protection Xml File Name value",
-    "defenderSecurityCenterBlockExploitProtectionOverride": true,
-    "appLockerApplicationControl": "enforceComponentsAndStoreApps",
     "smartScreenEnableInShell": true,
-    "smartScreenBlockOverrideForFiles": true,
-    "applicationGuardEnabled": true,
-    "applicationGuardBlockFileTransfer": "blockImageAndTextFile",
-    "applicationGuardBlockNonEnterpriseContent": true,
-    "applicationGuardAllowPersistence": true,
-    "applicationGuardForceAuditing": true,
-    "applicationGuardBlockClipboardSharing": "blockBoth",
-    "applicationGuardAllowPrintToPDF": true,
-    "applicationGuardAllowPrintToXPS": true,
-    "applicationGuardAllowPrintToLocalPrinters": true,
-    "applicationGuardAllowPrintToNetworkPrinters": true,
-    "bitLockerDisableWarningForOtherDiskEncryption": true,
-    "bitLockerEnableStorageCardEncryptionOnMobile": true,
-    "bitLockerEncryptDevice": true,
-    "bitLockerRemovableDrivePolicy": {
-      "@odata.type": "microsoft.graph.bitLockerRemovableDrivePolicy",
-      "encryptionMethod": "aesCbc256",
-      "requireEncryptionForWriteAccess": true,
-      "blockCrossOrganizationWriteAccess": true
-    }
+    "smartScreenBlockOverrideForFiles": true
   }
 }
 ```

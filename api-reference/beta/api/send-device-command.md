@@ -41,7 +41,7 @@ POST me/devices/{id}/commands
 ## Request headers
 
 
-| Header |Value
+| Header |Value |
 |:----|:------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept | application/json |
@@ -63,7 +63,7 @@ In the request body, supply a JSON representation of the command properties.
 ## Response
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 ```
 
 ```json
@@ -126,7 +126,7 @@ Content-Type: application/json; charset=utf-8
 } -->
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 
 {
   "id": "0158355AD4D680CC4E2994CC009EFFD7337D1B...",
@@ -183,7 +183,7 @@ Content-Type: application/json; charset=utf-8
 } -->
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 
 {
   "id": "0158355AD4D680CC4E2994CC009EFFD7EADA8307E96FF1C8D19B..",

@@ -69,7 +69,7 @@ POST /administrativeUnits/{id}/members
 | Content-type  | application/json. Required. |
 
 ### Adding an existing user or group
-In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added. If the administrative unit is a restricted management administrative unit (`isMemberManagementRestricted`=true), the group type must be a Microsoft Entra security group. Only non-unified groups that are security enabled, not mail enabled, and not on-premises sync enabled are supported.
+In the request body, provide the ID of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added. If the administrative unit is a restricted management administrative unit (`"isMemberManagementRestricted": true`), the group type must be a Microsoft Entra security group. Only nonunified groups that are security-enabled, not mail-enabled, and not on-premises sync-enabled are supported.
 
 ### Creating a new group
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit.
@@ -80,11 +80,11 @@ The following table shows the properties of the [group](../resources/group.md) r
 | description | string | A description for the group. Optional. |
 | isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to a Microsoft Entra role. Privileged Role Administrator is the least privileged role to set the value of this property. Optional. |
 | mailEnabled | Boolean | Set to **true** for mail-enabled groups. Required. |
-| mailNickname | string | The mail alias for the group. These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`. Required. |
+| mailNickname | string | The mail alias for the group. These characters can't be used in the mailNickName: `@()\[]";:.<>,SPACE`. Required. |
 | securityEnabled | Boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
-|visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
+|visibility|String|Specifies the visibility of a Microsoft 365 group. The possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
 
 ## Response
 
@@ -116,10 +116,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-ref-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-administrativeunits-members-ref-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -174,7 +170,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "post_administrativeunits_members"
 } -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 Content-type: application/json
 
@@ -193,10 +189,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-administrativeunits-members-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -239,7 +231,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.group",
   "name": "post_administrativeunits_members"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

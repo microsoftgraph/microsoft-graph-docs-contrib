@@ -1,7 +1,7 @@
 ---
 title: "appManagementConfiguration resource type"
 description: "App management configuration object that contains properties which can be configured to enable various restrictions for applications and service principals."
-author: "madansr7"
+author: "aricrowe57"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

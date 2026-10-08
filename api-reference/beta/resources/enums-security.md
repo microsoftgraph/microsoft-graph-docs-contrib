@@ -5,61 +5,54 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "security"
 author: "BenAlfasi"
-ms.date: 11/11/2024
+ms.date: 01/08/2026
 ---
 
 # Security enum values
 
 Namespace: microsoft.graph.security
 
-### appCategory values 
+### antispamDirectionality values
 
 |Member|
 |:---|
-|security|
-|collaboration|
-|hostingServices|
-|onlineMeetings|
-|newsAndEntertainment|
-|eCommerce|
-|education|
-|cloudStorage|
-|marketing|
-|operationsManagement|
-|health|
-|advertising|
-|productivity|
-|accountingAndFinance|
-|contentManagement|
-|contentSharing|
-|businessManagement|
-|communications|
-|dataAnalytics|
-|businessIntelligence|
-|webemail|
-|codeHosting|
-|webAnalytics|
-|socialNetwork|
-|crm|
-|forums|
-|humanResourceManagement|
-|transportationAndTravel|
-|productDesign|
-|sales|
-|cloudComputingPlatform|
-|projectManagement|
-|personalInstantMessaging|
-|developmentTools|
-|itServices|
-|supplyChainAndLogistics|
-|propertyManagement|
-|customerSupport|
-|internetOfThings|
-|vendorManagementSystems|
-|websiteMonitoring|
-|generativeAi|
 |unknown|
+|inbound|
+|outbound|
+|intraOrg|
 |unknownFutureValue|
+
+### threatType values
+
+|Member|
+|:---|
+|unknown|
+|spam|
+|malware|
+|phish|
+|none|
+|unknownFutureValue|
+
+### remediationSeverity values
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|unknownFutureValue|
+
+### remediationAction values
+
+|Member|
+|:---|
+|moveToJunk|
+|moveToInbox|
+|hardDelete|
+|softDelete|
+|moveToDeletedItems|
+|unknownFutureValue|
+|moveToQuarantine|
 
 ### appInfoCsaStarLevel values 
 
@@ -173,6 +166,14 @@ Namespace: microsoft.graph.security
 |unknown|
 |unknownFutureValue|
 
+### entityDefinitionInputRole values
+
+|Member|
+|:---|
+|impacted|
+|related|
+|unknownFutureValue|
+
 ### entityType values 
 
 |Member|
@@ -182,6 +183,40 @@ Namespace: microsoft.graph.security
 |machineName|
 |other|
 |unknown|
+|unknownFutureValue|
+
+### mailboxConfigurationType values
+
+|Member|
+|:---|
+|mailForwardingRule|
+|owaSettings|
+|ewsSettings|
+|mailDelegation|
+|userInboxRule|
+|unknownFutureValue|
+
+### manualAlertEntityType values
+
+|Member|
+|:---|
+|user|
+|device|
+|file|
+|ip|
+|url|
+|cloudApplication|
+|mailbox|
+|securityGroup|
+|azureResource|
+|amazonResource|
+|googleCloudResource|
+|oAuthApplication|
+|emailMessage|
+|emailCluster|
+|process|
+|registryKey|
+|registryValue|
 |unknownFutureValue|
 
 ### logDataProvider values 
@@ -277,259 +312,6 @@ Namespace: microsoft.graph.security
 |cancelled|
 |unknownFutureValue|
 
-### auditLogRecordType values
-
-|Member|
-|:---|
-|exchangeAdmin|
-|exchangeItem|
-|exchangeItemGroup|
-|sharePoint|
-|syntheticProbe|
-|sharePointFileOperation|
-|oneDrive|
-|azureActiveDirectory|
-|azureActiveDirectoryAccountLogon|
-|dataCenterSecurityCmdlet|
-|complianceDLPSharePoint|
-|sway|
-|complianceDLPExchange|
-|sharePointSharingOperation|
-|azureActiveDirectoryStsLogon|
-|skypeForBusinessPSTNUsage|
-|skypeForBusinessUsersBlocked|
-|securityComplianceCenterEOPCmdlet|
-|exchangeAggregatedOperation|
-|powerBIAudit|
-|crm|
-|yammer|
-|skypeForBusinessCmdlets|
-|discovery|
-|microsoftTeams|
-|threatIntelligence|
-|mailSubmission|
-|microsoftFlow|
-|aeD|
-|microsoftStream|
-|complianceDLPSharePointClassification|
-|threatFinder|
-|project|
-|sharePointListOperation|
-|sharePointCommentOperation|
-|dataGovernance|
-|kaizala|
-|securityComplianceAlerts|
-|threatIntelligenceUrl|
-|securityComplianceInsights|
-|mipLabel|
-|workplaceAnalytics|
-|powerAppsApp|
-|powerAppsPlan|
-|threatIntelligenceAtpContent|
-|labelContentExplorer|
-|teamsHealthcare|
-|exchangeItemAggregated|
-|hygieneEvent|
-|dataInsightsRestApiAudit|
-|informationBarrierPolicyApplication|
-|sharePointListItemOperation|
-|sharePointContentTypeOperation|
-|sharePointFieldOperation|
-|microsoftTeamsAdmin|
-|hrSignal|
-|microsoftTeamsDevice|
-|microsoftTeamsAnalytics|
-|informationWorkerProtection|
-|campaign|
-|dlpEndpoint|
-|airInvestigation|
-|quarantine|
-|microsoftForms|
-|applicationAudit|
-|complianceSupervisionExchange|
-|customerKeyServiceEncryption|
-|officeNative|
-|mipAutoLabelSharePointItem|
-|mipAutoLabelSharePointPolicyLocation|
-|microsoftTeamsShifts|
-|secureScore|
-|mipAutoLabelExchangeItem|
-|cortanaBriefing|
-|search|
-|wdatpAlerts|
-|powerPlatformAdminDlp|
-|powerPlatformAdminEnvironment|
-|mdatpAudit|
-|sensitivityLabelPolicyMatch|
-|sensitivityLabelAction|
-|sensitivityLabeledFileAction|
-|attackSim|
-|airManualInvestigation|
-|securityComplianceRBAC|
-|userTraining|
-|airAdminActionInvestigation|
-|mstic|
-|physicalBadgingSignal|
-|teamsEasyApprovals|
-|aipDiscover|
-|aipSensitivityLabelAction|
-|aipProtectionAction|
-|aipFileDeleted|
-|aipHeartBeat|
-|mcasAlerts|
-|onPremisesFileShareScannerDlp|
-|onPremisesSharePointScannerDlp|
-|exchangeSearch|
-|sharePointSearch|
-|privacyDataMinimization|
-|labelAnalyticsAggregate|
-|myAnalyticsSettings|
-|securityComplianceUserChange|
-|complianceDLPExchangeClassification|
-|complianceDLPEndpoint|
-|mipExactDataMatch|
-|msdeResponseActions|
-|msdeGeneralSettings|
-|msdeIndicatorsSettings|
-|ms365DCustomDetection|
-|msdeRolesSettings|
-|mapgAlerts|
-|mapgPolicy|
-|mapgRemediation|
-|privacyRemediationAction|
-|privacyDigestEmail|
-|mipAutoLabelSimulationProgress|
-|mipAutoLabelSimulationCompletion|
-|mipAutoLabelProgressFeedback|
-|dlpSensitiveInformationType|
-|mipAutoLabelSimulationStatistics|
-|largeContentMetadata|
-|microsoft365Group|
-|cdpMlInferencingResult|
-|filteringMailMetadata|
-|cdpClassificationMailItem|
-|cdpClassificationDocument|
-|officeScriptsRunAction|
-|filteringPostMailDeliveryAction|
-|cdpUnifiedFeedback|
-|tenantAllowBlockList|
-|consumptionResource|
-|healthcareSignal|
-|dlpImportResult|
-|cdpCompliancePolicyExecution|
-|multiStageDisposition|
-|privacyDataMatch|
-|filteringDocMetadata|
-|filteringEmailFeatures|
-|powerBIDlp|
-|filteringUrlInfo|
-|filteringAttachmentInfo|
-|coreReportingSettings|
-|complianceConnector|
-|powerPlatformLockboxResourceAccessRequest|
-|powerPlatformLockboxResourceCommand|
-|cdpPredictiveCodingLabel|
-|cdpCompliancePolicyUserFeedback|
-|webpageActivityEndpoint|
-|omePortal|
-|cmImprovementActionChange|
-|filteringUrlClick|
-|mipLabelAnalyticsAuditRecord|
-|filteringEntityEvent|
-|filteringRuleHits|
-|filteringMailSubmission|
-|labelExplorer|
-|microsoftManagedServicePlatform|
-|powerPlatformServiceActivity|
-|scorePlatformGenericAuditRecord|
-|filteringTimeTravelDocMetadata|
-|alert|
-|alertStatus|
-|alertIncident|
-|incidentStatus|
-|case|
-|caseInvestigation|
-|recordsManagement|
-|privacyRemediation|
-|dataShareOperation|
-|cdpDlpSensitive|
-|ehrConnector|
-|filteringMailGradingResult|
-|publicFolder|
-|privacyTenantAuditHistoryRecord|
-|aipScannerDiscoverEvent|
-|eduDataLakeDownloadOperation|
-|m365ComplianceConnector|
-|microsoftGraphDataConnectOperation|
-|microsoftPurview|
-|filteringEmailContentFeatures|
-|powerPagesSite|
-|powerAppsResource|
-|plannerPlan|
-|plannerCopyPlan|
-|plannerTask|
-|plannerRoster|
-|plannerPlanList|
-|plannerTaskList|
-|plannerTenantSettings|
-|projectForTheWebProject|
-|projectForTheWebTask|
-|projectForTheWebRoadmap|
-|projectForTheWebRoadmapItem|
-|projectForTheWebProjectSettings|
-|projectForTheWebRoadmapSettings|
-|quarantineMetadata|
-|microsoftTodoAudit|
-|timeTravelFilteringDocMetadata|
-|teamsQuarantineMetadata|
-|sharePointAppPermissionOperation|
-|microsoftTeamsSensitivityLabelAction|
-|filteringTeamsMetadata|
-|filteringTeamsUrlInfo|
-|filteringTeamsPostDeliveryAction|
-|mdcAssessments|
-|mdcRegulatoryComplianceStandards|
-|mdcRegulatoryComplianceControls|
-|mdcRegulatoryComplianceAssessments|
-|mdcSecurityConnectors|
-|mdaDataSecuritySignal|
-|vivaGoals|
-|filteringRuntimeInfo|
-|attackSimAdmin|
-|microsoftGraphDataConnectConsent|
-|filteringAtpDetonationInfo|
-|privacyPortal|
-|managedTenants|
-|unifiedSimulationMatchedItem|
-|unifiedSimulationSummary|
-|updateQuarantineMetadata|
-|ms365DSuppressionRule|
-|purviewDataMapOperation|
-|filteringUrlPostClickAction|
-|irmUserDefinedDetectionSignal|
-|teamsUpdates|
-|plannerRosterSensitivityLabel|
-|ms365DIncident|
-|filteringDelistingMetadata|
-|complianceDLPSharePointClassificationExtended|
-|microsoftDefenderForIdentityAudit|
-|supervisoryReviewDayXInsight|
-|defenderExpertsforXDRAdmin|
-|cdpEdgeBlockedMessage|
-|hostedRpa|
-|cdpContentExplorerAggregateRecord|
-|cdpHygieneAttachmentInfo|
-|cdpHygieneSummary|
-|cdpPostMailDeliveryAction|
-|cdpEmailFeatures|
-|cdpHygieneUrlInfo|
-|cdpUrlClick|
-|cdpPackageManagerHygieneEvent|
-|filteringDocScan|
-|timeTravelFilteringDocScan|
-|mapgOnboard|
-|unknownFutureValue|
-
 ### auditLogUserType values
 
 
@@ -592,6 +374,15 @@ Namespace: microsoft.graph.security
 | blocked
 | prevented
 | unknownFutureValue
+
+### detectionRuleStatus values
+
+| Member             |
+| :----------------- |
+| enabled            |
+| disabled           |
+| autoDisabled       |
+| unknownFutureValue |
 
 ### eventPropagationStatus values
 
@@ -941,6 +732,261 @@ Namespace: microsoft.graph.security
 |user|
 |roleGroup|
 |unknownFutureValue|
+
+### contentProcessingErrorType values
+
+|Member|
+|:---|
+|transient|
+|permanent|
+|unknownFutureValue|
+
+### dlpAction values
+
+|Member|
+|:---|
+|notifyUser|
+|blockAccess|
+|deviceRestriction|
+|browserRestriction|
+|unknownFutureValue|
+|restrictAccess|
+|generateAlert|
+|generateIncidentReportAction|
+|sPBlockAnonymousAccess|
+|sPRuntimeAccessControl|
+|sPSharingNotifyUser|
+|sPSharingGenerateIncidentReport|
+|restrictWebGrounding|
+|policyTip|
+
+### executionMode values
+
+|Member|
+|:---|
+|evaluateInline|
+|evaluateOffline|
+|unknownFutureValue|
+
+### overrideOption values
+
+|Member|
+|:---|
+|notAllowed|
+|allowFalsePositiveOverride|
+|allowWithJustification|
+|allowWithoutJustification|
+|unknownFutureValue|
+|allowWithAcknowledgement|
+
+### policyPivotProperty values
+
+|Member|
+|:---|
+|none|
+|activity|
+|location|
+|unknownFutureValue|
+
+### protectionScopeState values
+
+|Member|
+|:---|
+|notModified|
+|modified|
+|unknownFutureValue|
+
+### userActivityTypes values
+
+|Member|
+|:---|
+|none|
+|uploadText|
+|uploadFile|
+|downloadText|
+|downloadFile|
+|unknownFutureValue|
+|copyToClipboard|
+|pasteFromClipboard|
+|print|
+|accessDebugTools|
+|contentFiltering|
+
+### userActivityType values
+
+|Member|
+|:---|
+|uploadText|
+|uploadFile|
+|downloadText|
+|downloadFile|
+|copyToClipboard|
+|unknownFutureValue|
+
+### labelActionSource values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+|none|
+|unknownFutureValue|
+
+### sensitivityLabelTarget values
+
+|Member|
+|:---|
+|email|
+|site|
+|unifiedGroup|
+|teamwork|
+|unknownFutureValue|
+
+### applicationMode values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+
+### restrictionAction values
+
+|Member|
+|:---|
+|warn|
+|audit|
+|block|
+
+### action values
+
+|Member|
+|:---|
+|disable|
+|enable|
+|forcePasswordReset|
+|revokeAllSessions|
+|requireUserToSignInAgain|
+|markUserAsCompromised|
+|unknownFutureValue|
+
+### alertStatus values
+
+|Member|
+|:---|
+|unknown|
+|new|
+|inProgress|
+|resolved|
+|unknownFutureValue|
+
+### identityProvider values
+
+|Member|
+|:---|
+|entraID|
+|activeDirectory|
+|okta|
+|unknownFutureValue|
+
+### sensorCandidateActivationMode values
+
+|Member|
+|:---|
+|manual|
+|automated|
+|unknownFutureValue|
+
+### migrationState values
+
+|Member|
+|:---|
+|readyForMigration|
+|notReadyForMigration|
+|upToDate|
+|migrationFailed|
+|migrating|
+|unknownFutureValue|
+
+### sensorHealthStatus values
+
+|Member|
+|:---|
+|healthy|
+|notHealthyLow|
+|notHealthyMedium|
+|notHealthyHigh|
+|unknownFutureValue|
+
+### sensorType values
+
+|Member|
+|:---|
+|adConnectIntegrated|
+|adcsIntegrated|
+|adfsIntegrated|
+|domainControllerIntegrated|
+|domainControllerStandalone|
+|unknownFutureValue|
+
+### serviceStatus values
+
+|Member|
+|:---|
+|stopped|
+|starting|
+|running|
+|disabled|
+|onboarding|
+|unknown|
+|unknownFutureValue|
+
+### serviceSource values
+
+|Member|
+|:---|
+|unknown|
+|microsoftDefenderForEndpoint|
+|microsoftDefenderForIdentity|
+|microsoftDefenderForCloudApps|
+|microsoftDefenderForOffice365|
+|microsoft365Defender|
+|azureAdIdentityProtection|
+|microsoftAppGovernance|
+|dataLossPrevention|
+|unknownFutureValue|
+|microsoftDefenderForCloud|
+|microsoftSentinel|
+|microsoftThreatIntelligence|
+|microsoftSecurityForAI|
+
+### environmentKind values 
+
+|Member|
+|:---|
+|azureSubscription|
+|awsOrganization|
+|awsAccount|
+|gcpOrganization|
+|gcpProject|
+|dockersHubOrganization|
+|devOpsConnection|
+|azureDevOpsOrganization|
+|gitHubOrganization|
+|gitLabGroup|
+|jFrogArtifactory|
+|unknownFutureValue|
+
+### deviceType values
+
+| Member                     |
+| :--------------------------|
+| domainController |
+| adfs |
+| adcs |
+| entraConnect |
+| unknownFutureValue |
 
 <!--
 {

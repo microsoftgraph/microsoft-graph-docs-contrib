@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and [groupLifecycleP
 
 ## Example
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 
@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-grouplifecyclepolicy-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-grouplifecyclepolicy-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,7 +97,7 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 
 ---
 
-##### Response
+### Response
 
 Note: The response object shown here might be shortened for readability.
 

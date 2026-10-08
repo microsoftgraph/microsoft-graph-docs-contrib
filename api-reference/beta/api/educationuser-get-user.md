@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [user](../reso
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/education/me/user
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationuser-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -102,7 +98,7 @@ GET https://graph.microsoft.com/beta/education/me/user
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response.
 

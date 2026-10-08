@@ -48,7 +48,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -65,10 +65,6 @@ DELETE https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-calendargroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-calendargroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -97,9 +93,11 @@ DELETE https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 
 ---
 
-##### Response
+### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -13,7 +13,7 @@ request_body = EducationPointsOutcome(
 	odata_type = "#microsoft.graph.educationPointsOutcome",
 	points = EducationAssignmentPointsGrade(
 		odata_type = "#microsoft.graph.educationAssignmentPointsGrade",
-		points = 85.0,
+		points = 85.5,
 	),
 )
 

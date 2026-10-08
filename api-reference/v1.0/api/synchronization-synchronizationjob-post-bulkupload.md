@@ -12,7 +12,7 @@ ms.date: 07/30/2024
 
 Namespace: microsoft.graph
 
-Perform a new bulk upload using the synchronization job. Use this API endpoint to ingest data into the Microsoft Entra synchronization service. The synchronization service applies the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
+Perform a new [bulkUpload](../resources/synchronization-bulkupload.md) using the synchronization job. Use this API endpoint to ingest data into the Microsoft Entra synchronization service. The synchronization service applies the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
 
 ## Permissions
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
 ```
 
@@ -237,7 +237,7 @@ HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd10f6-fcc3-5d61-098e-a6dd35e460ef
 content-length: "0"
-location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+location: "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
 request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 {}
@@ -426,7 +426,7 @@ HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd10f6-fcc3-5d61-098e-a6dd35e460ef
 content-length: "0"
-location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+location: "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
 request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 {}
@@ -485,12 +485,12 @@ Content-Type: application/scim+json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd20f6-fcc3-5d61-098e-a6dd35e460ef
 content-length: "0"
-location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+location: "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
 request-id: beec9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 {}

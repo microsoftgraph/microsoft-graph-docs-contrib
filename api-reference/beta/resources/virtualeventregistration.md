@@ -16,19 +16,17 @@ Namespace: microsoft.graph
 
 Represents a registrant's registration record for a [virtualEvent](../resources/virtualevent.md).
 
-Currently, only [virtualEventWebinar](../resources/virtualeventwebinar.md) is supported.
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/virtualeventregistration-list.md)|[virtualEventRegistration](../resources/virtualeventregistration.md) collection|Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).|
-|[Create](../api/virtualeventwebinar-post-registrations.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Create a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md).|
+|[List](../api/virtualeventregistration-list.md)|[virtualEventRegistration](../resources/virtualeventregistration.md) collection|Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).|
+|[Create](../api/virtualeventwebinar-post-registrations.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).|
 |[Get](../api/virtualeventregistration-get.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Get the properties and relationships of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
-|[Cancel](../api/virtualeventregistration-cancel.md)|None|Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md).|
-|[List sessions](../api/virtualeventregistration-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md).|
+|[Cancel](../api/virtualeventregistration-cancel.md)|None|Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).|
+|[List sessions](../api/virtualeventregistration-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).|
 
 
 ## Properties
@@ -41,12 +39,12 @@ Inherits from [entity](../resources/entity.md).
 |firstName|String|First name of the registrant.|
 |id|String|Unique identifier of the registrant. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastName|String|Last name of the registrant.|
+|preferredTimezone|String|The registrant's time zone details.|
+|preferredLanguage|String|The registrant's preferred language.|
 |registrationDateTime|DateTimeOffset|Date and time when the registrant registers for the virtual event. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions.|
 |status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only. |
 |userId|String|The registrant's ID in Microsoft Entra ID. Only appears when the registrant is registered in Microsoft Entra ID.|
-|preferredTimezone|String|The registrant's time zone details.|
-|preferredLanguage|String|The registrant's preferred language.|
 
 ### virtualEventAttendeeRegistrationStatus values
 
@@ -60,7 +58,10 @@ Inherits from [entity](../resources/entity.md).
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
-None.
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+| sessions | [virtualEventSession](../resources/virtualeventsession.md) collection | Sessions for a registration. |
 
 ## JSON representation
 
@@ -82,11 +83,11 @@ The following JSON representation shows the resource type
   "firstName": "String",
   "id": "String (identifier)",  
   "lastName": "String",
+  "preferredLanguage": "String",
+  "preferredTimezone": "String",
   "registrationDateTime": "String (timestamp)",
   "registrationQuestionAnswers": [{"@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"}],
   "status": "String",
-  "userId": "String",
-  "preferredTimezone": "String",
-  "preferredLanguage": "String"
+  "userId": "String"
 }
 ```

@@ -13,7 +13,9 @@ const client = Client.init(options);
 const ediscoveryReviewTag = {
     displayName: 'My tag API',
     description: 'Use Graph API to create tags',
-    childSelectability: 'Many'
+    childSelectability: 'Many',
+    'parent@odata.bind':
+	'https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseID}/tags/{parentTagID}'
 };
 
 await client.api('/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags')

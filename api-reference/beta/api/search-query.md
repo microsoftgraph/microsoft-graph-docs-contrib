@@ -51,6 +51,8 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 
 If successful, this method returns an `HTTP 200 OK` response code and a collection of [searchResponse](../resources/searchresponse.md) objects in the response body.
+
+Each [searchHit](../resources/searchhit.md) object can include the **sensitivityLabel** property when the result resource has a sensitivity label.
  
 
 ## Examples
@@ -98,10 +100,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/query-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/query-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -232,6 +230,13 @@ Content-type: application/json
                                 },
                                 "createdDateTime": "2021-11-19T17:04:18Z",
                                 "lastModifiedDateTime": "2023-03-09T18:52:26Z"
+                            },
+                            "sensitivityLabel": {
+                                "sensitivityLabelId": "f71f1f74-bf1f-4e6b-b266-c777ea76e288",
+                                "displayName": "Confidential",
+                                "tooltip": "Data intended only for approved recipients.",
+                                "priority": 4,
+                                "color": "#FF8C00"
                             }
                         }
                     ],

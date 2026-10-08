@@ -21,7 +21,7 @@ $params = @{
 			gradualRollout = @{
 				"@odata.type" = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings"
 				durationBetweenOffers = "P7D"
-				devicePerOffer = 
+				devicesPerOffer = 
 			}
 		}
 		monitoring = @{

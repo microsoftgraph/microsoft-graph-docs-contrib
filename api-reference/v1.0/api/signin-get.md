@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
-ms.date: 08/13/2024
+ms.date: 06/18/2025
 ---
 
 # Get signIn
@@ -17,7 +17,7 @@ Retrieve a specific Microsoft Entra user [sign-in](../resources/signin.md) event
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -35,9 +35,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /auditLogs/signIns/{id}
 ```
 
+
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
+This method doesn't support [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -57,7 +58,7 @@ If successful, this method returns a `200 OK` response code and [signIn](../reso
 
 ### Request
 
-The following example shows a request.
+The following example shows a request. **id** is synonymous with the **RequestID** property in the sign-in logs window of the Microsoft Entra admin center. 
 
 
 # [HTTP](#tab/http)
@@ -72,10 +73,6 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-signin-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external ID. If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID. 
 
-> **Note**: The meeting does not show on the user's calendar.
+> **Note**: The meeting doesn't show on the user's calendar.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -119,10 +119,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-or-get-onlinemeeting-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-or-get-onlinemeeting-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -211,6 +207,7 @@ Content-Type: application/json
         "messageId": "0",
         "replyChainMessageId": null
     },
+    "meetingType": "scheduled"
 }
 ```
 
@@ -248,16 +245,13 @@ Content-Type: application/json
             }
         ]
     },
-    "subject": "Create a meeting with customId provided"
+    "subject": "Create a meeting with customId provided",
+    "meetingType": "scheduled"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-or-get-onlinemeeting-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -348,6 +342,7 @@ Content-Type: application/json
         "messageId": "1599805818399",
         "replyChainMessageId": null
     },
+    "meetingType": "scheduled"
 }
 ```
 

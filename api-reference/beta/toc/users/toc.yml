@@ -26,6 +26,12 @@ items:
     href: ../../api/user-validatepassword.md
   - name: Retry service provisioning
     href: ../../api/user-retryserviceprovisioning.md
+  - name: Attest
+    href: ../../api/user-attest.md
+  - name: Add self as sponsor
+    href: ../../api/user-addselfassponsor.md
+  - name: Remove self as sponsor
+    href: ../../api/user-removeselfassponsor.md
   - name: Convert external user to internal member user
     href: ../../api/user-convertexternaltointernalmemberuser.md
   - name: Invalidate all refresh tokens
@@ -34,10 +40,6 @@ items:
     href: ../../api/user-revokesigninsessions.md
   - name: Export personal data
     href: ../../api/user-exportpersonaldata.md
-  - name: AI interaction
-    items:
-    - name: Get all enterprise interactions
-      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: App role assignments
     items:
     - name: List
@@ -90,10 +92,24 @@ items:
       href: ../../api/cloudlicensing-usageright-get.md
   - name: Cloud PC
     items:
-    - name: List cloud PCs
+    - name: List Cloud PCs
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+  - name: Cloud PC pool
+    items:
+    - name: List Cloud PC pools
+      href: ../../api/user-list-cloudpcpools.md
+    - name: Get Cloud PC pool
+      href: ../../api/user-get-cloudpcpool.md
+  - name: Data security and governance
+    items:
+    - name: Compute protection scopes
+      href: ../../api/userprotectionscopecontainer-compute.md
+    - name: Create content activity
+      href: ../../api/activitiescontainer-post-contentactivities.md
+    - name: Process content
+      href: ../../api/userdatasecurityandgovernance-processcontent.md
   - name: Delegated permission grants
     items:
     - name: List delegated permission grants
@@ -142,6 +158,10 @@ items:
       href: ../../api/drive-get.md
     - name: List children
       href: ../../api/driveitem-list-children.md
+  - name: Employee experience
+    items:
+    - name: List assigned roles
+      href: ../../api/employeeexperienceuser-list-assignedroles.md
   - name: Groups
     items:
     - name: List joined teams
@@ -152,11 +172,11 @@ items:
       href: ../../api/user-list-transitivememberof.md
   - name: Insights
     items:
-    - name: List shared
-      href: ../../api/insights-list-shared.md
     - name: List trending
       href: ../../api/insights-list-trending.md
-    - name: List used
+    - name: List shared (deprecated)
+      href: ../../api/insights-list-shared.md
+    - name: List used (deprecated)
       href: ../../api/insights-list-used.md
   - name: License management
     items:
@@ -188,12 +208,22 @@ items:
       href: ../../api/user-sendmail.md
     - name: Get mail tips
       href: ../../api/user-getmailtips.md
+    - name: List notes
+      href: ../../api/user-list-notes.md
+    - name: Create note
+      href: ../../api/user-post-notes.md
   - name: Notes
     items:
     - name: List notebooks
       href: ../../api/onenote-list-notebooks.md
     - name: Create notebook
       href: ../../api/onenote-post-notebooks.md
+  - name: On-premises sync behavior (Source of Authority)
+    items:
+    - name: Get
+      href: ../../api/onpremisessyncbehavior-get.md
+    - name: Update
+      href: ../../api/onpremisessyncbehavior-update.md
   - name: Org hierarchy
     items:
     - name: Assign manager
@@ -270,6 +300,8 @@ items:
       href: ../../api/user-post-sponsors.md
     - name: List
       href: ../../api/user-list-sponsors.md
+    - name: List sponsorOf
+      href: ../../api/user-list-sponsorof.md
     - name: Remove
       href: ../../api/user-delete-sponsors.md
     - name: List invited by

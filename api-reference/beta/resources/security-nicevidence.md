@@ -51,10 +51,10 @@ The following JSON representation shows the resource type.
   ],
   "macAddress": "String",
   "ipAddress": {
-    "@odata.type": "microsoft.graph.security.ipEvidence",
+    "@odata.type": "microsoft.graph.security.ipEvidence"
   },
   "vlans": [
     "String"
-  ],
+  ]
 }
 ```

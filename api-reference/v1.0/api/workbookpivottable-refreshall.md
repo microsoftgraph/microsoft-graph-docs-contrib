@@ -42,7 +42,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 
 ## Example
 Here is an example of how to call this API.
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -56,10 +56,6 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id|name
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookpivottable-refreshall-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/workbookpivottable-refreshall-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -84,7 +80,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id|name
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

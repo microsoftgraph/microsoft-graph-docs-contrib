@@ -18,7 +18,7 @@ Get the properties of an [insightsSettings](../resources/insightssettings.md) ob
 
 To learn how to customize privacy for people insights in an organization, see [Customize people insights privacy in Microsoft Graph](/graph/insights-customize-people-insights-privacy).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/peop
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-insightssettingspeoplerequest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-insightssettingspeoplerequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

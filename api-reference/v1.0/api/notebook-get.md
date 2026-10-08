@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [notebook](../resources/notebook.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/1-e13f257d-78c6-46cf-a
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-notebook-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-notebook-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -95,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/1-e13f257d-78c6-46cf-a
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here's truncated for brevity. All of the properties are from an actual call.
 <!-- {
   "blockType": "response",

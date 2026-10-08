@@ -22,13 +22,16 @@ $params = @{
 		}
 	)
 	properties = @{
-		title = "Error in the payment gateway"
+		title = "Fix issues with Payment gateway"
 		priority = 
 		assignee = "john@contoso.com"
 	}
 	content = @{
-		value = "Error in payment gateway..."
+		value = "Payment gateway module has the following tasks to be completed..."
 		type = "text"
+	}
+	informationProtectionLabel = @{
+		sensitivityLabelId = "b6a62c3c-d471-4a3e-9f5f-93c1f928b02d"
 	}
 }
 

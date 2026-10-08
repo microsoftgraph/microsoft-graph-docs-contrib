@@ -1,6 +1,6 @@
 ---
 title: "List Exchange settings"
-description: "Get a list of Exchange settings, including mailboxes that belong to a user."
+description: "Get a list of Exchange mailboxes that belong to a user."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of Exchange settings, including mailboxes that belong to a user. Currently, the mailbox types supported are the user's primary and in-place archive. To learn how to get a list of users in a tenant, see [List users](../api/user-list.md).
+Get a list of Exchange mailboxes that belong to a user. Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes. To learn how to get a list of users in a tenant, see [List users](../api/user-list.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -35,13 +35,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{id}/settings/exchange
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [exchangeSettings](../resources/exchangesettings.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an [exchangeSettings](../resources/exchangesettings.md) object in the response body.
 
 ## Examples
 
@@ -69,16 +69,12 @@ The following example shows a request.
   "sampleKeys": ["megan@contoso.com"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/megan@contoso.com/settings/exchange
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-exchangesettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-exchangesettings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -114,21 +110,27 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.exchangeSettings)"
+  "@odata.type": "microsoft.graph.exchangeSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 232
 
 {
-  "value": [
-    {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('megan%40contoso.com')/settings/exchange/$entity",
-      "primaryMailboxId": "MBX:e0643f21@a7809c93",
-      "inPlaceArchiveMailboxId": "MBX:4eba5149@a7809c93"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('megan%40contoso.com')/settings/exchange/$entity",
+    "primaryMailboxId": "MBX:e0643f21@a7809c93"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List exchangesettings",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+]
+}-->
+

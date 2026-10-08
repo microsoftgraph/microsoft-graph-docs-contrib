@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents identification details of a customer in a delegated admin relationship.
+Represents identification details of a customer in a [delegated admin relationship](../resources/delegatedadminrelationship.md) and [delegated admin access assignment](../resources/delegatedadminaccessassignment.md).
 
 ## Properties
 |Property|Type|Description|

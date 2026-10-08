@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a specific [cloudPC](../resources/cloudpc.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -34,14 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To get the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
 
-``` http
+```http
 GET /me/cloudPCs/{id}
 GET /users/{userId}/cloudPCs/{id}
 ```
 
 To get the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
 
-``` http
+```http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 ```
 
@@ -79,16 +79,12 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-default-properties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpc-default-properties-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -129,7 +125,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -170,6 +166,8 @@ Content-Type: application/json
 
 ### Example 2: Get the selected properties of a Cloud PC
 
+The following example shows how to get selected properties of a [cloudPC](../resources/cloudpc.md) object using the `$select` OData query parameter.
+
 #### Request
 
 The following example shows a request.
@@ -181,16 +179,12 @@ The following example shows a request.
 }
 -->
 
-``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,lastLogoffDateTime,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail,groupDetail,userDetail
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-selected-properties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpc-selected-properties-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -231,7 +225,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -244,6 +238,7 @@ Content-Type: application/json
     "lastLoginResult": {
         "time": "2021-06-23T09:28:32.8260335Z"
     },
+    "lastLogoffDateTime": "2021-06-23T10:15:00Z",
     "lastRemoteActionResult": {
       "actionName": "Reboot",
       "actionState": "done",
@@ -254,20 +249,34 @@ Content-Type: application/json
       "statusDetails": null
     },
     "connectivityResult": {
-      "status": "unavailable",
-      "updatedDatetime": "2022-03-22T10:28:32.8260335Z",
       "failedHealthCheckItems": [
         {
+          "additionalDetails": "SessionHost unhealthy: SessionHost is not joined to a domain",
           "displayName": "DomainJoinCheck",
-          "result": "failure",
           "lastHealthCheckDateTime": "2022-03-22T10:28:32.8260335Z",
-          "additionalDetails": "SessionHost unhealthy: SessionHost is not joined to a domain"
+          "result": "failure"
         }
-      ]
+      ],
+      "status": "unavailable",
+      "updatedDateTime": "2022-03-22T10:28:32.8260335Z",
+      "lastModifiedDateTime": "2022-03-22T10:28:32.8260335Z"
     },
     "allotmentDisplayName": null,
     "deviceRegionName": "eastus2",
-    "productType": null
+    "productType": null,
+    "provisionedDateTime": "2025-04-23T10:29:57Z",
+    "sharedDeviceDetail": {
+      "assignedToUserPrincipalName": "john.doe@contoso.onmicrosoft.com",
+      "sessionStartDateTime": "2025-09-08T10:10:00Z"
+    },
+    "groupDetail": {
+        "groupId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "groupDisplayName": "Contoso Cloud PC Users"
+    },
+    "userDetail": {
+        "userId": "e798de27-1806-4433-9ac3-4db7a985a12b",
+        "userDisplayName": "Peter Mitchell"
+    }
 }
 ```
 
@@ -285,16 +294,12 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-cloudpc-default-properties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-get-cloudpc-default-properties-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -335,7 +340,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

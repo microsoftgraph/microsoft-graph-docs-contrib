@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/responsibilities
 GET /users/{id | userPrincipalName}/responsibilities
 ```
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/me/responsibilities
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

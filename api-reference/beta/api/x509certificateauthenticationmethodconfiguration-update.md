@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
 
@@ -51,6 +51,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 |certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Microsoft Entra user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
 |crlValidationConfiguration|[x509CertificateCRLValidationConfiguration](../resources/x509certificatecrlvalidationconfiguration.md)|Determines whether certificate based authentication should fail if the issuing CA doesn't have a valid certificate revocation list configured. |
 |issuerHintsConfiguration|[x509CertificateIssuerHintsConfiguration](../resources/x509certificateissuerhintsconfiguration.md)|Determines whether issuer(CA) hints are sent back to the client side to filter the certificates shown in certificate picker. |
+|requireCertificateSidAlignment|Boolean|When set to `true`, Microsoft Entra ID matches the SID in the Security Identifier (SID) extension or the SAN URI SID value from the user's X.509 certificate to the user's on-premises SID attribute for hybrid users and cloud SID for cloud-only users. Certificate-based authentication fails if the values don't match. The value can't be `null`. The default value is `false`. Optional.|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`. |
 
 >**Note:** The `@odata.type` property with a value of `#microsoft.graph.x509CertificateAuthenticationMethodConfiguration` must be included in the body.
@@ -70,6 +71,7 @@ The following is an example of an update request with the following settings:
 + Configures only one user binding between the certificate **PrincipalName** and the Microsoft Entra ID **onPremisesUserPrincipalName** properties.
 + Defines multi-factor authentication as requirement.
 + Configures the binding rules for the strong authentication method against the rule type.
++ Requires certificate SID alignment for hybrid and cloud-only users.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,7 +79,7 @@ The following is an example of an update request with the following settings:
   "name": "update_x509certificateauthenticationmethodconfiguration"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 Content-Type: application/json
 
@@ -126,6 +128,7 @@ Content-Type: application/json
             ]
         }    
     ],
+    "requireCertificateSidAlignment": true,
     "includeTargets": [
         {
             "targetType": "group",
@@ -138,10 +141,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-x509certificateauthenticationmethodconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-x509certificateauthenticationmethodconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -172,6 +171,6 @@ Content-Type: application/json
   "blockType": "response"
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

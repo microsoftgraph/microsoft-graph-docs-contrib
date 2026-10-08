@@ -18,10 +18,14 @@ Get all retained [messages](../resources/chatmessage.md) across all [channels](.
 
 To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
-[!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
 > [!NOTE]  
-> This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies).
+> This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Learn about retention for Microsoft Teams](/purview/retention-policies-teams).
+
+> [!NOTE]
+> Teams migrated private-channel message storage from individual user mailboxes to group mailboxes, where standard channel messages are stored. For private channels, this API supports retained message history for messages edited or deleted after the tenant's storage migration completed, provided an applicable retention policy captured the versions. Edits or deletions that occurred before migration aren't returned because retained-history support wasn't available through this API during the legacy user-mailbox storage period.
+>
+> A tenant administrator can run [Get-TenantPrivateChannelMigrationStatus](/powershell/module/microsoftteams/get-tenantprivatechannelmigrationstatus?view=teams-ps&preserve-view=true) to verify that `MigrationStatus` is `Completed` and identify the tenant's `MigrationCompletionTimeStamp`. If `MigrationStatus` isn't `Completed`, `MigrationCompletionTimeStamp` isn't available and can't be used as a tenant-wide cutoff. For more information about the storage change, see [Migration of private channel messages in 2025](/purview/retention-policies-teams#migration-of-private-channel-messages-in-2025).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -43,13 +47,6 @@ GET /teams/{teamsId}/channels/getAllRetainedMessages
 ```
 
 ## Optional query parameters
-
-The following example shows how to use the `model` query parameter with values `A` or `B` to select the preferred [licensing and payment model](/graph/teams-licenses). If you don't specify a `model`, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used by default.
-
-```http
-GET /teams/{team-id}/channels/getAllRetainedMessages?model=A
-GET /teams/{team-id}/channels/getAllRetainedMessages?model=B
-```
 
 This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -90,10 +87,6 @@ GET https://graph.microsoft.com/beta/teams/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channelthisgetallretainedmessages-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/channelthisgetallretainedmessages-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

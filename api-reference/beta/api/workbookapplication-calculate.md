@@ -42,16 +42,16 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|calculationType|string|Specifies the calculation type to use.  Possible values are: `Recalculate`, `Full`, `FullRebuild`.|
+|calculationType|string|Specifies the calculation type to use.  The possible values are: `Recalculate`, `Full`, `FullRebuild`.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It doesn't return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
-The following example shows a request.
+The following example forces a full calculation of the data and rebuilds the dependencies.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,16 +63,12 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application/c
 Content-type: application/json
 
 {
-  "calculationType": "calculationType-value"
+  "calculationType": "FullRebuild"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookapplication-calculate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/workbookapplication-calculate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -105,7 +101,7 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
