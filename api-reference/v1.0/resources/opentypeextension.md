@@ -27,6 +27,7 @@ The following resources support open extension:
 + [device](/graph/api/resources/device)
 + [event](/graph/api/resources/event) for both user and group calendars
 + [message](/graph/api/resources/message)
++ [note](note.md)
 + [organization](/graph/api/resources/organization)
 + [post](/graph/api/resources/post)
 + [todoTask](todotask.md) 
@@ -56,7 +57,7 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](../resources/opentypeextension.md)(in an existing resource instance), or a new [todoTask](todotask.md), [todoTaskList](todotasklist.md)[contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](../resources/opentypeextension.md)(in an existing resource instance), or a new [todoTask](todotask.md), [todoTaskList](todotasklist.md), [contact](contact.md), [event](event.md), [message](message.md), [note](note.md), or [post](post.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
 |[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |

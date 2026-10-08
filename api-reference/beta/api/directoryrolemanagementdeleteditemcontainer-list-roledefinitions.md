@@ -1,0 +1,106 @@
+---
+title: "List roleDefinitions"
+description: "List custom role definitions that have been soft-deleted from Microsoft Entra directory role management."
+author: "simransaxena21"
+ms.date: 09/29/2026
+ms.localizationpriority: medium
+ms.subservice: "entra-directory-management"
+doc_type: apiPageType
+---
+
+# List roleDefinitions
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+List custom [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects that have been soft-deleted from Microsoft Entra directory role management. Built-in role definitions can't be deleted and aren't returned.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "directoryrolemanagementdeleteditemcontainer_list_roledefinitions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryrolemanagementdeleteditemcontainer-list-roledefinitions-permissions.md)]
+
+[!INCLUDE [rbac-role-definition-apis-read](../includes/rbac-for-apis/rbac-role-definition-apis-read.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+GET /roleManagement/directory/deletedItems/roleDefinitions
+```
+
+## Optional query parameters
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
+## Request headers
+
+| Name | Description |
+|:---|:---|
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects in the response body.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_deleted_unifiedroledefinitions"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/deletedItems/roleDefinitions
+```
+
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleDefinition)"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/deletedItems/roleDefinitions",
+  "value": [
+    {
+      "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
+      "description": "Can manage basic aspects of application registrations.",
+      "displayName": "Application Support Administrator",
+      "isBuiltIn": false,
+      "isEnabled": true,
+      "rolePermissions": [
+        {
+          "allowedResourceActions": [
+            "microsoft.directory/applications/basic/update"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```

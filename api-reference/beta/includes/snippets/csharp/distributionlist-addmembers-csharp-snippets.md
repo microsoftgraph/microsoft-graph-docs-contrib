@@ -18,8 +18,7 @@ var requestBody = new AddMembersPostRequestBody
 		{
 			DisplayName = "Megan Bowen",
 			Key = "MeganB@contoso.com",
-			RoutingType = "SMTP",
-			RecipientType = RecipientType.Mailbox,
+			Type = RecipientType.Mailbox,
 		},
 	},
 };

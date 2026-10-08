@@ -2,7 +2,7 @@
 title: "subjectProcessingResult resource type"
 description: "Represents the processing results for a single subject in a lifecycle workflow run."
 author: "masonwolff"
-ms.date: 05/26/2026
+ms.date: 07/22/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
@@ -25,6 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |[List (from run)](../api/identitygovernance-run-list-subjectprocessingresults.md)|[microsoft.graph.identityGovernance.subjectProcessingResult](../resources/identitygovernance-subjectprocessingresult.md) collection|Get a list of the subjectProcessingResult objects and their properties from a run.|
 |[List (from taskReport)](../api/identitygovernance-taskreport-list-subjectprocessingresults.md)|[microsoft.graph.identityGovernance.subjectProcessingResult](../resources/identitygovernance-subjectprocessingresult.md) collection|Get a list of the subjectProcessingResult objects and their properties from a taskReport.|
 |[Get](../api/identitygovernance-subjectprocessingresult-get.md)|[microsoft.graph.identityGovernance.subjectProcessingResult](../resources/identitygovernance-subjectprocessingresult.md)|Read the properties and relationships of a subjectProcessingResult object.|
+|[Summary](../api/identitygovernance-subjectprocessingresult-summary.md)|[microsoft.graph.identityGovernance.subjectSummary](../resources/identitygovernance-subjectsummary.md)|Get a [subjectSummary](../resources/identitygovernance-subjectsummary.md) of subjectProcessingResult objects over a specified time period.|
 
 ## Properties
 
@@ -37,6 +38,7 @@ Inherits from [entity](../resources/entity.md).
 |scheduledDateTime|DateTimeOffset|The date and time when processing was scheduled. Read-only.|
 |startedDateTime|DateTimeOffset|The date and time when processing started. Read-only.|
 |subject|[microsoft.graph.identityGovernance.workflowSubject](../resources/identitygovernance-workflowsubject.md)|The subject for which tasks were processed. Read-only.|
+|subjectType|microsoft.graph.identityGovernance.subjectType|The type of subject for which tasks were processed. This flagged enumeration allows multiple members to be selected simultaneously. The possible values are: `user`, `agentIdentity`, `unknownFutureValue`, `provisioningObject`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `provisioningObject`. Read-only. Supports `$filter` (`eq`, `ne`).|
 |totalTasksCount|Int32|The total number of tasks in the workflow. Read-only.|
 |totalUnprocessedTasksCount|Int32|The count of tasks that have not yet been processed. Read-only.|
 |workflowExecutionType|microsoft.graph.identityGovernance.workflowExecutionType|The workflow execution type. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`, `activatedWithScope`, `extensibilityOnDemand`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `activatedWithScope`, `extensibilityOnDemand`. Read-only. Supports `$filter` (`eq`, `ne`).|
@@ -74,6 +76,7 @@ The following JSON representation shows the resource type.
   "totalUnprocessedTasksCount": "Integer",
   "workflowExecutionType": "String",
   "workflowVersion": "Integer",
+  "subjectType": "String",
   "subject": {
     "@odata.type": "microsoft.graph.identityGovernance.workflowSubject"
   }

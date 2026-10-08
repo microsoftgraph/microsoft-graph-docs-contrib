@@ -11,6 +11,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->directory()->tenantGovernance()->relatedTenants()->microsoftGraphTenantGovernanceServicesRefreshStatus()->get()->wait();
+$result = $graphServiceClient->directory()->tenantGovernance()->relatedTenants()->refreshStatus()->get()->wait();
 
 ```

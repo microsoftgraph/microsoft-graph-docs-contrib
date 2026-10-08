@@ -19,6 +19,19 @@ var requestBody = new GenericCase
 	Priority = "high",
 	DueDateTime = DateTimeOffset.Parse("2026-06-29T17:54:43Z"),
 	ClosingNotes = "Follow up with the account owner.",
+	CustomFields = new CustomFieldValues
+	{
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"Customer impact" , new CustomFieldStringValue
+				{
+					OdataType = "#microsoft.graph.security.caseManagement.customFieldStringValue",
+					Value = "Multiple executive mailboxes affected",
+				}
+			},
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

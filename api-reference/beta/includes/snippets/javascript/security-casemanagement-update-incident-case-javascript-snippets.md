@@ -16,8 +16,7 @@ const _case = {
   status: 'InProgress',
   classification: 'truePositive',
   determination: 'phishing',
-  severity: 'high',
-  summary: 'Credential phishing campaign affecting multiple users.'
+  severity: 'high'
 };
 
 await client.api('/security/caseManagement/cases/{caseId}')

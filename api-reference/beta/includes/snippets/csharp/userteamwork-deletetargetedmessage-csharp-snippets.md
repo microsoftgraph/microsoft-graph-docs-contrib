@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Users.Item.Teamwork.DeleteTargetedMessage;
 
 var requestBody = new DeleteTargetedMessagePostRequestBody
 {
-	TeamId = "3Aeeaa4e946d674c4f8d4dded613780f45@thread.v2",
+	TeamId = "9dda0ae1-e007-4a1d-81ec-2cf4b1274610",
 	ChannelId = "19:eeaa4e946d674c4f8d4dded613780f45@thread.v2",
 	MessageId = "1580849738240",
 };

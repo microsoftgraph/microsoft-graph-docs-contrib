@@ -1,67 +1,156 @@
 ---
-author: "AkJo"
+author: "RamjotSingh"
 ms.localizationpriority: high
 ms.subservice: teams
 ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
-Limits are expressed as requests per second (rps).
 
-| Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      | Limit per app per tenant per resource(chat/channel)|
-|------------------------------------------------------|---------------------------------|------------|---|
-| GET [team](/graph/api/team-get)  | 30 rps                          | 600 rps |
-| GET [channel](/graph/api/channel-get) | 30 rps                          | 600 rps |  1rps |
-| GET tab for [channel](/graph/api/channel-list-tabs), [chat](/graph/api/chat-get-tabs)| 30 rps            | 600 rps | 1rps |
-| GET installedApps for [user](/graph/api/userteamwork-get-installedapps),  [team](/graph/api/team-get-installedapps) | 30 rps                          | 600 rps |
-| GET installedApps for [chat](/graph/api/chat-get-installedapps) | 30 rps                          | 600 rps | 1rps |
-| GET [appCatalogs](/graph/api/appcatalogs-list-teamsapps)   | 30 rps                          | 600 rps |
-| POST [channel](/graph/api/channel-post) |  30 rps                         | 300 rps  | 1rps |
-| POST tab for [channel](/graph/api/channel-post-tabs) or [chat](/graph/api/chat-post-tabs)|  30 rps                         | 300 rps  | 1rps |
-| POST installedApps for [chat](/graph/api/chat-post-installedapps), [user](/graph/api/userteamwork-post-installedapps), [team](/graph/api/team-post-installedapps) |  30 rps                         | 300 rps  |
-| POST [appCatalogs](/graph/api/teamsapp-publish)    |  30 rps                         | 300 rps  |
-| PATCH [team](/graph/api/team-update), [tab](/graph/api/channel-patch-tabs)|  30 rps                         | 300 rps  |
-| PATCH [channel](/graph/api/channel-patch)|  30 rps                         | 300 rps  | 1rps |
-| DELETE [channel](/graph/api/channel-delete) |  15 rps                         | 150 rps  | 1rps |
-| DELETE tab for [chat](/graph/api/chat-delete-tabs), [channel](/graph/api/channel-delete-tabs)  |  15 rps                         | 150 rps  | 1rps |
-| DELETE   installedApps for [chat](/graph/api/chat-delete-installedapps), [user](/graph/api/userteamwork-delete-installedapps), [team](/graph/api/team-delete-installedapps)    |  15 rps                         | 150 rps  |
-| DELETE   [appCatalogs](/graph/api/teamsapp-delete)      |  15 rps                         | 150 rps  |
-| GET /teams/```{team-id}```, [joinedTeams](/graph/api/user-list-joinedteams)              |  30 rps                         | 300 rps  |
-| POST /[teams](/graph/api/team-post) | 10 rps | 100 rps  |
-| PUT /groups/```{team-id}```/[team](/graph/api/team-put-teams)| Six rps | 150 rps  |
-| POST /```{team-id}```/ [clone](/graph/api/team-clone) | Six rps | 150 rps  |
-| GET [channel message](/graph/api/chatmessage-get)  | 20 rps | 200 rps | 1rps |
-| GET 1:1/[group chat message](/graph/api/chat-get#example-3-get-a-chat-and-all-its-members)  | 20 rps | 200 rps | 1rps |
-| POST [channel message](/graph/api/channel-post-messages) | 50 rps | 500 rps | 1rps |
-| POST [chat member](/graph/api/chat-post-members) | 30 rps | 300 rps | 4rpm |
-| Delete [chat member](/graph/api/chat-delete-members) | 30 rps | 300 rps | 4rpm |
-| POST 1:1/[group chat message](/graph/api/chat-post#example-2-create-a-group-chat) | 20 rps | 200 rps | 1rps |
-| GET /teams/```{team-id}```/[schedule](/graph/api/schedule-get) and all APIs under this path | 30 rps | 600 rps |
-| POST /teams/```{team-id}```/[schedule](/graph/api/schedule-share) and all APIs under this path | 30 rps | 300 rps |
-|PUT /teams/```{team-id}```/[schedule](/graph//api/team-put-schedule) and all APIs under this path | 30 rps | 300 rps |
-| POST /teams/```{team-id}```/[sendActivityNotification](/graph/api/team-sendactivitynotification) | Five rps | 50 rps |
-| POST /chats/```{chat-id}```/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | Five rps | 50 rps | 1rps |
-| POST /users/```{user-id}```/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | Five rps | 50 rps |
-| POST /teamwork/[sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients) | Two rps | 20 rps |
-| GET /teams/```{team-id}```/[members](/graph/api/team-get-members) | 60 rps | 1200 rps |
-| POST /teams/```{team-id}```/[members](/graph/api/team-post-members) | 30 rps | 300 rps | 4rpm|
-| GET /teams/```{team-id}```/[channels](/graph/api/channel-get) | 60 rps | 1200 rps | 1rps |
-| GET /teams/```{team-id}```/channels/```{channel-id}```/[members](/graph/api/channel-get-members) | 60 rps | 1200 rps | 1rps |
-| Get all channel messages for a team<br/>GET teams/```{team-id}```/channels/[getAllMessages](/graph/api/channel-getallmessages)<br/>GET teams/```{team-id}```/channels/allMessages | 200rps | 1000rps |
-| Get all chat messages for a user<br/>GET users/```{user-id}```/chats/[getAllMessages](/graph/api/chats-getallmessages)<br/>GET users/```{user-id}```/chats/allMessages | 200rps | 1000rps |
-| GET /teams/```{team-id}```/channels/[getAllRetainedMessages](/graph/api/channel-getallretainedmessages) | 200rps | 1000rps |
-| GET /users/```{user-id}```/chats/[getAllRetainedMessages](/graph/api/chat-getallretainedmessages) | 200rps | 1000rps |
-| GET /copilot/users/```{user-id}```/interactionHistory/[getAllEnterpriseInteractions](/microsoft-365-copilot/extensibility/api-reference/aiinteractionhistory-getallenterpriseinteractions) | 30rps | 1500rps |
-| All section management APIs under /users/```{user-id}```/teamwork/[sections](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) | Five rps | N/A |
-| Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps | 1rps |
-| Other API calls for Microsoft Teams              | 30 rps | 300 rps | 1rps |
+Microsoft Teams applies throttling limits across four independent dimensions. A request is throttled when it exceeds **any** limit that applies to it, so always design for the lowest limit that your scenario hits.
 
-A maximum of four requests per second per app can be issued on a given team.
+| Dimension | What it counts | When it typically applies |
+|--|--|--|
+| **Per app** | All requests from one app (client ID) summed across every tenant. | Multitenant apps that serve many customers. |
+| **Per app per tenant** | Requests from one app within a single tenant. | The most commonly reached limit. |
+| **Per resource** | Requests against a single team, channel, or chat. | Apps that concentrate traffic on one conversation. |
+| **Per user** | Requests made on behalf of a single user. | Delegated (user) permission scenarios. |
 
-A maximum of one request per second per app per tenant can be issued on a given [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat).
+Limits are expressed as requests per second (rps) unless stated otherwise.
 
-A maximum of one request per second per user can be issued when doing POST message in a given chat or channel (This throttling limit doesn't apply to [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+> Each limit is evaluated over a short burst window. A sustained limit of approximately 83 percent of the listed value is also evaluated over a longer window, so a workload that runs continuously at the listed rate can still be throttled. Size your steady-state traffic below the listed limit and use exponential backoff.
 
-A maximum of five requests per second per user can be issued when doing [List chats](/graph/api/chat-list) or [Get chat](/graph/api/chat-get) or [chat:removeAllAccessForUser](/graph/api/Chat-removeAllAccessForUser)
+A dash (`-`) means that no dedicated limit is defined for that dimension. The request is still subject to the [default limits](#default-limits) and to any other limit in the same row.
+
+### Teams
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| GET /teams/`{team-id}` | 1500 rps | 30 rps | 4 rps per team | - |
+| GET [/me/joinedTeams or /users/`{user-id}`/joinedTeams](/graph/api/user-list-joinedteams) | 300 rps | 30 rps | - | - |
+| POST [/teams](/graph/api/team-post) | 100 rps | 10 rps | - | - |
+| PUT /groups/`{team-id}`/[team](/graph/api/team-put-teams) | 150 rps | 6 rps | - | - |
+| PATCH [/teams/`{team-id}`](/graph/api/team-update) | 300 rps | 30 rps | 4 rps per team | - |
+| POST /teams/`{team-id}`/[clone](/graph/api/team-clone) | 150 rps | 6 rps | - | - |
+| POST /teams/`{team-id}`/[completeMigration](/graph/api/team-completemigration) | 100 rps | 10 rps | - | - |
+
+### Channels
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| GET /teams/`{team-id}`/[channels](/graph/api/channel-list) | 1200 rps | 60 rps | 4 rps per team | - |
+| GET /teams/`{team-id}`/channels/[`{channel-id}`](/graph/api/channel-get) | 600 rps | 30 rps | 1 rps per channel | - |
+| GET /teams/`{team-id}`/channels/`{channel-id}`/[members](/graph/api/channel-list-members) | 1200 rps | 60 rps | 1 rps per channel | - |
+| POST /teams/`{team-id}`/[channels](/graph/api/channel-post) | 100 rps | 10 rps | 4 rps per team | - |
+| PATCH /teams/`{team-id}`/channels/[`{channel-id}`](/graph/api/channel-patch) | 300 rps | 30 rps | 1 rps per channel | - |
+| DELETE /teams/`{team-id}`/channels/[`{channel-id}`](/graph/api/channel-delete) | 150 rps | 15 rps | 1 rps per channel | - |
+| POST /teams/`{team-id}`/channels/`{channel-id}`/[completeMigration](/graph/api/channel-completemigration) | 100 rps | 10 rps | - | - |
+
+### Channel messages
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| GET /teams/`{team-id}`/channels/`{channel-id}`/[messages](/graph/api/channel-list-messages) | 200 rps | 20 rps | 1 rps per channel | - |
+| POST /teams/`{team-id}`/channels/`{channel-id}`/[messages](/graph/api/channel-post-messages) | 500 rps | 50 rps | 1 rps per channel | 1 rps |
+| POST /teams/`{team-id}`/channels/`{channel-id}`/messages/`{message-id}`/[replies](/graph/api/chatmessage-post-replies) | 500 rps | 50 rps | 1 rps per channel | 1 rps |
+
+The POST limits in the preceding table are shared by regular message sends and by [message import](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). The per-user limit doesn't apply to import.
+
+### Chats
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| GET [/chats](/graph/api/chat-list), /me/chats, or /users/`{user-id}`/chats | 200 rps | 20 rps | - | 1 rps |
+| GET [/chats/`{chat-id}`](/graph/api/chat-get) | 2000 rps | 200 rps | 1 rps per chat | 5 rps |
+| POST [/chats](/graph/api/chat-post) | 200 rps | 20 rps | - | - |
+| PATCH [/chats/`{chat-id}`](/graph/api/chat-patch) | 300 rps | 30 rps | 1 rps per chat | - |
+| DELETE [/chats/`{chat-id}`](/graph/api/chat-delete) | 10 rps | 1 rps | 1 rps per chat | - |
+| POST /chats/`{chat-id}`/[removeAllAccessForUser](/graph/api/chat-removeallaccessforuser) | 300 rps | 30 rps | 1 rps per chat | 1 rps |
+
+### Chat messages
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| GET /chats/`{chat-id}`/[messages](/graph/api/chat-list-messages) | 200 rps | 20 rps | 1 rps per chat | - |
+| POST /chats/`{chat-id}`/[messages](/graph/api/chat-post-messages) | 200 rps | 20 rps | 1 rps per chat | 1 rps |
+| PATCH /chats/`{chat-id}`/[messages/`{message-id}`](/graph/api/chatmessage-update) | 300 rps | 30 rps | 1 rps per chat | - |
+| POST /chats/`{chat-id}`/messages/`{message-id}`/[softDelete](/graph/api/chatmessage-softdelete) or [undoSoftDelete](/graph/api/chatmessage-undosoftdelete) | 300 rps | 30 rps | 1 rps per chat | - |
+| GET /chats/`{chat-id}`/messages/`{message-id}`/[hostedContents](/graph/api/chatmessagehostedcontent-get) | 500 rps | 50 rps | 1 rps per chat | - |
+| GET /chats/`{chat-id}`/messages/`{message-id}`/hostedContents/`{id}`/$value | 600 rps | 60 rps | 1 rps per chat | - |
+
+### Members
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| GET /teams/`{team-id}`/[members](/graph/api/team-list-members) | 1200 rps | 60 rps | 4 rps per team | - |
+| POST /teams/`{team-id}`/[members](/graph/api/team-post-members) | 300 rps | 30 rps | 4 requests per minute per team | - |
+| POST /teams/`{team-id}`/members/[add](/graph/api/conversationmember-add) | 100 rps | 10 rps | 4 requests per minute per team | - |
+| POST /chats/`{chat-id}`/[members](/graph/api/chat-post-members) | 300 rps | 30 rps | 4 requests per minute per chat | - |
+| DELETE /chats/`{chat-id}`/[members/`{membership-id}`](/graph/api/chat-delete-members) | 300 rps | 30 rps | 4 requests per minute per chat | - |
+
+### Apps, tabs, and permission grants
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| GET installedApps for [team](/graph/api/team-list-installedapps), [chat](/graph/api/chat-list-installedapps), or [user](/graph/api/userteamwork-list-installedapps) | 1500 rps | 30 rps | 1 rps per chat or channel | - |
+| GET permissionGrants for [team](/graph/api/team-list-permissiongrants) or [chat](/graph/api/chat-list-permissiongrants) | 1500 rps | 30 rps | 1 rps per chat or channel | - |
+| POST installedApps for [team](/graph/api/team-post-installedapps), [chat](/graph/api/chat-post-installedapps), or [user](/graph/api/userteamwork-post-installedapps) | 300 rps | 30 rps | 1 rps per chat or channel | - |
+| DELETE installedApps for [team](/graph/api/team-delete-installedapps), [chat](/graph/api/chat-delete-installedapps), or [user](/graph/api/userteamwork-delete-installedapps) | 150 rps | 15 rps | 1 rps per chat or channel | - |
+| GET tabs for [channel](/graph/api/channel-list-tabs) or [chat](/graph/api/chat-list-tabs) | 600 rps | 30 rps | 1 rps per chat or channel | - |
+| POST tabs for [channel](/graph/api/channel-post-tabs) or [chat](/graph/api/chat-post-tabs) | 300 rps | 30 rps | 1 rps per chat or channel | - |
+| PATCH [tab](/graph/api/channel-patch-tabs) | 300 rps | 30 rps | 1 rps per chat or channel | - |
+| DELETE tabs for [channel](/graph/api/channel-delete-tabs) or [chat](/graph/api/chat-delete-tabs) | 150 rps | 15 rps | 1 rps per chat or channel | - |
+| GET [/appCatalogs/teamsApps](/graph/api/appcatalogs-list-teamsapps) | 1500 rps | 30 rps | - | - |
+| POST [/appCatalogs/teamsApps](/graph/api/teamsapp-publish) | 300 rps | 30 rps | - | - |
+| DELETE [/appCatalogs/teamsApps/`{app-id}`](/graph/api/teamsapp-delete) | 150 rps | 15 rps | - | - |
+
+### Activity feed notifications
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| POST /teams/`{team-id}`/[sendActivityNotification](/graph/api/team-sendactivitynotification) | 50 rps | 5 rps | 4 rps per team | - |
+| POST /chats/`{chat-id}`/[sendActivityNotification](/graph/api/chat-sendactivitynotification) | 50 rps | 5 rps | 1 rps per chat | - |
+| POST /users/`{user-id}`/teamwork/[sendActivityNotification](/graph/api/userteamwork-sendactivitynotification) | 50 rps | 5 rps | - | - |
+| POST /teamwork/[sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients) | 20 rps | 2 rps | - | - |
+
+### Bulk message retrieval
+
+These APIs are designed for export and compliance scenarios and have their own higher limits.
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| GET /teams/`{team-id}`/channels/[getAllMessages](/graph/api/channel-getallmessages) or /channels/allMessages | 1000 rps | 200 rps | - | - |
+| GET /users/`{user-id}`/chats/[getAllMessages](/graph/api/chats-getallmessages) or /chats/allMessages | 1000 rps | 200 rps | - | - |
+| GET /teams/`{team-id}`/channels/[getAllRetainedMessages](/graph/api/channel-getallretainedmessages) | 1000 rps | 200 rps | - | - |
+| GET /users/`{user-id}`/chats/[getAllRetainedMessages](/graph/api/chat-getallretainedmessages) | 1000 rps | 200 rps | - | - |
+| GET /copilot/users/`{user-id}`/interactionHistory/[getAllEnterpriseInteractions](/microsoft-365-copilot/extensibility/api-reference/aiinteractionhistory-getallenterpriseinteractions) | 1500 rps | 30 rps | - | - |
+
+### Shifts
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| GET /teams/`{team-id}`/[schedule](/graph/api/schedule-get) and all APIs under this path | 600 rps | 30 rps | - | - |
+| POST /teams/`{team-id}`/[schedule](/graph/api/schedule-share) and all APIs under this path | 300 rps | 30 rps | - | - |
+| PUT /teams/`{team-id}`/[schedule](/graph/api/team-put-schedule) and all APIs under this path | 300 rps | 30 rps | - | - |
+
+### Sections
+
+| Request | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| All section management APIs under /users/`{user-id}`/teamwork/[sections](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) | - | 5 rps | - | - |
+
+All section operations, including sections, section items, reorder actions, and delta queries, share a single limit.
+
+### Default limits
+
+Any Microsoft Teams request that isn't listed in the preceding tables uses these limits.
+
+| Request type | Per app | Per app per tenant | Per resource | Per user |
+|--|--|--|--|--|
+| GET | 1500 rps | 30 rps | 1 rps per chat or channel | 1 rps |
+| POST, PUT, and PATCH | 300 rps | 30 rps | 1 rps per chat or channel | 1 rps |
+| DELETE | 150 rps | 15 rps | 1 rps per chat or channel | 1 rps |
+
+### Related resources
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits)
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
@@ -71,5 +160,3 @@ The preceding limits apply to the following resources:
 | <!-- fake header--> | <!-- fake header--> |
 |--|--|
 | <ul><li> [aadUserConversationMember](/graph/api/resources/aadUserConversationMember) <li> [changeTrackedEntity](/graph/api/resources/changeTrackedEntity) <br/><li> [channel](/graph/api/resources/channel) <br/><li> [chatMessage](/graph/api/resources/chatMessage) <br/><li> [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent) <br/><li> [conversationMember](/graph/api/resources/conversationMember) <br/><li> [offerShiftRequest](/graph/api/resources/offerShiftRequest) <br/><li> [openShift](/graph/api/resources/openShift) <br/><li> [openShiftChangeRequest](/graph/api/resources/openShiftChangeRequest) <br/><li> [schedule](/graph/api/resources/schedule) <br/> <li> [schedulingGroup](/graph/api/resources/schedulingGroup) <br/><li> [shift](/graph/api/resources/shift) <br/><li> [shiftPreferences](/graph/api/resources/shiftPreferences) </ul> | <ul><li> [swapShiftsChangeRequest](/graph/api/resources/swapShiftsChangeRequest) <br/><li> [team](/graph/api/resources/team) <br/><li> [teamsApp](/graph/api/resources/teamsApp) <br/><li> [teamsAppDefinition](/graph/api/resources/teamsAppDefinition) <br/><li> [teamsAppInstallation](/graph/api/resources/teamsAppInstallation) <br/><li> [teamsAsyncOperation](/graph/api/resources/teamsAsyncOperation) <br/><li> [teamsTab](/graph/api/resources/teamsTab) <br/><li> [teamsTemplate](/graph/api/resources/teamsTemplate) <br/><li> [teamwork](/graph/api/resources/teamwork) <br/><li> [teamworkSection](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) <br/><li> [teamworkSectionItem](/graph/api/resources/teamworksectionitem?view=graph-rest-beta&preserve-view=true) <br/><li> [timeOff](/graph/api/resources/timeOff) <br/><li> [timeOffReason](/graph/api/resources/timeOffReason) <br/><li> [timeOffRequest](/graph/api/resources/timeOffRequest) <br/><li> [userSettings](/graph/api/resources/userSettings) <br/> <li> [workforceIntegration](/graph/api/resources/workforceIntegration) </ul> |
-
-

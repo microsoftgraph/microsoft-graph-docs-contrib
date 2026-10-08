@@ -2,7 +2,7 @@
 title: "crossTenantCalendarSharingFreeBusySimple resource type"
 description: "Represents a cross-tenant capability for simple free/busy calendar sharing."
 author: "lasharma"
-ms.date: 04/23/2026
+ms.date: 08/07/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cross-tenant capability for simple free/busy calendar sharing. This capability allows tenant administrators to control whether users can share simple calendar free/busy information across organizations.
+Represents authorization for external users from a trusted partner tenant to view simple calendar free/busy status, shown as busy or free.
 
 Inherits from [m365CapabilityBase](../resources/m365capabilitybase.md).
 
@@ -46,8 +46,6 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.crossTenantCalendarSharingFreeBusySimple",
   "name": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "inboundAccess": {
-    "@odata.type": "microsoft.graph.m365CapabilityInboundAccess"
-  }
+  "inboundAccess": {"@odata.type": "microsoft.graph.m365CapabilityInboundAccess"}
 }
 ```

@@ -198,6 +198,104 @@
     {
       "ChangeList": [
         {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "contentModality",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentModality** enumeration type.",
+          "Target": "contentModality"
+        },
+        {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "detectionSeverity",
+          "ChangeType": "Addition",
+          "Description": "Added the **detectionSeverity** enumeration type.",
+          "Target": "detectionSeverity"
+        },
+        {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "audioMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [audioMetadata](https://learn.microsoft.com/en-us/graph/api/resources/audioMetadata?view=graph-rest-beta) resource.",
+          "Target": "audioMetadata"
+        },
+        {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mediaMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [mediaMetadata](https://learn.microsoft.com/en-us/graph/api/resources/mediaMetadata?view=graph-rest-beta) resource.",
+          "Target": "mediaMetadata"
+        },
+        {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mediaSegment",
+          "ChangeType": "Addition",
+          "Description": "Added the [mediaSegment](https://learn.microsoft.com/en-us/graph/api/resources/mediaSegment?view=graph-rest-beta) resource.",
+          "Target": "mediaSegment"
+        },
+        {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "streamingMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [streamingMetadata](https://learn.microsoft.com/en-us/graph/api/resources/streamingMetadata?view=graph-rest-beta) resource.",
+          "Target": "streamingMetadata"
+        },
+        {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "syntheticMediaDetectionDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [syntheticMediaDetectionDetail](https://learn.microsoft.com/en-us/graph/api/resources/syntheticMediaDetectionDetail?view=graph-rest-beta) resource.",
+          "Target": "syntheticMediaDetectionDetail"
+        },
+        {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "syntheticMediaDetectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [syntheticMediaDetectionInfo](https://learn.microsoft.com/en-us/graph/api/resources/syntheticMediaDetectionInfo?view=graph-rest-beta) resource.",
+          "Target": "syntheticMediaDetectionInfo"
+        },
+        {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "videoMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [videoMetadata](https://learn.microsoft.com/en-us/graph/api/resources/videoMetadata?view=graph-rest-beta) resource.",
+          "Target": "videoMetadata"
+        },
+        {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Property",
+          "ChangedApiName": "syntheticMediaDetection",
+          "ChangeType": "Addition",
+          "Description": "Added the **syntheticMediaDetection** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Target": "participant"
+        },
+        {
+          "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+          "ApiChange": "Method",
+          "ChangedApiName": "reportSyntheticMedia",
+          "ChangeType": "Addition",
+          "Description": "Added the [reportSyntheticMedia](https://learn.microsoft.com/en-us/graph/api/participant-reportsyntheticmedia?view=graph-rest-beta) method to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "5b781f34-9d2d-435d-add5-da6b6f320f98",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-10T00:45:18.2072129Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c84cd57a-479f-4e73-b106-835e33615bc0",
           "ApiChange": "Property",
           "ChangedApiName": "meetingType",

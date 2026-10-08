@@ -1,6 +1,6 @@
 ---
 title: "Get workHoursAndLocationsSetting"
-description: "Get the properties and relationships of your own workHoursAndLocationsSetting."
+description: "Get the properties and relationships of a user's workHoursAndLocationsSetting."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -12,7 +12,7 @@ ms.date: 12/19/2025
 
 Namespace: microsoft.graph
 
-Get the properties and relationships of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md).
+Get the properties and relationships of a user's [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "workhoursandlocationssetting_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workhoursandlocationssetting-get-permissions.md)]
 
+>**Note:** Application permissions are supported only when using the `/users/{id}` endpoint.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +34,7 @@ GET /me/settings/workHoursAndLocations
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-When using the `/users/{id}` endpoint, the ID must be your own user ID.
+When using delegated permissions with the `/users/{id}` endpoint, the ID must be the signed-in user's ID.
 
 <!-- { "blockType": "ignored" } -->
 ```http
