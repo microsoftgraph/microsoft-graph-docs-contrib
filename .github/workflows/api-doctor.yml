@@ -26,15 +26,15 @@ jobs:
     # Also required by Windows
     - run: git config --global core.longpaths true
     - name: Checkout docs repo
-      uses: actions/checkout@v7
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - name: Setup .NET
-      uses: actions/setup-dotnet@v6
+      uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
       with:
         dotnet-version: |
           6.x
           8.x
     - name: Install NuGet
-      uses: NuGet/setup-nuget@v4
+      uses: NuGet/setup-nuget@fd55a6f3b34392fa83fde1454582407d8c714123 # v4.0
     - name: Install ApiDoctor from NuGet
       run: nuget install ApiDoctor -Version $Env:APIDOCTOR_VERSION -OutputDirectory ./nuget -NonInteractive -DisableParallelProcessing
     - name: Validate v1.0 docs
