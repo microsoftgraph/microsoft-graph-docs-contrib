@@ -21,7 +21,7 @@ requestTop := int32(5)
 
 requestParameters := &graphadmin.ExchangeMailboxesItemFoldersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
-	Select: [] string {"displayName","type"},
+	Select: [] string {"displayName","parentMailboxUrl","type","wellKnownName"},
 	Top: &requestTop,
 }
 configuration := &graphadmin.ExchangeMailboxesItemFoldersRequestBuilderGetRequestConfiguration{

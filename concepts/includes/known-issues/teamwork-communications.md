@@ -114,6 +114,21 @@ When you call the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) 
 
 Do not pass `$top` query parameter until the issue is fixed.
 
+### APIs that export online meeting artifacts may return duplicate items during service update
+
+<!-- {
+  "ms.author": "bkeerthivasa",
+  "ms.reviewer": ""
+} -->
+
+During a planned service update that is expected to be completed by August 31, 2026, paginated requests to the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) or [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts) APIs may experience an automatic pagination token reset. A request can return a `200 OK` response with an empty collection and an `@odata.nextLink`. Pagination then restarts and can return recording or transcript items that were returned previously.
+
+#### Workaround
+
+Continue following `@odata.nextLink` even when the collection is empty. De-duplicate subsequent items by tracking the **id** property of each recording or transcript.
+
+When using delta queries with these methods, follow the returned delta link without appending or reapplying filters. The token retains the filter from the initial request. Supplying a filter with the token returns a `400 Bad Request` response with `DeltaFilterNotAllowed` as the `innerError.code` value.
+
 ### List team members API fails with 401 errors in newly created tenants
 
 <!-- {

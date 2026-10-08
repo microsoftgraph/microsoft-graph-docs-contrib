@@ -20,7 +20,7 @@ var requestBody = new ChatMessage
 			DisplayName = "John Doe",
 		},
 	},
-	Body = new ItemBody
+	Body = new ChatMessageBody
 	{
 		ContentType = BodyType.Html,
 		Content = "Hello World",

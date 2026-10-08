@@ -4,7 +4,7 @@ description: "Learn how to embed the Microsoft Teams experience within your own 
 author: "erichui-ms"
 ms.localizationpriority: high
 ms.subservice: "teams"
-ms.date: 11/07/2024
+ms.date: 09/22/2026
 ms.topic: how-to
 ---
 
@@ -29,7 +29,7 @@ The architecture includes three components:
     > [!NOTE]
     > You might also choose to have the server component, instead of the chat UI, make all the API requests to Teams APIs, and cache all the messages. For example, if you have another backend system component that also needs to make API requests, such as for compliance and auditing, you might choose to centralize the API requests and caching on the server component instead.
 
-- A **cache** that persists messages. To improve the response time for your application and to potentially lower the costs for you, minimize reading the same message multiple times by storing messages in this cache. You do not want to be surprised by the API consumption charges later. To learn how to set up a cache, see [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
+- A **cache** that persists messages. Store messages in the cache to minimize repeated reads and improve your application's response time. To learn how to set up a cache, see [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
 
 After you set up these components, you can start using Teams APIs. 
 
@@ -241,7 +241,7 @@ Microsoft Graph provides several ways to retrieve chat messages:
 - [Get all messages from all chats](/graph/api/chats-getallmessages) (across all chats): `GET /users/{user-id | user-principal-name}/chats/getAllMessages`
 - [List messages in a chat](/graph/api/chat-list-messages) (per chat): `GET /chats/{chat-id}/messages`
 
-By using `/getAllMessages`, you can get messages across all chats for a user. This API is designed for backend applications, such as audit and compliance applications, which often get messages across all chats at once. It supports [application](/graph/auth/auth-concepts) permissions only. Also, this is a [metered API](/graph/metered-api-overview).
+By using `/getAllMessages`, you can get messages across all chats for a user. This API is designed for backend applications, such as audit and compliance applications, which often get messages across all chats at once. It supports [application](/graph/auth/auth-concepts) permissions only.
 
 By using `/messages`, you can make API calls from the UI using [delegated](/graph/auth/auth-concepts) permissions, as described in [Step 1](#step-1-design-and-set-up-architecture).
 
@@ -457,7 +457,7 @@ Some messages are [system messages](/graph/system-messages). For example, the fo
 
 ## Step 5: Cache messages
 
-Because each message you get from [getAllMessages](/microsoftteams/export-teams-content#how-to-access-teams-export-apis) or [change notification](/graph/api/resources/changenotificationcollection) is subject to [consumption charges](/graph/teams-licenses), you will want to minimize reading the same message multiple times. We recommend that you cache messages for at least a few hours so a user can quickly reopen a recent chat. Do not cache messages for longer than what is allowed per your organization's retention policies.
+To minimize reading the same message multiple times from [getAllMessages](/microsoftteams/export-teams-content#how-to-access-teams-export-apis) or [change notification](/graph/api/resources/changenotificationcollection), cache messages for at least a few hours. Caching allows users to quickly reopen recent chats. Don't cache messages longer than permitted by your organization's retention policies.
 
 In [Step 6](#step-6-subscribe-to-change-notifications), you will decide whether the cache is per-user or not.
 
@@ -760,6 +760,7 @@ Content-type: application/json
     "notificationUrlAppId": null
 }
 ```
+
 ## Step 9: Get and set viewpoints
 
 A [viewpoint](/graph/api/resources/chatviewpoint) in a chat marks the timestamp at which the chat was last read by users, so that users can see that any messages under the viewpoint are unread.
@@ -839,20 +840,13 @@ The viewpoint of a chat for a user is updated whenever the user [marks the chat 
 
 ## Cost estimation
 
-Currently, retrieving messages per-user, per-chat ([Step 4](#step-4-retrieve-messages)) does not involve consumptions charges (but has throttling limits). Only change notifications have consumption charges of $0.00075 per message. 
-
-If your app has 50 users, and each user receives messages from 20 users and sends 300 messages per month, the approximate cost would be:
-- 50 recipients x (20 senders x 300 messages/month/sender)/recipient x $0.00075/message
-= 300,000 messages/month x $0.00075/message
-= $225/month.
-
-For the most up-to-date pricing information, see [Microsoft Teams API licensing and payment requirements](/graph/teams-licenses).
+Currently, retrieving messages per-user, per-chat ([Step 4](#step-4-retrieve-messages)) does not involve consumptions charges (but has throttling limits).
 
 ## Related content
 
 - [Add reactions to chat messages](/graph/api/chatmessage-setreaction)
 - [Add @metions, images, attachments, HTML styling, adaptive cards to chat messages](/graph/api/chatmessage-post?#examples)
-- [Hide a chat from users](/graph/api/chat-hideforuser) 
+- [Hide a chat from users](/graph/api/chat-hideforuser)
 - [Remove a member from a chat](/graph/api/chat-delete-members)
 - [Check chat membership](/graph/api/chat-list)
 - [Subscribe to change notifications of other resources](/graph/teams-change-notification-in-microsoft-teams-overview)

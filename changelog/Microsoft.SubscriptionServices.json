@@ -3,6 +3,84 @@
     {
       "ChangeList": [
         {
+          "Id": "a4d5cbcc-c7f0-499c-9f30-eda3104bbf16",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the **unknownFutureValue** member to the **changeType** enumeration in v1.0, previously available in beta, used by the [changeNotification](https://learn.microsoft.com/en-us/graph/api/resources/changenotification?view=graph-rest-v1.0) and [commsNotification](https://learn.microsoft.com/en-us/graph/api/resources/commsnotification?view=graph-rest-v1.0) resources.",
+          "Target": "changeType"
+        }
+      ],
+      "Id": "a4d5cbcc-c7f0-499c-9f30-eda3104bbf16",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-09T22:33:36.7456709Z",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0d8b88b5-d00e-4216-b98c-5beda8eadeb5",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the **unknownFutureValue** member to the **changeType** enumeration used by the [changeNotification](https://learn.microsoft.com/en-us/graph/api/resources/changenotification?view=graph-rest-beta) and [commsNotification](https://learn.microsoft.com/en-us/graph/api/resources/commsnotification?view=graph-rest-beta) resources.",
+          "Target": "changeType"
+        }
+      ],
+      "Id": "0d8b88b5-d00e-4216-b98c-5beda8eadeb5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-03T02:34:16.5190502Z",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7f6c0e08-f231-492e-81b8-561c519a0f6c",
+          "ApiChange": "Property",
+          "ChangedApiName": "vapidPublicKey",
+          "ChangeType": "Addition",
+          "Description": "Added the **vapidPublicKey** property to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "7f6c0e08-f231-492e-81b8-561c519a0f6c",
+          "ApiChange": "Property",
+          "ChangedApiName": "webPushEncryptionP256dhPublicKey",
+          "ChangeType": "Addition",
+          "Description": "Added the **webPushEncryptionP256dhPublicKey** property to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "7f6c0e08-f231-492e-81b8-561c519a0f6c",
+          "ApiChange": "Property",
+          "ChangedApiName": "webPushEncryptionSecret",
+          "ChangeType": "Addition",
+          "Description": "Added the **webPushEncryptionSecret** property to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "7f6c0e08-f231-492e-81b8-561c519a0f6c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getVapidPublicKey",
+          "ChangeType": "Addition",
+          "Description": "Added the [getVapidPublicKey](https://learn.microsoft.com/en-us/graph/api/subscription-getVapidPublicKey?view=graph-rest-1.0) method to the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource.",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "7f6c0e08-f231-492e-81b8-561c519a0f6c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-22T04:16:58.9666420Z",
+      "WorkloadArea": "Change notifications",
+      "SubArea": "Subscription"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8f2a1c4d-1b3e-4f5a-9c2d-7e8a3b4c5d6e",
           "ApiChange": "Property",
           "ChangedApiName": "vapidPublicKey",

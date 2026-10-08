@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: outlook
 author: "SuryaLashmiS"
-ms.date: 04/12/2024
+ms.date: 08/11/2026
 ---
 
 # genericError resource type
@@ -13,6 +13,10 @@ ms.date: 04/12/2024
 Namespace: microsoft.graph
 
 A general-purpose error.
+
+The **genericError** resource is the base type for the following resource:
+
+- [accessReviewError](accessreviewerror.md)
 
 ## Properties
 

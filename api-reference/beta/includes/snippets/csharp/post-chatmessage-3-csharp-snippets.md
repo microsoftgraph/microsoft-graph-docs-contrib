@@ -12,9 +12,9 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new ChatMessage
 {
 	Subject = null,
-	Body = new ItemBody
+	Body = new ChatMessageBody
 	{
-		ContentType = BodyType.Html,
+		MessageBodyContentType = ChatMessageBodyContentType.Html,
 		Content = "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>",
 	},
 	Attachments = new List<ChatMessageAttachment>

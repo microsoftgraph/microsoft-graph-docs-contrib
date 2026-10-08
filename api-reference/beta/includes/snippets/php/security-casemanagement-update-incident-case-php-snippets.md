@@ -21,7 +21,6 @@ $requestBody->setStatus('InProgress');
 $requestBody->setClassification(new IncidentClassification('truePositive'));
 $requestBody->setDetermination(new IncidentDetermination('phishing'));
 $requestBody->setSeverity(new IncidentSeverity('high'));
-$requestBody->setSummary('Credential phishing campaign affecting multiple users.');
 
 $result = $graphServiceClient->security()->caseManagement()->cases()->byCaseId('case-id')->patch($requestBody)->wait();
 

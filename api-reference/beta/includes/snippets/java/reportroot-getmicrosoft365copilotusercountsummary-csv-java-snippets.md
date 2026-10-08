@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.reports().getMicrosoft365CopilotUserCountSummaryWithPeriodWithVersion("{period}", "{version}").get(requestConfiguration -> {
+graphClient.reports().getMicrosoft365CopilotUserCountSummaryWithPeriod("{period}").get(requestConfiguration -> {
 	requestConfiguration.queryParameters.format = "text/csv";
 });
 

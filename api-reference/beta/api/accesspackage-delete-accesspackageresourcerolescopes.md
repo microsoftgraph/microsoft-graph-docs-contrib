@@ -53,7 +53,7 @@ If successful, this method returns a 200-series response code. It doesn't return
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -67,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

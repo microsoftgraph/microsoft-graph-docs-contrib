@@ -16,6 +16,9 @@ Not all files can be converted into all formats.
 
 To download the item in its original format, see [download an item's contents](driveitem-get-content.md).
 
+> [!NOTE]
+> The maximum size limit for files to use format conversion is 2 MB.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

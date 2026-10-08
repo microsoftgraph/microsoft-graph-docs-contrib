@@ -7,6 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\Security\CaseManagement\GenericCase;
+use Microsoft\Graph\Beta\Generated\Models\Security\CaseManagement\CustomFieldValues;
+use Microsoft\Graph\Beta\Generated\Models\Security\CaseManagement\CustomFieldStringValue;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -20,6 +22,15 @@ $requestBody->setAssignedTo('john.doe@contoso.com');
 $requestBody->setPriority('high');
 $requestBody->setDueDateTime(new \DateTime('2026-06-29T17:54:43Z'));
 $requestBody->setClosingNotes('Follow up with the account owner.');
+$customFields = new CustomFieldValues();
+$additionalData = [
+	'Customer impact' => [
+		'@odata.type' => '#microsoft.graph.security.caseManagement.customFieldStringValue',
+		'value' => 'Multiple executive mailboxes affected',
+	],
+];
+$customFields->setAdditionalData($additionalData);
+$requestBody->setCustomFields($customFields);
 
 $result = $graphServiceClient->security()->caseManagement()->cases()->byCaseId('case-id')->patch($requestBody)->wait();
 

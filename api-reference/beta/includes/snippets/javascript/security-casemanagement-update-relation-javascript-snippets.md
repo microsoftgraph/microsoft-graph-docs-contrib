@@ -11,8 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const relation = {
-  relatedResourceId: '987654321',
-  displayName: 'Related incident'
+  '@odata.type': '#microsoft.graph.security.caseManagement.incidentRelation',
+  relatedResourceId: '987654321'
 };
 
 await client.api('/security/caseManagement/cases/{caseId}/relations/{relationId}')

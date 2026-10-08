@@ -14,7 +14,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestConfiguration = new FoldersRequestBuilderGetRequestConfiguration();
 $queryParameters = FoldersRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "type eq 'IPF.Appointment'";
-$queryParameters->select = ["displayName","type"];
+$queryParameters->select = ["displayName","type","wellKnownName"];
 $queryParameters->top = 5;
 $requestConfiguration->queryParameters = $queryParameters;
 

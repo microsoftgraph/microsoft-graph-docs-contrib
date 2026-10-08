@@ -2,7 +2,7 @@
 title: "Update mailboxFolder"
 description: "Update mailboxFolder properties such as the displayName within a mailbox."
 author: "cparker-msft"
-ms.date: 02/23/2026
+ms.date: 08/06/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -110,6 +110,7 @@ Content-length: 179
   "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0648f21@aab09c93",
   "childFolderCount": 0,
   "totalItemCount": 0,
+  "wellKnownName": null,
   "type": "IPF.Note"
 }
 ```

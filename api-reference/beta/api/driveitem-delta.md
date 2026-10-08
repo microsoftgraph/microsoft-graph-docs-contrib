@@ -82,11 +82,11 @@ In addition to the collection of DriveItems, the response also includes one of t
 
 ### Example 1: Initial request
 
-Here's an example of how to call this API to establish your local state.
+The following example shows how to call this API to establish your local state.
 
 #### Request
 
-Here's an example of the initial request.
+The following example shows the initial request.
 
 
 # [HTTP](#tab/http)

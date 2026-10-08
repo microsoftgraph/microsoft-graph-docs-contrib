@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code. It doesn't return a
 
 ## Example
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 The following example shows a request.

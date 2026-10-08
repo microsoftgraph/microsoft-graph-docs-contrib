@@ -11,6 +11,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->directory()->tenantGovernance()->governancePolicyTemplates()->byGovernancePolicyTemplateId('governancePolicyTemplate-id')->get()->wait();
+$result = $graphServiceClient->directory()->tenantGovernance()->governancePolicyTemplates()->byTenantGovernancePolicyTemplateId('tenantGovernancePolicyTemplate-id')->get()->wait();
 
 ```

@@ -22,6 +22,7 @@ Inherits from [dataSecurityAndGovernance](../resources/datasecurityandgovernance
 
 | Method                                          | Return Type                                                                                                 | Description                                                                                 |
 | :---------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| [Process content](../api/tenantdatasecurityandgovernance-processcontent.md) | [processContentResponse](../resources/processcontentresponse.md) | Evaluate content synchronously against data protection policies. |
 | [Process content async](../api/tenantdatasecurityandgovernance-processcontentasync.md) | [processContentResponses](../resources/processcontentresponses.md) collection | Process a batch of content entries asynchronously against data protection policies.           |
 
 ## Properties

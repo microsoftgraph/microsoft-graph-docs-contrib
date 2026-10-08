@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "d4e7a1b3-5c92-4f8e-b6d1-3a9e8f2c7d50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceCloudLicensing",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudlicensing-devicecloudlicensing?view=graph-rest-beta) resource type.",
+          "Target": "deviceCloudLicensing"
+        },
+        {
+          "Id": "d4e7a1b3-5c92-4f8e-b6d1-3a9e8f2c7d50",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudLicensing",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudLicensing** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "d4e7a1b3-5c92-4f8e-b6d1-3a9e8f2c7d50",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "assignments",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignments** navigation property to the [deviceCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudlicensing-devicecloudlicensing?view=graph-rest-beta) resource.",
+          "Target": "deviceCloudLicensing"
+        },
+        {
+          "Id": "d4e7a1b3-5c92-4f8e-b6d1-3a9e8f2c7d50",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "usageRights",
+          "ChangeType": "Addition",
+          "Description": "Added the **usageRights** navigation property to the [deviceCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudlicensing-devicecloudlicensing?view=graph-rest-beta) resource.",
+          "Target": "deviceCloudLicensing"
+        },
+        {
+          "Id": "d4e7a1b3-5c92-4f8e-b6d1-3a9e8f2c7d50",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "waitingMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **waitingMembers** navigation property to the [deviceCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudlicensing-devicecloudlicensing?view=graph-rest-beta) resource.",
+          "Target": "deviceCloudLicensing"
+        },
+        {
+          "Id": "d4e7a1b3-5c92-4f8e-b6d1-3a9e8f2c7d50",
+          "ApiChange": "Method",
+          "ChangedApiName": "List usageRights for device",
+          "ChangeType": "Addition",
+          "Description": "Added the [List usageRights for device](https://learn.microsoft.com/en-us/graph/api/cloudlicensing-devicecloudlicensing-list-usagerights?view=graph-rest-beta) method to the [usageRight](https://learn.microsoft.com/en-us/graph/api/resources/cloudlicensing-usageright?view=graph-rest-beta) resource.",
+          "Target": "usageRight"
+        },
+        {
+          "Id": "d4e7a1b3-5c92-4f8e-b6d1-3a9e8f2c7d50",
+          "ApiChange": "Method",
+          "ChangedApiName": "List waitingMembers for device",
+          "ChangeType": "Addition",
+          "Description": "Added the [List waitingMembers for device](https://learn.microsoft.com/en-us/graph/api/cloudlicensing-devicecloudlicensing-list-waitingmembers?view=graph-rest-beta) method to the [waitingMember](https://learn.microsoft.com/en-us/graph/api/resources/cloudlicensing-waitingmember?view=graph-rest-beta) resource.",
+          "Target": "waitingMember"
+        },
+        {
+          "Id": "d4e7a1b3-5c92-4f8e-b6d1-3a9e8f2c7d50",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create assignment for device",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create assignment for device](https://learn.microsoft.com/en-us/graph/api/cloudlicensing-devicecloudlicensing-post-assignments?view=graph-rest-beta) method to the [assignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudlicensing-assignment?view=graph-rest-beta) resource.",
+          "Target": "assignment"
+        }
+      ],
+      "Id": "d4e7a1b3-5c92-4f8e-b6d1-3a9e8f2c7d50",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-08T22:00:00.0000000Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud licensing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "43254185-2ed0-4551-bc14-c150e59aaecd",
           "ApiChange": "Property",
           "ChangedApiName": "cloudLicensing",
