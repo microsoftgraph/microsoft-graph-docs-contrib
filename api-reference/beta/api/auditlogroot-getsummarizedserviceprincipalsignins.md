@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/auditLogs/getSummarizedServicePrincipalSign
 [!INCLUDE [sample-code](../includes/snippets/php/auditlogrootthisgetsummarizedserviceprincipalsignins-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/auditlogrootthisgetsummarizedserviceprincipalsignins-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/auditlogrootthisgetsummarizedserviceprincipalsignins-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

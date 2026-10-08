@@ -13,7 +13,7 @@ const client = Client.init(options);
 const chatMessage = {
     subject: 'Announcement Subheading',
     body: {
-        contentType: 'text',
+        messageBodyContentType: 'text',
         content: '<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text'
     },
     attachments: [

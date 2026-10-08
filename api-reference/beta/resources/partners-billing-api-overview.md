@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph API to export partner billing data"
-description: "The partner billing API in Microsoft Graph offers Microsoft direct partners a faster, more efficient way to export their high-volume billed and unbilled Azure usage data."
+description: "The partner billing API in Microsoft Graph offers Microsoft direct partners a faster, more efficient way to export high-volume billed and unbilled Azure usage, billed aggregated usage, and invoice reconciliation data."
 author: "sourishdeb"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
@@ -14,7 +14,7 @@ ms.date: 03/19/2024
 
 [!INCLUDE [alerts-callout-csp-partner-only](../includes/alerts-callout-csp-partner-only.md)]
 
-As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in the Cloud Solution Provider programs can request to export their billed and unbilled data to Azure Blob Storage asynchronously. This removes the need to maintain an open connection for hours and loop through millions of transactions iteratively. The asynchronous API provides a way to quickly access billing and reconciliation data in manageable chunks.
+As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in the Cloud Solution Provider programs can request to export their billed and unbilled usage, billed aggregated usage, and invoice reconciliation data to Azure Blob Storage asynchronously. This removes the need to maintain an open connection for hours and loop through millions of transactions iteratively. The asynchronous API provides a way to quickly access usage, aggregated usage, and reconciliation data in manageable chunks.
 
 The partner billing API is defined in the OData subnamespace `microsoft.graph.partners.billing`.
 
@@ -36,7 +36,14 @@ To export reconciliation data, the calling principal must be in the partner tena
 
 ## Common use cases
 
-The partner billing API provides methods and actions that allow Microsoft direct partners to export their high-volume billed reconciliation data and billed and unbilled Azure usage data.
+The partner billing API provides methods and actions that allow Microsoft direct partners to export their high-volume billed and unbilled Azure usage, billed aggregated usage, and invoice reconciliation data.
+
+### Billed aggregated usage data
+
+| Use case | API |
+|--|--|
+| Create a new export operation to export billed aggregated usage data | [billedAggregatedUsage: export](../api/partners-billing-billedaggregatedusage-export.md) |
+| Poll for operation status update | [Get operation](../api/partners-billing-operation-get.md) |
 
 ### Billed usage data
 
@@ -73,6 +80,10 @@ The download of usage or reconciliation data is a long-running operation that co
 ### Usage line-item endpoint
 
 Use the [billedUsage: export](../api/partners-billing-billedusage-export.md) or [unbilledUsage: export](../api/partners-billing-unbilledusage-export.md) API to access billed or unbilled consumption line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
+
+### Aggregated usage endpoint
+
+Use the [billedAggregatedUsage: export](../api/partners-billing-billedaggregatedusage-export.md) API to export billed aggregated usage data for a specific invoice. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
 
 ### Invoice line-item endpoint
 

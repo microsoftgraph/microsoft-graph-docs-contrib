@@ -62,7 +62,7 @@ The response includes the following OData instance annotations on the collection
 | Annotation | Type | Description |
 |:-----------|:-----|:------------|
 | @microsoft.graph.sectionsOrder | String collection | An ordered array of section IDs that represent the user's preferred section order. |
-| @microsoft.graph.sectionsVersion | String | The current section hierarchy version. Use this value as the `If-Match` header for optimistic concurrency control on mutation operations (create, update, or delete sections, and add, remove, or move items). |
+| @microsoft.graph.sectionsVersion | String | The current section hierarchy version. Use this value as the `If-Match` header for optimistic concurrency control on mutation operations (create, update, delete, or reorder sections, and add, remove, move, or reorder items). |
 
 ## Examples
 
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamworksections-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-teamworksections-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -199,6 +203,10 @@ GET https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-teamworksections-expand-items-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-teamworksections-expand-items-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

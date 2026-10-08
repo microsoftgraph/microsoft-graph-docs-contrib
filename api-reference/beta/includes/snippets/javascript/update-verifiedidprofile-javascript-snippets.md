@@ -11,11 +11,25 @@ const options = {
 const client = Client.init(options);
 
 const verifiedIdProfile = {
+  verifiedIdProfileConfiguration: {
+    methodType: 'tenantCustomCredential',
+    manifestUrl: 'https://verifiedid.contoso.com/manifest'
+  },
+  mobileDriversLicenseConfiguration: {
+    acceptedRegions: [
+      'region-code'
+    ],
+    documentStandard: 'document-standard'
+  },
+  selfServiceIssuance: {
+    isEnabled: true,
+    issuanceUrl: 'https://verifiedid.contoso.com/issue'
+  },
   verifiedIdUsageConfigurations: [
-      {
-          isEnabledForTestOnly: false,
-          purpose: 'recovery'
-      }
+    {
+      isEnabledForTestOnly: false,
+      purpose: 'verification'
+    }
   ]
 };
 

@@ -25,24 +25,26 @@ Inherited from [caseManagementEntity](../resources/security-casemanagement-casem
 |[List](../api/security-casemanagement-case-list-attachments.md)|[microsoft.graph.security.caseManagement.attachment](../resources/security-casemanagement-attachment.md) collection|List attachments for a case.|
 |[Create](../api/security-casemanagement-case-post-attachments.md)|[microsoft.graph.security.caseManagement.attachment](../resources/security-casemanagement-attachment.md)|Create an attachment for a case.|
 |[Get](../api/security-casemanagement-attachment-get.md)|[microsoft.graph.security.caseManagement.attachment](../resources/security-casemanagement-attachment.md)|Read the properties and relationships of [microsoft.graph.security.caseManagement.attachment](../resources/security-casemanagement-attachment.md) object.|
-|[Update](../api/security-casemanagement-attachment-update.md)|[microsoft.graph.security.caseManagement.attachment](../resources/security-casemanagement-attachment.md)|Update an attachment object.|
+|[Update](../api/security-casemanagement-attachment-update.md)|None|Update an attachment object.|
+|[Download content](../api/security-casemanagement-attachment-download-content.md)|Stream|Download the attachment content after malware scanning completes.|
+|[Upload content](../api/security-casemanagement-attachment-upload-content.md)|None|Upload the attachment content in chunks.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|content|Stream|The binary content stream for the attachment.|
+|content|Stream|The binary content stream for the attachment. Use the [Upload content](../api/security-casemanagement-attachment-upload-content.md) and [Download content](../api/security-casemanagement-attachment-download-content.md) methods to access it.|
 |createdBy|String|The user or service that created the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
 |createdDateTime|DateTimeOffset|The date and time when the resource was created. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
 |description|String|The description of the attachment.|
 |displayName|String|The display name of the attachment.|
-|fileExtension|String|The file extension of the attachment.|
-|fileSize|Int64|The size of the attachment in bytes.|
+|fileExtension|String|The file extension of the attachment. The service normalizes the value to include a leading period.|
+|fileSize|Int64|The size of the attachment in bytes. The maximum file size is 100 MB.|
 |id|String|The unique identifier for the resource. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|String|The user or service that last modified the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).|
 |origin|[microsoft.graph.security.caseManagement.attachmentOrigin](../resources/security-casemanagement-attachmentorigin.md)|The origin reference for the attachment.|
-|scanResult|[microsoft.graph.security.caseManagement.attachmentScanResult](#attachmentscanresult-values)|The malware scan result for the attachment.|
+|scanResult|[microsoft.graph.security.caseManagement.attachmentScanResult](#attachmentscanresult-values)|The service-controlled malware scan result for the attachment. Read-only.|
 
 ### attachmentScanResult values
 
@@ -79,9 +81,7 @@ The following JSON representation shows the resource type.
   "fileSize": "Integer",
   "fileExtension": "String",
   "scanResult": "String",
-  "origin": {
-    "@odata.type": "#microsoft.graph.security.caseManagement.attachmentOrigin"
-  },
+  "origin": {"@odata.type": "#microsoft.graph.security.caseManagement.attachmentOrigin"},
   "content": "Stream"
 }
 ```

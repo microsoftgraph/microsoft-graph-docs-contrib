@@ -16,6 +16,8 @@ Namespace: microsoft.graph.security.caseManagement
 
 Represents an abstract activity that records an update in a security [case](../resources/security-casemanagement-case.md) timeline. Use the derived [comment](../resources/security-casemanagement-comment.md) and [auditLog](../resources/security-casemanagement-auditlog.md) resources to work with specific activity records. Create, update, and delete operations are supported for comments; audit logs support get operations only.
 
+For cast segments in URLs, use the full type name, for example `microsoft.graph.security.caseManagement.comment`.
+
 This resource inherits from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md).
 
 ## Methods
@@ -25,7 +27,7 @@ This resource inherits from [caseManagementEntity](../resources/security-caseman
 |[List](../api/security-casemanagement-case-list-activities.md)|[microsoft.graph.security.caseManagement.activity](../resources/security-casemanagement-activity.md) collection|Get a list of timeline activities for a case.|
 |[Create](../api/security-casemanagement-case-post-activities.md)|[microsoft.graph.security.caseManagement.activity](../resources/security-casemanagement-activity.md)|Create a comment activity for a case.|
 |[Get](../api/security-casemanagement-activity-get.md)|[microsoft.graph.security.caseManagement.activity](../resources/security-casemanagement-activity.md)|Read the properties and relationships of an activity.|
-|[Update](../api/security-casemanagement-activity-update.md)|[microsoft.graph.security.caseManagement.activity](../resources/security-casemanagement-activity.md)|Update a comment activity.|
+|[Update](../api/security-casemanagement-activity-update.md)|None|Update a comment activity.|
 |[Delete](../api/security-casemanagement-activity-delete.md)|None|Delete a comment activity.|
 
 ## Properties

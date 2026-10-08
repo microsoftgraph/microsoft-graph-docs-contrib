@@ -38,6 +38,7 @@ None.
 |catalogs|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection|A container for access packages.|
 |connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|References to a directory or domain of another organization whose users can request access.|
 |controlConfigurations|[controlConfiguration](../resources/controlconfiguration.md) collection|Configuration settings that control the lifecycle and access policies of entitlement management within a tenant.|
+|externalOriginResourceConnectors|[externalOriginResourceConnector](../resources/externaloriginresourceconnector.md) collection|Represents the connectors used to communicate with external resource systems.|
 |resourceEnvironments|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) collection| A reference to the geolocation environments in which a resource is located.|
 |resourceRequests|[accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) collection|Represents a request to add or remove a resource to or from a catalog respectively. |
 |resources|[accessPackageResource](../resources/accesspackageresource.md) collection|The resources associated with the catalogs. |

@@ -20,12 +20,12 @@ jobs:
       run: git config --system core.longpaths true
 
     - name: Checkout microsoft-graph-docs
-      uses: actions/checkout@v7
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         path: docs
 
     - name: Azure Login using Federated Identity
-      uses: azure/login@v3
+      uses: azure/login@a641126d1b8aa4d1fa005f4f92df94a3a4c4c906 # v3.1.0
       with:
         client-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_ID }}
         tenant-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_TENANT_ID }}
@@ -40,7 +40,7 @@ jobs:
 
     - name: Get token
       id: get_token
-      uses: actions/create-github-app-token@v3
+      uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
       with:
         client-id: ${{ secrets.APPLICATION_ID }}
         private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
