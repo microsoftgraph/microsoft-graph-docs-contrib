@@ -45,8 +45,9 @@ You can specify the following properties when you create a custom property.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|The value of the custom property. Required.|
+|isPatternToken|Boolean|Indicates whether **value** is a `urlTemplate` pattern (for example, a token such as `{itemId}` used to configure redirect behavior when opening files), rather than a literal value that consumers must resolve before use. Optional. The default value is `false`.|
 |isSearchable|Boolean|A flag to indicate whether the property is searchable. Optional. The default value is `false`.|
+|value|String|The value of the custom property. Required.|
 
 ## Response
 

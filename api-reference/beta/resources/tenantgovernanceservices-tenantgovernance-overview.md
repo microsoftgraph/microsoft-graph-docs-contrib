@@ -1,20 +1,22 @@
 ---
 title: "Overview of Tenant Governance APIs in Microsoft Graph"
 description: "Discover, manage, and govern Microsoft Entra tenants at scale with Tenant Governance APIs in Microsoft Graph. Learn about related tenants, governance relationships and associated settings."
-author: "FaithOmbongi"
-ms.author: "ombongifaith"
+author: "akhil-potturi"
+ms.author: "potturiakhil"
 ms.reviewer: "hafowler,akhil.potturi,jeffsta"
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: conceptualPageType
-ms.date: 03/19/2026
+ms.date: 09/23/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.topic: overview
 #customer intent: As a developer, I want to learn how to use the tenant governance APIs in Microsoft Graph to programmatically discover related tenants and establish governance relationships.
 ---
 
 # Overview of Tenant Governance APIs in Microsoft Graph
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ A *governance relationship* is a directional connection between two Microsoft En
 To establish a governance relationship, both tenants participate in a three-step handshake:
 
 1. The future **governed** tenant sends a [governance invitation](../resources/tenantgovernanceservices-governanceinvitation.md) to the future governing tenant. The future governing tenant must have enabled receiving governance invitations through the [Update tenantGovernanceSetting](../api/tenantgovernanceservices-tenantgovernancesetting-update.md) operation.
-2. The future **governing** tenant sends a [governance request](../resources/tenantgovernanceservices-governancerequest.md) to the future governed tenant, which includes a selected [governance policy template](../resources/tenantgovernanceservices-governancepolicytemplate.md).
+2. The future **governing** tenant sends a [governance request](../resources/tenantgovernanceservices-governancerequest.md) to the future governed tenant, which includes a selected [governance policy template](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md).
 3. The future **governed** tenant reviews and accepts the request. Upon acceptance, a [governance relationship](../resources/tenantgovernanceservices-governancerelationship.md) is created.
 
 > [!NOTE]
@@ -69,11 +71,11 @@ The following governance models are supported:
 | Multiple | ❌ No | Multiple relationships between the same 2 tenants is not supported. |
 | Cloud solution providers | ❌ No | Coexistence of CSP relationships created through Partner Center and tenant governance relationships is not supported. |
 
-When you create a new add-on tenant from an existing tenant, Tenant Governance automatically establishes a governance relationship between the parent (governing) tenant and the new (governed) tenant using a default [governance policy template](../resources/tenantgovernanceservices-governancepolicytemplate.md). This process ensures that newly created tenants are immediately under centralized governance.
+When you create a new add-on tenant from an existing tenant, Tenant Governance automatically establishes a governance relationship between the parent (governing) tenant and the new (governed) tenant using a default [governance policy template](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md). This process ensures that newly created tenants are immediately under centralized governance.
 
 ## Governance policy templates
 
-A [governancePolicyTemplate](../resources/tenantgovernanceservices-governancepolicytemplate.md) defines the configuration for governance relationships, including delegated administration role assignments and multi-tenant applications to provision. Policy templates are reusable across governance relationships, enabling consistent governance at scale. When a governance relationship is established, the system captures and stores a policy snapshot with the relationship, preserving the policy state at the time of creation.
+A [governancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md) defines the configuration for governance relationships, including delegated administration role assignments and multi-tenant applications to provision. Policy templates are reusable across governance relationships, enabling consistent governance at scale. When a governance relationship is established, the system captures and stores a policy snapshot with the relationship, preserving the policy state at the time of creation.
 
 > [!NOTE]
 > Updating a governance policy template doesn't automatically update existing relationships that were created using that template. To apply policy changes to an active relationship, you must create a new governance request.
@@ -106,5 +108,5 @@ All tenant governance activities are logged in the Microsoft Entra [audit logs](
 - [governanceInvitation resource type](../resources/tenantgovernanceservices-governanceinvitation.md)
 - [governanceRequest resource type](../resources/tenantgovernanceservices-governancerequest.md)
 - [governanceRelationship resource type ](../resources/tenantgovernanceservices-governancerelationship.md)
-- [governancePolicyTemplate resource type](../resources/tenantgovernanceservices-governancepolicytemplate.md)
+- [governancePolicyTemplate resource type](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md)
 - [tenantgovernancesetting resource type](../resources/tenantgovernanceservices-tenantgovernancesetting.md)

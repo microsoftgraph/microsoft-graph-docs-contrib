@@ -9,8 +9,8 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageFromIdentitySet;
 use Microsoft\Graph\Beta\Generated\Models\Identity;
-use Microsoft\Graph\Beta\Generated\Models\ItemBody;
-use Microsoft\Graph\Beta\Generated\Models\BodyType;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageBody;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageBodyContentType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -27,8 +27,8 @@ $additionalData = [
 $fromUser->setAdditionalData($additionalData);
 $from->setUser($fromUser);
 $requestBody->setFrom($from);
-$body = new ItemBody();
-$body->setContentType(new BodyType('html'));
+$body = new ChatMessageBody();
+$body->setMessageBodyContentType(new ChatMessageBodyContentType('html'));
 $body->setContent('Hello World');
 $requestBody->setBody($body);
 

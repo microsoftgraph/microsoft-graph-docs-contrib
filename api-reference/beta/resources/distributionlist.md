@@ -1,8 +1,8 @@
 ---
 title: "distributionList resource type"
 description: "Represents a personal distribution list in the user's mailbox."
-author: "kemwangi"
-ms.date: 06/09/2026
+author: "rwaithera"
+ms.date: 08/03/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
@@ -27,10 +27,8 @@ Inherits from [outlookItem](../resources/outlookitem.md).
 |[Get](../api/distributionlist-get.md)|[distributionList](../resources/distributionlist.md)|Read the properties and relationships of a [distributionList](../resources/distributionlist.md) object.|
 |[Update](../api/distributionlist-update.md)|[distributionList](../resources/distributionlist.md)|Update the properties of a [distributionList](../resources/distributionlist.md) object.|
 |[Delete](../api/distributionlist-delete.md)|None|Delete a [distributionList](../resources/distributionlist.md) object.|
-|[Add members](../api/distributionlist-addmembers.md)|None|Add members to a [distributionList](../resources/distributionlist.md).|
-|[Delete members](../api/distributionlist-deletemembers.md)|None|Remove members from a [distributionList](../resources/distributionlist.md).|
-|[List members](../api/distributionlist-list-distributionlistmembers.md)|[distributionListMember](../resources/distributionlistmember.md) collection|Get the expanded member list of a [distributionList](../resources/distributionlist.md).|
-|[Get member](../api/distributionlist-get-distributionlistmember.md)|[distributionListMember](../resources/distributionlistmember.md)|Get a single expanded member of a [distributionList](../resources/distributionlist.md).|
+|[Add members](../api/distributionlist-addmembers.md)|[distributionList](../resources/distributionlist.md)|Add members to a [distributionList](../resources/distributionlist.md).|
+|[Delete members](../api/distributionlist-deletemembers.md)|[distributionList](../resources/distributionlist.md)|Remove members from a [distributionList](../resources/distributionlist.md).|
 
 ## Properties
 
@@ -42,13 +40,15 @@ Inherits from [outlookItem](../resources/outlookitem.md).
 |displayName|String|The display name of the distribution list.|
 |id|String|The unique identifier for the distribution list. Read-only. Inherited from [outlookItem](../resources/outlookitem.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the distribution list was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2024, is `2024-01-01T00:00:00Z`. Read-only. Inherited from [outlookItem](../resources/outlookitem.md).|
-|members|[member](../resources/member.md) collection|The list of members in the distribution list. Not returned by default; use `$select=members` to include.|
+|notes|String|Notes about the distribution list.|
+|personIdentifier|String|The unique identifier of the distribution list in the mailbox. Read-only.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|distributionListMembers|[distributionListMember](../resources/distributionlistmember.md) collection|The expanded members of the distribution list. Each member contains detailed information including resolved email addresses. Read-only.|
+|members|[distributionListMember](../resources/distributionlistmember.md) collection|The members of the distribution list. Not returned by default; use `$expand=members` to include. Read-only.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the distribution list. Read-only.|
 
 ## JSON representation
 
@@ -71,10 +71,7 @@ The following JSON representation shows the resource type.
     "string"
   ],
   "displayName": "string",
-  "members": [
-    {
-      "@odata.type": "microsoft.graph.member"
-    }
-  ]
+  "notes": "string",
+  "personIdentifier": "string"
 }
 ```

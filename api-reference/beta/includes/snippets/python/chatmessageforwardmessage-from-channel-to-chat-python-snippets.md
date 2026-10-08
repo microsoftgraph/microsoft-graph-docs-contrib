@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.teams.item.channels.item.messages.forward_to_chat.forward_to_chat_post_request_body import ForwardToChatPostRequestBody
 from msgraph_beta.generated.models.chat_message import ChatMessage
-from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.chat_message_body import ChatMessageBody
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ForwardToChatPostRequestBody(
 	target_chat_ids = [
@@ -18,7 +18,7 @@ request_body = ForwardToChatPostRequestBody(
 		"1728088338580",
 	],
 	additional_message = ChatMessage(
-		body = ItemBody(
+		body = ChatMessageBody(
 			content = "Hello World",
 		),
 	),

@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	body = @{
-		contentType = "html"
+		messageBodyContentType = "html"
 		content = "<at id="0">General</at>&nbsp;Hello there!"
 	}
 	mentions = @(

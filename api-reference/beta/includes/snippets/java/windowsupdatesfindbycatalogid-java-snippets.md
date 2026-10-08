@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-var result = graphClient.admin().windows().updates().products().microsoftGraphWindowsUpdatesFindByCatalogIdWithCatalogID("{catalogID}").get(requestConfiguration -> {
-	requestConfiguration.queryParameters.expand = new String []{"revisions($expand=catalogEntry,knowledgeBaseArticle)", "knownIssues($expand=originatingKnowledgeBaseArticle,resolvingKnowledgeBaseArticle)"};
+var result = graphClient.admin().windows().updates().products().microsoftGraphWindowsUpdatesFindByKbNumberWithKbNumber(1).get(requestConfiguration -> {
+	requestConfiguration.queryParameters.expand = new String []{"revisions($expand=catalogEntry,knowledgeBaseArticle)", "knownIssues"};
 });
 
 

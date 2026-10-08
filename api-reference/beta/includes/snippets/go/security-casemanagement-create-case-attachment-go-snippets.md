@@ -24,14 +24,6 @@ fileSize := int64(1000)
 requestBody.SetFileSize(&fileSize) 
 fileExtension := "jpeg"
 requestBody.SetFileExtension(&fileExtension) 
-scanResult := graphmodels.NOTHREATSFOUND_ATTACHMENTSCANRESULT 
-requestBody.SetScanResult(&scanResult) 
-origin := graphmodelssecuritycasemanagement.NewAttachmentOrigin()
-resourceId := "987757fb-6ef4-1061-17e7-9de0d088e1dd"
-origin.SetResourceId(&resourceId) 
-resourceType := graphmodels.CASE_ATTACHMENTORIGINTYPE 
-origin.SetResourceType(&resourceType) 
-requestBody.SetOrigin(origin)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 attachments, err := graphClient.Security().CaseManagement().Cases().ByCaseId("case-id").Attachments().Post(context.Background(), requestBody, nil)

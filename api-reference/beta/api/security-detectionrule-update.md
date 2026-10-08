@@ -58,6 +58,8 @@ PATCH /security/rules/detectionRules/{detectionRuleId}
 |schedule|[microsoft.graph.security.ruleSchedule](../resources/security-ruleschedule.md)|The triggering schedule of this rule.|
 |status|[microsoft.graph.security.detectionRuleStatus](../resources/enums-security.md#detectionrulestatus-values)|The current run status of the rule. The possible values are: `enabled`, `disabled`, `autoDisabled`, `unknownFutureValue`.|
 
+To update the incident correlation setting, specify `true` or `false` for **detectionAction**/**incidentConfiguration**/**isExcludedFromIncidentCorrelation**. A `null` or omitted value leaves the existing setting unchanged.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object in the response body.
@@ -79,9 +81,10 @@ PATCH https://graph.microsoft.com/beta/security/rules/detectionRules/office-enco
 Content-Type: application/json
 
 {
-  "status": "disabled",
-  "queryCondition": {
-    "queryText": "DeviceProcessEvents | where InitiatingProcessFileName in~ ('winword.exe','excel.exe','outlook.exe') | where FileName == 'powershell.exe' | where ProcessCommandLine has '-enc'"
+  "detectionAction": {
+    "incidentConfiguration": {
+      "isExcludedFromIncidentCorrelation": true
+    }
   }
 }
 ```
@@ -137,7 +140,7 @@ Content-Type: application/json
   "id": "office-encoded-powershell",
   "displayName": "Suspicious encoded PowerShell from Office",
   "description": "Detects encoded PowerShell processes launched by Office applications, a common phishing payload pattern.",
-  "status": "disabled",
+  "status": "enabled",
   "createdBy": "alice@contoso.com",
   "createdDateTime": "2026-05-25T10:15:00Z",
   "lastModifiedBy": "alice@contoso.com",
@@ -185,6 +188,9 @@ Content-Type: application/json
           "deviceIdColumn": "DeviceId"
         }
       ]
+    },
+    "incidentConfiguration": {
+      "isExcludedFromIncidentCorrelation": true
     }
   }
 }

@@ -32,6 +32,7 @@ Depending on the resource you're creating, the extension and the permission type
 | [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
 | [group post](../resources/post.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite.All |
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
@@ -50,6 +51,7 @@ Use the same REST request that you use to create the instance.
 ```http
 POST /users/{id|userPrincipalName}/events
 POST /users/{id|userPrincipalName}/messages
+POST /users/{id|userPrincipalName}/notes
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
@@ -74,6 +76,7 @@ POST /groups/{id}/extensions
 POST /groups/{id}/events/{id}/extensions
 POST /groups/{id}/threads/{id}/posts/{id}/extensions
 POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /users/{id|userPrincipalName}/notes/{id}/extensions
 POST /organization/{id}/extensions
 POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions

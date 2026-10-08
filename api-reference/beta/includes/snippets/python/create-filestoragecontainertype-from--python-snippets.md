@@ -10,7 +10,6 @@ from msgraph_beta.generated.models.file_storage_container_type import FileStorag
 from msgraph_beta.generated.models.file_storage_container_billing_classification import FileStorageContainerBillingClassification
 from msgraph_beta.generated.models.file_storage_container_type_settings import FileStorageContainerTypeSettings
 from msgraph_beta.generated.models.file_storage_container_type_settings_override import FileStorageContainerTypeSettingsOverride
-from msgraph_beta.generated.models.file_storage_container_type_agent_settings import FileStorageContainerTypeAgentSettings
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = FileStorageContainerType(
 	name = "Test Trial Container",
@@ -20,11 +19,13 @@ request_body = FileStorageContainerType(
 		is_item_versioning_enabled = True,
 		is_sharing_restricted = False,
 		consuming_tenant_overridables = FileStorageContainerTypeSettingsOverride.IsSearchEnabled | FileStorageContainerTypeSettingsOverride.ItemMajorVersionLimit,
-		agent = FileStorageContainerTypeAgentSettings(
-			chat_embed_allowed_hosts = [
-				"https://localhost:3000",
-			],
-		),
+		additional_data = {
+				"agent" : {
+						"chat_embed_allowed_hosts" : [
+							"https://localhost:3000",
+						],
+				},
+		}
 	),
 )
 

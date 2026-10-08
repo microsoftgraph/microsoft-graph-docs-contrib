@@ -26,6 +26,12 @@ items:
     href: ../../api/user-validatepassword.md
   - name: Retry service provisioning
     href: ../../api/user-retryserviceprovisioning.md
+  - name: Attest
+    href: ../../api/user-attest.md
+  - name: Add self as sponsor
+    href: ../../api/user-addselfassponsor.md
+  - name: Remove self as sponsor
+    href: ../../api/user-removeselfassponsor.md
   - name: Convert external user to internal member user
     href: ../../api/user-convertexternaltointernalmemberuser.md
   - name: Invalidate all refresh tokens

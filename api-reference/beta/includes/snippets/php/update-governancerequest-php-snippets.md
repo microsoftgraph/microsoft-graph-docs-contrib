@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\TenantGovernanceServices\GovernanceRequest;
-use Microsoft\Graph\Beta\Generated\Models\TenantGovernanceServices\RequestStatus;
+use Microsoft\Graph\Beta\Generated\Models\GovernanceRequest;
+use Microsoft\Graph\Beta\Generated\Models\RequestStatus;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

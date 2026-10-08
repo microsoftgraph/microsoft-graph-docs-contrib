@@ -18,7 +18,13 @@ const _case = {
   assignedTo: 'john.doe@contoso.com',
   priority: 'high',
   dueDateTime: '2026-06-29T17:54:43Z',
-  closingNotes: 'Follow up with the account owner.'
+  closingNotes: 'Follow up with the account owner.',
+  customFields: {
+    'Customer impact': {
+      '@odata.type': '#microsoft.graph.security.caseManagement.customFieldStringValue',
+      value: 'Multiple executive mailboxes affected'
+    }
+  }
 };
 
 await client.api('/security/caseManagement/cases/{caseId}')
