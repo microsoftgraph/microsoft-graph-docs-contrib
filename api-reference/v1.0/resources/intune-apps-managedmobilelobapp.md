@@ -41,8 +41,8 @@ Inherits from [managedApp](../resources/intune-apps-managedapp.md)
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
-|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|The Application's availability. This property is read-only. Inherited from [managedApp](../resources/intune-apps-managedapp.md). Possible values are: `global`, `lineOfBusiness`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). The possible values are: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|The Application's availability. This property is read-only. Inherited from [managedApp](../resources/intune-apps-managedapp.md). The possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune-apps-managedapp.md)|
 |committedContentVersion|String|The internal committed content version.|
 |fileName|String|The name of the main Lob application file.|

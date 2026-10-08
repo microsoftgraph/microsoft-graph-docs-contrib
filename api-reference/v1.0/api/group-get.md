@@ -17,7 +17,7 @@ Get the properties and relationships of a [group](../resources/group.md) object.
 
 This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that aren't_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and aren't returned in the `$select` query.
 
-> **Note:** This request might have replication delays for groups that were recently created, updated, or deleted.
+> **Note:** This request might have replication delays for groups that were recently created, updated, or deleted. Learn more in [Designing for eventual consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -192,7 +192,7 @@ Here's an example of a GET request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315?$select=accessType,allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenConversationsCount,unseenCount,unseenMessagesCount
 ```
 
 # [C#](#tab/csharp)
@@ -241,16 +241,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(accessType,allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenConversationsCount,unseenCount,unseenMessagesCount)/$entity",
     "id": "02bd9fd6-8f93-4758-87c3-1fb73740a315",
+    "accessType": "private",
     "allowExternalSenders": false,
     "autoSubscribeNewMembers": false,
     "isSubscribedByMail": false,
-    "unseenCount": 3
+    "unseenConversationsCount": 3,
+    "unseenCount": 3,
+    "unseenMessagesCount": 5
 }
 ```
 
-### Example 4: Check if the management of a group is restricted
+### Example 3: Check if the management of a group is restricted
 
 The following example shows how to check whether the management of a group is restricted.
 

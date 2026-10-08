@@ -46,8 +46,11 @@ If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
-### Request
+### Example 1
+
+#### Request
 The following example shows how to get a custom property named `clientUniquieId`.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -64,7 +67,9 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0
 
 ---
 
-### Response
+---
+
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -82,7 +87,8 @@ Content-type: application/json
 }
 
 ```
-### Request
+### Example 2
+#### Request
 The following example shows how to get all the custom properties of a **fileStorageContainer**.
 # [HTTP](#tab/http)
 <!-- {
@@ -97,6 +103,8 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-filestoragecontainer-customproperty-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

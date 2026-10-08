@@ -24,6 +24,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |:---|:---|:---|
 |[Create](../api/backuprestoreroot-post-sharepointrestoresessions.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md)|Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md).|
 |[List](../api/sharepointrestoresession-list-siterestoreartifacts.md)|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|List the [siteRestoreArtifact](../resources/siterestoreartifact.md) objects for a [sharePointRestoreSession](../resources/sharepointrestoresession.md) for the tenant.|
+|[List granularSiteRestoreArtifacts](../api/sharepointrestoresession-list-granularsiterestoreartifacts.md)|[granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) collection|Get a list of the [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) objects and their properties.|
 |[Update](../api/sharepointrestoresession-update.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md)|Update the properties of a [sharePointRestoreSession](../resources/sharepointrestoresession.md) object.|
 
 ## Properties
@@ -39,7 +40,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this restore session.|
 |restoreJobType|[restoreJobType](../resources/enums.md#restorejobtype-values)|Indicates whether the restore session was created normally or by a bulk job.|
 |restoreSessionArtifactCount|[restoreSessionArtifactCount](../resources/restoresessionartifactcount.md)|The number of metadata artifacts that belong to this restore session.|
-|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of restore artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
+|status|[restoreSessionStatus](../resources/sharepointrestoresession.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of restore artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. You must use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
 ### restoreSessionStatus values
 
@@ -57,6 +58,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|granularSiteRestoreArtifacts|[granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) collection|A collection of browse session ID and item key details that can be used to restore SharePoint files and folders.|
 |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|A collection of restore points and destination details that can be used to restore SharePoint sites.|
 |siteRestoreArtifactsBulkAdditionRequests|[siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) collection|A collection of SharePoint site URLs and destination details that can be used to restore SharePoint sites.|
 

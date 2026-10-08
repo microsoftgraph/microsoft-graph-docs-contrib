@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-The **plannerPlanContextDetailsCollection** resource represents the collection of external contexts to which a plan is linked. This resource is an open type and is part of the [plannerPlanDetails](plannerplandetails.md) object. The property name in the property-value pair is an app-specific identifier of the context; the value is the [plannerPlanContextDetails](plannerplancontextdetails.md) object.
+The **plannerPlanContextDetailsCollection** resource represents the collection of external contexts to which a plan is linked. This resource is an open type that allows additional properties beyond those documented here and is part of the [plannerPlanDetails](plannerplandetails.md) object. The property name in the property-value pair is an app-specific identifier of the context; the value is the [plannerPlanContextDetails](plannerplancontextdetails.md) object.
 
 
 ## Properties

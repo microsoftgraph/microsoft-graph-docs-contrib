@@ -29,6 +29,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|cloudFirewallPolicies|[microsoft.graph.networkaccess.cloudFirewallPolicy](../resources/networkaccess-cloudfirewallpolicy.md) collection|A collection of cloud firewall policies that define rules for managing network traffic through the Global Secure Access services.|
 |connectivity|[microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md)|Connectivity represents all the connectivity components in Global Secure Access.|
 |filteringPolicies|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) collection|A filtering policy defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile.|
 |filteringProfiles|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) collection|A filtering profile associates network access policies with Microsoft Entra ID Conditional Access policies, so that access policies can be applied to users and groups.|
@@ -39,6 +40,7 @@ None.
 |tenantStatus|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Represents the status of the Global Secure Access services for the tenant.|
 |tls|[microsoft.graph.networkaccess.tlsTermination](../resources/networkaccess-tlstermination.md)|A container for tenant-level TLS inspection settings for Global Secure Access. |
 |tlsInspectionPolicies|[microsoft.graph.networkaccess.tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) collection|Allows you to configure TLS termination for your organization's network traffic through Global Secure Access. |
+
 
 ## JSON representation
 The following JSON representation shows the resource type.

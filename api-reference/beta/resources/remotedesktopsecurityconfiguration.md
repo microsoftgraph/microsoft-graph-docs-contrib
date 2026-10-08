@@ -1,11 +1,11 @@
 ---
 title: "remoteDesktopSecurityConfiguration resource type"
 description: "Represents the configuration for a remoteDesktopSecurityConfiguration object on the servicePrincipal to enable the Microsoft Entra Remote Desktop Services (RDS) authentication protocol and single sign-on (SSO) for clients connecting over RDP to devices that belong to target device groups."
-author: "SanDeo-MSFT"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
-ms.date: 05/23/2024
+ms.date: 01/02/2026
 ---
 
 # remoteDesktopSecurityConfiguration resource type
@@ -23,6 +23,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List](../api/serviceprincipal-list-remotedesktopsecurityconfiguration.md)|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) collection|Get a list of the [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) objects and their properties.|
 |[Create](../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md)|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md)|Create a new [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on the servicePrincipal object.|
 |[Get](../api/remotedesktopsecurityconfiguration-get.md)|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md)|Read the properties and relationships of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on the servicePrincipal object.|
 |[Update](../api/remotedesktopsecurityconfiguration-update.md)|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md)|Update the properties of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on the servicePrincipal object.|
@@ -38,6 +39,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|approvedClientApps|[approvedClientApp](../resources/approvedclientapp.md) collection|The collection of approved client apps that are associated with the RDS configuration. Supports `$expand`.|
 |targetDeviceGroups|[targetDeviceGroup](../resources/targetdevicegroup.md) collection|The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.|
 
 ## JSON representation

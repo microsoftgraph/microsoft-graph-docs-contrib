@@ -10,11 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 import (
 	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphsecurity "github.com/microsoftgraph/msgraph-sdk-go/security"
 	  //other-imports
 )
 
+headers := abstractions.NewRequestHeaders()
+headers.Add("Prefer", "return=representation")
+
+configuration := &graphsecurity.SecureScoreControlProfilesItemRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
+}
 requestBody := graphmodels.NewSecureScoreControlProfile()
 vendorInformation := graphmodels.NewSecurityVendorInformation()
 provider := "SecureScore"
@@ -26,15 +34,9 @@ vendorInformation.SetSubProvider(&subProvider)
 vendor := "Microsoft"
 vendorInformation.SetVendor(&vendor) 
 requestBody.SetVendorInformation(vendorInformation)
-additionalData := map[string]interface{}{
-	"assignedTo" : "", 
-	"comment" : "control is reviewed", 
-	"state" : "Reviewed", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-secureScoreControlProfiles, err := graphClient.Security().SecureScoreControlProfiles().BySecureScoreControlProfileId("secureScoreControlProfile-id").Patch(context.Background(), requestBody, nil)
+secureScoreControlProfiles, err := graphClient.Security().SecureScoreControlProfiles().BySecureScoreControlProfileId("secureScoreControlProfile-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

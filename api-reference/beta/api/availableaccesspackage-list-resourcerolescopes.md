@@ -16,12 +16,17 @@ Namespace: microsoft.graph
 
 Get a list of the [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) objects associated with an [availableAccessPackage](../resources/availableaccesspackage.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "availableaccesspackage_list_resourcerolescopes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/availableaccesspackage-list-resourcerolescopes-permissions.md)]
+
+> [!NOTE]
+> This API call follows Entitlement Management scope rules. It only returns resource role scopes that the signed‑in user is allowed to see or request. Being an admin doesn’t override these checks—admins also need to be in scope for the access package to retrieve its resource role scopes.
 
 ## HTTP request
 
@@ -55,6 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_availableaccesspackage_resourcerolescopes"
@@ -64,6 +70,35 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/availableAccessPackages/360fa7de-90be-48dc-a2ce-fc40094a93dd/resourceRoleScopes
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-availableaccesspackage-resourcerolescopes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-availableaccesspackage-resourcerolescopes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-availableaccesspackage-resourcerolescopes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-availableaccesspackage-resourcerolescopes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-availableaccesspackage-resourcerolescopes-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-availableaccesspackage-resourcerolescopes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-availableaccesspackage-resourcerolescopes-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

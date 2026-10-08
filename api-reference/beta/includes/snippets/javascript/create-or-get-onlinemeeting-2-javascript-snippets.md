@@ -29,7 +29,8 @@ const onlineMeeting = {
             }
         ]
     },
-    subject: 'Create a meeting with customId provided'
+    subject: 'Create a meeting with customId provided',
+    meetingType: 'scheduled'
 };
 
 await client.api('/me/onlineMeetings/createOrGet')

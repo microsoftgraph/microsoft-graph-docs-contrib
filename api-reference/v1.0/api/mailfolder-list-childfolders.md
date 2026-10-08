@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Get the folder collection under the specified folder. You can use the `.../me/mailFolders` shortcut to get the top-level
 folder collection and navigate to another folder.
 
-By default, this operation does not return hidden folders. Use a query parameter _includeHiddenFolders_ to include them in the response.
+By default, this operation doesn't return hidden folders. Use a query parameter _includeHiddenFolders_ to include them in the response.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -107,7 +107,9 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdk
 ---
 
 ##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -181,7 +183,9 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdk
 ---
 
 ##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

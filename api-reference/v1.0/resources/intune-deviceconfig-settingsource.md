@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 |:---|:---|:---|
 |id|String||
 |displayName|String||
-|sourceType|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|. Possible values are: `deviceConfiguration`, `deviceIntent`.|
+|sourceType|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|. The possible values are: `deviceConfiguration`, `deviceIntent`.|
 
 ## Relationships
 None

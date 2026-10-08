@@ -21,7 +21,7 @@ Contains the details to connect a [Cloud PC](../resources/cloudpc.md).
 |:---|:---|:---|
 |cloudPcId|String|The unique identifier of the Cloud PC.|
 |cloudPcLaunchUrl|String|The connect URL of the Cloud PC.|
-|windows365SwitchCompatibilityFailureReasonType|[windows365SwitchCompatibilityFailureReasonType](../resources/cloudpclaunchdetail.md#windows365switchcompatibilityfailurereasontype-values)|Indicates the reason the Cloud PC isn't compatible with Windows 365 Switch. Possible values are: `osVersionNotSupported`, `hardwareNotSupported`, `unknownFutureValue`. `osVersionNotSupported` indicates that the user needs to update their Cloud PC operating system version. `hardwareNotSupported` indicates that the Cloud PC needs more CPUs or RAM to support the functionality.|
+|windows365SwitchCompatibilityFailureReasonType|[windows365SwitchCompatibilityFailureReasonType](../resources/cloudpclaunchdetail.md#windows365switchcompatibilityfailurereasontype-values)|Indicates the reason the Cloud PC isn't compatible with Windows 365 Switch. The possible values are: `osVersionNotSupported`, `hardwareNotSupported`, `unknownFutureValue`. `osVersionNotSupported` indicates that the user needs to update their Cloud PC operating system version. `hardwareNotSupported` indicates that the Cloud PC needs more CPUs or RAM to support the functionality.|
 |windows365SwitchCompatible|Boolean|Indicates whether the Cloud PC supports switch functionality. If the value is `true`, it supports switch functionality; otherwise, `false`.|
 
 ### windows365SwitchCompatibilityFailureReasonType values

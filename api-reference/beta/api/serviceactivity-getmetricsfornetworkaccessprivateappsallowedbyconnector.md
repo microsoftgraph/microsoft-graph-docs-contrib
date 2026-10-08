@@ -58,6 +58,7 @@ If successful, this function returns a `200 OK` response code and a [serviceActi
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceactivitythis.getmetricsfornetworkaccessprivateappsallowedbyconnector"
@@ -66,6 +67,32 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForNetworkAccessPrivateAppsAllowedByConnector(inclusiveIntervalStartDateTime=2023-01-01T00:00:00Z,exclusiveIntervalEndDateTime=2023-01-01T00:20:00Z,aggregationIntervalInMinutes=10)
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceactivitythisgetmetricsfornetworkaccessprivateappsallowedbyconnector-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceactivitythisgetmetricsfornetworkaccessprivateappsallowedbyconnector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceactivitythisgetmetricsfornetworkaccessprivateappsallowedbyconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceactivitythisgetmetricsfornetworkaccessprivateappsallowedbyconnector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/serviceactivitythisgetmetricsfornetworkaccessprivateappsallowedbyconnector-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceactivitythisgetmetricsfornetworkaccessprivateappsallowedbyconnector-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

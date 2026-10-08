@@ -1,16 +1,19 @@
 ---
-title: "hostSecurityState resource type"
+title: "hostSecurityState resource type (deprecated)"
 description: "Contains stateful information about the host (including devices, computers, and so on)."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: security
 doc_type: resourcePageType
 ms.date: 04/03/2024
+ROBOTS: NOINDEX
 ---
 
-# hostSecurityState resource type
+# hostSecurityState resource type (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Contains stateful information about the host (including devices, computers, and so on).
 

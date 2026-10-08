@@ -33,8 +33,8 @@ This derived type inherits from the [authenticationMethod](authenticationmethod.
 |displayName|String|The name of the device on which Platform Credential is registered.|
 |id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
 |lastUsedDateTime|DateTimeOffset|The date and time the authentication method was last used by the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
-|keyStrength|authenticationMethodKeyStrength|Key strength of this Platform Credential key. Possible values are: `normal`, `weak`, `unknown`.|
-|platform|authenticationMethodPlatform|Platform on which this Platform Credential key is present. Possible values are: `unknown`, `windows`, `macOS`,`iOS`, `android`, `linux`.|
+|keyStrength|authenticationMethodKeyStrength|Key strength of this Platform Credential key. The possible values are: `normal`, `weak`, `unknown`.|
+|platform|authenticationMethodPlatform|Platform on which this Platform Credential key is present. The possible values are: `unknown`, `windows`, `macOS`,`iOS`, `android`, `linux`.|
 
 ## Relationships
 |Relationship|Type|Description|

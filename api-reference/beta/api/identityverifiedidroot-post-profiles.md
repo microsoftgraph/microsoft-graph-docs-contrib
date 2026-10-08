@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Create a new [verifiedIdProfile](../resources/verifiedidprofile.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "identityverifiedidroot-post-profiles-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "identityverifiedidroot_post_profiles" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityverifiedidroot-post-profiles-permissions.md)]
 
 [!INCLUDE [rbac-verifiedid](../includes/rbac-for-apis/rbac-verifiedid-write.md)]
@@ -54,15 +52,17 @@ You can specify the following properties when creating a **verifiedIdProfile**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String| Display name for the verified Id profile. Required.|
 |description|String| Description for the verified Id profile. Required.|
+|faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)| Set of properties configuring Entra Verified ID Face Check behavior. Required.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the profile was last modified. Optional.|
+|mobileDriversLicenseConfiguration|[mobileDriversLicenseConfiguration](../resources/mobiledriverslicenseconfiguration.md)|Configuration for accepting mobile driver's licenses. Optional.|
+|name|String| Display name for the verified Id profile. Required.|
+|priority|Int32|Defines profile processing priority if multiple profiles are configured. Optional.|
+|selfServiceIssuance|[verifiedIdSelfServiceIssuance](../resources/verifiedidselfserviceissuance.md)|Configuration for self-service issuance. Optional.|
 |state|verifiedIdProfileState| Enablement state for the profile. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
-|verifierDid|String| Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange.  Required.|
-|priority|Int32|Defines profile processing priority if multiple profiles are configured.  Optional.|
 |verifiedIdProfileConfiguration|[verifiedIdProfileConfiguration](../resources/verifiedidprofileconfiguration.md)| Set of properties expressing the accepted issuer, claims binding, and credential type. Required.|
-|faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)| Set of properties configuring Entra Verified ID Face Check behavior.  Required.|
-|verifiedIdUsageConfigurations|[verifiedIdUsageConfiguration](../resources/verifiedidusageconfiguration.md) collection| Collection defining the usage purpose for the profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`. Required.|
+|verifiedIdUsageConfigurations|[verifiedIdUsageConfiguration](../resources/verifiedidusageconfiguration.md) collection| Collection defining the usage purpose for the profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`, `verification`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `verification`. Required.|
+|verifierDid|String| Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange. Required.|
 
 
 ## Response
@@ -92,7 +92,9 @@ Content-Type: application/json
   "verifierDid": "did:web:eu.did-dev.contoso.io",
   "priority": 0,
   "verifiedIdProfileConfiguration": {
+      "methodType": "tenantCustomCredential",
       "type": "verifiedIdentity",
+      "manifestUrl": "https://verifiedid.contoso.com/manifest",
       "acceptedIssuer": "did:web:eu.did-dev.contoso.io",
       "claimBindingSource": "directory",
       "claimBindings": [
@@ -110,12 +112,22 @@ Content-Type: application/json
       "isEnabled": true,
       "sourcePhotoClaimName": "portrait"
   },
+  "mobileDriversLicenseConfiguration": {
+      "acceptedRegions": [
+          "region-code"
+      ],
+      "documentStandard": "document-standard"
+  },
   "verifiedIdUsageConfigurations": [
       {
           "isEnabledForTestOnly": true,
-          "purpose": "recovery"
+          "purpose": "verification"
       }
-  ]
+  ],
+  "selfServiceIssuance": {
+      "isEnabled": true,
+      "issuanceUrl": "https://verifiedid.contoso.com/issue"
+  }
 }
 ```
 
@@ -137,6 +149,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-verifiedidprofile-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-verifiedidprofile-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -169,7 +185,9 @@ Content-Type: application/json
     "verifierDid": "did:web:eu.did-dev.contoso.io",
     "priority": 0,
     "verifiedIdProfileConfiguration": {
+        "methodType": "tenantCustomCredential",
         "type": "verifiedIdentity",
+        "manifestUrl": "https://verifiedid.contoso.com/manifest",
         "acceptedIssuer": "did:web:eu.did-dev.contoso.io",
         "claimBindingSource": "directory",
         "claimBindings": [
@@ -187,12 +205,22 @@ Content-Type: application/json
         "isEnabled": true,
         "sourcePhotoClaimName": "portrait"
     },
+    "mobileDriversLicenseConfiguration": {
+        "acceptedRegions": [
+            "region-code"
+        ],
+        "documentStandard": "document-standard"
+    },
     "verifiedIdUsageConfigurations": [
         {
             "isEnabledForTestOnly": true,
-            "purpose": "onboarding"
+            "purpose": "verification"
         }
-    ]
+    ],
+    "selfServiceIssuance": {
+        "isEnabled": true,
+        "issuanceUrl": "https://verifiedid.contoso.com/issue"
+    }
 }
 ```
 

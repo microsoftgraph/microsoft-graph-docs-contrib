@@ -1,7 +1,7 @@
 ---
 title: "Update certificateBasedAuthPki"
 description: "Update the properties of a certificateBasedAuthPki object."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

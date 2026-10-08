@@ -22,11 +22,11 @@ Inherits from [trainingSetting](../resources/trainingsetting.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|trainingAssignedTo collection|A user collection that specifies to whom the training should be assigned. Possible values are: `none`, `allUsers`, `clickedPayload`, `compromised`, `reportedPhish`, `readButNotClicked`, `didNothing`, `unknownFutureValue`. |
+|assignedTo|trainingAssignedTo collection|A user collection that specifies to whom the training should be assigned. The possible values are: `none`, `allUsers`, `clickedPayload`, `compromised`, `reportedPhish`, `readButNotClicked`, `didNothing`, `unknownFutureValue`. |
 |description|String|The description of the custom training setting.|
 |displayName|String|The display name of the custom training setting.|
 |durationInMinutes|String|Training duration.|
-|settingType|trainingSettingType|Training setting type. Possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`. Inherited from [trainingSetting](../resources/trainingsetting.md).|
+|settingType|trainingSettingType|Training setting type. The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`. Inherited from [trainingSetting](../resources/trainingsetting.md).|
 |url|String|The training URL.|
 
 ## Relationships

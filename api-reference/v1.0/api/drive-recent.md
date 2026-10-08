@@ -13,7 +13,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 > [!CAUTION]
-> The **recent** API is deprecated and will stop returning data after November, 2027.
+> The **recent** API is deprecated and will operate in a degraded state until November, 2026, after which it stops returning data.
 
 List a set of items recently used by the signed-in user.
 This collection includes items that are in the user's drive and items they have access to from other drives.
@@ -41,11 +41,13 @@ GET /me/drive/recent
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
-This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive has recently accessed.
+This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive recently accessed.
 
 ## Examples
 
 ### Request
+
+THe following example shows the request. 
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "view-recent-files" } -->
@@ -84,7 +86,11 @@ GET /me/drive/recent
 
 ---
 
+---
+
 ### Response
+
+THe following example shows the response. 
 
 <!-- {
     "blockType": "response",

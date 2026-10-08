@@ -108,7 +108,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teamwork",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teamwork",
     "id": "teamwork",
     "isTeamsEnabled": true,
     "region": "Americas"

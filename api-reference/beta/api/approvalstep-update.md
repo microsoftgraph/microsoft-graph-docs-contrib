@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply approve or deny decision on an [approvalStep](../resources/approvalStep.md) object.
+Apply an approve or deny decision on an [approvalStep](../resources/approvalstep.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -80,7 +80,7 @@ The following table shows the properties that are required for this method.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-| reviewResult | String | Decision of the approver. Possible values are: `Approve`, `Deny`.|
+| reviewResult | String | Decision of the approver. The possible values are: `Approve`, `Deny`.|
 | justification | String | Justification related to the approver's decision. |
 
 

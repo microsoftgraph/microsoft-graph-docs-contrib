@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An on-premises application published via [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) is represented by an [application](application.md) object and its associated **onPremisesPublishing** property. Application Proxy provides secure remote access to on-premises applications.
+An on-premises application published via [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) is represented by an [application](../resources/application.md) object and its associated **onPremisesPublishing** property. Application Proxy provides secure remote access to on-premises applications.
 
 An **onPremisesPublishing** object represents the set of properties for configuring Application Proxy for an on-premises [application](../resources/application.md). 
 
@@ -29,12 +29,13 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |alternateUrl|String| If you're configuring a traffic manager in front of multiple app proxy applications, this user-friendly URL points to the traffic manager. |
 |applicationServerTimeout|String| The duration the connector waits for a response from the backend application before closing the connection. Possible values are `default`, `long`. When set to default, the backend application timeout has a length of 85 seconds. When set to long, the backend timeout is increased to 180 seconds. Use `long` if your server takes more than 85 seconds to respond to requests or if you are unable to access the application and the error status is "Backend Timeout". Default value is `default`. |
 |applicationType|String| System-defined value that indicates whether this application is an application proxy configured application. The possible values are `quickaccessapp` and `nonwebapp`. Read-only. |
-|externalAuthenticationType|externalAuthenticationType| Details the pre-authentication setting for the application. Pre-authentication enforces that users must authenticate before accessing the app. Pass through doesn't require authentication. Possible values are: `passthru`, `aadPreAuthentication`. |
+|externalAuthenticationType|externalAuthenticationType| Details the pre-authentication setting for the application. Pre-authentication enforces that users must authenticate before accessing the app. Pass through doesn't require authentication. The possible values are: `passthru`, `aadPreAuthentication`. |
 |externalUrl|String| The published external URL for the application. For example, `https://intranet-contoso.msappproxy.net/`.  |
 |internalUrl|String| The internal url of the application. For example, `https://intranet/`. |
 |isAccessibleViaZTNAClient|Boolean|Indicates whether the application is accessible via a [Global Secure Access client](/entra/global-secure-access/concept-clients) on a managed device.|
 |isBackendCertificateValidationEnabled|Boolean| Indicates whether backend SSL certificate validation is enabled for the application. For all new Application Proxy apps, the property is set to `true` by default. For all existing apps, the property is set to `false`. |
 |isContinuousAccessEvaluationEnabled|Boolean| Indicates whether [continuous access evaluation](/entra/identity/conditional-access/concept-continuous-access-evaluation) is enabled for Application Proxy application. For all Application Proxy apps, the property is set to `true` by default.|
+|isDeviceAccessEnabled|Boolean|Indicates whether the Microsoft Entra Private Access application is accessible or available in device access mode. `false` by default.|
 |isDnsResolutionEnabled|Boolean|Indicates Microsoft Entra Private Access should handle DNS resolution. `false` by default.|
 |isHttpOnlyCookieEnabled|Boolean| Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers. Set this value to `true` to have Application Proxy cookies include the HTTPOnly flag in the HTTP response headers. If using Remote Desktop Services, set this value to False. Default value is `false`. |
 |isOnPremPublishingEnabled|Boolean| Indicates if the application is currently being published via Application Proxy or not. This is preset by the system. Read-only. |
@@ -46,6 +47,7 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |onPremisesApplicationSegments (deprecated)| [onPremisesApplicationSegment](onpremisesapplicationsegment.md) collection| Represents the application segment collection for an on-premises wildcard application. This property is deprecated and will stop returning data on June 1, 2023. Use **segmentsConfiguration** instead. |
 |segmentsConfiguration|[segmentConfiguration](segmentconfiguration.md)| Represents the collection of application segments for an on-premises wildcard application that's published through Microsoft Entra application proxy.|
 |singleSignOnSettings|[onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)| Represents the single sign-on configuration for the on-premises application. |
+|trafficRoutingMethod|trafficRoutingMethod| Indicates how traffic is distributed across multiple connectors in a connector group. The possible values are: `none`, `random`, `sessionPersistence`, `performance` (Not implemented), `unknownFutureValue`. |
 |useAlternateUrlForTranslationAndRedirect|Boolean|Indicates whether the application should use **alternateUrl** instead of **externalUrl**.|
 |verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Details of the certificate associated with the application when a custom domain is in use. `null` when using the default domain. Read-only.|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| The associated key credential for the custom domain used. |
@@ -78,6 +80,7 @@ The following JSON representation shows the resource type.
   "isAccessibleViaZTNAClient": "Boolean",
   "isBackendCertificateValidationEnabled": true,
   "isContinuousAccessEvaluationEnabled": "Boolean",
+  "isDeviceAccessEnabled": "Boolean",
   "isDnsResolutionEnabled": "Boolean",
   "isHttpOnlyCookieEnabled": true,
   "isOnPremPublishingEnabled": true,
@@ -89,6 +92,7 @@ The following JSON representation shows the resource type.
   "onPremisesApplicationSegments":[{"@odata.type":"microsoft.graph.onPremisesApplicationSegment"}],
   "segmentsConfiguration":{"@odata.type":"microsoft.graph.segmentConfiguration"},
   "singleSignOnSettings": {"@odata.type": "microsoft.graph.onPremisesPublishingSingleSignOn"},
+  "trafficRoutingMethod": "String",
   "useAlternateUrlForTranslationAndRedirect": "Boolean",
   "verifiedCustomDomainCertificatesMetadata": {"@odata.type": "microsoft.graph.verifiedCustomDomainCertificatesMetadata"},
   "verifiedCustomDomainKeyCredential": {"@odata.type": "microsoft.graph.keyCredential"},

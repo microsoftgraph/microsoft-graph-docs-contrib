@@ -66,7 +66,7 @@ The following example shows a request.
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/languages/en/overridesPages/selfasserted1_1/$value
+DELETE https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/languages/en/overridesPages/selfasserted1_1/$value
 ```
 
 # [C#](#tab/csharp)

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents the segment configurations that are allowed for an **on-premises wildcard application** published through Microsoft Entra application proxy and accessed via HTTP.
 
-Inherits from [applicationSegment](applicationsegment.md).
+Inherits from [applicationSegment](../resources/applicationsegment.md).
 
 ## Methods
 

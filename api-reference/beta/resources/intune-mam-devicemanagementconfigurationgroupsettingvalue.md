@@ -24,7 +24,7 @@ Inherits from [deviceManagementConfigurationSettingValue](../resources/intune-ma
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|children|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md) collection|Collection of child setting instances contained within this GroupSetting|
+|children|[deviceManagementConfigurationSettingInstance](../resources/intune-mam-devicemanagementconfigurationsettinginstance.md) collection|Collection of child setting instances contained within this GroupSetting|
 
 ## Relationships
 None

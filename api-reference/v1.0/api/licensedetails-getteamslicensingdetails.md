@@ -56,7 +56,7 @@ The following example shows a request.
   "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/2f39ffba-51ca-4d2d-a66f-a020a83ce208/licenseDetails/getTeamsLicensingDetails
+GET https://graph.microsoft.com/v1.0/users/2f39ffba-51ca-4d2d-a66f-a020a83ce208/licenseDetails/getTeamsLicensingDetails
 ```
 
 # [C#](#tab/csharp)
@@ -104,7 +104,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.teamsLicensingDetails",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.teamsLicensingDetails",
     "hasTeamsLicense": true
 }
 ```

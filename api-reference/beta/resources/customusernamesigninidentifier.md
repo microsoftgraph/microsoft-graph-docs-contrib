@@ -3,6 +3,7 @@ title: "customUsernameSignInIdentifier resource type"
 description: "Represents a custom username sign-in identifier that allows users to authenticate with custom patterns like account numbers, member IDs, or employee identifiers."
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
+toc.title: Custom username sign-in identifier
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -22,11 +23,9 @@ Inherits from [signInIdentifierBase](../resources/signinidentifierbase.md).
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get](../api/customusernamesigninidentifier-get.md)|[customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md)|Read the properties and relationships of [customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md) object.|
-|[Update](../api/customusernamesigninidentifier-update.md)|[customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md)|Update the properties of a customUsernameSignInIdentifier object.|
-|[Delete](../api/customusernamesigninidentifier-delete.md)|None|Delete a customUsernameSignInIdentifier object.|
+None.
+
+For the list of API operations for managing this resource type, see the [signInIdentifierBase](../resources/signInIdentifierBase.md) resource type.
 
 ## Properties
 

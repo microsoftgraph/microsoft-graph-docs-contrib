@@ -44,7 +44,7 @@ Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). The possible values are: `notPublished`, `processing`, `published`.|
 |appUrl|String|The web app URL. This property cannot be PATCHed.|
 |useManagedBrowser|Boolean|Whether or not to use managed browser. This property is only applicable for Android and IOS.|
 

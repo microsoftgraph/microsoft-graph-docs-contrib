@@ -54,7 +54,7 @@ If successful, this function returns an `200 OK` response code and an [education
 For details, see [Using delta query](/graph/delta-query-overview). For example requests, see [Get incremental changes for users](/graph/delta-query-users).
 
 > [!IMPORTANT]
-> educationClass deltas do not include deleted classes.
+> educationClass deltas don't include deleted classes.
 
 ## Examples
 

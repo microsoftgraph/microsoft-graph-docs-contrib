@@ -65,7 +65,7 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}/learningContent
 |duration|Duration|The duration of the learning content in seconds. The value is represented in ISO 8601 format for durations. Optional.|
 |externalId|String|Unique external content ID for the learning content. Required.|
 |format|String|The format of the learning content. For example, `Course`, `Video`, `Book`, `Book Summary`, `Audiobook Summary`. Optional.|
-|level|Level|The difficulty level of the learning content. Possible values are: `Beginner`, `Intermediate`, `Advanced`. Optional.|
+|level|Level|The difficulty level of the learning content. The possible values are: `Beginner`, `Intermediate`, `Advanced`. Optional.|
 |isActive|Boolean|Indicates whether the content is active or not. Inactive content doesn't show up in the UI. The default value is `true`. Optional.|
 |isPremium|Boolean|Indicates whether the learning content requires the user to sign-in on the learning provider platform or not. The default value is `false`. Optional.|
 |isSearchable|Boolean|Indicates whether the learning content is searchable or not. The default value is `true`. Optional.|

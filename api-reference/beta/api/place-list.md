@@ -2,7 +2,7 @@
 title: "List place objects"
 description: "Get a collection of the specified type of place objects defined in a tenant."
 author: tiwarisakshi02
-ms.date: 06/11/2025
+ms.date: 08/31/2026
 ms.localizationpriority: medium
 ms.subservice: outlook
 doc_type: apiPageType
@@ -149,7 +149,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.building
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-buildings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -234,7 +234,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.floor
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-floors-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -310,7 +310,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.section
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-sections-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -383,7 +383,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.desk
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-desks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -494,6 +494,12 @@ Content-Type: application/json
       "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
       "emailAddress": "cf100@contoso.com",
       "displayName": "Conf Room 100",
+      "customProperties": {
+        "@odata.type": "microsoft.graph.stringDictionary",
+        "campusCode": "SEA",
+        "costCenter": "CC-2048"
+      },
+      "lastUpdatedTime": "2026-08-31T15:24:00Z",
       "address": {
         "street": "4567 Main Street",
         "city": "Buffalo",
@@ -595,7 +601,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.workspace
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-workspaces-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -980,4 +986,3 @@ Content-Type: application/json
   ]
 }
 ```
-

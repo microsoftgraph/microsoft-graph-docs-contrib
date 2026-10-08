@@ -58,6 +58,8 @@ windowsSetting.SetLocale(&locale)
 requestBody.SetWindowsSetting(windowsSetting)
 provisioningType := graphmodels.DEDICATED_CLOUDPCPROVISIONINGTYPE 
 requestBody.SetProvisioningType(&provisioningType) 
+userExperienceType := graphmodels.CLOUDPC_CLOUDPCUSEREXPERIENCETYPE 
+requestBody.SetUserExperienceType(&userExperienceType) 
 userSettingsPersistenceConfiguration := graphmodels.NewCloudPcUserSettingsPersistenceConfiguration()
 userSettingsPersistenceEnabled := true
 userSettingsPersistenceConfiguration.SetUserSettingsPersistenceEnabled(&userSettingsPersistenceEnabled) 

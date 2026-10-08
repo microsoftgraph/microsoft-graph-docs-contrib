@@ -33,7 +33,7 @@ Inherits from [dataSource](../resources/security-datasource.md).
 |displayName|String|The display name of the unified group, which is the name of the group.|
 |holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **unifiedGroupSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 |id|String|The ID of the **unifiedGroupSource**. This isn't the ID of the actual group.|
-|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. The possible values are: `mailbox`, `site`.|
 
 
 ### sourceType values

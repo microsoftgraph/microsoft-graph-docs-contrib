@@ -17,6 +17,7 @@ An API to check validity of the endpoint and and authentication configuration fo
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
+- [onVerifiedIdClaimValidationCustomExtension](../resources/onverifiedidclaimvalidationcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

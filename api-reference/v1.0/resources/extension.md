@@ -2,7 +2,7 @@
 title: "extension resource type"
 description: "An abstract type to support the OData v4 open type openTypeExtension."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ms.date: 04/03/2024

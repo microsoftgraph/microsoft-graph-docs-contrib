@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a date range over which a recurring event. This shared object is used to define the recurrence of [access reviews](accessreviewscheduledefinition.md), [calendar events](event.md), and [access package assignments](accesspackageassignment.md) in Microsoft Entra ID.
+In a [patternedRecurrence](../resources/patternedrecurrence.md) object, the **range** property defines the date range over which an event recurs. This shared object is also used for [calendar events](../resources/event.md) and [access package assignments](../resources/accesspackageassignment.md) in Microsoft Entra ID.
 
-You can specify the date range for a recurring event in one of 3 ways depending on your scenario. While you must always specify a **startDate** value for the date range, you can specify a recurring event that ends by a specific date, or that doesn't end, or that ends after a specific number of occurrences. Note that the actual occurrences within the date range always follow the recurrence pattern that you specify for the recurring event. A recurring event is always defined by its [recurrencePattern](recurrencepattern.md) (how frequently the event repeats), and its **recurrenceRange** (for how long the event repeats).
+You can specify the date range for a recurring event in one of 3 ways depending on your scenario. While you must always specify a **startDate** value for the date range, you can specify a recurring event that ends by a specific date, or that doesn't end, or that ends after a specific number of occurrences. Note that the actual occurrences within the date range always follow the recurrence pattern that you specify for the recurring event. A recurring event is always defined by its [recurrencePattern](../resources/recurrencepattern.md) (how frequently the event repeats), and its **recurrenceRange** (for how long the event repeats).
 
 
 ## Properties
@@ -27,7 +27,7 @@ You can specify the date range for a recurring event in one of 3 ways depending 
 |numberOfOccurrences|Int32|The number of times to repeat the event. Required and must be positive if **type** is `numbered`.|
 |recurrenceTimeZone|String |Time zone for the **startDate** and **endDate** properties. Optional. If not specified, the time zone of the event is used.|
 |startDate|Date|The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the **start** property of the recurring [event](event.md). Required.|
-|type|String|The recurrence range. Possible values are: `endDate`, `noEnd`, `numbered`. Required.|
+|type|String|The recurrence range. The possible values are: `endDate`, `noEnd`, `numbered`. Required.|
 
 Use the **type** property to specify the different types of **recurrenceRange**. Note the required properties for each type, as described in the following table.
 

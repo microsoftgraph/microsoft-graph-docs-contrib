@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 var result = graphClient.identityGovernance().appConsent().appConsentRequests().byAppConsentRequestId("{appConsentRequest-id}").userConsentRequests().filterByCurrentUserWithOn("reviewer").get(requestConfiguration -> {
-	requestConfiguration.queryParameters.filter = " (status eq 'Completed')";
+	requestConfiguration.queryParameters.filter = "(status eq 'Completed')";
 });
 
 

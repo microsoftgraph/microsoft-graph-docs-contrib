@@ -12,7 +12,7 @@ ms.date: 10/01/2024
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [servicePrincipal](../resources/serviceprincipal.md) object.
+Retrieve the properties and relationships of a [servicePrincipal](../resources/serviceprincipal.md) object. This API can be used to get [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) objects as well by their ID.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -62,7 +62,7 @@ Providing the **Accept-Language** header with a supported language code, such as
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [servicePrincipal](../resources/serviceprincipal.md) or [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
 ## Examples
 
@@ -136,6 +136,7 @@ Content-type: application/json
   "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
   "appRoleAssignmentRequired":true,
   "appRoles": [],
+  "createdByAppId": "748fe028-bb3d-4f2c-a015-4789781fe0f1",
   "disabledByMicrosoftStatus": null,
   "displayName": "My app instance in tenant",
   "endpoints": [],
@@ -228,7 +229,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,appId,displayName,appRoles,publishedPermissionScopes)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals(id,appId,displayName,appRoles,publishedPermissionScopes)/$entity",
     "id": "7408235b-7540-4850-82fe-a5f15ed019e2",
     "appId": "00000003-0000-0000-c000-000000000000",
     "displayName": "Microsoft Graph",
@@ -374,7 +375,7 @@ Content-type: application/json
 }
 ```
 
-If there are no custom security attributes assigned to the service principal or if the calling principal does not have access, the response will look like:
+If there are no custom security attributes assigned to the service principal or if the calling principal doesn't have access, the response will look like:
 
 ```http
 HTTP/1.1 200 OK

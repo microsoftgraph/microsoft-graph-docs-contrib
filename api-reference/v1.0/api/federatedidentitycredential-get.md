@@ -1,6 +1,6 @@
 ---
 title: "Get federatedIdentityCredential"
-description: "Read the properties and relationships of a federatedIdentityCredential object."
+description: "Read the properties and relationships of a federatedIdentityCredential object assigned to an application."
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 Namespace: microsoft.graph
 
 
-Read the properties and relationships of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.
+Read the properties and relationships of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object assigned to an [application](../resources/application.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -32,8 +32,11 @@ You can also address the federated identity credential with either its **id** or
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+
 GET /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 GET /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
@@ -55,8 +58,6 @@ If successful, this method returns a `200 OK` response code and a [federatedIden
 ## Examples
 
 ### Request
-
-
 
 # [HTTP](#tab/http)
 <!-- {

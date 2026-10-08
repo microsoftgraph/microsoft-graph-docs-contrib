@@ -30,4 +30,5 @@ Supported platform types for policies.
 |windows10AndLater|6|Windows 10 and later.|
 |androidWorkProfile|7|AndroidWorkProfile.|
 |windows10XProfile|8|Windows10XProfile.|
+|linux|10|Linux.|
 |all|100|All platforms.|

@@ -58,7 +58,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body. 
+
+When the result set spans multiple pages, the response includes an **@odata.nextLink** property with a URL for retrieving the next page of results. For details about how to page through results, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Examples
 
@@ -133,17 +135,23 @@ Content-type: application/json
       "displayName": "General",
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
       "membershipType": "standard",
+      "layoutType": null,
       "isArchived": false
     }
   ]
 }
 ```
 
+> [!NOTE]
+> This API has a [known issue](/graph/known-issues#layouttype-property-returns-null-when-listing-all-channels) related to listing channels. The **layoutType** property returns `null` when listing channels. To get the layout type of a specific channel, use the [Get channel](../api/channel-get.md) API.
+
 ### Example 2: List all private channels
+
+The following example shows how to list all private channels.
 
 #### Request
 
-The following example shows a request to list all private channels.
+The following example shows a request.
 
 
 
@@ -212,6 +220,7 @@ Content-type: application/json
       "displayName": "General",
       "description": "test private team",
       "membershipType": "private",
+      "layoutType": null,
       "isArchived": false
     }
   ]
@@ -295,6 +304,7 @@ Content-length: 262
             "email": "",
             "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
             "membershipType": "shared",
+            "layoutType": null,
             "moderationSettings": null,
             "isArchived": false
         }

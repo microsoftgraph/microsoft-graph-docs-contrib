@@ -20,11 +20,7 @@ Perform delta patch operations on [group identity mappings](../resources/sharepo
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointgroupidentitymapping-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "sharepointgroupidentitymapping_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointgroupidentitymapping-update-permissions.md)]
 
 ## HTTP request
@@ -50,6 +46,7 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationGroupMappings
 
 |Property|Type|Description|
 |:---|:---|:---|
+|deleted|[deleted](../resources/deleted.md)|Indicates that an identity mapping was deleted successfully. Optional. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |groupType|sharePointIdentityMappingGroupType|Indicates the type of group. The possible values are: `none`, `regularGroup`, `m365Group`, `unknownFutureValue`.|
 |sourceGroupIdentity|[identity](../resources/identity.md)|The identity information of the source group.|
 |sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
@@ -66,6 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request that includes both updates and removals using the **@removed** annotation.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_sharepointgroupidentitymapping"
@@ -103,6 +101,12 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-sharepointgroupidentitymapping-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following example shows the response.
@@ -138,6 +142,9 @@ Content-Type: application/json
       "id": "AQAAAAIAAABhYWFhYWFhYS1hYWFhLWFhYWEtYWFhYS1hYWFhYWFhYWFhYWE",
       "sourceGroupIdentity": {
         "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+      },
+      "deleted": {
+        "state": "deleted"
       }
     }
   ]

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Initiate an export from a **reviewSet**.  For details, see [Export documents from a review set in Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -55,12 +57,12 @@ The following table shows the parameters that can be used with this action.
 |description|String| Description of the export |
 |azureBlobContainer|String| When exporting to your own Azure storage account, this is the container URL. |
 |azureBlobToken|String| When exporting to your own Azure storage account, SAS token for the container URL. |
-|exportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`.|
+|exportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |Specifies options that control the format of the export. The possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| Options that control file structure and packaging of the export. The possible values are: `none`, `directory`, `pst`.|
 
 ## Response
 
-If the export is started successfully, this action returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [caseExportOperation](../resources/ediscovery-caseexportoperation.md) that was created to handle the export. Check the status of the export operation by making a GET request to the location, when successfully completed, the [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) will change to `succeeded`.
+If the export is started successfully, this action returns a `202 Accepted` response code. The response contains a `Location` header, which contains the location of the [caseExportOperation](../resources/ediscovery-caseexportoperation.md) that was created to handle the export. Check the status of the export operation by making a GET request to the location, when successfully completed, the [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) changes to `succeeded`.
 
 ## Examples
 

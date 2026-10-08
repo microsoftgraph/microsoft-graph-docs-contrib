@@ -56,7 +56,7 @@ This method supports optional OData query parameters to help customize the respo
    - You can additionally track other changes like ownership and more by selecting any [group relationship](../resources/group.md#relationships) of type **directoryObject collection**.
    - Only the **id** property of the related resource is returned.
 - There's limited support for `$filter`:
-  - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
+  - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
 
 ## Request headers
 
@@ -100,7 +100,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 - If the property has changed, the new value is included in the response. This includes properties being set to null value.
 - If the property hasn't changed, the property isn't included in the response at all. (Different from the default behavior.)
 
-> **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-3) below.
+> **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it doesn't affect how the delta query is executed. See the [third example](#request-3) below.
 
 ### Example
 

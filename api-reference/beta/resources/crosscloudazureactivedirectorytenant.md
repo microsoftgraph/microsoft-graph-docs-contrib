@@ -14,16 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the identity sources of a [connectedOrganization](connectedOrganization.md) object. The `@odata.type` value `#microsoft.graph.crossCloudAzureActiveDirectoryTenant` indicates that this type identifies another Microsoft Entra tenant in a different cloud as an identity source for a connected organization.
-
+Used in the **identitySources** property of a [connectedOrganization](../resources/connectedorganization.md) object. The `@odata.type` value `#microsoft.graph.crossCloudAzureActiveDirectoryTenant` indicates that this type identifies another Microsoft Entra tenant in a different cloud as an identity source for a connected organization.
 
 ## Properties
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| cloudInstance | String | The ID of the cloud where the tenant is located, one of `microsoftonline.com`, `microsoftonline.us` or `partner.microsoftonline.cn`. Read only. |
-| displayName |String | The name of the Microsoft Entra tenant. Read only. |
-| tenantId |String | The ID of the Microsoft Entra tenant. Read only. |
+| cloudInstance | String | The ID of the cloud where the tenant is located, one of `microsoftonline.com`, `microsoftonline.us` or `partner.microsoftonline.cn`. Read-only. |
+| displayName |String | The name of the Microsoft Entra tenant. Read-only. |
+| tenantId |String | The ID of the Microsoft Entra tenant. Read-only. |
 
 ## Relationships
 

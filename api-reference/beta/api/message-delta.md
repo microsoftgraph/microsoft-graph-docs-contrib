@@ -75,6 +75,18 @@ _id_ property is always returned.
   an `$orderby` expression, the return order isn't guaranteed.
 - There's no support for `$search`.
 
+> [!NOTE]
+> Delta queries for messages can return change events that don't match the filter conditions specified in the initial request.  
+> These include:
+>
+> - `@removed` entries with `"reason": "deleted"` when an item is deleted or moved from the folder.
+> - Read/unread state changes.
+>
+> These events do **not** originate from changes to the message itself. They are emitted as part of the folder‑level synchronization process that delta tokens rely on.  
+> Delta tracking operates at the **collection** level, not the message‑level, and therefore these events are **not filtered out**.  
+>
+> Clients should be prepared to handle such entries to maintain an accurate and fully synchronized local view of the message collection.
+
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
@@ -86,8 +98,11 @@ _id_ property is always returned.
 
 If successful, this method returns a `200 OK` response code and [message](../resources/message.md) collection object in the response body.
 
+> [!NOTE]
+> When the target folder or messages physically reside in an auxiliary (autoexpanded) archive mailbox, this API might return a redirect response that points to the correct mailbox endpoint. For details, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
+
 ## Example
-##### Request
+### Request
 The following example shows how to make a single **delta** function call, and limit the maximum number of messages
 in the response body to 2.
 
@@ -113,7 +128,7 @@ Prefer: odata.maxpagesize=2
 
 ---
 
-##### Response
+### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_
 (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header).
 Respectively, they indicate whether you should continue with the round or you finished
@@ -168,5 +183,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

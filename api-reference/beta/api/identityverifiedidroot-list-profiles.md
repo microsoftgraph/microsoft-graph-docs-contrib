@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# List verifiedIdProfile objects    
+# List verifiedIdProfile objects
 
 Namespace: microsoft.graph
 
@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Get a list of the [verifiedIdProfile](../resources/verifiedidprofile.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "identityverifiedidroot-list-profiles-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "identityverifiedidroot_list_profiles" } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityverifiedidroot-list-profiles-permissions.md)]
 
 [!INCLUDE [rbac-verifiedid](../includes/rbac-for-apis/rbac-verifiedid-write.md)]
@@ -41,7 +39,7 @@ GET /identity/verifiedId/profiles
 
 ## Optional query parameters
 
-None 
+None
 
 ## Request headers
 
@@ -92,6 +90,10 @@ GET https://graph.microsoft.com/beta/identity/verifiedId/profiles
 [!INCLUDE [sample-code](../includes/snippets/php/list-verifiedidprofile-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-verifiedidprofile-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-verifiedidprofile-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -123,7 +125,9 @@ Content-Type: application/json
             "verifierDid": "did:web:eu.did-dev.contoso.io",
             "priority": 1,
             "verifiedIdProfileConfiguration": {
+                "methodType": "tenantCustomCredential",
                 "type": "verifiedIdentity",
+                "manifestUrl": "https://verifiedid.contoso.com/manifest",
                 "acceptedIssuer": "did:web:eu.did-dev.contoso.io",
                 "claimBindingSource": "directory",
                 "claimBindings": [
@@ -135,18 +139,32 @@ Content-Type: application/json
                         "sourceAttribute": "Last name",
                         "verifiedIdClaim": "vc.credentialSubject.lastName"
                     }
-                ]
+                ],
+                "claimValidation": {
+                    "isEnabled": false,
+                    "customExtensionId": ""
+                }
             },
             "faceCheckConfiguration": {
                 "isEnabled": true,
                 "sourcePhotoClaimName": "portrait"
             },
+            "mobileDriversLicenseConfiguration": {
+                "acceptedRegions": [
+                    "region-code"
+                ],
+                "documentStandard": "document-standard"
+            },
             "verifiedIdUsageConfigurations": [
                 {
                     "isEnabledForTestOnly": true,
-                    "purpose": "recovery"
+                    "purpose": "verification"
                 }
-            ]
+            ],
+            "selfServiceIssuance": {
+                "isEnabled": true,
+                "issuanceUrl": "https://verifiedid.contoso.com/issue"
+            }
         }
     ]
 }

@@ -34,7 +34,7 @@ Represents on-premises published resource. A tenant administrator can publish va
 |:-------------|:------------|:------------|
 |displayName|String| Display Name of the publishedResource.|
 |id|String| The object id of the publishedResource. Read-only.|
-|publishingType|onPremisesPublishingType| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `intunePfx`, `oflineDomainJoin`, `unknownFutureValue`, `privateAccess`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `privateAccess`.|
+|publishingType|onPremisesPublishingType| The possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `intunePfx`, `oflineDomainJoin`, `unknownFutureValue`, `privateAccess`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `privateAccess`.|
 |resourceName|String|Name of the publishedResource.|
 
 ## Relationships

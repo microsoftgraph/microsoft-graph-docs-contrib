@@ -19,13 +19,13 @@ Namespace: microsoft.graph
 Setting instance within policy
 
 
-Inherits from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)
+Inherits from [deviceManagementConfigurationSettingInstance](../resources/intune-mam-devicemanagementconfigurationsettinginstance.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|settingDefinitionId|String|Setting Definition Id Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
-|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
+|settingDefinitionId|String|Setting Definition Id Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-mam-devicemanagementconfigurationsettinginstance.md)|
+|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-mam-devicemanagementconfigurationsettinginstance.md)|
 |choiceSettingValue|[deviceManagementConfigurationChoiceSettingValue](../resources/intune-mam-devicemanagementconfigurationchoicesettingvalue.md)|Choice setting value|
 
 ## Relationships

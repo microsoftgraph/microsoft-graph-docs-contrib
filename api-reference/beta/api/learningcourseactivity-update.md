@@ -53,7 +53,7 @@ The following table lists the properties that you can change for an assigned lea
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional.|
-|assignmentType|assignmentType|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
+|assignmentType|assignmentType|The assignment type for the course activity. The possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
 |dueDateTime|DateTimeOffset|Due date for the course activity. Optional.|
@@ -66,7 +66,7 @@ The following table lists the properties that you can change for a self-initiate
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
-|status|courseStatus|The status of the course activity. Possible values are: `notStarted`, `inProgress`, `completed`. Required.|
+|status|courseStatus|The status of the course activity. The possible values are: `notStarted`, `inProgress`, `completed`. Required.|
 |startedDateTime|DateTimeOffset|The date and time when the self-initiated course was started by the learner.|
 
 

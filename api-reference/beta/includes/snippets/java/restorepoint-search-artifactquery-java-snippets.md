@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.solutions.backuprestore.restorepoints.search.SearchPostRequestBody searchPostRequestBody = new com.microsoft.graph.beta.solutions.backuprestore.restorepoints.search.SearchPostRequestBody();
 ArtifactQuery artifactQuery = new ArtifactQuery();
-artifactQuery.setQueryExpression("(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '2024-09-21T08:20:00.0000000Z')");
+artifactQuery.setQueryExpression("(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true')");
 artifactQuery.setArtifactType(RestorableArtifact.Message);
 searchPostRequestBody.setArtifactQuery(artifactQuery);
 LinkedList<String> protectionUnitIds = new LinkedList<String>();
@@ -19,6 +19,8 @@ searchPostRequestBody.setProtectionUnitIds(protectionUnitIds);
 TimePeriod protectionTimePeriod = new TimePeriod();
 OffsetDateTime startDateTime = OffsetDateTime.parse("2021-01-01T00:00:00Z");
 protectionTimePeriod.setStartDateTime(startDateTime);
+OffsetDateTime endDateTime = OffsetDateTime.parse("2021-01-30T00:00:00Z");
+protectionTimePeriod.setEndDateTime(endDateTime);
 searchPostRequestBody.setProtectionTimePeriod(protectionTimePeriod);
 searchPostRequestBody.setRestorePointPreference(RestorePointPreference.Oldest);
 var result = graphClient.solutions().backupRestore().restorePoints().search().post(searchPostRequestBody);

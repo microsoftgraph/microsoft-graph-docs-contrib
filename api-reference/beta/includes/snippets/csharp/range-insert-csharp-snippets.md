@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Names.Item.RangeNames
 
 var requestBody = new InsertPostRequestBody
 {
-	Shift = "shift-value",
+	Shift = "Down",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

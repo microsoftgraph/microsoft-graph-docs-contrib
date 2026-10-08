@@ -60,6 +60,7 @@ You can specify the following properties when you create a [virtualEventWebinar]
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar ends. |
+| isRegistrationRequired |Boolean| Indicates whether attendee registration is enabled for the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar starts. |
 
@@ -105,6 +106,7 @@ Accept-Language: en-US
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
     ],
+    "isRegistrationRequired": true,
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     }
@@ -168,6 +170,7 @@ Accept-Language: en-US
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     },
+    "isRegistrationRequired": true,
     "externalEventInformation": []
 }
 ```

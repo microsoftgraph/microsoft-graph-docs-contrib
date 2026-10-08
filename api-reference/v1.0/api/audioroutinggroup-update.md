@@ -40,7 +40,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | receivers | String collection | The target participants in the audioRoutingGroup. |
-| routingMode | String | Possible values are: `oneToOne`, `multicast`. |
+| routingMode | String | The possible values are: `oneToOne`, `multicast`. |
 | sources | String collection | The source participant in the audioRoutingGroup. |
 
 ## Response

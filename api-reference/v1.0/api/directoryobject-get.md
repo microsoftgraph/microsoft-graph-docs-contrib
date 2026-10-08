@@ -1,7 +1,7 @@
 ---
 title: "Get directoryObject"
 description: "Retrieve the properties and relationships of directoryObject object."
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a connection object.
+Read the properties and relationships of a [connection](../resources/networkaccess-connection.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -49,7 +49,7 @@ This method supports the `$select` OData query parameters [OData query parameter
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -154,7 +154,10 @@ Content-Type: application/json
     "userPrincipalName": "johndoe@contoso.com",
     "transportProtocol": "tcp",
     "networkProtocol": "ipv4",
-    "popProcessingRegion": "westus2"
+    "popProcessingRegion": "westus2",
+    "homeTenantId": "253ba0e4-b4b0-4755-8cd8-0f5267fade6a",
+    "crossTenantAccessType": "b2bCollaboration",
+    "deviceJoinType": "microsoftEntraJoined"
   }
 }
 ```

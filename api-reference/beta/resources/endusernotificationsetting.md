@@ -22,9 +22,9 @@ Base type of [noTrainingNotificationSetting](../resources/notrainingnotification
 
 |Property|Type|Description|
 |:---|:---|:---|
-|notificationPreference|endUserNotificationPreference|Notification preference. Possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
+|notificationPreference|endUserNotificationPreference|Notification preference. The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`.|
 |positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|Positive reinforcement detail.|
-|settingType|endUserNotificationSettingType|End user notification type. Possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
+|settingType|endUserNotificationSettingType|End user notification type. The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`.|
 
 ## Relationships
 

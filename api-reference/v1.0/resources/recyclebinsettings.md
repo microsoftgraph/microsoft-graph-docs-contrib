@@ -12,8 +12,6 @@ ms.date: 12/10/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents settings for the [recycleBin](recyclebin.md) resource type.
 
 ## Properties

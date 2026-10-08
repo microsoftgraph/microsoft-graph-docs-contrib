@@ -32,6 +32,7 @@ The following resource support open extensions:
 + [driveItem](driveitem.md)
 + [event](/graph/api/resources/event) for both user and group calendars
 + [message](/graph/api/resources/message)
++ [note](note.md)
 + [organization](/graph/api/resources/organization)
 + [post](/graph/api/resources/post)
 + [site](site.md)
@@ -78,7 +79,7 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md)[contact](contact.md), [driveItem](driveitem.md), [event](event.md), [message](message.md), [post](post.md), [site](site.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an **openTypeExtension** object. | Create an **openTypeExtension** object in an existing or new resource instance.|
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md), [contact](contact.md), [driveItem](driveitem.md), [event](event.md), [message](message.md), [note](note.md), [post](post.md), [site](site.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an **openTypeExtension** object. | Create an **openTypeExtension** object in an existing or new resource instance.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read the properties and relationships of an **openTypeExtension** object.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update an **openTypeExtension** object. |
 |[Delete](../api/opentypeextension-delete.md) | None |Delete an **openTypeExtension** object. |
@@ -88,7 +89,7 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |extensionName|String|A unique text identifier for an open type data extension. Required.|
-|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only. <br/><br/> The **id** must be defined during the *Create* operation via one of the following ways: <ul><li> Explicitly define the **id** property in the request body. <li> Define an **extensionName** property in the request body, and Microsoft Graph automatically assigns the same value to the **id** property. <ul><li> In subsequent updates, you can change the **extensionName** property value to one that's different from the **id** value. <li>In subsequent updates, specifying only the **id** property in the request body automatically deletes the **extensionName** property from the open extension.</ul></ul>|
+|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only. <br/><br/> The **id** must be defined during the *Create* operation via one of the following ways: <ul><li> Explicitly define the **id** property in the request body. </li><li> Define an **extensionName** property in the request body, and Microsoft Graph automatically assigns the same value to the **id** property. <ul><li> In subsequent updates, you can change the **extensionName** property value to one that's different from the **id** value. </li><li>In subsequent updates, specifying only the **id** property in the request body automatically deletes the **extensionName** property from the open extension.</li></ul></li></ul>|
 
 ## Relationships
 

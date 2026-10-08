@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the d
 |reportScheduleName|String|Name of the schedule|
 |subject|String|Subject of the scheduled reports that are delivered|
 |emails|String collection|Emails to which the scheduled reports are delivered|
-|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequency of scheduled report delivery. Possible values are: `none`, `daily`, `weekly`, `monthly`.|
+|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequency of scheduled report delivery. The possible values are: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Time that the delivery of the scheduled reports starts|
 |endDateTime|DateTimeOffset|Time that the delivery of the scheduled reports ends|
 |userId|String|The Id of the User who created the report|
@@ -61,7 +61,7 @@ The following table shows the properties that are required when you create the d
 |filter|String|Filters applied on the report|
 |select|String collection|Columns selected from the report|
 |orderBy|String collection|Ordering of columns in the report|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the scheduled report. Possible values are: `csv`, `pdf`.|
+|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the scheduled report. The possible values are: `csv`, `pdf`.|
 
 
 

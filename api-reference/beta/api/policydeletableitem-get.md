@@ -20,7 +20,7 @@ Read the properties and relationships of a [policyDeletableItem](../resources/po
 - [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
 - [namedLocation](../resources/namedlocation.md)
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -32,8 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "permissions",
   "name": "policydeletableitem-get-permissions",
   "requestUrls": ["GET /policies/deletedItems/crossTenantPartners/{id}", "GET /policies/deletedItems/crossTenantSyncPolicyPartners/{id}"],
-  "mergePermissions": true 
-  
+  "mergePermissions": true
+
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-get-permissions.md)]
@@ -46,8 +46,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "permissions",
   "name": "policydeletableitem-get-permissions",
   "requestUrls": ["GET /identity/conditionalAccess/deletedItems/policies/{id}", "GET /identity/conditionalAccess/deletedItems/namedLocations/{id}"],
-  "mergePermissions": true 
-  
+  "mergePermissions": true
+
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-get-2-permissions.md)]
@@ -147,6 +147,10 @@ GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/0
 [!INCLUDE [sample-code](../includes/snippets/php/get-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -168,7 +172,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantPartners/$entity",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
   "deletedDateTime": "2025-06-18T22:58:04Z",
   "displayName": null,
@@ -233,6 +236,10 @@ GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicy
 [!INCLUDE [sample-code](../includes/snippets/php/get-policydeletableitem-crosstenantidentitysyncpolicypartner-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-policydeletableitem-crosstenantidentitysyncpolicypartner-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-policydeletableitem-crosstenantidentitysyncpolicypartner-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -254,11 +261,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantSyncPolicyPartners/$entity",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
   "displayName": null,
   "deletedDateTime": "2025-06-18T23:11:01Z",
   "externalCloudAuthorizedApplicationId": null,
+  "groupSyncInbound": null,
   "userSyncInbound": null
 }
 ```
@@ -297,6 +304,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/pol
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-policydeletableitem-conditionalaccesspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-policydeletableitem-conditionalaccesspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -421,6 +432,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/nam
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-policydeletableitem-namedlocation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-policydeletableitem-namedlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

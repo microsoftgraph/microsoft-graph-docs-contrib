@@ -19,7 +19,7 @@ Get the device recommendation reports for Cloud PCs, such as the usage category 
 >[!CAUTION] 
 > This API is deprecated and will stop returning data on July 01, 2025. Going forward, use the [retrieveCloudPcRecommendationReports](../api/cloudpcreports-retrievecloudpcrecommendationreports.md) API.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -56,7 +56,7 @@ The following table shows the parameters that can be used with this action.
 |filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |groupBy|String collection|Specifies how to group the reports. If used, must have the same content as the **select** parameter.|
 |orderBy|String collection|Specifies how to sort the reports.|
-|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md#cloudpcreportname-values)|Specifies the report name. Supports a subset of the values for **cloudPcReportName**. Supported values are: `cloudPcUsageCategoryReports`.|
+|reportName|[cloudPcReportName](../resources/cloudpcreportname.md)|Specifies the report name. Supports only `cloudPcUsageCategoryReports` for **cloudPcReportName**.|
 |search|String|Specifies a String to search.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. |
 |skip|Int32|Number of records to skip.|

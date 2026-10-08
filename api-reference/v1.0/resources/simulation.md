@@ -16,7 +16,7 @@ Represents an attack simulation training campaign in a tenant.
 
 Attack simulation and training is a service available as part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). This service lets tenant users experience a realistic benign phishing attack and learn from it. The service enables tenant administrators to simulate, assign trainings, and read derived insights into online behaviors of users in the phishing simulations. The service provides attack simulation reports that help tenants identify security knowledge gaps, so that they can further train their users to decrease their susceptibility to attacks.
 
-The attack simulation and training API enables tenant administrators to list launched **simulation** exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
+The attack simulation and training APIS enable tenant administrators to list launched **simulation** exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -24,6 +24,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
+|[List simulation users](../api/usersimulationdetails-list.md)|[userSimulationDetails](../resources/usersimulationdetails.md) collection|Get a list of users of a tenant and their online actions in an attack simulation campaign.|
 |[Create simulation](../api/attacksimulationroot-post-simulation.md)|[simulation](../resources/simulation.md)|Create a new [simulation](../resources/simulation.md) object.|
 |[Get simulation](../api/simulation-get.md)|[simulation](../resources/simulation.md)|Get an attack simulation campaign for a tenant.|
 |[Update simulation](../api/simulation-update.md)|[simulation](../resources/simulation.md)|Update the properties of a [simulation](../resources/simulation.md) object.|
@@ -35,8 +36,8 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attackTechnique|[simulationAttackTechnique](#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`, `oAuthConsentGrant`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `oAuthConsentGrant`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
-|attackType|[simulationAttackType](#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
+|attackTechnique|[simulationAttackTechnique](#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. The possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`, `oAuthConsentGrant`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `oAuthConsentGrant`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
+|attackType|[simulationAttackType](#simulationattacktype-values)|Attack type of the attack simulation and training campaign. Supports `$filter` and `$orderby`. The possible values are: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
 |automationId|String|Unique identifier for the attack simulation automation.|
 |completionDateTime|DateTimeOffset|Date and time of completion of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign.|
@@ -53,9 +54,9 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|Date and time of the most recent modification of the attack simulation and training campaign.|
 |launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |oAuthConsentAppDetail|[oAuthConsentAppDetail](../resources/oauthconsentappdetail.md)|OAuth app details for the OAuth technique.|
-|payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
+|payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. The possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
-|status|[simulationStatus](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
+|status|[simulationStatus](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. The possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `canceled`, `excluded`, `unknownFutureValue`.|
 |trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Details about the training settings for a simulation.|
 
 
@@ -63,13 +64,13 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description |
 |:---|:---|
-|unknown| The simulation status is not defined. |
+|unknown| The simulation status isn't defined. |
 |draft| The simulation is in draft mode. |
 |running| The simulation is running. |
 |scheduled| The simulation is scheduled. |
-|succeeded| The simulation has succeeded. |
-|failed| The simulation has failed. |
-|cancelled| The simulation is cancelled. |
+|succeeded| The simulation succeeded. |
+|failed| The simulation failed. |
+|canceled| The simulation is canceled. |
 |excluded| The simulation is excluded. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
@@ -100,7 +101,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description |
 |:---|:---|
-|unknown| The simulation content status is not defined. |
+|unknown| The simulation content status isn't defined. |
 |draft| The simulation content status is in draft state. |
 |ready| The simulation content status is in ready state. |
 |archive| The simulation content status is archive state. |
@@ -112,7 +113,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description |
 |:---|:---|
-|unknown| The simulation content source is not defined. |
+|unknown| The simulation content source isn't defined. |
 |global| The simulation content source is global. |
 |tenant| The simulation content source is tenant. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |

@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The Android store account enterprise settings identifier|
 |bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Bind status of the tenant with the Google EMM API. Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
+|managedGooglePlayEnterpriseType|[managedGooglePlayEnterpriseType](../resources/intune-androidforwork-managedgoogleplayenterprisetype.md)|The managed Google Play enterprise type associated with a tenant. Possible values are: unspecified, managedGoogleDomain, managedGooglePlayAccountsEnterprise. Default is: unspecified. Read-Only. Possible values are: `enterpriseTypeUnspecified`, `managedGoogleDomain`, `managedGooglePlayAccountsEnterprise`, `unknownFutureValue`.|
 |lastAppSyncDateTime|DateTimeOffset|Last completion time for app sync|
 |lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|Last application sync result. Possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
 |ownerUserPrincipalName|String|Owner UPN that created the enterprise|
@@ -77,11 +78,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccountEnterpriseSettings
 Content-type: application/json
-Content-length: 1002
+Content-length: 1063
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
   "bindStatus": "bound",
+  "managedGooglePlayEnterpriseType": "managedGoogleDomain",
   "lastAppSyncDateTime": "2016-12-31T23:57:22.8606813-08:00",
   "lastAppSyncStatus": "credentialsNotValid",
   "ownerUserPrincipalName": "Owner User Principal Name value",
@@ -115,12 +117,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1115
+Content-Length: 1176
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
   "id": "b71357c9-57c9-b713-c957-13b7c95713b7",
   "bindStatus": "bound",
+  "managedGooglePlayEnterpriseType": "managedGoogleDomain",
   "lastAppSyncDateTime": "2016-12-31T23:57:22.8606813-08:00",
   "lastAppSyncStatus": "credentialsNotValid",
   "ownerUserPrincipalName": "Owner User Principal Name value",

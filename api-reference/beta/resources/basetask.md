@@ -45,12 +45,12 @@ This is a base type inherited by the [task](task.md) resource.
 |displayName|String|The name of the task. |
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished. |
 |id|String|Unique identifier for the task. By default, this value will not change if a task is moved from one list to another. |
-|importance|importance|The importance of the task. Possible values are: `low`, `normal`, `high`.  The possible values are: `low`, `normal`, `high`.|
+|importance|importance|The importance of the task. The possible values are: `low`, `normal`, `high`.  The possible values are: `low`, `normal`, `high`.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'. |
 |viewpoint|[taskViewpoint](../resources/taskviewpoint.md)|Properties that are personal to a user such as **reminderDateTime** and **categories**. |
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task. |
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone when the task is to begin. |
-|status|taskStatus_v2|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`,`unknownFutureValue`. |
+|status|taskStatus_v2|Indicates the state or progress of the task. The possible values are: `notStarted`, `inProgress`, `completed`,`unknownFutureValue`. |
 
 ## Relationships
 |Relationship|Type|Description|

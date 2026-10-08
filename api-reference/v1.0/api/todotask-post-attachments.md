@@ -50,7 +50,7 @@ When you create a file attachment, include `"@odata.type": "#microsoft.graph.tas
 |:---|:---|:---|
 |contentBytes|Binary|The base64-encoded contents of the file. Required.|
 |contentType|String|The content type of the attachment. |
-|name|String|The name of the text displayed under the icon that represents the embedded attachment. This does not need to be the actual file name. Required. |
+|name|String|The name of the text displayed under the icon that represents the embedded attachment. This doesn't need to be the actual file name. Required. |
 |size|Int32|The size in bytes of the attachment. |
 
 ## Response

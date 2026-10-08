@@ -12,8 +12,6 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Specifies the configuration settings for meeting chat restrictions.
 
 ## Properties

@@ -46,7 +46,7 @@ The body can contain HTML placed directly in the request body, or it can contain
 If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -100,7 +100,7 @@ Content-Type:application/pdf
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

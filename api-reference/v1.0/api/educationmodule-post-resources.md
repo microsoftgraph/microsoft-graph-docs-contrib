@@ -75,9 +75,9 @@ If successful, this method returns a `201 Created` response code and an [educati
 
 ## Examples
 
-## Example 1: Create an educationLinkResource
+### Example 1: Create an educationLinkResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -130,7 +130,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -175,9 +175,9 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Create an educationWordResource
+### Example 2: Create an educationWordResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -232,7 +232,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -277,9 +277,9 @@ Content-type: application/json
 }
 ```
 
-## Example 3: Create an educationFileResource
+### Example 3: Create an educationFileResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -334,7 +334,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -379,9 +379,9 @@ Content-type: application/json
 }
 ```
 
-## Example 4: Create an educationExcelResource
+### Example 4: Create an educationExcelResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -436,7 +436,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -481,9 +481,9 @@ Content-type: application/json
 }
 ```
 
-## Example 5: Create an educationPowerPointResource
+### Example 5: Create an educationPowerPointResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -536,7 +536,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -581,9 +581,9 @@ Content-type: application/json
 }
 ```
 
-## Example 6: Create an educationMediaResource
+### Example 6: Create an educationMediaResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -636,7 +636,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -681,9 +681,9 @@ Content-type: application/json
 }
 ```
 
-## Example 7: Create an educationChannelResource
+### Example 7: Create an educationChannelResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -736,7 +736,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -781,9 +781,9 @@ Content-type: application/json
 }
 ```
 
-## Example 8: Create an educationLinkedAssignmentResource
+### Example 8: Create an educationLinkedAssignmentResource
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -836,7 +836,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 

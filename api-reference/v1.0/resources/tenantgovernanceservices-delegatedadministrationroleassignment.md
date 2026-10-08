@@ -1,0 +1,48 @@
+---
+title: "delegatedAdministrationRoleAssignment resource type"
+description: "Represents a role assignment configuration for delegated administration in a governance relationship."
+author: "hafowler"
+ms.date: 08/13/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
+ms.localizationpriority: medium
+ms.subservice: "entra-tenant-governance"
+doc_type: resourcePageType
+---
+
+# delegatedAdministrationRoleAssignment resource type
+
+Namespace: microsoft.graph
+
+Represents a role assignment configuration for delegated administration in a governance relationship. Specifies which security group in the governing tenant should be assigned which roles in the governed tenant. This resource is defined in the **delegatedAdministrationRoleAssignment ** property of [tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md).
+
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|groupDisplayName|String|The display name of the security group referenced by the **group** navigation property. Server-populated and read-only; returns `null` if the referenced group has been deleted.|
+|roleTemplates|[microsoft.graph.roleTemplate](../resources/tenantgovernanceservices-roletemplate.md) collection|A collection of role templates that define the roles to be assigned to the group in the governed tenant. |
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|group|[group](../resources/group.md)|The security group in the governing tenant that will receive the role assignments in the governed tenant. This group must be role-assignable.|
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.delegatedAdministrationRoleAssignment"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.delegatedAdministrationRoleAssignment",
+  "groupDisplayName": "String",
+  "roleTemplates": [
+    {
+      "@odata.type": "microsoft.graph.roleTemplate"
+    }
+  ]
+}
+```

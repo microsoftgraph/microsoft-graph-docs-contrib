@@ -1,7 +1,7 @@
 ---
 title: "List reprocessedRuns for a run"
 description: "Get a list of the reprocessed run objects and their properties for a lifecycle workflow."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.date: 09/04/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"

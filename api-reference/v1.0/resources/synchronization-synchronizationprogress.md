@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents the progress of a [synchronizationJob](synchronization-synchronizationjob.md) toward completion.
+Represents the **progress** of a [synchronizationJob](../resources/synchronization-synchronizationjob.md) toward completion.
 
 ## Properties
 

@@ -1,7 +1,7 @@
 ---
 title: "Delete crossTenantIdentitySyncPolicyPartner"
 description: "Delete the user synchronization policy for a partner-specific configuration."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

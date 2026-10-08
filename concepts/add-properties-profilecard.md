@@ -62,6 +62,8 @@ You can add any of these attributes to the profile card by configuring your [peo
 
 ## Configure profile card properties using the Microsoft Graph REST API
 
+Use the **annotations** and **directoryPropertyName** properties on **profileCardProperty** to configure profile card properties. You can also use the **isVisible** property to indicate whether the given directory property should be shown on a user’s profile card.
+
 ### Example
 
 The following example displays the `Alias` attribute on the profile card.
@@ -77,15 +79,16 @@ Content-Type: application/json
 
 > **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
-If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute is displayed on a user's profile card.
+If successful, the response returns a `201 Created` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute is displayed on a user's profile card.
 
 ``` http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+  "annotations": [],
   "directoryPropertyName": "Alias",
-  "annotations": []
+  "isVisible": true
 }
 ```
 
@@ -131,7 +134,6 @@ POST https://graph.microsoft.com/v1.0/admin/people/profileCardProperties
 Content-Type: application/json
 
 {
-  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
       "displayName": "Cost center",
@@ -142,7 +144,9 @@ Content-Type: application/json
         }
       ]
     }
-  ]
+  ],
+  "directoryPropertyName": "CustomAttribute1",
+  "isVisible": true
 }
 ```
 
@@ -150,16 +154,15 @@ Content-Type: application/json
 
 If a language isn't supported, the property name is shown with the default value.
 
-If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. In this example, you can assume that the profile card displays **Kostenstelle** for all users who set their language settings to German on the profile card. For all other users, **Cost center** is displayed on the profile card.
+If successful, the response returns a `201 Created` response code and a **profileCardProperty** object in the response body. In this example, you can assume that the profile card displays **Kostenstelle** for all users who set their language settings to German on the profile card. For all other users, **Cost center** is displayed on the profile card.
 
 #### Response
 
 ``` http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
       "displayName": "Cost center",
@@ -170,7 +173,9 @@ Content-type: application/json
         }
       ]
     }
-  ]
+  ],
+  "directoryPropertyName": "CustomAttribute1",
+  "isVisible": true
 }
 ```
 

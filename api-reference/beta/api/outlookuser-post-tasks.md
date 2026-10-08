@@ -54,7 +54,7 @@ In the request body, supply a JSON representation of [outlookTask](../resources/
 If successful, this method returns `201 Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows the use of the `Prefer: outlook.timezone` header. It creates a task, expresses **startDateTime** and **dueDateTime** in Eastern Standard Time (EST), and includes a `Prefer` header of Pacific Standard Time (PST).
 
 # [HTTP](#tab/http)
@@ -111,7 +111,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
-##### Response
+### Response
 The POST method ignores the time portion of **startDateTime** and **dueDateTime** in the request body and assumes the time to be always 
 midnight in the specified time zone (EST).
 

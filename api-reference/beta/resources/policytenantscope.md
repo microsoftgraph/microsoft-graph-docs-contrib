@@ -24,10 +24,12 @@ Inherits from [policyScopeBase](../resources/policyscopebase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activities|microsoft.graph.security.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Required.  This object is a multi-valued enumeration.|
+|activities|microsoft.graph.security.userActivityTypes|Specifies the user activities the calling application supports or is interested in. This flagged enumeration allows multiple members to be selected simultaneously. The possible values are: `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`, `contentFiltering`. The `contentFiltering` value represents evaluating application content against data loss prevention policies. Required.|
 |executionMode|microsoft.graph.security.executionMode|Policy execution mode at the tenant level.  Possible values are `evaluateInline` and `evaluateOffline`. Inherited from `policyScopeBase`. Required.|
+|locationExclusions|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations excluded from the tenant-level policy scope. When specified, the effective scope is the set of locations in **locations** minus the locations in **locationExclusions**. Inherited from `policyScopeBase`. Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations protected at the tenant level. Inherited from `policyScopeBase`. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|Enforcement actions at the tenant level. Inherited from `policyScopeBase`. Required.|
+|policyConfiguration|[policyConfiguration](../resources/policyconfiguration.md)|The effective configuration for policy evaluation scenarios. This property can be omitted or `null` when no configuration is available or applicable. Inherited from `policyScopeBase`.|
 |policyScope|[microsoft.graph.policyBinding](../resources/policybinding.md)|Specifies the users and groups included in or excluded from this tenant-level policy scope.|
 
 ## Relationships
@@ -48,6 +50,11 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.policyTenantScope",
   "activities": "String",
   "executionMode": "String",
+  "locationExclusions": [
+    {
+      "@odata.type": "microsoft.graph.policyLocation"
+    }
+  ],
   "locations": [
     {
       "@odata.type": "microsoft.graph.policyLocation"
@@ -58,6 +65,9 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.dlpActionInfo"
     }
   ],
+  "policyConfiguration": {
+    "@odata.type": "#microsoft.graph.policyConfiguration"
+  },
   "policyScope": {
     "@odata.type": "microsoft.graph.policyBinding"
   }

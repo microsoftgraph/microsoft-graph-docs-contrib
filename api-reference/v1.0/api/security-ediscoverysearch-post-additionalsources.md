@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverysearch_post_additionalsources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverysearch-post-additionalsources-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -153,7 +155,7 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/17011798-ca
 The following example shows the response.
 
 ```http
-HTTP/1.1 200 Created
+HTTP/1.1 201 Created
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/cases/ediscoveryCases('17011798-ca63-4282-9cb3-0086f1042bfc')/searches('2f5cc5a6-9728-4ba0-acfa-edce25e91244')/additionalSources/$entity",

@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and an [externa
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/directory/federationConfigurations/d5a56845-6845-d5a5-4568-a5d54568a5d5/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
+POST https://graph.microsoft.com/v1.0/directory/federationConfigurations/d5a56845-6845-d5a5-4568-a5d54568a5d5/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
 Content-Type: application/json
 
 {

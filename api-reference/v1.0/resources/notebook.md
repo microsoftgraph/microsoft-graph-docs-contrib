@@ -61,13 +61,13 @@ The following JSON representation shows the resource type.
 |sectionGroupsUrl|String|The URL for the `sectionGroups` navigation property, which returns all the section groups in the notebook. Read-only.|
 |sectionsUrl|String|The URL for the `sections` navigation property, which returns all the sections in the notebook. Read-only.|
 |self|String|The endpoint where you can get details about the notebook. Read-only.|
-|userRole|onenoteUserRole|Possible values are: `Owner`, `Contributor`, `Reader`, `None`. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook. Read-only.|
+|userRole|onenoteUserRole|The possible values are: `Owner`, `Contributor`, `Reader`, `None`. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook. Read-only.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in the notebook. Read-only. Nullable.|
-|sections|[OnenoteSection](section.md) collection|The sections in the notebook. Read-only. Nullable.|
+|sections|[OnenoteSection](onenotesection.md) collection|The sections in the notebook. Read-only. Nullable.|
 
 ## Methods
 
@@ -78,8 +78,8 @@ The following JSON representation shows the resource type.
 |[Get notebook from web](../api/notebook-getnotebookfromweburl.md) | [Notebook](notebook.md) | Retrieve the properties and relationships of a notebook object using its URL path. |
 |[Create section group](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified notebook.|
 |[List section groups](../api/notebook-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups in the specified notebook.|
-|[Create section](../api/notebook-post-sections.md) |[OnenoteSection](section.md)| Create a section by posting to the sections collection in the specified notebook.|
-|[List sections](../api/notebook-list-sections.md) |[OnenoteSection](section.md) collection| Get a collection of sections in the specified notebook.|
+|[Create section](../api/notebook-post-sections.md) |[OnenoteSection](onenotesection.md)| Create a section by posting to the sections collection in the specified notebook.|
+|[List sections](../api/notebook-list-sections.md) |[OnenoteSection](onenotesection.md) collection| Get a collection of sections in the specified notebook.|
 |[Copy notebook](../api/notebook-copynotebook.md)| None | Copies a notebook.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

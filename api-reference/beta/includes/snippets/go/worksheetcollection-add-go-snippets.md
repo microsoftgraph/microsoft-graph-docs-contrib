@@ -16,7 +16,7 @@ import (
 )
 
 requestBody := graphdrives.NewAddPostRequestBody()
-name := "name-value"
+name := "Sheet1"
 requestBody.SetName(&name) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

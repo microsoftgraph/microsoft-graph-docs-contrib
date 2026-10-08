@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.ServicePrincipals.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "displayName eq 'Microsoft Graph'";
+	requestConfiguration.QueryParameters.Filter = "appId eq '00000003-0000-0000-c000-000000000000'";
 	requestConfiguration.QueryParameters.Select = new string []{ "id","displayName","appId","appRoles" };
 });
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Restore a specific Cloud PC. Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

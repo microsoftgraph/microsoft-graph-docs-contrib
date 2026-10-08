@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.devicemanagement.virtualendpoint.onpremisesconnections.item.updateaddomainpassword.UpdateAdDomainPasswordPostRequestBody updateAdDomainPasswordPostRequestBody = new com.microsoft.graph.beta.devicemanagement.virtualendpoint.onpremisesconnections.item.updateaddomainpassword.UpdateAdDomainPasswordPostRequestBody();
-updateAdDomainPasswordPostRequestBody.setAdDomainPassword("AdDomainPassword value");
+updateAdDomainPasswordPostRequestBody.setAdDomainPassword("AdDomainPassword_XXXX");
 graphClient.deviceManagement().virtualEndpoint().onPremisesConnections().byCloudPcOnPremisesConnectionId("{cloudPcOnPremisesConnection-id}").updateAdDomainPassword().post(updateAdDomainPasswordPostRequestBody);
 
 

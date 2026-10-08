@@ -62,7 +62,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter           | Type                                                                                                                                 | Description                                                                                                                                                                                                         |
 | :-----------------  | :-----------------------------------------                                                                                           | :----------------------------------------------------------------------------------------------------------------------------------------------                                                                     |
 | callbackUri         | String                                                                                                                               | Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property hasn't been set, the bot's global callback URI is used instead. This must be `https`. |
-| acceptedModalities  | String collection                                                                                                                    | The list of accept modalities. Possible values are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call.                                                                                      |
+| acceptedModalities  | String collection                                                                                                                    | The list of accept modalities. The possible values are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call.                                                                                      |
 | callOptions            | [incomingCallOptions](../resources/incomingcalloptions.md)                                                         | The call options.   |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | The media configuration. Required.                                                                                                                                                                                 |
 | participantCapacity | Int                                                                                                                                  | The number of participants that the application can handle for the call, for [Teams policy-based recording](/MicrosoftTeams/teams-recording-policy) scenario.                                                     |
@@ -123,6 +123,10 @@ Content-Length: 211
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/call-answer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -409,6 +413,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/call-answer-app-hosted-media-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-app-hosted-media-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

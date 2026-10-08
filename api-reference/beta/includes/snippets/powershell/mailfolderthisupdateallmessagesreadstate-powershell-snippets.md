@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Mail
 
 $params = @{
-	isRead = "true"
-	suppressReadReceipts = "true"
+	isRead = $true
+	suppressReadReceipts = $true
 }
 
 # A UPN can also be used as -UserId.

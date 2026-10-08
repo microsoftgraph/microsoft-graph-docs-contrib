@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "bkeerthivasa"
 ms.subservice: "teams"
-ms.date: 08/21/2024
+ms.date: 12/02/2025
 ---
 
 # callRecording: delta
@@ -29,10 +29,10 @@ For more information, see the [delta query](/graph/delta-query-overview) documen
 
 The following known issues are associated with this API:
 
-- [Using the `$top` query parameter might not return the **@odata.nextLink**](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
-- [Transcript URLs might not include any content](https://developer.microsoft.com/en-us/graph/known-issues/?search=22932).
-- [Recordings aren't exported for meetings that don't have transcription turned on](https://developer.microsoft.com/en-us/graph/known-issues/?search=22933).
-- [Delta queries might return older artifacts when meetings have unrelated changes](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934).
+- [Using the `$top` query parameter might not return the **@odata.nextLink**](/graph/known-issues#apis-that-export-online-meeting-artifacts-might-not-return-nextlink-when-the-request-uses-the-top-query-parameter).
+- [Transcript URLs might not include any content](/graph/known-issues#apis-that-export-online-meeting-artifacts-might-return-transcript-urls-that-dont-contain-any-content).
+- [Recordings aren't exported for meetings that don't have transcription turned on](/graph/known-issues#apis-that-export-online-meeting-artifacts-dont-return-recordings-for-meetings-without-transcriptions-enabled).
+- [Delta queries might return older artifacts when meetings have unrelated changes](/graph/known-issues#change-tracking-requests-for-apis-that-export-online-meeting-artifacts-return-items-that-are-already-synced).
 
 ## Permissions
 
@@ -46,7 +46,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /users/{usersId}/onlineMeetings/getAllRecordings(meetingOrganizerUserId='{userId}',startDateTime={startDateTime})/delta
 ```
->**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId**.
+> [!NOTE] 
+> The request fails if you don't pass the function parameter **meetingOrganizerUserId** for online meetings.
 
 ## Query parameters
 
@@ -54,7 +55,7 @@ Tracking changes in call recordings incurs a round of one or more **delta** func
 
 In subsequent requests, copy and apply the **@odata.nextLink** or **@odata.deltaLink** URL from the previous response, as that URL already includes the encoded parameters.
 
-| Query parameter	   | Type	|Description|
+| Query parameter | Type | Description|
 |:---------------|:--------|:----------|
 | `$deltaToken` | String | A [state token](/graph/delta-query-overview) returned in the **@odata.deltaLink** URL of the previous **delta** function call that indicates the completion of that round of change tracking. Save and apply the entire **@odata.deltaLink** URL including this token in the first request of the next round of change tracking for that collection.|
 | `$skipToken` | String | A [state token](/graph/delta-query-overview) returned in the **@odata.nextLink** URL of the previous **delta** function call that indicates that there are further changes to be tracked. |
@@ -232,7 +233,7 @@ Content-type: application/json
 
 ### Example 2: Next round to get more recordings
 
-Using the **@odata.deltaLink** from the last request in the last round, you can get only those recordings added since the **@odata.deltaLink** was acquired.
+Using the **@odata.deltaLink** from the last request in the last round, you can get only those recordings added since the **@odata.deltaLink** was acquired for online meetings.
 
 #### Request
 The following example shows a request.

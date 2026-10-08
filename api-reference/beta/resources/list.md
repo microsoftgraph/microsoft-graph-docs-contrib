@@ -24,7 +24,7 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | [Get](../api/list-get.md)                             | [list](../resources/list.md)                                                    | Get the metadata for a **list**.                                                                                                 |
 | [Get items](../api/listitem-list.md)            | [listItem](../resources/listitem.md) collection                                 | Get the collection of [listItems]( ../resources/listitem.md) in a **list**.                                                      |
 | [Get lists in a site](../api/list-list.md)                 | [list](../resources/list.md) collection                                         | Get the collection of **lists** in a [site](site.md).                                                                            |
-| [Get recent activities](../api/activities-list.md)         | [itemActivity](../resources/itemactivity.md) collection                         | List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.                      |
+| [List activities](../api/itemactivity-list.md)       | [itemActivity](../resources/itemactivity.md) collection                         | List the recent [activities](../resources/itemactivity.md) that took place on a [drive](../resources/drive.md), [list](../resources/list.md), item, or within an item hierarchy. |
 | [Create item](../api/listitem-create.md)              | [listItem](../resources/listitem.md)                                            | Create a new [listItem]( ../resources/listitem.md) in a **list**.                                                                |
 | [Update item](../api/listitem-update.md)              | [listItem](../resources/listitem.md)                                            | Update the properties on a [listItem]( ../resources/listitem.md).                                                                |
 | [Delete item](../api/listitem-delete.md)              | None                                                                            | Delete a [listItem]( ../resources/listitem.md) from a **list**.                                                                  |
@@ -50,6 +50,7 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | displayName          | String                            | The displayable title of the list.                                                                    |
 | eTag                 | String                            | ETag for the item. Inherited from [baseItem](baseitem.md).                                            |
 | id                   | String                            | The unique identifier of the item. Read-only. Inherited from [baseItem](baseitem.md).                 |
+| itemCount            | Int32                             | The total count of items in the list. Read-only.                                                           |
 | lastModifiedBy       | [identitySet](identityset.md)     | Identity of the last modifier of this item. Read-only. Inherited from [baseItem](baseitem.md).        |
 | lastModifiedDateTime | DateTimeOffset                    | The date and time when the item was last modified. Read-only. Inherited from [baseItem](baseitem.md). |
 | list                 | [listInfo](listinfo.md)           | Contains more details about the list.                                                                 |
@@ -89,9 +90,11 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "eTag": "String",
   "id": "String (identifier)",
+  "itemCount": "Int32",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "String (timestamp)",
   "list": { "@odata.type": "microsoft.graph.listInfo" },
+  "itemCount": "Int32",
   "name": "String",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },

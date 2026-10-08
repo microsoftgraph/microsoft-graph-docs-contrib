@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Delete a [tag](../resources/ediscovery-tag.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

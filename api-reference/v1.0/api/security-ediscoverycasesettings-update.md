@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverycasesettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycasesettings-update-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -45,10 +47,10 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|caseType|[microsoft.graph.security.caseType](../resources/security-ediscoverycasesettings.md#casetype-values)|The type of the eDiscovery case. Possible values are: `standard`, `premium`, `unknownFutureValue`.|
+|caseType|[microsoft.graph.security.caseType](../resources/security-ediscoverycasesettings.md#casetype-values)|The type of the eDiscovery case. The possible values are: `standard`, `premium`, `unknownFutureValue`.|
 |ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the eDiscovery case. Optional.|
 |redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|Redundancy (email threading and near duplicate detection) settings for an eDiscovery case. Optional.|
-|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](../resources/security-ediscoverycasesettings.md#reviewsetsettings-values)|The settings of the review set for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
+|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](../resources/security-ediscoverycasesettings.md#reviewsetsettings-values)|The settings of the review set for the case. The possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
 |topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Topic modeling (Themes) settings for an eDiscovery case. Optional.|
 
 

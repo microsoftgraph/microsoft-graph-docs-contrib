@@ -48,7 +48,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/h
 |Property|Type|Description|
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
-|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
+|state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
 |includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
 

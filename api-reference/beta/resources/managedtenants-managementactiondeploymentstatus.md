@@ -21,7 +21,7 @@ Represents the deployment status for a given managed tenant.
 |:---|:---|:---|
 |managementActionId|String|The identifier for the management action. Required. Read-only.|
 |managementTemplateId|String|The management template identifier that was used to generate the management action. Required. Read-only.|
-|status|managementActionStatus|The status of the management action. Possible values are: `toAddress`, `completed`, `error`, `timeOut`, `inProgress`, `planned`, `resolvedBy3rdParty`, `resolvedThroughAlternateMitigation`, `riskAccepted`, `unknownFutureValue`. Required.|
+|status|managementActionStatus|The status of the management action. The possible values are: `toAddress`, `completed`, `error`, `timeOut`, `inProgress`, `planned`, `resolvedBy3rdParty`, `resolvedThroughAlternateMitigation`, `riskAccepted`, `unknownFutureValue`. Required.|
 |workloadActionDeploymentStatuses|[microsoft.graph.managedTenants.workloadActionDeploymentStatus](../resources/managedtenants-workloadactiondeploymentstatus.md) collection|The collection of workload action deployment statues for the given management action. Optional.|
 
 ## Relationships

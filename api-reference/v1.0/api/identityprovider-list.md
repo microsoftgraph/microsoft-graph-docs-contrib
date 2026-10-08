@@ -51,7 +51,7 @@ If successful, this method returns `200 OK` response code and a collection of [i
 
 The following example retrieves all **identityProvider**.
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

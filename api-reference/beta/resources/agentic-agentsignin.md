@@ -14,7 +14,7 @@ Namespace: microsoft.graph.agentic
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For agentic [sign-ins](../resources/signin.md), provides information about the agent.
+For agentic sign-ins, provides information about the agent. This object is configured in the **agent** property of [signIn](../resources/signin.md) and [summarizedSignIn](../resources/summarizedsignin.md).
 
 ## Properties
 

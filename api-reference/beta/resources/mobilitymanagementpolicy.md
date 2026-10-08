@@ -23,7 +23,7 @@ None
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesTo|policyScope|Indicates the user scope of the mobility management policy. Possible values are: `none`, `all`, `selected`.|
+|appliesTo|policyScope|Indicates the user scope of the mobility management policy. The possible values are: `none`, `all`, `selected`.|
 |complianceUrl|String|Compliance URL of the mobility management application.|
 |description|String|Description of the mobility management application.|
 |discoveryUrl|String|Discovery URL of the mobility management application.|

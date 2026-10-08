@@ -23,6 +23,10 @@ Represents an external partner on Cloud PC.
 |[Create](../api/virtualendpoint-post-externalpartners.md)|[cloudPcExternalPartner](../resources/cloudpcexternalpartner.md)|Create a new [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object.|
 |[Get](../api/cloudpcexternalpartner-get.md)|[cloudPcExternalPartner](../resources/cloudpcexternalpartner.md)|Read the properties and relationships of a [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object.|
 |[Update](../api/cloudpcexternalpartner-update.md)|[cloudPcExternalPartner](../resources/cloudpcexternalpartner.md)|Update the properties of a [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object.|
+|[Configure agent](../api/cloudpcexternalpartner-configureagent.md)|None|Configure the agent setting of a [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object.|
+|[Deploy agent](../api/cloudpcexternalpartner-deployagent.md)|String|Trigger agent deployment for a set of Windows 365 Cloud PCs that provisioned on a [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object.|
+|[Retrieve deploy agent action results](../api/cloudpcexternalpartner-retrievedeployagentactionresults.md)|[cloudPcExternalPartnerActionResult](../resources/cloudpcexternalpartneractionresult.md) collection|Retrieve the status of deployment actions on a [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object.|
+|[Retrieve action reports](../api/cloudpcexternalpartner-retrieveactionreports.md)|[cloudPcExternalPartnerActionReport](../resources/cloudpcexternalpartneractionreport.md) collection|Retrieve action reports on a [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,6 +37,7 @@ Represents an external partner on Cloud PC.
 |lastSyncDateTime|DateTimeOffset|Last data sync time for this external partner. The timeStamp type represents date and time information in ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.|
 |partnerId|String|The partner identifier used to identify the external partner. When the Cloud PC service is ready to integrate with a new external partner, it generates a GUID to represent this partner. The Cloud PC service provides this partner ID to the partner, which can then use it to call this Microsoft Graph API and external partner APIs. Read-only.|
 |statusDetails|String|Status details message. Read-only.|
+|agentSetting|[cloudPcExternalPartnerAgentSetting](../resources/cloudpcexternalpartneragentsetting.md)|The agent settings associated with the external partner.|
 
 ### cloudPcExternalPartnerStatus values 
 |Member|Description|
@@ -64,6 +69,9 @@ The following JSON representation shows the resource type.
   "enableConnection": "Boolean",
   "lastSyncDateTime": "String (timestamp)",
   "connectionStatus": "String",
-  "statusDetails": "String"
+  "statusDetails": "String",
+  "agentSetting": {
+    "@odata.type": "microsoft.graph.cloudPcExternalPartnerAgentSetting"
+  }
 }
 ```

@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Describes an object and its attributes. Object definitions are part of [directoryDefinition](synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](synchronization-synchronizationschema.md).
+Describes an object and its attributes. Object definitions are part of the **objects** property of [directoryDefinition](../resources/synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](../resources/synchronization-synchronizationschema.md).
 
 ## Properties
 

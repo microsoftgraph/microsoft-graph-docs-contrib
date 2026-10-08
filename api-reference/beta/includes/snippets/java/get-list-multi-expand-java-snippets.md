@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 List result = graphClient.sites().bySiteId("{site-id}").lists().byListId("{list-id}").get(requestConfiguration -> {
-	requestConfiguration.queryParameters.select = new String []{"name", "lastModifiedDateTime"};
+	requestConfiguration.queryParameters.select = new String []{"name", "lastModifiedDateTime", "itemCount"};
 	requestConfiguration.queryParameters.expand = new String []{"columns(select=name,description)", "items(expand=fields(select=Name,Color,Quantity)", ")"};
 });
 

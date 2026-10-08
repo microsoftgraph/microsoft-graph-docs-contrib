@@ -4,7 +4,7 @@ description: "List sponsors for an agent identity blueprint principal."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agen
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

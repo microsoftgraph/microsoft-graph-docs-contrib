@@ -5,19 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Users\Item\DataSecurityAndGovernance\ProcessContent\ProcessContentPostRequestBody;
-use Microsoft\Graph\Generated\Models\ProcessContentRequest;
-use Microsoft\Graph\Generated\Models\ProcessContentMetadataBase;
-use Microsoft\Graph\Generated\Models\ProcessConversationMetadata;
-use Microsoft\Graph\Generated\Models\TextContent;
-use Microsoft\Graph\Generated\Models\ActivityMetadata;
-use Microsoft\Graph\Generated\Models\UserActivityType;
-use Microsoft\Graph\Generated\Models\DeviceMetadata;
-use Microsoft\Graph\Generated\Models\OperatingSystemSpecifications;
-use Microsoft\Graph\Generated\Models\IntegratedApplicationMetadata;
-use Microsoft\Graph\Generated\Models\ProtectedApplicationMetadata;
-use Microsoft\Graph\Generated\Models\PolicyLocationUrl;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\DataSecurityAndGovernance\ProcessContent\ProcessContentPostRequestBody;
+use Microsoft\Graph\Beta\Generated\Models\ProcessContentRequest;
+use Microsoft\Graph\Beta\Generated\Models\ProcessContentMetadataBase;
+use Microsoft\Graph\Beta\Generated\Models\ProcessConversationMetadata;
+use Microsoft\Graph\Beta\Generated\Models\TextContent;
+use Microsoft\Graph\Beta\Generated\Models\ActivityMetadata;
+use Microsoft\Graph\Beta\Generated\Models\UserActivityType;
+use Microsoft\Graph\Beta\Generated\Models\DeviceMetadata;
+use Microsoft\Graph\Beta\Generated\Models\OperatingSystemSpecifications;
+use Microsoft\Graph\Beta\Generated\Models\IntegratedApplicationMetadata;
+use Microsoft\Graph\Beta\Generated\Models\ProtectedApplicationMetadata;
+use Microsoft\Graph\Beta\Generated\Models\PolicyLocationUrl;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

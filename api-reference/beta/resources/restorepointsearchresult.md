@@ -20,7 +20,7 @@ Contains a list of [restorePoint](../resources/restorepoint.md) objects associat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|artifactHitCount|int| Total number of artifacts restored.|
+|artifactHitCount|Int32|The number of items that match the specified search criteria and were changed within the given time range.|
 
 ## Relationships
 
@@ -39,6 +39,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.restorePointSearchResult",
-  "artifactHitCount": "Int"
+  "artifactHitCount": "Int32"
 }
 ```
+

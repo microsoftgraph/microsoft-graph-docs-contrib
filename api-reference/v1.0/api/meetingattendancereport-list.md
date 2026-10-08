@@ -17,7 +17,7 @@ Get a list of [meetingAttendanceReport](../resources/meetingattendancereport.md)
 > [!WARNING]
 >
 >- This method only returns up to 50 of the most recent reports.
->- When you use this method to list attendance reports for a channel meeting, the API returns attendance reports for every meeting in the channel, rather than just the attendance reports for the specified meeting, which is the expected behavior for scheduled meetings. This behavior is the same regardless of where the channel meeting was created.
+>- When you use this method to list attendance reports for a channel meeting, the API returns only the attendance reports associated with the specified meeting, consistent with the behavior for scheduled meetings.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
-> The `OnlineMeetingArtifact.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> The `OnlineMeetingArtifact.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). It is only applicable to attendance reports for town halls or webinars.
 
 ## HTTP request
 

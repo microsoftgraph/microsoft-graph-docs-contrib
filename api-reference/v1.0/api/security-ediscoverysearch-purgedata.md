@@ -35,6 +35,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverysearch_purgedata" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverysearch-purgedata-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-purge](../includes/rbac-for-apis/rbac-ediscovery-purge-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -57,8 +59,8 @@ The following table shows the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|purgeAreas|microsoft.graph.security.purgeAreas| Option to define the locations to be in scope of the purge action. Possible values are: `mailboxes`, `teamsMessages`, `unknownFutureValue`. |
-|purgeType|microsoft.graph.security.purgeType| Options that control whether the action is soft delete or hard delete. Possible values are: `recoverable`, `unknownFutureValue`, `permanentlyDelete`. |
+|purgeAreas|microsoft.graph.security.purgeAreas| Option to define the locations to be in scope of the purge action. The possible values are: `mailboxes`, `teamsMessages`, `unknownFutureValue`. |
+|purgeType|microsoft.graph.security.purgeType| Options that control whether the action is soft delete or hard delete. The possible values are: `recoverable`, `unknownFutureValue`, `permanentlyDelete`. |
 
 ## Response
 

@@ -22,12 +22,12 @@ Inherits from [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|The rule type indicating the purpose of the rule. Inherited from [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Possible values are: `detection`, `requirement`.|
+|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|The rule type indicating the purpose of the rule. Inherited from [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). The possible values are: `detection`, `requirement`.|
 |path|String|The file or folder path to look up.|
 |fileOrFolderName|String|The file or folder name to look up.|
 |check32BitOn64System|Boolean|A value indicating whether to expand environment variables in the 32-bit context on 64-bit systems.|
-|operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|The file system operation type. Possible values are: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`.|
-|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|The operator for file or folder detection. Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
+|operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|The file system operation type. The possible values are: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`.|
+|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|The operator for file or folder detection. The possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |comparisonValue|String|The file or folder comparison value.|
 
 ## Relationships

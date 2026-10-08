@@ -32,16 +32,19 @@ Inherits from [entity](entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|backupRetentionPeriodInDays|Int32|The retention period of the backup, in days.|
+|billingPolicyId|String|The unique identifier of the billing policy assigned to the protection unit for cost allocation.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit.|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an error occurred while creating a protection unit.|
 |id|String|The unique identifier of the protection unit. Inherited from [entity](entity.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of this protection unit.|
+|offboardRequestedDateTime|DateTimeOffset|The time when protection unit offboard was requested. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2024, is `2024-01-01T00:00:00Z`.|
+|pendingRetentionPeriodChange|[retentionPeriodChange](../resources/retentionperiodchange.md)|The retention period change to be applied to the protection unit.|
 |policyId|String|The unique identifier of the protection policy based on which protection unit was created.|
 |protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. A protection unit protected by multiple sources is indicated by comma-separated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`.|
 |status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
-|offboardRequestedDateTime|DateTimeOffset|The time when protection unit offboard was requested.|
 
 ### protectionUnitStatus values
 |Member | Description |
@@ -72,15 +75,20 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.protectionUnitBase",
+  "backupRetentionPeriodInDays": "Int32",
+  "billingPolicyId": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "error": {"@odata.type": "microsoft.graph.publicError"},
   "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
+  "offboardRequestedDateTime": "String (timestamp)",
+  "pendingRetentionPeriodChange": {
+    "@odata.type": "microsoft.graph.retentionPeriodChange"
+  },
   "policyId": "String",
   "protectionSources": "String",
-  "status": "String",
-  "offboardRequestedDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```

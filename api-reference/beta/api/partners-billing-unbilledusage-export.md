@@ -52,8 +52,8 @@ The following table shows the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|attributeSet|[microsoft.graph.partners.billing.attributeSet](../resources/partners-billing-attributeset.md)|Attributes that should be exported. Possible values are: `full`, `basic`, `unknownFutureValue`. The default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes. Optional.|
-|billingPeriod|[microsoft.graph.partners.billing.billingPeriod](../resources/partners-billing-unbilledusage.md#billingperiod-values)|The billing period for the export data. Possible values are: `current`, `last`, `unknownFutureValue`. Choose `current` for the current billing period and `last` for the last billing period. Required.|
+|attributeSet|[microsoft.graph.partners.billing.attributeSet](../resources/partners-billing-attributeset.md)|Attributes that should be exported. The possible values are: `full`, `basic`, `unknownFutureValue`. The default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes. Optional.|
+|billingPeriod|[microsoft.graph.partners.billing.billingPeriod](../resources/partners-billing-unbilledusage.md#billingperiod-values)|The billing period for the export data. The possible values are: `current`, `last`, `unknownFutureValue`. Choose `current` for the current billing period and `last` for the last billing period. Required.|
 |currencyCode|String|The currency code for the partner billing. Required.|
 
 ## Response

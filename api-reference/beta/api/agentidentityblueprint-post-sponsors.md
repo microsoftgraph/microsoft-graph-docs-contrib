@@ -4,7 +4,7 @@ description: "Add sponsors to an agentIdentityBlueprint by posting to the sponso
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a sponsor to an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object. Sponsors can include users or groups. Sponsors may not include service principals or agent users.
+
+A single blueprint may have up to 100 sponsors. No more than 5 sponsors may be groups. Only groups with dynamic membership or Microsoft 365 groups are supported as sponsors. Role-assignable groups can't be set as sponsors.
 
 ## Permissions
 
@@ -59,6 +61,7 @@ If successful, this method returns a `204 No Content` response code and a suppor
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_agent_identity_blueprint_sponsor"
@@ -73,6 +76,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-agent-identity-blueprint-sponsor-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

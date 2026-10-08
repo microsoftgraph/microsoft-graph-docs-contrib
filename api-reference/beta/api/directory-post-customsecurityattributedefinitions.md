@@ -1,7 +1,7 @@
 ---
 title: "Create customSecurityAttributeDefinition"
 description: "Create a new customSecurityAttributeDefinition object."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -256,7 +256,7 @@ Content-Type: application/json
 
 ### Example 3: Add a custom security attribute with a list of predefined values
 
-Here's an example that adds a new custom security attribute definition with a list of predefined values as a collection of strings.
+The following example shows how to add a new custom security attribute definition with a list of predefined values as a collection of strings.
 
 + Attribute set: `Engineering`
 + Attribute: `Project`

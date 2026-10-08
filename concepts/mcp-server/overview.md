@@ -23,6 +23,13 @@ This overview explains how Microsoft MCP Server for Enterprise works and how you
 >
 > Microsoft MCP Server for Enterprise is offered under the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
 
+This Microsoft MCP Server for Enterprise is available in the following [national cloud deployments](/graph/deployments).
+
+| Global service     | US Government L4 | US Government L5 (DOD) | China operated by 21Vianet |
+|--------------------|------------------|------------------------|----------------------------|
+| :white_check_mark: | :x:              | :x:                    | :x:                        |
+
+
 ## How it works
 
 Suppose an administrator asks, "*How many users do we have in our Microsoft Entra tenant?*" The following steps show the workflow that runs inside an MCP-enabled AI agent:
@@ -46,7 +53,7 @@ The Microsoft MCP Server for Enterprise exposes the following tools that an AI a
 
 The Microsoft MCP Server for Enterprise enables several key scenarios:
 
-- **IT helpdesk and support**: Support staff can answer questions like "*Which users didn't sign in last month?*" or "*Is MFA enabled for all administrators?*" without memorizing Graph endpoints. Multi-step questions such as "List all inactive user accounts that have Copilot licenses assigned" can also be handled.
+- **IT helpdesk and support**: Support staff can answer questions like "*Which users didn't sign in last month?*" or "*Is MFA enabled for all administrators?*" without memorizing Graph endpoints. Multi-step questions such as "*List all inactive user accounts that have Copilot licenses assigned*" can also be handled.
 - **Administrative reporting**: Administrators can generate reports conversationally (for example, "*Show me the unassigned licenses in my tenant*" or "*How many guest users do we have?*").
 - **API discovery and prototyping**: Developers can explore and test Microsoft Graph APIs using natural language before integrating them into applications. The MCP server surfaces the underlying API calls so developers can reuse them in scripts or code.
 - **Automation and scripting**: Scripted solutions, Power Platform flows, or Logic Apps can call the MCP server to execute delegated, natural-language-driven queries over Microsoft Entra data.
@@ -60,10 +67,6 @@ Microsoft MCP Server for Enterprise is currently in public preview. It focuses o
 - There is no additional cost or separate license required to enable the MCP Server for Enterprise.
 - You must have the appropriate licenses for the data you access (for example, Microsoft Entra ID Governance or Microsoft Entra ID P2 for Privileged Identity Management (PIM) content).
 - Requests are limited to 100 calls per minute per user. Calls made through `microsoft_graph_get` are also subject to the standard [Microsoft Graph throttling limits](../throttling-limits.md#identity-and-access-service-limits).
-
-## Cloud availability
-
-Microsoft MCP Server for Enterprise is currently available only in the public cloud (global service).
 
 ## Logs
 

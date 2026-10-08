@@ -46,7 +46,7 @@ Represents a timecard entry in the schedule.
 |lastModifiedDateTime|DateTimeOffset| The timestamp in which the **timeCard** was last modified.|
 | notes			        | [itemBody](itembody.md)  |Notes about the **timeCard**. |
 | originalEntry| [timeCardEntry](../resources/timecardentry.md) | The original **timeCardEntry** of the **timeCard**, before user edits. |
-| state 		        |timeCardState  | The current state of the **timeCard** during its life cycle.Possible values are: `clockedIn`, `onBreak`, `clockedOut`, `unknownFutureValue`.|
+| state 		        |timeCardState  | The current state of the **timeCard** during its life cycle. The possible values are: `clockedIn`, `onBreak`, `clockedOut`, `unknownFutureValue`.|
 | userId			        |String |User ID to which  the **timeCard** belongs. |
 
 ## JSON representation

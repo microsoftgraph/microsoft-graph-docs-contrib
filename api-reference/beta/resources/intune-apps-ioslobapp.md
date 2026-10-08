@@ -62,12 +62,14 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |expirationDateTime|DateTimeOffset|The expiration time.|
 |versionNumber|String|The version number of iOS Line of Business (LoB) app.|
 |buildNumber|String|The build number of iOS Line of Business (LoB) app.|
+|appleDeviceAppDeliveryProtocolType|[appleDeviceDeliveryProtocol](../resources/intune-apps-appledevicedeliveryprotocol.md)|The protocol used to deliver the app to the apple device(s). When the property is set to Declarative Device Management (DDM) protocol ('declarativeDeviceManagement') then it can no longer be modified or updated to 'mobileDeviceManagement' or 'default'. Default value is: 'default' which indicates Apple MDM protocol. Possible values are: `default`, `mobileDeviceManagement`, `declarativeDeviceManagement`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|targetAssignments|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|The list of target assignments for this mobile app. Initially, this property will just expose deployment assignments. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|The set of direct relationships for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |contentVersions|[mobileAppContent](../resources/intune-apps-mobileappcontent.md) collection|The list of content versions for this app. This property is read-only. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 
@@ -134,6 +136,7 @@ Here is a JSON representation of the resource.
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",
-  "buildNumber": "String"
+  "buildNumber": "String",
+  "appleDeviceAppDeliveryProtocolType": "String"
 }
 ```

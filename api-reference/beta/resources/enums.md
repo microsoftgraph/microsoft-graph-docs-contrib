@@ -5,13 +5,98 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 11/18/2025
+ms.date: 07/22/2026
 ms.custom: sfi-ropc-nochange
 ---
 
 # Enum values
 
 Namespace: microsoft.graph
+
+### errorActions values
+
+This flagged enumeration identifies the actions taken when policy evaluation couldn't be completed. Values can be combined; for example, `audit,block` indicates that the activity was audited and blocked. Don't combine `none` with another value.
+
+|Member|
+|:---|
+|none|
+|audit|
+|block|
+|unknownFutureValue|
+
+### evaluationErrorCategory values
+
+|Member|
+|:---|
+|unknown|
+|systemLimit|
+|systemError|
+|enforcementError|
+|unknownFutureValue|
+
+### evaluationErrorType values
+
+|Member|
+|:---|
+|unsupportedFile|
+|passwordProtectedFile|
+|fileTooLarge|
+|archiveSizeTooLarge|
+|textExceedsMceThreshold|
+|partiallyScannedArchive|
+|partialImageExtraction|
+|imageOcrPartialResult|
+|ocrProcessingFailure|
+|ocrQuotaExhausted|
+|classificationServiceError|
+|sitExtractionFailure|
+|textExtractionFailure|
+|archiveTextExtractionError|
+|missingOrInvalidConfiguration|
+|agentFailure|
+|enforcementTimeout|
+|osOverride|
+|processNonExistent|
+|other|
+|serviceTimeout|
+|serviceError|
+|serviceUnavailable|
+|unknownFutureValue|
+
+### meetingEngagementType values
+
+|Member|
+|:---|
+|reaction|
+|hand|
+|camera|
+|microphone|
+|unknownFutureValue|
+
+### notifyMembers values
+
+|Member|
+|:---|
+|all|
+|allowSelected|
+|blockSelected|
+|unknownFutureValue|
+
+### structuredDataEntryValueType values
+
+|Member|
+|:---|
+|dateTime|
+|boolean|
+|byte|
+|string|
+|integer32|
+|unsignedInteger32|
+|integer64|
+|unsignedInteger64|
+|stringArray|
+|byteArray|
+|unknownFutureValue|
 
 ### placeFeatureEnablement values
 
@@ -55,6 +140,16 @@ Namespace: microsoft.graph
 |mediaFiles|
 |unknownFutureValue|
 
+### apiUsageReportOnboardingStatus values
+
+|Member|
+|:---|
+|enabling|
+|enabled|
+|disabling|
+|disabled|
+|unknownFutureValue|
+
 ### csaStarLevel values
 
 |Member|
@@ -90,6 +185,19 @@ Namespace: microsoft.graph
 |deletedWithin3Months|
 |deletedWithinMoreThan3Months|
 |unknownFutureValue|
+
+### enforcementResultStatus values
+
+|Member|
+|:---|
+|success|
+|missingOrInvalidConfiguration|
+|userOverride|
+|agentFailure|
+|enforcementTimeout|
+|oSOverride|
+|processNonExistent|
+|other|
 
 ### fedRampLevel values
 
@@ -222,6 +330,24 @@ Namespace: microsoft.graph
 |assigned|
 |activated|
 |failedActivation|
+|unknownFutureValue|
+
+### historyEntityType values
+
+|Member|
+|:---|
+|task|
+|unknownFutureValue|
+
+### historyEventType values
+
+|Member|
+|:---|
+|created|
+|updated|
+|deleted|
+|undeleted|
+|moved|
 |unknownFutureValue|
 
 ### provisionState values
@@ -463,6 +589,7 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | formCompletion |
 | approvalCompletion |
+| completionInHostedApp |
 
 ### plannerApprovalStatus values
 
@@ -472,6 +599,33 @@ Namespace: microsoft.graph
 | approved |
 | rejected |
 | cancelled |
+| unknownFutureValue |
+
+### plannerGoalStatus values
+
+| Member |
+| -------------------- |
+| notStarted |
+| onTrack |
+| behind |
+| atRisk |
+| closed |
+| unknownFutureValue |
+
+### plannerTaskChatMentionType values
+
+| Member |
+| -------------------- |
+| user |
+| application |
+| unknownFutureValue |
+
+### plannerTaskChatMessageType values
+
+| Member |
+| -------------------- |
+| richTextHtml |
+| plainText |
 | unknownFutureValue |
 
 ### applicationKeyOrigin values
@@ -567,6 +721,7 @@ Namespace: microsoft.graph
 | microsoftEntraWorkloadId |
 | unknownFutureValue |
 | aatp |
+| microsoftEntraSuite |
 
 ### recommendationCategory values
 
@@ -576,6 +731,18 @@ Namespace: microsoft.graph
 | identitySecureScore |
 | unknownFutureValue |
 | mdiSecureScore |
+
+### recommendationCategoryGroup values
+
+| Member |
+| ------------------------------- |
+| strengthenAuthentication |
+| detectAndRespondToThreats |
+| enforceLeastPrivilege |
+| governAppsCredentialsAndAgents |
+| hardenInfrastructure |
+| defenderForIdentity |
+| unknownFutureValue |
 
 ### recommendationFeatureAreas values
 
@@ -597,6 +764,8 @@ Namespace: microsoft.graph
 | low |
 | medium |
 | high |
+| critical |
+| unknownFutureValue |
 
 ### recommendationStatus values
 
@@ -612,6 +781,7 @@ Namespace: microsoft.graph
 | thirdParty |
 | planned |
 | alternateMitigation |
+| needsMoreAction |
 
 ### recommendationType values
 
@@ -928,15 +1098,6 @@ Namespace: microsoft.graph
 | remoteDesktopToken |
 | refreshToken       |
 
-### approverInformationVisibilityvalues
-
-| Member |
-| ---- |
-| no |
-| yes |
-| default |
-| unknownFutureValue |
-
 ### protocolType values
 
 | Member |
@@ -968,12 +1129,32 @@ Namespace: microsoft.graph
 | onBehalfOf |
 | samlOnBehalfOf |
 
+### accessReviewInstanceFilterByCurrentUserOptions values
+
+| Member |
+| ------------------ |
+| reviewer |
+| unknownFutureValue |
+| directReviewer |
+| delegatedReviewer |
+
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
 | Member |
 | ------------------ |
 | reviewer |
 | unknownFutureValue |
+| directReviewer |
+| delegatedReviewer |
+
+### accessReviewScheduleDefinitionFilterByCurrentUserOptions values
+
+| Member |
+| ------------------ |
+| reviewer |
+| unknownFutureValue |
+| directReviewer |
+| delegatedReviewer |
 
 ### accessReviewStageFilterByCurrentUserOptions values
 
@@ -981,6 +1162,8 @@ Namespace: microsoft.graph
 | ------------------ |
 | reviewer |
 | unknownFutureValue |
+| directReviewer |
+| delegatedReviewer |
 
 ### continuousAccessEvaluationMode values
 
@@ -990,6 +1173,17 @@ Namespace: microsoft.graph
 | disabled |
 | unknownFutureValue |
 | strictLocation |
+
+### contentModality values
+
+| Member |
+| ------------------ |
+| audio |
+| video |
+| image |
+| text |
+| multimodal |
+| unknownFutureValue |
 
 ### msiType values
 
@@ -1170,6 +1364,7 @@ Namespace: microsoft.graph
 | created |
 | updated |
 | deleted |
+| unknownFutureValue |
 
 ### countryLookupMethodType values
 
@@ -1486,6 +1681,16 @@ Namespace: microsoft.graph
 | externalPartner |
 | externalNonPartner |
 
+### recipientType values
+
+| Member |
+| ------------------- |
+| contact |
+| oneOff |
+| mailbox |
+| privateDL |
+| unknownFutureValue |
+
 ### appliedConditionalAccessPolicyResult values
 
 | Member |
@@ -1547,6 +1752,15 @@ Namespace: microsoft.graph
 | officePhone |
 | microsoftAuthenticatorPush |
 | softwareOneTimePasscode |
+| unknownFutureValue |
+
+### detectionSeverity values
+
+| Member |
+| ------------------ |
+| low |
+| medium |
+| high |
 | unknownFutureValue |
 
 ### clientCredentialType values
@@ -1770,32 +1984,6 @@ Namespace: microsoft.graph
 | scopeBasedAuthRequirementPolicy |
 | authenticationStrengths |
 
-### riskDetail values
-
-| Member |
-| ----------------------------------------- |
-| none |
-| adminGeneratedTemporaryPassword |
-| userPerformedSecuredPasswordChange |
-| userPerformedSecuredPasswordReset |
-| adminConfirmedSigninSafe |
-| aiConfirmedSigninSafe |
-| userPassedMFADrivenByRiskBasedPolicy |
-| adminDismissedAllRiskForUser |
-| adminConfirmedSigninCompromised |
-| hidden |
-| adminConfirmedUserCompromised |
-| unknownFutureValue |
-| adminConfirmedServicePrincipalCompromised |
-| adminDismissedAllRiskForServicePrincipal |
-| m365DAdminDismissedDetection |
-| userChangedPasswordOnPremises |
-| adminDismissedRiskForSignIn |
-| adminConfirmedAccountSafe |
-| adminConfirmedAgentSafe |
-| adminConfirmedAgentCompromised |
-| adminDismissedRiskForAgent |
-
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
 ### riskEventType values
 
@@ -1849,6 +2037,7 @@ Namespace: microsoft.graph
 | fido2SecurityKey |
 | oneTimePasscode |
 | passKeySynced |
+| qrCode |
 
 ### authenticationAppAdminConfiguration values
 
@@ -1973,6 +2162,16 @@ Namespace: microsoft.graph
 | published |
 | failedPublish |
 | unknownFutureValue |
+
+### exclusionUnitBulkJobStatus values
+
+|Member|
+|:---|
+|created|
+|active|
+|completed|
+|completedWithErrors|
+|unknownFutureValue|
 
 ### externalEmailOtpState values
 
@@ -2270,6 +2469,29 @@ Namespace: microsoft.graph
 | darkPink |
 | darkYellow |
 | unknownFutureValue |
+| darkRed |
+| cranberry |
+| darkOrange |
+| bronze |
+| peach |
+| gold |
+| lime |
+| forest |
+| lightGreen |
+| jade |
+| lightTeal |
+| darkTeal |
+| steel |
+| skyBlue |
+| blueGray |
+| lavender |
+| lilac |
+| plum |
+| magenta |
+| darkBrown |
+| beige |
+| charcoal |
+| silver |
 
 ### timeOffReasonIconType values
 
@@ -2544,6 +2766,15 @@ Namespace: microsoft.graph
 | text |
 | html |
 
+### chatMessageBodyContentType values
+
+| Member |
+| ---------- |
+| text |
+| html |
+| markdown |
+| unknownFutureValue |
+
 ### locationType values
 
 | Member |
@@ -2715,6 +2946,14 @@ Namespace: microsoft.graph
 | accepted |
 | declined |
 | notResponded |
+
+### privilegeLevel values
+
+|Member|
+|:---|
+|standard|
+|privileged|
+|unknownFutureValue|
 
 ### activityDomain values
 
@@ -2939,14 +3178,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskLevel values
 
-| Member |
-| ------------------ |
-| low |
-| medium |
-| high |
-| hidden |
-| none |
-| unknownFutureValue |
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|hidden|
+|none|
+|unknownFutureValue|
 
 ### riskState values
 
@@ -3102,15 +3341,6 @@ Possible values for user account types (group membership), per Windows definitio
 | offline |
 | unknownFutureValue |
 
-### activityType values
-
-| Member |
-| ------------------ |
-| signin |
-| user |
-| unknownFutureValue |
-| servicePrincipal |
-
 ### chatMessagePolicyViolationUserActionType values
 
 | Member              | Int value | Description                                                                                                        |
@@ -3256,6 +3486,7 @@ Possible values for user account types (group membership), per Windows definitio
 | compliantApplication |
 | passwordChange |
 | unknownFutureValue |
+| riskRemediation |
 
 ### perUserMfaState values
 
@@ -3720,14 +3951,6 @@ Possible values for user account types (group membership), per Windows definitio
 | publication |
 | unknownFutureValue |
 
-### teamsAppInstallationScope values
-
-| Member    | Value | Description                                                                                                                 |
-| --------- | ----- | --------------------------------------------------------------------------------------------------------------------------- |
-| team      | 0     | Indicates that the Teams app can be installed within a team and is authorized to access that team's data.                   |
-| groupChat | 1     | Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.       |
-| personal  | 2     | Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data. |
-
 ### assignmentScheduleFilterByCurrentUserOptions values
 
 | Member |
@@ -3859,6 +4082,16 @@ Possible values for user account types (group membership), per Windows definitio
 | principal |
 | unknownFutureValue |
 
+### roleType values
+
+| Member |
+| ------ |
+| active |
+| eligible |
+| application |
+| delegated |
+| unknownFutureValue |
+
 ### cloudPcAuditActivityOperationType values
 
 | Member |
@@ -3903,6 +4136,17 @@ Possible values for user account types (group membership), per Windows definitio
 | strategic |
 | unknownFutureValue |
 
+### sectionIconSkinTone values
+
+| Member |
+| ------------------ |
+| light |
+| mediumLight |
+| medium |
+| mediumDark |
+| dark |
+| unknownFutureValue |
+
 ### serviceHealthClassificationType values
 
 | Member |
@@ -3941,6 +4185,15 @@ Possible values for user account types (group membership), per Windows definitio
 | resolvedExternal |
 | confirmed |
 | reported |
+| unknownFutureValue |
+
+### servicePrincipalLockScope values
+
+| Member |
+| ------------------ |
+| notConfigured |
+| foreignTenantOnly |
+| everywhere |
 | unknownFutureValue |
 
 ### serviceUpdateCategory values
@@ -4042,18 +4295,6 @@ Possible values for user account types (group membership), per Windows definitio
 | ------ |
 | or |
 | and |
-
-### subjectRightsRequestStage values
-
-| Member |
-| ------------------ |
-| contentRetrieval |
-| contentReview |
-| generateReport |
-| contentDeletion |
-| caseResolved |
-| unknownFutureValue |
-| approval |
 
 ### subjectRightsRequestStageStatus values
 
@@ -4481,47 +4722,6 @@ Possible values for user account types (group membership), per Windows definitio
 | cannotSatisfy |
 | unknownFutureValue |
 
-### authenticationMethodModes values
-
-| Member |
-| --------------------------- |
-| password |
-| voice |
-| hardwareOath |
-| softwareOath |
-| sms |
-| fido2 |
-| windowsHelloForBusiness |
-| microsoftAuthenticatorPush |
-| deviceBasedPush |
-| temporaryAccessPassOneTime |
-| temporaryAccessPassMultiUse |
-| email |
-| x509CertificateSingleFactor |
-| x509CertificateMultiFactor |
-| federatedSingleFactor |
-| federatedMultiFactor |
-| unknownFutureValue |
-| qrCodePin |
-
-### baseAuthenticationMethod values
-
-| Member |
-| ----------------------- |
-| password |
-| voice |
-| hardwareOath |
-| softwareOath |
-| sms |
-| fido |
-| microsoftAuthenticator |
-| windowsHelloForBusiness |
-| temporaryAccessPass |
-| email |
-| x509Certificate |
-| federation |
-| unknownFutureValue |
-
 ### searchContent values
 
 | Member |
@@ -4529,6 +4729,16 @@ Possible values for user account types (group membership), per Windows definitio
 | privateContent |
 | sharedContent |
 | unknownFutureValue |
+
+### purviewInsiderRiskManagementLevel values
+
+|Member|
+|:---|
+|none|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
 
 ### chatMessageActions values
 
@@ -4602,6 +4812,7 @@ Possible values for user account types (group membership), per Windows definitio
 |attributeCollectionStart|
 |attributeCollectionSubmit|
 |emailOtpSend|
+|passwordSubmit|
 
 ### microsoftAuthenticatorAuthenticationMethodClientAppName values
 
@@ -5075,6 +5286,14 @@ Possible values for user account types (group membership), per Windows definitio
 | authenticationTransfer |
 | unknownFutureValue |
 
+### connectorType values
+
+|Member|
+|:---|
+|sapIag|
+|sapAc|
+|unknownFutureValue|
+
 ### claimConditionUserType values
 
 | Member |
@@ -5095,6 +5314,14 @@ Possible values for user account types (group membership), per Windows definitio
 | contains |
 | unknownFutureValue |
 
+### matchConfidenceLevel values 
+
+|Member|
+|:---|
+|exact|
+|relaxed|
+|unknownFutureValue|
+
 ### matchOn values
 
 | Member |
@@ -5102,6 +5329,8 @@ Possible values for user account types (group membership), per Windows definitio
 | displayName |
 | samAccountName |
 | unknownFutureValue |
+
+
 
 ### samlAttributeNameFormat values
 
@@ -5380,6 +5609,7 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|
 |bulk|
 |unknownFutureValue|
+|granular|
 
 ### cloudPcPolicyApplyActionStatus values
 
@@ -5430,14 +5660,12 @@ Possible values for user account types (group membership), per Windows definitio
 |phish|
 |unknownFutureValue|
 
-### errorCorrectionLevel values
+### backupPolicyProtectionMode values
 
 |Member|
 |:---|
-|l|
-|m|
-|q|
-|h|
+|standard|
+|fullServiceBackup|
 |unknownFutureValue|
 
 ### protectionSource values
@@ -5447,16 +5675,6 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |manual|
 |dynamicRule|
-|unknownFutureValue|
-
-### organizationAllowedAudiences values
-
-|Member|
-|:---|
-|me|
-|organization|
-|federatedOrganizations|
-|everyone|
 |unknownFutureValue|
 
 ### educationSpeechType values
@@ -5503,6 +5721,19 @@ Possible values for user account types (group membership), per Windows definitio
 | medal            |
 | bullseye         |
 | unknownFutureValue |
+
+### exchangeMessageTraceStatus values
+
+|Member|
+|:---|
+|gettingStatus|
+|pending|
+|failed|
+|delivered|
+|expanded|
+|quarantined|
+|filteredAsSpam|
+|unknownFutureValue|
 
 ### notificationEventsType values
 
@@ -5626,6 +5857,7 @@ Possible values for user account types (group membership), per Windows definitio
 |itemMajorVersionLimit|
 |maxStoragePerContainerInBytes|
 |unknownFutureValue|
+|isOfficeRestricted|
 
 ### aggregationPeriod values
 
@@ -5724,6 +5956,16 @@ Possible values for user account types (group membership), per Windows definitio
 |disabled|
 |unknownFutureValue|
 
+### verifiedIdMethodType values
+
+|Member|
+|:---|
+|identityVerificationPartner|
+|tenantCustomCredential|
+|verifiedEmployee|
+|unknownFutureValue|
+|notConfigured|
+
 ### verifiedIdUsageConfigurationPurpose values 
 
 |Member|
@@ -5732,17 +5974,30 @@ Possible values for user account types (group membership), per Windows definitio
 |onboarding|
 |all|
 |unknownFutureValue|
+|verification|
 
-### siteTemplateType values 
+### siteTemplateType values
 
 |Member|
 |:---|
 |sitepagepublishing|
-|group|
 |sts|
 |unknownFutureValue|
 
-### workLocationSource values 
+### placeOperationStatus values 
+
+|Member|
+|:---|
+|created|
+|inProgress|
+|succeeded|
+|failed|
+|partiallySucceeded|
+|expired|
+|unknownFutureValue|
+
+### workLocationSource values
+
 |Member|
 |:---|
 |none|
@@ -5849,3 +6104,251 @@ Possible values for user account types (group membership), per Windows definitio
 |write|
 |create|
 |unknownFutureValue|
+
+### scopeCollectionKind values 
+
+|Member|
+|:---|
+|allAllowed|
+|enumerated|
+|none|
+|scopeKindNotSet|
+|unknownFutureValue|
+
+### sharePointMigrationTaskStatus values
+
+| Member             |
+|:------------------ |
+| notStarted         |
+| inProgress         |
+| completed          |
+| cancelled          |
+| failed             |
+| unknownFutureValue |
+
+### kind values
+
+|Member|
+|:---|
+|unrestricted|
+|allowedTenants|
+|unknownFutureValue|
+
+### browsableResourceType values 
+
+|Member|
+|:---|
+|none|
+|site|
+|documentLibrary|
+|folder|
+|unknownFutureValue|
+
+### browseQueryOrder values 
+
+|Member|
+|:---|
+|pathAsc|
+|pathDsc|
+|nameAsc|
+|nameDsc|
+|unknownFutureValue|
+
+### browseQueryResponseItemType values 
+
+|Member|
+|:---|
+|none|
+|site|
+|documentLibrary|
+|folder|
+|file|
+|unknownFutureValue|
+
+### browseSessionStatus values 
+
+|Member|
+|:---|
+|creating|
+|created|
+|failed|
+|unknownFutureValue|
+
+### fileArchiveStatus values 
+
+|Member|
+|:---|
+|notArchived|
+|fullyArchived|
+|reactivating|
+|unknownFutureValue|
+
+### lockType values
+
+|Member|
+|:---|
+|none|
+|exclusive|
+|shared|
+|unknownFutureValue|
+
+### baselineParameterType values 
+
+|Member|
+|:---|
+|string|
+|integer|
+|boolean|
+|unknownFutureValue|
+
+### driftStatus values 
+
+|Member|
+|:---|
+|active|
+|fixed|
+|unknownFutureValue|
+
+### monitorMode values 
+
+|Member|
+|:---|
+|monitorOnly|
+|unknownFutureValue|
+
+### monitorRunStatus values 
+
+|Member|
+|:---|
+|successful|
+|partiallySuccessful|
+|failed|
+|unknownFutureValue|
+
+### monitorStatus values 
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### snapshotJobStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+|partiallySuccessful|
+
+### contentCategory values 
+
+|Member|
+|:---|
+|none|
+|ai|
+|unknownFutureValue|
+
+### trafficRoutingMethod values 
+
+|Member|
+|:---|
+|none|
+|random|
+|sessionPersistence|
+|performance|
+|unknownFutureValue|
+
+### retentionPeriodChangeStatus values
+
+|Member|
+|:---|
+|none|
+|inProgress|
+|failed|
+|completed|
+|unknownFutureValue|
+
+### accessReviewInstanceDecisionItemApplyResult values
+
+|Member|
+|:---|
+|new|
+|appliedSuccessfully|
+|appliedWithUnknownFailure|
+|appliedSuccessfullyButObjectNotFound|
+|applyNotSupported|
+|unknownFutureValue|
+
+### evaluationScopeType values
+
+|Member|
+|:---|
+|tenant|
+|agent|
+|anonymousUser|
+|unknownFutureValue|
+
+### agentEndpointConfigurationType values
+
+|Member|
+|:---|
+|apiBased|
+|botBased|
+|unknownFutureValue|
+
+### agentMessageNotificationMode values
+
+|Member|
+|:---|
+|atMentionedMessagesOnly|
+|allMessages|
+|unknownFutureValue|
+
+### classificationMethod values
+
+|Member|
+|:---|
+|patternMatch|
+|exactDataMatch|
+|fingerprint|
+|machineLearning|
+|privacyDataMatch|
+|aiPowered|
+|unknownFutureValue|
+
+### mlClassificationMatchTolerance values
+
+|Member|
+|:---|
+|exact|
+|near|
+
+### sensitiveTypeScope values
+
+|Member|
+|:---|
+|fullDocument|
+|partialDocument|
+
+### sensitiveTypeSource values
+
+|Member|
+|:---|
+|outOfBox|
+|tenant|
+
+### mipWorkloads values
+
+|Member|
+|:---|
+|endpointDevices|
+|exchange|
+|oneDriveForBusiness|
+|sharePoint|
+|teams|
+|coldCrawl|
+|applications|

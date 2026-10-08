@@ -34,7 +34,7 @@ GET /external/connections/{connectionsId}/items/{externalItemId}
 ```
 
 ## Optional query parameters
-This method does not support optional query parameters to customize the response.
+This method doesn't support optional query parameters to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -62,7 +62,7 @@ The following example shows a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
+GET https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 ```
 
 # [C#](#tab/csharp)

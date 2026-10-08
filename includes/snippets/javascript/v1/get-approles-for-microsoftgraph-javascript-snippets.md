@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 let servicePrincipals = await client.api('/servicePrincipals')
-	.filter('displayName eq \'Microsoft Graph\'')
+	.filter('appId eq \'00000003-0000-0000-c000-000000000000\'')
 	.select('id,displayName,appId,appRoles')
 	.get();
 

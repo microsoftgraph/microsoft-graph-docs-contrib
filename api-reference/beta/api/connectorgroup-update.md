@@ -41,13 +41,13 @@ In the request body, supply the values for relevant fields that should be update
 |id|string| Unique identifier for this connectorGroup. Read-only. |
 |isDefault|Boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is preset by the system. |
 |name|string| The name associated with the connectorGroup. |
-|region|string| The region the connectorGroup is assigned to and for which it optimizes traffic. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|region|string| The region the connectorGroup is assigned to and for which it optimizes traffic. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. The possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and updated [connectorGroup](../resources/connectorgroup.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -95,8 +95,10 @@ Content-type: application/json
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

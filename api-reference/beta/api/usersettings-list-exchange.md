@@ -1,6 +1,6 @@
 ---
 title: "List Exchange settings"
-description: "Get a list of Exchange settings, including mailboxes that belong to a user."
+description: "Get a list of Exchange mailboxes that belong to a user."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -41,7 +41,7 @@ GET /users/{id}/settings/exchange
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [exchangeSettings](../resources/exchangesettings.md) resource in the response body.
+If successful, this method returns a `200 OK` response code and an [exchangeSettings](../resources/exchangesettings.md) object in the response body.
 
 ## Examples
 
@@ -110,7 +110,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.exchangeSettings)"
+  "@odata.type": "microsoft.graph.exchangeSettings"
 }
 -->
 ```http
@@ -119,8 +119,8 @@ Content-type: application/json
 Content-length: 232
 
 {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('megan%40contoso.com')/settings/exchange/$entity",
-      "primaryMailboxId": "MBX:e0643f21@a7809c93"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('megan%40contoso.com')/settings/exchange/$entity",
+    "primaryMailboxId": "MBX:e0643f21@a7809c93"
 }
 ```
 <!--
@@ -131,8 +131,6 @@ Content-length: 232
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-  "Error: list_exchangesettings:
-    Failed to locate collection property 'value' in response."
 ]
 }-->
 

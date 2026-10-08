@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [phone authentication method](../resources/phoneauthenticationmethod.md) objects for a user. This will return up to three objects, as a user can have up to three phones usable for authentication. This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

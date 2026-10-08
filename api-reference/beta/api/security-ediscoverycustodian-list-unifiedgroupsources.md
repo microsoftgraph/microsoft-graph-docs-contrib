@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycustodian_list_unifiedgroupsources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycustodian-list-unifiedgroupsources-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-apis-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
 
 ## HTTP request
 

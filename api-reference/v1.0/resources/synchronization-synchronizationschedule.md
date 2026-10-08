@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Defines the schedule used to run a [synchronizationJob](synchronization-synchronizationjob.md).
+Defines the schedule (**schedule** property) used to run a [synchronizationJob](../resources/synchronization-synchronizationjob.md).
 
 ## Properties
 | Property       | Type    |Description|

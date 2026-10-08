@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
-Get-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -Property "id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail,groupDetail,userDetail" 
+Get-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -Property "id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,lastLogoffDateTime,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail,groupDetail,userDetail" 
 
 ```

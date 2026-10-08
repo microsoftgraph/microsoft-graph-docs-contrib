@@ -1,0 +1,25 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const profilePropertySetting = {
+  '@odata.type': '#microsoft.graph.profilePropertySetting',
+  displayName: 'Profile priority config',
+  name: 'Profile priority config',
+  prioritizedSourceUrls: [
+    'https://graph.microsoft.com/v1.0/admin/people/profileSources(sourceId=\'contosohr1\')'
+  ]
+};
+
+await client.api('/admin/people/profilePropertySettings')
+	.post(profilePropertySetting);
+
+```

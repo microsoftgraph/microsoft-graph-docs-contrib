@@ -107,8 +107,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/88b245ac-
 
 ---
 
----
-
 ### Response
 
 The following example shows the response.

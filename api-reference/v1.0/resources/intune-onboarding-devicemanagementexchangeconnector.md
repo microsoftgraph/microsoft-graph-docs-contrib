@@ -31,11 +31,11 @@ Entity which represents a connection to an Exchange environment.
 |:---|:---|:---|
 |id|String||
 |lastSyncDateTime|DateTimeOffset|Last sync time for the Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector Status. Possible values are: `none`, `connectionPending`, `connected`, `disconnected`, `unknownFutureValue`.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector Status. The possible values are: `none`, `connectionPending`, `connected`, `disconnected`, `unknownFutureValue`.|
 |primarySmtpAddress|String|Email address used to configure the Service To Service Exchange Connector.|
 |serverName|String|The name of the Exchange server.|
 |connectorServerName|String|The name of the server hosting the Exchange Connector.|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`, `unknownFutureValue`.|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|The type of Exchange Connector Configured. The possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`, `unknownFutureValue`.|
 |version|String|The version of the ExchangeConnectorAgent|
 |exchangeAlias|String|An alias assigned to the Exchange server|
 |exchangeOrganization|String|Exchange Organization to the Exchange server|

@@ -1,16 +1,19 @@
 ---
-title: "process resource type"
+title: "process resource type (deprecated)"
 description: "Contains stateful information about the process related to the alert."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: security
 doc_type: resourcePageType
 ms.date: 07/22/2024
+ROBOTS: NOINDEX
 ---
 
-# process resource type
+# process resource type (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Contains stateful information about the process related to the alert.
 
@@ -22,7 +25,7 @@ Contains stateful information about the process related to the alert.
 |commandLine|String|The full process invocation commandline including all parameters.|
 |createdDateTime|DateTimeOffset|Time at which the process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |fileHash|[fileHash](filehash.md)|Complex type containing file hashes (cryptographic and location-sensitive).|
-|integrityLevel|processIntegrityLevel|The integrity level of the process. Possible values are: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
+|integrityLevel|processIntegrityLevel|The integrity level of the process. The possible values are: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
 |isElevated|Boolean|True if the process is elevated.|
 |name|String|The name of the process' Image file.|
 |parentProcessCreatedDateTime|DateTimeOffset|DateTime at which the parent process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|

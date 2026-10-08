@@ -43,7 +43,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|role|String|User role of the specified user in the webinar. Possible values are: `organizer`, `coOrganizer`.|
+|role|String|User role of the specified user in the webinar. The possible values are: `organizer`, `coOrganizer`.|
 |userId|String|The ID of the specified user in Microsoft Entra.|
 
 ## Request headers
@@ -155,6 +155,7 @@ Content-Type: application/json
           "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
         }
       ],
+      "isRegistrationRequired": false,
       "settings": {
         "isAttendeeEmailNotificationEnabled": false
       },

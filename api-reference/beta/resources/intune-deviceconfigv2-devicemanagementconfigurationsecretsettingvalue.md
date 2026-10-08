@@ -26,7 +26,7 @@ Inherits from [deviceManagementConfigurationSimpleSettingValue](../resources/int
 |:---|:---|:---|
 |settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|Setting value template reference Inherited from [deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
 |value|String|Value of the secret setting.|
-|valueState|[deviceManagementConfigurationSecretSettingValueState](../resources/intune-deviceconfigv2-devicemanagementconfigurationsecretsettingvaluestate.md)|Gets or sets a value indicating the encryption state of the Value property. Possible values are: `invalid`, `notEncrypted`, `encryptedValueToken`.|
+|valueState|[deviceManagementConfigurationSecretSettingValueState](../resources/intune-deviceconfigv2-devicemanagementconfigurationsecretsettingvaluestate.md)|Gets or sets a value indicating the encryption state of the Value property. The possible values are: `invalid`, `notEncrypted`, `encryptedValueToken`.|
 
 ## Relationships
 None

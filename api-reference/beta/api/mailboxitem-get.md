@@ -37,7 +37,7 @@ GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items/{mailb
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -52,6 +52,9 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [mailboxItem](../resources/mailboxitem.md) object in the response body.
+
+> [!NOTE]
+> *Archive mailboxes with autoexpanded folders:* When the target folders or items physically reside in an auxiliary (autoexpanded) archive mailbox, this API might return a redirect response that points to the correct mailbox endpoint. For details, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
 
 ## Examples
 

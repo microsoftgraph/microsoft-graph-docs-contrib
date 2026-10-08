@@ -14,13 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract base type that represents metadata for a content entry being processed, including identifiers, content details, and timestamps. Use [processConversationMetadata](./processconversationmetadata.md) for conversation content and [processFileMetadata](./processfilemetadata.md) for file content.
+An abstract base type that represents metadata for a content entry being processed in a [processContentRequest](../resources/processcontentrequest.md), including identifiers, content details, and timestamps. Use the following derived types: [processConversationMetadata](../resources/processconversationmetadata.md) for conversation content, [processFileMetadata](../resources/processfilemetadata.md) for file content, [contentActivityMetadata](../resources/contentactivitymetadata.md) for a DLP enforcement result submitted through the ContentActivity API, and [evaluationIncompleteActivityMetadata](../resources/evaluationincompleteactivitymetadata.md) for an incomplete evaluation submitted through the ContentActivity API. The ContentActivity-specific derived types aren't supported by the **processContent** or **processContentAsync** APIs.
 
-This is an abstract type from which the following resources derive:
-- [processConversationMetadata](../resources/processconversationmetadata.md)
-- [processFileMetadata](../resources/processfilemetadata.md)
-
-Base type of [processConversationMetadata](./processconversationmetadata.md) and [processFileMetadata](./processfilemetadata.md).
 
 ## Properties
 
@@ -35,6 +30,7 @@ Base type of [processConversationMetadata](./processconversationmetadata.md) and
 | modifiedDateTime | DateTimeOffset                                                                 | Required. Timestamp indicating when the original content was last modified. For ephemeral content like messages, this might be the same as `createdDateTime`.                    |
 | name             | String                                                                         | Required. A descriptive name for the content (for example, file name, web page title, "Chat Message").                                                                                |
 | sequenceNumber   | Int64                                                                          | A sequence number indicating the order in which content was generated or should be processed, required when `correlationId` is used.             |
+| contentCategory  | microsoft.graph.contentCategory                                                | The type of content. The possible values are: `none`, `ai`, `unknownFutureValue`.  The default value is `ai`, which refers to AI generated content.            |
 
 ## Relationships
 
@@ -60,6 +56,7 @@ The following JSON representation shows the resource type.
   "length": "Int64",
   "isTruncated": "Boolean",
   "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
+  "modifiedDateTime": "String (timestamp)",
+  "contentCategory": { "@odata.type": "microsoft.graph.contentCategory" }
 }
 ```

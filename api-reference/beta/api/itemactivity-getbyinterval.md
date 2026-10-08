@@ -19,7 +19,7 @@ Get [itemActivityStats][] for the activities that took place under this resource
 
 Analytics aggregates might not be available for all action types.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -40,11 +40,11 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## Function parameters
 
-| Parameter      | Type               | Description
-|:---------------|:-------------------|:---------------------------------------
-| startDateTime  | string (timestamp) | The start time over which to aggregate activities.
-| endDateTime    | string (timestamp) | The end time over which to aggregate activities.
-| interval       | string             | The aggregation interval.
+| Parameter      | Type               | Description |
+|:---------------|:-------------------|:---------------------------------------|
+| startDateTime  | string (timestamp) | The start time over which to aggregate activities. |
+| endDateTime    | string (timestamp) | The end time over which to aggregate activities. |
+| interval       | string             | The aggregation interval. |
 
 ## Request headers
 

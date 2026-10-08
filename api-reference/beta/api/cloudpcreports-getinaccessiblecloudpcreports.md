@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status. An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (at least one of the health checks failed) or has consecutive user connections failure.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -54,7 +54,7 @@ The following table shows the parameters that you can use with this method.
 | filter    | String            | OData `$filter` syntax. Only `and`, `or`, `gt` ,`ge` and `eq` are currently supported.     |
 | groupBy   | String collection | Specifies how to group the reports. If used, must have the same content as the select parameter.|
 | orderBy   | String collection | Specifies how to sort the reports.                                                           |
-| reportName | cloudPCInaccessibleReportName | The report name. The possible values are: `inaccessibleCloudPcReports`, `inaccessibleCloudPcTrendReport`, `unknownFutureValue`, `regionalInaccessibleCloudPcTrendReport`. The default value is `inaccessibleCloudPcReports` if the **reportName** is empty. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `regionalInaccessibleCloudPcTrendReport`. |
+| reportName | cloudPCInaccessibleReportName | The report name. The possible values are: `inaccessibleCloudPcReports`, `inaccessibleCloudPcTrendReport`, `unknownFutureValue`, `regionalInaccessibleCloudPcTrendReport`. The default value is `inaccessibleCloudPcReports` if the **reportName** is empty. You must use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `regionalInaccessibleCloudPcTrendReport`. |
 | search    | String            | Specifies a String to search for.                                                          |
 | select    | String collection | OData `$select` syntax. Represents the selected columns of the reports.                    |
 | skip      | Int32             | Number of records to skip.                                                                 |

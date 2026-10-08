@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a specific [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -135,7 +135,6 @@ Content-Type: application/json
   "startDate": "2024-09-30",
   "endDate": "2027-10-11",
   "expirationDate": "2028-04-11",
-  "osVersionNumber": "10.0.26100.0",
-  "osArchitecture": "x64"
+  "osVersionNumber": "10.0.26100.0"
 }
 ```

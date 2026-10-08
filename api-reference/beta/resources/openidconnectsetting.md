@@ -1,6 +1,6 @@
 ---
 title: "openIdConnectSetting resource type"
-description: "Specifies the OpenID connection properties used for an external authentication method."
+description: "Specifies the OpenID connection properties used for an external MFA."
 author: "gregkmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A complex type that contains the settings required to perform the OIDC request to the external authentication provider for an [external authentication method](../resources/externalauthenticationmethodconfiguration.md). External authentication methods enable Microsoft Entra ID users to satisfy the second factor of multifactor authentication requirements using an external provider.
+A complex type that contains the settings required to perform the OIDC request to the external authentication provider for an [external MFA](../resources/externalauthenticationmethodconfiguration.md). External MFA enables Microsoft Entra ID users to satisfy the second factor of multifactor authentication requirements using an external provider.
 
 ## Properties
 |Property|Type|Description|

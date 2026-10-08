@@ -1,11 +1,11 @@
 ---
 title: "updatableAssetError resource type"
 description: "An abstract type that represents an error which prevents Windows Autopatch from enrolling an azureADDevice in update management, or deploying content to the device."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # updatableAssetError resource type

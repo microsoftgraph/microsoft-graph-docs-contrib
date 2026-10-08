@@ -32,7 +32,7 @@ Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesTo|policyScope|Indicates the user scope of the MAM policy. Possible values are: `none`, `all`, `selected`. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md). The possible values are: `none`, `all`, `selected`, `unknownFutureValue`.|
+|appliesTo|policyScope|Indicates the user scope of the MAM policy. The possible values are: `none`, `all`, `selected`. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md). The possible values are: `none`, `all`, `selected`, `unknownFutureValue`.|
 |complianceUrl|String| Compliance URL of the mobility management application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
 |description|String|Description of the MAM application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
 |discoveryUrl|String|Discovery URL of the MAM application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|

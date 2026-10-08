@@ -19,15 +19,13 @@ Create a new [webApplicationFirewallProvider](../resources/webApplicationFirewal
 - [akamaiWebApplicationFirewallProvider](../resources/akamaiWebApplicationFirewallProvider.md)
 - [cloudFlareWebApplicationFirewallProvider](../resources/cloudFlareWebApplicationFirewallProvider.md)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "riskpreventioncontainer-post-webapplicationfirewallproviders-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "riskpreventioncontainer_post_webapplicationfirewallproviders" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-post-webapplicationfirewallproviders-permissions.md)]
 
 [!INCLUDE [rbac-wafprotection-apis-write](../includes/rbac-for-apis/rbac-wafprotection-apis-write.md)]
@@ -118,12 +116,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-webapplicationfirewallprovider-from-akamai-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-webapplicationfirewallprovider-from-akamai-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-webapplicationfirewallprovider-from-akamai-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -191,12 +192,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-webapplicationfirewallprovider-from-cloudflare-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-webapplicationfirewallprovider-from-cloudflare-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-webapplicationfirewallprovider-from-cloudflare-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

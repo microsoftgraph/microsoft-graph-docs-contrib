@@ -124,6 +124,8 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f8ce2a5f-0
 
 ---
 
+---
+
 ### Response
 
 The following example shows the response.
@@ -166,7 +168,8 @@ Content-Type: application/json
       "allowTeamworkReactions": null,
       "recordAutomatically": null,
       "watermarkProtection": null,
-      "allowParticipantsToChangeName": null
+      "allowParticipantsToChangeName": null,
+      "meetingSpokenLanguageTag": "en-US"
     }
   ]
 }

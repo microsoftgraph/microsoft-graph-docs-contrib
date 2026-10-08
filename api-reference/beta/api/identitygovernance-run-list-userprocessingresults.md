@@ -1,7 +1,7 @@
 ---
 title: "List userProcessingResults"
 description: "List user processing results of a workflow run."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

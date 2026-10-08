@@ -12,7 +12,7 @@ ms.date: 03/21/2024
 
 Namespace: microsoft.graph
 
-Describes who or what initiated the provisioning event. 
+Describes who or what initiated the provisioning event. This object is configured in the **initiatedBy** property of [provisioningObjectSummary](../resources/provisioningobjectsummary.md).
 
 ## Properties
 
@@ -20,7 +20,7 @@ Describes who or what initiated the provisioning event.
 |:-------------|:------------|:------------|
 |displayName|String|Name of the person or service that initiated the provisioning event.|
 |id|String|Uniquely identifies the person or service that initiated the provisioning event.|
-|initiatorType|initiatorType| Type of initiator. Possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
+|initiatorType|initiatorType| Type of initiator. The possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
 
 ## JSON representation
 

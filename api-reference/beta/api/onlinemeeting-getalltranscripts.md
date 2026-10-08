@@ -5,7 +5,7 @@ author: "suvanka"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/06/2024
+ms.date: 08/13/2026
 ---
 
 # onlineMeeting: getAllTranscripts
@@ -24,20 +24,23 @@ For more information, see [delta query](/graph/delta-query-overview). For more e
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-### Known issues
+> [!NOTE]
+> This API has a [known issue](/graph/known-issues#apis-that-export-online-meeting-artifacts-may-return-duplicate-items-during-service-update) related to pagination token resets during a planned service update.
+>
+> Other known issues include:
+>
+> - [Using the `$top` query parameter might not return the **@odata.nextLink**](/graph/known-issues#apis-that-export-online-meeting-artifacts-might-not-return-nextlink-when-the-request-uses-the-top-query-parameter).
 
-The following known issues are associated with this API:
-
-- [Using the `$top` query parameter might not return the **@odata.nextLink**](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
-- [Transcript URLs might not include any content](https://developer.microsoft.com/en-us/graph/known-issues/?search=22932).
+> [!NOTE]
+> A tenant administrator must enable Microsoft Graph API access to meeting transcripts before apps can retrieve them. For more information, see [Manage transcript API access for Teams meetings](/microsoftteams/meeting-transcript-api-access).
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "onlinemeeting_getalltranscripts" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-getalltranscripts-permissions.md)]
 
 ## HTTP request
@@ -46,9 +49,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /users/{usersId}/onlineMeetings/getAllTranscripts(meetingOrganizerUserId='{userId}',startDateTime={startDateTime},endDateTime={endDateTime})
 ```
+
 >**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId**.
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
@@ -56,6 +61,9 @@ In the request URL, provide the following query parameters with values.
 |endDateTime|DateTimeOffset|Optional parameter to filter for artifacts created before the given end date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |meetingOrganizerUserId|String|The user identifier of the meeting organizer that is used to filter artifacts for meetings organized by that specific user.|
 |startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+
+> [!NOTE]
+> When using delta queries, follow the returned delta link without appending or reapplying filters. The token retains the filter from the initial request.
 
 This method supports the following OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -73,6 +81,17 @@ This method supports the following OData query parameter to help customize the r
 
 If successful, this method returns a `200 OK` response code and a collection of [callTranscript](../resources/calltranscript.md) objects in the response body.
 
+### Error responses
+
+This API is governed by tenant administrator settings for transcript access. Branch on the `innerError.code` value, not the message text because messages are subject to change.
+
+| Status | Error code (`innerError.code`) | Condition |
+|:-------|:--------------------------------|:----------|
+| `400 Bad Request` | `DeltaFilterNotAllowed` | A filter was supplied with a delta token. Follow the returned delta link without appending or reapplying filters. |
+| `403 Forbidden` | `GraphAccessToTranscriptsDisabled` | A tenant administrator has turned off Graph API access to transcripts. No retry succeeds until access is re-enabled. |
+
+The `transcriptContentUrl` returned by this function points at the transcript `/content` endpoint, which is additionally subject to the tenant's speaker-attribution setting. For that error and an example error payload, see [Get callTranscript](../api/calltranscript-get.md#error-responses).
+
 ## Examples
 
 ### Example 1: Get all transcripts
@@ -89,6 +108,7 @@ The following example shows a request.
   "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5"],
   "name": "get_alltranscripts"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/getAllTranscripts(meetingOrganizerUserId='8b081ef6-4792-4def-b2c9-c363a1bf41d5')
 ```
@@ -113,6 +133,10 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -124,6 +148,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -170,11 +195,13 @@ The following example shows a request to get all transcripts of a given meeting 
 The following example shows a request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5", "2024-01-15T00:00:00Z", "2024-01-31T00:00:00Z"],
   "name": "get_alltranscripts_with_dates"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/getAllTranscripts(meetingOrganizerUserId='8b081ef6-4792-4def-b2c9-c363a1bf41d5', startDateTime=2024-01-15T00:00:00Z, endDateTime=2024-01-31T00:00:00Z)
 ```
@@ -199,6 +226,10 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sample-code](../includes/snippets/php/get-alltranscripts-with-dates-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-alltranscripts-with-dates-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-alltranscripts-with-dates-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -209,7 +240,8 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

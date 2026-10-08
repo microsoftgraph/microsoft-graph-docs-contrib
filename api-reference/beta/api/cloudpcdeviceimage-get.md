@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a specific [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -128,7 +128,6 @@ Content-Type: application/json
     "statusDetails": null,
     "errorCode": null,
     "osVersionNumber": "10.0.22631.3593",
-    "sizeInGB": 64,
-    "osArchitecture": "x64"
+    "sizeInGB": 64
 }
 ```

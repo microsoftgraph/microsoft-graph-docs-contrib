@@ -13,6 +13,7 @@ columnDefinition.setDescription("test");
 columnDefinition.setEnforceUniqueValues(false);
 columnDefinition.setHidden(false);
 columnDefinition.setIndexed(false);
+columnDefinition.setIsSearchable(false);
 columnDefinition.setName("Title");
 TextColumn text = new TextColumn();
 text.setAllowMultipleLines(false);

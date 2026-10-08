@@ -18,7 +18,7 @@ Lock a [fileStorageContainer](../resources/filestoragecontainer.md) to prevent m
 
 This action updates the [lockState](../resources/enums.md#sitelockstate-values).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

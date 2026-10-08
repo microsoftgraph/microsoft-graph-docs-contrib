@@ -29,7 +29,7 @@ The following are the possible reasons that [findMeetingTimes](../api/user-findm
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|A reason for not returning any meeting suggestions. Possible values are: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, or `unknown`. This property is an empty string if the **meetingTimeSuggestions** property does include any meeting suggestions.|
+|emptySuggestionsReason|String|A reason for not returning any meeting suggestions. The possible values are: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, or `unknown`. This property is an empty string if the **meetingTimeSuggestions** property does include any meeting suggestions.|
 |meetingTimeSuggestions|[meetingTimeSuggestion](meetingtimesuggestion.md) collection|An array of meeting suggestions.|
 
 ## Relationships

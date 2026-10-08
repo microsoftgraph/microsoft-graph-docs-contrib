@@ -1,7 +1,7 @@
 ---
 title: "multiTenantOrganizationJoinRequestRecord resource type"
 description: "Defines the status of a tenant joining a multi-tenant organization."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

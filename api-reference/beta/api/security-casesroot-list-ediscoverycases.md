@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_casesroot_list_ediscoverycases" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-casesroot-list-ediscoverycases-permissions.md)]
+[!INCLUDE [rbac-ediscovery-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
 
 ## HTTP request
 

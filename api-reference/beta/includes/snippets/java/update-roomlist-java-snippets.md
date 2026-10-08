@@ -17,7 +17,7 @@ address.setStreet("4567 Main Street");
 address.setCity("Buffalo");
 address.setState("NY");
 address.setPostalCode("98052");
-address.setCountryOrRegion("USA");
+address.setCountryOrRegion("US");
 place.setAddress(address);
 OutlookGeoCoordinates geoCoordinates = new OutlookGeoCoordinates();
 geoCoordinates.setAltitude(null);

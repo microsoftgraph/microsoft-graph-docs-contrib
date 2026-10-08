@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata for the given object.
+Metadata for the given object. This object is configured in the **metadata** property of [objectMapping](../resources/synchronization-objectmapping.md).
 
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|key|objectMappingMetadata|Possible values are: `EscrowBehavior`, `DisableMonitoringForChanges`, `OriginalJoiningProperty`, `Disposition`, `IsCustomerDefined`, `ExcludeFromReporting`, `Unsynchronized`. |
+|key|objectMappingMetadata|The possible values are: `EscrowBehavior`, `DisableMonitoringForChanges`, `OriginalJoiningProperty`, `Disposition`, `IsCustomerDefined`, `ExcludeFromReporting`, `Unsynchronized`. |
 |value|String|Value of the metadata property.|
 
 ### Supported key-value pairs

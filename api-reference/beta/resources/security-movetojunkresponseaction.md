@@ -1,5 +1,5 @@
 ---
-title: "moveToJunkResponseAction resource type"
+title: "moveToJunkResponseAction resource type (deprecated)"
 description: "Describes an email response action that moves the email message to the user's Junk folder."
 author: "mmekler"
 ms.localizationpriority: medium
@@ -8,11 +8,14 @@ doc_type: resourcePageType
 ms.date: 03/06/2024
 ---
 
-# moveToJunkResponseAction resource type
+# moveToJunkResponseAction resource type (deprecated)
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The **moveToJunkResponseAction** resource type is deprecated and will be removed on October 1, 2026. Use [automatedAction](../resources/security-automatedaction.md) (grouped via [automatedActionSet](../resources/security-automatedactionset.md)) on the [detectionAction](../resources/security-detectionaction.md) resource instead.
 
 Describes an email response action that moves the email message to the user's Junk folder.
 

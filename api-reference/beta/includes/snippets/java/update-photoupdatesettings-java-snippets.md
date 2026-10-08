@@ -9,12 +9,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 PhotoUpdateSettings photoUpdateSettings = new PhotoUpdateSettings();
-photoUpdateSettings.setOdataType("#microsoft.graph.photoUpdateSettings");
 LinkedList<String> allowedRoles = new LinkedList<String>();
-allowedRoles.add("String");
 photoUpdateSettings.setAllowedRoles(allowedRoles);
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("source", "String");
+additionalData.put("source", "cloud");
 photoUpdateSettings.setAdditionalData(additionalData);
 PhotoUpdateSettings result = graphClient.admin().people().photoUpdateSettings().patch(photoUpdateSettings);
 

@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The recurrence pattern and range. This shared object is used to define the recurrence of [access reviews](accessreviewscheduledefinition.md), [calendar events](event.md), and [access package assignments](accesspackageassignment.md) in Microsoft Entra ID.
+In [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) and [accessReviewHistoryScheduleSettings](../resources/accessreviewhistoryschedulesettings.md), the **recurrence** property uses **patternedRecurrence** to define the recurrence pattern and range. This shared object is also used to define the recurrence of [calendar events](../resources/event.md) and [access package assignments](../resources/accesspackageassignment.md) in Microsoft Entra ID.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. Do not specify for a one-time access review. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li>  Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](recurrencepattern.md) are supported.|
+|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. Do not specify for a one-time access review. <br/><br/> For access reviews: <ul><li>Do not specify this property for a one-time access review. </li><li>  Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](recurrencepattern.md) are supported.</li></ul>|
 |range|[recurrenceRange](recurrencerange.md)|The duration of an event.|
 
 ## Relationships

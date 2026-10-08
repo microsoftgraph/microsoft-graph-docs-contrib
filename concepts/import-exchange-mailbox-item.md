@@ -43,7 +43,7 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/createImportSession
+POST https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/createImportSession
 ```
 
 #### Response
@@ -62,8 +62,8 @@ Content-type: application/json
 Content-length: 232
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.mailboxItemImportSession",
-    "importUrl": "https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.mailboxItemImportSession",
+    "importUrl": "https://outlook.office365.com/api/gv1.0/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b",
     "expirationDateTime": "2024-10-17T19:00:48.1052906Z"
 }
 ```
@@ -74,6 +74,8 @@ To import the item into the mailbox, make a POST request to the URL returned in 
 
 Specify the request body as described in the [Request body](#request-body) section.
 
+Use the **id** property of a [mailboxFolder](/graph/api/resources/mailboxfolder) returned by the [List folders](/graph/api/mailbox-list-folders) endpoint as the **FolderId** value. Don't use folder IDs from workload-specific collections, such as Outlook mail folder or calendar endpoints. To find the destination folder, call `GET https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/{mailboxId}/folders`. For example, to find calendar-class folders, use `GET https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/{mailboxId}/folders?$filter=type eq 'IPF.Appointment'`.
+
 ### Request headers
 
 Because the initial opaque URL is preauthenticated and contains the appropriate authorization token for subsequent queries for that import session, don't specify an `Authorization` request header for this operation.
@@ -82,7 +84,7 @@ Because the initial opaque URL is preauthenticated and contains the appropriate 
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|FolderId|String|The ID of the folder into which you want to import the item. Required.|
+|FolderId|String|The ID of the folder into which you want to import the item. Use the **id** property of the destination [mailboxFolder](/graph/api/resources/mailboxfolder). Required.|
 |Mode|String|Specifies that the import mode can be `create` or `update`. Required. <br><br> <ul><li>`create`: Creates a new item. If you specify **ItemId** or **ChangeKey** in the request body, it results in an error.</li><li>`update`: Updates an existing item. **ItemId** and **ChangeKey** are required in the request body for updates. The operation fails if the combination of **ItemId** and **ChangeKey** doesn't match with any existing item in the folder.</li></ul>|
 |Data|String|Data that represents an item in a base64 encoded [FTS format](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450). Required.|
 |ItemId|String|The unique identifier for the item. Required during `update`.|
@@ -110,7 +112,7 @@ The following example shows a request.
 -->
 
 ```http
-POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b
+POST https://outlook.office365.com/api/gv1.0/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b
 
 {
     "FolderId": "EDSVrdi3lRAAEED0yTAAA=",
@@ -135,7 +137,7 @@ Content-type: application/json
 Content-length: 232
 
 {
-    "@odata.context": "https://outlook.office365.com/api/gbeta/$metadata#microsoft.graph.importMailboxItemResponse",
+    "@odata.context": "https://outlook.office365.com/api/gv1.0/$metadata#microsoft.graph.importMailboxItemResponse",
     "itemId": "EDSVrdi3lRAAFSX03NAAA=",
     "changeKey": "kNnynYavKEihA0la3Yt5UQABUftGQg=="
 }
@@ -156,7 +158,7 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b
+POST https://outlook.office365.com/api/gv1.0/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b
 
 {
     "FolderId": "EDSVrdi3lRAAEED0yTAAA=",
@@ -183,7 +185,7 @@ Content-type: application/json
 Content-length: 232
 
 {
-    "@odata.context": "https://outlook.office365.com/api/gbeta/$metadata#microsoft.graph.importMailboxItemResponse",
+    "@odata.context": "https://outlook.office365.com/api/gv1.0/$metadata#microsoft.graph.importMailboxItemResponse",
     "itemId": "EDSVrdi3lRAAFSX03NAAA=",
     "changeKey": "kNnynYavKEihA0la3Yt5UQABUftGQf=="
 }

@@ -1,11 +1,11 @@
 ---
 title: "Deployments in Windows Autopatch"
 description: "Use Windows Autopatch to create deployments, configure settings, and set lifecycle state. Assign a device to multiple deployments."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
-ms.date: 11/07/2024
+ms.date: 01/28/2026
 ms.topic: article
 ---
 

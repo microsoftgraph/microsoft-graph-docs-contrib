@@ -202,7 +202,8 @@ Content-Type: application/json
     "isPasscodeRequired": false,
     "joinMeetingId": "1234567890",
     "passcode": null
-  }
+  },
+  "meetingSpokenLanguageTag": "en-US"
 }
 ```
 > [!NOTE]

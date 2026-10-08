@@ -30,7 +30,7 @@ Represents a relying party configured with Active Directory Federation Services 
 |id|String| Read-only. Unique Identifier generated at API level.| 
 |relyingPartyId|String|This identifier is used to identify the relying party to this Federation Service. It's used when issuing claims to the relying party.|
 |serviceId|String|Uniquely identifies the Active Directory forest.|
-|migrationStatus|migrationStatus| Indication of whether the application can be moved to Microsoft Entra ID or require more investigation. Possible values are: `ready`, `needsReview`, `additionalStepsRequired`, `unknownFutureValue`.|
+|migrationStatus|migrationStatus| Indication of whether the application can be moved to Microsoft Entra ID or require more investigation. The possible values are: `ready`, `needsReview`, `additionalStepsRequired`, `unknownFutureValue`.|
 |migrationValidationDetails|[keyValuePair](keyvaluepair.md) collection|Specifies all the validations check done on applications configuration details to evaluate if the application is ready to be moved to Microsoft Entra ID.|
 |relyingPartyName|String|Name of application or other entity on the internet that uses an identity provider to authenticate a user who wants to sign in.|
 |failedSignInCount|Int64| Number of failed sign in on Active Directory Federation Service in the period specified. |

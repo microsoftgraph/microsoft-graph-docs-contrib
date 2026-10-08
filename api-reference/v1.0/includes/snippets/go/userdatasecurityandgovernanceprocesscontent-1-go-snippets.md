@@ -10,12 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 import (
 	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
+headers := abstractions.NewRequestHeaders()
+headers.Add("Client-Request-Id", "50dc805c-3af4-42d9-ad16-a746235cc736")
+
+configuration := &graphusers.DataSecurityAndGovernanceProcessContentRequestBuilderPostRequestConfiguration{
+	Headers: headers,
+}
 requestBody := graphusers.NewItemProcessContentPostRequestBody()
 contentToProcess := graphmodels.NewProcessContentRequest()
 
@@ -79,7 +86,7 @@ contentToProcess.SetIntegratedAppMetadata(integratedAppMetadata)
 requestBody.SetContentToProcess(contentToProcess)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-processContent, err := graphClient.Me().DataSecurityAndGovernance().ProcessContent().Post(context.Background(), requestBody, nil)
+processContent, err := graphClient.Me().DataSecurityAndGovernance().ProcessContent().Post(context.Background(), requestBody, configuration)
 
 
 ```

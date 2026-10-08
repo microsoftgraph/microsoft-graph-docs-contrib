@@ -5,9 +5,10 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/22/2025
 ---
 
+<!-- markdownlint-disable MD024 -->
 # reportRoot: getOffice365ActiveUserDetail
 
 Namespace: microsoft.graph
@@ -16,7 +17,9 @@ Namespace: microsoft.graph
 
 Get details about Microsoft 365 active users.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
+> [!NOTE]
+> - For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).  
+> - To use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, see [Programmatically export unlicensed Copilot Chat usage](../resources/report.md#programmatically-export-unlicensed-copilot-chat-usage).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -27,11 +30,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getoffice365activeuserdetail" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getoffice365activeuserdetail-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions, to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /reports/getOffice365ActiveUserDetail(period='{period_value}')
@@ -42,70 +45,63 @@ GET /reports/getOffice365ActiveUserDetail(date={date_value})
 
 In the request URL, provide one of the following parameters with a valid value.
 
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
-| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
+| Parameter | Type   | Description |
+| :-------- | :----- | :---------- |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for `{period_value}` are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+| date      | Date   | Specifies the date for which you want to view the users who performed any activity. `{date_value}` must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, `{date_value}` should be a date from that range. |
 
 > **Note:** You need to set either period or date in the URL.
 
-This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, use the OData `$format` query parameter set to text/csv or application/json.
 
 ## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Name          | Description |
+| :------------ | :---------- |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 
 ## Response
 
 ### CSV
 
-If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
+If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. You can find this URL in the `Location` header of the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
-The CSV file has the following headers for columns:
+The CSV file contains the following column headers:
 
 - Report Refresh Date
 - User Principal Name
 - Display Name
 - Is Deleted
 - Deleted Date
-- Has Exchange License
-- Has OneDrive License
-- Has SharePoint License
-- Has Skype For Business License
-- Has Yammer License
-- Has Teams License
+- hasExchangeLicense
+- hasOneDriveLicense
+- hasSharePointLicense
+- hasSkypeForBusinessLicense
+- hasYammerLicense*
+- hasTeamsLicense*
 - Exchange Last Activity Date
 - OneDrive Last Activity Date
 - SharePoint Last Activity Date
 - Skype For Business Last Activity Date
-- Yammer Last Activity Date
-- Teams Last Activity Date
+- Yammer Last Activity Date*
+- Teams Last Activity Date*
 - Exchange License Assign Date
 - OneDrive License Assign Date
 - SharePoint License Assign Date
 - Skype For Business License Assign Date
-- Yammer License Assign Date
-- Teams License Assign Date
+- Yammer License Assign Date*
+- teamsLicenseAssignDate*
 - Assigned Products
 
-The following columns are not supported in Microsoft Graph China operated by 21Vianet:
-
-- Has Yammer License
-- Has Teams License
-- Yammer Last Activity Date
-- Teams Last Activity Date
-- Yammer License Assign Date
-- Teams License Assign Date
+*These columns aren't supported in Microsoft Graph China operated by 21Vianet.
 
 ### JSON
 
 If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object in the response body.
 
-The following properties in **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object are not supported in Microsoft Graph China operated by 21Vianet:
+The following properties in the **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object aren't supported in Microsoft Graph China operated by 21Vianet:
 
 - hasYammerLicense
 - hasTeamsLicense
@@ -120,12 +116,11 @@ The default page size for this request is 200 items.
 
 ### CSV
 
-The following is an example that outputs CSV.
+The following example outputs CSV.
 
 #### Request
 
 The following example shows a request.
-
 
 <!-- {
   "blockType": "ignored",
@@ -136,12 +131,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period='D7')?$format=text/csv
 ```
 
-
 #### Response
 
 The following example shows the response.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
@@ -149,7 +143,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+If you follow the 302 redirection, you can download a CSV file with the following schema.
 
 <!-- {
   "blockType": "response",
@@ -166,12 +160,11 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Has
 
 ### JSON
 
-The following is an example that returns JSON.
+The following example returns JSON.
 
 #### Request
 
 The following example shows a request.
-
 
 <!-- {
   "blockType": "ignored",
@@ -181,7 +174,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period='D7')?$format=application/json
 ```
-
 
 #### Response
 
@@ -234,6 +226,7 @@ Content-Length: 853
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -245,3 +238,4 @@ Content-Length: 853
   "suppressions": [
   ]
 }-->
+

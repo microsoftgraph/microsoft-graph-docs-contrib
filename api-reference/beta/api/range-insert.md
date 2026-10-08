@@ -46,16 +46,16 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|shift|string|Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.|
+|shift|string|Specifies which way to shift the cells.  The possible values are: `Down`, `Right`.|
 
 ## Response
 
 If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
-The following example shows a request.
+The following example shows how to call this API.
+### Request
+This example shows how to insert a cell into the worksheet and shift the other cells down.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 Content-type: application/json
 
 {
-  "shift": "shift-value"
+  "shift": "Down"
 }
 ```
 
@@ -97,8 +97,10 @@ Content-type: application/json
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

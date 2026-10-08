@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the policy scope of the Microsoft Entra tenant that controls the Local Admin Password Solution (LAPS) setting.
+Represents the policy scope of the Microsoft Entra tenant that controls the Local Admin Password Solution (LAPS) setting. Configured in the **localAdminPassword** property of [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Specifies whether this policy scope is configurable by the admin. The default value is `false`. An admin can set it to true to enable Local Admin Password Solution (LAPS) within their organzation.|
+|isEnabled|Boolean|Specifies whether LAPS is enabled. The default value is `false`. An admin can set it to true to enable Local Admin Password Solution (LAPS) within their organization.|
 
 ## Relationships
 

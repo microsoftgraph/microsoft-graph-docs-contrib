@@ -29,7 +29,7 @@ Contains information associated with an attendance record in a [meetingAttendanc
 | externalRegistrationInformation | [virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md) | The external information for a [virtualEventRegistration](virtualeventregistration.md). |
 | identity | [identity](identity.md) | The identity of the user associated with this attendance record. The specific type is one of the following derived types of [identity](identity.md), depending on the user type: [communicationsUserIdentity](communicationsuseridentity.md), [azureCommunicationServicesUserIdentity](azurecommunicationservicesuseridentity.md). |
 | registrationId | String | Unique identifier of a [virtualEventRegistration](virtualeventregistration.md) that is available to all participants registered for the [virtualEventWebinar](virtualeventwebinar.md). |
-| role | String | Role of the attendee. Possible values are: `None`, `Attendee`, `Presenter`, and `Organizer`.  |
+| role | String | Role of the attendee. The possible values are: `None`, `Attendee`, `Presenter`, and `Organizer`.  |
 | totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds. |
 
 ## JSON representation

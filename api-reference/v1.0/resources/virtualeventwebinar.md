@@ -47,7 +47,7 @@ The following table shows the roles that can perform various actions on webinars
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| audience | meetingAudience | To whom the webinar is visible. Possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
+| audience | meetingAudience | To whom the webinar is visible. The possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information for the creator of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
@@ -56,8 +56,9 @@ The following table shows the roles that can perform various actions on webinars
 | externalEventInformation | [virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) collection | The external information of a webinar. Returned only for event organizers or coorganizers; otherwise, `null`. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). |
 | id | String | Unique identifier of the webinar. Inherited from [entity](../resources/entity.md).|
+| isRegistrationRequired | Boolean | Indicates whether attendee registration is enabled for the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| status | virtualEventStatus | Status of the webinar. Possible values are: `draft`, `published`, `canceled`, and `unknownFutureValue`. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| status | virtualEventStatus | Status of the webinar. The possible values are: `draft`, `published`, `canceled`, and `unknownFutureValue`. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## Relationships
 
@@ -90,6 +91,7 @@ The following JSON representation shows the resource type.
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "externalEventInformation" : [{"@odata.type": "microsoft.graph.virtualEventExternalInformation"}],
   "id": "String (identifier)",
+  "isRegistrationRequired": "Boolean",
   "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "status": "String"

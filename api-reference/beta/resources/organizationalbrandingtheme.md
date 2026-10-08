@@ -2,10 +2,11 @@
 title: "organizationalBrandingTheme resource type"
 description: "Contains details of the branding themes."
 author: "AlexanderMars"
-ms.date: 11/04/2025
+ms.date: 12/01/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Tenant branding theme
 ---
 
 # organizationalBrandingTheme resource type

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a synchronization template by its identifier.
+Retrieve a [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) object by its identifier.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

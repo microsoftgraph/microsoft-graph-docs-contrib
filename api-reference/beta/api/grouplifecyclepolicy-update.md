@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and updated [groupLi
 
 ## Example
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 Note: The response object shown here might be shortened for readability.
 

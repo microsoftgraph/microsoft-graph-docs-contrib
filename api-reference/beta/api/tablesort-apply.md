@@ -46,15 +46,15 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |fields|workbookSortField collection|The list of conditions to sort on.|
 |matchCase|Boolean|Optional. Whether to have the casing impact string ordering.|
-|method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
+|method|string|Optional. The ordering method used for Chinese characters.  The possible values are: `PinYin`, `StrokeCount`.|
 
 ## Response
 
 If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
-##### Request
+The following example shows how to call this API.
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -111,7 +111,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 <!-- {
   "blockType": "response"

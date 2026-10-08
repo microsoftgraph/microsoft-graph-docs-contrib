@@ -1,6 +1,6 @@
 ---
 title: "mailboxFolder: delta"
-description: "Get a set of mailboxFolder objects that have been added, deleted, or removed from the user's mailbox."
+description: "Get a set of mailboxFolder objects that were added, deleted, or removed from the user's mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that have been added, deleted, or removed from the user's mailbox.
+Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that were added, deleted, or removed from the user's mailbox.
 
 A **delta** function call for folders in a mailbox is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can query for incremental changes in the folders. This approach allows you to maintain and synchronize a local store of a user's mail folders without having to fetch all the folders of that mailbox from the server every time.
 
@@ -56,7 +56,7 @@ You can use the `$select` query parameter to specify only the properties you nee
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Prefer|odata.maxpagesize={x}. Optional.|
+|Prefer|odata.maxpagesize={x}. Optional. Controls page size.|
 
 ## Request body
 
@@ -65,6 +65,9 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [mailboxFolder](../resources/mailboxfolder.md) objects in the response body.
+
+> [!NOTE]
+> *Archive mailboxes with autoexpanded folders:* When the target folder physically resides in an auxiliary (autoexpanded) archive mailbox, this API might return a redirect response that points to the correct mailbox endpoint. For details, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
 
 ## Examples
 
@@ -130,7 +133,6 @@ The following example shows a `$deltaToken` in an **@odata.deltaLink** response 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 254
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(mailboxFolder)",
@@ -139,13 +141,17 @@ Content-length: 254
         {
             "@odata.type": "#microsoft.graph.mailboxFolder",
             "displayName": "Inbound",
-            "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/Exchange/Mailboxes/MBX:e0643f21@a7809c93",
+            "isHidden": false,
+            "wellKnownName": null,
+            "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "id": "AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMzNjMwNWM0ZGE2YQAuAAAAAADbrwBIJbBSTKolRbhHUzSHAQCQ2fKdhq8oSKEDSVrdi3lRAAACgfP9AAA="
         },
         {
             "@odata.type": "#microsoft.graph.mailboxFolder",
             "displayName": "Outbound",
-            "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/Exchange/Mailboxes/MBX:e0643f21@a7809c93",
+            "isHidden": false,
+            "wellKnownName": null,
+            "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "id": "AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMzNjMwNWM0ZGE2YQAuAAAAAADbrwBIJbBSTKolRbhHUzSHAQCQ2fKdhq8oSKEDSVrdi3lRAAACgfP_AAA="
         }
     ]

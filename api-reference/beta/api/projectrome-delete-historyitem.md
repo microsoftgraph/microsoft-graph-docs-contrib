@@ -50,7 +50,7 @@ If successful, this method returns the `204 No Content` response code if the his
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -65,7 +65,7 @@ The following example shows a request.
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 ```
 
-##### Response
+### Response
 
 The following example shows the response.
 

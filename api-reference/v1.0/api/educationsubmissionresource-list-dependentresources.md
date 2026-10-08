@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/de45722a-c202-43a9-9dd5-d
 [!INCLUDE [sample-code](../includes/snippets/php/list-dependentsubmissionresources-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-dependentsubmissionresources-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-dependentsubmissionresources-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

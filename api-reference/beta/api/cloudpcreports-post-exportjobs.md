@@ -17,7 +17,7 @@ Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) resource to in
 
 Use the [GET cloudPcExportJob](cloudpcexportjob-get.md) operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource. When the property result is `completed`, the report finishes downloading to the location specified by the **exportUrl** property.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -50,7 +50,7 @@ You can specify the following properties when you create a **cloudPcExportJob**.
 |:---|:---|:---|
 |filter|String|The filter applied on the report. Optional.|
 |format|String|The format of the exported report. Optional.|
-|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md#cloudpcreportname-values)|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`, `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `cloudPcInsightReport`, `regionalInaccessibleCloudPcTrendReport`, `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport` . Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`, `crossRegionDisasterRecoveryReport`, `performanceTrendReport`, `inaccessibleCloudPcTrendReport`, `regionalConnectionQualityTrendReport`, `regionalConnectionQualityInsightsReport`, `remoteConnectionQualityReport`, `cloudPcInsightReport`, `regionalInaccessibleCloudPcTrendReport`, `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `troubleshootIssueCountReport`.|
+|reportName|[cloudPcReportName](../resources/cloudpcreportname.md)|The report name. |
 |select|String collection|The selected columns of the report. Optional.|
 
 ## Response

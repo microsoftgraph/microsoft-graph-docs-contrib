@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "storyline",
+          "ChangeType": "Addition",
+          "Description": "Added the **storyline** relationship to the [employeeExperienceUser](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperienceUser?view=graph-rest-beta) resource.",
+          "Target": "employeeExperienceUser"
+        },
+        {
+          "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "storyline",
+          "ChangeType": "Addition",
+          "Description": "Added the [storyline](https://learn.microsoft.com/en-us/graph/api/resources/storyline?view=graph-rest-beta) resource.",
+          "Target": "storyline"
+        },
+        {
+          "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "followings",
+          "ChangeType": "Addition",
+          "Description": "Added the **followings** relationship to the [storyline](https://learn.microsoft.com/en-us/graph/api/resources/storyline?view=graph-rest-beta) resource.",
+          "Target": "storyline"
+        },
+        {
+          "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "followers",
+          "ChangeType": "Addition",
+          "Description": "Added the **followers** relationship to the [storyline](https://learn.microsoft.com/en-us/graph/api/resources/storyline?view=graph-rest-beta) resource.",
+          "Target": "storyline"
+        },
+        {
+          "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "storylineFollower",
+          "ChangeType": "Addition",
+          "Description": "Added the [storylineFollower](https://learn.microsoft.com/en-us/graph/api/resources/storylineFollower?view=graph-rest-beta) resource.",
+          "Target": "storylineFollower"
+        },
+        {
+          "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "storylineFollowing",
+          "ChangeType": "Addition",
+          "Description": "Added the [storylineFollowing](https://learn.microsoft.com/en-us/graph/api/resources/storylineFollowing?view=graph-rest-beta) resource.",
+          "Target": "storylineFollowing"
+        },
+        {
+          "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+          "ApiChange": "Method",
+          "ChangedApiName": "follow",
+          "ChangeType": "Addition",
+          "Description": "Added the [follow](https://learn.microsoft.com/en-us/graph/api/storyline-follow?view=graph-rest-beta) method to the [storyline](https://learn.microsoft.com/en-us/graph/api/resources/storyline?view=graph-rest-beta) resource.",
+          "Target": "storyline"
+        },
+        {
+          "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+          "ApiChange": "Method",
+          "ChangedApiName": "unfollow",
+          "ChangeType": "Addition",
+          "Description": "Added the [unfollow](https://learn.microsoft.com/en-us/graph/api/storyline-unfollow?view=graph-rest-beta) method to the [storyline](https://learn.microsoft.com/en-us/graph/api/resources/storyline?view=graph-rest-beta) resource.",
+          "Target": "storyline"
+        },
+        {
+          "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+          "ApiChange": "Method",
+          "ChangedApiName": "list followers",
+          "ChangeType": "Addition",
+          "Description": "Added the [list followers](https://learn.microsoft.com/en-us/graph/api/storyline-list-followers?view=graph-rest-beta) method to the [storyline](https://learn.microsoft.com/en-us/graph/api/resources/storyline?view=graph-rest-beta) resource.",
+          "Target": "storyline"
+        },
+        {
+          "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+          "ApiChange": "Method",
+          "ChangedApiName": "list followings",
+          "ChangeType": "Addition",
+          "Description": "Added the [list followings](https://learn.microsoft.com/en-us/graph/api/storyline-list-followings?view=graph-rest-beta) method to the [storyline](https://learn.microsoft.com/en-us/graph/api/resources/storyline?view=graph-rest-beta) resource.",
+          "Target": "storyline"
+        }
+      ],
+      "Id": "1d076121-186a-4140-a0aa-ccbee7481c6f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-11T23:16:17.6564344Z",
+      "WorkloadArea": "Employee experience",
+      "SubArea": "Employee engagement"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
           "ApiChange": "Enum type",
           "ChangedApiName": "communityPrivacy",

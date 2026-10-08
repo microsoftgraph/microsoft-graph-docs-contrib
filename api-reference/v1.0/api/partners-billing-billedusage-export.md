@@ -50,7 +50,7 @@ The following table shows the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|attributeSet|[microsoft.graph.partners.billing.attributeSet](../resources/partners-billing-attributeset.md)|Attributes that should be exported. Possible values are: `full`, `basic`, `unknownFutureValue`. The default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes. Optional.|
+|attributeSet|[microsoft.graph.partners.billing.attributeSet](../resources/partners-billing-attributeset.md)|Attributes that should be exported. The possible values are: `full`, `basic`, `unknownFutureValue`. The default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes. Optional.|
 |invoiceId|String|The invoice ID for which the partner requested to export data. Required.|
 
 ## Response

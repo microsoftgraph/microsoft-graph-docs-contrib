@@ -9,7 +9,7 @@ from msgraph import GraphServiceClient
 from msgraph.generated.drives.item.items.item.workbook.names.item.range.insert.insert_post_request_body import InsertPostRequestBody
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = InsertPostRequestBody(
-	shift = "shift-value",
+	shift = "Down",
 )
 
 result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.names.by_workbook_named_item_id('workbookNamedItem-id').range.insert.post(request_body)

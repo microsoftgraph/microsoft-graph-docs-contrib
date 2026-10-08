@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Represents a legal hold. Legal holds are holds that are tied to an eDiscovery case. Legal holds should not be confused with retention holds, which are used to control retention policies for Microsoft 365 content. eDiscovery legal holds are for holding content indefinitely for litigation, internal investigations, and other legal actions where content needs to be protected against deletion. For more information, see [Manage holds in Advanced eDiscovery](/microsoft-365/compliance/managing-holds)
 
 Inherits from [entity](../resources/entity.md).
@@ -46,7 +48,7 @@ Inherits from [entity](../resources/entity.md).
 |isEnabled|Boolean|Indicates whether the hold is enabled and actively holding content. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|the user who last modified the legal hold.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the legal hold was last modified. |
-|status|microsoft.graph.ediscovery.legalHoldStatus|The status of the legal hold. Possible values are: `Pending`, `Error`, `Success`, `UnknownFutureValue`.|
+|status|microsoft.graph.ediscovery.legalHoldStatus|The status of the legal hold. The possible values are: `Pending`, `Error`, `Success`, `UnknownFutureValue`.|
 
 ### legalHoldStatus values
 

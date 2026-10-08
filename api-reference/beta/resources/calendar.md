@@ -46,14 +46,14 @@ Represents a container for [event](event.md) resources. It can be a calendar for
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|allowedOnlineMeetingProviders|onlineMeetingProviderType collection| Represent the online meeting service providers that can be used to create online meetings in this calendar. Possible values are: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
+|allowedOnlineMeetingProviders|onlineMeetingProviderType collection| Represent the online meeting service providers that can be used to create online meetings in this calendar. The possible values are: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |calendarGroupId|String|The [calendarGroup](calendargroup.md) in which to create the calendar. If the user has never explicitly set a group for the calendar, this property is  null.|
 |canEdit |Boolean |`true` if the user can write to the calendar, `false` otherwise. This property is `true` for the user who created the calendar. This property is also `true` for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding [calendarPermission](calendarpermission.md) resource. Read-only.|
 |canShare |Boolean |`true` if the user has the permission to share the calendar, `false` otherwise. Only the user who created the calendar can share it. Read-only.|
 |canViewPrivateItems |Boolean |`true` if the user can read calendar items that have been marked private, `false` otherwise. This property is set through an Outlook client or the corresponding [calendarPermission](calendarpermission.md) resource. Read-only.|
 |changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
 |color|calendarColor|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: `auto`, `lightBlue`, `lightGreen`, `lightOrange`, `lightGray`, `lightYellow`, `lightTeal`, `lightPink`, `lightBrown`, `lightRed`, `maxColor`. |
-|defaultOnlineMeetingProvider|onlineMeetingProviderType|The default online meeting provider for meetings sent from this calendar. Possible values are: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
+|defaultOnlineMeetingProvider|onlineMeetingProviderType|The default online meeting provider for meetings sent from this calendar. The possible values are: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |hexColor|String|The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is  empty. |
 |id|String|The calendar's unique identifier. Read-only.|
 |isDefaultCalendar|Boolean|`true` if this is the default calendar where new events are created by default, `false` otherwise.|

@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # accessReviewInstance: batchRecordDecisions
 Namespace: microsoft.graph
 
-Enables reviewers to review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in batches by using **principalId**, **resourceId**, or neither.
+Enables reviewers to review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in a specific [accessReviewInstance](../resources/accessreviewinstance.md) in batches by using **principalId**, **resourceId**, or neither.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -46,7 +46,7 @@ The following table lists the properties that you can use to review [accessRevie
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|decision|String|Access decision for the entity being reviewed. Possible values are: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Required.|
+|decision|String|Access decision for the entity being reviewed. The possible values are: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Required.|
 |justification|String|Context of the review provided to admins. Required if **justificationRequiredOnApproval** of the settings property of the **accessReviewScheduleDefinition** is `true` .|
 |principalId|String|If supplied, all the **accessReviewInstanceDecisionItems** with matching **principalId** values will be reviewed in this batch. If not supplied, all **accessReviewInstanceDecisionItems** will be reviewed.|
 |resourceId|String|If supplied, all the **accessReviewInstanceDecisionItems** with matching **resourceId** will be reviewed in this batch. If not supplied, all **accessReviewInstanceDecisionItems** will be reviewed.|
@@ -94,10 +94,6 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstance-batchrecorddecisions-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstance-batchrecorddecisions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -28,6 +28,7 @@ Inherits from [sharePointIdentityMapping](../resources/sharepointidentitymapping
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|deleted|[deleted](../resources/deleted.md)|Indicates that an identity mapping was deleted successfully. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |id|String|Unique identifier for the user identity mapping. Base64-encoded String. Generated automatically. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |sourceUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the source user in the originating organization. Contains the source user's principal name.|
@@ -51,6 +52,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointUserIdentityMapping",
+  "deleted": {"@odata.type": "microsoft.graph.deleted"},
   "id": "String (identifier)",
   "sourceOrganizationId": "Guid",
   "sourceUserIdentity": {"@odata.type": "microsoft.graph.userIdentity"},

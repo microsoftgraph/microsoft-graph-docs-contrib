@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoveryholdpolicy_retrypolicy" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryholdpolicy-retrypolicy-permissions.md)]
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
 
 ## HTTP request
 
@@ -82,6 +83,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/c2940e86-57
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/ediscoveryholdpolicythisretrypolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoveryholdpolicythisretrypolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

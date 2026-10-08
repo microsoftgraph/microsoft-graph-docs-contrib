@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Defines a list of security schemes that can be used by the operations, as defined in the [agentCardManifest](../resources/agentcardmanifest.md).
 
 This resource is an open type that allows additional properties beyond those documented here.

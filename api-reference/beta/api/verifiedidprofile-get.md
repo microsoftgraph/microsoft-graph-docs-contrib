@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of [verifiedIdProfile](../resources/verifiedidprofile.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "verifiedidprofile-get-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "verifiedidprofile_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/verifiedidprofile-get-permissions.md)]
 
 [!INCLUDE [rbac-verifiedid](../includes/rbac-for-apis/rbac-verifiedid-write.md)]
@@ -41,7 +39,7 @@ GET /identity/verifiedId/profiles/{verifiedIdProfileId}
 
 ## Optional query parameters
 
-None 
+None
 
 ## Request headers
 
@@ -92,6 +90,10 @@ GET https://graph.microsoft.com/beta/identity/verifiedId/profiles/ca15ec56-7adf-
 [!INCLUDE [sample-code](../includes/snippets/php/get-verifiedidprofile-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-verifiedidprofile-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-verifiedidprofile-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,42 +116,54 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "value": [
-        {
-            "id": "9dda0ae1-e007-4a1d-81ec-2cf4b1274610",
-            "name": "Contoso IDV Provider ",
-            "description": "Contoso Verified Identity",
-            "lastModifiedDateTime": null,
-            "state": "enabled",
-            "verifierDid": "did:web:eu.did-dev.contoso.io",
-            "priority": 1,
-            "verifiedIdProfileConfiguration": {
-                "type": "verifiedIdentity",
-                "acceptedIssuer": "did:web:eu.did-dev.contoso.io",
-                "claimBindingSource": "directory",
-                "claimBindings": [
-                    {
-                        "sourceAttribute": "First name",
-                        "verifiedIdClaim": "vc.credentialSubject.firstName"
-                    },
-                    {
-                        "sourceAttribute": "Last name",
-                        "verifiedIdClaim": "vc.credentialSubject.lastName"
-                    }
-                ]
+    "id": "9dda0ae1-e007-4a1d-81ec-2cf4b1274610",
+    "name": "Contoso IDV Provider",
+    "description": "Contoso Verified Identity",
+    "lastModifiedDateTime": null,
+    "state": "enabled",
+    "verifierDid": "did:web:eu.did-dev.contoso.io",
+    "priority": 1,
+    "verifiedIdProfileConfiguration": {
+        "methodType": "tenantCustomCredential",
+        "type": "verifiedIdentity",
+        "manifestUrl": "https://verifiedid.contoso.com/manifest",
+        "acceptedIssuer": "did:web:eu.did-dev.contoso.io",
+        "claimBindingSource": "directory",
+        "claimBindings": [
+            {
+                "sourceAttribute": "First name",
+                "verifiedIdClaim": "vc.credentialSubject.firstName"
             },
-            "faceCheckConfiguration": {
-                "isEnabled": true,
-                "sourcePhotoClaimName": "portrait"
-            },
-            "verifiedIdUsageConfigurations": [
-                {
-                    "isEnabledForTestOnly": true,
-                    "purpose": "recovery"
-                }
-            ]
+            {
+                "sourceAttribute": "Last name",
+                "verifiedIdClaim": "vc.credentialSubject.lastName"
+            }
+        ],
+        "claimValidation": {
+            "isEnabled": false,
+            "customExtensionId": ""
         }
-    ]
+    },
+    "faceCheckConfiguration": {
+        "isEnabled": true,
+        "sourcePhotoClaimName": "portrait"
+    },
+    "mobileDriversLicenseConfiguration": {
+        "acceptedRegions": [
+            "region-code"
+        ],
+        "documentStandard": "document-standard"
+    },
+    "verifiedIdUsageConfigurations": [
+        {
+            "isEnabledForTestOnly": true,
+            "purpose": "verification"
+        }
+    ],
+    "selfServiceIssuance": {
+        "isEnabled": true,
+        "issuanceUrl": "https://verifiedid.contoso.com/issue"
+    }
 }
 ```
 

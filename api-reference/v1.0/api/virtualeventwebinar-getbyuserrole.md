@@ -38,7 +38,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|role|String|User role of the signed-in user in the webinar. Possible values are: `organizer`, `coOrganizer`.|
+|role|String|User role of the signed-in user in the webinar. The possible values are: `organizer`, `coOrganizer`.|
 
 
 ## Request headers
@@ -94,6 +94,8 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/getByUserR
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/virtualeventwebinarthisgetbyuserrole-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

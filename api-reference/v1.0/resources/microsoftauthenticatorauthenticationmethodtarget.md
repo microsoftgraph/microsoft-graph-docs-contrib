@@ -17,10 +17,10 @@ A collection of groups enabled to use [Microsoft Authenticator authentication me
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationMode|microsoftAuthenticatorAuthenticationMode|Determines which types of notifications can be used for sign-in. Possible values are: `any`, `deviceBasedPush` (passwordless only), `push`.|
+|authenticationMode|microsoftAuthenticatorAuthenticationMode|Determines which types of notifications can be used for sign-in. The possible values are: `any`, `deviceBasedPush` (passwordless only), `push`.|
 |id|String|Object ID of a Microsoft Entra user or group.|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. *Not supported*. |
-|targetType|authenticationMethodTargetType| Possible values are: `user`, `group`.|
+|targetType|authenticationMethodTargetType| The possible values are: `user`, `group`.|
 
 ## Relationships
 None.

@@ -30,6 +30,9 @@ attendees.add(meetingParticipantInfo);
 participants.setAttendees(attendees);
 createOrGetPostRequestBody.setParticipants(participants);
 createOrGetPostRequestBody.setSubject("Create a meeting with customId provided");
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("meetingType", "scheduled");
+createOrGetPostRequestBody.setAdditionalData(additionalData);
 var result = graphClient.me().onlineMeetings().createOrGet().post(createOrGetPostRequestBody);
 
 

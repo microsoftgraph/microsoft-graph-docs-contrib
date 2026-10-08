@@ -20,7 +20,7 @@ Represents the settings for the AI feedback that students should receive.
 |Property|Type|Description|
 |:---|:---|:---|
 |aiFeedbackSettings|[educationAiFeedbackSettings](../resources/educationaifeedbacksettings.md)|The feedback types that students should receive from AI feedback.|
-|speechType|educationSpeechType|The type of speech the student provides. Possible values are: `informative`, `personal`, `persuasive`, `unknownFutureValue`.|
+|speechType|educationSpeechType|The type of speech the student provides. The possible values are: `informative`, `personal`, `persuasive`, `unknownFutureValue`.|
 
 ## Relationships
 

@@ -12,8 +12,6 @@ ms.date: 04/18/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]

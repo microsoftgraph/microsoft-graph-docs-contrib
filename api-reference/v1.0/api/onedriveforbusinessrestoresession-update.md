@@ -48,8 +48,11 @@ PATCH /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBu
 |Property|Type|Description|
 |:---|:---|:---|
 |driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Collection of [driveRestoreArtifact](../resources/driverestoreartifact.md). Required|
+|granularDriveRestoreArtifacts|[granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) collection|A collection of [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) objects. Required.|
 
-To remove a drive restore artifact, specify the `@removed` annotation in the request body together with the ID of the [driveRestoreArtifact](../resources/driverestoreartifact.md) object.
+To remove a **driveRestoreArtifact** from a standard restore session, specify the `@removed` annotation in the request body together with the ID of the [driveRestoreArtifact](../resources/driverestoreartifact.md) object.
+
+To remove a **granularDriveRestoreArtifact** from a granular restore session, specify the `@removed` annotation in the request body for the respective artifact ID of the [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md).
 
 ## Response
 
@@ -59,7 +62,9 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Request
+### Example 1: Update a standard restore session
+
+#### Request
 
 The following example shows a request.
 
@@ -138,7 +143,7 @@ PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusine
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -193,6 +198,104 @@ HTTP/1.1 200 OK
         "responseCode": 409
       },
       "id": "4267e382-71a9-4c07-bef7-bda97e09c0d2"
+    }
+  ]
+}
+```
+
+### Example 2: Update a granular restore session
+
+#### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "onedriveforbusiness_granular_update"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessRestoreSessions/43e0638e-3ad7-4c7e-8749-72175d046e30
+Content-Type: application/json
+
+{
+  "granularDriveRestoreArtifacts@delta": [
+    {
+      "browseSessionId": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+      "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+    },
+    {
+      "@removed": {
+        "reason": "changed"
+      },
+      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+    }
+  ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/onedriveforbusiness-granular-update-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/onedriveforbusiness-granular-update-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusiness-granular-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/onedriveforbusiness-granular-update-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/onedriveforbusiness-granular-update-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/onedriveforbusiness-granular-update-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.oneDriveForBusinessRestoreSession"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@context": "#$delta",
+  "id": "43e0638e-3ad7-4c7e-8749-72175d046e30",
+  "granularDriveRestoreArtifacts@delta": [
+    {
+      "directoryObjectId": null,
+      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2",
+      "browseSessionId": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+      "restoredItemKey": "",
+      "webUrl": "",
+      "restoredItemPath": null,
+      "restoredItemWebUrl": "",
+      "status": "added",
+      "restorePointDateTime": "0001-01-01T00:00:00Z",
+      "startDateTime": "0001-01-01T00:00:00Z",
+      "completionDateTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2",
+      "@removed": {
+        "reason": "changed"
+      }
     }
   ]
 }

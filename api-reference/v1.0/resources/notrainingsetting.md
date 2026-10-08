@@ -20,7 +20,7 @@ Inherits from [trainingSetting](../resources/trainingsetting.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settingType|trainingSettingType|The setting type. Possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`. Inherited from [trainingSetting](../resources/trainingsetting.md).|
+|settingType|trainingSettingType|The setting type. The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`. Inherited from [trainingSetting](../resources/trainingsetting.md).|
 
 ## Relationships
 

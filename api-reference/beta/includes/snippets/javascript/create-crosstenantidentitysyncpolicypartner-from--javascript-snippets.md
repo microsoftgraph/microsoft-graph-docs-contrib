@@ -12,6 +12,9 @@ const client = Client.init(options);
 
 const crossTenantIdentitySyncPolicyPartner = {
   displayName: 'Fabrikam',
+  groupSyncInbound: {
+    isSyncAllowed: true
+  },
   userSyncInbound: {
     isSyncAllowed: true
   }

@@ -24,7 +24,7 @@ Namespace: microsoft.graph
 | isDeleted                         | Boolean | Whether this user has been deleted or soft deleted. |
 | ownerPrincipalName                | String  | The group owner principal name.          |
 | lastActivityDate                  | Date    | The last activity date for the following scenarios:  group mailbox received email; user viewed, edited, shared, or synced files in SharePoint document library; user viewed SharePoint pages; user posted, read, or liked messages in Yammer groups. |
-| groupType                         | String  | The group type. Possible values are: **Public** or **Private**. |
+| groupType                         | String  | The group type. The possible values are: **Public** or **Private**. |
 | memberCount                       | Int64   | The group member count.                  |
 | externalMemberCount               | Int64   | The group external member count.         |
 | exchangeReceivedEmailCount        | Int64   | The number of emails that the group mailbox received. |

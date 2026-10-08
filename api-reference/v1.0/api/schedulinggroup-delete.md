@@ -13,7 +13,7 @@ ms.date: 04/04/2024
 Namespace: microsoft.graph
 
 Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive by setting its **isActive** property.
-This method does not remove the [schedulingGroup](../resources/schedulinggroup.md) from the schedule. Existing [shift](../resources/shift.md) instances assigned to the scheduling group remain part of the group.
+This method doesn't remove the [schedulingGroup](../resources/schedulinggroup.md) from the schedule. Existing [shift](../resources/shift.md) instances assigned to the scheduling group remain part of the group.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

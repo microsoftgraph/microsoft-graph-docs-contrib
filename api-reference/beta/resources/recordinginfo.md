@@ -21,7 +21,7 @@ Recording information for a participant.
 | Property        | Type    | Description|
 |:----------------|:--------|:----------|
 | initiatedBy     | [participantInfo](participantinfo.md) | The participant who initiated the recording. |
-| recordingStatus | String | Possible values are: `unknown`, `notRecording`, `recording`, or `failed`. |
+| recordingStatus | String | The possible values are: `unknown`, `notRecording`, `recording`, or `failed`. |
 | initiator | [identitySet](identitySet.md) | The identities of recording initiator. |
 
 ## Relationships

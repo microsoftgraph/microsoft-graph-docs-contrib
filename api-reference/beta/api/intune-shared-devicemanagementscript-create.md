@@ -25,11 +25,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)||
+|Delegated (work or school account)|DeviceManagementScripts.ReadWrite.All|
 | &nbsp; &nbsp; **Device management** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Policy Set** | DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application||
+|Application|DeviceManagementScripts.ReadWrite.All|
 | &nbsp; &nbsp; **Device management** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Policy Set** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -61,7 +61,7 @@ The following table shows the properties that are required when you create the d
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. The possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked.|
 |fileName|String|Script file name.|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance.|

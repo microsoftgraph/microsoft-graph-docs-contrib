@@ -20,6 +20,7 @@ Represents a container for the Exchange admin functionality.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |mailboxes|[mailbox](../resources/mailbox.md) collection|Represents a user's mailboxes.|
+|tracing|[messageTracingRoot](../resources/messagetracingroot.md)|Represents a container for administrative resources to trace messages.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

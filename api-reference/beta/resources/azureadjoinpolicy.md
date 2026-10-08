@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the policy scope of the Microsoft Entra tenant that controls the ability for users and groups to register device identities to your organization using Microsoft Entra join.
+Represents the policy scope of the Microsoft Entra tenant that controls the ability for users and groups to register device identities to your organization using Microsoft Entra join. Configured in the **azureADJoin** property of [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md).
 
 ## Properties
 
@@ -21,7 +21,7 @@ Represents the policy scope of the Microsoft Entra tenant that controls the abil
 |:---|:---|:---|
 |allowedToJoin|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Microsoft Entra join is allowed.|
 |isAdminConfigurable|Boolean|Determines if administrators can modify this policy.|
-|localAdmins|[localAdminSettings](../resources/localAdminSettings.md)|Determines who becomes a local administrator on joined devices.|
+|localAdmins|[localAdminSettings](../resources/localadminsettings.md)|Determines who becomes a local administrator on joined devices.|
 
 ## Relationships
 
@@ -43,7 +43,7 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.deviceRegistrationMembership"
   },
   "localAdmins": {
-        "@odata.type": "microsoft.graph.localAdminSettings"
+    "@odata.type": "microsoft.graph.localAdminSettings"
   }
 }
 ```

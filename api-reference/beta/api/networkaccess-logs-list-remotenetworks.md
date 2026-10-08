@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the remoteNetworkHealthEvent objects and their properties.
+Get a list of the [remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

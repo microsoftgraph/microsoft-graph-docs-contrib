@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: "Intune Deviceconfig Devicecompliancepolicy Assign Source_Api ."
+description: "Intune Deviceconfig Devicecompliancepolicy Assign Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

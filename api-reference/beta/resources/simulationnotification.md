@@ -23,7 +23,7 @@ Inherits from [baseEndUserNotification](../resources/baseendusernotification.md)
 |Property|Type|Description|
 |:---|:---|:---|
 |defaultLanguage|String|Default language. Inherited from [baseEndUserNotification](../resources/baseendusernotification.md).|
-|targettedUserType|targettedUserType|Target user type. Possible values are: `unknown`, `clicked`, `compromised`, `allUsers`, `unknownFutureValue`.|
+|targettedUserType|targettedUserType|Target user type. The possible values are: `unknown`, `clicked`, `compromised`, `allUsers`, `unknownFutureValue`.|
 
 ## Relationships
 

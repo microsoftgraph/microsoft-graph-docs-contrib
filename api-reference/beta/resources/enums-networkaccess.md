@@ -46,6 +46,15 @@ Namespace: microsoft.graph.networkaccess
 |sap|
 |unknownFutureValue|
 
+### applicationActivity values
+
+|Member|
+|:---|
+|none|
+|prompt|
+|mcp|
+|unknownFutureValue|
+
 ### bandwidthCapacityInMbps values 
 
 |Member|
@@ -576,6 +585,81 @@ Namespace: microsoft.graph.networkaccess
 |enabled|
 |disabled|
 |reportOnly|
+|unknownFutureValue|
+
+### deploymentStage values 
+
+|Member|
+|:---|
+|inProgress|
+|pending|
+|failed|
+|succeeded|
+|unknownFutureValue|
+
+### cloudApplicationCategory values
+
+|Member|
+|:---|
+|hostingServices|
+|itServices|
+|accountingAndFinance|
+|businessManagement|
+|productivity|
+|eCommerce|
+|education|
+|marketing|
+|humanResourceManagement|
+|health|
+|security|
+|generativeAi|
+|newsAndEntertainment|
+|operationsManagement|
+|contentManagement|
+|developmentTools|
+|collaboration|
+|crm|
+|communications|
+|dataAnalytics|
+|advertising|
+|supplyChainAndLogistics|
+|projectManagement|
+|transportationAndTravel|
+|cloudComputingPlatform|
+|businessIntelligence|
+|cloudStorage|
+|propertyManagement|
+|contentSharing|
+|customerSupport|
+|sales|
+|productDesign|
+|socialNetwork|
+|onlineMeetings|
+|webmail|
+|internetOfThings|
+|forums|
+|webAnalytics|
+|websiteMonitoring|
+|vendorManagementSystem|
+|personalInstantMessaging|
+|codeHosting|
+|unknownFutureValue|
+
+### cloudFirewallAction values
+
+|Member|
+|:---|
+|allow|
+|block|
+|unknownFutureValue|
+
+### cloudFirewallProtocol values
+
+
+|Member|
+|:---|
+|tcp|
+|udp|
 |unknownFutureValue|
 
 <!--

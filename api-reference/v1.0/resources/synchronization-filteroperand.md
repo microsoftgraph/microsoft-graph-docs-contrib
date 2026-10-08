@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Contains a collection of values for the operand.
+Contains a collection of values for the operand. This object is configured in the **targetOperand** property of [filterClause](../resources/synchronization-filterclause.md).
 
 ## Properties
 | Property       | Type    |Description|

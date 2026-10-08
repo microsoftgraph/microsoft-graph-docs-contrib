@@ -1,61 +1,65 @@
 ---
 title: "auditLogQuery resource type"
-description: "Represents an audit log query that is used to query and retrieve relevant audit log records."
-author: "arishojaswi"
+description: "Represents a query against the Microsoft 365 unified audit log."
+author: "imsandhya7-spec"
+ms.subservice: security
 ms.localizationpriority: medium
-ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 09/10/2024
+ms.date: 09/18/2026
+toc.title: "Audit log query"
 ---
-
 # auditLogQuery resource type
 
 Namespace: microsoft.graph.security
 
-Represents an audit log query that is used to query and retrieve relevant audit log records.
+Represents a query against the Microsoft 365 unified audit log. Use this resource to define search parameters and retrieve audit log records.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List audit log queries](../api/security-auditcoreroot-list-auditlogqueries.md)|[auditLogQuery](../resources/security-auditlogquery.md) collection|Get a list of the [auditLogQuery](../resources/security-auditlogquery.md) objects and their properties.|
-|[Create audit log query](../api/security-auditcoreroot-post-auditlogqueries.md)|[auditLogQuery](../resources/security-auditlogquery.md)|Create a new [auditLogQuery](../resources/security-auditlogquery.md) object.|
-|[Get audit log query](../api/security-auditlogquery-get.md)|[auditLogQuery](../resources/security-auditlogquery.md)|Read the properties and relationships of a [auditLogQuery](../resources/security-auditlogquery.md) object.|
+|[Get audit log query](../api/security-auditlogquery-get.md)|[auditLogQuery](../resources/security-auditlogquery.md)|Read the properties and relationships of an [auditLogQuery](../resources/security-auditlogquery.md) object.|
 |[List records](../api/security-auditlogquery-list-records.md)|[auditLogRecord](../resources/security-auditlogrecord.md) collection|Get the auditLogRecord resources from the records navigation property.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|administrativeUnitIdFilters|String collection|The administrative units tagged to an audit log record.|
-|displayName|String|The display name of the saved audit log query.|
-|filterEndDateTime|DateTimeOffset|The end date of the date range in the query.|
-|filterStartDateTime|DateTimeOffset|The start date of the date range in the query.|
-|id|String|Unique identifier for the audit log query. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|ipAddressFilters|String collection|The IP address of the device that was used when the activity was logged.|
-|keywordFilter|String|Free text field to search non-indexed properties of the audit log.|
-|objectIdFilters|String collection|For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet.|
-|operationFilters|String collection|The name of the user or admin activity. For a description of the most common operations/activities, see [Search the audit log in the Office 365 Protection Center](https://go.microsoft.com/fwlink/p/?LinkId=708432).|
-|recordTypeFilters|microsoft.graph.security.auditLogRecordType collection|The type of operation indicated by the record. The possible values are: `exchangeAdmin`, `exchangeItem`, `exchangeItemGroup`, `sharePoint`, `syntheticProbe`, `sharePointFileOperation`, `oneDrive`, `azureActiveDirectory`, `azureActiveDirectoryAccountLogon`, `dataCenterSecurityCmdlet`, `complianceDLPSharePoint`, `sway`, `complianceDLPExchange`, `sharePointSharingOperation`, `azureActiveDirectoryStsLogon`, `skypeForBusinessPSTNUsage`, `skypeForBusinessUsersBlocked`, `securityComplianceCenterEOPCmdlet`, `exchangeAggregatedOperation`, `powerBIAudit`, `crm`, `yammer`, `skypeForBusinessCmdlets`, `discovery`, `microsoftTeams`, `threatIntelligence`, `mailSubmission`, `microsoftFlow`, `aeD`, `microsoftStream`, `complianceDLPSharePointClassification`, `threatFinder`, `project`, `sharePointListOperation`, `sharePointCommentOperation`, `dataGovernance`, `kaizala`, `securityComplianceAlerts`, `threatIntelligenceUrl`, `securityComplianceInsights`, `mipLabel`, `workplaceAnalytics`, `powerAppsApp`, `powerAppsPlan`, `threatIntelligenceAtpContent`, `labelContentExplorer`, `teamsHealthcare`, `exchangeItemAggregated`, `hygieneEvent`, `dataInsightsRestApiAudit`, `informationBarrierPolicyApplication`, `sharePointListItemOperation`, `sharePointContentTypeOperation`, `sharePointFieldOperation`, `microsoftTeamsAdmin`, `hrSignal`, `microsoftTeamsDevice`, `microsoftTeamsAnalytics`, `informationWorkerProtection`, `campaign`, `dlpEndpoint`, `airInvestigation`, `quarantine`, `microsoftForms`, `applicationAudit`, `complianceSupervisionExchange`, `customerKeyServiceEncryption`, `officeNative`, `mipAutoLabelSharePointItem`, `mipAutoLabelSharePointPolicyLocation`, `microsoftTeamsShifts`, `secureScore`, `mipAutoLabelExchangeItem`, `cortanaBriefing`, `search`, `wdatpAlerts`, `powerPlatformAdminDlp`, `powerPlatformAdminEnvironment`, `mdatpAudit`, `sensitivityLabelPolicyMatch`, `sensitivityLabelAction`, `sensitivityLabeledFileAction`, `attackSim`, `airManualInvestigation`, `securityComplianceRBAC`, `userTraining`, `airAdminActionInvestigation`, `mstic`, `physicalBadgingSignal`, `teamsEasyApprovals`, `aipDiscover`, `aipSensitivityLabelAction`, `aipProtectionAction`, `aipFileDeleted`, `aipHeartBeat`, `mcasAlerts`, `onPremisesFileShareScannerDlp`, `onPremisesSharePointScannerDlp`, `exchangeSearch`, `sharePointSearch`, `privacyDataMinimization`, `labelAnalyticsAggregate`, `myAnalyticsSettings`, `securityComplianceUserChange`, `complianceDLPExchangeClassification`, `complianceDLPEndpoint`, `mipExactDataMatch`, `msdeResponseActions`, `msdeGeneralSettings`, `msdeIndicatorsSettings`, `ms365DCustomDetection`, `msdeRolesSettings`, `mapgAlerts`, `mapgPolicy`, `mapgRemediation`, `privacyRemediationAction`, `privacyDigestEmail`, `mipAutoLabelSimulationProgress`, `mipAutoLabelSimulationCompletion`, `mipAutoLabelProgressFeedback`, `dlpSensitiveInformationType`, `mipAutoLabelSimulationStatistics`, `largeContentMetadata`, `microsoft365Group`, `cdpMlInferencingResult`, `filteringMailMetadata`, `cdpClassificationMailItem`, `cdpClassificationDocument`, `officeScriptsRunAction`, `filteringPostMailDeliveryAction`, `cdpUnifiedFeedback`, `tenantAllowBlockList`, `consumptionResource`, `healthcareSignal`, `dlpImportResult`, `cdpCompliancePolicyExecution`, `multiStageDisposition`, `privacyDataMatch`, `filteringDocMetadata`, `filteringEmailFeatures`, `powerBIDlp`, `filteringUrlInfo`, `filteringAttachmentInfo`, `coreReportingSettings`, `complianceConnector`, `powerPlatformLockboxResourceAccessRequest`, `powerPlatformLockboxResourceCommand`, `cdpPredictiveCodingLabel`, `cdpCompliancePolicyUserFeedback`, `webpageActivityEndpoint`, `omePortal`, `cmImprovementActionChange`, `filteringUrlClick`, `mipLabelAnalyticsAuditRecord`, `filteringEntityEvent`, `filteringRuleHits`, `filteringMailSubmission`, `labelExplorer`, `microsoftManagedServicePlatform`, `powerPlatformServiceActivity`, `scorePlatformGenericAuditRecord`, `filteringTimeTravelDocMetadata`, `alert`, `alertStatus`, `alertIncident`, `incidentStatus`, `case`, `caseInvestigation`, `recordsManagement`, `privacyRemediation`, `dataShareOperation`, `cdpDlpSensitive`, `ehrConnector`, `filteringMailGradingResult`, `publicFolder`, `privacyTenantAuditHistoryRecord`, `aipScannerDiscoverEvent`, `eduDataLakeDownloadOperation`, `m365ComplianceConnector`, `microsoftGraphDataConnectOperation`, `microsoftPurview`, `filteringEmailContentFeatures`, `powerPagesSite`, `powerAppsResource`, `plannerPlan`, `plannerCopyPlan`, `plannerTask`, `plannerRoster`, `plannerPlanList`, `plannerTaskList`, `plannerTenantSettings`, `projectForTheWebProject`, `projectForTheWebTask`, `projectForTheWebRoadmap`, `projectForTheWebRoadmapItem`, `projectForTheWebProjectSettings`, `projectForTheWebRoadmapSettings`, `quarantineMetadata`, `microsoftTodoAudit`, `timeTravelFilteringDocMetadata`, `teamsQuarantineMetadata`, `sharePointAppPermissionOperation`, `microsoftTeamsSensitivityLabelAction`, `filteringTeamsMetadata`, `filteringTeamsUrlInfo`, `filteringTeamsPostDeliveryAction`, `mdcAssessments`, `mdcRegulatoryComplianceStandards`, `mdcRegulatoryComplianceControls`, `mdcRegulatoryComplianceAssessments`, `mdcSecurityConnectors`, `mdaDataSecuritySignal`, `vivaGoals`, `filteringRuntimeInfo`, `attackSimAdmin`, `microsoftGraphDataConnectConsent`, `filteringAtpDetonationInfo`, `privacyPortal`, `managedTenants`, `unifiedSimulationMatchedItem`, `unifiedSimulationSummary`, `updateQuarantineMetadata`, `ms365DSuppressionRule`, `purviewDataMapOperation`, `filteringUrlPostClickAction`, `irmUserDefinedDetectionSignal`, `teamsUpdates`, `plannerRosterSensitivityLabel`, `ms365DIncident`, `filteringDelistingMetadata`, `complianceDLPSharePointClassificationExtended`, `microsoftDefenderForIdentityAudit`, `supervisoryReviewDayXInsight`, `defenderExpertsforXDRAdmin`, `cdpEdgeBlockedMessage`, `hostedRpa`, `cdpContentExplorerAggregateRecord`, `cdpHygieneAttachmentInfo`, `cdpHygieneSummary`, `cdpPostMailDeliveryAction`, `cdpEmailFeatures`, `cdpHygieneUrlInfo`, `cdpUrlClick`, `cdpPackageManagerHygieneEvent`, `filteringDocScan`, `timeTravelFilteringDocScan`, `mapgOnboard`, `unknownFutureValue`.|
-|serviceFilter|String|Refers to the workload property in the audit record. This is the Microsoft service where the activity occurred. Optional.|
-|status|microsoft.graph.security.auditLogQueryStatus|Describes the current status of the query. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `cancelled`, `unknownFutureValue`.|
-|userPrincipalNameFilters|String collection|The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, _my_name@my_domain_name_.|
+|administrativeUnitIdFilters|String collection|The collection of administrative unit IDs to filter on.|
+|approximateReturnedRecordCount|Int64|The approximate number of records retrieved by the query. This value can be higher or lower than **recordCountLimit** due to distributed counting. Read-only.|
+|displayName|String|The display name of the audit log query.|
+|filterEndDateTime|DateTimeOffset|The end date and time of the audit log query filter.|
+|filterStartDateTime|DateTimeOffset|The start date and time of the audit log query filter.|
+|id|String|The unique identifier for the audit log query. Inherited from [entity](../resources/entity.md).|
+|ipAddressFilters|String collection|The collection of IP addresses to filter on.|
+|isRecordCountLimitExceeded|Boolean|Indicates whether the query exceeded the per-search record-count limit. The default value is `false`. A value of `true` is authoritative and isn't derived from **approximateReturnedRecordCount**. Read-only.|
+|keywordFilter|String|The keyword to filter on.|
+|objectIdFilters|String collection|The collection of object IDs to filter on.|
+|operationFilters|String collection|The collection of operations to filter on.|
+|recordCountLimit|Int64|The record-count threshold used to limit query result retrieval. Read-only.|
+|recordTypeFilters|[microsoft.graph.security.auditLogRecordType](../resources/security-auditlogrecordtype.md) collection|The collection of record types to filter on.|
+|serviceFilters|String collection|The collection of services to filter on.|
+|status|microsoft.graph.security.auditLogQueryStatus|The status of the audit log query. Possible values are: `notStarted`, `running`, `succeeded`, `failed`, `cancelled`, `unknownFutureValue`.|
+|userPrincipalNameFilters|String collection|The collection of user principal names to filter on.|
+
+> [!NOTE]
+> An audit log query can complete successfully after exceeding its record-count limit. Use **isRecordCountLimitExceeded** to determine whether the limit was exceeded. For information about tenant and per-query allocations, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#security-audit-log-query-service-limits).
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|records|[microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md) collection|An individual audit log record.|
+|records|[microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md) collection|The collection of audit log records retrieved by the query.|
 
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.security.auditLogQuery",
-  "baseType": "microsoft.graph.entity",
-  "openType": false
+  "@odata.type": "microsoft.graph.security.auditLogQuery"
 }
 -->
 ``` json
@@ -65,26 +69,17 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "filterStartDateTime": "String (timestamp)",
   "filterEndDateTime": "String (timestamp)",
-  "recordTypeFilters": [
-    "String"
-  ],
+  "recordTypeFilters": ["String"],
   "keywordFilter": "String",
-  "serviceFilter": "String",
-  "operationFilters": [
-    "String"
-  ],
-  "userPrincipalNameFilters": [
-    "String"
-  ],
-  "ipAddressFilters": [
-    "String"
-  ],
-  "objectIdFilters": [
-    "String"
-  ],
-  "administrativeUnitIdFilters": [
-    "String"
-  ],
-  "status": "String"
+  "serviceFilters": ["String"],
+  "operationFilters": ["String"],
+  "userPrincipalNameFilters": ["String"],
+  "ipAddressFilters": ["String"],
+  "objectIdFilters": ["String"],
+  "administrativeUnitIdFilters": ["String"],
+  "status": "String",
+  "approximateReturnedRecordCount": "Int64",
+  "isRecordCountLimitExceeded": "Boolean",
+  "recordCountLimit": "Int64"
 }
 ```

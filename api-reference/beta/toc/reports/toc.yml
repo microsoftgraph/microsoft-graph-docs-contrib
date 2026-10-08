@@ -26,6 +26,16 @@ items:
         href: ../../api/recommendation-complete.md
       - name: Reactivate
         href: ../../api/recommendation-reactivate.md
+      - name: Mark planned
+        href: ../../api/recommendation-markplanned.md
+      - name: Accept risk
+        href: ../../api/recommendation-acceptrisk.md
+      - name: Apply alternate mitigation
+        href: ../../api/recommendation-applyalternatemitigation.md
+      - name: Add tag
+        href: ../../api/recommendation-addtag.md
+      - name: Remove tag
+        href: ../../api/recommendation-removetag.md
       - name: Get tenant Secure Score
         href: ../../api/recommendation-tenantsecurescores.md
     - name: Impacted resource
@@ -44,14 +54,34 @@ items:
         href: ../../api/impactedresource-complete.md
       - name: Reactivate
         href: ../../api/impactedresource-reactivate.md
-    - name: Recommendation configuration
+      - name: Mark planned
+        href: ../../api/impactedresource-markplanned.md
+      - name: Accept risk
+        href: ../../api/impactedresource-acceptrisk.md
+      - name: Apply alternate mitigation
+        href: ../../api/impactedresource-applyalternatemitigation.md
+      - name: Add tag
+        href: ../../api/impactedresource-addtag.md
+      - name: Remove tag
+        href: ../../api/impactedresource-removetag.md
+      - name: Add tag to multiple resources
+        href: ../../api/impactedresource-addtag-collection.md
+      - name: Remove tag from multiple resources
+        href: ../../api/impactedresource-removetag-collection.md
+    - name: Supporting types
       items:
       - name: Recommendation configuration
-        href: ../../resources/recommendationconfiguration.md
-      - name: Get
-        href: ../../api/recommendationconfiguration-get.md
-      - name: Update
-        href: ../../api/recommendationconfiguration-update.md
+        items:
+        - name: Recommendation configuration
+          href: ../../resources/recommendationconfiguration.md
+        - name: Get
+          href: ../../api/recommendationconfiguration-get.md
+        - name: Update
+          href: ../../api/recommendationconfiguration-update.md
+      - name: Recommendation tag
+        href: ../../resources/recommendationtag.md
+      - name: Nist classification
+        href: ../../resources/nistclassification.md
   - name: Microsoft Entra activity reports
     items:
     - name: AD FS application activity
@@ -348,6 +378,14 @@ items:
             href: ../../api/healthmonitoring-alertconfiguration-get.md
           - name: Update
             href: ../../api/healthmonitoring-alertconfiguration-update.md
+    - name: Premium license utilization (preview)
+      items:
+      - name: Entra ID P1/P2 license utilization
+        items:
+        - name: Entra ID P1/P2 license utilization
+          href: ../../resources/azureadpremiumlicenseinsight.md
+        - name: Get
+          href: ../../api/azureadpremiumlicenseinsight-get.md
     - name: Service principal sign-in activity (preview)
       items:
       - name: Service principal sign-in activity (preview)
@@ -356,7 +394,7 @@ items:
         href: ../../api/reportroot-list-serviceprincipalsigninactivities.md
       - name: Get
         href: ../../api/serviceprincipalsigninactivity-get.md
-  - name: Microsoft Entra audit logs
+  - name: Microsoft Entra logs and reports
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
@@ -396,18 +434,6 @@ items:
         href: ../../api/auditlogroot-list-signups.md
       - name: Get
         href: ../../api/selfservicesignup-get.md
-    - name: Sign in events activity
-      items:
-      - name: Sign in events activity
-        href: ../../resources/signineventsactivity.md
-      - name: List
-        href: ../../api/auditlogroot-list-signineventssummary.md
-    - name: Sign in events app activity
-      items:
-      - name: Sign in events app activity
-        href: ../../resources/signineventsappactivity.md
-      - name: List
-        href: ../../api/auditlogroot-list-signineventsappsummary.md
     - name: Sign-in
       items:
       - name: Sign-in
@@ -422,9 +448,21 @@ items:
         href: ../../api/signin-confirmsafe.md
       - name: Dismiss
         href: ../../api/signin-dismiss.md
-    - name: Summarized sign in
+    - name: Sign-in events activity
       items:
-      - name: Summarized sign in
+      - name: Sign-in events activity
+        href: ../../resources/signineventsactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventssummary.md
+    - name: Sign-in events app activity
+      items:
+      - name: Sign-in events app activity
+        href: ../../resources/signineventsappactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventsappsummary.md
+    - name: Summarized sign-in
+      items:
+      - name: Summarized sign-in
         href: ../../resources/summarizedsignin.md
       - name: Get summarized MSI sign-ins
         href: ../../api/auditlogroot-getsummarizedmsisignins.md
@@ -432,7 +470,39 @@ items:
         href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md
       - name: Get summarized service principal sign-ins
         href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
-- name: Microsoft 365 monitoring reports (preview)
+  - name: Identity correlation reports (preview)
+    items:
+    - name: Correlated identity
+      items:
+      - name: Correlated identity
+        href: ../../resources/correlatedidentity.md
+      - name: List
+        href: ../../api/identitycorrelation-list-identities.md
+      - name: Get
+        href: ../../api/correlatedidentity-get.md
+    - name: Identity correlation
+      items:
+      - name: Identity correlation
+        href: ../../resources/identitycorrelation.md
+      - name: List
+        href: ../../api/reportroot-list-correlations.md
+      - name: Get
+        href: ../../api/identitycorrelation-get.md
+      - name: List identities
+        href: ../../api/identitycorrelation-list-identities.md
+  - name: Identity analytics (preview)
+    items:
+    - name: Group analytics
+      items:
+      - name: Group analytics
+        href: ../../resources/groupanalytics.md
+      - name: List
+        href: ../../api/identityanalyticsroot-list-groups.md
+      - name: Get
+        href: ../../api/groupanalytics-get.md
+    - name: Identity analytics root
+      href: ../../resources/identityanalyticsroot.md
+- name: Monitoring reports (preview)
   items:
   - name: Overview
     href: ../../resources/m365-monitoring-api-overview.md
@@ -536,6 +606,16 @@ items:
       href: ../../api/adminreportsettings-get.md
     - name: Update
       href: ../../api/adminreportsettings-update.md
+  - name: Microsoft apps file storage container app usage
+    href: ../../resources/microsoftappsfilestoragecontainerappusage.md
+  - name: Microsoft apps file storage container geo usage
+    href: ../../resources/microsoftappsfilestoragecontainergeousage.md
+  - name: Microsoft apps file storage container usage
+    items:
+    - name: Microsoft apps file storage container usage
+      href: ../../resources/microsoftappsfilestoragecontainerusage.md
+    - name: Get SharePoint Embedded file storage container usage summary
+      href: ../../api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary.md
   - name: Report root
     items:
     - name: Report root
@@ -712,6 +792,14 @@ items:
         href: ../../api/reportroot-getsharepointsiteusagestorage.md
       - name: Get pages
         href: ../../api/reportroot-getsharepointsiteusagepages.md
+    - name: SharePoint API usage
+      items:
+      - name: Get SharePoint API usage
+        href: ../../api/reportroot-getsharepointapiusage.md
+    - name: SharePoint Embedded
+      items:
+      - name: Get SharePoint Embedded file storage container usage summary
+        href: ../../api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary.md
     - name: Skype for Business activity
       items:
       - name: Get user detail
@@ -796,6 +884,10 @@ items:
       href: ../../resources/office365groupsactivitystorage.md
     - name: Office 365 services user counts
       href: ../../resources/office365servicesusercounts.md
+    - name: Share point API usage data point
+      href: ../../resources/sharepointapiusagedatapoint.md
+    - name: Share point API usage report
+      href: ../../resources/sharepointapiusagereport.md
 - name: Microsoft Defender for Office 365 security reports
   items:
   - name: Overview
@@ -822,6 +914,12 @@ items:
   items:
   - name: Overview
     href: ../../resources/partners-billing-api-overview.md
+  - name: Billed aggregated usage
+    items:
+    - name: Billed aggregated usage
+      href: ../../resources/partners-billing-billedaggregatedusage.md
+    - name: Export
+      href: ../../api/partners-billing-billedaggregatedusage-export.md
   - name: Billed reconciliation
     items:
     - name: Billed reconciliation

@@ -3,7 +3,7 @@ title: "Receive change notifications through webhooks"
 description: "Change notifications can be delivered via different channels, including webhooks and Azure Event Hubs. This article walks you through how to get change notifications through webhooks."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: jessieli-ad
 ms.topic: how-to
 ms.subservice: change-notifications
 ms.localizationpriority: high
@@ -31,24 +31,23 @@ Your endpoint must provide correct, consistent, and timely HTTP responses in ord
 Your endpoint must also continue to remain authenticated to Microsoft Graph, either by continually renewing your subscription or by responding to lifecycle notifications.
 
 ### HTTP codes and retry logic
-Once the Microsoft Graph change notifications service receives a 2xx class code from your endpoint, the notification is considered sent. As long as the change notifications service receives any other HTML response (even an error code) within 10 seconds, the service continues to try to deliver the notification for up to 4 hours.
-
- - If you're able to process the notification within a 3-second window, you should return a `200 - OK` status code to Microsoft Graph
- - If your service takes more than 10 seconds to process the notification, then you should persist the notification in a queue on your endpoint and return `202 - Accepted` status code to Microsoft Graph.
- - If the notification isn't processed or queued, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
+Once the Microsoft Graph change notifications service receives a 2xx HTTP response from your endpoint within 3 seconds, the notification is considered delivered. If the service receives a non-2xx HTTP response within that 3-second window, or if the request times out because no HTTP response is received within that window, it continues to retry delivery for up to 4 hours. For notifications that are retried, the request timeout is extended to 10 seconds.
+ - If your endpoint is able to process the notification within the 3-second window, it should return a `200 OK` status code to Microsoft Graph.
+ - Otherwise, we recommend to validate and persist the notification in a queue on your endpoint and return `202 Accepted` status code within the 3-second window.
+ - If the notification isn't processed or queued, return a `5xx` class code to indicate an error so that Microsoft Graph can retry the notification.
 
 Notifications that fail to deliver are retried at exponential backoff intervals. Missed notifications might take up to 4 hours to resend once your endpoint comes online.
 
 ### Throttling
 For security and performance reasons, Microsoft Graph throttles notifications sent to endpoints that become slow or unresponsive. It might include dropping notifications in a way that they can't be recovered.
 
-1. An endpoint is marked "slow" once more than 10% of responses take longer than 10 seconds in a 10-minute window.
-      - Once an endpoint is marked "slow", any new notifications are sent on a 10-second delay.
-      - An endpoint exits the "slow" state once less than 10% of responses take longer than 10 seconds in a 10-minute window.
+1. An endpoint is marked "slow" once more than 10% of responses take longer than the 3-second timeout allowance in a 10-minute window.
+      - Once an endpoint is marked "slow", any new notifications are sent on after a 10-minute delay.
+      - Every 10 minutes the process tries to evaluate with a small number of notifications if the percentage of timeouts is under 10% and if so, it exits the slow state.
 
-2. An endpoint is marked "drop" once more than 15% of responses take longer than 10 seconds in a 10-minute window.
-      - Once an endpoint is marked "drop", any new notifications are dropped, for up to 10 minutes
-      - An endpoint exits the "drop" state once less than 15% of responses take longer than 10 seconds in a 10-minute window.
+2. An endpoint is marked "drop" once more than 15% of responses take longer than the 10-second retry timeout allowance in a 10-minute window.
+      - Once an endpoint is marked "drop", notifications are dropped for a 10-minute window.
+      - After the 10-minute period ends, the process periodically sends a small number of notifications. The endpoint exits the "drop" state when less than 15% of responses take longer than the 10-second timeout window.
 
 If your endpoint is unable to meet these performance characteristics, consider using [Event Hubs](/graph/change-notifications-delivery-event-hubs) or [Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph/context) as a target for receiving notifications.
 

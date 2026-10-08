@@ -14,17 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the privateAccessSensor objects and their properties.
+Get a list of the [privateAccessSensor](../resources/privateaccesssensor.md) objects and their properties.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "onpremisespublishingprofile-list-sensors-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "onpremisespublishingprofile_list_sensors" } -->
 [!INCLUDE [permissions-table](../includes/permissions/onpremisespublishingprofile-list-sensors-permissions.md)]
 
 [!INCLUDE [rbac-app-proxy-read](../includes/rbac-for-apis/rbac-app-proxy-read.md)]
@@ -92,6 +88,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/privateAccess/
 [!INCLUDE [sample-code](../includes/snippets/php/list-privateaccesssensor-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-privateaccesssensor-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-privateaccesssensor-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/privateAccess/
 ---
 
 ### Response
-
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -16,16 +16,14 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a collection of [agentRiskDetection](../resources/agentriskdetection.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "agentriskdetection-list-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/agentriskdetection-list-permissions.md)]
+<!-- { "blockType": "permissions", "name": "identityprotectionroot_list_agentriskdetections" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identityprotectionroot-list-agentriskdetections-permissions.md)]
 
 [!INCLUDE [rbac-identity-protection-apis-read](../includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
@@ -92,12 +90,15 @@ GET https://graph.microsoft.com/beta/identityProtection/agentRiskDetections
 [!INCLUDE [sample-code](../includes/snippets/php/list-agentriskdetection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-agentriskdetection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-agentriskdetection-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -117,19 +118,22 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.agentRiskDetection",
-			"id": "1e384c2b0799b01834c0f886560a9a64e433135fe5b8607c535ebbfb03d2ee67",
-			"agentId": "229da549-7a91-4365-900f-d4ef49a759a0",
-			"agentDisplayName": "Copilot Application",
-			"activityDateTime": "2025-07-30T15:38:56.9594972Z",
-			"detectedDateTime": "2025-07-30T15:38:56.9594972Z",
-			"detectionTimingType": "offline",
-			"lastModifiedDateTime": "2025-07-30T15:38:56Z",
-			"riskDetail": "none",
-			"riskLevel": "high",
-			"riskState": "atRisk",
-			"riskEventType": "unfamiliarResourceAccess",
-			"riskEvidence": "Agent targeted resources that it does not usually access.",
-			"additionalInfo": ""
+      "id": "1e384c2b0799b01834c0f886560a9a64e433135fe5b8607c535ebbfb03d2ee67",
+      "identityId": "229da549-7a91-4365-900f-d4ef49a759a0",
+      "displayName": "Ask HR Agent Identity",
+      "blueprintId": "b3390471-68c5-466a-9ac2-b93e2a454532",
+      "identityType": "agentIdentity",
+      "activityDateTime": "2025-07-30T15:38:56.9594972Z",
+      "detectedDateTime": "2025-07-30T15:38:56.9594972Z",
+      "detectionTimingType": "offline",
+      "lastModifiedDateTime": "2025-07-30T15:38:56Z",
+      "riskDetail": "none",
+      "riskLevel": "high",
+      "riskState": "atRisk",
+      "riskEventType": "unfamiliarResourceAccess",
+      "riskEvidence": "Agent targeted resources that it does not usually access.",
+      "additionalInfo": "",
+      "source": "activeDirectory"
     }
   ]
 }

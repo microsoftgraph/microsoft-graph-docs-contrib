@@ -18,6 +18,8 @@ Retrieve suggested [accessPackageSuggestion](../resources/accesspackagesuggestio
 
 The suggestions help end users discover relevant access packages they may need for their role or work context.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -63,6 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackagesuggestions_filterbycurrentuser_all"
@@ -72,6 +75,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageSuggestions/filterByCurrentUser(on='all')?$expand=availableAccessPackage
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackagesuggestions-filterbycurrentuser-all-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -135,6 +143,7 @@ Content-type: application/json
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackagesuggestions_filterbycurrentuser_history"
@@ -144,6 +153,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageSuggestions/filterByCurrentUser(on='assignmentHistory')?$expand=availableAccessPackage
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackagesuggestions-filterbycurrentuser-history-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

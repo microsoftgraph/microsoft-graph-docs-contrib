@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Retrieve a list of [case](../resources/ediscovery-case.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

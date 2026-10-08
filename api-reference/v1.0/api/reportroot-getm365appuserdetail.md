@@ -59,7 +59,7 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 
 ## Request body
 
-Do not supply a request body with this method.
+Don't supply a request body with this method.
 
 ## Response
 
@@ -67,7 +67,7 @@ Do not supply a request body with this method.
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns:
 

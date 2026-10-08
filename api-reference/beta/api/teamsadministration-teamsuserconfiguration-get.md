@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the Teams user configurations for a specific user using their ID (the user's identifier).
+Read the Teams [user configurations](../resources/teamsadministration-teamsuserconfiguration.md) for a specific user using their ID (the user's identifier).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

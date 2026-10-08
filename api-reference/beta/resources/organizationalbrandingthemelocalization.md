@@ -2,10 +2,11 @@
 title: "organizationalBrandingThemeLocalization resource type"
 description: "Contains details of the theme's branding localizations."
 author: "AlexanderMars"
-ms.date: 11/04/2025
+ms.date: 12/01/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: Language-specific tenant branding theme
 ---
 
 # organizationalBrandingThemeLocalization resource type
@@ -14,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resource that supports managing language-specific branding for an [organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) object. While you can't change your original configuration's language, this resource allows you to create a new configuration for a different language.  
+Resource that supports managing language-specific branding for an [organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) object. While you can't change your original configuration's language, this resource allows you to create a new configuration for a different language.
+
+For more information about app-specific branding in External ID, see [Customize the sign-in experience for your application with branding themes (Preview)](/entra/external-id/customers/how-to-customize-branding-themes-apps).  
 
 ## Methods
 |Method|Return type|Description|

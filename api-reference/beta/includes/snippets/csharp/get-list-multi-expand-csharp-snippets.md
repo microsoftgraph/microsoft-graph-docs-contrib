@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Select = new string []{ "name","lastModifiedDateTime" };
+	requestConfiguration.QueryParameters.Select = new string []{ "name","lastModifiedDateTime","itemCount" };
 	requestConfiguration.QueryParameters.Expand = new string []{ "columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")" };
 });
 

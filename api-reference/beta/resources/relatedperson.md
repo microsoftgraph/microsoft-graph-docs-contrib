@@ -21,7 +21,8 @@ Represents information about people related to information within a given entity
 | Property        | Type        | Description                                                                                                                                                                                                                                     |
 |:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |displayName      |String       | Name of the person.                                                                                                                                                                                                                             |
-|relationship     |String       | Possible values are: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`.|
+|relationship     |String       | The possible values are: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`.|
+|relationshipLabel     |String       | Information (free-text) describing the relationship between the user and the related person. This property provides additional context beyond the predefined relationship values and can be used by clients, including AI-powered experiences, to better understand and reason about the relationship.|
 |userId           |String       | The user's directory object ID (Microsoft Entra ID or CID).                                                                                                                                                                                       |
 |userPrincipalName|String       | Email address or reference to person within the organization.                                                                                                                                                                                       |
 
@@ -42,6 +43,7 @@ The following JSON representation shows the resource type.
 {
   "displayName": "String",
   "relationship": "String",
+  "relationshipLabel": "String",
   "userId": "String",
   "userPrincipalName": "String"
 }

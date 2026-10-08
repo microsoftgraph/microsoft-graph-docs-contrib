@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get the [map](../resources/buildingmap.md) of a building in IMDF format.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -86,6 +88,10 @@ GET https://graph.microsoft.com/beta/places/30ca79af-ecb7-46c2-a14b-afe264a91543
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-buildingmap-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-buildingmap-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

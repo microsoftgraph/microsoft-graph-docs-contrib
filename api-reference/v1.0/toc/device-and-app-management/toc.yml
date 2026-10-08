@@ -81,6 +81,8 @@ items:
       href: ../../api/cloudpc-reboot.md
     - name: Rename
       href: ../../api/cloudpc-rename.md
+    - name: Reprovision
+      href: ../../api/cloudpc-reprovision.md
     - name: Resize
       href: ../../api/cloudpc-resize.md
     - name: Restore
@@ -89,6 +91,8 @@ items:
       href: ../../api/cloudpc-troubleshoot.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
+    - name: Retrieve launch detail
+      href: ../../api/cloudpc-retrievecloudpclaunchdetail.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -115,6 +119,8 @@ items:
       href: ../../api/cloudpconpremisesconnection-delete.md
     - name: Run health checks
       href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
+    - name: Update Active Directory domain password
+      href: ../../api/cloudpconpremisesconnection-updateaddomainpassword.md
   - name: Cloud PC device image
     items:
     - name: Cloud PC device image
@@ -153,6 +159,18 @@ items:
       href: ../../api/cloudpcprovisioningpolicy-delete.md
     - name: Assign
       href: ../../api/cloudpcprovisioningpolicy-assign.md
+  - name: Cloud PC report
+    items:
+    - name: Cloud PC report
+      href: ../../resources/cloudpcreport.md
+    - name: Retrieve Cloud PC recommendation reports
+      href: ../../api/cloudpcreport-retrievecloudpcrecommendationreports.md
+  - name: Cloud PC service plan
+    items:
+    - name: Cloud PC service plan
+      href: ../../resources/cloudpcserviceplan.md
+    - name: List
+      href: ../../api/virtualendpoint-list-serviceplans.md
   - name: Cloud PC user setting
     items:
     - name: Cloud PC user setting

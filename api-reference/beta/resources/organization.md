@@ -55,7 +55,7 @@ Represents the Microsoft Entra tenant that the user or application is authentica
 | state | String | State name of the address for the organization. |
 | street | String | Street name of the address for organization. |
 | technicalNotificationMails |String collection | Not nullable. |
-| tenantType | String | Not nullable. Can be one of the following types: <li> `AAD` - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. <li> `AAD B2C` An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios.  <li> `CIAM` - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios.  |
+| tenantType | String | Not nullable. Can be one of the following types: <ul><li> `AAD` - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. </li><li> `AAD B2C` An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios.  </li><li> `CIAM` - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios. </li></ul> |
 | verifiedDomains | [verifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable. |
 
 ### partnerTenantType values

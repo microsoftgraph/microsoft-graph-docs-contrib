@@ -52,7 +52,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|file|String|Collection of IMDF map files for a building in Base64 zip format. [Learn more](/microsoft-365/places/configure-maps-in-places) about supported GeoJSONs in Places.|
+|file|String|Collection of IMDF map files for a building in Base64-encoded ZIP format. [Learn more](/microsoft-365/places/configure-maps-in-places) about supported GeoJSONs in Places.|
 |importSetting|[importBuildingMapSetting](../resources/importbuildingmapsetting.md)|Settings that can be used during import.|
 
 ## Response

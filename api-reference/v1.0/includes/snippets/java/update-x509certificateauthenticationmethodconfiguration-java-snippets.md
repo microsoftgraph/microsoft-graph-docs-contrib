@@ -34,18 +34,33 @@ x509CertificateRule1.setX509CertificateAuthenticationMode(X509CertificateAuthent
 rules.add(x509CertificateRule1);
 authenticationModeConfiguration.setRules(rules);
 authenticationMethodConfiguration.setAuthenticationModeConfiguration(authenticationModeConfiguration);
+LinkedList<X509CertificateAuthorityScope> certificateAuthorityScopes = new LinkedList<X509CertificateAuthorityScope>();
+X509CertificateAuthorityScope x509CertificateAuthorityScope = new X509CertificateAuthorityScope();
+x509CertificateAuthorityScope.setSubjectKeyIdentifier("aaaaaaaabbbbcccc111122222222222222333333");
+x509CertificateAuthorityScope.setPublicKeyInfrastructureIdentifier("Contoso PKI");
+LinkedList<IncludeTarget> includeTargets = new LinkedList<IncludeTarget>();
+IncludeTarget includeTarget = new IncludeTarget();
+includeTarget.setId("aaaaaaaa-bbbb-cccc-1111-222222222222");
+includeTarget.setTargetType(AuthenticationMethodTargetType.Group);
+includeTargets.add(includeTarget);
+x509CertificateAuthorityScope.setIncludeTargets(includeTargets);
+certificateAuthorityScopes.add(x509CertificateAuthorityScope);
+authenticationMethodConfiguration.setCertificateAuthorityScopes(certificateAuthorityScopes);
+X509CertificateIssuerHintsConfiguration issuerHintsConfiguration = new X509CertificateIssuerHintsConfiguration();
+issuerHintsConfiguration.setState(X509CertificateIssuerHintsState.Enabled);
+authenticationMethodConfiguration.setIssuerHintsConfiguration(issuerHintsConfiguration);
 X509CertificateCRLValidationConfiguration crlValidationConfiguration = new X509CertificateCRLValidationConfiguration();
 crlValidationConfiguration.setState(X509CertificateCRLValidationConfigurationState.Disabled);
 LinkedList<String> exemptedCertificateAuthoritiesSubjectKeyIdentifiers = new LinkedList<String>();
 crlValidationConfiguration.setExemptedCertificateAuthoritiesSubjectKeyIdentifiers(exemptedCertificateAuthoritiesSubjectKeyIdentifiers);
 authenticationMethodConfiguration.setCrlValidationConfiguration(crlValidationConfiguration);
-LinkedList<AuthenticationMethodTarget> includeTargets = new LinkedList<AuthenticationMethodTarget>();
+LinkedList<AuthenticationMethodTarget> includeTargets1 = new LinkedList<AuthenticationMethodTarget>();
 AuthenticationMethodTarget authenticationMethodTarget = new AuthenticationMethodTarget();
 authenticationMethodTarget.setTargetType(AuthenticationMethodTargetType.Group);
 authenticationMethodTarget.setId("all_users");
 authenticationMethodTarget.setIsRegistrationRequired(false);
-includeTargets.add(authenticationMethodTarget);
-authenticationMethodConfiguration.setIncludeTargets(includeTargets);
+includeTargets1.add(authenticationMethodTarget);
+authenticationMethodConfiguration.setIncludeTargets(includeTargets1);
 AuthenticationMethodConfiguration result = graphClient.policies().authenticationMethodsPolicy().authenticationMethodConfigurations().byAuthenticationMethodConfigurationId("{authenticationMethodConfiguration-id}").patch(authenticationMethodConfiguration);
 
 

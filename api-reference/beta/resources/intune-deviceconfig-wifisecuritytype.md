@@ -21,9 +21,11 @@ Wi-Fi Security Types.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|open|0|Open (No Authentication).|
-|wpaPersonal|1|WPA-Personal.|
-|wpaEnterprise|2|WPA-Enterprise. Must use IOSEnterpriseWifiConfiguration type to configure enterprise options.|
-|wep|3|WEP Encryption.|
-|wpa2Personal|4|WPA2-Personal.|
-|wpa2Enterprise|5|WPA2-Enterprise. Must use WindowsWifiEnterpriseEAPConfiguration type to configure enterprise options.|
+|open|0|Default. Indicates Wi-Fi security type is associated with Open (No Authentication).|
+|wpaPersonal|1|Indicates Wi-Fi security type is associated with WPA-Personal.|
+|wpaEnterprise|2|Indicates Wi-Fi security type is associated with WPA-Enterprise. Must use IOSEnterpriseWifiConfiguration type to configure enterprise options.|
+|wep|3|Indicates Wi-Fi security type is associated with WEP Encryption.|
+|wpa2Personal|4|Indicates Wi-Fi security type is associated with WPA2-Personal.|
+|wpa2Enterprise|5|Indicates Wi-Fi security type is associated with WPA2-Enterprise. Must use WindowsWifiEnterpriseEAPConfiguration type to configure enterprise options.|
+|unknownFutureValue|6|Evolvable enumeration sentinel value. Do not use|
+|wpa3Personal|7|Indicates Wi-Fi security type is associated with WPA3-Personal. Provides stronger encryption using Simultaneous Authentication of Equals (SAE).|

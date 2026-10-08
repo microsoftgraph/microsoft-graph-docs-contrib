@@ -52,7 +52,7 @@ If successful, this method returns `200 OK` response code.
 ## Example
 The following example shows how to call this API.
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -101,7 +101,7 @@ Content-Length: 46
 
 ---
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 

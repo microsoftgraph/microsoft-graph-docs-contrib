@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents time window during which [agents](onpremisesagent.md) can receive updates.
+Represents the time window during which [agents](../resources/onpremisesagent.md) can receive updates. This object is configured in the **updateWindow** property of [hybridAgentUpdaterConfiguration](../resources/hybridagentupdaterconfiguration.md).
 
 ## Properties
 

@@ -20,8 +20,8 @@ Represents the properties of the stages of a subject rights request.
 |Property|Type|Description|
 |:---|:---|:---|
 |error|[publicError](../resources/publicerror.md)|Describes the error, if any, for the current stage.|
-|stage|subjectRightsRequestStage|The stage of the subject rights request. Possible values are: `contentRetrieval`, `contentReview`, `generateReport`, `contentDeletion`, `caseResolved`, `unknownFutureValue`, `approval`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `approval`.|
-|status|subjectRightsRequestStageStatus|Status of the current stage. Possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
+|stage|[subjectRightsRequestStage](../resources/subjectrightsrequeststage.md)|The stage of the subject rights request.|
+|status|subjectRightsRequestStageStatus|Status of the current stage. The possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 None.

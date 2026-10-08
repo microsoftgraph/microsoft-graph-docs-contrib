@@ -30,7 +30,7 @@ A usage right represents a license that a user or device has for either third pa
 |catalogId|String|Product id corresponding to the usage right.|
 |id|String|The id of the usage right.|
 |serviceIdentifier|String|Identifier of the service corresponding to the usage right.|
-|state|usageRightState|The state of the usage right. Possible values are: `active`, `inactive`, `warning`, `suspended`.|
+|state|usageRightState|The state of the usage right. The possible values are: `active`, `inactive`, `warning`, `suspended`.|
 
 ### usageRightState values
 

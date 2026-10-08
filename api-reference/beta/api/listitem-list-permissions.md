@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of the [permission](../resources/permission.md) objects associated with a [listItem](../resources/listitem.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -34,7 +34,8 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/permissions
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -59,8 +60,9 @@ The following example shows a request.
   "name": "list_permission_listitem_nav_property"
 }
 -->
-
----
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/sites/60a53b69-1342-4e9a-9d66-d2288f214b68/lists/b5dabb84-f89f-4317-a884-99b3d2067c2c/items/bdaa01cd-7ed2-4cd2-8292-2771e6f43148/permissions
+```
 
 ### Response
 

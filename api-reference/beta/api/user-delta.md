@@ -58,7 +58,7 @@ This method supports optional OData Query Parameters to help customize the respo
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The *id* property is always returned.
 - There's limited support for `$filter`:
-  - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/beta/users/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There's a limit of 50 filtered objects.
+  - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/beta/users/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There's a limit of 50 filtered objects.
 
 ## Request headers
 | Name       | Description|
@@ -100,7 +100,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 - If the property has changed, the new value is included in the response. This includes properties being set to null value.
 - If the property hasn't changed, the property isn't included in the response at all. (Different from the default behavior.)
 
-> **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See [Example 3](#example-3-alternative-minimal-response-behavior).
+> **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it doesn't affect how the delta query is executed. See [Example 3](#example-3-alternative-minimal-response-behavior).
 
 ## Examples
 
@@ -152,7 +152,7 @@ GET https://graph.microsoft.com/beta/users/delta
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -238,7 +238,7 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization. All three properties are included in the response and it isn't known which ones have changed since the `@odata.deltaLink` was obtained.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization. All three properties are included in the response and it isn't known which ones have changed since the `@odata.deltaLink` was obtained.
 
 <!-- {
   "blockType": "response",
@@ -313,7 +313,7 @@ Prefer: return=minimal
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization. The `mobilePhone` property isn't included, which means it hasn't changed since the last delta query; `displayName` and `jobTitle` are included which means their values have changed.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization. The `mobilePhone` property isn't included, which means it hasn't changed since the last delta query; `displayName` and `jobTitle` are included which means their values have changed.
 
 <!-- {
   "blockType": "response",

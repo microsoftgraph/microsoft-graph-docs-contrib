@@ -48,7 +48,7 @@ The following table shows the properties that are possible to set when you creat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |displayName|String|Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.|
 |first|String|First name of the user.|
 |id|String|Identifier used for individually addressing the entity. Inherited from [entity](../resources/entity.md)|

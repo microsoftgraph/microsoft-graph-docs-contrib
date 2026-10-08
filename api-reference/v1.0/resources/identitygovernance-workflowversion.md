@@ -30,7 +30,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `mover`,`unknownFutureValue`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`,`ne`) and `$orderby`|
+|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `unknownFutureValue`, `mover`, `extensibility`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mover`, `extensibility`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`,`ne`) and `$orderby`|
 |createdDateTime|DateTimeOffset|The date time when the `workflow` was versioned. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |description|String|The description of the `workflowversion`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 |displayName|String|The display name of the `workflowversion`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `orderby`.|
@@ -38,12 +38,14 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |isEnabled|Boolean|Whether the workflow is enabled or disabled. If this setting is `true`, the workflow can be run on demand or on schedule when **isSchedulingEnabled** is `true`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
 |isSchedulingEnabled|Boolean|If `true`, the Lifecycle Workflow engine executes the workflow based on the schedule defined by tenant settings. Cannot be `true` for a disabled workflow (where **isEnabled** is `false`). Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
 |lastModifiedDateTime|DateTimeOffset|The date time when the `workflow` was last modified. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|settings|[microsoft.graph.identityGovernance.workflowSetting](../resources/identitygovernance-workflowsetting.md)|The settings of the workflow version, including its quarantine configuration.|
 |versionNumber|Int32|The version of the workflow.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|administrationScopeTargets|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|The [administrative units](../resources/administrativeunit.md) in the scope of the workflow. Optional. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). <br><br>Supports `$expand`.|
 |createdBy|[user](../resources/user.md)|The user who created the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
@@ -72,6 +74,9 @@ The following JSON representation shows the resource type.
   "isEnabled": "Boolean",
   "isSchedulingEnabled": "Boolean",
   "lastModifiedDateTime": "String (timestamp)",
-  "versionNumber": "Integer"
+  "versionNumber": "Integer",
+  "settings": {
+    "@odata.type": "microsoft.graph.identityGovernance.workflowSetting"
+  }
 }
 ```

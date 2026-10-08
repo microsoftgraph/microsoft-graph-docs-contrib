@@ -22,7 +22,7 @@ Contains the details of the retention settings for a protection policy.
 |Property|Type|Description|
 |:---|:---|:---|
 |interval|String|The frequency of the backup.|
-|period|Duration|The period of time to retain the protected data for a single Microsoft 365 service.|
+|period|Duration|The period of time to retain the protected data for a single Microsoft 365 service. The possible values are: `P90D`, `P180D`, `P365D`, `P730D`, `P1095D`, `P1460D`, `P1825D`, `P2190D`, `P2555D`, `P2920D`, `P3285D`, and `P3650D`. Other values aren't supported.|
 
 ## Relationships
 

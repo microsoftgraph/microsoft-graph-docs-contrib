@@ -20,6 +20,8 @@ Custom authentication extensions define interactions with external systems durin
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) resource type.
+- [onPasswordSubmitCustomExtension](../resources/onpasswordsubmitcustomextension.md) resource type.
+- [onVerifiedIdClaimValidationCustomExtension](../resources/onverifiedidclaimvalidationcustomextension.md) resource type.
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 

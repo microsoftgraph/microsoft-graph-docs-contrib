@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifiable credential requirements status indicating that credentials verification is required and returns the information required to initiate the credential verification process. Used for the **verifiableCredentialRequirementStatus** property of [access package assignment request requirements](accessPackageAssignmentRequestRequirements.md).
+Verifiable credential requirements status indicating that credentials verification is required and returns the information required to initiate the credential verification process. Used for the **verifiableCredentialRequirementStatus** property of [access package assignment request requirements](../resources/accesspackageassignmentrequestrequirements.md).
 
-Inherits from [verifiableCredentialRequirementStatus](verifiableCredentialRequirementStatus.md).
+Inherits from [verifiableCredentialRequirementStatus](../resources/verifiablecredentialrequirementstatus.md).
 
 
 ## Properties

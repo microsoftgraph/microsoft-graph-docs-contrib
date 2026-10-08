@@ -24,11 +24,11 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List iosManagedAppProtections](../api/intune-mam-iosmanagedappprotection-list.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) collection|List properties and relationships of the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) objects.|
-|[Get iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-get.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Read properties and relationships of the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.|
-|[Create iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-create.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Create a new [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.|
-|[Delete iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-delete.md)|None|Deletes a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
-|[Update iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-update.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Update the properties of a [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.|
+|[List iosManagedAppProtections](../api/intune-mam-iosmanagedappprotection-list.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) collection|List properties and relationships of the [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) objects.|
+|[Get iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-get.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Read properties and relationships of the [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.|
+|[Create iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-create.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Create a new [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.|
+|[Delete iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-delete.md)|None|Deletes a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md).|
+|[Update iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-update.md)|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Update the properties of a [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -98,7 +98,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 |allowWidgetContentSync|Boolean|Indicates  if content sync for widgets is allowed for iOS on App Protection Policies|
-|exemptedAppProtocols|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Apps in this list will be exempt from the policy and will be able to receive data from managed apps.|
+|exemptedAppProtocols|[keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|Apps in this list will be exempt from the policy and will be able to receive data from managed apps.|
 |minimumWipeSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |allowedIosDeviceModels|String|Semicolon seperated list of device models allowed, as a string, for the managed app to work.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. Possible values are: `block`, `wipe`, `warn`, `blockWhenSettingIsSupported`.|

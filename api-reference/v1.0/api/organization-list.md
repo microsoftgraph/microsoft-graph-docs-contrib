@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [organization](../resources/organization.md) objects in the response body. Only one object is returned in the collection.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/organization
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

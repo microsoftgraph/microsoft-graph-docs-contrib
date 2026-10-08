@@ -39,7 +39,7 @@ In the request URL, provide the following query parameter with value.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|role|String|User role of the signed-in user in the **virtualEventTownhall**. Possible values are: `organizer`, `coOrganizer`.|
+|role|String|User role of the signed-in user in the **virtualEventTownhall**. The possible values are: `organizer`, `coOrganizer`.|
 
 ## Request headers
 
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUserRole(role='organizer')
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/getByUserRole(role='organizer')
 ```
 
 # [C#](#tab/csharp)
@@ -98,8 +98,6 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUser
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/virtualeventtownhallthisgetbyuserrole-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

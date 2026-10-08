@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata for the given object.
+Metadata for the given object. This object is configured in the **metadata** property of [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md).
 
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|key|synchronizationMetadata|Possible values are: `GalleryApplicationIdentifier`, `GalleryApplicationKey`, `IsOAuthEnabled`, `IsSynchronizationAgentAssignmentRequired`, `IsSynchronizationAgentRequired`, `IsSynchronizationInPreview`, `OAuthSettings`, `SynchronizationLearnMoreIbizaFwLink`, `ConfigurationFields`. |
+|key|synchronizationMetadata|The possible values are: `GalleryApplicationIdentifier`, `GalleryApplicationKey`, `IsOAuthEnabled`, `IsSynchronizationAgentAssignmentRequired`, `IsSynchronizationAgentRequired`, `IsSynchronizationInPreview`, `OAuthSettings`, `SynchronizationLearnMoreIbizaFwLink`, `ConfigurationFields`. |
 |value|String|Value of the metadata property.|
 
 ### Supported key-value pairs

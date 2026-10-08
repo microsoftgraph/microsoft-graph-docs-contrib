@@ -4,7 +4,7 @@ description: "Returns the current sponsors of an agent identity blueprint."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIden
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

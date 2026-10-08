@@ -22,6 +22,10 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
+|[List apps in channel](../api/channel-list-enabledapps.md) | [teamsApp](teamsapp.md) collection | Get a list of the [enabled apps](../resources/teamsapp.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). |
+|[Get app in channel](../api/teamsapp-get.md) | [teamsApp](teamsapp.md) | Get the details of the [enabled apps](../resources/teamsapp.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). |
+|[Add app to channel](../api/channel-post-enabledapps.md) | None | Add a new [teamsApp](../resources/teamsapp.md) object that enables an [app](../resources/teamsapp.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). |
+|[Remove app from channel](../api/channel-delete-enabledapps.md) | None | Remove a [teamsApp](../resources/teamsapp.md) object that disables an [app](../resources/teamsapp.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). |
 |[List apps in catalog](../api/appcatalogs-list-teamsapps.md) | [teamsApp](teamsapp.md) collection | List all the apps in the Microsoft Teams apps catalog.|
 |[Publish apps to catalog](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Upload an app to your organization's app catalog.|
 |[Update app in catalog](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Update an app in your organization's app catalog.|
@@ -39,11 +43,12 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 ### teamsAppDistributionMethod values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|store|0| The app is available to all tenants through the Microsoft Teams app store.|
-|organization|1|The app is available only in this tenant.|
-|sideloaded|2|The app is available only to the user/team its installed to.|
+|Member|Description|
+|:---|:---|
+|store| The app is available to all tenants through the Microsoft Teams app store.|
+|organization|The app is available only in this tenant.|
+|sideloaded|The app is available only to the user or team it's installed to.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 

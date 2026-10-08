@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "webapplicationfirewallprovider-get-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "webapplicationfirewallprovider_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/webapplicationfirewallprovider-get-permissions.md)]
 
 [!INCLUDE [rbac-wafprotection-apis-read](../includes/rbac-for-apis/rbac-wafprotection-apis-read.md)]
@@ -88,12 +86,15 @@ GET https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFirew
 [!INCLUDE [sample-code](../includes/snippets/php/get-webapplicationfirewallprovider-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-webapplicationfirewallprovider-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-webapplicationfirewallprovider-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

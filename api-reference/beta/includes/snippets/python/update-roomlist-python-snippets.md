@@ -19,7 +19,7 @@ request_body = RoomList(
 		city = "Buffalo",
 		state = "NY",
 		postal_code = "98052",
-		country_or_region = "USA",
+		country_or_region = "US",
 	),
 	geo_coordinates = OutlookGeoCoordinates(
 		altitude = None,

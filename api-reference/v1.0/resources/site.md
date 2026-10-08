@@ -16,29 +16,29 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Methods
 
-| Method                | Return type | Description
-|:-------------------------|:-------------|:----------
-| [Get root site][]        | site | Access the root SharePoint site within a tenant.
-| [Get site][]             | site | Access a sharePoint site using the siteId.
-| [List sites across geographies][] |  collection of sites  | List sites across all geographies in an organization.
-| [List subsites for a site][] |  collection of sites  | Get a collection of subsites defined for a site.
-| [List root sites](../api/site-list.md)  | site  | List all available sites in an organization. 
-| [Get site by path][]     | site | Access the root SharePoint site with a relative path.
-| [Get site for a group][] | site | Access the team site for a group.
-| [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource.
-| [Get activities by interval][] | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.
-| [Get delta](../api/site-delta.md) | [site](../resources/site.md) collection | Get newly created, updated, or deleted [sites](../resources/site.md) without having to perform a full read of the entire sites collection.
-| [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match the keywords provided.
-| [Follow site][]          | collection of site | Follow a user's site or multiple sites.
-| [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.
-| [List followed sites][]  | collection of site | List the sites that are followed by the signed-in user.
-| [Get permission][]             | GET /sites/{site-id}/permissions/{permission-id}
-| [List permissions][]           | GET /sites/{site-id}/permissions
-| [Create permissions][]         | POST /sites/{site-id}/permissions
-| [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
-| [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
-| [List operations](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
-| [List pages][]                                    | GET /sites/{site-id}/pages                                  |
+| Method                | Return type | Description |
+|:-------------------------|:-------------|:----------|
+| [Get root site][]        | site | Access the root SharePoint site within a tenant.|
+| [Get site][]             | site | Access a sharePoint site using the siteId.|
+| [List sites across geographies][] |  collection of sites  | List sites across all geographies in an organization.|
+| [List subsites for a site][] |  collection of sites  | Get a collection of subsites defined for a site.|
+| [List root sites](../api/site-list.md)  | site  | List all available sites in an organization.|
+| [Get site by path][]     | site | Access the root SharePoint site with a relative path.|
+| [Get site for a group][] | site | Access the team site for a group.|
+| [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource.|
+| [Get activities by interval][] | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.|
+| [Get delta](../api/site-delta.md) | [site](../resources/site.md) collection | Get newly created, updated, or deleted [sites](../resources/site.md) without having to perform a full read of the entire sites collection.|
+| [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match the keywords provided.|
+| [Follow site][]          | collection of site | Follow a user's site or multiple sites.|
+| [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.|
+| [List followed sites][]  | collection of site | List the sites that are followed by the signed-in user.|
+| [Get permission][]             | GET /sites/{site-id}/permissions/{permission-id} ||
+| [List permissions][]           | GET /sites/{site-id}/permissions ||
+| [Create permissions][]         | POST /sites/{site-id}/permissions ||
+| [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id} ||
+| [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id} ||
+| [List operations](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).|
+| [List pages][]                                    | GET /sites/{site-id}/pages                                  ||
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -90,29 +90,28 @@ The `root` identifier always references the root site for a given target, as fol
 
 ## Relationships
 
-| Relationship      | Type                                             | Description
-|:------------------|:-------------------------------------------------|:----------------------
-| **analytics**     | [itemAnalytics][] resource                       | Analytics about the view activities that took place on this site.
-| **columns**       | Collection([columnDefinition][])                 | The collection of column definitions reusable across lists under this site.
-| **contentTypes**  | Collection([contentType][])                      | The collection of content types defined for this site.
-| **drive**         | [drive][]                                        | The default drive (document library) for this site.
-| **drives**        | Collection([drive][])                            | The collection of drives (document libraries) under this site.
-| **items**         | Collection([baseItem][])                         | Used to address any item contained in this site. This collection can't be enumerated.
-| **lists**         | Collection([list][])                             | The collection of lists under this site.
-| **onenote**       | [onenote][]                                      | Calls the OneNote service for notebook related operations.
-| **operations**    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the site.
+| Relationship      | Type                                             | Description|
+|:------------------|:-------------------------------------------------|:----------------------|
+| **analytics**     | [itemAnalytics][] resource                       | Analytics about the view activities that took place on this site.|
+| **columns**       | Collection([columnDefinition][])                 | The collection of column definitions reusable across lists under this site.|
+| **contentTypes**  | Collection([contentType][])                      | The collection of content types defined for this site.|
+| **drive**         | [drive][]                                        | The default drive (document library) for this site.|
+| **drives**        | Collection([drive][])                            | The collection of drives (document libraries) under this site.|
+| **items**         | Collection([baseItem][])                         | Used to address any item contained in this site. This collection can't be enumerated.|
+| **lists**         | Collection([list][])                             | The collection of lists under this site.|
+| **onenote**       | [onenote][]                                      | Calls the OneNote service for notebook related operations.|
+| **operations**    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the site.|
 | **pages**           | Collection([baseSitePage][])                                                        | The collection of pages in the baseSitePages list in this site.                                                                                |
-| **permissions**   | Collection([permission][])                       | The permissions associated with the site. Nullable.
-| **sites**         | Collection([site][])                             | The collection of the sub-sites under this site.
-| **termStore**     | [microsoft.graph.termStore.store]                | The default termStore under this site.
-| **termStores**    | Collection([microsoft.graph.termStore.store])    | The collection of termStores under this site.
+| **permissions**   | Collection([permission][])                       | The permissions associated with the site. Nullable.|
+| **sites**         | Collection([site][])                             | The collection of the sub-sites under this site.|
+| **termStore**     | [microsoft.graph.termStore.store]                | The default termStore under this site.|
+| **termStores**    | Collection([microsoft.graph.termStore.store])    | The collection of termStores under this site.|
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
 [baseSitePage]: baseSitePage.md
 [drive]: drive.md
-[identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
 [list]: list.md
 [permission]: permission.md

@@ -5,7 +5,7 @@ ms.localizationpriority: high
 author: "preetikr"
 doc_type: conceptualPageType
 ms.subservice: "security"
-ms.date: 11/03/2025
+ms.date: 01/21/2026
 ---
 
 # Use the Microsoft Graph security API
@@ -28,7 +28,7 @@ The Microsoft Graph security API provides key features as described in the follo
 
 Take immediate action to defend against threats using the [securityAction](securityaction.md) entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with [Microsoft Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (formerly Microsoft Defender ATP) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations.
 
-  > **Note:** Currently security actions only support application permissions.
+> **Note:** Currently security actions only support application permissions.
 
 ## Advanced hunting
 Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
@@ -50,17 +50,53 @@ Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kus
 5. A response code of HTTP 429 means you have reached the quota for either the number of API calls or execution time. Refer to the response body to confirm the limit you have reached.
 
 6. The maximum query result size of a single request cannot exceed 124 MB. Exceeding the size limit results in HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again."
+7. Query results have an overall size limit of 50 MB. This limit doesn't just refer to the number of records; factors such as the number of columns, data types, and field lengths also contribute to the query result size.
+
+### Migrate from the older APIs
+
+The advanced hunting APIs in Microsoft Graph replace the older version of the API that was available through the `https://api.security.microsoft.com/api/advancedhunting/run` and `https://api.security.microsoft.com/api/advancedqueries/run` endpoints. The older APIs are now retired and will stop returning data on February 1, 2027.
+
+To migrate to the advanced hunting APIs in Microsoft Graph, update the following parameters in your application:
+
+|Subject  |Older parameters  |Microsoft Graph  |
+|---------|---------|---------|
+|Endpoints     | [https://api.securitycenter.microsoft.com/api/advancedqueries/run](/defender-endpoint/api/run-advanced-query-api) <br/><br/> [https://api.security.microsoft.com/api/advancedhunting/run](/defender-xdr/api-advanced-hunting)        | [https://graph.microsoft.com/beta/security/runHuntingQuery](../api/security-security-runhuntingquery.md)       |
+|Resource URI|Microsoft Defender for Endpoint on `https://api.securitycenter.microsoft.com`|Microsoft Graph on `https://graph.microsoft.com`|
+|API permissions     | *AdvancedQuery.Read* (delegated) and *AdvancedQuery.Read.All* (application) under Microsoft Defender for Endpoint (formerly Windows Defender Advanced Threat Protection) <br/><br/> *AdvancedHunting.Read* (delegated) and *AdvancedHunting.Read.All* (application) under Microsoft Threat Protection       | [*ThreatHunting.Read.All*](/graph/permissions-reference#threathuntingreadall) (delegated and application)       |
+|Request body     | **Query** property. For example `{"Query":"DeviceProcessEvents \|where InitiatingProcessFileName =~ 'powershell.exe' \|where ProcessCommandLine contains 'appdata'\|project Timestamp, FileName, InitiatingProcessFileName, DeviceId\|limit 2"}`        |  **Query** and **Timespan** properties. For example, `{"Query": "DeviceProcessEvents", "Timespan": "P90D"}`      |
+|Response     | **QueryResponse** object consisting of **Stats**, **Schema**, and **Results**        |  [huntingQueryResults resource type](../resources/security-huntingqueryresults.md)", consisting of **schema** (instead of **Schema**) and **results** (instead of **Results**).       |
+
+For more information about how to authorize your app to call Microsoft Graph APIs, see [Get access on behalf of a user](/graph/auth-v2-user) and [Get access without a user](/graph/auth-v2-service).
+
+#### Power Platform flow migration (PowerApps / Power Automate / Logic Apps) 
+
+Microsoft Graph does't have a built-in Advanced Hunting action that was available in the Power Platform connector for Microsoft Defender ATP. To continue using Advanced Hunting in your Power Platform flows, create a custom connector. For more information, see [Create a Microsoft Graph JSON Batch Custom Connector for Power Automate](/graph/tutorials/power-automate) and use the Microsoft Graph parameters described in the preceding table.
+
+#### Power BI flow migration
+
+If you're using a custom Power BI report created with the older API, update your Power BI query to use the Microsoft Graph parameters described in the preceding table. For more information, see [Create custom Microsoft Defender XDR reports using Microsoft Graph security API and Power BI](/defender-xdr/defender-xdr-custom-reports).
+
+## Cloud zones (preview)
+
+Cloud zones (cloud scopes) in Microsoft Defender for Cloud enable you to group and manage cloud environments across multiple cloud providers (Azure, AWS, and GCP) and DevOps platforms. A [zone](security-zone.md) is a logical container that groups related cloud environments, making it easier to apply consistent security policies and monitor security posture across your multi-cloud infrastructure. A tenant can have a maximum of 1,000 zones.
+
+Use the cloud zones API to:
+- Create, update, and delete zones for organizing cloud environments.
+- Attach and detach environments (such as Azure subscriptions, AWS accounts, GCP projects, or DevOps connections) to zones.
+- Query zones and their associated environments.
+
+For more information, see [Manage cloud scopes and unified role-based access control](/azure/defender-for-cloud/cloud-scopes-unified-rbac?pivots=defender-portal).
 
 ## Custom detections
 You can create advanced hunting [Custom detection rules](/microsoft-365/security/defender/custom-detections-overview) specific to your security operations to allow you to proactively monitor for threats and take action. For instance, you can make custom detection rules that look for known indicators or misconfigured devices. These automatically trigger alerts and any response actions that you specify.
 
 ### Quotas
 
-1.  [Get multiple rules](../api/security-detectionrule-list.md): 10 rules per minute per application, 300 rules per hour per application, 600 rules per hour per tenant
+1.  [Get multiple rules](../api/security-rulesroot-list-detectionrules.md): 10 rules per minute per application, 300 rules per hour per application, 600 rules per hour per tenant
 2.  [Get a single rule](../api/security-detectionrule-get.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
-3.  [Create rule](../api/security-detectionrule-post-detectionRules.md): 10 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
+3.  [Create rule](../api/security-rulesroot-post-detectionrules.md): 10 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
 4.  [Update rule](../api/security-detectionrule-update.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
-5.  [Delete rule](../api/security-detectionrule-delete.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
+5.  [Delete rule](../api/security-rulesroot-delete-detectionrules.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
 
 ## Alerts
 Alerts are detailed warnings about suspicious activities in a customer's tenant that Microsoft or partner security providers have identified and flagged for action. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
@@ -68,6 +104,9 @@ Alerts are detailed warnings about suspicious activities in a customer's tenant 
 The beta version of the security API offers two types of alerts that aggregate other alerts from security providers and make analyzing attacks and determining responses easier:
 - [Alerts and incidents](#alerts-and-incidents) - the latest generation of alerts in the Microsoft Graph security API. They're represented by the [alert](security-alert.md) resource and its collection, [incident](security-incident.md) resource, defined in the `microsoft.graph.security` namespace.
 - [Legacy alerts](#legacy-alerts) - the first generation of alerts in the Microsoft Graph security API. They're represented by the [alert](alert.md) resource defined in the `microsoft.graph` namespace.
+
+> [!IMPORTANT]
+> To view Sentinel alerts and incidents you must onboard Sentinel to the Defender Portal. For more information see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard).
 
 ### Alerts and incidents
 
@@ -85,8 +124,7 @@ Alerts from the following security providers are available via these rich alerts
 
 ### Legacy alerts
 
-> [!NOTE]
-> The legacy alerts API is deprecated and will be removed by April 2026. We recommend that you migrate to the new [alerts and incidents](/graph/api/resources/security-alert) API.
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 The legacy [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline the management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response.
 
@@ -112,17 +150,21 @@ Alerts from the following security providers are available via the legacy **aler
 
 \*\*\* Microsoft Defender for Identity alerts are available via the Microsoft Defender for Cloud Apps integration. This means you get Microsoft Defender for Identity alerts only if you have joined Unified SecOps and connected Microsoft Defender for Identity to Microsoft Defender for Cloud Apps. Learn more about [how to integrate Microsoft Defender for Identity and Microsoft Defender for Cloud Apps](/azure-advanced-threat-protection/atp-mcas-integration).
 
+## Case management (preview)
+
+Use the [case management API](../resources/security-casemanagementroot.md) to create and manage investigation cases in security operations. The API supports generic cases, service-created incident cases, and related tasks, activities, relations, and attachments through the `/security/caseManagement` entry point.
+
 ## Attack simulation and training
 
 [Attack simulation and training](/microsoft-365/security/office-365-security/attack-simulation-training) is part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). This service lets users in a tenant experience a realistic benign phishing attack and learn from it. Social engineering simulation and training experiences for end users help reduce the risk of users being breached via those attack techniques. The attack simulation and training API enables tenant administrators to view launched [simulation](simulation.md) exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
 
 ## eDiscovery
 
-[Microsoft Purview eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations.
+[Microsoft Purview eDiscovery](/purview/edisc) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations.
 
-## Audit log query (preview)
+## Audit log query
 
-[Microsoft Purview Audit](/microsoft-365/compliance/audit-solutions-overview) provides an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
+[Microsoft Purview Audit](/purview/audit-solutions-overview) provides an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
 
 ## Identities
 
@@ -141,6 +183,8 @@ The Defender for Identity sensors management APIs allows you to:
 - Enable or disable the automatic activation of eligible servers for the unified agent.
 - Activate or deactivate the unified agent on eligible servers.
 - Enable or disable the automatic enabling of the required events auditing configuration during the sensor’s activation.
+- Display a list of sensors that are eligible for migration.
+- Migrate sensors that are eligible for migration.
 
 ## Incidents
 
@@ -311,6 +355,16 @@ The following are some of the most popular requests for working with the Microso
 | **Identities**|||
 | List health issues | [List health issues](../api/security-identitycontainer-list-healthissues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | List sensors | [List sensors](../api/security-identitycontainer-list-sensors.md) | [https://graph.microsoft.com/beta/security/identities/sensors](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/sensors&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| **Cloud zones (preview)**|||
+| List zones | [List zones](../api/security-security-list-zones.md) | [https://graph.microsoft.com/beta/security/zones](https://developer.microsoft.com/graph/graph-explorer?request=security/zones&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Get zone | [Get zone](../api/security-zone-get.md) | [https://graph.microsoft.com/beta/security/zones/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Create zone | [Create zone](../api/security-security-post-zones.md) | [https://graph.microsoft.com/beta/security/zones](https://developer.microsoft.com/graph/graph-explorer?request=security/zones&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Update zone | [Update zone](../api/security-zone-update.md) | [https://graph.microsoft.com/beta/security/zones/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Delete zone | [Delete zone](../api/security-zone-delete.md) | [https://graph.microsoft.com/beta/security/zones/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) |
+| List environments | [List environments](../api/security-zone-list-environments.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Get environment | [Get environment](../api/security-environment-get.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Attach environment | [Attach environment](../api/security-zone-post-environments.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Delete environment | [Delete environment](../api/security-environment-delete.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Data security and governance (preview)**|||
 | Compute protection scopes|[Compute protection scopes](../api/userprotectionscopecontainer-compute.md)||
 | Process content|[Process content](../api/userdatasecurityandgovernance-processcontent.md)||

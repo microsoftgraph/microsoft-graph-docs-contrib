@@ -250,6 +250,10 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 [!INCLUDE [sample-code](../includes/snippets/php/get-onlinemeeting-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onlinemeeting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-onlinemeeting-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -338,7 +342,12 @@ Content-Length: 1574
   "allowedPresenters": "everyone",
   "allowMeetingChat": "enabled",
   "allowTeamworkReactions": true,
-  "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123"
+  "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123",
+  "cloudVideoInteropInfo": {
+   "tenantKey": "94f39e13-d027-4cfa-bcd3-4b8b0c2017ef",
+   "videoTeleconferenceId": "123456789",
+   "moreInfoWebUrl": "https://cvi.vendor.com/join-instructions"
+  }
 }
 ```
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
@@ -422,7 +431,8 @@ The following example shows the response.
         "passcode": null
     },
     "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123"
-    "meetingSpokenLanguageTag": "en-US"
+    "meetingSpokenLanguageTag": "en-US",
+    "meetingType": "scheduled"
 }
 ```
 
@@ -496,7 +506,8 @@ The following example shows the response.
             "sensitivityLabelAssignment": {
               "sensitivityLabelId": "c7f2d7a7-6a36-4a41-9a6b-0d2761a9f4f0"
             }
-            "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123"
+            "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123",
+            "meetingType": "scheduled"
         }
     ]
 }
@@ -537,6 +548,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=joinMeetingIdSett
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-an-online-meeting-by-joinmeetingid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-an-online-meeting-by-joinmeetingid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -610,7 +625,8 @@ Content-Type: application/json
             "sensitivityLabelAssignment": {
               "sensitivityLabelId": "c7f2d7a7-6a36-4a41-9a6b-0d2761a9f4f0"
             },
-            "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123"
+            "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123",
+            "meetingType": "scheduled"
         }
     ]
 }
@@ -653,6 +669,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-attendee-report-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-attendee-report-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -719,6 +739,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-live-event-recording-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-live-event-recording-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -16,7 +16,7 @@ import (
 )
 
 requestParameters := &graphgroups.GroupItemRequestBuilderGetQueryParameters{
-	Select: [] string {"allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenCount"},
+	Select: [] string {"accessType","allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenConversationsCount","unseenCount","unseenMessagesCount"},
 }
 configuration := &graphgroups.GroupItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

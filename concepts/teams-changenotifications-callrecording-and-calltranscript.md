@@ -5,17 +5,35 @@ author: "v-sdhakshina"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
-ms.date: 09/18/2025
+ms.date: 03/16/2025
 ---
+
+<!-- markdownlint-disable MD024 -->
 
 # Get change notifications for transcripts and recordings using Microsoft Graph
 
-Change notifications enable you to subscribe to changes to transcripts and recordings. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) or a [recording](/graph/api/resources/callrecording) is available after an online meeting or an ad hoc call.
+Change notifications enable you to subscribe to changes to transcripts and recordings. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) or a [recording](/graph/api/resources/callrecording) is available after an online meeting or an [ad hoc call](/graph/api/resources/adhoccall).
 
 This article describes scenarios for the **transcript** and **recording** resources. For more information, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 > [!NOTE]
 > If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request fails with the following error message: *lifecycleNotificationUrl is required for subscription creation on this resource when the expirationDateTime value exceeds 1 hour*.
+
+## Tenant admin control over transcript subscriptions
+
+If a tenant administrator turns off Graph API access to transcripts, **creating or renewing** a subscription to any transcript change-notification resource fails with `403 Forbidden` and the `GraphAccessToTranscriptsDisabled` inner-error code. Branch on the `innerError.code` value, not the message text — messages are subject to change.
+
+Affected endpoints:
+
+- [`communications/onlineMeetings/getAllTranscripts`](/graph/api/onlinemeeting-getalltranscripts)
+- [`communications/adhocCalls/getAllTranscripts`](/graph/api/adhoccall-getalltranscripts)
+- [`communications/onlineMeetings/{onlineMeetingId}/transcripts`](/graph/api/onlinemeeting-getalltranscripts)
+- [`communications/adhocCalls/{adhocCallId}/transcripts`](/graph/api/adhoccall-getalltranscripts)
+- [`users/{userId}/onlineMeetings/getAllTranscripts`](/graph/api/onlinemeeting-getalltranscripts)
+- [`users/{userId}/adhocCalls/getAllTranscripts`](/graph/api/adhoccall-getalltranscripts)
+- [`appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllTranscripts`](/graph/api/onlinemeeting-getalltranscripts)
+
+The setting blocks creating and renewing transcript subscriptions while it is off. This control applies to transcript resources only; recording subscriptions are unaffected. For an example error payload, see [Get callTranscript](/graph/api/calltranscript-get#error-responses).
 
 ## Subscribe to transcripts available at the tenant level
 
@@ -65,9 +83,6 @@ Content-Type: application/json
 
 To get change notifications for any transcript available for any ad hoc call in a tenant, subscribe to `communications/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
-> [!NOTE]
-> This resource type is available only on the `/beta` endpoint.
-
 #### Permissions
 
 One of the following permissions is required to subscribe to `communications/adhocCalls/getAllTranscripts`.
@@ -86,7 +101,7 @@ The following example shows how to subscribe to **ad hoc call** transcripts avai
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -127,7 +142,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -179,7 +194,7 @@ One of the following permissions is required to subscribe to `communications/adh
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -234,7 +249,7 @@ Content-Type: application/json
 
 ## Subscribe to transcripts available for ad hoc call where a specific user initiates transcription
 
-To get change notifications for any transcript available for any ad hoc call where a specific user initiates the transcription, subscribe to `users/{userId}/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
+To get change notifications for any transcript available for any ad hoc call where a specific user initiates the transcription, subscribe to `users/{userId}/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall).
 
 ### Permissions
 
@@ -252,7 +267,7 @@ The following example shows how to subscribe to transcripts available for any ad
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -270,9 +285,6 @@ Content-Type: application/json
 ## Subscribe to transcripts available for any online meeting where a specific Teams app is installed
 
 To get change notifications for any transcript available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
-
-> [!NOTE]
-> This resource type is available only on the `/beta` endpoint.
 
 ### Permissions
 
@@ -293,7 +305,7 @@ One of the following permissions is required to subscribe to `appCatalogs/teamsA
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -312,7 +324,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -389,7 +401,7 @@ The following example shows how to subscribe to recordings available at the tena
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -430,7 +442,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -466,7 +478,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for a particular ad hoc call
 
-To get change notifications for any recording available for a particular ad hoc call, subscribe to `communications/adhocCalls/{adhocCallId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
+To get change notifications for any recording available for a particular ad hoc call, subscribe to `communications/adhocCalls/{adhocCallId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall).
 
 ### Permissions
 
@@ -482,7 +494,7 @@ One of the following permissions is required to subscribe to `communications/adh
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -516,7 +528,7 @@ One of the following permissions is required to subscribe to `users/{userId}/onl
 
 ## Subscribe to recordings available for ad hoc call where a specific user initiates transcription
 
-To get change notifications for any recording available for any ad hoc call where a specific user initiates transcription, subscribe to `users/{userId}/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
+To get change notifications for any recording available for any ad hoc call where a specific user initiates transcription, subscribe to `users/{userId}/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall).
 
 ### Permissions
 
@@ -534,7 +546,7 @@ The following example shows how to subscribe to recordings available for any ad 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -555,9 +567,6 @@ This section describes the methods to subscribe to recordings available for any 
 
 To get change notifications for any recording available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
-> [!NOTE]
-> This resource type is available only on the `/beta` endpoint.
-
 ### Permissions
 
 One of the following permissions is required to subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -577,7 +586,7 @@ One of the following permissions is required to subscribe to `appCatalogs/teamsA
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created",
@@ -595,7 +604,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created",

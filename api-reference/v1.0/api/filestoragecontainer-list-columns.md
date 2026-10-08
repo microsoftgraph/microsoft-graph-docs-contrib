@@ -1,6 +1,6 @@
 ---
 title: " List columns in fileStorageContainer"
-description: "List columns in a fileStorageContainer."
+description: "Get the collection of columns represented as columnDefinition resources in a fileStorageContainer."
 author: "harmoneddie"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the collection of columns represented as [columnDefinition](../resources/columndefinition.md) resources in a  [fileStorageContainer](../resources/filestoragecontainer.md).  
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

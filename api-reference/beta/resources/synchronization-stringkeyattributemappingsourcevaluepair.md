@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).
+Represents a key-value pair where the key is a string and the value is [attributeMappingSource](../resources/synchronization-attributemappingsource.md). This object is configured in the **parameters** property of [attributeMappingSource](../resources/synchronization-attributemappingsource.md).
 
 ## Properties
 | Property       | Type    |Description|

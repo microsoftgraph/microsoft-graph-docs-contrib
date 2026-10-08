@@ -18,7 +18,7 @@ Represents the settings for a [delegator or delegate](../resources/calldelegatio
 
 Inherits from [entity](../resources/entity.md).
 
-This resource is an open type.
+This resource is an open type that allows additional properties beyond those documented here.
 
 ## Methods
 |Method|Return type|Description|

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Archive an active SharePoint [site](../resources/site.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

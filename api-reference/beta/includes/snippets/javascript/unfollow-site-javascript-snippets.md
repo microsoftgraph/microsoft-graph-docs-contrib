@@ -22,7 +22,7 @@ const site = {
     ] 
 };
 
-await client.api('/users/{user-id}/followedSites/remove')
+await client.api('/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/followedSites/remove')
 	.version('beta')
 	.post(site);
 

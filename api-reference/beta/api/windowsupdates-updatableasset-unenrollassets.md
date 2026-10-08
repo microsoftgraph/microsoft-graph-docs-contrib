@@ -1,11 +1,11 @@
 ---
 title: "updatableAsset: unenrollAssets"
 description: "Unenroll updatableAsset resources from update management by Windows Autopatch."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # updatableAsset: unenrollAssets
@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for Windows Autopatch to stop managing. Supports a subset of the values for **updateCategory**. Possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for Windows Autopatch to stop managing. Supports a subset of the values for **updateCategory**. The possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
 |assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of **updatableAsset** resources to unenroll from update management for the given **updateCategory**.|
 
 ## Response

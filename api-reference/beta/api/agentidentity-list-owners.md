@@ -4,7 +4,7 @@ description: "Retrieve a list of owners of the agent identity."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/beta/serviceprincipals/bbec3106-565f-4907-941e-9
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

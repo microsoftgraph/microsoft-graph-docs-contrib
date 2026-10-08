@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ExportJobsRequestBuilderGetRequestConfiguration();
 $queryParameters = ExportJobsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = " goalsOrganizationId eq '3d9a8150-90fd-42bd-9777-25ba783d4a05'";
+$queryParameters->filter = "goalsOrganizationId eq '3d9a8150-90fd-42bd-9777-25ba783d4a05'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

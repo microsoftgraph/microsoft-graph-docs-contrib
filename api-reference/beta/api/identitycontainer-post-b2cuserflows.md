@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a Location 
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,6 +105,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-b2cuserflow-from-b2cuserflows-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-b2cuserflow-from-b2cuserflows-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-b2cuserflow-from-b2cuserflows-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -113,7 +117,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -147,7 +151,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -193,6 +197,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-b2cuserflow-from-b2cuserflows-identityprovider-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-b2cuserflow-from-b2cuserflows-identityprovider-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-b2cuserflow-from-b2cuserflows-identityprovider-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -201,7 +209,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -234,7 +242,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -283,6 +291,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-b2cuserflow-from-b2cuserflows-apiconnectors-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-b2cuserflow-from-b2cuserflows-apiconnectors-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-b2cuserflow-from-b2cuserflows-apiconnectors-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -291,7 +303,7 @@ Content-type: application/json
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 

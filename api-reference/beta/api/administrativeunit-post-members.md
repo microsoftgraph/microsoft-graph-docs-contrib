@@ -84,7 +84,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 | securityEnabled | Boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
-|visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
+|visibility|String|Specifies the visibility of a Microsoft 365 group. The possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
 
 ## Response
 

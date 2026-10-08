@@ -58,7 +58,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response"

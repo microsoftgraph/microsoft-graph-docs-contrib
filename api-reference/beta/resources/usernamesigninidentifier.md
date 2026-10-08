@@ -3,6 +3,7 @@ title: "usernameSignInIdentifier resource type"
 description: "Represents a username sign-in identifier that enables users to authenticate using a simple username."
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
+toc.title: Username sign-in identifier
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -19,10 +20,10 @@ Represents a username sign-in identifier that enables users to authenticate usin
 Inherits from [signInIdentifierBase](../resources/signinidentifierbase.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get](../api/usernamesigninidentifier-get.md)|[usernameSignInIdentifier](../resources/usernamesigninidentifier.md)|Read the properties and relationships of usernameSignInIdentifier object.|
-|[Update](../api/usernamesigninidentifier-update.md)|[usernameSignInIdentifier](../resources/usernamesigninidentifier.md)|Update the properties of a usernameSignInIdentifier object.|
+
+None.
+
+For the list of API operations for managing this resource type, see the [signInIdentifierBase](../resources/signInIdentifierBase.md) resource type.
 
 ## Properties
 |Property|Type|Description|

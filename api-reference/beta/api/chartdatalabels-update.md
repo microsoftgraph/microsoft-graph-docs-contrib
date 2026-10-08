@@ -41,7 +41,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property | Type|Description|
 |:---------------|:--------|:----------|
-|position|string|DataLabelPosition value that represents the position of the data label. Possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
+|position|string|DataLabelPosition value that represents the position of the data label. The possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |separator|string|String representing the separator used for the data labels on a chart.|
 |showBubbleSize|Boolean|Boolean value representing if the data label bubble size is visible or not.|
 |showCategoryName|Boolean|Boolean value representing if the data label category name is visible or not.|
@@ -55,7 +55,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and updated [workbookChartDataLabels](../resources/workbookchartdatalabels.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -102,8 +102,10 @@ Content-type: application/json
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

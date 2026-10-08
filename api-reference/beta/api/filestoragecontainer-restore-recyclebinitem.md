@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Restore [recycleBinItem](../resources/recyclebinitem.md) objects from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md). A [recycleBinItem](../resources/recyclebinitem.md) can be restored either by its `id` or using the original [driveItemId](../resources/driveitem.md) as an alternate key.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -39,7 +39,7 @@ POST /storage/fileStorage/containers/{containerId}/recycleBin/items/restore
 Restore a single [recycleBinItem](../resources/recyclebinitem.md) by using the `driveItemId` as an alternate key. If there's no matching recycleBinItem for the driveItemId, the API returns a 404 (Not Found) response.
 
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/recycleBin/items(driveItemId='{driveItemId}')/restore
+POST /storage/fileStorage/containers/{containerId}/recycleBin/items(driveItemId='{driveItemId}')/restore
 ```
 
 ## Request headers

@@ -38,6 +38,7 @@ Inherits from [entity](../resources/entity.md).
 |domainName| String                                                                             | The fully qualified domain name of the sensor.                                                                                                                                                                      |
 |healthStatus| [microsoft.graph.security.sensorHealthStatus](#sensorhealthstatus-values)          | The health status of the sensor. The possible values are: `healthy`, `notHealthyLow`, `notHealthyMedium`, `notHealthyHigh`, `unknownFutureValue`.                                                                   |
 |id| String                                                                             | Unique identifier to represent the sensor. Inherited from [entity](../resources/entity.md).                                                                                                                         |
+|migrationState|[microsoft.graph.security.migrationState](../resources/enums-security.md#migrationstate-values)|The migration state of the sensor. The possible values are: `readyForMigration`, `notReadyForMigration`, `upToDate`, `migrationFailed`, `migrating`, `unknownFutureValue`.|
 |openHealthIssuesCount| Int64                                                                              | This field displays the count of health issues related to this sensor.                                                                                                                                              |
 |sensorType| [microsoft.graph.security.sensorType](#sensortype-values)                          | The type of the sensor. The possible values are: `adConnectIntegrated`, `adcsIntegrated`, `adfsIntegrated`, `domainControllerIntegrated`, `domainControllerStandalone`, `unknownFutureValue`.                       |
 |serviceStatus| microsoft.graph.security.serviceStatus                                             | The service status. The possible values are: `stopped`, `starting`, `running`, `disabled`, `onboarding`, `unknown`, `unknownFutureValue`.                                                                           |
@@ -104,6 +105,7 @@ The following JSON representation shows the resource type.
   "domainName": "String",
   "healthStatus": "String",
   "id": "String (identifier)",
+  "migrationState": "String",
   "openHealthIssuesCount": "Int64",
   "sensorType": "String",
   "settings": {"@odata.type": "microsoft.graph.security.sensorSettings"},

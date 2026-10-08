@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties of a specific [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -114,6 +114,7 @@ Content-Type: application/json
   "discoveredAppName": "Paint",
   "description": "",
   "appDetail": {
+    "@odata.type": "#microsoft.graph.cloudPcFilePathAppDetail",
     "filePath": "C:\\Windows\\system32\\mspaint.exe",
     "commandLineArguments": "",
     "iconPath": "C:\\Windows\\system32\\mspaint.exe",

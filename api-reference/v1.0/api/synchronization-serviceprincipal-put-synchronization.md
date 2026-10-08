@@ -12,7 +12,7 @@ ms.date: 08/13/2024
 
 Namespace: microsoft.graph
 
-Provide credentials for establishing connectivity with the target system.
+Provide credentials for establishing connectivity with the target system and store them in the [synchronization](../resources/synchronization-synchronization.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

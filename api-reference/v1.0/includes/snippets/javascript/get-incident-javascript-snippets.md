@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let incident = await client.api('/security/incidents/2972395')
+let incident = await client.api('/security/incidents/29')
 	.get();
 
 ```

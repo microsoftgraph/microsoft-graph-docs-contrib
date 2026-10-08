@@ -42,6 +42,9 @@ This article shows the data about API requests that's available for Microsoft Gr
 > [!TIP]
 > Requests to the [Microsoft MCP Server for Enterprise](./mcp-server/overview.md) have a **RequestUri** that includes `/enterprise`.
 
+> [!WARNING]
+> Don't store secrets or other sensitive information—such as passwords, credentials, access or refresh tokens, or connection strings—in directory object attributes or any other auditable resource exposed by Microsoft Graph. Microsoft Graph activity logs, along with other audit and sign-in logs, capture details about API requests, including request URIs. Any sensitive value that's passed in a request or stored on such a resource can be recorded in these logs, where it's readable by tenant administrators and by any downstream Log Analytics workspace, Azure Storage account, or SIEM system to which the logs are exported. Directory object attributes aren't a secure store for secrets; use a dedicated secret store such as [Azure Key Vault](/azure/key-vault/general/overview) instead.
+
 [!INCLUDE [microsoftgraphactivitylogs](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/reference/tables/microsoftgraphactivitylogs-include.md)]
 
 ## Common use cases for Microsoft Graph activity logs
@@ -165,3 +168,4 @@ MicrosoftGraphActivityLogs
 
 - [Azure Monitor Reference: MicrosoftGraphActivityLogs](/azure/azure-monitor/reference/tables/microsoftgraphactivitylogs)
 - [Stream data from Azure Monitor to an event hub or external partner](/azure/azure-monitor/essentials/stream-monitoring-data-event-hubs)
+

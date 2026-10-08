@@ -62,7 +62,7 @@ The following table lists the properties you can change for a self-initiated lea
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
-|status|courseStatus|The status of the course activity. Possible values are: `inProgress`, `completed`. Required.|
+|status|courseStatus|The status of the course activity. The possible values are: `inProgress`, `completed`. Required.|
 |startedDateTime|DateTimeOffset|The date and time when the learner started the self-initiated course.|
 
 
@@ -87,7 +87,7 @@ If unsuccessful, this method returns one of the responses below:
 |Bad request|400|badRequest|Input fields are invalid|{"code": "badRequest","message": "Input field {fieldName} is invalid"}.|
 |Bad request|400|badRequest|badRequest|{"code": "badRequest","message": "Input field {fieldName} shouldn't be empty"}.|
 |Forbidden|403|Forbidden|The provider isn't valid to create course activity for the given learning content|When the registrationId/learningProviderId doesn't match with the provider with which the learningContent is created.|
-|Forbidden|403|Forbidden|The user license is not valid to perform the operation|When the user for which the assignment is being created does not have a premium license.|
+|Forbidden|403|Forbidden|The user license is not valid to perform the operation|When the user for which the assignment is being created doesn't have a premium license.|
 
 ## Examples
 

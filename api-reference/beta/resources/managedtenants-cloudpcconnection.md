@@ -26,7 +26,7 @@ Represents a Cloud PC connection for a given managed tenant.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the cloud PC connection. Required. Read-only.|
-|healthCheckStatus|String|The health status of the cloud PC connection. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`.  Required. Read-only.|
+|healthCheckStatus|String|The health status of the cloud PC connection. The possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`.  Required. Read-only.|
 |id|String|The unique identifier for the cloud PC connection. Required. Read-only.|
 |lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform. Required. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Required. Read-only.|

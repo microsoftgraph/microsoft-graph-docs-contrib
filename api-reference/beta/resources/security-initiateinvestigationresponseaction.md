@@ -1,5 +1,5 @@
 ---
-title: "initiateInvestigationResponseAction resource type"
+title: "initiateInvestigationResponseAction resource type (deprecated)"
 description: "Describes a response action that starts an automated investigation of a device."
 author: "mmekler"
 ms.localizationpriority: medium
@@ -8,11 +8,14 @@ doc_type: resourcePageType
 ms.date: 03/06/2024
 ---
 
-# initiateInvestigationResponseAction resource type
+# initiateInvestigationResponseAction resource type (deprecated)
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The **initiateInvestigationResponseAction** resource type is deprecated and will be removed on October 1, 2026. Use [automatedAction](../resources/security-automatedaction.md) (grouped via [automatedActionSet](../resources/security-automatedactionset.md)) on the [detectionAction](../resources/security-detectionaction.md) resource instead.
 
 Describes a response action that starts an automated investigation of a device.
 

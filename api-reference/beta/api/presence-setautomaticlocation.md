@@ -20,7 +20,9 @@ Update the automatic work location for a [user](../resources/user.md). The autom
 - Precision (within the same layer): more precise wins (for example, office + building > office)
 - If a manual location is set, it overrides both automatic and scheduled settings.
 
-Use this operation from clients or services that automatically detect location (for example, Teams, network/location agents, or OEM docking apps). It doesn't clear manual or scheduled signals.
+Use this operation from clients or services that automatically detect location (for example, Teams, network and location agents, or OEM docking apps). It doesn't clear manual or scheduled signals.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -41,8 +43,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/presence/setAutomaticLocation
-POST /users/{usersId}/presence/setAutomaticLocation
-POST /communications/presences/{presenceId}/setAutomaticLocation
 ```
 
 ## Request headers
@@ -60,18 +60,19 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|placeId|String| Identifier of the place (when applicable). |
-|workLocationType|workLocationType| Semantic type of the location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`.|
+|placeId|String| Identifier of the place, if applicable. |
+|workLocationType|workLocationType| Semantic type of the location. Supports a subset of the values for **workLocationType**. The possible values are: `office`, `remote`, `timeOff`. |
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "presencethis.setautomaticlocation"
@@ -87,6 +88,36 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/presencethissetautomaticlocation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/presencethissetautomaticlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/presencethissetautomaticlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/presencethissetautomaticlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/presencethissetautomaticlocation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/presencethissetautomaticlocation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/presencethissetautomaticlocation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following example shows the response.
@@ -96,6 +127,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 

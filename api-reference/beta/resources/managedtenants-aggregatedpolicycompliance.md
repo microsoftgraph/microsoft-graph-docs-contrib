@@ -26,7 +26,7 @@ Represents an aggregate view of device compliance for a managed tenant.
 |:---|:---|:---|
 |compliancePolicyId|String|Identifier for the device compliance policy. Optional. Read-only.|
 |compliancePolicyName|String|Name of the device compliance policy. Optional. Read-only.|
-|compliancePolicyPlatform|String|Platform for the device compliance policy. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidAOSP`, `all`. Optional. Read-only.|
+|compliancePolicyPlatform|String|Platform for the device compliance policy. The possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidAOSP`, `all`. Optional. Read-only.|
 |compliancePolicyType|String|The type of compliance policy. Optional. Read-only.|
 |id|String|Unique identifier for the aggregate device compliance policy. Required. Read-only|
 |lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform. Optional. Read-only.|

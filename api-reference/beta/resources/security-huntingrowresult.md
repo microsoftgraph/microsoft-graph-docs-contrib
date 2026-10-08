@@ -16,6 +16,8 @@ Namespace: microsoft.graph.security
 
 Represents a row of the [results](../resources/security-huntingqueryresults.md) from running an [advanced hunting query](../api/security-security-runhuntingquery.md).
 
+This resource is an open type that allows other properties to be passed in.
+
 The content of the results is depended on the submitted KQL query, see [KQL quick reference](/azure/data-explorer/kql-quick-reference).
 
 ## Properties

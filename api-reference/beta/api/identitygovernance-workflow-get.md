@@ -231,3 +231,101 @@ Content-Type: application/json
     }
 }
 ```
+
+### Example 3: Retrieve a workflow with the previewScope relationship expanded
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_get_workflow_expand_previewscope"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341?$expand=previewScope
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-workflow-expand-previewscope-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-get-workflow-expand-previewscope-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-get-workflow-expand-previewscope-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-get-workflow-expand-previewscope-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-get-workflow-expand-previewscope-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-get-workflow-expand-previewscope-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-get-workflow-expand-previewscope-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+  "id": "14879e66-9ea9-48d0-804d-8fea672d0341",
+  "category": "joiner",
+  "displayName": "Onboard pre-hire employee",
+  "description": "Configure pre-hire tasks for onboarding employees before their start date",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "version": 1,
+  "createdDateTime": "2024-01-15T10:30:00Z",
+  "lastModifiedDateTime": "2024-01-15T10:30:00Z",
+  "deletedDateTime": null,
+  "nextScheduleRunDateTime": "2024-01-16T08:00:00Z",
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": {
+      "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+      "rule": "(employeeHireDate ne null)"
+    },
+    "trigger": {
+      "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+      "timeBasedAttribute": "employeeHireDate",
+      "offsetInDays": -7
+    }
+  },
+  "previewScope": [
+    {
+      "@odata.type": "#microsoft.graph.user",
+      "id": "b59552b8-fa7b-4f68-8496-0a529aace8c0"
+    },
+    {
+      "@odata.type": "#microsoft.graph.user",
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+    }
+  ]
+}
+```

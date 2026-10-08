@@ -13,8 +13,6 @@ ms.date: 10/17/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a list of [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -119,7 +117,7 @@ Content-type: application/json
 
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#/conditionalAccess/authenticationContextClassReferences",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#/conditionalAccess/authenticationContextClassReferences",
   "value": [
     {
       "id": "c1",

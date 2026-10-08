@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_cancel" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-cancel-permissions.md)]
 
-[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write.md)]
+[!INCLUDE [rbac-entitlement-access-package-assignment-manager-write-including-subject-access](../includes/rbac-for-apis/rbac-entitlement-management-access-package-assignment-manager-apis-write-including-subject-access.md)]
 
 ## HTTP request
 
@@ -97,5 +97,5 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 }
 -->
 ``` http
-HTTP/1.1 200 Status OK
+HTTP/1.1 200 OK
 ```

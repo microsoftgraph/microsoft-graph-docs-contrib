@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Remove an item from a [bundle][].
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -37,7 +37,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 ## Request body
 
-Do not supply a request body with for method.
+Don't supply a request body with for method.
 
 ## Response
 

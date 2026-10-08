@@ -3,7 +3,7 @@ title: "tenantDataSecurityAndGovernance: processContentAsync"
 toc.title: "tenantDataSecurityAndGovernance: processContentAsync"
 description: "Process a batch of tenant-wide content entries asynchronously against data protection policies."
 author: "kylemar"
-ms.date: 06/19/2025
+ms.date: 02/06/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Process a batch of tenant-wide content entries asynchronously against data protection policies.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -36,6 +36,7 @@ POST /security/dataSecurityAndGovernance/processContentAsync
 | :------------ | :------------ |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
+| Client-Request-Id  | String (GUID recommended). Optional. Unique identifier for this request, which is used for tracing and debugging in logs and support interactions. If an ID is not provided, one may be generated automatically. We recommend that you specify the ID to make tracing and debugging easier. The same ID that was sent in the request will be returned in the response. |
 
 ## Request body
 
@@ -45,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 | :-------------------- | :---------------------------------------------- | :------------------------------------------------------ |
 | processContentRequests| [processContentBatchRequest](../resources/processcontentbatchrequest.md) collection | Required. A collection of individual content processing requests, each with its own user context, content, and request ID. |
 
-The size of the text in each content entry is limited to 2 MB. The maximum number of content entries per request is 64. These could be spread across up to 64 **processContentRequests**, each containing one content entry or 2 **processContentRequests**, each containing 32 content entries or some other combination that does not exceed 64 content entries.
+The size of the text in each content entry is limited to 2 MB. The maximum number of content entries per request is 64. These could be spread across up to 64 **processContentRequests**, each containing one content entry or 2 **processContentRequests**, each containing 32 content entries or some other combination that doesn't exceed 64 content entries.
 
 ## Response
 

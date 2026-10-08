@@ -25,7 +25,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 |Property|Type|Description|
 |:---|:---|:---|
 |androidManagedStoreAppTrackIds|String collection|The track IDs to enable for this app assignment.|
-|autoUpdateMode|[androidManagedStoreAutoUpdateMode](../resources/intune-shared-androidmanagedstoreautoupdatemode.md)|The prioritization of automatic updates for this app assignment. Possible values are: `default`, `postponed`, `priority`, `unknownFutureValue`.|
+|autoUpdateMode|[androidManagedStoreAutoUpdateMode](../resources/intune-shared-androidmanagedstoreautoupdatemode.md)|The prioritization of automatic updates for this app assignment. The possible values are: `default`, `postponed`, `priority`, `unknownFutureValue`.|
 
 ## Relationships
 None

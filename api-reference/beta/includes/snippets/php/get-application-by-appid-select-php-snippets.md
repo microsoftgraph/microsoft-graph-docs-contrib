@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ApplicationsWithAppIdRequestBuilderGetRequestConfiguration();
 $queryParameters = ApplicationsWithAppIdRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["id","appId","displayName","requiredResourceAccess"];
+$queryParameters->select = ["id","appId","displayName","signInAudience","signInAudienceRestrictions"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

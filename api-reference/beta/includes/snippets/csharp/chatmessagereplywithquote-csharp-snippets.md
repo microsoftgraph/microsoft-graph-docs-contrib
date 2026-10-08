@@ -18,7 +18,7 @@ var requestBody = new ReplyWithQuotePostRequestBody
 	},
 	ReplyMessage = new ChatMessage
 	{
-		Body = new ItemBody
+		Body = new ChatMessageBody
 		{
 			Content = "Hello World",
 		},

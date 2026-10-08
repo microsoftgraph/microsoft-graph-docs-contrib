@@ -30,14 +30,8 @@ This operation returns by default only a subset of the properties for each **use
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Least privileged permission | Higher privileged permissions |
-|:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | User.ReadWrite.All | Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. | |
-|Application | User.ReadWrite.All | Directory.ReadWrite.All |
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { "blockType": "ignored", "name": "user_post_users" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-post-users-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +58,7 @@ The following table lists the properties that are *required* when you create a *
 |displayName |String |The name to display in the address book for the user.|
 |onPremisesImmutableId |String |Required only when creating a new user account if you are using a federated domain for the user's **userPrincipalName** (UPN) property.|
 |mailNickname |String |The mail alias for the user.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
+|passwordProfile|[passwordProfile](../resources/passwordprofile.md) |The password profile for the user. Applies to [user](../resources/user.md) only and not allowed for [agentUser](../resources/agentuser.md). |
 |userPrincipalName |String |The user principal name (someuser@contoso.com). It's an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). <br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
 | identityParentId | String | The object ID of the associated [agent identity](../resources/agentidentity.md). Required for **agentUser** where **@odata.type** of `#microsoft.graph.agentUser` must be set and ignored for regular users. If not set, a regular user is created.|
 
@@ -192,10 +186,7 @@ Content-type: application/json
   "displayName": "Adele Vance",
   "mailNickname": "AdeleV",
   "userPrincipalName": "AdeleV@contoso.com",
-  "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
-    "password": "xWwvJ]6NMw+bWH-d"
-  }
+  "identityParentId": ""
 }
 ```
 
@@ -228,7 +219,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 The following example shows the response.

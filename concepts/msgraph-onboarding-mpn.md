@@ -45,5 +45,5 @@ Set up your development environment. You can create two types of EDU tenants:
 ## Related content
 
 - [Partner with Microsoft](/partner-center/mpn-overview)
-- [What is the Microsoft Partner Network?](/partner-center/mpn-create-a-partner-center-account)
+- [What is the Microsoft Partner Network?](/partner-center/enroll/partner-center-enroll-overview)
 - [Partner Center account management](/partner-center/partner-center-account-setup)

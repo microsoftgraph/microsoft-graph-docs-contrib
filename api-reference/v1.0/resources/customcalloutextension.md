@@ -18,11 +18,15 @@ This abstract type is inherited by the following derived types.
 
 - [customTaskExtension](../resources/identitygovernance-customtaskextension.md)
 - [customAuthenticationExtension](../resources/customauthenticationextension.md)
-- [accessPackageAssignmentRequestWorkflowExtension](accesspackageassignmentrequestworkflowextension.md)
+- [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)
 - [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)
 
-Inherits from [entity](entity.md).
+Inherits from [entity](../resources/entity.md).
 
+In entitlement management, the derived types of this object are configured in the following properties and relationships:
+- **accessPackageCustomWorkflowExtensions** relationship of [accessPackageCatalog](../resources/accesspackagecatalog.md)
+- **customExtension** relationship of [accessPackageDynamicApprovalStage](../resources/accesspackagedynamicapprovalstage.md)
+- **customExtension** relationship of [customExtensionStageSetting](../resources/customextensionstagesetting.md)
 
 ## Methods
 

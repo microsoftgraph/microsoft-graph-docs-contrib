@@ -56,7 +56,7 @@ This method supports the `$count`, `$select`, `$filter`, `$orderBy`, `$top`, and
 
 The following properties can be used for `$filter` calls:
 
-| Property    | Example                                   
+| Property    | Example|
 | :---------- | :----------------------------------------- |
 | recordType       | `$filter=recordType eq 'A'`          |
 
@@ -65,7 +65,7 @@ The following properties can be used for `$filter` calls:
 
 The following properties can be used for `$orderby` calls.
 
-| Property             | Example                              
+| Property             | Example|
 | :------------------- | :-----------------------------------  |
 | firstSeenDateTime   | `$orderby=firstSeenDateTime desc`   |
 | lastSeenDateTime | `$orderby=lastSeenDateTime desc` |   

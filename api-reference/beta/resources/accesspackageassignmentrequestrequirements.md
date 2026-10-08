@@ -12,7 +12,9 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph
 
-Represents requirements that a caller must fulfill in order to successfully create an **accessPackageAssignmentRequest** for the **accessPackage** specified as part of the URL. Requirements are determined by evaluating policies associated with the **accessPackage**. 
+Represents requirements that a caller must fulfill in order to successfully create an **accessPackageAssignmentRequest** for the **accessPackage** specified as part of the URL. Requirements are determined by evaluating policies associated with the **accessPackage**.
+
+This object is returned by the [accessPackage](../resources/accesspackage.md) [getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md) action for the **accessPackage** in the request URL.
 
 ## Properties
 | Property                     | Type                      | Description |

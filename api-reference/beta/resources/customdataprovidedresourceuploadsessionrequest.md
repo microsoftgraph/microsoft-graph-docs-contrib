@@ -20,9 +20,7 @@ The request object used to create a [customDataProvidedResourceUploadSession](..
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|data|[customExtensionData](./customExtensionData.md)|An object containing the context for which this data is being uploaded. Currently the only allowed value is [accessReviewResourceDataUploadSessionContextData](../resources/accessreviewresourcedatauploadsessioncontextdata.md)|
-|source|String| The name of the CustomDataProvidedResource|
-|type|String| The schema of the data that is expected in the CSV uploads in this session. The only currently supported value is `#microsoft.graph.accessReviewDataUploadTriggerCallbackData`|
+|data|[microsoft.graph.customDataProvidedResourcePayloads.data](../resources/customdataprovidedresourcepayloads-data.md)|An object containing the context for which this data is being uploaded. For access review upload sessions, use [microsoft.graph.customDataProvidedResourcePayloads.accessReviewContextData](../resources/customdataprovidedresourcepayloads-accessreviewcontextdata.md). Required.|
 
 ## Relationships
 None.
@@ -37,10 +35,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.customDataProvidedResourceUploadSessionRequest",
-  "source": "String",
-  "type": "String",
   "data": {
-    "@odata.type": "microsoft.graph.accessReviewResourceDataUploadSessionContextData"
+    "@odata.type": "microsoft.graph.customDataProvidedResourcePayloads.data"
   }
 }
 ```

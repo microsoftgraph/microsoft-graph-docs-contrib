@@ -1,6 +1,6 @@
 ---
 title: "Upsert federatedIdentityCredential"
-description: "Create a new federatedIdentityCredential object if it doesn't exist, or update the properties of an existing federatedIdentityCredential object."
+description: "Create a new federatedIdentityCredential object for an application if it doesn't exist, or update the properties of an existing federatedIdentityCredential object."
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
@@ -11,7 +11,7 @@ ms.date: 07/11/2024
 # Upsert federatedIdentityCredential
 Namespace: microsoft.graph
 
-Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an application if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object. By [configuring a trust relationship](/azure/active-directory/develop/workload-identity-federation-create-trust) between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem. Maximum of 20 objects can be added to an application.
+Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an [application](../resources/application.md) if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object. By [configuring a trust relationship](/azure/active-directory/develop/workload-identity-federation-create-trust) between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem. Maximum of 20 objects can be added to an application.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -29,6 +29,7 @@ You can address the application using either its **id** or **appId**. **id** and
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /applications/{id}/federatedIdentityCredentials(name='{name}')
+
 PATCH /applications(appId='{appId}')/federatedIdentityCredentials(name='{name}')
 ```
 
@@ -63,7 +64,7 @@ If an application object with **name** already exists, this method updates the [
 
 The following example creates a federatedIdentityCredential because a federatedIdentityCredential with the specified **name** value doesn't exist.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -84,7 +85,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 

@@ -1,7 +1,7 @@
 ---
 title: "List deletedItems (deleted lifecycle workflows)"
 description: "Get a list of the deleted workflows objects and their properties."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Get a list of the deleted workflow objects and their properties.
+Get a list of deleted [workflow](../resources/identitygovernance-workflow.md) objects and their properties from the [deletedItemContainer](../resources/deleteditemcontainer.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

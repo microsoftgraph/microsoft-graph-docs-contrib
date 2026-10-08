@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the administrative roles that a Microsoft partner has in a customer tenant through a delegated admin relationship and delegated admin access assignment.
+Represents the administrative roles that a Microsoft partner has in a customer tenant through a [delegated admin relationship](../resources/delegatedadminrelationship.md) or [delegated admin access assignment](../resources/delegatedadminaccessassignment.md).
 
 ## Properties
 |Property|Type|Description|

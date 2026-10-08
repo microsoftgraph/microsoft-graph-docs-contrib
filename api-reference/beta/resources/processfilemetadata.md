@@ -31,6 +31,7 @@ Represents metadata for a content entry that is a file.
 | name             | String                                                                         | Required. A descriptive name for the content (for example, file name, web page title, `Chat Message`). Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 | ownerId          | String                                                                         | The unique identifier (for example, Entra User ID or UPN) of the owner of the file.                                            |
 | sequenceNumber   | Int64                                                                          | A sequence number indicating the order in which content was generated or should be processed, required when `correlationId` is used. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).            |
+|contentCategory   |microsoft.graph.contentCategory                                                 | The type of content. The possible values are: `none`, `ai`, `unknownFutureValue`.  The default value is `ai`, which refers to AI generated content. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 
 ## Relationships
 

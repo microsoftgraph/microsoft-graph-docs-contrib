@@ -27,14 +27,14 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|csaStarLevel|microsoft.graph.security.appInfoCsaStarLevel|Indicates the CSA star program certification level of the app. Possible values are: `selfAssessment`, `certification`, `attestation`, `cStarAssessment`, `continuousMonitoring`, `unknown`, `unknownFutureValue`.|
+|csaStarLevel|microsoft.graph.security.appInfoCsaStarLevel|Indicates the CSA star program certification level of the app. The possible values are: `selfAssessment`, `certification`, `attestation`, `cStarAssessment`, `continuousMonitoring`, `unknown`, `unknownFutureValue`.|
 |dataAtRestEncryptionMethod|microsoft.graph.security.appInfoDataAtRestEncryptionMethod|Indicates the encryption mode for data at rest of the app. The possible values are: `aes`, `bitLocker`, `blowfish`, `des3`, `des`, `rc4`, `rsA`, `notSupported`, `unknown`, `unknownFutureValue`.|
 |dataCenter|String|Indicates the countries or regions in which your data center resides.|
 |dataRetentionPolicy|microsoft.graph.security.appInfoDataRetentionPolicy|Indicates the app's policy for user data retention after account termination. The possible values are: `dataRetained`, `deletedImmediately`, `deletedWithinTwoWeeks`, `deletedWithinOneMonth`, `deletedWithinThreeMonths`, `deletedWithinMoreThanThreeMonths`, `unknown`, `unknownFutureValue`.|
 |dataTypes|microsoft.graph.security.appInfoUploadedDataTypes|Indicates the data types that an end user can upload to the app. The possible values are: `documents`, `mediaFiles`, `codingFiles`, `creditCards`, `databaseFiles`, `none`, `unknown`, `unknownFutureValue`.|
 |domainRegistrationDateTime|DateTimeOffset|Indicates the date when the app domain was registered.|
-|encryptionProtocol|microsoft.graph.security.appInfoEncryptionProtocol|Indicates the TLS encryption protocol version. The possible values are: `tls1_0`, `tls1_1`, `tls1_2`, `tls1_3`, `notApplicable`, `notSupported`, `unknown`, `unknownFutureValue`, `ssl3`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `ssl3`.|
-|fedRampLevel|microsoft.graph.security.appInfoFedRampLevel|Indicates the FedRAMP compliant status of the app. The possible values are: `high`, `moderate`, `low`, `liSaaS`, `unknown`, `unknownFutureValue`, `notSupported`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `notSupported`.|
+|encryptionProtocol|microsoft.graph.security.appInfoEncryptionProtocol|Indicates the TLS encryption protocol version. The possible values are: `tls1_0`, `tls1_1`, `tls1_2`, `tls1_3`, `notApplicable`, `notSupported`, `unknown`, `unknownFutureValue`, `ssl3`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `ssl3`.|
+|fedRampLevel|microsoft.graph.security.appInfoFedRampLevel|Indicates the FedRAMP compliant status of the app. The possible values are: `high`, `moderate`, `low`, `liSaaS`, `unknown`, `unknownFutureValue`, `notSupported`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `notSupported`.|
 |founded|Int32|Indicates the year that the specific app vendor was established.|
 |gdprReadinessStatement|String|Indicates the GDPR readiness of the app in relation to policies app provides to safeguard personal user data.|
 |headquarters|String|Indicates the location of the headquarters of the app.|
@@ -109,7 +109,7 @@ Inherits from [entity](../resources/entity.md).
 |isValidCertificateName|microsoft.graph.security.cloudAppInfoState|Indicates if the app server provides an SSL certificate that matches the domain name. The possible values are: `true`, `false`, `unknown`, `unknownFutureValue`. |
 |latestBreachDateTime|DateTimeOffset|Indicates the last date of the data breach for the company.|
 |logonUrls|String|Indicates the URL that users can use to sign into the app.|
-|pciDssVersion|microsoft.graph.security.appInfoPciDssVersion|Indicates the pciDss version. The possible values are: `v1`, `v2`, `v3`, `v3_1`, `v3_2`, `v3_2_1`, `notSupported`, `unknown`, `unknownFutureValue`, `v4`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `v4`.|
+|pciDssVersion|microsoft.graph.security.appInfoPciDssVersion|Indicates the pciDss version. The possible values are: `v1`, `v2`, `v3`, `v3_1`, `v3_2`, `v3_2_1`, `notSupported`, `unknown`, `unknownFutureValue`, `v4`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `v4`.|
 |vendor|String|Indicates the app vendor.|
 
 ## Relationships

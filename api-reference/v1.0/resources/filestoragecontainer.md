@@ -28,15 +28,22 @@ Represents a location where multiple users or a group of users can store files a
 |[Remove deleted containers](../api/filestorage-delete-deletedcontainers.md)|None|Remove a deleted [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Permanently delete](../api/filestoragecontainer-permanentdelete.md)|None|Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get drive](../api/filestoragecontainer-get-drive.md)|[drive](../resources/drive.md)|Get the drive resource from a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
-|[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md)| List permissions on a fileStorageContainer.|
+|[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md) collection| List permissions on a fileStorageContainer.|
+|[Get permission](../api/filestoragecontainer-get-permissions.md)|[permission](../resources/permission.md)|Get a specific [permission](../resources/permission.md) from a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Add permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Add permission to a fileStorageContainer.|
 |[Update permissions](../api/filestoragecontainer-update-permissions.md)|[permission](../resources/permission.md)|Update permission on a fileStorageContainer.|
 |[Delete permissions](../api/filestoragecontainer-delete-permissions.md)|[permission](../resources/permission.md)|Delete permission from a fileStorageContainer.|
+|[Upsert permissions](../api/filestoragecontainer-patch-permissions.md)|[permission](../resources/permission.md) collection|Upsert (create or update) up to 10 [permission](../resources/permission.md) objects on a [fileStorageContainer](../resources/filestoragecontainer.md) in a single request.|
 |[List custom property](../api/filestoragecontainer-list-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|List custom properties of the fileStorageContainer.|
 |[Add custom property](../api/filestoragecontainer-post-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Add custom property to the fileStorageContainer.|
-|[List columns](../api/filestoragecontainer-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|List columns in a fileStorageContainer.|
 |[Update custom property](../api/filestoragecontainer-update-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Update custom property on a fileStorageContainer.|
 |[Delete custom property](../api/filestoragecontainer-delete-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Delete custom property from a fileStorageContainer.|
+|[List columns](../api/filestoragecontainer-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get the collection of columns represented as [columnDefinition](../resources/columndefinition.md) resources in a  [fileStorageContainer](../resources/filestoragecontainer.md).  |
+|[Create column](../api/filestoragecontainer-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a column for a [fileStorageContainer](../resources/filestoragecontainer.md) that specifies a [columnDefinition](../resources/columndefinition.md). |
+|[Get column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get the properties of a column represented as a [columnDefinition](../resources/columndefinition.md) in a [fileStorageContainer](../resources/filestoragecontainer.md).|
+|[Update column](../api/filestoragecontainer-update-column.md)|[columnDefinition](../resources/columndefinition.md)|Update an existing column represented as a [columnDefinition](../resources/columndefinition.md) in a [fileStorageContainer](../resources/filestoragecontainer.md).|
+|[Delete column](../api/filestoragecontainer-delete-column.md)|None|Delete a [columnDefinition](../resources/columndefinition.md) from a [fileStorageContainer](../resources/filestoragecontainer.md). |
+|[Upsert columns](../api/filestoragecontainer-patch-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Upsert (create or update) up to 20 [columnDefinition](../resources/columndefinition.md) objects on a [fileStorageContainer](../resources/filestoragecontainer.md) in a single request.|
 |[Update recycle bin settings](../api/filestoragecontainer-update-recyclebinsettings.md)|[recyclebinsettings](../resources/recyclebinsettings.md)|Update recycleBin settings for a fileStorageContainer.|
 |[Delete recycle bin items](../api/filestoragecontainer-delete-recyclebinitem.md)|None|Delete recycle bin items from a fileStorageContainer.|
 |[Restore recycle bin items](../api/filestoragecontainer-restore-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
@@ -50,6 +57,7 @@ Represents a location where multiple users or a group of users can store files a
 
 |Property|Type|Description|
 |:---|:---|:---|
+|assignedSensitivityLabel|[assignedLabel](../resources/assignedlabel.md)|Sensitivity label assigned to the **fileStorageContainer**. Read-write.|
 |containerTypeId|Guid|Container type ID of the **fileStorageContainer**. For details about container types, see [Container Types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). Each container must have only one container type. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of the **fileStorageContainer** creation. Read-only.|
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the **fileStorageContainer**. Read-write.|
@@ -65,10 +73,12 @@ Represents a location where multiple users or a group of users can store files a
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|columns|[columnDefinition](../resources/columndefinition.md) collection|The set of custom structured metadata supported by the **fileStorageContainer**. Read-write.|
 |drive|[drive](../resources/drive.md)|The drive of the resource **fileStorageContainer**. Read-only.|
+|migrationJobs|[sharePointMigrationJob](../resources/sharepointmigrationjob.md) collection|The collection of **sharePointMigrationJob** objects local to the container. Read-write.|
 |permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. Permission for each user is set by the **roles** property. The possible values are: `reader`, `writer`, `manager`, and `owner`. Read-write.|
 |recycleBin|[recycleBin](../resources/recyclebin.md)|Recycle bin of the **fileStorageContainer**. Read-only.|
-|migrationJobs|[sharePointMigrationJob](../resources/sharepointmigrationjob.md) collection|The collection of **sharePointMigrationJob** objects local to the container. Read-write.|
+|sharePointGroups|[sharePointGroup](../resources/sharepointgroup.md) collection|The collection of **sharePointGroup** objects local to the container. Read-write.|
 
 ### roles property values
 
@@ -95,6 +105,9 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "description": "String",
   "containerTypeId": "Guid",
+  "assignedSensitivityLabel": {
+    "@odata.type": "microsoft.graph.assignedLabel"
+  },
   "customProperties": {
     "@odata.type": "microsoft.graph.fileStorageContainerCustomPropertyDictionary"
   },

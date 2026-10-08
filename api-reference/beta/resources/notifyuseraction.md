@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents a Data Loss Prevention (DLP) action that involves notifying users about a policy match.
 
-Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
+Inherits from [policyTipAction](../resources/policytipaction.md).
 
 ## Properties
 
@@ -26,7 +26,7 @@ Inherits from [dlpActionInfo](../resources/dlpactioninfo.md).
 | actionLastModifiedDateTime    | DateTimeOffset                                                                         | Timestamp when the notification action configuration was last modified.                                                               |
 | emailText                     | String                                                                                 | The body text of the email notification sent to users.                                                                                |
 | overrideOption                | microsoft.graph.security.overrideOption                                                         | Specifies the override options available to the user. Possible values are `notAllowed`, `allowFalsePositiveOverride`, `allowWithJustification`, `allowWithoutJustification`, and `allowWithAcknowledgement`. |
-| policyTip                     | String                                                                                 | The text of the policy tip displayed to the user within the application (For example, Outlook, Word).                                       |
+| policyTip                     | String                                                                                 | The text of the policy tip displayed to the user within the application (For example, Outlook, Word). Inherited from [policyTipAction](../resources/policytipaction.md).                                       |
 | recipients                    | String collection                                                                      | List of email addresses or user identifiers designated to receive the notification email. Can include sender, owner, manager, etc. |
 
 ## Relationships
@@ -39,7 +39,7 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.notifyUserAction",
-  "baseType": "microsoft.graph.dlpActionInfo",
+  "baseType": "microsoft.graph.policyTipAction",
   "openType": false
 }-->
 ``` json
@@ -53,9 +53,6 @@ The following JSON representation shows the resource type.
   "actionLastModifiedDateTime": "String (timestamp)",
   "overrideOption": "String",
   "emailText": "String",
-  "policyTip": "String",
-  "policyTipUrl": "String",
-  "isPolicyTipShownAsDialog": "Boolean",
-  "customizedPolicyTipDialogText": "String"
+  "policyTip": "String"
 }
 ```

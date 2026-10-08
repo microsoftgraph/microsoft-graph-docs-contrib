@@ -1,7 +1,7 @@
 ---
 title: "Update verifiedIdProfile"
 description: "Update the properties of a verifiedIdProfile object."
-author: "tilarso" 
+author: "tilarso"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Update the properties of a [verifiedIdProfile](../resources/verifiedidprofile.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "verifiedidprofile-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "verifiedidprofile_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/verifiedidprofile-update-permissions.md)]
 
 [!INCLUDE [rbac-verifiedid](../includes/rbac-for-apis/rbac-verifiedid-write.md)]
@@ -53,15 +51,17 @@ PATCH /identity/verifiedId/profiles/{verifiedIdProfileId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String| Display name for the verified Id profile. Required.|
-|description|String| Description for the verified Id profile. Required.|
-|lastModifiedDateTime|DateTimeOffset|DateTime the profile was last modified. Optional.|
-|state|verifiedIdProfileState| Enablement state for the profile. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
-|verifierDid|String| Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange.  Required.|
-|priority|Int32|Defines profile processing priority if multiple profiles are configured.  Optional.|
-|verifiedIdProfileConfiguration|[verifiedIdProfileConfiguration](../resources/verifiedidprofileconfiguration.md)| Set of properties expressing the accepted issuer, claims binding, and credential type. Required.|
-|faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)| Set of properties configuring Entra Verified ID Face Check behavior.  Required.|
-|verifiedIdUsageConfigurations|[verifiedIdUsageConfiguration](../resources/verifiedidusageconfiguration.md) collection| Collection defining the usage purpose for the profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`. Required.|
+|description|String|Description for the verified ID profile.|
+|faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)|Set of properties configuring Microsoft Entra Verified ID Face Check behavior.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the profile was last modified.|
+|mobileDriversLicenseConfiguration|[mobileDriversLicenseConfiguration](../resources/mobiledriverslicenseconfiguration.md)|Configuration for accepting mobile driver's licenses.|
+|name|String|Display name for the verified ID profile.|
+|priority|Int32|Defines profile processing priority if multiple profiles are configured.|
+|selfServiceIssuance|[verifiedIdSelfServiceIssuance](../resources/verifiedidselfserviceissuance.md)|Configuration for self-service issuance.|
+|state|verifiedIdProfileState|Enablement state for the profile. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|verifiedIdProfileConfiguration|[verifiedIdProfileConfiguration](../resources/verifiedidprofileconfiguration.md)|Set of properties expressing the accepted issuer, claims binding, and credential type.|
+|verifiedIdUsageConfigurations|[verifiedIdUsageConfiguration](../resources/verifiedidusageconfiguration.md) collection|Collection defining the usage purpose for the profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`, `verification`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `verification`.|
+|verifierDid|String|Decentralized identifier (DID) string that represents the verifier in the verifiable credential exchange.|
 
 
 
@@ -85,14 +85,27 @@ PATCH https://graph.microsoft.com/beta/identity/verifiedId/profiles/ca15ec56-7ad
 Content-Type: application/json
 
 {
+  "verifiedIdProfileConfiguration": {
+    "methodType": "tenantCustomCredential",
+    "manifestUrl": "https://verifiedid.contoso.com/manifest"
+  },
+  "mobileDriversLicenseConfiguration": {
+    "acceptedRegions": [
+      "region-code"
+    ],
+    "documentStandard": "document-standard"
+  },
+  "selfServiceIssuance": {
+    "isEnabled": true,
+    "issuanceUrl": "https://verifiedid.contoso.com/issue"
+  },
   "verifiedIdUsageConfigurations": [
-      {
-          "isEnabledForTestOnly": false,
-          "purpose": "recovery"
-      }
+    {
+      "isEnabledForTestOnly": false,
+      "purpose": "verification"
+    }
   ]
 }
-  
 ```
 
 # [C#](#tab/csharp)
@@ -113,6 +126,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-verifiedidprofile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-verifiedidprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -1,7 +1,7 @@
 ---
 title: "Get run"
 description: "Read the properties and relationships of a run object."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

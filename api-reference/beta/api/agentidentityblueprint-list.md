@@ -4,7 +4,7 @@ description: "Get a list of the agentIdentityBlueprint objects and their propert
 author: "zallison22"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -14,17 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects and their properties. Does not return other types of application objects.
+Get a list of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects and their properties. Doesn't return other types of application objects.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "agentidentityblueprint-list-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "agentidentityblueprint_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-list-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
@@ -106,7 +102,6 @@ GET https://graph.microsoft.com/beta/applications/microsoft.graph.agentIdentityB
 
 ---
 
-
 ### Response
 
 The following example shows the response.
@@ -168,6 +163,7 @@ Content-Type: application/json
       },
       "keyCredentials": [],
       "passwordCredentials": [],
+      "requiredResourceAccess": [],
       "verifiedPublisher": {
           "displayName": null,
           "verifiedPublisherId": null,

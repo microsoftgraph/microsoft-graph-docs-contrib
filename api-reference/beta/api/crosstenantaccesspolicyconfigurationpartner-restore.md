@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a deleted [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) object. 
+Restore a deleted [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -90,6 +90,10 @@ POST https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/
 [!INCLUDE [sample-code](../includes/snippets/php/crosstenantaccesspolicyconfigurationpartnerthisrestore-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/crosstenantaccesspolicyconfigurationpartnerthisrestore-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/crosstenantaccesspolicyconfigurationpartnerthisrestore-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -111,7 +115,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
   "deletedDateTime": "2025-06-18T22:58:04Z",
   "displayName": null,

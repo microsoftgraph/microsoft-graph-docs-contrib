@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CloudPcExternalPartner cloudPcExternalPartner = new CloudPcExternalPartner();
 cloudPcExternalPartner.setOdataType("#microsoft.graph.cloudPcExternalPartner");
-cloudPcExternalPartner.setPartnerId("198d7140-80bb-4843-8cc4-811377a49a92");
+cloudPcExternalPartner.setPartnerId("198d71c0-80bb-4843-8cc4-811377a49a92");
 cloudPcExternalPartner.setEnableConnection(true);
 CloudPcExternalPartner result = graphClient.deviceManagement().virtualEndpoint().externalPartners().post(cloudPcExternalPartner);
 

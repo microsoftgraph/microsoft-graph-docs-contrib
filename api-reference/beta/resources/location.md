@@ -39,7 +39,7 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
 | displayName  | String | The name associated with the location.                       |
 | locationEmailAddress | String | Optional email address of the location. |
 | locationUri | String | Optional URI representing the location. |
-| locationType | locationType | The type of location. Possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Read-only.|
+| locationType | locationType | The type of location. The possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Read-only.|
 | uniqueId | String | For internal use only.|
 | uniqueIdType | String | For internal use only. |
 

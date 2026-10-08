@@ -15,11 +15,6 @@ vendorInformation.setProviderVersion(null);
 vendorInformation.setSubProvider(null);
 vendorInformation.setVendor("Microsoft");
 secureScoreControlProfile.setVendorInformation(vendorInformation);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("assignedTo", "");
-additionalData.put("comment", "control is reviewed");
-additionalData.put("state", "Reviewed");
-secureScoreControlProfile.setAdditionalData(additionalData);
 SecureScoreControlProfile result = graphClient.security().secureScoreControlProfiles().bySecureScoreControlProfileId("{secureScoreControlProfile-id}").patch(secureScoreControlProfile);
 
 

@@ -1,11 +1,11 @@
 ---
 title: "Delete attachment"
-description: "Delete an attachment from a calendar event, message, Outlook task, or post."
+description: "Delete an attachment from a calendar event, message, note, Outlook task, or post."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "outlook"
 author: "SuryaLashmiS"
-ms.date: 08/08/2024
+ms.date: 04/15/2026
 ---
 
 # Delete attachment
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an attachment from a user calendar [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
+Delete an attachment from a user calendar [event](../resources/event.md), [message](../resources/message.md), [note](../resources/note.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
@@ -22,12 +22,13 @@ Delete an attachment from a user calendar [event](../resources/event.md), [messa
 
 ## Permissions
 
-Depending on the resource (**event**, **message**, **outlookTask**, or **post**) that the attachment is attached to and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+Depending on the resource (**event**, **message**, **note**, **outlookTask**, or **post**) that the attachment is attached to and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite.All |
 | [outlookTask](../resources/outlooktask.md) |  Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [post](../resources/post.md) | Group.ReadWrite.All | Not supported | Not supported |
 
@@ -97,6 +98,14 @@ DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
+Attachments for a [note](../resources/note.md) in a user's mailbox.
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /me/notes/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/notes/{id}/attachments/{id}
+```
+
 Attachments for an [Outlook task](../resources/outlooktask.md).
 <!-- { "blockType": "ignored" } -->
 
@@ -127,11 +136,13 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Delete an event attachment
+The following example shows how to delete an attachment on an [event](../resources/event.md).
+#### Request
 
-The following example shows a request to delete an attachment on an event.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -173,7 +184,64 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 ---
 
-### Response
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Delete a note attachment
+The following example shows how to delete an attachment on a [note](../resources/note.md).
+#### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delete_attachment_from_note"
+} -->
+
+```http
+DELETE https://graph.microsoft.com/beta/me/notes/AAMkAGI2THVSAAA=/attachments/AAMkAGI2attach2
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-attachment-from-note-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 
 The following example shows the response.
 <!-- {

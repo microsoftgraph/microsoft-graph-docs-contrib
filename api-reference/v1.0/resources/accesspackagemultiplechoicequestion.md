@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-A child of **accessPackageQuestion** that presents multiple options that the requestor must choose an answer from. This is used in the **questions** property of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+A child of **accessPackageQuestion** that presents multiple options that the requestor must choose an answer from. This is used in the **questions** property of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) and inside an [accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) of an access package resource.
 
 Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 

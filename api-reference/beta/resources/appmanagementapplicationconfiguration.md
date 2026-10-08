@@ -1,11 +1,11 @@
 ---
 title: "appManagementApplicationConfiguration resource type"
 description: "App management application configuration object to configure app management policy restrictions like identifier URIs, password credentials, and certificate credentials that are specific to applications."
-author: "yogesh-randhawa"
+author: "antonvano"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 01/14/2026
 ---
 
 # appManagementApplicationConfiguration resource type
@@ -26,6 +26,7 @@ Inherits from [appManagementConfiguration](appmanagementconfiguration.md).
 | identifierUris      | [identifierUriConfiguration](identifieruriconfiguration.md)                      | Configuration object for restrictions on **identifierUris** property for an application.                                                                                                                   |
 | keyCredentials      | [keyCredentialConfiguration](keyCredentialConfiguration.md) collection           | Collection of certificate credential restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md). |
 | passwordCredentials | [passwordCredentialConfiguration](passwordCredentialConfiguration.md) collection | Collection of password restrictions settings to be applied to an application or service principal. Inherited from [appManagementConfiguration](../resources/appmanagementconfiguration.md).               |
+| redirectUris        | [redirectUriConfiguration](redirecturiconfiguration.md)                          | Configuration object for redirect URI validation rules and restrictions for an application.                                                                                                                |
 
 ## Relationships
 
@@ -59,6 +60,9 @@ The following JSON representation shows the resource type.
   },
   "audiences": {
     "@odata.type": "microsoft.graph.audiencesConfiguration"
+  },
+  "redirectUris": {
+    "@odata.type": "microsoft.graph.redirectUriConfiguration"
   }
 }
 ```

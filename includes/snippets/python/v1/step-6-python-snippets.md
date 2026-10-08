@@ -11,7 +11,7 @@ from msgraph.generated.models.subscription import Subscription
 request_body = Subscription(
 	change_type = "created,updated,deleted",
 	notification_url = "https://webhook.azurewebsites.net/api/send/myNotifyClient",
-	resource = "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages?model=B",
+	resource = "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages",
 	expiration_date_time = "2023-01-10T18:56:49.112603+00:00",
 	client_state = "ClientSecret",
 	include_resource_data = True,

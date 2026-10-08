@@ -19,7 +19,7 @@ Restricts meeting time suggestions to certain hours and days of the week accordi
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|activityDomain|activityDomain|The nature of the activity, optional. Possible values are: `work`, `personal`, `unrestricted`, or `unknown`.|
+|activityDomain|activityDomain|The nature of the activity, optional. The possible values are: `work`, `personal`, `unrestricted`, or `unknown`.|
 |timeslots|[timeSlot](timeslot.md) collection|An array of time periods.|
 
 

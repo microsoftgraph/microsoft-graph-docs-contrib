@@ -2,7 +2,7 @@
 title: "directoryObject resource type"
 description: "Represents a Microsoft Entra object."
 ms.localizationpriority: high
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ms.date: 07/22/2024
@@ -48,7 +48,6 @@ Inherits from [entity](entity.md).
 |:---------------|:--------|:----------|
 |deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. |
 |id|String|The unique identifier for the object. For example, `12345678-9abc-def0-1234-56789abcde`. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and do not rely on it being a GUID. Key. Not nullable. Read-only. Inherited from [entity](entity.md).|
-
 
 ## Relationships
 

@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Get the last  [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
 
->**Note:** This method only lists the last operation; it does not return a history of all operations.
+>**Note:** This method only lists the last operation; it doesn't return a history of all operations.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverysearch_list_lastestimatestatisticsoperation" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverysearch-list-lastestimatestatisticsoperation-permissions.md)]
+
+[!INCLUDE [rbac-ediscovery-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
 
 ## HTTP request
 

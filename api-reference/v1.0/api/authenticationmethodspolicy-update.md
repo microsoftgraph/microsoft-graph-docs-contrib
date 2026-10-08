@@ -125,7 +125,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy",
   "id": "authenticationMethodsPolicy",
   "displayName": "Authentication Methods Policy",
   "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 An administrative unit provides a conceptual container for user, group, and device directory objects. With administrative units, a company administrator can now delegate administrative responsibilities to manage the users, groups, and devices contained within or scoped to an administrative unit to a regional or departmental administrator. For more information about administrative units, see [Administrative units in Microsoft Entra ID](/entra/identity/role-based-access-control/administrative-units).
 
-This resource is an open type that allows other properties to be passed in.
+This resource is an open type that allows additional properties beyond those documented here.
 
 This resource supports:
 
@@ -64,7 +64,7 @@ This resource supports:
 |visibility|String|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership`. If not set, the default value is `null` and the default behavior is public. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
 
 > [!TIP]
-> Directory extensions and associated data are returned by default while schema extensions and associated data returned only on `$select`.
+> Directory extensions and associated data are returned by default while schema extensions and associated data require `$select` to retrieve.
 
 ## Relationships
 | Relationship | Type    |Description|

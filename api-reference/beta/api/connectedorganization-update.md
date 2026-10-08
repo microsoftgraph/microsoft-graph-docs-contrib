@@ -51,11 +51,11 @@ The following table shows the properties that can be supplied when you update th
 |:---|:---|:---|
 | displayName  |String | The connected organization name.  |
 | description  |String | The connected organization description. |
-| state        |connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
+| state        |connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. The possible values are: `configured`, `proposed`.|
 
 ## Response
 
-If successful, this method returns a `204 Accepted` response code and a [connectedOrganization](../resources/connectedorganization.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and a [connectedOrganization](../resources/connectedorganization.md) object in the response body.
 
 ## Examples
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 Content-type: application/json
 
 {

@@ -16,14 +16,12 @@ import (
 )
 
 requestBody := graphmodels.NewPermission()
-grantedToIdentitiesV2 := graph.NewSharePointIdentitySet()
+grantedToV2 := graphmodels.NewSharePointIdentitySet()
 application := graphmodels.NewIdentity()
 id := "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
 application.SetId(&id) 
-displayName := "Contoso Time Manager App"
-application.SetDisplayName(&displayName) 
-grantedToIdentitiesV2.SetApplication(application)
-requestBody.SetGrantedToIdentitiesV2(grantedToIdentitiesV2)
+grantedToV2.SetApplication(application)
+requestBody.SetGrantedToV2(grantedToV2)
 roles := []string {
 	"write",
 }

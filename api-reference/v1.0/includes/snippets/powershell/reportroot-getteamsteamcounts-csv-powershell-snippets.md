@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Reports
+Import-Module Microsoft.Graph.Reports
 
-Get-MgBetaReportTeamCount -Format "text/csv"  -Period $periodId 
+Get-MgReportTeamCount -Format "text/csv"  -Period $periodId 
 
 ```

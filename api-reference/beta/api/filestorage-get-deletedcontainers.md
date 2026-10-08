@@ -107,7 +107,6 @@ Content-type: application/json
   "displayName": "My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
-  "deletedDateTime": "2022-08-11T12:35:16.300Z",
   "expiryDateTime": "2022-11-09T12:35:16.300Z",
   "members": [
     {

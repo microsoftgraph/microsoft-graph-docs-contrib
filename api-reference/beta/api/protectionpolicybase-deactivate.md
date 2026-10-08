@@ -17,6 +17,10 @@ Namespace: microsoft.graph
 
 Deactivate a [protectionPolicyBase](../resources/protectionpolicybase.md).
 
+When a protection policy is deactivated, backup activity stops immediately, no new backups are taken, and the protected resources are no longer covered by the policy. Any backups taken before deactivation are retained according to the retention policy, after which they're offboarded. You can restore data using previous restore points even after deactivation.
+
+To reactivate a deactivated policy, use the [activate](protectionpolicybase-activate.md) API.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -148,6 +152,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
       }
    },
    "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
+   "offboardRequestedDateTime": "2024-08-26T12:00:00Z",
    "retentionSettings" : [
       {
           "interval": "R/PT10M",

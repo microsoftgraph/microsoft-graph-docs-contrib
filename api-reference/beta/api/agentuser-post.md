@@ -4,7 +4,7 @@ description: "Create a new agentUser."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.subservice: entra-id
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ms.date: 11/11/2025
 ---
@@ -27,12 +27,8 @@ This operation returns by default only a subset of the properties for each **age
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Least privileged permission | Higher privileged permissions |
-|:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "agentuser_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentuser-post-permissions.md)]
 
 [!INCLUDE [rbac-agent-user-apis-write](../includes/rbac-for-apis/rbac-agent-user-apis-write.md)]
 
@@ -61,11 +57,11 @@ The following table lists the properties that are *required* when you create an 
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |True if the account is enabled; otherwise, false.|
+|accountEnabled |Boolean |`true` if the account is enabled; otherwise, `false`.|
 |displayName |String |The name to display in the address book for the agent user.|
 |mailNickname |String |The mail alias for the agent user.|
 |userPrincipalName |String |The user principal name (someagent@contoso.com). It's an Internet-style login name for the agent user based on the Internet standard RFC 822. By convention, this should map to the agent user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). <br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
-| identityParentId | String | The object ID of the associated agent identity. Required for agentUser.|
+| identityParentId | String | The object ID of the associated [agent identity](../resources/agentidentity.md). Required.|
 
 Because this resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the agent user instance while creating it.
 
@@ -110,7 +106,6 @@ Content-type: application/json
 
 The following example shows the response.
 
->[!NOTE]
 >The response object shown here might be shortened for readability.
 
 <!-- {

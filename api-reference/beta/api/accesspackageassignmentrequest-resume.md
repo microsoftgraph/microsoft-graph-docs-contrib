@@ -243,3 +243,92 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+### Example 4: Resume an access package assignment request from a custom extension
+
+#### Request
+
+The following example shows a request of a call to resume an access package assignment request that's waiting for a callback from a custom extension to determine the approver of the access package assignment.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "accesspackageassignmentrequestthis.resume.customextension"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/0e60f18c-b2a0-4887-9da8-da2e30a39d99/resume
+Content-Type: application/json
+
+{
+  "source": "Contoso.CustoEXT",
+  "type": "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated",
+  "data": {
+    "@odata.type": "microsoft.graph.microsoft.graph.assignmentRequestApprovalStageCallbackData",
+    "approvalStage": {
+      "durationBeforeAutomaticDenial": "P2D",
+      "escalationApprovers": [],
+      "fallbackEscalationApprovers": [],
+      "fallbackPrimaryApprovers": [],
+      "isApproverJustificationRequired": false,
+      "isEscalationEnabled": false,
+      "primaryApprovers": [
+        {
+          "@@odata.type": "#microsoft.graph.singleUser",
+          "description": "Primary approver of access package assignment.",
+          "id": "",
+          "isBackup": false
+        }
+      ]
+    },
+    "customExtensionStageInstanceDetail": "A approval stage from Logic Apps",
+    "customExtensionStageInstanceId": "@{triggerBody()?['CustomExtensionStageInstanceId']}",
+    "stage": "assignmentRequestDeterminingApprovalRequirements"
+  },
+  "source": "LogicApps",
+  "type": "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated"
+}
+
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accesspackageassignmentrequestthisresumecustomextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignmentrequestthisresumecustomextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackageassignmentrequestthisresumecustomextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/accesspackageassignmentrequestthisresumecustomextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackageassignmentrequestthisresumecustomextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/accesspackageassignmentrequestthisresumecustomextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```

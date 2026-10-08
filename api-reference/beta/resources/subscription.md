@@ -2,7 +2,7 @@
 title: "subscription resource type"
 description: "Represents a subscription that allows a client app to receive change notifications about changes to data in Microsoft Graph."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 doc_type: resourcePageType
 ms.subservice: change-notifications
 
@@ -38,7 +38,7 @@ For more information about subscriptions and change notifications, including res
 | Property | Type | Description |
 |---|---|---|
 | applicationId | String | Optional. Identifier of the application used to create the subscription. Read-only. |
-| changeType | String | Required. Indicates the type of change in the subscribed resource that raises a change notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. <br><br>**Note:** <li> Drive root item and list change notifications support only the `updated` changeType. <li>[User](../resources/user.md) and [group](../resources/user.md) change notifications support `updated` and `deleted` changeType. Use `updated` to receive notifications when user or group is created, updated, or soft deleted. Use `deleted` to receive notifications when user or group is permanently deleted. |
+| changeType | String | Required. Indicates the type of change in the subscribed resource that raises a change notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. <br><br>**Note:** <ul><li> Drive root item and list change notifications support only the `updated` changeType. </li><li>[User](../resources/user.md) and [group](../resources/user.md) change notifications support `updated` and `deleted` changeType. Use `updated` to receive notifications when user or group is created, updated, or soft deleted. Use `deleted` to receive notifications when user or group is permanently deleted.</li></ul> |
 | clientState | String | Optional. Specifies the value of the **clientState** property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the **clientState** property sent with the subscription with the value of the **clientState** property received with each change notification. |
 | creatorId | String | Optional. Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the ID of the service principal corresponding to the app. Read-only. |
 | encryptionCertificate | String | Optional. A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when **includeResourceData** is `true`. |
@@ -53,6 +53,9 @@ For more information about subscriptions and change notifications, including res
 | notificationUrl | String | Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.|
 | notificationUrlAppId | String | Optional. The app ID that the subscription service can use to generate the validation token. The value allows the client to validate the authenticity of the notification received. |
 | resource | String | Required. Specifies the resource that is monitored for changes. Don't include the base URL (`https://graph.microsoft.com/beta/`). See the possible resource path [values](change-notifications-api-overview.md) for each supported resource. |
+| vapidPublicKey | String | Optional. The application server's VAPID public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding). Obtained by calling the [getVapidPublicKey](../api/subscription-getvapidpublickey.md) function on the subscription collection. The browser passes this value to `PushManager.subscribe({ applicationServerKey })` to bind the push subscription to this server identity. Required when **notificationUrl** targets a known Web Push service origin (for example, `*.push.apple.com`, `fcm.googleapis.com`, `updates.push.services.mozilla.com`); rejected with `400 Bad Request` if supplied on a standard webhook subscription. For more information, see [RFC 8292](https://www.rfc-editor.org/rfc/rfc8292.html). |
+| webPushEncryptionP256dhPublicKey | String | Optional. The subscriber's ECDH public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding). Obtained from the browser via `PushSubscription.getKey('p256dh')`. Used as the peer public key during ECDH key agreement to derive the per-message content encryption key for RFC 8291 payload encryption. Required when **notificationUrl** targets a known Web Push service origin; rejected with `400 Bad Request` if supplied on a standard webhook subscription. For more information, see [RFC 8291 Section 3](https://www.rfc-editor.org/rfc/rfc8291.html#section-3). |
+| webPushEncryptionSecret | String | Optional. The subscriber's auth secret, base64url-encoded (16 bytes pre-encoding). Obtained from the browser via `PushSubscription.getKey('auth')`. Used as the HMAC-SHA-256 salt for the HKDF combine step that derives key material for RFC 8291 payload encryption. Write-only: this value is never returned in GET responses (returned as `null`). Treat as a secret. Required when **notificationUrl** targets a known Web Push service origin; rejected with `400 Bad Request` if supplied on a standard webhook subscription. For more information, see [RFC 8291 Section 3](https://www.rfc-editor.org/rfc/rfc8291.html#section-3). |
 
 ### Subscription lifetime
 
@@ -115,6 +118,9 @@ The following JSON representation shows the resource type.
   "notificationQueryOptions": "String",
   "notificationUrl": "String",
   "notificationUrlAppId": "String",
-  "resource": "String"
+  "resource": "String",
+  "vapidPublicKey": "String",
+  "webPushEncryptionP256dhPublicKey": "String",
+  "webPushEncryptionSecret": "String"
 }
 ```

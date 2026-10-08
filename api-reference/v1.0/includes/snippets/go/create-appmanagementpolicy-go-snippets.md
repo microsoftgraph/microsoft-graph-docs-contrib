@@ -73,21 +73,18 @@ keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 
 }
 restrictions.SetKeyCredentials(keyCredentials)
-additionalData := map[string]interface{}{
-applicationRestrictions := graph.New()
-identifierUris := graph.New()
-nonDefaultUriAddition := graph.New()
-state := "disabled"
+applicationRestrictions := graphmodels.NewCustomAppManagementApplicationConfiguration()
+identifierUris := graphmodels.NewIdentifierUriConfiguration()
+nonDefaultUriAddition := graphmodels.NewIdentifierUriRestriction()
+state := graphmodels.DISABLED_APPMANAGEMENTRESTRICTIONSTATE 
 nonDefaultUriAddition.SetState(&state) 
-	excludeAppsReceivingV2Tokens := true
+excludeAppsReceivingV2Tokens := true
 nonDefaultUriAddition.SetExcludeAppsReceivingV2Tokens(&excludeAppsReceivingV2Tokens) 
-	excludeSaml := true
+excludeSaml := true
 nonDefaultUriAddition.SetExcludeSaml(&excludeSaml) 
-	identifierUris.SetNonDefaultUriAddition(nonDefaultUriAddition)
-	applicationRestrictions.SetIdentifierUris(identifierUris)
-	restrictions.SetApplicationRestrictions(applicationRestrictions)
-}
-restrictions.SetAdditionalData(additionalData)
+identifierUris.SetNonDefaultUriAddition(nonDefaultUriAddition)
+applicationRestrictions.SetIdentifierUris(identifierUris)
+restrictions.SetApplicationRestrictions(applicationRestrictions)
 requestBody.SetRestrictions(restrictions)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

@@ -2,10 +2,10 @@
 title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 doc_type: apiPageType
 ms.subservice: change-notifications
-ms.date: 07/26/2024
+ms.date: 05/05/2026
 ---
 
 # Update subscription
@@ -31,6 +31,8 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[aiInsights](/microsoft-365/copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight) <br /> `/copilot/users/{userId}/onlineMeetings/getAllAiInsights` <br /> Copilot AI insights from meetings that a particular user is part of. | OnlineMeetingAiInsight.Read.All    | Not supported.  | OnlineMeetingAiInsight.Read.All |
+|[aiInsights](/microsoft-365/copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight)  <br/> `/copilot/users/{userId}/onlineMeetings/{onlineMeetingId}/aiInsights` <br/> Copilot AI insights for a particular meeting. | OnlineMeetingAiInsight.Read.All    | Not supported.  | OnlineMeetingAiInsight.Read.All |
 |[aiInteraction](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction)  <br /> `copilot/users/{userId}/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions that a particular user is part of. | AiEnterpriseInteraction.Read  | Not supported.  | AiEnterpriseInteraction.Read.All, AiEnterpriseInteraction.Read.User  |
 |[aiInteraction](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction)  <br /> `copilot/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions in an organization. | Not supported.  | Not supported.  | AiEnterpriseInteraction.Read.All  |
 |[approvalItems](../resources/approvalItem.md) | Not supported.  | Not supported.  | ApprovalSolution.ReadWrite.All  |
@@ -101,6 +103,9 @@ Depending on the resource and the permission type (delegated or application) req
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
+<!-- ### aiInsights -->
+[!INCLUDE [copilot-aiinsights-subscription-notes.md](../../includes/copilot-aiinsights-subscription-notes.md)]
+
 <!-- ### aiInteraction -->
 [!INCLUDE [copilot-aiinteraction-subscription-notes.md](../../includes/copilot-aiinteraction-subscription-notes.md)]
 
@@ -146,13 +151,19 @@ PATCH /subscriptions/{id}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+The request body must contain either the `expirationDateTime` or `notificationUrl` property and its value.
+
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | expirationDateTime  | DateTimeOffset  | Specifies the date and time in UTC when the subscription expires. For the maximum supported subscription, the length of time varies depending on the resource. For more information, see [Subscription lifetime](../resources/subscription.md#subscription-lifetime). |
+| notificationUrl  |  String  | This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
+
+> [!NOTE]
+> A `404 Not Found` response indicates that the subscription no longer exists. For example, it already expired and was removed by the service, or it was deleted. The subscription can't be renewed in this state, so retrying the update keeps failing. To avoid missing change notifications, [create a new subscription](subscription-post-subscriptions.md) instead of retrying the update. To reduce how often this happens, renew subscriptions well before they expire and use [lifecycle notifications](/graph/change-notifications-lifecycle-events) to renew subscriptions proactively.
 
 For details about how errors are returned, see [Error responses][error-response].
 

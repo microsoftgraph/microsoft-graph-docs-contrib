@@ -30,7 +30,7 @@ Windows Log Collection request entity.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier in the form of tenantId_deviceId_requestId.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Indicates the status for the app log collection request if it is pending, completed or failed, Default is pending. Possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Indicates the status for the app log collection request if it is pending, completed or failed, Default is pending. The possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
 |managedDeviceId|Guid|Indicates Intune device unique identifier.|
 |requestedDateTimeUTC|DateTimeOffset|The DateTime of the request.|
 |receivedDateTimeUTC|DateTimeOffset|The DateTime the request was received.|

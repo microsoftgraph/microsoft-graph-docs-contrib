@@ -34,6 +34,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackageId|String|Identifier of the access package.|
+|accessPackageNotificationSettings|[accessPackageNotificationSettings](../resources/accesspackagenotificationsettings.md)|Represents the settings for email notifications for requests to an access package.|
 |accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews aren't required.|
 |canExtend|Boolean|Indicates whether a user can extend the access package assignment duration after approval.|
 |createdBy|String|Read-only.|
@@ -45,10 +46,9 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |id|String| Read-only.|
 |modifiedBy|String|Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|accessPackageNotificationSettings|[accessPackageNotificationSettings](../resources/accesspackagenotificationsettings.md)|Represents the settings for email notifications for requests to an access package.|
+|questions|[accessPackageQuestion](accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Who can request this access package from this policy.|
-|questions|[accessPackageQuestion](accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
 |verifiableCredentialSettings|[verifiableCredentialSettings](verifiablecredentialsettings.md)|Settings for verifiable credentials set up through the Microsoft Entra Verified I D service. These settings represent the verifiable credentials that a requestor of an access package in this policy can present to be assigned the access package.|
 
 

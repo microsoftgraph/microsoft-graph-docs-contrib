@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides details of the Microsoft Entra policies applied to a user and client authentication app during the authentication step.
+Provides details of the Microsoft Entra policies applied to a user and client authentication app during the authentication step. This object is configured in the **authenticationAppPolicyEvaluationDetails** property of [signIn](../resources/signin.md).
 
 ## Properties
 |Property|Type|Description|

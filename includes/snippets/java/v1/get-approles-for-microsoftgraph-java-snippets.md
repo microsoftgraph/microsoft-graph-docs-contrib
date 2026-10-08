@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ServicePrincipalCollectionResponse result = graphClient.servicePrincipals().get(requestConfiguration -> {
-	requestConfiguration.queryParameters.filter = "displayName eq 'Microsoft Graph'";
+	requestConfiguration.queryParameters.filter = "appId eq '00000003-0000-0000-c000-000000000000'";
 	requestConfiguration.queryParameters.select = new String []{"id", "displayName", "appId", "appRoles"};
 });
 

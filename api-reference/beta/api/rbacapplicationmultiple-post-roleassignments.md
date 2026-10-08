@@ -347,7 +347,7 @@ Content-type: application/json
 Use the following information for creating Intune role assignments:
 - To allow assignments over all and future workloads, use the `/` value in **appScopeIds**.
 - To allow assignments over workload, on all scopes, don't add any scope after the following workload IDs in **appScopeIds**: `Mdi`, `Mdc`, `Mda`, `Mde`, `Mdo`, `SecureScoreExternal`.
-- To allow assignments over all current and future workloads, on specific scope, use one of the following values in **directoryScopeIds**: `/`, `ScopeType`, `ScopeId` .
+- To allow assignments over specific scope, use `/<ScopeType>/<ScopeId>` in  **appScopeIds**.
 
 #### Request
 

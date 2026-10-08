@@ -53,7 +53,7 @@ The following table lists the properties that are required when you create the [
 |collaborators|[user](../resources/user.md) collection|Collection of users that can collaborate on the request.|
 |contentQuery|String|KQL based content query that should be used for search. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |dataSubject|[dataSubject](../resources/datasubject.md)|Contains the properties for data subject for the request.|
-|dataSubjectType|dataSubjectType|Data subject type. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
+|dataSubjectType|dataSubjectType|Data subject type. The possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
 |description|String|Description for the request.|
 |displayName|String|Name of the request.|
 |externalId|String|The external ID for the request that is immutable after creation and is used for tracking the request for the external system. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
@@ -64,7 +64,7 @@ The following table lists the properties that are required when you create the [
 |pauseAfterEstimate|Boolean| Pause the request after estimate has finished. By default, the data estimate runs and then pauses, allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to `false` if you want it to perform the estimate and then automatically begin with the retrieval of the content. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |regulations|String collection|One or more regulations for the request.|
 |siteLocations|[subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)| The SharePoint and OneDrive site locations that should be searched. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
-|type|subjectRightsRequestType|Type of the request. Possible values are: `export`, `access`, `delete`, `tagForAction`, `unknownFutureValue`.|
+|type|subjectRightsRequestType|Type of the request. The possible values are: `export`, `access`, `delete`, `tagForAction`, `unknownFutureValue`.|
 
 ## Response
 

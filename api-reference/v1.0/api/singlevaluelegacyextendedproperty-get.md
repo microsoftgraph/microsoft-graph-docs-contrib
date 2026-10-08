@@ -33,8 +33,11 @@ The following user resources are supported:
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
 - [event](../resources/event.md)
+- [mailboxFolder](../resources/mailboxfolder.md)
+- [mailboxItem](../resources/mailboxitem.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
+- [note](../resources/note.md)
 
 As well as the following group resources:
 
@@ -59,8 +62,11 @@ Depending on the resource you're getting the extended property from and the perm
 | group [calendar](../resources/calendar.md) | Group.Read.All | Not supported | Not supported |
 | group [event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
 | group [post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
+| [mailboxFolder](../resources/mailboxfolder.md) | MailboxFolder.Read | Not supported. | MailboxFolder.Read.All |
+| [mailboxItem](../resources/mailboxitem.md) | MailboxItem.Read | Not supported. | MailboxItem.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [note](../resources/note.md) | ShortNotes.Read | ShortNotes.Read | ShortNotes.Read.All |
 
 ## HTTP request
 
@@ -118,6 +124,24 @@ Get a **contactFolder** instance:
 ```http
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **mailboxItem** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items/{mailboxItemId}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **mailboxFolder** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /admin/exchange/mailboxes/{mailboxId}/folders?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
@@ -194,6 +218,33 @@ Get **contactFolder** instances:
 ```http
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **mailboxItem** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items/{mailboxItemId}?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get **note** instances:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/notes?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/notes?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **mailboxFolder** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /admin/exchange/mailboxes/{mailboxId}/folders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
@@ -289,7 +340,7 @@ If successful, this method returns a `200 OK` response code.
 The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.
 
 #### GET resource instances that contain an extended property matching a filter
-The response body includes one or more objects representing the resource instances that contain a matching extended property. The response body does not include the extended property.
+The response body includes one or more objects representing the resource instances that contain a matching extended property. The response body doesn't include the extended property.
 
 ## Example
 #### Request 1
@@ -401,7 +452,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 
 A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all
 the properties of the messages that have the extended property matching the filter. The response body is
-similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
+similar to the response from [getting a message collection](../api/user-list-messages.md). The response doesn't
 include the matching extended property.
 
 
@@ -427,13 +478,13 @@ the properties of the messages that have the extended property matching the filt
 a single-value extended property with the **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, and
 the **value** `Light green`, would match the filter and be included in the response.
 
-The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
+The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response doesn't
 include the matching extended property.
 
 
 #### Request 4
 
-The next 2 examples show how to get messages that have non-string typed single-value extended properties. For ease of reading, they do not
+The next 2 examples show how to get messages that have non-string typed single-value extended properties. For ease of reading, they don't
 include the necessary URL encoding.
 
 The following example shows a filter that looks for the extended property that has:
@@ -465,7 +516,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 
 For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all
 the properties of the messages that have the extended property matching the corresponding filter. The response body is
-similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
+similar to the response from [getting a message collection](../api/user-list-messages.md). The response doesn't
 include the matching extended property.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "place_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/place-update-permissions.md)]
 
->**Note**: Exchange Admin role is requied to update places.
+[!INCLUDE [rbac-places-apis-update-known-issue](../includes/rbac-for-apis/rbac-places-apis-update-known-issue.md)]
 
 ## HTTP request
 
@@ -59,6 +59,7 @@ Only one instance of a [place](../resources/place.md) resource can be updated at
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [place](../resources/place.md), including the street, city, state, country or region, and postal code. Optional.|
+|customProperties|[stringDictionary](../resources/stringdictionary.md)|Custom key-value pairs associated with the [place](../resources/place.md). Each value must be a string. Optional.|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [place](../resources/place.md) location in latitude, longitude, and (optionally) altitude coordinates. Optional.|
 |isWheelChairAccessible|Boolean|Indicates whether the [place](../resources/place.md) is wheelchair accessible. Required.|
 |label |String|User-defined description of the [place](../resources/place.md). Optional.|
@@ -91,6 +92,10 @@ Content-Type: application/json
 
 {
   "@odata.type": "microsoft.graph.building",
+  "customProperties": {
+    "campusCode": "SEA",
+    "costCenter": "CC-2048"
+  },
   "tags": ["most popular building"]
 }
 ```
@@ -495,7 +500,7 @@ Content-Type: application/json
     "city": "Buffalo",
     "state": "NY",
     "postalCode": "98052",
-    "countryOrRegion": "USA"
+    "countryOrRegion": "US"
   },
   "geoCoordinates": {
     "latitude": 47.0,
@@ -604,7 +609,7 @@ Content-Type: application/json
     "city": "Buffalo",
     "state": "NY",
     "postalCode": "98052",
-    "countryOrRegion": "USA"
+    "countryOrRegion": "US"
   },
   "geoCoordinates": {
     "latitude": 47.0,
@@ -652,7 +657,7 @@ Content-Type: application/json
     "city": "Buffalo",
     "state": "NY",
     "postalCode": "98052",
-    "countryOrRegion": "USA"
+    "countryOrRegion": "US"
   },
   "geoCoordinates": {
     "altitude": null,
@@ -720,7 +725,7 @@ Content-Type: application/json
     "city": "Buffalo",
     "state": "NY",
     "postalCode": "98052",
-    "countryOrRegion": "USA"
+    "countryOrRegion": "US"
   },
   "geoCoordinates": {
     "altitude": null,

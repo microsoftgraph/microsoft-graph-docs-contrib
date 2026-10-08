@@ -4,7 +4,7 @@ description: "Update the properties of an agentIdentityBlueprintPrincipal object
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -63,6 +63,8 @@ Provide the updated property values for the agent identity blueprint principal.
 
 If successful, this method returns a `204 No Content` response code.
 
+For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
+
 ## Example
 
 ### Request
@@ -112,7 +114,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

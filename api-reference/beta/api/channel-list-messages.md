@@ -49,7 +49,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | Name      | Description          |
 |:----------|:---------------------|
 | [$top](/graph/query-parameters#top-parameter)| Apply `$top` to specify the number of channel messages returned per page in the response. The default page size is 20 messages. You can extend up to 50 channel messages per page. |
-| [$expand](/graph/query-parameters#expand)  | Apply `$expand` to get the properties of channel messages that are replies. By default, a response can include up to 1,000 replies. For an operation that expands channel messages with more than 1,000 replies, use the request URL returned in `replies@odata.nextLink` to get the next page of replies. |
+| [$expand](/graph/query-parameters#expand)  | Apply `$expand` to get the properties of channel messages that are replies. By default, a response can include up to 200 replies. For an operation that expands channel messages with more than 200 replies, use the request URL returned in `replies@odata.nextLink` to get the next page of replies. |
 
 The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
@@ -163,6 +163,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "html",
+                "messageBodyContentType": "html",
                 "content": "Hello World <at id=\"0\">Jane Smith</at>"
             },
             "channelIdentity": {
@@ -218,6 +219,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "html",
+                "messageBodyContentType": "html",
                 "content": "<div><div><div><span><img height=\"145\" src=\"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents/aWQ9eF8wLXd1cy1kMS02YmI3Nzk3ZGU2MmRjODdjODA4YmQ1ZmI0OWM4NjI2ZCx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kMS02YmI3Nzk3ZGU2MmRjODdjODA4YmQ1ZmI0OWM4NjI2ZC92aWV3cy9pbWdv/$value\" width=\"131\" style=\"vertical-align:bottom; width:131px; height:145px\"></span><div>&nbsp;</div></div><div><div><span><img height=\"65\" src=\"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents/aWQ9eF8wLXd1cy1kNi0xMzY3OTE4MzVlODIxOGZlMmUwZWEwYTA1ODAxNjRiNCx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kNi0xMzY3OTE4MzVlODIxOGZlMmUwZWEwYTA1ODAxNjRiNC92aWV3cy9pbWdv/$value\" width=\"79\" style=\"vertical-align:bottom; width:79px; height:65px\"></span></div></div></div></div>"
             },
             "channelIdentity": {
@@ -249,6 +251,7 @@ Content-type: application/json
             "from": null,
             "body": {
                 "contentType": "html",
+                "messageBodyContentType": "html",
                 "content": "<systemEventMessage/>"
             },
             "channelIdentity": {
@@ -382,6 +385,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "html",
+                "messageBodyContentType": "html",
                 "content": "Hello World <at id=\"0\">Jane Smith</at>"
             },
             "channelIdentity": {
@@ -436,6 +440,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "html",
+                "messageBodyContentType": "html",
                 "content": "<div><div><div><span><img height=\"145\" src=\"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents/aWQ9eF8wLXd1cy1kMS02YmI3Nzk3ZGU2MmRjODdjODA4YmQ1ZmI0OWM4NjI2ZCx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kMS02YmI3Nzk3ZGU2MmRjODdjODA4YmQ1ZmI0OWM4NjI2ZC92aWV3cy9pbWdv/$value\" width=\"131\" style=\"vertical-align:bottom; width:131px; height:145px\"></span><div>&nbsp;</div></div><div><div><span><img height=\"65\" src=\"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents/aWQ9eF8wLXd1cy1kNi0xMzY3OTE4MzVlODIxOGZlMmUwZWEwYTA1ODAxNjRiNCx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kNi0xMzY3OTE4MzVlODIxOGZlMmUwZWEwYTA1ODAxNjRiNC92aWV3cy9pbWdv/$value\" width=\"79\" style=\"vertical-align:bottom; width:79px; height:65px\"></span></div></div></div></div>"
             },
             "channelIdentity": {
@@ -466,6 +471,7 @@ Content-type: application/json
             "from": null,
             "body": {
                 "contentType": "html",
+                "messageBodyContentType": "html",
                 "content": "<systemEventMessage/>"
             },
             "channelIdentity": {
@@ -590,6 +596,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "html",
+                "messageBodyContentType": "html",
                 "content": "<div><div><div><span><img height=\"145\" src=\"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents/aWQ9eF8wLXd1cy1kMS02YmI3Nzk3ZGU2MmRjODdjODA4YmQ1ZmI0OWM4NjI2ZCx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kMS02YmI3Nzk3ZGU2MmRjODdjODA4YmQ1ZmI0OWM4NjI2ZC92aWV3cy9pbWdv/$value\" width=\"131\" style=\"vertical-align:bottom; width:131px; height:145px\"></span><div>&nbsp;</div></div><div><div><span><img height=\"65\" src=\"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents/aWQ9eF8wLXd1cy1kNi0xMzY3OTE4MzVlODIxOGZlMmUwZWEwYTA1ODAxNjRiNCx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kNi0xMzY3OTE4MzVlODIxOGZlMmUwZWEwYTA1ODAxNjRiNC92aWV3cy9pbWdv/$value\" width=\"79\" style=\"vertical-align:bottom; width:79px; height:65px\"></span></div></div></div></div>"
             },
             "channelIdentity": {
@@ -631,6 +638,7 @@ Content-type: application/json
                     },
                     "body": {
                         "contentType": "text",
+                        "messageBodyContentType": "text",
                         "content": "Reply3"
                     },
                     "channelIdentity": {
@@ -670,6 +678,7 @@ Content-type: application/json
                     },
                     "body": {
                         "contentType": "text",
+                        "messageBodyContentType": "text",
                         "content": "Reply2"
                     },
                     "channelIdentity": {
@@ -709,6 +718,7 @@ Content-type: application/json
                     },
                     "body": {
                         "contentType": "text",
+                        "messageBodyContentType": "text",
                         "content": "Reply1"
                     },
                     "channelIdentity": {

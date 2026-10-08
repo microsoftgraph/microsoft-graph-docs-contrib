@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.
 
-This operation retrieves a specified service update message for the tenant. The operation returns an error if the message does not exist for the tenant.
+This operation retrieves a specified service update message for the tenant. The operation returns an error if the message doesn't exist for the tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

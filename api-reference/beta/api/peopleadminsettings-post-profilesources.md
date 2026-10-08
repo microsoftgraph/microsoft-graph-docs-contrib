@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [profileSource](../resources/profilesource.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -58,7 +58,7 @@ You can specify the following properties when you create a **profileSource**.
 |kind|String|Type of the profile source.|
 |localizations|[profileSourceLocalization](../resources/profilesourcelocalization.md) collection|Alternative localized labels specified by an administrator.|
 |sourceId|String|Profile source identifier used as an alternate key.|
-|webUrl|String|Web URL of the profile source that directs users to the page view of profile data.|
+|webUrl|String|Web URL of the profile source that directs users to the page view of the profile data.|
 
 ## Response
 

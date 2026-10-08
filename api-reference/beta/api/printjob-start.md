@@ -35,20 +35,20 @@ POST /print/shares/{id}/jobs/{id}/start
 
 ## Request body
 
-Do not submit a request body for this method. 
+Don't submit a request body for this method. 
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [printJobStatus](../resources/printjobstatus.md) object in the body.
 
 ## Example
 The following example shows how to call this API.
-##### Request
+### Request
 
 ```http
 POST https://graph.microsoft.com/beta/print/shares/{id}/jobs/{id}/start
 ```
 
-##### Response
+### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 

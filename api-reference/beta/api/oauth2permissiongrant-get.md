@@ -19,7 +19,7 @@ Retrieve the properties of a single delegated permission grant represented by an
 An **oAuth2PermissionGrant** represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
 
 > [!NOTE]
-> This request might have replication delays for delegated permission grants that were recently created, updated, or deleted.
+> This request might have replication delays for delegated permission grants that were recently created, updated, or deleted. Learn more in [Designing for eventual consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

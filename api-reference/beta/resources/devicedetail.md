@@ -12,7 +12,7 @@ ms.date: 08/09/2024
 
 Namespace: microsoft.graph
 
-Indicates details of the device used in a sign-in activity. Includes information like device browser and OS info and if the device is Microsoft Entra ID-managed.
+Indicates details of the device used in a sign-in activity. Includes information like device browser and OS info and if the device is Microsoft Entra ID-managed. This object is configured in the **deviceDetail** property of [signIn](../resources/signin.md).
 
 ## Properties
 | Property	   | Type	|Description|

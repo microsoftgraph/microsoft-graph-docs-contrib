@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 const profileCardProperty = {
-  directoryPropertyName: 'CustomAttribute1',
   annotations: [
     {
       displayName: 'Cost Center',
@@ -22,7 +21,9 @@ const profileCardProperty = {
         }
       ]
     }
-  ]
+  ],
+  directoryPropertyName: 'CustomAttribute1',
+  isVisible: true
 };
 
 await client.api('/admin/people/profileCardProperties')

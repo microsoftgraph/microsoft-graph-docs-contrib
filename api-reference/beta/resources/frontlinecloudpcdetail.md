@@ -19,7 +19,7 @@ Represents current details, such as the availability of a frontline-assigned Clo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|frontlineCloudPcAvailability|[frontlineCloudPcAvailability](../resources/frontlinecloudpcdetail.md#frontlinecloudpcavailability-values)|The current availability of a frontline assigned Cloud PC. Possible values are: `notApplicable`, `available`, `notAvailable`, `unknownFutureValue`. The default value is `notApplicable`. Read-only. |
+|frontlineCloudPcAvailability|[frontlineCloudPcAvailability](../resources/frontlinecloudpcdetail.md#frontlinecloudpcavailability-values)|The current availability of a frontline assigned Cloud PC. The possible values are: `notApplicable`, `available`, `notAvailable`, `unknownFutureValue`. The default value is `notApplicable`. Read-only. |
 
 ### frontlineCloudPcAvailability values
 |Member|Description|

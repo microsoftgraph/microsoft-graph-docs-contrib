@@ -19,16 +19,18 @@ In this article, we explore the different types of group settings, and deep dive
 
 ## Types of group settings
 
-Group settings are organized into templates, each containing a collection of individual settings. These templates are read-only and define the allowed behaviors for specific Microsoft Entra objects. The following eight groups of setting templates available:
+Group settings are organized into templates, each containing a collection of individual settings. These templates are read-only and define the allowed behaviors for specific Microsoft Entra objects. The following groups of setting templates are available:
 
 |Setting template name  |Description  |
 |---------|---------|
 |Group.Unified     |  Includes settings for Microsoft 365 groups. Examples include blocked words for group names, whether a prefix should be appended to a group name, and whether sensitivity labels can be assigned to groups. For more information, see [Group.Unified](#groupunified)       |
-|Group.Unified.Guest     |  Includes settings for guest access in Microsoft 365 groups.       |
+|Group.Unified.Guest     |  Includes settings for guest access in a specific Microsoft 365 group. For more information, see [Group.Unified.Guest](#groupunifiedguest).       |
+|Group.Security     | Settings for cloud security groups, such as whether Microsoft Information Protection (MIP) sensitivity labels can be assigned to security groups. For more information, see [Group.Security](#groupsecurity).       |
+|Group.Security.Policies     |  Settings for cloud security groups, such as whether guests are allowed. For more information, see [Group.Security.Policies](#groupsecuritypolicies).       |
 |Application     |  Includes settings for managing tenant-wide application behavior.       |
 |Custom Policy Settings     |  Includes the tenant-wide conditional access settings, such as URL.       |
 |Consent Policy Settings     |  Includes settings for the tenant-wide consent policy, such as whether user consent is blocked for risky applications and whether users can request for admin consent.     |
-|Password Rule Settings     |  Includes settings for managing tenant-wide password rule settings, such as the banned paswword list, whether banned password check is enabled, and the lockout duration after failed sign-in attempts. For more information, see [Configure custom banned passwords for Microsoft Entra password protection](/entra/identity/authentication/tutorial-configure-custom-password-protection)       |
+|Password Rule Settings     |  Includes settings for managing tenant-wide password rule settings, such as the banned password list, whether banned password check is enabled, and the lockout duration after failed sign-in attempts. For more information, see [Configure custom banned passwords for Microsoft Entra password protection](/entra/identity/authentication/tutorial-configure-custom-password-protection)       |
 |Prohibited Names Restricted Settings     |   Includes tenant-wide settings for prohibited names.       |
 |Prohibited Names Settings     |   Includes prohibited names for applications.      |
 
@@ -38,7 +40,7 @@ Initially, Microsoft Entra ID assigns the default configuration to the tenant an
 
 From the setting templates, you can configure tenant-wide settings or settings for individual objects. Use the [groupSettings resource type](/graph/api/resources/groupsetting) in `v1.0` or the [directorySetting resource type](/graph/api/resources/directorysetting) in `beta` and their associated APIs.
 
-For groups, only settings for Microsoft 365 groups are available.
+For groups, settings are available for Microsoft 365 groups and cloud security groups. Mail-enabled security groups and distribution lists aren't supported.
 
 ## Group.Unified
 
@@ -72,11 +74,34 @@ The settings in this object specify whether guests can be added to all or specif
 |--|--|--|
 | AllowToAddGuests | Boolean | Indicates whether guests can be added to all or specific Microsoft 365 groups. The default setting is `true`. This setting can be overwritten when: <br/><li>**EnableMIPLabels** is `true` and a guest policy is applied when a sensitivity label is assigned to a group </ul><li>**AllowToAddGuests** is `false` at the tenant-level, then the group-level setting is overwritten </ul> |
 
+## Group.Security
+
+> [!NOTE]
+> This feature requires a Microsoft Entra ID P1 license.
+
+Specifies settings for cloud security groups at the tenant-level or for specific groups. For more information about sensitivity labels for security groups, see [Sensitivity labels for Microsoft 365 groups and cloud security groups](/entra/identity/users/groups-sensitivity-labels).
+
+| Setting name | Type | Description |
+|--|--|--|
+| AllowToAddGuests | Boolean | Indicates whether guests can be added to any cloud security group in the tenant. The default setting is `true`. |
+| EnableMIPLabels | Boolean | Indicates whether Microsoft Information Protection sensitivity labels published in the Microsoft Purview compliance portal can be applied to cloud security groups. When set to `true`, users with appropriate roles can assign sensitivity labels to cloud security groups. For more information, see [Sensitivity labels for Microsoft 365 groups and cloud security groups](/entra/identity/users/groups-sensitivity-labels). |
+
+## Group.Security.Policies
+
+Specifies settings for cloud security groups.
+
+> [!NOTE]
+> This feature requires a Microsoft Entra ID P1 license.
+
+| Setting name | Type | Description |
+|--|--|--|
+| AllowToAddGuests | Boolean | Indicates whether guests can be added to a specific cloud security group. Default `true`. |
+
 ## How to manage a group setting
 
 To manage a group setting:
 1. First, retrieve the details of the group setting template you want to use by using the [List groupSettings API](/graph/api/groupsettingtemplate-list).
-1. Create the group setting: Use the retrieved template to create a new group setting.
+1. Create the group setting: Use the retrieved template to create a new group setting: [Create groupSetting](/graph/api/group-post-settings) (v1.0) or [Create directorySetting](/graph/api/group-post-settings?view=graph-rest-beta&preserve-view=true) (beta).
 1. Update the Group Setting: If needed, update the group setting with specific values.
 
 ### Example: Configure a prefix for Microsoft 365 group names

@@ -16,7 +16,7 @@ request_body = EducationAssignmentSettings(
 						"display_name" : "Lab Updated",
 				},
 				{
-						"@odata_context" : "https://graph.microsoft.com/beta/$metadata#gradingCategories/$deletedEntity",
+						"@odata_context" : "https://graph.microsoft.com/v1.0/$metadata#gradingCategories/$deletedEntity",
 						"id" : "109e5d73-3ef7-42a5-88d8-7e30cdb85f06",
 						"reason" : "deleted",
 				},

@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+CrossTenantMigrationJob crossTenantMigrationJob = new CrossTenantMigrationJob();
+OffsetDateTime completeAfterDateTime = OffsetDateTime.parse("2025-05-22T17:14:52Z");
+crossTenantMigrationJob.setCompleteAfterDateTime(completeAfterDateTime);
+CrossTenantMigrationJob result = graphClient.solutions().migrations().crossTenantMigrationJobs().byCrossTenantMigrationJobId("{crossTenantMigrationJob-id}").patch(crossTenantMigrationJob);
+
+
+```

@@ -37,7 +37,7 @@ GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$top`, `$skip`, `$orderby`, `$count`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -52,6 +52,9 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [mailboxItem](../resources/mailboxitem.md) objects in the response body.
+
+> [!NOTE]
+> *Archive mailboxes with autoexpanded folders:* When the target folder or items physically reside in an auxiliary (autoexpanded) archive mailbox, this API might return a redirect response that points to the correct mailbox endpoint. For details, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
 
 ## Examples
 
@@ -146,7 +149,7 @@ Content-length: 232
 
 ### Example 2: List items using query parameter
 
-The following example uses the `$filter`, `$select`, and `$top` query parameters. The `$filter` parameter refines the results and returns only items with **createdDateTime** between `2021-08-21` and `2021-09-16`.  The `$select` parameter specifies to return only a subset of the properties of each item in the response, and the `$top` parameter sets the page size of the result set to return only the top item in the mailbox under the specified folder.
+The following example uses the `$filter`, `$select`, and `$top` query parameters. The `$filter` parameter refines the results and returns only items with **createdDateTime** between `2021-08-21` and `2021-09-16`. The `$select` parameter specifies that only a subset of properties for each item should be returned in the response, and the `$top` parameter sets the page size of the result set to return only the top item in the mailbox under the specified folder.
 
 #### Request
 

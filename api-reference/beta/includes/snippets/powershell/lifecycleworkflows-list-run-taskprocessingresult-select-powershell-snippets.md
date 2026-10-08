@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult -WorkflowId $workflowId -RunId $runId -Property "id,failureReason,processingStatus,subject" 
+Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult -WorkflowId $workflowId -RunId $runId -Property "id,failureReason,processingStatus,subject,task" 
 
 ```

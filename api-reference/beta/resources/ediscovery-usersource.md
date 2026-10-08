@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 The container for a [custodian's](ediscovery-custodian.md) mailbox and OneDrive for Business site.
 
 ## Methods
@@ -34,7 +36,7 @@ The container for a [custodian's](ediscovery-custodian.md) mailbox and OneDrive 
 |displayName|String|The display name associated with the mailbox and site.|
 |email|String|Email address of the user's mailbox.|
 |id|String|The ID of the **userSource**. This is not the ID of the actual group|
-|includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. The possible values are: `mailbox`, `site`.|
 |siteWebUrl|String|The URL of the user's OneDrive for Business site. Read-only.|
 
 ### sourceType values

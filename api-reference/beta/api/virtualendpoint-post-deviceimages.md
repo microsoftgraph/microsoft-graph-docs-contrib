@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object. Upload a custom OS image that you can later provision on Cloud PCs.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -144,7 +144,6 @@ Content-Type: application/json
   "osStatus": null,
   "expirationDate": null,
   "osVersionNumber": null,
-  "sizeInGB": 64,
-  "osArchitecture": "x64"
+  "sizeInGB": 64
 }
 ```

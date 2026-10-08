@@ -28,10 +28,10 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time that this Windows Hello for Business key was registered.|
+|createdDateTime|DateTimeOffset|The date and time that this Windows Hello for Business key was registered. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |displayName|String|The name of the device on which Windows Hello for Business is registered|
 |id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
-|keyStrength|authenticationMethodKeyStrength|Key strength of this Windows Hello for Business key. Possible values are: `normal`, `weak`, `unknown`.|
+|keyStrength|authenticationMethodKeyStrength|Key strength of this Windows Hello for Business key. The possible values are: `normal`, `weak`, `unknown`.|
 
 ## Relationships
 |Relationship|Type|Description|

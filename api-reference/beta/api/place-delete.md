@@ -19,7 +19,7 @@ Delete a [place](../resources/place.md) object.
 You can also use this method to delete the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), or [desk](../resources/desk.md).
 
 > **Note:**
-> [room](../resources/room.md), [roomList](../resources/roomlist.md), and [workspace](../resources/workspace.md) can't be deleted.
+> [roomList](../resources/roomlist.md) can't be deleted.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "place_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/place-delete-permissions.md)]
 
->**Note**: Exchange Admin role is requied to delete places.
+[!INCLUDE [rbac-places-apis-write](../includes/rbac-for-apis/rbac-places-apis-write.md)]
 
 ## HTTP request
 

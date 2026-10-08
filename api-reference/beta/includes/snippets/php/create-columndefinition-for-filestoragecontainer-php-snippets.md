@@ -17,6 +17,7 @@ $requestBody->setDescription('test');
 $requestBody->setEnforceUniqueValues(false);
 $requestBody->setHidden(false);
 $requestBody->setIndexed(false);
+$requestBody->setIsSearchable(false);
 $requestBody->setName('Title');
 $text = new TextColumn();
 $text->setAllowMultipleLines(false);

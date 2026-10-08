@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PrivilegedOperations.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PrivilegedOperations.All|
+|Application|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## HTTP Request
 <!-- {
@@ -51,11 +51,11 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|keepEnrollmentData|Boolean||
-|keepUserData|Boolean||
-|macOsUnlockCode|String||
-|obliterationBehavior|[obliterationBehavior](../resources/intune-devices-obliterationbehavior.md)||
-|persistEsimDataPlan|Boolean||
+|keepEnrollmentData|Boolean|Uses doWipePersistProvisionedData.|
+|keepUserData|Boolean|Uses doWipePersistUserData.|
+|macOsUnlockCode|String|A six-digit recovery PIN used when remotely wiping a Mac via MDM.|
+|obliterationBehavior|[obliterationBehavior](../resources/intune-devices-obliterationbehavior.md)|This setting controls the fallback wipe method on modern Macs during a remote wipe.|
+|persistEsimDataPlan|Boolean|This setting controls whether an eSIM cellular data plan is retained or wiped during a device wipe.|
 
 
 

@@ -20,11 +20,7 @@ Retrieve a specific [user identity mapping](../resources/sharepointuseridentitym
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointuseridentitymapping-get-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "sharepointuseridentitymapping_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointuseridentitymapping-get-permissions.md)]
 
 ## HTTP request
@@ -84,21 +80,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.sharePointUserIdentityMapping",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/sharePoint/migrations/crossOrganizationUserMappings/$entity",
   "id": "AQAAAAEAAAB1c2VyMUBjb250b3NvLmNvbQ",
   "sourceOrganizationId": "11111111-1111-1111-1111-111111111111",
   "userType": "regularUser",
   "sourceUserIdentity": {
-    "@odata.type": "microsoft.graph.userIdentity",
     "userPrincipalName": "user1@contoso.com"
   },
   "targetUserIdentity": {
-    "@odata.type": "microsoft.graph.userIdentity",
-    "userPrincipalName": "admin@a830edad9050849ken005.onmicrosoft.com"
+    "userPrincipalName": "admin@fabrikam.onmicrosoft.com"
   },
   "targetUserMigrationData": {
-    "@odata.type": "microsoft.graph.sharePointIdentityMappingUserMigrationData",
-    "email": "admin@a830edad9050849ken005.onmicrosoft.com"
+    "email": "admin@fabrikam.onmicrosoft.com"
   }
 }
 ```

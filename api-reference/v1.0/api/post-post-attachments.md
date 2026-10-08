@@ -58,7 +58,7 @@ In the request body, provide a JSON object that includes a **post** parameter.
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code. It does not return a response body.
+If successful, this method returns `202 Accepted` response code. It doesn't return a response body.
 
 ## Examples
 ### Example 1: Include a file attachment
@@ -127,7 +127,7 @@ The following example shows the response.
   "name": "create_file_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 202 Accpted
+HTTP/1.1 202 Accepted
 ```
 
 ### Example 2: Include an item attachment
@@ -288,7 +288,7 @@ The following example shows the response.
   "name": "create_reference_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 202 Accpted
+HTTP/1.1 202 Accepted
 ```
 
 

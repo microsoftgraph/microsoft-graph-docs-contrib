@@ -24,7 +24,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|notifications|[winGetAppNotification](../resources/intune-shared-wingetappnotification.md)|The notification status for this app assignment. Possible values are: `showAll`, `showReboot`, `hideAll`, `unknownFutureValue`.|
+|notifications|[winGetAppNotification](../resources/intune-shared-wingetappnotification.md)|The notification status for this app assignment. The possible values are: `showAll`, `showReboot`, `hideAll`, `unknownFutureValue`.|
 |restartSettings|[winGetAppRestartSettings](../resources/intune-shared-wingetapprestartsettings.md)|The reboot settings to apply for this app assignment.|
 |installTimeSettings|[winGetAppInstallTimeSettings](../resources/intune-shared-wingetappinstalltimesettings.md)|The install time settings to apply for this app assignment.|
 

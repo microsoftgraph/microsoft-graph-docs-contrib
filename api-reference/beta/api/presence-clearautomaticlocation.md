@@ -18,10 +18,12 @@ Namespace: microsoft.graph
 Clear the automatic work location signal for a [user](../resources/user.md). After clearing, the user’s final aggregated work location is recomputed according to the precedence rules:
 
 - Precedence: manual > automatic > scheduled
-- If a manual location is set, clearing the automatic signal doesn't change the final location (manual still takes precedence).
+- If a manual location is set, clearing the automatic signal doesn't change the final location because the manual location still takes precedence.
 - If no manual location is set, the final location falls back to the scheduled signal (calendar working hours and location – WHL) for the current segment, or to none if there's no scheduled signal.
 
 Use this operation when you need to remove the current autodetected signal without affecting manual or scheduled layers.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -42,8 +44,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/presence/clearAutomaticLocation
-POST /users/{usersId}/presence/clearAutomaticLocation
-POST /communications/presences/{presenceId}/clearAutomaticLocation
 ```
 
 ## Request headers
@@ -58,13 +58,14 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "presencethis.clearautomaticlocation"
@@ -74,6 +75,35 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/me/presence/clearAutomaticLocation
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/presencethisclearautomaticlocation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/presencethisclearautomaticlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/presencethisclearautomaticlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/presencethisclearautomaticlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/presencethisclearautomaticlocation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/presencethisclearautomaticlocation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/presencethisclearautomaticlocation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -84,6 +114,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
