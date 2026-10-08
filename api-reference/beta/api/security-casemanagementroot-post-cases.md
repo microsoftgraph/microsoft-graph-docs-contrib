@@ -19,15 +19,13 @@ Create a [case](../resources/security-casemanagement-case.md) object in case man
 > [!IMPORTANT]
 > You can't use this API to create [incidentCase](../resources/security-casemanagement-incidentcase.md) objects. Incident cases are created by the service; API requests can't create new incident cases.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-casemanagementroot-post-cases-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_casemanagementroot_post_cases" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-casemanagementroot-post-cases-permissions.md)]
 [!INCLUDE [rbac-case-management-apis](../includes/rbac-for-apis/rbac-case-management-apis.md)]
 
@@ -52,15 +50,20 @@ POST /security/caseManagement/cases
 
 In the request body, supply a JSON representation of the [case](../resources/security-casemanagement-case.md) object. Include `@odata.type` to identify a supported derived type. The `microsoft.graph.security.caseManagement.incidentCase` derived type isn't supported for create requests.
 
-You can specify the following properties when creating a **case**.
+When creating a [genericCase](../resources/security-casemanagement-genericcase.md) object, you can specify all its properties except `id`, `createdBy`, `createdDateTime`, `lastModifiedBy`, and `lastModifiedDateTime`, which are inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). The API ignores these properties if you include them in the request body.
 
-The **customFields** property is an open object keyed by custom field identifier. Each value must include an `@odata.type` annotation for the concrete custom field value type.
+Before constructing **customFields**, call [List customFields](../api/security-casemanagement-casetypeconfiguration-list-customfields.md) at `/security/caseManagement/caseTypeConfigurations/genericCase/customFields`. Use each definition's **displayName**, not its **id**, as the dynamic property name. The name must match exactly one definition. Each dynamic value must be an object that includes the mapped concrete `@odata.type` and the corresponding **value**, **values**, or **valueDateTime** property from the [custom field value mapping](../resources/security-casemanagement-customfieldvalues.md#custom-field-value-mapping); bare values aren't supported.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by custom field identifier. Optional.|
+|assignedTo|String|The user assigned to the generic case. Optional.|
+|closingNotes|String|Notes recorded when the generic case is closed. Optional.|
+|customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by the exact **displayName** of each custom field definition. Optional.|
+|description|String|The description of the generic case. Optional.|
 |displayName|String|The display name of the resource. Required.|
-|status|String|The lifecycle status of the resource. Required.|
+|dueDateTime|DateTimeOffset|The target completion date and time for the generic case. Optional.|
+|priority|String|The priority assigned to the generic case. Possible values are: `veryLow`, `low`, `medium`, `high`, and `critical`. Optional.|
+|status|String|The tenant-defined lifecycle status of the generic case. Use a **displayName** value returned in the status tree by [List statuses](../api/security-casemanagement-casetypeconfiguration-list-statuses.md) from `/security/caseManagement/caseTypeConfigurations/genericCase/statuses`. Required.|
 
 ## Response
 
@@ -71,6 +74,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_casemanagement_create_case"
@@ -88,13 +92,58 @@ Content-Type: application/json
   "assignedTo": "john.doe@contoso.com",
   "priority": "high",
   "customFields": {
-    "customerImpact": {
+    "Customer impact": {
       "@odata.type": "#microsoft.graph.security.caseManagement.customFieldStringValue",
       "value": "Executive mailbox affected"
+    },
+    "Affected users": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldNumberValue",
+      "value": 12
+    },
+    "Review date": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldDateTimeValue",
+      "valueDateTime": "2026-06-15T09:00:00Z"
+    },
+    "Affected services": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldOptionsValue",
+      "values": [
+        "Exchange Online",
+        "Microsoft Teams"
+      ]
     }
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/security-casemanagement-create-case-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/security-casemanagement-create-case-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/security-casemanagement-create-case-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-casemanagement-create-case-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-create-case-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-create-case-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-create-case-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -122,9 +171,24 @@ Content-Type: application/json
   "assignedTo": "john.doe@contoso.com",
   "priority": "high",
   "customFields": {
-    "customerImpact": {
+    "Customer impact": {
       "@odata.type": "#microsoft.graph.security.caseManagement.customFieldStringValue",
       "value": "Executive mailbox affected"
+    },
+    "Affected users": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldNumberValue",
+      "value": 12
+    },
+    "Review date": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldDateTimeValue",
+      "valueDateTime": "2026-06-15T09:00:00Z"
+    },
+    "Affected services": {
+      "@odata.type": "#microsoft.graph.security.caseManagement.customFieldOptionsValue",
+      "values": [
+        "Exchange Online",
+        "Microsoft Teams"
+      ]
     }
   }
 }

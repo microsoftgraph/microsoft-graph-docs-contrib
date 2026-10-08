@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveOr
 
 ---
 
-
 ### Response
 
 The following example shows the response.

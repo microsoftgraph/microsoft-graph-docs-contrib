@@ -1,8 +1,8 @@
 ---
 title: "distributionList: addMembers"
 description: "Add members to a distributionList."
-author: "kemwangi"
-ms.date: 06/09/2026
+author: "rwaithera"
+ms.date: 08/03/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -51,7 +51,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|members|[member](../resources/member.md) collection|The list of members to add to the distribution list. Each member must include an **emailAddress**. The **displayName** and **recipientType** properties are optional. Required.|
+|members|[member](../resources/member.md) collection|The members to add to the distribution list. Each member must include **type** and either **key**, **memberId**, or both. Required.|
 
 ## Response
 
@@ -77,8 +77,7 @@ Content-Type: application/json
     {
       "displayName": "Megan Bowen",
       "key": "MeganB@contoso.com",
-      "routingType": "SMTP",
-      "recipientType": "mailbox"
+      "type": "mailbox"
     }
   ]
 }

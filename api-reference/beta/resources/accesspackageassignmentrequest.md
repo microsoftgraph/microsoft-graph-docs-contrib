@@ -35,6 +35,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|answers|[accessPackageAnswer](accesspackageanswer.md) collection|Answers provided by the requestor to [accessPackageQuestions](accesspackagequestion.md) asked of them at the time of request.|
 |completedDate|DateTimeOffset|The date of the end of processing, either successful or failure, of a request. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |customExtensionCalloutInstances|[customExtensionCalloutInstance](../resources/customextensioncalloutinstance.md) collection|Information about all the custom extension calls that were made during the access package assignment request workflow.|
@@ -43,11 +44,11 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |id|String| Read-only.|
 |isValidationOnly|Boolean|True if the request isn't to be processed for assignment.|
 |justification|String|The requestor's supplied justification.|
+|parameters|[accessPackageAssignmentRequestParameters](accesspackageassignmentrequestparameters.md)|Additional parameters that control how the request is processed, such as bypassing the approval requirement configured on the access package policy.|
 |requestState|String|One of `PendingApproval`, `Canceled`,  `Denied`, `Delivering`, `Delivered`, `PartiallyDelivered`, `DeliveryFailed`, `Submitted`, or `Scheduled`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|
 |requestType|String|One of `UserAdd`, `UserExtend`, `UserUpdate`, `UserRemove`, `AdminAdd`, `AdminRemove`, `ApproverRemove`, or `SystemRemove`. A request from the user has a **requestType** of `UserAdd`, `UserUpdate`, or `UserRemove`. Read-only.|
 |schedule|[requestSchedule](requestschedule.md)| The range of dates that access is to be assigned to the requestor. Read-only.|
-|answers|[accessPackageAnswer](accesspackageanswer.md) collection|Answers provided by the requestor to [accessPackageQuestions](accesspackagequestion.md) asked of them at the time of request.|
 |verifiedCredentialsData|[verifiedCredentialData](../resources/verifiedcredentialdata.md) collection| The details of the verifiable credential that the requestor presented, such as the issuer and claims. Read-only.|
 
 ## Relationships
@@ -85,6 +86,7 @@ The following JSON representation shows the resource type.
   "completedDate": "String (timestamp)",
   "expirationDateTime": "String (timestamp)",
   "justification": "String",
+  "parameters": {"@odata.type": "microsoft.graph.accessPackageAssignmentRequestParameters"},
   "schedule": {
     "@odata.type": "microsoft.graph.requestSchedule"
   },

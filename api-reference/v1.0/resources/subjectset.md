@@ -34,7 +34,7 @@ This object is an abstract base type from which the following resources are deri
 |[singleUser](../resources/singleuser.md) | Entitlement Management | Represents a single user as approver to access packages. |
 |[targetAgentIdentitySponsorsOrOwners](../resources/targetagentidentitysponsorsorowners.md) | Entitlement Management | Represents the sponsors or owners of a specific agent identity.|
 |[targetApplicationOwners](../resources/targetapplicationowners.md) | Entitlement Management | Represents the application owners who can request an access package on behalf of that application. |
-|[targetManager](../resources/targetmanager.md) | Entitlement Management | Represents the manager of a user who can request an access package on behalf of that user. |
+|[targetManager](../resources/targetmanager.md) | Entitlement Management | Represents the manager of the target user who will receive the access package if approved, which may differ from the submitter's manager. |
 |[targetUserSponsors](../resources/targetusersponsors.md) | Entitlement Management | Represents another user in the tenant who can approve an access package on behalf of a user. |
 
 In entitlement management, this object is configured in the following properties and relationships:

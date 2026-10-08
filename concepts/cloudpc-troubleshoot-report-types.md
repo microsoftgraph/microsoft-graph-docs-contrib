@@ -379,7 +379,6 @@ The following table lists the mandatory filter parameters for user and device re
 | CloudPCId | The unique identifier of the Cloud PC. |
 | ManagedDeviceName | The name of the managed device. |
 | UPN | The User Principal Name of the user. |
-| UserId | The unique identifier of the user. |
 | EventDateTime | The date and time when the event occurred. |
 | HealthPercentage | The health percentage of Cloud PC systems. |
 

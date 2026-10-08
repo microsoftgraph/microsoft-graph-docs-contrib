@@ -9,7 +9,7 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageFromIdentitySet;
 use Microsoft\Graph\Beta\Generated\Models\Identity;
-use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageBody;
 use Microsoft\Graph\Beta\Generated\Models\BodyType;
 
 
@@ -27,7 +27,7 @@ $additionalData = [
 $fromUser->setAdditionalData($additionalData);
 $from->setUser($fromUser);
 $requestBody->setFrom($from);
-$body = new ItemBody();
+$body = new ChatMessageBody();
 $body->setContentType(new BodyType('html'));
 $body->setContent('Hello World');
 $requestBody->setBody($body);

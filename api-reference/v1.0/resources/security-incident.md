@@ -36,7 +36,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |createdDateTime|DateTimeOffset|Time when the incident was first created.|
 |customTags|String collection|Array of custom tags associated with an incident.|
 |description|String|Description of the incident.|
-|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |displayName|String|The incident name.|
 |id|String|Unique identifier to represent the incident.|
 |incidentWebUrl|String|The URL for the incident page in the Microsoft 365 Defender portal.|

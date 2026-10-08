@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |arguments|[microsoft.graph.keyValuePair](../resources/keyvaluepair.md) collection|Arguments included within the task. <br/> For guidance to configure this property, see [Configure the arguments for built-in Lifecycle Workflow tasks](/graph/identitygovernance-lifecycleworkflows-task-arguments). Required.|
-|category|microsoft.graph.identityGovernance.lifecycleTaskCategory|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`. This property is multi-valued and the same task can apply to both `joiner` and `leaver` categories.<br><br>Supports `$filter`(`eq`, `ne`).|
+|category|microsoft.graph.identityGovernance.lifecycleTaskCategory|The category of the task. The possible values are: `joiner`, `leaver`, `unknownFutureValue`, `mover`, `extensibility`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mover`, `extensibility`. This property is multi-valued and the same task can apply to both `joiner` and `leaver` categories.<br><br>Supports `$filter`(`eq`, `ne`).|
 |continueOnError|Boolean|A Boolean value that specifies whether, if this task fails, the workflow stops, and subsequent tasks aren't run. Optional.|
 |description|String|A string that describes the purpose of the task for administrative use. Optional.|
 |displayName|String|A unique string that identifies the task. Required.<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|

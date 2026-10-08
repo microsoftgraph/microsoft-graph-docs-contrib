@@ -51,7 +51,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of an [externalItem](../resources/externalconnectors-externalitem.md) object. The payload is limited to 4 MB.
+In the request body, supply a JSON representation of an [externalItem](../resources/externalconnectors-externalitem.md) object. The payload is limited to 30 MB.
 
 When you create an **externalItem**, the following properties are required: **acl** and **properties**. The **properties** object must contain at least one property. You can also use the **informationProtectionLabel** property to set a Microsoft Purview sensitivity label on an **externalItem**.
 

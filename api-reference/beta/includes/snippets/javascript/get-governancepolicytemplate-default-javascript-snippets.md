@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let governancePolicyTemplate = await client.api('/directory/tenantGovernance/governancePolicyTemplates/default')
+let tenantGovernancePolicyTemplate = await client.api('/directory/tenantGovernance/governancePolicyTemplates/default')
 	.version('beta')
 	.get();
 

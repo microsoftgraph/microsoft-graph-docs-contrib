@@ -2,7 +2,7 @@
 title: "fileStorageContainerTypeRegistrationSettings resource type"
 description: "Represents the settings associated with a fileStorageContainerTypeRegistration."
 author: "javieralvarezchiang"
-ms.date: 11/12/2025
+ms.date: 09/21/2026
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
@@ -22,6 +22,7 @@ Represents the settings associated with a [fileStorageContainerTypeRegistration]
 |:---|:---|:---|
 |isDiscoverabilityEnabled|Boolean|Indicates whether items from containers are surfaced in experiences such as **My Activity** or Microsoft 365.|
 |isItemVersioningEnabled|Boolean|Indicates whether item versioning is enabled.|
+|isOfficeRestricted|Boolean|Indicates whether Office apps (Word, Excel, and PowerPoint) for desktop and web are restricted for containers of this container type.|
 |isSearchEnabled|Boolean|Indicates whether search is enabled.|
 |isSharingRestricted|Boolean|Only the manager and owner can share files in the container if restricted sharing is enabled.|
 |itemMajorVersionLimit|Int64|Maximum number of versions. Versioning must be enabled (`"isItemVersioningEnabled"=true`).|
@@ -44,6 +45,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.fileStorageContainerTypeRegistrationSettings",
   "isDiscoverabilityEnabled": "Boolean",
   "isItemVersioningEnabled": "Boolean",
+  "isOfficeRestricted": "Boolean",
   "isSearchEnabled": "Boolean",
   "isSharingRestricted": "Boolean",
   "itemMajorVersionLimit": "Int64",

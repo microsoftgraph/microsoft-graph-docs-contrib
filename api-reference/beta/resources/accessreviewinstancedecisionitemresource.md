@@ -20,6 +20,7 @@ In an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisi
 
 An [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md) object is an open type that allows other properties to be passed in and is the base type for the following resources:
 - [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](../resources/accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource.md)
+- [accessReviewInstanceDecisionItemAccessPackageResource](../resources/accessreviewinstancedecisionitemaccesspackageresource.md)
 - [accessReviewInstanceDecisionItemAzureRoleResource](../resources/accessreviewinstancedecisionitemazureroleresource.md)
 - [accessReviewInstanceDecisionItemServicePrincipalResource](../resources/accessreviewinstancedecisionitemserviceprincipalresource.md)
 - [accessReviewInstanceDecisionItemCustomDataProvidedResource](../resources/accessreviewinstancedecisionitemcustomdataprovidedresource.md)
@@ -30,7 +31,7 @@ An [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstanced
 |description|String| Description of the resource |
 |displayName|String|Display name of the resource|
 |id|String|Resource ID|
-|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackageAssignmentPolicy`, and `CustomDataProvidedResource`.|
+|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackage`, `AccessPackageAssignmentPolicy`, and `CustomDataProvidedResource`.|
 
 ## Relationships
 None.

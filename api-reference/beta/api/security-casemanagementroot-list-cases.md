@@ -16,15 +16,13 @@ Namespace: microsoft.graph.security.caseManagement
 
 Get a list of the [case](../resources/security-casemanagement-case.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-casemanagementroot-list-cases-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_casemanagementroot_list_cases" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-casemanagementroot-list-cases-permissions.md)]
 [!INCLUDE [rbac-case-management-apis](../includes/rbac-for-apis/rbac-case-management-apis.md)]
 
@@ -40,7 +38,11 @@ GET /security/caseManagement/cases
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top` OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$orderby`, `$select`, `$skip`, and `$top` OData query parameters. The `$count` query parameter isn't supported. On the base collection, `$filter`, `$orderby`, and `$select` can reference only properties declared on [case](../resources/security-casemanagement-case.md). A request that references a property declared only on a derived type, such as **incidentId**, is rejected. To use a supported query option with a derived property, cast the collection to the derived type first.
+
+For example: `GET /security/caseManagement/cases/microsoft.graph.security.caseManagement.incidentCase?$filter=incidentId eq 1006`.
+
+The `$filter` query parameter doesn't support the **customFields** property or its dynamic fields. The maximum value for `$top` is 100; requests with a larger value return `400 Bad Request`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -61,6 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_casemanagement_list_cases"
@@ -69,6 +72,36 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/caseManagement/cases
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/security-casemanagement-list-cases-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/security-casemanagement-list-cases-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/security-casemanagement-list-cases-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-casemanagement-list-cases-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-list-cases-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-list-cases-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-list-cases-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

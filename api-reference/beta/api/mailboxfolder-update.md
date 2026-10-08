@@ -19,6 +19,8 @@ Update [mailboxFolder](../resources/mailboxfolder.md) properties such as the **d
 > [!NOTE]
 > The folder **type** can't be updated. Instead, the folder needs to be deleted and a new folder can be created.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -82,8 +84,28 @@ PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mailboxfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-mailboxfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailboxfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-mailboxfolder-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-mailboxfolder-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -101,16 +123,17 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
   "id": "AQMkAGUw==",
   "displayName": "Announcements",
+  "isHidden": false,
   "parentFolderId": "AQMkAGUc==",
   "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93",
   "childFolderCount": 0,
   "totalItemCount": 0,
+  "wellKnownName": null,
   "type": "IPF.Note"
 }
 ```

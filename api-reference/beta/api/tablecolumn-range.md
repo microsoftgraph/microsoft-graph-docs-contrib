@@ -46,7 +46,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md)) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 ### Request
 The following example shows a request.
 

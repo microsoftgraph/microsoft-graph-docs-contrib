@@ -50,7 +50,6 @@ PATCH /users/{id | userPrincipalName}/distributionLists/{distributionList-id}
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the distribution list. Optional.|
-|members|[member](../resources/member.md) collection|The list of members in the distribution list. This replaces the entire member list. Optional.|
 
 ## Response
 
@@ -122,22 +121,6 @@ Content-Type: application/json
   "createdDateTime": "2024-03-15T10:30:00Z",
   "lastModifiedDateTime": "2024-03-25T09:45:00Z",
   "categories": [],
-  "displayName": "Updated Project Team",
-  "members": [
-    {
-      "@odata.type": "#microsoft.graph.member",
-      "displayName": "Adele Vance",
-      "key": "AdeleV@contoso.com",
-      "routingType": "SMTP",
-      "recipientType": "mailbox"
-    },
-    {
-      "@odata.type": "#microsoft.graph.member",
-      "displayName": "Alex Wilber",
-      "key": "AlexW@contoso.com",
-      "routingType": "SMTP",
-      "recipientType": "mailbox"
-    }
-  ]
+  "displayName": "Updated Project Team"
 }
 ```

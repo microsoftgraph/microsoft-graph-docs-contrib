@@ -102,6 +102,8 @@ items:
       href: ../../api/cloudlicensing-usercloudlicensing-post-assignments.md
     - name: Create for group
       href: ../../api/cloudlicensing-groupcloudlicensing-post-assignments.md
+    - name: Create for device
+      href: ../../api/cloudlicensing-devicecloudlicensing-post-assignments.md
     - name: Reprocess assignments
       href: ../../api/cloudlicensing-assignment-reprocessassignments.md
     - name: Get assignedTo
@@ -120,18 +122,6 @@ items:
       href: ../../api/cloudlicensing-assignmenterror-get-assignedto.md
     - name: Get usageRight
       href: ../../api/cloudlicensing-assignmenterror-get-usageright.md
-  - name: Usage right
-    items:
-    - name: Usage right
-      href: ../../resources/cloudlicensing-usageright.md
-    - name: List for group
-      href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
-    - name: List for user
-      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
-    - name: Get
-      href: ../../api/cloudlicensing-usageright-get.md
-    - name: List assignments
-      href: ../../api/cloudlicensing-usageright-list-assignments.md
   - name: Waiting member
     items:
     - name: Waiting member
@@ -140,10 +130,14 @@ items:
       href: ../../api/cloudlicensing-allotment-list-waitingmembers.md
     - name: List for user
       href: ../../api/cloudlicensing-usercloudlicensing-list-waitingmembers.md
+    - name: List for device
+      href: ../../api/cloudlicensing-devicecloudlicensing-list-waitingmembers.md
     - name: Get
       href: ../../api/cloudlicensing-waitingmember-get.md
   - name: Complex types
     items:
+    - name: Device cloud licensing
+      href: ../../resources/cloudlicensing-devicecloudlicensing.md
     - name: Group cloud licensing
       href: ../../resources/cloudlicensing-groupcloudlicensing.md
     - name: Service
@@ -214,6 +208,8 @@ items:
       href: ../../api/cloudpc-createsnapshot.md
     - name: Retrieve snapshots
       href: ../../api/cloudpc-retrievesnapshots.md
+    - name: Share snapshot
+      href: ../../api/cloudpc-sharesnapshot.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
     - name: Get launch info (deprecated)
@@ -578,6 +574,8 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC performance metrics report
+      href: ../../api/cloudpcreports-retrievecloudpcperformancemetricsreport.md
     - name: Retrieve Cloud PC tenant metrics report
       href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
     - name: Retrieve cross-region disaster recovery report
@@ -745,6 +743,8 @@ items:
       href: ../../resources/cloudpcpolicypendingapplystatusresult.md
     - name: Cloud PC pool capability configuration
       href: ../../resources/cloudpcpoolcapabilityconfiguration.md
+    - name: Cloud PC provisioning configuration
+      href: ../../resources/cloudpcprovisioningconfiguration.md
     - name: Cloud PC provisioning policy assignment
       href: ../../resources/cloudpcprovisioningpolicyassignment.md
     - name: Cloud PC provisioning policy autopatch

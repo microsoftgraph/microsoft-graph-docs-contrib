@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let folders = await client.api('/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders')
 	.filter('type eq \'IPF.Appointment\'')
-	.select('displayName,type')
+	.select('displayName,type,wellKnownName')
 	.top(5)
 	.get();
 

@@ -19,15 +19,13 @@ Update a [comment](../resources/security-casemanagement-comment.md) activity in 
 > [!IMPORTANT]
 > You can't use this API to update comment activities for [incidentCase](../resources/security-casemanagement-incidentcase.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-casemanagement-activity-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_casemanagement_activity_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-casemanagement-activity-update-permissions.md)]
 [!INCLUDE [rbac-case-management-apis](../includes/rbac-for-apis/rbac-case-management-apis.md)]
 
@@ -61,13 +59,14 @@ Supply a JSON representation of the resource. Include `@odata.type` to identify 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.caseManagement.activity](../resources/security-casemanagement-activity.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_casemanagement_update_activity"
@@ -83,26 +82,43 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/security-casemanagement-update-activity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/security-casemanagement-update-activity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/security-casemanagement-update-activity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-casemanagement-update-activity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-update-activity-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-update-activity-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-update-activity-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.caseManagement.activity"
+  "blockType": "response"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.caseManagement.comment",
-  "id": "c5dcf8b0-0732-750b-0e35-7f44188423bf",
-  "createdDateTime": "2026-05-20T11:12:28Z",
-  "createdBy": "user@contoso.com",
-  "lastModifiedDateTime": "2026-05-20T11:18:45Z",
-  "lastModifiedBy": "user@contoso.com",
-  "message": "This is a modified comment."
-}
+HTTP/1.1 204 No Content
 ```
