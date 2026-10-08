@@ -76,7 +76,7 @@ In the request body, provide a JSON object with the following parameters.
 | roles            | String collection             | Specifies the roles that are to be granted to the recipients of the sharing invitation.|
 | expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for work or school and SharePoint, **expirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for work or school, SharePoint, and premium personal OneDrive accounts. |
 | password           | String                         | The password set on the invite by the creator. Optional and OneDrive for home only. |
-| retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. |
+| retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. Not supported with SharePoint Embedded. |
 
 ## Response
 
@@ -93,7 +93,7 @@ When inviting multiple recipients, it's possible for the notification to succeed
 The following table shows some other errors that your app might encounter within the nested **innererror** objects when sending notification fails. Apps aren't required to handle these errors.
 
 | Code                           | Description                                                                          |
-|:-------------------------------|:--------------------------------------------------------------------------------------
+|:-------------------------------|:--------------------------------------------------------------------------------------|
 | accountVerificationRequired    | Account verification is required to unblock sending notifications. |
 | hipCheckRequired               | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications. |
 | exchangeInvalidUser            | Current user's mailbox wasn't found. |

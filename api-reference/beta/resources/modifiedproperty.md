@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the changes performed in the target system. 
+Describes the changes performed in the target system. This object is configured in the **modifiedProperties** property of [provisioningObjectSummary](../resources/provisioningobjectsummary.md) and [targetResource](../resources/targetresource.md).
 
 ## Properties
 
@@ -57,5 +57,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

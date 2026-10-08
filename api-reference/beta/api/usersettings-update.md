@@ -71,7 +71,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ### Request
 
-Here's an example request on how to opt out a user from Delve and disable the user's contribution on content relevancy for the whole organization.
+The following example shows how to opt out a user from Delve and disable the user's contribution on content relevancy for the whole organization.
 
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings

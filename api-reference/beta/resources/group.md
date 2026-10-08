@@ -6,7 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: resourcePageType
-ms.date: 10/04/2024
+ms.date: 09/04/2026
 ---
 
 # group resource type
@@ -151,7 +151,7 @@ name. |
 |--|--|--|
 | accessType | groupAccessType | Indicates the type of access to the group. Possible values are `none`, `private`, `secret`, and `public`. |
 | allowExternalSenders | Boolean | Indicates if people external to the organization can send messages to the group. The default value is `false`. <br><br>Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
-| assignedLabels | [assignedLabel](assignedlabel.md) collection | The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. <br><br>Requires `$select` to retrieve. This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and [a supported administrator role](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels).|
+| assignedLabels | [assignedLabel](assignedlabel.md) collection | The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group or a cloud security group. Requires a Microsoft Entra ID P1 license. <br><br>Requires `$select` to retrieve. This property can be specified during group creation or update. However, for cloud security groups, it's immutable once set. This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and [a supported administrator role](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels). See [Key differences from Microsoft 365 group labeling](https://learn.microsoft.com/en-us/entra/identity/users/groups-sensitivity-labels#key-differences-from-microsoft-365-group-labeling) to learn more about managing this property for Microsoft 365 vs. cloud security groups.|
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the group. <br><br>Requires `$select` to retrieve. Supports `$filter` (`eq`). Read-only. |
 | autoSubscribeNewMembers | Boolean | Indicates if new members added to the group are auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group. Default value is `false`. <br><br>Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
 | classification | String | Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorysetting.md) value, based on the [template definition](directorysettingtemplate.md).<br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
@@ -160,6 +160,7 @@ name. |
 | createdDateTime | DateTimeOffset | Timestamp of when the group was created. The value can't be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only. |
 | deletedDateTime | DateTimeOffset | For some Microsoft Entra objects (user, group, application), if the object is deleted, it is first logically deleted, and this property is updated with the date and time when the object was deleted. Otherwise this property is null. If the object is restored, this property is updated to `null`. Inherited from [directoryObject](../resources/directoryobject.md). |
 | description | String | An optional description for the group. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) and `$search`. |
+| disableNesting | Boolean | Indicates whether other groups can be added as members of this group. The default value is `false`. When set to `true`, other groups can't be added as members. You can set this property only for security groups that have **isAssignableToRole** set to `false`. The property is read-only for Microsoft 365 groups and groups that have **isAssignableToRole** set to `true`. Not nullable. <br><br>Requires `$select` to retrieve. Supports `$filter` (`eq`). The least privileged permission to read or write this property is `Group-NestingSupport.ReadWrite.All`. |
 | displayName | String | The display name for the group. Required. Maximum length is 256 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`. |
 | expirationDateTime | DateTimeOffset | Timestamp of when the group is set to expire. It is `null` for security groups, but for Microsoft 365 groups, it represents when the group is set to expire as defined in the [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). Read-only. |
 | groupTypes | String collection | Specifies the group type and its membership. <br><br>If the collection contains `Unified`, the group is a Microsoft 365 group; otherwise, it's either a security group or a distribution group. For details, see [groups overview](groups-overview.md).<br><br>If the collection includes `DynamicMembership`, the group has dynamic membership; otherwise, membership is static. <br><br>Returned by default. Supports `$filter` (`eq`, `not`). |
@@ -305,6 +306,7 @@ The following JSON representation shows the resource type.
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "description": "String",
+  "disableNesting": "Boolean",
   "displayName": "String",
   "expirationDateTime": "String (timestamp)",
   "groupTypes": ["String"],

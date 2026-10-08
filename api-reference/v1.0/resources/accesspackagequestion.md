@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Used for the **accessPackageQuestion** property of an [access package assignment policy](../resources/accesspackageassignmentpolicy.md).
+Used for the **accessPackageQuestion** property of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) and the **accessPackageResourceAttributeQuestion** in an [accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md).
 
 Subtypes include [accessPackageTextInputQuestion](../resources/accesspackagetextinputquestion.md) and [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md).
 

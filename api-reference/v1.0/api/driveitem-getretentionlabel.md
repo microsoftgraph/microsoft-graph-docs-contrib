@@ -35,12 +35,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ```http
 GET /drives/{drive-id}/items/{item-id}/retentionLabel
-GET /drives/{drive-id}/items/{item-id}?$expand=retentionLabel
 ```
 
 ## Optional query parameters
 
-This method supports the `$expand` [OData query parameter](/graph/query-parameters) to help customize the response.
+Not supported.
 
 ## Request headers
 

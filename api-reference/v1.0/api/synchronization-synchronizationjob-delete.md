@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is.
+Stop the [synchronizationJob](../resources/synchronization-synchronizationjob.md), and permanently delete all the state associated with it. Synchronized accounts are left as-is.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

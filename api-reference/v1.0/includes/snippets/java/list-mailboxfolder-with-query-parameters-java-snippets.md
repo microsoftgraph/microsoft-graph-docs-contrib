@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 MailboxFolderCollectionResponse result = graphClient.admin().exchange().mailboxes().byMailboxId("{mailbox-id}").folders().get(requestConfiguration -> {
 	requestConfiguration.queryParameters.filter = "type eq 'IPF.Appointment'";
-	requestConfiguration.queryParameters.select = new String []{"displayName", "type"};
+	requestConfiguration.queryParameters.select = new String []{"displayName", "type", "wellKnownName"};
 	requestConfiguration.queryParameters.top = 5;
 });
 

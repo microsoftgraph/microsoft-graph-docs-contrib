@@ -38,6 +38,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |id|String|Unique identifier of the protection policy associated with this protection unit.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |lastModifiedDateTime|DateTimeOffset|The time the protection unit was last modified. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|pendingRetentionPeriodChange|[retentionPeriodChange](../resources/retentionperiodchange.md)|The retention period change to be applied to the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. A protection unit protected by multiple sources is indicated by comma-separated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |siteId|String|Unique identifier of the SharePoint site.|
@@ -45,7 +46,6 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |siteWebUrl|String|The web URL of the SharePoint site.|
 |status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `offboardRequested`, `offboarded`, `cancelOffboardRequested`, `unknownFutureValue`.|
 |offboardRequestedDateTime|DateTimeOffset|The time when protection unit offboard was requested. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-
 ## Relationships
 
 None.
@@ -73,6 +73,9 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "offboardRequestedDateTime": "String (timestamp)",
+  "pendingRetentionPeriodChange": {
+    "@odata.type": "microsoft.graph.retentionPeriodChange"
+  },
   "policyId": "String",
   "protectionSources": "String",
   "siteId": "String",

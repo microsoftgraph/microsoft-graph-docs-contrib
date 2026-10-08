@@ -44,7 +44,7 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}
 If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 ### Request
 The following example shows a request.
 

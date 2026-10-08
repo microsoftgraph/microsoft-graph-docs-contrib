@@ -24,6 +24,8 @@ hidden := false
 requestBody.SetHidden(&hidden) 
 indexed := false
 requestBody.SetIndexed(&indexed) 
+isSearchable := false
+requestBody.SetIsSearchable(&isSearchable) 
 name := "Title"
 requestBody.SetName(&name) 
 text := graphmodels.NewTextColumn()

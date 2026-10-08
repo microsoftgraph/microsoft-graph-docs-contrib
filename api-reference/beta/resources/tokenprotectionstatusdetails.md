@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- The status of token protection for a request in the sign-in logs. `bound` requests pass a conditional access session control for token protection. More detail might be provided in the **signInSessionStatusCode** property. For more information, see [Conditional Access: Token Protection](/entra/identity/conditional-access/concept-token-protection).
+ The status of token protection for a request in the sign-in logs. `bound` requests pass a conditional access session control for token protection. More detail might be provided in the **signInSessionStatusCode** property. For more information, see [Conditional Access: Token Protection](/entra/identity/conditional-access/concept-token-protection). This object is configured in the **tokenProtectionStatusDetails** property of [signIn](../resources/signin.md).
 
 ## Methods
 

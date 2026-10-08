@@ -23,7 +23,7 @@ Get a [placeOperation](../resources/placeoperation.md) by ID.
 >   - This API has a throttling limit of three calls per second. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
 >   - The progress of long-running operations updates every 30 seconds; therefore, you shouldn't retrieve an operation more frequently than once every 30 seconds. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

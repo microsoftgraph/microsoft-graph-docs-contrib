@@ -1,14 +1,15 @@
 ---
-title: "Create m365CapabilityBase for default policy"
+title: "Create Microsoft 365 capability for default policy"
 description: "Create a new Microsoft 365 cross-tenant capability for the default cross-tenant access policy."
 author: "lasharma"
 ms.date: 04/23/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+toc.title: Create Microsoft 365 capability
 ---
 
-# Create m365CapabilityBase for default policy
+# Create Microsoft 365 capability for default policy
 
 Namespace: microsoft.graph
 
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "crosstenantaccesspolicyconfigurationdefault_post_m365capabilities" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities-permissions.md)]
+
+[!INCLUDE [rbac-xtap-m365capabilities-apis-write](../includes/rbac-for-apis/rbac-xtap-m365capabilities-apis-write.md)]
 
 ## HTTP request
 
@@ -114,6 +117,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-crosstenantopenprofilecard-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-crosstenantopenprofilecard-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -212,6 +219,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-crosstenantmigration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-crosstenantmigration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-crosstenantmigration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -250,3 +261,10 @@ Content-Type: application/json
   }
 }
 ```
+
+## Related content
+
+- [Microsoft 365 cross-tenant access policy API overview](../resources/m365-cross-tenant-access-policy-overview.md)
+- [crossTenantAccessPolicyConfigurationDefault resource type](../resources/crosstenantaccesspolicyconfigurationdefault.md)
+- [m365CapabilityBase resource type](../resources/m365capabilitybase.md)
+

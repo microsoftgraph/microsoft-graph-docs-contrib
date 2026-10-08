@@ -3,6 +3,8 @@ title: "relatedTenantsRefreshStatus resource type"
 description: "Represents the status of a related tenants refresh operation."
 author: "akhil-potturi"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
@@ -10,7 +12,7 @@ doc_type: resourcePageType
 
 # relatedTenantsRefreshStatus resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,15 +33,14 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.relatedTenantsRefreshStatus"
+  "@odata.type": "microsoft.graph.relatedTenantsRefreshStatus"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.relatedTenantsRefreshStatus",
+  "@odata.type": "#microsoft.graph.relatedTenantsRefreshStatus",
   "mostRecentRefreshTime": "String",
   "mostRecentRefreshRequestStatus": "String",
   "isFirstRefresh": "Boolean"
 }
 ```
-

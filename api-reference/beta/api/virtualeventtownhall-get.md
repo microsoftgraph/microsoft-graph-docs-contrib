@@ -145,6 +145,7 @@ Content-Type: application/json
     }
   },
   "audience": "everyone",
+  "capacity": 5000,
   "coOrganizers": [
     {
       "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
@@ -160,6 +161,7 @@ Content-Type: application/json
       "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
     }
   ],
+  "isRegistrationRequired": false,
   "settings": {
     "isAttendeeEmailNotificationEnabled": false
   },

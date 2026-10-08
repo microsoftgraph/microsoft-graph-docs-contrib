@@ -2,7 +2,7 @@
 title: "m365CapabilityResourceScope resource type"
 description: "Specifies the resource that a cross-tenant capability policy applies to."
 author: "lasharma"
-ms.date: 04/23/2026
+ms.date: 08/07/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -15,19 +15,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the resource that a cross-tenant capability policy applies to. This type defines which specific user or group a policy affects.
+Specifies the resource that a cross-tenant capability policy applies to. This type defines which specific user or group a policy affects. This resource is used by the **included** and **excluded** properties of the [m365CapabilityResourceScopes](../resources/m365capabilityresourcescopes.md) resource.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|resourceId|String|The ID of the resource to modify (a user or group ID).|
+|resourceId|String|The ID of the resource to modify. The value is either `All`, to apply the capability to all resources of the type specified by **resourceType** (all users or all groups), or the GUID of a specific user or group.|
 |resourceType|[m365ResourceType](#m365resourcetype-values)|The type of resource. The possible values are: `none`, `group`, `user`, `unknownFutureValue`.|
 
 ### m365ResourceType values
 
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
+
 | Member             | Description                       |
 | ------------------ | --------------------------------- |
-| none               | A value to use instead of `null`.   |
+| none               | Indicates that no resource type is selected.      |
 | group              | The resource ID is a group ID.    |
 | user               | The resource ID is a user ID.     |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |

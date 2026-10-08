@@ -12,8 +12,7 @@ ms.date: 11/14/2024
 
 Namespace: microsoft.graph
 
-Remove a user or a group from the connected organization's internal sponsors. The [internal sponsors](../resources/internalsponsors.md) are a set of users who can approve requests on behalf of other users from that connected organization.
-
+Remove a user or a group from the **internalSponsors** relationship of a [connectedOrganization](../resources/connectedorganization.md). Internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

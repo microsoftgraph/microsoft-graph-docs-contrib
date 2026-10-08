@@ -33,10 +33,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /identityGovernance/accessReviews/definitions/filterByCurrentUser(on='reviewer')
 ```
 
+## Function parameters
+In the request URL, provide the following query parameters with values.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|on|accessReviewScheduleDefinitionFilterByCurrentUserOptions|Filters results based on the calling user. Possible values are `reviewer`, `unknownFutureValue`, `directReviewer`, and `delegatedReviewer`. Use the `Prefer: include-unknown-enum-members` request header to get the `directReviewer` and `delegatedReviewer` values in this evolvable enumeration. `reviewer` returns all definitions where the calling user is a reviewer, `directReviewer` returns only definitions with instances directly assigned to the current user, and `delegatedReviewer` returns only definitions with instances delegated to the current user. Required.|
+
 ## Optional query parameters
 This method supports `$select`, `$filter`, `$orderby`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The default page size for this API is 100 **accessReviewScheduleDefinition** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+
+>[!NOTE]
+>The `delegatedBy` property isn't returned for **accessReviewScheduleDefinition** responses. Use `delegatedReviewer` only to filter the returned definitions.
 
 ## Request headers
 |Name|Description|

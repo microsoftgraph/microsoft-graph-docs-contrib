@@ -208,7 +208,7 @@ Content-type: application/json
 
 #### Requesting a subsequent page of people
 
-If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request more pages of information. If the previous request has additional information, the following request gets the next page of people from the server.
+If the first response doesn't contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request more pages of information. If the previous request has additional information, the following request gets the next page of people from the server.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=10&$skip=10

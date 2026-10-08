@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines if, and in, which time span a callback is expected from the Azure Logic App.
+Defines if, and in, which time span a callback is expected from the Azure Logic App. This object is configured in the **callbackConfiguration** property of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) resource.
 
 Inherits from  [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
 

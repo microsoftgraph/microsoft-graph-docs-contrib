@@ -16,6 +16,9 @@ In some cases, a folder appears in the main archive mailbox, but its contents ac
 
 When an application accesses an expanded folder, the API might return an HTTP redirect or error response. The response indicates the correct endpoint for accessing the content.
 
+> [!NOTE]
+> Well-known folder names aren't supported for archive mailboxes. Reference folders in archive mailboxes by folder ID rather than by well-known folder name.
+
 ## How it works
 
 - Your app makes a request to a folder or item using the main archive mailbox ID.

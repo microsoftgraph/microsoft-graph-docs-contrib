@@ -98,7 +98,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 - If the property has changed, the new value is included in the response. This includes properties being set to null value.
 - If the property hasn't changed, the property isn't included in the response at all. (Different from the default behavior.)
 
-> **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See [Example 3](#example-3-alternative-minimal-response-behavior).
+> **Note:** The header can be added to a `@odata.deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it doesn't affect how the delta query is executed. See [Example 3](#example-3-alternative-minimal-response-behavior).
 
 ## Examples
 

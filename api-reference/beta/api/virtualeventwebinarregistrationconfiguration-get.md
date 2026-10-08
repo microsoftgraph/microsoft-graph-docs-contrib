@@ -115,6 +115,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "registrationWebUrl": "https://events.teams.microsoft.com/event/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33"
+    "id": "83682a88-495c-c490-e452-ce4cc08e0b47",
+    "registrationWebUrl": "https://events.teams.microsoft.com/event/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33",
+    "capacity": 100,
+    "isWaitlistEnabled": false,
+    "isManualApprovalEnabled": false
 }
 ```

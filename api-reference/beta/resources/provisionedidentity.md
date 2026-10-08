@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the identity associated with the provisioning object summary event. Inherits from [identity](../resources/identity.md).
+Describes the identity associated with the provisioning object summary event. This object is configured in the **sourceIdentity** and **targetIdentity** properties of [provisioningObjectSummary](../resources/provisioningobjectsummary.md). Inherits from [identity](../resources/identity.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|details|[detailsInfo](detailsinfo.md)|Details of the identity.|
+|details|[detailsInfo](../resources/detailsinfo.md)|Details of the identity.|
 |displayName|String|Display name of the identity. Inherited from [identity](../resources/identity.md). Supports `$filter` (`eq`, `contains`).|
 |id|String|Uniquely identifies the identity. Inherited from [identity](../resources/identity.md). Supports `$filter` (`eq`, `contains`).|
 |identityType|String|Type of identity that has been provisioned, such as 'user' or 'group.' Supports `$filter` (`eq`, `contains`).|
@@ -58,5 +58,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

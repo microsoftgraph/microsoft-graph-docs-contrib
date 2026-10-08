@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Metadata for the given object.
+Metadata for the given object. This object is configured in the **metadata** property of [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md).
 
 ## Properties
 | Property       | Type    |Description|
@@ -21,6 +21,7 @@ Metadata for the given object.
 |value|String|Value of the metadata property.|
 
 ### Supported key-value pairs
+
 | Key       |Value|
 |:---------------|:----------|
 |GalleryApplicationIdentifier|The GUID that represents this enterprise application in Microsoft Entra ID.   |

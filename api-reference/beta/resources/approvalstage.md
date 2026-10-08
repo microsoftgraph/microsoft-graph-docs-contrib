@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In entitlement management, used for the **approvalStages** property of approval settings in the **requestApprovalSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.
+In entitlement management, used for the **approvalStages** property of approval settings in the **requestApprovalSettings** property of an [access package assignment policy](../resources/accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.
 
-In PIM, defines the settings of the approval stages in a [unifiedRoleManagementPolicyApprovalRule](unifiedrolemanagementpolicyapprovalrule.md) object. Specifies the primary and escalation approvers of each stage and whether approvals and escalations are required.
+In PIM, defines the settings of the approval stages in a [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) object. Specifies the primary and escalation approvers of each stage and whether approvals and escalations are required.
 
 ## Properties
 

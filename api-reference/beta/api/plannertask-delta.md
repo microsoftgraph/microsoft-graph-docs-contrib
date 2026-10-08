@@ -46,6 +46,8 @@ Tracking changes incurs a round of one or more **delta** function calls. If you 
 | $deltaToken     | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL, including this token in the first request of the next round of change tracking for that collection. |
 | $skipToken      | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection.                                                                                                                                                                |
 
+When you call this API with application-only permissions, you must scope the request to a single plan by using a `$filter` query parameter of the form `planId eq '{planId}'`, and you must include a `$select` query parameter that specifies exactly these three non-id properties: `percentComplete`, `assignments`, and `creationSource`. For example, `$select=percentComplete,assignments,creationSource`. Selecting a different number of non-id properties returns a `405 Method Not Allowed` response, and selecting three non-id properties other than these returns a `403 Forbidden` response. The **id** property is always returned and can be included in `$select` without counting toward this limit.
+
 ## Request headers
 
 | Name          | Description               |
@@ -211,10 +213,8 @@ Content-Type: application/json
         "publication": null,
         "externalSource": null
       },
-      "creationSourceInfo": null,
       "id": "aSOQ0mveu06bTSkfnJQay2QAIn_l",
       "version": "1-Task  @@@@@@@@@@@@@@@H",
-      "details@odata.context": "https://tasks.officeppe.com/taskApi/V3.0/$metadata#plans('-W4K7hIak0WlAwgJCn1sEWQABgjH')/tasks('aSOQ0mveu06bTSkfnJQay2QAIn_l')/details/$entity",
       "details": {
         "@odata.etag": "W/\"JzEtVGFza0RldGFpbHMgQEBAQEBAQEBAQEBAQEBARCc=\"",
         "description": "",
@@ -378,10 +378,8 @@ Content-Type: application/json
         "publication": null,
         "externalSource": null
       },
-      "creationSourceInfo": null,
       "id": "aSOQ0mveu06bTSkfnJQay2QAIn_l",
       "version": "1-Task  @@@@@@@@@@@@@@@H",
-      "details@odata.context": "https://tasks.officeppe.com/taskApi/V3.0/$metadata#plans('-W4K7hIak0WlAwgJCn1sEWQABgjH')/tasks('aSOQ0mveu06bTSkfnJQay2QAIn_l')/details/$entity",
       "details": {
         "@odata.etag": "W/\"JzEtVGFza0RldGFpbHMgQEBAQEBAQEBAQEBAQEBARCc=\"",
         "description": "",
@@ -392,7 +390,98 @@ Content-Type: application/json
         "id": "aSOQ0mveu06bTSkfnJQay2QAIn_l",
         "version": "1-TaskDetails @@@@@@@@@@@@@@@D"
       }
-    },
+    }
+  ]
+}
+```
+
+### Example 3: Get delta on tasks in a plannerPlan by using application-only permissions
+
+The following example shows a request that uses application-only permissions. As described in the [Query parameters](#query-parameters) section, the request must be scoped to a single plan by using a `$filter` query parameter and must select exactly the `percentComplete`, `assignments`, and `creationSource` properties by using a `$select` query parameter.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "plannertaskthis_delta_e3"
+}
+-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/planner/tasks/delta?$filter=planId eq '-W4K7hIak0WlAwgJCn1sEWQABgjH'&$select=percentComplete,assignments,creationSource
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/plannertaskthis-delta-e3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/plannertaskthis-delta-e3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/plannertaskthis-delta-e3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/plannertaskthis-delta-e3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/plannertaskthis-delta-e3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/plannertaskthis-delta-e3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/plannertaskthis-delta-e3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.plannerTask)"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#plannerTask",
+  "@odata.deltaLink": "https://graph.microsoft.com/beta/planner/plans('-W4K7hIak0WlAwgJCn1sEWQABgjH')/tasks?%24select=percentComplete,assignments,creationSource&%24deltatoken=0%257eaa6c4c81-656f-40e8-a2c5-60f4116fa9a4",
+  "value": [
+    {
+      "@odata.etag": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBASCc=\"",
+      "percentComplete": 0,
+      "assignments": {
+        "b40c85a0-1a66-4fa3-932f-cc9249ce8c29": {
+          "@odata.type": "#microsoft.taskServices.assignment",
+          "assignedBy": "b40c85a0-1a66-4fa3-932f-cc9249ce8c29",
+          "assignedDateTime": "2022-09-29T18:14:33.1404924Z",
+          "orderHint": "8585371316723527019PX"
+        }
+      },
+      "creationSource": {
+        "publication": null,
+        "externalSource": null
+      },
+      "id": "aSOQ0mveu06bTSkfnJQay2QAIn_l"
+    }
   ]
 }
 ```

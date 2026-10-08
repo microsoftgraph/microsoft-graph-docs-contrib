@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 If successful, this method returns `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Example
-Here's an example of how to call this API.
+The following example shows how to call this API.
 ### Request
 The following example shows a request.
 

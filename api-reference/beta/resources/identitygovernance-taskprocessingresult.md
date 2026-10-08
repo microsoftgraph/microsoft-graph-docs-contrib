@@ -35,6 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |processingInfo|String|Additional human-readable context about the task processing outcome. This property contains information about edge cases where the task completed successfully but the expected action wasn't performed because the target was already in the desired state, such as when the user was already a member of the specified group. Returns `null` when no additional context is needed. Nullable.|
 |processingStatus|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/enums-identitygovernance-lifecycleworkflowprocessingstatus.md)|Describes the execution status of the `taskProcessingResult`. <br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |startedDateTime|DateTimeOffset|The date time when taskProcessingResult execution started. Value is `null` if task execution hasn't started yet.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|workflowSubject|[microsoft.graph.identityGovernance.workflowSubject](../resources/identitygovernance-workflowsubject.md)|The workflow subject associated with this task processing result. Populated for extensibility and provisioning workflows.|
 
 ## Relationships
 
@@ -63,6 +64,9 @@ The following JSON representation shows the resource type.
   "failureReason": "String",
   "processingInfo": "String",
   "processingStatus": "String",
-  "startedDateTime": "String (timestamp)"
+  "startedDateTime": "String (timestamp)",
+  "workflowSubject": {
+    "@odata.type": "microsoft.graph.identityGovernance.workflowSubject"
+  }
 }
 ```

@@ -33,6 +33,7 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 | acl        | [microsoft.graph.externalConnectors.acl](externalconnectors-acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. Required. |
 | content    | [microsoft.graph.externalConnectors.externalItemContent](externalconnectors-externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. Optional. |
 | id         | String                   | Developer-provided unique ID of the item within the containing [externalConnection](externalconnectors-externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required. |
+| informationProtectionLabel | [microsoft.graph.externalConnectors.externalItemInformationProtectionLabel](../resources/externalconnectors-externaliteminformationprotectionlabel.md) | Specifies the Microsoft Purview sensitivity label for the item. Set the **sensitivityLabelId** property to the GUID of a Purview sensitivity label. The service then applies the label rules to the item. To get the label GUID, use the [Get sensitivityLabel](../api/sensitivitylabel-get.md) API or the [Get-Label](/powershell/module/exchangepowershell/get-label?view=exchange-ps) PowerShell command. Optional. |
 | properties | Object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](externalconnectors-schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required. |
 
 ## Relationships
@@ -65,6 +66,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "properties": "Object",
   "content": { "@odata.type": "microsoft.graph.externalConnectors.externalItemContent" },
+  "informationProtectionLabel": { "@odata.type": "microsoft.graph.externalConnectors.externalItemInformationProtectionLabel" }
 }
 ```
 

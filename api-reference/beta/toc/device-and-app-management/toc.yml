@@ -102,6 +102,8 @@ items:
       href: ../../api/cloudlicensing-usercloudlicensing-post-assignments.md
     - name: Create for group
       href: ../../api/cloudlicensing-groupcloudlicensing-post-assignments.md
+    - name: Create for device
+      href: ../../api/cloudlicensing-devicecloudlicensing-post-assignments.md
     - name: Reprocess assignments
       href: ../../api/cloudlicensing-assignment-reprocessassignments.md
     - name: Get assignedTo
@@ -120,18 +122,6 @@ items:
       href: ../../api/cloudlicensing-assignmenterror-get-assignedto.md
     - name: Get usageRight
       href: ../../api/cloudlicensing-assignmenterror-get-usageright.md
-  - name: Usage right
-    items:
-    - name: Usage right
-      href: ../../resources/cloudlicensing-usageright.md
-    - name: List for group
-      href: ../../api/cloudlicensing-groupcloudlicensing-list-usagerights.md
-    - name: List for user
-      href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
-    - name: Get
-      href: ../../api/cloudlicensing-usageright-get.md
-    - name: List assignments
-      href: ../../api/cloudlicensing-usageright-list-assignments.md
   - name: Waiting member
     items:
     - name: Waiting member
@@ -140,10 +130,14 @@ items:
       href: ../../api/cloudlicensing-allotment-list-waitingmembers.md
     - name: List for user
       href: ../../api/cloudlicensing-usercloudlicensing-list-waitingmembers.md
+    - name: List for device
+      href: ../../api/cloudlicensing-devicecloudlicensing-list-waitingmembers.md
     - name: Get
       href: ../../api/cloudlicensing-waitingmember-get.md
   - name: Complex types
     items:
+    - name: Device cloud licensing
+      href: ../../resources/cloudlicensing-devicecloudlicensing.md
     - name: Group cloud licensing
       href: ../../resources/cloudlicensing-groupcloudlicensing.md
     - name: Service
@@ -214,12 +208,18 @@ items:
       href: ../../api/cloudpc-createsnapshot.md
     - name: Retrieve snapshots
       href: ../../api/cloudpc-retrievesnapshots.md
+    - name: Share snapshot
+      href: ../../api/cloudpc-sharesnapshot.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
     - name: Get launch info (deprecated)
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
     - name: Retrieve frontline Cloud PC detail
       href: ../../api/cloudpc-retrievefrontlinecloudpcdetail.md
+    - name: Trigger a Cloud PC organization action
+      href: ../../api/cloudpc-organizationaction.md
+    - name: Retrieve a Cloud PC organization action detail
+      href: ../../api/cloudpc-retrieveorganizationactiondetail.md
   - name: Cloud PC agent pool
     href: ../../resources/cloudpcagentpool.md
   - name: Cloud PC agent pool user assignment
@@ -366,6 +366,8 @@ items:
       href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
     - name: Update Active Directory domain password
       href: ../../api/cloudpconpremisesconnection-updateaddomainpassword.md
+  - name: Cloud PC organization action detail
+    href: ../../resources/cloudpcorganizationactiondetail.md
   - name: Cloud PC organization settings
     items:
     - name: Cloud PC organization settings
@@ -432,6 +434,8 @@ items:
       href: ../../api/cloudpcprovisioningpolicy-retrievepolicyapplyactionresult.md
     - name: Retrieve policy apply schedule
       href: ../../api/cloudpcprovisioningpolicy-retrievepolicyapplyschedule.md
+    - name: Retrieve policy update status result
+      href: ../../api/cloudpcprovisioningpolicy-retrievepolicyupdatestatusresult.md
   - name: Cloud PC report
     items:
     - name: Cloud PC report
@@ -570,6 +574,8 @@ items:
       href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
     - name: Get total aggregated remote connection reports
       href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC performance metrics report
+      href: ../../api/cloudpcreports-retrievecloudpcperformancemetricsreport.md
     - name: Retrieve Cloud PC tenant metrics report
       href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
     - name: Retrieve cross-region disaster recovery report
@@ -723,7 +729,7 @@ items:
       href: ../../resources/cloudpcmicrosofthostednetworkconfiguration.md
     - name: Cloud PC network configuration
       href: ../../resources/cloudpcnetworkconfiguration.md
-    - name: Cloud PC notification setting
+    - name: Cloud PC notification setting (deprecated)
       href: ../../resources/cloudpcnotificationsetting.md
     - name: Cloud PC on-premises connection status detail
       href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
@@ -733,8 +739,12 @@ items:
       href: ../../resources/cloudpconpremisesconnectionsubnetIpdetail.md
     - name: Cloud PC partner agent install result
       href: ../../resources/cloudpcpartneragentinstallresult.md
+    - name: Cloud PC policy pending apply status result
+      href: ../../resources/cloudpcpolicypendingapplystatusresult.md
     - name: Cloud PC pool capability configuration
       href: ../../resources/cloudpcpoolcapabilityconfiguration.md
+    - name: Cloud PC provisioning configuration
+      href: ../../resources/cloudpcprovisioningconfiguration.md
     - name: Cloud PC provisioning policy assignment
       href: ../../resources/cloudpcprovisioningpolicyassignment.md
     - name: Cloud PC provisioning policy autopatch
@@ -8934,10 +8944,12 @@ items:
       href: ../../resources/windowsupdates-softwareupdatecatalogentry.md
     - name: Software update filter
       href: ../../resources/windowsupdates-softwareupdatefilter.md
-    - name: Updatable asset enrollment
+    - name: Updatable asset enrollment (deprecated)
       href: ../../resources/windowsupdates-updatableassetenrollment.md
     - name: Updatable asset error
       href: ../../resources/windowsupdates-updatableasseterror.md
+    - name: Update category enrollment information
+      href: ../../resources/windowsupdates-updatecategoryenrollmentinformation.md
     - name: Update management enrollment
       href: ../../resources/windowsupdates-updatemanagementenrollment.md
     - name: User experience settings

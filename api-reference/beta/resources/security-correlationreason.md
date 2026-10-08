@@ -22,7 +22,7 @@ This is a flags enumeration. You can combine multiple values in requests.
 
 | Member | Description |
 |:---|:---|
-| repeatedAlertOccurrence | Alerts are correlated because the same alert repeated. |
+| repeatedAlertOccurrence | Alerts are correlated because the same alert was repeated. |
 | sameGeography | Alerts are correlated because they originate from the same geography. |
 | similarArtifacts | Alerts are correlated because they involve similar artifacts. |
 | sameTargetedAsset | Alerts are correlated because they target the same asset. |

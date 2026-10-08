@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all operators supported in the [scoping filters](../resources/synchronization-filter.md).
+List all operators supported in the [scoping filters](../resources/synchronization-filter.md) for a [synchronizationSchema](../resources/synchronization-synchronizationschema.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

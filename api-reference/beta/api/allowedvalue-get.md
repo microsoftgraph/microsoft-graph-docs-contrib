@@ -1,7 +1,7 @@
 ---
 title: "Get allowedValue"
 description: "Read the properties and relationships of an allowedValue object."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > - Attribute Definition Reader
 > - Attribute Definition Administrator
 >
-> - By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+> - By default, Global Administrator and other administrator roles don't have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 

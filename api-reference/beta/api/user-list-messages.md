@@ -22,10 +22,10 @@ To improve the operation response time, use `$select` to specify the exact prope
 
 To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request. This URL includes any query parameters you may have specified in the initial request.
 
-Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses. This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items. It's therefore possible that even in the initial response, the `$skip` value is larger than the page size. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+Don't try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses. This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items. It's therefore possible that even in the initial response, the `$skip` value is larger than the page size. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 You can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user. See an [example](#request-2) below.
-By default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter
+By default, the `GET /me/messages` operation doesn't return the **mentions** property. Use the `$expand` query parameter
 to [find details of each mention in a message](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message).
 
 There are two scenarios where an app can get messages in another user's mail folder:

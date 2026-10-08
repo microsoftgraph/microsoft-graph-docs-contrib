@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Generates a URI for an [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) object the **status** for which is `done`. Each URI can be used to retrieve the instance's review history data. Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) object.
+Generates a URI for an [accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) object the **status** for which is `done`. Each URI can be used to retrieve the instance's review history data. Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the [accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -50,7 +50,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and an [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) in the response body.
+If successful, this action returns a `200 OK` response code and an [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) in the response body.
 
 ## Examples
 

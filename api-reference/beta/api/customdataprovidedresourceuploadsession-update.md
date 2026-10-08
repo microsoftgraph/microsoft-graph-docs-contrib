@@ -128,21 +128,20 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/catalogs('3c9f2b1e-8a4d-4e7f-9d2a-6b3e1c7f5a9d')/accessPackageResources('15eeb4df-bd15-4d8b-9679-e75791dbc1d9')/uploadSessions/$entity",
+  "@odata.type": "#microsoft.graph.customDataProvidedResourceAccessReviewUploadSession",
   "id": "0b64df22-1a83-472c-9556-6c3dc41742b9",
   "referenceId": "ca24f9b9-5917-4971-9b5b-07aae0aa74e8",
   "status": "complete",
   "isUploadDone": true,
   "createdDateTime": "2026-04-01T18:24:07.1484627Z",
-  "source": "BuildingAccessDataTIP",
-  "type": "#microsoft.graph.accessReviewDataUploadTriggerCallbackData",
   "stats": {
     "filesUploaded": 1,
     "totalBytesUploaded": 2394
   },
   "data": {
-    "@odata.type": "#microsoft.graph.accessReviewResourceDataUploadSessionContextData",
-    "accessReviewId": "f5744a40-bca0-4506-a286-a8afac513d1c",
-    "accessReviewInstanceId": "ca24f9b9-5917-4971-9b5b-07aae0aa74e8"
+    "@odata.type": "#microsoft.graph.customDataProvidedResourcePayloads.accessReviewContextData",
+    "reviewDefinitionId": "f5744a40-bca0-4506-a286-a8afac513d1c",
+    "reviewInstanceId": "ca24f9b9-5917-4971-9b5b-07aae0aa74e8"
   },
   "files": [
     {

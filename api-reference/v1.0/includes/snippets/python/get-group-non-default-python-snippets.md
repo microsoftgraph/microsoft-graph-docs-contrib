@@ -10,7 +10,7 @@ from msgraph.generated.groups.item.group_item_request_builder import GroupItemRe
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = GroupItemRequestBuilder.GroupItemRequestBuilderGetQueryParameters(
-		select = ["allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenCount"],
+		select = ["accessType","allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenConversationsCount","unseenCount","unseenMessagesCount"],
 )
 
 request_configuration = RequestConfiguration(

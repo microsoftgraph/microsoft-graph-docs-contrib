@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The recurrence pattern and range. This shared object is used to define the recurrence of [access reviews](accessreviewscheduledefinition.md), [calendar events](event.md), and [access package assignments](accesspackageassignment.md) in Microsoft Entra ID.
+In [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) and [accessReviewHistoryScheduleSettings](../resources/accessreviewhistoryschedulesettings.md), the **recurrence** property uses **patternedRecurrence** to define the recurrence pattern and range. This shared object is also used to define the recurrence of [calendar events](../resources/event.md) and [access package assignments](../resources/accesspackageassignment.md) in Microsoft Entra ID.
 
 ## Properties
 | Property	   | Type	|Description|

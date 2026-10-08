@@ -41,6 +41,7 @@ Inherits from [entity](../resources/entity.md).
 |isWheelChairAccessible |Boolean |Indicates whether the **place** is wheelchair accessible. |
 |parentId |String |The ID of a parent **place**. |
 |phone |String |The phone number of the **place**. |
+|placeId |String |A stable service-level identifier for the **place** object used by Places workloads. |
 |tags |String collection |Custom tags that are associated with the **place** for categorization or filtering. |
 
 ## Relationships
@@ -69,6 +70,7 @@ The following JSON representation shows the resource type.
   "label": "String",
   "parentId": "String",
   "phone": "String",
+  "placeId": "String",
   "tags": ["String"]
 }
 ```

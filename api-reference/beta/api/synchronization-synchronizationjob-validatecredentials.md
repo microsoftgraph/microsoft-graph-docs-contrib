@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Validate that the credentials are valid in the tenant.
+Validate that the credentials are valid in the tenant for a [synchronizationJob](../resources/synchronization-synchronizationjob.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

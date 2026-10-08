@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Dismiss the risk of one or more [riskyAgent](../resources/riskyagent.md) objects. This action sets the targeted agent's **riskLevel** to `none`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

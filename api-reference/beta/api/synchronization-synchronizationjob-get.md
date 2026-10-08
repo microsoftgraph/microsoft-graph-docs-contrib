@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the existing synchronization job and its properties.
+Retrieve an existing [synchronizationJob](../resources/synchronization-synchronizationjob.md) and its properties.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

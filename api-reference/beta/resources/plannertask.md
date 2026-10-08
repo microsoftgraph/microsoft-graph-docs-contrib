@@ -46,6 +46,7 @@ Represents a planner task in Microsoft 365. A planner task is contained in a [pl
 |createdDateTime|DateTimeOffset|Read-only. The date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Information about the origin of the task.|
 |dueDateTime|DateTimeOffset|The date and time at which the task is due. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|goalIds|String collection|Read-only. The IDs of the goals associated with the task.|
 |hasChat|Boolean|Read-only. This value is `true` if the task has chat messages associated with it. Otherwise, `false`.|
 |hasDescription|Boolean|Read-only. This value is `true` if the details object of the task has a nonempty description. Otherwise, `false`.|
 |id|String|Read-only. The unique identifier of the task. The value of this property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
@@ -113,6 +114,7 @@ The following JSON representation shows the resource type.
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "dueDateTime": "String (timestamp)",
+  "goalIds": ["String"],
   "hasChat": "Boolean",
   "hasDescription": "Boolean",
   "id": "String (identifier)",

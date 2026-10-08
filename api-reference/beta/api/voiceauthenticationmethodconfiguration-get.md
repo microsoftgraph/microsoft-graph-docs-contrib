@@ -6,7 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 06/17/2026
 ---
 
 # Get voiceAuthenticationMethodConfiguration
@@ -111,6 +111,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.voiceAuthenticationMethodConfiguration",
     "id": "Voice",
     "state": "enabled",
+    "callerIdNumber": "+1 425-555-0100",
     "includeTargets": [
       {
           "targetType": "group",

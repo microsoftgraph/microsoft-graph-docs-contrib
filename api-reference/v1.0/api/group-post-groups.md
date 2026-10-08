@@ -77,7 +77,7 @@ The following table lists the properties that are required when you create the [
 >
 > - A non-admin user can't add themselves to the group owners collection. For more information, see the related [known issue](/graph/known-issues#non-admin-user-cant-add-self-as-group-owner-during-group-creation-or-update).
 >
-> - The following properties can't be set in the initial POST request and must be set in a subsequent PATCH request: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
+> - The following properties can't be set in the initial POST request and must be set in a subsequent PATCH request: **accessType**, **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isFavorite**, **isSubscribedByMail**, **unseenConversationsCount**, **unseenCount**, **unseenMessagesCount**.
 
 ### groupTypes options
 

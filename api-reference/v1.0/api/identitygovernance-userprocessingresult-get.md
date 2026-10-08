@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Get the user processing result of a user processing result of a [run](../resources/identitygovernance-run.md).
+Get a [userProcessingResult](../resources/identitygovernance-userprocessingresult.md) for a [run](../resources/identitygovernance-run.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

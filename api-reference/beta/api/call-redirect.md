@@ -49,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If more than one target is specified, it's a simultaneous ring call. This means that all of the targets are called at the same time and only the first target that picks up is connected. We support up to 25 targets for simultaneous ring.
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If more than one target is specified, it's a simultaneous ring call. This means that all of the targets are called at the same time and only the first target that picks up is connected. We support up to 25 targets for simultaneous ring.|
 |targetDisposition|String|(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`. This parameter is deprecated. The system automatically identifies whether it's a forward call or simultaneous ring call from the number of targets provided.|
 |timeout|Int32|The timeout (in seconds) for the redirect operation. The range of the timeout value is between 15 and 90 seconds inclusive. The default timeout value is 55 seconds for 1 target and 60 seconds for multiple targets (subject to change). |
 |maskCallee|Boolean|Indicates whether the callee is to be hidden from the caller. If true, then the callee identity is the bot identity. Default: false.|

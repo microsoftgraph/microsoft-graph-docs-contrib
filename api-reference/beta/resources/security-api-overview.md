@@ -92,11 +92,11 @@ You can create advanced hunting [Custom detection rules](/microsoft-365/security
 
 ### Quotas
 
-1.  [Get multiple rules](../api/security-detectionrule-list.md): 10 rules per minute per application, 300 rules per hour per application, 600 rules per hour per tenant
+1.  [Get multiple rules](../api/security-rulesroot-list-detectionrules.md): 10 rules per minute per application, 300 rules per hour per application, 600 rules per hour per tenant
 2.  [Get a single rule](../api/security-detectionrule-get.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
-3.  [Create rule](../api/security-detectionrule-post-detectionRules.md): 10 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
+3.  [Create rule](../api/security-rulesroot-post-detectionrules.md): 10 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
 4.  [Update rule](../api/security-detectionrule-update.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
-5.  [Delete rule](../api/security-detectionrule-delete.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
+5.  [Delete rule](../api/security-rulesroot-delete-detectionrules.md): 100 rules per minute per application, 1,500 rules per hour per application, 1,800 rules per hour per tenant
 
 ## Alerts
 Alerts are detailed warnings about suspicious activities in a customer's tenant that Microsoft or partner security providers have identified and flagged for action. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
@@ -150,6 +150,10 @@ Alerts from the following security providers are available via the legacy **aler
 
 \*\*\* Microsoft Defender for Identity alerts are available via the Microsoft Defender for Cloud Apps integration. This means you get Microsoft Defender for Identity alerts only if you have joined Unified SecOps and connected Microsoft Defender for Identity to Microsoft Defender for Cloud Apps. Learn more about [how to integrate Microsoft Defender for Identity and Microsoft Defender for Cloud Apps](/azure-advanced-threat-protection/atp-mcas-integration).
 
+## Case management (preview)
+
+Use the [case management API](../resources/security-casemanagementroot.md) to create and manage investigation cases in security operations. The API supports generic cases, service-created incident cases, and related tasks, activities, relations, and attachments through the `/security/caseManagement` entry point.
+
 ## Attack simulation and training
 
 [Attack simulation and training](/microsoft-365/security/office-365-security/attack-simulation-training) is part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). This service lets users in a tenant experience a realistic benign phishing attack and learn from it. Social engineering simulation and training experiences for end users help reduce the risk of users being breached via those attack techniques. The attack simulation and training API enables tenant administrators to view launched [simulation](simulation.md) exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
@@ -179,6 +183,8 @@ The Defender for Identity sensors management APIs allows you to:
 - Enable or disable the automatic activation of eligible servers for the unified agent.
 - Activate or deactivate the unified agent on eligible servers.
 - Enable or disable the automatic enabling of the required events auditing configuration during the sensor’s activation.
+- Display a list of sensors that are eligible for migration.
+- Migrate sensors that are eligible for migration.
 
 ## Incidents
 

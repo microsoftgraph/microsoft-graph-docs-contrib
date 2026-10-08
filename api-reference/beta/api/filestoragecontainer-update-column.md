@@ -123,6 +123,7 @@ Content-type: application/json
   "hidden": false,
   "id": "11dfef35-e2f7-4f17-82b0-6fba34445103",
   "indexed": false,
+  "isSearchable": false,
   "name": "Custom Column",
   "readOnly": false,
   "required": true,
@@ -134,4 +135,3 @@ Content-type: application/json
   }
 }
 ```
-

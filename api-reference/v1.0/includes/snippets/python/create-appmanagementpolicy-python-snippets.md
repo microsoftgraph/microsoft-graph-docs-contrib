@@ -12,6 +12,9 @@ from msgraph.generated.models.password_credential_configuration import PasswordC
 from msgraph.generated.models.app_credential_restriction_type import AppCredentialRestrictionType
 from msgraph.generated.models.app_management_restriction_state import AppManagementRestrictionState
 from msgraph.generated.models.key_credential_configuration import KeyCredentialConfiguration
+from msgraph.generated.models.custom_app_management_application_configuration import CustomAppManagementApplicationConfiguration
+from msgraph.generated.models.identifier_uri_configuration import IdentifierUriConfiguration
+from msgraph.generated.models.identifier_uri_restriction import IdentifierUriRestriction
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AppManagementPolicy(
 	display_name = "Credential management policy",
@@ -46,17 +49,15 @@ request_body = AppManagementPolicy(
 		],
 		key_credentials = [
 		],
-		additional_data = {
-				"application_restrictions" : {
-						"identifier_uris" : {
-								"non_default_uri_addition" : {
-										"state" : "disabled",
-										"exclude_apps_receiving_v2_tokens" : True,
-										"exclude_saml" : True,
-								},
-						},
-				},
-		}
+		application_restrictions = CustomAppManagementApplicationConfiguration(
+			identifier_uris = IdentifierUriConfiguration(
+				non_default_uri_addition = IdentifierUriRestriction(
+					state = AppManagementRestrictionState.Disabled,
+					exclude_apps_receiving_v2_tokens = True,
+					exclude_saml = True,
+				),
+			),
+		),
 	),
 )
 

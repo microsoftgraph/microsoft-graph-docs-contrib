@@ -43,6 +43,14 @@ items:
         href: ../../api/backuprestoreroot-list-sharepointbrowsesessions.md
       - name: browse
         href: ../../api/sharepointbrowsesession-browse.md
+  - name: Email notifications setting
+    items:
+    - name: Email notifications setting
+      href: ../../resources/emailnotificationssetting.md
+    - name: Get
+      href: ../../api/emailnotificationssetting-get.md
+    - name: Update
+      href: ../../api/emailnotificationssetting-update.md
   - name: Protection policy
     items:
     - name: Protection policy
@@ -348,6 +356,8 @@ items:
       href: ../../resources/artifactquery.md
     - name: Browse query response item
       href: ../../resources/browsequeryresponseitem.md
+    - name: Notification recipients
+      href: ../../resources/notificationrecipients.md
     - name: Restore point search response
       href: ../../resources/restorepointsearchresponse.md
     - name: Restore point search result

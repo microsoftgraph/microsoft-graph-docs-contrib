@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # List decisions (from a multi-stage access review)
 Namespace: microsoft.graph
 
-Get the decisions from a stage in a multi-stage access review. The decisions in an [accessReviewStage](../resources/accessReviewStage.md) object are represented by an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) object.
+Get the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects from an [accessReviewStage](../resources/accessreviewstage.md) in a multi-stage access review.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

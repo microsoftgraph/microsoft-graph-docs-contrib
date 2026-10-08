@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the CORS settings for the [onPremisesApplicationSegment](onPremisesApplicationSegment.md) resource when publishing an on-premises application through Microsoft Entra application proxy. For more information, see [Understand and solve Microsoft Entra application proxy CORS issues](/azure/active-directory/app-proxy/application-proxy-understand-cors-issues).
+Represents the CORS settings (**corsConfigurations** property) for the [onPremisesApplicationSegment](../resources/onpremisesapplicationsegment.md) resource when publishing an on-premises application through Microsoft Entra application proxy. For more information, see [Understand and solve Microsoft Entra application proxy CORS issues](/azure/active-directory/app-proxy/application-proxy-understand-cors-issues).
 
 
 ## Properties

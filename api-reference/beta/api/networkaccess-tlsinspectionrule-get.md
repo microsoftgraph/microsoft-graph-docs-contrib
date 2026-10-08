@@ -49,7 +49,7 @@ This method supports the `$filter` and `$select` [OData query parameters](/graph
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -130,7 +130,7 @@ Content-Type: application/json
       {
         "@odata.type": "#microsoft.graph.networkaccess.tlsInspectionFqdnDestination",
         "values": [
-          "www.contoso.test.com",
+          "www.contoso.com",
           "*.contoso.org"
         ]
       },

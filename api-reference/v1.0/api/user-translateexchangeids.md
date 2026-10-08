@@ -18,18 +18,54 @@ Translate identifiers of Outlook-related resources between formats.
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "user_translateexchangeids" } -->
-[!INCLUDE [permissions-table](../includes/permissions/user-translateexchangeids-permissions.md)]
-
-## HTTP request
+Permissions to translate Exchange IDs for the signed-in user:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /me/translateExchangeIds
-POST /users/{id|userPrincipalName}/translateExchangeIds
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "user_translateexchangeids", 
+  "requestUrls": ["POST /me/translateExchangeIds"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-translateexchangeids-permissions.md)]
+
+Permissions to translate Exchange IDs for a user:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /users/{id | userPrincipalName}/translateExchangeIds
+```
+
+<!-- { 
+  "blockType": "permissions", 
+  "name": "user_translateexchangeids_2", 
+  "requestUrls": ["POST /users/{id}/translateExchangeIds"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-translateexchangeids-2-permissions.md)]
+
+## HTTP request
+
+To translate Exchange IDs for the signed-in user using delegated (`/me`) permissions:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/translateExchangeIds
+```
+
+To translate Exchange IDs using either delegated or application permissions:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /users/{id | userPrincipalName}/translateExchangeIds
 ```
 
 ## Request headers
@@ -42,8 +78,8 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Parameter | Type | Description |
 |:----------|:-----|:------------|
-| inputIds | String collection | A collection of identifiers to convert. All identifiers in the collection MUST have the same source ID type, and MUST be for items in the same mailbox. Maximum size of this collection is 1000 strings. |
-| sourceIdType | exchangeIdFormat | The ID type of the identifiers in the `InputIds` parameter. |
+| inputIds | String collection | A collection of identifiers to convert. All identifiers in the collection MUST have the same source ID type, and MUST be for items in the same mailbox. Maximum size of this collection is 1,000 strings. |
+| sourceIdType | exchangeIdFormat | The ID type of the identifiers in the `inputIds` parameter. |
 | targetIdType | exchangeIdFormat | The requested ID type to convert to. |
 
 ### exchangeIdFormat values
@@ -152,4 +188,3 @@ Content-type: application/json
   ]
 }
 ```
-

@@ -12,20 +12,16 @@ import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphmodelscustomdataprovidedresourcepayloads "github.com/microsoftgraph/msgraph-beta-sdk-go/models/customdataprovidedresourcepayloads"
 	  //other-imports
 )
 
 requestBody := graphmodels.NewCustomDataProvidedResourceUploadSession()
-source := "BuildingAccessData"
-requestBody.SetSource(&source) 
-type := "#microsoft.graph.accessReviewDataUploadTriggerCallbackData"
-requestBody.SetType(&type) 
-data := graphmodels.NewCustomExtensionData()
-additionalData := map[string]interface{}{
-	"accessReviewId" : "9e4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b", 
-	"accessReviewInstanceId" : "6a9b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b", 
-}
-data.SetAdditionalData(additionalData)
+data := graphmodelscustomdataprovidedresourcepayloads.NewAccessReviewContextData()
+reviewDefinitionId := "9e4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b"
+data.SetReviewDefinitionId(&reviewDefinitionId) 
+reviewInstanceId := "15eeb4df-8a4d-4f8e-9b7a-6b3e1c7f5a9d"
+data.SetReviewInstanceId(&reviewInstanceId) 
 requestBody.SetData(data)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

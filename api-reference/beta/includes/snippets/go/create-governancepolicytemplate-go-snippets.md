@@ -11,19 +11,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodelstenantgovernanceservices "github.com/microsoftgraph/msgraph-beta-sdk-go/models/tenantgovernanceservices"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
-requestBody := graphmodelstenantgovernanceservices.NewGovernancePolicyTemplate()
+requestBody := graphmodels.NewTenantGovernancePolicyTemplate()
 displayName := "Monitor Entra resource configurations"
 requestBody.SetDisplayName(&displayName) 
 description := "Grants Global reader and provisions a custom multi-tenant application to monitor conditional access policies"
 requestBody.SetDescription(&description) 
 
 
-multiTenantApplicationsToProvision := graphmodelstenantgovernanceservices.NewMultiTenantApplicationsToProvision()
+multiTenantApplicationsToProvision := graphmodels.NewMultiTenantApplicationsToProvision()
 appId := "66667777-aaaa-8888-bbbb-9999cccc0000"
 multiTenantApplicationsToProvision.SetAppId(&appId) 
 objectId := "cccccccc-2222-3333-4444-dddddddddddd"
@@ -32,53 +31,53 @@ displayName := "Mega Monitor"
 multiTenantApplicationsToProvision.SetDisplayName(&displayName) 
 
 
-requiredResourceAccess := graphmodelstenantgovernanceservices.NewRequiredResourceAccess()
+applicationsRequiredResourceAccess := graphmodels.NewApplicationsRequiredResourceAccess()
 resourceAppId := "00000003-0000-0000-c000-000000000000"
-requiredResourceAccess.SetResourceAppId(&resourceAppId) 
+applicationsRequiredResourceAccess.SetResourceAppId(&resourceAppId) 
 
 
-resourcePermission := graphmodelstenantgovernanceservices.NewResourcePermission()
+applicationResourcePermission := graphmodels.NewApplicationResourcePermission()
 id := "633e0fce-8c58-4cfb-9495-12bbd5a24f7c"
-resourcePermission.SetId(&id) 
+applicationResourcePermission.SetId(&id) 
 name := "Policy.Read.ConditionalAccess"
-resourcePermission.SetName(&name) 
-type := graphmodels.SCOPE_PERMISSIONTYPE 
-resourcePermission.SetType(&type) 
-resourcePermission1 := graphmodelstenantgovernanceservices.NewResourcePermission()
+applicationResourcePermission.SetName(&name) 
+type := graphmodels.SCOPE_APPLICATIONPERMISSIONTYPE 
+applicationResourcePermission.SetType(&type) 
+applicationResourcePermission1 := graphmodels.NewApplicationResourcePermission()
 id := "e1fe6dd8-ba31-4d61-89e7-88639da4683d"
-resourcePermission1.SetId(&id) 
+applicationResourcePermission1.SetId(&id) 
 name := "User.Read"
-resourcePermission1.SetName(&name) 
-type := graphmodels.SCOPE_PERMISSIONTYPE 
-resourcePermission1.SetType(&type) 
+applicationResourcePermission1.SetName(&name) 
+type := graphmodels.SCOPE_APPLICATIONPERMISSIONTYPE 
+applicationResourcePermission1.SetType(&type) 
 
-permissions := []graphmodelstenantgovernanceservices.ResourcePermissionable {
-	resourcePermission,
-	resourcePermission1,
+permissions := []graphmodels.ApplicationResourcePermissionable {
+	applicationResourcePermission,
+	applicationResourcePermission1,
 }
-requiredResourceAccess.SetPermissions(permissions)
+applicationsRequiredResourceAccess.SetPermissions(permissions)
 
-requiredResourceAccesses := []graphmodelstenantgovernanceservices.RequiredResourceAccessable {
-	requiredResourceAccess,
+requiredResourceAccesses := []graphmodels.ApplicationsRequiredResourceAccessable {
+	applicationsRequiredResourceAccess,
 }
 multiTenantApplicationsToProvision.SetRequiredResourceAccesses(requiredResourceAccesses)
 
-multiTenantApplicationsToProvision := []graphmodelstenantgovernanceservices.MultiTenantApplicationsToProvisionable {
+multiTenantApplicationsToProvision := []graphmodels.MultiTenantApplicationsToProvisionable {
 	multiTenantApplicationsToProvision,
 }
 requestBody.SetMultiTenantApplicationsToProvision(multiTenantApplicationsToProvision)
 
 
-delegatedAdministrationRoleAssignment := graphmodelstenantgovernanceservices.NewDelegatedAdministrationRoleAssignment()
+delegatedAdministrationRoleAssignment := graphmodels.NewDelegatedAdministrationRoleAssignment()
 
 
-roleTemplate := graphmodelstenantgovernanceservices.NewRoleTemplate()
+roleTemplate := graphmodels.NewRoleTemplate()
 id := "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
 roleTemplate.SetId(&id) 
 name := "Global Reader"
 roleTemplate.SetName(&name) 
 
-roleTemplates := []graphmodelstenantgovernanceservices.RoleTemplateable {
+roleTemplates := []graphmodels.RoleTemplateable {
 	roleTemplate,
 }
 delegatedAdministrationRoleAssignment.SetRoleTemplates(roleTemplates)
@@ -87,7 +86,7 @@ id := "ffffffff-5555-6666-7777-aaaaaaaaaaaa"
 group.SetId(&id) 
 delegatedAdministrationRoleAssignment.SetGroup(group)
 
-delegatedAdministrationRoleAssignments := []graphmodelstenantgovernanceservices.DelegatedAdministrationRoleAssignmentable {
+delegatedAdministrationRoleAssignments := []graphmodels.DelegatedAdministrationRoleAssignmentable {
 	delegatedAdministrationRoleAssignment,
 }
 requestBody.SetDelegatedAdministrationRoleAssignments(delegatedAdministrationRoleAssignments)

@@ -35,7 +35,7 @@ POST /print/shares/{id}/jobs/{id}/start
 
 ## Request body
 
-Do not submit a request body for this method. 
+Don't submit a request body for this method. 
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [printJobStatus](../resources/printjobstatus.md) object in the body.

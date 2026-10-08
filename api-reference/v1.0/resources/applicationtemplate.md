@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: 'luleonpla'
 ms.subservice: 'entra-applications'
 doc_type: resourcePageType
-ms.date: 07/16/2024
+ms.date: 05/13/2026
 ---
 
 # applicationTemplate resource type
@@ -27,14 +27,20 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 | Property                   | Type              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | :------------------------- | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | categories                 | String collection | The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`. <br/><br/> Supports `$filter` (`contains`). |
-| description                | String            | A description of the application.                                                                                                                                                                                                                                                                                                                                                                                                               |
-| displayName                | String            | The name of the application. Supports `$filter` (`contains`).                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| homePageUrl                | String            | The home page URL of the application.                                                                                                                                                                                                                                                                                                                                                                                                           |
-| id                         | String            | Unique identifier for the application. Read-only.                                                                                                                                                                                                                                                                                                                                                                                               |
-| logoUrl                    | String            | The URL to get the logo for this application.                                                                                                                                                                                                                                                                                                                                                                                                   |
-| publisher                  | String            | The name of the publisher for this application.                                                                                                                                                                                                                                                                                                                                                                                                 |
-| supportedProvisioningTypes | String collection | The list of provisioning modes supported by this application. The only valid value is `sync`.                                                                                                                                                                                                                                                                                                                                                   |
-| supportedSingleSignOnModes | String collection | The list of single sign-on modes supported by this application. The supported values are `oidc`, `password`, `saml`, and `notSupported`.                                                                                                                                                                                                                                                                                                            |
+| deprecationDate            | Date              | Deprecation date for this application. If specified, the application will be removed from the Microsoft Entra application gallery on this date. |
+| description                | String            | A description of the application. |
+| displayName                | String            | The name of the application. Supports `$filter` (`contains`). |
+| endpoints                  | String collection | A collection of string URLs representing various domains that are used by this application. |
+| homePageUrl                | String            | The home page URL of the application.  |
+| id                         | String            | Unique identifier for the application. Read-only. |
+| isEntraIntegrated          | Boolean           | Indicates whether the application is integrated with Entra ID (for example, through single sign-on or user provisioning). |
+| lastModifiedDateTime       | DateTimeOffset    | The date and time when the data for the application was last updated, represented using ISO 8601 format and always in UTC time. |
+| logoUrl                    | String            | The URL to get the logo for this application. |
+| publisher                  | String            | The name of the publisher for this application. |
+| riskFactors                | [applicationRiskFactors](applicationriskfactors.md) | A comprehensive set of risk assessment data for the application, including general, security, compliance, and legal dimensions. Returned only when `$select` is used. |
+| riskScore                  | [applicationRiskScore](applicationriskscore.md) | Represents the Microsoft-generated numerical risk score assessment for the application. Supported `$orderby` on **total** (for example, `$orderby=riskScore/total desc`). Returned only when `$select` is used. |
+| supportedProvisioningTypes | String collection | The list of provisioning modes supported by this application. The only valid value is `sync`. |
+| supportedSingleSignOnModes | String collection | The list of single sign-on modes supported by this application. The supported values are `oidc`, `password`, `saml`, and `notSupported`. |
 
 ## Relationships
 
@@ -56,12 +62,18 @@ The following JSON representation shows the resource type.
 ```json
 {
   "categories": ["categories-value"],
+  "deprecationDate": "String (Date)",
   "description": "description-value",
   "displayName": "displayName-value",
+  "endpoints": ["String"],
   "homePageUrl": "homePageUrl-value",
   "id": "id-value",
+  "isEntraIntegrated": "Boolean",
+  "lastModifiedDateTime": "String (timestamp)",
   "logoUrl": "logoUrl-value",
   "publisher": "publisher-value",
+  "riskFactors": {"@odata.type": "microsoft.graph.applicationRiskFactors"},
+  "riskScore": {"@odata.type": "microsoft.graph.applicationRiskScore"},
   "supportedSingleSignOnModes": ["supportedSingleSignOnModes-value"]
 }
 ```

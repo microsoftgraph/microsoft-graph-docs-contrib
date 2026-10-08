@@ -38,7 +38,7 @@ In the request body, supply a JSON representation of the [listItem][] resource t
 
 ## Example
 
-Here is an example of how to create a new generic list item.
+The following example shows how to create a new generic list item.
 
 
 # [HTTP](#tab/http)

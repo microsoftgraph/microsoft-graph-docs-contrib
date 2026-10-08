@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Prefer: outlook.timezone | string | Sets the timezone in the email thread to the desired format while replying to an email. Values can be any of the outlook [supportedTimeZones](outlookuser-supportedtimezones.md). If the header is not specified, by default UTC timezone is followed. Optional.|
 
 ## Request body
-This method does not require a request body.
+This method doesn't require a request body.
 
 However, for creating a reply draft using MIME format, provide the MIME content with the applicable Internet message headers, all encoded in **base64** format in the request body.
 

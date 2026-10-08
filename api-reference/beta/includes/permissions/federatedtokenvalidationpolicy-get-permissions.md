@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Policy.Read.All|Policy.ReadWrite.AuthenticationFlows|
+|Delegated (work or school account)|Policy.Read.All|Policy.ReadWrite.FedTokenValidation|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Policy.Read.All|Policy.ReadWrite.AuthenticationFlows|
+|Application|Policy.Read.All|Policy.ReadWrite.FedTokenValidation|
 

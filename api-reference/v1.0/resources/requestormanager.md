@@ -11,8 +11,13 @@ ms.date: 10/04/2024
 
 Namespace: microsoft.graph
 
-Used in the approval settings of an access package assignment policy.
-It's a subtype of [subjectSet](subjectset.md), in which the `@odata.type` value `#microsoft.graph.requestorManager` indicates that a requesting user's manager is to be the approver.  When creating an access package assignment policy approval stage with requestorManager, also include another approver, such as a single user or group member, in case the requesting user doesn't have a manager.
+Used in the approval settings of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+
+It's a subtype of [subjectSet](../resources/subjectset.md), in which the `@odata.type` value `#microsoft.graph.requestorManager` indicates that a requesting user's manager is to be the approver. When creating an access package assignment policy approval stage with requestorManager, also include another approver, such as a single user or group member, in case the requesting user doesn't have a manager.
+
+In entitlement management, this subtype can be configured in:
+- **primaryApprovers** and **escalationApprovers** properties of [approvalStage](../resources/approvalstage.md) and [accessPackageDynamicApprovalStage](../resources/accesspackagedynamicapprovalstage.md)
+- **primaryApprovers**, **fallbackPrimaryApprovers**, **escalationApprovers**, and **fallbackEscalationApprovers** properties of [accessPackageApprovalStage](../resources/accesspackageapprovalstage.md) for an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 ## Properties
 |Property|Type|Description|

@@ -189,7 +189,7 @@ Content-Type: application/json
 
 ## Remarks
 
-OneDrive does not preserve the complete metadata for previous versions of a file.
+OneDrive doesn't preserve the complete metadata for previous versions of a file.
 
 When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
 

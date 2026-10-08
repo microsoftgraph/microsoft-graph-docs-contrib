@@ -43,6 +43,8 @@ In the request body, supply a JSON representation of the [listItem][] resource t
 
 ## Example
 
+### Request
+
 Here is an example of how to create a new generic list item.
 
 
@@ -92,7 +94,7 @@ Content-Type: application/json
 
 ---
 
-## Response
+### Response
 
 If successful, this method returns a [listItem][] in the response body for the created list item.
 

@@ -146,7 +146,7 @@ Content-Length: 735
 
 ### Request
 
-Here is an example which attaches an event with another event as an item attachment.
+The following example shows a request that attaches an event with another event as an item attachment.
 
 
 # [HTTP](#tab/http)
@@ -301,7 +301,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of a full response.
+The following example shows a full response.
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_event",

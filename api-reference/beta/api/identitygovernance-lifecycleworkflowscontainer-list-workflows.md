@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of workflow resources that are associated with lifecycle workflows.
+Get a list of [workflow](../resources/identitygovernance-workflow.md) resources that are associated with Lifecycle Workflows.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

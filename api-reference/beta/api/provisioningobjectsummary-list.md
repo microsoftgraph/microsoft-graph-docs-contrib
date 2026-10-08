@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all provisioning events that occurred in your tenant, such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system. 
+Get all [provisioningObjectSummary](../resources/provisioningobjectsummary.md) events that occurred in your tenant, such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -433,5 +433,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

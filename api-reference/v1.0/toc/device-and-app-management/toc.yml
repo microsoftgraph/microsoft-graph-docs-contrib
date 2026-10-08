@@ -165,6 +165,12 @@ items:
       href: ../../resources/cloudpcreport.md
     - name: Retrieve Cloud PC recommendation reports
       href: ../../api/cloudpcreport-retrievecloudpcrecommendationreports.md
+  - name: Cloud PC service plan
+    items:
+    - name: Cloud PC service plan
+      href: ../../resources/cloudpcserviceplan.md
+    - name: List
+      href: ../../api/virtualendpoint-list-serviceplans.md
   - name: Cloud PC user setting
     items:
     - name: Cloud PC user setting

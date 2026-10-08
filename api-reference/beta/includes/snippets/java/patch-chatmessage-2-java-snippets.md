@@ -29,7 +29,7 @@ HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
 additionalData1.put("conversation", null);
 from.setAdditionalData(additionalData1);
 chatMessage.setFrom(from);
-ItemBody body = new ItemBody();
+ChatMessageBody body = new ChatMessageBody();
 body.setContentType(BodyType.Html);
 body.setContent("<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at><at id=\"1\">TestGlobalBot</at> YEAH");
 chatMessage.setBody(body);

@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the status of the provisioning summary event. 
+Describes the status of the provisioning summary event. This object is configured in the **provisioningStatusInfo** property of [provisioningObjectSummary](../resources/provisioningobjectsummary.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |status|provisioningResult| The possible values are: `success`, `failure`, `skipped`, `warning`, `unknownFutureValue`. Supports `$filter` (`eq`, `contains`).|
-|errorInformation|[provisioningErrorInfo](provisioningerrorinfo.md)| If status isn't success/ skipped details for the error are contained in this.|
+|errorInformation|[provisioningErrorInfo](../resources/provisioningerrorinfo.md)| If status isn't success/ skipped details for the error are contained in this.|
 
 ## JSON representation
 
@@ -54,5 +54,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

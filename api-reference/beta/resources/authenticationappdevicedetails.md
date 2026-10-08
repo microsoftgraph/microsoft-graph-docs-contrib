@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides details about the app and device used during the Microsoft Entra authentication step.
+Provides details about the app and device used during the Microsoft Entra authentication step. This object is configured in the **authenticationAppDeviceDetails** property of [signIn](../resources/signin.md).
 
 ## Properties
 |Property|Type|Description|

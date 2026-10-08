@@ -37,7 +37,7 @@ GET /solutions/backupRestore/sharePointBrowseSessions
 
 ## Optional query parameters
 
-This method does not support query parameters.
+This method doesn't support query parameters.
 
 ## Request headers
 

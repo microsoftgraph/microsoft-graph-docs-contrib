@@ -160,7 +160,7 @@ The following example updates the customers array for a multi-customer appointme
 
 > [!NOTE]
 > - Each object in the **customers** array must include `@odata.type` set to `#microsoft.graph.bookingCustomerInformation`. Omitting this property causes the request to fail.
-> - Include customer details such as **name**, **emailAddress**, and **phone** for each entry. The API does not automatically populate these fields from the **customerId** — if omitted, they will be blank on the appointment.
+> - Include customer details such as **name**, **emailAddress**, and **phone** for each entry. The API doesn't automatically populate these fields from the **customerId** — if omitted, they will be blank on the appointment.
 > - The **customerId** must reference a valid [bookingCustomer](../resources/bookingcustomer.md) that exists in the Booking Calendar. If it doesn't exist, create one using the [Create bookingCustomer](bookingbusiness-post-customers.md) operation.
 > - The associated [bookingService](../resources/bookingservice.md) must have **maximumAttendeesCount** greater than 1 to support multiple customers.
 

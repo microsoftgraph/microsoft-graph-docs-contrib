@@ -14,15 +14,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). It's an abstract base type inherited by the following resource types:
-+ [singleUser](singleuser.md)
-+ [groupMembers](groupmembers.md)
-+ [connectedOrganizationMembers](connectedorganizationmembers.md)
-+ [requestorManager](requestormanager.md)
-+ [internalSponsors](internalsponsors.md)
-+ [externalSponsors](externalsponsors.md)
-+ [targetUserSponsors](targetusersponsors.md)
-+ [targetAgentIdentitySponsorsOrOwners](targetagentidentitysponsorsorowners.md)
+Used in the request, approval, and assignment review settings of an [access package assignment policy](../resources/accesspackageassignmentpolicy.md). It's an abstract base type inherited by the following resource types:
++ [singleUser](../resources/singleuser.md)
++ [groupMembers](../resources/groupmembers.md)
++ [connectedOrganizationMembers](../resources/connectedorganizationmembers.md)
++ [requestorManager](../resources/requestormanager.md)
++ [internalSponsors](../resources/internalsponsors.md)
++ [externalSponsors](../resources/externalsponsors.md)
++ [targetUserSponsors](../resources/targetusersponsors.md)
++ [targetAgentIdentitySponsorsOrOwners](../resources/targetagentidentitysponsorsorowners.md)
+
+In entitlement management, the derived types of this object are configured in the following properties and relationships:
+- **escalationApprovers** property of [accessPackageDynamicApprovalStage](../resources/accesspackagedynamicapprovalstage.md)
+- **primaryApprovers** property of [accessPackageDynamicApprovalStage](../resources/accesspackagedynamicapprovalstage.md)
+- **escalationApprovers** property of [approvalStage](../resources/approvalstage.md)
+- **primaryApprovers** property of [approvalStage](../resources/approvalstage.md)
+- **reviewers** property of [assignmentReviewSettings](../resources/assignmentreviewsettings.md)
+- **allowedRequestors** property of [requestorSettings](../resources/requestorsettings.md)
 
 ## Properties
 

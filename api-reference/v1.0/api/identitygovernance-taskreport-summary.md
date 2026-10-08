@@ -12,7 +12,7 @@ ms.date: 03/13/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Get a [taskReportSummary](../resources/identitygovernance-taskreportsummary.md) object.
+Get a [taskReportSummary](../resources/identitygovernance-taskreportsummary.md) for a [taskReport](../resources/identitygovernance-taskreport.md).
 
 This API provides a summary of [task processing results](identitygovernance-taskreport-list-taskprocessingresults.md) for a specified time period. Because the volume of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 

@@ -12,14 +12,14 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Identity the resource object that initiates the activity. The initiator can be a user, an app, or a system (which is considered an app). For more information, see [Linkable identifiers in Microsoft Entra](/entra/identity/authentication/how-to-authentication-track-linkable-identifiers).
+Identity the resource object that initiates the activity. The initiator can be a user, an app, or a system (which is considered an app). For more information, see [Linkable identifiers in Microsoft Entra](/entra/identity/authentication/how-to-authentication-track-linkable-identifiers). This object is configured in the **initiatedBy** property of [directoryAudit](../resources/directoryaudit.md).
 
 ## Properties
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|app|[appIdentity](appidentity.md)|If the resource initiating the activity is an app, this property indicates all the app related information like **appId** and name.|
-|user|[userIdentity](useridentity.md)|If the resource initiating the activity is a user, this property Indicates all the user related information like user ID and **userPrincipalName**.|
+|app|[appIdentity](../resources/appidentity.md)|If the resource initiating the activity is an app, this property indicates all the app related information like **appId** and name.|
+|user|[userIdentity](../resources/useridentity.md)|If the resource initiating the activity is a user, this property Indicates all the user related information like user ID and **userPrincipalName**.|
 
 ## JSON representation
 

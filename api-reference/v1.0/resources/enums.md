@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 01/20/2026
+ms.date: 08/10/2026
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ms.custom: sfi-ropc-nochange
@@ -140,6 +140,16 @@ Namespace: microsoft.graph
 | active |
 | unknownfuturevalue |
 
+### groupAccessType values
+
+| Member |
+| -------------------- |
+| none |
+| private |
+| secret |
+| public |
+| unknownFutureValue |
+
 ### siteLockState values
 
 | Member         |
@@ -208,6 +218,173 @@ Namespace: microsoft.graph
 |:---|
 |exact|
 |relaxed|
+|unknownFutureValue|
+
+### accessReviewPrincipalScopeType values
+
+|Member|
+|:---|
+|allUsers|
+|guestUsers|
+|inactiveUsers|
+|inactiveGuestUsers|
+|unknownFutureValue|
+
+### accessReviewResourceScopeType values
+
+|Member|
+|:---|
+|group|
+|catalog|
+|servicePrincipal|
+|directoryRole|
+|accessPackageAssignmentPolicy|
+|unknownFutureValue|
+
+### accessReviewReviewerScopeType values
+
+|Member|
+|:---|
+|user|
+|group|
+|self|
+|manager|
+|sponsor|
+|resourceOwner|
+|managerOrSponsor|
+|unknownFutureValue|
+
+### applicationDataType values
+
+|Member|
+|:---|
+|none|
+|codingFiles|
+|creditCards|
+|databaseFiles|
+|documents|
+|mediaFiles|
+|unknownFutureValue|
+
+### csaStarLevel values
+
+|Member|
+|:---|
+|none|
+|attestation|
+|certification|
+|continuousMonitoring|
+|cStarAssessment|
+|selfAssessment|
+|notSupported|
+|unknownFutureValue|
+
+### dataProtection values
+
+|Member|
+|:---|
+|none|
+|impactAssessments|
+|officers|
+|secureCrossBorderDataTransfer|
+|unknownFutureValue|
+
+### dataRetentionLevel values
+
+|Member|
+|:---|
+|none|
+|dataRetained|
+|deletedImmediately|
+|deletedWithin1Month|
+|deletedWithin2Weeks|
+|deletedWithin3Months|
+|deletedWithinMoreThan3Months|
+|unknownFutureValue|
+
+### fedRampLevel values
+
+|Member|
+|:---|
+|none|
+|high|
+|liSaas|
+|low|
+|moderate|
+|notSupported|
+|unknownFutureValue|
+
+### holdType values
+
+|Member|
+|:---|
+|none|
+|private|
+|public|
+|unknownFutureValue|
+
+### passwordPolicy values
+
+|Member|
+|:---|
+|none|
+|changePasswordPeriod|
+|charactersCombination|
+|passwordHistoryAndReuse|
+|passwordLengthLimit|
+|personalInformationUse|
+|unknownFutureValue|
+
+### pciVersion values
+
+|Member|
+|:---|
+|none|
+|v3_2_1|
+|v4|
+|notSupported|
+|unknownFutureValue|
+
+### restEncryptionType values
+
+|Member|
+|:---|
+|none|
+|aes|
+|bitlocker|
+|blowfish|
+|des|
+|rc4|
+|rsa|
+|notSupported|
+|unknownFutureValue|
+
+### sslVersion values
+
+|Member|
+|:---|
+|none|
+|ssl3_0|
+|tls1_0|
+|tls1_1|
+|tls1_2|
+|tls1_3|
+|notSupported|
+|unknownFutureValue|
+
+### userOwnership values
+
+|Member|
+|:---|
+|none|
+|lawfulBasisForProcessing|
+|rightToAccess|
+|rightToBeInformed|
+|rightToDataPortability|
+|rightToObject|
+|rightToRectification|
+|rightToRestrictionOfProcessing|
+|rightsRelatedToAutomatedDecisionMaking|
 |unknownFutureValue|
 
 ### appManagementRestrictionState values
@@ -542,6 +719,16 @@ Namespace: microsoft.graph
 | approver |
 | unknownFutureValue |
 
+### roleType values
+
+| Member |
+| ------ |
+| active |
+| eligible |
+| application |
+| delegated |
+| unknownFutureValue |
+
 ### unifiedRoleManagementPolicyRuleTargetOperations values
 
 | Member |
@@ -665,6 +852,33 @@ Namespace: microsoft.graph
 | allowedRequestor |
 | unknownFutureValue |
 
+### accessPackageSuggestionFilterByCurrentUserOptions values
+
+| Member |
+| ---- |
+| none |
+| relatedPeopleAssignments |
+| assignmentHistory |
+| unknownFutureValue |
+
+### accessPackageSuggestionRelatedPeopleInsightLevel values
+
+| Member |
+| ---- |
+| disabled |
+| count |
+| countAndNames |
+| unknownFutureValue |
+
+### approverInformationVisibility values
+
+| Member |
+| ---- |
+| default |
+| notVisible |
+| visible |
+| unknownFutureValue |
+
 ### accessPackageRequestState values
 
 | Member |
@@ -698,6 +912,15 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | approverRemove |
 
+### accessPackageSubjectLifecycle values
+
+| Member |
+| ------------------ |
+| notDefined |
+| notGoverned |
+| governed |
+| unknownFutureValue |
+
 ### accessPackageSubjectType values
 
 | Member |
@@ -713,6 +936,24 @@ Namespace: microsoft.graph
 | ---------- |
 | configured |
 | proposed |
+
+### connectorType values
+
+| Member |
+| ------------------ |
+| sapIag |
+| unknownFutureValue |
+
+### accessReviewInstanceDecisionItemApplyResult values
+
+| Member |
+| ------------------ |
+| new |
+| appliedSuccessfully |
+| appliedWithUnknownFailure |
+| appliedSuccessfullyButObjectNotFound |
+| applyNotSupported |
+| unknownFutureValue |
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
@@ -738,6 +979,15 @@ Namespace: microsoft.graph
 | assignmentRequestRemoved |
 | assignmentFourteenDaysBeforeExpiration |
 | assignmentOneDayBeforeExpiration |
+| unknownFutureValue |
+
+### customDataProvidedResourceUploadStatus values
+
+| Member |
+| ---- |
+| active |
+| complete |
+| expired |
 | unknownFutureValue |
 
 ### customExtensionCalloutInstanceStatus values
@@ -779,8 +1029,10 @@ Namespace: microsoft.graph
 
 | Member |
 | ------------------- |
-| clientIpAddress |
-| authenticatorAppGps |
+| created |
+| updated |
+| deleted |
+| unknownFutureValue |
 
 ### countryLookupMethodType values
 
@@ -2158,6 +2410,15 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue |
 | systemEventMessage |
 
+### chatMessageImportance values
+
+| Member |
+| ------ |
+| normal |
+| high |
+| urgent |
+| unknownFutureValue |
+
 ### chatMessagePolicyViolationDlpActionType values
 
 | Value |
@@ -2732,6 +2993,25 @@ Possible values for user account types (group membership), per Windows definitio
 | unknown |
 | deliverImmedietly |
 | deliverAfterCampaignEnd |
+| unknownFutureValue |
+
+### notificationEventsType values
+
+| Member |
+| ---- |
+| none |
+| restoreAndPolicyUpdates |
+| unknownFutureValue |
+
+### notificationRecipientsType values
+
+| Member |
+| ---- |
+| none |
+| globalAdmins |
+| backupAdmins |
+| custom |
+| allAdmins |
 | unknownFutureValue |
 
 ### oAuthAppScope values
@@ -3943,6 +4223,7 @@ Possible values for user account types (group membership), per Windows definitio
 |itemMajorVersionLimit|
 |maxStoragePerContainerInBytes|
 |unknownFutureValue|
+|isOfficeRestricted|
 
 
 ### workLocationSource values 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the schema for a given synchronization job or template.
+Retrieve the [synchronizationSchema](../resources/synchronization-synchronizationschema.md) for a given synchronization job or template.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

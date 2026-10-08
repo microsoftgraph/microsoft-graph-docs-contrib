@@ -1,0 +1,64 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "c731f545-89b6-4196-8177-6b0104c55784",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provisionResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [provisionResponse](https://learn.microsoft.com/en-us/graph/api/resources/provisionresponse?view=graph-rest-1.0) resource.",
+          "Target": "provisionResponse"
+        },
+        {
+          "Id": "c731f545-89b6-4196-8177-6b0104c55784",
+          "ApiChange": "Resource",
+          "ChangedApiName": "device",
+          "ChangeType": "Addition",
+          "Description": "Added the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "c731f545-89b6-4196-8177-6b0104c55784",
+          "ApiChange": "Method",
+          "ChangedApiName": "provision",
+          "ChangeType": "Addition",
+          "Description": "Added the [provision](https://learn.microsoft.com/en-us/graph/api/device-provision?view=graph-rest-1.0) method to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        }
+      ],
+      "Id": "c731f545-89b6-4196-8177-6b0104c55784",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-26T00:53:53.5690957Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3e41aaee-3440-4969-b3ce-d2210fd5151c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provisionResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [provisionResponse](https://learn.microsoft.com/en-us/graph/api/resources/provisionresponse?view=graph-rest-beta) resource.",
+          "Target": "provisionResponse"
+        },
+        {
+          "Id": "3e41aaee-3440-4969-b3ce-d2210fd5151c",
+          "ApiChange": "Method",
+          "ChangedApiName": "provision",
+          "ChangeType": "Addition",
+          "Description": "Added the [provision](https://learn.microsoft.com/en-us/graph/api/device-provision?view=graph-rest-beta) method to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        }
+      ],
+      "Id": "3e41aaee-3440-4969-b3ce-d2210fd5151c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-21T19:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }
+  ]
+}

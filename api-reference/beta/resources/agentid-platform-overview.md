@@ -1,8 +1,7 @@
 ---
 title: Microsoft Entra Agent ID APIs in Microsoft Graph
 description: "Use Microsoft Entra Agent ID APIs in Microsoft Graph to create, secure, and monitor AI agent identities."
-author: FaithOmbongi
-ms.author: ombongifaith
+author: "zallison22"
 ms.reviewer: dastrock,yukarppa,etbasser,kvenkit 
 ms.subservice: entra-applications
 ms.topic: overview

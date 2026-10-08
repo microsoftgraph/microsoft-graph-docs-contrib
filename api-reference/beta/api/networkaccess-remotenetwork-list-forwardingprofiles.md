@@ -40,7 +40,7 @@ GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/forwardingProfi
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters.
+This method doesn't support any OData query parameters.
 
 ## Request headers
 |Name|Description|

@@ -114,6 +114,10 @@ items:
     href: ../../api/driveitem-removeretentionlabel.md
   - name: Lock or unlock record
     href: ../../api/driveitem-lockorunlockrecord.md
+  - name: Lock file
+    href: ../../api/driveitem-lock.md
+  - name: Release lock on file
+    href: ../../api/driveitem-releaselock.md
   - name: Create upload session
     href: ../../api/driveitem-createuploadsession.md
   - name: Download file (deprecated)
@@ -168,6 +172,8 @@ items:
     href: ../../api/filestoragecontainer-update.md
   - name: Delete
     href: ../../api/filestorage-delete-containers.md
+  - name: getByUser
+    href: ../../api/filestoragecontainer-getbyuser.md
   - name: Activate
     href: ../../api/filestoragecontainer-activate.md
   - name: Restore deleted
@@ -180,6 +186,8 @@ items:
     href: ../../api/filestoragecontainer-get-drive.md
   - name: List permissions
     href: ../../api/filestoragecontainer-list-permissions.md
+  - name: Get permission
+    href: ../../api/filestoragecontainer-get-permissions.md
   - name: Add permissions
     href: ../../api/filestoragecontainer-post-permissions.md
   - name: Update permissions
@@ -206,6 +214,8 @@ items:
     href: ../../api/filestoragecontainer-update-column.md
   - name: Delete column
     href: ../../api/filestoragecontainer-delete-column.md
+  - name: Upsert columns
+    href: ../../api/filestoragecontainer-patch-columns.md
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
@@ -216,6 +226,8 @@ items:
     href: ../../api/filestoragecontainer-list-recyclebinitem.md
   - name: Lock
     href: ../../api/filestoragecontainer-lock.md
+  - name: Transfer principal ownership
+    href: ../../api/filestoragecontainer-transferprincipalownership.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
   - name: Create migration job
@@ -446,11 +458,15 @@ items:
       href: ../../resources/sharepointusermigrationtaskparameters.md
 - name: Complex types
   items:
+  - name: Drive settings
+    href: ../../resources/drivesettings.md
   - name: File storage container type agent settings
     href: ../../resources/filestoragecontainertypeagentsettings.md
   - name: File storage container type registration settings
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings
     href: ../../resources/filestoragecontainertypesettings.md
+  - name: Lock info
+    href: ../../resources/lockinfo.md
   - name: SharePoint group identity
     href: ../../resources/sharepointgroupidentity.md

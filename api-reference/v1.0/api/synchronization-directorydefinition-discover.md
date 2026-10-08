@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Discover the latest schema definition for provisioning to an application. 
+Discover the latest schema definition for provisioning to an application for the [directoryDefinition](../resources/synchronization-directorydefinition.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

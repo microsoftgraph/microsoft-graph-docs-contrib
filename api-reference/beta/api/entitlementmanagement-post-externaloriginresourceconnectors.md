@@ -52,8 +52,8 @@ You can specify the following properties when creating an **externalOriginResour
 |:---|:---|:---|
 |connectionInfo|[connectionInfo](../resources/connectioninfo.md)|The connection information for the external origin resource connector. Required.|
 |connectorType|connectorType|The type of connector. The possible values are: `sapIag`, `sapAc`, `unknownFutureValue`. Required.|
-|description|String|The description of the external origin resource connector. Optional.|
-|displayName|String|The display name of the external origin resource connector. Optional.|
+|description|String|The description of the external origin resource connector. Required.|
+|displayName|String|The display name of the external origin resource connector. Required.|
 
 
 

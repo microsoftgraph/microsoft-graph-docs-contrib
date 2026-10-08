@@ -20,7 +20,8 @@ Contains an expression that specifies the criteria for search. For more informat
 |Property|Type|Description|
 |:---|:---|:---|
 |artifactType|[restorableArtifact](../resources/artifactquery.md#restorableartifact-values)|The type of artifact to search. The possible values are: `message`, `unknownFutureValue`.|
-|queryExpression|String|Specifies criteria to retrieve artifacts.|
+|structuredQueryExpression|[restoreSearchArtifactQueryExpression](../resources/restoresearchartifactqueryexpression.md)|Contains a structured query expression for searching artifacts.|
+|queryExpression (deprecated)|String|Deprecated. Going forward, use the **structuredQueryExpression** property instead. Specifies criteria to retrieve artifacts.|
 
 ### restorableArtifact values
 
@@ -43,7 +44,10 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.artifactQuery",
   "queryExpression": "String",
-  "artifactType": "String"
+  "artifactType": "String",
+  "structuredQueryExpression": {
+    "@odata.type": "#microsoft.graph.restoreSearchArtifactQueryExpression"
+  }
 }
 ```
 

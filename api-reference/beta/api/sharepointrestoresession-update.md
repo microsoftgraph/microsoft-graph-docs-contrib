@@ -49,8 +49,9 @@ PATCH /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|A collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects. Required.|
 |granularSiteRestoreArtifacts|[granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) collection|A collection of [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) objects. Required.|
+|policyId|String|The identifier of the protection policy that scopes the restore session. When supplied, the service validates that referenced protection units belong to this policy.|
+|siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|A collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects. Required.|
 
 
 To remove a **siteRestoreArtifact** from a site restore session, specify the @removed annotation in the request body for the respective restore point artifact together with the ID of the [siteRestoreArtifact](../resources/siterestoreartifact.md).
@@ -83,6 +84,7 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestore
 Content-Type: application/json
 
 {
+  "policyId": "99999999-aaaa-bbbb-cccc-dddddddddddd",
   "siteRestoreArtifacts@delta": [
     {
       "restorePoint": { "id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" }, //Create a new site restore artifact and add it under the Restore Session.

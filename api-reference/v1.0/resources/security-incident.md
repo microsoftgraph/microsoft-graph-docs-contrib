@@ -24,6 +24,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |[Get incident](../api/security-incident-get.md)|[microsoft.graph.security.incident](../resources/security-incident.md)|Read the properties and relationships of an [incident](../resources/security-incident.md) object.|
 |[Update incident](../api/security-incident-update.md)|[microsoft.graph.security.incident](../resources/security-incident.md)|Update the properties of an [incident](../resources/security-incident.md) object.|
 |[Create comment for incident](../api/security-incident-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [incident](../resources/security-incident.md) based on the specified incident **id** property.|
+|[Merge incidents](../api/security-incident-mergeincidents.md)|[microsoft.graph.security.mergeResponse](../resources/security-mergeresponse.md)|Merge multiple [incident](../resources/security-incident.md) resources into a single incident.|
 
 
 ## Properties
@@ -35,7 +36,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |createdDateTime|DateTimeOffset|Time when the incident was first created.|
 |customTags|String collection|Array of custom tags associated with an incident.|
 |description|String|Description of the incident.|
-|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |displayName|String|The incident name.|
 |id|String|Unique identifier to represent the incident.|
 |incidentWebUrl|String|The URL for the incident page in the Microsoft 365 Defender portal.|

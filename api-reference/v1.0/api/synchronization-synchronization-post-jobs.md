@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Create new synchronization job with a default synchronization schema. The job is created in a disabled state. Call [Start job](synchronization-synchronizationjob-start.md) to start synchronization.
+Create a new [synchronizationJob](../resources/synchronization-synchronizationjob.md) with a default synchronization schema. The job is created in a disabled state. Call [Start job](../api/synchronization-synchronizationjob-start.md) to start synchronization.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

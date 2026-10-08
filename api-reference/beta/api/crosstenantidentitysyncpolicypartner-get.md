@@ -1,7 +1,7 @@
 ---
 title: "Get crossTenantIdentitySyncPolicyPartner"
 description: "Get the user and group synchronization policy of a partner-specific configuration."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

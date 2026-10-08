@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents application segments for an on-premises nonweb application published through Microsoft Entra application proxy.
+Represents application segments for an on-premises nonweb application published through Microsoft Entra application proxy. This object is configured in the **segmentsConfiguration** property of [onPremisesPublishing](../resources/onpremisespublishing.md).
 
 
 Inherits from [segmentConfiguration](../resources/segmentconfiguration.md).

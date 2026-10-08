@@ -169,7 +169,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enrichedAuditLogs",
           "ChangeType": "Addition",
-          "Description": "Added the [enrichedAuditLogs](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-enrichedAuditLogs?view=graph-rest-beta) resource.",
+          "Description": "Added the **enrichedAuditLogs** resource.",
           "Target": "enrichedAuditLogs"
         },
         {
@@ -289,7 +289,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enrichedAuditLogsSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [enrichedAuditLogsSettings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-enrichedAuditLogsSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the **enrichedAuditLogsSettings** resource type.",
           "Target": "enrichedAuditLogsSettings"
         },
         {
@@ -1117,7 +1117,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webCategories",
           "ChangeType": "Addition",
-          "Description": "Added the **webCategories** property to the [connectivity](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-conenctivity?view=graph-rest-beta) resource type.",
+          "Description": "Added the **webCategories** property to the **connectivity** resource type.",
           "Target": "connectivity"
         }
       ],
@@ -1399,6 +1399,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-03-18T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7c7cb00f-1859-4426-98e1-ebab58a0e7fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "priority",
+          "ChangeType": "Addition",
+          "Description": "Added the **priority** property to the [forwardingPolicyLink](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-forwardingPolicyLink?view=graph-rest-beta) resource.",
+          "Target": "forwardingPolicyLink"
+        }
+      ],
+      "Id": "7c7cb00f-1859-4426-98e1-ebab58a0e7fc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-01T23:50:31.1056025Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
     }

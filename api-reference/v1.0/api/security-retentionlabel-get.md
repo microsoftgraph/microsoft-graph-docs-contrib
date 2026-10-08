@@ -60,7 +60,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET  https://graph.microsoft.com/v1.0/security/labels/retentionLabels/{retentionLabelId}
+GET https://graph.microsoft.com/v1.0/security/labels/retentionLabels/{retentionLabelId}
 ```
 
 # [C#](#tab/csharp)

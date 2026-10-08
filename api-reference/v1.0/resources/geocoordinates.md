@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **GeoCoordinates** resource provides geographic coordinates and elevation of a location based on metadata contained within the file.
+The **GeoCoordinates** resource provides geographic coordinates and elevation of a location based on metadata contained within the file. This object is configured in the **geoCoordinates** property of [signInLocation](../resources/signinlocation.md).
 If a [**DriveItem**](driveitem.md) has a non-null **location** facet, the item represents a file with a known location assocaited with it.
 
 ## JSON representation

@@ -56,7 +56,7 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and [workbookTable](../resources/workbooktable.md) object in the response body.
 
 ## Example
-Here's an example of how to call this API.
+The following example shows how to call this API.
 ### Request
 The following example shows a request.
 

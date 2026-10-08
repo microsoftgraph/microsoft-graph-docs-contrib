@@ -126,6 +126,8 @@ Content-Type: application/json
 
 ---
 
+---
+
 ### Response
 
 The following example shows the response.
@@ -209,6 +211,8 @@ Content-Type: application/json
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-virtualeventpresenter-external-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 
@@ -297,6 +301,8 @@ Content-Type: application/json
 
 ---
 
+---
+
 ### Response
 
 The following example shows the response.
@@ -380,6 +386,8 @@ Content-Type: application/json
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-virtualeventpresenter-external-4-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

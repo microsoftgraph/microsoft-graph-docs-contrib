@@ -32,7 +32,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |id|String| Read-only.|
 |isValidationOnly|Boolean|If set, doesn't add the resource.|
 |justification|String|The requestor's justification for adding or removing the resource.|
-|requestState|String| The outcome of whether the service was able to add the resource to the catalog. The value is `Delivered` if the resource was added or removed. Read-Only.|
+|requestState|String| The outcome of whether the service was able to add the resource to the catalog. The value is `Delivered` if the resource was added or removed. Read-only.|
 |requestStatus|String|Read-only.|
 |requestType|String|Use `AdminAdd` to add a resource, if the caller is an administrator or resource owner, `AdminUpdate` to update a resource, or `AdminRemove` to remove a resource. |
 

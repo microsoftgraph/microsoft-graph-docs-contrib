@@ -814,6 +814,7 @@ Namespace: microsoft.graph.security
 |microsoftDefenderForCloud|
 |microsoftSentinel|
 |microsoftThreatIntelligence|
+|microsoftSecurityForAI|
 
 ### serviceStatus values
 
@@ -825,6 +826,114 @@ Namespace: microsoft.graph.security
 |disabled|
 |onboarding|
 |unknown|
+|unknownFutureValue|
+
+
+### antispamDirectionality values
+
+|Member|
+|:---|
+|unknown|
+|inbound|
+|outbound|
+|intraOrg|
+|unknownFutureValue|
+
+### deliveryAction values
+
+|Member|
+|:---|
+|unknown|
+|deliveredToJunk|
+|delivered|
+|blocked|
+|replaced|
+|unknownFutureValue|
+
+### deliveryLocation values
+
+|Member|
+|:---|
+|unknown|
+|inbox_folder|
+|junkFolder|
+|deletedFolder|
+|quarantine|
+|onprem_external|
+|failed|
+|dropped|
+|others|
+|unknownFutureValue|
+
+### eventSource values
+
+|Member|
+|:---|
+|system|
+|admin|
+|user|
+|unknownFutureValue|
+
+### remediationAction values
+
+|Member|
+|:---|
+|moveToJunk|
+|moveToInbox|
+|hardDelete|
+|softDelete|
+|moveToDeletedItems|
+|unknownFutureValue|
+|moveToQuarantine|
+
+### remediationSeverity values
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|unknownFutureValue|
+
+### threatType values
+
+|Member|
+|:---|
+|unknown|
+|spam|
+|malware|
+|phish|
+|none|
+|unknownFutureValue|
+
+### timelineEventType values
+
+|Member|
+|:---|
+|originalDelivery|
+|systemTimeTravel|
+|dynamicDelivery|
+|userUrlClick|
+|reprocessed|
+|zap|
+|quarantineRelease|
+|air|
+|unknown|
+|unknownFutureValue|
+
+### verdictCategory values
+
+|Member|
+|:---|
+|none|
+|malware|
+|phish|
+|siteUnavailable|
+|spam|
+|decryptionFailed|
+|unsupportedUriScheme|
+|unsupportedFileType|
+|undefined|
 |unknownFutureValue|
 
 <!--

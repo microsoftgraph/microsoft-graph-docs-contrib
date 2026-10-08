@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Retrieve the schema for a given synchronization job or template.
+Retrieve the [synchronizationSchema](../resources/synchronization-synchronizationschema.md) for a given synchronization job or template.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

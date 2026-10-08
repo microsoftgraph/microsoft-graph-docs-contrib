@@ -67,7 +67,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object in the response body. If the platformCredentialAuthenticationMethod object specified by ID doesn't exist, this method returns a `404 Not Found` error code.
 
 ## Examples
 

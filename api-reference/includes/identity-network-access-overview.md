@@ -1,8 +1,7 @@
 ---
 title: Manage Microsoft Entra identity and network access by using Microsoft Graph
 description: Manage Microsoft Entra identity and network access by using Microsoft Graph
-author: FaithOmbongi
-ms.author: ombongifaith
+author: nase
 ms.date: 03/26/2026
 ms.topic: include
 ms.subservice: entra-id

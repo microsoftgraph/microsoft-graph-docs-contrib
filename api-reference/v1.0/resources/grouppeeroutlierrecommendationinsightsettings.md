@@ -12,9 +12,13 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents the user-to-group affiliation insights that help reviewers make decisions for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object. Microsoft Entra ID assesses the affiliation of the user with other members within the group and provides _approve_ or _deny_ recommendation insights to the approvers.
+Use **groupPeerOutlierRecommendationInsightSettings** to configure user-to-group affiliation insights in the following properties:
+- [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md): **recommendationInsightSettings**
+- [accessReviewStageSettings](../resources/accessreviewstagesettings.md): **recommendationInsightsSettings**
 
-Inherits from [accessReviewRecommendationInsightSetting](accessReviewRecommendationInsightSetting.md).
+Microsoft Entra ID assesses the affiliation of the user with other members within the group and provides _approve_ or _deny_ recommendation insights to the approvers.
+
+Inherits from [accessReviewRecommendationInsightSetting](../resources/accessreviewrecommendationinsightsetting.md).
 
 ## Properties
 None.

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for the relationships that expose the Microsoft Entra ID Governance Lifecycle Workflows API capabilities.
+A container for the relationships that expose the Microsoft Entra ID Governance Lifecycle Workflows API capabilities. This object is configured in the **lifecycleWorkflows** relationship of the [identityGovernance](../resources/identitygovernance.md) resource.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -31,6 +31,8 @@ Inherits from [entity](../resources/entity.md).
 |customTaskExtensions|[microsoft.graph.identityGovernance.customTaskExtension](../resources/identitygovernance-customtaskextension.md) collection|The **customTaskExtension** instance.|
 |deletedItems|[deletedItemContainer](../resources/deleteditemcontainer.md)|Deleted workflows in your lifecycle workflows instance.|
 |insights|[microsoft.graph.identityGovernance.insights](../resources/identitygovernance-insights.md)|The insight container holding workflow insight summaries for a tenant.|
+|lifecyclePolicies|[microsoft.graph.identityGovernance.lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md) collection|The lifecycle policies in this tenant.|
+|lifecyclePolicyPriorityConfigurations|[microsoft.graph.identityGovernance.lifecyclePolicyPriorityConfiguration](../resources/identitygovernance-lifecyclepolicypriorityconfiguration.md) collection|The priority ordering of lifecycle policies per subject type.|
 |settings|[microsoft.graph.identityGovernance.lifecycleManagementSettings](../resources/identitygovernance-lifecyclemanagementsettings.md)|The settings of the lifecycle workflows instance.|
 |taskDefinitions|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md) collection|The definition of tasks within the lifecycle workflows instance.|
 |workflows|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|The workflows in the lifecycle workflows instance.|

@@ -1,7 +1,7 @@
 ---
 title: "lifecycleWorkflowProcessingStatus enum type"
 description: "Microsoft Graph identityGovernance lifecycleWorkflowProcessingStatus enumeration type"
-author: "owinfreyATL"
+author: "AlexFilipin"
 ms.date: 03/27/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -12,11 +12,18 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph.identityGovernance
 
-Describes the execution status of a lifecycle workflow run, task processing result, task report, or user processing result.
+Describes the execution status of a lifecycle workflow. This enum is used by the **processingStatus** property of the following resources:
+
+- [run](../resources/identitygovernance-run.md)
+- [task processing result](../resources/identitygovernance-taskprocessingresult.md)
+- [task report](../resources/identitygovernance-taskreport.md)
+- [user processing result](../resources/identitygovernance-userprocessingresult.md)
+- [subject processing result](../resources/identitygovernance-subjectprocessingresult.md)
+- [awaited workflow processing result](../resources/identitygovernance-awaitedworkflowprocessingresult.md)
 
 ## lifecycleWorkflowProcessingStatus values
 
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `canceling`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `canceling`, `quarantined`.
 
 |Member|
 |:---|
@@ -28,6 +35,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |failed|
 |unknownFutureValue|
 |canceling|
+|quarantined|
 
 <!--
 {

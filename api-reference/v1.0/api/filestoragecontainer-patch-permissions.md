@@ -1,6 +1,6 @@
 ---
 title: "Upsert permissions"
-description: "Upsert (create or update) up to 10 permissions on a fileStorageContainer in a single request."
+description: "Upsert (create or update) up to 40 permissions on a fileStorageContainer in a single request."
 author: "RushwantKoppolu"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -12,7 +12,7 @@ ms.date: 05/11/2026
 
 Namespace: microsoft.graph
 
-Upsert (create or update) up to 10 [permission](../resources/permission.md) objects on a [fileStorageContainer](../resources/filestoragecontainer.md) in a single request. Delta patch allows the caller to perform multiple operations (create, update) on multiple permissions with a single request.
+Upsert (create or update) up to 40 [permission](../resources/permission.md) objects on a [fileStorageContainer](../resources/filestoragecontainer.md) in a single request. Delta patch allows the caller to perform multiple operations (create, update) on multiple permissions with a single request.
 
 > [!IMPORTANT]
 > Permissions added to a [fileStorageContainer](../resources/filestoragecontainer.md) apply to all its [driveItem](../resources/driveitem.md) objects, regardless of any unique or restrictive permissions applied to those items.
@@ -52,7 +52,7 @@ In the request body, supply a JSON object with the following properties.
 |Name|Type|Description|
 |:---|:---|:---|
 |@context|String|OData annotation that identifies the payload type. Must be set to `#$delta` to signal a delta patch operation. Required.|
-|value|[permission](../resources/permission.md) collection|A collection of up to 10 **permission** objects to process. Required.|
+|value|[permission](../resources/permission.md) collection|A collection of up to 40 **permission** objects to process. Required.|
 
 Each entry in the **value** collection represents one operation on a [permission](../resources/permission.md). The presence of the **id** property determines how the entry is interpreted. Include the ID of an existing permission to update it, or omit the ID to create a new permission.
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the functions currently supported in the [attributeMappingSource](../resources/synchronization-attributemappingsource.md).
+List all the functions currently supported in the [attributeMappingSource](../resources/synchronization-attributemappingsource.md) for a [synchronizationSchema](../resources/synchronization-synchronizationschema.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

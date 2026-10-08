@@ -1,6 +1,6 @@
 ---
 title: "List virtualEventRegistrations"
-description: "Get a list of all registration records of a webinar."
+description: "Get a list of all registration records of a webinar or town hall."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,7 @@ ms.date: 10/15/2024
 # List virtualEventRegistrations
 Namespace: microsoft.graph
 
-Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).
+Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -33,13 +33,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To list the registrations of a webinar:
+
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations
 ```
 
+To list the registrations of a town hall:
+
+```http
+GET /solutions/virtualEvents/townhalls/{townhallId}/registrations
+```
+
 ## Optional query parameters
 
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

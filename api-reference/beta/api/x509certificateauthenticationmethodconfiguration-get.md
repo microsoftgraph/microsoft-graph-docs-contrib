@@ -36,7 +36,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x50
 ```
 
 ## Optional query parameters
-This method does not support the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -113,6 +113,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
     "id": "X509Certificate",
     "state": "disabled",
+    "requireCertificateSidAlignment": false,
     "certificateUserBindings": [
         {
             "x509CertificateField": "PrincipalName",
@@ -158,4 +159,3 @@ Content-Type: application/json
     "excludeTargets": []
 }
 ```
-
