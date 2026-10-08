@@ -1,6 +1,6 @@
 ---
 title: "searchHit resource type"
-description: "Description of searchHit entity"
+description: "Represents a single result within a collection of Microsoft Graph search results."
 ms.localizationpriority: medium
 author: "njerigrevious"
 ms.subservice: "search"
@@ -24,16 +24,17 @@ Represents a single result within the list of search results.
 |:-------------|:------------|:------------|
 |contentSource|String|The name of the content source that the **externalItem** is part of.|
 |hitId|String|The internal identifier for the item. The format of the identifier varies based on the entity type. For details, see [hitId format](#hitid-format).|
-|isCollapsed|Boolean|Indicates whether the current result is collapses when the **collapseProperties** property in the [searchRequest](searchrequest.md) is used.|
+|isCollapsed|Boolean|Indicates whether the current result is collapsed when the **collapseProperties** property in the [searchRequest](../resources/searchrequest.md) is used.|
 |rank|Int32|The rank or the order of the result.|
-|resource|[entity](entity.md)|The underlying Microsoft Graph representation of the search result.|
-|resultTemplateId|String|ID of the result template for rendering the search result. This ID must map to a display layout in the **resultTemplates** dictionary, included in the [searchresponse](searchresponse.md) as well.|
+|resource|[entity](../resources/entity.md)|The underlying Microsoft Graph representation of the search result.|
+|resultTemplateId|String|ID of the result template for rendering the search result. This ID must map to a display layout in the **resultTemplates** dictionary, included in the [searchResponse](../resources/searchresponse.md) as well.|
+|sensitivityLabel|[sensitivityLabelInfo](../resources/sensitivitylabelinfo.md)|The sensitivity label applied to the search result resource, or `null` if the resource has no sensitivity label.|
 |summary|String|A summary of the result, if a summary is available.|
 |_id (deprecated)|String| Renamed as **hitId**. The internal identifier for the item.|
 |_score (deprecated)|Int32|Renamed as **rank**. The score or the order of the result.|
-|_summary (deprecated)|String|Renamed as **summary**. A summary of the result (if summary is available).|
 |_sortField (deprecated)|String|This property has been removed.|
-|_source (deprecated)|[entity](entity.md)|Renamed as **resource**. The underlying Graph representation of the search result.|
+|_source (deprecated)|[entity](../resources/entity.md)|Renamed as **resource**. The underlying Graph representation of the search result.|
+|_summary (deprecated)|String|Renamed as **summary**. A summary of the result (if summary is available).|
 
 ### hitId format
 | Entity type     | ID format        | Example |
@@ -67,17 +68,21 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "hitId": "String",
-  "rank": 1,
-  "summary": "String",
-  "resultTemplateId": "String",
   "contentSource": "String",
+  "hitId": "String",
+  "isCollapsed": "Boolean",
+  "rank": "Int32",
   "resource": { "@odata.type": "microsoft.graph.entity" },
+  "resultTemplateId": "String",
+  "sensitivityLabel": {
+    "@odata.type": "microsoft.graph.sensitivityLabelInfo"
+  },
+  "summary": "String",
   "_id": "String",
-  "_score": 1024,
+  "_score": "Int32",
   "_sortField": "String",
-  "_summary": "String",
-  "_source": { "@odata.type": "microsoft.graph.entity" }
+  "_source": { "@odata.type": "microsoft.graph.entity" },
+  "_summary": "String"
 }
 ```
 

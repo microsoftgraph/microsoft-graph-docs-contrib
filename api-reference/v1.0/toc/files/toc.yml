@@ -194,6 +194,8 @@ items:
     href: ../../api/filestoragecontainer-update-column.md
   - name: Delete column
     href: ../../api/filestoragecontainer-delete-column.md
+  - name: Upsert columns
+    href: ../../api/filestoragecontainer-patch-columns.md
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Delete recycle bin items

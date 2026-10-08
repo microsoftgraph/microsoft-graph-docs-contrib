@@ -29,9 +29,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainertyperegistration-delete-applicationpermissiongrants-permissions.md)]
 
->**Note:**
+> [!NOTE]
 > * When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
 > * If the `FileStorageContainerTypeReg.Selected` permission is used, changes are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application that makes the call.
+> * Deleted permission grants may take up to one hour to propagate.
 
 ## HTTP request
 

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Chats\Item\Messages\ForwardToChat\ForwardToChatPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
-use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -17,7 +17,7 @@ $requestBody = new ForwardToChatPostRequestBody();
 $requestBody->setTargetChatIds(['19:e2ed97baac8e4bffbb91299a38996790@thread.v2', 	]);
 $requestBody->setMessageIds(['1728088338580', 	]);
 $additionalMessage = new ChatMessage();
-$additionalMessageBody = new ItemBody();
+$additionalMessageBody = new ChatMessageBody();
 $additionalMessageBody->setContent('Hello World');
 $additionalMessage->setBody($additionalMessageBody);
 $requestBody->setAdditionalMessage($additionalMessage);

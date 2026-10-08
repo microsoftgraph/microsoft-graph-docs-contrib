@@ -9,6 +9,9 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\Security\CaseManagement\GenericCase;
 use Microsoft\Graph\Beta\Generated\Models\Security\CaseManagement\CustomFieldValues;
 use Microsoft\Graph\Beta\Generated\Models\Security\CaseManagement\CustomFieldStringValue;
+use Microsoft\Graph\Beta\Generated\Models\Security\CaseManagement\CustomFieldNumberValue;
+use Microsoft\Graph\Beta\Generated\Models\Security\CaseManagement\CustomFieldDateTimeValue;
+use Microsoft\Graph\Beta\Generated\Models\Security\CaseManagement\CustomFieldOptionsValue;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -22,9 +25,22 @@ $requestBody->setAssignedTo('john.doe@contoso.com');
 $requestBody->setPriority('high');
 $customFields = new CustomFieldValues();
 $additionalData = [
-	'customerImpact' => [
+	'Customer impact' => [
 		'@odata.type' => '#microsoft.graph.security.caseManagement.customFieldStringValue',
 		'value' => 'Executive mailbox affected',
+	],
+	'Affected users' => [
+		'@odata.type' => '#microsoft.graph.security.caseManagement.customFieldNumberValue',
+		'value' => 12,
+	],
+	'Review date' => [
+		'@odata.type' => '#microsoft.graph.security.caseManagement.customFieldDateTimeValue',
+		'valueDateTime' => new \DateTime('2026-06-15T09:00:00Z'),
+	],
+	'Affected services' => [
+		'@odata.type' => '#microsoft.graph.security.caseManagement.customFieldOptionsValue',
+		'values' => [
+'Exchange Online', 'Microsoft Teams', ],
 	],
 ];
 $customFields->setAdditionalData($additionalData);

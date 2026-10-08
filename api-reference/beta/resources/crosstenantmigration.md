@@ -2,7 +2,7 @@
 title: "crossTenantMigration resource type"
 description: "Represents a cross-tenant capability for mailbox migration."
 author: "lasharma"
-ms.date: 04/23/2026
+ms.date: 08/07/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cross-tenant capability for mailbox migration. This capability allows tenant administrators to control cross-tenant mailbox migration scenarios.
+Represents authorization for cross-tenant mailbox migration from a partner tenant. Available only in a partner policy.
 
 Inherits from [m365CapabilityBase](../resources/m365capabilitybase.md).
 
@@ -46,8 +46,6 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.crossTenantMigration",
   "name": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "inboundAccess": {
-    "@odata.type": "microsoft.graph.m365CapabilityInboundAccess"
-  }
+  "inboundAccess": {"@odata.type": "microsoft.graph.m365CapabilityInboundAccess"}
 }
 ```

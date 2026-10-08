@@ -60,6 +60,7 @@ If successful, this action returns a `200 OK` response code and a [customDataPro
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customdataprovidedresourceuploadsessionthis.uploadfile"
@@ -78,6 +79,12 @@ principalId,principalType,permissionId,permissionName,permissionDescription,perm
 7c9e6679-7425-40de-944b-e07fc1f90ae7,user,6ba7b810-9dad-11d1-80b4-00c04fd430c9,Reserve,Book conference room,Administrative
 --MyPartBoundary198374--
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customdataprovidedresourceuploadsessionthisuploadfile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -14,7 +14,9 @@ $params = @{
 	verifierDid = "did:web:eu.did-dev.contoso.io"
 	priority = 0
 	verifiedIdProfileConfiguration = @{
+		methodType = "tenantCustomCredential"
 		type = "verifiedIdentity"
+		manifestUrl = "https://verifiedid.contoso.com/manifest"
 		acceptedIssuer = "did:web:eu.did-dev.contoso.io"
 		claimBindingSource = "directory"
 		claimBindings = @(
@@ -32,12 +34,22 @@ $params = @{
 		isEnabled = $true
 		sourcePhotoClaimName = "portrait"
 	}
-	verifiedIdUsageConfigurations = @(
-		@{
-			isEnabledForTestOnly = $true
-			purpose = "recovery"
-		}
+	mobileDriversLicenseConfiguration = @{
+		acceptedRegions = @(
+		"region-code"
 	)
+	documentStandard = "document-standard"
+}
+verifiedIdUsageConfigurations = @(
+	@{
+		isEnabledForTestOnly = $true
+		purpose = "verification"
+	}
+)
+selfServiceIssuance = @{
+	isEnabled = $true
+	issuanceUrl = "https://verifiedid.contoso.com/issue"
+}
 }
 
 New-MgBetaIdentityVerifiedIdProfile -BodyParameter $params

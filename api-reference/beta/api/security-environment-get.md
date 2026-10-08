@@ -22,11 +22,7 @@ Get a specific [environment](../resources/security-environment.md) associated wi
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-environment-get-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_environment_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-environment-get-permissions.md)]
 
 [!INCLUDE [rbac-security-zone-apis-read](../includes/rbac-for-apis/rbac-security-zone-apis-read.md)]
@@ -94,6 +90,10 @@ GET https://graph.microsoft.com/beta/security/zones/05cfec937c214892a14448562ef4
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-environment-aws-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-environment-aws-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

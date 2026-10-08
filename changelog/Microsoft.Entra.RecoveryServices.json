@@ -3,6 +3,152 @@
     {
       "ChangeList": [
         {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "recovery",
+          "ChangeType": "Addition",
+          "Description": "Added the **recovery** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-v1.0) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "recoveryAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **recoveryAction** enumeration type.",
+          "Target": "recoveryAction"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "recoveryStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **recoveryStatus** enumeration type.",
+          "Target": "recoveryStatus"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "resourceTypeName",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceTypeName** enumeration type.",
+          "Target": "resourceTypeName"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entityTypeAndIds",
+          "ChangeType": "Addition",
+          "Description": "Added the [entityTypeAndIds](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-entitytypeandids?view=graph-rest-v1.0) resource.",
+          "Target": "entityTypeAndIds"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recoveryJobEntityNameAndIdsFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the [recoveryJobEntityNameAndIdsFilter](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recoveryjobentitynameandidsfilter?view=graph-rest-v1.0) resource.",
+          "Target": "recoveryJobEntityNameAndIdsFilter"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recoveryJobEntityNamesFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the [recoveryJobEntityNamesFilter](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recoveryjobentitynamesfilter?view=graph-rest-v1.0) resource.",
+          "Target": "recoveryJobEntityNamesFilter"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recoveryJobFilteringCriteriaBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [recoveryJobFilteringCriteriaBase](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recoveryjobfilteringcriteriabase?view=graph-rest-v1.0) resource.",
+          "Target": "recoveryJobFilteringCriteriaBase"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recovery",
+          "ChangeType": "Addition",
+          "Description": "Added the [recovery](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recovery?view=graph-rest-v1.0) resource.",
+          "Target": "recovery"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recoveryChangeObjectBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [recoveryChangeObjectBase](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recoverychangeobjectbase?view=graph-rest-v1.0) resource.",
+          "Target": "recoveryChangeObjectBase"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recoveryJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [recoveryJob](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recoveryjob?view=graph-rest-v1.0) resource.",
+          "Target": "recoveryJob"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recoveryJobBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [recoveryJobBase](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recoveryjobbase?view=graph-rest-v1.0) resource.",
+          "Target": "recoveryJobBase"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recoveryPreviewJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [recoveryPreviewJob](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recoverypreviewjob?view=graph-rest-v1.0) resource.",
+          "Target": "recoveryPreviewJob"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Resource",
+          "ChangedApiName": "snapshot",
+          "ChangeType": "Addition",
+          "Description": "Added the [snapshot](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-snapshot?view=graph-rest-v1.0) resource.",
+          "Target": "snapshot"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/entrarecoveryservices-recoveryjobbase-cancel?view=graph-rest-v1.0) method to the [recoveryJobBase](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recoveryjobbase?view=graph-rest-v1.0) resource.",
+          "Target": "recoveryJobBase"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Method",
+          "ChangedApiName": "getChanges",
+          "ChangeType": "Addition",
+          "Description": "Added the [getChanges](https://learn.microsoft.com/en-us/graph/api/entrarecoveryservices-recoverypreviewjob-getchanges?view=graph-rest-v1.0) method to the [recoveryPreviewJob](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recoverypreviewjob?view=graph-rest-v1.0) resource.",
+          "Target": "recoveryPreviewJob"
+        },
+        {
+          "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+          "ApiChange": "Method",
+          "ChangedApiName": "getFailedChanges",
+          "ChangeType": "Addition",
+          "Description": "Added the [getFailedChanges](https://learn.microsoft.com/en-us/graph/api/entrarecoveryservices-recoveryjob-getfailedchanges?view=graph-rest-v1.0) method to the [recoveryJob](https://learn.microsoft.com/en-us/graph/api/resources/entrarecoveryservices-recoveryjob?view=graph-rest-v1.0) resource.",
+          "Target": "recoveryJob"
+        }
+      ],
+      "Id": "8bf4ba3e-beb0-4e48-a1a8-bc07b26e0232",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-14T19:39:39.2833556Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft Entra backup and recovery"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f0ff7001-86c3-4aee-bc70-5f5723464471",
           "ApiChange": "Relationship",
           "ChangedApiName": "recovery",

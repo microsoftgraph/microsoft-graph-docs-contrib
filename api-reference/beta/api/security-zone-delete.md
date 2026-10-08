@@ -22,11 +22,7 @@ Delete a [zone](../resources/security-zone.md) object by providing the **zoneId*
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-zone-delete-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_zone_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-zone-delete-permissions.md)]
 
 [!INCLUDE [rbac-security-zone-apis-write](../includes/rbac-for-apis/rbac-security-zone-apis-write.md)]
@@ -88,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/security/zones/f6e190cba2f64bcba703694ae
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-zone-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-zone-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -132,7 +132,6 @@ Content-Type: application/json
 
 ---
 
-
 ---
 
 #### Response
@@ -206,7 +205,6 @@ POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ```http
 Content-Type: application/json

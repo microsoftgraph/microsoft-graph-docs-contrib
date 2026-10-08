@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the pending apply status of a [provisioning policy](../resources/cloudpcprovisioningpolicy.md) to determine whether unapplied changes exist for Cloud PCs.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
