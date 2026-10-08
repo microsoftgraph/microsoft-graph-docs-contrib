@@ -9,7 +9,7 @@ from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.chat_message import ChatMessage
 from msgraph_beta.generated.models.chat_message_from_identity_set import ChatMessageFromIdentitySet
 from msgraph_beta.generated.models.identity import Identity
-from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.chat_message_body import ChatMessageBody
 from msgraph_beta.generated.models.body_type import BodyType
 from msgraph_beta.generated.models.chat_message_hosted_content import ChatMessageHostedContent
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
@@ -24,7 +24,7 @@ request_body = ChatMessage(
 			}
 		),
 	),
-	body = ItemBody(
+	body = ChatMessageBody(
 		content_type = BodyType.Html,
 		content = "<div><div>\n<div><span><img height=\"250\" src=\"../hostedContents/1/$value\" width=\"176.2295081967213\" style=\"vertical-align:bottom; width:176px; height:250px\"></span>\n\n</div>\n\n\n</div>\n</div>",
 	),

@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Reports\GetMicrosoft365CopilotUserCountTrend(period='{period}')\GetMicrosoft365CopilotUserCountTrendWithPeriodRequestBuilderGetRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Reports\GetMicrosoft365CopilotUserCountTrend(period='{period}',version='@version')\GetMicrosoft365CopilotUserCountTrendWithPeriodversion='@version'RequestBuilderGetRequestConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new GetMicrosoft365CopilotUserCountTrendWithPeriodRequestBuilderGetRequestConfiguration();
-$queryParameters = GetMicrosoft365CopilotUserCountTrendWithPeriodRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new GetMicrosoft365CopilotUserCountTrendWithPeriodversion='@version'RequestBuilderGetRequestConfiguration();
+$queryParameters = GetMicrosoft365CopilotUserCountTrendWithPeriodversion='@version'RequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->format = "text/csv";
 $requestConfiguration->queryParameters = $queryParameters;
 

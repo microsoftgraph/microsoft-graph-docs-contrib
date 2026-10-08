@@ -289,6 +289,11 @@
             "source_path": "api-reference/v1.0/resources/formatprotection.md",
             "redirect_url": "/graph/api/resources/workbookformatprotection.md?view=graph-rest-1.0",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "concepts/teams-licenses.md",
+            "redirect_url": "/graph/",
+            "redirect_document_id": false
         }
     ]
 }

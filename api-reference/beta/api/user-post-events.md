@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "iamgirishck"
 ms.subservice: "outlook"
-ms.date: 04/05/2024
+ms.date: 07/29/2026
 ---
 
 # Create event
@@ -21,7 +21,7 @@ By default, the **allowNewTimeProposals** property is set to true when an event 
 You can specify the time zone for each of the start and end times of the event as part of their values, because the
 **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server.
 
-When an event is sent, the server sends invitations to all the attendees.
+When you create an event that includes attendees, the server sends invitations to all attendees. This ensures consistency between the organizer's and attendees' views of the event and can't be configured.
 
 **Setting the location in an event**
 

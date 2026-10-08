@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Upload a file in a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) created for an [accessPackageResource](../resources/accesspackageresource.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -58,6 +60,7 @@ If successful, this action returns a `200 OK` response code and a [customDataPro
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "customdataprovidedresourceuploadsessionthis.uploadfile"
@@ -76,6 +79,12 @@ principalId,principalType,permissionId,permissionName,permissionDescription,perm
 7c9e6679-7425-40de-944b-e07fc1f90ae7,user,6ba7b810-9dad-11d1-80b4-00c04fd430c9,Reserve,Book conference room,Administrative
 --MyPartBoundary198374--
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/customdataprovidedresourceuploadsessionthisuploadfile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

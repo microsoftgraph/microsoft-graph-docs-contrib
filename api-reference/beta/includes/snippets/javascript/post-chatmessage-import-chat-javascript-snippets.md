@@ -20,7 +20,7 @@ const chatMessage = {
       }
    },
    body: {
-      contentType: 'html',
+      messageBodyContentType: 'html',
       content: 'Hello World'
    }
 };

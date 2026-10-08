@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerGoalStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerGoalStatus** enumeration type.",
+          "Target": "plannerGoalStatus"
+        },
+        {
+          "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "goals",
+          "ChangeType": "Addition",
+          "Description": "Added the **goals** relationship to the [planner](https://learn.microsoft.com/graph/api/resources/planner?view=graph-rest-beta) resource.",
+          "Target": "planner"
+        },
+        {
+          "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerGoal",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerGoal** resource.",
+          "Target": "plannerGoal"
+        },
+        {
+          "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "goals",
+          "ChangeType": "Addition",
+          "Description": "Added the **goals** relationship to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "goalIds",
+          "ChangeType": "Addition",
+          "Description": "Added the **goalIds** property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        }
+      ],
+      "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-03T22:32:29.3715134Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
           "ApiChange": "Enumeration",
           "ChangedApiName": "historyEntityType",

@@ -27,6 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_put_content" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-put-content-permissions.md)]
 
+> [!NOTE]
+> Replacing the contents of a file protected with a sensitivity label is not supported with app-only authentication. Use delegated permissions (user context) instead.
+
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request

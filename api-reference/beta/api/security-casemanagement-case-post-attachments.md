@@ -14,17 +14,15 @@ Namespace: microsoft.graph.security.caseManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an [attachment](../resources/security-casemanagement-attachment.md) for a [case](../resources/security-casemanagement-case.md).
+Create [attachment](../resources/security-casemanagement-attachment.md) metadata for a [case](../resources/security-casemanagement-case.md). This method doesn't upload the file content. After creating the attachment, use [Upload attachment content](../api/security-casemanagement-attachment-upload-content.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-casemanagement-case-post-attachments-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_casemanagement_case_post_attachments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-casemanagement-case-post-attachments-permissions.md)]
 [!INCLUDE [rbac-case-management-apis](../includes/rbac-for-apis/rbac-case-management-apis.md)]
 
@@ -53,12 +51,12 @@ You can specify the following properties when creating an **attachment**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the resource. Required.|
 |description|String|The description of the resource. Optional.|
-|fileSize|Int64|The size of the attachment in bytes. Optional.|
-|fileExtension|String|The file extension of the attachment. Optional.|
-|scanResult|[microsoft.graph.security.caseManagement.attachmentScanResult](../resources/security-casemanagement-attachment.md#attachmentscanresult-values)|The malware scan result for the attachment. Required.|
-|origin|[microsoft.graph.security.caseManagement.attachmentOrigin](../resources/security-casemanagement-attachmentorigin.md)|The origin reference for the attachment. Optional.|
+|displayName|String|The display name of the attachment. The value must be unique among attachments in the same case; creating another attachment with the same display name isn't allowed. Required.|
+|fileExtension|String|The file extension of the attachment. The service normalizes the value to include a leading period. Optional.|
+|fileSize|Int64|The size of the attachment in bytes. The maximum file size is 100 MB. Required.|
+
+The **origin** and **scanResult** properties are service controlled and can't be supplied.
 
 ## Response
 
@@ -69,6 +67,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_casemanagement_create_case_attachment"
@@ -83,15 +82,39 @@ Content-Type: application/json
   "displayName": "Case MS-001 Attachment",
   "description": "Screenshot of suspicious sign-in activity",
   "fileSize": 1000,
-  "fileExtension": "jpeg",
-  "scanResult": "noThreatsFound",
-  "origin": {
-    "@odata.type": "microsoft.graph.security.caseManagement.attachmentOrigin",
-    "resourceId": "987757fb-6ef4-1061-17e7-9de0d088e1dd",
-    "resourceType": "case"
-  }
+  "fileExtension": "jpeg"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/security-casemanagement-create-case-attachment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/security-casemanagement-create-case-attachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/security-casemanagement-create-case-attachment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-casemanagement-create-case-attachment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-create-case-attachment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-create-case-attachment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-create-case-attachment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -116,12 +139,7 @@ Content-Type: application/json
   "displayName": "Case MS-001 Attachment",
   "description": "Screenshot of suspicious sign-in activity",
   "fileSize": 1000,
-  "fileExtension": "jpeg",
-  "scanResult": "noThreatsFound",
-  "origin": {
-    "@odata.type": "microsoft.graph.security.caseManagement.attachmentOrigin",
-    "resourceId": "987757fb-6ef4-1061-17e7-9de0d088e1dd",
-    "resourceType": "case"
-  }
+  "fileExtension": ".jpeg",
+  "scanResult": "unscanned"
 }
 ```

@@ -21,8 +21,8 @@ Defines the mapping between a source attribute and a Verifiable ID claim.
 |Property|Type|Description|
 |:---|:---|:---|
 |matchConfidenceLevel|matchConfidenceLevel|The confidence level for matching the claim to the source attribute. The possible values are: `exact`, `relaxed`, `unknownFutureValue`.|
-|sourceAttribute|String|Source attribute value|
-|verifiedIdClaim|String|Entra ID attribute value|
+|sourceAttribute|String|The source attribute from the directory or credential.|
+|verifiedIdClaim|String|The claim name in the verified ID credential.|
 
 ## Relationships
 None.

@@ -6,40 +6,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\TenantGovernanceServices\GovernancePolicyTemplate;
-use Microsoft\Graph\Beta\Generated\Models\TenantGovernanceServices\MultiTenantApplicationsToProvision;
-use Microsoft\Graph\Beta\Generated\Models\TenantGovernanceServices\RequiredResourceAccess;
-use Microsoft\Graph\Beta\Generated\Models\TenantGovernanceServices\ResourcePermission;
-use Microsoft\Graph\Beta\Generated\Models\TenantGovernanceServices\PermissionType;
-use Microsoft\Graph\Beta\Generated\Models\TenantGovernanceServices\DelegatedAdministrationRoleAssignment;
-use Microsoft\Graph\Beta\Generated\Models\TenantGovernanceServices\RoleTemplate;
+use Microsoft\Graph\Beta\Generated\Models\TenantGovernancePolicyTemplate;
+use Microsoft\Graph\Beta\Generated\Models\MultiTenantApplicationsToProvision;
+use Microsoft\Graph\Beta\Generated\Models\ApplicationsRequiredResourceAccess;
+use Microsoft\Graph\Beta\Generated\Models\ApplicationResourcePermission;
+use Microsoft\Graph\Beta\Generated\Models\ApplicationPermissionType;
+use Microsoft\Graph\Beta\Generated\Models\DelegatedAdministrationRoleAssignment;
+use Microsoft\Graph\Beta\Generated\Models\RoleTemplate;
 use Microsoft\Graph\Beta\Generated\Models\Group;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new GovernancePolicyTemplate();
+$requestBody = new TenantGovernancePolicyTemplate();
 $requestBody->setDisplayName('Monitor Entra resource configurations');
 $requestBody->setDescription('Grants Global reader and provisions a custom multi-tenant application to monitor conditional access policies');
 $multiTenantApplicationsToProvisionMultiTenantApplicationsToProvision1 = new MultiTenantApplicationsToProvision();
 $multiTenantApplicationsToProvisionMultiTenantApplicationsToProvision1->setAppId('66667777-aaaa-8888-bbbb-9999cccc0000');
 $multiTenantApplicationsToProvisionMultiTenantApplicationsToProvision1->setObjectId('cccccccc-2222-3333-4444-dddddddddddd');
 $multiTenantApplicationsToProvisionMultiTenantApplicationsToProvision1->setDisplayName('Mega Monitor');
-$requiredResourceAccessesRequiredResourceAccess1 = new RequiredResourceAccess();
-$requiredResourceAccessesRequiredResourceAccess1->setResourceAppId('00000003-0000-0000-c000-000000000000');
-$permissionsResourcePermission1 = new ResourcePermission();
-$permissionsResourcePermission1->setId('633e0fce-8c58-4cfb-9495-12bbd5a24f7c');
-$permissionsResourcePermission1->setName('Policy.Read.ConditionalAccess');
-$permissionsResourcePermission1->setType(new PermissionType('scope'));
-$permissionsArray []= $permissionsResourcePermission1;
-$permissionsResourcePermission2 = new ResourcePermission();
-$permissionsResourcePermission2->setId('e1fe6dd8-ba31-4d61-89e7-88639da4683d');
-$permissionsResourcePermission2->setName('User.Read');
-$permissionsResourcePermission2->setType(new PermissionType('scope'));
-$permissionsArray []= $permissionsResourcePermission2;
-$requiredResourceAccessesRequiredResourceAccess1->setPermissions($permissionsArray);
+$requiredResourceAccessesApplicationsRequiredResourceAccess1 = new ApplicationsRequiredResourceAccess();
+$requiredResourceAccessesApplicationsRequiredResourceAccess1->setResourceAppId('00000003-0000-0000-c000-000000000000');
+$permissionsApplicationResourcePermission1 = new ApplicationResourcePermission();
+$permissionsApplicationResourcePermission1->setId('633e0fce-8c58-4cfb-9495-12bbd5a24f7c');
+$permissionsApplicationResourcePermission1->setName('Policy.Read.ConditionalAccess');
+$permissionsApplicationResourcePermission1->setType(new ApplicationPermissionType('scope'));
+$permissionsArray []= $permissionsApplicationResourcePermission1;
+$permissionsApplicationResourcePermission2 = new ApplicationResourcePermission();
+$permissionsApplicationResourcePermission2->setId('e1fe6dd8-ba31-4d61-89e7-88639da4683d');
+$permissionsApplicationResourcePermission2->setName('User.Read');
+$permissionsApplicationResourcePermission2->setType(new ApplicationPermissionType('scope'));
+$permissionsArray []= $permissionsApplicationResourcePermission2;
+$requiredResourceAccessesApplicationsRequiredResourceAccess1->setPermissions($permissionsArray);
 
-$requiredResourceAccessesArray []= $requiredResourceAccessesRequiredResourceAccess1;
+$requiredResourceAccessesArray []= $requiredResourceAccessesApplicationsRequiredResourceAccess1;
 $multiTenantApplicationsToProvisionMultiTenantApplicationsToProvision1->setRequiredResourceAccesses($requiredResourceAccessesArray);
 
 $multiTenantApplicationsToProvisionArray []= $multiTenantApplicationsToProvisionMultiTenantApplicationsToProvision1;

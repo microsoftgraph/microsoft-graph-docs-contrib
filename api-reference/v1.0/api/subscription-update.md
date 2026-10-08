@@ -131,6 +131,9 @@ The request body must contain either the `expirationDateTime` or `notificationUr
 
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
 
+> [!NOTE]
+> A `404 Not Found` response indicates that the subscription no longer exists. For example, it already expired and was removed by the service, or it was deleted. The subscription can't be renewed in this state, so retrying the update keeps failing. To avoid missing change notifications, [create a new subscription](subscription-post-subscriptions.md) instead of retrying the update. To reduce how often this happens, renew subscriptions well before they expire and use [lifecycle notifications](/graph/change-notifications-lifecycle-events) to renew subscriptions proactively.
+
 For details about how errors are returned, see [Error responses][error-response].
 
 ## Example

@@ -18,6 +18,12 @@ Use webhooks to subscribe to users' presence information and get notifications w
 > [!NOTE]
 > Effective June 30 2024, to get changes that occurred to an active meeting call, we recommend that you subscribe to [rich notifications](#rich-presence-notifications).
 
+This API is available in the following [national cloud deployments](/graph/deployments).
+
+| Global service     | US Government L4 | US Government L5 (DOD) | China operated by 21Vianet |
+|--------------------|------------------|------------------------|----------------------------|
+| :white_check_mark: | :x:              | :x:                    | :x:                        |
+
 ## Permissions
 
 | Permission type                       | Permissions (from least to most privileged)              | Supported versions |

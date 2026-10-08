@@ -3,6 +3,8 @@ title: "List governanceRequests"
 description: "Get a list of governance requests."
 author: "hafowler"
 ms.date: 03/10/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: apiPageType
@@ -10,13 +12,13 @@ doc_type: apiPageType
 
 # List governanceRequests
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [governanceRequest](../resources/tenantgovernanceservices-governancerequest.md) objects and their properties. This API method returns all governance requests where the calling tenant is either the governing tenant or the governed tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -107,7 +109,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.tenantGovernanceServices.governanceRequest)"
+  "@odata.type": "Collection(microsoft.graph.governanceRequest)"
 }
 -->
 ``` http
@@ -117,7 +119,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.tenantGovernanceServices.governanceRequest",
+      "@odata.type": "#microsoft.graph.governanceRequest",
       "id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
       "governingTenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
       "governingTenantName": "Contoso, Inc",
@@ -170,4 +172,3 @@ Content-Type: application/json
   ]
 }
 ```
-

@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-governancePolicyTemplates, err := graphClient.Directory().TenantGovernance().GovernancePolicyTemplates().ByGovernancePolicyTemplateId("governancePolicyTemplate-id").Get(context.Background(), nil)
+governancePolicyTemplates, err := graphClient.Directory().TenantGovernance().GovernancePolicyTemplates().ByTenantGovernancePolicyTemplateId("tenantGovernancePolicyTemplate-id").Get(context.Background(), nil)
 
 
 ```

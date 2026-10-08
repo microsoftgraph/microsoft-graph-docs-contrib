@@ -2,7 +2,7 @@
 title: "fileStorageContainerTypeSettings resource type"
 description: "Represents the settings associated with a fileStorageContainerType."
 author: "javieralvarezchiang"
-ms.date: 11/12/2025
+ms.date: 09/21/2026
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
@@ -20,9 +20,10 @@ Represents the settings associated with a [fileStorageContainerType](../resource
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|consumingTenantOverridables|fileStorageContainerTypeSettingsOverride|A comma-separated list of settings that can be overridden in the consuming tenant. The possible values are: `urlTemplate`, `isDiscoverabilityEnabled`, `isSearchEnabled`, `isItemVersioningEnabled`, `itemMajorVersionLimit`, `maxStoragePerContainerInBytes`, `unknownFutureValue`.|
+|consumingTenantOverridables|fileStorageContainerTypeSettingsOverride|A comma-separated list of settings that can be overridden in the consuming tenant. The possible values are: `urlTemplate`, `isDiscoverabilityEnabled`, `isSearchEnabled`, `isItemVersioningEnabled`, `itemMajorVersionLimit`, `maxStoragePerContainerInBytes`, `unknownFutureValue`, `isOfficeRestricted`.|
 |isDiscoverabilityEnabled|Boolean|Indicates whether items from containers are surfaced in experiences such as **My Activity** or Microsoft 365.|
 |isItemVersioningEnabled|Boolean|Indicates whether item versioning is enabled.|
+|isOfficeRestricted|Boolean|Indicates whether Office apps (Word, Excel, and PowerPoint) for desktop and web are restricted for containers of this container type.|
 |isSearchEnabled|Boolean|Indicates whether search is enabled.|
 |isSharingRestricted|Boolean|Only the manager and owner can share files in the container if restricted sharing is enabled.|
 |itemMajorVersionLimit|Int64|Maximum number of versions. Versioning must be enabled (`"isItemVersioningEnabled"=true`).|
@@ -46,6 +47,7 @@ The following JSON representation shows the resource type.
   "consumingTenantOverridables": "fileStorageContainerTypeSettingsOverride",
   "isDiscoverabilityEnabled": "Boolean",
   "isItemVersioningEnabled": "Boolean",
+  "isOfficeRestricted": "Boolean",
   "isSearchEnabled": "Boolean",
   "isSharingRestricted": "Boolean",
   "itemMajorVersionLimit": "Int64",

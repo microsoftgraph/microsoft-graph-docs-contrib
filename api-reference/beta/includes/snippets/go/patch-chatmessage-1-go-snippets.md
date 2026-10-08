@@ -47,7 +47,7 @@ from.SetConversation(&conversation)
 }
 from.SetAdditionalData(additionalData)
 requestBody.SetFrom(from)
-body := graphmodels.NewItemBody()
+body := graphmodels.NewChatMessageBody()
 contentType := graphmodels.TEXT_BODYTYPE 
 body.SetContentType(&contentType) 
 content := "Edit text only"

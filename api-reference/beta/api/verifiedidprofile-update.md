@@ -1,7 +1,7 @@
 ---
 title: "Update verifiedIdProfile"
 description: "Update the properties of a verifiedIdProfile object."
-author: "tilarso" 
+author: "tilarso"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -51,15 +51,17 @@ PATCH /identity/verifiedId/profiles/{verifiedIdProfileId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String| Display name for the verified Id profile. Required.|
-|description|String| Description for the verified Id profile. Required.|
-|lastModifiedDateTime|DateTimeOffset|DateTime the profile was last modified. Optional.|
-|state|verifiedIdProfileState| Enablement state for the profile. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
-|verifierDid|String| Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange.  Required.|
-|priority|Int32|Defines profile processing priority if multiple profiles are configured.  Optional.|
-|verifiedIdProfileConfiguration|[verifiedIdProfileConfiguration](../resources/verifiedidprofileconfiguration.md)| Set of properties expressing the accepted issuer, claims binding, and credential type. Required.|
-|faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)| Set of properties configuring Entra Verified ID Face Check behavior.  Required.|
-|verifiedIdUsageConfigurations|[verifiedIdUsageConfiguration](../resources/verifiedidusageconfiguration.md) collection| Collection defining the usage purpose for the profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`. Required.|
+|description|String|Description for the verified ID profile.|
+|faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)|Set of properties configuring Microsoft Entra Verified ID Face Check behavior.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the profile was last modified.|
+|mobileDriversLicenseConfiguration|[mobileDriversLicenseConfiguration](../resources/mobiledriverslicenseconfiguration.md)|Configuration for accepting mobile driver's licenses.|
+|name|String|Display name for the verified ID profile.|
+|priority|Int32|Defines profile processing priority if multiple profiles are configured.|
+|selfServiceIssuance|[verifiedIdSelfServiceIssuance](../resources/verifiedidselfserviceissuance.md)|Configuration for self-service issuance.|
+|state|verifiedIdProfileState|Enablement state for the profile. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
+|verifiedIdProfileConfiguration|[verifiedIdProfileConfiguration](../resources/verifiedidprofileconfiguration.md)|Set of properties expressing the accepted issuer, claims binding, and credential type.|
+|verifiedIdUsageConfigurations|[verifiedIdUsageConfiguration](../resources/verifiedidusageconfiguration.md) collection|Collection defining the usage purpose for the profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`, `verification`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `verification`.|
+|verifierDid|String|Decentralized identifier (DID) string that represents the verifier in the verifiable credential exchange.|
 
 
 
@@ -83,14 +85,27 @@ PATCH https://graph.microsoft.com/beta/identity/verifiedId/profiles/ca15ec56-7ad
 Content-Type: application/json
 
 {
+  "verifiedIdProfileConfiguration": {
+    "methodType": "tenantCustomCredential",
+    "manifestUrl": "https://verifiedid.contoso.com/manifest"
+  },
+  "mobileDriversLicenseConfiguration": {
+    "acceptedRegions": [
+      "region-code"
+    ],
+    "documentStandard": "document-standard"
+  },
+  "selfServiceIssuance": {
+    "isEnabled": true,
+    "issuanceUrl": "https://verifiedid.contoso.com/issue"
+  },
   "verifiedIdUsageConfigurations": [
-      {
-          "isEnabledForTestOnly": false,
-          "purpose": "recovery"
-      }
+    {
+      "isEnabledForTestOnly": false,
+      "purpose": "verification"
+    }
   ]
 }
-  
 ```
 
 # [C#](#tab/csharp)

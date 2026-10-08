@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "64728a28-e10d-4a61-a2a8-b8ab7f979d6c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "resourceAccountKeyAuthenticationMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccountKeyAuthenticationMethods** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "64728a28-e10d-4a61-a2a8-b8ab7f979d6c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceAccountKeyAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceAccountKeyAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/resourceAccountKeyAuthenticationMethod?view=graph-rest-beta) resource.",
+          "Target": "resourceAccountKeyAuthenticationMethod"
+        }
+      ],
+      "Id": "64728a28-e10d-4a61-a2a8-b8ab7f979d6c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-03T20:07:44.2258254Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
           "ApiChange": "Resource",
           "ChangedApiName": "webauthnAuthenticationExtensionsClientInputs",

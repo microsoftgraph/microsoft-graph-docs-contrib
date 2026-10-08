@@ -57,7 +57,7 @@ If successful, this method returns `201 Created` response code and a [message](.
 
 ## Example
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 

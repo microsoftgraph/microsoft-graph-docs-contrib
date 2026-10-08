@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let fileStorageContainer = await client.api('/storage/fileStorage/containers/getByUser(userPrincipalName='user@contoso.onmicrosoft.com', role='owner')')
+let getByUser = await client.api('/storage/fileStorage/containers/getByUser(userPrincipalName='user@contoso.onmicrosoft.com', role='owner')')
 	.version('beta')
 	.get();
 

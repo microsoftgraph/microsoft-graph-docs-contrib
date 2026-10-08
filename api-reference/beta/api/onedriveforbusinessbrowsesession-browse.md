@@ -45,13 +45,14 @@ POST /solutions/backupRestore/oneDriveForBusinessBrowseSessions/{oneDriveForBusi
 
 To get top browsable locations, in the request body, supply an empty JSON object `{}` for this method to get the list of the top browsable locations.
 
-To browse a specify scope, in the request body, supply a JSON representation of the following parameters.
+To browse a specific scope, in the request body, supply a JSON representation of the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |browseLocationItemKey|String|The item key of the location that you want to browse. Optional.|
 |browseResourceType|[browsableResourceType](../resources/enums.md#browsableresourcetype-values)|The type of the browsable location. The possible values are: `none`, `site`, `documentLibrary`, `folder`, `unknownFutureValue`. Optional.|
 |filter|String|The search expression. Optional.|
+|optimizedBrowse|Boolean|Indicates whether to use the optimized browse flow to directly retrieve files and folders when the artifact has a single site and single document library. Optional. Returns `409 Conflict` if multiple sites or document libraries exist.|
 |orderBy|[browseQueryOrder](../resources/enums.md#browsequeryorder-values)|Specifies the order in which the response is returned. Optional.|
 
 The following table shows examples of possible formats for the **filter** expression. The filter is supported only on the **name** property.
@@ -63,6 +64,8 @@ The following table shows examples of possible formats for the **filter** expres
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [browseQueryResponseItem](../resources/browsequeryresponseitem.md) objects in the response body.
+
+When **optimizedBrowse** is `true` but the artifact contains multiple sites or document libraries, this method returns a `409 Conflict` response code. In this case, use the regular browse flow.
 
 ## Examples
 
@@ -121,7 +124,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Browse a specify resource
+### Example 2: Browse a specific resource
 
 #### Request
 
@@ -168,83 +171,43 @@ Content-Type: application/json
     "value": [
         {
             "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,2db4d4a9-7a10-409d-acfb-136101b43ba8",
-            "name": "objectdelete-onedriveforbusinessbrowsesessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-onedriveforbusinessbrowsesessions.md",
+            "name": "Report.docx",
+            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/Report.docx",
             "type": "file",
             "itemsCount": 0,
-            "sizeInBytes": "2594"
+            "sizeInBytes": "2594",
+            "createdDateTime": "2024-06-01T10:00:00Z",
+            "createdBy": {
+                "user": {
+                    "id": "6ebb65c7-0b69-4f4a-8108-12f29da1a7b7"
+                }
+            },
+            "lastModifiedDateTime": "2024-06-02T15:30:00Z",
+            "lastModifiedBy": {
+                "user": {
+                    "id": "6ebb65c7-0b69-4f4a-8108-12f29da1a7b7"
+                }
+            }
         },
         {
             "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,e3cca06d-b45d-4e98-bd16-c57a4563776f",
-            "name": "objectdelete-browsesessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-browsesessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2411"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,cd692efa-0297-4a98-a39b-ec568a118f35",
-            "name": "objectdelete-onedriveforbusinessrestoresessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-onedriveforbusinessrestoresessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2605"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,24c84b57-692b-40b3-b0b0-9cb8613b4398",
-            "name": "objectdelete-restoresessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-restoresessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2422"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,b74f9233-27a7-4d49-a723-c9a4ab717d2d",
-            "name": "objectdelete-exchangerestoresessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-exchangerestoresessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2484"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,4f20a6c4-c999-4ee8-9552-ca6a7fc46edf",
-            "name": "objectdelete-onedriveforbusinessbrowsesessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-onedriveforbusinessbrowsesessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2493"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,92d28cdf-82b4-4964-b6fa-fd61240acf6c",
-            "name": "objectdelete-sharepointrestoresessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-sharepointrestoresessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2504"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,cbd8e3c8-d0da-40a8-8eb8-51699268d6cf",
-            "name": "objectenable.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectenable.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2853"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,45cccd01-511c-4705-97b6-8884d2397e3c",
-            "name": "objectget.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectget.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2966"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,ef0ebe75-df09-43d0-91b6-705f03e0b006",
-            "name": "objectlist-browsesessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectlist-browsesessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "3254"
+            "name": "Reports",
+            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/Reports",
+            "type": "folder",
+            "itemsCount": 12,
+            "sizeInBytes": "45820",
+            "createdDateTime": "2024-05-20T08:15:00Z",
+            "createdBy": {
+                "user": {
+                    "id": "6ebb65c7-0b69-4f4a-8108-12f29da1a7b7"
+                }
+            },
+            "lastModifiedDateTime": "2024-06-02T11:45:00Z",
+            "lastModifiedBy": {
+                "user": {
+                    "id": "6ebb65c7-0b69-4f4a-8108-12f29da1a7b7"
+                }
+            }
         }
     ]
 }
@@ -293,84 +256,177 @@ Content-Type: application/json
     "value": [
         {
             "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,2db4d4a9-7a10-409d-acfb-136101b43ba8",
-            "name": "objectdelete-onedriveforbusinessbrowsesessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-onedriveforbusinessbrowsesessions.md",
+            "name": "Report.docx",
+            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/Report.docx",
             "type": "file",
             "itemsCount": 0,
-            "sizeInBytes": "2594"
+            "sizeInBytes": "2594",
+            "createdDateTime": "2024-06-01T10:00:00Z",
+            "createdBy": {
+                "application": {
+                    "id": "5110d9f2-bfb1-4dec-9712-0ab11af28e1c"
+                }
+            },
+            "lastModifiedDateTime": "2024-06-02T15:30:00Z",
+            "lastModifiedBy": {
+                "application": {
+                    "id": "5110d9f2-bfb1-4dec-9712-0ab11af28e1c"
+                }
+            }
         },
         {
             "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,e3cca06d-b45d-4e98-bd16-c57a4563776f",
-            "name": "objectdelete-browsesessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-browsesessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2411"
+            "name": "Reports",
+            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/Reports",
+            "type": "folder",
+            "itemsCount": 12,
+            "sizeInBytes": "45820",
+            "createdDateTime": "2024-05-20T08:15:00Z",
+            "createdBy": {
+                "application": {
+                    "id": "5110d9f2-bfb1-4dec-9712-0ab11af28e1c"
+                }
+            },
+            "lastModifiedDateTime": "2024-06-02T11:45:00Z",
+            "lastModifiedBy": {
+                "application": {
+                    "id": "5110d9f2-bfb1-4dec-9712-0ab11af28e1c"
+                }
+            }
+        }
+    ]
+}
+```
+
+### Example 4: Browse items by using the optimized browse flow
+
+When the browse session targets a single site that contains a single document library, set **optimizedBrowse** to `true` to directly get the files and folders in the artifact without specifying **browseResourceType**.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "onedriveforbusinessbrowsesessionthis.browse.optimized"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessBrowseSessions/m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE/browse
+Content-Type: application/json
+
+{
+  "optimizedBrowse": true
+}
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessbrowsesessionthisbrowseoptimized-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.browseQueryResponseItem)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.browseQueryResponseItem)",
+    "@odata.count": 3,
+    "value": [
+        {
+            "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,f1a2b3c4-5678-90ab-cdef-1234567890ab",
+            "name": "Folder1",
+            "webUrl": "https://contoso-my.sharepoint.com/personal/alice_contoso_onmicrosoft_com/Shared%20Documents/Folder1",
+            "type": "folder"
         },
         {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,cd692efa-0297-4a98-a39b-ec568a118f35",
-            "name": "objectdelete-onedriveforbusinessrestoresessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-onedriveforbusinessrestoresessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2605"
+            "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,a1b2c3d4-5678-90ab-cdef-0987654321ba",
+            "name": "Folder 2",
+            "webUrl": "https://contoso-my.sharepoint.com/personal/alice_contoso_onmicrosoft_com/Shared%20Documents/Folder2",
+            "type": "folder"
         },
         {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,24c84b57-692b-40b3-b0b0-9cb8613b4398",
-            "name": "objectdelete-restoresessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-restoresessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2422"
+            "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,b2c3d4e5-6789-01ab-cdef-9876543210ba",
+            "name": "Presentation",
+            "webUrl": "https://contoso-my.sharepoint.com/personal/alice_contoso_onmicrosoft_com/Shared%20Documents/Presentation.ppt",
+            "type": "file"
+        }
+    ]
+}
+```
+
+### Example 5: Search items by using the optimized browse flow with a filter
+
+The following example uses the optimized browse flow together with a **filter** to return only the items whose name contains `Folder`.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "onedriveforbusinessbrowsesessionthis.browse.optimizedfilter"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessBrowseSessions/m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE/browse
+Content-Type: application/json
+
+{
+  "optimizedBrowse": true,
+  "filter": "(name -contains 'Folder')"
+}
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessbrowsesessionthisbrowseoptimizedfilter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.browseQueryResponseItem)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.browseQueryResponseItem)",
+    "@odata.count": 2,
+    "value": [
+        {
+            "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,a1b2c3d4-5678-90ab-cdef-0987654321ba",
+            "name": "Folder1",
+            "webUrl": "https://contoso-my.sharepoint.com/personal/alice_contoso_onmicrosoft_com/Shared%20Documents/Folder1",
+            "type": "folder"
         },
         {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,b74f9233-27a7-4d49-a723-c9a4ab717d2d",
-            "name": "objectdelete-exchangerestoresessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-exchangerestoresessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2484"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,4f20a6c4-c999-4ee8-9552-ca6a7fc46edf",
-            "name": "objectdelete-onedriveforbusinessbrowsesessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-onedriveforbusinessbrowsesessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2493"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,92d28cdf-82b4-4964-b6fa-fd61240acf6c",
-            "name": "objectdelete-sharepointrestoresessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-sharepointrestoresessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2504"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,cbd8e3c8-d0da-40a8-8eb8-51699268d6cf",
-            "name": "objectenable.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectenable.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2853"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,2db4d4a9-7a10-409d-acfb-136101b43ba8",
-            "name": "objectdelete-onedriveforbusinessbrowsesessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-onedriveforbusinessbrowsesessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2594"
-        },
-        {
-            "itemKey": "bb281f72-f7cc-4379-b295-0c61253127af,77042fcb-74e3-46aa-8a53-05f9739ebdf4,07a7125a-15e3-402d-beb9-ee6540f7f5bc,e3cca06d-b45d-4e98-bd16-c57a4563776f",
-            "name": "objectdelete-browsesessions.md",
-            "webUrl": "https://contoso-my.sharepoint.com/personal/user0_contoso_onmicrosoft_com/Documents/api/objectdelete-browsesessions.md",
-            "type": "file",
-            "itemsCount": 0,
-            "sizeInBytes": "2411"
-        },
+            "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,b2c3d4e5-6789-01ab-cdef-9876543210ba",
+            "name": "FolderFile.txt",
+            "webUrl": "https://contoso-my.sharepoint.com/personal/alice_contoso_onmicrosoft_com/Shared%20Documents/Folder1/FolderFile.txt",
+            "type": "file"
+        }
     ]
 }
 ```

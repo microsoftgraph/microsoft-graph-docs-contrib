@@ -72,6 +72,10 @@ items:
     href: ../../api/subscriptions-socketio.md
   - name: List operations
     href: ../../api/list-list-operations.md
+  - name: List permissions
+    href: ../../api/list-list-permissions.md
+  - name: Create permission
+    href: ../../api/list-post-permissions.md
 - name: Column definition
   items:
   - name: Column definition
@@ -162,6 +166,10 @@ items:
     href: ../../api/listitem-delta.md
   - name: Get recent activities
     href: ../../api/itemactivity-list.md
+  - name: List permissions
+    href: ../../api/listitem-list-permissions.md
+  - name: Create permission
+    href: ../../api/listitem-post-permissions.md
 - name: Document set version
   items:
   - name: Document set version

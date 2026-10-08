@@ -16,9 +16,9 @@ import (
 )
 
 requestBody := graphmodels.NewChatMessage()
-body := graphmodels.NewItemBody()
-contentType := graphmodels.HTML_BODYTYPE 
-body.SetContentType(&contentType) 
+body := graphmodels.NewChatMessageBody()
+messageBodyContentType := graphmodels.HTML_CHATMESSAGEBODYCONTENTTYPE 
+body.SetMessageBodyContentType(&messageBodyContentType) 
 content := "<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
 body.SetContent(&content) 
 requestBody.SetBody(body)

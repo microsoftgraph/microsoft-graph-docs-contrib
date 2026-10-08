@@ -39,7 +39,7 @@ GET /identity/verifiedId/profiles/{verifiedIdProfileId}
 
 ## Optional query parameters
 
-None 
+None
 
 ## Request headers
 
@@ -116,42 +116,54 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "value": [
-        {
-            "id": "9dda0ae1-e007-4a1d-81ec-2cf4b1274610",
-            "name": "Contoso IDV Provider ",
-            "description": "Contoso Verified Identity",
-            "lastModifiedDateTime": null,
-            "state": "enabled",
-            "verifierDid": "did:web:eu.did-dev.contoso.io",
-            "priority": 1,
-            "verifiedIdProfileConfiguration": {
-                "type": "verifiedIdentity",
-                "acceptedIssuer": "did:web:eu.did-dev.contoso.io",
-                "claimBindingSource": "directory",
-                "claimBindings": [
-                    {
-                        "sourceAttribute": "First name",
-                        "verifiedIdClaim": "vc.credentialSubject.firstName"
-                    },
-                    {
-                        "sourceAttribute": "Last name",
-                        "verifiedIdClaim": "vc.credentialSubject.lastName"
-                    }
-                ]
+    "id": "9dda0ae1-e007-4a1d-81ec-2cf4b1274610",
+    "name": "Contoso IDV Provider",
+    "description": "Contoso Verified Identity",
+    "lastModifiedDateTime": null,
+    "state": "enabled",
+    "verifierDid": "did:web:eu.did-dev.contoso.io",
+    "priority": 1,
+    "verifiedIdProfileConfiguration": {
+        "methodType": "tenantCustomCredential",
+        "type": "verifiedIdentity",
+        "manifestUrl": "https://verifiedid.contoso.com/manifest",
+        "acceptedIssuer": "did:web:eu.did-dev.contoso.io",
+        "claimBindingSource": "directory",
+        "claimBindings": [
+            {
+                "sourceAttribute": "First name",
+                "verifiedIdClaim": "vc.credentialSubject.firstName"
             },
-            "faceCheckConfiguration": {
-                "isEnabled": true,
-                "sourcePhotoClaimName": "portrait"
-            },
-            "verifiedIdUsageConfigurations": [
-                {
-                    "isEnabledForTestOnly": true,
-                    "purpose": "recovery"
-                }
-            ]
+            {
+                "sourceAttribute": "Last name",
+                "verifiedIdClaim": "vc.credentialSubject.lastName"
+            }
+        ],
+        "claimValidation": {
+            "isEnabled": false,
+            "customExtensionId": ""
         }
-    ]
+    },
+    "faceCheckConfiguration": {
+        "isEnabled": true,
+        "sourcePhotoClaimName": "portrait"
+    },
+    "mobileDriversLicenseConfiguration": {
+        "acceptedRegions": [
+            "region-code"
+        ],
+        "documentStandard": "document-standard"
+    },
+    "verifiedIdUsageConfigurations": [
+        {
+            "isEnabledForTestOnly": true,
+            "purpose": "verification"
+        }
+    ],
+    "selfServiceIssuance": {
+        "isEnabled": true,
+        "issuanceUrl": "https://verifiedid.contoso.com/issue"
+    }
 }
 ```
 

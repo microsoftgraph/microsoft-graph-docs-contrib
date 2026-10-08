@@ -2,7 +2,7 @@
 title: "m365CapabilityInboundAccess resource type"
 description: "Represents the inbound access settings for a cross-tenant Microsoft 365 capability."
 author: "lasharma"
-ms.date: 04/23/2026
+ms.date: 08/07/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the inbound access settings for a cross-tenant Microsoft 365 capability. This type defines whether the capability should be allowed or blocked and specifies the resource scopes for the capability.
+Represents the inbound access settings for a cross-tenant Microsoft 365 capability. This type defines whether the capability should be allowed or blocked and specifies the resource scopes for the capability. This resource is used as the **inboundAccess** property of the [m365CapabilityBase](../resources/m365capabilitybase.md) resource.
 
 ## Properties
 |Property|Type|Description|
@@ -37,8 +37,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.m365CapabilityInboundAccess",
   "isAllowed": "Boolean",
-  "resourceScopes": {
-    "@odata.type": "microsoft.graph.m365CapabilityResourceScopes"
-  }
+  "resourceScopes": { "@odata.type": "microsoft.graph.m365CapabilityResourceScopes" }
 }
 ```

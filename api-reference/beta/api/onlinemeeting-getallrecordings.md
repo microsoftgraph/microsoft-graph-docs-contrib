@@ -5,7 +5,7 @@ author: "suvanka"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/06/2024
+ms.date: 08/13/2026
 ---
 
 # onlineMeeting: getAllRecordings
@@ -26,12 +26,13 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-### Known issues
-
-The following known issues are associated with this API:
-
-- [Using the `$top` query parameter might not return the **@odata.nextLink**](/graph/known-issues#apis-that-export-online-meeting-artifacts-might-not-return-nextlink-when-the-request-uses-the-top-query-parameter).
-- [Recordings aren't exported for meetings that don't have transcription turned on](/graph/known-issues#apis-that-export-online-meeting-artifacts-dont-return-recordings-for-meetings-without-transcriptions-enabled).
+> [!NOTE]
+> This API has a [known issue](/graph/known-issues#apis-that-export-online-meeting-artifacts-may-return-duplicate-items-during-service-update) related to pagination token resets during a planned service update.
+>
+> Other known issues include:
+>
+> - [Using the `$top` query parameter might not return the **@odata.nextLink**](/graph/known-issues#apis-that-export-online-meeting-artifacts-might-not-return-nextlink-when-the-request-uses-the-top-query-parameter).
+> - [Recordings aren't exported for meetings that don't have transcription turned on](/graph/known-issues#apis-that-export-online-meeting-artifacts-dont-return-recordings-for-meetings-without-transcriptions-enabled).
 
 ## Permissions
 
@@ -57,6 +58,9 @@ In the request URL, provide the following query parameters with values.
 |meetingOrganizerUserId|String|The user identifier of the meeting organizer to filter for artifacts for meetings organized by the given user identifier.|
 |startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
+> [!NOTE]
+> When using delta queries, follow the returned delta link without appending or reapplying filters. The token retains the filter from the initial request.
+
 ## Optional query parameters
 
 This method supports the following OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -74,6 +78,8 @@ This method supports the following OData query parameter to help customize the r
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [callRecording](../resources/callrecording.md) objects in the response body.
+
+If a filter is supplied with a delta token, the method returns a `400 Bad Request` response with `DeltaFilterNotAllowed` as the `innerError.code` value. The initial filter is encoded in the token; follow the returned delta link without appending or reapplying filters.
 
 ## Examples
 

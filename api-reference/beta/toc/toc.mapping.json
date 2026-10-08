@@ -131,7 +131,21 @@
             {
               "name": "Agent identity blueprint",
               "resources": [
+                "agentCommunicationConfiguration",
                 "inheritablePermission"
+              ],
+              "complexTypes": [
+                "agentBlueprintApiBasedEndpointConfigurationDetails",
+                "agentBlueprintBotBasedEndpointConfigurationDetails",
+                "agentConversationConfiguration",
+                "agentEndpointConfiguration",
+                "agentTeamworkConfiguration"
+              ]
+            },
+            {
+              "name": "Agent identity",
+              "resources": [
+                "agentCommunicationConfiguration"
               ]
             }
           ]
@@ -176,6 +190,7 @@
             "Enhanced Restore"
           ],
           "resources": [
+            "backupReport",
             "backupRestoreRoot",
             "emailNotificationsSetting",
             "exclusionUnitBase",
@@ -277,9 +292,12 @@
           ],
           "complexTypes": [
             "artifactQuery",
+            "backupCountStatistics",
+            "backupPolicyReport",
             "browseQueryResponseItem",
             "notificationRecipients",
             "protectionPolicyArtifactCount",
+            "retentionPeriodChange",
             "retentionSetting",
             "restorePointSearchResponse",
             "restorePointSearchResult",
@@ -343,7 +361,8 @@
             "unavailablePlaceMode",
             "resourceLink",
             "placeExecutionResult",
-            "placeOperationProgress"
+            "placeOperationProgress",
+            "stringDictionary"
           ],
           "childNodes": [
             {
@@ -574,6 +593,7 @@
             "microsoft.graph.cloudLicensing.waitingMember"
           ],
           "complexTypes": [
+            "microsoft.graph.cloudLicensing.deviceCloudLicensing",
             "microsoft.graph.cloudLicensing.groupCloudLicensing",
             "microsoft.graph.cloudLicensing.service",
             "microsoft.graph.cloudLicensing.subscription",
@@ -674,6 +694,7 @@
             "cloudPcPartnerAgentInstallResult",
             "cloudPcPolicyPendingApplyStatusResult",
             "cloudPcPoolCapabilityConfiguration",
+            "cloudPcProvisioningConfiguration",
             "cloudPcProvisioningPolicyAssignment",
             "cloudPcProvisioningPolicyAutopatch",
             "cloudPcRegionGroupConfiguration",
@@ -1159,6 +1180,7 @@
         "sharePointGroupMember"
       ],
       "complexTypes": [
+        "driveSettings",
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeAgentSettings",
         "fileStorageContainerTypeSettings",
@@ -1266,10 +1288,14 @@
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
+            "remoteTenantGroup",
             "organizationSettings",
             "uxSetting",
             "deviceTemplate",
             "mutualTlsOauthConfiguration"
+          ],
+          "complexTypes": [
+            "provisionResponse"
           ],
           "childNodes": [
             {
@@ -1320,6 +1346,7 @@
                 "Unified RBAC"
               ],
               "resources": [
+                "directoryRoleManagementDeletedItemContainer",
                 "roleManagement",
                 "unifiedRoleDefinition",
                 "unifiedRoleAssignment",
@@ -1418,6 +1445,9 @@
                 "insiderRiskyUserApproval",
                 "entraIdProtectionRiskyUserApproval",
                 "customDataProvidedResourceUploadSession"
+              ],
+              "complexTypes": [
+                "accessPackageAssignmentRequestParameters"
               ]
             },
             {
@@ -1436,7 +1466,43 @@
                 "microsoft.graph.identityGovernance.taskDefinition",
                 "microsoft.graph.identityGovernance.customTaskExtension",
                 "microsoft.graph.identityGovernance.lifecycleManagementSettings",
-                "microsoft.graph.identitygovernance.insights"
+                "microsoft.graph.identitygovernance.insights",
+                "microsoft.graph.identityGovernance.lifecyclePolicy",
+                "microsoft.graph.identityGovernance.agentIdentityLifecyclePolicy",
+                "microsoft.graph.identityGovernance.lifecyclePolicyRule",
+                "microsoft.graph.identityGovernance.periodicAttestationRule",
+                "microsoft.graph.identityGovernance.sponsorPresenceRule",
+                "microsoft.graph.identityGovernance.inactivityRule",
+                "microsoft.graph.identityGovernance.lifecyclePolicyPriorityConfiguration",
+                "microsoft.graph.identityGovernance.identityLifecycle",
+                "microsoft.graph.identityGovernance.agentIdentityLifecycle",
+                "microsoft.graph.identityGovernance.complianceIssue",
+                "microsoft.graph.identityGovernance.attestationComplianceIssue",
+                "microsoft.graph.identityGovernance.accessPackageAssignmentRequiredRule",
+                "microsoft.graph.identityGovernance.guestLifecyclePolicy",
+                "microsoft.graph.identityGovernance.invitationRedemptionRule",
+                "microsoft.graph.identityGovernance.lifecyclePolicyImpactSummary",
+                "microsoft.graph.identityGovernance.lifecyclePolicyReport",
+                "microsoft.graph.identityGovernance.lifecyclePolicySubjectReport",
+                "microsoft.graph.identityGovernance.userIdentityLifecycle"
+              ],
+              "complexTypes": [
+                "lifecyclePolicyNotificationSettings",
+                "selectedObjectsSubjectSet",
+                "allExcludingSpecificObjectsSubjectSet",
+                "allExcludingGroupsSubjectSet",
+                "lifecyclePolicyEnforcementAction",
+                "deleteOnlyEnforcementAction",
+                "disableOnlyEnforcementAction",
+                "disableThenDeleteEnforcementAction"
+              ],
+              "complexTypes": [
+                "microsoft.graph.identityGovernance.operatorBetween",
+                "microsoft.graph.identityGovernance.operatorEqualTo",
+                "microsoft.graph.identityGovernance.operatorLessThanEqualTo",
+                "microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
+                "microsoft.graph.identityGovernance.workflowExecutionTriggerOperator",
+                "microsoft.graph.identityGovernance.workflowTriggerTimeBasedOperator"
               ],
               "childNodes": [
                 {
@@ -1630,6 +1696,10 @@
               "name": "Verified ID",
               "resources": [
                 "verifiedIdProfile"
+              ],
+              "complexTypes": [
+                "mobileDriversLicenseConfiguration",
+                "verifiedIdSelfServiceIssuance"
               ]
             },
             {
@@ -1646,6 +1716,7 @@
                 "passwordAuthenticationMethod",
                 "phoneAuthenticationMethod",
                 "platformCredentialAuthenticationMethod",
+                "resourceAccountKeyAuthenticationMethod",
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
@@ -2268,6 +2339,12 @@
         "Outlook",
         "Outlook mail"
       ],
+      "additionalLinks": [
+        {
+          "name": "Handle archive mailbox redirects",
+          "href": "/graph/handle-archive-mailbox-redirects"
+        }
+      ],
       "resources": [
         "message",
         "attachment",
@@ -2311,6 +2388,12 @@
         "Exchange Import-Export",
         "Mailbox",
         "Mailbox import and export"
+      ],
+      "additionalLinks": [
+        {
+          "name": "Handle archive mailbox redirects",
+          "href": "/graph/handle-archive-mailbox-redirects"
+        }
       ],
       "resources": [
         "mailbox",
@@ -2491,8 +2574,17 @@
               "overview": "../../resources/recommendations-api-overview.md",
               "resources": [
                 "recommendation",
-                "impactedResource",
-                "recommendationConfiguration"
+                "impactedResource"
+              ],
+              "childNodes": [
+                {
+                  "name": "Supporting types",
+                  "resources": [
+                    "recommendationConfiguration",
+                    "recommendationTag",
+                    "nistClassification"
+                  ]
+                }
               ]
             },
             {
@@ -2625,6 +2717,9 @@
           "overview": "../../resources/report.md",
           "resources": [
             "adminReportSettings",
+            "microsoftAppsFileStorageContainerAppUsage",
+            "microsoftAppsFileStorageContainerGeoUsage",
+            "microsoftAppsFileStorageContainerUsage",
             "reportRoot"
           ],
           "complexTypes": [
@@ -2654,6 +2749,7 @@
           "name": "Partner billing reports",
           "overview": "../../resources/partners-billing-api-overview.md",
           "resources": [
+            "microsoft.graph.partners.billing.billedAggregatedUsage",
             "microsoft.graph.partners.billing.billedReconciliation",
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
@@ -2745,7 +2841,9 @@
           ],
           "complexTypes": [
             "microsoft.graph.security.aiAgentEvidence",
+            "microsoft.graph.security.createAlertInput",
             "microsoft.graph.security.dnsEvidence",
+            "microsoft.graph.security.entityDefinition",
             "microsoft.graph.security.entityDefinitionInput",
             "microsoft.graph.security.fileHashEvidence",
             "microsoft.graph.security.gitHubOrganizationEvidence",
@@ -2888,7 +2986,9 @@
           "resources": [
             "contentActivity",
             "microsoft.graph.security.sensitivityLabel",
+            "sensitiveType",
             "tenantDataSecurityAndGovernance",
+            "textClassificationRequest",
             "userDataSecurityAndGovernance"
           ],
           "complexTypes": [
@@ -2899,15 +2999,22 @@
             "autoLabeling",
             "binaryContent",
             "blockAccessAction",
+            "chunkOffsets",
             "classifcationErrorBase",
             "classificationError",
             "classificationInnerError",
+            "classificationRequestContentMetaData",
             "computeRightsAndInheritanceResult",
             "contentActivityMetadata",
             "contentBase",
             "customMetadataDictionary",
             "deviceMetadata",
             "dlpActionInfo",
+            "errorSettings",
+            "evaluationErrorDetail",
+            "evaluationIncompleteActivityMetadata",
+            "evaluationScope",
+            "embeddingInput",
             "groupScope",
             "integratedApplicationMetadata",
             "labelActionBase",
@@ -2916,9 +3023,11 @@
             "notifyUserAction",
             "operatingSystemSpecifications",
             "policyBinding",
+            "policyConfiguration",
             "policyLocation",
             "policyLocationApplication",
             "policyLocationDomain",
+            "policyLocationTool",
             "policyLocationUrl",
             "policyScopeBase",
             "policyTenantScope",
@@ -3139,6 +3248,7 @@
           "resources": [
             "microsoft.graph.security.caseManagement.caseManagementEntity",
             "microsoft.graph.security.caseManagement.case",
+            "microsoft.graph.security.caseManagement.caseSlaPolicyEntry",
             "microsoft.graph.security.caseManagement.genericCase",
             "microsoft.graph.security.caseManagement.incidentCase",
             "microsoft.graph.security.caseManagement.activity",
@@ -3166,7 +3276,14 @@
             "microsoft.graph.security.caseManagement.incidentRelation",
             "microsoft.graph.security.caseManagement.recommendationRelation",
             "microsoft.graph.security.caseManagement.workspaceIndicatorRelation",
-            "microsoft.graph.security.caseManagement.task"
+            "microsoft.graph.security.caseManagement.task",
+            "microsoft.graph.security.caseManagement.caseTypeConfiguration",
+            "microsoft.graph.security.caseManagement.customFieldDefinition",
+            "microsoft.graph.security.caseManagement.stringCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.numberCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.dateTimeCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.optionsCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.statusDefinition"
           ]
         }
       ]
@@ -3253,6 +3370,7 @@
         "plannerPlan",
         "plannerTask",
         "plannerBucket",
+        "plannerGoal",
         "plannerHistoryItem",
         "plannerPlanDetails",
         "plannerRoster",
@@ -3434,6 +3552,15 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ],
+              "complexTypes": [
+                "audioMetadata",
+                "mediaMetadata",
+                "mediaSegment",
+                "streamingMetadata",
+                "syntheticMediaDetectionDetail",
+                "syntheticMediaDetectionInfo",
+                "videoMetadata"
               ]
             },
             {
@@ -3582,9 +3709,9 @@
           "resources": [
             "channel",
             "chat",
+            "deletedChat",
             "chatMessage",
             "pinnedChatMessageInfo",
-            "deletedChat",
             "targetedChatMessage",
             "team",
             "teamworkTag",
@@ -3620,6 +3747,16 @@
               ],
               "complexTypes": [
                 "sectionDisplayIcon"
+              ]
+            },        
+            {
+              "name": "Custom emoji (preview)",
+              "resources": [
+                "teamworkMessaging",
+                "teamworkCustomEmoji"
+              ],
+              "complexTypes": [
+                  "customEmojiFromIdentitySet"
               ]
             }
           ],
@@ -3707,15 +3844,46 @@
           ]
         },
         {
-          "name": "Tenant governance (preview)",
+          "name": "Tenant governance",
           "overview": "../../resources/tenantgovernanceservices-tenantgovernance-overview.md",
           "resources": [
-            "microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting",
-            "microsoft.graph.tenantGovernanceServices.relatedTenant",
-            "microsoft.graph.tenantGovernanceServices.governancePolicyTemplate",
-            "microsoft.graph.tenantGovernanceServices.governanceInvitation",
-            "microsoft.graph.tenantGovernanceServices.governanceRequest",
-            "microsoft.graph.tenantGovernanceServices.governanceRelationship"
+            "microsoft.graph.governanceInvitation",
+            "microsoft.graph.governanceRelationship",
+            "microsoft.graph.governanceRequest",
+            "microsoft.graph.relatedTenant",
+            "microsoft.graph.tenantGovernance",
+            "microsoft.graph.tenantGovernancePolicyTemplate",
+            "microsoft.graph.tenantGovernanceSetting"
+          ],
+          "complexTypes": [
+            "microsoft.graph.applicationResourcePermission",
+            "microsoft.graph.applicationsRequiredResourceAccess",
+            "microsoft.graph.b2bRegistrationMetrics",
+            "microsoft.graph.b2BRegistrationMetricsBase",
+            "microsoft.graph.b2BRegistrationMetricsInitial",
+            "microsoft.graph.b2BRegistrationMetricsRecent",
+            "microsoft.graph.b2BSignInActivityMetrics",
+            "microsoft.graph.b2BSignInActivityMetricsBase",
+            "microsoft.graph.b2BSignInActivityMetricsInitial",
+            "microsoft.graph.b2BSignInActivityMetricsRecent",
+            "microsoft.graph.billingMetrics",
+            "microsoft.graph.billingMetricsBase",
+            "microsoft.graph.billingMetricsInitial",
+            "microsoft.graph.billingMetricsRecent",
+            "microsoft.graph.delegatedAdministrationRoleAssignment",
+            "microsoft.graph.delegatedAdministrationRoleAssignmentSnapshot",
+            "microsoft.graph.investigationActionStep",
+            "microsoft.graph.investigationActionUrl",
+            "microsoft.graph.multiTenantApplicationMetrics",
+            "microsoft.graph.multiTenantApplicationMetricsBase",
+            "microsoft.graph.multiTenantApplicationMetricsInitial",
+            "microsoft.graph.multiTenantApplicationMetricsRecent",
+            "microsoft.graph.multiTenantApplicationsToProvision",
+            "microsoft.graph.multiTenantApplicationsToProvisionSnapshot",
+            "microsoft.graph.relatedTenantsRefreshRequest",
+            "microsoft.graph.relatedTenantsRefreshStatus",
+            "microsoft.graph.relationshipPolicy",
+            "microsoft.graph.roleTemplate"
           ]
         },
         {
@@ -3729,13 +3897,17 @@
             "crossTenantAccessPolicy",
             "crossTenantAccessPolicyConfigurationDefault",
             "crossTenantAccessPolicyConfigurationPartner",
-            "crossTenantIdentitySyncPolicyPartner",
-            "m365CapabilityBase"
+            "crossTenantIdentitySyncPolicyPartner"
           ],
           "childNodes": [
             {
               "name": "Microsoft 365 capabilities",
+              "overview": "../../resources/m365-cross-tenant-access-policy-overview.md",
               "resources": [
+                "m365CapabilityBase",
+                "anonymousCalendarSharingFreeBusyDetail",
+                "anonymousCalendarSharingFreeBusyReviewer",
+                "anonymousCalendarSharingFreeBusySimple",
                 "crossTenantCalendarAvailabilityBasic",
                 "crossTenantCalendarAvailabilityLimitedDetails",
                 "crossTenantCalendarSharingFreeBusyDetail",

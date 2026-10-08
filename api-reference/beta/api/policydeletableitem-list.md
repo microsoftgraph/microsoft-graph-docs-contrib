@@ -32,8 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "permissions",
   "name": "policydeletableitem-list-permissions",
   "requestUrls": ["GET /policies/deletedItems/crossTenantPartners", "GET /policies/deletedItems/crossTenantSyncPolicyPartners"],
-  "mergePermissions": true 
-  
+  "mergePermissions": true
+
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-list-permissions.md)]
@@ -172,7 +172,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantPartners",
   "value": [
     {
       "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
@@ -293,7 +292,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantSyncPolicyPartners",
   "value": [
     {
       "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
