@@ -26,7 +26,7 @@ Represents audit data from content processing for Microsoft Purview to ensure co
 
 |Property|Type|Description|
 |:---|:---|:---|
-|contentMetadata|[processContentRequest](../resources/processcontentrequest.md)|Defines the input payload. It includes the relevant metadata about the activity, device, and integrated application.|
+|contentMetadata|[processContentRequest](../resources/processcontentrequest.md)|Contains metadata about the content, activity, device, and integrated application. When creating a contentActivity, submit content entries in **contentToProcess.contentEntries**; use [contentActivityMetadata](../resources/contentactivitymetadata.md) to report a DLP enforcement result or [evaluationIncompleteActivityMetadata](../resources/evaluationincompleteactivitymetadata.md) to report a Secure by Default (SBD) policy evaluation that couldn't be completed. An incomplete-evaluation entry requires **errorAction** and **inspectionIncompleteReason**.|
 |id|String|Unique identifier.|
 |scopeIdentifier|String|The scope identified from computed protection scopes.|
 |userId|String|ID of the user.|

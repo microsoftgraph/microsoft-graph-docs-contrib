@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List deleted workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md)|[deletedItemContainer](../resources/deleteditemcontainer.md) collection|Get a list of the [deletedItemContainer](../resources/deleteditemcontainer.md) objects and their properties.|
 |[Get a deleted workflow](../api/identitygovernance-deleteditemcontainer-get.md)|[deletedItemContainer](../resources/deleteditemcontainer.md)|Read the properties and relationships of a [deletedItemContainer](../resources/deleteditemcontainer.md) object.|
-|[Restore](../api/identitygovernance-workflow-restore.md)|[workflow](../resources/identitygovernance-workflow.md)|Restore a deleted [lifecycle workflow](../resources/identitygovernance-workflow.md) from the [deletedItemContainer](../resources/deleteditemcontainer.md) object.|
+|[Restore](../api/identitygovernance-workflow-restore.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Restore a deleted [lifecycle workflow](../resources/identitygovernance-workflow.md) from the [deletedItemContainer](../resources/deleteditemcontainer.md) object.|
 |[Permanently delete a workflow](../api/identitygovernance-deletedItemcontainer-delete.md)|None|Permanently delete a deleted [lifecycle workflow](../resources/identitygovernance-workflow.md) from the [lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md) object.|
 
 ## Properties
@@ -37,6 +37,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|lifecyclePolicies|[microsoft.graph.identityGovernance.lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md) collection|Deleted lifecycle policies that can be restored.|
 |workflows|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|Deleted workflows that end up in the deletedItemsContainer.|
 
 ## JSON representation

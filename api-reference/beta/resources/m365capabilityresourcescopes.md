@@ -2,7 +2,7 @@
 title: "m365CapabilityResourceScopes resource type"
 description: "Specifies the included and excluded resource scopes for a cross-tenant capability."
 author: "lasharma"
-ms.date: 04/23/2026
+ms.date: 08/07/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the included and excluded resource scopes for a cross-tenant capability. This type defines which resources are in scope for the capability and which resources are explicitly excluded.
+Specifies the included and excluded resource scopes for a cross-tenant capability. This type defines which resources are in scope for the capability and which resources are explicitly excluded. This resource is used as the **resourceScopes** property of the [m365CapabilityInboundAccess](../resources/m365capabilityinboundaccess.md) resource.
 
 ## Properties
 |Property|Type|Description|
@@ -37,14 +37,10 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.m365CapabilityResourceScopes",
   "included": [
-    {
-      "@odata.type": "microsoft.graph.m365CapabilityResourceScope"
-    }
+    { "@odata.type": "microsoft.graph.m365CapabilityResourceScope" }
   ],
   "excluded": [
-    {
-      "@odata.type": "microsoft.graph.m365CapabilityResourceScope"
-    }
+    { "@odata.type": "microsoft.graph.m365CapabilityResourceScope" }
   ]
 }
 ```

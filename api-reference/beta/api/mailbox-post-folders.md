@@ -52,6 +52,7 @@ You can specify the following properties when you create a **mailboxFolder**.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the folder. Required.|
+|isHidden|Boolean|Indicates whether the folder is hidden. Optional. The default value is `false`. Set to `true` to create a hidden folder. This property can't be updated after the folder is created.|
 |type|String|Describes the folder class type. Required.|
 
 ## Response
@@ -63,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [mailboxF
 ### Request
 
 The following example shows how to create a new mailbox folder.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_mailboxfolder_from_",
@@ -75,6 +76,7 @@ POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab0
 
 {
   "displayName": "Announcements",
+  "isHidden": false,
   "type": "IPF.Note",
   "singleValueExtendedProperties": [
         {
@@ -84,32 +86,6 @@ POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab0
     ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-mailboxfolder-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-mailboxfolder-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-mailboxfolder-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-mailboxfolder-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-mailboxfolder-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-mailboxfolder-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -124,16 +100,17 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
   "id": "AQMkAGUw==",
   "displayName": "Announcements",
+  "isHidden": false,
   "parentFolderId": "AQMkAGUc==",
   "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93",
   "childFolderCount": 0,
   "totalItemCount": 0,
+  "wellKnownName": null,
   "type": "IPF.Note"
 }
 ```

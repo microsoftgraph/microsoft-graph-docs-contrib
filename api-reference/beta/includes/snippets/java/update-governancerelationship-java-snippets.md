@@ -8,9 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-com.microsoft.graph.beta.models.tenantgovernanceservices.GovernanceRelationship governanceRelationship = new com.microsoft.graph.beta.models.tenantgovernanceservices.GovernanceRelationship();
-governanceRelationship.setStatus(com.microsoft.graph.beta.models.tenantgovernanceservices.RelationshipStatus.Terminated);
-com.microsoft.graph.models.tenantgovernanceservices.GovernanceRelationship result = graphClient.directory().tenantGovernance().governanceRelationships().byGovernanceRelationshipId("{governanceRelationship-id}").patch(governanceRelationship);
+GovernanceRelationship governanceRelationship = new GovernanceRelationship();
+governanceRelationship.setStatus(RelationshipStatus.Terminated);
+GovernanceRelationship result = graphClient.directory().tenantGovernance().governanceRelationships().byGovernanceRelationshipId("{governanceRelationship-id}").patch(governanceRelationship);
 
 
 ```

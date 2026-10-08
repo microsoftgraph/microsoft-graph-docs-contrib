@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Partner settings
-ms.date: 07/22/2024
+ms.date: 08/07/2026
 ---
 
 # crossTenantAccessPolicyConfigurationPartner resource type
@@ -26,6 +26,10 @@ For any partner-specific property that is `null`, these settings inherit the beh
 | [Get](../api/crosstenantaccesspolicyconfigurationpartner-get.md) | [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) | Read the partner-specific configuration settings. |
 | [Update](../api/crosstenantaccesspolicyconfigurationpartner-update.md) | [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) | Update the properties of a partner-specific configuration. |
 | [Delete](../api/crosstenantaccesspolicyconfigurationpartner-delete.md) | None | Delete the partner-specific configuration. |
+|[List Microsoft 365 capabilities](../api/crosstenantaccesspolicyconfigurationpartner-list-m365capabilities.md)|[m365CapabilityBase](../resources/m365capabilitybase.md) collection|Get a list of Microsoft 365 cross-tenant capabilities configured for a partner organization in the [cross-tenant access policy](../resources/crosstenantaccesspolicy-overview.md).|
+|[Create Microsoft 365 capability](../api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities.md)|[m365CapabilityBase](../resources/m365capabilitybase.md)|Create a new Microsoft 365 cross-tenant capability for a partner organization in the [cross-tenant access policy](../resources/crosstenantaccesspolicy-overview.md).|
+|[Update Microsoft 365 capability](../api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities.md)|[m365CapabilityBase](../resources/m365capabilitybase.md)|Update an existing Microsoft 365 cross-tenant capability for a partner organization in the [cross-tenant access policy](../resources/crosstenantaccesspolicy-overview.md).|
+|[Delete Microsoft 365 capability](../api/crosstenantaccesspolicyconfigurationpartner-delete-m365capabilities.md)| None |Delete a Microsoft 365 cross-tenant capability from a partner organization in the [cross-tenant access policy](../resources/crosstenantaccesspolicy-overview.md).|
 
 ## Properties
 
@@ -50,6 +54,7 @@ For any partner-specific property that is `null`, these settings inherit the beh
 |Relationship|Type|Description|
 |:---|:---|:---|
 |identitySynchronization|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Defines the cross-tenant policy for the synchronization of users from a partner tenant. Use this user synchronization policy to streamline collaboration between users in a multitenant organization by automating the creation, update, and deletion of users from one tenant to another.|
+|m365Capabilities|[m365CapabilityBase](../resources/m365capabilitybase.md) collection|Defines the partner-specific Microsoft 365 cross-tenant capabilities for inbound access from the partner organization.|
 
 ## JSON representation
 

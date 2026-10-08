@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 var result = await graphClient.Admin.Exchange.Mailboxes["{mailbox-id}"].Folders.GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Filter = "type eq 'IPF.Appointment'";
-	requestConfiguration.QueryParameters.Select = new string []{ "displayName","type" };
+	requestConfiguration.QueryParameters.Select = new string []{ "displayName","parentMailboxUrl","type","wellKnownName" };
 	requestConfiguration.QueryParameters.Top = 5;
 });
 

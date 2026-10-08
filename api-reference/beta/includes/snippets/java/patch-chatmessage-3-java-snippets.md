@@ -28,7 +28,7 @@ HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
 additionalData1.put("conversation", null);
 from.setAdditionalData(additionalData1);
 chatMessage.setFrom(from);
-ItemBody body = new ItemBody();
+ChatMessageBody body = new ChatMessageBody();
 body.setContentType(BodyType.Html);
 body.setContent("<p><em>text</em></p><attachment id=\"e8f78756199240b88448ae0fc6db112d\"></attachment><attachment id=\"638464e32834471ea202007da60a5ae6\"></attachment>");
 chatMessage.setBody(body);

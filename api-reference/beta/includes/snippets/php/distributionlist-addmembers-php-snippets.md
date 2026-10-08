@@ -17,8 +17,7 @@ $requestBody = new AddMembersPostRequestBody();
 $membersMember1 = new Member();
 $membersMember1->setDisplayName('Megan Bowen');
 $membersMember1->setKey('MeganB@contoso.com');
-$membersMember1->setRoutingType('SMTP');
-$membersMember1->setRecipientType(new RecipientType('mailbox'));
+$membersMember1->setType(new RecipientType('mailbox'));
 $membersArray []= $membersMember1;
 $requestBody->setMembers($membersArray);
 

@@ -261,3 +261,10 @@ Content-Type: application/json
   }
 }
 ```
+
+## Related content
+
+- [Microsoft 365 cross-tenant access policy API overview](../resources/m365-cross-tenant-access-policy-overview.md)
+- [crossTenantAccessPolicyConfigurationDefault resource type](../resources/crosstenantaccesspolicyconfigurationdefault.md)
+- [m365CapabilityBase resource type](../resources/m365capabilitybase.md)
+

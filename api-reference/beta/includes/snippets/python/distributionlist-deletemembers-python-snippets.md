@@ -14,8 +14,7 @@ request_body = DeleteMembersPostRequestBody(
 	members = [
 		Member(
 			key = "MeganB@contoso.com",
-			routing_type = "SMTP",
-			recipient_type = RecipientType.Contact,
+			type = RecipientType.Mailbox,
 		),
 	],
 )

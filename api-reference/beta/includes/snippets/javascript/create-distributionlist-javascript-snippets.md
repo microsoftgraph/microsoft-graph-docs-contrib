@@ -11,19 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const distributionList = {
-  displayName: 'Project Team',
-  members: [
-    {
-      displayName: 'Adele Vance',
-      emailAddress: 'AdeleV@contoso.com',
-      recipientType: 'mailbox'
-    },
-    {
-      displayName: 'Alex Wilber',
-      emailAddress: 'AlexW@contoso.com',
-      recipientType: 'mailbox'
-    }
-  ]
+  displayName: 'Project Team'
 };
 
 await client.api('/me/distributionLists')

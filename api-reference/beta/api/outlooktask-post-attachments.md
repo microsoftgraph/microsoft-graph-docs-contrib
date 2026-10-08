@@ -144,7 +144,7 @@ HTTP 201 Created
 
 #### Request
 
-Here is an example which attaches an event with another event as an item attachment.
+The following example shows a request that attaches an event with another event as an item attachment.
 
 
 # [HTTP](#tab/http)

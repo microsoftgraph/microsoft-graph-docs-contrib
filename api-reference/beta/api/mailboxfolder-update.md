@@ -123,16 +123,17 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
   "id": "AQMkAGUw==",
   "displayName": "Announcements",
+  "isHidden": false,
   "parentFolderId": "AQMkAGUc==",
   "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93",
   "childFolderCount": 0,
   "totalItemCount": 0,
+  "wellKnownName": null,
   "type": "IPF.Note"
 }
 ```

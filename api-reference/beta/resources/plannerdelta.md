@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 An abstract type that represents the base type for planner entities such as a plan or a task.
 
-Base type of [plannerHistoryItem](plannerhistoryitem.md), [plannerTask](plannertask.md), [plannerPlan](plannerplan.md), and [plannerBucket](plannerbucket.md).
+Base type of [plannerBucket](../resources/plannerbucket.md), [plannerGoal](../resources/plannergoal.md), [plannerHistoryItem](../resources/plannerhistoryitem.md), [plannerPlan](../resources/plannerplan.md), and [plannerTask](../resources/plannertask.md).
 
 ## Methods
 None.

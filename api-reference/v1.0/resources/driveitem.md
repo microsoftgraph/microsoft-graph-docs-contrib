@@ -64,6 +64,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [List permissions](../api/driveitem-list-permissions.md)                     | [permission][] collection | Retrieve the collection of permissions on an **driveItem**.|
 | [Create permission](../api/driveitem-post-permissions.md)                    | [permission][] | Create a new [permission](../resources/permission.md) object on a [driveItem](../resources/driveitem.md).|
 | [Delete permission](../api/permission-delete.md)                             | None | Remove the permission from the **driveItem**.|
+| [Revoke grants on sharing link](../api/permission-revokegrants.md)           | [permission][] | Revoke access to a [listItem](../resources/listitem.md) or [driveItem](../resources/driveitem.md) granted via a sharing link by removing the specified [driveRecipient](../resources/driverecipient.md) entries from the link.|
 | [Get WebSocket channel][getWebSocket]                                        | [subscription][] | Receive near-real-time change notifications for a drive using socket.io.|
 | [Preview item][item-preview]                                                 | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.|
 | [Check in files](../api/driveitem-checkin.md)                                      | None| Check in a checked out **driveItem** resource, which makes the version of the document available to others. |

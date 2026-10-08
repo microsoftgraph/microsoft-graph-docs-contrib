@@ -2,7 +2,7 @@
 title: "mailboxFolder resource type"
 description: "Represents a folder in a user's mailbox, such as inbox, drafts, or other user created folders."
 author: "cparker-msft"
-ms.date: 02/23/2026
+ms.date: 08/06/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
@@ -27,6 +27,7 @@ This resource supports [delta query](/graph/delta-query-overview) to track incre
 |[Get delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that were added, deleted, or removed from the user's mailbox.|
 |[List child mailbox folders](../api/mailboxfolder-list-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get the [mailboxFolder](../resources/mailboxfolder.md) collection under the specified **mailboxFolder** in a mailbox.|
 |[List items in folder](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.|
+|[Delete item in folder](../api/mailboxfolder-delete-items.md)|None|Delete a [mailboxItem](../resources/mailboxitem.md) from a [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.|
 |**Extended properties**| | |
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create one or more single-value extended properties in a new or existing mailbox folder.|
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get mailbox folders that contain a single-value extended property by using `$expand` or `$filter`.|
@@ -42,6 +43,7 @@ This resource supports [delta query](/graph/delta-query-overview) to track incre
 |parentFolderId|String|The unique identifier for the parent folder of this folder.|
 |totalItemCount|Int32|The number of items in the folder.|
 |type|String|Describes the folder class type.|
+|wellKnownName|String|The locale-independent well-known name of the folder for folders created by Outlook, such as `inbox`, `sentitems`, `drafts`, `deleteditems`, or `archive`. For user-created folders, the value is `null`. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -68,6 +70,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "parentFolderId": "String",
   "totalItemCount": "Int32",
+  "wellKnownName": "String",
   "type": "String"
 }
 ```

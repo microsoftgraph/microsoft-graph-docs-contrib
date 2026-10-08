@@ -32,9 +32,10 @@ The following RBAC providers are currently supported:
 |:-------------|:------------|:------------|
 | [List](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Read a list of unifiedRoleDefinition objects, and their properties. |
 | [Create](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a unifiedRoleDefinition object. |
-| [Get](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Read the properties of a unifiedRoleDefinition object. |
+| [Get](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Read the properties of an active or soft-deleted unifiedRoleDefinition object. |
 | [Update](../api/unifiedroledefinition-update.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Update a unifiedRoleDefinition object. |
-| [Delete](../api/unifiedroledefinition-delete.md) | None | Delete a unifiedRoleDefinition object. |
+| [Delete](../api/unifiedroledefinition-delete.md) | None | Delete an active unifiedRoleDefinition object or permanently delete a soft-deleted custom role definition. |
+| [Restore](../api/unifiedroledefinition-restore.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Restore a soft-deleted custom role definition. |
 | [List assigned principals](../api/unifiedroledefinition-assignedprincipals.md) | [directoryObject](../resources/directoryobject.md) collection|Get the users and groups assigned to a role across all scopes.|
 
 ## Properties
