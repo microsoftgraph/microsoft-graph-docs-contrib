@@ -1,6 +1,6 @@
 ---
 title: "Create virtualEventRegistration"
-description: "Create a registration record for a webinar registrant."
+description: "Create a registration record for a registrant of a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,7 @@ ms.date: 10/22/2024
 # Create virtualEventRegistration
 Namespace: microsoft.graph
 
-Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md). This method registers the person for the webinar. 
+Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). This method registers the person for the webinar or town hall. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -31,8 +31,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To create a registration of a webinar:
+
 ```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrations
+```
+
+To create a registration of a town hall:
+
+```http
+POST /solutions/virtualEvents/townhalls/{townhallId}/registrations
 ```
 
 ## Request headers
@@ -156,6 +165,8 @@ Content-Type: application/json
 
 ---
 
+---
+
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -219,7 +230,7 @@ Content-Type: application/json
 
 ### Example 2: Creating registration record with application permission
 
-Use application permission to create a registration record for a person who does not have a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
+Use application permission to create a registration record for a person who doesn't have a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register an anonymous user for a webinar.
 
 #### Request
 The following example shows a request.
@@ -300,6 +311,8 @@ Content-Type: application/json
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-virtualeventregistration-application-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

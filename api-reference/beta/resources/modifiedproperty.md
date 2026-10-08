@@ -2,7 +2,7 @@
 title: "modifiedProperty resource type"
 description: "Describes the changes performed in the target system."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ms.date: 07/22/2024
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the changes performed in the target system. 
+Describes the changes performed in the target system. This object is configured in the **modifiedProperties** property of [provisioningObjectSummary](../resources/provisioningobjectsummary.md) and [targetResource](../resources/targetresource.md).
 
 ## Properties
 
@@ -57,5 +57,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

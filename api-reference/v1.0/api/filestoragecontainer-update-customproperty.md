@@ -12,7 +12,7 @@ ms.date: 09/26/2024
 
 Namespace: microsoft.graph
 
-Update one or multiple custom properties on a [fileStorageContainer](../resources/filestoragecontainer.md). Only the **value** and **isSearchable** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. If a custom property specified in the request body doesn't exist on the container, it will be created. 
+Update one or multiple custom properties on a [fileStorageContainer](../resources/filestoragecontainer.md). Only the **value**, **isSearchable**, and **isPatternToken** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. If a custom property specified in the request body doesn't exist on the container, it will be created. 
 
 Updating a custom property to a `null` value deletes the property from the container.
 
@@ -49,8 +49,9 @@ The following properties on custom properties can be modified.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|The value of the custom property.|
+|isPatternToken|Boolean|Indicates whether **value** is a `urlTemplate` pattern (for example, a token such as `{itemId}` used to configure redirect behavior when opening files), rather than a literal value that consumers must resolve before use.|
 |isSearchable|Boolean|Indicates whether the property is searchable.|
+|value|String|The value of the custom property.|
 
 ## Response
 

@@ -42,6 +42,26 @@ var requestBody = new X509CertificateAuthenticationMethodConfiguration
 			},
 		},
 	},
+	CertificateAuthorityScopes = new List<X509CertificateAuthorityScope>
+	{
+		new X509CertificateAuthorityScope
+		{
+			SubjectKeyIdentifier = "aaaaaaaabbbbcccc111122222222222222333333",
+			PublicKeyInfrastructureIdentifier = "Contoso PKI",
+			IncludeTargets = new List<IncludeTarget>
+			{
+				new IncludeTarget
+				{
+					Id = "aaaaaaaa-bbbb-cccc-1111-222222222222",
+					TargetType = AuthenticationMethodTargetType.Group,
+				},
+			},
+		},
+	},
+	IssuerHintsConfiguration = new X509CertificateIssuerHintsConfiguration
+	{
+		State = X509CertificateIssuerHintsState.Enabled,
+	},
 	CrlValidationConfiguration = new X509CertificateCRLValidationConfiguration
 	{
 		State = X509CertificateCRLValidationConfigurationState.Disabled,

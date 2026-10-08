@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]
 
 > [!NOTE]
-> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13671) and might require consent to multiple permissions.
+> This method has a [known permissions issue](/graph/known-issues#conditional-access-policy-requires-consent-to-additional-permission) and might require consent to multiple permissions.
 
 ## HTTP request
 
@@ -64,7 +64,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -119,7 +119,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

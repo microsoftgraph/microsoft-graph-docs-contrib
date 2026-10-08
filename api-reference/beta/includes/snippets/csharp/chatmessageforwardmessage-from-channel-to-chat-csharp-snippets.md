@@ -22,7 +22,7 @@ var requestBody = new ForwardToChatPostRequestBody
 	},
 	AdditionalMessage = new ChatMessage
 	{
-		Body = new ItemBody
+		Body = new ChatMessageBody
 		{
 			Content = "Hello World",
 		},

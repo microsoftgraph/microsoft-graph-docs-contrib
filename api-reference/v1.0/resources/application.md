@@ -19,6 +19,8 @@ Inherits from [directoryObject](directoryobject.md).
 
 This resource is an open type that allows additional properties beyond those documented here.
 
+The [agentIdentityBlueprint](../resources/agentidentityblueprint.md) resource inherits from this object.
+
 This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
@@ -66,8 +68,10 @@ This resource supports:
 | api | [apiApplication](apiapplication.md) | Specifies settings for an application that implements a web API. |
 | appId | String | The unique identifier for the application that is assigned to an application by Microsoft Entra ID. Not nullable. Read-only. Alternate key. Supports `$filter` (`eq`).  |
 | applicationTemplateId | String | Unique identifier of the [applicationTemplate](../resources/applicationtemplate.md). Supports `$filter` (`eq`, `not`, `ne`). Read-only. `null` if the app wasn't created from an application template.|
-| appRoles | [appRole](approle.md) collection | The collection of roles defined for the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. |
+| appRoles | [appRole](approle.md) collection | The collection of roles defined for the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. <br><br>App roles and exposed delegated permission scopes (**api.oauth2PermissionScopes**) share a default limit of 700 permission definitions per application. Enabled and disabled definitions both count. This limit is separate from the aggregate 1,200-entry application manifest limit and from app role assignment limits. For counting rules, behavior for existing objects above the limit, and design guidance, see [App role limits](/entra/identity-platform/howto-add-app-roles-in-apps#app-role-limits). |
+|authenticationBehaviors|[authenticationBehaviors](../resources/authenticationbehaviors.md)| The set of breaking change behaviors related to token issuance that are configured for the application. Authentication behaviors are unset by default (`null`) and must be explicitly enabled or disabled. Nullable. Returned only on `$select`. Requires `$select` to retrieve. <br/><br/> For more information about authentication behaviors, see [Manage application authenticationBehaviors](/graph/applications-authenticationbehaviors).|
 |certification|[certification](certification.md)|Specifies the certification status of the application.|
+|createdByAppId|String|The **appId** of the application that created this application. Set internally by Microsoft Entra ID. Read-only.|
 | createdDateTime | DateTimeOffset | The date and time the application was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, and `eq` on `null` values) and `$orderby`. |
 | deletedDateTime | DateTimeOffset | The date and time the application was deleted. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | description | String | Free text field to provide a description of the application object to end users. The maximum allowed size is 1,024 characters. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) and `$search`. |
@@ -81,6 +85,7 @@ This resource supports:
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false`, which means the fallback application type is confidential client such as a web app. There are certain scenarios where Microsoft Entra ID can't determine the client application type. For example, the [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it's configured without specifying a redirect URI. In those cases, Microsoft Entra ID interprets the application type based on the value of this property.|
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`). |
 | logo | Stream | The main logo for the application. Not nullable. |
+| managerApplications | Guid collection | A collection of application IDs for Microsoft first-party applications designated as managers. Manager applications can create service principals, agent identities, and agent users for managed agent blueprints. Limited to a maximum of 10 entries. Not nullable. Only supported on [agentIdentityBlueprint](agentidentityblueprint.md) objects; attempts to set this property on non-agent-blueprint applications return an error. Not returned by default; must be explicitly requested via `$select`. |
 | nativeAuthenticationApisEnabled | nativeAuthenticationApisEnabled | Specifies whether the Native Authentication APIs are enabled for the application. The possible values are: `none` and `all`. Default is `none`. For more information, see [Native Authentication](/entra/external-id/customers/concept-native-authentication). |
 | notes | String | Notes relevant for the management of the application. |
 | oauth2RequiredPostResponse | Boolean | Specifies whether, as part of OAuth 2.0 token requests, Microsoft Entra ID allows POST requests, as opposed to GET requests. The default is `false`, which specifies that only GET requests are allowed. |
@@ -103,6 +108,9 @@ This resource supports:
 | web |[webApplication](webapplication.md)| Specifies settings for a web application. |
 
 ### signInAudience values
+
+> [!IMPORTANT]
+> Using the **signInAudience** property to limit where an application can be used **isn't** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you *must* enforce that validation in your application code. To learn more, see [Secure applications and APIs by validating claims](/entra/identity-platform/claims-validation).
 
 | Value | Description |
 |:---------------|:--------|
@@ -152,7 +160,9 @@ The following JSON representation shows the resource type.
   "appId": "String",
   "applicationTemplateId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "authenticationBehaviors": {"@odata.type": "microsoft.graph.authenticationBehaviors"},
   "certification": {"@odata.type": "microsoft.graph.certification"},
+  "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",
@@ -165,6 +175,7 @@ The following JSON representation shows the resource type.
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
+  "managerApplications": ["Guid"],
   "nativeAuthenticationApisEnabled": "String",
   "notes": "String",
   "oauth2RequiredPostResponse": false,

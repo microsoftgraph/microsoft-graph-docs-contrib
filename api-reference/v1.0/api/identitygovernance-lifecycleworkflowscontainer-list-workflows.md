@@ -1,7 +1,7 @@
 ---
 title: "List workflows"
 description: "Get a list of the workflow objects and their properties."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Get a list of workflow resources that are associated with lifecycle workflows.
+Get a list of [workflow](../resources/identitygovernance-workflow.md) resources that are associated with Lifecycle Workflows.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

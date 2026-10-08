@@ -32,7 +32,7 @@ request_body = CustomTaskExtension(
 	),
 	callback_configuration = CustomTaskExtensionCallbackConfiguration(
 		odata_type = "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-		timeout_duration = "PT5M",
+		timeout_duration = "PT30M",
 	),
 )
 

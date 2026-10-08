@@ -5,7 +5,7 @@ author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 05/18/2026
 ---
 
 # List linkedResources
@@ -17,19 +17,35 @@ Get information of one or more items in a partner application, based on which a 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+### Permissions acting on self
 
 <!-- { "blockType": "permissions", "name": "todotask_list_linkedresources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/todotask-list-linkedresources-permissions.md)]
 
+### Permissions acting on other users
+
+<!-- { "blockType": "permissions", "name": "todotask_list_linkedresources_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/todotask-list-linkedresources-2-permissions.md)]
+
 ## HTTP request
 
+Permissions to list linkedResources of a task of the signed-in user:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
 GET /me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
+```
+
+Permissions to list linkedResources of a task of another user:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
 GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
 ```
 

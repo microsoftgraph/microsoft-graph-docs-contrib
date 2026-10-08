@@ -26,8 +26,17 @@ The details of a version of a [teamsApp](teamsapp.md).
 | azureADAppId        | string   | The WebApplicationInfo.Id from the Teams app manifest. |
 | displayName         | string   | The name of the app provided by the app developer.     |
 | version             | string   | The version number of the application.                 |
-| allowedInstallationScopes | teamsAppInstallationScope collection | A collection of scopes where the Teams app can be installed. The possible values are:</br>`team`—Indicates that the Teams app can be installed within a team and is authorized to access that team's data. </br>`groupChat`—Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.</br> `personal`—Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data. |
+| allowedInstallationScopes | [teamsAppInstallationScopes](../resources/teamsappdefinition.md#teamsappinstallationscopes-values) collection | A collection of scopes where the Teams app can be installed. The possible values are:</br>`team`—Indicates that the Teams app can be installed within a team and is authorized to access that team's data. </br>`groupChat`—Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.</br> `personal`—Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data. |
 |authorization|[teamsAppAuthorization](../resources/teamsappauthorization.md)|Authorization requirements specified in the Teams app manifest.|
+
+### teamsAppInstallationScopes values
+
+| Member | Description |
+| :--- | :--- |
+| team | Indicates that the Teams app can be installed within a team and is authorized to access that team data. |
+| groupChat | Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat data. |
+| personal | Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user data. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -56,7 +65,8 @@ The following JSON representation shows the resource type.
   "azureADAppId": "string",
   "displayName": "string",
   "version": "string",
-  "authorization": "#microsoft.graph.teamsAppAuthorization"
+  "authorization": "#microsoft.graph.teamsAppAuthorization",
+  "allowedInstallationScopes": "String"
 }
 ```
 

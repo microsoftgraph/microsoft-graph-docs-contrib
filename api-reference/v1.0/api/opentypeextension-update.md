@@ -20,7 +20,7 @@ The data in an extension can be primitive types or arrays of primitive types.
 
 See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -34,6 +34,7 @@ Depending on the resource that the extension was created in and the permission t
 | [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
 | [group post](../resources/post.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite.All |
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
@@ -52,11 +53,12 @@ PATCH /groups/{id}/extensions/{extensionId}
 PATCH /groups/{id}/events/{id}/extensions/{extensionId}
 PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/notes/{id}/extensions/{extensionId}
 PATCH /organization/{Id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it. 

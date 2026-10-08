@@ -1,11 +1,11 @@
 ---
 title: "cloudPcDeviceImage resource type"
 description: "Represents the image resource on Cloud PC."
-author: "AshleyYangSZ"
+author: "danipocket"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
-ms.date: 09/27/2024
+ms.date: 05/05/2026
 ---
 
 # cloudPcDeviceImage resource type
@@ -25,14 +25,15 @@ Represents the image resource on a Cloud PC.
 |[Create](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[Delete](../api/cloudpcdeviceimage-delete.md)|None|Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[Get source images](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects.|
-|[Reupload](../api/cloudpcdeviceimage-reupload.md)|None|Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.|
+|[Retry upload](../api/cloudpcdeviceimage-retryupload.md)|None|Retry the upload of a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that previously failed.|
+|[Reupload (deprecated)](../api/cloudpcdeviceimage-reupload.md)|None|Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload. This API is deprecated and will stop returning data on June 25, 2026. Going forward, use the [cloudPcDeviceImage: retryUpload](../api/cloudpcdeviceimage-retryupload.md) API instead.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the associated device image. The device image display name and the version are used to uniquely identify the Cloud PC device image. Read-only.|
-|errorCode|[cloudPcDeviceImageErrorCode](#cloudpcdeviceimageerrorcode-values)|The error code of the status of the image that indicates why the upload failed, if applicable. The possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `unknownFutureValue`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`, `sourceImageWithDataDiskNotSupported`, `sourceImageWithDiskEncryptionSetNotSupported`, `sourceImageWithAzureDiskEncryptionNotSupported`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`, `sourceImageWithDataDiskNotSupported`, `sourceImageWithDiskEncryptionSetNotSupported`, `sourceImageWithAzureDiskEncryptionNotSupported`. Read-only.|
+|errorCode|[cloudPcDeviceImageErrorCode](#cloudpcdeviceimageerrorcode-values)|The error code of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `unknownFutureValue`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`, `sourceImageWithDataDiskNotSupported`, `sourceImageWithDiskEncryptionSetNotSupported`, `sourceImageWithAzureDiskEncryptionNotSupported`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`, `sourceImageWithDataDiskNotSupported`, `sourceImageWithDiskEncryptionSetNotSupported`, `sourceImageWithAzureDiskEncryptionNotSupported`, `fSLogixInstalledSourceImageNotSupported`, `startMenuAppLimitExceeded`. Read-only.|
 |expirationDate|Date|The date when the image became unavailable. Read-only.|
 |id|String|The unique identifier (ID) of the image resource on the Cloud PC. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The data and time when the image was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
@@ -40,6 +41,7 @@ Represents the image resource on a Cloud PC.
 |osBuildNumber|String|The OS build version of the image. For example, `1909`. Read-only.|
 |osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. The possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`. The default value is `unknown`. Read-only.|
 |osVersionNumber|String|The operating system version of this image. For example, `10.0.22000.296`. Read-only.|
+|scopeIds|String collection|The scope IDs of the corresponding permission. Currently, it's the Intune scope tag ID. Read-only.|
 |sizeInGB|Int32|The size of the image in GB. For example, `64`. Read-only.|
 |sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. The required ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-only.|
 |status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on the Cloud PC. The possible values are: `pending`, `ready`, `warning`, `failed`, `unknownFutureValue`. Read-only.|
@@ -63,6 +65,8 @@ Represents the image resource on a Cloud PC.
 |sourceImageWithDataDiskNotSupported|Indicates the error code where the source image has an associated data disk attached. Setting up a provisioning policy with this configuration is not supported with W365 Frontline.|
 |sourceImageWithDiskEncryptionSetNotSupported|Indicates that the uploaded image uses a disk encryption set with a customer-managed key, which is not supported in Windows 365. Upload a new image encrypted with a platform-managed key.|
 |sourceImageWithAzureDiskEncryptionNotSupported|Indicates that the uploaded image was captured from an Azure virtual machine that had Azure disk encryption enabled, which is not supported in Windows 365. Upload a new image captured from a VM encrypted only with a platform-managed key.|
+|fSLogixInstalledSourceImageNotSupported|Indicates the error code where FSLogix has been detected on the image and it is not supported in Windows 365. Please remove FSLogix from the image and reupload it again.|
+|startMenuAppLimitExceeded|Indicates the error code where the uploaded image has 3000 or more apps/links in the Start menu, which is above the number supported by custom images. Please remove apps/links in the Start menu and upload the image again.|
 
 ### cloudPcDeviceImageOsStatus values
 
@@ -126,6 +130,7 @@ The following JSON representation shows the resource type.
   "osBuildNumber": "String",
   "osStatus": "String",
   "osVersionNumber": "String",
+  "scopeIds": ["String"],
   "sizeInGB": "Int32",
   "sourceImageResourceId": "String",
   "status": "String",

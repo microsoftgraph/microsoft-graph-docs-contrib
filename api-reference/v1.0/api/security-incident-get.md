@@ -1,8 +1,8 @@
 ---
 title: "Get incident"
 description: "Retrieve the properties and relationships of an incident object."
-ms.date: 11/11/2022
-author: "BenAlfasi"
+ms.date: 03/03/2026
+author: "LeonardoMele-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_incident_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-incident-get-permissions.md)]
+
+[!INCLUDE [rbac-security-alerts-apis-read](../includes/rbac-for-apis/rbac-security-alerts-apis-read.md)]
 
 ## HTTP request
 
@@ -55,12 +57,12 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["2972395"],
+  "sampleKeys": ["29"],
   "name": "get_incident"
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/security/incidents/2972395
+GET https://graph.microsoft.com/v1.0/security/incidents/29
 ```
 
 # [C#](#tab/csharp)
@@ -110,34 +112,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.incident",
-    "id": "2972395",
-    "incidentWebUrl": "https://security.microsoft.com/incidents/2972395?tid=12f988bf-16f1-11af-11ab-1d7cd011db47",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/incidents/$entity",
+    "id": "29",
+    "tenantId": "cfcdbe43-297b-4c6b-ac7e-8d7f6befb514",
+    "status": "active",
+    "incidentWebUrl": "https://security.microsoft.com/incident2/29/overview?tid=cfcdbe43-297b-4c6b-ac7e-8d7f6befb514",
     "redirectIncidentId": null,
-    "displayName": "Multi-stage incident involving Initial access & Command and control on multiple endpoints reported by multiple sources",
-    "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
-    "createdDateTime": "2021-08-13T08:43:35.5533333Z",
-    "lastUpdateDateTime": "2021-09-30T09:35:45.1133333Z",
-    "assignedTo": "KaiC@contoso.com",
-    "classification": "TruePositive",
-    "determination": "MultiStagedAttack",
-    "status": "Active",
-    "severity": "Medium",
+    "displayName": "Multi-stage incident involving Execution & Command and control on one endpoint",
+    "createdDateTime": "2026-01-22T12:09:23.1433333Z",
+    "lastUpdateDateTime": "2026-02-25T16:29:33.1Z",
+    "assignedTo": "admin@contoso.com",
+    "classification": "truePositive",
+    "determination": "multiStagedAttack",
+    "severity": "high",
     "customTags": [
         "Demo"
     ],
-    "comments": [
-        {
-            "comment": "Demo incident",
-            "createdBy": "DavidS@contoso.com",
-            "createdTime": "2021-09-30T12:07:37.2756993Z"
-        }
-    ],
-    "systemTags": [
-        "Defender Experts"
-    ],
-    "description": "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
-    "lastModifiedBy": "DavidS@contoso.onmicrosoft.com",
-    "summary": "Defender Experts has identified some malicious activity. This incident has been raised for your awareness and should be investigated as normal."
+    "systemTags": [],
+    "description": "Microsoft observed Raspberry Robin worm activity spreading through infected USB devices on multiple endpoints in your environment.",
+    "lastModifiedBy": "API-App:admin@contoso.com",
+    "resolvingComment": null,
+    "summary": "Defender Experts has identified malicious activity. This incident has been raised for your awareness and should be investigated as usual.",
+    "priorityScore": 100,
+    "comments": []
 }
 ```

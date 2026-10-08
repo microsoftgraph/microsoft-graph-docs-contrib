@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Company-wide settings for apps and services.
+Company-wide settings for apps and services. This object is configured in the **settings** property of [adminAppsAndServices](../resources/adminappsandservices.md).
 
 ## Properties
 |Property|Type|Description|

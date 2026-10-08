@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of the user who initiated a sign-up.
+Represents the identity of the user who initiated a sign-up. This object is configured in the **signUpIdentity** property of [selfServiceSignUp](../resources/selfservicesignup.md).
 
 
 ## Properties
@@ -39,4 +39,3 @@ The following JSON representation shows the resource type.
 }
 
 ```
-

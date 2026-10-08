@@ -5,13 +5,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
-// Code snippets are only available for the latest major version. Current major version is $v0.*
+// Code snippets are only available for the latest major version. Current major version is $v1.*
 
 // Dependencies
 import (
 	  "context"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  grapheducation "github.com/microsoftgraph/msgraph-beta-sdk-go/education"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  grapheducation "github.com/microsoftgraph/msgraph-sdk-go/education"
 	  //other-imports
 )
 

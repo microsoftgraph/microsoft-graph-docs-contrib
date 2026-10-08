@@ -14,6 +14,7 @@ request_body = ColumnDefinition(
 	enforce_unique_values = False,
 	hidden = False,
 	indexed = False,
+	is_searchable = False,
 	name = "Title",
 	text = TextColumn(
 		allow_multiple_lines = False,

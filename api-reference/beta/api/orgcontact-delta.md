@@ -56,7 +56,7 @@ This method supports optional OData query parameters to help customize the respo
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties you need for best performance. The **id** property is always returned.
 - There's limited support for `$filter`:
-  - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/beta/contacts/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There's a limit of 50 filtered objects.
+  - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/beta/contacts/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There's a limit of 50 filtered objects.
 
 ## Request headers
 | Name       | Description|
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/contacts/delta
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -233,7 +233,7 @@ GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization. All three properties are included in the response and it isn't known which ones have changed since the `@odata.deltaLink` was obtained.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization. All three properties are included in the response and it isn't known which ones have changed since the `@odata.deltaLink` was obtained.
 
 <!-- {
   "blockType": "response",
@@ -309,7 +309,7 @@ Prefer: return=minimal
 
 #### Response
 
-Here's an example of the response when using `@odata.deltaLink` obtained from the query initialization. The `mail` property isn't included, which means it hasn't changed since the last delta query; `displayName` and `jobTitle` are included, which means their values have changed.
+The following example shows the response when using `@odata.deltaLink` obtained from the query initialization. The `mail` property isn't included, which means it hasn't changed since the last delta query; `displayName` and `jobTitle` are included, which means their values have changed.
 
 <!-- {
   "blockType": "response",

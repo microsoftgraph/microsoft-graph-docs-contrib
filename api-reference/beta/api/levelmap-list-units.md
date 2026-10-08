@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of the [unitMap](../resources/unitmap.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-unitmap-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-unitmap-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

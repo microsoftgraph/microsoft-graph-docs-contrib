@@ -13,13 +13,13 @@ ms.date: 04/03/2024
 Namespace: microsoft.graph
 
 
-Describes the identity associated with the provisioning object summary event. 
+Describes the identity associated with the provisioning object summary event. This object is configured in the **sourceIdentity** and **targetIdentity** properties of [provisioningObjectSummary](../resources/provisioningobjectsummary.md). 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|details|[detailsInfo](detailsinfo.md)|Details of the identity.|
+|details|[detailsInfo](../resources/detailsinfo.md)|Details of the identity.|
 |displayName|String|Display name of the identity. Supports `$filter` (`eq`, `contains`). |
 |id|String|Uniquely identifies the identity. Supports `$filter` (`eq`, `contains`).|
 |identityType|String|Type of identity that has been provisioned, such as 'user' or 'group'. Supports `$filter` (`eq`, `contains`).|

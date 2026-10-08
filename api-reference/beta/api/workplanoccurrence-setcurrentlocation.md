@@ -1,6 +1,6 @@
 ---
 title: "workPlanOccurrence: setCurrentLocation"
-description: "Update your work location for the current day or current active segment."
+description: "Update a user's work location for the current day or current active segment."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update your [work](../resources/workplanoccurrence.md) location for the current day or current active segment. This action allows you to quickly update your work location without modifying individual occurrences.
+Update a user's [work](../resources/workplanoccurrence.md) location for the current day or current active segment. This action quickly updates the user's work location without modifying individual occurrences.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "workplanoccurrence_setcurrentlocation" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workplanoccurrence-setcurrentlocation-permissions.md)]
+
+>**Note:** Application permissions are supported only when using the `/users/{id}` endpoint.
 
 ## HTTP request
 
@@ -34,7 +36,7 @@ POST /me/settings/workHoursAndLocations/occurrences/setCurrentLocation
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-When using the `/users/{id}` endpoint, the ID must be your own user ID.
+When using delegated permissions with the `/users/{id}` endpoint, the ID must be the signed-in user's ID.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -80,6 +82,7 @@ The following example shows how to set the current location to office.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workplanoccurrence_setcurrentlocation_office"
@@ -95,6 +98,36 @@ Content-type: application/json
   "placeId": "12345678-1234-1234-1234-123456789012"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/workplanoccurrence-setcurrentlocation-office-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/workplanoccurrence-setcurrentlocation-office-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workplanoccurrence-setcurrentlocation-office-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workplanoccurrence-setcurrentlocation-office-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/workplanoccurrence-setcurrentlocation-office-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/workplanoccurrence-setcurrentlocation-office-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/workplanoccurrence-setcurrentlocation-office-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -117,6 +150,7 @@ The following example shows how to set the current location to remote.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workplanoccurrence_setcurrentlocation_remote"
@@ -131,6 +165,36 @@ Content-type: application/json
   "workLocationType": "remote"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/workplanoccurrence-setcurrentlocation-remote-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/workplanoccurrence-setcurrentlocation-remote-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workplanoccurrence-setcurrentlocation-remote-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workplanoccurrence-setcurrentlocation-remote-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/workplanoccurrence-setcurrentlocation-remote-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/workplanoccurrence-setcurrentlocation-remote-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/workplanoccurrence-setcurrentlocation-remote-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

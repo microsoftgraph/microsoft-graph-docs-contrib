@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of the [profileSource](../resources/profilesource.md) objects and their properties, which represent both external data sources and out-of-the-box Microsoft data sources configured for user profiles in an organization.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

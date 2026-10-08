@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a new [teamsApp](../resources/teamsapp.md) object that enables an [app](../resources/teamsapp.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
+Add a new [teamsApp](../resources/teamsapp.md) object that enables an [app](../resources/teamsapp.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). This operation is allowed only for channels with a **membershipType** value of `shared` or `private`.
 
 ## Permissions
 
@@ -57,6 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_teamsapp_from_"
@@ -70,6 +71,12 @@ Content-Type: application/json
   "@odata.id": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/7fffdd9a-eb41-37e0-be9b-0bfc89302cb2"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

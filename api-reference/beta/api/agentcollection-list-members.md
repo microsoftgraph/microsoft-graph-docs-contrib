@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Return the list of [agent instances](../resources/agentinstance.md) that are members for the specified [agentCollection](../resources/agentcollection.md). This API returns only the **agentCollection** and doesn't support using $select to return other properties. Attempting to select more properties returns a `400 Bad Request` error code.
 
 ## Permissions
@@ -67,6 +69,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_agentcollection_members"
@@ -76,6 +79,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInstanceId}/collections/{agentCollectionId}/members
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-agentcollection-members-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

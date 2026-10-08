@@ -10,8 +10,8 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
 chatMessage.setSubject("Announcement Subheading");
-ItemBody body = new ItemBody();
-body.setContentType(BodyType.Text);
+ChatMessageBody body = new ChatMessageBody();
+body.setMessageBodyContentType(ChatMessageBodyContentType.Text);
 body.setContent("<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text");
 chatMessage.setBody(body);
 LinkedList<ChatMessageAttachment> attachments = new LinkedList<ChatMessageAttachment>();

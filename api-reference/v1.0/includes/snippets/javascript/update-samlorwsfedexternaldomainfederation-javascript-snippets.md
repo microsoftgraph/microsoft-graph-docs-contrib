@@ -20,7 +20,6 @@ const samlOrWsFedExternalDomainFederation = {
 };
 
 await client.api('/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation/d5a56845-6845-d5a5-4568-a5d54568a5d5')
-	.version('beta')
 	.update(samlOrWsFedExternalDomainFederation);
 
 ```

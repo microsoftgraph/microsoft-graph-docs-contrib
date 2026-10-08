@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Set a scheduled auto-reprovision task to do automatic regular apply. `Frontline shared` only. Administrators only.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

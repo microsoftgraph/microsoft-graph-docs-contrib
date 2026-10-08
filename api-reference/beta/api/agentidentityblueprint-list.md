@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects and their properties. Does not return other types of application objects.
+Get a list of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects and their properties. Doesn't return other types of application objects.
 
 ## Permissions
 
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/applications/microsoft.graph.agentIdentityB
 
 ---
 
-
 ### Response
 
 The following example shows the response.
@@ -164,6 +163,7 @@ Content-Type: application/json
       },
       "keyCredentials": [],
       "passwordCredentials": [],
+      "requiredResourceAccess": [],
       "verifiedPublisher": {
           "displayName": null,
           "verifiedPublisherId": null,

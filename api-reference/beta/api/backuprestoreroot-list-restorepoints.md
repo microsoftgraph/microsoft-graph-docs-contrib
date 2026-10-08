@@ -33,6 +33,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+To filter the expanded **protectionUnit** by ID:
+
 <!-- {
   "blockType": "ignored"
 }
@@ -41,11 +43,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq '{ProtectionUnitID}')&$filter=protectionDateTime lt YYYY-MM-DDTHH:mm:ssZ
 ```
 
+To filter **restorePoint** objects by protection unit and policy:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /solutions/backupRestore/restorePoints?$expand=protectionUnit&$filter=protectionDateTime lt YYYY-MM-DDTHH:mm:ssZ and protectionUnit/id eq '{protectionUnitId}' and protectionUnit/policyId eq '{policyId}'
+```
+
 ## Optional query parameters
 
 This method supports the `$expand`, `$filter` and `orderBy` [OData query parameters](/graph/query-parameters), as shown in the [example](../api/backuprestoreroot-list-restorepoints.md#request) later in this topic.
 
 The `$expand` and `$filter` query parameters are required.
+
+Use `$filter` with `lt` on **protectionDateTime**. To filter the expanded **protectionUnit** by ID, use `eq` on **id** within `$expand`. To filter **restorePoint** objects by protection unit and policy, use `eq` on **protectionUnit/id** and **protectionUnit/policyId** and combine the expressions with `and`.
 
 ## Request headers
 
@@ -69,13 +83,22 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 The following example shows a request.
 # [HTTP](#tab/http)
+To filter the expanded **protectionUnit** by ID:
+
+
+``` http
+GET https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853')&$filter=protectionDateTime lt 2024-05-12T10:01:00Z
+```
+
+To filter **restorePoint** objects by protection unit and policy:
+
 <!-- {
   "blockType": "request",
   "name": "list_restorepoint"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853')&$filter=protectionDateTime lt 2024-05-12T10:01:00Z
+GET https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints?$expand=protectionUnit&$filter=protectionDateTime lt 2024-05-12T10:01:00Z and protectionUnit/id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853' and protectionUnit/policyId eq '9fec8e78-bce4-4aaf-ab1b-5451cc387264'
 ```
 
 # [C#](#tab/csharp)

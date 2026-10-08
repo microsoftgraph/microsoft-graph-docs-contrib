@@ -81,7 +81,6 @@ The following table shows the properties that are required when you create the [
 |showAzureADEnterpriseApps|Boolean|Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal|
 |showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
 |showConfigurationManagerApps|Boolean|Boolean that indicates if Configuration Manager Apps will be shown in Company Portal|
-|sendDeviceOwnershipChangePushNotification|Boolean|Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Customized device enrollment flow displayed to the end user . Possible values are: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
 |disableClientTelemetry|Boolean|Applies to telemetry sent from all clients to the Intune service. When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.|
 |roleScopeTagIds|String collection|List of scope tags assigned to the branding profile|
@@ -98,7 +97,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 2059
+Content-length: 2005
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -153,7 +152,6 @@ Content-length: 2059
   "showAzureADEnterpriseApps": true,
   "showOfficeWebApps": true,
   "showConfigurationManagerApps": true,
-  "sendDeviceOwnershipChangePushNotification": true,
   "enrollmentAvailability": "availableWithoutPrompts",
   "disableClientTelemetry": true,
   "roleScopeTagIds": [
@@ -167,7 +165,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2231
+Content-Length: 2177
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -225,7 +223,6 @@ Content-Length: 2231
   "showAzureADEnterpriseApps": true,
   "showOfficeWebApps": true,
   "showConfigurationManagerApps": true,
-  "sendDeviceOwnershipChangePushNotification": true,
   "enrollmentAvailability": "availableWithoutPrompts",
   "disableClientTelemetry": true,
   "roleScopeTagIds": [

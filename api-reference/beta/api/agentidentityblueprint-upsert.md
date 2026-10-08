@@ -108,6 +108,7 @@ Content-type: application/json
     "groupMembershipClaims": null,
     "optionalClaims": null,
     "publisherDomain": "contoso.onmicrosoft.com",
+    "requiredResourceAccess": [],
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "tags": [],
     "tokenEncryptionKeyId": null,

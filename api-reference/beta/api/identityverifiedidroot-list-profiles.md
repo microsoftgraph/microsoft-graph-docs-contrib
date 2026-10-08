@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# List verifiedIdProfile objects    
+# List verifiedIdProfile objects
 
 Namespace: microsoft.graph
 
@@ -39,7 +39,7 @@ GET /identity/verifiedId/profiles
 
 ## Optional query parameters
 
-None 
+None
 
 ## Request headers
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/identity/verifiedId/profiles
 [!INCLUDE [sample-code](../includes/snippets/php/list-verifiedidprofile-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-verifiedidprofile-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-verifiedidprofile-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -121,7 +125,9 @@ Content-Type: application/json
             "verifierDid": "did:web:eu.did-dev.contoso.io",
             "priority": 1,
             "verifiedIdProfileConfiguration": {
+                "methodType": "tenantCustomCredential",
                 "type": "verifiedIdentity",
+                "manifestUrl": "https://verifiedid.contoso.com/manifest",
                 "acceptedIssuer": "did:web:eu.did-dev.contoso.io",
                 "claimBindingSource": "directory",
                 "claimBindings": [
@@ -133,18 +139,32 @@ Content-Type: application/json
                         "sourceAttribute": "Last name",
                         "verifiedIdClaim": "vc.credentialSubject.lastName"
                     }
-                ]
+                ],
+                "claimValidation": {
+                    "isEnabled": false,
+                    "customExtensionId": ""
+                }
             },
             "faceCheckConfiguration": {
                 "isEnabled": true,
                 "sourcePhotoClaimName": "portrait"
             },
+            "mobileDriversLicenseConfiguration": {
+                "acceptedRegions": [
+                    "region-code"
+                ],
+                "documentStandard": "document-standard"
+            },
             "verifiedIdUsageConfigurations": [
                 {
                     "isEnabledForTestOnly": true,
-                    "purpose": "recovery"
+                    "purpose": "verification"
                 }
-            ]
+            ],
+            "selfServiceIssuance": {
+                "isEnabled": true,
+                "issuanceUrl": "https://verifiedid.contoso.com/issue"
+            }
         }
     ]
 }

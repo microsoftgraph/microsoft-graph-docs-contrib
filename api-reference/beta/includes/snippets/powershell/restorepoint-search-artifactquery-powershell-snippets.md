@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Beta.BackupRestore
 
 $params = @{
 	artifactQuery = @{
-		queryExpression = "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '2024-09-21T08:20:00.0000000Z')"
+		queryExpression = "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true')"
 		artifactType = "message"
 	}
 	protectionUnitIds = @(
@@ -16,6 +16,7 @@ $params = @{
 )
 protectionTimePeriod = @{
 	startDateTime = [System.DateTime]::Parse("2021-01-01T00:00:00Z")
+	endDateTime = [System.DateTime]::Parse("2021-01-30T00:00:00Z")
 }
 restorePointPreference = "oldest"
 }

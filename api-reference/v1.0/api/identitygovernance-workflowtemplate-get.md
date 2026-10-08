@@ -1,7 +1,7 @@
 ---
 title: "Get workflowTemplate"
 description: "Read the properties and relationships of a workflowTemplate object."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -37,7 +37,7 @@ GET /identityGovernance/lifecycleWorkflows/workflowTemplates/{workflowTemplateId
 
 ## Optional query parameters
 
-This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

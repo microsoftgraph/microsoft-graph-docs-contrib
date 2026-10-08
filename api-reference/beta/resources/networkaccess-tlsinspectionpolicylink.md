@@ -20,13 +20,8 @@ Represents the link between a [filtering profile](../resources/networkaccess-fil
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/networkaccess-tlsinspectionpolicylink-list.md)|[microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) collection|Get a list of the tlsInspectionPolicyLink objects on a filtering profile.|
-|[Create](../api/networkaccess-tlsinspectionpolicylink-post.md)|[microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md)|Create a new tlsInspectionPolicyLink object on a filtering profile.|
-|[Get](../api/networkaccess-tlsinspectionpolicylink-get.md)|[microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md)|Get a tlsInspectionPolicyLink object on a filtering profile.|
-|[Update](../api/networkaccess-tlsinspectionpolicylink-update.md)|None|Update the properties of a tlsInspectionPolicyLink object.|
-|[Delete](../api/networkaccess-tlsinspectionpolicylink-delete.md)|None|Delete a tlsInspectionPolicyLink object.|
+
+For supported API operations, see [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md)
 
 ## Properties
 |Property|Type|Description|

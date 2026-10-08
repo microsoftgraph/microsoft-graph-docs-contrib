@@ -31,17 +31,17 @@ jobs:
       result: ${{ steps.commit-if-needed.outputs.result }}
     steps:
     - name: Checkout docs repo
-      uses: actions/checkout@v4.1.3
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         ref: ${{ inputs.target }}
         path: docs
     - name: Checkout tool repo
-      uses: actions/checkout@v4.1.3
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         repository: microsoftgraph/msgraph-toc-gen
         path: tool
     - name: Setup .NET
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
       with:
         dotnet-version: 10.x
     - name: Build TOC generation tool
@@ -64,17 +64,17 @@ jobs:
     - name: Get token
       id: get_token
       if: ${{ inputs.pull_request }}
-      uses: microsoftgraph/get-app-token@v1.0.4
+      uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
       continue-on-error: true
       with:
-        application-id: ${{ secrets.APPLICATION_ID }}
-        application-private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
+        client-id: ${{ secrets.APPLICATION_ID }}
+        private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
     - name: Commit updates and open pull request
       id: commit-if-needed
       working-directory: ./docs
       shell: pwsh
       env:
-        GH_TOKEN: ${{ steps.get_token.outputs.app-token }}
+        GH_TOKEN: ${{ steps.get_token.outputs.token }}
         PULL_REQUEST: ${{ inputs.pull_request }}
         V1_OUTCOME: ${{ steps.v1_gen.outcome }}
         BETA_OUTCOME: ${{ steps.beta_gen.outcome }}

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.
+Represents an individual [template setting definition](../resources/directorysettingtemplate.md), including the default value for the setting, if the setting is not instantiated. For more information about supported settings, see [Overview of group settings](/graph/group-directory-settings).
 
 
 ## Properties

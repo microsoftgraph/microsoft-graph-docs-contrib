@@ -1,7 +1,7 @@
 ---
 title: "Create Custom Task Extension"
 description: "Create a new customTaskExtension object."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -101,7 +101,7 @@ Content-length: 588
     },
     "callbackConfiguration": {
         "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT5M"
+        "timeoutDuration": "PT30M"
     }
 }
 ```
@@ -174,7 +174,7 @@ Content-Type: application/json
     },
     "callbackConfiguration": {
         "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT5M"
+        "timeoutDuration": "PT30M"
     }
 }
 ```

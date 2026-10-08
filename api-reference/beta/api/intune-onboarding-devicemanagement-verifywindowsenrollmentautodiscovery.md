@@ -1,6 +1,6 @@
 ---
 title: "verifyWindowsEnrollmentAutoDiscovery function"
-description: "Intune Onboarding Devicemanagement Verifywindowsenrollmentautodiscovery Source_Api ."
+description: "Intune Onboarding Devicemanagement Verifywindowsenrollmentautodiscovery Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

@@ -49,12 +49,6 @@ Use the following Microsoft Graph APIs to query user and service principal risks
 - [riskyAgents](riskyagent.md) - Query Microsoft Graph for information about agents that Microsoft Entra ID Protection detected as risky. Agent risk represents the probability that a given identity or account is compromised. These risks are calculated asynchronously using data and patterns from Microsoft's internal and external threat intelligence sources.
 
   - APIs for manual remediation of risks by confirming an agent as compromised or dismissing a risky agent are also available.
- 
-## Integration with fraud protection providers to prevent fake account signups
-
-Microsoft Entra External ID supports integration with third-party fraud protection providers, such as Arkose Labs and HUMAN Security, to help prevent fake account sign-ups and bot attacks. These providers offer comprehensive fraud protection solutions that enable organizations to detect and block automated attacks, such as bot-driven registrations, during the user sign-up process.
-
-Using the [fraudProtectionProvider](../resources/fraudProtectionProvider.md) resource type and its associated APIs to manage the integration to these providers, and the [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) to link the protection with your apps.
 
 ## Automatic remediation of risks
 

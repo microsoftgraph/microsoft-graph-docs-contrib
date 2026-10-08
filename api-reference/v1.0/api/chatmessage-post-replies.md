@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 Send a new reply to a [chatMessage](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
 
-> **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> **Notes**:
+> - We don't recommend that you use this API for data migration via the standard create message flow. For data migration scenarios, use the [import messages](/graph/teams-import-messages) flow instead.
+> - It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -166,7 +168,12 @@ Content-type: application/json
 
 ### Example 2: Import messages
 
+The following example shows how to import a message reply. For more information, see [Import messages into Microsoft Teams chats and channels using Microsoft Graph](/graph/teams-import-messages).
+
 > **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
+
+> [!IMPORTANT]
+> The **createdDateTime** must be unique down to the millisecond within the target channel. If a message with the same **createdDateTime** exists, the request fails with `409 Conflict`. Adjust the **createdDateTime** and retry. For more information, see [Import messages into Microsoft Teams chats and channels using Microsoft Graph](/graph/teams-import-messages).
 
 #### Request
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The workflowExecutionConditions type notes the workflow execution conditions in [workflowTemplate](../resources/identitygovernance-workflowtemplate.md) and [workflowBase](../resources/identitygovernance-workflowbase.md) objects. Execution conditions define when a workflow runs and rules that identify the users that are the target of the workflow. The following types are derived from this abstract type:
+The derived types of this abstract object are configured in the **executionConditions** property of the [workflow](../resources/identitygovernance-workflow.md), [workflowTemplate](../resources/identitygovernance-workflowtemplate.md), and [workflowVersion](../resources/identitygovernance-workflowversion.md) resources. Execution conditions define when a workflow runs and which users or subjects it targets. The following types are derived from this abstract type:
 
 + [onDemandExecutionOnly](../resources/identitygovernance-ondemandexecutiononly.md)
 + [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerandscopebasedconditions.md)

@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Delete the customized schema and resets the schema to the default configuration. If the schema is deleted in the context of the template, it resets the schema to the default one associated with the template's `factoryTag`.
+Delete the customized [synchronizationSchema](../resources/synchronization-synchronizationschema.md) and resets the schema to the default configuration. If the schema is deleted in the context of the template, it resets the schema to the default one associated with the template's `factoryTag`.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -43,18 +43,18 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `201 No Content` response code. It does not return anything in response body.
+If successful, this method returns a `201 No Content` response code. It doesn't return anything in response body.
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

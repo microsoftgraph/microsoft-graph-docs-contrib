@@ -38,7 +38,7 @@ GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,6 +53,9 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [mailboxFolder](../resources/mailboxfolder.md) object in the response body.
+
+> [!NOTE]
+> This API might return a redirect when the requested folder is in an autoexpanded archive mailbox. For more information, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
 
 ## Examples
 
@@ -109,17 +112,18 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders$entity",
     "@odata.type": "#microsoft.graph.mailboxFolder",
     "id": "NJWt2LeVEAAAIBDAAAAA==",
     "displayName": "Inbox",
+    "isHidden": false,
     "parentFolderId": "NJWt2LeVEAAAIBCAAAAA==",
     "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
     "childFolderCount": 3,
     "totalItemCount": 58,
+    "wellKnownName": "inbox",
     "type": "IPF.Note"
 }
 ```

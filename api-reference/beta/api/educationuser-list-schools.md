@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/education/me/schools
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response.
 

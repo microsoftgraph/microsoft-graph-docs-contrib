@@ -67,7 +67,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the [page](../resources/page.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 # [HTTP](#tab/http)
  <!-- { "blockType": "request", "name": "page_get" } -->
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown Here's truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

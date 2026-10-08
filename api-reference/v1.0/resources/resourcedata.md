@@ -2,7 +2,7 @@
 title: "resourceData resource type"
 description: "Represents the resouce data attached to the change notification sent to the subscriber."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 doc_type: resourcePageType
 ms.subservice: change-notifications
 ms.date: 07/22/2024

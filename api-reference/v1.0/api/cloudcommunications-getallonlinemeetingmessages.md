@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/v1.0/communications/getAllOnlineMeetingMessages?
 [!INCLUDE [sample-code](../includes/snippets/php/cloudcommunicationsthisgetallonlinemeetingmessages-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudcommunicationsthisgetallonlinemeetingmessages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudcommunicationsthisgetallonlinemeetingmessages-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

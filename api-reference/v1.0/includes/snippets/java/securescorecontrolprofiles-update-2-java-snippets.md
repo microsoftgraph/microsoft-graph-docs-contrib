@@ -15,7 +15,9 @@ vendorInformation.setProviderVersion(null);
 vendorInformation.setSubProvider(null);
 vendorInformation.setVendor("Microsoft");
 secureScoreControlProfile.setVendorInformation(vendorInformation);
-SecureScoreControlProfile result = graphClient.security().secureScoreControlProfiles().bySecureScoreControlProfileId("{secureScoreControlProfile-id}").patch(secureScoreControlProfile);
+SecureScoreControlProfile result = graphClient.security().secureScoreControlProfiles().bySecureScoreControlProfileId("{secureScoreControlProfile-id}").patch(secureScoreControlProfile, requestConfiguration -> {
+	requestConfiguration.headers.add("Prefer", "return=representation");
+});
 
 
 ```

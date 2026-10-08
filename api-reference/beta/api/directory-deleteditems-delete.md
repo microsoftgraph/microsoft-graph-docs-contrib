@@ -2,7 +2,7 @@
 title: "Permanently delete item (directory object)"
 ms.date: 11/17/2025
 description: "Permanently delete a recently deleted application, group, service principal, or user from deleted items."
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -41,9 +41,9 @@ The following table shows the least privileged permission or permissions require
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
-| [agentIdentity](../resources/agentidentity.md) | AgentIdentity.DeleteRestore.All | Not supported. | AgentIdentity.DeleteRestore.All |
-| [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.DeleteRestore.All | Not supported. | AgentIdentityBlueprint.DeleteRestore.All |
-| [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.DeleteRestore.All | Not supported. | AgentIdentityBlueprintPrincipal.DeleteRestore.All |
+| [agentIdentity](../resources/agentidentity.md) | AgentIdentity.ReadWrite.All | Not supported. | AgentIdentity.ReadWrite.All |
+| [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.ReadWrite.All | Not supported. | AgentIdentityBlueprint.ReadWrite.All |
+| [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.ReadWrite.All | Not supported. | AgentIdentityBlueprintPrincipal.ReadWrite.All |
 | [agentUser](../resources/agentuser.md) | AgentIdUser.ReadWrite.IdentityParentedBy | Not supported. | AgentIdUser.ReadWrite.IdentityParentedBy |
 | [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.ReadWrite.All | Not supported | ExternalUserProfile.ReadWrite.All |
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
@@ -58,7 +58,7 @@ The following table shows the least privileged permission or permissions require
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directory/deleteditems/{id}
+DELETE /directory/deletedItems/{id}
 ```
 
 ## Request headers
@@ -84,7 +84,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
   "name": "delete_directory_deleteditem"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+DELETE https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 
 # [C#](#tab/csharp)

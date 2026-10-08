@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the registration configuration of a [virtualEventWebinar](../resources/virtualeventwebinar.md).
+Represents the registration configuration of a virtual event, such as a webinar or town hall.
+Base type of [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) and [virtualEventTownhallRegistrationConfiguration](../resources/virtualeventtownhallregistrationconfiguration.md).  
 
 Inherits from [entity](../resources/entity.md).
 
@@ -24,6 +25,8 @@ Inherits from [entity](../resources/entity.md).
 |:-------------------|:-------|:-----------------------------------------------------------------------------------------------------------------------------|
 | capacity           | Int32  | Total capacity of the virtual event.                                                                                         |
 | id                 | String | Unique identifier for the **virtualEventRegistrationConfiguration** object. Inherited from [entity](../resources/entity.md). |
+| isManualApprovalEnabled | Boolean | Indicates whether registrations require organizer approval before a participant is confirmed. |
+| isWaitlistEnabled | Boolean | Indicates whether more registrants are automatically placed on a waitlist when capacity is reached. |
 | registrationWebUrl | String | Registration URL of the virtual event.                                                                                       |
 
 ## Relationships
@@ -47,8 +50,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistrationConfiguration",
-  "capacity": "Int32",  
   "id": "String (identifier)",
-  "registrationWebUrl": "String"
+  "registrationWebUrl": "String",
+  "capacity": "Int32",
+  "isWaitlistEnabled": "Boolean",
+  "isManualApprovalEnabled": "Boolean"
 }
 ```

@@ -9,9 +9,9 @@ from msgraph import GraphServiceClient
 from msgraph.generated.models.workbook_worksheet import WorkbookWorksheet
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = WorkbookWorksheet(
-	position = 99,
-	name = "name-value",
-	visibility = "visibility-value",
+	position = 0,
+	name = "Sheet2",
+	visibility = "Hidden",
 )
 
 result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.worksheets.by_workbook_worksheet_id('workbookWorksheet-id').patch(request_body)

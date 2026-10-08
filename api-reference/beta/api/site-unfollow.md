@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{user-id | userPrincipalName}/followedSites/remove
+POST /users/{id | userPrincipalName}/followedSites/remove
 ```
 
 ## Request body
@@ -52,12 +52,11 @@ The following example shows how to unfollow multiple sites.
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/remove
+POST https://graph.microsoft.com/beta/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/followedSites/remove
 Content-Type: application/json
 
 {

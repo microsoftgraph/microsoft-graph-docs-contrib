@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resource type for defining application segments when publishing an on-premises wildcard application through Microsoft Entra application proxy. The following types inherit from this type:
+Resource type for defining application segments when publishing an on-premises wildcard application through Microsoft Entra application proxy. The derived types of this object are configured in the **segmentsConfiguration** property of [onPremisesPublishing](../resources/onpremisespublishing.md). The following types are derived from this type:
 + [webSegmentConfiguration](websegmentconfiguration.md)
 + [ipSegmentConfiguration](ipsegmentconfiguration.md)
 

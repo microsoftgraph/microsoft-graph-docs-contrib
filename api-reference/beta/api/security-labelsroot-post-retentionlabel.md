@@ -68,7 +68,8 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
-Here's an example of a request.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -134,6 +135,10 @@ Content-length: 555
 [!INCLUDE [sample-code](../includes/snippets/php/create-retentionlabel-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-retentionlabel-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-retentionlabel-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -141,7 +146,9 @@ Content-length: 555
 ---
 
 ### Response
-Here's an example of the response.
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

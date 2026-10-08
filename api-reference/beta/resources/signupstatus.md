@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the status (success or failure) of the sign-up step.
+Provides the status (success or failure) of the sign-up step. This object is configured in the **status** property of [selfServiceSignUp](../resources/selfservicesignup.md).
 
 
 
@@ -46,4 +46,3 @@ The following JSON representation shows the resource type.
 }
 
 ```
-

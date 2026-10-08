@@ -5,7 +5,7 @@ author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 12/02/2025
+ms.date: 09/08/2026
 ---
 
 # Get callRecording
@@ -20,7 +20,6 @@ For a recording, this API returns the metadata of the single recording associate
 
 > [!NOTE]
 > For online meetings:
-> * This is a metered API. For more information, see [payment models for meeting APIs](/graph/teams-licenses#payment-models-for-meeting-apis).
 > * This API doesn't support meetings created by using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
 > * This API might not return a call recording if multiple meetings are scheduled under a single channel post thread.
 > * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
@@ -143,6 +142,10 @@ GET https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-callrecording-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -210,27 +213,31 @@ GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-calltranscript-adhoc-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecording-adhoc-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-calltranscript-adhoc-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-callrecording-adhoc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-calltranscript-adhoc-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-callrecording-adhoc-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-calltranscript-adhoc-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecording-adhoc-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-calltranscript-adhoc-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-adhoc-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-calltranscript-adhoc-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/get-callrecording-adhoc-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -310,6 +317,10 @@ GET https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-content-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecording-content-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-callrecording-content-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -369,6 +380,10 @@ GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-content-adhoc-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -432,6 +447,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmO
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-using-contentcorrelationid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecording-using-contentcorrelationid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

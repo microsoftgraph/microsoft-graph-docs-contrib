@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Restore a deleted [countryNamedLocation](../resources/countryNamedLocation.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/na
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/countrynamedlocationthisrestore-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/countrynamedlocationthisrestore-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

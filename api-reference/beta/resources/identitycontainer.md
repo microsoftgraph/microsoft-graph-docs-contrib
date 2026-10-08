@@ -5,7 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
-ms.date: 07/03/2025
+ms.date: 04/03/2026
 ---
 
 # identityContainer resource type
@@ -38,6 +38,7 @@ None.
 |conditionalAccess|[conditionalAccessRoot](conditionalAccessRoot.md) collection| the entry point for the Conditional Access (CA) object model.|
 |continuousAccessEvaluationPolicy|[continuousAccessEvaluationPolicy](continuousAccessEvaluationPolicy.md)| Represents entry point for continuous access evaluation policy.|
 |riskPrevention|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Represents the entry point for fraud and risk prevention configurations in Microsoft Entra External ID, including third-party provider settings.|
+|verifiedId|[identityVerifiedIdRoot](identityverifiedidroot.md)|Entry point for verified ID operations.|
 
 ## JSON representation
 

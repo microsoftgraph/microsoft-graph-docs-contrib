@@ -29,7 +29,7 @@ This derived type inherits from the [authenticationMethod](authenticationmethod.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time that this Platform Credential Key was registered.|
+|createdDateTime|DateTimeOffset|The date and time that this Platform Credential Key was registered. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |displayName|String|The name of the device on which Platform Credential is registered.|
 |id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
 |keyStrength|authenticationMethodKeyStrength|Key strength of this Platform Credential key. The possible values are: `normal`, `weak`, `unknown`.|

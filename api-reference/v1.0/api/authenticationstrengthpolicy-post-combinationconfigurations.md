@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}//combinationConfigurations
+POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations
 Content-Type: application/json
 Content-length: 130
 

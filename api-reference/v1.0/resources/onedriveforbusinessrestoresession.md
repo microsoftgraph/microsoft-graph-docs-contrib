@@ -23,6 +23,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |:---|:---|:---|
 |[Create](../api/backuprestoreroot-post-onedriveforbusinessrestoresessions.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md)|Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
 |[List](../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) collection|Get a list of the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) objects and their properties.|
+|[List granularDriveRestoreArtifacts](../api/onedriveforbusinessrestoresession-list-granulardriverestoreartifacts.md)|[granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) collection|Get a list of the [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) objects and their properties.|
 |[Update](../api/onedriveforbusinessrestoresession-update.md)|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md)|Update the properties of a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).|
 
 ## Properties
@@ -56,6 +57,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |:---|:---|:---|
 |driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|A collection of restore points and destination details that can be used to restore a OneDrive for work or school drive.|
 |driveRestoreArtifactsBulkAdditionRequests|[driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) collection|A collection of user mailboxes and destination details that can be used to restore a OneDrive for work or school drive.|
+|granularDriveRestoreArtifacts|[granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) collection|A collection of browse session ID and item key details that can be used to restore OneDrive for work or school files and folders.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

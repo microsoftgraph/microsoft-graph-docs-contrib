@@ -1,5 +1,63 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "23a612be-abd4-492b-afb3-2076bf2a297b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskChatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskChatMessage](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskChatMessage?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskChatMessage"
+        },
+        {
+          "Id": "23a612be-abd4-492b-afb3-2076bf2a297b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskChatMention",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskChatMention](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskChatMention?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskChatMention"
+        },
+        {
+          "Id": "23a612be-abd4-492b-afb3-2076bf2a297b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskChatReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskChatReaction](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskChatReaction?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskChatReaction"
+        },
+        {
+          "Id": "23a612be-abd4-492b-afb3-2076bf2a297b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskChatReactionEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskChatReactionEvent](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskChatReactionEvent?view=graph-rest-beta) resource type.",
+          "Target": "plannerTaskChatReactionEvent"
+        },
+        {
+          "Id": "23a612be-abd4-492b-afb3-2076bf2a297b",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasChat",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasChat** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "23a612be-abd4-492b-afb3-2076bf2a297b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "messages",
+          "ChangeType": "Addition",
+          "Description": "Added the **messages** relationship to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        }
+      ],
+      "Id": "23a612be-abd4-492b-afb3-2076bf2a297b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-18T00:00:00.0000000Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
      {
       "ChangeList": [
         {

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Validate that the credentials are valid in the tenant.
+Validate that the credentials are valid in the tenant for a [synchronizationJob](../resources/synchronization-synchronizationjob.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -51,7 +51,7 @@ If validation is successful, this method returns a `204, No Content` response co
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -107,7 +107,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response"

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [profilePropertySetting](../resources/profilepropertysetting.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -53,10 +53,9 @@ You can specify the following properties when you create a **profilePropertySett
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|organizationAllowedAudiences|A privacy setting that reflects the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|isUserOverrideForAudienceEnabled|Boolean|Defines whether a user is allowed to override the tenant admin privacy setting.|
-|name|String|Name of the property-level setting.|
-|prioritizedSourceUrls|String collection|A collection of prioritized profile source URLs ordered by data precedence within an organization.|
+|displayName|String|Name of the property-level setting. Optional.|
+|name|String|Other name of the property-level setting. For backward compatibility. Optional.|
+|prioritizedSourceUrls|String collection|A collection of prioritized profile source URLs ordered by data precedence within an organization. Required.|
 
 ## Response
 
@@ -79,6 +78,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.profilePropertySetting",
+  "displayName": "Profile priority config",
+  "name": "Profile priority config",
   "prioritizedSourceUrls": [
     "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')"
   ]
@@ -115,6 +116,8 @@ Content-Type: application/json
 
 ---
 
+---
+
 ### Response
 
 The following example shows the response.
@@ -132,9 +135,8 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.profilePropertySetting",
   "id": "00000000-0000-0000-0000-000000000001",
-  "name": null,
-  "userOverridePrivacy": null,
-  "allowedAudiences": null,
+  "displayName": "Profile priority config",
+  "name": "Profile priority config",
   "prioritizedSourceUrls": [
     "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
     "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"

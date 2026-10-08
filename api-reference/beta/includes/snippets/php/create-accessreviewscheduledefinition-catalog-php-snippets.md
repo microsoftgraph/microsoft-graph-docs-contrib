@@ -7,8 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\AccessReviewScheduleDefinition;
-use Microsoft\Graph\Beta\Generated\Models\AccessReviewScope;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewResourceScope;
 use Microsoft\Graph\Beta\Generated\Models\AccessReviewReviewerScope;
+use Microsoft\Graph\Beta\Generated\Models\AccessReviewReviewerScopeType;
 use Microsoft\Graph\Beta\Generated\Models\AccessReviewScheduleSettings;
 use Microsoft\Graph\Beta\Generated\Models\PatternedRecurrence;
 use Microsoft\Graph\Beta\Generated\Models\RecurrencePattern;
@@ -24,7 +25,7 @@ $requestBody = new AccessReviewScheduleDefinition();
 $requestBody->setDisplayName('Review of catalog');
 $requestBody->setDescriptionForAdmins('Review of all resources in a catalog');
 $requestBody->setDescriptionForReviewers('If you have any questions, contact jerry@contoso.com');
-$scope = new AccessReviewScope();
+$scope = new AccessReviewResourceScope();
 $scope->setOdataType('#microsoft.graph.accessReviewResourceScope');
 $additionalData = [
 	'resourceScopes' => [
@@ -45,10 +46,7 @@ $scope->setAdditionalData($additionalData);
 $requestBody->setScope($scope);
 $reviewersAccessReviewReviewerScope1 = new AccessReviewReviewerScope();
 $reviewersAccessReviewReviewerScope1->setOdataType('#microsoft.graph.accessReviewReviewerScope');
-$additionalData = [
-	'scopeType' => 'resourceOwner',
-];
-$reviewersAccessReviewReviewerScope1->setAdditionalData($additionalData);
+$reviewersAccessReviewReviewerScope1->setScopeType(new AccessReviewReviewerScopeType('resourceOwner'));
 $reviewersArray []= $reviewersAccessReviewReviewerScope1;
 $requestBody->setReviewers($reviewersArray);
 

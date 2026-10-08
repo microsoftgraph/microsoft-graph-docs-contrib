@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Identity the resource object that initiates the activity. The initiator can be a user, an app or a system (which is considered as an app). For more information, see [Linkable identifiers in Microsoft Entra](/entra/identity/authentication/how-to-authentication-track-linkable-identifiers).
+Identity the resource object that initiates the activity. The initiator can be a user, an app or a system (which is considered as an app). For more information, see [Linkable identifiers in Microsoft Entra](/entra/identity/authentication/how-to-authentication-track-linkable-identifiers). This object is configured in the **initiatedBy** property of [directoryAudit](../resources/directoryaudit.md).
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|app|[appIdentity](appidentity.md)|If the resource initiating the activity is an app, this property indicates all the app related information like **appId** and name.|
+|app|[appIdentity](../resources/appidentity.md)|If the resource initiating the activity is an app, this property indicates all the app related information like **appId** and name.|
 |linkableIdentifiers|[linkableIdentifiers](../resources/linkableidentifiers.md)|A set of linkable claims to link together all the authentication artifacts issued from a single interactive root authentication.|
-|user|[userIdentity](useridentity.md)|If the resource initiating the activity is a user, this property Indicates all the user related information like user ID and **userPrincipalName**.|
+|user|[userIdentity](../resources/useridentity.md)|If the resource initiating the activity is a user, this property Indicates all the user related information like user ID and **userPrincipalName**.|
 
 ## Relationships
 None.
@@ -55,5 +55,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

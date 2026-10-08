@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycustodian_list_lastindexoperation" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycustodian-list-lastindexoperation-permissions.md)]
+[!INCLUDE [rbac-ediscovery-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
 
 ## HTTP request
 

@@ -1,7 +1,7 @@
 ---
 title: "Create allowedValue"
 description: "Create a new allowedValue object."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

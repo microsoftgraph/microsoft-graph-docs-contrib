@@ -18,7 +18,12 @@ Read the properties and relationships of an [authenticationEventListener](../res
 - [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md) resource type
 - [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md) resource type
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
+- [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) resource type
 - [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
+- [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md) resource type
+- [onVerifiedIdClaimValidationListener](../resources/onverifiedidclaimvalidationlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -41,7 +46,7 @@ GET /identity/authenticationEventListeners/{authenticationEventListenerId}
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

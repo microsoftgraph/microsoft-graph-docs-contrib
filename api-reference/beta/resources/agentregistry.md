@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Represents the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry), which serves as a centralized repository for managing AI agents within an organization. The agent registry allows administrators to register, organize, and manage AI agents and their capabilities, including agent identities, agent users, and agent identity blueprints.
 
 Inherits from [entity](../resources/entity.md)

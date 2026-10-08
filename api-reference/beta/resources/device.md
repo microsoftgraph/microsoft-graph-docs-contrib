@@ -32,6 +32,7 @@ This resource supports:
 |[Get](../api/device-get.md) | [device](device.md) |Read properties and relationships of device object.|
 |[Update](../api/device-update.md) | [device](device.md)  |Update the properties of the device object. |
 |[Delete](../api/device-delete.md) | None |Delete the device object. |
+|[Provision](../api/device-provision.md) | [provisionResponse](provisionresponse.md) |Provision a device on behalf of an approved Virtual Desktop Infrastructure (VDI) provider. |
 |[Get delta](../api/device-delta.md)|[device](device.md) collection| Get incremental changes for devices. |
 |[List member of](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a direct member of. |
 |[List transitive member of](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that the device is a member of. This operation is transitive. |
@@ -63,6 +64,7 @@ This resource supports:
 |alternativeNames|String collection|List of alternative names for the device.|
 |alternativeSecurityIds|[alternativeSecurityId](alternativeSecurityId.md) collection| For internal use only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`). |
 |approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, and `eq` on `null` values) and `$orderby`. |
+|cloudLicensing|[microsoft.graph.cloudLicensing.deviceCloudLicensing](cloudlicensing-devicecloudlicensing.md)|The cloud licensing relationships for this device, including assignments, usage rights, and waiting members.|
 |complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 |deviceCategory|String|User-defined property set by Intune to automatically add devices to groups and simplify managing devices.|
 |deviceId|String| Unique identifier set by Azure Device Registration Service at the time of registration. This ID is an alternate key that can be used to reference the device object. Also supports `$filter` (`eq`, `ne`, `not`, `startsWith`). |
@@ -87,7 +89,7 @@ This resource supports:
 |model| String| Model of the device. Read-only. |
 |name| String | Friendly name of the device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
-|onPremisesSecurityIdentifier|String|The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud. Read-only. Returned only on `$select`. Supports `$filter` (`eq`).|
+|onPremisesSecurityIdentifier|String|The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud. Read-only. Requires `$select` to retrieve. Supports `$filter` (`eq`).|
 |onPremisesSyncEnabled|Boolean|`true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; `null` if this object has never been synced from an on-premises directory (default). Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). |
 |operatingSystem|String| The type of operating system on the device. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`, and `eq` on `null` values). |
 |operatingSystemVersion|String| Operating system version of the device. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`, and `eq` on `null` values). |
@@ -131,6 +133,9 @@ The following JSON representation shows the resource type.
   "accountEnabled": "Boolean",
   "alternativeNames": ["String"],
   "approximateLastSignInDateTime": "String (timestamp)",
+  "cloudLicensing": {
+    "@odata.type": "microsoft.graph.cloudLicensing.deviceCloudLicensing"
+  },
   "complianceExpirationDateTime": "String (timestamp)",
   "deviceCategory": "String",
   "deviceId": "String",

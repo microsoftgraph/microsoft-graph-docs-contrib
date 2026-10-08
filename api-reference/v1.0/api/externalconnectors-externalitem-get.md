@@ -34,7 +34,7 @@ GET /external/connections/{connectionsId}/items/{externalItemId}
 ```
 
 ## Optional query parameters
-This method does not support optional query parameters to customize the response.
+This method doesn't support optional query parameters to customize the response.
 
 ## Request headers
 |Name|Description|

@@ -2,7 +2,7 @@
 title: "List deletedItems (directory objects)"
 ms.date: 11/17/2025
 description: "Retrieve a list of recently deleted items from deleted items."
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -53,14 +53,12 @@ The following table shows the least privileged permission or permissions require
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-[!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http 
-GET /directory/deleteditems/microsoft.graph.application
-GET /directory/deleteditems/microsoft.graph.servicePrincipal
-GET /directory/deleteditems/microsoft.graph.group
+GET /directory/deletedItems/microsoft.graph.application
+GET /directory/deletedItems/microsoft.graph.servicePrincipal
+GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.administrativeUnit
 GET /directory/deletedItems/microsoft.graph.externalUserProfile
@@ -69,7 +67,15 @@ GET /directory/deletedItems/microsoft.graph.certificateBasedAuthPki
 GET /directory/deletedItems/microsoft.graph.certificateAuthorityDetail
 ```
 
-The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
+> [!IMPORTANT]
+> For soft deleted security groups, the **securityEnabled** property returns `false` instead of `true` due to a known limitation.
+>
+> To identify the group type, use the **groupTypes** property:
+>
+> - `["Unified"]`indicates a Microsoft 365 group.
+> - An empty array (`[]`) indicates a security group.
+
+The OData cast type is a required part of the URI and calling `GET /directory/deletedItems` without a type is **not** supported.
 
 ## Optional query parameters
 
@@ -119,7 +125,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "list_directory_deleteditems"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.group
+GET https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group
 ```
 
 # [C#](#tab/csharp)
@@ -264,10 +270,6 @@ Content-type: application/json
 {
   "type": "#page.annotation",
   "description": "List deleteditems",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "suppressions": []
 }
 -->

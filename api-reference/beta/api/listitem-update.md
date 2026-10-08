@@ -34,9 +34,9 @@ PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 
 ## Optional request headers
 
-| Name       | Value | Description
-|:-----------|:------|:--------------------------------------------------------
-| _if-match_ | etag  | If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.
+| Name       | Value | Description |
+|:-----------|:------|:--------------------------------------------------------|
+| _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated. |
 
 
 ## Request body
@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [fieldValueSet][] specify
 
 ## Example
 
-Here is an example that updates the Color and Quantity fields of the list item with new values.
+The following example shows a request that updates the Color and Quantity fields of the list item with new values.
 All other values on the listItem are left alone.
 
 

@@ -21,7 +21,7 @@ changeType := "created,updated,deleted"
 requestBody.SetChangeType(&changeType) 
 notificationUrl := "https://webhook.azurewebsites.net/api/send/myNotifyClient"
 requestBody.SetNotificationUrl(&notificationUrl) 
-resource := "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages?model=B"
+resource := "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages"
 requestBody.SetResource(&resource) 
 expirationDateTime , err := time.Parse(time.RFC3339, "2023-01-10T18:56:49.112603+00:00")
 requestBody.SetExpirationDateTime(&expirationDateTime) 

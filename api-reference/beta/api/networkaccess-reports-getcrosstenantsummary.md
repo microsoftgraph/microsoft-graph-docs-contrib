@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a summary of the cross-tenant access patterns as logged in [Global Secure Access](../resources/networkaccess-global-secure-access-api-overview.md).
+Get a [summary of the cross-tenant access](../resources/networkaccess-crosstenantsummary.md) patterns as logged in Global Secure Access.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

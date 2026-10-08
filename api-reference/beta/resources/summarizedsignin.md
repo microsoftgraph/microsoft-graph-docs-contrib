@@ -1,11 +1,12 @@
 ---
 title: "summarizedSignIn resource type"
-description: "Represents the summary of sign in events for a given category."
+description: "Represents the summary of sign-in events for a given category."
 ms.date: 08/18/2025
 author: "cumansfi"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+toc.title: Summarized sign-in
 ---
 
 # summarizedSignIn resource type

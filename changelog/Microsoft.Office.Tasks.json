@@ -3,11 +3,143 @@
     {
       "ChangeList": [
         {
+          "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerGoalStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerGoalStatus** enumeration type.",
+          "Target": "plannerGoalStatus"
+        },
+        {
+          "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "goals",
+          "ChangeType": "Addition",
+          "Description": "Added the **goals** relationship to the [planner](https://learn.microsoft.com/graph/api/resources/planner?view=graph-rest-beta) resource.",
+          "Target": "planner"
+        },
+        {
+          "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerGoal",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerGoal** resource.",
+          "Target": "plannerGoal"
+        },
+        {
+          "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "goals",
+          "ChangeType": "Addition",
+          "Description": "Added the **goals** relationship to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "goalIds",
+          "ChangeType": "Addition",
+          "Description": "Added the **goalIds** property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        }
+      ],
+      "Id": "cd259765-8bcc-4779-b14d-79fbb8850d0f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-03T22:32:29.3715134Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "historyEntityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **historyEntityType** enumeration type.",
+          "Target": "historyEntityType"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "historyEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **historyEventType** enumeration type.",
+          "Target": "historyEventType"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Member",
+          "ChangedApiName": "completionInHostedApp",
+          "ChangeType": "Addition",
+          "Description": "Added the `completionInHostedApp` member to the **plannerTaskCompletionRequirements** enumeration.",
+          "Target": "plannerTaskCompletionRequirements"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskData",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskData](https://learn.microsoft.com/graph/api/resources/plannertaskdata?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskData"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskDetailsData",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskDetailsData](https://learn.microsoft.com/graph/api/resources/plannertaskdetailsdata?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskDetailsData"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerDelta",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerDelta](https://learn.microsoft.com/graph/api/resources/plannerdelta?view=graph-rest-beta) resource.",
+          "Target": "plannerDelta"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerHistoryItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerHistoryItem](https://learn.microsoft.com/graph/api/resources/plannerhistoryitem?view=graph-rest-beta) resource and an associated method.",
+          "Target": "plannerHistoryItem"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "historyItems",
+          "ChangeType": "Addition",
+          "Description": "Added the **historyItems** relationship to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskHistoryItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskHistoryItem](https://learn.microsoft.com/graph/api/resources/taskhistoryitem?view=graph-rest-beta) resource.",
+          "Target": "taskHistoryItem"
+        }
+      ],
+      "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-20T07:35:12.7210574Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0341bdcb-189b-4298-aaca-6b519455fc34",
           "ApiChange": "Property",
           "ChangedApiName": "publicationName",
           "ChangeType": "Addition",
-          "Description": "Added the **publicationName** property to the [plannerTeamsPublicationInfo](https://learn.microsoft.com/en-us/graph/api/resources/plannerteamspublicationinfo?view=graph-rest-beta) resource.",
+          "Description": "Added the **publicationName** property to the [plannerTeamsPublicationInfo](https://learn.microsoft.com/graph/api/resources/plannerteamspublicationinfo?view=graph-rest-beta) resource.",
           "Target": "plannerTeamsPublicationInfo"
         }
       ],
@@ -25,7 +157,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "myDayTasks",
           "ChangeType": "Addition",
-          "Description": "Added the **myDayTasks** relationship to the [plannerUser](https://learn.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource.",
+          "Description": "Added the **myDayTasks** relationship to the [plannerUser](https://learn.microsoft.com/graph/api/resources/planneruser?view=graph-rest-beta) resource.",
           "Target": "plannerUser"
         },
         {
@@ -33,7 +165,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [List myDayTasks](https://learn.microsoft.com/en-us/graph/api/planneruser-list-mydaytasks?view=graph-rest-beta) method.",
+          "Description": "Added the [List myDayTasks](https://learn.microsoft.com/graph/api/planneruser-list-mydaytasks?view=graph-rest-beta) method.",
           "Target": "plannerUser"
         }
       ],
@@ -51,7 +183,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isOnMyDay",
           "ChangeType": "Addition",
-          "Description": "Added the `isOnMyDay` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the `isOnMyDay` property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -59,7 +191,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isOnMyDayLastModifiedDate",
           "ChangeType": "Addition",
-          "Description": "Added the `isOnMyDayLastModifiedDate` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the `isOnMyDayLastModifiedDate` property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         }
       ],
@@ -85,7 +217,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerChecklistRequirement",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerChecklistRequirement](https://learn.microsoft.com/en-us/graph/api/resources/plannerChecklistRequirement?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerChecklistRequirement](https://learn.microsoft.com/graph/api/resources/plannerchecklistrequirement?view=graph-rest-beta) resource type.",
           "Target": "plannerChecklistRequirement"
         },
         {
@@ -93,7 +225,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskCompletionRequirementDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskCompletionRequirementDetails?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/graph/api/resources/plannertaskcompletionrequirementdetails?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskCompletionRequirementDetails"
         },
         {
@@ -101,7 +233,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "completionRequirements",
           "ChangeType": "Addition",
-          "Description": "Added the **completionRequirements** property to the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource.",
+          "Description": "Added the **completionRequirements** property to the [plannerTaskPropertyRule](https://learn.microsoft.com/graph/api/resources/plannertaskpropertyrule?view=graph-rest-beta) resource.",
           "Target": "plannerTaskPropertyRule"
         },
         {
@@ -109,7 +241,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "specifiedCompletionRequirements",
           "ChangeType": "Addition",
-          "Description": "Added the **specifiedCompletionRequirements** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **specifiedCompletionRequirements** property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -117,7 +249,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "completionRequirements",
           "ChangeType": "Addition",
-          "Description": "Added the **completionRequirements** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **completionRequirements** property to the [plannerTaskDetails](https://learn.microsoft.com/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
         }
       ],
@@ -131,11 +263,53 @@
     {
       "ChangeList": [
         {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerTaskChatMessageType",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerTaskChatMessageType** enumeration.",
+          "Target": "plannerTaskChatMessageType"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "plannerTaskChatMentionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerTaskChatMentionType** enumeration.",
+          "Target": "plannerTaskChatMentionType"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Method",
+          "ChangedApiName": "setReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [setReaction](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta) method to the [plannerTaskChatMessage](https://learn.microsoft.com/graph/api/resources/plannertaskchatmessage?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskChatMessage"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Method",
+          "ChangedApiName": "unsetReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [unsetReaction](https://learn.microsoft.com/graph/api/plannertaskchatmessage-unsetreaction?view=graph-rest-beta) method to the [plannerTaskChatMessage](https://learn.microsoft.com/graph/api/resources/plannertaskchatmessage?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskChatMessage"
+        }
+      ],
+      "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-18T00:00:00.0000000Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "90b9b42f-a66a-45b4-bb64-3f85e5045e81",
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannerbucket-delta?view=graph-rest-beta) method to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/graph/api/plannerbucket-delta?view=graph-rest-beta) method to the [plannerBucket](https://learn.microsoft.com/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -143,7 +317,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannerplan-delta?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/graph/api/plannerplan-delta?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -151,7 +325,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/plannertask-delta?view=graph-rest-beta) method to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta) method to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         }
       ],
@@ -177,7 +351,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "state",
           "ChangeType": "Addition",
-          "Description": "Added the **state** property to [plannerPlanContextDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **state** property to [plannerPlanContextDetails](https://learn.microsoft.com/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta) resource.",
           "Target": "plannerPlanContextDetails"
         }
       ],
@@ -471,7 +645,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "rosterPlans",
           "ChangeType": "Addition",
-          "Description": "Added the **rosterPlans** relationship to the [plannerUser](https://learn.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource.",
+          "Description": "Added the **rosterPlans** relationship to the [plannerUser](https://learn.microsoft.com/graph/api/resources/planneruser?view=graph-rest-beta) resource.",
           "Target": "plannerUser"
         },
         {
@@ -479,7 +653,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "rosters",
           "ChangeType": "Addition",
-          "Description": "Added the **rosters** relationship to the [planner](https://learn.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta) resource.",
+          "Description": "Added the **rosters** relationship to the [planner](https://learn.microsoft.com/graph/api/resources/planner?view=graph-rest-beta) resource.",
           "Target": "planner"
         },
         {
@@ -487,7 +661,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isCreationContext",
           "ChangeType": "Addition",
-          "Description": "Added the **isCreationContext** property to the [plannerPlanContext](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta) resource.",
+          "Description": "Added the **isCreationContext** property to the [plannerPlanContext](https://learn.microsoft.com/graph/api/resources/plannerplancontext?view=graph-rest-beta) resource.",
           "Target": "plannerPlanContext"
         },
         {
@@ -495,7 +669,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customLinkText",
           "ChangeType": "Addition",
-          "Description": "Added the **customLinkText** property to the [plannerPlanContextDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **customLinkText** property to the [plannerPlanContextDetails](https://learn.microsoft.com/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta) resource.",
           "Target": "plannerPlanContextDetails"
         },
         {
@@ -503,7 +677,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "displayLinkType",
           "ChangeType": "Addition",
-          "Description": "Added the **displayLinkType** property to the [plannerPlanContextDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **displayLinkType** property to the [plannerPlanContextDetails](https://learn.microsoft.com/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta) resource.",
           "Target": "plannerPlanContextDetails"
         },
         {
@@ -511,7 +685,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerRoster",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerRoster](https://learn.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerRoster](https://learn.microsoft.com/graph/api/resources/plannerroster?view=graph-rest-beta) resource type.",
           "Target": "plannerRoster"
         },
         {
@@ -519,7 +693,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerRosterMember",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerRosterMember](https://learn.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerRosterMember](https://learn.microsoft.com/graph/api/resources/plannerrostermember?view=graph-rest-beta) resource type.",
           "Target": "plannerRosterMember"
         },
         {
@@ -553,7 +727,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "creationSource",
           "ChangeType": "Addition",
-          "Description": "Added the **creationSource** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **creationSource** property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -561,7 +735,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "container",
           "ChangeType": "Addition",
-          "Description": "Added the **container** property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the **container** property to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -569,7 +743,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanContainer](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanContainer?view=graph-rest-beta) resource,",
+          "Description": "Added the [plannerPlanContainer](https://learn.microsoft.com/graph/api/resources/plannerplancontainer?view=graph-rest-beta) resource,",
           "Target": "plannerPlanContainer"
         },
         {
@@ -577,7 +751,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskCreation",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskCreation](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskCreation?view=graph-rest-beta) resource.",
+          "Description": "Added the [plannerTaskCreation](https://learn.microsoft.com/graph/api/resources/plannertaskcreation?view=graph-rest-beta) resource.",
           "Target": "plannerTaskCreation"
         },
         {
@@ -585,7 +759,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTeamsPublicationInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTeamsPublicationInfo](https://learn.microsoft.com/en-us/graph/api/resources/plannerTeamsPublicationInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [plannerTeamsPublicationInfo](https://learn.microsoft.com/graph/api/resources/plannerteamspublicationinfo?view=graph-rest-beta) resource.",
           "Target": "plannerTeamsPublicationInfo"
         },
         {
@@ -601,7 +775,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "owner",
           "ChangeType": "Change",
-          "Description": "Deprecated the **owner** property on the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the **owner** property on the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }
       ],
@@ -619,7 +793,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "todoTask,todoTaskList,linkedResource",
           "ChangeType": "Addition",
-          "Description": "Introduced the To Do API. Added the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-beta), and [linkedResource](https://learn.microsoft.com/en-us/graph/api/resources/linkedresource?view=graph-rest-beta) resources, and CRUD operations.",
+          "Description": "Introduced the To Do API. Added the [todoTask](https://learn.microsoft.com/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](https://learn.microsoft.com/graph/api/resources/todotasklist?view=graph-rest-beta), and [linkedResource](https://learn.microsoft.com/graph/api/resources/linkedresource?view=graph-rest-beta) resources, and CRUD operations.",
           "Target": "todoTask,todoTaskList,linkedResource"
         },
         {
@@ -627,7 +801,7 @@
           "ApiChange": "method",
           "ChangedApiName": "outlookTask,outlookTaskFolder,outlookTaskGroup",
           "ChangeType": "Change",
-          "Description": "Deprecated the Outlook tasks API, including [outlookTask](https://learn.microsoft.com/en-us/graph/api/resources/outlooktask?view=graph-rest-beta), [outlookTaskFolder](https://learn.microsoft.com/en-us/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), [outlookTaskGroup](https://learn.microsoft.com/en-us/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), and related operations and methods.",
+          "Description": "Deprecated the Outlook tasks API, including [outlookTask](https://learn.microsoft.com/graph/api/resources/outlooktask?view=graph-rest-beta), [outlookTaskFolder](https://learn.microsoft.com/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), [outlookTaskGroup](https://learn.microsoft.com/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), and related operations and methods.",
           "Target": "outlookTask,outlookTaskFolder,outlookTaskGroup"
         }
       ],
@@ -645,7 +819,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category7",
           "ChangeType": "Addition",
-          "Description": "Added the **category7** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category7** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -653,7 +827,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category8",
           "ChangeType": "Addition",
-          "Description": "Added the **category8** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category8** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -661,7 +835,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category9",
           "ChangeType": "Addition",
-          "Description": "Added the **category9** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category9** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -669,7 +843,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category10",
           "ChangeType": "Addition",
-          "Description": "Added the **category10** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category10** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -677,7 +851,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category11",
           "ChangeType": "Addition",
-          "Description": "Added the **category11** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category11** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -685,7 +859,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category12",
           "ChangeType": "Addition",
-          "Description": "Added the **category12** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category12** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -693,7 +867,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category13",
           "ChangeType": "Addition",
-          "Description": "Added the **category13** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category13** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -701,7 +875,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category14",
           "ChangeType": "Addition",
-          "Description": "Added the **category14** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category14** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -709,7 +883,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category15",
           "ChangeType": "Addition",
-          "Description": "Added the **category15** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category15** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -717,7 +891,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category16",
           "ChangeType": "Addition",
-          "Description": "Added the **category16** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category16** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -725,7 +899,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category17",
           "ChangeType": "Addition",
-          "Description": "Added the **category17** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category17** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -733,7 +907,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category18",
           "ChangeType": "Addition",
-          "Description": "Added the **category18** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category18** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -741,7 +915,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category19",
           "ChangeType": "Addition",
-          "Description": "Added the **category19** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category19** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -749,7 +923,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category20",
           "ChangeType": "Addition",
-          "Description": "Added the **category20** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category20** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -757,7 +931,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category21",
           "ChangeType": "Addition",
-          "Description": "Added the **category21** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category21** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -765,7 +939,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category22",
           "ChangeType": "Addition",
-          "Description": "Added the **category22** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category22** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -773,7 +947,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category23",
           "ChangeType": "Addition",
-          "Description": "Added the **category23** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category23** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -781,7 +955,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category24",
           "ChangeType": "Addition",
-          "Description": "Added the **category24** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category24** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -789,7 +963,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category25",
           "ChangeType": "Addition",
-          "Description": "Added the **category25** property to [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Description": "Added the **category25** property to [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-beta) resource",
           "Target": "plannerCategoryDescriptions"
         }
       ],
@@ -815,7 +989,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category10",
           "ChangeType": "Addition",
-          "Description": "Added the **category10** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category10** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -823,7 +997,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category11",
           "ChangeType": "Addition",
-          "Description": "Added the **category11** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category11** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -831,7 +1005,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category12",
           "ChangeType": "Addition",
-          "Description": "Added the **category12** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category12** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -839,7 +1013,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category13",
           "ChangeType": "Addition",
-          "Description": "Added the **category13** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category13** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -847,7 +1021,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category14",
           "ChangeType": "Addition",
-          "Description": "Added the **category14** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category14** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -855,7 +1029,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category15",
           "ChangeType": "Addition",
-          "Description": "Added the **category15** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category15** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -863,7 +1037,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category16",
           "ChangeType": "Addition",
-          "Description": "Added the **category16** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category16** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -871,7 +1045,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category17",
           "ChangeType": "Addition",
-          "Description": "Added the **category17** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category17** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -879,7 +1053,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category18",
           "ChangeType": "Addition",
-          "Description": "Added the **category18** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category18** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -887,7 +1061,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category19",
           "ChangeType": "Addition",
-          "Description": "Added the **category19** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category19** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -895,7 +1069,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category20",
           "ChangeType": "Addition",
-          "Description": "Added the **category20** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category20** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -903,7 +1077,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category21",
           "ChangeType": "Addition",
-          "Description": "Added the **category21** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category21** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -911,7 +1085,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category22",
           "ChangeType": "Addition",
-          "Description": "Added the **category22** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category22** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -919,7 +1093,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category23",
           "ChangeType": "Addition",
-          "Description": "Added the **category23** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category23** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -927,7 +1101,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category24",
           "ChangeType": "Addition",
-          "Description": "Added the **category24** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category24** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -935,7 +1109,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category25",
           "ChangeType": "Addition",
-          "Description": "Added the **category25** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category25** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -943,7 +1117,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category7",
           "ChangeType": "Addition",
-          "Description": "Added the **category7** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category7** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -951,7 +1125,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category8",
           "ChangeType": "Addition",
-          "Description": "Added the **category8** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category8** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -959,7 +1133,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category9",
           "ChangeType": "Addition",
-          "Description": "Added the **category9** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **category9** property to the [plannerCategoryDescriptions](https://learn.microsoft.com/graph/api/resources/plannercategorydescriptions?view=graph-rest-1.0) resource.",
           "Target": "plannerCategoryDescriptions"
         },
         {
@@ -967,7 +1141,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanContainer](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlanContainer?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [plannerPlanContainer](https://learn.microsoft.com/graph/api/resources/plannerplancontainer?view=graph-rest-1.0) resource type.",
           "Target": "plannerPlanContainer"
         },
         {
@@ -975,7 +1149,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "container",
           "ChangeType": "Addition",
-          "Description": "Added the **container** property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-1.0) resource.",
+          "Description": "Added the **container** property to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-1.0) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -983,7 +1157,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "priority",
           "ChangeType": "Addition",
-          "Description": "Added the **priority** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-1.0) resource.",
+          "Description": "Added the **priority** property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-1.0) resource.",
           "Target": "plannerTask"
         },
         {
@@ -991,7 +1165,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "owner",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **owner** property on the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-1.0) resource.",
+          "Description": "Deprecated the **owner** property on the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-1.0) resource.",
           "Target": "plannerPlan"
         }
       ],
@@ -1027,7 +1201,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "notes",
           "ChangeType": "Addition",
-          "Description": "Added the **notes** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **notes** property to the [plannerTaskDetails](https://learn.microsoft.com/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
         }
       ],
@@ -1045,7 +1219,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "url",
           "ChangeType": "Change",
-          "Description": "Changed the **url** property in the [plannerPlanContainer](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontainer?view=graph-rest-beta) resource from required to optional.",
+          "Description": "Changed the **url** property in the [plannerPlanContainer](https://learn.microsoft.com/graph/api/resources/plannerplancontainer?view=graph-rest-beta) resource from required to optional.",
           "Target": "plannerPlanContainer"
         },
         {
@@ -1053,7 +1227,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "type",
           "ChangeType": "Change",
-          "Description": "Changed the **type** property in the [plannerPlanContainer](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontainer?view=graph-rest-beta) resource from required to optional.",
+          "Description": "Changed the **type** property in the [plannerPlanContainer](https://learn.microsoft.com/graph/api/resources/plannerplancontainer?view=graph-rest-beta) resource from required to optional.",
           "Target": "plannerPlanContainer"
         },
         {
@@ -1061,7 +1235,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "containerId",
           "ChangeType": "Change",
-          "Description": "Changed the **containerId** property in the [plannerPlanContainer](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontainer?view=graph-rest-beta) resource from required to optional.",
+          "Description": "Changed the **containerId** property in the [plannerPlanContainer](https://learn.microsoft.com/graph/api/resources/plannerplancontainer?view=graph-rest-beta) resource from required to optional.",
           "Target": "plannerPlanContainer"
         }
       ],
@@ -1079,7 +1253,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "url",
           "ChangeType": "Change",
-          "Description": "Changed the **url** property in the [plannerPlanContainer](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontainer?view=graph-rest-1.0) resource from required to optional.",
+          "Description": "Changed the **url** property in the [plannerPlanContainer](https://learn.microsoft.com/graph/api/resources/plannerplancontainer?view=graph-rest-1.0) resource from required to optional.",
           "Target": "plannerPlanContainer"
         },
         {
@@ -1087,7 +1261,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "type",
           "ChangeType": "Change",
-          "Description": "Changed the **type** property in the [plannerPlanContainer](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontainer?view=graph-rest-1.0) resource from required to optional.",
+          "Description": "Changed the **type** property in the [plannerPlanContainer](https://learn.microsoft.com/graph/api/resources/plannerplancontainer?view=graph-rest-1.0) resource from required to optional.",
           "Target": "plannerPlanContainer"
         },
         {
@@ -1095,7 +1269,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "containerId",
           "ChangeType": "Change",
-          "Description": "Changed the **containerId** property in the [plannerPlanContainer](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontainer?view=graph-rest-1.0) resource from required to optional.",
+          "Description": "Changed the **containerId** property in the [plannerPlanContainer](https://learn.microsoft.com/graph/api/resources/plannerplancontainer?view=graph-rest-1.0) resource from required to optional.",
           "Target": "plannerPlanContainer"
         }
       ],
@@ -1121,7 +1295,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerFieldRules",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerFieldRules](https://learn.microsoft.com/en-us/graph/api/resources/plannerfieldrules?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerFieldRules](https://learn.microsoft.com/graph/api/resources/plannerfieldrules?view=graph-rest-beta) resource type.",
           "Target": "plannerFieldRules"
         },
         {
@@ -1129,7 +1303,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfiguration?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [plannerPlanConfiguration](https://learn.microsoft.com/graph/api/resources/plannerplanconfiguration?view=graph-rest-beta) resource and supported methods.",
           "Target": "plannerPlanConfiguration"
         },
         {
@@ -1137,7 +1311,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanConfigurationBucketDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanConfigurationBucketDefinition](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationbucketdefinition?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerPlanConfigurationBucketDefinition](https://learn.microsoft.com/graph/api/resources/plannerplanconfigurationbucketdefinition?view=graph-rest-beta) resource type.",
           "Target": "plannerPlanConfigurationBucketDefinition"
         },
         {
@@ -1145,7 +1319,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanConfigurationBucketLocalization",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanConfigurationBucketLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationbucketlocalization?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerPlanConfigurationBucketLocalization](https://learn.microsoft.com/graph/api/resources/plannerplanconfigurationbucketlocalization?view=graph-rest-beta) resource type.",
           "Target": "plannerPlanConfigurationBucketLocalization"
         },
         {
@@ -1153,7 +1327,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanConfigurationLocalization",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/en-us/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [plannerPlanConfigurationLocalization](https://learn.microsoft.com/graph/api/resources/plannerplanconfigurationlocalization?view=graph-rest-beta) resource and supported methods.",
           "Target": "plannerPlanConfigurationLocalization"
         },
         {
@@ -1161,7 +1335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPropertyRule",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerpropertyrule?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerPropertyRule](https://learn.microsoft.com/graph/api/resources/plannerpropertyrule?view=graph-rest-beta) resource type.",
           "Target": "plannerPropertyRule"
         },
         {
@@ -1169,7 +1343,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerRelationshipBasedUserType",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerRelationshipBasedUserType](https://learn.microsoft.com/en-us/graph/api/resources/plannerrelationshipbasedusertype?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerRelationshipBasedUserType](https://learn.microsoft.com/graph/api/resources/plannerrelationshipbasedusertype?view=graph-rest-beta) resource type.",
           "Target": "plannerRelationshipBasedUserType"
         },
         {
@@ -1177,7 +1351,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerRuleOverride",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerRuleOverride](https://learn.microsoft.com/en-us/graph/api/resources/plannerruleoverride?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerRuleOverride](https://learn.microsoft.com/graph/api/resources/plannerruleoverride?view=graph-rest-beta) resource type.",
           "Target": "plannerRuleOverride"
         },
         {
@@ -1185,7 +1359,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskconfiguration?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [plannerTaskConfiguration](https://learn.microsoft.com/graph/api/resources/plannertaskconfiguration?view=graph-rest-beta) resource and supported methods.",
           "Target": "plannerTaskConfiguration"
         },
         {
@@ -1193,7 +1367,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskConfigurationRoleBase",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskConfigurationRoleBase](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskconfigurationrolebase?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskConfigurationRoleBase](https://learn.microsoft.com/graph/api/resources/plannertaskconfigurationrolebase?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskConfigurationRoleBase"
         },
         {
@@ -1201,7 +1375,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskPolicy](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskpolicy?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskPolicy](https://learn.microsoft.com/graph/api/resources/plannertaskpolicy?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskPolicy"
         },
         {
@@ -1209,7 +1383,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskPropertyRule",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskpropertyrule?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskPropertyRule](https://learn.microsoft.com/graph/api/resources/plannertaskpropertyrule?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskPropertyRule"
         },
         {
@@ -1217,7 +1391,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskRoleBasedRule",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskRoleBasedRule](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskrolebasedrule?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskRoleBasedRule](https://learn.microsoft.com/graph/api/resources/plannertaskrolebasedrule?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskRoleBasedRule"
         }
       ],
@@ -1251,7 +1425,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerBucketCreation",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerBucketCreation](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucketcreation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerBucketCreation](https://learn.microsoft.com/graph/api/resources/plannerbucketcreation?view=graph-rest-beta) resource type.",
           "Target": "plannerBucketCreation"
         },
         {
@@ -1259,7 +1433,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerExternalBucketSource",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerExternalBucketSource](https://learn.microsoft.com/en-us/graph/api/resources/plannerexternalbucketsource?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerExternalBucketSource](https://learn.microsoft.com/graph/api/resources/plannerexternalbucketsource?view=graph-rest-beta) resource type.",
           "Target": "plannerExternalBucketSource"
         },
         {
@@ -1267,7 +1441,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerExternalPlanSource",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerExternalPlanSource](https://learn.microsoft.com/en-us/graph/api/resources/plannerexternalplansource?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerExternalPlanSource](https://learn.microsoft.com/graph/api/resources/plannerexternalplansource?view=graph-rest-beta) resource type.",
           "Target": "plannerExternalPlanSource"
         },
         {
@@ -1275,7 +1449,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerExternalTaskSource",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerExternalTaskSource](https://learn.microsoft.com/en-us/graph/api/resources/plannerexternaltasksource?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerExternalTaskSource](https://learn.microsoft.com/graph/api/resources/plannerexternaltasksource?view=graph-rest-beta) resource type.",
           "Target": "plannerExternalTaskSource"
         },
         {
@@ -1283,7 +1457,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanCreation",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerPlanCreation](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancreation?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerPlanCreation](https://learn.microsoft.com/graph/api/resources/plannerplancreation?view=graph-rest-beta) resource type.",
           "Target": "plannerPlanCreation"
         },
         {
@@ -1291,7 +1465,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "creationSourceKind",
           "ChangeType": "Addition",
-          "Description": "Added the `creationSourceKind` property to the [plannerTaskCreation](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskcreation?view=graph-rest-beta) resource.",
+          "Description": "Added the `creationSourceKind` property to the [plannerTaskCreation](https://learn.microsoft.com/graph/api/resources/plannertaskcreation?view=graph-rest-beta) resource.",
           "Target": "plannerTaskCreation"
         },
         {
@@ -1299,7 +1473,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "creationSource",
           "ChangeType": "Addition",
-          "Description": "Added the `creationSource` property to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
+          "Description": "Added the `creationSource` property to the [plannerBucket](https://learn.microsoft.com/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1307,7 +1481,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "creationSource",
           "ChangeType": "Addition",
-          "Description": "Added the `creationSource` property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Description": "Added the `creationSource` property to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }
       ],
@@ -1341,7 +1515,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerSharedWithContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerSharedWithContainer](https://learn.microsoft.com/en-us/graph/api/resources/plannerSharedWithContainer?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerSharedWithContainer](https://learn.microsoft.com/graph/api/resources/plannersharedwithcontainer?view=graph-rest-beta) resource type.",
           "Target": "plannerSharedWithContainer"
         },
         {
@@ -1349,7 +1523,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sharedWithContainers",
           "ChangeType": "Addition",
-          "Description": "Added the **sharedWithContainers** property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharedWithContainers** property to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }
       ],
@@ -1367,7 +1541,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1375,7 +1549,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1383,7 +1557,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerPlanDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerPlanDetails](https://learn.microsoft.com/graph/api/resources/plannerplandetails?view=graph-rest-beta) resource.",
           "Target": "plannerPlanDetails"
         },
         {
@@ -1391,7 +1565,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTaskDetails](https://learn.microsoft.com/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
         },
         {
@@ -1399,7 +1573,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucket](https://learn.microsoft.com/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1407,7 +1581,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
         },
         {
@@ -1415,7 +1589,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerBucketTaskBoardTaskFormat"
         },
         {
@@ -1423,7 +1597,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerProgressTaskBoardTaskFormat"
         },
         {
@@ -1431,7 +1605,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1439,7 +1613,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1447,7 +1621,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlanDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlanDetails](https://learn.microsoft.com/graph/api/resources/plannerplandetails?view=graph-rest-beta) resource.",
           "Target": "plannerPlanDetails"
         },
         {
@@ -1455,7 +1629,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTaskDetails](https://learn.microsoft.com/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
         },
         {
@@ -1463,7 +1637,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucket](https://learn.microsoft.com/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1471,7 +1645,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
         },
         {
@@ -1479,7 +1653,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerBucketTaskBoardTaskFormat"
         },
         {
@@ -1487,7 +1661,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-beta) resource.",
           "Target": "plannerProgressTaskBoardTaskFormat"
         },
         {
@@ -1495,7 +1669,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerRoster](https://learn.microsoft.com/en-us/graph/api/resources/plannerroster?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerRoster](https://learn.microsoft.com/graph/api/resources/plannerroster?view=graph-rest-beta) resource.",
           "Target": "plannerRoster"
         }
       ],
@@ -1513,7 +1687,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-1.0) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1521,7 +1695,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-1.0) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1529,7 +1703,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [planner](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [planner](https://learn.microsoft.com/graph/api/resources/plannerplandetails?view=graph-rest-1.0) resource.",
           "Target": "plannerPlanDetails"
         },
         {
@@ -1537,7 +1711,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerTaskDetails](https://learn.microsoft.com/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) resource.",
           "Target": "plannerTaskDetails"
         },
         {
@@ -1545,7 +1719,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucket](https://learn.microsoft.com/graph/api/resources/plannerbucket?view=graph-rest-1.0) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1553,7 +1727,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
         },
         {
@@ -1561,7 +1735,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerBucketTaskBoardTaskFormat"
         },
         {
@@ -1569,7 +1743,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.Read.All` to the read operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerProgressTaskBoardTaskFormat"
         },
         {
@@ -1577,7 +1751,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-1.0) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1585,7 +1759,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-1.0) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1593,7 +1767,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlanDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerPlanDetails](https://learn.microsoft.com/graph/api/resources/plannerplandetails?view=graph-rest-1.0) resource.",
           "Target": "plannerPlanDetails"
         },
         {
@@ -1601,7 +1775,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerTaskDetails](https://learn.microsoft.com/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) resource.",
           "Target": "plannerTaskDetails"
         },
         {
@@ -1609,7 +1783,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucket](https://learn.microsoft.com/graph/api/resources/plannerbucket?view=graph-rest-1.0) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1617,7 +1791,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerAssignedToTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerAssignedToTaskBoardTaskFormat"
         },
         {
@@ -1625,7 +1799,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerBucketTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerBucketTaskBoardTaskFormat"
         },
         {
@@ -1633,7 +1807,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission `Tasks.ReadWrite.All` to the read and write operations of the [plannerProgressTaskBoardTaskFormat](https://learn.microsoft.com/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0) resource.",
           "Target": "plannerProgressTaskBoardTaskFormat"
         }
       ],
@@ -1651,7 +1825,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "recurrence",
           "ChangeType": "Addition",
-          "Description": "Added the **recurrence** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **recurrence** property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1659,7 +1833,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerTaskRecurrence",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerTaskRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskRecurrence?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerTaskRecurrence](https://learn.microsoft.com/graph/api/resources/plannertaskrecurrence?view=graph-rest-beta) resource type.",
           "Target": "plannerTaskRecurrence"
         },
         {
@@ -1667,7 +1841,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerRecurrenceSchedule",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerRecurrenceSchedule](https://learn.microsoft.com/en-us/graph/api/resources/plannerRecurrenceSchedule?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerRecurrenceSchedule](https://learn.microsoft.com/graph/api/resources/plannerrecurrenceschedule?view=graph-rest-beta) resource type.",
           "Target": "plannerRecurrenceSchedule"
         }
       ],
@@ -1739,7 +1913,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "moveToContainer",
           "ChangeType": "Addition",
-          "Description": "<b>Summary:</b> Create a [plan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) in a user [container](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontainer?view=graph-rest-beta) to let individual users track their own tasks. This provides the flexibility for users to share or collaborate on their personal plans, or subsequently upgrade their personal plans into group-based plans by [moving](https://learn.microsoft.com/en-us/graph/api/plannerplan-movetocontainer?view=graph-rest-beta) the plan from the user container to a group container. <br><i>The rest of this section lists the related API updates.</i>",
+          "Description": "<b>Summary:</b> Create a [plan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) in a user [container](https://learn.microsoft.com/graph/api/resources/plannerplancontainer?view=graph-rest-beta) to let individual users track their own tasks. This provides the flexibility for users to share or collaborate on their personal plans, or subsequently upgrade their personal plans into group-based plans by [moving](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta) the plan from the user container to a group container. <br><i>The rest of this section lists the related API updates.</i>",
           "Target": "plannerPlan"
         },
         {
@@ -1747,7 +1921,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "moveToContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [moveToContainer](https://learn.microsoft.com/en-us/graph/api/plannerplan-movetocontainer?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Description": "Added the [moveToContainer](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }
       ],
@@ -1773,7 +1947,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerFormReference",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerFormReference](https://learn.microsoft.com/en-us/graph/api/resources/plannerFormReference?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerFormReference](https://learn.microsoft.com/graph/api/resources/plannerformreference?view=graph-rest-beta) resource type.",
           "Target": "plannerFormReference"
         },
         {
@@ -1781,7 +1955,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerFormsDictionary",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerFormsDictionary](https://learn.microsoft.com/en-us/graph/api/resources/plannerFormsDictionary?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerFormsDictionary](https://learn.microsoft.com/graph/api/resources/plannerformsdictionary?view=graph-rest-beta) resource type.",
           "Target": "plannerFormsDictionary"
         },
         {
@@ -1789,7 +1963,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerFormsRequirement",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerFormsRequirement](https://learn.microsoft.com/en-us/graph/api/resources/plannerFormsRequirement?view=graph-rest-beta) resource type.",
+          "Description": "Added the [plannerFormsRequirement](https://learn.microsoft.com/graph/api/resources/plannerformsrequirement?view=graph-rest-beta) resource type.",
           "Target": "plannerFormsRequirement"
         },
         {
@@ -1797,7 +1971,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "formsRequirement",
           "ChangeType": "Addition",
-          "Description": "Added the **formsRequirement** property to the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskCompletionRequirementDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **formsRequirement** property to the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/graph/api/resources/plannertaskcompletionrequirementdetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskCompletionRequirementDetails"
         },
         {
@@ -1805,7 +1979,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "forms",
           "ChangeType": "Addition",
-          "Description": "Added the **forms** property to the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource.",
+          "Description": "Added the **forms** property to the [plannerTaskPropertyRule](https://learn.microsoft.com/graph/api/resources/plannertaskpropertyrule?view=graph-rest-beta) resource.",
           "Target": "plannerTaskPropertyRule"
         },
         {
@@ -1813,7 +1987,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "forms",
           "ChangeType": "Addition",
-          "Description": "Added the **forms** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **forms** property to the [plannerTaskDetails](https://learn.microsoft.com/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
         }
       ],
@@ -1855,7 +2029,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerApprovalRequirement",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerApprovalRequirement](https://learn.microsoft.com/en-us/graph/api/resources/plannerApprovalRequirement?view=graph-rest-beta) resource.",
+          "Description": "Added the [plannerApprovalRequirement](https://learn.microsoft.com/graph/api/resources/plannerapprovalrequirement?view=graph-rest-beta) resource.",
           "Target": "plannerApprovalRequirement"
         },
         {
@@ -1863,7 +2037,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerBaseApprovalAttachment",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerBaseApprovalAttachment](https://learn.microsoft.com/en-us/graph/api/resources/plannerBaseApprovalAttachment?view=graph-rest-beta) resource.",
+          "Description": "Added the [plannerBaseApprovalAttachment](https://learn.microsoft.com/graph/api/resources/plannerbaseapprovalattachment?view=graph-rest-beta) resource.",
           "Target": "plannerBaseApprovalAttachment"
         },
         {
@@ -1871,7 +2045,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerBasicApprovalAttachment",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerBasicApprovalAttachment](https://learn.microsoft.com/en-us/graph/api/resources/plannerBasicApprovalAttachment?view=graph-rest-beta) resource.",
+          "Description": "Added the [plannerBasicApprovalAttachment](https://learn.microsoft.com/graph/api/resources/plannerbasicapprovalattachment?view=graph-rest-beta) resource.",
           "Target": "plannerBasicApprovalAttachment"
         },
         {
@@ -1879,7 +2053,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "approvalRequirement",
           "ChangeType": "Addition",
-          "Description": "Added the **approvalRequirement** property to the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskCompletionRequirementDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **approvalRequirement** property to the [plannerTaskCompletionRequirementDetails](https://learn.microsoft.com/graph/api/resources/plannertaskcompletionrequirementdetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskCompletionRequirementDetails"
         },
         {
@@ -1887,7 +2061,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "approvalAttachment",
           "ChangeType": "Addition",
-          "Description": "Added the **approvalAttachment** property to the [plannerTaskPropertyRule](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskPropertyRule?view=graph-rest-beta) resource.",
+          "Description": "Added the **approvalAttachment** property to the [plannerTaskPropertyRule](https://learn.microsoft.com/graph/api/resources/plannertaskpropertyrule?view=graph-rest-beta) resource.",
           "Target": "plannerTaskPropertyRule"
         },
         {
@@ -1895,7 +2069,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "approvalAttachment",
           "ChangeType": "Addition",
-          "Description": "Added the **approvalAttachment** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **approvalAttachment** property to the [plannerTaskDetails](https://learn.microsoft.com/graph/api/resources/plannertaskdetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
         }
       ],
@@ -1913,7 +2087,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerArchivalInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerArchivalInfo](https://learn.microsoft.com/en-us/graph/api/resources/plannerarchivalinfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [plannerArchivalInfo](https://learn.microsoft.com/graph/api/resources/plannerarchivalinfo?view=graph-rest-beta) resource.",
           "Target": "plannerArchivalInfo"
         },
         {
@@ -1921,7 +2095,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "archivalInfo",
           "ChangeType": "Addition",
-          "Description": "Added the **archivalInfo** property to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerBucket?view=graph-rest-beta) resource.",
+          "Description": "Added the **archivalInfo** property to the [plannerBucket](https://learn.microsoft.com/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1929,7 +2103,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isArchived",
           "ChangeType": "Addition",
-          "Description": "Added the **isArchived** property to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerBucket?view=graph-rest-beta) resource.",
+          "Description": "Added the **isArchived** property to the [plannerBucket](https://learn.microsoft.com/graph/api/resources/plannerbucket?view=graph-rest-beta) resource.",
           "Target": "plannerBucket"
         },
         {
@@ -1937,7 +2111,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "archivalInfo",
           "ChangeType": "Addition",
-          "Description": "Added the **archivalInfo** property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the **archivalInfo** property to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1945,7 +2119,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isArchived",
           "ChangeType": "Addition",
-          "Description": "Added the **isArchived** property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the **isArchived** property to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1953,7 +2127,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "archivalInfo",
           "ChangeType": "Addition",
-          "Description": "Added the **archivalInfo** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **archivalInfo** property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1961,7 +2135,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isArchived",
           "ChangeType": "Addition",
-          "Description": "Added the **isArchived** property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **isArchived** property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
           "Target": "plannerTask"
         },
         {
@@ -1969,7 +2143,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "archive",
           "ChangeType": "Addition",
-          "Description": "Added the [archive](https://learn.microsoft.com/en-us/graph/api/plannerplan-archive?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the [archive](https://learn.microsoft.com/graph/api/plannerplan-archive?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         },
         {
@@ -1977,7 +2151,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unarchive",
           "ChangeType": "Addition",
-          "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/plannerplan-unarchive?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the [unarchive](https://learn.microsoft.com/graph/api/plannerplan-unarchive?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }
       ],
@@ -1985,6 +2159,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-29T17:13:44.4758634Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e2fbee02-7ae2-4152-8728-bcffcf6a5e28",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedBy** property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "e2fbee02-7ae2-4152-8728-bcffcf6a5e28",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [plannerTask](https://learn.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        }
+      ],
+      "Id": "e2fbee02-7ae2-4152-8728-bcffcf6a5e28",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-08T21:36:09.3765749Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     }

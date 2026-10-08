@@ -6,14 +6,14 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 05/05/2026
 ---
 
 # authenticationMethodsRegistrationCampaign resource type
 
 Namespace: microsoft.graph
 
-Represents the settings used to run campaigns to push users to set up targeted authentication methods. Users are prompted to set up the authentication method after they successfully complete a MFA challenge. Only available for the Microsoft Authenticator app for MFA.
+Represents the settings used to run campaigns to push users to set up targeted authentication methods. Users are prompted to set up the authentication method after they successfully complete a MFA challenge. Only available for passkey (FIDO2) and Microsoft Authenticator for MFA.
 
 ## Properties
 |Property|Type|Description|

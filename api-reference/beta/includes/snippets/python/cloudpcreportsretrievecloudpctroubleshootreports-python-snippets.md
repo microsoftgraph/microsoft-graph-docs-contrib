@@ -12,25 +12,16 @@ from msgraph_beta.generated.models.cloud_p_c_troubleshoot_report_type import Clo
 request_body = RetrieveCloudPcTroubleshootReportsPostRequestBody(
 	report_name = CloudPCTroubleshootReportType.TroubleshootDetailsReport,
 	select = [
-		"CloudPcId",
-		"ManagedDeviceName",
-		"UserPrincipalName",
-		"UsageInsight",
-		"CurrentSize",
-		"CurrentCPU",
-		"CurrentRamInGB",
-		"CurrentDiskInGB",
-		"RecommendedSize",
-		"RecommendedCPU",
-		"RecommendedRamInGB",
-		"RecommendedDiskInGB",
-		"ProvisionPolicyName",
-		"RoundTripTimeInMsAvg",
-		"AvailableBandwidthInMbpsAvg",
+		"EventDateTime",
+		"TotalActiveConnectionCountAvg",
+		"GroupColumn",
 	],
-	search = "",
+	filter = "(TimeRange eq 'Last 7 days') and (PolicyNameParam eq '') and (RegionParam eq '') and (UserSettingNameParam eq '') and (ServicePlanTypeParam eq 'Enterprise') and (ServicePlanNameParam eq '') and (OSBuildVersionParam eq '') and (AADJoinTypeParam eq '') and (ImageNameParam eq '') and (GatewayRegionParam eq '') and (ClientOSParam eq '') and (ClientTypeParam eq '') and (TransportTypeParam eq '') and (CloudPCEndpointCountryRegionParam eq '') and (CloudPCEndpointStateParam eq '') and (CloudPCEndpointCityParam eq '')",
+	top = 1000,
 	skip = 0,
-	top = 50,
+	group_by = [
+		"GatewayRegion",
+	],
 )
 
 await graph_client.device_management.virtual_endpoint.reports.retrieve_cloud_pc_troubleshoot_reports.post(request_body)

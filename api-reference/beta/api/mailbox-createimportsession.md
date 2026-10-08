@@ -1,6 +1,6 @@
 ---
 title: "mailbox: createImportSession"
-description: "Create a session to import an Exchange mailbox item using its FastTransfer stream (FTS) format."
+description: "Create a session to import an Exchange mailbox item that was exported using the exportItems API."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -49,11 +49,14 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `200 OK` response code and a [mailboxItemImportSession](../resources/mailboxitemimportsession.md) in the response body.
 
+> [!NOTE]
+> *Archive mailboxes with autoexpanded folders:* When you attempt to import an item into a folder that physically resides in an auxiliary (autoexpanded) archive mailbox, you might receive an `HTTP 409 Conflict` response that indicates the correct target mailbox. For details, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
+
 ## Examples
 
 ### Request
 
-The following example shows how to create an import session. The opaque URL, returned in the **importUrl** property of the response, is preauthenticated and contains the appropriate authorization token for subsequent POST queries in the https://outlook.office365.com domain. That token expires by **expirationDateTime**. Don't customize this URL for subsequent POST operations.
+The following example shows how to create an import session. The opaque URL, returned in the **importUrl** property of the response, is preauthenticated and contains the appropriate authorization token for subsequent POST queries in the `https://outlook.office365.com` domain. This token expires at the time specified in **expirationDateTime**. Don't customize this URL for subsequent POST operations.
 
 # [HTTP](#tab/http)
 <!-- {

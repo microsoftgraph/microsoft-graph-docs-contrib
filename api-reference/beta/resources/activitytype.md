@@ -16,16 +16,17 @@ Namespace: microsoft.graph
 
 Represents the type of activity associated with a risk detection. This enumeration is used by multiple resources.
 
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipal`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `agent`, `servicePrincipal`.
 
 ## Members
 
 | Member | Description |
 |:---|:---|
+| agent | The risk is linked to an agent activity.<br/><br/>Applies to: **activity** property of [riskDetection](../resources/riskdetection.md) |
+| servicePrincipal | The risk is linked to a service principal activity.<br/><br/>Applies to: **activity** property of [riskDetection](../resources/riskdetection.md) and [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) |
 | signin | The risk is linked to a sign-in activity.<br/><br/>Applies to: **activity** property of [riskDetection](../resources/riskdetection.md) and [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) |
 | user | The risk is linked to a user activity.<br/><br/>Applies to: **activity** property of [riskDetection](../resources/riskdetection.md) |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.<br/><br/>Applies to: **activity** property of [riskDetection](../resources/riskdetection.md) and [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)  |
-| servicePrincipal | The risk is linked to a service principal activity.<br/><br/>Applies to: **activity** property of [riskDetection](../resources/riskdetection.md) and [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) |
 
 ## JSON representation
 

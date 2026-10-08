@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	body = @{
-		contentType = "html"
-		content = "<codeblock><code>Hello world</code></codeblock>"
+		messageBodyContentType = "html"
+		content = "<codeblock class="plaintext"><code>Hello world</code></codeblock>"
 	}
 }
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the authentication details for a user sign-in, such as multifactor authentication (MFA) information and PTA/PHS details.
+Provides the authentication details for a user sign-in, such as multifactor authentication (MFA) information and PTA/PHS details. This object is configured in the **authenticationDetails** property of [signIn](../resources/signin.md).
 
 ## Properties
 
@@ -60,4 +60,3 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-

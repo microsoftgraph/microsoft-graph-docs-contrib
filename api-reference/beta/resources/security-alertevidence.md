@@ -16,13 +16,16 @@ Namespace: microsoft.graph.security
 
 Represents evidence related to an [alert](security-alert.md).
 
-The **alertEvidence** base type and its derived evidence types provide a means to organize and track rich data about each artifact involved in an **alert**. For example, an **alert** about an attacker's IP address signing in to a cloud service using a compromised user account can track the following evidence:
-- [IP evidence](security-ipevidence.md) with the roles of `attacker` and `source`, remediation status of `running`, and verdict of `malicious`.
+The **alertEvidence** base type and its derived evidence types provide a way to organize and track rich data about each artifact involved in an **alert**. For example, an **alert** about an attacker's IP address that signs in to a cloud service by using a compromised user account can track the following evidence:
+
+- [IP evidence](security-ipevidence.md) with the roles of `attacker` and `source`, remediation status of `running`, and
+  verdict of `malicious`.
 - [Cloud application evidence](security-cloudapplicationevidence.md) with a role of `contextual`.
 - [Mailbox evidence](security-mailboxevidence.md) for the hacked user account with a role of `compromised`.
 
-This resource is the base type for the following evidence types: 
-* [activeDirectoryDomainEvidence](security-activedirectorydomainevidence.md) 
+This resource is the base type for the following evidence types:
+
+* [activeDirectoryDomainEvidence](security-activedirectorydomainevidence.md)
 * [aiAgentEvidence](security-aiagentevidence.md)
 * [amazonResourceEvidence](security-amazonresourceevidence.md)
 * [analyzedMessageEvidence](security-analyzedmessageevidence.md)
@@ -36,26 +39,37 @@ This resource is the base type for the following evidence types:
 * [containerImageEvidence](security-containerimageevidence.md)
 * [containerRegistryEvidence](security-containerregistryevidence.md)
 * [deviceEvidence](security-deviceevidence.md)
+* [dnsEvidence](security-dnsevidence.md)
 * [fileEvidence](security-fileevidence.md)
+* [fileHashEvidence](security-filehashevidence.md)
+* [gitHubOrganizationEvidence](security-githuborganizationevidence.md)
+* [gitHubRepoEvidence](security-githubrepoevidence.md)
+* [gitHubUserEvidence](security-githubuserevidence.md)
 * [googleCloudResourceEvidence](security-googlecloudresourceevidence.md)
-* [iotDeviceEvidence](security-iotdeviceevidence.md)
+* [hostLogonSessionEvidence](security-hostlogonsessionevidence.md)
+* [ioTDeviceEvidence](security-iotdeviceevidence.md)
 * [ipEvidence](security-ipevidence.md)
 * [kubernetesClusterEvidence](security-kubernetesclusterevidence.md)
 * [kubernetesControllerEvidence](security-kubernetescontrollerevidence.md)
 * [kubernetesNamespaceEvidence](security-kubernetesnamespaceevidence.md)
 * [kubernetesPodEvidence](security-kubernetespodevidence.md)
 * [kubernetesSecretEvidence](security-kubernetessecretevidence.md)
-* [kubernetesServiceEvidence](security-kubernetesserviceevidence.md)
 * [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md)
+* [kubernetesServiceEvidence](security-kubernetesserviceevidence.md)
 * [mailboxConfigurationEvidence](security-mailboxconfigurationevidence.md)
 * [mailboxEvidence](security-mailboxevidence.md)
 * [mailClusterEvidence](security-mailclusterevidence.md)
+* [malwareEvidence](security-malwareevidence.md)
+* [networkConnectionEvidence](security-networkconnectionevidence.md)
 * [nicEvidence](security-nicevidence.md)
 * [oauthApplicationEvidence](security-oauthapplicationevidence.md)
 * [processEvidence](security-processevidence.md)
 * [registryKeyEvidence](security-registrykeyevidence.md)
 * [registryValueEvidence](security-registryvalueevidence.md)
+* [sasTokenEvidence](security-sastokenevidence.md)
 * [securityGroupEvidence](security-securitygroupevidence.md)
+* [servicePrincipalEvidence](security-serviceprincipalevidence.md)
+* [submissionMailEvidence](security-submissionmailevidence.md)
 * [teamsMessageEvidence](security-teamsmessageevidence.md)
 * [urlEvidence](security-urlevidence.md)
 * [userEvidence](security-userevidence.md)
@@ -63,8 +77,8 @@ This resource is the base type for the following evidence types:
 ## Properties
 
 |Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+|:-------|:---|:----------|
+|createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |detailedRoles|String collection|Detailed description of the entity role/s in an alert. Values are free-form.|
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`, `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`.|
 |remediationStatusDetails|String|Details about the remediation status.|
@@ -72,36 +86,33 @@ This resource is the base type for the following evidence types:
 |tags|String collection|Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.|
 |verdict|[microsoft.graph.security.evidenceVerdict](#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
+### detectionSource values
 
-### detectionSource values 
+|Value|Description|
+|:----|:----------|
+|detected|A product of the threat that executed was detected.|
+|blocked|The threat was remediated at run time.|
+|prevented|The threat was prevented from occurring (running, downloading, and so on.).|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
-| Value                        | Description                                                                |
-| :----------------------------| :--------------------------------------------------------------------------|
-| detected                     | A product of the threat that executed was detected.                        |
-| blocked                      | The threat was remediated at run time.                                     |
-| prevented                    | The threat was prevented from occurring (running, downloading, and so on.).|
-| unknownFutureValue           | Evolvable enumeration sentinel value. Don't use.                          |
+### evidenceRemediationStatus values
 
+| Member                     | Description                                                                             |
+| :--------------------------| :-------------------------------------------------------------------------------------- |
+| none                       | No threats were found.                                                                  |
+| remediated                 | Remediation action has completed successfully.                                          |
+| prevented                  | The threat was prevented from executing.                                                |
+| blocked                    | The threat was blocked while executing.                                                 |
+| notFound                   | The evidence wasn't found.                                                             |
+| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.                                        |
+| active                     | Investigation is running/pending and remediation is not complete yet.                   |
+| pendingApproval            | The remediation action is pending approval.                                             |
+| declined                   | The remediation action was declined.                                                    |
+| unremediated               | Investigation undid the remediation and the entity is recovered.                        |
+| running                    | The remediation action is running.                                                      |
+| partiallyRemediated        | The threat was partially remediated.                                                    |
 
-### evidenceRemediationStatus values 
-
-| Member                     | Description                                    |
-| :--------------------------| :--------------------------------------------- |
-| none                       | The remediation status is unknown.             |
-| remediated                 | Remediation action completed successfully. |
-| prevented                  | The threat was prevented from executing.       |
-| blocked                    | The threat was blocked while executing.        |
-| notFound                   | The evidence wasn't found.                    |
-| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.  |
-| active                     | Investigation is running / pending and remediation is not complete yet. |
-| pendingApproval            | The remediation action is pending approval.                             |
-| declined                   | The remediation action was declined.                                    |
-| unremediated               | Investigation undo the remediation and the entity is recovered.         |
-| running                    | The remediation action is running.                                      |
-| partiallyRemediated        | The threat was partially remidiated.                                    |
-
-
-### evidenceRole values 
+### evidenceRole values
 
 | Member                     | Description                                                                                                                                                          |
 | :--------------------------| :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -120,21 +131,22 @@ This resource is the base type for the following evidence types:
 | loaded                     | The entity was loaded by a process under the control of an attacker. For example, a Dll was loaded into an attacker-controlled process.                                      |
 | suspicious                 | The entity is suspected of being malicious or controlled by an attacker but hasn't been incriminated.                                                               |
 | policyViolator             | The entity is a violator of a customer defined policy.                                                                                                               |
-| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.  |
+| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.                                                                                                                     |
 
+### evidenceVerdict values
 
-### evidenceVerdict values 
+|Member|Description|
+|:-----|:----------|
+|unknown|No verdict was determined for the evidence.|
+|suspicious|Recommended remediation actions awaiting approval.|
+|malicious|The evidence was determined to be malicious.|
+|noThreatsFound|No threat was detected - the evidence is benign.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
-| Member                     | Description                                       |
-| :--------------------------| :------------------------------------------------ |
-| unknown                    | No verdict was determined for the evidence.        |
-| suspicious                 | Recommended remediation actions awaiting approval.|
-| malicious                  | The evidence was determined to be malicious.      |
-| noThreatsFound             | No threat was detected - the evidence is benign.  |
-| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.  |
 
 
 ## Relationships
+
 None.
 
 ## JSON representation
@@ -144,6 +156,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.security.alertEvidence"
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.alertEvidence",

@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_post_legalholds" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-post-legalholds-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -57,7 +59,6 @@ If successful, this method returns a `201 Created` response code and an [microso
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoveryholdpolicy_from_"
@@ -73,36 +74,6 @@ Content-Type: application/json
     "contentQuery": "KQL content query"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryholdpolicy-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryholdpolicy-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryholdpolicy-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoveryholdpolicy-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryholdpolicy-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryholdpolicy-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-ediscoveryholdpolicy-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

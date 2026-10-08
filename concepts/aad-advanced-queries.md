@@ -451,7 +451,7 @@ Content-type: application/json
 ## Related content
 
 + [Use query parameters to customize responses](/graph/query-parameters)
-+ [Query parameter limitations](https://developer.microsoft.com/graph/known-issues/?search=13635)
++ [Query parameter limitations](/graph/known-issues#some-limitations-apply-to-query-parameters)
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter#using-search-on-directory-object-collections)
 + [Explore advanced query capabilities for Microsoft Entra ID objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
 

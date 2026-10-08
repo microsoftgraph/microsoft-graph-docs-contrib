@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update (override) the synchronization template associated with a given application.
+Update (override) the [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) associated with a given application.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

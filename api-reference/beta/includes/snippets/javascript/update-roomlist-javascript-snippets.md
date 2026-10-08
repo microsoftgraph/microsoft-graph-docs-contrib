@@ -19,7 +19,7 @@ const place = {
     city: 'Buffalo',
     state: 'NY',
     postalCode: '98052',
-    countryOrRegion: 'USA'
+    countryOrRegion: 'US'
   },
   geoCoordinates: {
     altitude: null,

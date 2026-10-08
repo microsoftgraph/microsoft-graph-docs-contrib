@@ -1,11 +1,11 @@
 ---
 title: "product: findByCatalogId" 
 description: "Find the product revisions associated with a catalog ID and the known issues directly or indirectly related to the catalog ID."
-author: "skandula"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: "windows-update-business"
 doc_type: apiPageType
-ms.date: 10/30/2024
+ms.date: 01/27/2026
 ---
 
 # product: findByCatalogId

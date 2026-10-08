@@ -1,16 +1,19 @@
 ---
-title: "registryKeyState resource type"
+title: "registryKeyState resource type (deprecated)"
 description: "Contains information about registry key changes related to the alert, and the process that changed the registry keys."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: security
 doc_type: resourcePageType
 ms.date: 07/22/2024
+ROBOTS: NOINDEX
 ---
 
-# registryKeyState resource type
+# registryKeyState resource type (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Contains information about registry key changes related to the alert, and the process that changed the registry keys.
 

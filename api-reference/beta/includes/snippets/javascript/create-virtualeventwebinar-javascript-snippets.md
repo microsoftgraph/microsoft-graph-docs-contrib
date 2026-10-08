@@ -31,6 +31,7 @@ const virtualEventWebinar = {
         tenantId:  '77229959-e479-4a73-b6e0-ddac27be315c' 
       }
     ],
+    isRegistrationRequired: true,
     settings: {
       isAttendeeEmailNotificationEnabled: false
     }

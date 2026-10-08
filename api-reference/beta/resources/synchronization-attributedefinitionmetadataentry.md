@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata for the given object.
+Metadata for the given object. This object is configured in the **metadata** property of [attributeDefinition](../resources/synchronization-attributedefinition.md).
 
 ## Properties
 | Property       | Type    |Description|

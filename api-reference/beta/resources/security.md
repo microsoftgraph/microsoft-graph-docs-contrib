@@ -20,6 +20,8 @@ Connects Microsoft security products, services, and partners to streamline secur
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Run hunting query](../api/security-security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.|
+|[Get hunting schema](../api/security-security-gethuntingschema.md)|[microsoft.graph.security.huntingSchemaResult](../resources/security-huntingschemaresult.md)|Retrieves the advanced hunting schema accessible to the signed-in user, including the tables and functions the user is authorized to query and invoke.|
+|[Get hunting schema tables](../api/security-security-gethuntingschematables.md)|[microsoft.graph.security.huntingSchemaTable](../resources/security-huntingschematable.md) collection|Retrieves only the advanced hunting tables accessible to the signed-in user, as a collection that supports OData query parameters.|
 
 ## Properties
 None.
@@ -29,17 +31,21 @@ None.
 |:---|:---|:---|
 |alerts |[alert](../resources/alert.md) collection|Notifications for suspicious or potential security issues in a customer's tenant.|
 |alerts_v2 | [microsoft.graph.security.alert](security-alert.md) collection | A collection of alerts in Microsoft 365 Defender.|
+|auditLog|[microsoft.graph.security.auditCoreRoot](../resources/security-auditcoreroot.md)|The entry point for Microsoft Purview audit log queries and operations.|
 |attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.|
+|caseManagement|[microsoft.graph.security.caseManagementRoot](../resources/security-casemanagementroot.md)|The entry point for security case management APIs, including cases, tasks, activities, relations, and attachments.|
 |collaboration|[microsoft.graph.security.collaborationRoot](../resources/security-collaborationroot.md)|Enables read and other actions on collaborative entities in Microsoft Defender.|
 |identities|[microsoft.graph.security.identityContainer](../resources/security-identityContainer.md)|A container for security identities APIs.|
 |incidentTasks|[microsoft.graph.security.incidentTask](security-incidenttask.md) collection|A collection of tasks associated with security incidents.|
 |incidents | [microsoft.graph.security.incident](security-incident.md) collection | A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.|
 |partner| [microsoft.graph.partner.security.partnerSecurity](../resources/partner-security-partnersecurity.md) | A container that safeguards the Microsoft Azure resources of Microsoft Cloud Solution Provider (CSP) partners' customers, including alerts, scores, and all aspects of security. |
+|rules|[microsoft.graph.security.rulesRoot](../resources/security-rulesroot.md)|Container for the security rules configured in Microsoft Defender XDR, including [custom detection rules](../resources/security-detectionrule.md).|
 |secureScores | [secureScore](securescore.md) collection | Measurements of tenants' security posture to help protect them from threats. |
 |securityCopilot | [securityCopilot](../resources/securitycopilot.md) collection | Represents the resources related to Microsoft Security Copilot. |
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|
-|tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|
 |threatSubmission|[security.threatSubmission](../resources/security-threatsubmission.md)|A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.|
+|zones|[microsoft.graph.security.zone](../resources/security-zone.md) collection|A collection of cloud zones in Microsoft Defender for Cloud that group and manage cloud environments across multiple cloud providers.|
+|tiIndicators (deprecated)|[tiIndicator](../resources/tiindicator.md) collection|Deprecated. The tiIndicator entity is deprecated and will be removed by April 2026.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

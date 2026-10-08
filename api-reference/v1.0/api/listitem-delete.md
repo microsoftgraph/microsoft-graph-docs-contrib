@@ -37,14 +37,15 @@ DELETE /sites/{site-id}/lists/{list-id}/items/{item-id}
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| _if-match_ | ``etag`If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
+| _if-match_ | ``etag`If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.|
 
 ## Request body
 
-Do not supply a request body with this method.
+Don't supply a request body with this method.
 
 ## Example
 
+### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-item-site", "scopes": "files.readwrite sites.readwrite.all" } -->
@@ -83,7 +84,7 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 
 ---
 
-## Response
+### Response
 
 If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
 

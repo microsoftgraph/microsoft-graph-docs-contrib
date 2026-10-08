@@ -1,5 +1,5 @@
 ---
-title: "List taskProcessingResults"
+title: "List taskProcessingResults (for a user)"
 description: "Get the taskProcessingResult resources from the taskProcessingResults object."
 author: "AlexFilipin"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# List taskProcessingResults
+# List taskProcessingResults (for a user)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -126,6 +126,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2022-08-24T23:28:05.1234966Z",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
@@ -148,6 +149,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2022-08-24T23:28:06.3926865Z",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
@@ -363,6 +365,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2022-08-24T23:28:05.1234966Z",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
@@ -385,6 +388,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2022-08-24T23:28:06.3926865Z",
             "failureReason": null,
+            "processingInfo": "User was already a member of all requested groups",
             "subject": {
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },

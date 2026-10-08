@@ -1,6 +1,6 @@
 ---
 title: "Create column"
-description: "Create a columnDefinition in a fileStorageContainer."
+description: "Create a column for a fileStorageContainer that specifies a columnDefinition."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a column for a [fileStorageContainer](../resources/filestoragecontainer.md) that specifies a [columnDefinition](../resources/columndefinition.md). 
+Create a column for a [fileStorageContainer](../resources/filestoragecontainer.md) that specifies a [columnDefinition](../resources/columndefinition.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -87,6 +87,7 @@ Content-Type: application/json
   "enforceUniqueValues": false,
   "hidden": false,
   "indexed": false,
+  "isSearchable": false,
   "name": "Title",
   "text": {
     "allowMultipleLines": false,
@@ -147,6 +148,7 @@ Content-Type: application/json
   "hidden": false,
   "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
   "indexed": false,
+  "isSearchable": false,
   "name": "Title",
   "text": {
     "allowMultipleLines": false,
@@ -156,4 +158,3 @@ Content-Type: application/json
   }
 }
 ```
-

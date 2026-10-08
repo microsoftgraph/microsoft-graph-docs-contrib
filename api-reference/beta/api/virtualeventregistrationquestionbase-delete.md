@@ -1,6 +1,6 @@
 ---
 title: "Delete virtualEventRegistrationQuestionBase"
-description: "Delete a registration question from a webinar."
+description: "Delete a registration question from a webinar or town hall."
 author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a registration question from a [webinar](../resources/virtualeventwebinar.md). The question can either be a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md). 
+Delete a registration question from a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). 
+The question can either be a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md). 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -32,6 +33,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ```http
 DELETE /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/questions/{questionId}
+
+DELETE /solutions/virtualEvents/townhalls/{townhallId}/registrationConfiguration/questions/{questionId}
 ```
 
 ## Request headers

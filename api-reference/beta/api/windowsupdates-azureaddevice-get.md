@@ -1,12 +1,12 @@
 ---
 title: "Get azureADDevice"
 description: "Read the properties of an azureADDevice object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # Get azureADDevice
@@ -114,12 +114,20 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
     "id": "983f03cd-03cd-983f-cd03-3f98cd033f98",
     "errors": [],
-    "enrollments": [
-      {
-        "@odata.type": "microsoft.graph.windowsUpdates.updateManagementEnrollment",
-        "updateCategory": "feature"
-      }
-    ]
+    "enrollment": {
+        "feature": {
+          "enrollmentState": "enrolled",
+          "lastModifiedDateTime": "2024-01-31T23:34:50.3183446Z"
+        },
+        "quality": {
+          "enrollmentState": "notEnrolled",
+          "lastModifiedDateTime": "2024-03-31T23:34:50.3183446Z"
+        },
+        "driver": {
+          "enrollmentState": "enrolling",
+          "lastModifiedDateTime": "2024-03-31T23:34:50.3183446Z"
+        }
+    }
   }
 }
 ```

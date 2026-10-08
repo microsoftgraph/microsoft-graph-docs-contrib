@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

@@ -1,12 +1,12 @@
 ---
 title: "adhocCall resource type"
-description: "Contains information about an ad hoc call, including PSTN, 1:1, and group calls."
+description: "Represents an ad hoc call, including PSTN calls, one-to-one calls, and group calls."
 author: "kanchm"
 ms.date: 10/16/2025
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
-toc.title: "Ad hoc call (preview)"
+toc.title: "Ad hoc call"
 ---
 
 # adhocCall resource type
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about an ad hoc call, including Public Switched Telephone Network (PSTN), 1:1, and group calls.
+Represents an ad hoc call, including PSTN calls, one-to-one calls, and group calls.
 
 > [!NOTE]
 > For ad hoc calls:
@@ -28,8 +28,8 @@ Contains information about an ad hoc call, including Public Switched Telephone N
 
 | Method | Return Type |Description |
 | :------ | :----------- | :---------- |
-|[getAllRecordings](../api/adhoccall-getallrecordings.md)|[callRecording](callrecording.md) collection|Get all recordings from adhoc call instances initiated by a specific user.|
-|[getAllTranscripts](../api/adhoccall-getalltranscripts.md)|[callTranscript](calltranscript.md) collection|Get all transcripts from adhoc call instances initiated by a specific user.|
+|[Get all recordings](../api/adhoccall-getallrecordings.md)|[callRecording](callrecording.md) collection|Get the [callRecording](callrecording.md) objects from [ad hoc call](../resources/adhoccall.md) instances that a specific user initiates. |
+|[Get all transcripts](../api/adhoccall-getalltranscripts.md)|[callTranscript](calltranscript.md) collection|Get all [callTranscript](calltranscript.md) objects from [ad hoc call](../resources/adhoccall.md) instances that a specific user initiates.|
 
 ## Properties
 

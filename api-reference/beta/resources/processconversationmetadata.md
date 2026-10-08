@@ -36,6 +36,7 @@ Inherits from [processContentMetadataBase](../resources/processcontentmetadataba
 |plugins|[aiInteractionPlugin](../resources/aiinteractionplugin.md) collection|List of plugins used during the generation of this message (relevant for AI/bot interactions).|
 |sequenceNumber|Int64|A sequence number indicating the order in which content was generated or should be processed, required when **correlationId** is used. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 |accessedResources (deprecated)|String collection|List of resources (for example, file URLs, web URLs) accessed during the generation of this message (relevant for bot interactions). The **accessedResources** property is deprecated and stopped returning data on August 20, 2025. Going forward, use the **accessedResources_v2** property.|
+|contentCategory|microsoft.graph.contentCategory| The type of content. The possible values are: `none`, `ai`, `unknownFutureValue`.  The default value is `ai`, which refers to AI generated content. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 
 ## Relationships
 

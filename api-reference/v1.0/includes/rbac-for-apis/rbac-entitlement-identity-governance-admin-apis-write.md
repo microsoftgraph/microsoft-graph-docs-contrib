@@ -9,7 +9,7 @@ ms.topic: include
 -->
 
 > [!TIP]
-> In delegated scenarios with work or school accounts, the signed-in user must also be assigned an administrator role with supported role permissions through the following option:
+> For delegated access using work or school accounts, the signed-in user must be assigned an administrator role with supported role permissions through one of the following options:
 > 
 > - A [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) where the least privileged role is *Identity Governance Administrator*. **This is the least privileged option.**
 > 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the relationships of a group to cloud licensing resources.
+Represents the relationships of a [group](../resources/group.md) to cloud licensing resources.
 
 ## Properties
 None.
@@ -22,6 +22,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|assignments|[microsoft.graph.cloudLicensing.assignment](../resources/cloudlicensing-assignment.md) collection|The set of assignments that are directly assigned to this group.|
 |usageRights|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|The rights that all direct members of the group have to use various services, granted by the combination of its assigned licenses.|
 
 ## JSON representation

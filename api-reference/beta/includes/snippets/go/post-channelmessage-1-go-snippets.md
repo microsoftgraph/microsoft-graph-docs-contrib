@@ -16,7 +16,7 @@ import (
 )
 
 requestBody := graphmodels.NewChatMessage()
-body := graphmodels.NewItemBody()
+body := graphmodels.NewChatMessageBody()
 content := "Hello World"
 body.SetContent(&content) 
 requestBody.SetBody(body)

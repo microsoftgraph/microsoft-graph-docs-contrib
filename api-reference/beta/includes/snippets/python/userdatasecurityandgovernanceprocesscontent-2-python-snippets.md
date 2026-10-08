@@ -5,19 +5,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 # Code snippets are only available for the latest version. Current version is 1.x
-from msgraph import GraphServiceClient
-from msgraph.generated.users.item.datasecurityandgovernance.process_content.process_content_post_request_body import ProcessContentPostRequestBody
-from msgraph.generated.models.process_content_request import ProcessContentRequest
-from msgraph.generated.models.process_content_metadata_base import ProcessContentMetadataBase
-from msgraph.generated.models.process_conversation_metadata import ProcessConversationMetadata
-from msgraph.generated.models.text_content import TextContent
-from msgraph.generated.models.activity_metadata import ActivityMetadata
-from msgraph.generated.models.user_activity_type import UserActivityType
-from msgraph.generated.models.device_metadata import DeviceMetadata
-from msgraph.generated.models.operating_system_specifications import OperatingSystemSpecifications
-from msgraph.generated.models.integrated_application_metadata import IntegratedApplicationMetadata
-from msgraph.generated.models.protected_application_metadata import ProtectedApplicationMetadata
-from msgraph.generated.models.policy_location_url import PolicyLocationUrl
+from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.datasecurityandgovernance.process_content.process_content_post_request_body import ProcessContentPostRequestBody
+from msgraph_beta.generated.models.process_content_request import ProcessContentRequest
+from msgraph_beta.generated.models.process_content_metadata_base import ProcessContentMetadataBase
+from msgraph_beta.generated.models.process_conversation_metadata import ProcessConversationMetadata
+from msgraph_beta.generated.models.text_content import TextContent
+from msgraph_beta.generated.models.activity_metadata import ActivityMetadata
+from msgraph_beta.generated.models.user_activity_type import UserActivityType
+from msgraph_beta.generated.models.device_metadata import DeviceMetadata
+from msgraph_beta.generated.models.operating_system_specifications import OperatingSystemSpecifications
+from msgraph_beta.generated.models.integrated_application_metadata import IntegratedApplicationMetadata
+from msgraph_beta.generated.models.protected_application_metadata import ProtectedApplicationMetadata
+from msgraph_beta.generated.models.policy_location_url import PolicyLocationUrl
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ProcessContentPostRequestBody(
 	content_to_process = ProcessContentRequest(

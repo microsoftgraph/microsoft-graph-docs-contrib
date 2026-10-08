@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object. Only the properties listed in the [request body](identitygovernance-workflow-update.md#request-body) table can be updated. To update any other workflow properties, see [workflow: createNewVersion](identitygovernance-workflow-createnewversion.md).
+Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object. Only the properties listed in the [request body](../api/identitygovernance-workflow-update.md#request-body) table can be updated. To update any other workflow properties, see [workflow: createNewVersion](../api/identitygovernance-workflow-createnewversion.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

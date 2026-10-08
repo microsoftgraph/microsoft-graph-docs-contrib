@@ -20,15 +20,19 @@ Extended properties allow storing custom data and serve as a fallback mechanism 
 
 User resources:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
+- [event](../resources/event.md)
+- [mailboxFolder](../resources/mailboxfolder.md)
+- [mailboxItem](../resources/mailboxitem.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
+- [note](../resources/note.md)
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
 - [todoTask](../resources/todotask.md)
+- [todoTaskList](../resources/todotasklist.md)
 
 Microsoft 365 group resources:
 

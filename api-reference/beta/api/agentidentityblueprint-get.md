@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIden
 
 ---
 
-
 ### Response
 
 The following example shows the response.
@@ -107,6 +106,7 @@ Content-Type: application/json
     "disabledByMicrosoftStatus": null,
     "displayName": "My Agent Blueprint",
     "groupMembershipClaims": null,
+    "managerApplications": ["77504268-3426-435e-99c0-9bc8656bc20e"],
     "publisherDomain": "contoso.onmicrosoft.com",
     "signInAudience": "AzureADMyOrg",
     "tags": [],
@@ -139,6 +139,7 @@ Content-Type: application/json
     },
     "keyCredentials": [],
     "passwordCredentials": [],
+    "requiredResourceAccess": [],
     "verifiedPublisher": {
         "displayName": null,
         "verifiedPublisherId": null,

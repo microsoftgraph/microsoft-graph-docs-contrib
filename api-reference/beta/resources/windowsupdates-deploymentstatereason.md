@@ -1,11 +1,11 @@
 ---
 title: "deploymentStateReason resource type"
 description: "A reason for a particular deployment state."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # deploymentStateReason resource type

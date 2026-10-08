@@ -1,11 +1,11 @@
 ---
 title: "adhocCall: getAllRecordings"
-description: "Get recordings from all ad hoc calls initiated by a user"
+description: "Get the callRecording objects from ad hoc call instances that a specific user initiates."
 author: "sukanya"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
-doc_type: apiPageType		   
+doc_type: apiPageType
 ---
 
 # adhocCall: getAllRecordings
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all recordings from [adhoc call](../resources/adhoccall.md) instances that a specific user initiates.
+Get the [callRecording](../resources/callrecording.md) objects from [ad hoc call](../resources/adhoccall.md) instances that a specific user initiates.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -41,9 +41,9 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|The user identifier of the meeting organizer to filter for artifacts for meetings organized by the given user identifier.|
-|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2025 is `2025-01-01T00:00:00Z`.|
-|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts created before the given end date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2025 is `2025-01-01T00:00:00Z`.|
+|endDateTime|DateTimeOffset|Optional. Filter for artifacts created before the given end date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2025 is `2025-01-01T00:00:00Z`.|
+|startDateTime|DateTimeOffset|Optional. Filter for artifacts created after the given start date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2025 is `2025-01-01T00:00:00Z`.|
+|userId|String|Required. The user identifier of the meeting organizer to filter for artifacts for meetings organized by the given user identifier.|
 
 ## Request headers
 

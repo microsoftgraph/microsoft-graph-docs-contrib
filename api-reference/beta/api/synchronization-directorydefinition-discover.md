@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Discover the latest schema definition for provisioning to an application. 
+Discover the latest schema for a [directoryDefinition](../resources/synchronization-directorydefinition.md) to provision to an application. 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

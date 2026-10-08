@@ -1,8 +1,7 @@
 ---
 title: "Govern membership and ownership of groups using PIM for Groups"
 description: "PIM, part of Microsoft Entra ID Governance, enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
-author: FaithOmbongi
-ms.author: ombongifaith
+author: "ilyalushnikov"
 ms.reviewer: ilyal
 ms.localizationpriority: medium
 doc_type: conceptualPageType

@@ -65,6 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackagesuggestions_filterbycurrentuser_all"
@@ -74,6 +75,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageSuggestions/filterByCurrentUser(on='all')?$expand=availableAccessPackage
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackagesuggestions-filterbycurrentuser-all-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -137,6 +143,7 @@ Content-type: application/json
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackagesuggestions_filterbycurrentuser_history"
@@ -146,6 +153,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageSuggestions/filterByCurrentUser(on='assignmentHistory')?$expand=availableAccessPackage
 ```
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackagesuggestions-filterbycurrentuser-history-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # accessReviewInstance: batchRecordDecisions
 Namespace: microsoft.graph
 
-Enables reviewers to review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in batches by using **principalId**, **resourceId**, or neither.
+Enables reviewers to review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in a specific [accessReviewInstance](../resources/accessreviewinstance.md) in batches by using **principalId**, **resourceId**, or neither.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -94,10 +94,6 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstance-batchrecorddecisions-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstance-batchrecorddecisions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

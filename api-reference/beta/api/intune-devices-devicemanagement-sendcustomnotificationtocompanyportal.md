@@ -1,6 +1,6 @@
 ---
 title: "sendCustomNotificationToCompanyPortal action"
-description: "Intune Devices Devicemanagement Sendcustomnotificationtocompanyportal Source_Api ."
+description: "Intune Devices Devicemanagement Sendcustomnotificationtocompanyportal Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

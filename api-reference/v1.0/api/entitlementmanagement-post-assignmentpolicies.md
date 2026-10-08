@@ -340,7 +340,7 @@ Content-Type: application/json
 }
 ```
 
-## Example 3: Create a policy that automatically creates assignments based on a membership rule
+### Example 3: Create a policy that automatically creates assignments based on a membership rule
 
 The following example shows a policy that automatically creates assignments for users in the sales department.
 
@@ -430,7 +430,7 @@ Content-Type: application/json
 ```
 
 
-## Example 4: Create a policy where requestors are asked to answer questions while requesting access to provide additional information to approvers.
+### Example 4: Create a policy where requestors are asked to answer questions while requesting access to provide additional information to approvers
 
 The following example shows a policy that automatically creates assignments for users in the sales department.
 
@@ -737,6 +737,7 @@ In the following example, the policy is created for an access package assignment
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_CustomWorkflowExtension_dynamic"
@@ -794,6 +795,36 @@ Content-type: application/json
 }
 
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-customworkflowextension-dynamic-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-customworkflowextension-dynamic-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-customworkflowextension-dynamic-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageassignmentpolicy-customworkflowextension-dynamic-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentpolicy-customworkflowextension-dynamic-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageassignmentpolicy-customworkflowextension-dynamic-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response 
 

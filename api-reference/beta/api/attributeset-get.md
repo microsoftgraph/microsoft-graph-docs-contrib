@@ -1,7 +1,7 @@
 ---
 title: "Get attributeSet"
 description: "Read the properties and relationships of an attributeSet object."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

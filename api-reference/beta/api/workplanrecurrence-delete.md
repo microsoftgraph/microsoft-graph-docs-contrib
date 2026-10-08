@@ -1,6 +1,6 @@
 ---
 title: "Delete workPlanRecurrence"
-description: "Delete a workPlanRecurrence object from your own work plan."
+description: "Delete a workPlanRecurrence object from a user's work plan."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [workPlanRecurrence](../resources/workplanrecurrence.md) object from your own work plan.
+Delete a [workPlanRecurrence](../resources/workplanrecurrence.md) object from a user's work plan.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "workplanrecurrence_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workplanrecurrence-delete-permissions.md)]
+
+>**Note:** Application permissions are supported only when using the `/users/{id}` endpoint.
 
 ## HTTP request
 
@@ -34,7 +36,7 @@ DELETE /me/settings/workHoursAndLocations/recurrences/{id}
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-When using the `/users/{id}` endpoint, the ID must be your own user ID.
+When using delegated permissions with the `/users/{id}` endpoint, the ID must be the signed-in user's ID.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -61,6 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workplanrecurrence_delete"
@@ -69,6 +72,36 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADaJA3YgAA
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/workplanrecurrence-delete-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/workplanrecurrence-delete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workplanrecurrence-delete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workplanrecurrence-delete-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/workplanrecurrence-delete-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/workplanrecurrence-delete-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/workplanrecurrence-delete-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

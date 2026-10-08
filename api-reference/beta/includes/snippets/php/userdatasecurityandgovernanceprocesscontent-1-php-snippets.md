@@ -6,11 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Graph\Beta\Generated\Users\Item\DataSecurityAndGovernance\ProcessContent\ProcessContentRequestBuilderPostRequestConfiguration;
 use Microsoft\Graph\Beta\Generated\Users\Item\DataSecurityAndGovernance\ProcessContent\ProcessContentPostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\ProcessContentRequest;
 use Microsoft\Graph\Beta\Generated\Models\ProcessContentMetadataBase;
 use Microsoft\Graph\Beta\Generated\Models\ProcessConversationMetadata;
 use Microsoft\Graph\Beta\Generated\Models\TextContent;
+use Microsoft\Graph\Beta\Generated\Models\ContentCategory;
 use Microsoft\Graph\Beta\Generated\Models\ActivityMetadata;
 use Microsoft\Graph\Beta\Generated\Models\UserActivityType;
 use Microsoft\Graph\Beta\Generated\Models\DeviceMetadata;
@@ -37,6 +39,7 @@ $contentEntriesProcessContentMetadataBase1->setSequenceNumber(0);
 $contentEntriesProcessContentMetadataBase1->setIsTruncated(false);
 $contentEntriesProcessContentMetadataBase1->setCreatedDateTime(new \DateTime('2025-05-27T17:23:20'));
 $contentEntriesProcessContentMetadataBase1->setModifiedDateTime(new \DateTime('2025-05-27T17:23:20'));
+$contentEntriesProcessContentMetadataBase1->setContentCategory(new ContentCategory('ai'));
 $contentEntriesArray []= $contentEntriesProcessContentMetadataBase1;
 $contentToProcess->setContentEntries($contentEntriesArray);
 
@@ -64,7 +67,13 @@ $contentToProcessIntegratedAppMetadata->setName('PC Purview API Explorer');
 $contentToProcessIntegratedAppMetadata->setVersion('0.2');
 $contentToProcess->setIntegratedAppMetadata($contentToProcessIntegratedAppMetadata);
 $requestBody->setContentToProcess($contentToProcess);
+$requestConfiguration = new ProcessContentRequestBuilderPostRequestConfiguration();
+$headers = [
+	'Client-Request-Id' => '50dc805c-3af4-42d9-ad16-a746235cc736',
+];
+$requestConfiguration->headers = $headers;
 
-$result = $graphServiceClient->me()->dataSecurityAndGovernance()->processContent()->post($requestBody)->wait();
+
+$result = $graphServiceClient->me()->dataSecurityAndGovernance()->processContent()->post($requestBody, $requestConfiguration)->wait();
 
 ```

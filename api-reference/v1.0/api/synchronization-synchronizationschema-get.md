@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Retrieve the schema for a given synchronization job or template.
+Retrieve the [synchronizationSchema](../resources/synchronization-synchronizationschema.md) for a given synchronization job or template.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a [synchronizati
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/jobs
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.

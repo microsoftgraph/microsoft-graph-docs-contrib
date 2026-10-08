@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+let recurrences = await client.api('/me/settings/workHoursAndLocations/recurrences')
+	.version('beta')
+	.get();
+
+```

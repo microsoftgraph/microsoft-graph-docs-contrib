@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the status of the provisioning event and the associated errors. 
+Describes the status of the provisioning event and the associated errors. This object is configured in the **errorInformation** property of [provisioningStatusInfo](../resources/provisioningstatusinfo.md).
 
 ## Properties
 
@@ -58,5 +58,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

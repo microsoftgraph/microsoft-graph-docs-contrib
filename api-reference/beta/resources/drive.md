@@ -5,7 +5,7 @@ author: spgraph-docs-team
 ms.localizationpriority: high
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
-ms.date: 09/27/2024
+ms.date: 08/04/2026
 ---
 # drive resource type
 
@@ -25,7 +25,7 @@ Users without a OneDrive license may not have a default drive available.
 | [List drive][drive-list]                                   | drive collection        |Retrieve the list of drive resources available for a target user, group, or site.|
 | [Get drive][drive-get]                                     | drive                       | Get metadata about a drive.|
 | [Get drive root][item-get]                                 | [driveItem][]               | Get root folder of a drive.|
-| [List activities][drive-activities]                        | [itemActivity][] collection | List activities that occurred under the drive.|
+| [List activities][drive-activities]                        | [itemActivity][] collection | List the recent [activities](../resources/itemactivity.md) that took place on a [drive](../resources/drive.md), [list](../resources/list.md), item, or within an item hierarchy. |
 | [List followed items][drive-following]                     | [driveItem][] collection    | List the user's followed driveItems.|
 | [List children][item-children]                             | [driveItem][] collection    | List children of the root folder of a drive.|
 | [List changes][item-changes]                               | [driveItem][] collection    | List changes for all driveItems in the drive.|
@@ -48,6 +48,7 @@ Users without a OneDrive license may not have a default drive available.
 | name                 | string                        | The name of the item. Read-write.                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | Optional. The user account that owns the drive. Read-only.                                                                                                                                                                       |
 | quota                | [quota](../resources/quota.md)            | Optional. Information about the drive's storage space quota. Read-only.                                                                                                                                                          |
+| settings             | [driveSettings](drivesettings.md)         | The settings associated with the drive. Read-only. This property isn't returned by default and must be selected using the `$select` query parameter.                             |
 | sharepointIds        | [sharepointIds][]             | Returns identifiers useful for SharePoint REST compatibility. Read-only.  This property isn't returned by default and must be selected using the `$select` query parameter.                                                                               |
 | system               | [systemFacet][]               | If present, indicates that it's a system-managed drive. Read-only.
 | webUrl               | string (url)                  | URL that displays the resource in the browser. Read-only.                                                                                                                                                                        |
@@ -87,6 +88,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
     "webUrl",
     "items",
     "root",
+    "settings",
     "sharepointIds",
     "special",
     "system"
@@ -112,6 +114,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
   "owner": {"@odata.type": "microsoft.graph.identitySet"},
   "quota": {"@odata.type": "microsoft.graph.quota"},
   "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "settings": {"@odata.type": "microsoft.graph.driveSettings"},
   "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"},
   "special": [{"@odata.type": "microsoft.graph.driveItem"}],
   "system": {"@odata.type": "microsoft.graph.systemFacet"},
@@ -129,7 +132,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 [list]: list.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
-[drive-activities]: ../api/activities-list.md
+[drive-activities]: ../api/itemactivity-list.md
 [drive-following]: ../api/drive-list-following.md
 [drive-get]: ../api/drive-get.md
 [drive-list]: ../api/drive-list.md

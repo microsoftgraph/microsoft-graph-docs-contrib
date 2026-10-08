@@ -56,7 +56,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [Contract](../resources/contract.md) objects in the response body.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/contracts
 
 ---
 
-##### Response
+### Response
 
 Note: The response object shown here might be shortened for readability.
 <!-- {

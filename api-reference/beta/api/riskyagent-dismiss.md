@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Dismiss the risk of one or more [riskyAgent](../resources/riskyagent.md) objects. This action sets the targeted agent's **riskLevel** to `none`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -101,12 +101,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/riskyagentthisdismiss-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/riskyagentthisdismiss-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/riskyagentthisdismiss-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

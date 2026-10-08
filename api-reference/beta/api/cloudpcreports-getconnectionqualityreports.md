@@ -19,7 +19,7 @@ Get the overall connection quality reports for all devices within a current tena
 >[!CAUTION] 
 > This API is deprecated and will stop returning data on December 31, 2024. Going forward, use the [retrieveConnectionQualityReports](cloudpcreports-retrieveconnectionqualityreports.md) API.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

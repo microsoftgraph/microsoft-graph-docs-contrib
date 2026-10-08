@@ -1,0 +1,27 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\Workspace;
+
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestBody = new Workspace();
+$requestBody->setOdataType('microsoft.graph.workspace');
+$requestBody->setNickname('Conf Room');
+$requestBody->setLabel('100');
+$requestBody->setCapacity(50);
+$requestBody->setIsWheelChairAccessible(false);
+$additionalData = [
+	'building' => '1',
+];
+$requestBody->setAdditionalData($additionalData);
+
+$result = $graphServiceClient->places()->byPlaceId('place-id')->patch($requestBody)->wait();
+
+```

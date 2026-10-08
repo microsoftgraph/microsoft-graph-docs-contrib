@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a privateAccessSensor object.
+Read the properties and relationships of a [privateAccessSensor](../resources/privateaccesssensor.md) object.
 
 ## Permissions
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/privateAccess/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-privateaccesssensor-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-privateaccesssensor-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

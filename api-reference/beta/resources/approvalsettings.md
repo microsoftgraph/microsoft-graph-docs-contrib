@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 The settings for approval as defined in a role management policy rule.
 
+In entitlement management, this object is configured in the **requestApprovalSettings** property of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+
 ## Properties
 
 |Property|Type|Description|

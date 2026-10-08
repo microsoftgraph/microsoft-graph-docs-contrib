@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Represents the manifest definition for an AI agent, including its capabilities, skills, security requirements, and metadata. An agent card manifest defines how an agent presents itself to users and systems. This resource is associated with [agent instances](../resources/agentinstance.md) through the [agent registry](../resources/agentregistry.md).
 
 Inherits from [entity](../resources/entity.md).

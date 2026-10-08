@@ -43,11 +43,12 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 ### teamsAppDistributionMethod values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|store|0| The app is available to all tenants through the Microsoft Teams app store.|
-|organization|1|The app is available only in this tenant.|
-|sideloaded|2|The app is available only to the user/team its installed to.|
+|Member|Description|
+|:---|:---|
+|store| The app is available to all tenants through the Microsoft Teams app store.|
+|organization|The app is available only in this tenant.|
+|sideloaded|The app is available only to the user or team it's installed to.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 

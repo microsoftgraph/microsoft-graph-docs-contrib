@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 This is an example of updating a one-time (not reoccurring) access review to remove an unnecessary reviewer.
 
 
-##### Request
+### Request
 In the request URL, supply the ID of the accessReview object and then the ID of the user object.
 
 
@@ -93,7 +93,7 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16
 
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true

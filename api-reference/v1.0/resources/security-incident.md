@@ -24,6 +24,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |[Get incident](../api/security-incident-get.md)|[microsoft.graph.security.incident](../resources/security-incident.md)|Read the properties and relationships of an [incident](../resources/security-incident.md) object.|
 |[Update incident](../api/security-incident-update.md)|[microsoft.graph.security.incident](../resources/security-incident.md)|Update the properties of an [incident](../resources/security-incident.md) object.|
 |[Create comment for incident](../api/security-incident-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [incident](../resources/security-incident.md) based on the specified incident **id** property.|
+|[Merge incidents](../api/security-incident-mergeincidents.md)|[microsoft.graph.security.mergeResponse](../resources/security-mergeresponse.md)|Merge multiple [incident](../resources/security-incident.md) resources into a single incident.|
 
 
 ## Properties
@@ -35,12 +36,13 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |createdDateTime|DateTimeOffset|Time when the incident was first created.|
 |customTags|String collection|Array of custom tags associated with an incident.|
 |description|String|Description of the incident.|
-|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |displayName|String|The incident name.|
 |id|String|Unique identifier to represent the incident.|
 |incidentWebUrl|String|The URL for the incident page in the Microsoft 365 Defender portal.|
 |lastModifiedBy|String|The identity that last modified the incident.|
 |lastUpdateDateTime|DateTimeOffset|Time when the incident was last updated.|
+|priorityScore|Int|A priority score for the incident from 0 to 100, with > 85 being the top priority, 15 - 85 medium priority, and < 15 low priority. This score is generated using machine learning and is based on multiple factors, including severity, disruption impact, threat intelligence, alert types, asset criticality, threat analytics, incident rarity, and additional priority signals. The value can also be `null` which indicates the feature is not open for the tenant or the value of the score is pending calculation.|
 |redirectIncidentId|String|Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
 |resolvingComment|String|User input that explains the resolution of the incident and the classification choice. This property contains free editable text.|
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. The possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
@@ -99,7 +101,8 @@ The following JSON representation shows the resource type.
   "status": "String",
   "summary": "String",
   "systemTags" : ["String"],
-  "tenantId": "String"
+  "tenantId": "String",
+  "priorityScore": "Int"
 }
 ```
 

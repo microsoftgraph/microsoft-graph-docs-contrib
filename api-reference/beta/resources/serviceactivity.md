@@ -1,11 +1,11 @@
 ---
 title: "serviceActivity resource type"
-description: "Represents the service activity of various Microsoft 365 services."
+description: "Represents the service activity of various Microsoft 365 and Microsoft Entra services."
 author: "Zacharypeng"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
-ms.date: 05/23/2024
+ms.date: 04/21/2026
 ---
 
 # serviceActivity resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the service activity of various Microsoft 365 services.
+Represents the service activity of various Microsoft 365 and Microsoft Entra services.
 
 Inherits from [entity](../resources/entity.md).
 

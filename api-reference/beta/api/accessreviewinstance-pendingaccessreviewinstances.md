@@ -46,7 +46,7 @@ The default page size for this API is 100 **accessReviewInstance** objects. To i
 None.
 
 ## Request body
-Do not supply a request body.
+Don't supply a request body.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an array of [accessReviewInstance](../resources/accessreviewinstance.md) objects in the response body.

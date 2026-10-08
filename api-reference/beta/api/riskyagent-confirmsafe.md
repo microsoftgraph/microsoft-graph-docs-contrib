@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Confirm one or more [riskyAgent](../resources/riskyagent.md) objects as safe. This action sets the targeted agent's **riskLevel** to `none`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -103,12 +103,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/riskyagentthisconfirmsafe-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/riskyagentthisconfirmsafe-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/riskyagentthisconfirmsafe-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

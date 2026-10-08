@@ -12,7 +12,7 @@ ms.date: 05/16/2025
 
 Namespace: microsoft.graph
 
-Get the list of [applications](../resources/application.md) in this organization.
+Get the list of [applications](../resources/application.md) in this organization. This API also returns [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects, which are identified by the **@odata.type** property of `#microsoft.graph.agentIdentityBlueprint`.
 
 > [!NOTE]
 > When calling this API using tokens issued for a personal Microsoft account, it will return the apps owned by the personal Microsoft account. The notion of organizations doesn't exist for personal Microsoft accounts. To list applications owned by a specific personal Microsoft account, this API requires the *User.Read* permission in addition to *Application.Read.All* or *Application.ReadWrite.All*.
@@ -41,6 +41,8 @@ By default, this API doesn't return the value of the **key** in the **keyCredent
 
 The use of `$select` to get **keyCredentials** for applications has a throttling limit of 150 requests per minute for every tenant.
 
+The **managerApplications** property is not returned by default. To retrieve it, use `$select=managerApplications` or include it in a `$select` query with other properties. For example, `$select=id,appId,managerApplications`.
+
 ## Request headers
 
 | Name           | Description                |
@@ -53,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [application](../resources/application.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [application](../resources/application.md) and [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects in the response body.
 
 ## Examples
 

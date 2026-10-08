@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of an existing [accessPackageSubject](../resources/accesspackagesubject.md) object.
+Get the properties of an external directory user represented by an existing [accessPackageSubject](../resources/accesspackagesubject.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-GET /identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUser}')
+GET /identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfExternalDirectoryUser}')
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and the requested [a
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUser}')
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfExternalDirectoryUser}')
 ```
 
 # [C#](#tab/csharp)

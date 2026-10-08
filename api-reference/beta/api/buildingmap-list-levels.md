@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of the [levelMap](../resources/levelmap.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/places/4bff9586-c9ee-401d-9d35-c476231a33e6
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-levelmap-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-levelmap-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

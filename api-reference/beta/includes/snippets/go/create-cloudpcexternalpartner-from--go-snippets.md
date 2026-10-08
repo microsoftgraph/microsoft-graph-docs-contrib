@@ -16,7 +16,7 @@ import (
 )
 
 requestBody := graphmodels.NewCloudPcExternalPartner()
-partnerId := "198d7140-80bb-4843-8cc4-811377a49a92"
+partnerId := "198d71c0-80bb-4843-8cc4-811377a49a92"
 requestBody.SetPartnerId(&partnerId) 
 enableConnection := true
 requestBody.SetEnableConnection(&enableConnection) 

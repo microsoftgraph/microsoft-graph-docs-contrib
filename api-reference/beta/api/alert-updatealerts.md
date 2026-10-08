@@ -1,18 +1,21 @@
 ---
-title: "alert: updateAlerts"
+title: "alert: updateAlerts (deprecated)"
 description: "Update multiple alerts in one request instead of multiple requests."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 08/13/2024
+ROBOTS: NOINDEX
 ---
 
-# alert: updateAlerts
+# alert: updateAlerts (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Update multiple alerts in one request instead of multiple requests.
 

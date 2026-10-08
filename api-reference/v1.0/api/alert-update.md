@@ -1,16 +1,19 @@
 ---
-title: "Update alert"
+title: "Update alert (deprecated)"
 description: "Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 04/04/2024
+ROBOTS: NOINDEX
 ---
 
-# Update alert
+# Update alert (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions. This method updates any solution that has a record of the referenced alert ID.
 
@@ -42,7 +45,7 @@ PATCH /security/alerts/{alert_id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the values for relevant fields that should be updated. The body **must** contain the **vendorInformation** property with valid `provider` and `vendor` fields. The following table lists the fields that can be updated for an alert. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property          | Type                                                                   | Description |
 |:------------------|:-----------------------------------------------------------------------|:--|
@@ -52,7 +55,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 | feedback          | alertFeedback                                                          | Analyst feedback on the alert. The possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. |
 | status            | alertStatus                                                            | Alert life cycle status (stage). The possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`. |
 | tags              | String collection                                                      | User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW". |
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Complex type that contains details about the security product/service vendor, provider, and subprovider (for example, `vendor=Microsoft`; `provider=Windows Defender ATP`; `subProvider=AppLocker`). **Provider and vendor fields are required.** |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Required. Complex type that contains details about the security product/service vendor, provider, and subprovider (for example, `vendor=Microsoft`; `provider=Windows Defender ATP`; `subProvider=AppLocker`). **Provider and vendor fields are required.** |
 
 ## Response
 
@@ -130,7 +133,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of a successful response.
+The following example shows a successful response.
 
 <!-- {
   "blockType": "response"
@@ -208,7 +211,7 @@ Prefer: return=representation
 
 #### Response
 
-The following is an example of the response when the optional `Prefer: return=representation` request header is used.
+The following example shows a response when the optional `Prefer: return=representation` request header is used.
 
 > **Note:** The response object shown here might be shortened for readability.
 

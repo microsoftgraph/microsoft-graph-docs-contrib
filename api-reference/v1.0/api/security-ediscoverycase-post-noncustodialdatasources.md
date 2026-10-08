@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_post_noncustodialdatasources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-post-noncustodialdatasources-permissions.md)]
 
+[!INCLUDE [rbac-rbac-ediscovery-custodian-apis](../includes/rbac-for-apis/rbac-ediscovery-custodian-export-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -44,12 +46,7 @@ You can specify the following properties when you create an **ediscoveryNoncusto
 
 |Property|Type|Description|
 |:---|:---|:---|
-|dataSource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Required. Either a [microsoft.graph.security.userSource](../resources/security-usersource.md) or [microsoft.graph.security.siteSource](../resources/security-sitesource.md).
-
-For userSource, use `"dataSource" : { "@odata.type" : "microsoft.graph.security.userSource", "email" : "SMTP address"}`.  
-For siteSource use `"dataSource" : { "@odata.type" : "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" }`,
-Alternatively use the webUrl directly, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
-
+|dataSource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Required. Either a [microsoft.graph.security.userSource](../resources/security-usersource.md) or [microsoft.graph.security.siteSource](../resources/security-sitesource.md). <ul><li>For userSource, use `"dataSource" : { "@odata.type" : "microsoft.graph.security.userSource", "email" : "SMTP address"}`.</li><li>For siteSource, use `"dataSource" : { "@odata.type" : "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" }`.</li><li>Alternatively, use the webUrl directly: `"dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": "https://contoso.sharepoint.com/sites/Design-topsecret"}}`.</li><li>SharePoint site URLs must use the standard `.sharepoint.com` format.</li></ul>|
 
 ## Response
 

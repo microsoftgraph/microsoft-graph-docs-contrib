@@ -1,14 +1,13 @@
 ---
 title: Manage Groups in Microsoft Graph
 description: Discover how to use the Microsoft Graph groups API to create and manage groups, simplifying access management for your organization.
-author: FaithOmbongi
-ms.author: ombongifaith
+author: "yuhko-msft"
 ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.localizationpriority: high
 ms.subservice: entra-groups
 doc_type: conceptualPageType
 ms.topic: overview
-ms.date: 04/29/2025
+ms.date: 02/19/2026
 #customer intent: As a developer, I want to understand how to create and manage groups using Microsoft Graph so that I can simplify access management for my organization.  
 ---
 
@@ -56,10 +55,8 @@ Microsoft 365 Groups are designed for collaboration and provide access to shared
 - Intune device management.
 
 Here's an example of a Microsoft 365 group in JSON format:
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
 
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -98,6 +95,14 @@ Content-type: application/json
     "securityEnabled": true
 }
 ```
+
+## Group ownership
+
+Groups can have one or more owners who manage the group. Owners can be users or service principals. We recommend assigning at least two owners to a group to ensure continuity.
+
+### Ownerless group policy
+
+When a group loses its sole owner, it becomes ownerless and can no longer be managed effectively. Use the [ownerlessGroupPolicy](ownerlessgrouppolicy.md) resource to configure a tenant-level policy that automatically sends actionable notification emails to active members of ownerless groups, prompting them to accept ownership. Administrators can configure the notification duration, the maximum number of members to notify, and control ownership eligibility by using security groups. For more information, see [Get ownerlessGroupPolicy](../api/ownerlessgrouppolicy-get.md) and [Create or update ownerlessGroupPolicy](../api/ownerlessgrouppolicy-upsert.md).
 
 ## Group membership
 
@@ -211,11 +216,11 @@ Content-type: application/json
 
 You can configure other settings for groups, such as:
 
-| Setting | Applies to |
-|--|--|
-| [Group expiration](../resources/grouplifecyclepolicy.md) | Microsoft 365 Groups |
-| [Group settings](/graph/group-directory-settings) | Microsoft 365 Groups |
-| [On-premises synchronization settings](../resources/onpremisesdirectorysynchronization.md) | Security and Microsoft 365 Groups |
+| Setting | Description | Applies to |
+|--|--|--|
+| [Group expiration](../resources/grouplifecyclepolicy.md) | Configure an expiration policy so that Microsoft 365 groups are automatically deleted after a specified period, unless renewed. | Microsoft 365 groups |
+| [Group settings](/graph/group-directory-settings) | Configure behaviors for groups using setting templates. Setting templates include: **Group.Unified** for Microsoft 365 group settings (such as naming policies, guest access, and sensitivity labels), **Group.Unified.Guest** for Microsoft 365 guest settings, **Group.Security** for cloud security group settings (such as enabling sensitivity labels), and **Group.Security.Policies** for cloud security settings. | Microsoft 365 groups and cloud security groups |
+| [On-premises synchronization settings](../resources/onpremisesdirectorysynchronization.md) | Configure on-premises directory synchronization settings. | Security and Microsoft 365 groups |
 
 ## Group search limitations for guests in organizations
 
@@ -255,7 +260,7 @@ The Microsoft Graph groups API supports these common operations:
 
 ## Microsoft Entra roles for managing groups
 
-To manage groups, the signed-in user must have the appropriate Microsoft Graph permissions and be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+To manage groups, the signed-in user must have the appropriate Microsoft Graph permissions and be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with supported permissions. *Groups Administrator* is the main role for managing groups, but other roles such as *User Administrator*, *Exchange Administrator*, and *Directory Writers* can also manage groups with varying levels of permissions.
 
 The least privileged roles for managing groups are:
 
@@ -269,3 +274,7 @@ For more information, see [Least privileged roles to manage groups](/entra/ident
 
 > [!div class="nextstepaction"]
 > [Start working with groups](../resources/group.md)
+
+## See also
+
+- [Best practices for managing groups in the cloud](/entra/fundamentals/concept-learn-about-groups#best-practices-for-managing-groups-in-the-cloud)

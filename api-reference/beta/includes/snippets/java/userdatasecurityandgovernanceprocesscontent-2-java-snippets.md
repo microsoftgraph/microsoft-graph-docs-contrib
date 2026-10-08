@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-com.microsoft.graph.users.item.datasecurityandgovernance.processcontent.ProcessContentPostRequestBody processContentPostRequestBody = new com.microsoft.graph.users.item.datasecurityandgovernance.processcontent.ProcessContentPostRequestBody();
+com.microsoft.graph.beta.users.item.datasecurityandgovernance.processcontent.ProcessContentPostRequestBody processContentPostRequestBody = new com.microsoft.graph.beta.users.item.datasecurityandgovernance.processcontent.ProcessContentPostRequestBody();
 ProcessContentRequest contentToProcess = new ProcessContentRequest();
 LinkedList<ProcessContentMetadataBase> contentEntries = new LinkedList<ProcessContentMetadataBase>();
 ProcessConversationMetadata processContentMetadataBase = new ProcessConversationMetadata();

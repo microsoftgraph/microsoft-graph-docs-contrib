@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/security/identities/sensorCandidates
 [!INCLUDE [sample-code](../includes/snippets/php/list-sensorcandidate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-sensorcandidate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-sensorcandidate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -118,7 +122,8 @@ Content-Type: application/json
       "computerDnsName": "win-11.def.defensor.local",
       "senseClientVersion": "10.8780.27711.1000",
       "lastSeenDateTime": "2024-10-29T19:55:10.9452778Z",
-      "domainName": "def.defensor.local"
+      "domainName": "def.defensor.local",
+      "sensorTypes": ["domainController", "adfs"]
     }
   ]
 }

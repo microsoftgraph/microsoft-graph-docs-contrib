@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Start a specific Cloud PC. Currently, only [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) Cloud PCs are supported.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

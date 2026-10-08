@@ -1,16 +1,19 @@
 ---
-title: "List alerts"
+title: "List alerts (deprecated)"
 description: "Retrieve a list of alert objects."
 author: "preetikr"
 ms.localizationpriority: high
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 04/04/2024
+ROBOTS: NOINDEX
 ---
 
-# List alerts
+# List alerts (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Retrieve a list of [alert](../resources/alert.md) objects.
 

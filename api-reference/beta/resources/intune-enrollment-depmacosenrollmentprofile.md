@@ -84,6 +84,7 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 |autoAdvanceSetupEnabled|Boolean|Indicates if Setup Assistant will automatically advance through its screen|
 |depProfileAdminAccountPasswordRotationSetting|[depProfileAdminAccountPasswordRotationSetting](../resources/intune-enrollment-depprofileadminaccountpasswordrotationsetting.md)|Settings for local admin account password automatic rotation.|
+|usePlatformSSODuringSetupAssistant|Boolean|Indicates whether Platform SSO is used as part of device enrollment during Setup Assistant. When TRUE, Platform SSO is used in device enrollment during Setup Assistant. When FALSE Platform SSO is not used in enrollment during Setup Assistant. Note: This value cannot be TRUE when configurationWebUrl is TRUE.|
 
 ## Relationships
 None
@@ -161,6 +162,7 @@ Here is a JSON representation of the resource.
       "onRetrievalAutoRotatePasswordEnabled": true,
       "onRetrievalDelayAutoRotatePasswordInHours": 1024
     }
-  }
+  },
+  "usePlatformSSODuringSetupAssistant": true
 }
 ```

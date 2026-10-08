@@ -1,6 +1,6 @@
 ---
 title: "Create virtualEventRegistrationCustomQuestion"
-description: "Create a registration question for a webinar."
+description: "Create a registration question for a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,7 @@ ms.date: 08/13/2024
 # Create virtualEventRegistrationCustomQuestion
 Namespace: microsoft.graph
 
-Create a [registration question](../resources/virtualeventregistrationquestionbase.md) for a [webinar](../resources/virtualeventwebinar.md).
+Create a [registration question](../resources/virtualeventregistrationquestionbase.md) for a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).
 
 You can create either a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md).
 
@@ -30,8 +30,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To create a question in the registration configuration of a webinar:
+
 ```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/questions
+```
+
+To create a question in the registration configuration of a town hall:
+
+```http
+POST /solutions/virtualEvents/townhalls/{townhallId}/registrationConfiguration/questions
 ```
 
 ## Request headers
@@ -125,8 +134,6 @@ Content-Type: application/json
 
 ---
 
----
-
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -196,8 +203,6 @@ POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/post-predefined-question-virtualeventregistration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

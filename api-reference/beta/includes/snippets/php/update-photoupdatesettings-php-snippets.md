@@ -12,10 +12,9 @@ use Microsoft\Graph\Beta\Generated\Models\PhotoUpdateSettings;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PhotoUpdateSettings();
-$requestBody->setOdataType('#microsoft.graph.photoUpdateSettings');
-$requestBody->setAllowedRoles(['String', 	]);
+$requestBody->setAllowedRoles([	]);
 $additionalData = [
-	'source' => 'String',
+	'source' => 'cloud',
 ];
 $requestBody->setAdditionalData($additionalData);
 

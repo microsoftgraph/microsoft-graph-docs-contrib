@@ -15,6 +15,7 @@ const columnDefinition = {
   enforceUniqueValues: false,
   hidden: false,
   indexed: false,
+  isSearchable: false,
   name: 'Title',
   text: {
     allowMultipleLines: false,

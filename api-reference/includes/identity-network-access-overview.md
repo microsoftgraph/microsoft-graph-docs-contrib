@@ -1,9 +1,8 @@
 ---
 title: Manage Microsoft Entra identity and network access by using Microsoft Graph
 description: Manage Microsoft Entra identity and network access by using Microsoft Graph
-author: FaithOmbongi
-ms.author: ombongifaith
-ms.date: 12/01/2025
+author: nase
+ms.date: 03/26/2026
 ms.topic: include
 ms.subservice: entra-id
 ---
@@ -30,15 +29,20 @@ Groups are the containers that allow you to efficiently manage the entitlements 
 
 You can use Microsoft Graph APIs to register and manage your applications programmatically, enabling you to use Microsoft's IAM capabilities. For more information, see [Manage Microsoft Entra applications and service principals by using Microsoft Graph](/graph/api/resources/applications-api-overview).
 
-## Manage agents (preview)
+## Manage agents
 
-:::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only.":::
+AI agents require the same identity, access, security, and governance frameworks that are applied to users, applications, and devices in your organization. Microsoft Graph APIs support the full agent identity lifecycle, including:
 
-AI agents require the same identity, access, security, and governance frameworks that are applied to users, applications, and devices in your organization. For more information about using Microsoft Graph APIs to achieve these capabilities for agents, see [Microsoft Entra Agent ID APIs in Microsoft Graph overview (preview)](/graph/api/resources/agentid-platform-overview).
+- **Creating and managing agent identities** - Programmatically create and manage agent identity blueprints, agent identities, and their associated metadata such as owners and sponsors.
+- **Security and access control** - Apply Conditional Access policies to enforce access controls on agents, and use entitlement management access packages to assign agents access to security groups, application permissions, and Microsoft Entra roles.
+- **Governance** - Assign sponsors to agent identities to maintain human accountability over the agent lifecycle. Use access reviews to periodically validate that agent identities still need their assigned access.
+- **Risk detection and monitoring** - Monitor agent sign-in activities through audit logs for compliance and security purposes.
+
+For more information about using Microsoft Graph APIs to achieve these capabilities for agents, see [Microsoft Entra Agent ID APIs in Microsoft Graph overview](/graph/api/resources/agentid-platform-overview).
 
 ---
 
-## Tenant administration or directory management
+## Tenant administration and directory management
 
 A core functionality of identity and access management is managing your tenant configuration, administrative roles, and settings. Microsoft Graph provides APIs to manage your Microsoft Entra tenant for the following scenarios:
 
@@ -48,6 +52,7 @@ A core functionality of identity and access management is managing your tenant c
 > | Manage administrative units including the following operations: <ul><li>Create administrative units <li> Create and manage members and membership rules of administrative units <li> Assign administrator roles that are scoped to administrative units</ul> | [administrativeUnit](/graph/api/resources/administrativeunit) and its associated APIs |
 > | Retrieve BitLocker recovery keys | [bitlockerRecoveryKey](/graph/api/resources/bitlockerrecoverykey) and its associated APIs |
 > | Manage custom security attributes | See [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview) |
+> | Back up and restore critical directory objects to a previously known good state, including users, groups, applications, service principals, and conditional access policies, helping you recover from accidental changes or security compromises :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | See [Overview of Microsoft Entra Backup and Recovery APIs](/graph/api/resources/entrarecoveryservices-backup-recovery-overview) |
 > | Manage deleted directory objects. The functionality to store deleted objects in a "recycle bin" is supported for the following objects: <ul><li> Administrative units <li> Applications <li> External user profiles :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: <li> Groups <li> Pending external user profiles :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: <li> Service principals <li> Users</ul> | <ul><li> [Get](/graph/api/directory-deleteditems-get) or [List](/graph/api/directory-deleteditems-list) deleted objects <li> [Permanently delete](/graph/api/directory-deleteditems-delete) a deleted object   <li> [Restore a deleted item](/graph/api/directory-deleteditems-restore) <li> [List deleted items owned by user](/graph/api/directory-deleteditems-getuserownedobjects)</ul> |
 > | Manage devices in the cloud |<ul><li> [device](/graph/api/resources/device) and its associated APIs <li> :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: [deviceTemplate](/graph/api/resources/devicetemplate) and its associated APIs</ul>|
 > | View local administrator credential information for all device objects in Microsoft Entra ID that are enabled with Local Admin Password Solution (LAPS). This feature is the cloud-based LAPS solution | [deviceLocalCredentialInfo](/graph/api/resources/devicelocalcredentialinfo) and its associated APIs |
@@ -58,7 +63,7 @@ A core functionality of identity and access management is managing your tenant c
 > | Manage the profile objects for external users that you're invited to collaborate via Teams. These APIs aren't similar to the invitation APIs for Microsoft Entra External ID B2B collaboration :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only.":::| [externalUserProfile](/graph/api/resources/externaluserprofile) and [pendingExternalUserProfile](/graph/api/resources/externaluserprofile) and their associated APIs |
 > | Configure and manage staged rollout of specific Microsoft Entra ID features | [featureRolloutPolicy](/graph/api/resources/featurerolloutpolicy) and its associated APIs |
 > | Monitor licenses and subscriptions for the tenant | <ul><li> [companySubscription](/graph/api/resources/companysubscription) and its associated APIs   <li> [subscribedSku](/graph/api/resources/subscribedsku) and its associated APIs</ul> |
-> | Manage the policies for Mobile Device Management (MDM) and Mobile Application Management (MAM) autoenrollment for Microsoft Entra joined and registered devices :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | The following resources and their associated APIs: <ul><li>[mobileAppManagementPolicy](/graph/api/resources/mobileappmanagementpolicy) <li>>[mobileDeviceManagementPolicy](/graph/api/resources/mobiledevicemanagementpolicy)</ul>>  |
+> | Manage the policies for Mobile Device Management (MDM) and Mobile Application Management (MAM) autoenrollment for Microsoft Entra joined and registered devices :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | The following resources and their associated APIs: <ul><li>[mobileAppManagementPolicy](/graph/api/resources/mobileappmanagementpolicy) <li>[mobileDeviceManagementPolicy](/graph/api/resources/mobiledevicemanagementpolicy)</ul>  |
 > | Configure options that are available in Microsoft Entra Cloud Sync such as preventing accidental deletions and managing group writebacks. | [onPremisesDirectorySynchronization](/graph/api/resources/onpremisesdirectorysynchronization) and its associated APIs |
 > | Manage synchronization settings for directory objects such as users, groups, and organizational contacts between on-premises Active Directory and the cloud :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | [onPremisesSyncBehavior](/graph/api/resources/onpremisessyncbehavior) and its associated APIs |
 > | Manage the base settings for your Microsoft Entra tenant | [organization](/graph/api/resources/organization) and its associated APIs |
@@ -109,7 +114,7 @@ For more information, see [Overview of Microsoft Entra ID Governance using Micro
 
 ## Microsoft Entra External ID in external tenants
 
-The following API use cases are supported to customize how users interact with your customer-facing applications. For administrators, most of the features available in Microsoft Entra ID and also supported for Microsoft Entra External ID in external tenants. For example, domain management, application management, and conditional access.
+The following API use cases are supported to customize how users interact with your customer-facing applications. For administrators, most of the features available in Microsoft Entra ID and also supported for Microsoft Entra External ID in external tenants. For example, domain management, application management, and conditional access. For more information about all features supported in External ID, see [Supported features in workforce and external tenants](/entra/external-id/customers/concept-supported-features-customers).
 
 > [!div class="mx-tableFixed"]
 > | Use cases | API operations |
@@ -121,8 +126,10 @@ The following API use cases are supported to customize how users interact with y
 > | Manage identity providers for Microsoft Entra External ID, such as social identities | [identityProviderBase](/graph/api/resources/identityproviderbase) and its associated APIs |
 > | Sign in with an alias or username :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only.":::| [signInIdentifierBase](/graph/api/resources/signinidentifierbase) and its associated APIs |
 > | Manage user profiles in Microsoft Entra External ID for customers | For more information, see [Default user permissions in customer tenants](/graph/api/resources/users#default-user-permissions-in-customer-tenants) |
+> | Manage Microsoft Entra Conditional Access policies, such as including all users, or excluding specific users and groups  <br/> Targeting resources and authentication context <br/> Applying conditions such as device platforms and network locations such as countries, IP addresses, and compliant networks <br/>Session controls (Sign-in frequency and Persistent browser session) | The following resources and their associated APIs: <ul><li>[conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) <li> [authenticationContextClassReference](/graph/api/resources/authenticationcontextclassreference) <li>[namedLocation](/graph/api/resources/namedlocation)|
 > | Add your own business logic to the authentication experiences by integrating with systems that are external to Microsoft Entra ID| [authenticationEventListener](/graph/api/resources/authenticationeventlistener) and [customAuthenticationExtension](/graph/api/resources/customauthenticationextension) and their associated APIs |
-> | Integrate with Web Application Firewall providers such as Akamai and Cloudflare :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | [webApplicationFirewallProvider](/graph/api/resources/webapplicationfirewallprovider) and its associated APIs |
+> | Integrate with fraud protection providers to prevent fake account sign-ups and bot attacks during the user sign-up process. Supported providers include Arkose Labs and HUMAN Security | [fraudProtectionProvider](/graph/api/resources/fraudprotectionprovider) and [onFraudProtectionLoadStartListener](/graph/api/resources/onfraudprotectionloadstartlistener) and their associated APIs |
+> | Integrate with Web Application Firewall providers such as Akamai and Cloudflare | [webApplicationFirewallProvider](/graph/api/resources/webapplicationfirewallprovider) and its associated APIs |
 
 ## Multicloud permissions management (deprecated)
 

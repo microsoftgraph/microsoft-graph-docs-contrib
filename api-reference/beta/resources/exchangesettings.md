@@ -25,6 +25,7 @@ Represents the Exchange settings for mailbox discovery.
 |Property|Type|Description|
 |:---|:---|:---|
 |primaryMailboxId|String|The unique identifier for the user's primary mailbox.|
+|inPlaceArchiveMailboxId|String|The unique identifier for the user's In-Place Archive mailbox.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

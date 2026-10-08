@@ -12,17 +12,13 @@ ms.date: 08/08/2024
 
 Namespace: microsoft.graph
 
-The recurrence pattern and range. This shared object is used to define the recurrence of the following objects:
-+ [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) objects in Microsoft Entra access reviews APIs
-+ [event](event.md) objects in the calendar API
-+ [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) and [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) objects in PIM
-+ [accessPackageAssignment](accesspackageassignment.md) objects in Microsoft Entra entitlement management.
+In [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) and [accessReviewHistoryScheduleSettings](../resources/accessreviewhistoryschedulesettings.md), the **recurrence** property uses **patternedRecurrence** to define the recurrence pattern and range. This shared object is also used to define the recurrence of [calendar events](../resources/event.md) and [access package assignments](../resources/accesspackageassignment.md) in Microsoft Entra ID.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li> Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](recurrencepattern.md) are supported.|
-|range|[recurrenceRange](recurrencerange.md)|The duration of an event.|
+|pattern|[recurrencePattern](../resources/recurrencepattern.md)|The frequency of an event. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li> Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](../resources/recurrencepattern.md) are supported.|
+|range|[recurrenceRange](../resources/recurrencerange.md)|The duration of an event.|
 
 ## Relationships
 

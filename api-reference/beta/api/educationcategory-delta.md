@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/educationcategory-delta-permissions.md)]
 
 ## Optional query parameters
-This method does not support the `$expand`, `$orderby`, `$search`, and `$filter` OData query parameters.
+This method doesn't support the `$expand`, `$orderby`, `$search`, and `$filter` OData query parameters.
 
 This method only supports the `$top` OData query parameter.
 

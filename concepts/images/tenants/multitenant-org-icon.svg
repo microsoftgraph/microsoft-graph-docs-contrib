@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="aee6b4aa-5f0d-4a2b-93e0-6f0f5f7b8805" x1="50" y1="12.667" x2="50" y2="29.767" gradientUnits="userSpaceOnUse">
+      <stop offset="0.016" stop-color="#86d633" />
+      <stop offset="1" stop-color="#76bc2d" />
+    </linearGradient>
+    <linearGradient id="a8eab9df-d76c-487a-844c-0c49ced4b7a8" x1="50" y1="70.967" x2="50" y2="86.033" gradientUnits="userSpaceOnUse">
+      <stop offset="0.016" stop-color="#86d633" />
+      <stop offset="1" stop-color="#76bc2d" />
+    </linearGradient>
+    <linearGradient id="a73b5a9e-a273-4437-921e-2972643c6956" x1="52.722" y1="16.833" x2="88.583" y2="76.883" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a67af4" />
+      <stop offset="0.999" stop-color="#773adc" />
+    </linearGradient>
+    <linearGradient id="a9754cae-b04a-443e-8375-63f4ab1369ed" x1="44.511" y1="82.111" x2="20.739" y2="28.100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5ea0ef" />
+      <stop offset="1" stop-color="#0078d4" />
+    </linearGradient>
+  </defs>
+  <g id="bd717250-ba3b-4b5f-8cd3-bc4f2f0cf0a4">
+    <g>
+      <circle cx="50" cy="21.283" r="8.506" fill="url(#aee6b4aa-5f0d-4a2b-93e0-6f0f5f7b8805)" />
+      <circle cx="50" cy="78.722" r="8.506" fill="url(#a8eab9df-d76c-487a-844c-0c49ced4b7a8)" />
+      <path d="M71.906,17.367h-.989A21.278,21.278,0,0,0,34.950,6.222a3.889,3.889,0,0,0,5.556,5.556,13.450,13.450,0,0,1,22.967,9.506v.028A13.439,13.439,0,0,1,50,34.733H50a13.333,13.333,0,0,1-9.511-3.933,3.889,3.889,0,0,0-5.556,5.556A21.139,21.139,0,0,0,50,42.567H50a21.261,21.261,0,0,0,20.917-17.367h.989a11.039,11.039,0,0,1,11.028,11.028V63.778a11.039,11.039,0,0,1-11.028,11.028h-4.539a3.889,3.889,0,1,0,0,7.828h4.539a18.889,18.889,0,0,0,18.889-18.856V36.228A18.889,18.889,0,0,0,71.906,17.367Z" fill="url(#a73b5a9e-a273-4437-921e-2972643c6956)" />
+      <path d="M59.522,88.233A13.461,13.461,0,1,1,50,65.267H50a13.378,13.378,0,0,1,9.522,3.939,3.889,3.889,0,0,0,5.556-5.556A21.144,21.144,0,0,0,50,57.439H50a21.244,21.244,0,0,0-20.917,17.367H28.094A11.039,11.039,0,0,1,17.067,63.778V36.228a11.039,11.039,0,0,1,11.028-11.028h4.539a3.917,3.917,0,0,0,0-7.833H28.094a18.889,18.889,0,0,0-18.889,18.889V63.778a18.889,18.889,0,0,0,18.889,18.856h.989a21.289,21.289,0,0,0,35.972,11.139,3.889,3.889,0,0,0-5.556-5.556Z" fill="url(#a9754cae-b04a-443e-8375-63f4ab1369ed)" />
+    </g>
+  </g>
+</svg>

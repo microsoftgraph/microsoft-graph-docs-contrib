@@ -2,7 +2,7 @@
 title: "Create accessPackageResourceRequest"
 description: "Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, update of a resource, or the removal of a resource from a catalog."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "AlexFilipin"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ms.date: 03/19/2024
@@ -518,6 +518,172 @@ Content-type: application/json
 
 {
   "id": "acc2294e-f37f-42d3-981d-4e83847ed0ce",
+  "requestType": "adminAdd",
+  "state": "delivered"
+}
+```
+
+### Example 6: Add a Management Group Resource to catalog
+
+#### Request
+
+The following example shows a request for adding a management group resource to a catalog.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_management_group"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceRequests
+Content-type: application/json
+
+{
+    "requestType": "adminAdd",
+    "resource": {
+        "displayName": "test-mgmtgroup",
+        "description": "test-mgmtgroup",
+        "resourceType": "ManagementGroup",
+        "originId": "/providers/Microsoft.Management/managementGroups/test-mgmtgroup",
+        "originSystem": "AzureResources"
+    },
+    "catalog": {
+        "id": "e8368470-afaf-44da-ba86-13a7318f1995"
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerequest-from-accesspackageresourcerequests-management-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerequest-from-accesspackageresourcerequests-management-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerequest-from-accesspackageresourcerequests-management-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageresourcerequest-from-accesspackageresourcerequests-management-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageresourcerequest-from-accesspackageresourcerequests-management-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageresourcerequest-from-accesspackageresourcerequests-management-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageresourcerequest-from-accesspackageresourcerequests-management-group-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "99e156fe-d152-4005-b019-6ba816f411ea",
+  "requestType": "adminAdd",
+  "state": "delivered"
+}
+```
+
+### Example 7: Add a Subscription Resource to catalog
+
+#### Request
+
+The following example shows a request for adding a Subscription resource to a catalog.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_subscription_resource"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceRequests
+Content-type: application/json
+
+{
+    "requestType": "adminAdd",
+    "resource": {
+        "displayName": "Dev",
+        "description": "Dev",
+        "resourceType": "Subscription",
+        "originId": "/subscriptions/828b526f-c769-4b19-9797-734b4843b978",
+        "originSystem": "AzureResources"
+    },
+    "catalog": {
+        "id": "e8368470-afaf-44da-ba86-13a7318f1995"
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerequest-from-accesspackageresourcerequests-subscription-resource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerequest-from-accesspackageresourcerequests-subscription-resource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerequest-from-accesspackageresourcerequests-subscription-resource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageresourcerequest-from-accesspackageresourcerequests-subscription-resource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageresourcerequest-from-accesspackageresourcerequests-subscription-resource-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageresourcerequest-from-accesspackageresourcerequests-subscription-resource-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageresourcerequest-from-accesspackageresourcerequests-subscription-resource-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "13ac6518-0597-452c-98ff-59c52b391dae",
   "requestType": "adminAdd",
   "state": "delivered"
 }

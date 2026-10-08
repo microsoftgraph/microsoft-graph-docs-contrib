@@ -11,7 +11,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-The subtypes of this type, [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [crossCloudAzureActiveDirectoryTenant](crosscloudazureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md), [externalDomainFederation](externaldomainfederation.md), and [socialIdentitySource](socialidentitysource.md) are used in the identity sources of a [connectedOrganization](connectedOrganization.md).
+The subtypes of this type, [azureActiveDirectoryTenant](../resources/azureactivedirectorytenant.md), [crossCloudAzureActiveDirectoryTenant](../resources/crosscloudazureactivedirectorytenant.md), [domainIdentitySource](../resources/domainidentitysource.md), [externalDomainFederation](../resources/externaldomainfederation.md), and [socialIdentitySource](../resources/socialidentitysource.md), are used in the **identitySources** property of a [connectedOrganization](../resources/connectedorganization.md).
 
 ## Properties
 

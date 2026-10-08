@@ -1,6 +1,6 @@
 ---
 title: "List profilePropertySettings"
-description: "Get a collection of profilePropertySetting objects that define the configuration for user profile properties in an organization."
+description: "Get a collection of profilePropertySetting objects that define the configuration for user profile property settings in an organization."
 author: "rwaithera"
 ms.date: 05/02/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) objects that define the configuration for user profile properties in an organization. The **id** property identifies each resource object uniquely.
+Get a collection of [profilePropertySetting](../resources/profilepropertysetting.md) objects that define the configuration for user profile property settings in an organization. The **id** property identifies each resource object uniquely.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -98,6 +98,8 @@ GET https://graph.microsoft.com/beta/admin/people/profilePropertySettings
 
 ---
 
+---
+
 ### Response
 
 The following example shows the response.
@@ -118,13 +120,11 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.profilePropertySetting",
       "id": "00000000-0000-0000-0000-000000000001",
       "name": null,
-      "userOverridePrivacy": null,
-      "allowedAudiences": null,
       "prioritizedSourceUrls": [
         "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
-      ]
+      ],
+      "displayName": null
     }
   ]
 }
 ```
-

@@ -32,6 +32,7 @@ The following resource support open extensions:
 + [driveItem](driveitem.md)
 + [event](/graph/api/resources/event) for both user and group calendars
 + [message](/graph/api/resources/message)
++ [note](note.md)
 + [organization](/graph/api/resources/organization)
 + [post](/graph/api/resources/post)
 + [site](site.md)
@@ -78,7 +79,7 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md)[contact](contact.md), [driveItem](driveitem.md), [event](event.md), [message](message.md), [post](post.md), [site](site.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an **openTypeExtension** object. | Create an **openTypeExtension** object in an existing or new resource instance.|
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md), [contact](contact.md), [driveItem](driveitem.md), [event](event.md), [message](message.md), [note](note.md), [post](post.md), [site](site.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an **openTypeExtension** object. | Create an **openTypeExtension** object in an existing or new resource instance.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read the properties and relationships of an **openTypeExtension** object.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update an **openTypeExtension** object. |
 |[Delete](../api/opentypeextension-delete.md) | None |Delete an **openTypeExtension** object. |

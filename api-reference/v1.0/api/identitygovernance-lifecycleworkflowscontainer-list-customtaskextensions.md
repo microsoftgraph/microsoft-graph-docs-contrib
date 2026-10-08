@@ -1,7 +1,7 @@
 ---
 title: "List customTaskExtensions"
 description: "Get a list of the customTaskExtension objects and their properties."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -162,7 +162,7 @@ Content-Type: application/json
             },
             "callbackConfiguration": {
                 "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-                "timeoutDuration": "PT5M"
+                "timeoutDuration": "PT30M"
             }
         }
     ]

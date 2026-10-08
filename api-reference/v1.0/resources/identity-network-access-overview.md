@@ -5,9 +5,7 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.topic: overview
 ms.subservice: entra-id
-author: FaithOmbongi
-ms.author: ombongifaith
-ms.reviewer: dkershaw10, krbash
+author: "spgraph-docs-team"
 ms.date: 01/07/2025
 ---
 

@@ -12,6 +12,8 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new ProfilePropertySetting
 {
 	OdataType = "#microsoft.graph.profilePropertySetting",
+	DisplayName = "Profile priority config",
+	Name = "Profile priority config",
 	PrioritizedSourceUrls = new List<string>
 	{
 		"https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",

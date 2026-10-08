@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/users/b4c80c57-5c59-4a3d-912a-a83985988b82/AAasdijs0acjdjlksca=/permanentDelete')
+await client.api('/users/b4c80c57-5c59-4a3d-912a-a83985988b82/events/AAasdijs0acjdjlksca=/permanentDelete')
 	.post();
 
 ```

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains details of a verifiable credential type, including the type of the credential issued and list of accepted issuers. Used for the **credentialType** property of [verifiableCredentialSettings](verifiablecredentialsettings.md).
+Contains details of a verifiable credential type, including the type of the credential issued and list of accepted issuers. Used for the **credentialType** property of [verifiableCredentialSettings](../resources/verifiablecredentialsettings.md).
 
 
 ## Properties

@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/identity/verifiedId/profiles/ca15ec56-7a
 [!INCLUDE [sample-code](../includes/snippets/php/delete-verifiedidprofile-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-verifiedidprofile-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-verifiedidprofile-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

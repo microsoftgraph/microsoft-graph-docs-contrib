@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [checkInClaim](../resources/checkinclaim.md) object. This API provides the check-in status for a specific place, such as a [desk](../resources/desk.md), [room](../resources/room.md), or [workspace](../resources/workspace.md), associated with a particular reservation.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/places/c8aaf4d8-6c73-46c4-bf28-b2adadafb5be
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-checkinclaim-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-checkinclaim-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

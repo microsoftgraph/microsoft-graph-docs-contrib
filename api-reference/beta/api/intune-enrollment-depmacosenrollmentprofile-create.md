@@ -102,6 +102,7 @@ The following table shows the properties that are required when you create the d
 |requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 |autoAdvanceSetupEnabled|Boolean|Indicates if Setup Assistant will automatically advance through its screen|
 |depProfileAdminAccountPasswordRotationSetting|[depProfileAdminAccountPasswordRotationSetting](../resources/intune-enrollment-depprofileadminaccountpasswordrotationsetting.md)|Settings for local admin account password automatic rotation.|
+|usePlatformSSODuringSetupAssistant|Boolean|Indicates whether Platform SSO is used as part of device enrollment during Setup Assistant. When TRUE, Platform SSO is used in device enrollment during Setup Assistant. When FALSE Platform SSO is not used in enrollment during Setup Assistant. Note: This value cannot be TRUE when configurationWebUrl is TRUE.|
 
 
 
@@ -115,7 +116,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 2539
+Content-length: 2586
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -180,7 +181,8 @@ Content-length: 2539
       "onRetrievalAutoRotatePasswordEnabled": true,
       "onRetrievalDelayAutoRotatePasswordInHours": 9
     }
-  }
+  },
+  "usePlatformSSODuringSetupAssistant": true
 }
 ```
 
@@ -189,7 +191,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2588
+Content-Length: 2635
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -255,6 +257,7 @@ Content-Length: 2588
       "onRetrievalAutoRotatePasswordEnabled": true,
       "onRetrievalDelayAutoRotatePasswordInHours": 9
     }
-  }
+  },
+  "usePlatformSSODuringSetupAssistant": true
 }
 ```

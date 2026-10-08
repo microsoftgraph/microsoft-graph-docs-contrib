@@ -18,7 +18,7 @@ Namespace: microsoft.graph.ediscovery
 
 Get the last [addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md) object associated with a source collection. 
 
->**Note:** This method only lists the last operation; it does not return a history of all operations.
+>**Note:** This method only lists the last operation; it doesn't return a history of all operations.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

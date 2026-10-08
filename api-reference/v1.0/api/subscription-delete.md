@@ -2,7 +2,7 @@
 title: "Delete subscription"
 description: "Delete a subscription."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 doc_type: apiPageType
 ms.subservice: change-notifications
 ms.date: 08/01/2024

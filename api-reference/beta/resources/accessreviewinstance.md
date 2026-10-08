@@ -27,6 +27,7 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 |[List](../api/accessreviewscheduledefinition-list-instances.md) | [accessReviewInstance](accessreviewinstance.md) collection | Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties. |
 |[Get](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Read the properties and relationships of an [accessReviewInstance](../resources/accessreviewinstance.md) object. |
 |[Update](../api/accessreviewinstance-update.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Update the reviewers of an [accessReviewInstance](../resources/accessreviewinstance.md) object.|
+|[Apply custom data provided resource decisions](../api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions.md)|None|Set the `applyResult` on all decisions for a specific custom data provided resource in one call. |
 |[Filter by current user](../api/accessreviewinstance-filterbycurrentuser.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Returns all instances on a given [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) for which the calling user is the reviewer of one or more decisions.|
 |[List contacted reviewers](../api/accessreviewinstance-list-contactedreviewers.md)|[accessReviewReviewer](../resources/accessreviewreviewer.md) collection|Get the reviewers who received notifications for an access review instance.|
 |[Send reminder](../api/accessreviewinstance-sendreminder.md) | None. | Send a reminder to the reviewers of an accessReviewInstance. |
@@ -43,11 +44,12 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 ## Properties
 | Property | Type | Description |
 | :-------------------------| :---------------------------------- | :---------- |
+| delegatedBy | [userIdentity](../resources/useridentity.md) collection | The identities of users who delegated this review instance to the current reviewer. Null if the instance wasn't delegated. Only returned via [filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md) when explicitly requested via `$select`. Read-only. |
 | endDateTime | DateTimeOffset | DateTime when review instance is scheduled to end. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$select`. Read-only.|
-| errors | [accessReviewError](accessreviewerror.md) collection| Collection of errors in an access review instance lifecycle. Read-only. |
+| errors | [accessReviewError](../resources/accessreviewerror.md) collection| Collection of errors in an access review instance lifecycle. Read-only. |
 | fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist. Supports `$select`.|
 | id | String | Unique identifier of the instance. Supports `$select`. Read-only.|
-| scope | [accessReviewScope](accessreviewscope.md) | Created based on **scope** and **instanceEnumerationScope** at the accessReviewScheduleDefinition level. Defines the scope of users reviewed in a group. Supports `$select` and `$filter` (`contains` only). Read-only. |
+| scope | [accessReviewScope](../resources/accessreviewscope.md) | Created based on **scope** and **instanceEnumerationScope** at the accessReviewScheduleDefinition level. Defines the scope of users reviewed in a group. Supports `$select` and `$filter` (`contains` only). Read-only. |
 | startDateTime | DateTimeOffset | DateTime when review instance is scheduled to start. May be in the future. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$select`. Read-only. |
 | status | String | Specifies the status of an accessReview. Possible values: `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only.|
 | reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of access review scopes is used to define who the reviewers are. Supports `$select`. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).|
@@ -76,12 +78,17 @@ The following JSON representation shows the resource type.
 
 ```json
 {
- "@odata.type": "#microsoft.graph.accessReviewInstance",
- "id": "string (identifier)",
- "startDateTime": "string (timestamp)",
- "endDateTime": "string (timestamp)",
- "status": "string",
- "scope": {
+  "@odata.type": "#microsoft.graph.accessReviewInstance",
+  "id": "string (identifier)",
+  "startDateTime": "string (timestamp)",
+  "endDateTime": "string (timestamp)",
+  "status": "string",
+  "delegatedBy": [
+    {
+      "@odata.type": "microsoft.graph.userIdentity"
+    }
+  ],
+  "scope": {
     "@odata.type": "microsoft.graph.accessReviewScope"
   },
   "reviewers": [

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables reviewers to review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in batches by using **principalId**, **resourceId**, or neither.
+Enables reviewers to review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in a specific pending  [accessReviewInstance](../resources/accessreviewinstance.md) in batches by using **principalId**, **resourceId**, or neither.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

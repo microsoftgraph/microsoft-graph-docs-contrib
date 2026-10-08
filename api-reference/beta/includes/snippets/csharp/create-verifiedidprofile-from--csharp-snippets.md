@@ -19,7 +19,9 @@ var requestBody = new VerifiedIdProfile
 	Priority = 0,
 	VerifiedIdProfileConfiguration = new VerifiedIdProfileConfiguration
 	{
+		MethodType = VerifiedIdMethodType.TenantCustomCredential,
 		Type = "verifiedIdentity",
+		ManifestUrl = "https://verifiedid.contoso.com/manifest",
 		AcceptedIssuer = "did:web:eu.did-dev.contoso.io",
 		ClaimBindingSource = ClaimBindingSource.Directory,
 		ClaimBindings = new List<ClaimBinding>
@@ -41,13 +43,26 @@ var requestBody = new VerifiedIdProfile
 		IsEnabled = true,
 		SourcePhotoClaimName = "portrait",
 	},
+	MobileDriversLicenseConfiguration = new MobileDriversLicenseConfiguration
+	{
+		AcceptedRegions = new List<string>
+		{
+			"region-code",
+		},
+		DocumentStandard = "document-standard",
+	},
 	VerifiedIdUsageConfigurations = new List<VerifiedIdUsageConfiguration>
 	{
 		new VerifiedIdUsageConfiguration
 		{
 			IsEnabledForTestOnly = true,
-			Purpose = VerifiedIdUsageConfigurationPurpose.Recovery,
+			Purpose = VerifiedIdUsageConfigurationPurpose.Verification,
 		},
+	},
+	SelfServiceIssuance = new VerifiedIdSelfServiceIssuance
+	{
+		IsEnabled = true,
+		IssuanceUrl = "https://verifiedid.contoso.com/issue",
 	},
 };
 

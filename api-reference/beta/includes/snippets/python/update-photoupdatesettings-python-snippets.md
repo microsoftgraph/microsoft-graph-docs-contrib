@@ -9,12 +9,10 @@ from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.photo_update_settings import PhotoUpdateSettings
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = PhotoUpdateSettings(
-	odata_type = "#microsoft.graph.photoUpdateSettings",
 	allowed_roles = [
-		"String",
 	],
 	additional_data = {
-			"source" : "String",
+			"source" : "cloud",
 	}
 )
 

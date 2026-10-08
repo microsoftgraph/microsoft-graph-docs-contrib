@@ -39,6 +39,8 @@ For example, you can get messages in the Outlook **Sent Items** folder of the si
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
 
+When a message is updated while open in an Outlook client, the client does not refresh the message. Users must reopen the message to view the changes.
+
 ## Common use cases
 
 The **message** resource exposes properties such as **categories**, **conversationId**, **flag**, and **importance** that correspond to features
@@ -50,6 +52,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 |:----------|:---------------|:---------|
 | **User-centric actions** | | |
 | Draft, read, reply, forward, send, update, or delete messages | [message](../resources/message.md) | [Methods of message](../resources/message.md#methods) |
+| Create, read, update, or delete notes with optional inline image attachments | [note](../resources/note.md) | [Methods of note](../resources/note.md#methods) |
 | Delegate another user to send messages on behalf of the mailbox owner | [message](../resources/message.md) | Set the **from** and **sender** properties in a [message](../resources/message.md) |
 | Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Focused Inbox](../resources/manage-focused-inbox.md) |
 | Query for messages and get them in a search folder  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Methods of mailSearchFolder](../resources/mailsearchfolder.md#methods) |
@@ -69,6 +72,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Search and filter messages | [message](../resources/message.md) | [Query parameters](/graph/query-parameters)  |
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/change-notifications-api-overview.md) |
 | Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](/graph/delta-query-messages) |
+| Trace messages through the Exchange Online organization | [messageTrace](../resources/exchangemessagetrace.md) | [Methods of messageTrace](../resources/exchangemessagetrace.md#methods) |
 | **App development** | | |
 | Add custom app data as Internet message headers of a message | [message](../resources/message.md) | Add custom data to the **internetMessageHeaders** collection of the message. |
 | Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](/graph/extensibility-overview) |

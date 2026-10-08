@@ -1,14 +1,15 @@
 ---
-title: "cloudPcExternalPartnerSetting resource type"
+title: "cloudPcExternalPartnerSetting resource type (deprecated)"
 description: "Represents an external partner setting on Cloud PC."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ms.date: 05/23/2024
+toc.title: "Cloud PC external partner setting (deprecated)"
 ---
 
-# cloudPcExternalPartnerSetting resource type
+# cloudPcExternalPartnerSetting resource type (deprecated)
 
 Namespace: microsoft.graph
 

@@ -15,7 +15,6 @@ const certificateBasedAuthPki = {
 };
 
 await client.api('/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations')
-	.version('beta')
 	.post(certificateBasedAuthPki);
 
 ```

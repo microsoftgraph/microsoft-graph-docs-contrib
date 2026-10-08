@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PUT /me/activities/{appActivityId}
 ```
 
-> **Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.
+> **Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId doesn't have to be URL-safe.
 
 ## Request headers
 

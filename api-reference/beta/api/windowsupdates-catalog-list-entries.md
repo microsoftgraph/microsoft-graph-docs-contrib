@@ -1,11 +1,11 @@
 ---
 title: "List entries"
 description: "Get a list of catalogEntry resources from the catalog."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # List entries
@@ -118,10 +118,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
       "id": "c1dec151-c151-c1de-51c1-dec151c1dec1",
-      "displayName": "String",
-      "releaseDateTime": "String (timestamp)",
-      "deployableUntilDateTime": "String (timestamp)",
-      "version": "String"
+      "displayName": "Test security updates",
+      "releaseDateTime": "2023-07-11T00:00:00Z",
+      "deployableUntilDateTime": "2023-07-11T00:00:00Z",
+      "version": "v2"
     },
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",

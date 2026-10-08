@@ -92,6 +92,10 @@ POST https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolic
 [!INCLUDE [sample-code](../includes/snippets/php/crosstenantidentitysyncpolicypartnerthisrestore-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/crosstenantidentitysyncpolicypartnerthisrestore-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/crosstenantidentitysyncpolicypartnerthisrestore-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -113,11 +117,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
   "displayName": null,
   "deletedDateTime": "2025-06-18T23:14:25Z",
   "externalCloudAuthorizedApplicationId": null,
+  "groupSyncInbound": null,
   "userSyncInbound": null
 }
 ```

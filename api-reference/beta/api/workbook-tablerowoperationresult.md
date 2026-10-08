@@ -23,7 +23,7 @@ An asynchronous request to create table rows involves the following steps:
    Alternatively, for convenience, after you get a `succeeded` **operationStatus** result, you can get the query URL from the **resourceLocation** property of the [workbookOperation](../resources/workbookoperation.md) returned in the response, and apply the query URL to step 3. 
 3. Use the query URL returned from step 2 as the GET request URL for this function **tableRowOperationResult**. A successful function call returns the new table rows in a [workbookTableRow](../resources/workbooktablerow.md) resource.
 
-This function does not do anything if called independently.
+This function doesn't do anything if called independently.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

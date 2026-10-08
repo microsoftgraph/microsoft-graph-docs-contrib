@@ -38,6 +38,8 @@ Inherits from [entity](../resources/entity.md).
 |operatingSystem|String|The operating system (OS) of the image. For example, `Windows 11 Enterprise`. Read-only.|
 |osBuildNumber|String|The OS build version of the image. For example, `1909`. Read-only.|
 |osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. The possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`. The default value is `unknown`. Read-only.|
+|osVersionNumber|String|The operating system version of this image. For example, `10.0.22000.296`. Read-only.|
+|sizeInGB|Int32|The size of the image in GB. For example, `64`. Read-only.|
 |sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. The required ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-only.|
 |status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on the Cloud PC. The possible values are: `pending`, `ready`, `failed`, `unknownFutureValue`. Read-only.|
 |version|String|The image version. For example, `0.0.1` and `1.5.13`. Read-only.|
@@ -102,6 +104,8 @@ The following JSON representation shows the resource type.
   "operatingSystem": "String",
   "osBuildNumber": "String",
   "osStatus": "String",
+  "osVersionNumber": "String",
+  "sizeInGB": "Int32",
   "sourceImageResourceId": "String",
   "status": "String",
   "version": "String"

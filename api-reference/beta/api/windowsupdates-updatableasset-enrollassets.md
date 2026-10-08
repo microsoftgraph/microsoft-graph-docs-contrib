@@ -1,11 +1,11 @@
 ---
 title: "updatableAsset: enrollAssets"
 description: "Enroll updatableAsset resources in update management by Windows Autopatch."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # updatableAsset: enrollAssets
@@ -17,7 +17,7 @@ Enroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources
 
 You can enroll an [azureADDevice](../resources/windowsupdates-azureaddevice.md) resource in update management, but may not enroll an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) in update management.
 
-Enrolling a Microsoft Entra device in update management automatically creates an **azureADDevice** object if it does not already exist.
+Enrolling a Microsoft Entra device in update management automatically creates an **azureADDevice** object if it doesn't already exist.
 
 You can also use the method [enrollAssetsById](windowsupdates-updatableasset-enrollassetsbyid.md) to enroll assets.
 

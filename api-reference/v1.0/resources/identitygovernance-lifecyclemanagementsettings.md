@@ -25,8 +25,9 @@ The settings of Microsoft Entra Lifecycle Workflows in the tenant.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|workflowScheduleIntervalInHours|Int32|The interval in hours at which all [workflows](../resources/identitygovernance-workflow.md) running in the tenant should be scheduled for execution. This interval has a minimum value of 1 and a maximum value of 24. The default value is 3 hours. |
 |emailSettings|[microsoft.graph.emailSettings](../resources/emailsettings.md)|Defines the settings for emails sent out from email-specific [tasks](../resources/identitygovernance-task.md) within workflows. Accepts 2 parameters<br><br>senderDomain- Defines the domain of who is sending the email. <br>useCompanyBranding- A Boolean value that defines if company branding is to be used with the email.|
+|quarantineConfiguration|[microsoft.graph.identityGovernance.quarantineConfiguration](../resources/identitygovernance-quarantineconfiguration.md)|The tenant-level quarantine configuration that automatically halts a [workflow](../resources/identitygovernance-workflow.md) when its threshold conditions are met. Optional.|
+|workflowScheduleIntervalInHours|Int32|The interval in hours at which all [workflows](../resources/identitygovernance-workflow.md) running in the tenant should be scheduled for execution. This interval has a minimum value of 1 and a maximum value of 24. The default value is 3 hours. |
 
 ## Relationships
 
@@ -48,6 +49,9 @@ The following JSON representation shows the resource type.
   "workflowScheduleIntervalInHours": "Integer",
   "emailSettings": {
     "@odata.type": "microsoft.graph.emailSettings"
+  },
+  "quarantineConfiguration": {
+    "@odata.type": "microsoft.graph.identityGovernance.quarantineConfiguration"
   }
 }
 ```

@@ -1,18 +1,21 @@
 ---
-title: "alertTrigger resource type"
+title: "alertTrigger resource type (deprecated)"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 07/22/2024
+ROBOTS: NOINDEX
 ---
 
-# alertTrigger resource type
+# alertTrigger resource type (deprecated)
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Contains information about the properties that triggered a detection (properties exist in the alert entity).
 

@@ -3,7 +3,7 @@ title: "tenantProtectionScopeContainer: compute"
 toc.title: "tenantProtectionScopeContainer: compute"
 description: "Compute the tenant-wide data protection policies and actions, including user or group scoping."
 author: "kylemar"
-ms.date: 06/19/2025
+ms.date: 02/06/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Compute the tenant-wide data protection policies and actions, including user/group scoping.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -28,6 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /security/dataSecurityAndGovernance/protectionScopes/compute
 ```
@@ -38,6 +39,7 @@ POST /security/dataSecurityAndGovernance/protectionScopes/compute
 | :------------ | :------------ |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
+| Client-Request-Id  | String (GUID recommended). Optional. Unique identifier for this request, which is used for tracing and debugging in logs and support interactions. If an ID is not provided, one may be generated automatically. We recommend that you specify the ID to make tracing and debugging easier. The same ID that was sent in the request will be returned in the response. |
 
 ## Request body
 
@@ -45,11 +47,12 @@ In the request body, provide JSON object with the following parameters.
 
 | Parameter             | Type                                                                                                                 | Description                                                                                                                                                         |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| activities            | microsoft.graph.security.userActivityTypes                                                   | Optional. Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. This object is a multi-valued enumeration.|
+| activities            | microsoft.graph.security.userActivityTypes                                                   | Optional. Specifies the user activities the calling application supports or is interested in. This flagged enumeration allows multiple members to be selected simultaneously. The possible values are: `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`, `contentFiltering`. The `contentFiltering` value represents evaluating application content against data loss prevention policies.|
 | deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                    | Optional. Information about the device context (type, OS) used for contextual policy evaluation.                                                                   |
+|evaluationScope|[evaluationScope](../resources/evaluationscope.md)|Optional. Specifies the evaluation context for the request. For Agent-to-Tool (A2T) scenarios, set **type** to `agent`. If omitted, the request is evaluated using the default tenant context.|
 | integratedAppMetadata | [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)      | Optional. Information about the calling application (name, version) integrating with Microsoft Purview.                                                                    |
-| locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations the application is interested in. If provided, results are trimmed to policies covering these locations. Use [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, or [policy location URL](../resources/policylocationurl.md) for URL locations. You must specify the `@odata.type` property to declare the type of policyLocation. For example, `"@odata.type": "microsoft.graph.policyLocationApplication"`.|
-| pivotOn               | microsoft.graph.policyPivotProperty                          | Optional. Specifies how the results should be aggregated. If omitted or `none`, results might be less aggregated. Possible values are `activity`,`location`, `none`.|                
+| locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations the application is interested in. If provided, results are trimmed to policies covering these locations. Use [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, [policy location tool](../resources/policylocationtool.md) for tool locations, or [policy location URL](../resources/policylocationurl.md) for URL locations. You must specify the `@odata.type` property to declare the type of policyLocation. For example, `"@odata.type": "microsoft.graph.policyLocationApplication"`.|
+| pivotOn               | microsoft.graph.policyPivotProperty                          | Optional. Specifies how the results should be aggregated. If omitted or `none`, results might be less aggregated. Possible values are `activity`, `location`, `none`.|
 
 ## Response
 
@@ -67,10 +70,17 @@ Content-type: application/json
 
 {
     "activities": "uploadText,downloadText",
+    "evaluationScope": {
+        "type": "agent"
+    },
     "locations": [
         {
             "@odata.type": "microsoft.graph.policyLocationApplication",
             "value": "be121c8f-ecd8-4026-b699-669e0ce1bcbf"
+        },
+        {
+            "@odata.type": "microsoft.graph.policyLocationTool",
+            "value": "search@mcp"
         }
     ]
 }
@@ -78,7 +88,7 @@ Content-type: application/json
 
 ### Response
 
-The following example shows the response. It indicates that for uploads to `public.contoso.com`, there's a policy applicable to "All" users (tenant scope) that requires inline evaluation and triggers a browser restriction.
+The following example shows the response. It includes the effective Secure by Default configuration, which indicates that incomplete policy evaluations are audited and blocked.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -107,7 +117,14 @@ Content-type: application/json
                 }
             ],
             "policyActions": [
-            ]
+            ],
+            "policyConfiguration": {
+                "errorSettings": {
+                    "errorAction": "audit,block",
+                    "isEnabled": true
+                },
+                "lastModifiedDateTime": "2026-09-22T12:00:00Z"
+            }
         }
     ]
 }

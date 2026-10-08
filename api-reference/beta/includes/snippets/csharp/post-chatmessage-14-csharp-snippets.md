@@ -11,10 +11,10 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ChatMessage
 {
-	Body = new ItemBody
+	Body = new ChatMessageBody
 	{
-		ContentType = BodyType.Html,
-		Content = "<codeblock><code>Hello world</code></codeblock>",
+		MessageBodyContentType = ChatMessageBodyContentType.Html,
+		Content = "<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>",
 	},
 };
 
