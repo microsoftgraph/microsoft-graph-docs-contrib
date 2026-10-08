@@ -2749,6 +2749,7 @@
           "name": "Partner billing reports",
           "overview": "../../resources/partners-billing-api-overview.md",
           "resources": [
+            "microsoft.graph.partners.billing.billedAggregatedUsage",
             "microsoft.graph.partners.billing.billedReconciliation",
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",

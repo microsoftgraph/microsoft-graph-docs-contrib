@@ -601,6 +601,12 @@ items:
   - name: Role management
     displayName: Unified RBAC
     items:
+    - name: Directory role management deleted item container
+      items:
+      - name: Directory role management deleted item container
+        href: ../../resources/directoryrolemanagementdeleteditemcontainer.md
+      - name: List role definitions
+        href: ../../api/directoryrolemanagementdeleteditemcontainer-list-roledefinitions.md
     - name: Role management
       href: ../../resources/rolemanagement.md
     - name: Role definition
@@ -617,6 +623,8 @@ items:
         href: ../../api/unifiedroledefinition-update.md
       - name: Delete
         href: ../../api/unifiedroledefinition-delete.md
+      - name: Restore
+        href: ../../api/unifiedroledefinition-restore.md
       - name: List assigned principals
         href: ../../api/unifiedroledefinition-assignedprincipals.md
     - name: Role assignment
@@ -1489,6 +1497,10 @@ items:
         href: ../../api/identitygovernance-lifecyclepolicy-restore.md
       - name: List rules
         href: ../../api/identitygovernance-lifecyclepolicy-list-rules.md
+      - name: Evaluate impact
+        href: ../../api/identitygovernance-lifecyclepolicy-impact.md
+      - name: Get report
+        href: ../../api/identitygovernance-lifecyclepolicy-list-report.md
     - name: Agent identity lifecycle policy
       href: ../../resources/identitygovernance-agentidentitylifecyclepolicy.md
     - name: Lifecycle policy rule
@@ -1539,6 +1551,30 @@ items:
         href: ../../api/identitygovernance-complianceissue-get.md
     - name: Attestation compliance issue
       href: ../../resources/identitygovernance-attestationcomplianceissue.md
+    - name: Access package assignment required rule
+      href: ../../resources/identitygovernance-accesspackageassignmentrequiredrule.md
+    - name: Guest lifecycle policy
+      href: ../../resources/identitygovernance-guestlifecyclepolicy.md
+    - name: Invitation redemption rule
+      href: ../../resources/identitygovernance-invitationredemptionrule.md
+    - name: Lifecycle policy impact summary
+      href: ../../resources/identitygovernance-lifecyclepolicyimpactsummary.md
+    - name: Lifecycle policy report
+      items:
+      - name: Lifecycle policy report
+        href: ../../resources/identitygovernance-lifecyclepolicyreport.md
+      - name: Get report
+        href: ../../api/identitygovernance-lifecyclepolicy-list-report.md
+      - name: List subjects
+        href: ../../api/identitygovernance-lifecyclepolicyreport-list-subjects.md
+    - name: Lifecycle policy subject report
+      items:
+      - name: Lifecycle policy subject report
+        href: ../../resources/identitygovernance-lifecyclepolicysubjectreport.md
+      - name: List subjects
+        href: ../../api/identitygovernance-lifecyclepolicyreport-list-subjects.md
+    - name: User identity lifecycle
+      href: ../../resources/identitygovernance-useridentitylifecycle.md
     - name: Complex types
       items:
       - name: Operator between

@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "dbe6cffc-19e8-442f-b08c-5c1683170d4f",
+          "ApiChange": "Method",
+          "ChangedApiName": "revokeGrants",
+          "ChangeType": "Addition",
+          "Description": "Added the [revokeGrants](https://learn.microsoft.com/en-us/graph/api/permission-revokegrants?view=graph-rest-1.0) method to the [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) resource.",
+          "Target": "permission"
+        }
+      ],
+      "Id": "dbe6cffc-19e8-442f-b08c-5c1683170d4f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-15T00:00:00.0000000Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "dbb55514-22af-42cd-bfb2-24cc634d50bb",
           "ApiChange": "Property",
           "ChangedApiName": "isPatternToken",

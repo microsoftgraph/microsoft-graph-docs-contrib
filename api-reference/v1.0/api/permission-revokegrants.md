@@ -1,18 +1,16 @@
 ---
+author: spgraph-docs-team
 title: "permission: revokeGrants"
 description: "Revoke access to a listItem or driveItem granted via a sharing link by removing the specified driveRecipient entries from the link."
-author: "learafa"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.date: 09/27/2026
+ms.date: 09/25/2026
 ---
 
 # permission: revokeGrants
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Revoke access to a [listItem](../resources/listitem.md) or [driveItem](../resources/driveitem.md) granted via a sharing link by removing the specified [driveRecipient](../resources/driverecipient.md) entries from the link.
 
@@ -32,10 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
+<!-- { "blockType": "ignored" } -->
+
 ```http
 POST /drives/{drive-id}/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
@@ -80,14 +76,10 @@ For more information about how errors are returned, see [Microsoft Graph error r
 
 The following example shows how to revoke access for a single user on a sharing link.
 
-<!-- {
-  "blockType": "request",
-  "name": "permission-revokegrants",
-  "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U", "2687a7e0-1b4d-4656-ae32-a4ea393321e1"]
-}
--->
+<!-- { "blockType": "request", "name": "permission-revokegrants", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "target": "action", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U", "2687a7e0-1b4d-4656-ae32-a4ea393321e1"] } -->
+
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/permissions/2687a7e0-1b4d-4656-ae32-a4ea393321e1/revokeGrants
+POST https://graph.microsoft.com/v1.0/me/drive/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/permissions/2687a7e0-1b4d-4656-ae32-a4ea393321e1/revokeGrants
 Content-Type: application/json
 
 {
@@ -105,12 +97,7 @@ The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission"
-}
--->
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.permission" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -139,7 +126,6 @@ Content-Type: application/json
   }
 }
 ```
-
 
 <!-- {
   "type": "#page.annotation",
