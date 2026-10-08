@@ -86,6 +86,8 @@ items:
     href: ../../api/driveitem-post-permissions.md
   - name: Delete permission
     href: ../../api/permission-delete.md
+  - name: Revoke grants on sharing link
+    href: ../../api/permission-revokegrants.md
   - name: Get WebSocket channel
     href: ../../api/subscriptions-socketio.md
   - name: Preview item
@@ -274,6 +276,8 @@ items:
     href: ../../api/permission-delete.md
   - name: Grant access to sharing link
     href: ../../api/permission-grant.md
+  - name: Revoke grants on sharing link
+    href: ../../api/permission-revokegrants.md
 - name: Recycle bin
   items:
   - name: Recycle bin
