@@ -19,6 +19,9 @@ applying [state tokens](/graph/delta-query-overview) in one or more of these cal
 you can query for incremental changes in the mail folders. This allows you to maintain and synchronize
 a local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
+[!NOTE]
+Delta processing may create or update synchronization state stored in the mailbox. These writes are subject to mailbox storage quota enforcement. If a mailbox has reached its applicable storage quota, a mail folder delta request can return 403 ErrorQuotaExceeded, even when ordinary folder read requests continue to succeed. Reduce mailbox usage below the quota and retry the delta request. Applications should handle this error and direct affected users or administrators to address mailbox storage usage.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
