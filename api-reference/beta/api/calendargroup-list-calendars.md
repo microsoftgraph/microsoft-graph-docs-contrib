@@ -131,7 +131,7 @@ Content-type: application/json
       "id": "AAMkADYCQM0GfRAAAcrRD-AAA=",
       "name": "Marketing calendar",
       "color": "auto",
-      "calendarGroupId": "AAMkAGRkZTFiMDQxLWYz="
+      "calendarGroupId": "AAMkAGRkZTFiMDQxLWYz=",
       "changeKey": "4xTfgHLeDkOqYVAkDNBn0QAAHKl46A==",
       "canShare": true,
       "canViewPrivateItems": true,
