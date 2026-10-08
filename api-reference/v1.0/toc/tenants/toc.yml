@@ -1,0 +1,355 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../resources/tenants-overview.md
+- name: Configuration management
+  items:
+  - name: Overview
+    href: ../../resources/unified-tenant-configuration-management-api-overview.md
+  - name: Configuration monitor
+    items:
+    - name: Configuration monitor
+      href: ../../resources/configurationmonitor.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationmonitors.md
+    - name: Create
+      href: ../../api/configurationmanagement-post-configurationmonitors.md
+    - name: Get
+      href: ../../api/configurationmonitor-get.md
+    - name: Update
+      href: ../../api/configurationmonitor-update.md
+    - name: Delete
+      href: ../../api/configurationmonitor-delete.md
+    - name: Get configuration baseline
+      href: ../../api/configurationbaseline-get.md
+  - name: Configuration monitoring result
+    items:
+    - name: Configuration monitoring result
+      href: ../../resources/configurationmonitoringresult.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationmonitoringresults.md
+    - name: Get
+      href: ../../api/configurationmonitoringresult-get.md
+  - name: Configuration baseline
+    items:
+    - name: Configuration baseline
+      href: ../../resources/configurationbaseline.md
+    - name: Get
+      href: ../../api/configurationbaseline-get.md
+  - name: Configuration drift
+    items:
+    - name: Configuration drift
+      href: ../../resources/configurationdrift.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationdrifts.md
+    - name: Get
+      href: ../../api/configurationdrift-get.md
+  - name: Configuration snapshot job
+    items:
+    - name: Configuration snapshot job
+      href: ../../resources/configurationsnapshotjob.md
+    - name: Create snapshot
+      href: ../../api/configurationbaseline-createsnapshot.md
+    - name: List snapshot jobs
+      href: ../../api/configurationmanagement-list-configurationsnapshotjobs.md
+    - name: Get snapshot job
+      href: ../../api/configurationsnapshotjob-get.md
+    - name: Delete snapshot job
+      href: ../../api/configurationsnapshotjob-delete.md
+- name: Cross-tenant access
+  displayName: Cross-tenant access settings, XTAP
+  items:
+  - name: Overview
+    href: ../../resources/crosstenantaccesspolicy-overview.md
+  - name: Policy
+    items:
+    - name: Policy
+      href: ../../resources/crosstenantaccesspolicy.md
+    - name: Get
+      href: ../../api/crosstenantaccesspolicy-get.md
+    - name: Update
+      href: ../../api/crosstenantaccesspolicy-update.md
+  - name: Default settings
+    items:
+    - name: Default settings
+      href: ../../resources/crosstenantaccesspolicyconfigurationdefault.md
+    - name: Get
+      href: ../../api/crosstenantaccesspolicyconfigurationdefault-get.md
+    - name: Update
+      href: ../../api/crosstenantaccesspolicyconfigurationdefault-update.md
+    - name: Reset to system default
+      href: ../../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+    - name: List Microsoft 365 capabilities
+      href: ../../api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities.md
+    - name: Create Microsoft 365 capability
+      href: ../../api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities.md
+    - name: Update Microsoft 365 capability
+      href: ../../api/crosstenantaccesspolicyconfigurationdefault-update-m365capabilities.md
+  - name: Partner settings
+    items:
+    - name: Partner settings
+      href: ../../resources/crosstenantaccesspolicyconfigurationpartner.md
+    - name: List
+      href: ../../api/crosstenantaccesspolicy-list-partners.md
+    - name: Create
+      href: ../../api/crosstenantaccesspolicy-post-partners.md
+    - name: Get
+      href: ../../api/crosstenantaccesspolicyconfigurationpartner-get.md
+    - name: Update
+      href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
+    - name: Delete
+      href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
+    - name: List Microsoft 365 capabilities
+      href: ../../api/crosstenantaccesspolicyconfigurationpartner-list-m365capabilities.md
+    - name: Create Microsoft 365 capability
+      href: ../../api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities.md
+    - name: Update Microsoft 365 capability
+      href: ../../api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities.md
+    - name: Delete Microsoft 365 capability
+      href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete-m365capabilities.md
+  - name: Partner user sync settings
+    items:
+    - name: Partner user sync settings
+      href: ../../resources/crosstenantidentitysyncpolicypartner.md
+    - name: Create
+      href: ../../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
+    - name: Get
+      href: ../../api/crosstenantidentitysyncpolicypartner-get.md
+    - name: Update
+      href: ../../api/crosstenantidentitysyncpolicypartner-update.md
+    - name: Delete
+      href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
+  - name: Microsoft 365 capabilities
+    href: ../../resources/m365capabilitybase.md
+    items:
+    - name: Overview
+      href: ../../resources/m365-cross-tenant-access-policy-overview.md
+    - name: Anonymous calendar sharing free busy detail
+      href: ../../resources/anonymouscalendarsharingfreebusydetail.md
+    - name: Anonymous calendar sharing free busy reviewer
+      href: ../../resources/anonymouscalendarsharingfreebusyreviewer.md
+    - name: Anonymous calendar sharing free busy simple
+      href: ../../resources/anonymouscalendarsharingfreebusysimple.md
+    - name: Cross-tenant calendar availability basic
+      href: ../../resources/crosstenantcalendaravailabilitybasic.md
+    - name: Cross-tenant calendar availability limited details
+      href: ../../resources/crosstenantcalendaravailabilitylimiteddetails.md
+    - name: Cross-tenant calendar sharing free busy detail
+      href: ../../resources/crosstenantcalendarsharingfreebusydetail.md
+    - name: Cross-tenant calendar sharing free busy reviewer
+      href: ../../resources/crosstenantcalendarsharingfreebusyreviewer.md
+    - name: Cross-tenant calendar sharing free busy simple
+      href: ../../resources/crosstenantcalendarsharingfreebusysimple.md
+    - name: Cross-tenant mail tips all
+      href: ../../resources/crosstenantmailtipsall.md
+    - name: Cross-tenant mail tips limited
+      href: ../../resources/crosstenantmailtipslimited.md
+    - name: Cross-tenant migration
+      href: ../../resources/crosstenantmigration.md
+    - name: Cross-tenant open profile card
+      href: ../../resources/crosstenantopenprofilecard.md
+    - name: Cross-tenant places desk booking
+      href: ../../resources/crosstenantplacesdeskbooking.md
+    - name: Cross-tenant places room booking
+      href: ../../resources/crosstenantplacesroombooking.md
+    - name: Complex types
+      items:
+      - name: Microsoft 365 capability inbound access
+        href: ../../resources/m365capabilityinboundaccess.md
+      - name: Microsoft 365 capability resource scope
+        href: ../../resources/m365capabilityresourcescope.md
+      - name: Microsoft 365 resource scopes
+        href: ../../resources/m365capabilityresourcescopes.md
+- name: Multitenant organization
+  displayName: MTO
+  items:
+  - name: Overview
+    href: ../../resources/multitenantorganization-overview.md
+  - name: Multitenant organization
+    items:
+    - name: Multitenant organization
+      href: ../../resources/multitenantorganization.md
+    - name: Create
+      href: ../../api/tenantrelationship-put-multitenantorganization.md
+    - name: Get
+      href: ../../api/multitenantorganization-get.md
+    - name: Update
+      href: ../../api/multitenantorganization-update.md
+  - name: Multitenant organization member
+    items:
+    - name: Multitenant organization member
+      href: ../../resources/multitenantorganizationmember.md
+    - name: List
+      href: ../../api/multitenantorganization-list-tenants.md
+    - name: Add
+      href: ../../api/multitenantorganization-post-tenants.md
+    - name: Get
+      href: ../../api/multitenantorganizationmember-get.md
+    - name: Update
+      href: ../../api/multitenantorganizationmember-update.md
+    - name: Remove
+      href: ../../api/multitenantorganization-delete-tenants.md
+  - name: Multitenant organization join request record
+    items:
+    - name: Multitenant organization join request record
+      href: ../../resources/multitenantorganizationjoinrequestrecord.md
+    - name: Get
+      href: ../../api/multitenantorganizationjoinrequestrecord-get.md
+    - name: Update
+      href: ../../api/multitenantorganizationjoinrequestrecord-update.md
+  - name: Multitenant organization partner configuration template
+    items:
+    - name: Multitenant organization partner configuration template
+      href: ../../resources/multitenantorganizationpartnerconfigurationtemplate.md
+    - name: Get
+      href: ../../api/multitenantorganizationpartnerconfigurationtemplate-get.md
+    - name: Update
+      href: ../../api/multitenantorganizationpartnerconfigurationtemplate-update.md
+    - name: Reset
+      href: ../../api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
+  - name: Multitenant organization identity sync policy template
+    items:
+    - name: Multitenant organization identity sync policy template
+      href: ../../resources/multitenantorganizationidentitysyncpolicytemplate.md
+    - name: Get
+      href: ../../api/multitenantorganizationidentitysyncpolicytemplate-get.md
+    - name: Update
+      href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
+    - name: Reset
+      href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
+- name: Tenant governance
+  items:
+  - name: Overview
+    href: ../../resources/tenantgovernanceservices-tenantgovernance-overview.md
+  - name: Governance invitation
+    items:
+    - name: Governance invitation
+      href: ../../resources/tenantgovernanceservices-governanceinvitation.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governanceinvitations.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governanceinvitations.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governanceinvitation-get.md
+    - name: Delete
+      href: ../../api/tenantgovernanceservices-governanceinvitation-delete.md
+  - name: Governance relationship
+    items:
+    - name: Governance relationship
+      href: ../../resources/tenantgovernanceservices-governancerelationship.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancerelationships.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancerelationship-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancerelationship-update.md
+  - name: Governance request
+    items:
+    - name: Governance request
+      href: ../../resources/tenantgovernanceservices-governancerequest.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancerequests.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governancerequests.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancerequest-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancerequest-update.md
+  - name: Related tenant
+    items:
+    - name: Related tenant
+      href: ../../resources/tenantgovernanceservices-relatedtenant.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-relatedtenants.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-relatedtenant-get.md
+    - name: Refresh
+      href: ../../api/tenantgovernanceservices-relatedtenant-refresh.md
+  - name: Tenant governance
+    href: ../../resources/tenantgovernanceservices-tenantgovernance.md
+  - name: Tenant governance policy template
+    items:
+    - name: Tenant governance policy template
+      href: ../../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancepolicytemplates.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governancepolicytemplates.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancepolicytemplate-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancepolicytemplate-update.md
+    - name: Delete
+      href: ../../api/tenantgovernanceservices-delete-governancepolicytemplates.md
+  - name: Tenant governance setting
+    items:
+    - name: Tenant governance setting
+      href: ../../resources/tenantgovernanceservices-tenantgovernancesetting.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-update.md
+    - name: Enable related tenants
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants.md
+  - name: Complex types
+    items:
+    - name: Application resource permission
+      href: ../../resources/tenantgovernanceservices-applicationresourcepermission.md
+    - name: Applications required resource access
+      href: ../../resources/tenantgovernanceservices-applicationsrequiredresourceaccess.md
+    - name: B 2 b registration metrics
+      href: ../../resources/tenantgovernanceservices-b2bregistrationmetrics.md
+    - name: B 2 b registration metrics base
+      href: ../../resources/tenantgovernanceservices-b2bregistrationmetricsbase.md
+    - name: B 2 b registration metrics initial
+      href: ../../resources/tenantgovernanceservices-b2bregistrationmetricsinitial.md
+    - name: B 2 b registration metrics recent
+      href: ../../resources/tenantgovernanceservices-b2bregistrationmetricsrecent.md
+    - name: B 2 b sign in activity metrics
+      href: ../../resources/tenantgovernanceservices-b2bsigninactivitymetrics.md
+    - name: B 2 b sign in activity metrics base
+      href: ../../resources/tenantgovernanceservices-b2bsigninactivitymetricsbase.md
+    - name: B 2 b sign in activity metrics initial
+      href: ../../resources/tenantgovernanceservices-b2bsigninactivitymetricsinitial.md
+    - name: B 2 b sign in activity metrics recent
+      href: ../../resources/tenantgovernanceservices-b2bsigninactivitymetricsrecent.md
+    - name: Billing metrics
+      href: ../../resources/tenantgovernanceservices-billingmetrics.md
+    - name: Billing metrics base
+      href: ../../resources/tenantgovernanceservices-billingmetricsbase.md
+    - name: Billing metrics initial
+      href: ../../resources/tenantgovernanceservices-billingmetricsinitial.md
+    - name: Billing metrics recent
+      href: ../../resources/tenantgovernanceservices-billingmetricsrecent.md
+    - name: Delegated administration role assignment
+      href: ../../resources/tenantgovernanceservices-delegatedadministrationroleassignment.md
+    - name: Delegated administration role assignment snapshot
+      href: ../../resources/tenantgovernanceservices-delegatedadministrationroleassignmentsnapshot.md
+    - name: Multitenant application metrics
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationmetrics.md
+    - name: Multitenant application metrics base
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationmetricsbase.md
+    - name: Multitenant application metrics initial
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationmetricsinitial.md
+    - name: Multitenant application metrics recent
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationmetricsrecent.md
+    - name: Multitenant applications to provision
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationstoprovision.md
+    - name: Multitenant applications to provision snapshot
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationstoprovisionsnapshot.md
+    - name: Related tenants refresh request
+      href: ../../resources/tenantgovernanceservices-relatedtenantsrefreshrequest.md
+    - name: Relationship policy
+      href: ../../resources/tenantgovernanceservices-relationshippolicy.md
+    - name: Role template
+      href: ../../resources/tenantgovernanceservices-roletemplate.md
+- name: Tenant information
+  items:
+  - name: Tenant information
+    href: ../../resources/tenantinformation.md
+  - name: Find tenant by domain name
+    href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
+  - name: Find tenant by tenant ID
+    href: ../../api/tenantrelationship-findtenantinformationbytenantid.md

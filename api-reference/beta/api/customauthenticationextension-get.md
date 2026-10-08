@@ -20,6 +20,7 @@ Read the properties and relationships of a [customAuthenticationExtension](../re
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
 - [onPasswordSubmitCustomExtension](../resources/onpasswordsubmitcustomextension.md) resource type.
+- [onVerifiedIdClaimValidationCustomExtension](../resources/onverifiedidclaimvalidationcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -58,7 +59,9 @@ If successful, this method returns a `200 OK` response code and a [customAuthent
 
 ## Examples
 
-### Request
+### Example 1: Get an onTokenIssuanceStartCustomExtension object
+
+#### Request
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +103,7 @@ GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6fc
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -137,5 +140,88 @@ Content-Type: application/json
             "claimIdInApiResponse": "CustomRoles"
         }
     ]
+}
+```
+
+### Example 2: Get an onVerifiedIdClaimValidationCustomExtension object
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_customauthenticationextension_onVerifiedIdClaimValidationCustomExtension"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6a0a3429-be77-0aed-951e-1c8aed62bf8a
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-customauthenticationextension-onverifiedidclaimvalidationcustomextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-customauthenticationextension-onverifiedidclaimvalidationcustomextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-customauthenticationextension-onverifiedidclaimvalidationcustomextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-customauthenticationextension-onverifiedidclaimvalidationcustomextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-customauthenticationextension-onverifiedidclaimvalidationcustomextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-customauthenticationextension-onverifiedidclaimvalidationcustomextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-customauthenticationextension-onverifiedidclaimvalidationcustomextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customAuthenticationExtension"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
+    "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension",
+    "id": "6a0a3429-be77-0aed-951e-1c8aed62bf8a",
+    "displayName": "Verified ID Claim Validation",
+    "description": "Validate claims from a Verified ID presentation",
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://contoso.azurewebsites.net/api/verifiedIdClaimValidation"
+    },
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://contoso.azurewebsites.net/verifiedIdClaimValidation"
+    },
+    "clientConfiguration": {
+        "timeoutInMilliseconds": 2000,
+        "maximumRetries": 1
+    },
+    "behaviorOnError": {
+        "@odata.type": "#microsoft.graph.customExtensionBehaviorOnError"
+    }
 }
 ```

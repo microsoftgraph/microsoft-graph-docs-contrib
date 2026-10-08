@@ -4,7 +4,7 @@ description: "Create a configurationSnapshotJob asynchronously."
 author: "swatyario"
 ms.date: 01/19/2026
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: apiPageType
 ---
 
@@ -61,6 +61,7 @@ If successful, this action returns a `200 OK` response code and a [configuration
 ### Request
 
 The following example shows a request that creates a snapshot with two Exchange resources.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "configurationbaselinethis.createsnapshot"
@@ -79,6 +80,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/configurationbaselinethiscreatesnapshot-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

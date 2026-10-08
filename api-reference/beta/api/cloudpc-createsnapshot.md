@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a snapshot for a specific Cloud PC device.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

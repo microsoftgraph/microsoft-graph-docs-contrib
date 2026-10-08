@@ -55,7 +55,7 @@ If successful, this method returns `200 OK` response code. If the group is remov
 
 ## Example
 
-##### Request
+### Request
 
 <!-- {
   "blockType": "ignored",
@@ -71,7 +71,7 @@ Content-type: application/json
 }
 ```
 
-##### Response
+### Response
 
 <!-- { "blockType": "ignored" } -->
 

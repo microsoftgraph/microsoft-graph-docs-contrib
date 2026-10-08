@@ -50,7 +50,7 @@ GET /users/{userId | userPrincipalName}/drive/root/delta
 
 | Parameter   | Type  | Description                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | Optional. If unspecified, enumerates the hierarchy's current state. If `latest`, returns empty response with latest delta token. If a previous delta token returns new state since that token.
+| token  | string | Optional. If unspecified, enumerates the hierarchy's current state. If `latest`, returns empty response with latest delta token. If a previous delta token returns new state since that token. |
 
 ## Optional query parameters
 
@@ -82,11 +82,11 @@ In addition to the collection of DriveItems, the response also includes one of t
 
 ### Example 1: Initial request
 
-Here's an example of how to call this API to establish your local state.
+The following example shows how to call this API to establish your local state.
 
 #### Request
 
-Here's an example of the initial request.
+The following example shows the initial request.
 
 
 # [HTTP](#tab/http)

@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/beta/serviceprincipals/bbec3106-565f-4907-941e-9
 
 ---
 
-
 ### Response
 
 The following example shows the response.

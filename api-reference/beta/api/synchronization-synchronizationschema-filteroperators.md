@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all operators supported in the [scoping filters](../resources/synchronization-filter.md).
+List all operators supported in the [scoping filters](../resources/synchronization-filter.md) for a [synchronizationSchema](../resources/synchronization-synchronizationschema.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -50,7 +50,7 @@ If successful, this method returns a `200, OK` response code and a [filterOperat
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.

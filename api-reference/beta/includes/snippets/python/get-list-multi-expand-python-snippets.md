@@ -10,7 +10,7 @@ from msgraph_beta.generated.sites.item.lists.item.list_item_request_builder impo
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = ListItemRequestBuilder.ListItemRequestBuilderGetQueryParameters(
-		select = ["name","lastModifiedDateTime"],
+		select = ["name","lastModifiedDateTime","itemCount"],
 		expand = ["columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")"],
 )
 

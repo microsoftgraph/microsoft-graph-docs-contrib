@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Restore a deleted [namedLocation](../resources/namedlocation.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/na
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/namedlocationthisrestore-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/namedlocationthisrestore-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

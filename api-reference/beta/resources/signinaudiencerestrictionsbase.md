@@ -21,6 +21,9 @@ The base type for values used in an [application](application.md) resource's **s
 
 This type is an abstract type.
 
+> [!IMPORTANT]
+> Using the **signInAudience** and **signInAudienceRestrictions** properties to limit where an application can be used **isn't** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you *must* enforce that validation in your application code. To learn more, see [Secure applications and APIs by validating claims](/entra/identity-platform/claims-validation).
+
 ## Properties
 
 |Property|Type|Description|

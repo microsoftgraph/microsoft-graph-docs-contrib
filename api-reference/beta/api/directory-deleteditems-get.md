@@ -2,7 +2,7 @@
 title: "Get deleted item (directory object)"
 ms.date: 11/17/2025
 description: "Retrieve the properties of a recently deleted application, group, service principal, or user from deleted items."
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -51,12 +51,10 @@ The following table shows the least privileged permission or permissions require
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 
-[!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/deleteditems/{object-id}
+GET /directory/deletedItems/{object-id}
 ```
 
 > [!IMPORTANT]
@@ -95,7 +93,7 @@ The following example shows a request.
   "name": "get_directory_deleteditem"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+GET https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 
 # [C#](#tab/csharp)

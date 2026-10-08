@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of the [externalAuthenticationMethod](../resources/externalauthenticationmethod.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -45,7 +45,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To retrieve details of your own external authentication methods:
+To retrieve details of your own external MFA:
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
@@ -54,7 +54,7 @@ To retrieve details of your own external authentication methods:
 GET /me/authentication/externalAuthenticationMethods
 ```
 
-To retrieve details of your own or another user's external authentication methods:
+To retrieve details of your own or another user's external MFA:
 
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 

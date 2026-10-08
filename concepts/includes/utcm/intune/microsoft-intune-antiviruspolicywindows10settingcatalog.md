@@ -1,7 +1,7 @@
 ---
 author: "swatyario"
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 ms.topic: include
 ---
 

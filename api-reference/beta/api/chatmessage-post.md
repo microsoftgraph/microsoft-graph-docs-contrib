@@ -17,8 +17,8 @@ Namespace: microsoft.graph
 Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 > [!NOTE]
-> - We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
-> - It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> - We don't recommend that you use this API for data migration via the standard create message flow. For data migration scenarios, use the [import messages](/graph/teams-import-messages) flow instead.
+> - It's a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -178,6 +178,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "text",
+        "messageBodyContentType": "text",
         "content": "Hello World"
     },
     "channelIdentity": {
@@ -210,7 +211,7 @@ Content-type: application/json
 
 {
   "body": {
-    "contentType": "html",
+    "messageBodyContentType": "html",
     "content": "Hello World <at id=\"0\">Jane Smith</at>"
   },
   "mentions": [
@@ -302,6 +303,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Hello World <at id=\"0\">Jane Smith</at>"
     },
     "channelIdentity": {
@@ -353,7 +355,7 @@ Content-type: application/json
 {
     "subject": null,
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "attachments": [
@@ -442,6 +444,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "channelIdentity": {
@@ -486,7 +489,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"
     },
     "attachments": [
@@ -573,6 +576,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"
     },
     "channelIdentity": {
@@ -617,7 +621,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
     },
     "attachments": [
@@ -702,6 +706,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
     },
     "channelIdentity": {
@@ -746,7 +751,7 @@ Content-type: application/json
 
 {
 	"body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">"
     },
     "hostedContents":[
@@ -834,6 +839,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<img height=\"297\" src=\"https://graph.microsoft.com/v1.0/chats/19:97641583cf154265a237da28ebbde27a@thread.v2/messages/1736180156294/hostedContents/aWQ9eF8wLWV1cy1kMTQtYjUxMDlhMDhkODZkM2ZjODBkNzFlYjUzMWM4ZDlmZGEsdHlwZT0xLHVybD1odHRwczovL3VzLWFwaS5hc20uc2t5cGUuY29tL3YxL29iamVjdHMvMC1ldXMtZDE0LWI1MTA5YTA4ZDg2ZDNmYzgwZDcxZWI1MzFjOGQ5ZmRhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\" width=\"297\">"
     },
     "attachments": [],
@@ -868,7 +874,7 @@ Content-type: application/json
 {
     "subject": null,
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "attachments": [{
@@ -965,6 +971,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "channelIdentity": {
@@ -1008,7 +1015,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">General</at>&nbsp;Hello there!"
     },
     "mentions": [
@@ -1101,6 +1108,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">General</at>&nbsp;Hello there!"
     },
     "channelIdentity": {
@@ -1150,7 +1158,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">GraphTesting</at>&nbsp;Hello team"
     },
     "mentions": [
@@ -1245,6 +1253,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">GraphTesting</at>&nbsp;Hello team"
     },
     "channelIdentity": {
@@ -1292,7 +1301,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">TestTag</at>&nbsp;Testing Tags"
     },
     "mentions": [
@@ -1384,6 +1393,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">TestTag</at>&nbsp;Testing Tags"
     },
     "channelIdentity": {
@@ -1437,7 +1447,7 @@ Content-type: application/json
 {
     "subject": null,
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "attachments": [
@@ -1528,6 +1538,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "channelIdentity": {
@@ -1574,7 +1585,7 @@ Content-type: application/json
 {
     "subject": "Announcement Subheading",
     "body": {
-        "contentType": "text",
+        "messageBodyContentType": "text",
         "content": "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text"
     },
     "attachments": [
@@ -1675,6 +1686,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "text",
+        "messageBodyContentType": "text",
         "content": "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text"
     },
     "channelIdentity": {
@@ -1717,7 +1729,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<emoji alt=\"😶‍🌫️\"></emoji>"
     }
 }
@@ -1798,6 +1810,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<emoji id=\"faceinclouds\" alt=\"😶‍🌫️\" title=\"Face in clouds\"></emoji>"
     },
     "attachments": [],
@@ -1836,7 +1849,7 @@ Content-type: application/json
 
 {
   "body": {
-    "contentType": "html",
+    "messageBodyContentType": "html",
     "content": "<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
   }
 }
@@ -1920,6 +1933,7 @@ Content-type: application/json
   },
   "body": {
     "contentType": "html",
+    "messageBodyContentType": "html",
     "content": "\n<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
   },
   "attachments": [],
@@ -1949,7 +1963,7 @@ Content-Type: application/json
 
 {
   "body": {
-    "contentType": "html",
+    "messageBodyContentType": "html",
     "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
   },
   "attachments": [
@@ -2039,6 +2053,7 @@ Content-Type: application/json
   },
   "body": {
     "contentType": "text",
+    "messageBodyContentType": "text",
     "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
   },
   "channelIdentity": {
@@ -2058,6 +2073,255 @@ Content-Type: application/json
   ],
   "mentions": [],
   "reactions": []
+}
+```
+
+### Example 16: Import a message into a chat
+
+The following example shows how to import a message into a chat on behalf of a user during a migration session. The target chat must be in migration mode. For more information, see [Import messages into Microsoft Teams chats and channels using Microsoft Graph](/graph/teams-import-messages).
+
+> [!NOTE]
+> The permission scope `Teamwork.Migrate.All` is required for this scenario.
+
+> [!IMPORTANT]
+> The **createdDateTime** must be unique down to the millisecond within the target chat. If a message with the same **createdDateTime** exists, the request fails with `409 Conflict`. Adjust the **createdDateTime** and retry.
+
+#### Request
+
+The following example shows a request. The **createdDateTime** and **from** properties are used to attribute the message to a specific user at a specific time in the past.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_import_chat",
+  "sampleKeys": ["19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+
+{
+   "createdDateTime": "2019-02-04T19:58:15.511Z",
+   "from": {
+      "user": {
+         "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+         "displayName": "Robin Kline",
+         "userIdentityType": "aadUser"
+      }
+   },
+   "body": {
+      "messageBodyContentType": "html",
+      "content": "Hello World"
+   }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-import-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-import-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-import-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-import-chat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-chatmessage-import-chat-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-import-chat-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-chatmessage-import-chat-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A4b6bed8d24574f6a9e436813cb2617d8%40thread.tacv2')/messages/$entity",
+    "id": "1616991463150",
+    "replyToId": null,
+    "etag": "1616991463150",
+    "messageType": "message",
+    "createdDateTime": "2019-02-04T19:58:15.511Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "messageBodyContentType": "html",
+        "content": "Hello World"
+    },
+    "attachments": [],
+    "mentions": [],
+    "reactions": []
+}
+```
+
+### Example 17: Import a message into a channel
+
+The following example shows how to import a message into a channel on behalf of a user during a migration session. The target channel must be in migration mode. For more information, see [Import messages into Microsoft Teams chats and channels using Microsoft Graph](/graph/teams-import-messages).
+
+> [!NOTE]
+> The permission scope `Teamwork.Migrate.All` is required for this scenario.
+
+> [!IMPORTANT]
+> The **createdDateTime** must be unique down to the millisecond within the target channel. If a message with the same **createdDateTime** exists, the request fails with `409 Conflict`. Adjust the **createdDateTime** and retry.
+
+#### Request
+
+The following example shows a request. The **createdDateTime** and **from** properties are used to attribute the message to a specific user at a specific time in the past.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_import_channel",
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+
+{
+   "createdDateTime": "2019-02-04T19:58:15.511Z",
+   "from": {
+      "user": {
+         "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+         "displayName": "Robin Kline",
+         "userIdentityType": "aadUser"
+      }
+   },
+   "body": {
+      "messageBodyContentType": "html",
+      "content": "Hello World"
+   }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-import-channel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-import-channel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-import-channel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-import-channel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-chatmessage-import-channel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-import-channel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-chatmessage-import-channel-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19%3A4b6bed8d24574f6a9e436813cb2617d8%40thread.tacv2')/messages/$entity",
+    "id": "1616991463150",
+    "replyToId": null,
+    "etag": "1616991463150",
+    "messageType": "message",
+    "createdDateTime": "2019-02-04T19:58:15.511Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "messageBodyContentType": "html",
+        "content": "Hello World"
+    },
+    "channelIdentity": {
+        "teamId": "57fb72d0-d811-46f4-8947-305e6072eaa5",
+        "channelId": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"
+    },
+    "attachments": [],
+    "mentions": [],
+    "reactions": []
 }
 ```
 

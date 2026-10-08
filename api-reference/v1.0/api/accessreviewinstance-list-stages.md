@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # List stages (of an access review)
 Namespace: microsoft.graph
 
-Retrieve the stages in a multi-stage access review instance.
+Retrieve the [accessReviewStage](../resources/accessreviewstage.md) objects for a specific [accessReviewInstance](../resources/accessreviewinstance.md) in a multi-stage access review.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

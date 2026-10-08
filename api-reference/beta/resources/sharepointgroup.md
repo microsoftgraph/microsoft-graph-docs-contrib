@@ -1,6 +1,6 @@
 ---
 title: "sharePointGroup resource type"
-description: "Represents a cohort of users or Microsoft 365 groups that are localized to a SharePoint Embedded container or SharePoint site."
+description: "Represents a cohort of users or Microsoft 365 groups that are localized to a SharePoint Embedded container"
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cohort of users or Microsoft 365 groups that are localized to a SharePoint Embedded container or SharePoint site.
+Represents a cohort of users or Microsoft 365 groups that are localized to a SharePoint Embedded container.
 
 ## Methods
 |Method|Return type|Description|
@@ -33,6 +33,7 @@ Represents a cohort of users or Microsoft 365 groups that are localized to a Sha
 |:---|:---|:---|
 |description|String|The user-visible description of the **sharePointGroup**. Read-write.|
 |id|String|The unique stable identifier of the **sharePointGroup**. This ID is unique only within the context of a single SharePoint Embedded container or SharePoint site. Read-only.|
+|principalId|String|The principal ID of the SharePoint group in the tenant. Read-only.|
 |title|String|The user-visible title of the **sharePointGroup**. Read-write.|
 
 ## Relationships
@@ -54,6 +55,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.sharePointGroup",
   "description": "String",
   "id": "String (identifier)",
+  "principalId": "String",
   "title": "String"
 }
 ```

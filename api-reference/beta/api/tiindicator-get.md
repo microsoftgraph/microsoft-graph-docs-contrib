@@ -1,18 +1,21 @@
 ---
-title: "Get threat intelligence indicator"
+title: "Get threat intelligence indicator (deprecated)"
 description: "Retrieve the properties and relationships of a tiindicator object."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 08/13/2024
+ROBOTS: NOINDEX
 ---
 
-# Get threat intelligence indicator
+# Get threat intelligence indicator (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-tiindicator-deprecation](../includes/security-tiindicator-deprecation.md)]
 
 Retrieve the properties and relationships of a [tiIndicator](../resources/tiindicator.md) object.
 

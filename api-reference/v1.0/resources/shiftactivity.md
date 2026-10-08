@@ -23,6 +23,7 @@ Represents an activity in a [shift](shift.md).
 | endDateTime | DateTimeOffset | The end date and time for the `shiftActivity`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
 | isPaid | bool | Indicates whether the `microsoft.graph.user` should be paid for the activity during their `shift`. Required. |
 | startDateTime | DateTimeOffset | The start date and time for the `shiftActivity`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
+| theme | scheduleEntityTheme | The color of the activity. The possible values are: `white`, `blue`, `green`, `purple`, `pink`, `yellow`, `gray`, `darkBlue`, `darkGreen`, `darkPurple`, `darkPink`, `darkYellow`, `unknownFutureValue`, `darkRed`, `cranberry`, `darkOrange`, `bronze`, `peach`, `gold`, `lime`, `forest`, `lightGreen`, `jade`, `lightTeal`, `darkTeal`, `steel`, `skyBlue`, `blueGray`, `lavender`, `lilac`, `plum`, `magenta`, `darkBrown`, `beige`, `charcoal`, `silver`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `darkRed`, `cranberry`, `darkOrange`, `bronze`, `peach`, `gold`, `lime`, `forest`, `lightGreen`, `jade`, `lightTeal`, `darkTeal`, `steel`, `skyBlue`, `blueGray`, `lavender`, `lilac`, `plum`, `magenta`, `darkBrown`, `beige`, `charcoal`, `silver`. |
 
 ## JSON representation
 
@@ -36,12 +37,12 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.shiftActivity",
-  "code": "String",
-  "displayName": "String",
-  "endDateTime": "String (timestamp)",
-  "isPaid": "Boolean",
-  "startDateTime": "String (timestamp)",
-  "theme": "String"
+  "code": "",
+  "displayName": "Lunch",
+  "endDateTime": "2019-03-11T15:15:00Z",
+  "isPaid": true,
+  "startDateTime": "2019-03-11T15:00:00Z",
+  "theme": "white"
 }
 ```
 

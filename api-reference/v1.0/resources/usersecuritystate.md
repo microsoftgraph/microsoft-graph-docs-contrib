@@ -1,5 +1,5 @@
 ---
-title: "userSecurityState resource type"
+title: "userSecurityState resource type (deprecated)"
 description: "Contains stateful information about the user account."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -7,11 +7,14 @@ ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: resourcePageType
 ms.date: 07/22/2024
+ROBOTS: NOINDEX
 ---
 
-# userSecurityState resource type
+# userSecurityState resource type (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Contains stateful information about the user account.
 

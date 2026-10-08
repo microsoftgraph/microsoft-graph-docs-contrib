@@ -1,6 +1,6 @@
 ---
 title: "termsExpiration resource type"
-description: "Provides additional settings when setting the scheduled expiration of the agreement."
+description: "Provides additional settings for the scheduled expiration of the agreement."
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides additional settings when setting the scheduled expiration of the agreement.
+Provides additional settings for the scheduled expiration of a terms of use [agreement](../resources/agreement.md).
 
 ## Properties
 
@@ -59,5 +59,4 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-
 

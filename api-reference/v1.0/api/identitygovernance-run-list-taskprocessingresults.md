@@ -1,5 +1,5 @@
 ---
-title: "List taskProcessingResults"
+title: "List taskProcessingResults (from a run)"
 description: "Get the taskProcessingResult resources from a run."
 author: "KristinaSmith"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# List taskProcessingResults
+# List taskProcessingResults (from a run)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -125,6 +125,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2023-01-20T17:16:02.8025169Z",
             "failureReason": null,
+            "processingInfo": "User was already a member of all requested groups",
             "subject": {
                 "id": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
             },
@@ -162,7 +163,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc/runs/33bf1a9c-2b26-49b6-996f-ca416c518341/taskProcessingResults?$select=id,failureReason,processingStatus,subject
+GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc/runs/33bf1a9c-2b26-49b6-996f-ca416c518341/taskProcessingResults?$select=id,failureReason,processingStatus,subject,task
 ```
 
 # [C#](#tab/csharp)
@@ -210,7 +211,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc')/runs('33bf1a9c-2b26-49b6-996f-ca416c518341')/taskProcessingResults(id,failureReason,processingStatus,subject)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('a977dbe8-0f3f-4ae6-b3a7-29e1010ac4cc')/runs('33bf1a9c-2b26-49b6-996f-ca416c518341')/taskProcessingResults(id,failureReason,processingStatus,subject,task)",
     "value": [
         {
             "id": "7a21089f-ec13-4e9c-997e-b31f4e59d41e",

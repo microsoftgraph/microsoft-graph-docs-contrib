@@ -42,8 +42,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [connectorGroup](../resources/connectorgroup.md) objects in the response body.
 ## Example
-##### Request
-Here's an example  of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -84,8 +84,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 
 ---
 
-##### Response
-Here's an example  of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

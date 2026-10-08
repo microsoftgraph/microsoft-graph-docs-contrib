@@ -59,7 +59,7 @@ This method can only be applied to requests that are in status of `PendingAdminD
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 }
 ```
 
-##### Response
+### Response
 <!-- {
   "blockType": "response"
 } -->

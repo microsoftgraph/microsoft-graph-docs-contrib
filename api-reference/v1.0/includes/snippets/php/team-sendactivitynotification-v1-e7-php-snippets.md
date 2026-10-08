@@ -19,7 +19,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new SendActivityNotificationPostRequestBody();
 $topic = new TeamworkActivityTopic();
 $topic->setSource(new TeamworkActivityTopicSource('entityUrl'));
-$topic->setValue('https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}');
+$topic->setValue('https://graph.microsoft.com/v1.0/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}');
 $requestBody->setTopic($topic);
 $requestBody->setActivityType('reservationStatusUpdated');
 $previewText = new ItemBody();

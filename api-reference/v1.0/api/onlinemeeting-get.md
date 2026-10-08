@@ -57,14 +57,13 @@ Permissions for the following HTTP requests:
 GET /users/{userId}/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
-GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
 <!-- { 
   "blockType": "permissions", 
   "name": "onlinemeeting_get_2", 
-  "requestUrls": ["GET /users/{userId}/onlineMeetings/{meetingId}", "GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'", "GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'", "GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'", "GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'"],
+  "requestUrls": ["GET /users/{userId}/onlineMeetings/{meetingId}", "GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'", "GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'", "GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'"],
   "mergePermissions": true
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-2-permissions.md)]
@@ -334,6 +333,12 @@ Content-Length: 1574
   },
   "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123",
   "meetingSpokenLanguageTag": "en-US",
+  "meetingType": "scheduled",
+  "cloudVideoInteropInfo": {
+    "tenantKey": "94f39e13-d027-4cfa-bcd3-4b8b0c2017ef",
+    "videoTeleconferenceId": "123456789",
+    "moreInfoWebUrl": "https://cvi.vendor.com/join-instructions"
+  },
   "startDateTime": "2018-05-30T00:30:00Z",
   "subject": "Test Meeting.",
   "videoTeleconferenceId": "123456789",

@@ -11,9 +11,9 @@ using Microsoft.Graph.Models;
 
 var requestBody = new WorkbookWorksheet
 {
-	Position = 99,
-	Name = "name-value",
-	Visibility = "visibility-value",
+	Position = 0,
+	Name = "Sheet2",
+	Visibility = "Hidden",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -35,7 +35,7 @@ GET /domains
 
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 > [!NOTE]
-> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search`, `$top`, and `$filter` query parameters.
+> This API has a [known issue](/graph/known-issues#use-of-specific-query-parameters-on-subscribedskus-and-domains-doesnt-return-the-expected-results) related to the `$search`, `$top`, and `$filter` query parameters.
 
 ## Request headers
 

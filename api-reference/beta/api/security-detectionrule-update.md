@@ -1,27 +1,31 @@
 ---
 title: "Update detectionRule"
-description: "Update the properties of a custom detection rule."
+description: "Update the properties of a detectionRule object."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.date: 06/21/2024
+ms.date: 05/25/2026
 ---
 
 # Update detectionRule
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [custom detection rule](../resources/security-detectionrule.md).
+Update the properties of a [detectionRule](../resources/security-detectionrule.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "security_detectionrule_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-detectionrule-update-permissions.md)]
+
+[!INCLUDE [rbac-security-detection-rules-apis-write](../includes/rbac-for-apis/rbac-security-detection-rules-apis-write.md)]
 
 ## HTTP request
 
@@ -29,124 +33,165 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-```http
-PATCH /security/rules/detectionRules/{ruleId}
+``` http
+PATCH /security/rules/detectionRules/{detectionRuleId}
 ```
 
 ## Request headers
-| Name          | Description                 |
-|:--------------|:----------------------------|
-| Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type  | application/json. Required. |
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-Provide the properties of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) to update, and those properties only.
-The properties that can be updated are specified in the following table:
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property                                         | Type                                                                                         | Description                                                      |
-|:-------------------------------------------------|:---------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|
-| displayName                                      | String                                                                                       | Optional.                                                        |
-| isEnabled                                        | Boolean                                                                                      | Optional.                                                        |
-| detectionAction/alertTemplate/title              | String                                                                                       | Optional.                                                        |
-| detectionAction/alertTemplate/category           | String                                                                                       | Optional.                                                        |
-| detectionAction/alertTemplate/description        | String                                                                                       | Optional.                                                        |
-| detectionAction/alertTemplate/recommendedActions | String                                                                                       | Optional. Provide 'null' to delete the existing response actions |
-| detectionAction/alertTemplate/severity           | [microsoft.graph.alertSeverity](../resources/enums.md#alertseverity-values)                  | Optional.                                                        |
-| detectionAction/alertTemplate/impactedAssets     | [microsoft.graph.security.impactedAsset](../resources/security-impactedasset.md)             | Optional. Provide 'null' to delete the existing impacted assets. |
-| detectionAction/responseActions                  | [microsoft.graph.security.responseAction](../resources/security-responseaction.md)           | Optional.                                                        |
-| detectionAction/organizationalScope              | [microsoft.graph.security.organizationalScope](../resources/security-organizationalscope.md) | Optional.                                                        |
-| queryCondition/queryText                         | String                                                                                       | Optional.                                                        |
-| schedule/period                                  | String                                                                                       | Optional.                                                        |
+|Property|Type|Description|
+|:---|:---|:---|
+|description|String|A user-supplied description of the detection rule.|
+|detectionAction|[microsoft.graph.security.detectionAction](../resources/security-detectionaction.md)|The actions taken when a detection is made by this rule, including the alert that is created and any automated response actions.|
+|displayName|String|The display name of the rule.|
+|isEnabled|Boolean|**Deprecated.** Use **status** instead. The `isEnabled` property will be removed from this resource on 2026-10-01.|
+|queryCondition|[microsoft.graph.security.queryCondition](../resources/security-querycondition.md)|The advanced hunting query that defines the detection logic of this rule.|
+|schedule|[microsoft.graph.security.ruleSchedule](../resources/security-ruleschedule.md)|The triggering schedule of this rule.|
+|status|[microsoft.graph.security.detectionRuleStatus](../resources/enums-security.md#detectionrulestatus-values)|The current run status of the rule. The possible values are: `enabled`, `disabled`, `autoDisabled`, `unknownFutureValue`.|
+
+To update the incident correlation setting, specify `true` or `false` for **detectionAction**/**incidentConfiguration**/**isExcludedFromIncidentCorrelation**. A `null` or omitted value leaves the existing setting unchanged.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object in the response body.
 
 ## Examples
 
 ### Request
+
 The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored"
+  "blockType": "request",
+  "name": "update_detectionrule"
 }
 -->
-```http
-PATCH https://graph.microsoft.com/beta/security/rules/detectionRules/35079
+``` http
+PATCH https://graph.microsoft.com/beta/security/rules/detectionRules/office-encoded-powershell
 Content-Type: application/json
+
 {
-  "schedule": {
-    "period": "24H"
-  },
   "detectionAction": {
-    "alertTemplate": {
-      "title": "Different alert title"
+    "incidentConfiguration": {
+      "isExcludedFromIncidentCorrelation": true
     }
   }
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-detectionrule-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-detectionrule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-detectionrule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-detectionrule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-detectionrule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-detectionrule-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-detectionrule-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
+
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security.detectionRule"
 }
 -->
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.detectionRule",
-  "id": "35079",
-  "displayName": "Some rule name",
-  "isEnabled": true,
-  "createdBy": "MichaelMekler@winatptestlic06.ccsctp.net",
-  "createdDateTime": "2023-06-25T09:37:28.6149005Z",
-  "lastModifiedDateTime": "2023-06-25T09:38:09.5960938Z",
-  "lastModifiedBy": "MichaelMekler@winatptestlic06.ccsctp.net",
-  "detectorId": "67aa92a1-b04b-4f2a-a223-236968a3da96",
+  "id": "office-encoded-powershell",
+  "displayName": "Suspicious encoded PowerShell from Office",
+  "description": "Detects encoded PowerShell processes launched by Office applications, a common phishing payload pattern.",
+  "status": "enabled",
+  "createdBy": "alice@contoso.com",
+  "createdDateTime": "2026-05-25T10:15:00Z",
+  "lastModifiedBy": "alice@contoso.com",
+  "lastModifiedDateTime": "2026-05-28T14:30:00Z",
   "queryCondition": {
-    "queryText": "DeviceProcessEvents | take 1",
-    "lastModifiedDateTime": null
+    "queryText": "DeviceProcessEvents | where InitiatingProcessFileName in~ ('winword.exe','excel.exe','outlook.exe') | where FileName == 'powershell.exe' | where ProcessCommandLine has '-enc'"
   },
   "schedule": {
-    "period": "24H",
-    "nextRunDateTime": "2023-06-25T09:37:28.6149005Z"
-  },
-  "lastRunDetails": {
-    "lastRunDateTime": null,
-    "status": null,
-    "failureReason": null,
-    "errorCode": null
+    "frequency": "PT1H"
   },
   "detectionAction": {
     "alertTemplate": {
-      "title": "Different alert title",
-      "description": "Some alert description",
-      "severity": "medium",
-      "category": "Execution",
-      "recommendedActions": null,
-      "mitreTechniques": [],
-      "impactedAssets": [
+      "title": "Suspicious encoded PowerShell from Office",
+      "description": "An Office app launched an encoded PowerShell command, which may indicate phishing-driven code execution.",
+      "severity": "high",
+      "recommendedActions": "Investigate the parent Office document, isolate the device, and review the user's recent email activity.",
+      "entityMappings": {
+        "accounts": [
+          {
+            "nameColumn": "AccountName",
+            "sidColumn": "AccountSid"
+          }
+        ]
+      },
+      "tactics": [
         {
-          "@odata.type": "#microsoft.graph.security.impactedDeviceAsset",
-          "identifier": "deviceId"
+          "tactic": "Execution",
+          "techniques": [
+            {
+              "technique": "T1059.001"
+            }
+          ]
         }
       ]
     },
-    "organizationalScope": null,
-    "responseActions": [
-      {
-        "@odata.type": "#microsoft.graph.security.isolateDeviceResponseAction",
-        "isolationType": "full",
-        "identifier": "deviceId"
-      }
-    ]
+    "automatedActions": {
+      "isolateDevices": [
+        {
+          "deviceIdColumn": "DeviceId",
+          "isolationType": "full"
+        }
+      ],
+      "initiateInvestigations": [
+        {
+          "deviceIdColumn": "DeviceId"
+        }
+      ]
+    },
+    "incidentConfiguration": {
+      "isExcludedFromIncidentCorrelation": true
+    }
   }
 }
 ```
-

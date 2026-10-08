@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of [footprintMap](../resources/footprintmap.md) objects for [building](../resources/building.md) footprints and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/places/9748dc5b-3f08-407b-9a8d-f5ed626bf9e8
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-footprintmap-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-footprintmap-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

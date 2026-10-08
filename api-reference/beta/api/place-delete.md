@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "place_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/place-delete-permissions.md)]
 
->**Note**: Exchange Admin role is requied to delete places.
+[!INCLUDE [rbac-places-apis-write](../includes/rbac-for-apis/rbac-places-apis-write.md)]
 
 ## HTTP request
 

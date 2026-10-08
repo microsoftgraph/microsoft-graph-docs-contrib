@@ -48,6 +48,10 @@ participants.SetAttendees(attendees)
 requestBody.SetParticipants(participants)
 subject := "Create a meeting with customId provided"
 requestBody.SetSubject(&subject) 
+additionalData := map[string]interface{}{
+	"meetingType" : "scheduled", 
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 createOrGet, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)

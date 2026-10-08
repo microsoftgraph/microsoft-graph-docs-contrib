@@ -38,6 +38,11 @@ POST /me/dataSecurityAndGovernance/protectionScopes/compute
 POST /users/{usersId}/dataSecurityAndGovernance/protectionScopes/compute
 ```
 
+>[!NOTE]
+> If you only have the user's **userPrincipalName**, use the following URL to retrieve their object ID.
+>
+> `GET https://graph.microsoft.com/v1.0/users/{userPrincipalName}?$select=id`
+
 ## Request headers
 
 | Name          | Description   |
@@ -70,7 +75,7 @@ If successful, this action returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Compute protection scope for an Enterprise AI app
+### Example 1: Compute protection scope for an Enterprise app
 
 #### Request
 
@@ -154,8 +159,6 @@ Content-type: application/json
 #### Response
 
 The following example shows the response. It indicates that uploadText, downloadText, uploadFile, or downloadFile activities for 'subdomain.domain1.com', 'domain2.com' or 'https://subdomain.domain3.com/content/subcontent' require offline evaluation. UploadText activity for 'subdomain.domain1.com', 'domain2.com' or 'https://subdomain.domain3.com/content/subcontent' require inline evaluation.
-
-```http
 
 > **Note:** The response object shown here might be shortened for readability.
 

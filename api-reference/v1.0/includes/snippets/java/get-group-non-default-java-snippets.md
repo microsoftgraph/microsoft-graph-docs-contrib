@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Group result = graphClient.groups().byGroupId("{group-id}").get(requestConfiguration -> {
-	requestConfiguration.queryParameters.select = new String []{"allowExternalSenders", "autoSubscribeNewMembers", "isSubscribedByMail", "unseenCount"};
+	requestConfiguration.queryParameters.select = new String []{"accessType", "allowExternalSenders", "autoSubscribeNewMembers", "isSubscribedByMail", "unseenConversationsCount", "unseenCount", "unseenMessagesCount"};
 });
 
 

@@ -16,7 +16,7 @@ Retrieve all clients (users, groups, or client service principals) that have an 
 
 For example, if the resource service principal is the service principal for the Microsoft Graph API, this API returns all service principals that have been granted any app-only permissions to Microsoft Graph. If the resource service principal is an application with app roles granted to users and groups, this API returns all the users and groups assigned app roles for this application.
 
->**Note** This request might have replication delays for app role assignments that were recently granted or removed.
+>**Note** This request might have replication delays for app role assignments that were recently granted or removed. Learn more in [Designing for eventual consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_alert_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-alert-update-permissions.md)]
 
+[!INCLUDE [rbac-security-alerts-apis-write](../includes/rbac-for-apis/rbac-security-alerts-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -48,7 +50,7 @@ PATCH /security/alerts_v2/{alertId}
 |status|microsoft.graph.security.alertStatus|The status of the alert. The possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
 |classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. The possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |customDetails|microsoft.graph.security.dictionary| User defined custom fields with string values. |
-|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the alert. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the alert. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned.|
 
 
@@ -160,6 +162,13 @@ Content-type: application/json
     "comments": [],
     "evidence": [],
     "systemTags" : [],
-    "customDetails": {"newKey":"newValue"}
+    "customDetails": {
+      "threatIntelligenceVerdict": "KnownMalicious",
+      "matchedThreatActor": "DEV-0537",
+      "automationPlaybookName": "BlockIPAndIsolateHost",
+      "automationExecutionStatus": "Succeeded",
+      "iocTypeMatched": "IPAddress",
+      "firstSeenInOrg": "2026-04-14T08:12:00Z"
+    }
 }
 ```

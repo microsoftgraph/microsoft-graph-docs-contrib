@@ -64,6 +64,7 @@ The following table shows the properties that are required when you create the [
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise profile applicability (AndroidWorkProfile, DeviceOwner, or default (applies to both)). Possible values are: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 |connectedAppsEnabled|Boolean|Setting to specify whether to allow ConnectedApps experience for this app.|
+|credentialProviderRoleState|[androidAppCredentialProviderRoleState](../resources/intune-apps-androidappcredentialproviderrolestate.md)|Indicates whether the app is allowed to act as a credential provider. Applies to Android 14 and above. The default value is 'notConfigured'. Possible values are: 'notConfigured' and 'allowed'. When set to 'notConfigured', the Android OS will determine whether the app is allowed to act as a credential provider or not. Possible values are: `notConfigured`, `allowed`, `unknownFutureValue`.|
 
 
 
@@ -77,7 +78,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 Content-type: application/json
-Content-length: 642
+Content-length: 687
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -100,7 +101,8 @@ Content-length: 642
     }
   ],
   "profileApplicability": "androidWorkProfile",
-  "connectedAppsEnabled": true
+  "connectedAppsEnabled": true,
+  "credentialProviderRoleState": "allowed"
 }
 ```
 
@@ -109,7 +111,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 814
+Content-Length: 859
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -135,6 +137,7 @@ Content-Length: 814
     }
   ],
   "profileApplicability": "androidWorkProfile",
-  "connectedAppsEnabled": true
+  "connectedAppsEnabled": true,
+  "credentialProviderRoleState": "allowed"
 }
 ```

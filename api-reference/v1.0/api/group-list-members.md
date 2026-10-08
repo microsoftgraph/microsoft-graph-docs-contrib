@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Get a list of the [group's](../resources/group.md) direct members. A group can have users, organizational contacts, devices, service principals and other groups as members. This operation is not transitive.
 
 > [!IMPORTANT]
-> This API has a known issue where service principals are not listed as group members in v1.0. As a workaround, use this API on the `beta` endpoint or use the `/groups/{id}?$expand=members` API. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=25984).
+> This API has a known issue where service principals are not listed as group members in v1.0. As a workaround, use this API on the `beta` endpoint or use the `/groups/{id}?$expand=members` API. For more information, see the related [known issue](/graph/known-issues#get-groupsidmembers-doesnt-return-service-principals-in-v10).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

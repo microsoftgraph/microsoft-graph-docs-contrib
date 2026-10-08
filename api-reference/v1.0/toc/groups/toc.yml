@@ -218,3 +218,11 @@ items:
     href: ../../api/grouplifecyclepolicy-addgroup.md
   - name: Remove group
     href: ../../api/grouplifecyclepolicy-removegroup.md
+- name: Ownerless group policy
+  items:
+  - name: Ownerless group policy
+    href: ../../resources/ownerlessgrouppolicy.md
+  - name: Get
+    href: ../../api/ownerlessgrouppolicy-get.md
+  - name: Upsert
+    href: ../../api/ownerlessgrouppolicy-upsert.md

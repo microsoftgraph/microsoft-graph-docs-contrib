@@ -1,11 +1,11 @@
 ---
 title: "cloudPcDeviceImage resource type"
 description: "Represents the image resource on Cloud PC."
-author: "AshleyYangSZ"
+author: "danipocket"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
-ms.date: 09/27/2024
+ms.date: 05/05/2026
 ---
 
 # cloudPcDeviceImage resource type
@@ -25,7 +25,8 @@ Represents the image resource on a Cloud PC.
 |[Create](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[Delete](../api/cloudpcdeviceimage-delete.md)|None|Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[Get source images](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects.|
-|[Reupload](../api/cloudpcdeviceimage-reupload.md)|None|Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.|
+|[Retry upload](../api/cloudpcdeviceimage-retryupload.md)|None|Retry the upload of a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that previously failed.|
+|[Reupload (deprecated)](../api/cloudpcdeviceimage-reupload.md)|None|Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload. This API is deprecated and will stop returning data on June 25, 2026. Going forward, use the [cloudPcDeviceImage: retryUpload](../api/cloudpcdeviceimage-retryupload.md) API instead.|
 
 ## Properties
 
@@ -40,6 +41,7 @@ Represents the image resource on a Cloud PC.
 |osBuildNumber|String|The OS build version of the image. For example, `1909`. Read-only.|
 |osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. The possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`. The default value is `unknown`. Read-only.|
 |osVersionNumber|String|The operating system version of this image. For example, `10.0.22000.296`. Read-only.|
+|scopeIds|String collection|The scope IDs of the corresponding permission. Currently, it's the Intune scope tag ID. Read-only.|
 |sizeInGB|Int32|The size of the image in GB. For example, `64`. Read-only.|
 |sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. The required ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-only.|
 |status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on the Cloud PC. The possible values are: `pending`, `ready`, `warning`, `failed`, `unknownFutureValue`. Read-only.|
@@ -128,6 +130,7 @@ The following JSON representation shows the resource type.
   "osBuildNumber": "String",
   "osStatus": "String",
   "osVersionNumber": "String",
+  "scopeIds": ["String"],
   "sizeInGB": "Int32",
   "sourceImageResourceId": "String",
   "status": "String",

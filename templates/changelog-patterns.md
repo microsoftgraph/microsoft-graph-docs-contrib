@@ -1,3 +1,4 @@
+<!-- -This template file is consumed by the /authorAPIDocs prompt -->
 # Manual Changelog Authoring Guide
 
 This guide covers how to manually create changelog entries for changes that don't trigger automatic generation (e.g., throttling updates, query capability changes, page size limit changes).
@@ -21,7 +22,7 @@ Each changelog entry must be part of a "ChangeList" array with the following req
 
 | Property | Description | Example Values |
 |----------|-------------|----------------|
-| **Id** | GUID identifier. Use the same GUID for all related changes in a release. | "6ebc1737-3f93-4ef1-a9e7-cafa03262cf8" |
+| **Id** | GUID identifier. Use the same GUID for all related objects in a ChangeList. | "6ebc1737-3f93-4ef1-a9e7-cafa03262cf8" |
 | **ApiChange** | The type of Microsoft Graph API element being changed. | "Resource", "Property", "Relationship", "Method", "Enumeration", "Member", "Parameter", "Header", "Permission" |
 | **ChangedApiName** | The name of the specific API element that changed. | "user", "displayName", "manager", "delta", "status", "active", "id", "Authorization", "User.Read.All" |
 | **ChangeType** | The nature of the change. | "Addition", "Change", "Deletion", "Deprecation" |
@@ -34,6 +35,7 @@ These properties apply to the entire changelog record (not individual ChangeList
 
 | Property | Description | Default Value | Possible Values |
 |----------|-------------|---------------|-----------------|
+| **Id** | GUID identifier for the changelog record. Use the same GUID as the ChangeList Id. | (None - must specify) | Same GUID as ChangeList Id |
 | **Cloud** | The cloud environment where the change is available. | "prd" | "prd" (production) |
 | **Version** | The API version where the change is available. | "v1.0" | "v1.0", "beta" |
 | **CreatedDateTime** | UTC timestamp when the changelog entry was created. Use PowerShell: `(Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffffZ")` | Current UTC datetime | "2025-11-17T17:38:10.4694969Z" (ISO 8601/RFC 3339 format with fractional seconds) |

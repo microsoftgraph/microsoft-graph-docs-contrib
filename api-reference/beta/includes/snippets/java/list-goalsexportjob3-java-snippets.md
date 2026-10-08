@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 GoalsExportJobCollectionResponse result = graphClient.employeeExperience().goals().exportJobs().get(requestConfiguration -> {
-	requestConfiguration.queryParameters.filter = " explorerViewId eq ‘9ab0fcab-c1d4-4b26-963b-a3c33155f853’";
+	requestConfiguration.queryParameters.filter = "explorerViewId eq '9ab0fcab-c1d4-4b26-963b-a3c33155f853'";
 });
 
 

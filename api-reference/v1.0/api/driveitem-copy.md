@@ -167,7 +167,7 @@ To receive a status report similar to the one in the following example, GET the 
 
 ### Example 3: Copy fails due to a name conflict in the destination folder
 
-This example shows a failed attempt to copy a file to a destination folder that already contains a file with the same name. The request does not specify a `@microsoft.graph.conflictBehavior` query parameter to resolve the conflict.
+This example shows a failed attempt to copy a file to a destination folder that already contains a file with the same name. The request doesn't specify a `@microsoft.graph.conflictBehavior` query parameter to resolve the conflict.
 
 Because no conflict behavior is provided, the API accepts the request but fails during processing. The operation returns a `nameAlreadyExists` error.
 
@@ -360,7 +360,7 @@ Use the `Location` URL in the response header to monitor the progress of the asy
 
 ### Example 7: Invalid request when copying the root folder without `childrenOnly`
 
-This example shows a failed request that attempts to copy the root folder by specifying `root` as the `{item-id}`. The request does not include the `childrenOnly` parameter. Because the root folder itself cannot be copied, and `childrenOnly` is not set to true, the request is rejected with an `invalidRequest` error.
+This example shows a failed request that attempts to copy the root folder by specifying `root` as the `{item-id}`. The request doesn't include the `childrenOnly` parameter. Because the root folder itself cannot be copied, and `childrenOnly` is not set to true, the request is rejected with an `invalidRequest` error.
 
 To copy the contents of the root folder without copying the folder itself, set the `childrenOnly` parameter to `true`.
 
@@ -405,7 +405,7 @@ To resolve this error, set the `childrenOnly` parameter to true.
 
 ### Example 8: Invalid request when copying the child items of a file
 
-This example shows a failed request that sets the `childrenOnly` parameter to `true` for a source item that is a file. The `childrenOnly` parameter is valid only for folder items. Because files do not contain child items, the request is rejected with an invalidRequest error.
+This example shows a failed request that sets the `childrenOnly` parameter to `true` for a source item that is a file. The `childrenOnly` parameter is valid only for folder items. Because files don't contain child items, the request is rejected with an invalidRequest error.
 
 #### Request
 <!-- { "blockType": "ignored", "name": "copy-item-8" } -->

@@ -1,10 +1,10 @@
 ---
 title: "Microsoft Graph overview"
-description: "Use Microsoft Graph to derive insights and analytics from Microsoft 365 and Microsoft Entra data, and build unique, intelligent apps."
+description: "Use Microsoft Graph to derive insights and analytics from Microsoft 365 and Microsoft Entra data, and build unique, intelligent apps. Start building today."
 ms.topic: overview
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.date: 01/08/2025
+ms.date: 04/15/2026
 #customer intent: As a developer, I want to understand Microsoft Graph and how to use it to build apps that interact with data in Microsoft cloud services like Microsoft Entra and Microsoft 365.
 ---
 
@@ -12,13 +12,13 @@ ms.date: 01/08/2025
 
 Microsoft Graph is the gateway to data and intelligence in Microsoft cloud services like Microsoft Entra and Microsoft 365. Use the wealth of data accessible through Microsoft Graph to build apps for organizations and consumers that interact with millions of users.
 
-![Microsoft Graph, Microsoft Graph Data Connect, and Copilot connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-enhance.png)
+![Diagram that shows how Microsoft Graph API, Copilot connectors, and Data Connect power the Microsoft 365 platform.](images/microsoft-graph-dataconnect-connectors-enhance.png)
 
 ## Data and services powering the Microsoft 365 platform
 
-In the Microsoft 365 platform, three main components facilitate the access and flow of data:
+In the Microsoft 365 platform, three main components enable data access and flow:
 
-- The **Microsoft Graph API** offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights in the Microsoft cloud, including Microsoft 365, Windows, and Enterprise Mobility + Security. You can use REST APIs or SDKs to access the endpoint and build apps that support Microsoft 365 scenarios, spanning across productivity, collaboration, education, people and workplace intelligence, and more. Microsoft Graph also includes a powerful set of services that manage user and device identity, access, compliance, and security and help protect organizations from data leakage or loss.
+- The **Microsoft Graph API** offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights in the Microsoft cloud, including Microsoft 365, Windows, and Enterprise Mobility + Security. Use REST APIs or SDKs to access the endpoint and build apps for Microsoft 365 scenarios. These scenarios span productivity, collaboration, education, people and workplace intelligence, and more. Microsoft Graph also includes a powerful set of services that manage user and device identity, access, compliance, and security and help protect organizations from data leakage or loss.
 - **[Microsoft 365 Copilot connectors](#bring-data-from-an-external-content-source-to-microsoft-graph)** (formerly Microsoft Graph connectors) work in the incoming direction, delivering data external to the Microsoft cloud into Microsoft Graph services and applications to enhance Microsoft 365 experiences such as Microsoft Search. Connectors exist for many commonly used data sources such as Box, Google Drive, Jira, and Salesforce.
 - **[Microsoft Graph Data Connect](#access-microsoft-graph-data-at-scale)** provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores. The cached data serves as data sources for Azure development tools that you can use to build intelligent applications.
 
@@ -36,7 +36,7 @@ Microsoft Graph exposes REST APIs and client libraries to access data on the fol
 
 To find out more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
-![An image showing the primary resources and relationships that are part of Microsoft Graph](images/microsoft-graph.png)
+![Diagram that shows the primary resources and relationships that are part of Microsoft Graph](images/microsoft-graph.png)
 
 ## What can you do with Microsoft Graph?
 
@@ -96,7 +96,7 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 
 ## Bring data from an external content source to Microsoft Graph
 
-Use [Copilot connectors](connecting-external-content-connectors-overview.md) to bring data that is external to the Microsoft cloud into Microsoft Graph. Examples of such data can be an organization's human resources database or product catalog, hosted on-premises or in the public or private clouds.
+Use [Copilot connectors](connecting-external-content-connectors-overview.md) to bring data external to the Microsoft cloud into Microsoft Graph. Examples of such data can be an organization's human resources database or product catalog, hosted on-premises or in the public or private clouds.
 
 Copilot connectors create connections to external data sources, index the data, and store it as external custom items and files. Once indexed, those items can show up in Microsoft Search and for apps that use the [Microsoft Search API](search-concept-overview.md).
 
@@ -106,20 +106,20 @@ Use [Microsoft Graph Data Connect](data-connect-concept-overview.md) to access d
 
 Using Azure tools, you can then build intelligent apps that:
 
-- Find you the closest expert on a subject area to you in your organization.
+- Find the closest subject-matter expert in your organization.
 - Automate knowledge base creation.
 - Analyze meeting requests to provide insights into conference room utilization.
 - Detect fraud with productivity and communication data.
 
 ## When should I use Microsoft Graph API or Data Connect?
 
-Microsoft Graph Data Connect provides a new way for you to interact with the data that's available through Microsoft Graph APIs. Data Connect provides a unique set of tools that streamline the building of intelligent applications, all within the Microsoft cloud.
+Microsoft Graph Data Connect lets you interact with data available through Microsoft Graph APIs. Data Connect provides tools to streamline building intelligent applications, all within the Microsoft cloud.
 
 |**Feature**| **Microsoft Graph API** | **Microsoft Graph Data Connect** |
 |:----------|:------------------------|:--------------------------------------|
 | **Access scope** | Single user or entire tenant | Many users or groups |
 | **Access pattern** | Real time | Recurrent schedule |
-| **Data operations** | Operates on data master | Operates on a cache of the data |
+| **Data operations** | Operates on source data | Operates on a cache of the data |
 | **Data protection** | Data is protected while in the source service like Microsoft 365 and Microsoft Entra | Data protection is extended to the cache of data in your Azure subscription |
 | **User consent** | Self<br>Resource types | None |
 | **Admin consent** | Entire organization<br>Resource types | Select groups of users<br>Resource types and properties<br>Excludes users |
@@ -127,13 +127,13 @@ Microsoft Graph Data Connect provides a new way for you to interact with the dat
 
 ## Try out a sample app
 
-Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
+Use the [quickstart](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 
 ## Related content
 
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Explore the [services and features](overview-major-services.md) that you can use in your scenarios.
-- Explore the [integration patterns](/graph/integration-patterns-overview) that might apply to your scenario.
+- Explore the [integration patterns](integration-patterns-overview.md) that might apply to your scenario.
 - See [what's new](whats-new-overview.md) in Microsoft Graph.
 - Learn about [metered APIs and services in Microsoft Graph](metered-api-overview.md).
 - Find out how to [get an auth token](auth/auth-concepts.md) in your app.

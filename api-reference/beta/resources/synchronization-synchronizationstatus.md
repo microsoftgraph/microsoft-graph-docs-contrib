@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the current status of the [synchronizationJob](synchronization-synchronizationjob.md).
+Represents the current status (**status** property) of the [synchronizationJob](../resources/synchronization-synchronizationjob.md).
 
 ## Properties
 

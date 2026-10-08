@@ -12,7 +12,7 @@ ms.date: 10/28/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Provide a summary of the most processed tasks, known as top tasks, for a specified time period in a tenant. The task definition is provided, along with numerical counts of total, successful, and failed runs. For information about workflows processed, see [insights: topWorkflowsProcessedSummary](identitygovernance-insights-topworkflowsprocessedsummary.md).
+Provide a summary from the [insights](../resources/identitygovernance-insights.md) resource of the most processed [task](../resources/identitygovernance-task.md) objects, known as top tasks, for a specified time period in a tenant. The task definition is provided, along with numerical counts of total, successful, and failed runs. For information about workflows processed, see [insights: topWorkflowsProcessedSummary](../api/identitygovernance-insights-topworkflowsprocessedsummary.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

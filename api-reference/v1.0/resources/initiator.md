@@ -12,7 +12,7 @@ ms.date: 03/21/2024
 
 Namespace: microsoft.graph
 
-Describes who or what initiated the provisioning event. 
+Describes who or what initiated the provisioning event. This object is configured in the **initiatedBy** property of [provisioningObjectSummary](../resources/provisioningobjectsummary.md).
 
 ## Properties
 

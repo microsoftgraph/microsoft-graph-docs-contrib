@@ -5879,6 +5879,74 @@
       "CreatedDateTime": "2025-01-14T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f58e82d6-618a-4467-9662-2f2bef56b8cc",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Updated the [List channels](https://learn.microsoft.com/en-us/graph/api/channel-list?view=graph-rest-beta) method on the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource to support **@odata.nextLink** pagination. With increased channel limits, responses might span multiple pages. Use **@odata.nextLink** to retrieve all results.",
+          "Target": "channel"
+        },
+        {
+          "Id": "f58e82d6-618a-4467-9662-2f2bef56b8cc",
+          "ApiChange": "Method",
+          "ChangedApiName": "List incomingChannels",
+          "ChangeType": "Change",
+          "Description": "Updated the [List incomingChannels](https://learn.microsoft.com/en-us/graph/api/team-list-incomingchannels?view=graph-rest-beta) method on the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource to support **@odata.nextLink** pagination. With increased channel limits, responses might span multiple pages. Use **@odata.nextLink** to retrieve all results.",
+          "Target": "team"
+        },
+        {
+          "Id": "f58e82d6-618a-4467-9662-2f2bef56b8cc",
+          "ApiChange": "Method",
+          "ChangedApiName": "List allChannels",
+          "ChangeType": "Change",
+          "Description": "Updated the [List allChannels](https://learn.microsoft.com/en-us/graph/api/team-list-allchannels?view=graph-rest-beta) method on the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource to support **@odata.nextLink** pagination. With increased channel limits, responses might span multiple pages. Use **@odata.nextLink** to retrieve all results.",
+          "Target": "team"
+        }
+      ],
+      "Id": "f58e82d6-618a-4467-9662-2f2bef56b8cc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-20T00:00:00.000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1ebea14c-d1fb-4932-be00-59d8ba313a4b",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Change",
+          "Description": "Updated the [List channels](https://learn.microsoft.com/en-us/graph/api/channel-list?view=graph-rest-1.0) method on the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource to support **@odata.nextLink** pagination. With increased channel limits, responses might span multiple pages. Use **@odata.nextLink** to retrieve all results.",
+          "Target": "channel"
+        },
+        {
+          "Id": "1ebea14c-d1fb-4932-be00-59d8ba313a4b",
+          "ApiChange": "Method",
+          "ChangedApiName": "List incomingChannels",
+          "ChangeType": "Change",
+          "Description": "Updated the [List incomingChannels](https://learn.microsoft.com/en-us/graph/api/team-list-incomingchannels?view=graph-rest-1.0) method on the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource to support **@odata.nextLink** pagination. With increased channel limits, responses might span multiple pages. Use **@odata.nextLink** to retrieve all results.",
+          "Target": "team"
+        },
+        {
+          "Id": "1ebea14c-d1fb-4932-be00-59d8ba313a4b",
+          "ApiChange": "Method",
+          "ChangedApiName": "List allChannels",
+          "ChangeType": "Change",
+          "Description": "Updated the [List allChannels](https://learn.microsoft.com/en-us/graph/api/team-list-allchannels?view=graph-rest-1.0) method on the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource to support **@odata.nextLink** pagination. With increased channel limits, responses might span multiple pages. Use **@odata.nextLink** to retrieve all results.",
+          "Target": "team"
+        }
+      ],
+      "Id": "1ebea14c-d1fb-4932-be00-59d8ba313a4b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-20T00:00:00.000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }

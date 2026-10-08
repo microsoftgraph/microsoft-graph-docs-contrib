@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "onedriveforbusinessrestoresession_list_granulardriverestoreartifacts" } -->
 [!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessrestoresession-list-granulardriverestoreartifacts-permissions.md)]
 
+[!INCLUDE [rbac-backuprestore-browse-granular-apis](../includes/rbac-for-apis/rbac-backuprestore-browse-granular-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -55,9 +57,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List granular drive restore artifacts
+The following example shows how to get a list of [granular drive restore artifacts](../resources/granulardriverestoreartifact.md).
+#### Request
 
 The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_granulardriverestoreartifact"
@@ -67,7 +73,37 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSessions/01b9d504-a6a4-464b-b2e1-0085d9fab651/granularDriveRestoreArtifacts
 ```
 
-### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-granulardriverestoreartifact-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-granulardriverestoreartifact-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-granulardriverestoreartifact-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-granulardriverestoreartifact-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-granulardriverestoreartifact-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-granulardriverestoreartifact-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-granulardriverestoreartifact-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -95,6 +131,7 @@ Content-Type: application/json
       "restorePointDateTime": "0001-01-01T00:00:00Z",
       "startDateTime": "0001-01-01T00:00:00Z",
       "completionDateTime": "0001-01-01T00:00:00Z",
+      "destinationType": "inPlace",
       "directoryObjectId": "f3846f8d-80a6-4480-ae20-5966ebdf2009"
     },
     {
@@ -108,7 +145,111 @@ Content-Type: application/json
       "restorePointDateTime": "0001-01-01T00:00:00Z",
       "startDateTime": "0001-01-01T00:00:00Z",
       "completionDateTime": "0001-01-01T00:00:00Z",
+      "destinationType": "inPlace",
       "directoryObjectId": "f3846f8d-80a6-4480-ae20-5966ebdf2009"
+    }
+  ]
+}
+```
+
+### Example 2: List granular drive restore artifacts with a failed artifact
+
+The following example shows how to get a list of [granular drive restore artifacts](../resources/granulardriverestoreartifact.md) that includes a failed artifact with error details.
+
+#### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_granulardriverestoreartifact_with_error"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSessions/01b9d504-a6a4-464b-b2e1-0085d9fab651/granularDriveRestoreArtifacts
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-granulardriverestoreartifact-with-error-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-granulardriverestoreartifact-with-error-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-granulardriverestoreartifact-with-error-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-granulardriverestoreartifact-with-error-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-granulardriverestoreartifact-with-error-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-granulardriverestoreartifact-with-error-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-granulardriverestoreartifact-with-error-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response with a failed artifact that includes error details.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.granularDriveRestoreArtifact)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/backupRestore/oneDriveForBusinessRestoreSessions('01b9d504-a6a4-464b-b2e1-0085d9fab651')/granularDriveRestoreArtifacts",
+  "value": [
+    {
+      "id": "f3846f8d-80a6-4480-ae20-5966ebdf2009,26380145-c085-4772-b5ef-94de6bc9447e,3be2f282-276a-4a1a-8db0-8bf0849df84d,292dcd7d-b1c3-40e5-afc3-7c10503a0eac",
+      "browseSessionId": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+      "restoredItemKey": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+      "webUrl": "https://contoso-my.sharepoint.com/personal/user1_contoso_com/Documents/Report.docx",
+      "restoredItemPath": "/personal/user1_contoso_com/Documents",
+      "restoredItemWebUrl": "https://contoso-my.sharepoint.com/personal/user1_contoso_com/Documents-restore/Report.docx",
+      "status": "succeeded",
+      "destinationType": "new",
+      "restorePointDateTime": "2024-06-01T00:00:00Z",
+      "startDateTime": "2024-06-02T10:00:00Z",
+      "completionDateTime": "2024-06-02T10:30:00Z",
+      "directoryObjectId": "f3846f8d-80a6-4480-ae20-5966ebdf2009",
+      "error": null
+    },
+    {
+      "id": "f3846f8d-80a6-4480-ae20-5966ebdf2009,26380145-c085-4772-b5ef-94de6bc9447e,3be2f282-276a-4a1a-8db0-8bf0849df84d,8d1ba53f-986a-409f-bf90-3bf55dbd7526",
+      "browseSessionId": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+      "restoredItemKey": "",
+      "webUrl": "https://contoso-my.sharepoint.com/personal/user1_contoso_com/Documents/Archive.zip",
+      "restoredItemPath": "",
+      "restoredItemWebUrl": "",
+      "status": "failed",
+      "destinationType": "new",
+      "restorePointDateTime": "2024-06-01T00:00:00Z",
+      "startDateTime": "2024-06-02T10:00:00Z",
+      "completionDateTime": "2024-06-02T10:15:00Z",
+      "directoryObjectId": "f3846f8d-80a6-4480-ae20-5966ebdf2009",
+      "error": {
+        "code": "Unknown",
+        "message": "The restore operation for this item encountered an error. Please retry the operation.",
+        "details": [],
+        "innerError": null
+      }
     }
   ]
 }

@@ -147,3 +147,9 @@ The following JSON representation shows the resource type.
 }
 ```
 
+## Related content
+
+- [List generativeAIInsights](../api/networkaccess-logs-list-generativeaiinsights.md)
+- [generativeAIInsight resource type](../resources/networkaccess-generativeaiinsight.md)
+- [applicationActivity enum values](../resources/enums-networkaccess.md#applicationactivity-values)
+

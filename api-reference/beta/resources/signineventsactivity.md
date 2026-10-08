@@ -6,6 +6,7 @@ author: "cumansfi"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+toc.title: Sign-in events activity
 ---
 
 # signInEventsActivity resource type

@@ -3,6 +3,106 @@
     {
       "ChangeList": [
         {
+          "Id": "1e93b771-47a1-4e45-b2a3-f2924241d8ad",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calendars.Read.All` to the following operations of the [workHoursAndLocationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/workhoursandlocationssetting?view=graph-rest-beta) resource: [GET](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-get?view=graph-rest-beta) and [occurrencesView](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-beta).",          
+          "Target": "workHoursAndLocationsSetting"
+        },
+        {
+          "Id": "1e93b771-47a1-4e45-b2a3-f2924241d8ad",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calendars.ReadWrite.All` to the following operations of the [workHoursAndLocationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/workhoursandlocationssetting?view=graph-rest-beta) resource: [GET](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-get?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-update?view=graph-rest-beta), [List recurrences](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-list-recurrences?view=graph-rest-beta), and [occurrencesView](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-beta).",
+          "Target": "workHoursAndLocationsSetting"
+        },
+        {
+          "Id": "1e93b771-47a1-4e45-b2a3-f2924241d8ad",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calendars.ReadWrite.All` to the following operations of the [workPlanOccurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanoccurrence?view=graph-rest-beta) resource: [Create workPlanOccurrence](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-post-occurrences?view=graph-rest-beta), [DELETE](https://learn.microsoft.com/en-us/graph/api/workplanoccurrence-delete?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/workplanoccurrence-update?view=graph-rest-beta), and [setCurrentLocation](https://learn.microsoft.com/en-us/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-beta).",
+          "Target": "workPlanOccurrence"
+        },
+        {
+          "Id": "1e93b771-47a1-4e45-b2a3-f2924241d8ad",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calendars.ReadWrite.All` to the following operations of the [workPlanRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanrecurrence?view=graph-rest-beta) resource: [List recurrences](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-list-recurrences?view=graph-rest-beta), [Create workPlanRecurrence](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-post-recurrences?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/workplanrecurrence-update?view=graph-rest-beta), and [DELETE](https://learn.microsoft.com/en-us/graph/api/workplanrecurrence-delete?view=graph-rest-beta).",
+          "Target": "workPlanRecurrence"
+        },
+        {
+          "Id": "1e93b771-47a1-4e45-b2a3-f2924241d8ad",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calendars.Read.All` to the following operation of the [workPlanRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanrecurrence?view=graph-rest-beta) resource: [List recurrences](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-list-recurrences?view=graph-rest-beta).",
+          "Target": "workPlanRecurrence"
+        }
+      ],
+      "Id": "1e93b771-47a1-4e45-b2a3-f2924241d8ad",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-26T06:08:53.8815010Z",
+      "WorkloadArea": "Calendars",
+      "SubArea": "Work hours and locations"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7769119b-a450-4aec-b89c-ea0eed8c647f",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calendars.Read.All` to the following operations of the [workHoursAndLocationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/workhoursandlocationssetting?view=graph-rest-1.0) resource: [GET](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-get?view=graph-rest-1.0) and [occurrencesView](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-1.0).",
+          "Target": "workHoursAndLocationsSetting"
+        },
+        {
+          "Id": "7769119b-a450-4aec-b89c-ea0eed8c647f",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calendars.ReadWrite.All` to the following operations of the [workHoursAndLocationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/workhoursandlocationssetting?view=graph-rest-1.0) resource: [GET](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-get?view=graph-rest-1.0), [UPDATE](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-update?view=graph-rest-1.0), [List recurrences](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-list-recurrences?view=graph-rest-1.0), and [occurrencesView](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-1.0).",
+          "Target": "workHoursAndLocationsSetting"
+        },
+        {
+          "Id": "7769119b-a450-4aec-b89c-ea0eed8c647f",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calendars.ReadWrite.All` to the following operations of the [workPlanOccurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanoccurrence?view=graph-rest-1.0) resource: [Create workPlanOccurrence](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-post-occurrences?view=graph-rest-1.0), [DELETE](https://learn.microsoft.com/en-us/graph/api/workplanoccurrence-delete?view=graph-rest-1.0), [UPDATE](https://learn.microsoft.com/en-us/graph/api/workplanoccurrence-update?view=graph-rest-1.0), and [setCurrentLocation](https://learn.microsoft.com/en-us/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-1.0).",
+          "Target": "workPlanOccurrence"
+        },
+        {
+          "Id": "7769119b-a450-4aec-b89c-ea0eed8c647f",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calendars.ReadWrite.All` to the following operations of the [workPlanRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanrecurrence?view=graph-rest-1.0) resource: [List recurrences](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-list-recurrences?view=graph-rest-1.0), [Create workPlanRecurrence](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-post-recurrences?view=graph-rest-1.0), [UPDATE](https://learn.microsoft.com/en-us/graph/api/workplanrecurrence-update?view=graph-rest-1.0), and [DELETE](https://learn.microsoft.com/en-us/graph/api/workplanrecurrence-delete?view=graph-rest-1.0).",
+          "Target": "workPlanRecurrence"
+        },
+        {
+          "Id": "7769119b-a450-4aec-b89c-ea0eed8c647f",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Calendars.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `Calendars.Read.All` to the following operation of the [workPlanRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanrecurrence?view=graph-rest-1.0) resource: [List recurrences](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-list-recurrences?view=graph-rest-1.0).",
+          "Target": "workPlanRecurrence"
+        }
+      ],
+      "Id": "7769119b-a450-4aec-b89c-ea0eed8c647f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-26T06:08:53.8815010Z",
+      "WorkloadArea": "Calendars",
+      "SubArea": "Work hours and locations"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c7f9e2a4-8b3d-4f1e-9c5a-2d8e7f6b9a1c",
           "ApiChange": "Resource",
           "ChangedApiName": "workHoursAndLocationsSetting",

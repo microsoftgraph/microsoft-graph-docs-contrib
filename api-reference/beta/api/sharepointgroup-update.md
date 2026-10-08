@@ -71,7 +71,7 @@ The following example shows a request.
   "@odata.type": "microsoft.graph.sharePointGroup"
 } -->
 ```http
-PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0
 Content-Type: application/json
 
 {
@@ -123,8 +123,9 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.sharePointGroup",
-  "id" : "12",
+  "id" : "ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0",
   "title" : "This is the new group title",
-  "description": "Updated group description"
+  "description": "Updated group description",
+  "principalId": "12"
 }
 ```

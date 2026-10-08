@@ -12,7 +12,7 @@ ms.date: 07/26/2024
 
 Namespace: microsoft.graph
 
-Represents a Microsoft Entra terms of use agreement file.
+Represents a Microsoft Entra terms of use [agreement](../resources/agreement.md) file.
 
 ## Properties
 | Property       | Type | Description |

@@ -13,7 +13,14 @@ ms.date: 07/22/2024
 Namespace: microsoft.graph
 
 
-Represents the status of processing the verifiable credential requirement for an access package request. This is an abstract type that's inherited by [verifiableCredentialRequired](verifiablecredentialrequired.md), [verifiableCredentialRetrieved](verifiablecredentialretrieved.md), [verifiableCredentialVerified](verifiablecredentialverified.md). At any instance, the actual status of the processing is represented by one of the derived types.
+Represents the status of processing the verifiable credential requirement for an access package request. This is an abstract type that's inherited by:
+- [verifiableCredentialRequired](../resources/verifiablecredentialrequired.md)
+- [verifiableCredentialRetrieved](../resources/verifiablecredentialretrieved.md)
+- [verifiableCredentialVerified](../resources/verifiablecredentialverified.md)
+
+At any instance, the actual status of the processing is represented by one of the derived types.
+
+In entitlement management, the derived types of this object are configured in the **verifiableCredentialRequirementStatus** property of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md).
 
 ## Properties
 None.

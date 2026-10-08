@@ -37,7 +37,7 @@ GET /contacts/{id}/transitiveReports/$count
 
 ## Optional query parameters
 
-This method does not support the use of query parameters, but does require the `$count` query segment.
+This method doesn't support the use of query parameters, but does require the `$count` query segment.
 
 ## Request headers
 

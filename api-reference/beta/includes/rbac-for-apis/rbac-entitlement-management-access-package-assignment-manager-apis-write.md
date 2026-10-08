@@ -8,7 +8,7 @@ ms.topic: include
 -->
 
 > [!TIP]
-> In delegated scenarios with work or school accounts, the signed-in user must also be assigned an administrator role with supported role permissions through one of the following options:
+> For delegated access using work or school accounts, the signed-in user must be assigned an administrator role with supported role permissions through one of the following options:
 > 
 > - A [role in the Entitlement Management system](/entra/id-governance/entitlement-management-delegate) where the least privileged roles are:
 >     - *Access package assignment manager*. **This is the least privileged option**

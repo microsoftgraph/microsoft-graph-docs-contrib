@@ -51,8 +51,6 @@ Content-Type: application/json
 
 To get change notifications for membership changes in all the private and shared channels in a particular team, subscribe to `/teams/{team-id}/channels/getAllMembers`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
-[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
-
 ### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              |

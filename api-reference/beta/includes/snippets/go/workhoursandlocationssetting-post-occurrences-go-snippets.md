@@ -1,0 +1,44 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v0.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewWorkPlanOccurrence()
+start := graphmodels.NewDateTimeTimeZone()
+dateTime := "2025-12-15T00:00:00.0000000"
+start.SetDateTime(&dateTime) 
+timeZone := "Pacific Standard Time"
+start.SetTimeZone(&timeZone) 
+requestBody.SetStart(start)
+end := graphmodels.NewDateTimeTimeZone()
+dateTime := "2025-12-15T23:59:59.0000000"
+end.SetDateTime(&dateTime) 
+timeZone := "Pacific Standard Time"
+end.SetTimeZone(&timeZone) 
+requestBody.SetEnd(end)
+workLocationType := graphmodels.TIMEOFF_WORKLOCATIONTYPE 
+requestBody.SetWorkLocationType(&workLocationType) 
+timeOffDetails := graphmodels.NewTimeOffDetails()
+subject := "Personal Day"
+timeOffDetails.SetSubject(&subject) 
+isAllDay := false
+timeOffDetails.SetIsAllDay(&isAllDay) 
+requestBody.SetTimeOffDetails(timeOffDetails)
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+occurrences, err := graphClient.Me().Settings().WorkHoursAndLocations().Occurrences().Post(context.Background(), requestBody, nil)
+
+
+```

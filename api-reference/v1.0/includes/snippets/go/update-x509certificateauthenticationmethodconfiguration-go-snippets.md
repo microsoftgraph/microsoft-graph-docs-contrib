@@ -60,6 +60,34 @@ rules := []graphmodels.X509CertificateRuleable {
 }
 authenticationModeConfiguration.SetRules(rules)
 requestBody.SetAuthenticationModeConfiguration(authenticationModeConfiguration)
+
+
+x509CertificateAuthorityScope := graphmodels.NewX509CertificateAuthorityScope()
+subjectKeyIdentifier := "aaaaaaaabbbbcccc111122222222222222333333"
+x509CertificateAuthorityScope.SetSubjectKeyIdentifier(&subjectKeyIdentifier) 
+publicKeyInfrastructureIdentifier := "Contoso PKI"
+x509CertificateAuthorityScope.SetPublicKeyInfrastructureIdentifier(&publicKeyInfrastructureIdentifier) 
+
+
+includeTarget := graphmodels.NewIncludeTarget()
+id := "aaaaaaaa-bbbb-cccc-1111-222222222222"
+includeTarget.SetId(&id) 
+targetType := graphmodels.GROUP_AUTHENTICATIONMETHODTARGETTYPE 
+includeTarget.SetTargetType(&targetType) 
+
+includeTargets := []graphmodels.IncludeTargetable {
+	includeTarget,
+}
+x509CertificateAuthorityScope.SetIncludeTargets(includeTargets)
+
+certificateAuthorityScopes := []graphmodels.X509CertificateAuthorityScopeable {
+	x509CertificateAuthorityScope,
+}
+requestBody.SetCertificateAuthorityScopes(certificateAuthorityScopes)
+issuerHintsConfiguration := graphmodels.NewX509CertificateIssuerHintsConfiguration()
+state := graphmodels.ENABLED_X509CERTIFICATEISSUERHINTSSTATE 
+issuerHintsConfiguration.SetState(&state) 
+requestBody.SetIssuerHintsConfiguration(issuerHintsConfiguration)
 crlValidationConfiguration := graphmodels.NewX509CertificateCRLValidationConfiguration()
 state := graphmodels.DISABLED_X509CERTIFICATECRLVALIDATIONCONFIGURATIONSTATE 
 crlValidationConfiguration.SetState(&state) 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the sign-in status (Success or Failure) of the sign-in
+Provides the sign-in status (Success or Failure) of the sign-in. This object is configured in the **status** property of [signIn](../resources/signin.md) and [summarizedSignIn](../resources/summarizedsignin.md).
 
 
 
@@ -58,5 +58,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

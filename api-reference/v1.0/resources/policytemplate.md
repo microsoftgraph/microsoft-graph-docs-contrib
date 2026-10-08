@@ -1,7 +1,7 @@
 ---
 title: "policyTemplate resource type"
 description: "Represents the base policy in the directory for multitenant organization settings."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

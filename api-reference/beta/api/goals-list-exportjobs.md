@@ -130,7 +130,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter= goalsOrganizationId eq '3d9a8150-90fd-42bd-9777-25ba783d4a05'
+GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter=goalsOrganizationId eq '3d9a8150-90fd-42bd-9777-25ba783d4a05'
 ```
 
 # [C#](#tab/csharp)
@@ -198,7 +198,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter= explorerViewId eq ‘9ab0fcab-c1d4-4b26-963b-a3c33155f853’ 
+GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter=explorerViewId eq '9ab0fcab-c1d4-4b26-963b-a3c33155f853' 
 ```
 
 # [C#](#tab/csharp)
@@ -214,7 +214,7 @@ GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-goalsexportjob3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

@@ -1,6 +1,6 @@
 ---
 title: "getEffectivePermissions function"
-description: "Intune Rbac Devicemanagement Geteffectivepermissions Source_Api ."
+description: "Intune Rbac Devicemanagement Geteffectivepermissions Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

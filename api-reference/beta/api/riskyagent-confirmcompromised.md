@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Confirm one or more [riskyAgent](../resources/riskyagent.md) objects as compromised. This action sets the targeted agent's **riskLevel** to `high`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -101,12 +101,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/riskyagentthisconfirmcompromised-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/riskyagentthisconfirmcompromised-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/riskyagentthisconfirmcompromised-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

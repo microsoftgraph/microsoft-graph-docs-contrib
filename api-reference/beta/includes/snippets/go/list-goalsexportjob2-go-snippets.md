@@ -16,7 +16,7 @@ import (
 )
 
 
-requestFilter := " goalsOrganizationId eq '3d9a8150-90fd-42bd-9777-25ba783d4a05'"
+requestFilter := "goalsOrganizationId eq '3d9a8150-90fd-42bd-9777-25ba783d4a05'"
 
 requestParameters := &graphemployeeexperience.GoalsExportJobsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

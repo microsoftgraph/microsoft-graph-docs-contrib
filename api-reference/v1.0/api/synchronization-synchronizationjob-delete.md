@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is.
+Stop the [synchronizationJob](../resources/synchronization-synchronizationjob.md), and permanently delete all the state associated with it. Synchronized accounts are left as-is.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -46,7 +46,7 @@ If successful, returns a `204 No Content` response. It doesn't return anything i
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -88,7 +88,7 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/j
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 <!-- {

@@ -12,7 +12,7 @@ ms.date: 03/08/2024
 
 Namespace: microsoft.graph
 
-Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.socialIdentitySource` identifies a social identity as an identity source for a connected organization.
+Used in the identity sources of an [connectedOrganization](../resources/connectedorganization.md). The `@odata.type` value `#microsoft.graph.socialIdentitySource` identifies a social identity as an identity source for a connected organization.
 
 Inherits from [identitySource](../resources/identitysource.md).
 
@@ -20,7 +20,7 @@ Inherits from [identitySource](../resources/identitysource.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the identity source. Typically the same value as the **socialIdentitySourceType**.|
-|socialIdentitySourceType|[microsoft.graph.socialIdentitySourceType](./socialidentitysource.md)|The possible values are: `facebook`, `unknownFutureValue`.|
+|socialIdentitySourceType|[microsoft.graph.socialIdentitySourceType](../resources/socialidentitysource.md)|The possible values are: `facebook`, `unknownFutureValue`.|
 
 ## Relationships
 None.

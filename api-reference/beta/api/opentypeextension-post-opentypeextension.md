@@ -22,7 +22,7 @@ The table in the [Permissions](#permissions) section lists the resources that su
 
 > **Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -37,6 +37,7 @@ Depending on the resource you're creating the extension in and the permission ty
 | [group event](../resources/event.md) | Group.ReadWrite.All | Not supported. | Not supported. |
 | [group post](../resources/post.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite.All |
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [site](../resources/site.md) | Sites.ReadWrite.All | Not supported. | Not supported. |
@@ -58,6 +59,7 @@ Use the same REST request that you use to create the instance.
 ```http
 POST /users/{userId|userPrincipalName}/events
 POST /users/{userId|userPrincipalName}/messages
+POST /users/{userId|userPrincipalName}/notes
 POST /groups/{userId}/events
 POST /groups/{userId}/threads/{threadId}/posts/{postId}/reply
 POST /users/{userId|userPrincipalName}/contacts
@@ -86,6 +88,7 @@ POST /groups/{groupId}/extensions
 POST /groups/{groupId}/events/{eventId}/extensions
 POST /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions
 POST /users/{userId|userPrincipalName}/messages/{messageId}/extensions
+POST /users/{userId|userPrincipalName}/notes/{noteId}/extensions
 POST /organization/{organizationId}/extensions
 POST /users/{userId|userPrincipalName}/contacts/{contactId}/extensions
 POST /users/{userId|userPrincipalName}/extensions

@@ -26,9 +26,10 @@ This resource supports [delta query](/graph/delta-query-overview) to track incre
 |[Get](../api/mailboxfolder-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Read the properties and relationships of a [mailboxFolder](../resources/mailboxfolder.md) object.|
 |[Update](../api/mailboxfolder-update.md)|[mailboxFolder](../resources/mailboxfolder.md)|Update [mailboxFolder](../resources/mailboxfolder.md) properties such as the **displayName** within a mailbox.|
 |[Delete](../api/mailbox-delete-folders.md)|None|Delete a [mailboxFolder](../resources/mailboxfolder.md) or a child **mailboxFolder** within a mailbox.|
-|[Get delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that have been added, deleted, or removed from the user's mailbox.|
+|[Get delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that were added, deleted, or removed from the user's mailbox.|
 |[List child mailbox folders](../api/mailboxfolder-list-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get the [mailboxFolder](../resources/mailboxfolder.md) collection under the specified **mailboxFolder** in a mailbox.|
 |[List items in folder](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.|
+|[Delete item in folder](../api/mailboxfolder-delete-items.md)|None|Delete a [mailboxItem](../resources/mailboxitem.md) from a [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.|
 |**Extended properties**| | |
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create one or more single-value extended properties in a new or existing mailbox folder.|
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get mailbox folders that contain a single-value extended property by using `$expand` or `$filter`.|
@@ -41,10 +42,12 @@ This resource supports [delta query](/graph/delta-query-overview) to track incre
 |childFolderCount|Int32|The number of immediate child folders in the current folder.|
 |displayName|String|The display name of the folder.|
 |id|String|The unique identifier for the folder.|
+|isHidden|Boolean|Indicates whether the folder is hidden. The default value is `false`. This property can be set only when you create the folder; it can't be updated using PATCH. By default, [listing folders](../api/mailbox-list-folders.md) or [listing child folders](../api/mailboxfolder-list-childfolders.md) returns only folders that aren't hidden. To include hidden folders in the response, use the optional query parameter `includeHiddenFolders=true`. The response includes both hidden and nonhidden folders. If you use `$select` to limit the returned properties, include **isHidden** in the selection. |
 |parentFolderId|String|The unique identifier for the parent folder of this folder.|
 |parentMailboxUrl|String|The routing link to the actual underlying mailbox where the folder physically resides. The folder can be accessed using `GET {parentMailboxUrl}/folders/{id}`, which treats the entire URL as an opaque string. <br><br> This method is especially important when auto-expanding archiving is enabled for a user's in-place archive mailbox. The user's archive content can span across multiple mailboxes in such scenarios.|
 |totalItemCount|Int32|The number of items in the folder.|
 |type|String|Describes the folder class type.|
+|wellKnownName|String|The locale-independent well-known name of the folder for folders created by Outlook, such as `inbox`, `sentitems`, `drafts`, `deleteditems`, or `archive`. For user-created folders, the value is `null`. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -69,9 +72,11 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "childFolderCount": "Int32",
   "id": "String (identifier)",
+  "isHidden": "Boolean",
   "parentFolderId": "String",
   "parentMailboxUrl": "String",
   "totalItemCount": "Int32",
+  "wellKnownName": "String",
   "type": "String"
 }
 ```

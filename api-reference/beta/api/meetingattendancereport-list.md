@@ -19,7 +19,7 @@ Get a list of [meetingAttendanceReport](../resources/meetingattendancereport.md)
 > [!WARNING]
 >
 >- This method only returns up to 50 of the most recent reports.
->- When you use this method to list attendance reports for a channel meeting, the API returns attendance reports for every meeting in the channel, rather than just the attendance reports for the specified meeting, which is the expected behavior for scheduled meetings. This behavior is the same regardless of where the channel meeting was created.
+>- When you use this method to list attendance reports for a channel meeting, the API returns only the attendance reports associated with the specified meeting, consistent with the behavior for scheduled meetings.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -122,7 +122,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-attendancereports-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

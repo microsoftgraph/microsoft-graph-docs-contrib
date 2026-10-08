@@ -23,6 +23,13 @@ This overview explains how Microsoft MCP Server for Enterprise works and how you
 >
 > Microsoft MCP Server for Enterprise is offered under the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
 
+This Microsoft MCP Server for Enterprise is available in the following [national cloud deployments](/graph/deployments).
+
+| Global service     | US Government L4 | US Government L5 (DOD) | China operated by 21Vianet |
+|--------------------|------------------|------------------------|----------------------------|
+| :white_check_mark: | :x:              | :x:                    | :x:                        |
+
+
 ## How it works
 
 Suppose an administrator asks, "*How many users do we have in our Microsoft Entra tenant?*" The following steps show the workflow that runs inside an MCP-enabled AI agent:
@@ -60,10 +67,6 @@ Microsoft MCP Server for Enterprise is currently in public preview. It focuses o
 - There is no additional cost or separate license required to enable the MCP Server for Enterprise.
 - You must have the appropriate licenses for the data you access (for example, Microsoft Entra ID Governance or Microsoft Entra ID P2 for Privileged Identity Management (PIM) content).
 - Requests are limited to 100 calls per minute per user. Calls made through `microsoft_graph_get` are also subject to the standard [Microsoft Graph throttling limits](../throttling-limits.md#identity-and-access-service-limits).
-
-## Cloud availability
-
-Microsoft MCP Server for Enterprise is currently available only in the public cloud (global service).
 
 ## Logs
 

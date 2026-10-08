@@ -27,7 +27,6 @@ const samlOrWsFedExternalDomainFederation = {
 };
 
 await client.api('/directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation')
-	.version('beta')
 	.post(samlOrWsFedExternalDomainFederation);
 
 ```

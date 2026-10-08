@@ -5,23 +5,29 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 07/30/2026
 ---
 
 # accessReviewInstanceDecisionItemResource resource type
 
 Namespace: microsoft.graph
 
-Every decision item in an access review represents a principal's access to a resource. The resource is identified by an accessReviewInstanceDecisionItemResource object. 
+In an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md), the **resource** property identifies the resource associated with the decision item.
 
-[accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionitemresource.md) is an open type that allows for other properties to be passed in and is the base type for the following resources: [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource.md), [accessReviewInstanceDecisionItemAzureRoleResource](accessreviewinstancedecisionitemazureroleresource.md), and [accessReviewInstanceDecisionItemServicePrincipalResource](accessreviewinstancedecisionitemserviceprincipalresource.md).
+An [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md) object is an open type that allows other properties to be passed in and is the base type for the following resources:
+- [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](../resources/accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource.md)
+- [accessReviewInstanceDecisionItemAccessPackageResource](../resources/accessreviewinstancedecisionitemaccesspackageresource.md)
+- [accessReviewInstanceDecisionItemAzureRoleResource](../resources/accessreviewinstancedecisionitemazureroleresource.md)
+- [accessReviewInstanceDecisionItemCustomDataProvidedResource](../resources/accessreviewinstancedecisionitemcustomdataprovidedresource.md)
+- [accessReviewInstanceDecisionItemServicePrincipalResource](../resources/accessreviewinstancedecisionitemserviceprincipalresource.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|description|String|Description of the resource.|
 |displayName|String|Display name of the resource|
 |id|String|Identifier of the resource|
-|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackageAssignmentPolicy`.|
+|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackage`, `AccessPackageAssignmentPolicy`, and `CustomDataProvidedResource`.|
 
 ## Relationships
 None.
@@ -33,9 +39,10 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
 }
 -->
-``` json
+```json
 {
   "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemResource",
+  "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
   "type": "String"

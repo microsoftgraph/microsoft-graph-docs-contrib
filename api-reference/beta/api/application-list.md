@@ -526,6 +526,7 @@ Content-type: application/json
 
 The following example shows a request that uses `$select` to specify the properties that should be returned. This includes the **signInAudienceRestrictions** property which is *only* returned if requested with `$select`.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_application_selectsigninaudiencerestrictions"
@@ -533,6 +534,36 @@ The following example shows a request that uses `$select` to specify the propert
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications?$select=id,appId,displayName,signInAudience,signInAudienceRestrictions
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-application-selectsigninaudiencerestrictions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-application-selectsigninaudiencerestrictions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-application-selectsigninaudiencerestrictions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-application-selectsigninaudiencerestrictions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-application-selectsigninaudiencerestrictions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-application-selectsigninaudiencerestrictions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-application-selectsigninaudiencerestrictions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

@@ -12,7 +12,7 @@ ms.date: 08/13/2024
 
 Namespace: microsoft.graph
 
-Parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object.
+Parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object for a [synchronizationSchema](../resources/synchronization-synchronizationschema.md).
 
 For more information about expressions, see [Writing Expressions for Attribute Mappings in Microsoft Entra ID](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [parseExpressi
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -123,7 +123,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.

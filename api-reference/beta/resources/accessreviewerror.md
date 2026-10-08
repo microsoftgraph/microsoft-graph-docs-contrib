@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents an error that occurred in an access review instance lifecycle. This resource is read-only.
+In an [accessReviewInstance](../resources/accessreviewinstance.md), the **errors** property contains errors that occurred in the access review instance lifecycle. This resource is read-only.
 
 Inherits from [genericError](../resources/genericerror.md).
 

@@ -57,7 +57,7 @@ Permissions are required to receive notifications, and the permissions required 
 | Application                            |  Not supported.                              |TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.Read.All|
 
 > [!NOTE]
-> Notifications for update events that occur in the chat scope might not be delivered. This is a [known issue](https://developer.microsoft.com/graph/known-issues/?search=26483).
+> Notifications for update events that occur in the chat scope might not be delivered. This is a [known issue](/graph/known-issues#upgrade-events-for-teams-app-installation-change-notifications-in-chat-scope-are-not-delivered).
 
 #### All scopes
 
@@ -114,7 +114,7 @@ POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
 { 
   "changeType": "created,updated,deleted", 
-  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'groupChat') ", 
+  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter=(scopeInfo/scope eq 'groupChat') ", 
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications", 
   "includeResourceData": true, 
   "encryptionCertificate": "{base64encodedCertificate}", 
@@ -134,7 +134,7 @@ POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
 { 
   "changeType": "created,updated,deleted", 
-  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'personal') or (scopeInfo/scope eq 'team')", 
+  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter=(scopeInfo/scope eq 'personal') or (scopeInfo/scope eq 'team')", 
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications", 
   "includeResourceData": true, 
   "encryptionCertificate": "{base64encodedCertificate}", 
@@ -154,7 +154,7 @@ POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json 
 { 
   "changeType": "created,updated,deleted", 
-  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter= (scopeInfo/scope eq 'personal')&useResourceSpecificConsentBasedAuthorization=true", 
+  "resource": "/appCatalogs/teamsApps/19d56a5e-86a2-489b-aa5c-88a60f92b83e/installations?$filter=(scopeInfo/scope eq 'personal')&useResourceSpecificConsentBasedAuthorization=true", 
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications", 
   "includeResourceData": true, 
   "encryptionCertificate": "{base64encodedCertificate}", 

@@ -1,6 +1,6 @@
 ---
 title: "Delete workPlanOccurrence"
-description: "Delete a workPlanOccurrence object from your own work plan."
+description: "Delete a workPlanOccurrence object from a user's work plan."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -12,7 +12,7 @@ ms.date: 12/19/2025
 
 Namespace: microsoft.graph
 
-Delete a [workPlanOccurrence](../resources/workplanoccurrence.md) object from your own work plan. Only time-off occurrences can be deleted. Occurrences generated from recurrences can't be deleted.
+Delete a [workPlanOccurrence](../resources/workplanoccurrence.md) object from a user's work plan. Only time-off occurrences can be deleted. Occurrences generated from recurrences can't be deleted.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "workplanoccurrence_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workplanoccurrence-delete-permissions.md)]
 
+>**Note:** Application permissions are supported only when using the `/users/{id}` endpoint.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +34,7 @@ DELETE /me/settings/workHoursAndLocations/occurrences/{id}
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-When using the `/users/{id}` endpoint, the ID must be your own user ID.
+When using delegated permissions with the `/users/{id}` endpoint, the ID must be the signed-in user's ID.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -59,6 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workplanoccurrence_delete"
@@ -67,6 +70,36 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations/occurrences/QAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAOtpUxZW-2ZHr9tjSZTO0jMAA2iQN2IAABA=
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/workplanoccurrence-delete-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/workplanoccurrence-delete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workplanoccurrence-delete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workplanoccurrence-delete-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/workplanoccurrence-delete-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/workplanoccurrence-delete-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/workplanoccurrence-delete-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

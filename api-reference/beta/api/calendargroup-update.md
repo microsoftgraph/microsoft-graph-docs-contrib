@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and updated [calenda
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -73,7 +73,7 @@ PATCH https://graph.microsoft.com/beta/me/calendarGroups/{id}
 Content-type: application/json
 
 {
-  "name": "name-value"
+  "name": "My Calendars"
 }
 ```
 
@@ -107,9 +107,11 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -122,10 +124,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "name": "name-value",
+  "name": "My Calendars",
   "classId": "11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+  "changeKey": "NreqLYgxdE2DpHBBId74XwAAAAAGZw==",
+  "id": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAEGAAAiIsqMbYjsT5e-T7KzowPTAAABuC34AAA="
 }
 ```
 

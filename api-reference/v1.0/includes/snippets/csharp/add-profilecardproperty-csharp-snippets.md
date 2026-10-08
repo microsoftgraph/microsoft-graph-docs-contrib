@@ -11,7 +11,6 @@ using Microsoft.Graph.Models;
 
 var requestBody = new ProfileCardProperty
 {
-	DirectoryPropertyName = "CustomAttribute1",
 	Annotations = new List<ProfileCardAnnotation>
 	{
 		new ProfileCardAnnotation
@@ -27,6 +26,8 @@ var requestBody = new ProfileCardProperty
 			},
 		},
 	},
+	DirectoryPropertyName = "CustomAttribute1",
+	IsVisible = true,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

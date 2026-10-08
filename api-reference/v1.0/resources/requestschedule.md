@@ -12,7 +12,14 @@ ms.date: 07/26/2024
 
 Namespace: microsoft.graph
 
-In [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) and [PIM for Groups](privilegedidentitymanagement-for-groups-api-overview.md), use this resource to define the schedule for when the principal will have an eligible or active role assignment.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), users who want to get access package assignments create access package assignment requests. This request can include a schedule for when the user would like to have an assignment. An access package assignment that results from such a request also has a schedule.
+
+In [PIM for Microsoft Entra roles](../resources/privilegedidentitymanagementv3-overview.md) and [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), use this resource to define the schedule for when the principal will have an eligible or active role assignment.
+
+In entitlement management, this object is configured in the **schedule** property of:
+- [accessPackageAssignment](../resources/accesspackageassignment.md)
+- [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)
+- [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md)
 
 ## Properties
 |Property|Type|Description|

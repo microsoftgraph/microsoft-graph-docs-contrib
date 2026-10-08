@@ -1,6 +1,6 @@
 ---
 title: "Update workPlanRecurrence"
-description: "Update the properties of a workPlanRecurrence object in your own work plan."
+description: "Update the properties of a workPlanRecurrence object in a user's work plan."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -12,7 +12,7 @@ ms.date: 12/19/2025
 
 Namespace: microsoft.graph
 
-Update the properties of a [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
+Update the properties of a [workPlanRecurrence](../resources/workplanrecurrence.md) object in a user's work plan. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "workplanrecurrence_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/workplanrecurrence-update-permissions.md)]
 
+>**Note:** Application permissions are supported only when using the `/users/{id}` endpoint.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +34,7 @@ PUT /me/settings/workHoursAndLocations/recurrences/{id}
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-When using the `/users/{id}` endpoint, the ID must be your own user ID.
+When using delegated permissions with the `/users/{id}` endpoint, the ID must be the signed-in user's ID.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -60,6 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [work
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workplanrecurrence_update"
@@ -94,6 +97,36 @@ Content-type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/workplanrecurrence-update-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/workplanrecurrence-update-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workplanrecurrence-update-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workplanrecurrence-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/workplanrecurrence-update-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/workplanrecurrence-update-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/workplanrecurrence-update-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

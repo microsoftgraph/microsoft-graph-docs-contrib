@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let place = await client.api('/places/979e9793-3e91-40eb-b18c-0ea937893956')
+let place = await client.api('/places/0be387a4-d53b-410f-9daf-f4fa07e5b05a')
 	.get();
 
 ```

@@ -90,6 +90,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|A list of managed apps that will be shown when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |kioskModeWallpaperUrl|String|URL to a publicly accessible image to use for the wallpaper when the device is in Kiosk Mode.|
 |kioskModeExitCode|String|Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.|
+|isKioskModeExitCodeSet|Boolean|Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.|
 |kioskModeVirtualHomeButtonEnabled|Boolean|Whether or not to display a virtual home button when the device is in Kiosk Mode.|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Indicates whether the virtual home button is a swipe up home button or a floating home button. Possible values are: `notConfigured`, `swipeUp`, `floating`.|
 |kioskModeBluetoothConfigurationEnabled|Boolean|Whether or not to allow a user to configure Bluetooth settings in Kiosk Mode.|
@@ -329,6 +330,7 @@ Here is a JSON representation of the resource.
   ],
   "kioskModeWallpaperUrl": "String",
   "kioskModeExitCode": "String",
+  "isKioskModeExitCodeSet": true,
   "kioskModeVirtualHomeButtonEnabled": true,
   "kioskModeVirtualHomeButtonType": "String",
   "kioskModeBluetoothConfigurationEnabled": true,

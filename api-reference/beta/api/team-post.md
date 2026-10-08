@@ -358,7 +358,7 @@ A few things to note about this call:
 
 * To create a team, the group you create it from must have at least one owner.
 * The team that's created always inherits properties such as display name, visibility, specialization, and members from the group. Therefore, when you make this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties return an error.
-* If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10-second delay between calls.
+* If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10-second delay between calls. Learn more in [Designing for eventual consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
 * Specifying a first channel name with the **firstChannelName** property isn't supported when you create a team from a group.
 
 #### Request
@@ -836,7 +836,7 @@ The following are common reasons for this response:
 
 ### Example 10: Application permissions using user principal name
 
-Here's an example of a minimal request using application permissions. Because the client omitted other properties, it's implicitly taking defaults from the predefined template represented by `template`. You must specify a [user](../resources/user.md) in the `members` collection for requests with application permissions.
+The following example shows a minimal request using application permissions. Because the client omitted other properties, it's implicitly taking defaults from the predefined template represented by `template`. You must specify a [user](../resources/user.md) in the `members` collection for requests with application permissions.
 
 #### Request
 

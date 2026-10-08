@@ -33,7 +33,9 @@ const virtualEventTownhall = {
     ],
     settings: {
       isAttendeeEmailNotificationEnabled: false
-    }
+    },
+    capacity: 5000,
+    isRegistrationRequired: false
 };
 
 await client.api('/solutions/virtualEvents/townhalls')

@@ -5,7 +5,7 @@ author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/18/2024
+ms.date: 06/01/2026
 ---
 
 # cloudPcProvisioningPolicy: apply
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply the current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. Currently, the region is the only policy setting that you can apply.
+Apply the current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. You can apply policy settings such as `region` and `singleSignOn`. This action also supports reprovisioning for frontline shared mode Cloud PCs by using the **reservePercentage** parameter to control the percentage of Cloud PCs that remain available during the process.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -47,12 +47,13 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/apply
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameter that you can use with this method.
+The following table shows the parameters that you can use with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
+|isForceUserLogoffEnabled|Boolean|For *Frontline shared* only. Indicates whether active Cloud PC sessions are forcibly signed out when reprovisioning begins. When `true`, connected users are immediately signed out and reprovisioning starts right away; **reservePercentage** must be set to `0` when this parameter is `true`, otherwise the request fails. When `false`, reprovisioning waits until the user disconnects. The default value is `false`. Optional.|
 |policySettings|cloudPcPolicySettingType|The target property of the apply action. The possible values are: `region`, `singleSignOn`, `unknownFutureValue`. The default value is `region`. This action applies `region` as a value if this parameter is `null`.|
-|reservePercentage|Int32|For `Frontline shared` only. The percentage of Cloud PCs to keep available. Administrators can set this property to a value from 0 to 99. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users.|
+|reservePercentage|Int32|For *Frontline shared* only. The percentage of Cloud PCs to keep available. Administrators can set this property to a value from `0` to `99`. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users.|
 
 ## Response
 
@@ -60,14 +61,18 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Apply a policy setting to Cloud PCs
+
+The following example shows how to apply a policy setting such as `region` to all Cloud PC devices under a specified provisioning policy.
+
+#### Request
 
 The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "apply_cloudpcprovisioningpolicy"
+  "name": "apply_cloudpcprovisioningpolicy_policysettings"
 }
 -->
 
@@ -76,38 +81,167 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provision
 Content-Type: application/json
 
 {
-  "policySettings": "region",
-  "reservePercentage": 80,
+  "policySettings": "region"
 }
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/apply-cloudpcprovisioningpolicy-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/apply-cloudpcprovisioningpolicy-policysettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/apply-cloudpcprovisioningpolicy-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/apply-cloudpcprovisioningpolicy-policysettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/apply-cloudpcprovisioningpolicy-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/apply-cloudpcprovisioningpolicy-policysettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/apply-cloudpcprovisioningpolicy-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/apply-cloudpcprovisioningpolicy-policysettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/apply-cloudpcprovisioningpolicy-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/apply-cloudpcprovisioningpolicy-policysettings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/apply-cloudpcprovisioningpolicy-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/apply-cloudpcprovisioningpolicy-policysettings-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Reprovision frontline shared Cloud PCs with a reserve percentage
+
+The following example shows how to reprovision frontline shared Cloud PCs under a specified provisioning policy and keep 80% of Cloud PCs available.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "apply_cloudpcprovisioningpolicy_frontline"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/1d164206-bf41-4fd2-8424-a3192d39ffff/apply
+Content-Type: application/json
+
+{
+  "isForceUserLogoffEnabled": false,
+  "reservePercentage": 80
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/apply-cloudpcprovisioningpolicy-frontline-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/apply-cloudpcprovisioningpolicy-frontline-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/apply-cloudpcprovisioningpolicy-frontline-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/apply-cloudpcprovisioningpolicy-frontline-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/apply-cloudpcprovisioningpolicy-frontline-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/apply-cloudpcprovisioningpolicy-frontline-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Reprovision frontline shared Cloud PCs and force user sign-out
+
+The following example shows how to immediately reprovision frontline shared Cloud PCs under a specified provisioning policy by forcibly signing out active sessions. When **isForceUserLogoffEnabled** is `true`, **reservePercentage** must be set to `0`.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "apply_cloudpcprovisioningpolicy_frontline_forcelogoff"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/1d164206-bf41-4fd2-8424-a3192d39ffff/apply
+Content-Type: application/json
+
+{
+  "isForceUserLogoffEnabled": true,
+  "reservePercentage": 0
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 
 The following example shows the response.
 

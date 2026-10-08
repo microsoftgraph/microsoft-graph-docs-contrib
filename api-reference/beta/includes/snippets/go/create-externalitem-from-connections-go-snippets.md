@@ -44,18 +44,22 @@ acl := []graphmodelsexternalconnectors.Aclable {
 requestBody.SetAcl(acl)
 properties := graphmodelsexternalconnectors.NewProperties()
 additionalData := map[string]interface{}{
-	"title" : "Error in the payment gateway", 
+	"title" : "Fix issues with Payment gateway", 
 	"priority" : int32(1) , 
 	"assignee" : "john@contoso.com", 
 }
 properties.SetAdditionalData(additionalData)
 requestBody.SetProperties(properties)
 content := graphmodelsexternalconnectors.NewExternalItemContent()
-value := "Error in payment gateway..."
+value := "Payment gateway module has the following tasks to be completed..."
 content.SetValue(&value) 
 type := graphmodels.TEXT_EXTERNALITEMCONTENTTYPE 
 content.SetType(&type) 
 requestBody.SetContent(content)
+informationProtectionLabel := graphmodelsexternalconnectors.NewExternalItemInformationProtectionLabel()
+sensitivityLabelId := "b6a62c3c-d471-4a3e-9f5f-93c1f928b02d"
+informationProtectionLabel.SetSensitivityLabelId(&sensitivityLabelId) 
+requestBody.SetInformationProtectionLabel(informationProtectionLabel)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 items, err := graphClient.External().Connections().ByExternalConnectionId("externalConnection-id").Items().ByExternalItemId("externalItem-id").Put(context.Background(), requestBody, nil)

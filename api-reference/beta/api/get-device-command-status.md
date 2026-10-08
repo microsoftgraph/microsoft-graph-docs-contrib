@@ -38,7 +38,7 @@ GET me/devices/{id}/commands/{id}
 
 ## Request headers
 
-| Header |Value
+| Header |Value |
 |:----|:------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept | application/json |
@@ -155,7 +155,7 @@ GET me/devices/{id}/commands/{id}/responsePayload
 
 ### Request headers
 
-| Header |Value
+| Header |Value |
 |:----|:------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept | application/json |

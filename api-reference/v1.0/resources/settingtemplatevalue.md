@@ -13,7 +13,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.
+Represents an individual [template setting definition](../resources/groupsettingtemplate.md), including the default value for the setting, if the setting is not instantiated. For more information about supported settings, see [Overview of group settings](/graph/group-directory-settings).
 
 ### Properties
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Represents a distinct capability or function that an agent can perform, as defined in the [agentCardManifest](../resources/agentcardmanifest.md). 
 
 ## Properties

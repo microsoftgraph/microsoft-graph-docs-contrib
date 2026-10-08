@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 toc.title: Voice
-ms.date: 07/22/2024
+ms.date: 06/17/2026
 ---
 
 # voiceAuthenticationMethodConfiguration resource type
@@ -30,6 +30,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|callerIdNumber|String|The phone number used as the caller ID when voice call authentication is initiated.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
 |isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`. |
@@ -53,6 +54,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.voiceAuthenticationMethodConfiguration",
+  "callerIdNumber": "String",
   "id": "String (identifier)",
   "state": "String",
   "excludeTargets": [

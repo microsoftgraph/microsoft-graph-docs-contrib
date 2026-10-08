@@ -45,8 +45,9 @@ You can specify the following properties when you create a custom property.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|The value of the custom property. Required.|
+|isPatternToken|Boolean|Indicates whether **value** is a `urlTemplate` pattern (for example, a token such as `{itemId}` used to configure redirect behavior when opening files), rather than a literal value that consumers must resolve before use. Optional. The default value is `false`.|
 |isSearchable|Boolean|A flag to indicate whether the property is searchable. Optional. The default value is `false`.|
+|value|String|The value of the custom property. Required.|
 
 ## Response
 
@@ -59,6 +60,7 @@ If successful, this method returns a `201 Created` response code.
 #### Request
 The following example shows how to create a custom property called `clientUniqueId` for a container.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_filestoragecontainer_customproperty_1"
@@ -74,6 +76,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-filestoragecontainer-customproperty-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 
@@ -92,6 +100,7 @@ HTTP/1.1 201 Created
 #### Request
 The following example shows how to create a searchable custom property called `clientUniqueId` for a container.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_filestoragecontainer_customproperty_2"
@@ -108,6 +117,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-filestoragecontainer-customproperty-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

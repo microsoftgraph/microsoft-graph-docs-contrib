@@ -28,6 +28,32 @@ items:
       href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
     - name: Get
       href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Number assignment
+    items:
+    - name: Number assignment
+      href: ../../resources/teamsadministration-numberassignment.md
+    - name: List assignment
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
+    - name: Get assignment
+      href: ../../api/teamsadministration-numberassignment-get.md
+    - name: Assign number
+      href: ../../api/teamsadministration-numberassignment-assignnumber.md
+    - name: Unassign number
+      href: ../../api/teamsadministration-numberassignment-unassignnumber.md
+    - name: Update number
+      href: ../../api/teamsadministration-numberassignment-updatenumber.md
+  - name: Telephone number long running operation
+    items:
+    - name: Telephone number long running operation
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
+    - name: Get
+      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
+  - name: Telephone number management root
+    items:
+    - name: Telephone number management root
+      href: ../../resources/teamsadministration-telephonenumbermanagementroot.md
+    - name: List number assignments
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
   - name: Complex types
     items:
     - name: Assigned telephone number
@@ -38,6 +64,8 @@ items:
       href: ../../resources/teamsadministration-policyassignment.md
     - name: Policy identifier detail
       href: ../../resources/teamsadministration-policyidentifierdetail.md
+    - name: Telephone number long running operation details
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperationdetails.md
 - name: Apps
   items:
   - name: Teams app
@@ -54,6 +82,14 @@ items:
       href: ../../api/teamsapp-delete.md
     - name: Get associated bot
       href: ../../api/teamworkbot-get.md
+    - name: List apps in channel
+      href: ../../api/channel-list-enabledapps.md
+    - name: Get app in channel
+      href: ../../api/teamsapp-get.md
+    - name: Add app to channel
+      href: ../../api/channel-post-enabledapps.md
+    - name: Remove app from channel
+      href: ../../api/channel-delete-enabledapps.md
   - name: Teams app installation
     items:
     - name: Teams app installation
@@ -128,8 +164,14 @@ items:
     href: ../../resources/communications-api-overview.md
   - name: Ad hoc call
     items:
-    - name: Ad hoc call (preview)
-      href: ../../resources/adhoccall.md
+    - name: Ad hoc call
+      items:
+      - name: Ad hoc call
+        href: ../../resources/adhoccall.md
+      - name: Get all recordings
+        href: ../../api/adhoccall-getallrecordings.md
+      - name: Get all transcripts
+        href: ../../api/adhoccall-getalltranscripts.md
   - name: Call events
     items:
     - name: Call event
@@ -350,6 +392,8 @@ items:
         href: ../../api/callrecording-delta.md
       - name: List recordings by organizer
         href: ../../api/onlinemeeting-getallrecordings.md
+      - name: Get recordings initiated by a specified user
+        href: ../../api/adhoccall-getallrecordings.md
     - name: Call transcript
       items:
       - name: Call transcript
@@ -362,6 +406,8 @@ items:
         href: ../../api/calltranscript-delta.md
       - name: List transcripts by organizer
         href: ../../api/onlinemeeting-getalltranscripts.md
+      - name: Get transcripts initiated by a specified user
+        href: ../../api/adhoccall-getalltranscripts.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link
@@ -370,6 +416,10 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentremindersms.md
       - name: Send virtual appointment SMS
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
+    - name: Complex types
+      items:
+      - name: Cloud video interop info
+        href: ../../resources/cloudvideointeropinfo.md
   - name: Presence
     items:
     - name: Presence
@@ -432,6 +482,12 @@ items:
         href: ../../resources/virtualeventwebinarregistrationconfiguration.md
       - name: Get
         href: ../../api/virtualeventwebinarregistrationconfiguration-get.md
+    - name: Virtual event townhall registration configuration
+      items:
+      - name: Virtual event townhall registration configuration
+        href: ../../resources/virtualeventtownhallregistrationconfiguration.md
+      - name: Get
+        href: ../../api/virtualeventtownhallregistrationconfiguration-get.md
     - name: Virtual event registration question
       items:
       - name: Virtual event registration question
@@ -607,6 +663,8 @@ items:
       href: ../../api/channel-update-members.md
     - name: Remove channel member
       href: ../../api/channel-delete-members.md
+    - name: Start migration
+      href: ../../api/channel-startmigration.md
     - name: Complete migration
       href: ../../api/channel-completemigration.md
     - name: List tabs in channel
@@ -619,6 +677,14 @@ items:
       href: ../../api/channel-patch-tabs.md
     - name: Remove tab from channel
       href: ../../api/channel-delete-tabs.md
+    - name: List apps in channel
+      href: ../../api/channel-list-enabledapps.md
+    - name: Get app in channel
+      href: ../../api/teamsapp-get.md
+    - name: Add app to channel
+      href: ../../api/channel-post-enabledapps.md
+    - name: Remove app from channel
+      href: ../../api/channel-delete-enabledapps.md
     - name: Provision channel email address
       href: ../../api/channel-provisionemail.md
     - name: Remove channel email address
@@ -663,6 +729,10 @@ items:
         href: ../../api/userscopeteamsappinstallation-get-chat.md
       - name: Remove all access for user
         href: ../../api/chat-removeallaccessforuser.md
+      - name: Start migration
+        href: ../../api/chat-startmigration.md
+      - name: Complete migration
+        href: ../../api/chat-completemigration.md
     - name: Messages
       items:
       - name: List messages in a chat
@@ -709,6 +779,14 @@ items:
         href: ../../api/chat-post-pinnedmessages.md
       - name: Unpin message
         href: ../../api/chat-delete-pinnedmessages.md
+  - name: Deleted chat
+    items:
+    - name: Deleted chat
+      href: ../../resources/deletedchat.md
+    - name: Get
+      href: ../../api/deletedchat-get.md
+    - name: Undo delete
+      href: ../../api/deletedchat-undodelete.md
   - name: Chat message
     items:
     - name: Chat message
@@ -777,6 +855,8 @@ items:
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
         href: ../../api/chatmessage-unsetreaction.md
+      - name: Reply with quote
+        href: ../../api/chatmessage-replywithquote.md
     - name: Hosted content
       items:
       - name: List all hosted content
@@ -793,14 +873,18 @@ items:
       href: ../../api/chat-post-pinnedmessages.md
     - name: Unpin message
       href: ../../api/chat-delete-pinnedmessages.md
-  - name: Deleted chat
+  - name: Targeted chat message
     items:
-    - name: Deleted chat
-      href: ../../resources/deletedchat.md
-    - name: Get
-      href: ../../api/deletedchat-get.md
-    - name: Undo delete
-      href: ../../api/deletedchat-undodelete.md
+    - name: Targeted chat message
+      href: ../../resources/targetedchatmessage.md
+    - name: Get all targeted messages
+      href: ../../api/userteamwork-getalltargetedmessages.md
+    - name: Get all retained targeted messages
+      href: ../../api/userteamwork-getallretainedtargetedmessages.md
+    - name: Delete targeted message from channel
+      href: ../../api/userteamwork-deletetargetedmessage.md
+    - name: Delete targeted message from chat
+      href: ../../api/chat-delete-targetedmessages.md
   - name: Team
     items:
     - name: Team
@@ -929,6 +1013,12 @@ items:
         href: ../../resources/userteamwork.md
       - name: Get
         href: ../../api/userteamwork-get.md
+      - name: Get all targeted messages
+        href: ../../api/userteamwork-getalltargetedmessages.md
+      - name: Get all retained targeted messages
+        href: ../../api/userteamwork-getallretainedtargetedmessages.md
+      - name: Delete targeted message
+        href: ../../api/userteamwork-deletetargetedmessage.md
 - name: Shift management
   items:
   - name: Day note

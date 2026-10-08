@@ -49,7 +49,9 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -58,13 +60,10 @@ The following example shows a request.
 -->
 ```http
 DELETE https://graph.microsoft.com/beta/security/labels/citations/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
+```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-citationtemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-citationtemplate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -94,7 +93,9 @@ DELETE https://graph.microsoft.com/beta/security/labels/citations/f44dkle55-6baf
 ---
 
 ### Response
-Here's an example of the response.
+
+The following example shows the response.
+
 >
 <!-- {
   "blockType": "response",

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the [review status](..\resources\cloudpcreviewstatus.md) of a Cloud PC.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

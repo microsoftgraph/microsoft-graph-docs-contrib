@@ -37,7 +37,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 ## Request body
 
-Do not supply a request body with for method.
+Don't supply a request body with for method.
 
 ## Response
 

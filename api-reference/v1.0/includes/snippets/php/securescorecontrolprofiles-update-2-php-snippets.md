@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Security\SecureScoreControlProfiles\Item\SecureScoreControlProfileItemRequestBuilderPatchRequestConfiguration;
 use Microsoft\Graph\Generated\Models\SecureScoreControlProfile;
 use Microsoft\Graph\Generated\Models\SecurityVendorInformation;
 
@@ -19,7 +20,13 @@ $vendorInformation->setProviderVersion(null);
 $vendorInformation->setSubProvider(null);
 $vendorInformation->setVendor('Microsoft');
 $requestBody->setVendorInformation($vendorInformation);
+$requestConfiguration = new SecureScoreControlProfileItemRequestBuilderPatchRequestConfiguration();
+$headers = [
+		'Prefer' => 'return=representation',
+	];
+$requestConfiguration->headers = $headers;
 
-$result = $graphServiceClient->security()->secureScoreControlProfiles()->bySecureScoreControlProfileId('secureScoreControlProfile-id')->patch($requestBody)->wait();
+
+$result = $graphServiceClient->security()->secureScoreControlProfiles()->bySecureScoreControlProfileId('secureScoreControlProfile-id')->patch($requestBody, $requestConfiguration)->wait();
 
 ```

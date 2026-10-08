@@ -16,6 +16,9 @@ Not all files can be converted into all formats.
 
 To download the item in its original format, see [download an item's contents](driveitem-get-content.md).
 
+> [!NOTE]
+> The maximum size limit for files to use format conversion is 2 MB.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -32,6 +35,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
+GET /me/drive/items/{item-id}/content?format={format}
+GET /me/drive/root:/{path and filename}:/content?format={format}
 GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
@@ -40,16 +45,19 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 | Parameter      | Type  | Description                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
-| _format_  | string | Specify the format the item's content should be downloaded as. |
+| format | String | Specify the format the item's content should be downloaded as. |
+| height | Int32  | The desired height of the converted image in pixels. Required when `format=jpg`. |
+| width | Int32  | The desired width of the converted image in pixels. Required when `format=jpg`. |
 
 ### Format options
 
 The following values are valid for the **format** parameter:
 
-| Format value | Description                        | Supported source extensions
-|:-------------|:-----------------------------------|----------------------------
-| pdf          | Converts the item into PDF format. | doc, docx, dot, dotx, dotm, dsn, dwg, eml, epub, fluidframework, form, htm, html, loop, loot, markdown, md, msg, note, odp, ods, odt, page, pps, ppsx, ppt, pptx, pulse, rtf, task, tif, tiff, wbtx, whiteboard, xls, xlsm, xlsx
-| html         | Converts the item into HTML format.| loop, fluid, wbtx
+| Format value | Description                        | Supported source extensions|
+|:-------------|:-----------------------------------|----------------------------|
+| jpg          | Converts the item into JPG format. | 3g2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, cool, cpp, cr2, crw, cs, css, csv, cur, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, dwg, eml, epi, eps, epsf, epsi, epub, erf, fbx, fppx, gif, glb, h, hcp, heic, heif, htm, html, ico, icon, java, jfif, jpeg, jpg, js, json, key, log, m2ts, m4a, m4v, markdown, md, mef, mov, movie, mp3, mp4, mp4v, mrw, msg, mts, nef, nrw, numbers, obj, odp, odt, ogg, orf, pages, pano, pdf, pef, php, pict, pl, ply, png, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, psb, psd, py, raw, rb, rtf, rw1, rw2, sh, sketch, sql, sr2, stl, tif, tiff, ts, txt, vb, webm, wma, wmv, xaml, xbm, xcf, xd, xml, xpm, yaml, yml|
+| pdf          | Converts the item into PDF format. | doc, docx, dot, dotx, dotm, dsn, dwg, eml, epub, fluidframework, form, htm, html, loop, loot, markdown, md, msg, note, odp, ods, odt, page, pps, ppsx, ppt, pptx, pulse, rtf, task, tif, tiff, wbtx, whiteboard, xls, xlsm, xlsx|
+| html         | Converts the item into HTML format.| loop, fluid, wbtx, whiteboard|
 
 ## Request headers
 
@@ -132,4 +140,3 @@ For more information about how errors are returned, see [Error responses][error-
   "suppressions": [
   ]
 } -->
-

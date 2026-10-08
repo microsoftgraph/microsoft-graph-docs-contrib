@@ -66,6 +66,7 @@ If successful, this function returns a `200 OK` response code and a [exchangeMes
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangemessagetracethis.getdetailsbyrecipient"
@@ -75,6 +76,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/exchange/tracing/messageTraces/7e3b2b2e-1b5e-4b17-80cc-2af6c1d9a3b1/getDetailsByRecipient(recipientAddress='robert@contoso.com')
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/exchangemessagetracethisgetdetailsbyrecipient-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and [group](../resou
 
 #### Request
 
-Here's an example  of a GET request.
+The following example shows a GET request.
 
 # [HTTP](#tab/http)
 
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 
 #### Response
 
-Here's an example  of the response. It includes only the default properties.
+The following example shows the response. It includes only the default properties.
 
 > **Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 
@@ -184,7 +184,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of a GET request.
+The following example shows a GET request.
 
 # [HTTP](#tab/http)
 
@@ -195,7 +195,7 @@ Here's an example  of a GET request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=accessType,allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenConversationsCount,unseenCount,unseenMessagesCount
 ```
 
 # [C#](#tab/csharp)
@@ -230,7 +230,7 @@ GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 
 #### Response
 
-Here's an example  of the response that includes the requested nondefault properties.
+The following example shows the response that includes the requested nondefault properties.
 
 <!-- {
   "blockType": "response",
@@ -244,12 +244,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(accessType,allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenConversationsCount,unseenCount,unseenMessagesCount)/$entity",
     "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "accessType": "private",
     "allowExternalSenders": false,
     "autoSubscribeNewMembers": false,
     "isSubscribedByMail": false,
-    "unseenCount": 0
+    "unseenConversationsCount": 0,
+    "unseenCount": 0,
+    "unseenMessagesCount": 0
 }
 ```
 

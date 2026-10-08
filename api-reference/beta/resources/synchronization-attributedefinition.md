@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an attribute of an object.
+Describes an attribute of an object. This object is configured in the **attributes** property of [objectDefinition](../resources/synchronization-objectdefinition.md).
 
 ## Properties
 

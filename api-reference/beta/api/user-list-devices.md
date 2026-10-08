@@ -42,7 +42,7 @@ GET /me/devices
 
 ## Request headers
 
-| Header |Value
+| Header |Value |
 |:----|:------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept | application/json |
@@ -97,7 +97,9 @@ Content-Type: application/json; charset=utf-8
 
 #### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "ignored",

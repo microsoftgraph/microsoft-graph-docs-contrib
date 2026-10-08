@@ -1,0 +1,52 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewM365CapabilityBase()
+inboundAccess := graphmodels.NewM365CapabilityInboundAccess()
+isAllowed := false
+inboundAccess.SetIsAllowed(&isAllowed) 
+resourceScopes := graphmodels.NewM365CapabilityResourceScopes()
+
+
+m365CapabilityResourceScope := graphmodels.NewM365CapabilityResourceScope()
+resourceId := "ad4fc698-74dc-4f62-9e71-ba9b591e8e74"
+m365CapabilityResourceScope.SetResourceId(&resourceId) 
+resourceType := graphmodels.GROUP_M365RESOURCETYPE 
+m365CapabilityResourceScope.SetResourceType(&resourceType) 
+m365CapabilityResourceScope1 := graphmodels.NewM365CapabilityResourceScope()
+resourceId := "070061d7-a98e-43d3-b708-0758d3738ac7"
+m365CapabilityResourceScope1.SetResourceId(&resourceId) 
+resourceType := graphmodels.GROUP_M365RESOURCETYPE 
+m365CapabilityResourceScope1.SetResourceType(&resourceType) 
+
+included := []graphmodels.M365CapabilityResourceScopeable {
+	m365CapabilityResourceScope,
+	m365CapabilityResourceScope1,
+}
+resourceScopes.SetIncluded(included)
+excluded := []graphmodels.M365CapabilityResourceScopeable {
+
+}
+resourceScopes.SetExcluded(excluded)
+inboundAccess.SetResourceScopes(resourceScopes)
+requestBody.SetInboundAccess(inboundAccess)
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+m365Capabilities, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().ByCrossTenantAccessPolicyConfigurationPartnerTenantId("crossTenantAccessPolicyConfigurationPartner-tenantId").M365Capabilities().ByM365CapabilityBaseName("m365CapabilityBase-name").Patch(context.Background(), requestBody, nil)
+
+
+```

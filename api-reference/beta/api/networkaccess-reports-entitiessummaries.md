@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of users, devices, and workloads per traffic type in a specified time period as logged in [Global Secure Access](../resources/networkaccess-global-secure-access-api-overview.md).
+Get the [number of users, devices, and workloads](../resources/networkaccess-entitiessummary.md) per traffic type in a specified time period as logged in Global Secure Access.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

@@ -12,10 +12,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Specifies a decision stage in a dynamic [approval](approval.md) in entitlement management.
+Specifies a decision stage in a dynamic [approval](../resources/approval.md) in entitlement management.
 
 Inherits from [accessPackageApprovalStage](../resources/accesspackageapprovalstage.md).
-
 
 ## Properties
 |Property|Type|Description|

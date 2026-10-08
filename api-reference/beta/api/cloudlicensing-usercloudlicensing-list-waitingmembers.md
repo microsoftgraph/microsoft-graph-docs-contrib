@@ -66,6 +66,7 @@ The following example shows how to get all waiting members granted to a user.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudlicensing-userwaitingmember-list-example-1"
@@ -74,6 +75,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/waitingMembers?$expand=allotment($select=id,skuId,skuPartNumber)
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudlicensing-userwaitingmember-list-example-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

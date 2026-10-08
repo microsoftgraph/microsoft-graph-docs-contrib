@@ -20,7 +20,7 @@ Represents the result of an export operation performed by the [exportItems](../a
 |Property|Type|Description|
 |:---|:---|:---|
 |changeKey|String|The version of the item.|
-|data|Stream|Data that represents an item in a base64 encoded opaque stream.|
+|data|Stream|Data that represents an item in a Base64-encoded opaque stream.|
 |error|[mailTipsError](mailtipserror.md)|An error that occurs during an action.|
 |itemId|String|The unique identifier of the item.|
 

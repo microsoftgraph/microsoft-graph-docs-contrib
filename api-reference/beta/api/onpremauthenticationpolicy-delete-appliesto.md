@@ -58,6 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_appliesto_from_onpremauthenticationpolicy"
@@ -67,6 +68,11 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}/appliesTo/{id}/$ref
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-appliesto-from-onpremauthenticationpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

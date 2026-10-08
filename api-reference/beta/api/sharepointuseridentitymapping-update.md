@@ -64,6 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request that includes both updates and removals using the **@removed** annotation.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_sharepointuseridentitymapping"
@@ -100,6 +101,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-sharepointuseridentitymapping-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

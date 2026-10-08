@@ -132,7 +132,9 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
 #### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",

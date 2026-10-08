@@ -1,0 +1,20 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+# Code snippets are only available for the latest version. Current version is 1.x
+from msgraph import GraphServiceClient
+from msgraph.generated.users.item.presence.set_automatic_location.set_automatic_location_post_request_body import SetAutomaticLocationPostRequestBody
+from msgraph.generated.models.work_location_type import WorkLocationType
+# To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
+request_body = SetAutomaticLocationPostRequestBody(
+	work_location_type = WorkLocationType.Office,
+	place_id = "eb706f15-137e-4722-b4d1-b601481d9251",
+)
+
+await graph_client.me.presence.set_automatic_location.post(request_body)
+
+
+```

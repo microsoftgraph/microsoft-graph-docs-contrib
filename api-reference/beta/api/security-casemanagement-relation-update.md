@@ -1,0 +1,121 @@
+---
+title: "Update relation"
+description: "Update the properties of a relation object."
+author: "alfeldsh"
+ms.date: 05/29/2026
+ms.localizationpriority: medium
+ms.subservice: "security"
+doc_type: apiPageType
+---
+
+# Update relation
+
+Namespace: microsoft.graph.security.caseManagement
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a concrete [relation](../resources/security-casemanagement-relation.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_casemanagement_relation_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-casemanagement-relation-update-permissions.md)]
+[!INCLUDE [rbac-case-management-apis](../includes/rbac-for-apis/rbac-case-management-apis.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /security/caseManagement/cases/{caseId}/relations/{relationId}
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+Supply a JSON representation of the resource. Include `@odata.type` in every request body to identify the concrete relation type. The value must match the existing relation type.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|@odata.type|String|The OData type of the concrete relation. The supported values are `#microsoft.graph.security.caseManagement.incidentRelation`, `#microsoft.graph.security.caseManagement.recommendationRelation`, and `#microsoft.graph.security.caseManagement.workspaceIndicatorRelation`. Required.|
+|relatedResourceId|String|The identifier of the related external resource.|
+
+## Response
+
+If successful, this method returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "security_casemanagement_update_relation"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/security/caseManagement/cases/{caseId}/relations/{relationId}
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.security.caseManagement.incidentRelation",
+  "relatedResourceId": "987654321"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/security-casemanagement-update-relation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/security-casemanagement-update-relation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/security-casemanagement-update-relation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-casemanagement-update-relation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-update-relation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-update-relation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-update-relation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response"
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```

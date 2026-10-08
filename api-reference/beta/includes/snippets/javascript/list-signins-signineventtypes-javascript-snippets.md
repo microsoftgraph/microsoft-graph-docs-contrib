@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let signIns = await client.api('/auditLogs/signins')
+let signIns = await client.api('/auditLogs/signins?&$filter=(signInEventTypes/any(t: t eq \'nonInteractiveUser\' OR t eq \'interactiveUser\' OR t eq \'servicePrincipal\' OR t eq \'managedIdentity\'))')
 	.version('beta')
 	.filter('(signInEventTypes/any(t: t eq \'nonInteractiveUser\' OR t eq \'interactiveUser\' OR t eq \'servicePrincipal\' OR t eq \'managedIdentity\'))')
 	.get();

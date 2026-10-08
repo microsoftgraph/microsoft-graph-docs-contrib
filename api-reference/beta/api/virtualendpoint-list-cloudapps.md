@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 List all the [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects filtered by a provision policy ID.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -123,6 +123,7 @@ Content-Type: application/json
       "discoveredAppName": "Paint",
       "description": "",
       "appDetail": {
+        "@odata.type": "#microsoft.graph.cloudPcAutomaticDiscoveredAppDetail",
         "filePath": "C:\\Windows\\system32\\mspaint.exe",
         "commandLineArguments": "",
         "iconPath": "C:\\Windows\\system32\\mspaint.exe",
@@ -143,6 +144,7 @@ Content-Type: application/json
       "discoveredAppName": "Paint",
       "description": "",
       "appDetail": {
+        "@odata.type": "#microsoft.graph.cloudPcAutomaticDiscoveredAppDetail",
         "filePath": "C:\\Windows\\system32\\mspaint.exe",
         "commandLineArguments": "",
         "iconPath": "C:\\Windows\\system32\\mspaint.exe",

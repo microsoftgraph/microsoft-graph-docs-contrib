@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To delete another user's external authentication method:
+To delete another user's external MFA:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}/$ref
@@ -50,6 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_externalauthenticationmethod"
@@ -58,6 +59,12 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{id}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}/$ref
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-externalauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

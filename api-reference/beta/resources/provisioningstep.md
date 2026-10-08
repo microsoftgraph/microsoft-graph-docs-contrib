@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the steps taken to perform an action.
+Describes the steps taken to perform an action. This object is configured in the **provisioningSteps** property of [provisioningObjectSummary](../resources/provisioningobjectsummary.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |description|String|Summary of what occurred during the step.|
-|details|[detailsInfo](detailsinfo.md)|Details of what occurred during the step.|
+|details|[detailsInfo](../resources/detailsinfo.md)|Details of what occurred during the step.|
 |name|String|Name of the step.|
 |provisioningStepType|provisioningStepType| Type of step. The possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
 |status|provisioningResult| Status of the step. The possible values are: `success`, `warning`,  `failure`, `skipped`, `unknownFutureValue`.|
@@ -60,5 +60,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

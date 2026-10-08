@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies a decision stage in a dynamic [approval](approval.md) in entitlement management.
+Specifies a decision stage in a dynamic [approval](../resources/approval.md) in entitlement management.
 
 
 Inherits from [approvalStage](../resources/approvalstage.md).

@@ -51,7 +51,7 @@ If successful, this method returns `204 No Content` response code.
 
 The following example deletes an **identityProvider**.
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -95,7 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

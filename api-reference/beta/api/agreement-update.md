@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 If successful, this method returns a `204 No Content` response code.
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -95,7 +95,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

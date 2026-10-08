@@ -1,4 +1,4 @@
----
+﻿---
 title: "retrieveTenantPerPermissionsScopeTagSetting function"
 description: "This function will return True if the tenant has per permission scope tags enabled or false if the tenant does not have per permission scope tags enabled."
 author: "jaiprakashmb"

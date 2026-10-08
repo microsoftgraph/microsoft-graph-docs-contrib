@@ -51,9 +51,9 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and [NamedItem](../resources/workbooknameditem.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
-##### Request
+### Request
 The following example shows a request.
 
 
@@ -99,8 +99,10 @@ Content-type: application/json
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

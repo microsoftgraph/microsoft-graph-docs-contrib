@@ -20,6 +20,8 @@ Consider the following points when completing migration for new and existing cha
 
 - When a channel is created in migration mode for the initial import flow, the property **migrationMode** for a [channel](../resources/channel.md) in a team is updated to `completed` instead of being dropped, and the state is permanently marked for chats or channels. Migration mode is a special state that prevents certain operations, such as sending messages and adding members, during the data migration process. The parent team isn't marked with migration mode, as teams can't enter migration mode; only their child channels (general, standard, private, and shared) can.
 - For *existing* channels that are already in migration mode, the API completes the message migration process by updating **migrationMode** to `completed` for a [channel](../resources/channel.md) in a team.
+- The application that calls **completeMigration** must be the same application that initiated the migration session by calling [startMigration](channel-startmigration.md) on the target channel. This is the same application that is allowed to call [import message](channel-post-messages.md#example-2-import-a-message) during the migration session.
+- Calling **completeMigration** removes the import mode banner visible to Teams client users, making the channel fully available again.
 
 After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [channel: startMigration](channel-startmigration.md).
 
@@ -64,6 +66,7 @@ The following example shows how to complete the migration when a channel is in m
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_channel",
@@ -73,6 +76,36 @@ The following example shows a request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-channel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/completemigration-channel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/completemigration-channel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/completemigration-channel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/completemigration-channel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/completemigration-channel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/completemigration-channel-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -94,6 +127,7 @@ The following example shows how to complete the migration when a channel isn't i
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_channel_fail",
@@ -103,6 +137,36 @@ The following example shows a request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-channel-fail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/completemigration-channel-fail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/completemigration-channel-fail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/completemigration-channel-fail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/completemigration-channel-fail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/completemigration-channel-fail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/completemigration-channel-fail-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -131,7 +195,7 @@ HTTP/1.1 400 Bad Request
 ## Related content
 
 - [channel: startMigration](channel-startmigration.md)
-- [Import message with older timestamp](channel-post-messages.md#example-2-import-messages).
+- [Import a message](channel-post-messages.md#example-2-import-a-message)
 - [Get channel migration status](channel-get.md#example-1-get-a-channel).
 - [chat: completeMigration](chat-completemigration.md)
 - [chat: startMigration](chat-startmigration.md)

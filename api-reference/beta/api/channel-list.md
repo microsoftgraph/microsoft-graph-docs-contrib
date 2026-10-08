@@ -46,7 +46,7 @@ This method supports the `$filter` and `$select` [OData query parameters](/graph
 ### Use $select for better performance
 Populating the **email** property for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** property to improve performance.
 
-> **Note**: This API does not return the **moderationSettings** property for a channel by default. To get this property, use the `$select` query parameter.
+> **Note**: This API doesn't return the **moderationSettings** property for a channel by default. To get this property, use the `$select` query parameter.
 
 
 ## Request headers
@@ -61,7 +61,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [channel](../resources/channel.md) objects in the response body. 
+
+When the result set spans multiple pages, the response includes an **@odata.nextLink** property with a URL for retrieving the next page of results. For details about how to page through results, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Examples
 
@@ -145,7 +147,7 @@ Content-type: application/json
 ```
 
 > [!NOTE]
-> This API has a [known issue](https://microsoftgraph.visualstudio.com/Known%20Issues/_workitems/edit/40502/) related to listing channels. The **layoutType** property returns `null` when listing channels. To get the layout type of a specific channel, use the [Get channel](../api/channel-get.md) API. Full support for **layoutType** in list operations is planned for a future release.
+> This API has a [known issue](/graph/known-issues#layouttype-property-returns-null-when-listing-all-channels) related to listing channels. The **layoutType** property returns `null` when listing channels. To get the layout type of a specific channel, use the [Get channel](../api/channel-get.md) API.
 
 ### Example 2: List all private channels
 

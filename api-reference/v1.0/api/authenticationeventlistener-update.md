@@ -18,7 +18,12 @@ Update the properties of an [authenticationEventListener](../resources/authentic
 - [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md) resource type
 - [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md) resource type
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
+- [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) resource type
 - [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
+- [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md) resource type
+- [onVerifiedIdClaimValidationListener](../resources/onverifiedidclaimvalidationlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -55,8 +60,7 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |:---|:---|:---|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |displayName|String|The display name of the authentication event listener policy. Optional.|
-|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md) &#124; [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md)|The handler to invoke when conditions are met. The type of handler depends on the listener type:<br/>- For **onTokenIssuanceStartListener**, use [onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md).<br/>- For **onFraudProtectionLoadStartListener**, use [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md).|
-
+|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md) or [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md) or [onPasswordSubmitHandler](../resources/onpasswordsubmithandler.md)|The handler to invoke when conditions are met. For **onTokenIssuanceStartListener**, set to [onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md). For **onFraudProtectionLoadStartListener**, set to [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md). For **onPasswordSubmitListener**, set to [onPasswordSubmitHandler](../resources/onpasswordsubmithandler.md).|
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
@@ -74,7 +78,7 @@ The following example shows a request to update an authentication event listener
   "name": "update_authenticationeventlistener"
 }
 -->
-``` http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/identity/authenticationEventListeners/990d94e5-cc8f-4c4b-97b4-27e2678aac28
 Content-Type: application/json
 
@@ -144,7 +148,7 @@ The following example shows a request to add an application to an authentication
   "name": "update_authenticationeventlistener_2"
 }
 -->
-``` http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications
 Content-Type: application/json
 

@@ -2,7 +2,7 @@
 title: "changeNotification resource type"
 description: "Represents the change notification sent to the subscriber (app) of a Microsoft Graph subscription."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 doc_type: resourcePageType
 ms.subservice: change-notifications
 ms.date: 12/20/2024
@@ -27,7 +27,7 @@ None.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| changeType | changeType | Indicates the type of change that will raise the change notification. Required and only present for change notifications. Mutually exclusive with **lifecycleEvent**. The supported values are: `created`, `updated`, `deleted`. |
+| changeType | [changeType](../resources/enums.md#changetype-values) | Indicates the type of change that will raise the change notification. Required and only present for change notifications. Mutually exclusive with **lifecycleEvent**. The possible values are: `created`, `updated`, `deleted`, `unknownFutureValue`. `unknownFutureValue` is an evolvable enumeration sentinel reserved for future extensibility. Its addition does not introduce a new notification change type or change existing notification delivery. |
 | clientState | string | Value of the **clientState** property sent in the subscription request (if any). The maximum length is 255 characters. The client can check whether the change notification came from the service by comparing the values of the **clientState** property. The value of the **clientState** property sent with the subscription is compared with the value of the **clientState** property received with each change notification. Optional. |
 | encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | (Preview) Encrypted content attached with the change notification. Only provided if **encryptionCertificate** and **includeResourceData** were defined during the subscription request and if the resource supports it. Optional. |
 | id | string | Unique ID for the notification. Optional. |
@@ -81,4 +81,3 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-

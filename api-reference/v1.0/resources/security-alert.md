@@ -18,6 +18,9 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 
 [!INCLUDE [alerts-callout-two-types](../includes/alerts-callout-two-types.md)]
 
+> [!IMPORTANT]
+> To view Sentinel alerts and incidents you must onboard Sentinel to the Defender Portal. For more information see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -26,6 +29,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |[Get](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 |[Update](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 |[Create comment](../api/security-alert-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [alert](../resources/security-alert.md) based on the specified alert **id** property.|
+|[Move alerts](../api/security-alert-movealerts.md)|[microsoft.graph.security.mergeResponse](../resources/security-mergeresponse.md)|Move one or more [alert](../resources/security-alert.md) resources to a new or existing [incident](../resources/security-incident.md).|
 
 ## Properties
 
@@ -36,7 +40,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |alertPolicyId|String| The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.|
 |alertWebUrl|String|URL for the Microsoft 365 Defender portal alert page.|
 |assignedTo|String| Owner of the **alert**, or null if no owner is assigned.|
-|category|String| The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
+|categories|String collection| The attack kill-chain categories that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
 |classification|[microsoft.graph.security.alertClassification](#alertclassification-values)| Specifies whether the alert represents a true threat. The possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection| Array of comments created by the Security Operations (SecOps) team during the alert management process.|
 |createdDateTime|DateTimeOffset| Time when Microsoft 365 Defender created the alert.|
@@ -44,7 +48,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |description|String| String value describing each alert.|
 |detectionSource|[microsoft.graph.security.detectionSource](../resources/security-detectionsource.md)| Detection technology or sensor that identified the notable component or activity.|
 |detectorId|String| The ID of the detector that triggered the alert.|
-|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)| Specifies the result of the investigation, whether the alert represents a true attack and if so, the nature of the attack. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)| Specifies the result of the investigation, whether the alert represents a true attack and if so, the nature of the attack. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedAccount`, `phishing`, `maliciousUserActivity`, `notMalicious`, `notEnoughDataToValidate`, `confirmedActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |evidence|[microsoft.graph.security.alertEvidence](security-alertEvidence.md) collection| Collection of evidence related to the alert.|
 |firstActivityDateTime|DateTimeOffset| The earliest activity associated with the alert.|
 |id|String| Unique identifier to represent the **alert** resource.|
@@ -53,7 +57,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |investigationState|[microsoft.graph.security.investigationState](#investigationstate-values)| Information on the current status of the investigation. The possible values are: `unknown`, `terminated`, `successfullyRemediated`, `benign`, `failed`, `partiallyRemediated`, `running`, `pendingApproval`, `pendingResource`, `queued`, `innerFailure`, `preexistingAlert`, `unsupportedOs`, `unsupportedAlertType`, `suppressedAlert`, `partiallyInvestigated`, `terminatedByUser`, `terminatedBySystem`, `unknownFutureValue`.|
 |lastActivityDateTime|DateTimeOffset| The oldest activity associated with the alert.|
 |lastUpdateDateTime|DateTimeOffset| Time when the alert was last updated at Microsoft 365 Defender.|
-|mitreTechniques|Collection(Edm.String)| The attack techniques, as aligned with the MITRE ATT&CK framework.|
+|mitreTechniques|String collection| The attack techniques, as aligned with the MITRE ATT&CK framework.|
 |productName|String|The name of the product which published this alert.|
 |providerAlertId|String| The ID of the alert as it appears in the security provider product that generated the alert.|
 |recommendedActions|String| Recommended response and remediation actions to take in the event this alert was generated.|
@@ -66,6 +70,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |threatFamilyName|String| Threat family associated with this alert.|
 |title|String| Brief identifying string value describing the alert.|
 |systemTags|String collection| The system tags associated with the alert.|
+|category (deprecated)|String| The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework. This property is in the process of being deprecated. Use the **categories** property instead.|
 
 ### alertClassification values
 
@@ -157,6 +162,7 @@ The following JSON representation shows the resource type.
   "alertWebUrl": "String",
   "assignedTo": "String",
   "category": "String",
+  "categories": ["String"],
   "classification": "String",
   "comments": [{"@odata.type": "microsoft.graph.security.alertComment"}],
   "createdDateTime": "String (timestamp)",

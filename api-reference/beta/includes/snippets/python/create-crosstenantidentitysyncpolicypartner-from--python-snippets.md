@@ -7,10 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.cross_tenant_identity_sync_policy_partner import CrossTenantIdentitySyncPolicyPartner
+from msgraph_beta.generated.models.cross_tenant_group_sync_inbound import CrossTenantGroupSyncInbound
 from msgraph_beta.generated.models.cross_tenant_user_sync_inbound import CrossTenantUserSyncInbound
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CrossTenantIdentitySyncPolicyPartner(
 	display_name = "Fabrikam",
+	group_sync_inbound = CrossTenantGroupSyncInbound(
+		is_sync_allowed = True,
+	),
 	user_sync_inbound = CrossTenantUserSyncInbound(
 		is_sync_allowed = True,
 	),

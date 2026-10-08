@@ -1,5 +1,5 @@
 ---
-title: "collectInvestigationPackageResponseAction resource type"
+title: "collectInvestigationPackageResponseAction resource type (deprecated)"
 description: "Describes a response action that collects details for an investigation package."
 author: "mmekler"
 ms.localizationpriority: medium
@@ -8,11 +8,14 @@ doc_type: resourcePageType
 ms.date: 03/06/2024
 ---
 
-# collectInvestigationPackageResponseAction resource type
+# collectInvestigationPackageResponseAction resource type (deprecated)
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The **collectInvestigationPackageResponseAction** resource type is deprecated and will be removed on October 1, 2026. Use [automatedAction](../resources/security-automatedaction.md) (grouped via [automatedActionSet](../resources/security-automatedactionset.md)) on the [detectionAction](../resources/security-detectionaction.md) resource instead.
 
 Describes a response action that collects details for an investigation package.
 

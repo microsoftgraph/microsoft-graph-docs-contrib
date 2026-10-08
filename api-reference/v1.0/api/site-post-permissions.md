@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|Sites.FullControl.All|Not supported.|
 
-> **Note:** In delegated workflows, the user must have an administrator role, such as SharePoint Administrator or higher.
+> **Note:** In delegated workflows, the user must have an administrator role, such as SharePoint Administrator or higher. In addition, the delegated user running the API must be a member of the target SharePoint site.
 
 ## HTTP request
 

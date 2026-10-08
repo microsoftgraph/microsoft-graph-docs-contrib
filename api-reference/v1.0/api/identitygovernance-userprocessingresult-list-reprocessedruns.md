@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.identityGovernance
 
-List user processing results of a workflow reprocessed run object.
+List reprocessed [run](../resources/identitygovernance-run.md) objects for a [userProcessingResult](../resources/identitygovernance-userprocessingresult.md).
 
 ## Permissions
 
@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/delet
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

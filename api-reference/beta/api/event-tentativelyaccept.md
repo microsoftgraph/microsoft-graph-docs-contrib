@@ -66,7 +66,7 @@ This action returns HTTP 400 if one or both of the following occur:
 - The **proposedNewTime** parameter is included but the **sendResponse** parameter is set to `false`.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 ### Request
 In the following example, the signed-in user responds tentative to the specified event, sets the **sendResponse** parameter to true, and includes an alternative time in the **proposedNewTime** parameter.
 

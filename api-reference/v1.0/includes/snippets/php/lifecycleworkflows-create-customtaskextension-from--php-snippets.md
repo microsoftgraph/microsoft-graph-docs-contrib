@@ -35,7 +35,7 @@ $clientConfiguration->setTimeoutInMilliseconds(1000);
 $requestBody->setClientConfiguration($clientConfiguration);
 $callbackConfiguration = new CustomTaskExtensionCallbackConfiguration();
 $callbackConfiguration->setOdataType('#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration');
-$callbackConfiguration->setTimeoutDuration(new \DateInterval('PT5M'));
+$callbackConfiguration->setTimeoutDuration(new \DateInterval('PT30M'));
 $requestBody->setCallbackConfiguration($callbackConfiguration);
 
 $result = $graphServiceClient->identityGovernance()->lifecycleWorkflows()->customTaskExtensions()->post($requestBody)->wait();

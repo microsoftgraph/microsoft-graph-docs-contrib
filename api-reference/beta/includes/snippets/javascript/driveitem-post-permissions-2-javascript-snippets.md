@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const permission = {
-  grantedToIdentitiesV2: {
+  grantedToV2: {
     siteGroup: {
       id: '10',
       displayName: 'Internal Collaborators'
@@ -20,7 +20,7 @@ const permission = {
   roles: ['write']
 };
 
-await client.api('/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/1/permissions')
+await client.api('/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/01V4EPHZNV2OJQJNBPWNCKDTXCQ5TSVBJU/permissions')
 	.version('beta')
 	.post(permission);
 

@@ -27,9 +27,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainertypeapppermissiongrant-update-permissions.md)]
 
->**Note:**
+> [!NOTE]
 > * When delegated tokens are used, either the SharePoint Embedded admin role or the Global admin role is required.
 > * If the `FileStorageContainerTypeReg.Selected` permission is used, changes are limited to [registrations](../resources/filestoragecontainertyperegistration.md) owned by the application that makes the call.
+> * Updated permission grants may take up to one hour to propagate.
 
 ## HTTP request
 
@@ -66,6 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [file
 ### Request
 The following example shows how to update app-only permissions in an existing app permission grant.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainertypeapppermissiongrant"
@@ -79,6 +81,33 @@ Content-Type: application/json
   "applicationPermissions": ["full"]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-filestoragecontainertypeapppermissiongrant-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-filestoragecontainertypeapppermissiongrant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-filestoragecontainertypeapppermissiongrant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-filestoragecontainertypeapppermissiongrant-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-filestoragecontainertypeapppermissiongrant-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-filestoragecontainertypeapppermissiongrant-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

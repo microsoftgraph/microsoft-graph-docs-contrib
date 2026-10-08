@@ -138,7 +138,9 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -418,7 +420,7 @@ Content-type: application/json
 }
 ```
 
-If there are no custom security attributes assigned to the user or if the calling principal does not have access, the following block shows the response:
+If there are no custom security attributes assigned to the user or if the calling principal doesn't have access, the following block shows the response:
 
 ```http
 HTTP/1.1 200 OK

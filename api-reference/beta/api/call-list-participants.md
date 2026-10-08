@@ -36,7 +36,7 @@ GET /communications/calls/{id}/participants
 ```
 > **Notes:**
 > - The `/app` path is deprecated. Going forward, use the `/communications` path.
-> - This request does not support peer-to-peer calls.
+> - This request doesn't support peer-to-peer calls.
 
 ## Optional query parameters
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-participants-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-participants-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

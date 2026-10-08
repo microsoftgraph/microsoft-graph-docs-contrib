@@ -3,11 +3,1423 @@
     {
       "ChangeList": [
         {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lifecyclePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicies** relationship to the [deletedItemContainer](https://learn.microsoft.com/en-us/graph/api/resources/deleteditemcontainer?view=graph-rest-beta) resource.",
+          "Target": "deletedItemContainer"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "agentBuilderPlatforms",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentBuilderPlatforms** enumeration type.",
+          "Target": "agentBuilderPlatforms"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "complianceState",
+          "ChangeType": "Addition",
+          "Description": "Added the **complianceState** enumeration type.",
+          "Target": "complianceState"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyComplianceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyComplianceStatus** enumeration type.",
+          "Target": "lifecyclePolicyComplianceStatus"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyEnforcementActionState",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyEnforcementActionState** enumeration type.",
+          "Target": "lifecyclePolicyEnforcementActionState"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyEnforcementStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyEnforcementStatus** enumeration type.",
+          "Target": "lifecyclePolicyEnforcementStatus"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyImpactActionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyImpactActionType** enumeration type.",
+          "Target": "lifecyclePolicyImpactActionType"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyNextEnforcementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyNextEnforcementAction** enumeration type.",
+          "Target": "lifecyclePolicyNextEnforcementAction"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyRelationship** enumeration type.",
+          "Target": "lifecyclePolicyRelationship"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyScopeProcessingAttemptStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyScopeProcessingAttemptStatus** enumeration type.",
+          "Target": "lifecyclePolicyScopeProcessingAttemptStatus"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyScopeProcessingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyScopeProcessingStatus** enumeration type.",
+          "Target": "lifecyclePolicyScopeProcessingStatus"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicySource",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicySource** enumeration type.",
+          "Target": "lifecyclePolicySource"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allExcludingAgentBuilderPlatformsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [allExcludingAgentBuilderPlatformsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-allexcludingagentbuilderplatformssubjectset?view=graph-rest-beta) resource.",
+          "Target": "allExcludingAgentBuilderPlatformsSubjectSet"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allExcludingGroupsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [allExcludingGroupsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-allexcludinggroupssubjectset?view=graph-rest-beta) resource.",
+          "Target": "allExcludingGroupsSubjectSet"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allExcludingSpecificObjectsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [allExcludingSpecificObjectsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-allexcludingspecificobjectssubjectset?view=graph-rest-beta) resource.",
+          "Target": "allExcludingSpecificObjectsSubjectSet"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deleteOnlyEnforcementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [deleteOnlyEnforcementAction](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-deleteonlyenforcementaction?view=graph-rest-beta) resource.",
+          "Target": "deleteOnlyEnforcementAction"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "disableOnlyEnforcementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [disableOnlyEnforcementAction](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-disableonlyenforcementaction?view=graph-rest-beta) resource.",
+          "Target": "disableOnlyEnforcementAction"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "disableThenDeleteEnforcementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [disableThenDeleteEnforcementAction](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-disablethendeleteenforcementaction?view=graph-rest-beta) resource.",
+          "Target": "disableThenDeleteEnforcementAction"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyAgentIdentitySubjectReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyAgentIdentitySubjectReference](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyagentidentitysubjectreference?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyAgentIdentitySubjectReference"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyEnforcementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyEnforcementAction](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyenforcementaction?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyEnforcementAction"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyImpactAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyImpactAction](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyimpactaction?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyImpactAction"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyNotificationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyNotificationSettings](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicynotificationsettings?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyNotificationSettings"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicySubjectReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicySubjectReference](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicysubjectreference?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicySubjectReference"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyUserSubjectReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyUserSubjectReference](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyusersubjectreference?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyUserSubjectReference"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selectedObjectsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [selectedObjectsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-selectedobjectssubjectset?view=graph-rest-beta) resource.",
+          "Target": "selectedObjectsSubjectSet"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequiredRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequiredRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-accesspackageassignmentrequiredrule?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentRequiredRule"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentIdentityLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentIdentityLifecycle](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-agentidentitylifecycle?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityLifecycle"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentIdentityLifecyclePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentIdentityLifecyclePolicy](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-agentidentitylifecyclepolicy?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityLifecyclePolicy"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attestationComplianceIssue",
+          "ChangeType": "Addition",
+          "Description": "Added the [attestationComplianceIssue](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-attestationcomplianceissue?view=graph-rest-beta) resource.",
+          "Target": "attestationComplianceIssue"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceIssue",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceIssue](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-complianceissue?view=graph-rest-beta) resource.",
+          "Target": "complianceIssue"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "guestLifecyclePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [guestLifecyclePolicy](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-guestlifecyclepolicy?view=graph-rest-beta) resource.",
+          "Target": "guestLifecyclePolicy"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityLifecycle](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-identitylifecycle?view=graph-rest-beta) resource.",
+          "Target": "identityLifecycle"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inactivityRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [inactivityRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-inactivityrule?view=graph-rest-beta) resource.",
+          "Target": "inactivityRule"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invitationRedemptionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [invitationRedemptionRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-invitationredemptionrule?view=graph-rest-beta) resource.",
+          "Target": "invitationRedemptionRule"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicy](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicy?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicy"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "report",
+          "ChangeType": "Addition",
+          "Description": "Added the **report** relationship to the [lifecyclePolicy](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicy?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicy"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyImpactSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyImpactSummary](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyimpactsummary?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyImpactSummary"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyPriorityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyPriorityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicypriorityconfiguration?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyPriorityConfiguration"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyReport](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyreport?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyReport"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subjects",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjects** relationship to the [lifecyclePolicyReport](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyreport?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyReport"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyrule?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyRule"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicySubjectReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicySubjectReport](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicysubjectreport?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicySubjectReport"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lifecyclePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicies** relationship to the **lifecycleWorkflowsContainer** resource.",
+          "Target": "lifecycleWorkflowsContainer"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lifecyclePolicyPriorityConfigurations",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyPriorityConfigurations** relationship to the **lifecycleWorkflowsContainer** resource.",
+          "Target": "lifecycleWorkflowsContainer"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "periodicAttestationRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [periodicAttestationRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-periodicattestationrule?view=graph-rest-beta) resource.",
+          "Target": "periodicAttestationRule"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sponsorPresenceRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [sponsorPresenceRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-sponsorpresencerule?view=graph-rest-beta) resource.",
+          "Target": "sponsorPresenceRule"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userIdentityLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the [userIdentityLifecycle](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-useridentitylifecycle?view=graph-rest-beta) resource.",
+          "Target": "userIdentityLifecycle"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Method",
+          "ChangedApiName": "attest",
+          "ChangeType": "Addition",
+          "Description": "Added the [attest](https://learn.microsoft.com/en-us/graph/api/agentidentity-attest?view=graph-rest-beta) method to the **agentIdentity** resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/identitygovernance-lifecyclepolicy-restore?view=graph-rest-beta) method to the [lifecyclePolicy](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicy?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicy"
+        },
+        {
+          "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+          "ApiChange": "Method",
+          "ChangedApiName": "impact",
+          "ChangeType": "Addition",
+          "Description": "Added the [impact](https://learn.microsoft.com/en-us/graph/api/identitygovernance-lifecyclepolicy-impact?view=graph-rest-beta) method to the [lifecyclePolicy](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicy?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicy"
+        }
+      ],
+      "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-01T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "71dbdfe0-b702-4c05-a432-68a8c6e86a1f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecycle** relationship to the **servicePrincipal** resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "71dbdfe0-b702-4c05-a432-68a8c6e86a1f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecycle** relationship to the **user** resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "71dbdfe0-b702-4c05-a432-68a8c6e86a1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "addSelfAsSponsor",
+          "ChangeType": "Addition",
+          "Description": "Added the [addSelfAsSponsor](https://learn.microsoft.com/en-us/graph/api/user-addselfassponsor?view=graph-rest-beta) method to the **user** resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "71dbdfe0-b702-4c05-a432-68a8c6e86a1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "attest",
+          "ChangeType": "Addition",
+          "Description": "Added the [attest](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-attest?view=graph-rest-beta) method to the **servicePrincipal** resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "71dbdfe0-b702-4c05-a432-68a8c6e86a1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "attest",
+          "ChangeType": "Addition",
+          "Description": "Added the [attest](https://learn.microsoft.com/en-us/graph/api/user-attest?view=graph-rest-beta) method to the **user** resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "71dbdfe0-b702-4c05-a432-68a8c6e86a1f",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeSelfAsSponsor",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeSelfAsSponsor](https://learn.microsoft.com/en-us/graph/api/user-removeselfassponsor?view=graph-rest-beta) method to the **user** resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "71dbdfe0-b702-4c05-a432-68a8c6e86a1f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-01T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workflowTriggerOperatorEventTiming",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflowTriggerOperatorEventTiming** enumeration type.",
+          "Target": "workflowTriggerOperatorEventTiming"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "operatorBetween",
+          "ChangeType": "Addition",
+          "Description": "Added the **operatorBetween** resource.",
+          "Target": "operatorBetween"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "operatorEqualTo",
+          "ChangeType": "Addition",
+          "Description": "Added the **operatorEqualTo** resource.",
+          "Target": "operatorEqualTo"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "operatorLessThanEqualTo",
+          "ChangeType": "Addition",
+          "Description": "Added the **operatorLessThanEqualTo** resource.",
+          "Target": "operatorLessThanEqualTo"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timeBasedAttributeTriggerV2",
+          "ChangeType": "Addition",
+          "Description": "Added the **timeBasedAttributeTriggerV2** resource.",
+          "Target": "timeBasedAttributeTriggerV2"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowExecutionTriggerOperator",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflowExecutionTriggerOperator** resource.",
+          "Target": "workflowExecutionTriggerOperator"
+        },
+        {
+          "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowTriggerTimeBasedOperator",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflowTriggerTimeBasedOperator** resource.",
+          "Target": "workflowTriggerTimeBasedOperator"
+        }
+      ],
+      "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-02T23:14:26.6914738Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2b8c920e-e91a-4362-82e2-f923a43f96a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "guestSponsorTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the **guestSponsorTrigger** resource.",
+          "Target": "guestSponsorTrigger"
+        },
+        {
+          "Id": "2b8c920e-e91a-4362-82e2-f923a43f96a8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "subjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectType** enumeration type.",
+          "Target": "subjectType"
+        },
+        {
+          "Id": "2b8c920e-e91a-4362-82e2-f923a43f96a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryObjectWorkflowSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the **directoryObjectWorkflowSubject** resource.",
+          "Target": "directoryObjectWorkflowSubject"
+        },
+        {
+          "Id": "2b8c920e-e91a-4362-82e2-f923a43f96a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectSummary** resource.",
+          "Target": "subjectSummary"
+        },
+        {
+          "Id": "2b8c920e-e91a-4362-82e2-f923a43f96a8",
+          "ApiChange": "Property",
+          "ChangedApiName": "subjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectType** property to the **subjectProcessingResult** resource.",
+          "Target": "subjectProcessingResult"
+        },
+        {
+          "Id": "2b8c920e-e91a-4362-82e2-f923a43f96a8",
+          "ApiChange": "Property",
+          "ChangedApiName": "targetSubjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **targetSubjectType** property to the **workflowBase** resource.",
+          "Target": "workflowBase"
+        },
+        {
+          "Id": "2b8c920e-e91a-4362-82e2-f923a43f96a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "summary",
+          "ChangeType": "Addition",
+          "Description": "Added the **summary** method to the **subjectProcessingResult** resource.",
+          "Target": "subjectProcessingResult"
+        }
+      ],
+      "Id": "2b8c920e-e91a-4362-82e2-f923a43f96a8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-25T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customTaskExtensionReplyMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **customTaskExtensionReplyMode** enumeration type.",
+          "Target": "customTaskExtensionReplyMode"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Member",
+          "ChangedApiName": "extensibility",
+          "ChangeType": "Addition",
+          "Description": "Added the `extensibility` member to the **lifecycleTaskCategory** enumeration.",
+          "Target": "lifecycleTaskCategory"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Member",
+          "ChangedApiName": "extensibility",
+          "ChangeType": "Addition",
+          "Description": "Added the `extensibility` member to the **lifecycleWorkflowCategory** enumeration.",
+          "Target": "lifecycleWorkflowCategory"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "subjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectType** enumeration type.",
+          "Target": "subjectType"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Member",
+          "ChangedApiName": "extensibilityOnDemand",
+          "ChangeType": "Addition",
+          "Description": "Added the `extensibilityOnDemand` member to the **workflowExecutionType** enumeration.",
+          "Target": "workflowExecutionType"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeSetEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeSetEntry** resource.",
+          "Target": "attributeSetEntry"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awaitedWorkflowProcessingResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **awaitedWorkflowProcessingResult** resource.",
+          "Target": "awaitedWorkflowProcessingResult"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Property",
+          "ChangedApiName": "targetSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the **targetSubject** property to the **customTaskExtensionCalloutData** resource.",
+          "Target": "customTaskExtensionCalloutData"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customTaskExtensionResponseData",
+          "ChangeType": "Addition",
+          "Description": "Added the **customTaskExtensionResponseData** resource.",
+          "Target": "customTaskExtensionResponseData"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryObjectWorkflowSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the **directoryObjectWorkflowSubject** resource.",
+          "Target": "directoryObjectWorkflowSubject"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provisioningAttributeMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the **provisioningAttributeMapping** resource.",
+          "Target": "provisioningAttributeMapping"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provisioningObjectWorkflowSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the **provisioningObjectWorkflowSubject** resource.",
+          "Target": "provisioningObjectWorkflowSubject"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectSummary** resource.",
+          "Target": "subjectSummary"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflowSubject** resource.",
+          "Target": "workflowSubject"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Property",
+          "ChangedApiName": "replyMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **replyMode** property to the **customTaskExtension** resource.",
+          "Target": "customTaskExtension"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subjectProcessingResults",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectProcessingResults** relationship to the **run** resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectProcessingResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectProcessingResult** resource.",
+          "Target": "subjectProcessingResult"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Property",
+          "ChangedApiName": "workflowSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflowSubject** property to the **taskProcessingResult** resource.",
+          "Target": "taskProcessingResult"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subjectProcessingResults",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectProcessingResults** relationship to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Property",
+          "ChangedApiName": "targetSubjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **targetSubjectType** property to the **workflowBase** resource.",
+          "Target": "workflowBase"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateAndWait",
+          "ChangeType": "Addition",
+          "Description": "Added the **activateAndWait** method to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the **Get** method to the **subjectProcessingResult** resource.",
+          "Target": "subjectProcessingResult"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Addition",
+          "Description": "Added the **List** method to the **subjectProcessingResult** resource.",
+          "Target": "subjectProcessingResult"
+        },
+        {
+          "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+          "ApiChange": "Method",
+          "ChangedApiName": "summary",
+          "ChangeType": "Addition",
+          "Description": "Added the **summary** method to the **subjectProcessingResult** resource.",
+          "Target": "subjectProcessingResult"
+        }
+      ],
+      "Id": "34ecbc2b-0f65-4e25-a242-4cf33a471329",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-25T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Member",
+          "ChangedApiName": "quarantined",
+          "ChangeType": "Addition",
+          "Description": "Added the `quarantined` member to the **lifecycleWorkflowProcessingStatus** enumeration.",
+          "Target": "lifecycleWorkflowProcessingStatus"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "matchMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **matchMode** enumeration type.",
+          "Target": "matchMode"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "quarantineType",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineType** enumeration type.",
+          "Target": "quarantineType"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "countBasedQuarantineCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the **countBasedQuarantineCondition** resource.",
+          "Target": "countBasedQuarantineCondition"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "percentageBasedQuarantineCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the **percentageBasedQuarantineCondition** resource.",
+          "Target": "percentageBasedQuarantineCondition"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "quarantineCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineCondition** resource.",
+          "Target": "quarantineCondition"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "quarantineConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineConfiguration** resource.",
+          "Target": "quarantineConfiguration"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "quarantineDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineDetails** resource.",
+          "Target": "quarantineDetails"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflowSetting** resource.",
+          "Target": "workflowSetting"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "quarantineConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineConfiguration** property to the **lifecycleManagementSettings** resource.",
+          "Target": "lifecycleManagementSettings"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "quarantineDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineDetails** property to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** property to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** property to the **workflowVersion** resource.",
+          "Target": "workflowVersion"
+        },
+        {
+          "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearQuarantine",
+          "ChangeType": "Addition",
+          "Description": "Added the **clearQuarantine** method to the **workflow** resource.",
+          "Target": "workflow"
+        }
+      ],
+      "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-07-01T17:56:29.5003011Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Member",
+          "ChangedApiName": "quarantined",
+          "ChangeType": "Addition",
+          "Description": "Added the `quarantined` member to the **lifecycleWorkflowProcessingStatus** enumeration.",
+          "Target": "lifecycleWorkflowProcessingStatus"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "matchMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **matchMode** enumeration type.",
+          "Target": "matchMode"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "quarantineType",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineType** enumeration type.",
+          "Target": "quarantineType"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "countBasedQuarantineCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the **countBasedQuarantineCondition** resource.",
+          "Target": "countBasedQuarantineCondition"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "percentageBasedQuarantineCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the **percentageBasedQuarantineCondition** resource.",
+          "Target": "percentageBasedQuarantineCondition"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "quarantineCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineCondition** resource.",
+          "Target": "quarantineCondition"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "quarantineConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineConfiguration** resource.",
+          "Target": "quarantineConfiguration"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "quarantineDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineDetails** resource.",
+          "Target": "quarantineDetails"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflowSetting** resource.",
+          "Target": "workflowSetting"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Property",
+          "ChangedApiName": "quarantineConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineConfiguration** property to the **lifecycleManagementSettings** resource.",
+          "Target": "lifecycleManagementSettings"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Property",
+          "ChangedApiName": "quarantineDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineDetails** property to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** property to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Property",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** property to the **workflowVersion** resource.",
+          "Target": "workflowVersion"
+        },
+        {
+          "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearQuarantine",
+          "ChangeType": "Addition",
+          "Description": "Added the **clearQuarantine** method to the **workflow** resource.",
+          "Target": "workflow"
+        }
+      ],
+      "Id": "c116697b-c614-47bc-89bc-8791dd1d8de3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-01T17:56:29.5003011Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db374ade-275a-44d8-a947-5734820fbade",
+          "ApiChange": "Resource",
+          "ChangedApiName": "previewFailedTask",
+          "ChangeType": "Addition",
+          "Description": "Added the **previewFailedTask** resource type.",
+          "Target": "previewFailedTask"
+        },
+        {
+          "Id": "db374ade-275a-44d8-a947-5734820fbade",
+          "ApiChange": "Method",
+          "ChangedApiName": "previewTaskFailures",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflow: previewTaskFailures** method to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "db374ade-275a-44d8-a947-5734820fbade",
+          "ApiChange": "Method",
+          "ChangedApiName": "previewWorkflow",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflow: previewWorkflow** method to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "db374ade-275a-44d8-a947-5734820fbade",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "previewScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **previewScope** relationship to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "db374ade-275a-44d8-a947-5734820fbade",
+          "ApiChange": "Member",
+          "ChangedApiName": "preview",
+          "ChangeType": "Addition",
+          "Description": "Added the `preview` member to the **workflowExecutionType** enumeration.",
+          "Target": "workflowExecutionType"
+        }
+      ],
+      "Id": "db374ade-275a-44d8-a947-5734820fbade",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-26T00:38:50.4327137Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customTaskExtensionReplyMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **customTaskExtensionReplyMode** enumeration type.",
+          "Target": "customTaskExtensionReplyMode"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Member",
+          "ChangedApiName": "extensibility",
+          "ChangeType": "Addition",
+          "Description": "Added the `extensibility` member to the **lifecycleTaskCategory** enumeration.",
+          "Target": "lifecycleTaskCategory"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Member",
+          "ChangedApiName": "extensibility",
+          "ChangeType": "Addition",
+          "Description": "Added the `extensibility` member to the **lifecycleWorkflowCategory** enumeration.",
+          "Target": "lifecycleWorkflowCategory"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Member",
+          "ChangedApiName": "provisioningObject",
+          "ChangeType": "Addition",
+          "Description": "Added the `provisioningObject` member to the **subjectType** enumeration.",
+          "Target": "subjectType"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Member",
+          "ChangedApiName": "extensibilityOnDemand",
+          "ChangeType": "Addition",
+          "Description": "Added the `extensibilityOnDemand` member to the **workflowExecutionType** enumeration.",
+          "Target": "workflowExecutionType"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeSetEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeSetEntry** resource.",
+          "Target": "attributeSetEntry"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awaitedWorkflowProcessingResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **awaitedWorkflowProcessingResult** resource.",
+          "Target": "awaitedWorkflowProcessingResult"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Property",
+          "ChangedApiName": "targetSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the **targetSubject** property to the **customTaskExtensionCalloutData** resource.",
+          "Target": "customTaskExtensionCalloutData"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customTaskExtensionResponseData",
+          "ChangeType": "Addition",
+          "Description": "Added the **customTaskExtensionResponseData** resource.",
+          "Target": "customTaskExtensionResponseData"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provisioningAttributeMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the **provisioningAttributeMapping** resource.",
+          "Target": "provisioningAttributeMapping"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provisioningObjectWorkflowSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the **provisioningObjectWorkflowSubject** resource.",
+          "Target": "provisioningObjectWorkflowSubject"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflowSubject** resource.",
+          "Target": "workflowSubject"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Property",
+          "ChangedApiName": "replyMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **replyMode** property to the **customTaskExtension** resource.",
+          "Target": "customTaskExtension"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subjectProcessingResults",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectProcessingResults** relationship to the **run** resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectProcessingResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectProcessingResult** resource.",
+          "Target": "subjectProcessingResult"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "subjectProcessingResults",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectProcessingResults** relationship to the **taskReport** resource.",
+          "Target": "taskReport"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Property",
+          "ChangedApiName": "workflowSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the **workflowSubject** property to the **taskProcessingResult** resource.",
+          "Target": "taskProcessingResult"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateAndWait",
+          "ChangeType": "Addition",
+          "Description": "Added the **activateAndWait** method to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Method",
+          "ChangedApiName": "List subjectProcessingResults",
+          "ChangeType": "Addition",
+          "Description": "Added the **List subjectProcessingResults** method to the **run** resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Method",
+          "ChangedApiName": "List subjectProcessingResults",
+          "ChangeType": "Addition",
+          "Description": "Added the **List subjectProcessingResults** method to the **taskReport** resource.",
+          "Target": "taskReport"
+        },
+        {
+          "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get subjectProcessingResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **Get subjectProcessingResult** method to the **subjectProcessingResult** resource.",
+          "Target": "subjectProcessingResult"
+        }
+      ],
+      "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-16T15:59:39.6415965Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "14e09aad-a686-4b3d-88ab-a1076e2d052b",
+          "ApiChange": "Property",
+          "ChangedApiName": "processingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **processingInfo** property to the **taskProcessingResult** resource.",
+          "Target": "taskProcessingResult"
+        }
+      ],
+      "Id": "14e09aad-a686-4b3d-88ab-a1076e2d052b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-06T17:17:32.7978124Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "19398a2e-7e68-4d1b-b786-a0b73775007d",
+          "ApiChange": "Property",
+          "ChangedApiName": "processingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **processingInfo** property to the **taskProcessingResult** resource.",
+          "Target": "taskProcessingResult"
+        }
+      ],
+      "Id": "19398a2e-7e68-4d1b-b786-a0b73775007d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-06T17:17:32.7986703Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Member",
+          "ChangedApiName": "canceling",
+          "ChangeType": "Addition",
+          "Description": "Added the `canceling` member to the **lifecycleWorkflowProcessingStatus** enumeration.",
+          "Target": "lifecycleWorkflowProcessingStatus"
+        },
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancelProcessing",
+          "ChangeType": "Addition",
+          "Description": "Added the **cancelProcessing** method to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cancelScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **cancelScope** complex type.",
+          "Target": "cancelScope"
+        },
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cancelRunsScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **cancelRunsScope** complex type.",
+          "Target": "cancelRunsScope"
+        }
+      ],
+      "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-30T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Member",
+          "ChangedApiName": "canceling",
+          "ChangeType": "Addition",
+          "Description": "Added the `canceling` member to the **lifecycleWorkflowProcessingStatus** enumeration.",
+          "Target": "lifecycleWorkflowProcessingStatus"
+        },
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancelProcessing",
+          "ChangeType": "Addition",
+          "Description": "Added the **cancelProcessing** method to the **workflow** resource.",
+          "Target": "workflow"
+        }
+      ],
+      "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-21T20:07:39.0883626Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6602f266-8d62-4913-a8b3-40d5862e3ef2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "previewScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **previewScope** relationship to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "6602f266-8d62-4913-a8b3-40d5862e3ef2",
+          "ApiChange": "Method",
+          "ChangedApiName": "previewTaskFailures",
+          "ChangeType": "Addition",
+          "Description": "Added the **previewTaskFailures** method to the **workflow** resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "6602f266-8d62-4913-a8b3-40d5862e3ef2",
+          "ApiChange": "Method",
+          "ChangedApiName": "previewWorkflow",
+          "ChangeType": "Addition",
+          "Description": "Added the **previewWorkflow** method to the **workflow** resource.",
+          "Target": "workflow"
+        }
+      ],
+      "Id": "6602f266-8d62-4913-a8b3-40d5862e3ef2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-24T20:29:37.6698166Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2452248e-8074-411b-be6a-516c9cf679dc",
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Change",
-          "Description": "Updated the [Create](https://learn.microsoft.com/en-us/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta) operation for the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta) resource to now support the creation of up to 100 workflows, an increase from the previous limit of 50.",
+          "Description": "Updated the **Create** operation for the **workflow** resource to now support the creation of up to 100 workflows, an increase from the previous limit of 50.",
           "Target": "workflow"
         }
       ],
@@ -25,7 +1437,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Change",
-          "Description": "Updated the [Create](https://learn.microsoft.com/en-us/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-1.0) operation for the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) resource to now support the creation of up to 100 workflows, an increase from the previous limit of 50.",
+          "Description": "Updated the **Create** operation for the **workflow** resource to now support the creation of up to 100 workflows, an increase from the previous limit of 50.",
           "Target": "workflow"
         }
       ],
@@ -43,7 +1455,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userInactivityTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [userInactivityTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userInactivityTrigger?view=graph-rest-beta) resource.",
+          "Description": "Added the **userInactivityTrigger** resource.",
           "Target": "userInactivityTrigger"
         }
       ],
@@ -61,7 +1473,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
           "ChangeType": "Addition",
-          "Description": "Added the **Update** operation to the [task](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-task?view=graph-rest-beta) resource.",
+          "Description": "Added the **Update** operation to the **task** resource.",
           "Target": "task"
         }
       ],
@@ -79,7 +1491,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the **List** operation to [retrieve users that are in scope of execution conditions of a workflow](https://learn.microsoft.com/en-us/graph/api/workflow-list-executionscope?view=graph-rest-beta) in Lifecycle Workflows.",
+          "Description": "Added the **List** operation to **retrieve users that are in scope of execution conditions of a workflow** in Lifecycle Workflows.",
           "Target": "workflow"
         }
       ],
@@ -97,14 +1509,14 @@
           "ApiChange": "Permission",
           "ChangedApiName": "LifecycleWorkflows.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the **LifecycleWorkflows.ReadWrite.All** delegated and application permissions to the read and write operations of the [taskProcessingResult: resume](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta) API call.",
+          "Description": "Added support for the **LifecycleWorkflows.ReadWrite.All** delegated and application permissions to the read and write operations of the **taskProcessingResult: resume** API call.",
           "Target": "taskProcessingResult"
         }
       ],
       "Id": "2a266136-d0ba-48a7-a979-38439d2173a8",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-04-05T00:00:00.0000000Z",
+      "CreatedDateTime": "2023-04-05T00:00:00Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
@@ -115,7 +1527,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "insights",
           "ChangeType": "Addition",
-          "Description": "Added the **insights** relationship to the [lifecycleWorkflowsContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleWorkflowsContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **insights** relationship to the **lifecycleWorkflowsContainer** resource.",
           "Target": "lifecycleWorkflowsContainer"
         },
         {
@@ -123,7 +1535,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "insights",
           "ChangeType": "Addition",
-          "Description": "Added the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-beta) resource and its associated methods. Insights provide aggregate data about the health and processing of lifecycle workflows in a tenant. They include the number of total, successful, and failed workflow executions, tasks processed, and users processed across all workflows for the tenant for a given period.",
+          "Description": "Added the **insights** resource and its associated methods. Insights provide aggregate data about the health and processing of lifecycle workflows in a tenant. They include the number of total, successful, and failed workflow executions, tasks processed, and users processed across all workflows for the tenant for a given period.",
           "Target": "insights"
         },
         {
@@ -131,7 +1543,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "topTasksInsightsSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [topTasksInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topTasksInsightsSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the **topTasksInsightsSummary** resource.",
           "Target": "topTasksInsightsSummary"
         },
         {
@@ -139,7 +1551,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "topWorkflowsInsightsSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [topWorkflowsInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topWorkflowsInsightsSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the **topWorkflowsInsightsSummary** resource.",
           "Target": "topWorkflowsInsightsSummary"
         },
         {
@@ -147,7 +1559,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowsInsightsByCategory",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowsInsightsByCategory](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsInsightsByCategory?view=graph-rest-beta) resource.",
+          "Description": "Added the **workflowsInsightsByCategory** resource.",
           "Target": "workflowsInsightsByCategory"
         },
         {
@@ -155,7 +1567,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowsInsightsSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowsInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsInsightsSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the **workflowsInsightsSummary** resource.",
           "Target": "workflowsInsightsSummary"
         },
         {
@@ -163,7 +1575,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "topTasksProcessedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [topTasksProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identitygovernance-insights-toptasksprocessedsummary?view=graph-rest-beta) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-beta) resource.",
+          "Description": "Added the **topTasksProcessedSummary** method to the **insights** resource.",
           "Target": "topTasksProcessedSummary"
         },
         {
@@ -171,7 +1583,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "topWorkflowsProcessedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [topWorkflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identitygovernance-insights-topworkflowsprocessedsummary?view=graph-rest-beta) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-beta) resource.",
+          "Description": "Added the **topWorkflowsProcessedSummary** method to the **insights** resource.",
           "Target": "topWorkflowsProcessedSummary"
         },
         {
@@ -179,7 +1591,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "workflowsProcessedByCategory",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowsProcessedByCategory](https://learn.microsoft.com/en-us/graph/api/identitygovernance-insights-workflowsprocessedbycategory?view=graph-rest-beta) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-beta) resource.",
+          "Description": "Added the **workflowsProcessedByCategory** method to the **insights** resource.",
           "Target": "workflowsProcessedByCategory"
         },
         {
@@ -187,7 +1599,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "workflowsProcessedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identitygovernance-insights-workflowsprocessedsummary?view=graph-rest-beta) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-beta) resource.",
+          "Description": "Added the **workflowsProcessedSummary** method to the **insights** resource.",
           "Target": "workflowsProcessedSummary"
         }
       ],
@@ -205,7 +1617,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "lifecycleWorkflows",
           "ChangeType": "Addition",
-          "Description": "Added the **lifecycleWorkflows** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-beta) resource.",
+          "Description": "Added the **lifecycleWorkflows** relationship to the **identityGovernance** resource.",
           "Target": "identityGovernance"
         },
         {
@@ -213,7 +1625,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "lifecycleWorkflowsContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [lifecycleWorkflowsContainer](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleWorkflowsContainer?view=graph-rest-beta) resource. This resource is the entry point for Azure AD Lifecycle Workflows capabilities that are available through Microsoft Graph.",
+          "Description": "Added the **lifecycleWorkflowsContainer** resource. This resource is the entry point for Azure AD Lifecycle Workflows capabilities that are available through Microsoft Graph.",
           "Target": "lifecycleWorkflowsContainer"
         },
         {
@@ -221,7 +1633,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowTemplate](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowTemplate?view=graph-rest-beta) resource and its associated methods.",
+          "Description": "Added the **workflowTemplate** resource and its associated methods.",
           "Target": "workflowTemplate"
         },
         {
@@ -229,7 +1641,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflow",
           "ChangeType": "Addition",
-          "Description": "Added the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta) resource and its associated methods. Represents a lifecycle workflow object.",
+          "Description": "Added the **workflow** resource and its associated methods. Represents a lifecycle workflow object.",
           "Target": "workflow"
         },
         {
@@ -237,7 +1649,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "task",
           "ChangeType": "Addition",
-          "Description": "Added the [task](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-task?view=graph-rest-beta) resource and its associated methods. Represents the tasks in a lifecycle workflow.",
+          "Description": "Added the **task** resource and its associated methods. Represents the tasks in a lifecycle workflow.",
           "Target": "task"
         },
         {
@@ -245,7 +1657,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [taskDefinition](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-taskDefinition?view=graph-rest-beta) resource and its associated methods. Represents the pre-defined tasks for different categories of lifecycle workflows.",
+          "Description": "Added the **taskDefinition** resource and its associated methods. Represents the pre-defined tasks for different categories of lifecycle workflows.",
           "Target": "taskDefinition"
         },
         {
@@ -253,7 +1665,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customTaskExtension",
           "ChangeType": "Addition",
-          "Description": "Added the [customTaskExtension](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-customTaskExtension?view=graph-rest-beta) resource and its associated methods. Represents extensibility capabilities that allows you to integrate lifecycle workflows with Azure Logic Apps.",
+          "Description": "Added the **customTaskExtension** resource and its associated methods. Represents extensibility capabilities that allows you to integrate lifecycle workflows with Azure Logic Apps.",
           "Target": "customTaskExtension"
         },
         {
@@ -261,7 +1673,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "lifecycleManagementSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [lifecycleManagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleManagementSettings?view=graph-rest-beta) resource and its associated methods. Represents the tenant-wide settings for Azure AD Lifecycle Workflows.",
+          "Description": "Added the **lifecycleManagementSettings** resource and its associated methods. Represents the tenant-wide settings for Azure AD Lifecycle Workflows.",
           "Target": "lifecycleManagementSettings"
         },
         {
@@ -269,7 +1681,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deletedItemContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [deletedItemContainer](https://learn.microsoft.com/en-us/graph/api/resources/deletedItemContainer?view=graph-rest-beta) resource and its associated methods. Use this container to manage deleted lifecycle workflows.",
+          "Description": "Added the **deletedItemContainer** resource and its associated methods. Use this container to manage deleted lifecycle workflows.",
           "Target": "deletedItemContainer"
         },
         {
@@ -277,7 +1689,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowVersion](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowVersion?view=graph-rest-beta) resource and its associated methods.",
+          "Description": "Added the **workflowVersion** resource and its associated methods.",
           "Target": "workflowVersion"
         },
         {
@@ -285,7 +1697,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "run",
           "ChangeType": "Addition",
-          "Description": "Added the [run](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-run?view=graph-rest-beta) resource and its associated methods.",
+          "Description": "Added the **run** resource and its associated methods.",
           "Target": "run"
         },
         {
@@ -293,7 +1705,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskProcessingResult",
           "ChangeType": "Addition",
-          "Description": "Added the [taskProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-taskProcessingResult?view=graph-rest-beta) resource and its associated methods.",
+          "Description": "Added the **taskProcessingResult** resource and its associated methods.",
           "Target": "taskProcessingResult"
         },
         {
@@ -301,7 +1713,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskReport",
           "ChangeType": "Addition",
-          "Description": "Added the [taskReport](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-taskReport?view=graph-rest-beta) resource and its associated methods.",
+          "Description": "Added the **taskReport** resource and its associated methods.",
           "Target": "taskReport"
         },
         {
@@ -309,7 +1721,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userProcessingResult",
           "ChangeType": "Addition",
-          "Description": "Added the [userProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-userProcessingResult?view=graph-rest-beta) resource and its associated methods.",
+          "Description": "Added the **userProcessingResult** resource and its associated methods.",
           "Target": "userProcessingResult"
         },
         {
@@ -373,7 +1785,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customTaskExtensionCallbackConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [customTaskExtensionCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-customTaskExtensionCallbackConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the **customTaskExtensionCallbackConfiguration** resource.",
           "Target": "customTaskExtensionCallbackConfiguration"
         },
         {
@@ -381,7 +1793,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customTaskExtensionCallbackData",
           "ChangeType": "Addition",
-          "Description": "Added the [customTaskExtensionCallbackData](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-customTaskExtensionCallbackData?view=graph-rest-beta) resource.",
+          "Description": "Added the **customTaskExtensionCallbackData** resource.",
           "Target": "customTaskExtensionCallbackData"
         },
         {
@@ -389,7 +1801,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customTaskExtensionCalloutData",
           "ChangeType": "Addition",
-          "Description": "Added the [customTaskExtensionCalloutData](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-customTaskExtensionCalloutData?view=graph-rest-beta) resource.",
+          "Description": "Added the **customTaskExtensionCalloutData** resource.",
           "Target": "customTaskExtensionCalloutData"
         },
         {
@@ -397,7 +1809,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onDemandExecutionOnly",
           "ChangeType": "Addition",
-          "Description": "Added the [onDemandExecutionOnly](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-onDemandExecutionOnly?view=graph-rest-beta) resource.",
+          "Description": "Added the **onDemandExecutionOnly** resource.",
           "Target": "onDemandExecutionOnly"
         },
         {
@@ -405,7 +1817,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "parameter",
           "ChangeType": "Addition",
-          "Description": "Added the [parameter](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-parameter?view=graph-rest-beta) resource.",
+          "Description": "Added the **parameter** resource.",
           "Target": "parameter"
         },
         {
@@ -413,7 +1825,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ruleBasedSubjectSet",
           "ChangeType": "Addition",
-          "Description": "Added the [ruleBasedSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-ruleBasedSubjectSet?view=graph-rest-beta) resource.",
+          "Description": "Added the **ruleBasedSubjectSet** resource.",
           "Target": "ruleBasedSubjectSet"
         },
         {
@@ -421,7 +1833,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "runSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [runSummary](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-runSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the **runSummary** resource.",
           "Target": "runSummary"
         },
         {
@@ -429,7 +1841,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskReportSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [taskReportSummary](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-taskReportSummary?view=graph-rest-beta) resource type.",
+          "Description": "Added the **taskReportSummary** resource type.",
           "Target": "taskReportSummary"
         },
         {
@@ -437,7 +1849,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "timeBasedAttributeTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [timeBasedAttributeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-timeBasedAttributeTrigger?view=graph-rest-beta) resource.",
+          "Description": "Added the **timeBasedAttributeTrigger** resource.",
           "Target": "timeBasedAttributeTrigger"
         },
         {
@@ -445,7 +1857,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "triggerAndScopeBasedConditions",
           "ChangeType": "Addition",
-          "Description": "Added the [triggerAndScopeBasedConditions](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-triggerAndScopeBasedConditions?view=graph-rest-beta) resource.",
+          "Description": "Added the **triggerAndScopeBasedConditions** resource.",
           "Target": "triggerAndScopeBasedConditions"
         },
         {
@@ -453,7 +1865,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [userSummary](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-userSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the **userSummary** resource.",
           "Target": "userSummary"
         },
         {
@@ -461,7 +1873,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowExecutionConditions",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowExecutionConditions](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowExecutionConditions?view=graph-rest-beta) resource.",
+          "Description": "Added the **workflowExecutionConditions** resource.",
           "Target": "workflowExecutionConditions"
         },
         {
@@ -469,7 +1881,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowExecutionTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowExecutionTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowExecutionTrigger?view=graph-rest-beta) resource.",
+          "Description": "Added the **workflowExecutionTrigger** resource.",
           "Target": "workflowExecutionTrigger"
         },
         {
@@ -477,7 +1889,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowBase",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowBase?view=graph-rest-beta) resource.",
+          "Description": "Added the **workflowBase** resource.",
           "Target": "workflowBase"
         },
         {
@@ -485,7 +1897,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "LifecycleWorkflows.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `LifecycleWorkflows.Read.All` delegated and application permissions to the read operations of [Azure AD lifecycle workflows](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta).",
+          "Description": "Added support for the `LifecycleWorkflows.Read.All` delegated and application permissions to the read operations of **Azure AD lifecycle workflows**.",
           "Target": "lifecycleWorkflowsContainer"
         },
         {
@@ -493,7 +1905,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "LifecycleWorkflows.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `LifecycleWorkflows.ReadWrite.All` delegated and application permissions to the read and write operations of [Azure AD lifecycle workflows](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta).",
+          "Description": "Added support for the `LifecycleWorkflows.ReadWrite.All` delegated and application permissions to the read and write operations of **Azure AD lifecycle workflows**.",
           "Target": "lifecycleWorkflowsContainer"
         }
       ],
@@ -563,7 +1975,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "group",
           "ChangeType": "Addition",
-          "Description": "Added the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Description": "Added the **group** resource.",
           "Target": "group"
         }
       ],
@@ -589,7 +2001,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attributeChangeTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [attributeChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-attributeChangeTrigger?view=graph-rest-1.0) resource.",
+          "Description": "Added the **attributeChangeTrigger** resource.",
           "Target": "attributeChangeTrigger"
         },
         {
@@ -597,7 +2009,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "groupBasedSubjectSet",
           "ChangeType": "Addition",
-          "Description": "Added the [groupBasedSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-groupBasedSubjectSet?view=graph-rest-1.0) resource.",
+          "Description": "Added the **groupBasedSubjectSet** resource.",
           "Target": "groupBasedSubjectSet"
         },
         {
@@ -605,7 +2017,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "membershipChangeTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [membershipChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-membershipChangeTrigger?view=graph-rest-1.0) resource.",
+          "Description": "Added the **membershipChangeTrigger** resource.",
           "Target": "membershipChangeTrigger"
         },
         {
@@ -613,7 +2025,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "topTasksInsightsSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [topTasksInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topTasksInsightsSummary?view=graph-rest-1.0) resource.",
+          "Description": "Added the **topTasksInsightsSummary** resource.",
           "Target": "topTasksInsightsSummary"
         },
         {
@@ -621,7 +2033,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "topWorkflowsInsightsSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [topWorkflowsInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-topWorkflowsInsightsSummary?view=graph-rest-1.0) resource.",
+          "Description": "Added the **topWorkflowsInsightsSummary** resource.",
           "Target": "topWorkflowsInsightsSummary"
         },
         {
@@ -629,7 +2041,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "triggerAttribute",
           "ChangeType": "Addition",
-          "Description": "Added the [triggerAttribute](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-triggerAttribute?view=graph-rest-1.0) resource.",
+          "Description": "Added the **triggerAttribute** resource.",
           "Target": "triggerAttribute"
         },
         {
@@ -637,7 +2049,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowsInsightsByCategory",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowsInsightsByCategory](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsInsightsByCategory?view=graph-rest-1.0) resource.",
+          "Description": "Added the **workflowsInsightsByCategory** resource.",
           "Target": "workflowsInsightsByCategory"
         },
         {
@@ -645,7 +2057,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowsInsightsSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowsInsightsSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowsInsightsSummary?view=graph-rest-1.0) resource.",
+          "Description": "Added the **workflowsInsightsSummary** resource.",
           "Target": "workflowsInsightsSummary"
         },
         {
@@ -653,7 +2065,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "insights",
           "ChangeType": "Addition",
-          "Description": "Added the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-1.0) resource.",
+          "Description": "Added the **insights** resource.",
           "Target": "insights"
         },
         {
@@ -661,7 +2073,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "insights",
           "ChangeType": "Addition",
-          "Description": "Added the **insights** relationship to the [lifecycleWorkflowsContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleWorkflowsContainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the **insights** relationship to the **lifecycleWorkflowsContainer** resource.",
           "Target": "lifecycleWorkflowsContainer"
         },
         {
@@ -669,7 +2081,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "topTasksProcessedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [topTasksProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identityGovernance-insights-topTasksProcessedSummary?view=graph-rest-1.0) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-1.0) resource.",
+          "Description": "Added the **topTasksProcessedSummary** method to the **insights** resource.",
           "Target": "insights"
         },
         {
@@ -677,7 +2089,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "topWorkflowsProcessedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [topWorkflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identityGovernance-insights-topWorkflowsProcessedSummary?view=graph-rest-1.0) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-1.0) resource.",
+          "Description": "Added the **topWorkflowsProcessedSummary** method to the **insights** resource.",
           "Target": "insights"
         },
         {
@@ -685,7 +2097,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "workflowsProcessedByCategory",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowsProcessedByCategory](https://learn.microsoft.com/en-us/graph/api/identityGovernance-insights-workflowsProcessedByCategory?view=graph-rest-1.0) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-1.0) resource.",
+          "Description": "Added the **workflowsProcessedByCategory** method to the **insights** resource.",
           "Target": "insights"
         },
         {
@@ -693,7 +2105,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "workflowsProcessedSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowsProcessedSummary](https://learn.microsoft.com/en-us/graph/api/identityGovernance-insights-workflowsProcessedSummary?view=graph-rest-1.0) method to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-insights?view=graph-rest-1.0) resource.",
+          "Description": "Added the **workflowsProcessedSummary** method to the **insights** resource.",
           "Target": "insights"
         }
       ],
@@ -719,7 +2131,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attributeChangeTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [attributeChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-attributeChangeTrigger?view=graph-rest-beta) resource.",
+          "Description": "Added the **attributeChangeTrigger** resource.",
           "Target": "attributeChangeTrigger"
         },
         {
@@ -727,7 +2139,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "groupBasedSubjectSet",
           "ChangeType": "Addition",
-          "Description": "Added the [groupBasedSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-groupBasedSubjectSet?view=graph-rest-beta) resource.",
+          "Description": "Added the **groupBasedSubjectSet** resource.",
           "Target": "groupBasedSubjectSet"
         },
         {
@@ -735,7 +2147,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "membershipChangeTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [membershipChangeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-membershipChangeTrigger?view=graph-rest-beta) resource.",
+          "Description": "Added the **membershipChangeTrigger** resource.",
           "Target": "membershipChangeTrigger"
         },
         {
@@ -743,7 +2155,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "triggerAttribute",
           "ChangeType": "Addition",
-          "Description": "Added the [triggerAttribute](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-triggerAttribute?view=graph-rest-beta) resource.",
+          "Description": "Added the **triggerAttribute** resource.",
           "Target": "triggerAttribute"
         }
       ],
@@ -761,7 +2173,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureAdPopTokenAuthentication",
           "ChangeType": "Addition",
-          "Description": "Added the [azureAdPopTokenAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/azureAdPopTokenAuthentication?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **azureAdPopTokenAuthentication** resource type.",
           "Target": "azureAdPopTokenAuthentication"
         },
         {
@@ -769,7 +2181,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionAuthenticationConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionAuthenticationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionAuthenticationConfiguration?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **customExtensionAuthenticationConfiguration** resource type.",
           "Target": "customExtensionAuthenticationConfiguration"
         },
         {
@@ -777,7 +2189,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionCallbackConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCallbackConfiguration?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **customExtensionCallbackConfiguration** resource type.",
           "Target": "customExtensionCallbackConfiguration"
         },
         {
@@ -785,7 +2197,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionCalloutRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionCalloutRequest](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCalloutRequest?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **customExtensionCalloutRequest** resource type.",
           "Target": "customExtensionCalloutRequest"
         },
         {
@@ -793,7 +2205,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionCalloutResponse",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionCalloutResponse](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionCalloutResponse?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **customExtensionCalloutResponse** resource type.",
           "Target": "customExtensionCalloutResponse"
         },
         {
@@ -801,7 +2213,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionClientConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionClientConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **customExtensionClientConfiguration** resource type.",
           "Target": "customExtensionClientConfiguration"
         },
         {
@@ -809,7 +2221,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionData",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionData](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionData?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **customExtensionData** resource type.",
           "Target": "customExtensionData"
         },
         {
@@ -817,7 +2229,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionEndpointConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionEndpointConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionEndpointConfiguration?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **customExtensionEndpointConfiguration** resource type.",
           "Target": "customExtensionEndpointConfiguration"
         },
         {
@@ -825,7 +2237,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emailSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [emailSettings](https://learn.microsoft.com/en-us/graph/api/resources/emailSettings?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **emailSettings** resource type.",
           "Target": "emailSettings"
         },
         {
@@ -833,7 +2245,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "logicAppTriggerEndpointConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [logicAppTriggerEndpointConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/logicAppTriggerEndpointConfiguration?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **logicAppTriggerEndpointConfiguration** resource type.",
           "Target": "logicAppTriggerEndpointConfiguration"
         },
         {
@@ -841,7 +2253,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customCalloutExtension",
           "ChangeType": "Addition",
-          "Description": "Added the [customCalloutExtension](https://learn.microsoft.com/en-us/graph/api/resources/customCalloutExtension?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customCalloutExtension** resource.",
           "Target": "customCalloutExtension"
         },
         {
@@ -849,7 +2261,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deletedItemContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [deletedItemContainer](https://learn.microsoft.com/en-us/graph/api/resources/deletedItemContainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the **deletedItemContainer** resource.",
           "Target": "deletedItemContainer"
         },
         {
@@ -913,7 +2325,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customTaskExtensionCallbackConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [customTaskExtensionCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-customTaskExtensionCallbackConfiguration?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **customTaskExtensionCallbackConfiguration** resource type.",
           "Target": "customTaskExtensionCallbackConfiguration"
         },
         {
@@ -921,7 +2333,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customTaskExtensionCallbackData",
           "ChangeType": "Addition",
-          "Description": "Added the [customTaskExtensionCallbackData](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-customTaskExtensionCallbackData?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **customTaskExtensionCallbackData** resource type.",
           "Target": "customTaskExtensionCallbackData"
         },
         {
@@ -929,7 +2341,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customTaskExtensionCalloutData",
           "ChangeType": "Addition",
-          "Description": "Added the [customTaskExtensionCalloutData](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-customTaskExtensionCalloutData?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **customTaskExtensionCalloutData** resource type.",
           "Target": "customTaskExtensionCalloutData"
         },
         {
@@ -937,7 +2349,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onDemandExecutionOnly",
           "ChangeType": "Addition",
-          "Description": "Added the [onDemandExecutionOnly](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-onDemandExecutionOnly?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **onDemandExecutionOnly** resource type.",
           "Target": "onDemandExecutionOnly"
         },
         {
@@ -945,7 +2357,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "parameter",
           "ChangeType": "Addition",
-          "Description": "Added the [parameter](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-parameter?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **parameter** resource type.",
           "Target": "parameter"
         },
         {
@@ -953,7 +2365,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "ruleBasedSubjectSet",
           "ChangeType": "Addition",
-          "Description": "Added the [ruleBasedSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-ruleBasedSubjectSet?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **ruleBasedSubjectSet** resource type.",
           "Target": "ruleBasedSubjectSet"
         },
         {
@@ -961,7 +2373,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "runSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [runSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-runSummary?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **runSummary** resource type.",
           "Target": "runSummary"
         },
         {
@@ -969,7 +2381,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskReportSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [taskReportSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-taskReportSummary?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **taskReportSummary** resource type.",
           "Target": "taskReportSummary"
         },
         {
@@ -977,7 +2389,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "timeBasedAttributeTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [timeBasedAttributeTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-timeBasedAttributeTrigger?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **timeBasedAttributeTrigger** resource type.",
           "Target": "timeBasedAttributeTrigger"
         },
         {
@@ -985,7 +2397,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "triggerAndScopeBasedConditions",
           "ChangeType": "Addition",
-          "Description": "Added the [triggerAndScopeBasedConditions](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-triggerAndScopeBasedConditions?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **triggerAndScopeBasedConditions** resource type.",
           "Target": "triggerAndScopeBasedConditions"
         },
         {
@@ -993,7 +2405,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [userSummary](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userSummary?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **userSummary** resource type.",
           "Target": "userSummary"
         },
         {
@@ -1001,7 +2413,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowExecutionConditions",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowExecutionConditions](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowExecutionConditions?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **workflowExecutionConditions** resource type.",
           "Target": "workflowExecutionConditions"
         },
         {
@@ -1009,7 +2421,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowExecutionTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowExecutionTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowExecutionTrigger?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **workflowExecutionTrigger** resource type.",
           "Target": "workflowExecutionTrigger"
         },
         {
@@ -1017,7 +2429,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customTaskExtension",
           "ChangeType": "Addition",
-          "Description": "Added the [customTaskExtension](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-customTaskExtension?view=graph-rest-1.0) resource.",
+          "Description": "Added the **customTaskExtension** resource.",
           "Target": "customTaskExtension"
         },
         {
@@ -1025,7 +2437,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "lifecycleManagementSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [lifecycleManagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleManagementSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the **lifecycleManagementSettings** resource.",
           "Target": "lifecycleManagementSettings"
         },
         {
@@ -1033,7 +2445,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "lifecycleWorkflowsContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [lifecycleWorkflowsContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleWorkflowsContainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the **lifecycleWorkflowsContainer** resource.",
           "Target": "lifecycleWorkflowsContainer"
         },
         {
@@ -1041,7 +2453,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "run",
           "ChangeType": "Addition",
-          "Description": "Added the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-1.0) resource.",
+          "Description": "Added the **run** resource.",
           "Target": "run"
         },
         {
@@ -1049,7 +2461,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "task",
           "ChangeType": "Addition",
-          "Description": "Added the [task](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-task?view=graph-rest-1.0) resource.",
+          "Description": "Added the **task** resource.",
           "Target": "task"
         },
         {
@@ -1057,7 +2469,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [taskDefinition](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-taskDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the **taskDefinition** resource.",
           "Target": "taskDefinition"
         },
         {
@@ -1065,7 +2477,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskProcessingResult",
           "ChangeType": "Addition",
-          "Description": "Added the [taskProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-taskProcessingResult?view=graph-rest-1.0) resource.",
+          "Description": "Added the **taskProcessingResult** resource.",
           "Target": "taskProcessingResult"
         },
         {
@@ -1073,7 +2485,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskReport",
           "ChangeType": "Addition",
-          "Description": "Added the [taskReport](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-taskReport?view=graph-rest-1.0) resource.",
+          "Description": "Added the **taskReport** resource.",
           "Target": "taskReport"
         },
         {
@@ -1081,7 +2493,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userProcessingResult",
           "ChangeType": "Addition",
-          "Description": "Added the [userProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userProcessingResult?view=graph-rest-1.0) resource.",
+          "Description": "Added the **userProcessingResult** resource.",
           "Target": "userProcessingResult"
         },
         {
@@ -1089,7 +2501,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflow",
           "ChangeType": "Addition",
-          "Description": "Added the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-1.0) resource.",
+          "Description": "Added the **workflow** resource.",
           "Target": "workflow"
         },
         {
@@ -1097,7 +2509,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowBase",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowBase?view=graph-rest-1.0) resource.",
+          "Description": "Added the **workflowBase** resource.",
           "Target": "workflowBase"
         },
         {
@@ -1105,7 +2517,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowTemplate](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowTemplate?view=graph-rest-1.0) resource.",
+          "Description": "Added the **workflowTemplate** resource.",
           "Target": "workflowTemplate"
         },
         {
@@ -1113,7 +2525,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workflowVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [workflowVersion](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowVersion?view=graph-rest-1.0) resource.",
+          "Description": "Added the **workflowVersion** resource.",
           "Target": "workflowVersion"
         },
         {
@@ -1121,7 +2533,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "activate",
           "ChangeType": "Addition",
-          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/identitygovernance-workflow-activate?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activate** method to the **workflow** resource.",
           "Target": "workflow"
         },
         {
@@ -1129,7 +2541,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "createNewVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [createNewVersion](https://learn.microsoft.com/en-us/graph/api/identitygovernance-workflow-createnewversion?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) resource.",
+          "Description": "Added the **createNewVersion** method to the **workflow** resource.",
           "Target": "workflow"
         },
         {
@@ -1137,7 +2549,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "restore",
           "ChangeType": "Addition",
-          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/identitygovernance-workflow-restore?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) resource.",
+          "Description": "Added the **restore** method to the **workflow** resource.",
           "Target": "workflow"
         },
         {
@@ -1145,7 +2557,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "resume",
           "ChangeType": "Addition",
-          "Description": "Added the [resume](https://learn.microsoft.com/en-us/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-1.0) method to the [taskProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-taskProcessingResult?view=graph-rest-1.0) resource.",
+          "Description": "Added the **resume** method to the **taskProcessingResult** resource.",
           "Target": "taskProcessingResult"
         },
         {
@@ -1153,7 +2565,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the [summary](https://learn.microsoft.com/en-us/graph/api/identitygovernance-run-summary?view=graph-rest-1.0) method to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-run?view=graph-rest-1.0) resource.",
+          "Description": "Added the **summary** method to the **run** resource.",
           "Target": "run"
         },
         {
@@ -1161,7 +2573,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the [summary](https://learn.microsoft.com/en-us/graph/api/identitygovernance-taskreport-summary?view=graph-rest-1.0) method to the [taskReport](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-taskReport?view=graph-rest-1.0) resource.",
+          "Description": "Added the **summary** method to the **taskReport** resource.",
           "Target": "taskReport"
         },
         {
@@ -1169,7 +2581,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the [summary](https://learn.microsoft.com/en-us/graph/api/identitygovernance-userprocessingresult-summary?view=graph-rest-1.0) method to the [userProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-userProcessingResult?view=graph-rest-1.0) resource.",
+          "Description": "Added the **summary** method to the **userProcessingResult** resource.",
           "Target": "userProcessingResult"
         }
       ],
@@ -1180,14 +2592,14 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "0955ba80-0bb6-47da-a37c-006dd0df80a6",
           "ApiChange": "Resource",
           "ChangedApiName": "userInactivityTrigger",
           "ChangeType": "Addition",
-          "Description": "Added the [userInactivityTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userInactivityTrigger?view=graph-rest-1.0) resource.",
+          "Description": "Added the **userInactivityTrigger** resource.",
           "Target": "userInactivityTrigger"
         }
       ],
@@ -1229,7 +2641,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activateGroupScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activateGroupScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateGroupScope?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activateGroupScope** resource.",
           "Target": "activateGroupScope"
         },
         {
@@ -1237,7 +2649,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activateProcessingResultScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activateProcessingResultScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateProcessingResultScope?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activateProcessingResultScope** resource.",
           "Target": "activateProcessingResultScope"
         },
         {
@@ -1245,7 +2657,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activateRunScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activateRunScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateRunScope?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activateRunScope** resource.",
           "Target": "activateRunScope"
         },
         {
@@ -1253,7 +2665,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activateUserScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activateUserScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateUserScope?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activateUserScope** resource.",
           "Target": "activateUserScope"
         },
         {
@@ -1261,7 +2673,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activationScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activationScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activationScope?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activationScope** resource.",
           "Target": "activationScope"
         },
         {
@@ -1269,7 +2681,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activatedOnScope",
           "ChangeType": "Addition",
-          "Description": "Added the **activatedOnScope** property to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activatedOnScope** property to the **run** resource.",
           "Target": "run"
         },
         {
@@ -1277,7 +2689,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "reprocessedRuns",
           "ChangeType": "Addition",
-          "Description": "Added the **reprocessedRuns** relationship to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-1.0) resource.",
+          "Description": "Added the **reprocessedRuns** relationship to the **run** resource.",
           "Target": "run"
         },
         {
@@ -1285,7 +2697,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "reprocessedRuns",
           "ChangeType": "Addition",
-          "Description": "Added the **reprocessedRuns** relationship to the [userProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userProcessingResult?view=graph-rest-1.0) resource.",
+          "Description": "Added the **reprocessedRuns** relationship to the **userProcessingResult** resource.",
           "Target": "userProcessingResult"
         },
         {
@@ -1293,7 +2705,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "activateWithScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activateWithScope](https://learn.microsoft.com/en-us/graph/api/identityGovernance-workflow-activateWithScope?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activateWithScope** method to the **workflow** resource.",
           "Target": "workflow"
         }
       ],
@@ -1311,15 +2723,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activationScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activationScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activationScope?view=graph-rest-beta) resource.",
+          "Description": "Added the **activationScope** resource.",
           "Target": "activationScope"
         },
-	{
+        {
           "Id": "07fd25a4-9a54-44e0-9c8e-9ca34e24bc1f",
           "ApiChange": "Resource",
           "ChangedApiName": "activateGroupScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activateGroupScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateGroupScope?view=graph-rest-beta) resource.",
+          "Description": "Added the **activateGroupScope** resource.",
           "Target": "activateGroupScope"
         },
         {
@@ -1327,7 +2739,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activateProcessingResultScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activateProcessingResultScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateProcessingResultScope?view=graph-rest-beta) resource.",
+          "Description": "Added the **activateProcessingResultScope** resource.",
           "Target": "activateProcessingResultScope"
         },
         {
@@ -1335,10 +2747,10 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activateRunScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activateRunScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateRunScope?view=graph-rest-beta) resource.",
+          "Description": "Added the **activateRunScope** resource.",
           "Target": "activateRunScope"
         }
-  ],
+      ],
       "Id": "07fd25a4-9a54-44e0-9c8e-9ca34e24bc1f",
       "Cloud": "Prod",
       "Version": "beta",
@@ -1353,7 +2765,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activatedOnScope",
           "ChangeType": "Addition",
-          "Description": "Added the **activatedOnScope** property to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-beta) resource.",
+          "Description": "Added the **activatedOnScope** property to the **run** resource.",
           "Target": "run"
         },
         {
@@ -1364,12 +2776,12 @@
           "Description": "Added the **activatedWithScope** member to the **workflowExecutionType** enumeration.",
           "Target": "workflowExecutionType"
         },
-         {
+        {
           "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
           "ApiChange": "Method",
           "ChangedApiName": "activateWithScope",
           "ChangeType": "Addition",
-          "Description": "Added the [activateWithScope](https://learn.microsoft.com/en-us/graph/api/identityGovernance-workflow-activateWithScope?view=graph-rest-beta) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-beta) resource.",
+          "Description": "Added the **activateWithScope** method to the **workflow** resource.",
           "Target": "workflow"
         },
         {
@@ -1377,7 +2789,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "reprocessedRuns",
           "ChangeType": "Addition",
-          "Description": "Added the **reprocessedRuns** relationship to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-beta) resource.",
+          "Description": "Added the **reprocessedRuns** relationship to the **run** resource.",
           "Target": "run"
         },
         {
@@ -1385,7 +2797,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "reprocessedRuns",
           "ChangeType": "Addition",
-          "Description": "Added the **reprocessedRuns** relationship to the [userProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userProcessingResult?view=graph-rest-beta) resource.",
+          "Description": "Added the **reprocessedRuns** relationship to the **userProcessingResult** resource.",
           "Target": "userProcessingResult"
         }
       ],
@@ -1403,7 +2815,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "administrationScopeTargets",
           "ChangeType": "Addition",
-          "Description": "Added the **administrationScopeTargets** relationship to the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowBase?view=graph-rest-beta) resource.",
+          "Description": "Added the **administrationScopeTargets** relationship to the **workflowBase** resource.",
           "Target": "workflowBase"
         }
       ],
@@ -1421,7 +2833,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "administrationScopeTargets",
           "ChangeType": "Addition",
-          "Description": "Added the **administrationScopeTargets** relationship to the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowBase?view=graph-rest-1.0) resource. This relationship is also inherited by the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) and [workflowVersion](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowVersion?view=graph-rest-1.0) derived types.",
+          "Description": "Added the **administrationScopeTargets** relationship to the **workflowBase** resource. This relationship is also inherited by the **workflow** and **workflowVersion** derived types.",
           "Target": "workflowBase"
         }
       ],
@@ -1439,7 +2851,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emailSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [emailSettings](https://learn.microsoft.com/en-us/graph/api/resources/emailSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the **emailSettings** resource type.",
           "Target": "emailSettings"
         },
         {
@@ -1447,7 +2859,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "emailSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **emailSettings** property to the [lifecycleManagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-lifecycleManagementSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **emailSettings** property to the **lifecycleManagementSettings** resource.",
           "Target": "lifecycleManagementSettings"
         },
         {
@@ -1455,7 +2867,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureAdPopTokenAuthentication",
           "ChangeType": "Addition",
-          "Description": "Added the [azureAdPopTokenAuthentication](https://learn.microsoft.com/en-us/graph/api/resources/azureAdPopTokenAuthentication?view=graph-rest-beta) resource type.",
+          "Description": "Added the **azureAdPopTokenAuthentication** resource type.",
           "Target": "azureAdPopTokenAuthentication"
         },
         {
@@ -1463,7 +2875,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authorizedApps",
           "ChangeType": "Addition",
-          "Description": "Added the **authorizedApps** property to the [customTaskExtensionCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-customtaskextensioncallbackconfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the **authorizedApps** property to the **customTaskExtensionCallbackConfiguration** resource.",
           "Target": "customTaskExtensionCallbackConfiguration"
         }
       ],
@@ -1481,7 +2893,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isEnabled** property to the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowBase?view=graph-rest-beta) resource. **workflowBase** is an entity type that's inherited by the following derived types in Lifecycle Workflows: [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta) and [workflowVersion](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowVersion?view=graph-rest-beta).",
+          "Description": "Added the **isEnabled** property to the **workflowBase** resource. **workflowBase** is an entity type that's inherited by the following derived types in Lifecycle Workflows: **workflow** and **workflowVersion**.",
           "Target": "workflowBase"
         },
         {
@@ -1489,14 +2901,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "isSchedulingEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isSchedulingEnabled** property to the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowBase?view=graph-rest-beta) resource.  **workflowBase** is an entity type that's inherited by the following derived types in Lifecycle Workflows: [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta) and [workflowVersion](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowVersion?view=graph-rest-beta).",
+          "Description": "Added the **isSchedulingEnabled** property to the **workflowBase** resource.  **workflowBase** is an entity type that's inherited by the following derived types in Lifecycle Workflows: **workflow** and **workflowVersion**.",
           "Target": "workflowBase"
         }
       ],
       "Id": "a40b7de8-84cf-4012-abdf-7395b875aff5",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-10-10T00:00:00.0000000Z",
+      "CreatedDateTime": "2022-10-10T00:00:00Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
@@ -1507,7 +2919,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "maximumRetries",
           "ChangeType": "Addition",
-          "Description": "Added the **maximumRetries** property to the [customExtensionClientConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-1.0) resource.",
+          "Description": "Added the **maximumRetries** property to the **customExtensionClientConfiguration** resource.",
           "Target": "customExtensionClientConfiguration"
         }
       ],

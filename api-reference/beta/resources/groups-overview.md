@@ -101,6 +101,10 @@ Content-type: application/json
 
 Groups can have one or more owners who manage the group. Owners can be users or service principals. We recommend assigning at least two owners to a group to ensure continuity.
 
+### Ownerless group policy
+
+When a group loses its sole owner, it becomes ownerless and can no longer be managed effectively. Use the [ownerlessGroupPolicy](ownerlessgrouppolicy.md) resource to configure a tenant-level policy that automatically sends actionable notification emails to active members of ownerless groups, prompting them to accept ownership. Administrators can configure the notification duration, the maximum number of members to notify, and control ownership eligibility by using security groups. For more information, see [Get ownerlessGroupPolicy](../api/ownerlessgrouppolicy-get.md) and [Create or update ownerlessGroupPolicy](../api/ownerlessgrouppolicy-upsert.md).
+
 ## Group membership
 
 Groups can have static or dynamic memberships. Dynamic membership uses rules to automatically add or remove members based on their properties. Not all object types can be members of Microsoft 365 and security groups.
@@ -213,12 +217,12 @@ Content-type: application/json
 
 You can configure other settings for groups, such as:
 
-| Setting | Applies to |
-|--|--|
-| [Group expiration](../resources/grouplifecyclepolicy.md) | Microsoft 365 Groups |
-| [Group settings](/graph/group-directory-settings) | Microsoft 365 Groups |
-| [On-premises synchronization settings](../resources/onpremisesdirectorysynchronization.md) | Security and Microsoft 365 Groups |
-| [Source of Authority conversion](../resources/onpremisessyncbehavior.md) | Security and Microsoft 365 Groups |
+| Setting | Description | Applies to |
+|--|--|--|
+| [Group expiration](../resources/grouplifecyclepolicy.md) | Configure an expiration policy so that Microsoft 365 groups are automatically deleted after a specified period, unless renewed. | Microsoft 365 groups |
+| [Group settings](/graph/group-directory-settings) | Configure behaviors for groups using setting templates. Setting templates include: **Group.Unified** for Microsoft 365 group settings (such as naming policies, guest access, and sensitivity labels), **Group.Unified.Guest** for Microsoft 365 guest settings, **Group.Security** for cloud security group settings (such as enabling sensitivity labels), and **Group.Security.Policies** for cloud security settings. | Microsoft 365 groups and cloud security groups |
+| [On-premises synchronization settings](../resources/onpremisesdirectorysynchronization.md) | Configure on-premises directory synchronization settings. | Security and Microsoft 365 groups |
+| [Source of Authority conversion](../resources/onpremisessyncbehavior.md) | Convert the source of authority for a group. | Security and Microsoft 365 groups |
 
 ## Group search limitations for guests in organizations
 

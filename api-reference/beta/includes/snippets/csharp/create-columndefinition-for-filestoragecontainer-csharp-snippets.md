@@ -15,6 +15,7 @@ var requestBody = new ColumnDefinition
 	EnforceUniqueValues = false,
 	Hidden = false,
 	Indexed = false,
+	IsSearchable = false,
 	Name = "Title",
 	Text = new TextColumn
 	{

@@ -1,7 +1,7 @@
 ---
 title: "Delete crossTenantIdentitySyncPolicyPartner"
-description: "Delete the user synchronization policy for a partner-specific configuration."
-author: "rolyon"
+description: "Delete the user and group synchronization policy for a partner-specific configuration."
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete the user synchronization policy for a partner-specific configuration.
+Delete the user and group synchronization policy for a partner-specific configuration.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

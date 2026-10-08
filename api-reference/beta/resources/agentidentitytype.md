@@ -26,6 +26,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 | agentUser | Represents a user account associated with an AI agent. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 | agentIdentityBlueprintPrincipal | Represents an agent identity blueprint principal that defines agent identity templates. |
+| user | Represents a regular user account. |
 
 ## JSON representation
 

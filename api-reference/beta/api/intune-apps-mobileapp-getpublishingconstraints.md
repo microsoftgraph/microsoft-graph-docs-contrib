@@ -1,4 +1,4 @@
----
+﻿---
 title: "getPublishingConstraints function"
 description: "Intune Apps Mobileapp Getpublishingconstraints Api ."
 author: "jaiprakashmb"

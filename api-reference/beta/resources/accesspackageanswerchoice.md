@@ -16,6 +16,11 @@ Namespace: microsoft.graph
 
 Indicates an answer option for an [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md). Multiple accessPackageAnswerChoices can be added to an [accessPackageMultipleChoiceQuestion](../resources/accesspackagemultiplechoicequestion.md).
 
+In entitlement management, this subtype is used in the:
+- **answers** property of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)
+- **answers** property of [accessPackageAssignmentRequestCalloutData](../resources/accesspackageassignmentrequestcalloutdata.md)
+- **existingAnswers** property of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md)
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

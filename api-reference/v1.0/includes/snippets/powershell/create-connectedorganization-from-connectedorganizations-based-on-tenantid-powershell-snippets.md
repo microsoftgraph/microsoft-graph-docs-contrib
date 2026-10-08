@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.Governance
+Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
 	displayName = "Connected organization name"
@@ -19,6 +19,6 @@ $params = @{
 	state = "proposed"
 }
 
-New-MgBetaEntitlementManagementConnectedOrganization -BodyParameter $params
+New-MgEntitlementManagementConnectedOrganization -BodyParameter $params
 
 ```

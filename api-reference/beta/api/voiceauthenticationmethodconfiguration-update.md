@@ -6,7 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 06/17/2026
 ---
 
 # Update voiceAuthenticationMethodConfiguration
@@ -47,6 +47,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/v
 
 |Property|Type|Description|
 |:---|:---|:---|
+|callerIdNumber|String|The phone number used as the caller ID when voice call authentication is initiated.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`.|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|

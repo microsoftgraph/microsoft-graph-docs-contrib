@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and collection of [C
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -107,9 +107,11 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/AAMkAGVmMDEzMTM4LTZmYWUtN
 
 ---
 
-##### Response
+### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -125,11 +127,17 @@ Content-type: application/json
 {
   "value": [
     {
-      "name": "name-value",
-      "color": {
-      },
-      "changeKey": "changeKey-value",
-      "id": "id-value"
+      "id": "AAMkADYCQM0GfRAAAcrRD-AAA=",
+      "name": "Marketing calendar",
+      "color": "auto",
+      "changeKey": "4xTfgHLeDkOqYVAkDNBn0QAAHKl46A==",
+      "canShare": true,
+      "canViewPrivateItems": true,
+      "canEdit": true,
+      "owner": {
+        "name": "Adele Vance",
+        "address": "adelev@contoso.com"
+      }
     }
   ]
 }

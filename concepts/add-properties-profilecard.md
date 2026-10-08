@@ -62,6 +62,8 @@ You can add any of these attributes to the profile card by configuring your [peo
 
 ## Configure profile card properties using the Microsoft Graph REST API
 
+Use the **annotations** and **directoryPropertyName** properties on **profileCardProperty** to configure profile card properties. You can also use the **isVisible** property to indicate whether the given directory property should be shown on a user’s profile card.
+
 ### Example
 
 The following example displays the `Alias` attribute on the profile card.
@@ -84,8 +86,9 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+  "annotations": [],
   "directoryPropertyName": "Alias",
-  "annotations": []
+  "isVisible": true
 }
 ```
 
@@ -131,7 +134,6 @@ POST https://graph.microsoft.com/v1.0/admin/people/profileCardProperties
 Content-Type: application/json
 
 {
-  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
       "displayName": "Cost center",
@@ -142,7 +144,9 @@ Content-Type: application/json
         }
       ]
     }
-  ]
+  ],
+  "directoryPropertyName": "CustomAttribute1",
+  "isVisible": true
 }
 ```
 
@@ -159,7 +163,6 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
       "displayName": "Cost center",
@@ -170,7 +173,9 @@ Content-type: application/json
         }
       ]
     }
-  ]
+  ],
+  "directoryPropertyName": "CustomAttribute1",
+  "isVisible": true
 }
 ```
 

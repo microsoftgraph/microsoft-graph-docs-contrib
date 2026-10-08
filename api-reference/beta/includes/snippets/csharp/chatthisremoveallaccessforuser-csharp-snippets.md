@@ -15,6 +15,13 @@ var requestBody = new RemoveAllAccessForUserPostRequestBody
 	User = new TeamworkUserIdentity
 	{
 		OdataType = "microsoft.graph.teamworkUserIdentity",
+		Id = "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"tenantId" , "a1b2c3d4-e5f6-7890-1234-567890abcdef"
+			},
+		},
 	},
 };
 

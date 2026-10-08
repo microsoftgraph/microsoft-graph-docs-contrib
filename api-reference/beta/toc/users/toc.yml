@@ -26,6 +26,12 @@ items:
     href: ../../api/user-validatepassword.md
   - name: Retry service provisioning
     href: ../../api/user-retryserviceprovisioning.md
+  - name: Attest
+    href: ../../api/user-attest.md
+  - name: Add self as sponsor
+    href: ../../api/user-addselfassponsor.md
+  - name: Remove self as sponsor
+    href: ../../api/user-removeselfassponsor.md
   - name: Convert external user to internal member user
     href: ../../api/user-convertexternaltointernalmemberuser.md
   - name: Invalidate all refresh tokens
@@ -90,6 +96,12 @@ items:
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+  - name: Cloud PC pool
+    items:
+    - name: List Cloud PC pools
+      href: ../../api/user-list-cloudpcpools.md
+    - name: Get Cloud PC pool
+      href: ../../api/user-get-cloudpcpool.md
   - name: Data security and governance
     items:
     - name: Compute protection scopes
@@ -196,6 +208,10 @@ items:
       href: ../../api/user-sendmail.md
     - name: Get mail tips
       href: ../../api/user-getmailtips.md
+    - name: List notes
+      href: ../../api/user-list-notes.md
+    - name: Create note
+      href: ../../api/user-post-notes.md
   - name: Notes
     items:
     - name: List notebooks
@@ -284,6 +300,8 @@ items:
       href: ../../api/user-post-sponsors.md
     - name: List
       href: ../../api/user-list-sponsors.md
+    - name: List sponsorOf
+      href: ../../api/user-list-sponsorof.md
     - name: Remove
       href: ../../api/user-delete-sponsors.md
     - name: List invited by

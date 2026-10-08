@@ -21,12 +21,14 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | [Get list](../api/list-get.md)                             | [list](../resources/list.md)                                                    | Get the metadata for a **list**.                                                                                                 |
 | [Create list](../api/list-create.md)                       | [list](../resources/list.md)                                                    | Create a new **list** in a **site**.                                                                                             |
 | [Get items](../api/listitem-list.md)            | [listItem](../resources/listitem.md) collection                                 | Get the collection of [listItems]( ../resources/listitem.md) in a **list**.                                                      |
+| [List activities](../api/itemactivity-list.md)  | [itemActivity](../resources/itemactivity.md) collection                         | List the recent [activities](../resources/itemactivity.md) that took place on a [drive](../resources/drive.md), [list](../resources/list.md), item, or within an item hierarchy. |
 | [Update](../api/listitem-update.md)              | [listItem](../resources/listitem.md)                                            | Update the properties on a [listItem]( ../resources/listitem.md).                                                                |
 | [Delete](../api/listitem-delete.md)              | None                                                                            | Delete a [listItem]( ../resources/listitem.md) from a **list**.                                                                  |
 | [Create item](../api/listitem-create.md)              | [listItem](../resources/listitem.md)                                            | Create a new [listItem]( ../resources/listitem.md) in a **list**.                                                                |
 | [Get websocket endpoint](../api/subscriptions-socketio.md) | [subscription](../resources/subscription.md)                                    | Get near-real-time change notifications for a [drive](../resources/drive.md) and **list** using [socket.io](https://socket.io/). |
 | [List operations](../api/list-list-operations.md)          | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a **list**.               |
-
+| [List permissions](../api/list-list-permissions.md) | [permission](../resources/permission.md) collection | Get a list of the [permission](../resources/permission.md) objects associated with a [list](../resources/list.md). |
+| [Create permission](../api/list-post-permissions.md) | [permission](../resources/permission.md) | Create a new [permission](../resources/permission.md) object on a [list](../resources/list.md). |
 
 ## Properties
 
@@ -56,6 +58,7 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | drive         | [drive](drive.md)                                                               | Allows access to the list as a **drive** resource with [driveItems](driveitem.md). Only present on document libraries. |
 | items         | [listItem](listitem.md) collection                                              | All items contained in the list.                                                                                       |
 | operations    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the list.                                                                 |
+| permissions   | [permission](permission.md) collection                                          | The set of permissions for the item. Read-only. Nullable.                                                              |
 | subscriptions | [subscription](subscription.md) collection                                      | The set of subscriptions on the list.                                                                                  |
 
 ## JSON representation

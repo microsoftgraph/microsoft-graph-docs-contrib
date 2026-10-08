@@ -75,7 +75,7 @@ This action returns HTTP 400 if one or both of the following occur:
 
 ## Example
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 

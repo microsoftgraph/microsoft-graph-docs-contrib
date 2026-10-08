@@ -5,7 +5,7 @@ author: "bkeerthivasa"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 09/10/2024
+ms.date: 08/13/2026
 ---
 
 # onlineMeeting: getAllRecordings
@@ -22,14 +22,16 @@ Find more information in the [delta query](/graph/delta-query-overview) document
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
+> [!NOTE]
+> This API has a [known issue](/graph/known-issues#apis-that-export-online-meeting-artifacts-may-return-duplicate-items-during-service-update) related to pagination token resets during a planned service update.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "onlinemeeting_getallrecordings" } -->
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-getallrecordings-permissions.md)]
 
 ## HTTP request
@@ -49,6 +51,9 @@ In the request URL, provide the following query parameters with values.
 |meetingOrganizerUserId|String|The user identifier of the meeting organizer to filter for artifacts for meetings organized by the given user identifier.|
 |startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
+> [!NOTE]
+> When using delta queries, follow the returned delta link without appending or reapplying filters. The token retains the filter from the initial request.
+
 ## Optional query parameters
 
 This method supports the following OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -66,6 +71,8 @@ This method supports the following OData query parameter to help customize the r
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [callRecording](../resources/callrecording.md) objects in the response body.
+
+If a filter is supplied with a delta token, the method returns a `400 Bad Request` response with `DeltaFilterNotAllowed` as the `innerError.code` value. The initial filter is encoded in the token; follow the returned delta link without appending or reapplying filters.
 
 ## Examples
 
@@ -254,3 +261,5 @@ Content-type: application/json
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 - [Delta query overview](/graph/delta-query-overview)
 - [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content)
+
+  

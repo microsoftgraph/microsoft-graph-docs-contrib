@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: "Intune Enrollment Windowsautopilotdeploymentprofile Assign Source_Api ."
+description: "Intune Enrollment Windowsautopilotdeploymentprofile Assign Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

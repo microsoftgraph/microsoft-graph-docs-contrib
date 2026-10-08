@@ -13,6 +13,8 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ProfilePropertySetting();
 $requestBody->setOdataType('#microsoft.graph.profilePropertySetting');
+$requestBody->setDisplayName('Profile priority config');
+$requestBody->setName('Profile priority config');
 $requestBody->setPrioritizedSourceUrls(['https://graph.microsoft.com/beta/admin/people/profileSources(sourceId=\'contosohr1\')', 	]);
 
 $result = $graphServiceClient->admin()->people()->profilePropertySettings()->post($requestBody)->wait();

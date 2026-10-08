@@ -11,6 +11,7 @@ use Microsoft\Graph\Beta\Generated\Models\ProcessContentRequest;
 use Microsoft\Graph\Beta\Generated\Models\ProcessContentMetadataBase;
 use Microsoft\Graph\Beta\Generated\Models\ProcessFileMetadata;
 use Microsoft\Graph\Beta\Generated\Models\TextContent;
+use Microsoft\Graph\Beta\Generated\Models\ContentCategory;
 use Microsoft\Graph\Beta\Generated\Models\CustomMetadataDictionary;
 use Microsoft\Graph\Beta\Generated\Models\ActivityMetadata;
 use Microsoft\Graph\Beta\Generated\Models\UserActivityType;
@@ -40,6 +41,7 @@ $contentEntriesProcessContentMetadataBase1->setCorrelationId('9d84223c-521c-42f4
 $contentEntriesProcessContentMetadataBase1->setLength(17352);
 $contentEntriesProcessContentMetadataBase1->setIsTruncated(false);
 $contentEntriesProcessContentMetadataBase1->setOwnerId('ffe1ca70-6e5b-4120-abf0-472034ba05d4');
+$contentEntriesProcessContentMetadataBase1->setContentCategory(new ContentCategory('none'));
 $contentEntriesProcessContentMetadataBase1CustomProperties = new CustomMetadataDictionary();
 $additionalData = [
 	'Department' => 'Finance',
