@@ -190,6 +190,7 @@
             "Enhanced Restore"
           ],
           "resources": [
+            "activityLogBase",
             "backupReport",
             "backupRestoreRoot",
             "emailNotificationsSetting",
@@ -296,7 +297,10 @@
             "backupPolicyReport",
             "browseQueryResponseItem",
             "notificationRecipients",
+            "offboardingDetails",
             "protectionPolicyArtifactCount",
+            "protectionUnitDetails",
+            "restoreArtifactDetails",
             "retentionPeriodChange",
             "retentionSetting",
             "restorePointSearchResponse",
