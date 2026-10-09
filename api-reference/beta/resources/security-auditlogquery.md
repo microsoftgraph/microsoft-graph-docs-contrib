@@ -37,7 +37,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |id|String|Unique identifier for the audit log query. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |ipAddressFilters|String collection|The IP address of the device that was used when the activity was logged.|
 |isRecordCountLimitExceeded|Boolean|Indicates whether the query exceeded the per-search record-count limit. The default value is `false`. A value of `true` is authoritative and isn't derived from **approximateReturnedRecordCount**. Read-only.|
-|keywordFilter|String|Free text field to search non-indexed properties of the audit log.|
+|keywordFilter|String|Free text to match against the non-indexed content of each record: the workload-specific properties inside **auditData**, including its `AppAccessContext` object. The indexed common-schema properties, such as the operation name, aren't matched by keyword; use their own filters, such as **operationFilters**, for those.|
 |objectIdFilters|String collection|For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet.|
 |operationFilters|String collection|The name of the user or admin activity. For a description of the most common operations/activities, see [Search the audit log in the Office 365 Protection Center](https://go.microsoft.com/fwlink/p/?LinkId=708432).|
 |recordCountLimit|Int64|The record-count threshold used to limit query result retrieval. Read-only.|
