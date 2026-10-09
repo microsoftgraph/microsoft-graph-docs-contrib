@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/api-reference/beta/api/distributionlist-list-distributionlistmembers.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/distributionlist?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/distributionlist-get-distributionlistmember.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/distributionlist?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/concepts/onenote-branding.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/integrate-with-onenote",
       "redirect_document_id": false

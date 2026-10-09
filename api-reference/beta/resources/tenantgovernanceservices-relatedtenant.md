@@ -3,6 +3,8 @@ title: "relatedTenant resource type"
 description: "Represents a tenant that has been discovered as related to the current tenant through tenant discovery."
 author: "hafowler"
 ms.date: 03/19/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1028
 ms.localizationpriority: medium
 ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
@@ -10,7 +12,7 @@ doc_type: resourcePageType
 
 # relatedTenant resource type
 
-Namespace: microsoft.graph.tenantGovernanceServices
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,10 +28,10 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/tenantgovernanceservices-list-relatedtenants.md)|[microsoft.graph.tenantGovernanceServices.relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) collection|Get a list of the [relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) objects and their properties.|
-|[Get](../api/tenantgovernanceservices-relatedtenant-get.md)|[microsoft.graph.tenantGovernanceServices.relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md)|Read the properties of a [relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) object.|
+|[List](../api/tenantgovernanceservices-list-relatedtenants.md)|[microsoft.graph.relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) collection|Get a list of the [relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) objects and their properties.|
+|[Get](../api/tenantgovernanceservices-relatedtenant-get.md)|[microsoft.graph.relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md)|Read the properties of a [relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) object.|
 |[Refresh](../api/tenantgovernanceservices-relatedtenant-refresh.md)|None|Trigger a refresh operation to update the list of related tenants.|
-|[Refresh status](../api/tenantgovernanceservices-relatedtenant-refreshstatus.md)|[microsoft.graph.tenantGovernanceServices.relatedTenantsRefreshStatus](../resources/tenantgovernanceservices-relatedtenantsrefreshstatus.md)|Check the status of a related tenants refresh operation.|
+|[Refresh status](../api/tenantgovernanceservices-relatedtenant-refreshstatus.md)|[microsoft.graph.relatedTenantsRefreshStatus](../resources/tenantgovernanceservices-relatedtenantsrefreshstatus.md)|Check the status of a related tenants refresh operation.|
 
 ## Properties
 |Property|Type|Description|
@@ -41,11 +43,11 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appB2BSignInActivityMetrics|[microsoft.graph.tenantGovernanceServices.b2BSignInActivityMetrics](../resources/tenantgovernanceservices-b2bsigninactivitymetrics.md)|B2B sign-in activity metrics for this related tenant. Expanded by default.|
-|b2BRegistrationMetrics|[microsoft.graph.tenantGovernanceServices.b2bRegistrationMetrics](../resources/tenantgovernanceservices-b2bregistrationmetrics.md)|B2B registration metrics for this related tenant. Expanded by default.|
-|b2BSignInActivityMetrics|[microsoft.graph.tenantGovernanceServices.b2BSignInActivityMetrics](../resources/tenantgovernanceservices-b2bsigninactivitymetrics.md)|B2B sign-in activity metrics for this related tenant. Expanded by default.|
-|billingMetrics|[microsoft.graph.tenantGovernanceServices.billingMetrics](../resources/tenantgovernanceservices-billingmetrics.md)|Billing metrics for this related tenant. Expanded by default.|
-|multiTenantApplicationMetrics|[microsoft.graph.tenantGovernanceServices.multiTenantApplicationMetrics](../resources/tenantgovernanceservices-multitenantapplicationmetrics.md)|Multi-tenant application usage metrics for this related tenant. Expanded by default.|
+|appB2BSignInActivityMetrics|[microsoft.graph.b2BSignInActivityMetrics](../resources/tenantgovernanceservices-b2bsigninactivitymetrics.md)|B2B sign-in activity metrics for this related tenant. Expanded by default.|
+|b2BRegistrationMetrics|[microsoft.graph.b2bRegistrationMetrics](../resources/tenantgovernanceservices-b2bregistrationmetrics.md)|B2B registration metrics for this related tenant. Expanded by default.|
+|b2BSignInActivityMetrics|[microsoft.graph.b2BSignInActivityMetrics](../resources/tenantgovernanceservices-b2bsigninactivitymetrics.md)|B2B sign-in activity metrics for this related tenant. Expanded by default.|
+|billingMetrics|[microsoft.graph.billingMetrics](../resources/tenantgovernanceservices-billingmetrics.md)|Billing metrics for this related tenant. Expanded by default.|
+|multiTenantApplicationMetrics|[microsoft.graph.multiTenantApplicationMetrics](../resources/tenantgovernanceservices-multitenantapplicationmetrics.md)|Multi-tenant application usage metrics for this related tenant. Expanded by default.|
 
 The metrics relationships support the `$expand` query parameter. Each metrics category also exposes an **investigationHints** relationship that returns ordered, actionable guidance for drilling into the signals behind an aggregate metric. Investigation hints aren't returned by default; to retrieve them, use a nested `$expand` on the metrics relationship. For example, the following request returns the B2B registration metrics for a related tenant together with the investigation hints for those metrics:
 
@@ -53,23 +55,22 @@ The metrics relationships support the `$expand` query parameter. Each metrics ca
 GET https://graph.microsoft.com/beta/directory/tenantGovernance/relatedTenants/{id}?$expand=b2BRegistrationMetrics($expand=investigationHints)
 ```
 
-Each hint is an [actionStep](../resources/tenantgovernanceservices-actionstep.md) that pairs human-readable guidance with a Microsoft Graph or Azure Resource Manager URL that you can call to investigate the users, applications, sign-in activity, or billing relationships behind the count. For more information, see [actionStep](../resources/tenantgovernanceservices-actionstep.md).
+Each hint is an [investigationActionStep](../resources/tenantgovernanceservices-investigationactionstep.md) that pairs human-readable guidance with a Microsoft Graph or Azure Resource Manager URL that you can call to investigate the users, applications, sign-in activity, or billing relationships behind the count. For more information, see [investigationActionStep](../resources/tenantgovernanceservices-investigationactionstep.md).
 
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.tenantGovernanceServices.relatedTenant",
+  "@odata.type": "microsoft.graph.relatedTenant",
   "baseType": "microsoft.graph.entity"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.tenantGovernanceServices.relatedTenant",
+  "@odata.type": "#microsoft.graph.relatedTenant",
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "isMicrosoftInfrastructure": "Boolean"
 }
 ```
-

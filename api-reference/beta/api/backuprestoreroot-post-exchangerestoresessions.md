@@ -56,6 +56,7 @@ You can specify the following properties when you create an **exchangeRestoreSes
 |:---|:---|:---|
 |granularMailboxRestoreArtifact|[granularMailboxRestoreArtifact](../resources/granularmailboxrestoreartifact.md) collection|Collection of [granularMailboxRestoreArtifact](../resources/granularmailboxrestoreartifact.md) objects.|
 |mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|Collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects.|
+|policyId|String|The identifier of the protection policy that scopes the restore session. The service validates that the referenced protection units belong to this policy. Optional.|
 
 ## Response
 
@@ -81,6 +82,7 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeRestoreSes
 Content-Type: application/json
 
 {
+  "policyId": "99999999-aaaa-bbbb-cccc-dddddddddddd",
   "mailboxRestoreArtifacts": [
     {
       "restorePoint": { "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279" },
@@ -143,6 +145,7 @@ Content-Type: application/json
   "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
   "status": "draft",
   "restoreJobType": "standard",
+  "policyId": "99999999-aaaa-bbbb-cccc-dddddddddddd",
   "restoreSessionArtifactCount": {
     "total": 2,
     "completed": 0,

@@ -52,7 +52,6 @@ You can specify the following properties when you create a **distributionList**.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the distribution list. Required.|
-|members|[member](../resources/member.md) collection|The list of members to add to the distribution list. Optional.|
 
 ## Response
 
@@ -74,19 +73,7 @@ POST https://graph.microsoft.com/beta/me/distributionLists
 Content-Type: application/json
 
 {
-  "displayName": "Project Team",
-  "members": [
-    {
-      "displayName": "Adele Vance",
-      "emailAddress": "AdeleV@contoso.com",
-      "recipientType": "mailbox"
-    },
-    {
-      "displayName": "Alex Wilber",
-      "emailAddress": "AlexW@contoso.com",
-      "recipientType": "mailbox"
-    }
-  ]
+  "displayName": "Project Team"
 }
 ```
 
@@ -136,20 +123,6 @@ Content-Type: application/json
   "createdDateTime": "2024-03-15T10:30:00Z",
   "lastModifiedDateTime": "2024-03-15T10:30:00Z",
   "categories": [],
-  "displayName": "Project Team",
-  "members": [
-    {
-      "@odata.type": "#microsoft.graph.member",
-      "displayName": "Adele Vance",
-      "emailAddress": "AdeleV@contoso.com",
-      "recipientType": "mailbox"
-    },
-    {
-      "@odata.type": "#microsoft.graph.member",
-      "displayName": "Alex Wilber",
-      "emailAddress": "AlexW@contoso.com",
-      "recipientType": "mailbox"
-    }
-  ]
+  "displayName": "Project Team"
 }
 ```

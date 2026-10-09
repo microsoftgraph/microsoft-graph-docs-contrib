@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d9ba1f38-9afe-4cb5-9bb9-9c3428d370fa",
+          "ApiChange": "Property",
+          "ChangedApiName": "relationshipLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the **relationshipLabel** property to the [relatedPerson](https://learn.microsoft.com/en-us/graph/api/resources/relatedPerson?view=graph-rest-beta) resource.",
+          "Target": "relatedPerson"
+        }
+      ],
+      "Id": "d9ba1f38-9afe-4cb5-9bb9-9c3428d370fa",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-21T00:00:00.00000Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b657572a-5578-4a21-a968-26a731a9fdab",
           "ApiChange": "Property",
           "ChangedApiName": "isVisible",

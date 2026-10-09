@@ -28,6 +28,11 @@ This resource is an open type that allows additional properties beyond those doc
 |[Get](../api/agentidentity-get.md)|[agentIdentity](../resources/agentidentity.md)|Read the properties and relationships of [agentIdentity](../resources/agentidentity.md) object.|
 |[Update](../api/agentidentity-update.md)|[agentIdentity](../resources/agentidentity.md)|Update the properties of an agentIdentity object.|
 |[Delete](../api/agentidentity-delete.md)|None|Delete an agentIdentity object.|
+|[agentIdentity: attest](../api/agentidentity-attest.md)|None|Attest to the continued need for this agent identity.|
+|**Communication configuration**|||
+|[Get communicationConfiguration](../api/agentidentity-get-communicationconfiguration.md)|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|Get the effective communication configuration for this agent identity.|
+|[Update communicationConfiguration](../api/agentidentity-update-communicationconfiguration.md)|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|Update the communication configuration override for this agent identity.|
+|[reset](../api/agentcommunicationconfiguration-reset.md)|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|Reset the communication configuration override for this agent identity, restoring effective configuration resolution to the agent blueprint level.|
 |**App role assignments**|||
 |[List appRoleAssignedTo](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity.|
 |[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity is assigned.|
@@ -74,6 +79,7 @@ This resource is an open type that allows additional properties beyond those doc
 |disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered Agent Identity Blueprint. The possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |displayName|String|The display name for the agent identity. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |id|String|The unique identifier for the agent identity. Inherited from [directoryObject](../resources/directoryobject.md). Key. Not nullable. Read-only. Inherited from [entity](../resources/entity.md).|
+|managerApplications|Guid collection|The collection of application IDs designated as managers of this agent identity's backing [agentIdentityBlueprint](../resources/agentidentityblueprint.md). Read-only; the value is server-managed and reflects the **managerApplications** of the backing agentIdentityBlueprint. To change the managers, an owner or administrator must update the **managerApplications** property on the backing agentIdentityBlueprint **in the tenant where it's registered**. For multitenant agent identity blueprints, admins in a tenant where the blueprint is only consumed can't make this change — they must ask an owner or administrator in the blueprint's home tenant. Not nullable. Returned only on `$select`.|
 |servicePrincipalType|String|Set to __ServiceIdentity__ for all agent identities. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |tags|String collection|Custom strings that can be used to categorize and identify the agent identity. Not nullable. The value is the union of strings set here and on the associated Agent Identity Blueprint entity's **tags** property. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 
@@ -82,13 +88,15 @@ This resource is an open type that allows additional properties beyond those doc
 |:---|:---|:---|
 |appRoleAssignedTo|[appRoleAssignment](../resources/approleassignment.md) collection|App role assignments for this app or service, granted to users, groups, and other agent identities. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
 |appRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|App role assignment for another app or service, granted to this agent identity. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|communicationConfiguration|[agentCommunicationConfiguration](../resources/agentcommunicationconfiguration.md)|The effective communication configuration for this agent identity. Represents the agent identity-level override that resolves on top of the configuration inherited from the agent identity blueprint.|
 |createdObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects created by this agent identity. Read-only. Nullable. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
 |inheritedAppRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|Application role assignments that this agent identity inherits from its parent Agent Identity Blueprint service principal. Read-only. Nullable.|
 |inheritedOauth2PermissionGrants|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Delegated permission grants that this agent identity inherits from its parent Agent Identity Blueprint service principal. Read-only. Nullable.|
-|memberOf|[directoryObject](../resources/directoryobject.md) collection|Roles that this agent identity is a member of. HTTP Methods: GET Read-only. Nullable. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|oauth2PermissionGrants|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Delegated permission grants authorizing this agent identity to access an API on behalf of a signed-in user. Read-only. Nullable. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|ownedObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owned by this agent identity. Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`). Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|owners|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owners of this agent identity. The owners are a set of nonadmin users or agent identities who are allowed to modify this object. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`). Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|lifecycle|[microsoft.graph.identityGovernance.agentIdentityLifecycle](../resources/identitygovernance-agentidentitylifecycle.md)|The lifecycle governance state of this agent identity.|
+|memberOf|[directoryObject](../resources/directoryobject.md) collection|Roles that this agent identity is a member of. HTTP Methods: GET Read-only. Nullable. Supports `$expand`. Inherited from [servicePrincipal](../resources/serviceprincipal.md)|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Delegated permission grants authorizing this agent identity to access an API on behalf of a signed-in user. Read-only. Nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md)|
+|ownedObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owned by this agent identity. Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`). Inherited from [servicePrincipal](../resources/serviceprincipal.md)|
+|owners|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owners of this agent identity. The owners are a set of nonadmin users or agent identities who are allowed to modify this object. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`). Inherited from [servicePrincipal](../resources/serviceprincipal.md)|
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The sponsors for this agent identity.|
 
 ## JSON representation
@@ -112,10 +120,12 @@ The following JSON representation shows the resource type. Only a subset of all 
   "createdDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",
   "displayName": "String",
+  "managerApplications": [
+    "Guid"
+  ],
   "servicePrincipalType": "String",
   "tags": [
     "String"
   ]
 }
 ```
-

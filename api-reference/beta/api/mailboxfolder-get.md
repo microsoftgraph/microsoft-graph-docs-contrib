@@ -112,13 +112,13 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders$entity",
     "@odata.type": "#microsoft.graph.mailboxFolder",
     "id": "NJWt2LeVEAAAIBDAAAAA==",
     "displayName": "Inbox",
+    "isHidden": false,
     "parentFolderId": "NJWt2LeVEAAAIBCAAAAA==",
     "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
     "childFolderCount": 3,

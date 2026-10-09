@@ -14,7 +14,13 @@ Namespace: microsoft.graph
 
 The connectionInfo object defines the resource locator that is used to communicate with a resource in Microsoft Entra Entitlement Management.
 
-In entitlement management, this object is configured in the **connectionInfo** property of [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md).
+The following types are derived from connectionInfo:
+
+- [externalTokenBasedSapIagConnectionInfo](../resources/externaltokenbasedsapiagconnectioninfo.md)
+
+In entitlement management, this object is configured in the following properties and relationships:
+- **connectionInfo** property of [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)
+- **connectionInfo** property of [externalOriginResourceConnector](../resources/externaloriginresourceconnector.md)
 
 ## Properties
 |Property|Type|Description|

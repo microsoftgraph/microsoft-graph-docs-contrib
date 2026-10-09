@@ -113,6 +113,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
     "id": "X509Certificate",
     "state": "disabled",
+    "requireCertificateSidAlignment": false,
     "certificateUserBindings": [
         {
             "x509CertificateField": "PrincipalName",
@@ -158,4 +159,3 @@ Content-Type: application/json
     "excludeTargets": []
 }
 ```
-

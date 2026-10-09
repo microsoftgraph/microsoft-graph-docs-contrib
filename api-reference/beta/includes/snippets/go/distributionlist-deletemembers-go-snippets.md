@@ -22,10 +22,8 @@ requestBody := graphusers.NewItemDeleteMembersPostRequestBody()
 member := graphmodels.NewMember()
 key := "MeganB@contoso.com"
 member.SetKey(&key) 
-routingType := "SMTP"
-member.SetRoutingType(&routingType) 
-recipientType := graphmodels.CONTACT_RECIPIENTTYPE 
-member.SetRecipientType(&recipientType) 
+type := graphmodels.MAILBOX_RECIPIENTTYPE 
+member.SetType(&type) 
 
 members := []graphmodels.Memberable {
 	member,

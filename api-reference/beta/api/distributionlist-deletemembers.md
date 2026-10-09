@@ -1,8 +1,8 @@
 ---
 title: "distributionList: deleteMembers"
 description: "Remove members from a distributionList."
-author: "kemwangi"
-ms.date: 06/09/2026
+author: "rwaithera"
+ms.date: 08/03/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -51,7 +51,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|members|[member](../resources/member.md) collection|The list of members to remove from the distribution list. Each member must include an **emailAddress** to identify the member to remove. Other properties are ignored. Required.|
+|members|[member](../resources/member.md) collection|The members to remove from the distribution list. Each member must include **type** and either **key**, **memberId**, or both. The **displayName** property is ignored. Required.|
 
 ## Response
 
@@ -76,8 +76,7 @@ Content-Type: application/json
   "members": [
     {
       "key": "MeganB@contoso.com",
-      "routingType": "SMTP",
-      "recipientType": "contact"
+      "type": "mailbox"
     }
   ]
 }

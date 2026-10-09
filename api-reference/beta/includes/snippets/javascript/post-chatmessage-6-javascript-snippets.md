@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const chatMessage = {
 	body: {
-        contentType: 'html',
+        messageBodyContentType: 'html',
         content: '<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">'
     },
     hostedContents: [

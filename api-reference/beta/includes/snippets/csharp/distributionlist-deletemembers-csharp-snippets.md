@@ -17,8 +17,7 @@ var requestBody = new DeleteMembersPostRequestBody
 		new Member
 		{
 			Key = "MeganB@contoso.com",
-			RoutingType = "SMTP",
-			RecipientType = RecipientType.Contact,
+			Type = RecipientType.Mailbox,
 		},
 	},
 };

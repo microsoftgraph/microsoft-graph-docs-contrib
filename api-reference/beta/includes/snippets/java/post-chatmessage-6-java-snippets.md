@@ -9,8 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
-ItemBody body = new ItemBody();
-body.setContentType(BodyType.Html);
+ChatMessageBody body = new ChatMessageBody();
+body.setMessageBodyContentType(ChatMessageBodyContentType.Html);
 body.setContent("<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">");
 chatMessage.setBody(body);
 LinkedList<ChatMessageHostedContent> hostedContents = new LinkedList<ChatMessageHostedContent>();

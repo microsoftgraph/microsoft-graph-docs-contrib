@@ -13,7 +13,7 @@ jobs:
     name: Check files for broken links
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v7
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         sparse-checkout: |
           changelog
@@ -22,4 +22,4 @@ jobs:
       with:
         repoToken: ${{ secrets.GITHUB_TOKEN }}
         changeLogDirectory: changelog
-      uses: microsoftgraph/changelog-link-check@v1.0.9
+      uses: microsoftgraph/changelog-link-check@c6ca82660f2b4c55a617a5ff763d9c726be5e7c8 # v1.0.9
