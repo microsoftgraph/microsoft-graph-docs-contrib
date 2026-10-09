@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## October 2026: New and generally available
+
+### Mail | Message trace
+
+- Added support for identifying recalled messages in message trace. Use the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource's **status** property, which can now return `recalled`.
+
 ## October 2026: New in preview only
 
 ### Backup and recovery | Microsoft 365 backup and storage
