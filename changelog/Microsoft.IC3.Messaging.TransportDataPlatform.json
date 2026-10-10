@@ -1,6 +1,42 @@
 ﻿{
   "changelog": [
+    {
+      "ChangeList": [
         {
+          "Id": "0ec2b141-15be-445e-8b14-76ab4e0d1206",
+          "ApiChange": "Member",
+          "ChangedApiName": "recalled",
+          "ChangeType": "Addition",
+          "Description": "Added the `recalled` member to the **exchangeMessageTraceStatus** enumeration.",
+          "Target": "exchangeMessageTraceStatus"
+        }
+      ],
+      "Id": "0ec2b141-15be-445e-8b14-76ab4e0d1206",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-26T06:22:29.4756556Z",
+      "WorkloadArea": "Mail",
+      "SubArea": "Message trace"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "076d63a4-c41f-4c90-ad91-ff1babd3853e",
+          "ApiChange": "Member",
+          "ChangedApiName": "recalled",
+          "ChangeType": "Addition",
+          "Description": "Added the `recalled` member to the **exchangeMessageTraceStatus** enumeration.",
+          "Target": "exchangeMessageTraceStatus"
+        }
+      ],
+      "Id": "076d63a4-c41f-4c90-ad91-ff1babd3853e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-26T06:22:29.4756523Z",
+      "WorkloadArea": "Mail",
+      "SubArea": "Message trace"
+    },
+    {
       "ChangeList": [
         {
           "Id": "a592de1a-e574-46ce-8911-27c13af4c759",
