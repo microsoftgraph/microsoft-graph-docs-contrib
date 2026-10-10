@@ -35,7 +35,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |id|String|The unique identifier for the audit log query. Inherited from [entity](../resources/entity.md).|
 |ipAddressFilters|String collection|The collection of IP addresses to filter on.|
 |isRecordCountLimitExceeded|Boolean|Indicates whether the query exceeded the per-search record-count limit. The default value is `false`. A value of `true` is authoritative and isn't derived from **approximateReturnedRecordCount**. Read-only.|
-|keywordFilter|String|The keyword to filter on.|
+|keywordFilter|String|Free text to match against the non-indexed content of each record: the workload-specific properties inside **auditData**, including its `AppAccessContext` object. The indexed common-schema properties, such as the operation name, aren't matched by keyword; use their own filters, such as **operationFilters**, for those.|
 |objectIdFilters|String collection|The collection of object IDs to filter on.|
 |operationFilters|String collection|The collection of operations to filter on.|
 |recordCountLimit|Int64|The record-count threshold used to limit query result retrieval. Read-only.|

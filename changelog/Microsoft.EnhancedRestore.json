@@ -539,6 +539,120 @@
       {
         "ChangeList": [
           {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "activityLogOperationType",
+            "ChangeType": "Addition",
+            "Description": "Added the **activityLogOperationType** enumeration type.",
+            "Target": "activityLogOperationType"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "activityLogResultStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **activityLogResultStatus** enumeration type.",
+            "Target": "activityLogResultStatus"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "activityLogSeverity",
+            "ChangeType": "Addition",
+            "Description": "Added the **activityLogSeverity** enumeration type.",
+            "Target": "activityLogSeverity"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "serviceType",
+            "ChangeType": "Addition",
+            "Description": "Added the **serviceType** enumeration type.",
+            "Target": "serviceType"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "offboardingDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the [offboardingDetails](https://learn.microsoft.com/en-us/graph/api/resources/offboardingDetails?view=graph-rest-beta) resource.",
+            "Target": "offboardingDetails"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "protectionUnitDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the [protectionUnitDetails](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitDetails?view=graph-rest-beta) resource.",
+            "Target": "protectionUnitDetails"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "restoreArtifactDetails",
+            "ChangeType": "Addition",
+            "Description": "Added the [restoreArtifactDetails](https://learn.microsoft.com/en-us/graph/api/resources/restoreArtifactDetails?view=graph-rest-beta) resource.",
+            "Target": "restoreArtifactDetails"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "activityLogBase",
+            "ChangeType": "Addition",
+            "Description": "Added the [activityLogBase](https://learn.microsoft.com/en-us/graph/api/resources/activityLogBase?view=graph-rest-beta) resource.",
+            "Target": "activityLogBase"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "backupPolicyActivityLog",
+            "ChangeType": "Addition",
+            "Description": "Added the [backupPolicyActivityLog](https://learn.microsoft.com/en-us/graph/api/resources/backupPolicyActivityLog?view=graph-rest-beta) resource.",
+            "Target": "backupPolicyActivityLog"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "activityLogs",
+            "ChangeType": "Addition",
+            "Description": "Added the **activityLogs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+            "Target": "backupRestoreRoot"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "dynamicRuleActivityLog",
+            "ChangeType": "Addition",
+            "Description": "Added the [dynamicRuleActivityLog](https://learn.microsoft.com/en-us/graph/api/resources/dynamicRuleActivityLog?view=graph-rest-beta) resource.",
+            "Target": "dynamicRuleActivityLog"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "offboardingActivityLog",
+            "ChangeType": "Addition",
+            "Description": "Added the [offboardingActivityLog](https://learn.microsoft.com/en-us/graph/api/resources/offboardingActivityLog?view=graph-rest-beta) resource.",
+            "Target": "offboardingActivityLog"
+          },
+          {
+            "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+            "ApiChange": "Resource",
+            "ChangedApiName": "restoreTaskActivityLog",
+            "ChangeType": "Addition",
+            "Description": "Added the [restoreTaskActivityLog](https://learn.microsoft.com/en-us/graph/api/resources/restoreTaskActivityLog?view=graph-rest-beta) resource.",
+            "Target": "restoreTaskActivityLog"
+          }
+        ],
+        "Id": "b5471e04-0ac6-4c19-9745-de96257b1ae0",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2026-02-24T09:33:47.7469989Z",
+        "WorkloadArea": "EnhancedRestore",
+        "SubArea": "Backup and Restore"
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
             "ApiChange": "Member",
             "ChangedApiName": "updateRequested",

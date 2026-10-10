@@ -5734,6 +5734,7 @@ Possible values for user account types (group membership), per Windows definitio
 |quarantined|
 |filteredAsSpam|
 |unknownFutureValue|
+|recalled|
 
 ### notificationEventsType values
 
@@ -6134,6 +6135,51 @@ Possible values for user account types (group membership), per Windows definitio
 |allowedTenants|
 |unknownFutureValue|
 
+### activityLogOperationType values 
+
+|Member|
+|:---|
+|backupPolicyCreated|
+|backupPolicyActivated|
+|backupPolicyModified|
+|backupPolicyPaused|
+|backupPolicyRenamed|
+|dynamicRuleExecution|
+|dynamicRuleDeletion|
+|protectionUnitLevelOffboarding|
+|policyLevelOffboarding|
+|restoreTaskCreated|
+|restoreTaskCompleted|
+|unknownFutureValue|
+
+### activityLogResultStatus values 
+
+|Member|
+|:---|
+|succeeded|
+|failed|
+|partiallySucceeded|
+|unknownFutureValue|
+
+### activityLogSeverity values 
+
+|Member|
+|:---|
+|high|
+|medium|
+|low|
+|unknownFutureValue|
+
+### serviceType values 
+
+|Member|
+|:---|
+|unknown|
+|sharepoint|
+|exchange|
+|oneDriveForBusiness|
+|unknownFutureValue|
+
 ### browsableResourceType values 
 
 |Member|
@@ -6233,7 +6279,7 @@ Possible values for user account types (group membership), per Windows definitio
 |inactive|
 |unknownFutureValue|
 
-### snapshotJobStatus values 
+### snapshotJobStatus values
 
 |Member|
 |:---|

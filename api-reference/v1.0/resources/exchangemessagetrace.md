@@ -33,7 +33,7 @@ Represents the trace information for an email message as it passes through the E
 |recipientAddress|String|The SMTP email address of the user that the message was addressed to. <br/><br/>Supports `$filter` (`eq`).|
 |senderAddress|String|The SMTP email address of the user the message was purportedly from. <br/><br/>Supports `$filter` (`eq`).|
 |size|Int32|The size of the message in bytes.|
-|status|exchangeMessageTraceStatus|The delivery status of the message. The possible values are: `gettingStatus`, `pending`, `failed`, `delivered`, `expanded`, `quarantined`, `filteredAsSpam`, `unknownFutureValue`. <br/><br/>Supports `$filter` (`eq`).|
+|status|exchangeMessageTraceStatus|The delivery status of the message. The possible values are: `gettingStatus`, `pending`, `failed`, `delivered`, `expanded`, `quarantined`, `filteredAsSpam`, `unknownFutureValue`, `recalled`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this evolvable enum: `recalled`. <br/><br/>Supports `$filter` (`eq`).|
 |subject|String|The subject line of the message. <br/><br/>Supports `$filter` (`contains`, `startsWith`, `endsWith`).|
 |toIP|String|The destination IP address. For outgoing messages, this value is the public IP address in the resolved MX record for the destination domain. For incoming messages to Exchange Online, this value is blank. <br/><br/>Supports `$filter` (`eq`).|
 

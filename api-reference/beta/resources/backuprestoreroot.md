@@ -36,6 +36,7 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|activityLogs|[activityLogBase](../resources/activitylogbase.md) collection|The list of activity logs in the tenant.|
 |browseSessions|[browseSessionBase](../resources/browsesessionbase.md) collection|The list of browse sessions in the tenant.|
 |driveExclusionUnits|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|The list of drive exclusion units in the tenant.|
 |driveExclusionUnitsBulkAdditionJobs|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|The list of bulk addition jobs for drive exclusion units in the tenant.|

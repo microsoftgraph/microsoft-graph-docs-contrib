@@ -4134,6 +4134,7 @@ Possible values for user account types (group membership), per Windows definitio
 |quarantined|
 |filteredAsSpam|
 |unknownFutureValue|
+|recalled|
 
 ### webApplicationFirewallDnsRecordType values 
 
