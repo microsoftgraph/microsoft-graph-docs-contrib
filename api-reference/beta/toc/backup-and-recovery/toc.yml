@@ -51,6 +51,12 @@ items:
 - name: Microsoft 365 backup and storage
   displayName: M365 Backup Storage, Microsoft 365 Backup Storage, Enhanced Restore
   items:
+  - name: Activity log base
+    items:
+    - name: Activity log base
+      href: ../../resources/activitylogbase.md
+    - name: List
+      href: ../../api/backuprestoreroot-list-activitylogs.md
   - name: Backup report
     items:
     - name: Backup report
@@ -506,8 +512,14 @@ items:
       href: ../../resources/browsequeryresponseitem.md
     - name: Notification recipients
       href: ../../resources/notificationrecipients.md
+    - name: Offboarding details
+      href: ../../resources/offboardingdetails.md
     - name: Protection policy artifact count
       href: ../../resources/protectionpolicyartifactcount.md
+    - name: Protection unit details
+      href: ../../resources/protectionunitdetails.md
+    - name: Restore artifact details
+      href: ../../resources/restoreartifactdetails.md
     - name: Restore point search response
       href: ../../resources/restorepointsearchresponse.md
     - name: Restore point search result

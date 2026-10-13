@@ -22,13 +22,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Mail | Message trace
 
-- Added support for identifying recalled messages in message trace. Use the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource's **status** property, which can now return `recalled`.
+Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource.
 
 ## October 2026: New in preview only
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
-- Track admin activities on backup and restore resources, including policy changes, dynamic rule executions, offboarding, and restore task completions, by using the [activityLogBase](/graph/api/resources/activitylogbase?view=graph-rest-beta&preserve-view=true) resource and its derived types.
+Track admin activities on backup and restore resources, including policy changes, dynamic rule executions, offboarding, and restore task completions, by using the [activityLogBase](/graph/api/resources/activitylogbase?view=graph-rest-beta&preserve-view=true) resource and its derived types.
+
+### Mail | Message trace
+
+Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Mailbox import and export
 
@@ -257,6 +261,7 @@ Added the **incidentConfiguration** property to the [detectionAction](/graph/api
 ### Security | Audit log query
 
 - Added the **isRecordCountLimitExceeded**, **recordCountLimit**, and **approximateReturnedRecordCount** properties to the [auditLogQuery](/graph/api/resources/security-auditlogquery?view=graph-rest-beta&preserve-view=true) resource. Use these properties to determine whether a completed query exceeded the per-search record-count limit and to inspect the applicable limit and approximate returned record count.
+- Added 35 members, from `PlannerCustomFieldDefinition` through `MESRawEmailContentMetadata`, to the [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype?view=graph-rest-beta&preserve-view=true) enumeration and added the matching [auditData derived types](/graph/api/resources/security-auditdata-derived-types?view=graph-rest-beta&preserve-view=true) to represent workload-specific audit event payloads.
 
 ### Security | Data security and compliance
 

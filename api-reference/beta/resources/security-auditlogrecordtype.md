@@ -5,7 +5,7 @@ author: "diksha27"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: enumPageType
-ms.date: 04/01/2026
+ms.date: 09/29/2026
 ---
 
 # auditLogRecordType enum type
@@ -491,6 +491,41 @@ Represents the type of operation indicated by an audit log record.
 | MDASH | MDASH audit log record. |
 | DefenderSecurityForAIConfiguration | DefenderSecurityForAIConfiguration audit log record. |
 | SparkCoreCustomLivePool | SparkCoreCustomLivePool audit log record. |
+| PlannerCustomFieldDefinition | PlannerCustomFieldDefinition audit log record. |
+| PlannerCustomFieldDefinitionList | PlannerCustomFieldDefinitionList audit log record. |
+| SyntheticMediaDetectionEvent | SyntheticMediaDetectionEvent audit log record. |
+| VivaGlintVivaInsightsIntegration | VivaGlintVivaInsightsIntegration audit log record. |
+| PeopleSkillsAdmin | PeopleSkillsAdmin audit log record. |
+| PeopleSkillsUser | PeopleSkillsUser audit log record. |
+| DSPMAdminActivity | DSPMAdminActivity audit log record. |
+| OnDemandExchangeClassification | OnDemandExchangeClassification audit log record. |
+| UniversalPrintSecureScan | UniversalPrintSecureScan audit log record. |
+| CloudSecurityManagement | CloudSecurityManagement audit log record. |
+| CloudSecurityConnector | CloudSecurityConnector audit log record. |
+| CloudSecurityEnablement | CloudSecurityEnablement audit log record. |
+| MCSRawEmailContentMetadata | MCSRawEmailContentMetadata audit log record. |
+| AIGuardrail | AIGuardrail audit log record. |
+| A365AIGuardrail | A365AIGuardrail audit log record. |
+| WorkIQAdminActivity | WorkIQAdminActivity audit log record. |
+| VivaGlintClientConfiguration | VivaGlintClientConfiguration audit log record. |
+| VivaGlintDataRetention | VivaGlintDataRetention audit log record. |
+| FilteringTeamsMessageFileInfo | FilteringTeamsMessageFileInfo audit log record. |
+| SharePointFileArchivePolicy | SharePointFileArchivePolicy audit log record. |
+| DefenderAutomationRule | DefenderAutomationRule audit log record. |
+| DefenderGeneratedPlaybook | DefenderGeneratedPlaybook audit log record. |
+| DefenderIntegration | DefenderIntegration audit log record. |
+| P4AIDagSitePermissionsRecord | P4AIDagSitePermissionsRecord audit log record. |
+| PlannerDependency | PlannerDependency audit log record. |
+| PlannerDependencyList | PlannerDependencyList audit log record. |
+| CSCContentMetadata | CSCContentMetadata audit log record. |
+| MicrosoftSecurityForAIConfiguration | MicrosoftSecurityForAIConfiguration audit log record. |
+| MicrosoftSecurityForAIRealTimeProtection | MicrosoftSecurityForAIRealTimeProtection audit log record. |
+| MTPContentMetadata | MTPContentMetadata audit log record. |
+| ComplianceEvaluationIncomplete | ComplianceEvaluationIncomplete audit log record. |
+| ComplianceEndpointEvaluationIncomplete | ComplianceEndpointEvaluationIncomplete audit log record. |
+| MicrosoftTeamsMoveMessages | MicrosoftTeamsMoveMessages audit log record. |
+| ECSContentMetadata | ECSContentMetadata audit log record. |
+| MESRawEmailContentMetadata | MESRawEmailContentMetadata audit log record. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
