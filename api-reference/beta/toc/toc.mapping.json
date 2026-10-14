@@ -3389,7 +3389,22 @@
         "plannerRoster",
         "plannerUser",
         "plannerTaskDetails",
-        "teamsChannelPlanner"
+        "teamsChannelPlanner",
+        "bucket",
+        "categoryDefinition",
+        "checklistItemV4",
+        "contentLink",
+        "customChoiceOption",
+        "customFieldDefinition",
+        "customFieldValue",
+        "dependency",
+        "goal",
+        "historyItem",
+        "plan",
+        "planContextLink",
+        "plannerChatMessage",
+        "task",
+        "userAssignment"
       ],
       "complexTypes": [
         "businessScenarioGroupTarget",
