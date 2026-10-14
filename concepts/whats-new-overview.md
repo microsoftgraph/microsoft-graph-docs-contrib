@@ -75,6 +75,8 @@ Added the **onPremisesExtensionAttributes** property to the [group](/graph/api/r
 
 ### Identity and access | Identity and sign-in
 
+Added the [resourceAccountKeyAuthenticationMethod](/graph/api/resources/resourceaccountkeyauthenticationmethod) resource type and related methods for managing resource account key credentials on shared devices. Use the APIs to list, get, and delete credentials that enable devices such as Teams Rooms and Teams phones to sign in without user interaction.
+
 Added the [anonymousCalendarSharingFreeBusyDetail](/graph/api/resources/anonymouscalendarsharingfreebusydetail), [anonymousCalendarSharingFreeBusyReviewer](/graph/api/resources/anonymouscalendarsharingfreebusyreviewer), and [anonymousCalendarSharingFreeBusySimple](/graph/api/resources/anonymouscalendarsharingfreebusysimple) resource types. Use these cross-tenant access policy capabilities to authorize anonymous external users to view calendar free/busy information at different levels of detail.
 
 ### Security | Audit log query
