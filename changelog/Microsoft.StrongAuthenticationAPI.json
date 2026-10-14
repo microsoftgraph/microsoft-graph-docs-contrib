@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "d4571aa0-7113-4bd8-adf9-7cd708b80046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "resourceAccountKeyAuthenticationMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccountKeyAuthenticationMethods** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "d4571aa0-7113-4bd8-adf9-7cd708b80046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceAccountKeyAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceAccountKeyAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/resourceaccountkeyauthenticationmethod?view=graph-rest-1.0) resource.",
+          "Target": "resourceAccountKeyAuthenticationMethod"
+        }
+      ],
+      "Id": "d4571aa0-7113-4bd8-adf9-7cd708b80046",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-25T17:51:01.4210742Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "64728a28-e10d-4a61-a2a8-b8ab7f979d6c",
           "ApiChange": "Relationship",
           "ChangedApiName": "resourceAccountKeyAuthenticationMethods",
