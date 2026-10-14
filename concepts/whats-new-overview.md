@@ -20,6 +20,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## October 2026: New and generally available
 
+### Calendars
+
+- Promoted the **isSharedWithMe** property of [calendar](/graph/api/resources/calendar) resource from beta to v1.0. The property is used to identify the shared calendars.
+- Added the [delta](/graph/api/calendar-delta) method to the [calendar](/graph/api/resources/calendar) resource type. Use it to track calendars added, deleted, or updated in a user's mailbox.
+
 ### Mail | Message trace
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource.
