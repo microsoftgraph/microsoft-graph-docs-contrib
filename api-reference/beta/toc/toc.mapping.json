@@ -3289,6 +3289,15 @@
             "microsoft.graph.security.caseManagement.optionsCustomFieldDefinition",
             "microsoft.graph.security.caseManagement.statusDefinition"
           ]
+        },
+        {
+          "name": "Workbooks",
+          "resources": [
+            "microsoft.graph.security.workbook"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.workbookContent"
+          ]
         }
       ]
     },

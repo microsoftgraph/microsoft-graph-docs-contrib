@@ -44,6 +44,10 @@ Added support to identify recalled messages in message trace. Use `recalled` as 
 - Added the **isHidden** property to the [mailboxFolder](/graph/api/resources/mailboxfolder?view=graph-rest-beta&preserve-view=true) resource to identify hidden mailbox folders. 
 - Use the existing **includeHiddenFolders** query parameter for [listing folders](/graph/api/mailbox-list-folders?view=graph-rest-beta&preserve-view=true) and [listing child folders](/graph/api/mailboxfolder-list-childfolders?view=graph-rest-beta&preserve-view=true). Set it to `true` to include both hidden and nonhidden folders.
 
+### Security | Workbooks
+
+- Added the [workbook](/graph/api/resources/security-workbook?view=graph-rest-beta&preserve-view=true) resource type and related methods to manage tenant-scoped Microsoft Security workbook documents. Use stable IDs for repeatable deployments and replace a workbook's JSON content as a complete document.
+
 ## September 2026: New and generally available
 
 ### Calendars | Work hours and locations

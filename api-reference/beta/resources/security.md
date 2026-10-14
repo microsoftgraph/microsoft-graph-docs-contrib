@@ -19,6 +19,8 @@ Connects Microsoft security products, services, and partners to streamline secur
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List workbooks](../api/security-list-workbooks.md)|[microsoft.graph.security.workbook](../resources/security-workbook.md) collection|Get the workbooks in the tenant.|
+|[Create workbook](../api/security-post-workbooks.md)|[microsoft.graph.security.workbook](../resources/security-workbook.md)|Create a workbook with a server-generated ID.|
 |[Run hunting query](../api/security-security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.|
 |[Get hunting schema](../api/security-security-gethuntingschema.md)|[microsoft.graph.security.huntingSchemaResult](../resources/security-huntingschemaresult.md)|Retrieves the advanced hunting schema accessible to the signed-in user, including the tables and functions the user is authorized to query and invoke.|
 |[Get hunting schema tables](../api/security-security-gethuntingschematables.md)|[microsoft.graph.security.huntingSchemaTable](../resources/security-huntingschematable.md) collection|Retrieves only the advanced hunting tables accessible to the signed-in user, as a collection that supports OData query parameters.|
@@ -44,6 +46,7 @@ None.
 |securityCopilot | [securityCopilot](../resources/securitycopilot.md) collection | Represents the resources related to Microsoft Security Copilot. |
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|
 |threatSubmission|[security.threatSubmission](../resources/security-threatsubmission.md)|A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.|
+|workbooks|[microsoft.graph.security.workbook](../resources/security-workbook.md) collection|The Microsoft Security workbooks in the tenant. The collection response omits workbook content by default; explicitly select **content** to include it.|
 |zones|[microsoft.graph.security.zone](../resources/security-zone.md) collection|A collection of cloud zones in Microsoft Defender for Cloud that group and manage cloud environments across multiple cloud providers.|
 |tiIndicators (deprecated)|[tiIndicator](../resources/tiindicator.md) collection|Deprecated. The tiIndicator entity is deprecated and will be removed by April 2026.|
 
