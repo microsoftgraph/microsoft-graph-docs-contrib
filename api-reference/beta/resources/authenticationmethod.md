@@ -45,6 +45,7 @@ This resource type is an abstract type that's inherited by the following derived
 | Method       | Return type | Description |
 |:-------------|:------------|:------------|
 | [List](../api/authentication-list-methods.md) | [authenticationMethod](authenticationmethod.md) collection | Read the properties and relationships of all of a user's **authenticationMethod** objects. |
+| [Attest provenance](../api/authenticationmethod-attestprovenance.md) | [credentialProvenance](../resources/credentialprovenance.md) | Apply an administrative attestation to an authentication method's credential provenance. |
 
 ## Properties
 
@@ -53,7 +54,7 @@ This resource type is an abstract type that's inherited by the following derived
 | createdDateTime | DateTimeOffset | The date and time the authentication method was registered to the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | id | String | The identifier of this instance of an authentication method registered to this user. Read-only. Inherited from [entity](../resources/entity.md). |
 | lastUsedDateTime | DateTimeOffset | The date and time the authentication method was last used by the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| provenance | [credentialProvenance](../resources/credentialprovenance.md) | The provenance and trust classification of the authentication method. Supports administrative attestation through the `attestProvenance` action. Returned for FIDO2 authentication methods; `null` for method types that don't support provenance. |
+| provenance | [credentialProvenance](../resources/credentialprovenance.md) | The provenance and trust classification of the authentication method. Supports [administrative attestation](../api/authenticationmethod-attestprovenance.md). Returned for FIDO2 authentication methods; `null` for method types that don't support provenance. |
 
 ## Relationships
 

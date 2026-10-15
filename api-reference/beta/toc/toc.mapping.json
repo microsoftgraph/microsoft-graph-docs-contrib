@@ -1699,10 +1699,15 @@
             {
               "name": "Verified ID",
               "resources": [
+                "identityVerificationEvent",
+                "identityVerificationStatus",
                 "verifiedIdProfile"
               ],
               "complexTypes": [
                 "mobileDriversLicenseConfiguration",
+                "verificationEventDetail",
+                "verificationEventLifecycle",
+                "verificationEventOverride",
                 "verifiedIdSelfServiceIssuance"
               ]
             },

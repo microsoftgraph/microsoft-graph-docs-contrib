@@ -89,6 +89,94 @@
           "ChangeType": "Addition",
           "Description": "Added the [provenanceClassification](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#provenanceclassification-values) enumeration.",
           "Target": "provenanceClassification"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identityVerificationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityVerificationStatus** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityVerificationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityVerificationStatus](https://learn.microsoft.com/en-us/graph/api/resources/identityverificationstatus?view=graph-rest-beta) resource and related methods to read a user's identity verification status and record verification events.",
+          "Target": "identityVerificationStatus"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityVerificationEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityVerificationEvent](https://learn.microsoft.com/en-us/graph/api/resources/identityverificationevent?view=graph-rest-beta) resource and related methods to record verification events, apply administrative override reasons, and remove event records.",
+          "Target": "identityVerificationEvent"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verificationEventDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [verificationEventDetail](https://learn.microsoft.com/en-us/graph/api/resources/verificationeventdetail?view=graph-rest-beta) complex type.",
+          "Target": "verificationEventDetail"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verificationEventLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the [verificationEventLifecycle](https://learn.microsoft.com/en-us/graph/api/resources/verificationeventlifecycle?view=graph-rest-beta) complex type.",
+          "Target": "verificationEventLifecycle"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verificationEventOverride",
+          "ChangeType": "Addition",
+          "Description": "Added the [verificationEventOverride](https://learn.microsoft.com/en-us/graph/api/resources/verificationeventoverride?view=graph-rest-beta) complex type.",
+          "Target": "verificationEventOverride"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verificationActorType",
+          "ChangeType": "Addition",
+          "Description": "Added the [verificationActorType](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#verificationactortype-values) enumeration.",
+          "Target": "verificationActorType"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verificationEventLifecycleState",
+          "ChangeType": "Addition",
+          "Description": "Added the [verificationEventLifecycleState](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#verificationeventlifecyclestate-values) enumeration.",
+          "Target": "verificationEventLifecycleState"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verificationLifecycleSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [verificationLifecycleSource](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#verificationlifecyclesource-values) enumeration.",
+          "Target": "verificationLifecycleSource"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verificationState",
+          "ChangeType": "Addition",
+          "Description": "Added the [verificationState](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#verificationstate-values) enumeration.",
+          "Target": "verificationState"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Method",
+          "ChangedApiName": "attestProvenance",
+          "ChangeType": "Addition",
+          "Description": "Added the [attestProvenance](https://learn.microsoft.com/en-us/graph/api/authenticationmethod-attestprovenance?view=graph-rest-beta) action to the [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta) resource to apply an administrative attestation to credential provenance.",
+          "Target": "authenticationMethod"
         }
       ],
       "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",

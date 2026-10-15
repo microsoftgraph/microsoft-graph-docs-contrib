@@ -19,7 +19,7 @@ Represents the provenance and trust classification of an authentication method.
 
 Credential provenance is recorded during credential registration and supports administrative attestation. The service computes the trust classification and records the actor that established the provenance.
 
-To apply an administrative attestation, call the `attestProvenance` action on the authentication method with an **attestationReason** and **verificationEventId**. The action supports delegated and application callers with the `CredentialProvenance.ReadWrite.All` permission and returns the updated **credentialProvenance** object. Classification, actor information, and timestamps are managed by the service.
+To apply an administrative attestation, call the [attestProvenance](../api/authenticationmethod-attestprovenance.md) action on the authentication method with an **attestationReason** and **verificationEventId**. The action supports delegated and application callers with the `CredentialProvenance.ReadWrite.All` permission and returns the updated **credentialProvenance** object. Classification, actor information, and timestamps are managed by the service.
 
 ## Properties
 

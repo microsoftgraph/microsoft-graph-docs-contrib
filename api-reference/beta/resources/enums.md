@@ -6452,3 +6452,44 @@ Possible values for user account types (group membership), per Windows definitio
 |mediumAssurance|
 |lowAssurance|
 |unknownFutureValue|
+
+### verificationActorType values
+
+|Member|
+|:---|
+|user|
+|application|
+|unknownFutureValue|
+
+### verificationEventLifecycleState values
+
+|Member|
+|:---|
+|active|
+|revoked|
+|suspended|
+|invalidated|
+|issued|
+|blocked|
+|unknownFutureValue|
+
+### verificationLifecycleSource values
+
+|Member|
+|:---|
+|entra|
+|adminOverride|
+|apiOverride|
+|unknownFutureValue|
+
+### verificationState values
+
+|Member|
+|:---|
+|unverified|
+|verified|
+|revoked|
+|suspended|
+|issued|
+|blocked|
+|unknownFutureValue|

@@ -26,7 +26,7 @@ Represents an assertion that contributes to an authentication method's [credenti
 | provenanceType | [provenanceAssertionType](../resources/enums.md#provenanceassertiontype-values) | The type of provenance assertion. The possible values are: `identityVerification`, `derivedFromCredential`, `manualAttestation`, `unknownFutureValue`. |
 | sourceCredentialId | String | The identifier of the credential from which this credential was derived. |
 | sourceCredentialType | String | The type of credential from which this credential was derived. |
-| verificationEventId | String | The identifier of the identity verification event that supports this assertion. |
+| verificationEventId | String | The identifier of the [identityVerificationEvent](../resources/identityverificationevent.md) that supports this assertion. |
 
 ## Relationships
 
