@@ -1,6 +1,6 @@
 ---
 title: "calendar: delta"
-description: "Get a set of calendars added, deleted, or updated in a user's mailbox."
+description: "Get a set of calendars added, updated, or deleted in a user's mailbox."
 ms.localizationpriority: medium
 author: "vikailas"
 ms.subservice: "outlook"
@@ -13,7 +13,8 @@ ms.date: 06/22/2024
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get a set of [calendar](../resources/calendar.md) resources added, deleted, or updated in one or more calendars.
+
+Get a set of [calendar](../resources/calendar.md) resources added, updated, or deleted in a user's mailbox.
 
 Typically, synchronizing calendars in a mailbox in a local store entails a round of multiple **delta** function calls. The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates). Using deltas allows you to incrementally maintain and synchronize a local store of calendars in the specified mailbox.
 
@@ -28,9 +29,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To begin tracking changes, you make a request including the delta function on the calendara resource.
+To begin tracking changes, make a request that includes the delta function on the calendar resource.
 
-* To get incremental changes of the calendar list _in the user's mailbox_:
+For incremental changes to the calendar list in the user's mailbox.
+
 <!-- {
   "blockType": "ignored"
 }
@@ -39,24 +41,26 @@ To begin tracking changes, you make a request including the delta function on th
 GET /me/calendars/delta
 GET /users/{usersId}/calendars/delta
 ```
+
 ## Query parameters
 
-Tracking changes in groups incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
+Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the **@odata.nextLink** or **@odata.deltaLink** URL provided in the response.
 
-You only need to specify any desired query parameters once upfront.
+Specify any desired query parameters only in the initial request.
 
-In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
+In subsequent requests, use the **@odata.nextLink** or **@odata.deltaLink** URL from the previous response. The URL already includes the encoded query parameters.
 
-| Query parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same calendar list, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that calendar list.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar list. |
+| Query parameter | Type | Description |
+|:---------------|:-----|:------------|
+| $deltatoken | String | A [state token](/graph/delta-query-overview) returned in the **@odata.deltaLink** URL of the previous **delta** function call for the same calendar list that indicates the completion of that round of change tracking. Save and apply the entire **@odata.deltaLink** URL, including this token, in the first request of the next round of change tracking for that calendar list. |
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the **@odata.nextLink** URL of the previous **delta** function call that indicates further changes need to be tracked in the same calendar list. |
 
-### OData query parameters
-This method supports optional OData query parameters to help customize the response.
+### Optional query parameters
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance.
-- The **delta** function doesn't support the following query parameters: `$expand`, `$filter`,`$orderby`, `$search`, and `$select`.
+This method supports optional [OData query parameters](/graph/query-parameters) to help customize the response.
+
+- You can use a `$select` query parameter as in any GET request to specify only the properties you need for best performance.
+- The **delta** function doesn't support the following query parameters: `$expand`, `$filter`, `$orderby`, and `$search`.
 
 ## Request headers
 | Name       | Type | Description |
@@ -71,13 +75,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [calendar](../resources/calendar.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [calendar](../resources/calendar.md) objects in the response body.
 
 ## Examples
 
 ### Request
 
-The following example shows a request. There's no `$select` parameter, so a default set of properties is tracked and returned.
+The following example shows a request without the `$select` parameter; a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,12 +125,9 @@ GET https://graph.microsoft.com/beta/me/calendars/delta
 
 ### Response
 
-If the request is successful, the response includes a state token, which is either a _skipToken_
-(in an _\@odata.nextLink_ response header) or a _deltaToken_ (in an _\@odata.deltaLink_ response header).
-Respectively, they indicate whether you should continue with the round or you have completed
-getting all the changes for that round.
+If the request is successful, the response includes a state token, which is either a `$skipToken` (in an **@odata.nextLink** response header) or a `$deltaToken` (in an **@odata.deltaLink** response header). Respectively, they indicate whether you should continue with the round or whether you finished getting all the changes for that round.
 
-The response below shows a _deltaToken_ in an _\@odata.deltaLink_ response header.
+The following response shows a `$deltaToken` in an **@odata.deltaLink** response header.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
