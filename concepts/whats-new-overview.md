@@ -33,7 +33,9 @@ Added support to identify recalled messages in message trace. Use `recalled` as 
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
-Track admin activities on backup and restore resources, including policy changes, dynamic rule executions, offboarding, and restore task completions, by using the [activityLogBase](/graph/api/resources/activitylogbase?view=graph-rest-beta&preserve-view=true) resource and its derived types.
+- Track admin activities on backup and restore resources, including policy changes, dynamic rule executions, offboarding, and restore task completions, by using the [activityLogBase](/graph/api/resources/activitylogbase?view=graph-rest-beta&preserve-view=true) resource and its derived types.
+- Removed the **tags** property on the [restoreTaskActivityLog](/graph/api/resources/restoretaskactivitylog?view=graph-rest-beta&preserve-view=true) in favor of the **restoreJobType** property. Use the **restoreJobType** property with values from the [restoreJobType](/graph/api/resources/enums?view=graph-rest-beta&preserve-view=true#restorejobtype-values) enumeration type.
+- Added the **backupPolicyDeleted** member as a new supported value for the **activityType** property on the [activityLogBase](/graph/api/resources/activitylogbase?view=graph-rest-beta&preserve-view=true) resource and its derived types.
 
 ### Device and app management | Cloud PC
 
