@@ -21,6 +21,8 @@ The **plannerGroup** resource provides access to Planner resources for a [group]
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List group's plans](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
+|[List plans_v2](../api/plannergroup-list-plans_v2.md) |[plan](plan.md) collection| Get a list of the [plan](plan.md) objects owned by the group.|
+|[Create plan_v2](../api/plannergroup-post-plans_v2.md) |[plan](plan.md)| Create a new [plan](plan.md) object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -31,6 +33,7 @@ The **plannerGroup** resource provides access to Planner resources for a [group]
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.|
+|plans_v2|[plan](../resources/plan.md) collection| Read-only. Nullable. The collection of Planner Graph V4 plans owned by the group.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
