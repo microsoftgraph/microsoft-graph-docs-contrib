@@ -53,7 +53,7 @@ This resource type is an abstract type that's inherited by the following derived
 | createdDateTime | DateTimeOffset | The date and time the authentication method was registered to the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | id | String | The identifier of this instance of an authentication method registered to this user. Read-only. Inherited from [entity](../resources/entity.md). |
 | lastUsedDateTime | DateTimeOffset | The date and time the authentication method was last used by the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| provenance | [credentialProvenance](../resources/credentialprovenance.md) | The provenance and trust classification of the authentication method. Supports administrative overrides. During the Chain of Trust private preview, this property is returned only for FIDO2 authentication methods in enrolled tenants. |
+| provenance | [credentialProvenance](../resources/credentialprovenance.md) | The provenance and trust classification of the authentication method. Supports administrative attestation through the `attestProvenance` action. Returned for FIDO2 authentication methods; `null` for method types that don't support provenance. |
 
 ## Relationships
 

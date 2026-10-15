@@ -32,7 +32,7 @@ Track admin activities on backup and restore resources, including policy changes
 
 ### Identity and access | Identity and sign-in
 
-Added the **provenance** property to the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta&preserve-view=true) resource. For tenants enrolled in the Chain of Trust private preview, the property provides the trust classification, supporting assertions, and chain status of FIDO2 authentication methods returned by the [list](/graph/api/fido2authenticationmethod-list?view=graph-rest-beta&preserve-view=true) and [get](/graph/api/fido2authenticationmethod-get?view=graph-rest-beta&preserve-view=true) operations. Credential provenance also supports administrative overrides.
+Added the **provenance** property to the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta&preserve-view=true) resource. The property provides the trust classification, supporting assertions, and chain status of FIDO2 authentication methods returned by the [list](/graph/api/fido2authenticationmethod-list?view=graph-rest-beta&preserve-view=true) and [get](/graph/api/fido2authenticationmethod-get?view=graph-rest-beta&preserve-view=true) operations. [Credential provenance](/graph/api/resources/credentialprovenance?view=graph-rest-beta&preserve-view=true) also supports administrative attestation through the `attestProvenance` action.
 
 ### Mail | Message trace
 

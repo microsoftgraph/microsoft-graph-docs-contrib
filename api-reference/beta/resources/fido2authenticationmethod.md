@@ -41,7 +41,7 @@ The **fido2AuthenticationMethod** resource is a derived type that inherits from 
 | lastUsedDateTime | DateTimeOffset | The date and time the authentication method was last used by the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [authenticationMethod](../resources/authenticationmethod.md). |
 | model | String | The manufacturer-assigned model of the FIDO2 security key. |
 | passkeyType | passkeyType | The type of passkey allowed in the passkey profile. The possible values are: `deviceBound`, `synced`, `unknownFutureValue`. |
-| provenance | [credentialProvenance](../resources/credentialprovenance.md) | The provenance and trust classification of the authentication method. Supports administrative overrides. This property is available only to tenants enrolled in the Chain of Trust private preview. Inherited from [authenticationMethod](../resources/authenticationmethod.md). |
+| provenance | [credentialProvenance](../resources/credentialprovenance.md) | The provenance and trust classification of the authentication method. Supports administrative attestation through the `attestProvenance` action. Inherited from [authenticationMethod](../resources/authenticationmethod.md). |
 | publicKeyCredential | [webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md) | Contains the WebAuthn public key credential information being registered. Only used for write requests. This property isn't returned on read operations. |
 
 ## Relationships

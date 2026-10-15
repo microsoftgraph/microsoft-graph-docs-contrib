@@ -22,8 +22,7 @@ Represents an assertion that contributes to an authentication method's [credenti
 | Property | Type | Description |
 |:---|:---|:---|
 | attestationReason | String | The reason supplied for a manual attestation. |
-| attestedAtDateTime | DateTimeOffset | The date and time when a manual attestation was recorded. |
-| derivedAtDateTime | DateTimeOffset | The date and time when the credential was derived from another credential. |
+| eventDateTime | DateTimeOffset | The date and time of the provenance event represented by this assertion. |
 | provenanceType | [provenanceAssertionType](../resources/enums.md#provenanceassertiontype-values) | The type of provenance assertion. The possible values are: `identityVerification`, `derivedFromCredential`, `manualAttestation`, `unknownFutureValue`. |
 | sourceCredentialId | String | The identifier of the credential from which this credential was derived. |
 | sourceCredentialType | String | The type of credential from which this credential was derived. |
@@ -46,8 +45,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.provenanceAssertion",
   "attestationReason": "String",
-  "attestedAtDateTime": "String (timestamp)",
-  "derivedAtDateTime": "String (timestamp)",
+  "eventDateTime": "String (timestamp)",
   "provenanceType": "String",
   "sourceCredentialId": "String",
   "sourceCredentialType": "String",

@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "provenanceAssertion",
           "ChangeType": "Addition",
-          "Description": "Added the [provenanceAssertion](https://learn.microsoft.com/en-us/graph/api/resources/provenanceassertion?view=graph-rest-beta) complex type.",
+          "Description": "Added the [provenanceAssertion](https://learn.microsoft.com/en-us/graph/api/resources/provenanceassertion?view=graph-rest-beta) complex type, including the **eventDateTime** timestamp for each assertion.",
           "Target": "provenanceAssertion"
         },
         {

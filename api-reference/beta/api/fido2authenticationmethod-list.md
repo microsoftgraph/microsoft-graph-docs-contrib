@@ -141,11 +141,10 @@ Content-type: application/json
           {
             "provenanceType": "identityVerification",
             "verificationEventId": "9c2d5e61-1a3b-4a2f-9f6e-2f8b6c4d91aa",
+            "eventDateTime": "2026-01-18T03:10:21Z",
             "sourceCredentialId": null,
             "sourceCredentialType": null,
-            "derivedAtDateTime": null,
-            "attestationReason": null,
-            "attestedAtDateTime": null
+            "attestationReason": null
           }
         ],
         "classification": "highAssurance",
