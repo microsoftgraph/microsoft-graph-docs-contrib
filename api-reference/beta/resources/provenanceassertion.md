@@ -1,7 +1,7 @@
 ---
 title: "provenanceAssertion resource type"
 description: "Represents an assertion that contributes to an authentication method's credential provenance."
-author: "tilarso_microsoft"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

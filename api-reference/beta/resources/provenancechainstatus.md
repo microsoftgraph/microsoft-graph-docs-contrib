@@ -1,7 +1,7 @@
 ---
 title: "provenanceChainStatus resource type"
 description: "Represents the integrity status of a credential's chain of trust."
-author: "tilarso_microsoft"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

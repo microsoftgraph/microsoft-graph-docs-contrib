@@ -4,7 +4,7 @@ description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-author: "MSGraphDocsvTeam"
+author: "tilarso"
 ms.date: 07/22/2026
 ms.custom: sfi-ropc-nochange
 ---

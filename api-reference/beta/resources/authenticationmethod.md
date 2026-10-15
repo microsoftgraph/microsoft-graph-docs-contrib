@@ -2,7 +2,7 @@
 title: "authenticationMethod resource type"
 description: "An abstract type that represents an authentication method registered to a user."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"

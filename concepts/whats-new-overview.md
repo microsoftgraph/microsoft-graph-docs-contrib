@@ -1,7 +1,7 @@
 ---
 title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
-author: "lauragra"
+author: "tilarso"
 ms.localizationpriority: high
 ms.date: 10/01/2026
 ms.topic: whats-new

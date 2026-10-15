@@ -1,7 +1,7 @@
 ---
 title: "credentialProvenance resource type"
 description: "Represents the provenance and trust classification of an authentication method."
-author: "tilarso_microsoft"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
