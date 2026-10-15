@@ -65,9 +65,6 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) objects in the response body.
 
-> [!IMPORTANT]
-> For tenants enrolled in the Chain of Trust private preview, each returned method includes the **provenance** property.
-
 ## Examples
 
 ### Request

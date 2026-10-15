@@ -65,9 +65,6 @@ If successful, this method returns a `200 OK` response code and the requested [f
 > [!NOTE]
 > This method also returns credentials key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0, 1, or 2 to the same number of base64 padding characters.
 
-> [!IMPORTANT]
-> For tenants enrolled in the Chain of Trust private preview, the response includes the **provenance** property.
-
 ## Examples
 
 ### Request

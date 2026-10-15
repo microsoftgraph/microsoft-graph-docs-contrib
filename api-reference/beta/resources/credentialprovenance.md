@@ -19,9 +19,6 @@ Represents the provenance and trust classification of an authentication method.
 
 Credential provenance is recorded during credential registration and supports administrative overrides. The service computes the trust classification and records the actor that established the provenance.
 
-> [!IMPORTANT]
-> This resource is available only to tenants enrolled in the Chain of Trust private preview. During the private preview, it's returned only for FIDO2 authentication methods.
-
 ## Properties
 
 | Property | Type | Description |
