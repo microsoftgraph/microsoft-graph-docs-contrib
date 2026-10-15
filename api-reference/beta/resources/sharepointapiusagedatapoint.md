@@ -5,7 +5,7 @@ author: "ireneren"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: resourcePageType
-ms.date: 03/16/2026
+ms.date: 10/05/2026
 ---
 
 # sharePointApiUsageDataPoint resource type
@@ -21,7 +21,11 @@ Represents a single data point in a OneDrive and SharePoint API usage report. Ea
 
 Data points in detail rows are ordered by **usageDateTime** descending (most recent first).
 
-The properties present in each data point depend on the report type requested through the `reportType` parameter of the [getSharePointApiUsage](../api/reportroot-getsharepointapiusage.md) function. The `egressReport` includes **usageMB** but not **throttledRequests**, while the `throttlingReport` includes **throttledRequests** but not **usageMB**.
+The properties present in each data point depend on the report type requested through the **reportType** parameter of the [getSharePointApiUsage](../api/reportroot-getsharepointapiusage.md) function:
+
+- `egressReport` includes **usageMB** and **usageRequests**.
+- `throttlingReport` includes **throttledRequests** and **usageRequests**.
+- `sharePointServicePrioritizationReport` includes **usageRequests**, **standardRequestCount**, **heavyRequestCount**, **billedStandardRequestCount**, and **billedHeavyRequestCount**.
 
 ## Properties
 
@@ -29,12 +33,16 @@ The properties present in each data point depend on the report type requested th
 |:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | activeApps    | Int32          | The number of distinct applications with usage during the reporting period. Summary rows: populated with the count of active applications. Detail rows: null. Read-only.                                                        |
 | appId         | String         | The unique identifier (GUID) for the application. Summary rows: null. Detail rows: the application GUID. Read-only.                                                                                                             |
+| billedHeavyRequestCount | Int64 | The number of heavy API requests that were billed. Only present in the `sharePointServicePrioritizationReport`. For summary rows, this is the total number of billed heavy requests across all applications. For detail rows, this is the number of billed heavy requests for the specific application on the specific date. Read-only. |
+| billedStandardRequestCount | Int64 | The number of standard API requests that were billed. Only present in the `sharePointServicePrioritizationReport`. For summary rows, this is the total number of billed standard requests across all applications. For detail rows, this is the number of billed standard requests for the specific application on the specific date. Read-only. |
+| heavyRequestCount | Int64 | The number of API requests classified as heavy. Only present in the `sharePointServicePrioritizationReport`. For summary rows, this is the total number of heavy requests across all applications. For detail rows, this is the number of heavy requests for the specific application on the specific date. Read-only. |
 | serviceArea   | String         | The service area name. Always `OneDrive and SharePoint` for SharePoint API usage reports. Read-only.                                                                                                                               |
+| standardRequestCount | Int64 | The number of API requests classified as standard. Only present in the `sharePointServicePrioritizationReport`. For summary rows, this is the total number of standard requests across all applications. For detail rows, this is the number of standard requests for the specific application on the specific date. Read-only. |
 | tenantId      | String         | The unique identifier (GUID) for the tenant. Read-only.                                                                                                                                                                            |
-| throttledRequests | Int64      | The number of API requests that were throttled. Only present in the throttlingReport; this property isn't returned for the egressReport. Summary rows: total throttled requests across all applications. Detail rows: throttled requests for the specific application on the specific date. Read-only. |
+| throttledRequests | Int64      | The number of API requests that were throttled. Only present in the `throttlingReport`. For summary rows, this is the total number of throttled requests across all applications. For detail rows, this is the number of throttled requests for the specific application on the specific date. Read-only. |
 | usageDateTime | DateTimeOffset | The date and time for this data point in ISO 8601 format. For summary rows, this is the most recent date in the reporting period. For detail rows, this is the specific date for the usage data. Read-only.                        |
-| usageMB       | Int64          | Total usage in megabytes (MB) for this data point. Only present in the egressReport; this property isn't returned for the throttlingReport. Summary rows: total aggregated usage across all applications for the reporting period. Detail rows: usage for the specific application on the specific date. Read-only.         |
-| usageRequests | Int64          | The number of API requests. Summary rows: total requests across all applications. Detail rows: requests for the specific application on the specific date. Read-only.                                                              |
+| usageMB       | Int64          | Total usage in megabytes (MB) for this data point. Only present in the `egressReport`. For summary rows, this is the total aggregated usage across all applications for the reporting period. For detail rows, this is the usage for the specific application on the specific date. Read-only.         |
+| usageRequests | Int64          | The number of API requests. Present in all report types. For summary rows, this is the total number of requests across all applications. For detail rows, this is the number of requests for the specific application on the specific date. Read-only.                                                              |
 
 ## Relationships
 
@@ -55,7 +63,11 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.sharePointApiUsageDataPoint",
   "activeApps": "Int32",
   "appId": "String",
+  "billedHeavyRequestCount": "Int64",
+  "billedStandardRequestCount": "Int64",
+  "heavyRequestCount": "Int64",
   "serviceArea": "String",
+  "standardRequestCount": "Int64",
   "tenantId": "String",
   "throttledRequests": "Int64",
   "usageDateTime": "String (timestamp)",

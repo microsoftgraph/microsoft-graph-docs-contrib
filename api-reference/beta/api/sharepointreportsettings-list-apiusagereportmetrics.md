@@ -2,7 +2,7 @@
 title: "List apiUsageReportMetrics"
 description: "Get the list of SharePoint API usage report metrics and their enablement status for the tenant."
 author: "abhishekkakhandiki"
-ms.date: 05/21/2026
+ms.date: 10/05/2026
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [SharePoint API usage report metrics and their enablement status](../resources/apiusagereportenablementstatus.md) for the tenant. The supported metrics are `egressReport` and `throttlingReport`.
+Get the list of [SharePoint API usage report metrics and their enablement status](../resources/apiusagereportenablementstatus.md) for the tenant. The supported metrics are `egressReport`, `sharePointServicePrioritizationReport`, and `throttlingReport`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
