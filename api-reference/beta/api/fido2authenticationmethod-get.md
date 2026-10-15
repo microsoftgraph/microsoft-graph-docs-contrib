@@ -6,7 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.date: 10/23/2024
+ms.date: 10/15/2026
 ---
 
 # Get fido2AuthenticationMethod
@@ -36,6 +36,7 @@ Get details of your own FIDO2 authentication method.
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/authentication/fido2Methods/{id}
 ```
@@ -44,6 +45,7 @@ Get details of your own or another user's FIDO2 authentication method.
 
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ```
@@ -62,6 +64,9 @@ If successful, this method returns a `200 OK` response code and the requested [f
 
 > [!NOTE]
 > This method also returns credentials key IDs formatted in Base64URL with a padding number suffix. To decode the key IDs, convert the trailing integer value of 0, 1, or 2 to the same number of base64 padding characters.
+
+> [!IMPORTANT]
+> For tenants enrolled in the Chain of Trust private preview, the response includes the **provenance** property.
 
 ## Examples
 
@@ -125,19 +130,40 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": {
-      "id": "-2_GRUg2-HYz6_1YG4YRAQ2",
-      "displayName": "Red key",
-      "createdDateTime": "2020-08-10T06:44:09Z",
-      "lastUsedDateTime": "2022-11-06T23:16:12Z",
-      "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
-      "model": "NFC key",
-      "attestationCertificates": [
-          "dbe793efdf1945e2df25d93653a1e8a3268a9075"
-      ],
-      "attestationLevel": "attested",
-      "passkeyType": "deviceBound"
+  "id": "-2_GRUg2-HYz6_1YG4YRAQ2",
+  "displayName": "Red key",
+  "createdDateTime": "2026-01-18T03:14:52Z",
+  "lastUsedDateTime": "2026-01-20T08:30:00Z",
+  "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
+  "model": "NFC key",
+  "attestationCertificates": [
+    "dbe793efdf1945e2df25d93653a1e8a3268a9075"
+  ],
+  "attestationLevel": "attested",
+  "passkeyType": "deviceBound",
+  "provenance": {
+    "assertions": [
+      {
+        "provenanceType": "identityVerification",
+        "verificationEventId": "9c2d5e61-1a3b-4a2f-9f6e-2f8b6c4d91aa",
+        "sourceCredentialId": null,
+        "sourceCredentialType": null,
+        "derivedAtDateTime": null,
+        "attestationReason": null,
+        "attestedAtDateTime": null
+      }
+    ],
+    "classification": "highAssurance",
+    "chainStatus": {
+      "state": "intact",
+      "breakReason": "none",
+      "breakDetectedAtDateTime": null,
+      "breakSource": "none"
+    },
+    "assertedBy": {
+      "actorType": "system",
+      "actorId": "00000000-0000-0000-0000-000000000000"
+    }
   }
 }
 ```
-

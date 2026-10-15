@@ -30,6 +30,10 @@ Added support to identify recalled messages in message trace. Use `recalled` as 
 
 Track admin activities on backup and restore resources, including policy changes, dynamic rule executions, offboarding, and restore task completions, by using the [activityLogBase](/graph/api/resources/activitylogbase?view=graph-rest-beta&preserve-view=true) resource and its derived types.
 
+### Identity and access | Identity and sign-in
+
+Added the **provenance** property to the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta&preserve-view=true) resource. For tenants enrolled in the Chain of Trust private preview, the property provides the trust classification, supporting assertions, and chain status of FIDO2 authentication methods returned by the [list](/graph/api/fido2authenticationmethod-list?view=graph-rest-beta&preserve-view=true) and [get](/graph/api/fido2authenticationmethod-get?view=graph-rest-beta&preserve-view=true) operations. Credential provenance also supports administrative overrides.
+
 ### Mail | Message trace
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace?view=graph-rest-beta&preserve-view=true) resource.

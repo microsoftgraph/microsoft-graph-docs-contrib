@@ -6398,3 +6398,57 @@ Possible values for user account types (group membership), per Windows definitio
 |teams|
 |coldCrawl|
 |applications|
+
+### chainBreakReason values
+
+|Member|
+|:---|
+|none|
+|idvRevoked|
+|sourceCredentialRevoked|
+|unknownFutureValue|
+
+### chainBreakSource values
+
+|Member|
+|:---|
+|none|
+|identityProtection|
+|adminAction|
+|system|
+|unknownFutureValue|
+
+### chainState values
+
+|Member|
+|:---|
+|intact|
+|broken|
+|unknownFutureValue|
+
+### provenanceActorType values
+
+|Member|
+|:---|
+|system|
+|user|
+|application|
+|unknownFutureValue|
+
+### provenanceAssertionType values
+
+|Member|
+|:---|
+|identityVerification|
+|derivedFromCredential|
+|manualAttestation|
+|unknownFutureValue|
+
+### provenanceClassification values
+
+|Member|
+|:---|
+|highAssurance|
+|mediumAssurance|
+|lowAssurance|
+|unknownFutureValue|

@@ -3,6 +3,104 @@
     {
       "ChangeList": [
         {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Property",
+          "ChangedApiName": "provenance",
+          "ChangeType": "Addition",
+          "Description": "Added the **provenance** property to the [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethod?view=graph-rest-beta) resource.",
+          "Target": "authenticationMethod"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "credentialProvenance",
+          "ChangeType": "Addition",
+          "Description": "Added the [credentialProvenance](https://learn.microsoft.com/en-us/graph/api/resources/credentialprovenance?view=graph-rest-beta) complex type.",
+          "Target": "credentialProvenance"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provenanceAssertedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the [provenanceAssertedBy](https://learn.microsoft.com/en-us/graph/api/resources/provenanceassertedby?view=graph-rest-beta) complex type.",
+          "Target": "provenanceAssertedBy"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provenanceAssertion",
+          "ChangeType": "Addition",
+          "Description": "Added the [provenanceAssertion](https://learn.microsoft.com/en-us/graph/api/resources/provenanceassertion?view=graph-rest-beta) complex type.",
+          "Target": "provenanceAssertion"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "provenanceChainStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [provenanceChainStatus](https://learn.microsoft.com/en-us/graph/api/resources/provenancechainstatus?view=graph-rest-beta) complex type.",
+          "Target": "provenanceChainStatus"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "chainBreakReason",
+          "ChangeType": "Addition",
+          "Description": "Added the [chainBreakReason](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#chainbreakreason-values) enumeration.",
+          "Target": "chainBreakReason"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "chainBreakSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [chainBreakSource](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#chainbreaksource-values) enumeration.",
+          "Target": "chainBreakSource"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "chainState",
+          "ChangeType": "Addition",
+          "Description": "Added the [chainState](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#chainstate-values) enumeration.",
+          "Target": "chainState"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "provenanceActorType",
+          "ChangeType": "Addition",
+          "Description": "Added the [provenanceActorType](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#provenanceactortype-values) enumeration.",
+          "Target": "provenanceActorType"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "provenanceAssertionType",
+          "ChangeType": "Addition",
+          "Description": "Added the [provenanceAssertionType](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#provenanceassertiontype-values) enumeration.",
+          "Target": "provenanceAssertionType"
+        },
+        {
+          "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "provenanceClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the [provenanceClassification](https://learn.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta#provenanceclassification-values) enumeration.",
+          "Target": "provenanceClassification"
+        }
+      ],
+      "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-15T16:56:35.8224223Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d4571aa0-7113-4bd8-adf9-7cd708b80046",
           "ApiChange": "Relationship",
           "ChangedApiName": "resourceAccountKeyAuthenticationMethods",

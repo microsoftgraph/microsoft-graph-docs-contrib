@@ -1726,6 +1726,12 @@
                 "windowsHelloForBusinessAuthenticationMethod",
                 "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
               ],
+              "complexTypes": [
+                "credentialProvenance",
+                "provenanceAssertedBy",
+                "provenanceAssertion",
+                "provenanceChainStatus"
+              ],
               "childNodes": [
                 {
                   "name": "QR code authentication",
