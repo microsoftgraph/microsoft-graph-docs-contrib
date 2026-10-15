@@ -133,6 +133,7 @@ Content-type: application/json
     "canShare":true,
     "canViewPrivateItems":true,
     "hexColor": "",
+    "isSharedWithMe": false,
     "canEdit":true,
     "allowedOnlineMeetingProviders": [
                 "teamsForBusiness"
