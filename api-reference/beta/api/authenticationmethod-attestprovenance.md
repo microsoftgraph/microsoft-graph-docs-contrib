@@ -84,7 +84,6 @@ The following example shows the response, shortened to show the server-recorded 
 
 <!-- {
   "blockType": "response",
-  "name": "attestprovenance_response",
   "truncated": true,
   "@odata.type": "microsoft.graph.credentialProvenance"
 }

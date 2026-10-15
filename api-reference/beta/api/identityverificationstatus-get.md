@@ -87,7 +87,6 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "name": "get_identityverificationstatus_response",
   "truncated": true,
   "@odata.type": "microsoft.graph.identityVerificationStatus"
 }

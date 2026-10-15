@@ -97,7 +97,6 @@ The following example shows the response for a newly created event.
 
 <!-- {
   "blockType": "response",
-  "name": "create_identityverificationevent_response",
   "truncated": true,
   "@odata.type": "microsoft.graph.identityVerificationEvent"
 }

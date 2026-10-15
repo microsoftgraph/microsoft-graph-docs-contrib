@@ -85,8 +85,7 @@ Content-Type: application/json
 The following example shows the response.
 
 <!-- {
-  "blockType": "response",
-  "name": "update_identityverificationevent_response"
+  "blockType": "response"
 }
 -->
 ```http

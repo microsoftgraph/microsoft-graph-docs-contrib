@@ -71,8 +71,7 @@ DELETE https://graph.microsoft.com/beta/users/c2b3a4d5-6e7f-4890-a123-4567890abc
 The following example shows the response.
 
 <!-- {
-  "blockType": "response",
-  "name": "delete_identityverificationevent_response"
+  "blockType": "response"
 }
 -->
 ```http
