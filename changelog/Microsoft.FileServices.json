@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "98100c28-b985-4bb8-b38b-fb6222c62b2f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getSharePointApiUsage",
+          "ChangeType": "Change",
+          "Description": "Updated the [getSharePointApiUsage](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta) method to support the `sharePointServicePrioritizationReport` report type.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "98100c28-b985-4bb8-b38b-fb6222c62b2f",
+          "ApiChange": "Method",
+          "ChangedApiName": "enableApiUsageReport",
+          "ChangeType": "Change",
+          "Description": "Updated the [enableApiUsageReport](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta) method to support the `sharePointServicePrioritizationReport` metric.",
+          "Target": "sharePointReportSettings"
+        },
+        {
+          "Id": "98100c28-b985-4bb8-b38b-fb6222c62b2f",
+          "ApiChange": "Method",
+          "ChangedApiName": "disableApiUsageReport",
+          "ChangeType": "Change",
+          "Description": "Updated the [disableApiUsageReport](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta) method to support the `sharePointServicePrioritizationReport` metric.",
+          "Target": "sharePointReportSettings"
+        },
+        {
+          "Id": "98100c28-b985-4bb8-b38b-fb6222c62b2f",
+          "ApiChange": "Method",
+          "ChangedApiName": "apiUsageReportMetrics",
+          "ChangeType": "Change",
+          "Description": "Updated the [List apiUsageReportMetrics](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-list-apiusagereportmetrics?view=graph-rest-beta) method to return the enablement status of the `sharePointServicePrioritizationReport` metric.",
+          "Target": "sharePointReportSettings"
+        },
+        {
+          "Id": "98100c28-b985-4bb8-b38b-fb6222c62b2f",
+          "ApiChange": "Property",
+          "ChangedApiName": "billedHeavyRequestCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **billedHeavyRequestCount** property to the [sharePointApiUsageDataPoint](https://learn.microsoft.com/en-us/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta) resource.",
+          "Target": "sharePointApiUsageDataPoint"
+        },
+        {
+          "Id": "98100c28-b985-4bb8-b38b-fb6222c62b2f",
+          "ApiChange": "Property",
+          "ChangedApiName": "billedStandardRequestCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **billedStandardRequestCount** property to the [sharePointApiUsageDataPoint](https://learn.microsoft.com/en-us/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta) resource.",
+          "Target": "sharePointApiUsageDataPoint"
+        },
+        {
+          "Id": "98100c28-b985-4bb8-b38b-fb6222c62b2f",
+          "ApiChange": "Property",
+          "ChangedApiName": "heavyRequestCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **heavyRequestCount** property to the [sharePointApiUsageDataPoint](https://learn.microsoft.com/en-us/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta) resource.",
+          "Target": "sharePointApiUsageDataPoint"
+        },
+        {
+          "Id": "98100c28-b985-4bb8-b38b-fb6222c62b2f",
+          "ApiChange": "Property",
+          "ChangedApiName": "standardRequestCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **standardRequestCount** property to the [sharePointApiUsageDataPoint](https://learn.microsoft.com/en-us/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta) resource.",
+          "Target": "sharePointApiUsageDataPoint"
+        }
+      ],
+      "Id": "98100c28-b985-4bb8-b38b-fb6222c62b2f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-05T16:01:40.5870996Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "dbe6cffc-19e8-442f-b08c-5c1683170d4f",
           "ApiChange": "Method",
           "ChangedApiName": "revokeGrants",

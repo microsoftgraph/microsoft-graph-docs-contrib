@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "34fa0b14-2d7a-4fd8-8ce5-659d16aecf22",
+          "ApiChange": "Property",
+          "ChangedApiName": "isSharedWithMe",
+          "ChangeType": "Addition",
+          "Description": "Added the **isSharedWithMe** property to the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0) resource to identify calendars shared with the user.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "34fa0b14-2d7a-4fd8-8ce5-659d16aecf22",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/calendar-delta?view=graph-rest-1.0) method to the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0) resource to track calendars added, deleted, or updated in a user's mailbox.",
+          "Target": "calendar"
+        }
+      ],
+      "Id": "34fa0b14-2d7a-4fd8-8ce5-659d16aecf22",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-09T05:57:58.6820000Z",
+      "WorkloadArea": "Calendars",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8ad53431-0324-4bcc-b90e-ac080df485ee",
           "ApiChange": "Property",
           "ChangedApiName": "isHidden",

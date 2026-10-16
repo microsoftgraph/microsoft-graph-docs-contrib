@@ -128,6 +128,14 @@ items:
     href: ../../api/planneruser-list-rosterplans.md
   - name: Update user's settings
     href: ../../api/planneruser-update.md
+  - name: List plans_v2
+    href: ../../api/planneruser-list-plans_v2.md
+  - name: Create plan_v2
+    href: ../../api/planneruser-post-plans_v2.md
+  - name: List tasks_v2
+    href: ../../api/planneruser-list-tasks_v2.md
+  - name: Create task_v2
+    href: ../../api/planneruser-post-tasks_v2.md
 - name: Planner task details
   items:
   - name: Planner task details
@@ -142,6 +150,282 @@ items:
     href: ../../resources/teamschannelplanner.md
   - name: List plans
     href: ../../api/teamschannelplanner-list-plans.md
+  - name: List plans_v2
+    href: ../../api/teamschannelplanner-list-plans_v2.md
+  - name: Create plan_v2
+    href: ../../api/teamschannelplanner-post-plans_v2.md
+- name: Bucket
+  items:
+  - name: Bucket
+    href: ../../resources/bucket.md
+  - name: List
+    href: ../../api/plan-list-buckets.md
+  - name: Create
+    href: ../../api/plan-post-buckets.md
+  - name: Get
+    href: ../../api/bucket-get.md
+  - name: Update
+    href: ../../api/bucket-update.md
+  - name: Delete
+    href: ../../api/plan-delete-buckets.md
+- name: Category definition
+  items:
+  - name: Category definition
+    href: ../../resources/categorydefinition.md
+  - name: List
+    href: ../../api/planview-list-categories.md
+  - name: Create
+    href: ../../api/planview-post-categories.md
+  - name: Get
+    href: ../../api/categorydefinition-get.md
+  - name: Update
+    href: ../../api/categorydefinition-update.md
+  - name: Delete
+    href: ../../api/planview-delete-categories.md
+- name: Checklist item v 4
+  items:
+  - name: Checklist item v 4
+    href: ../../resources/checklistitemv4.md
+  - name: List
+    href: ../../api/task-list-checklist.md
+  - name: Create
+    href: ../../api/task-post-checklist.md
+  - name: Get
+    href: ../../api/checklistitemv4-get.md
+  - name: Update
+    href: ../../api/checklistitemv4-update.md
+- name: Content link
+  items:
+  - name: Content link
+    href: ../../resources/contentlink.md
+  - name: List
+    href: ../../api/task-list-links.md
+  - name: Create
+    href: ../../api/task-post-links.md
+  - name: Get
+    href: ../../api/contentlink-get.md
+  - name: Update
+    href: ../../api/contentlink-update.md
+- name: Custom choice option
+  items:
+  - name: Custom choice option
+    href: ../../resources/customchoiceoption.md
+  - name: List
+    href: ../../api/customfielddefinition-list-choiceoptions.md
+  - name: Create
+    href: ../../api/customfielddefinition-post-choiceoptions.md
+  - name: Get
+    href: ../../api/customchoiceoption-get.md
+  - name: Update
+    href: ../../api/customchoiceoption-update.md
+  - name: Delete
+    href: ../../api/customfielddefinition-delete-choiceoptions.md
+- name: Custom field definition
+  items:
+  - name: Custom field definition
+    href: ../../resources/customfielddefinition.md
+  - name: List
+    href: ../../api/plan-list-customfielddefinitions.md
+  - name: Create
+    href: ../../api/plan-post-customfielddefinitions.md
+  - name: Get
+    href: ../../api/customfielddefinition-get.md
+  - name: Update
+    href: ../../api/customfielddefinition-update.md
+  - name: Delete
+    href: ../../api/plan-delete-customfielddefinitions.md
+  - name: List choiceOptions
+    href: ../../api/customfielddefinition-list-choiceoptions.md
+  - name: Create customChoiceOption
+    href: ../../api/customfielddefinition-post-choiceoptions.md
+- name: Custom field value
+  items:
+  - name: Custom field value
+    href: ../../resources/customfieldvalue.md
+  - name: List
+    href: ../../api/task-list-customfieldvalues.md
+  - name: Create
+    href: ../../api/task-post-customfieldvalues.md
+  - name: Get
+    href: ../../api/customfieldvalue-get.md
+  - name: Update
+    href: ../../api/customfieldvalue-update.md
+- name: Dependency
+  items:
+  - name: Dependency
+    href: ../../resources/dependency.md
+  - name: List
+    href: ../../api/plan-list-dependencies.md
+  - name: Create
+    href: ../../api/plan-post-dependencies.md
+  - name: Get
+    href: ../../api/dependency-get.md
+  - name: Update
+    href: ../../api/dependency-update.md
+  - name: Delete
+    href: ../../api/plan-delete-dependencies.md
+- name: Goal
+  items:
+  - name: Goal
+    href: ../../resources/goal.md
+  - name: List
+    href: ../../api/plan-list-goals.md
+  - name: Create
+    href: ../../api/plan-post-goals.md
+  - name: Get
+    href: ../../api/goal-get.md
+  - name: Update
+    href: ../../api/goal-update.md
+  - name: Delete
+    href: ../../api/plan-delete-goals.md
+  - name: List tasks
+    href: ../../api/goal-list-tasks.md
+  - name: Add task
+    href: ../../api/goal-post-tasks.md
+  - name: Remove tasks
+    href: ../../api/goal-delete-tasks.md
+- name: History item
+  items:
+  - name: History item
+    href: ../../resources/historyitem.md
+  - name: List
+    href: ../../api/plan-list-historyitems.md
+  - name: Create
+    href: ../../api/plan-post-historyitems.md
+  - name: Get
+    href: ../../api/historyitem-get.md
+  - name: Update
+    href: ../../api/historyitem-update.md
+  - name: Delete
+    href: ../../api/plan-delete-historyitems.md
+- name: Plan
+  items:
+  - name: Plan
+    href: ../../resources/plan.md
+  - name: List
+    href: ../../api/planneruser-list-v2.md
+  - name: Create
+    href: ../../api/planneruser-post-v2.md
+  - name: Get
+    href: ../../api/plan-get.md
+  - name: Update
+    href: ../../api/plan-update.md
+  - name: Delete
+    href: ../../api/planneruser-delete-v2.md
+  - name: List buckets
+    href: ../../api/plan-list-buckets.md
+  - name: Create bucket
+    href: ../../api/plan-post-buckets.md
+  - name: List contexts
+    href: ../../api/plan-list-contexts.md
+  - name: Create planContextLink
+    href: ../../api/plan-post-contexts.md
+  - name: List customFieldDefinitions
+    href: ../../api/plan-list-customfielddefinitions.md
+  - name: Add customFieldDefinition
+    href: ../../api/plan-post-customfielddefinitions.md
+  - name: Remove customFieldDefinitions
+    href: ../../api/plan-delete-customfielddefinitions.md
+  - name: List dependencies
+    href: ../../api/plan-list-dependencies.md
+  - name: Add dependency
+    href: ../../api/plan-post-dependencies.md
+  - name: Remove dependencies
+    href: ../../api/plan-delete-dependencies.md
+  - name: List goals
+    href: ../../api/plan-list-goals.md
+  - name: Add goal
+    href: ../../api/plan-post-goals.md
+  - name: Remove goals
+    href: ../../api/plan-delete-goals.md
+  - name: List historyItems
+    href: ../../api/plan-list-historyitems.md
+  - name: Add historyItem
+    href: ../../api/plan-post-historyitems.md
+  - name: Remove historyItems
+    href: ../../api/plan-delete-historyitems.md
+  - name: List links
+    href: ../../api/plan-list-links.md
+  - name: Create contentLink
+    href: ../../api/plan-post-links.md
+  - name: List tasks
+    href: ../../api/plan-list-tasks.md
+  - name: Add task
+    href: ../../api/plan-post-tasks.md
+  - name: Remove tasks
+    href: ../../api/plan-delete-tasks.md
+- name: Plan context link
+  items:
+  - name: Plan context link
+    href: ../../resources/plancontextlink.md
+  - name: List
+    href: ../../api/plan-list-contexts.md
+  - name: Create
+    href: ../../api/plan-post-contexts.md
+  - name: Get
+    href: ../../api/plancontextlink-get.md
+  - name: Update
+    href: ../../api/plancontextlink-update.md
+  - name: Delete
+    href: ../../api/plan-delete-contexts.md
+- name: Planner chat message
+  items:
+  - name: Planner chat message
+    href: ../../resources/plannerchatmessage.md
+  - name: List
+    href: ../../api/task-list-messages.md
+  - name: Create
+    href: ../../api/task-post-messages.md
+  - name: Get
+    href: ../../api/plannerchatmessage-get.md
+  - name: Update
+    href: ../../api/plannerchatmessage-update.md
+- name: Task
+  items:
+  - name: Task
+    href: ../../resources/task.md
+  - name: List
+    href: ../../api/plan-list-tasks.md
+  - name: Create
+    href: ../../api/plan-post-tasks.md
+  - name: Get
+    href: ../../api/task-get.md
+  - name: Update
+    href: ../../api/task-update.md
+  - name: Delete
+    href: ../../api/plan-delete-tasks.md
+  - name: List checklist
+    href: ../../api/task-list-checklist.md
+  - name: Create checklistItemV4
+    href: ../../api/task-post-checklist.md
+  - name: List customFieldValues
+    href: ../../api/task-list-customfieldvalues.md
+  - name: Create customFieldValue
+    href: ../../api/task-post-customfieldvalues.md
+  - name: List links
+    href: ../../api/task-list-links.md
+  - name: Create contentLink
+    href: ../../api/task-post-links.md
+  - name: List messages
+    href: ../../api/task-list-messages.md
+  - name: Create plannerChatMessage
+    href: ../../api/task-post-messages.md
+  - name: List userAssignments
+    href: ../../api/task-list-userassignments.md
+  - name: Create userAssignment
+    href: ../../api/task-post-userassignments.md
+- name: User assignment
+  items:
+  - name: User assignment
+    href: ../../resources/userassignment.md
+  - name: List
+    href: ../../api/task-list-userassignments.md
+  - name: Create
+    href: ../../api/task-post-userassignments.md
+  - name: Get
+    href: ../../api/userassignment-get.md
+  - name: Update
+    href: ../../api/userassignment-update.md
 - name: Business scenarios (preview)
   items:
   - name: Overview

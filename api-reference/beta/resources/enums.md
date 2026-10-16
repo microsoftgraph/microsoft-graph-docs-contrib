@@ -3915,6 +3915,86 @@ Possible values for user account types (group membership), per Windows definitio
 | user |
 | teamsChannel|
 | plannerTask|
+| officeDocument |
+| meeting |
+| dataverseProject |
+
+### plannerTaskStatus values
+
+| Member | Description |
+| ------ | ----------- |
+| notStarted | The task hasn't been started. |
+| inProgress | The task is in progress. |
+| completed | The task is completed. |
+| blocked | The task is blocked. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+### dependencyType values
+
+| Member |
+| ------------------------------ |
+| sourceFinishDrivesTargetStart |
+| sourceStartDrivesTargetStart |
+| sourceFinishDrivesTargetFinish |
+| targetStartDrivesSourceFinish |
+| unknownFutureValue |
+
+### customFieldValueType values
+
+| Member |
+| ---------------- |
+| text |
+| date |
+| utcDateTime |
+| number |
+| decimal |
+| flag |
+| singleChoiceText |
+| multipleChoiceText |
+| unknownFutureValue |
+
+### customFieldRollupType values
+
+| Member |
+| ---------- |
+| noRollup |
+| max |
+| min |
+| sum |
+| average |
+| unknownFutureValue |
+
+### plannerChatMessageType values
+
+| Member |
+| ------------ |
+| richTextHtml |
+| plainText |
+| unknownFutureValue |
+
+### plannerChatThreadType values
+
+| Member |
+| ------------------ |
+| task |
+| plan |
+| unknownFutureValue |
+
+### chatMentionType values
+
+| Member |
+| ------------------ |
+| user |
+| application |
+| unknownFutureValue |
+
+### contentLinkType values
+
+| Member |
+| ------------------ |
+| documentReference |
+| webReference |
+| unknownFutureValue |
 
 ### plannerPlanContextType values
 
@@ -6150,6 +6230,7 @@ Possible values for user account types (group membership), per Windows definitio
 |policyLevelOffboarding|
 |restoreTaskCreated|
 |restoreTaskCompleted|
+|backupPolicyDeleted|
 |unknownFutureValue|
 
 ### activityLogResultStatus values 

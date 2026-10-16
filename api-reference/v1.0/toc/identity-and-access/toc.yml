@@ -1578,6 +1578,16 @@ items:
           href: ../../api/qrpin-updatepin.md
         - name: Update PIN
           href: ../../api/qrpin-update.md
+    - name: Resource account key authentication method
+      items:
+      - name: Resource account key authentication method
+        href: ../../resources/resourceaccountkeyauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-resourceaccountkeyauthenticationmethods.md
+      - name: Get
+        href: ../../api/resourceaccountkeyauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/resourceaccountkeyauthenticationmethod-delete.md
     - name: Software OATH
       items:
       - name: Software OATH

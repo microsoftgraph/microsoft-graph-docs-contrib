@@ -25,6 +25,10 @@ The **planner** resource is the entry point for the Planner object model. It ret
 |[Create plan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Create a new **plannerPlan** by posting to the plans collection.|
 |[Create roster](../api/planner-post-rosters.md)|[plannerRoster](plannerroster.md)|Create a new **plannerRoster** by posting to rosters collection.|
 |[Create task](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| Create a new **plannerTask** by posting to the tasks collection.|
+|[List plans_v2](../api/planner-list-plans_v2.md) |[plan](plan.md) collection| Get a list of the [plan](plan.md) objects and their properties.|
+|[Create plan_v2](../api/planner-post-plans_v2.md) |[plan](plan.md)| Create a new [plan](plan.md) object.|
+|[List tasks_v2](../api/planner-list-tasks_v2.md) |[task](task.md) collection| Get a list of the [task](task.md) objects and their properties.|
+|[Create task_v2](../api/planner-post-tasks_v2.md) |[task](task.md)| Create a new [task](task.md) object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -37,8 +41,10 @@ The **planner** resource is the entry point for the Planner object model. It ret
 |buckets|[plannerBucket](../resources/plannerbucket.md) collection| Read-only. Nullable. Returns a collection of the specified buckets|
 |goals|[plannerGoal](../resources/plannergoal.md) collection| Read-only. Nullable. Returns a collection of the specified goals|
 |plans|[plannerPlan](../resources/plannerplan.md) collection| Read-only. Nullable. Returns a collection of the specified plans|
+|plans_v2|[plan](../resources/plan.md) collection| Read-only. Nullable. The collection of Planner Graph V4 plans.|
 |rosters|[plannerRoster](../resources/plannerroster.md) collection|Read-only. Nullable. Returns a collection of the specified rosters|
 |tasks|[plannerTask](../resources/plannertask.md) collection| Read-only. Nullable. Returns a collection of the specified tasks|
+|tasks_v2|[task](../resources/task.md) collection| Read-only. Nullable. The collection of Planner Graph V4 tasks.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
