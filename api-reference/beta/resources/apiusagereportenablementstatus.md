@@ -2,7 +2,7 @@
 title: "apiUsageReportEnablementStatus resource type"
 description: "Represents the enablement status of a specific API usage report metric for SharePoint."
 author: "abhishekkakhandiki"
-ms.date: 05/21/2026
+ms.date: 10/05/2026
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: resourcePageType
@@ -20,7 +20,7 @@ Represents the enablement status of a specific API usage report metric for Share
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|metric|String|The name of the API usage report metric. The supported values are: `egressReport`, `throttlingReport`.|
+|metric|String|The name of the API usage report metric. The supported values are: `egressReport`, `sharePointServicePrioritizationReport`, `throttlingReport`.|
 |onboardingStatus|apiUsageReportOnboardingStatus|The current onboarding status of the metric. The possible values are: `enabling`, `enabled`, `disabling`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships

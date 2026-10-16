@@ -25,7 +25,7 @@ Represents the source image associated with your Azure subscription.
 |resourceId|String| The fully qualified unique identifier (ID) of the source image resource in Azure. The ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-only.|
 |subscriptionDisplayName|String|The display name of the subscription that hosts the source image. Read-only.|
 |subscriptionId|String|The unique identifier (ID) of the subscription that hosts the source image. Read-only.|
-|id (deprecated)|String|The unique identifier (ID) of the source image. Read-only. The **id** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **resourceId** property.|
+|id (deprecated)|String|The unique identifier (ID) of the source image. Read-only. The **id** property is deprecated and will stop returning data on December 7, 2026. Going forward, use the **resourceId** property.|
 
 ### cloudPcSourceImageCategory values
 

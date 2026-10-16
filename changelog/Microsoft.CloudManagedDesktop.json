@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "ffd01385-7017-4d25-aaaf-4b47be016734",
+          "ApiChange": "Property",
+          "ChangedApiName": "statusDetails",
+          "ChangeType": "Change",
+          "Description": "Updated the date when the deprecated **statusDetails** property on the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource will stop returning data from January 31, 2024 to December 7, 2026. Going forward, use the **errorCode** property.",
+          "Target": "cloudPcDeviceImage"
+        },
+        {
+          "Id": "ffd01385-7017-4d25-aaaf-4b47be016734",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Change",
+          "Description": "Updated the date when the deprecated **id** property on the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta) resource will stop returning data from January 31, 2024 to December 7, 2026. Going forward, use the **resourceId** property.",
+          "Target": "cloudPcSourceDeviceImage"
+        },
+        {
+          "Id": "ffd01385-7017-4d25-aaaf-4b47be016734",
+          "ApiChange": "Property",
+          "ChangedApiName": "offer",
+          "ChangeType": "Change",
+          "Description": "Updated the date when the deprecated **offer** property on the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta) resource will stop returning data from January 31, 2024 to December 7, 2026. Going forward, use the **offerName** property.",
+          "Target": "cloudPcGalleryImage"
+        },
+        {
+          "Id": "ffd01385-7017-4d25-aaaf-4b47be016734",
+          "ApiChange": "Property",
+          "ChangedApiName": "offerDisplayName",
+          "ChangeType": "Change",
+          "Description": "Updated the date when the deprecated **offerDisplayName** property on the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta) resource will stop returning data from January 31, 2024 to December 7, 2026. Going forward, use the **displayName** property.",
+          "Target": "cloudPcGalleryImage"
+        },
+        {
+          "Id": "ffd01385-7017-4d25-aaaf-4b47be016734",
+          "ApiChange": "Property",
+          "ChangedApiName": "publisher",
+          "ChangeType": "Change",
+          "Description": "Updated the date when the deprecated **publisher** property on the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta) resource will stop returning data from January 31, 2024 to December 7, 2026. Going forward, use the **publisherName** property.",
+          "Target": "cloudPcGalleryImage"
+        },
+        {
+          "Id": "ffd01385-7017-4d25-aaaf-4b47be016734",
+          "ApiChange": "Property",
+          "ChangedApiName": "recommendedSku",
+          "ChangeType": "Change",
+          "Description": "Updated the date when the deprecated **recommendedSku** property on the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta) resource will stop returning data from January 31, 2024 to December 7, 2026. No replacement is planned.",
+          "Target": "cloudPcGalleryImage"
+        },
+        {
+          "Id": "ffd01385-7017-4d25-aaaf-4b47be016734",
+          "ApiChange": "Property",
+          "ChangedApiName": "sku",
+          "ChangeType": "Change",
+          "Description": "Updated the date when the deprecated **sku** property on the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta) resource will stop returning data from January 31, 2024 to December 7, 2026. Going forward, use the **skuName** property.",
+          "Target": "cloudPcGalleryImage"
+        },
+        {
+          "Id": "ffd01385-7017-4d25-aaaf-4b47be016734",
+          "ApiChange": "Property",
+          "ChangedApiName": "skuDisplayName",
+          "ChangeType": "Change",
+          "Description": "Updated the date when the deprecated **skuDisplayName** property on the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta) resource will stop returning data from January 31, 2024 to December 7, 2026. Going forward, use the **displayName** property.",
+          "Target": "cloudPcGalleryImage"
+        }
+      ],
+      "Id": "ffd01385-7017-4d25-aaaf-4b47be016734",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-18T07:07:08.3620333Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "61a46a19-7ac6-4a7b-b95f-cea56539b34a",
           "ApiChange": "Method",
           "ChangedApiName": "retrieveCloudPcPerformanceMetricsReport",

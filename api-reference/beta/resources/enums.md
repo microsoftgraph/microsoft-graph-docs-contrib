@@ -6230,6 +6230,7 @@ Possible values for user account types (group membership), per Windows definitio
 |policyLevelOffboarding|
 |restoreTaskCreated|
 |restoreTaskCompleted|
+|backupPolicyDeleted|
 |unknownFutureValue|
 
 ### activityLogResultStatus values 

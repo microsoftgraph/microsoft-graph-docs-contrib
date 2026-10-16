@@ -12,6 +12,10 @@ items:
     items:
     - name: Security
       href: ../../resources/security.md
+    - name: List workbooks
+      href: ../../api/security-list-workbooks.md
+    - name: Create workbook
+      href: ../../api/security-post-workbooks.md
     - name: Run hunting query
       href: ../../api/security-security-runhuntingquery.md
     - name: Get hunting schema
@@ -1808,3 +1812,23 @@ items:
       href: ../../api/security-urlthreatsubmission-post-urlthreats.md
     - name: Get
       href: ../../api/security-urlthreatsubmission-get.md
+- name: Workbooks
+  items:
+  - name: Workbook
+    items:
+    - name: Workbook
+      href: ../../resources/security-workbook.md
+    - name: List
+      href: ../../api/security-list-workbooks.md
+    - name: Create
+      href: ../../api/security-post-workbooks.md
+    - name: Get
+      href: ../../api/security-workbook-get.md
+    - name: Update
+      href: ../../api/security-workbook-update.md
+    - name: Delete
+      href: ../../api/security-delete-workbooks.md
+  - name: Complex types
+    items:
+    - name: Workbook content
+      href: ../../resources/security-workbookcontent.md
