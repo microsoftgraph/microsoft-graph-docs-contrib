@@ -27,6 +27,10 @@ Provides access to Planner resources for a [user](user.md).
 |[List user's recent plans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) recently viewed by the user.|
 |[List user's plans in rosters](../api/planneruser-list-rosterplans.md)|[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) contained by the [plannerRosters](plannerroster.md) that the user is a member.|
 |[Update user's settings](../api/planneruser-update.md) | [plannerUser](planneruser.md)| Update a **plannerUser** object. |
+|[List plans_v2](../api/planneruser-list-plans_v2.md) |[plan](plan.md) collection| Get a list of the [plan](plan.md) objects associated with the user.|
+|[Create plan_v2](../api/planneruser-post-plans_v2.md) |[plan](plan.md)| Create a new [plan](plan.md) object.|
+|[List tasks_v2](../api/planneruser-list-tasks_v2.md) |[task](task.md) collection| Get a list of the [task](task.md) objects assigned to the user.|
+|[Create task_v2](../api/planneruser-post-tasks_v2.md) |[task](task.md)| Create a new [task](task.md) object.|
 
 
 ## Properties
@@ -44,6 +48,8 @@ Provides access to Planner resources for a [user](user.md).
 |rosterPlans|[plannerPlan](../resources/plannerplan.md) collection|Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) contained by the [plannerRosters](plannerroster.md) the user is a member.|
 |tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) assigned to the user.|
 |myDayTasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) to be shown in the My Day view of the user.|
+|plans_v2|[plan](../resources/plan.md) collection| Read-only. Nullable. The collection of Planner Graph V4 plans associated with the user.|
+|tasks_v2|[task](../resources/task.md) collection| Read-only. Nullable. The collection of Planner Graph V4 tasks assigned to the user.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

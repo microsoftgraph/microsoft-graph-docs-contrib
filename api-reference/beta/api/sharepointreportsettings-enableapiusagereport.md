@@ -2,7 +2,7 @@
 title: "sharePointReportSettings: enableApiUsageReport"
 description: "Enable a SharePoint API usage report metric for the tenant."
 author: "abhishekkakhandiki"
-ms.date: 05/21/2026
+ms.date: 10/05/2026
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
@@ -50,7 +50,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|metric|String|The name of the API usage report metric to enable. The supported values are: `egressReport`, `throttlingReport`. Required.|
+|metric|String|The name of the API usage report metric to enable. The supported values are: `egressReport`, `sharePointServicePrioritizationReport`, `throttlingReport`. Required.|
 
 ## Response
 

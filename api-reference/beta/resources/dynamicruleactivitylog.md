@@ -28,7 +28,7 @@ Inherits from [activityLogBase](../resources/activitylogbase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activityType|[activityLogOperationType](../resources/enums.md#activitylogoperationtype-values)|The type of activity performed. The possible values are: `backupPolicyCreated`, `backupPolicyActivated`, `backupPolicyModified`, `backupPolicyPaused`, `backupPolicyRenamed`, `dynamicRuleExecution`, `dynamicRuleDeletion`, `protectionUnitLevelOffboarding`, `policyLevelOffboarding`, `restoreTaskCreated`, `restoreTaskCompleted`, `unknownFutureValue`. Inherited from [activityLogBase](../resources/activitylogbase.md).|
+|activityType|[activityLogOperationType](../resources/enums.md#activitylogoperationtype-values)|The type of activity performed. The possible values are: `backupPolicyCreated`, `backupPolicyActivated`, `backupPolicyModified`, `backupPolicyPaused`, `backupPolicyRenamed`, `dynamicRuleExecution`, `dynamicRuleDeletion`, `protectionUnitLevelOffboarding`, `policyLevelOffboarding`, `restoreTaskCreated`, `restoreTaskCompleted`, `backupPolicyDeleted`, `unknownFutureValue`. Inherited from [activityLogBase](../resources/activitylogbase.md).|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an error occurred while processing this activity. Inherited from [activityLogBase](../resources/activitylogbase.md).|
 |eventDateTime|DateTimeOffset|Timestamp of activity completion. Inherited from [activityLogBase](../resources/activitylogbase.md).|
 |id|String|The unique identifier of the activityLog. Inherited from [entity](../resources/entity.md).|

@@ -29,6 +29,7 @@ Represents a container for [event](event.md) resources. It can be a calendar for
 |[Get](../api/calendar-get.md) | [calendar](calendar.md) |Get the properties and relationships of a **calendar** object. The calendar can be one for a user or the default calendar of a Microsoft 365 group. |
 |[Update](../api/calendar-update.md) | [calendar](calendar.md)  |Update the properties of a **calendar** object. The calendar can be one for a user or the default calendar of a Microsoft 365 group. |
 |[Delete](../api/calendar-delete.md) | None |Delete calendar object. |
+|[Get delta](../api/calendar-delta.md)|[calendar](calendar.md) collection| Get a set of [calendar](../resources/calendar.md) resources added, updated, or deleted in a user's mailbox. |
 |[Permanently delete](../api/calendar-permanentdelete.md)|None|Permanently delete the **calendar** folder and remove it from the mailbox. |
 |[List calendar view](../api/calendar-list-calendarview.md) |[event](event.md) collection| Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarview)` or from a specified calendar.|
 |[List events](../api/calendar-list-events.md) |[event](event.md) collection| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
@@ -54,6 +55,7 @@ Represents a container for [event](event.md) resources. It can be a calendar for
 |id|String|The calendar's unique identifier. Read-only.|
 |isDefaultCalendar|Boolean|`true` if this is the default calendar where new events are created by default, `false` otherwise.|
 |isRemovable|Boolean| Indicates whether this user calendar can be deleted from the user mailbox.|
+|isSharedWithMe|Boolean|`true` if someone shared this calendar with the user; `false` otherwise. This property is always `false` for a calendar owner. This property is set when sharing is initiated in an Outlook client and can be reset when sharing is canceled through the client or the corresponding [calendarPermission](calendarpermission.md) resource. Read-only.|
 |isTallyingResponses|Boolean|Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.|
 |name|String|The calendar name.|
 |owner |[emailAddress](emailaddress.md) | If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the **owner** property is set to the user. For a calendar shared with the user, the **owner** property is set to the person who shared that calendar with the user. |
@@ -120,6 +122,7 @@ The following JSON representation shows the resource type.
   "id": "string (identifier)",
   "isDefaultCalendar": "boolean",
   "isRemovable": "boolean",
+  "isSharedWithMe": "boolean",
   "isTallyingResponses": "boolean",
   "name": "string",
   "owner": {"@odata.type": "microsoft.graph.emailAddress"}

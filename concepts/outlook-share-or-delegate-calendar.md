@@ -12,7 +12,7 @@ ms.topic: how-to
 
 In Outlook, a calendar owner can share the calendar with another user. The owner can specify which information in non-private events is viewable, and can give write access to the calendar to users in the same organization.
 
-The owner can also delegate another user to manage meetings in the owner's _primary_ calendar. Delegates are share recipients who can view all information in and have write access to non-private events. They also receive meeting requests and responses, and respond to meeting requests on behalf of the owner. Additionally, the owner can give explicit permissions to delegates to view the owner's _private_ events on the calendar.
+The owner can also delegate another user to manage meetings in the owner's *primary* calendar. Delegates are share recipients who can view all information in and have write access to non-private events. They also receive meeting requests and responses, and respond to meeting requests on behalf of the owner. Additionally, the owner can give explicit permissions to delegates to view the owner's *private* events on the calendar.
 
 Before calendar sharing or delegation can take effect, the owner sends a share recipient or delegate an invitation, and the share recipient or delegate accepts the invitation, or, explicitly adds the shared or delegated calendar for access. The invitation and adding a shared or delegated calendar occur in an Outlook client.
 
@@ -36,7 +36,7 @@ Apps can also do the following using API that is generally available:
 - [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md)
 
 > [!NOTE]
-> The properties and API for calendar sharing and delegating as described in this topic are currently available in the v1.0 endpoint, with the exception of the calendar properties **isShared** and **isSharedWithMe**. These two properties are exposed in only the beta endpoint.
+> The properties and API for calendar sharing and delegating described in this topic are currently available in the v1.0 endpoint, with the exception of the calendar property **isShared**, which is exposed only in the beta endpoint.
 
 ## Get calendar information about share recipients and delegates, and update individual permissions
 
@@ -58,9 +58,9 @@ Each calendar is associated with a collection of [calendarPermission](/graph/api
 - `write`
     The share recipient can view the owner's free/busy status in private events, and can view all the details and edit (create, update, or delete) non-private events on the calendar.
 - `delegateWithoutPrivateEventAccess`
-    The _delegate_ can view the owner's free/busy status in private events, and has `write` access to non-private events on the calendar.
+    The *delegate* can view the owner's free/busy status in private events, and has `write` access to non-private events on the calendar.
 - `delegateWithPrivateEventAccess`
-    The _delegate_ can view details of the owner's private and non-private events, and has `write` access to all the events on the calendar.
+    The *delegate* can view details of the owner's private and non-private events, and has `write` access to all the events on the calendar.
 
 The primary calendar of a user is always shared with "My Organization", which represents the users in the same organization as the owner. By default, they can read the owner's free/busy status on that calendar and have the `freeBusyRead` permission.
 
@@ -377,9 +377,9 @@ The example in this section gets the properties of the same calendar from the pe
 Note the following properties:
 
 - **name** of the calendar is by default the owner's display name. In this case, it's "Alex Wilber", since this is Alex' calendar delegated to Megan.
-- **canShare** is false, since Megan is not the owner of this calendar.
-- **canViewPrivateItems** is true for the delegate Megan, as set up by Alex. For a sharee that is not a delegate, this property is always false.
-- **isShared** is false. This property indicates only to a calendar _owner_ whether the calendar has been shared or delegated.
+- **canShare** is false, since Megan isn't the owner of this calendar.
+- **canViewPrivateItems** is true for the delegate Megan, as set up by Alex. For a sharee that isn't a delegate, this property is always false.
+- **isShared** is false. This property indicates only to a calendar *owner* whether the calendar has been shared or delegated.
 - **isSharedWithMe** property is true, since Megan is a delegate.
 - **canEdit** is true, since delegates, including Megan, have write access.
 - **owner** is set to Alex.

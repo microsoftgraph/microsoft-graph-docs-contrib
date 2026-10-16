@@ -1,5 +1,5 @@
 ---
-title: "List activitylogs"
+title: "List activityLogs"
 description: "Get a list of activityLogBase objects and their properties."
 author: "Vassu05"
 ms.date: 02/12/2026
@@ -8,7 +8,7 @@ ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
-# List activitylogs
+# List activityLogs
 
 Namespace: microsoft.graph
 
@@ -148,7 +148,7 @@ Content-Type: application/json
       "restoreSessionId": "c3456789-d012-3456-e789-f01234567890",
       "restoreSessionStatus": "completed",
       "destinationType": "inPlace",
-      "tags": "fastRestore",
+      "restoreJobType": "standard",
       "restoreArtifactDetails": {
         "totalArtifactsCount": 100,
         "restoredCount": 100,

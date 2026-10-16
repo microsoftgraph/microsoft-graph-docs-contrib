@@ -5,7 +5,7 @@ author: "dianambb"
 ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: resourcePageType
-ms.date: 06/27/2024
+ms.date: 09/22/2026
 ---
 
 # plannerArchivalInfo resource type
@@ -24,6 +24,9 @@ An archived entity is read-only.
 |justification|String|Read-only. Reason why the entity was archived or unarchived.|
 |statusChangedBy|[identitySet](../resources/identityset.md)|Read-only. Identity of the user who archived or unarchived the entity|
 |statusChangedDateTime|DateTimeOffset|Read-only. Date and time at which the entity's archive status changed.|
+|isArchived|Boolean|Read-only. Indicates whether the entity is archived.|
+|modifiedBy|[identitySet](../resources/identityset.md)|Read-only. Identity of the user who archived or unarchived the entity.|
+|modifiedDateTime|DateTimeOffset|Read-only. Date and time at which the entity's archive status changed.|
 
 ## Relationships
 None.
@@ -42,7 +45,12 @@ The following JSON representation shows the resource type.
   "statusChangedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "statusChangedDateTime": "String (timestamp)"
+  "statusChangedDateTime": "String (timestamp)",
+  "isArchived": "Boolean",
+  "modifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "modifiedDateTime": "String (timestamp)"
 }
 ```
 
