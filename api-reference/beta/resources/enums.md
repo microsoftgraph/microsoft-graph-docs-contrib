@@ -100,6 +100,40 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 |disabled|
 |unknownFutureValue|
 
+
+### accessDriftReportResourceType values
+
+|Member|
+|:---|
+|application|
+|group|
+|unknownFutureValue|
+
+### accessDriftResourceType values
+
+|Member|
+|:---|
+|application|
+|group|
+|unknownFutureValue|
+
+### accessDriftSource values
+
+|Member|
+|:---|
+|entra|
+|externalApplication|
+|unknownFutureValue|
+
+### accessDriftType values
+
+|Member|
+|:---|
+|unauthorized|
+|missing|
+|inSync|
+|unknownFutureValue|
+
 ### accessReviewPrincipalScopeType values
 
 |Member|
