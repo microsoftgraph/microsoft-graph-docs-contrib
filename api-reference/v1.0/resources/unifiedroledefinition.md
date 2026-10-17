@@ -7,7 +7,7 @@ ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 toc.title: Role definition
-ms.date: 07/22/2024
+ms.date: 10/07/2026
 ---
 
 # unifiedRoleDefinition resource type
@@ -21,10 +21,11 @@ A role definition is a collection of permissions in Microsoft Entra listing the 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Read a list of unifiedRoleDefinition objects, and their properties. |
-| [Get](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Read the properties of a unifiedRoleDefinition object. |
+| [Get](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Read the properties of an active or soft-deleted unifiedRoleDefinition object. |
 | [Create](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a unifiedRoleDefinition object. |
 | [Update](../api/unifiedroledefinition-update.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Update a unifiedRoleDefinition object. |
-| [Delete](../api/unifiedroledefinition-delete.md) | None | Delete a unifiedRoleDefinition object. |
+| [Delete](../api/unifiedroledefinition-delete.md) | None | Delete an active unifiedRoleDefinition object or permanently delete a soft-deleted custom role definition. |
+| [unifiedRoleDefinition: restore](../api/unifiedroledefinition-restore.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Restore a soft-deleted custom role definition. |
 
 ## Properties
 

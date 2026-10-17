@@ -843,6 +843,7 @@
             {
               "name": "Role management",
               "resources": [
+                "directoryRoleManagementDeletedItemContainer",
                 "roleManagement",
                 "unifiedRoleDefinition",
                 "unifiedRoleAssignment"

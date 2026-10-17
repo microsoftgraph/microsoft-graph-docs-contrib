@@ -40,9 +40,13 @@ POST /servicePrincipals/microsoft.graph.agentIdentity
 ## Request body
 In the request body, supply a JSON representation of a [agentIdentity](../resources/agentidentity.md) object. The request body must contain  **displayName**, **agentIdentityBlueprintId**, and a valid **sponsor** reference.
 
+The **displayName** must follow the [agent identity display-name character rules](../resources/agentidentity.md#properties).
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [agentIdentity](../resources/agentidentity.md) object in the response body.
+
+If **displayName** contains prohibited characters, this method returns `400 Bad Request` with a property-specific `ProhibitedCharactersInDisplayName` error code for `displayName`. The error message identifies the prohibited Unicode code points.
 
 For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
 

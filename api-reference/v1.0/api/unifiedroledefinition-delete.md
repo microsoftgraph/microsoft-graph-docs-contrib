@@ -6,14 +6,14 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
-ms.date: 07/26/2024
+ms.date: 10/07/2026
 ---
 
 # Delete unifiedRoleDefinition
 
 Namespace: microsoft.graph
 
-Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. You can't delete built-in roles. This feature requires a Microsoft Entra ID P1 or P2 license.
+Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. You can't delete built-in roles. Deleting an active custom role definition soft-deletes it. You can then restore the role or permanently delete it from the deleted-items collection. This feature requires a Microsoft Entra ID P1 or P2 license.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -36,6 +36,14 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 ```
 
+To permanently delete a soft-deleted custom role definition:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/directory/deletedItems/roleDefinitions/{id}
+```
+
 ## Request headers
 
 | Name          | Description   |
@@ -50,9 +58,11 @@ Don't supply a request body for this method.
 
 If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Soft-delete a custom role definition
+
+#### Request
 
 The following example shows a request.
 
@@ -97,7 +107,36 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 
 ---
 
-### Response
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Permanently delete a soft-deleted custom role definition
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "permanently_delete_unifiedroledefinition",
+  "sampleKeys": ["a1b2c3d4-5678-90ab-cdef-1234567890ab"]
+}-->
+
+```http
+DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/deletedItems/roleDefinitions/a1b2c3d4-5678-90ab-cdef-1234567890ab
+```
+
+#### Response
 
 The following example shows the response.
 
