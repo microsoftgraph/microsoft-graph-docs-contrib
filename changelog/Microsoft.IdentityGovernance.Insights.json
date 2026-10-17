@@ -3,6 +3,570 @@
     {
       "ChangeList": [
         {
+          "Id": "6c8a222e-07ff-4ced-9094-7a259b3733f9",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityType** property to the [entraDriftIdentityInfo](https://learn.microsoft.com/en-us/graph/api/resources/entradriftidentityinfo?view=graph-rest-beta) resource.",
+          "Target": "entraDriftIdentityInfo"
+        }
+      ],
+      "Id": "6c8a222e-07ff-4ced-9094-7a259b3733f9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-09T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessDriftReportResourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessDriftReportResourceType** enumeration type.",
+          "Target": "accessDriftReportResourceType"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Member",
+          "ChangedApiName": "connectedApp",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `connectedApp` member from the **accessDriftReportResourceType** enumeration.",
+          "Target": "accessDriftReportResourceType"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [Org.OData.Core.V1.Revisions](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "accessDriftReportResourceType"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Target": "accessDriftReportResourceType"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessDriftResourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessDriftResourceType** enumeration type.",
+          "Target": "accessDriftResourceType"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessDriftSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessDriftSource** enumeration type.",
+          "Target": "accessDriftSource"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessDriftType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessDriftType** enumeration type.",
+          "Target": "accessDriftType"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [Org.OData.Core.V1.Revisions](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "accessDriftType"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Target": "accessDriftType"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationDriftResourceInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationDriftResourceInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationdriftresourceinfo?view=graph-rest-beta) resource.",
+          "Target": "applicationDriftResourceInfo"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driftAccessPackageInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [driftAccessPackageInfo](https://learn.microsoft.com/en-us/graph/api/resources/driftaccesspackageinfo?view=graph-rest-beta) resource.",
+          "Target": "driftAccessPackageInfo"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driftCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [driftCounts](https://learn.microsoft.com/en-us/graph/api/resources/driftcounts?view=graph-rest-beta) resource.",
+          "Target": "driftCounts"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driftResourceInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [driftResourceInfo](https://learn.microsoft.com/en-us/graph/api/resources/driftresourceinfo?view=graph-rest-beta) resource.",
+          "Target": "driftResourceInfo"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupDriftResourceInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupDriftResourceInfo](https://learn.microsoft.com/en-us/graph/api/resources/groupdriftresourceinfo?view=graph-rest-beta) resource.",
+          "Target": "groupDriftResourceInfo"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessDriftDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessPackageIdentifier",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **accessPackageIdentifier** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessPackageName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **accessPackageName** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignedRole",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **assignedRole** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "catalogIdentifier",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **catalogIdentifier** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "driftSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **driftSource** property to the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "expectedRole",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **expectedRole** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityIdentifier",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **identityIdentifier** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityPrincipalName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **identityPrincipalName** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "resource",
+          "ChangeType": "Addition",
+          "Description": "Added the **resource** property to the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceId** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceName** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceType** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "userDisplayName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **userDisplayName** property from the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identities",
+          "ChangeType": "Addition",
+          "Description": "Added the **identities** relationship to the [accessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [Org.OData.Core.V1.Revisions](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Target": "accessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessDriftReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessDriftReport](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftreport?view=graph-rest-beta) resource.",
+          "Target": "accessDriftReport"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [Org.OData.Core.V1.Revisions](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftreport?view=graph-rest-beta) resource.",
+          "Target": "accessDriftReport"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Target": "accessDriftReport"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessDriftSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "PropertyRef",
+          "ChangedApiName": "id",
+          "ChangeType": "Addition",
+          "Description": "Added the [id](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "PropertyRef",
+          "ChangedApiName": "resourceId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceId** resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignmentsWithDrift",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **assignmentsWithDrift** property from the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "catalogIdentifier",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **catalogIdentifier** property from the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "driftCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the **driftCounts** property to the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "driftSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **driftSource** property to the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Addition",
+          "Description": "Added the **id** property to the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "missingAccessCount",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **missingAccessCount** property from the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "resource",
+          "ChangeType": "Addition",
+          "Description": "Added the **resource** property to the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceId** property from the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceName** property from the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceType** property from the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Property",
+          "ChangedApiName": "unauthorizedAccessCount",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **unauthorizedAccessCount** property from the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "details",
+          "ChangeType": "Addition",
+          "Description": "Added the **details** relationship to the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [Org.OData.Core.V1.Revisions](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Target": "accessDriftSummary"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driftIdentityInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [driftIdentityInfo](https://learn.microsoft.com/en-us/graph/api/resources/driftidentityinfo?view=graph-rest-beta) resource.",
+          "Target": "driftIdentityInfo"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entraAccessDriftDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [entraAccessDriftDetail](https://learn.microsoft.com/en-us/graph/api/resources/entraaccessdriftdetail?view=graph-rest-beta) resource.",
+          "Target": "entraAccessDriftDetail"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entraDriftIdentityInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [entraDriftIdentityInfo](https://learn.microsoft.com/en-us/graph/api/resources/entradriftidentityinfo?view=graph-rest-beta) resource.",
+          "Target": "entraDriftIdentityInfo"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "accessDriftReport",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessDriftReport** relationship to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-insights?view=graph-rest-beta) resource.",
+          "Target": "insightRoot"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "accessDriftReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessDriftReport](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftreport?view=graph-rest-beta) resource.",
+          "Target": "insightRoot"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "accessDriftReport",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **accessDriftReport** resource.",
+          "Target": "insightRoot"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "accessDriftSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessDriftSummary** relationship to the [insights](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-insights?view=graph-rest-beta) resource.",
+          "Target": "insightRoot"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "accessDriftSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessDriftSummary](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftsummary?view=graph-rest-beta) resource.",
+          "Target": "insightRoot"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "accessDriftSummary",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **accessDriftSummary** resource.",
+          "Target": "insightRoot"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "localDriftIdentityInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [localDriftIdentityInfo](https://learn.microsoft.com/en-us/graph/api/resources/localdriftidentityinfo?view=graph-rest-beta) resource.",
+          "Target": "localDriftIdentityInfo"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Method",
+          "ChangedApiName": "downloadFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [downloadFile](https://learn.microsoft.com/en-us/graph/api/accessdriftreport-downloadfile?view=graph-rest-beta) method to the [accessDriftReport](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftreport?view=graph-rest-beta) resource.",
+          "Target": "accessDriftReport"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [Org.OData.Core.V1.Revisions](https://learn.microsoft.com/en-us/graph/api/accessdriftreport-downloadfile?view=graph-rest-beta) resource.",
+          "Target": "downloadFile"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Target": "downloadFile"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Method",
+          "ChangedApiName": "generateDownloadUri",
+          "ChangeType": "Addition",
+          "Description": "Added the [generateDownloadUri](https://learn.microsoft.com/en-us/graph/api/accessdriftreport-generatedownloaduri?view=graph-rest-beta) method to the [accessDriftReport](https://learn.microsoft.com/en-us/graph/api/resources/accessdriftreport?view=graph-rest-beta) resource.",
+          "Target": "accessDriftReport"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [Org.OData.Core.V1.Revisions](https://learn.microsoft.com/en-us/graph/api/accessdriftreport-generatedownloaduri?view=graph-rest-beta) resource.",
+          "Target": "generateDownloadUri"
+        },
+        {
+          "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+          "ApiChange": "Collection",
+          "ChangedApiName": "Org.OData.Core.V1.Revisions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Target": "generateDownloadUri"
+        }
+      ],
+      "Id": "1ee37f9a-14ca-4d4e-ac0a-10f1d698129e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-09T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "faacff08-2ce3-4f6d-a724-c8c581e5c4c3",
           "ApiChange": "Resource",
           "ChangedApiName": "customDataProvidedResource",

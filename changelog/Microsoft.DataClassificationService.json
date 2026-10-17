@@ -3,6 +3,160 @@
     {
       "ChangeList": [
         {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "fileTooLarge",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `fileTooLarge` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "archiveSizeTooLarge",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `archiveSizeTooLarge` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "textExceedsMceThreshold",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `textExceedsMceThreshold` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "partiallyScannedArchive",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `partiallyScannedArchive` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "partialImageExtraction",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `partialImageExtraction` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "imageOcrPartialResult",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `imageOcrPartialResult` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "ocrProcessingFailure",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `ocrProcessingFailure` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "ocrQuotaExhausted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `ocrQuotaExhausted` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "classificationServiceError",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `classificationServiceError` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "sitExtractionFailure",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `sitExtractionFailure` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "textExtractionFailure",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `textExtractionFailure` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "archiveTextExtractionError",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `archiveTextExtractionError` member from the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "contentTooLarge",
+          "ChangeType": "Addition",
+          "Description": "Added the `contentTooLarge` member to the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "partiallyScanned",
+          "ChangeType": "Addition",
+          "Description": "Added the `partiallyScanned` member to the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "unscannable",
+          "ChangeType": "Addition",
+          "Description": "Added the `unscannable` member to the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "billingNotSetup",
+          "ChangeType": "Addition",
+          "Description": "Added the `billingNotSetup` member to the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Member",
+          "ChangedApiName": "authenticationOrAuthorizationFailed",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationOrAuthorizationFailed` member to the **evaluationErrorType** enumeration.",
+          "Target": "evaluationErrorType"
+        },
+        {
+          "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorMessage",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **errorMessage** property from the [evaluationErrorDetail](https://learn.microsoft.com/en-us/graph/api/resources/evaluationerrordetail?view=graph-rest-beta) resource.",
+          "Target": "evaluationErrorDetail"
+        }
+      ],
+      "Id": "4059c122-e368-49eb-9cd9-178fee5b105f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-16T00:33:33.3879974Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ee73f8d3-0ced-448f-80d0-289f07fa667d",
           "ApiChange": "ComplexType",
           "ChangedApiName": "errorSettings",

@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "fd191347-001a-4db4-8bcc-197e6146516e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryRoleManagementDeletedItemContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [directoryRoleManagementDeletedItemContainer](https://learn.microsoft.com/en-us/graph/api/resources/directoryRoleManagementDeletedItemContainer?view=graph-rest-1.0) resource.",
+          "Target": "directoryRoleManagementDeletedItemContainer"
+        },
+        {
+          "Id": "fd191347-001a-4db4-8bcc-197e6146516e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roleDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleDefinitions** relationship to the [directoryRoleManagementDeletedItemContainer](https://learn.microsoft.com/en-us/graph/api/resources/directoryRoleManagementDeletedItemContainer?view=graph-rest-1.0) resource.",
+          "Target": "directoryRoleManagementDeletedItemContainer"
+        },
+        {
+          "Id": "fd191347-001a-4db4-8bcc-197e6146516e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "deletedItems",
+          "ChangeType": "Addition",
+          "Description": "Added the **deletedItems** relationship to the [rbacApplication](https://learn.microsoft.com/en-us/graph/api/resources/rbacApplication?view=graph-rest-1.0) resource.",
+          "Target": "rbacApplication"
+        },
+        {
+          "Id": "fd191347-001a-4db4-8bcc-197e6146516e",
+          "ApiChange": "Method",
+          "ChangedApiName": "List roleDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the [List roleDefinitions](https://learn.microsoft.com/en-us/graph/api/directoryRoleManagementDeletedItemContainer-list-roleDefinitions?view=graph-rest-1.0) method to the [directoryRoleManagementDeletedItemContainer](https://learn.microsoft.com/en-us/graph/api/resources/directoryRoleManagementDeletedItemContainer?view=graph-rest-1.0) resource.",
+          "Target": "directoryRoleManagementDeletedItemContainer"
+        },
+        {
+          "Id": "fd191347-001a-4db4-8bcc-197e6146516e",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get unifiedRoleDefinition",
+          "ChangeType": "Update",
+          "Description": "Updated the [Get unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/unifiedRoleDefinition-get?view=graph-rest-1.0) method to support retrieving a soft-deleted custom role definition from the deleted-items collection.",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "fd191347-001a-4db4-8bcc-197e6146516e",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/unifiedRoleDefinition-restore?view=graph-rest-1.0) method to the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-1.0) resource.",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "fd191347-001a-4db4-8bcc-197e6146516e",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Update",
+          "Description": "Updated the [delete](https://learn.microsoft.com/en-us/graph/api/unifiedRoleDefinition-delete?view=graph-rest-1.0) method for the directory provider to soft-delete a custom role definition.",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "fd191347-001a-4db4-8bcc-197e6146516e",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Added support to the [delete](https://learn.microsoft.com/en-us/graph/api/unifiedRoleDefinition-delete?view=graph-rest-1.0) method for permanently deleting a soft-deleted custom role definition from the deleted-items collection.",
+          "Target": "unifiedRoleDefinition"
+        }
+      ],
+      "Id": "fd191347-001a-4db4-8bcc-197e6146516e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-07T16:58:33.6407947Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "48d7489d-b499-4af9-9182-9e88a3f50ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "directoryRoleManagementDeletedItemContainer",

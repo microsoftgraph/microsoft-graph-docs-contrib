@@ -1382,6 +1382,26 @@
           ],
           "childNodes": [
             {
+              "name": "Access drift",
+              "resources": [
+                "accessDriftDetail",
+                "accessDriftReport",
+                "accessDriftSummary",
+                "driftIdentityInfo",
+                "entraAccessDriftDetail",
+                "entraDriftIdentityInfo",
+                "localDriftIdentityInfo"
+              ],
+              "complexTypes": [
+                "accessDriftReportRequest",
+                "applicationDriftResourceInfo",
+                "driftAccessPackageInfo",
+                "driftCounts",
+                "driftResourceInfo",
+                "groupDriftResourceInfo"
+              ]
+            },
+            {
               "name": "Access reviews",
               "overview": "../../resources/accessreviewsv2-overview.md",
               "resources": [

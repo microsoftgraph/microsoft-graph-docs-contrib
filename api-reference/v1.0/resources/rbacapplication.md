@@ -6,7 +6,7 @@ author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
-ms.date: 07/22/2024
+ms.date: 10/07/2026
 ---
 
 # rbacApplication resource type
@@ -31,6 +31,7 @@ None
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|deletedItems|[directoryRoleManagementDeletedItemContainer](../resources/directoryrolemanagementdeleteditemcontainer.md)|Container for custom role definitions that have been soft-deleted from Microsoft Entra directory role management.|
 |roleAssignments|[unifiedRoleAssignment](../resources/unifiedroleassignment.md) collection| Resource to grant access to users or groups. |
 |roleAssignmentScheduleInstances|[unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) collection| Instances for active role assignments.  |
 |roleAssignmentScheduleRequests|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) collection| Requests for active role assignments to principals through PIM. |

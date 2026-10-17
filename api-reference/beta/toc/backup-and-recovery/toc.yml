@@ -51,9 +51,9 @@ items:
 - name: Microsoft 365 backup and storage
   displayName: M365 Backup Storage, Microsoft 365 Backup Storage, Enhanced Restore
   items:
-  - name: Activity log base
+  - name: Activity log
     items:
-    - name: Activity log base
+    - name: Activity log
       href: ../../resources/activitylogbase.md
     - name: List
       href: ../../api/backuprestoreroot-list-activitylogs.md

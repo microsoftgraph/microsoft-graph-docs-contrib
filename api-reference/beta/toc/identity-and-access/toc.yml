@@ -696,6 +696,54 @@ items:
   items:
   - name: Overview
     href: ../../resources/identitygovernance-overview.md
+  - name: Access drift
+    items:
+    - name: Access drift detail
+      items:
+      - name: Access drift detail
+        href: ../../resources/accessdriftdetail.md
+      - name: List details
+        href: ../../api/accessdriftsummary-list-details.md
+    - name: Access drift report
+      items:
+      - name: Access drift report
+        href: ../../resources/accessdriftreport.md
+      - name: downloadFile
+        href: ../../api/accessdriftreport-downloadfile.md
+      - name: generateDownloadUri
+        href: ../../api/accessdriftreport-generatedownloaduri.md
+    - name: Access drift summary
+      items:
+      - name: Access drift summary
+        href: ../../resources/accessdriftsummary.md
+      - name: List accessDriftSummary
+        href: ../../api/accessdriftsummary-list.md
+      - name: Get accessDriftSummary
+        href: ../../api/accessdriftsummary-get.md
+      - name: List details
+        href: ../../api/accessdriftsummary-list-details.md
+    - name: Drift identity info
+      href: ../../resources/driftidentityinfo.md
+    - name: Entra access drift detail
+      href: ../../resources/entraaccessdriftdetail.md
+    - name: Entra drift identity info
+      href: ../../resources/entradriftidentityinfo.md
+    - name: Local drift identity info
+      href: ../../resources/localdriftidentityinfo.md
+    - name: Complex types
+      items:
+      - name: Access drift report request
+        href: ../../resources/accessdriftreportrequest.md
+      - name: Application drift resource info
+        href: ../../resources/applicationdriftresourceinfo.md
+      - name: Drift access package info
+        href: ../../resources/driftaccesspackageinfo.md
+      - name: Drift counts
+        href: ../../resources/driftcounts.md
+      - name: Drift resource info
+        href: ../../resources/driftresourceinfo.md
+      - name: Group drift resource info
+        href: ../../resources/groupdriftresourceinfo.md
   - name: Access reviews
     items:
     - name: Overview
