@@ -70,6 +70,10 @@ Updated the **evaluationErrorType** enumeration to use customer-facing reasons f
 
 - Added the [workbook](/graph/api/resources/security-workbook?view=graph-rest-beta&preserve-view=true) resource type and related methods to manage tenant-scoped Microsoft Security workbook documents. Use stable IDs for repeatable deployments and replace a workbook's JSON content as a complete document.
 
+### Teamwork and communications | Messaging
+
+Added support for setting and unsetting custom emoji reactions on chat messages by specifying a display name (**displayName**), service-issued identifier (**reactionId**), or both. For more information, see [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true).
+
 ## September 2026: New and generally available
 
 ### Calendars | Work hours and locations
