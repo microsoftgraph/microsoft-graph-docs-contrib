@@ -52,9 +52,13 @@ PATCH /servicePrincipals/{id}/microsoft.graph.agentIdentity
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
+When changing **displayName**, it must follow the [agent identity display-name character rules](../resources/agentidentity.md#properties). Updates that don't change **displayName** aren't subject to this character validation.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
+
+A request to change **displayName** to a value containing prohibited characters returns `400 Bad Request` with a property-specific `ProhibitedCharactersInDisplayName` error code for `displayName`. The error message identifies the prohibited Unicode code points.
 
 For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
 
