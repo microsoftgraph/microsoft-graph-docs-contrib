@@ -62,6 +62,10 @@ Added the **incidentConfiguration** property to the [detectionAction](/graph/api
 
 Added 35 members, from `PlannerCustomFieldDefinition` through `MESRawEmailContentMetadata`, to the [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype?view=graph-rest-beta&preserve-view=true) enumeration and added the matching [auditData derived types](/graph/api/resources/security-auditdata-derived-types?view=graph-rest-beta&preserve-view=true) to represent workload-specific audit event payloads.
 
+### Security | Data security and compliance
+
+Updated the **evaluationErrorType** enumeration to use customer-facing reasons for incomplete policy evaluations, and removed the **errorMessage** property from the [evaluationErrorDetail](/graph/api/resources/evaluationerrordetail?view=graph-rest-beta&preserve-view=true) complex type. Use **errorType** to identify why an evaluation couldn't be completed.
+
 ### Security | Workbooks
 
 - Added the [workbook](/graph/api/resources/security-workbook?view=graph-rest-beta&preserve-view=true) resource type and related methods to manage tenant-scoped Microsoft Security workbook documents. Use stable IDs for repeatable deployments and replace a workbook's JSON content as a complete document.

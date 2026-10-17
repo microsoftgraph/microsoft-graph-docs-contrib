@@ -40,18 +40,6 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 |:---|
 |unsupportedFile|
 |passwordProtectedFile|
-|fileTooLarge|
-|archiveSizeTooLarge|
-|textExceedsMceThreshold|
-|partiallyScannedArchive|
-|partialImageExtraction|
-|imageOcrPartialResult|
-|ocrProcessingFailure|
-|ocrQuotaExhausted|
-|classificationServiceError|
-|sitExtractionFailure|
-|textExtractionFailure|
-|archiveTextExtractionError|
 |missingOrInvalidConfiguration|
 |agentFailure|
 |enforcementTimeout|
@@ -61,6 +49,11 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 |serviceTimeout|
 |serviceError|
 |serviceUnavailable|
+|contentTooLarge|
+|partiallyScanned|
+|unscannable|
+|billingNotSetup|
+|authenticationOrAuthorizationFailed|
 |unknownFutureValue|
 
 ### meetingEngagementType values

@@ -21,8 +21,7 @@ Represents the structured reason for the **inspectionIncompleteReason** property
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | errorCategory | [evaluationErrorCategory](../resources/enums.md#evaluationerrorcategory-values) | The high-level category of the error. Required. The possible values are: `unknown`, `systemLimit`, `systemError`, `enforcementError`, `unknownFutureValue`. |
-| errorMessage | String | A message that describes the error. Required. |
-| errorType | [evaluationErrorType](../resources/enums.md#evaluationerrortype-values) | The specific reason the evaluation couldn't be completed. Required. The possible values are: `unsupportedFile`, `passwordProtectedFile`, `fileTooLarge`, `archiveSizeTooLarge`, `textExceedsMceThreshold`, `partiallyScannedArchive`, `partialImageExtraction`, `imageOcrPartialResult`, `ocrProcessingFailure`, `ocrQuotaExhausted`, `classificationServiceError`, `sitExtractionFailure`, `textExtractionFailure`, `archiveTextExtractionError`, `missingOrInvalidConfiguration`, `agentFailure`, `enforcementTimeout`, `osOverride`, `processNonExistent`, `other`, `serviceTimeout`, `serviceError`, `serviceUnavailable`, `unknownFutureValue`. |
+| errorType | [evaluationErrorType](../resources/enums.md#evaluationerrortype-values) | The specific reason the evaluation couldn't be completed. Required. The possible values are: `unsupportedFile`, `passwordProtectedFile`, `missingOrInvalidConfiguration`, `agentFailure`, `enforcementTimeout`, `osOverride`, `processNonExistent`, `other`, `serviceTimeout`, `serviceError`, `serviceUnavailable`, `contentTooLarge`, `partiallyScanned`, `unscannable`, `billingNotSetup`, `authenticationOrAuthorizationFailed`, `unknownFutureValue`. |
 
 ## Relationships
 
@@ -40,7 +39,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.evaluationErrorDetail",
   "errorCategory": "String",
-  "errorMessage": "String",
   "errorType": "String"
 }
 ```
