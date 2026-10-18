@@ -4,7 +4,7 @@ description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-author: "MSGraphDocsvTeam"
+author: "tilarso"
 ms.date: 07/22/2026
 ms.custom: sfi-ropc-nochange
 ---
@@ -6506,3 +6506,98 @@ Possible values for user account types (group membership), per Windows definitio
 |teams|
 |coldCrawl|
 |applications|
+
+### chainBreakReason values
+
+|Member|
+|:---|
+|none|
+|idvRevoked|
+|sourceCredentialRevoked|
+|unknownFutureValue|
+
+### chainBreakSource values
+
+|Member|
+|:---|
+|none|
+|identityProtection|
+|adminAction|
+|system|
+|unknownFutureValue|
+
+### chainState values
+
+|Member|
+|:---|
+|intact|
+|broken|
+|unknownFutureValue|
+
+### provenanceActorType values
+
+|Member|
+|:---|
+|system|
+|user|
+|application|
+|unknownFutureValue|
+
+### provenanceAssertionType values
+
+|Member|
+|:---|
+|identityVerification|
+|derivedFromCredential|
+|manualAttestation|
+|unknownFutureValue|
+
+### provenanceClassification values
+
+|Member|
+|:---|
+|highAssurance|
+|mediumAssurance|
+|lowAssurance|
+|unknownFutureValue|
+
+### verificationActorType values
+
+|Member|
+|:---|
+|user|
+|application|
+|unknownFutureValue|
+
+### verificationEventLifecycleState values
+
+|Member|
+|:---|
+|active|
+|revoked|
+|suspended|
+|invalidated|
+|issued|
+|blocked|
+|unknownFutureValue|
+
+### verificationLifecycleSource values
+
+|Member|
+|:---|
+|entra|
+|adminOverride|
+|apiOverride|
+|unknownFutureValue|
+
+### verificationState values
+
+|Member|
+|:---|
+|unverified|
+|verified|
+|revoked|
+|suspended|
+|issued|
+|blocked|
+|unknownFutureValue|

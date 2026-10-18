@@ -1,12 +1,12 @@
 ---
 title: "user resource type"
 description: "Represents a Microsoft Entra user account. Inherits from directoryObject."
-author: "yyuank"
+author: "tilarso"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
-ms.date: 11/07/2025
+ms.date: 10/15/2026
 ms.custom: sfi-ga-blocked
 ---
 
@@ -384,6 +384,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |employeeExperience|[employeeExperienceUser](employeeexperienceuser.md)| The employee experience resources for the user. Read-only. Nullable.|
 |events|[event](event.md) collection|The user's events. The default is to show events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Supports `$expand`. Nullable.|
+|identityVerificationStatus|[identityVerificationStatus](../resources/identityverificationstatus.md)|The user's overall identity verification state and recent verification events. Retrieve through the [get identity verification status](../api/identityverificationstatus-get.md) operation.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance. |
 |insights|[itemInsights](iteminsights.md) | Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques. Read-only. Nullable.|
 |invitedBy|[directoryObject](directoryobject.md) | The user or service principal that invited the user.|

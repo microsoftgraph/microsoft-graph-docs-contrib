@@ -1719,10 +1719,15 @@
             {
               "name": "Verified ID",
               "resources": [
+                "identityVerificationEvent",
+                "identityVerificationStatus",
                 "verifiedIdProfile"
               ],
               "complexTypes": [
                 "mobileDriversLicenseConfiguration",
+                "verificationEventDetail",
+                "verificationEventLifecycle",
+                "verificationEventOverride",
                 "verifiedIdSelfServiceIssuance"
               ]
             },
@@ -1745,6 +1750,12 @@
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
                 "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+              ],
+              "complexTypes": [
+                "credentialProvenance",
+                "provenanceAssertedBy",
+                "provenanceAssertion",
+                "provenanceChainStatus"
               ],
               "childNodes": [
                 {
