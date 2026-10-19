@@ -17,7 +17,7 @@ Describes the authentication behaviors set in the context of an [application](ap
 Applications can adopt new breaking changes by enabling a behavior (set the behavior to `true`), or continue using preexisting behavior by disabling it (by setting the behavior to `false`). For more information about managing authentication behaviors, see [Manage application authenticationBehaviors](/graph/applications-authenticationbehaviors).
 
 > [!NOTE]
-> The **coopEnforcement** property isn't available in national cloud deployments. It's available only for the global service.
+> The **coopEnforcement** property is available in the global service and the supported national cloud deployments: US Government L4, US Government L5 (DoD), and China operated by 21Vianet.
 
 ## Methods
 None.

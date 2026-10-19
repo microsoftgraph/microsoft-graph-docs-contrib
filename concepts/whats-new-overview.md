@@ -80,6 +80,10 @@ Added support for setting and unsetting custom emoji reactions on chat messages 
 
 ## September 2026: New and generally available
 
+### Applications
+
+- Updated the availability of the **coopEnforcement** property on the [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) resource to include the supported national cloud deployments: US Government L4, US Government L5 (DoD), and China operated by 21Vianet.
+
 ### Calendars | Work hours and locations
 
 Added app-only support to the [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting), [workPlanOccurrence](/graph/api/resources/workplanoccurrence), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence) resources and related methods. Apps can use the `Calendars.Read.All` application permission to read a user's setting, recurrences, and occurrences, and `Calendars.ReadWrite.All` to create, update, and delete them.
@@ -134,9 +138,10 @@ Updated the [getAllRetainedMessages](/graph/api/channel-getallretainedmessages) 
 
 Added the **isDisabled** property to the [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true) resource. Use it to deactivate an agent identity blueprint without deleting it.
 
-### Application
+### Applications
 
-Added the **isDeviceAccessEnabled** property to the [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta&preserve-view=true) resource to configure device access for Microsoft Entra Private Access.
+- Updated the availability of the **coopEnforcement** property on the [authenticationBehaviors](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true) resource to include the supported national cloud deployments: US Government L4, US Government L5 (DoD), and China operated by 21Vianet.
+- Added the **isDeviceAccessEnabled** property to the [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta&preserve-view=true) resource to configure device access for Microsoft Entra Private Access.
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
