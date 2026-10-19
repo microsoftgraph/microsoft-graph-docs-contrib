@@ -106,6 +106,7 @@ Added the [provision](/graph/api/device-provision) action to the [device](/graph
 
 ### Identity and access | Governance
 
+- Added the [roleManagementCustomCalloutExtension](/graph/api/resources/rolemanagementcustomcalloutextension) resource type and related methods for integrating external approval, ticketing, compliance, and audit workflows into Privileged Identity Management role assignment lifecycle events.
 - Promoted the **access reviews customer-provided data** APIs from beta to v1.0. Use them to review entitlement data that you upload for resources that Microsoft Entra doesn't discover itself, such as third-party applications. The promoted surface includes:
   - the **description** property on [accessReviewInstanceDecisionItemResource](/graph/api/resources/accessreviewinstancedecisionitemresource) to describe the resource under review.
   - [accessReviewInstanceDecisionItemPermission](/graph/api/resources/accessreviewinstancedecisionitempermission) complex type and the **permission** property on [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem), which describe the permission that grants the principal access to the resource under review.

@@ -6,17 +6,17 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Policy rule
-ms.date: 06/12/2024
+ms.date: 09/16/2026
 ---
 
 # unifiedRoleManagementPolicyRule resource type
 
 Namespace: microsoft.graph
 
-
 An abstract type that defines the rules or settings associated with role management policies. This abstract type is inherited by the following resources that define the various types of rules and their settings associated with role management policies.
 + [unifiedRoleManagementPolicyApprovalRule](unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](unifiedrolemanagementpolicyauthenticationcontextrule.md)
++ [unifiedRoleManagementPolicyCustomExtensionRule](../resources/unifiedrolemanagementpolicycustomextensionrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](unifiedrolemanagementpolicyenablementrule.md)
 + [unifiedRoleManagementPolicyExpirationRule](unifiedrolemanagementpolicyexpirationrule.md)
 + [unifiedRoleManagementPolicyNotificationRule](unifiedrolemanagementpolicynotificationrule.md)
@@ -59,4 +59,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

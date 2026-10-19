@@ -634,6 +634,33 @@ Namespace: microsoft.graph
 | approver |
 | unknownFutureValue |
 
+### customCalloutExtensionType values
+
+| Member |
+| ------------------ |
+| preApproval |
+| postApproval |
+| grant |
+| revoke |
+| unknownFutureValue |
+
+### customExtensionResourceType values
+
+| Member |
+| ------------------ |
+| entraRoles |
+| azureResources |
+| entraGroups |
+| unknownFutureValue |
+
+### evaluationOutcome values
+
+| Member |
+| ------------------ |
+| approved |
+| denied |
+| unknownFutureValue |
+
 ### privilegedAccessGroupAssignmentType values
 
 | Member |
