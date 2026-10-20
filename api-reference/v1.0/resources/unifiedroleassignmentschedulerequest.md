@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Assignment schedule request
-ms.date: 07/22/2024
+ms.date: 09/16/2026
 ---
 
 # unifiedRoleAssignmentScheduleRequest resource type
@@ -25,6 +25,7 @@ For more information about PIM scenarios you can define through the **unifiedRol
 |[Get](../api/unifiedroleassignmentschedulerequest-get.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Retrieve a request for an active role assignment made through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|
 |[Cancel](../api/unifiedroleassignmentschedulerequest-cancel.md)|None| Cancel a request for an active role assignment. |
 |[Filter by current user](../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) collection| Retrieve the requests for active role assignments for a particular principal.|
+|[unifiedRoleAssignmentScheduleRequest: updateRequest](../api/unifiedroleassignmentschedulerequest-updaterequest.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Submit the result of a custom extension evaluation for the request.|
 
 ## Properties
 |Property|Type|Description|

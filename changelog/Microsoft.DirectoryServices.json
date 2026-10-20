@@ -77,6 +77,42 @@
     {
       "ChangeList": [
         {
+          "Id": "d7de101e-4bc8-4eb6-a298-d4213ebf014f",
+          "ApiChange": "Property",
+          "ChangedApiName": "coopEnforcement",
+          "ChangeType": "Change",
+          "Description": "Updated availability of the **coopEnforcement** property on the [authenticationBehaviors](https://learn.microsoft.com/en-us/graph/api/resources/authenticationbehaviors?view=graph-rest-v1.0) resource to include supported national cloud deployments.",
+          "Target": "authenticationBehaviors"
+        }
+      ],
+      "Id": "d7de101e-4bc8-4eb6-a298-d4213ebf014f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-30T23:32:13.9907273Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Application management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6d457306-5f40-46fa-b894-6bcc934d0a8f",
+          "ApiChange": "Property",
+          "ChangedApiName": "coopEnforcement",
+          "ChangeType": "Change",
+          "Description": "Updated availability of the **coopEnforcement** property on the [authenticationBehaviors](https://learn.microsoft.com/en-us/graph/api/resources/authenticationbehaviors?view=graph-rest-beta) resource to include supported national cloud deployments.",
+          "Target": "authenticationBehaviors"
+        }
+      ],
+      "Id": "6d457306-5f40-46fa-b894-6bcc934d0a8f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-30T23:32:13.9907273Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Application management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "48d7489d-b499-4af9-9182-9e88a3f50ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "directoryRoleManagementDeletedItemContainer",

@@ -5,7 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 09/16/2026
 ---
 
 # privilegedAccessRoot resource type
@@ -17,7 +17,11 @@ Represents the entry point for resources related to Privileged Identity Manageme
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-None.
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List custom extensions](../api/privilegedaccessroot-list-customextensions.md)|[roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md) collection|Get a list of PIM custom extensions.|
+|[Create custom extension](../api/privilegedaccessroot-post-customextensions.md)|[roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md)|Create a PIM custom extension.|
 
 ## Properties
 |Property|Type|Description|
@@ -27,6 +31,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|customExtensions|[roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md) collection|The custom extensions configured for PIM role management operations.|
 |group|[privilegedAccessGroup](../resources/privilegedaccessgroup.md)|A group that's governed through Privileged Identity Management (PIM).|
 
 ## JSON representation

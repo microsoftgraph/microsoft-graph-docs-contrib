@@ -24,7 +24,7 @@ You can configure the following behaviors:
 - Require multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 
 > [!NOTE]
-> The **authenticationBehaviors** property (including **coopEnforcement**) is available in Microsoft Graph v1.0 and beta for the global service. **coopEnforcement** isn't available in national cloud deployments.
+> The **authenticationBehaviors** property, including **coopEnforcement**, is available in Microsoft Graph v1.0 and beta for the global service and the supported national cloud deployments: US Government L4, US Government L5 (DoD), and China operated by 21Vianet.
 ## Read the authenticationBehaviors setting for an application
 
 The **authenticationBehaviors** property is returned only on `$select` requests.
@@ -77,7 +77,7 @@ The property supports the following values:
 - `null`: Remove the explicit override and use the service default.
 
 > [!NOTE]
-> **coopEnforcement** is available only in the global service and isn't available in national cloud deployments.
+> **coopEnforcement** is available in the global service and the supported national cloud deployments listed above.
 
 > [!IMPORTANT]
 > Before setting **coopEnforcement** to `true`, test the application's complete authentication flow, including popup closure and delivery of the authentication result to the host application. Setting the property to `false` is a temporary compatibility exception while the application or owning platform is remediated; it isn't a security remediation. The exception doesn't expire automatically. Reset the property to `null` or set it to `true` after remediation.
