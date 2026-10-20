@@ -20,12 +20,8 @@ Get a list of the [plan](../resources/plan.md) objects associated with the user.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "planneruser-list-plans-v2-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/planneruser-list-plans-v2-permissions.md)]
+<!-- { "blockType": "permissions", "name": "planneruser_list_plans_v2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/planneruser-list-plans_v2-permissions.md)]
 
 ## HTTP request
 
