@@ -27,7 +27,7 @@ Applications can adopt new breaking changes by enabling a behavior (set the beha
 |requireClientServicePrincipal|Boolean| If `true`, requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens. This property is only modifiable for multitenant resource applications that rely on access from clients without a service principal and had this behavior as set to `false` by Microsoft. Tenant administrators should respond to security advisories sent through Azure Health Service events and the Microsoft 365 message center.|
 
 > [!NOTE]
-> The **coopEnforcement** property isn't available in national cloud deployments. It's available only for the global service.
+> The **coopEnforcement** property is available in the global service and the supported national cloud deployments: US Government L4, US Government L5 (DoD), and China operated by 21Vianet.
 
 ## Relationships
 None.

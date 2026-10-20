@@ -5,7 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 09/16/2026
 ---
 
 # Get unifiedRoleManagementPolicyRule
@@ -15,6 +15,7 @@ Retrieve a rule or settings defined for a role management policy. The rule can b
 
 + [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
++ [unifiedRoleManagementPolicyCustomExtensionRule](../resources/unifiedrolemanagementpolicycustomextensionrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
 + [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)
 + [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)

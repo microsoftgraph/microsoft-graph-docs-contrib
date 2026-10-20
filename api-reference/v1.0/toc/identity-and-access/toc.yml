@@ -1106,6 +1106,32 @@ items:
         href: ../../resources/identitygovernance-workflowsubject.md
   - name: Privileged Identity Management
     items:
+    - name: Custom extensions
+      items:
+      - name: Role management custom callout extension
+        items:
+        - name: Role management custom callout extension
+          href: ../../resources/rolemanagementcustomcalloutextension.md
+        - name: List
+          href: ../../api/privilegedaccessroot-list-customextensions.md
+        - name: Create
+          href: ../../api/privilegedaccessroot-post-customextensions.md
+        - name: Get
+          href: ../../api/rolemanagementcustomcalloutextension-get.md
+        - name: Update
+          href: ../../api/rolemanagementcustomcalloutextension-update.md
+        - name: Delete
+          href: ../../api/rolemanagementcustomcalloutextension-delete.md
+      - name: Unified role management policy custom extension rule
+        items:
+        - name: Unified role management policy custom extension rule
+          href: ../../resources/unifiedrolemanagementpolicycustomextensionrule.md
+        - name: List
+          href: ../../api/unifiedrolemanagementpolicy-list-rules.md
+        - name: Get
+          href: ../../api/unifiedrolemanagementpolicyrule-get.md
+        - name: Update
+          href: ../../api/unifiedrolemanagementpolicyrule-update.md
     - name: PIM for Microsoft Entra roles
       displayName: Privileged Identity Management, PIM, Identity Governance
       items:
@@ -1125,6 +1151,8 @@ items:
           href: ../../api/unifiedroleassignmentschedulerequest-cancel.md
         - name: Filter by current user
           href: ../../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+        - name: Update request
+          href: ../../api/unifiedroleassignmentschedulerequest-updaterequest.md
       - name: Assignment schedule
         items:
         - name: Assignment schedule
@@ -1231,6 +1259,8 @@ items:
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md
         - name: Cancel
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-cancel.md
+        - name: Update request
+          href: ../../api/privilegedaccessgroupassignmentschedulerequest-updaterequest.md
       - name: Assignment schedule
         items:
         - name: Assignment schedule
