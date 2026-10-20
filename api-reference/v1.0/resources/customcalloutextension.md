@@ -5,7 +5,7 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 07/26/2024
+ms.date: 09/16/2026
 ---
 
 # customCalloutExtension resource type
@@ -20,6 +20,7 @@ This abstract type is inherited by the following derived types.
 - [customAuthenticationExtension](../resources/customauthenticationextension.md)
 - [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)
 - [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)
+- [roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md)
 
 Inherits from [entity](../resources/entity.md).
 
