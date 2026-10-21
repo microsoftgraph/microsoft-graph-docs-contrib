@@ -37,7 +37,7 @@ POST /users/{user-id}/teamwork/sections/reorder
 
 | Header | Value |
 |:-------|:------|
-| Authorization | ****** Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 | Content-Type | application/json. Required. |
 | If-Match | The value of the **@microsoft.graph.sectionsVersion** annotation returned when you [list sections](../api/userteamwork-list-sections.md), or the **@odata.etag** value from any previously retrieved [section](../resources/teamworksection.md). Required for optimistic concurrency control. |
 
