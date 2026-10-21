@@ -35,6 +35,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter`.|
 |id|String|Read-only.|
 |justification|String|The requestor's supplied justification.|
+|parameters|[accessPackageAssignmentRequestParameters](accesspackageassignmentrequestparameters.md)|Additional parameters that control how the request is processed, such as bypassing the approval requirement configured on the access package policy.|
 |requestType|accessPackageRequestType|The type of the request. The possible values are: `notSpecified`, `userAdd`, `userUpdate`, `userRemove`, `adminAdd`, `adminUpdate`, `adminRemove`, `systemAdd`, `systemUpdate`, `systemRemove`, `onBehalfAdd` (not supported), `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `approverRemove`. Requests from the user have a **requestType** of `userAdd`, `userUpdate`, or `userRemove`. This property can't be changed once set.|
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|The range of dates that access is to be assigned to the requestor. This property can't be changed once set, but a new schedule for an assignment can be included in another `userUpdate` or `adminUpdate` assignment request.|
 |state|accessPackageRequestState|The state of the request. The possible values are: `submitted`, `pendingApproval`, `delivering`, `delivered`, `deliveryFailed`, `denied`, `scheduled`, `canceled`, `partiallyDelivered`, `unknownFutureValue`. Read-only. Supports `$filter` (`eq`). |
@@ -64,6 +65,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "requestType": "String",
   "justification": "String",
+  "parameters": {"@odata.type": "microsoft.graph.accessPackageAssignmentRequestParameters"},
   "schedule": {
     "@odata.type": "microsoft.graph.entitlementManagementSchedule"
   },

@@ -942,6 +942,7 @@
                 "externalOriginResourceConnector"
               ],
               "complexTypes": [
+                "accessPackageAssignmentRequestParameters",
                 "externalTokenBasedSapIagConnectionInfo"
               ]
             },
