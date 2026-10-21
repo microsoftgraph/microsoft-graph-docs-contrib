@@ -1244,6 +1244,7 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | ---- |
 | enabled |
 | disabled |
+| audit |
 | unknownFutureValue |
 
 ### appCredentialRestrictionType values

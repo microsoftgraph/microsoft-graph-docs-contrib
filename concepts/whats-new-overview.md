@@ -43,6 +43,10 @@ Added support for single-value extended properties on [todoTask](/graph/api/reso
 
 ## October 2026: New in preview only
 
+### Applications
+
+Added the `audit` member to the **appManagementRestrictionState** enumeration type used by the [appManagementPolicy](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource. Use this value to evaluate application management policy restrictions without enforcing them.
+
 ### Backup and recovery | Microsoft 365 backup and storage
 
 - Track admin activities on backup and restore resources, including policy changes, dynamic rule executions, offboarding, and restore task completions, by using the [activityLogBase](/graph/api/resources/activitylogbase?view=graph-rest-beta&preserve-view=true) resource and its derived types.
