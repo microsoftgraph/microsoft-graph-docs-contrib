@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## October 2026: New and generally available
 
+### Backup and recovery | Microsoft 365 backup and storage
+
+Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy) method to the [backupReport](/graph/api/resources/backupreport) resource type in v1.0. Use it to retrieve policy-level protection statistics for Microsoft 365 Backup Storage.
+
 ### Calendars
 
 - Promoted the **isSharedWithMe** property of [calendar](/graph/api/resources/calendar) resource from beta to v1.0. The property is used to identify the shared calendars.
