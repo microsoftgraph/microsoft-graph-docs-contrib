@@ -707,6 +707,7 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/deletedItems/roleDefinitions/$entity",
   "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
+  "deletedDateTime": "2026-08-24T19:16:58Z",
   "description": "Can manage basic aspects of application registrations.",
   "displayName": "Application Support Administrator",
   "isBuiltIn": false,

@@ -195,7 +195,7 @@ Added the `unknownFutureValue` member to the **changeType** enumeration used by 
 
 ### Identity and access | Directory management
 
-- Added the [directoryRoleManagementDeletedItemContainer](/graph/api/resources/directoryrolemanagementdeleteditemcontainer?view=graph-rest-beta&preserve-view=true) resource type and related methods for recovering custom role definitions that have been deleted. Use these APIs to list and inspect soft-deleted custom roles, restore them to the active role definitions collection, or permanently delete them.
+- Added the [directoryRoleManagementDeletedItemContainer](/graph/api/resources/directoryrolemanagementdeleteditemcontainer?view=graph-rest-beta&preserve-view=true) resource type and related methods for recovering custom role definitions that have been deleted. Use these APIs to list and inspect soft-deleted custom roles, including when they were deleted through the **deletedDateTime** property, restore them to the active role definitions collection, or permanently delete them.
 - Added the [provision](/graph/api/device-provision?view=graph-rest-beta&preserve-view=true) action to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to enable approved Virtual Desktop Infrastructure (VDI) providers to provision devices in a customer's directory.
 
 ### Groups
