@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Update the properties of a [cloudFirewallPolicy](../resources/networkaccess-cloudfirewallpolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

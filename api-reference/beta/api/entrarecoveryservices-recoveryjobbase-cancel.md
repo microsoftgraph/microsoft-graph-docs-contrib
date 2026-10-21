@@ -16,7 +16,7 @@ Namespace: microsoft.graph.entraRecoveryServices
 
 Cancel a running [recoveryJobBase](../resources/entrarecoveryservices-recoveryjobbase.md) object (either a preview or recovery job). The job must be in a non-terminal state (`initialized`, `calculating`, `loadingData`, or `running`). After cancellation, the job status changes to `abandoned`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

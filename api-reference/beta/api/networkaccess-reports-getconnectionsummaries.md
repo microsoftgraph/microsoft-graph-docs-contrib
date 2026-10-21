@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Returns [connections count](../resources/networkaccess-connectionsummary.md) per traffic type: Private/Internet/Microsoft.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

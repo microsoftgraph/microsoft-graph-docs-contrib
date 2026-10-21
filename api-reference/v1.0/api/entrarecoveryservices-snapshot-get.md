@@ -14,7 +14,7 @@ Namespace: microsoft.graph.entraRecoveryServices
 
 Read the properties and relationships of a [snapshot](../resources/entrarecoveryservices-snapshot.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

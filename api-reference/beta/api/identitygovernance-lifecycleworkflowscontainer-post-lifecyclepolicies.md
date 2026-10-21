@@ -16,6 +16,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Create a new [lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md) object in the [lifecycle workflows container](../resources/identitygovernance-lifecycleworkflowscontainer.md). A policy is created for a specific subject type and takes effect according to its priority order.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 Get a list of the [externalCertificateAuthorityCertificate](../resources/networkaccess-externalcertificateauthoritycertificate.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -19,7 +19,7 @@ Recipients who already redeemed the link and recipients who only received an inv
 > [!NOTE]
 > This action is only supported on sharing links that are scoped to specific users.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

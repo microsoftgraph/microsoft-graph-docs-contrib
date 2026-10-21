@@ -19,7 +19,7 @@ Delete a [resourceAccountKeyAuthenticationMethod](../resources/resourceaccountke
 > [!WARNING]
 > Deleting a resource account key authentication method cannot be undone. After deletion, the shared device will no longer be able to authenticate silently using this credential.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
