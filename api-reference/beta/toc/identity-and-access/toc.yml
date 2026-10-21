@@ -1631,6 +1631,8 @@ items:
         href: ../../resources/identitygovernance-operatorequalto.md
       - name: Operator less than equal to
         href: ../../resources/identitygovernance-operatorlessthanequalto.md
+      - name: Selected agent builder platforms subject set
+        href: ../../resources/identitygovernance-selectedagentbuilderplatformssubjectset.md
       - name: Time based attribute trigger v2
         href: ../../resources/identitygovernance-timebasedattributetriggerv2.md
       - name: Workflow execution trigger operator

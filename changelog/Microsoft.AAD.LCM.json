@@ -489,6 +489,24 @@
     {
       "ChangeList": [
         {
+          "Id": "923b1dee-31ba-4b71-ab5c-480ae45d6b9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selectedAgentBuilderPlatformsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [selectedAgentBuilderPlatformsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-selectedagentbuilderplatformssubjectset?view=graph-rest-beta) resource.",
+          "Target": "selectedAgentBuilderPlatformsSubjectSet"
+        }
+      ],
+      "Id": "923b1dee-31ba-4b71-ab5c-480ae45d6b9e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-30T19:17:59.3039290Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4c398855-256b-4118-b5a4-34cf46c00aa2",
           "ApiChange": "Enumeration",
           "ChangedApiName": "workflowTriggerOperatorEventTiming",
