@@ -297,6 +297,7 @@
             "dropInPlaceMode",
             "reservablePlaceMode",
             "resourceLink",
+            "stringDictionary",
             "unavailablePlaceMode"
           ],
           "childNodes": [

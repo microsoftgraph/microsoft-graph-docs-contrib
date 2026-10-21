@@ -62,7 +62,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.desk",
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "customProperties": {"String": "String"},
+  "customProperties": {"@odata.type": "microsoft.graph.stringDictionary"},
   "displayDeviceName": "String",
   "displayName": "String",
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
