@@ -61,8 +61,8 @@ Depending on the resource you're creating the extended property in and the permi
 | [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite |
 | [Outlook task](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
-| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Not supported. | Not supported. |
-| [todoTaskList](../resources/todotasklist.md) | Tasks.ReadWrite | Not supported. | Not supported. |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [todoTaskList](../resources/todotasklist.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## HTTP request
 You can create extended properties in a new or existing resource instance.
@@ -111,10 +111,11 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 POST /me/outlook/taskGroups/{id}/taskFolders
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
-POST /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 POST /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 
 POST /me/todo/lists?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+POST /users/{id|userPrincipalName}/todo/lists?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 
 POST /groups/{id}/events
 
@@ -170,10 +171,11 @@ PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /me/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
-PATCH /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 PATCH /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 
 PATCH /me/todo/lists/{todoTaskListId}?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 
 PATCH /groups/{id}/events/{id}
 ```
@@ -320,6 +322,3 @@ To see the newly created extended property, [get the message expanded with the e
   "suppressions": []
 }
 -->
-
-
-

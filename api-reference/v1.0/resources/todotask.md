@@ -5,7 +5,7 @@ author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 09/28/2026
 ---
 
 # todoTask resource type
@@ -32,6 +32,9 @@ This resource supports the following:
 |[Create checklistItem](../api/todotask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new **checklistItem** object.|
 |[List linkedResources](../api/todotask-list-linkedresources.md)|[linkedResource](../resources/linkedresource.md) collection|Get the linkedResources from the linkedResources navigation property.|
 |[Create linkedResources](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Create a new linkedResources object.|
+|**Extended properties**| | |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[todoTask](todotask.md)  |Create one or more single-value extended properties in a new or existing [todoTask](../resources/todotask.md) object. |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [todoTask](todotask.md) | Get [todoTask](../resources/todotask.md) objects that contain a single-value extended property by using `$expand` or `$filter`. |
 
 ## Properties
 |Property|Type|Description|
@@ -62,6 +65,7 @@ Tasks can be exported using the PST download described in [Export content search
 |checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of checklistItems linked to a task. |
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the task. Nullable.|
 |linkedResources|[linkedResource](../resources/linkedresource.md) collection|A collection of resources linked to the task.|
+|singleValueExtendedProperties|[singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) collection|A collection of custom fields linked to the task.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -102,7 +106,6 @@ The following JSON representation shows the resource type.
   "bodyLastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -51,6 +51,10 @@ A [linkedResource](linkedresource.md) represents any item from a partner applica
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedResourceId}
 ```
 
+## Single-value extended property
+
+A [singleValueExtendedProperty](singlevalueextendedproperty.md) represents a custom data field that can be created on a [todoTask](../resources/todotask.md) or [todoTaskList](../resources/todotasklist.md) entity. To create single-value extended properties, see [Create singleValueLegacyExtendedProperty](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md). To get single-value extended properties, see [Get singleValueLegacyExtendedProperty](../api/singlevaluelegacyextendedproperty-get.md).
+
 ## Track changes using delta query
 
 For performance reasons, you may want to maintain a local cache of objects, and periodically synchronize the local cache with the server, using [delta query](/graph/delta-query-overview). 
@@ -58,4 +62,3 @@ For performance reasons, you may want to maintain a local cache of objects, and 
 The following To Do API resources support delta query:
 * [todoTask](./todotask.md) collection in a task list
 * [todoTaskList](./todotasklist.md)
-

@@ -74,8 +74,8 @@ Depending on the resource you're getting the extended property from and the perm
 | [note](../resources/note.md) | ShortNotes.Read | ShortNotes.Read | ShortNotes.Read.All |
 | [Outlook task](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Not supported. |
 | [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Not supported. |
-| [todoTask](../resources/todotask.md) | Tasks.Read | Not supported. | Tasks.Read.All |
-| [todoTaskList](../resources/todotasklist.md) | Tasks.Read | Not supported. | Tasks.Read.All |
+| [todoTask](../resources/todotask.md) | Tasks.Read | Tasks.Read | Tasks.Read.All |
+| [todoTaskList](../resources/todotasklist.md) | Tasks.Read | Tasks.Read | Tasks.Read.All |
 
 ## HTTP request
 
@@ -193,6 +193,8 @@ Get a **todoTask** instance:
 ```http
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
 GET /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
@@ -202,6 +204,8 @@ Get a **todoTaskList** instance:
 ```http
 GET /me/todo/lists/{todoTaskListId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
 GET /me/todo/lists?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /users/{id|userPrincipalName}/todo/lists?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
@@ -616,5 +620,3 @@ include the matching extended property.
   ]
 }
 -->
-
-

@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: non-product-specific
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 09/28/2026
 ---
 
 # Create single-value extended property
@@ -24,6 +24,8 @@ The following user resources are supported:
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [note](../resources/note.md)
+- [todoTask](../resources/todotask.md)
+- [todoTaskList](../resources/todotasklist.md)
 
 The following group resources:
 
@@ -31,8 +33,7 @@ The following group resources:
 - group [event](../resources/event.md)
 - group [post](../resources/post.md)
 
-See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
-open extensions or extended properties, and how to specify extended properties.
+For more information about when to use open extensions or extended properties, and how to specify extended properties, see [Extended properties overview](../resources/extended-properties-overview.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -45,13 +46,15 @@ Depending on the resource you're creating the extended property in and the permi
 | [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| group [calendar](../resources/calendar.md) | Group.ReadWrite.All | Not supported | Not supported |
-| group [event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
-| group [post](../resources/post.md) | Group.ReadWrite.All | Not supported | Not supported |
+| group [calendar](../resources/calendar.md) | Group.ReadWrite.All | Not supported. | Not supported. |
+| group [event](../resources/event.md) | Group.ReadWrite.All | Not supported. | Not supported. |
+| group [post](../resources/post.md) | Group.ReadWrite.All | Not supported. | Not supported. |
 | [mailboxFolder](../resources/mailboxfolder.md) | MailboxFolder.Read | Not supported. | MailboxFolder.Read.All | 
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite.All |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [todoTaskList](../resources/todotasklist.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## HTTP request
 You can create extended properties in a new or existing resource instance.
@@ -62,7 +65,7 @@ Some resources support creation in more than one way. For more information on cr
 see the corresponding articles for creating a [message](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md),
 [event](../api/user-post-events.md), [calendar](../api/user-post-calendars.md),
 [contact](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [mailboxFolder](../api/mailbox-post-folders.md),
-[group event](../api/group-post-events.md), and [group post](../resources/post.md).
+[group event](../api/group-post-events.md), [group post](../resources/post.md), [todoTask](../resources/todotask.md), and [todoTaskList](../resources/todotasklist.md).
 
 The following is the syntax of the requests.
 
@@ -91,6 +94,11 @@ POST /admin/exchange/mailboxes/{mailboxId}/folders
 
 POST /me/notes
 POST /users/{id|userPrincipalName}/notes
+
+POST /me/todo/lists/{todoTaskListId}/tasks
+POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
+POST /me/todo/lists
+POST /users/{id|userPrincipalName}/todo/lists
 
 POST /groups/{id}/events
 
@@ -135,6 +143,11 @@ PATCH /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}
 PATCH /me/notes/{id}
 PATCH /users/{id|userPrincipalName}/notes/{id}
 
+PATCH /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}
+PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}
+PATCH /me/todo/lists/{todoTaskListId}
+PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}
+
 PATCH /groups/{id}/events/{id}
 ```
 
@@ -159,7 +172,7 @@ Provide a JSON body of each [singleValueLegacyExtendedProperty](../resources/sin
 
 When creating an extended property in a _new_ resource instance, in addition to the
 new **singleValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md),
-[mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
+[mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [todoTask](../resources/todotask.md), etc.)
 
 ## Response
 
@@ -499,5 +512,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

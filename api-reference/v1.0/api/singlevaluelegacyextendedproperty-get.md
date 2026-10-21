@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: non-product-specific
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 09/28/2026
 ---
 
 # Get singleValueLegacyExtendedProperty
@@ -38,6 +38,8 @@ The following user resources are supported:
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [note](../resources/note.md)
+- [todoTask](../resources/todotask.md)
+- [todoTaskList](../resources/todotasklist.md)
 
 As well as the following group resources:
 
@@ -45,8 +47,7 @@ As well as the following group resources:
 - group [event](../resources/event.md)
 - group [post](../resources/post.md)
 
-See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
-open extensions or extended properties, and how to specify extended properties.
+For more information about when to use open extensions or extended properties, and how to specify extended properties, see [Extended properties overview](../resources/extended-properties-overview.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -59,14 +60,16 @@ Depending on the resource you're getting the extended property from and the perm
 | [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| group [calendar](../resources/calendar.md) | Group.Read.All | Not supported | Not supported |
-| group [event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
-| group [post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
+| group [calendar](../resources/calendar.md) | Group.Read.All | Not supported. | Not supported. |
+| group [event](../resources/event.md) | Group.Read.All | Not supported. | Not supported. |
+| group [post](../resources/post.md) | Group.Read.All | Not supported. | Group.Read.All |
 | [mailboxFolder](../resources/mailboxfolder.md) | MailboxFolder.Read | Not supported. | MailboxFolder.Read.All |
 | [mailboxItem](../resources/mailboxitem.md) | MailboxItem.Read | Not supported. | MailboxItem.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [note](../resources/note.md) | ShortNotes.Read | ShortNotes.Read | ShortNotes.Read.All |
+| [todoTask](../resources/todotask.md) | Tasks.Read | Tasks.Read | Tasks.Read.All |
+| [todoTaskList](../resources/todotasklist.md) | Tasks.Read | Tasks.Read | Tasks.Read.All |
 
 ## HTTP request
 
@@ -145,6 +148,29 @@ GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}?$expand=sing
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **todoTask** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **todoTaskList** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/todo/lists/{todoTaskListId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /me/todo/lists?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /users/{id|userPrincipalName}/todo/lists?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 Get a group **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -530,4 +556,3 @@ include the matching extended property.
   "suppressions": [
   ]
 }-->
-

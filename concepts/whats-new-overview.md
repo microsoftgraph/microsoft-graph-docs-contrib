@@ -37,6 +37,10 @@ Use the **lastUpdatedTime** and **customProperties** properties on the [place](/
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource.
 
+### Tasks and plans
+
+Added support for single-value extended properties on [todoTask](/graph/api/resources/todotask) and [todoTaskList](/graph/api/resources/todotasklist) resources, enabling apps to store and retrieve custom data for Microsoft To Do tasks and task lists.
+
 ## October 2026: New in preview only
 
 ### Backup and recovery | Microsoft 365 backup and storage
@@ -68,7 +72,7 @@ Added support to identify recalled messages in message trace. Use `recalled` as 
 
 ### Mailbox import and export
 
-- Added the **isHidden** property to the [mailboxFolder](/graph/api/resources/mailboxfolder?view=graph-rest-beta&preserve-view=true) resource to identify hidden mailbox folders. 
+- Added the **isHidden** property to the [mailboxFolder](/graph/api/resources/mailboxfolder?view=graph-rest-beta&preserve-view=true) resource to identify hidden mailbox folders.
 - Use the existing **includeHiddenFolders** query parameter for [listing folders](/graph/api/mailbox-list-folders?view=graph-rest-beta&preserve-view=true) and [listing child folders](/graph/api/mailboxfolder-list-childfolders?view=graph-rest-beta&preserve-view=true). Set it to `true` to include both hidden and nonhidden folders.
 
 ### Reports | Identity and access reports
