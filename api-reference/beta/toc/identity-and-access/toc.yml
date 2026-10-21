@@ -2146,6 +2146,8 @@ items:
       href: ../../resources/oninteractiveauthflowstartlistener.md
     - name: On password submit listener
       href: ../../resources/onpasswordsubmitlistener.md
+    - name: On password update listener
+      href: ../../resources/onpasswordupdatelistener.md
     - name: On verified id claim validation listener
       href: ../../resources/onverifiedidclaimvalidationlistener.md
     - name: On phone method load start listener
@@ -2850,6 +2852,8 @@ items:
       href: ../../resources/onotpsendcustomextension.md
     - name: On password submit custom extension
       href: ../../resources/onpasswordsubmitcustomextension.md
+    - name: On password update custom extension
+      href: ../../resources/onpasswordupdatecustomextension.md
     - name: On verified id claim validation custom extension
       href: ../../resources/onverifiedidclaimvalidationcustomextension.md
     - name: On token issuance start custom extension

@@ -58,6 +58,10 @@ Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?
 - Added the [accessDriftSummary](/graph/api/resources/accessdriftsummary?view=graph-rest-beta&preserve-view=true) resource type and related methods for identifying governed resources whose actual access differs from access-package intent. Use it to list and inspect drift summaries, retrieve drift details, and download bulk reconciliation reports. Access drift details identify whether each affected identity is a user or group through the **identityType** property of [entraDriftIdentityInfo](/graph/api/resources/entradriftidentityinfo?view=graph-rest-beta&preserve-view=true).
 - Added the **gracePeriodInDays** property to the [lifecyclePolicyRule](/graph/api/resources/identitygovernance-lifecyclepolicyrule?view=graph-rest-beta&preserve-view=true) resource. Use it to configure an optional grace period for each lifecycle policy rule before the policy action sequence starts.
 
+### Identity and access | Identity and sign-in
+
+- Added public preview support for OnPasswordUpdate custom authentication extensions. Use the [onPasswordUpdateCustomExtension](/graph/api/resources/onpasswordupdatecustomextension?view=graph-rest-beta&preserve-view=true) resource to notify external systems after a self-service password reset and the [onPasswordUpdateListener](/graph/api/resources/onpasswordupdatelistener?view=graph-rest-beta&preserve-view=true) resource to configure when the notification occurs.
+
 ### Mail | Message trace
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace?view=graph-rest-beta&preserve-view=true) resource.

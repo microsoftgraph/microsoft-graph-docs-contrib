@@ -1710,6 +1710,7 @@
                 "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onPasswordSubmitListener",
+                "onPasswordUpdateListener",
                 "onVerifiedIdClaimValidationListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
@@ -1833,6 +1834,7 @@
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
                 "onPasswordSubmitCustomExtension",
+                "onPasswordUpdateCustomExtension",
                 "onVerifiedIdClaimValidationCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
