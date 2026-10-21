@@ -85,7 +85,7 @@ Content-Type: application/json
   "id": "6f3b8c1a-2d4e-4f6a-8b0c-1e2f3a4b5c6d",
   "ruleType": "periodicAttestation",
   "isEnabled": true,
+  "gracePeriodInDays": 7,
   "attestationIntervalInDays": 90
 }
 ```
-

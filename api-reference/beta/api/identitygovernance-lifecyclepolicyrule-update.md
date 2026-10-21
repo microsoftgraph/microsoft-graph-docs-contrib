@@ -49,6 +49,7 @@ You must specify the `@odata.type` property when updating a [lifecyclePolicyRule
 |Property|Type|Description|
 |:---|:---|:---|
 |attestationIntervalInDays|Int32|The number of days between required attestations. Applies to `periodicAttestationRule`.|
+|gracePeriodInDays|Int32|The grace period, in days, that starts when the rule violation is first detected. The allowed range is 0 through 30. Set to `null` to clear the rule-level value and use the containing lifecycle policy's grace period. Set to `0` for no additional grace period.|
 |isEnabled|Boolean|Indicates whether the rule is enabled and evaluated.|
 |lastActivityThresholdInDays|Int32|The number of days of inactivity after which the identity is considered noncompliant. Applies to `inactivityRule`.|
 |minimumSponsorCount|Int32|The minimum number of sponsors an identity must have. Applies to `sponsorPresenceRule`.|
@@ -76,6 +77,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.identityGovernance.periodicAttestationRule",
   "isEnabled": false,
+  "gracePeriodInDays": 7,
   "attestationIntervalInDays": 120
 }
 ```

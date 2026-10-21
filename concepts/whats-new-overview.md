@@ -56,6 +56,7 @@ Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?
 ### Identity and access | Governance
 
 - Added the [accessDriftSummary](/graph/api/resources/accessdriftsummary?view=graph-rest-beta&preserve-view=true) resource type and related methods for identifying governed resources whose actual access differs from access-package intent. Use it to list and inspect drift summaries, retrieve drift details, and download bulk reconciliation reports. Access drift details identify whether each affected identity is a user or group through the **identityType** property of [entraDriftIdentityInfo](/graph/api/resources/entradriftidentityinfo?view=graph-rest-beta&preserve-view=true).
+- Added the **gracePeriodInDays** property to the [lifecyclePolicyRule](/graph/api/resources/identitygovernance-lifecyclepolicyrule?view=graph-rest-beta&preserve-view=true) resource. Use it to configure an optional grace period for each lifecycle policy rule before the policy action sequence starts.
 
 ### Mail | Message trace
 
