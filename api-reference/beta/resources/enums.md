@@ -4920,6 +4920,7 @@ Possible values for user account types (group membership), per Windows definitio
 |attributeCollectionSubmit|
 |emailOtpSend|
 |passwordSubmit|
+|passwordUpdate|
 
 ### microsoftAuthenticatorAuthenticationMethodClientAppName values
 
