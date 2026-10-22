@@ -37,6 +37,56 @@
     {
       "ChangeList": [
         {
+          "Id": "d5f84e74-6ef6-40c6-844f-cb6e65449314",
+          "ApiChange": "Resource",
+          "ChangedApiName": "backupCountStatistics",
+          "ChangeType": "Addition",
+          "Description": "Added the [backupCountStatistics](https://learn.microsoft.com/en-us/graph/api/resources/backupcountstatistics?view=graph-rest-1.0) resource type.",
+          "Target": "backupCountStatistics"
+        },
+        {
+          "Id": "d5f84e74-6ef6-40c6-844f-cb6e65449314",
+          "ApiChange": "Resource",
+          "ChangedApiName": "backupPolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [backupPolicyReport](https://learn.microsoft.com/en-us/graph/api/resources/backuppolicyreport?view=graph-rest-1.0) resource type.",
+          "Target": "backupPolicyReport"
+        },
+        {
+          "Id": "d5f84e74-6ef6-40c6-844f-cb6e65449314",
+          "ApiChange": "Resource",
+          "ChangedApiName": "backupReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [backupReport](https://learn.microsoft.com/en-us/graph/api/resources/backupreport?view=graph-rest-1.0) resource type.",
+          "Target": "backupReport"
+        },
+        {
+          "Id": "d5f84e74-6ef6-40c6-844f-cb6e65449314",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reports",
+          "ChangeType": "Addition",
+          "Description": "Added the **reports** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backuprestoreroot?view=graph-rest-1.0) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "d5f84e74-6ef6-40c6-844f-cb6e65449314",
+          "ApiChange": "Method",
+          "ChangedApiName": "getStatisticsByPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [getStatisticsByPolicy](https://learn.microsoft.com/en-us/graph/api/backupreport-getstatisticsbypolicy?view=graph-rest-1.0) method to the [backupReport](https://learn.microsoft.com/en-us/graph/api/resources/backupreport?view=graph-rest-1.0) resource.",
+          "Target": "backupReport"
+        }
+      ],
+      "Id": "d5f84e74-6ef6-40c6-844f-cb6e65449314",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-09T09:16:05.3259879Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7bd19147-f81e-47de-9ed8-ea52768e7127",
           "ApiChange": "Property",
           "ChangedApiName": "policyId",

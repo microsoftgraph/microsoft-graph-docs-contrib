@@ -16,6 +16,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Read the properties and relationships of an [microsoft.graph.identityGovernance.identityLifecycle](../resources/identitygovernance-identitylifecycle.md) object for a [servicePrincipal](../resources/serviceprincipal.md). Use `$expand=effectiveGoverningPolicy` to retrieve the highest-priority policy governing the identity. The **lastAttestationDateTime** property can be `null` for an identity that hasn't yet been attested.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

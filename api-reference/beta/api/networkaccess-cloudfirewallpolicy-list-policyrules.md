@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Get a list of the [cloudFirewallRule](../resources/networkaccess-cloudfirewallrule.md) objects and their properties for a [cloudFirewallPolicy](../resources/networkaccess-cloudfirewallpolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

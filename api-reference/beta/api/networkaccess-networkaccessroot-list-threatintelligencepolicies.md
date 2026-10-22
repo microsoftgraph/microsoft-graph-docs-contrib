@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Get a list of the [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

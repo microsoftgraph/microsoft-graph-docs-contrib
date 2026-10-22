@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Delete a [tlsInspectionRule](../resources/networkaccess-tlsinspectionrule.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

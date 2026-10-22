@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Read the properties and relationships of a [cloudFirewallPolicy](../resources/networkaccess-cloudfirewallpolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

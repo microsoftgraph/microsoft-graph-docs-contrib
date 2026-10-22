@@ -70,7 +70,7 @@ The following example shows a request. This request created an app management po
 
 - Enables the policy.
 - Blocks creating of new passwords for applications and service principals created on or after October 19th 2019 at 10:37 AM UTC time.
-- Limits password secrets for apps and service principals created after October 19th 2014 at 10:37 AM UTC time to less than 90 days.
+- Audits whether password secrets for apps and service principals created after October 19th 2014 at 10:37 AM UTC time have lifetimes of less than 90 days, without enforcing the limit.
 - Disables the nonDefaultUriAddition restriction. This means that apps with this policy applied to them can add new nondefault identifier URIs to their apps, even if the tenant default policy typically blocks it.
 - Doesn't specify any other restrictions. This means that the behavior for those restrictions on apps/service principals with this policy applied falls back to however the tenant default policy is configured.
 
@@ -98,7 +98,7 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
             },
             {
                 "restrictionType": "passwordLifetime",
-                "state": "enabled",
+                "state": "audit",
                 "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
             },
@@ -110,7 +110,7 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
             },
             {
                 "restrictionType": "symmetricKeyLifetime",
-                "state": "enabled",
+                "state": "audit",
                 "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
             }
@@ -120,7 +120,7 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
             "identifierUris": {
                 "nonDefaultUriAddition": {
                     "state": "disabled",
-                    "restrictForAppsCreatedAfterDateTime": null,
+                    "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z",
                     "excludeAppsReceivingV2Tokens": true,
                     "excludeSaml": true
                 }
@@ -192,7 +192,7 @@ Content-type: application/json
             },
             {
                 "restrictionType": "passwordLifetime",
-                "state": "enabled",
+                "state": "audit",
                 "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2018-10-19T10:37:00Z"
             },
@@ -204,7 +204,7 @@ Content-type: application/json
             },
             {
                 "restrictionType": "symmetricKeyLifetime",
-                "state": "enabled",
+                "state": "audit",
                 "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
             }
@@ -214,6 +214,7 @@ Content-type: application/json
             "identifierUris": {
                 "nonDefaultUriAddition": {
                     "state": "disabled",
+                    "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z",
                     "excludeAppsReceivingV2Tokens": true,
                     "excludeSaml": true
                 }

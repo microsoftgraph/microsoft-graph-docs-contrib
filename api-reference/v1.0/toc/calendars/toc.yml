@@ -398,6 +398,8 @@ items:
       href: ../../resources/reservableplacemode.md
     - name: Resource link
       href: ../../resources/resourcelink.md
+    - name: String dictionary
+      href: ../../resources/stringdictionary.md
     - name: Unavailable place mode
       href: ../../resources/unavailableplacemode.md
 - name: Work hours and locations

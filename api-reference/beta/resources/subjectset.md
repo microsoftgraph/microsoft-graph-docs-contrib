@@ -31,6 +31,7 @@ This object is an abstract base type from which the following resources are deri
 |[internalSponsors](../resources/internalsponsors.md) | Entitlement Management | Represents user's connected organization internal sponsors as the approver for access package assignments. |
 |[requestorManager](../resources/requestormanager.md) | Entitlement Management | Represents the manager of the requestor as approver for access package assignments. |
 |[ruleBasedSubjectSet](../resources/identitygovernance-rulebasedsubjectset.md) | Lifecycle Workflows | Represents the rules to define the subjects for the scope of a lifecycle workflow. |
+|[selectedAgentBuilderPlatformsSubjectSet](../resources/identitygovernance-selectedagentbuilderplatformssubjectset.md) | Lifecycle Workflows | Represents agent identities created by selected builder platforms that are included in an agent identity lifecycle policy scope. |
 |[singleUser](../resources/singleuser.md) | Entitlement Management | Represents a single user as approver to access packages. |
 
 In entitlement management, this object is configured in the following properties and relationships:

@@ -1524,6 +1524,7 @@
                 "microsoft.graph.identityGovernance.operatorBetween",
                 "microsoft.graph.identityGovernance.operatorEqualTo",
                 "microsoft.graph.identityGovernance.operatorLessThanEqualTo",
+                "microsoft.graph.identityGovernance.selectedAgentBuilderPlatformsSubjectSet",
                 "microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
                 "microsoft.graph.identityGovernance.workflowExecutionTriggerOperator",
                 "microsoft.graph.identityGovernance.workflowTriggerTimeBasedOperator"
@@ -1710,6 +1711,7 @@
                 "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onPasswordSubmitListener",
+                "onPasswordUpdateListener",
                 "onVerifiedIdClaimValidationListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
@@ -1833,6 +1835,7 @@
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
                 "onPasswordSubmitCustomExtension",
+                "onPasswordUpdateCustomExtension",
                 "onVerifiedIdClaimValidationCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]

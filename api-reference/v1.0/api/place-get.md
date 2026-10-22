@@ -127,6 +127,12 @@ Content-Type: application/json
   "id": "ca147fcf-ae27-43bb-9d91-f11e626e58bf",
   "placeId": "ca147fcf-ae27-43bb-9d91-f11e626e58bf",
   "displayName": "B06",
+  "lastUpdatedTime": "2026-10-09T05:30:00Z",
+  "customProperties": {
+    "@odata.type": "microsoft.graph.stringDictionary",
+    "costCenter": "CC-1042",
+    "campusCode": "SEA"
+  },
   "phone": "+1 (425) 615 8888 Ext 06",
   "isWheelChairAccessible": true,
   "label": "This is a building for demo",

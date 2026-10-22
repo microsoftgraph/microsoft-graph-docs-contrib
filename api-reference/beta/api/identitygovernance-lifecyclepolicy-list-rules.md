@@ -14,7 +14,9 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [lifecyclePolicyRule](../resources/identitygovernance-lifecyclepolicyrule.md) objects and their properties for a [lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md). Rules are evaluated together with AND logic.
+Get a list of the [lifecyclePolicyRule](../resources/identitygovernance-lifecyclepolicyrule.md) objects and their properties for a [lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md). Each enabled rule is evaluated independently, and any violation makes the policy noncompliant.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -88,6 +90,7 @@ Content-Type: application/json
       "id": "6f3b8c1a-2d4e-4f6a-8b0c-1e2f3a4b5c6d",
       "ruleType": "periodicAttestation",
       "isEnabled": true,
+      "gracePeriodInDays": 7,
       "attestationIntervalInDays": 90
     },
     {
@@ -95,6 +98,7 @@ Content-Type: application/json
       "id": "7a4c9d2b-3e5f-5a7b-9c1d-2f3a4b5c6d7e",
       "ruleType": "sponsorPresence",
       "isEnabled": true,
+      "gracePeriodInDays": 0,
       "minimumSponsorCount": 1
     }
   ]

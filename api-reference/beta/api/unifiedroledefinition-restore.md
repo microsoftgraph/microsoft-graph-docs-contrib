@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Restore a soft-deleted custom [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object to the active role definitions collection for Microsoft Entra directory role management.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -83,6 +85,7 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions/$entity",
   "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
+  "deletedDateTime": null,
   "description": "Can manage basic aspects of application registrations.",
   "displayName": "Application Support Administrator",
   "isBuiltIn": false,

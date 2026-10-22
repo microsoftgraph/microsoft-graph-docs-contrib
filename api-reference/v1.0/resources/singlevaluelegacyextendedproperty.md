@@ -14,16 +14,14 @@ Namespace: microsoft.graph
 
 An extended property that contains a single value.
 
-See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
-open extensions or extended properties, and how to specify extended properties.
-
+For more information about when to use open extensions or extended properties, and how to specify extended properties, See [Extended properties overview](../resources/extended-properties-overview.md).
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [note](../resources/note.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), or [mailboxFolder](../resources/mailboxfolder.md). Group [post](../resources/post.md) and [mailboxItem](../resources/mailboxitem.md) isn't supported. | Create a **singleValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
-|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md) |One or a collection of supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [note](../resources/note.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [mailboxItem](../resources/mailboxitem.md), [mailboxFolder](../resources/mailboxfolder.md), or group [post](../resources/post.md)), or one such instance expanded with a [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand` or `$filter`.|
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [note](../resources/note.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [mailboxFolder](../resources/mailboxfolder.md), [todoTask](../resources/todotask.md), or [todoTaskList](../resources/todotasklist.md). Group [post](../resources/post.md) and [mailboxItem](../resources/mailboxitem.md) aren't supported. | Create a **singleValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md) |One or a collection of supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [note](../resources/note.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [mailboxItem](../resources/mailboxitem.md), [mailboxFolder](../resources/mailboxfolder.md), [todoTask](../resources/todotask.md), [todoTaskList](../resources/todotasklist.md), or group [post](../resources/post.md)), or one such instance expanded with a [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand` or `$filter`.|
 
 ## Properties
 | Property	   | Type	|Description|

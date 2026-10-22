@@ -14,7 +14,7 @@ Namespace: microsoft.graph.entraRecoveryServices
 
 Get a list of all recovery [recoveryJobBase](../resources/entrarecoveryservices-recoveryjobbase.md) objects (both preview and recovery jobs) across all snapshots for the tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
