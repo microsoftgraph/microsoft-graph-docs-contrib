@@ -14,13 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a set of custom properties that have string keys and string values. The [place](../resources/place.md) resource uses this type for its **customProperties** property.
+Represents a set of custom properties that have string keys and string values. Each property name is a string key, and each property value must be a string or `null`. A `null` value is used only when you update a dictionary entry to remove it.
+
+The [place](../resources/place.md) resource uses this type for its **customProperties** property.
 
 Inherits from [dictionary](../resources/dictionary.md).
 
 ## Properties
 
-A **stringDictionary** contains a dynamic set of properties. Each property name is a string key, and each property value must be a string or `null`. A `null` value is used only when updating a dictionary entry to remove it.
+None.
 
 ## Relationships
 
@@ -38,6 +40,6 @@ The following JSON representation shows the resource type.
 } -->
 ```json
 {
-  "String": "String"
+  "@odata.type": "#microsoft.graph.stringDictionary"
 }
 ```

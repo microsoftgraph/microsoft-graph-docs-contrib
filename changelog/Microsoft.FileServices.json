@@ -77,6 +77,40 @@
     {
       "ChangeList": [
         {
+          "Id": "717e1a64-213c-442e-9cf7-008f21c0d47c",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "viewer",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **viewer** parameter on the [preview](https://learn.microsoft.com/en-us/graph/api/driveitem-preview?view=graph-rest-beta) method. The parameter will be removed on September 28, 2026. Call **preview** without this parameter.",
+          "Target": "preview"
+        },
+        {
+          "Id": "717e1a64-213c-442e-9cf7-008f21c0d47c",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "chromeless",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **chromeless** parameter on the [preview](https://learn.microsoft.com/en-us/graph/api/driveitem-preview?view=graph-rest-beta) method. The parameter will be removed on September 28, 2026. Call **preview** without this parameter.",
+          "Target": "preview"
+        },
+        {
+          "Id": "717e1a64-213c-442e-9cf7-008f21c0d47c",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "allowEdit",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **allowEdit** parameter on the [preview](https://learn.microsoft.com/en-us/graph/api/driveitem-preview?view=graph-rest-beta) method. The parameter will be removed on September 28, 2026. Call **preview** without this parameter.",
+          "Target": "preview"
+        }
+      ],
+      "Id": "717e1a64-213c-442e-9cf7-008f21c0d47c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-15T02:02:54.0354681Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "dbe6cffc-19e8-442f-b08c-5c1683170d4f",
           "ApiChange": "Method",
           "ChangedApiName": "revokeGrants",

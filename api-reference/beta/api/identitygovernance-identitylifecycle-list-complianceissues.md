@@ -16,6 +16,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [complianceIssue](../resources/identitygovernance-complianceissue.md) objects and their properties for the [identityLifecycle](../resources/identitygovernance-identitylifecycle.md) of a [servicePrincipal](../resources/serviceprincipal.md). Each issue includes the **ruleType** that generated it.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

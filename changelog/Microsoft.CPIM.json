@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "1ca5d7a1-af31-4b1c-8d23-7588eafa7708",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPasswordUpdateCustomExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPasswordUpdateCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onPasswordUpdateCustomExtensionHandler?view=graph-rest-beta) resource.",
+          "Target": "onPasswordUpdateCustomExtensionHandler"
+        },
+        {
+          "Id": "1ca5d7a1-af31-4b1c-8d23-7588eafa7708",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPasswordUpdateHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPasswordUpdateHandler](https://learn.microsoft.com/en-us/graph/api/resources/onPasswordUpdateHandler?view=graph-rest-beta) resource.",
+          "Target": "onPasswordUpdateHandler"
+        },
+        {
+          "Id": "1ca5d7a1-af31-4b1c-8d23-7588eafa7708",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPasswordUpdateCustomExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPasswordUpdateCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onPasswordUpdateCustomExtension?view=graph-rest-beta) resource.",
+          "Target": "onPasswordUpdateCustomExtension"
+        },
+        {
+          "Id": "1ca5d7a1-af31-4b1c-8d23-7588eafa7708",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPasswordUpdateListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPasswordUpdateListener](https://learn.microsoft.com/en-us/graph/api/resources/onPasswordUpdateListener?view=graph-rest-beta) resource.",
+          "Target": "onPasswordUpdateListener"
+        }
+      ],
+      "Id": "1ca5d7a1-af31-4b1c-8d23-7588eafa7708",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-08T00:59:05.7307888Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a51cd56b-d8c8-4f5d-919a-018e18211bb6",
           "ApiChange": "Resource",
           "ChangedApiName": "onVerifiedIdClaimValidationCustomExtensionHandler",

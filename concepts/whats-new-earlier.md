@@ -53,6 +53,7 @@ Find information about previous additions and updates to Microsoft Graph APIs, d
 - Added the **errors** property to [accessReviewInstance](/graph/api/resources/accessreviewinstance) and the [accessReviewError](/graph/api/resources/accessreviewerror) resource type to report errors that occur during the review instance lifecycle.
 - Added the [accessReviewPrincipalScope](/graph/api/resources/accessreviewprincipalscope), [accessReviewResourceScope](/graph/api/resources/accessreviewresourcescope), and [accessReviewAccessPackageAssignmentPolicyScope](/graph/api/resources/accessreviewaccesspackageassignmentpolicyscope) resource types. Use them in the **principalScopes** and **resourceScopes** properties of [principalResourceMembershipsScope](/graph/api/resources/principalresourcemembershipsscope) to state which principals have their access to which resources reviewed without writing a query expression.
 - Added the **accessReviewPrincipalScopeType**, **accessReviewResourceScopeType**, and **accessReviewReviewerScopeType** enumeration types to identify well-known principal, resource, and reviewer scopes.
+- Added the **parameters** property to the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest) resource, typed as the new [accessPackageAssignmentRequestParameters](/graph/api/resources/accesspackageassignmentrequestparameters) complex type, to bypass the approval requirement configured on the access package policy when creating an assignment request.
 
 ### Identity and access | Identity and sign-in
 

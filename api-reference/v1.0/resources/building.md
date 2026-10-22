@@ -27,11 +27,13 @@ For more supported methods, see [place](./place.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the **building**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
+|customProperties|[stringDictionary](../resources/stringdictionary.md)|Custom properties for the **place**. Each property has a string key and a string value. Nullable. Inherited from [place](../resources/place.md).|
 |displayName|String|The name that is associated with the building. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the **building** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
 |id|String|The unique identifier for the building. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md).|
 |isWheelChairAccessible|Boolean|Indicates whether the **building** is wheelchair accessible. Inherited from [place](./place.md).|
 |label |String |User-defined description of the building. Inherited from [place](./place.md). |
+|lastUpdatedTime|DateTimeOffset|The date and time when the **place** was last updated. The timestamp is in ISO 8601 format and is always in UTC. Read-only. Nullable. Inherited from [place](../resources/place.md).|
 |parentId|String|Currently, buildings don't have a parent. Don't use. Inherited from [place](./place.md).|
 |phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
 |resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the **building**. Inherited from [place](./place.md). |
@@ -57,11 +59,13 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.building",
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "customProperties": {"@odata.type": "microsoft.graph.stringDictionary"},
   "displayName": "String",
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
+  "lastUpdatedTime": "String (timestamp)",
   "parentId": "String",
   "phone": "String",
   "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],

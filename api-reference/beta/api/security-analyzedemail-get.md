@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Read the properties and relationships of an [analyzedEmail](../resources/security-analyzedemail.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

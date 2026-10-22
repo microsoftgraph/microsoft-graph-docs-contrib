@@ -40,7 +40,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|`policyId`|String|The ID of the backup policy for which the report is requested. Required.|
+|policyId|String|The ID of the backup policy for which the report is requested. Required.|
 
 ## Request headers
 
@@ -54,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [backupPolicyReport](../resources/backuppolicyreport.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [backupPolicyReport](../resources/backuppolicyreport.md) object in the response body.
 
 ## Examples
 

@@ -32,12 +32,14 @@ For more supported methods, see [place](./place.md).
 |Property|Type|Description|
 |:---|:---|:---|
 | address        | [physicalAddress](physicaladdress.md)             | The street address of the room list. |
+|customProperties|[stringDictionary](../resources/stringdictionary.md)|Custom properties for the **place**. Each property has a string key and a string value. Nullable. Inherited from [place](../resources/place.md).|
 | displayName    | String                                            | The name associated with the room list. |
 | emailAddress   | String                                            | The email address of the room list. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room list location in latitude, longitude, and (optionally) altitude coordinates. |
 | id             | String                                            | Unique identifier for the room list. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
 |isWheelChairAccessible|Boolean|If the room allows wheelchairs. Inherited from [place](../resources/place.md).|
 |label|String|The label of the room list. Inherited from [place](../resources/place.md).|
+|lastUpdatedTime|DateTimeOffset|The date and time when the **place** was last updated. The timestamp is in ISO 8601 format and is always in UTC. Read-only. Nullable. Inherited from [place](../resources/place.md).|
 | phone          | String                                            | The phone number of the room list. |
 |parentId|String|The place ID of the parent of the room list. Inherited from [place](../resources/place.md).|
 |tags|String collection|Custom tags that are associated with the room list categorization or filtering. Inherited from [place](../resources/place.md).|
@@ -61,6 +63,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.roomList",
+  "customProperties": {"@odata.type": "microsoft.graph.stringDictionary"},
+  "lastUpdatedTime": "String (timestamp)",
   "id": "String (identifier)",
   "displayName": "String",
   "geoCoordinates": {

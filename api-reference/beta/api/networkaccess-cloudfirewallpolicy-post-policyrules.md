@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Create a new [cloudFirewallRule](../resources/networkaccess-cloudfirewallrule.md) object in a [cloudFirewallPolicy](../resources/networkaccess-cloudfirewallpolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -41,7 +41,7 @@ This method supports the `$count`, `$filter`, `$orderby`, and `$expand` OData qu
 
 |Name|Description|
 |:---|:---|
-|Authorization|****** Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 

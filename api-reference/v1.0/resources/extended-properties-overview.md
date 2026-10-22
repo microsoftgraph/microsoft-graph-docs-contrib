@@ -12,9 +12,9 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph
 
-Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access
-custom data for Outlook MAPI properties when these properties aren't already exposed in the Microsoft Graph API metadata_.
-You can use extended properties REST API to store or get such custom data in the following user resources:
+Extended properties allow storing custom data and serve as a fallback mechanism for apps to access custom data for Outlook MAPI properties when these properties aren't already exposed in Microsoft Graph API metadata. You can use the extended properties REST API to store or get custom data in the following resources:
+
+User resources:
 
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
@@ -25,8 +25,10 @@ You can use extended properties REST API to store or get such custom data in the
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [note](../resources/note.md)
+- [todoTask](../resources/todotask.md)
+- [todoTaskList](../resources/todotasklist.md)
 
-Or, in the following Microsoft 365 group resources:
+Microsoft 365 group resources:
 
 - group [event](../resources/event.md)
 - group [calendar](../resources/calendar.md)

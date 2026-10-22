@@ -23,6 +23,7 @@ For the list of supported methods, see [place](./place.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](./physicaladdress.md)|The physical address of the **desk**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
+|customProperties|[stringDictionary](../resources/stringdictionary.md)|Custom properties for the **place**. Each property has a string key and a string value. Nullable. Inherited from [place](../resources/place.md).|
 |displayDeviceName |String |The name of the display device (for example, `monitor` or `projector`) that is available at the **desk**. |
 |displayName|String|The name that is associated with the **desk**. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **desk** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
@@ -30,6 +31,7 @@ For the list of supported methods, see [place](./place.md).
 |id|String|The unique identifier for the **desk**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md). |
 |isWheelChairAccessible|Boolean|Indicates whether the **desk** is wheelchair accessible. Inherited from [place](./place.md).|
 |label |String |User-defined description of the **desk**. Inherited from [place](../resources/place.md).|
+|lastUpdatedTime|DateTimeOffset|The date and time when the **place** was last updated. The timestamp is in ISO 8601 format and is always in UTC. Read-only. Nullable. Inherited from [place](../resources/place.md).|
 |mailboxDetails |[mailboxDetails](mailboxdetails.md) |The mailbox object **id** and email address that are associated with the desk. |
 |mode |[placeMode](./placemode.md) |The mode of the desk. The supported modes are:<ul><li>[assignedPlaceMode](./assignedplacemode.md) - Desks that are assigned to a user.</li><li>[reservablePlaceMode](./reservableplacemode.md) - Desks that can be booked in advance using desk reservation tools.</li><li>[dropInPlaceMode](./dropinplacemode.md) - First come, first served desks. When you plug into a peripheral on one of these desks, the desk is booked for you, assuming the peripheral is associated with the desk in the Microsoft Teams Rooms pro management portal.</li><li>[unavailablePlaceMode](./unavailableplacemode.md) - Desks that are taken down for maintenance or marked as not reservable.</li></ul> |
 |parentId|String|The ID of a parent [section](./section.md). Inherited from [place](./place.md).|
@@ -55,6 +57,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.desk",
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "customProperties": {"@odata.type": "microsoft.graph.stringDictionary"},
   "displayDeviceName": "String",
   "displayName": "String",
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
@@ -62,6 +65,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
+  "lastUpdatedTime": "String (timestamp)",
   "mailboxDetails": {"@odata.type": "microsoft.graph.mailboxDetails"},
   "mode": {"@odata.type": "microsoft.graph.placeMode"},
   "parentId": "String",

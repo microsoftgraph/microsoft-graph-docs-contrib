@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d74f4add-32f0-4029-91c2-4afe29233e37",
+          "ApiChange": "Property",
+          "ChangedApiName": "gracePeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **gracePeriodInDays** property to the [lifecyclePolicyRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyrule?view=graph-rest-beta) resource.",
+          "Target": "lifecyclePolicyRule"
+        }
+      ],
+      "Id": "d74f4add-32f0-4029-91c2-4afe29233e37",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-08T22:36:18.9346287Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a17b6152-ac39-406f-bbcc-eceeb17035b4",
           "ApiChange": "Relationship",
           "ChangedApiName": "lifecyclePolicies",
@@ -467,6 +485,24 @@
       "CreatedDateTime": "2026-10-01T00:00:00.0000000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "923b1dee-31ba-4b71-ab5c-480ae45d6b9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selectedAgentBuilderPlatformsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [selectedAgentBuilderPlatformsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-selectedagentbuilderplatformssubjectset?view=graph-rest-beta) resource.",
+          "Target": "selectedAgentBuilderPlatformsSubjectSet"
+        }
+      ],
+      "Id": "923b1dee-31ba-4b71-ab5c-480ae45d6b9e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-30T19:17:59.3039290Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [

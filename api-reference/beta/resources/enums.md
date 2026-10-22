@@ -1244,6 +1244,7 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | ---- |
 | enabled |
 | disabled |
+| audit |
 | unknownFutureValue |
 
 ### appCredentialRestrictionType values
@@ -4920,6 +4921,7 @@ Possible values for user account types (group membership), per Windows definitio
 |attributeCollectionSubmit|
 |emailOtpSend|
 |passwordSubmit|
+|passwordUpdate|
 
 ### microsoftAuthenticatorAuthenticationMethodClientAppName values
 
