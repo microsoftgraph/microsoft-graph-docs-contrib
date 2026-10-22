@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Read the properties and relationships of a [connection](../resources/networkaccess-connection.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

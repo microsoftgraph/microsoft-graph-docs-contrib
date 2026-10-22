@@ -16,6 +16,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Read the properties and relationships of [microsoft.graph.identityGovernance.lifecyclePolicyRule](../resources/identitygovernance-lifecyclepolicyrule.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -85,7 +87,7 @@ Content-Type: application/json
   "id": "6f3b8c1a-2d4e-4f6a-8b0c-1e2f3a4b5c6d",
   "ruleType": "periodicAttestation",
   "isEnabled": true,
+  "gracePeriodInDays": 7,
   "attestationIntervalInDays": 90
 }
 ```
-

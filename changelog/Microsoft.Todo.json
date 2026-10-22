@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "290b1660-50ba-4bb2-b9fc-09aa5e823fa5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "singleValueExtendedProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [singleValueExtendedProperty](https://learn.microsoft.com/en-us/graph/api/resources/singlevalueextendedproperty?view=graph-rest-1.0) resource type.",
+          "Target": "singleValueExtendedProperty"
+        },
+        {
+          "Id": "290b1660-50ba-4bb2-b9fc-09aa5e823fa5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "singleValueExtendedProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the **singleValueExtendedProperties** relationship to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "290b1660-50ba-4bb2-b9fc-09aa5e823fa5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "singleValueExtendedProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the **singleValueExtendedProperties** relationship to the [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-1.0) resource.",
+          "Target": "todoTaskList"
+        },
+        {
+          "Id": "290b1660-50ba-4bb2-b9fc-09aa5e823fa5",
+          "ApiChange": "Method",
+          "ChangedApiName": "singleValueLegacyExtendedProperty",
+          "ChangeType": "Change",
+          "Description": "Added [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-1.0) and [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-1.0) as supported resources for the [Get singleValueLegacyExtendedProperty](https://learn.microsoft.com/en-us/graph/api/singlevaluelegacyextendedproperty-get?view=graph-rest-1.0) operation.",
+          "Target": "singleValueLegacyExtendedProperty"
+        },
+        {
+          "Id": "290b1660-50ba-4bb2-b9fc-09aa5e823fa5",
+          "ApiChange": "Method",
+          "ChangedApiName": "singleValueLegacyExtendedProperty",
+          "ChangeType": "Change",
+          "Description": "Added [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-1.0) and [todoTaskList](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-1.0) as supported resources for the [Create singleValueLegacyExtendedProperty](https://learn.microsoft.com/en-us/graph/api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties?view=graph-rest-1.0) operation.",
+          "Target": "singleValueLegacyExtendedProperty"
+        }
+      ],
+      "Id": "290b1660-50ba-4bb2-b9fc-09aa5e823fa5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-28T09:55:27.6512298Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a7f3b291-4c5e-4d6a-9e8b-3f7a12c45678",
           "ApiChange": "Relationship",
           "ChangedApiName": "singleValueExtendedProperties",
@@ -139,7 +189,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `Tasks.Read.All` application permission to the read operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-v1.0) and [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-v1.0) resources.",
+          "Description": "Added support for the `Tasks.Read.All` application permission to the read operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-1.0) and [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-1.0) resources.",
           "Target": "onlineMeeting"
         },
         {
@@ -147,7 +197,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "Tasks.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `Tasks.Read.All` application permission to the read and write operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-v1.0) and [todotask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-v1.0) resources.",
+          "Description": "Added support for the `Tasks.Read.All` application permission to the read and write operations of the [todoTasklist](https://learn.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-1.0) and [todotask](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-1.0) resources.",
           "Target": "onlineMeeting"
         }
       ],

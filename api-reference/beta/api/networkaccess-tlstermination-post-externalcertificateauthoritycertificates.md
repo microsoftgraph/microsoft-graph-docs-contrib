@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 Create a new [externalCertificateAuthorityCertificate](../resources/networkaccess-externalcertificateauthoritycertificate.md) object. This request generates the Certificate Signing Request (CSR) that you download to sign and generate a certificate that you upload to the service using the [Update externalCertificateAuthorityCertificate operation](../api/networkaccess-externalcertificateauthoritycertificate-update.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

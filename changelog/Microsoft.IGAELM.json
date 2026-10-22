@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "cc6b034d-2072-4c36-8201-5732dc2815e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestParameters",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequestParameters](https://learn.microsoft.com/graph/api/resources/accesspackageassignmentrequestparameters) complex type.",
+          "Target": "accessPackageAssignmentRequestParameters"
+        },
+        {
+          "Id": "cc6b034d-2072-4c36-8201-5732dc2815e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "parameters",
+          "ChangeType": "Addition",
+          "Description": "Added the **parameters** property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/graph/api/resources/accesspackageassignmentrequest) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+      "Id": "cc6b034d-2072-4c36-8201-5732dc2815e0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-24T21:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2f43767d-4db4-4d5d-9f29-751f56d6cd04",
           "ApiChange": "Resource",
           "ChangedApiName": "externalOriginResourceConnector",

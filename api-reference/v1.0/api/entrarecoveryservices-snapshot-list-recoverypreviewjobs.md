@@ -14,7 +14,7 @@ Namespace: microsoft.graph.entraRecoveryServices
 
 Get a list of [recoveryPreviewJob](../resources/entrarecoveryservices-recoverypreviewjob.md) objects for a specific snapshot.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

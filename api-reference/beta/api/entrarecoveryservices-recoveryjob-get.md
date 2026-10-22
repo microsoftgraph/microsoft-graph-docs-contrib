@@ -16,7 +16,7 @@ Namespace: microsoft.graph.entraRecoveryServices
 
 Read the properties and relationships of a [recoveryJob](../resources/entrarecoveryservices-recoveryjob.md) object to check the status of the recovery operation.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -28,6 +28,7 @@ For the list of supported methods, see [place](./place.md).
 | bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are: `unknown`, `standard`, `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | Int32                                             | Specifies the capacity of the room. |
+| customProperties | [stringDictionary](../resources/stringdictionary.md) | Custom properties for the **place**. Each property has a string key and a string value. Nullable. Inherited from [place](../resources/place.md). |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
 | displayName            | String                                            | The name associated with the room. |
 | emailAddress           | String                                            | Email address of the room. |
@@ -37,6 +38,7 @@ For the list of supported methods, see [place](./place.md).
 |id |String |The unique identifier for the **room**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md).|
 | isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. Inherited from [place](./place.md). |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. Inherited from [place](./place.md). |
+| lastUpdatedTime | DateTimeOffset | The date and time when the **place** was last updated. The timestamp is in ISO 8601 format and is always in UTC. Read-only. Nullable. Inherited from [place](../resources/place.md). |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
 | parentId |String | The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](./place.md). |
 | phone                  | String                                            | The phone number of the room. |
@@ -76,6 +78,7 @@ The following JSON representation shows the resource type.
   "bookingType": "String",
   "building": "String",
   "capacity": 1024,
+  "customProperties": {"@odata.type": "microsoft.graph.stringDictionary"},
   "displayName": "String",
   "displayDeviceName": "String",
   "emailAddress": "String",
@@ -85,6 +88,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "isWheelChairAccessible": true,
   "label": "String",
+  "lastUpdatedTime": "String (timestamp)",
   "nickname": "String",
   "parentId": "String",
   "phone": "String",

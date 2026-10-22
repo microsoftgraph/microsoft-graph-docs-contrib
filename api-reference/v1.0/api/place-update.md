@@ -57,6 +57,7 @@ Only one instance of a [place](../resources/place.md) resource can be updated at
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [place](../resources/place.md), including the street, city, state, country or region, and postal code. Optional.|
+|customProperties|[stringDictionary](../resources/stringdictionary.md)|Custom key-value pairs associated with the [place](../resources/place.md). Each stored value must be a string. Set a value to `null` to remove the corresponding entry. Optional.|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [place](../resources/place.md) location in latitude, longitude, and (optionally) altitude coordinates. Optional.|
 |isWheelChairAccessible|Boolean|Indicates whether the [place](../resources/place.md) is wheelchair accessible. Required.|
 |label |String|User-defined description of the [place](../resources/place.md). Optional.|
@@ -80,7 +81,6 @@ The following example shows how to update a **building** object.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_building"
@@ -91,39 +91,14 @@ Content-Type: application/json
 
 {
   "@odata.type": "microsoft.graph.building",
+  "customProperties": {
+    "@odata.type": "microsoft.graph.stringDictionary",
+    "costCenter": "CC-1042",
+    "campusCode": "SEA"
+  },
   "tags": ["most popular building"]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-building-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-building-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-building-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-building-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-building-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-building-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-building-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -144,6 +119,12 @@ Content-Type: application/json
   "id": "e18a8e21-0494-4296-a5bc-f848dba2740d",
   "placeId": "e18a8e21-0494-4296-a5bc-f848dba2740d",
   "displayName": "MRS",
+  "lastUpdatedTime": "2026-10-12T03:30:00Z",
+  "customProperties": {
+    "@odata.type": "microsoft.graph.stringDictionary",
+    "costCenter": "CC-1042",
+    "campusCode": "SEA"
+  },
   "phone": "8801733457",
   "tags": [
     "most popular building"

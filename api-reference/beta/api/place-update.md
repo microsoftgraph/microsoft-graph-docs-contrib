@@ -59,7 +59,7 @@ Only one instance of a [place](../resources/place.md) resource can be updated at
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the [place](../resources/place.md), including the street, city, state, country or region, and postal code. Optional.|
-|customProperties|[stringDictionary](../resources/stringdictionary.md)|Custom key-value pairs associated with the [place](../resources/place.md). Each value must be a string. Optional.|
+|customProperties|[stringDictionary](../resources/stringdictionary.md)|Custom key-value pairs associated with the [place](../resources/place.md). Each stored value must be a string. Set a value to `null` to remove the corresponding entry. Optional.|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the [place](../resources/place.md) location in latitude, longitude, and (optionally) altitude coordinates. Optional.|
 |isWheelChairAccessible|Boolean|Indicates whether the [place](../resources/place.md) is wheelchair accessible. Required.|
 |label |String|User-defined description of the [place](../resources/place.md). Optional.|

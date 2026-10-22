@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of the [resourceAccountKeyAuthenticationMethod](../resources/resourceaccountkeyauthenticationmethod.md) objects and their properties for a resource account.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

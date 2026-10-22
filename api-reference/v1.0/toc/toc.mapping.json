@@ -153,6 +153,7 @@
             "Enhanced Restore"
           ],
           "resources": [
+            "backupReport",
             "backupRestoreRoot",
             "emailNotificationsSetting",
             "protectionPolicyBase",
@@ -163,6 +164,10 @@
             "restorePoint",
             "restoreSessionBase",
             "serviceApp"
+          ],
+          "complexTypes": [
+            "backupCountStatistics",
+            "backupPolicyReport"
           ],
           "childNodes": [
             {
@@ -297,6 +302,7 @@
             "dropInPlaceMode",
             "reservablePlaceMode",
             "resourceLink",
+            "stringDictionary",
             "unavailablePlaceMode"
           ],
           "childNodes": [
@@ -936,6 +942,7 @@
                 "externalOriginResourceConnector"
               ],
               "complexTypes": [
+                "accessPackageAssignmentRequestParameters",
                 "externalTokenBasedSapIagConnectionInfo"
               ]
             },

@@ -25,11 +25,13 @@ For the list of supported methods, see [place](./place.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the **section**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
+|customProperties|[stringDictionary](../resources/stringdictionary.md)|Custom properties for the **place**. Each property has a string key and a string value. Nullable. Inherited from [place](../resources/place.md).|
 |displayName|String|The display name of the **section**. Inherited from [place](../resources/place.md).|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the **section** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md).|
 |id|String|The unique identifier for the section. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [entity](../resources/entity.md). |
 |isWheelChairAccessible|Boolean|Indicates whether the **section** is wheelchair accessible. Inherited from [place](../resources/place.md).|
 |label|String|User-defined description of the **section**. Inherited from [place](../resources/place.md).|
+|lastUpdatedTime|DateTimeOffset|The date and time when the **place** was last updated. The timestamp is in ISO 8601 format and is always in UTC. Read-only. Nullable. Inherited from [place](../resources/place.md).|
 |parentId|String|The ID of a parent [floor](./floor.md) or [building](./building.md). Inherited from [place](../resources/place.md).|
 |phone|String|The phone number of the **section**. Inherited from [place](../resources/place.md).|
 |tags|String collection|Custom tags that are associated with the section for categorization or filtering. Inherited from [place](../resources/place.md).|
@@ -50,6 +52,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.section",
+  "customProperties": {"@odata.type": "microsoft.graph.stringDictionary"},
+  "lastUpdatedTime": "String (timestamp)",
   "id": "String (identifier)",
   "displayName": "String",
   "geoCoordinates": {

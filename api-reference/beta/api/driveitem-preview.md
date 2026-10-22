@@ -57,9 +57,9 @@ The request should be a JSON object with the following properties.
 
 |   Name      |  Type         | Description |
 |:------------|:--------------|:-----------------------------------------------|
-| viewer      | string        | Optional. Preview app to use. `onedrive` or `office`. If null, a suitable viewer will be chosen automatically. |
-| chromeless  | Boolean       | Optional. If `true` (default), the embedded view will not include any controls. |
-| allowEdit   | Boolean       | Optional. If `true`, the file can be edited from the embedded UI. |
+| viewer      | string        | Optional. Preview app to use. `onedrive` or `office`. If null, a suitable viewer will be chosen automatically. **Deprecated**; will be removed on September 28, 2026. |
+| chromeless  | Boolean       | Optional. If `true` (default), the embedded view will not include any controls. **Deprecated**; will be removed on September 28, 2026. |
+| allowEdit   | Boolean       | Optional. If `true`, the file can be edited from the embedded UI. **Deprecated**; will be removed on September 28, 2026. |
 | page        | string/number | Optional. Page number of document to start at, if applicable. Specified as string for future use cases around file types such as ZIP. |
 | zoom        | number        | Optional. Zoom level to start at, if applicable. |
 
@@ -93,7 +93,7 @@ param1=value&param2=another%20value
 
 ### Viewers
 
->**Note:** This parameter is deprecated and will not be made available on the v1.0 endpoint.
+>**Note:** This parameter is deprecated and will not be made available on the v1.0 endpoint. It will be removed from the beta endpoint on September 28, 2026. Call **preview** without this parameter.
 
 The following values are allowed for the **viewer** parameter.
 
@@ -104,13 +104,13 @@ The following values are allowed for the **viewer** parameter.
 | `office`   | Use the web version of Office to render the file. Only valid for Office documents. |
 
 ### Chrome vs chromeless
->**Note:** This parameter is deprecated and will not be made available on the v1.0 endpoint.
+>**Note:** This parameter is deprecated and will not be made available on the v1.0 endpoint. It will be removed from the beta endpoint on September 28, 2026. Call **preview** without this parameter.
 
 If `chromeless` is true, the preview will be a bare rendering of the file.
 Otherwise, there may be additional toolbars/buttons displayed for interacting with the document/view.
 
 ### View/edit
->**Note:** This parameter is deprecated and will not be made available on the v1.0 endpoint.
+>**Note:** This parameter is deprecated and will not be made available on the v1.0 endpoint. It will be removed from the beta endpoint on September 28, 2026. Call **preview** without this parameter.
 
 If `allowEdit` is true, the document can be modified by user interaction with the embedded preview.
 This capability may not be available for all preview apps or file types.

@@ -487,6 +487,12 @@ Content-Type: application/json
       "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
       "emailAddress": "cf100@contoso.com",
       "displayName": "Conf Room 100",
+      "lastUpdatedTime": "2026-10-08T19:05:31Z",
+      "customProperties": {
+        "@odata.type": "microsoft.graph.stringDictionary",
+        "avProfile": "teamsRooms",
+        "supportTier": "premium"
+      },
       "address": {
         "street": "4567 Main Street",
         "city": "Buffalo",

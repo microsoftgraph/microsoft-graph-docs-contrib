@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Create a new [tlsInspectionRule](../resources/networkaccess-tlsinspectionrule.md) object in a [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

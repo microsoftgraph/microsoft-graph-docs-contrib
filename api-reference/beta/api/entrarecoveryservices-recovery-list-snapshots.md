@@ -16,7 +16,7 @@ Namespace: microsoft.graph.entraRecoveryServices
 
 Get a list of available backup [snapshot](../resources/entrarecoveryservices-snapshot.md) objects for the tenant. Snapshots represent points in time to which the tenant can be restored.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
