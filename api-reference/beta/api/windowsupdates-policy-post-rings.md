@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Create a new [ring](../resources/windowsupdates-ring.md) object.
 
-You can use this method with the following child object type: [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
+You can use this method with the following child object types: [driverUpdateRing](../resources/windowsupdates-driverupdatering.md), [featureUpdateRing](../resources/windowsupdates-featureupdatering.md), and [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -50,16 +50,22 @@ POST /admin/windows/updates/policies/{policyId}/rings
 
 In the request body, supply a JSON representation of the [ring](../resources/windowsupdates-ring.md) object.
 
+Because **ring** is abstract, specify the concrete type in the `@odata.type` property. Supported values include `#microsoft.graph.windowsUpdates.driverUpdateRing`, `#microsoft.graph.windowsUpdates.featureUpdateRing`, and `#microsoft.graph.windowsUpdates.qualityUpdateRing`.
+
 You can specify the following properties when you create a **ring** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deferralInDays|Int32| The quality update deferral period in days. The value must be between `0` and `30`. Optional.|
+|deferralInDays|Int32|The update deferral period in days. The value must be between `0` and `30`. Optional.|
 |description|String| The ring description. The maximum length is 1,500 characters. Required.|
 |displayName|String| The ring display name. The maximum length is 200 characters. Required.|
 |excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
 |includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
-|isPaused|Boolean| The pause action for the quality update ring policy. Required.|
+|isHotpatchEnabled|Boolean|Indicates whether hotpatch updates are enabled. Applies only to **qualityUpdateRing**. Required for that type.|
+|isOfferOptional|Boolean|Indicates whether the feature update is offered to end users as optional. Applies only to **featureUpdateRing**. Required for that type.|
+|isPaused|Boolean|Indicates whether update offers for the ring are paused. Required.|
+|offerDurationInDays|Int32|The total length of the gradual rollout window, in days. Applies only to **featureUpdateRing**. Optional.|
+|offerIntervalInDays|Int32|How often, in days, a new subset of devices is offered the update. Applies only to **featureUpdateRing**. Optional.|
 
 ## Response
 
@@ -69,61 +75,37 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-The following example shows how to create a quality update ring.
-# [HTTP](#tab/http)
+The following example shows how to create a feature update ring.
 <!-- {
   "blockType": "request",
-  "name": "create_qualityupdatering"
+  "name": "create_featureupdatering"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/policies/86364b9d-d04a-46f3-b2ee-7ef4157ab6fc/rings
+POST https://graph.microsoft.com/beta/admin/windows/updates/policies/22222222-2222-4222-8222-222222222222/rings
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
-  "displayName": "Ring0 - IT devices",
-  "description": "First deployment ring to test updates before going to prod.",
+  "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateRing",
+  "displayName": "Pilot",
+  "description": "Pilot devices",
   "includedGroupAssignment": {
-    "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
+    "assignments": [
+      {
+        "groupId": "33333333-3333-4333-8333-333333333333"
+      }
+    ]
   },
   "excludedGroupAssignment": {
-    "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
+    "assignments": []
   },
-  "deferralInDays": 5,
-  "isPaused": false
+  "deferralInDays": 0,
+  "isPaused": false,
+  "isOfferOptional": false,
+  "offerDurationInDays": 1,
+  "offerIntervalInDays": 0
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-qualityupdatering-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-qualityupdatering-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-qualityupdatering-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-qualityupdatering-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-qualityupdatering-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-qualityupdatering-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-qualityupdatering-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -132,7 +114,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateRing"
+  "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateRing"
 }
 -->
 ``` http
@@ -140,20 +122,26 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.ring",
-  "displayName": "Ring0 - IT devices",
-  "description": "First deployment ring to test updates before going to prod.",
-  "includedGroupAssignment": {
-    "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
-  },
+  "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateRing",
+  "createdDateTime": "2026-09-28T11:05:00Z",
+  "deferralInDays": 0,
+  "description": "Pilot devices",
+  "displayName": "Pilot",
   "excludedGroupAssignment": {
-    "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
+    "assignments": []
   },
-  "deferralInDays": 5,
+  "id": "44444444-4444-4444-8444-444444444444",
+  "includedGroupAssignment": {
+    "assignments": [
+      {
+        "groupId": "33333333-3333-4333-8333-333333333333"
+      }
+    ]
+  },
+  "isOfferOptional": false,
   "isPaused": false,
-  "id": "03f72335-b88c-519e-16e7-039fdab8670f",
-  "createdDateTime": "2020-06-09T10:00:00Z",
-  "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+  "lastModifiedDateTime": "2026-09-28T11:05:00Z",
+  "offerDurationInDays": 1,
+  "offerIntervalInDays": 0
 }
 ```
-

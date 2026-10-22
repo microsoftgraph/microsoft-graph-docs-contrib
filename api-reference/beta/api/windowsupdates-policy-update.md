@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Update the properties of a [policy](../resources/windowsupdates-policy.md) object.
 
-You can use this method with the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
+You can use this method with the following child object types: [driverUpdatePolicy](../resources/windowsupdates-driverupdatepolicy.md), [featureUpdatePolicy](../resources/windowsupdates-featureupdatepolicy.md), and [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -48,13 +48,15 @@ PATCH /admin/windows/updates/policies/{policyId}
 
 ## Request body
 
+Specify the concrete type in the `@odata.type` property. Supported values include `#microsoft.graph.windowsUpdates.driverUpdatePolicy`, `#microsoft.graph.windowsUpdates.featureUpdatePolicy`, and `#microsoft.graph.windowsUpdates.qualityUpdatePolicy`.
+
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
 |approvalRules|[microsoft.graph.windowsUpdates.approvalRule](../resources/windowsupdates-approvalrule.md) collection| The approved rule of the policy that determines which published content matches the rule on an ongoing basis. Optional.|
-|description|String| The quality update policy description. The maximum length is 1,500 characters. Optional.|
-|displayName|String| The quality update policy display name. The maximum length is 200 characters. Optional. |
+|description|String| The policy description. The maximum length is 1,500 characters. Optional.|
+|displayName|String| The policy display name. The maximum length is 200 characters. Optional. |
 
 ## Response
 
@@ -81,7 +83,7 @@ Content-Type: application/json
   "description": "Quality update policy to test upcoming Patch Tuesday updates",
   "approvalRules": [
     {
-      "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
+      "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
       "deferralInDays": 0,
       "classification": "nonSecurity",
       "cadence": "outOfBand"
@@ -140,7 +142,7 @@ Content-Type: application/json
   "description": "Quality update policy to test upcoming Patch Tuesday updates",
   "approvalRules": [
     {
-      "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
+      "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
       "deferralInDays": 0,
       "classification": "nonSecurity",
       "cadence": "outOfBand"
@@ -151,4 +153,3 @@ Content-Type: application/json
   "lastModifiedDateTime": "2020-06-09T10:00:00Z"
 }
 ```
-

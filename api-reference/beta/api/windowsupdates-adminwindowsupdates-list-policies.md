@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get a list of the [policy](../resources/windowsupdates-policy.md) objects and their properties. 
 
-You can use this method with the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
+You can use this method with the following child object types: [driverUpdatePolicy](../resources/windowsupdates-driverupdatepolicy.md), [featureUpdatePolicy](../resources/windowsupdates-featureupdatepolicy.md), and [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,14 +31,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To get a list of **qualityUpdatePolicy** objects:
+To get all policy objects or only policies of a specific derived type:
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /admin/windows/updates/policies?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdatePolicy')
+GET /admin/windows/updates/policies
+GET /admin/windows/updates/policies/microsoft.graph.windowsUpdates.driverUpdatePolicy
+GET /admin/windows/updates/policies/microsoft.graph.windowsUpdates.featureUpdatePolicy
+GET /admin/windows/updates/policies/microsoft.graph.windowsUpdates.qualityUpdatePolicy
 ```
 
 ## Optional query parameters
@@ -63,46 +66,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows how to get a list of quality update policies.
-# [HTTP](#tab/http)
+The following example shows how to get a list that contains each supported policy type.
 <!-- {
   "blockType": "request",
-  "name": "list_qualityupdatepolicy",
+  "name": "list_windowsupdates_policy",
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdatePolicy')
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-qualityupdatepolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-qualityupdatepolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-qualityupdatepolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-qualityupdatepolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-qualityupdatepolicy-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-qualityupdatepolicy-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-qualityupdatepolicy-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -111,7 +83,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.windowsUpdates.qualityUpdatePolicy)",
+  "@odata.type": "Collection(microsoft.graph.windowsUpdates.policy)",
 }
 -->
 ``` http
@@ -122,23 +94,44 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/admin/windows/updates/$metadata#policies",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdatePolicy",
+      "approvalRules": [
+        {
+          "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateApprovalRule",
+          "deferralInDays": 7
+        }
+      ],
+      "createdDateTime": "2026-09-28T10:00:00Z",
+      "description": "Driver and firmware updates for managed devices",
+      "displayName": "Contoso driver policy",
+      "id": "11111111-1111-4111-8111-111111111111",
+      "lastModifiedDateTime": "2026-09-28T10:00:00Z"
+    },
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdatePolicy",
+      "approvalRules": [],
+      "createdDateTime": "2026-09-28T10:05:00Z",
+      "description": "Administrator-approved Windows feature updates",
+      "displayName": "Contoso feature policy",
+      "id": "22222222-2222-4222-8222-222222222222",
+      "lastModifiedDateTime": "2026-09-28T10:05:00Z"
+    },
+    {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
-      "displayName": "Display Name value",
-      "description": "Description value",
-      "isAutoEnrollDevices": false,
-      "id": "7650b117-e3fc-424a-ae94-988104652bdd",
-      "createdDateTime": "2025-01-17T12:20:32.3403729-08:00",
-      "lastModifiedDateTime": "2025-01-17T12:21:57-08:00",
       "approvalRules": [
         {
           "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
-          "deferralInDays": 0,
-          "classification": "nonSecurity",
-          "cadence": "outOfBand"
+          "cadence": "monthly",
+          "classification": "security",
+          "deferralInDays": 2
         }
-      ]
+      ],
+      "createdDateTime": "2026-09-28T10:10:00Z",
+      "description": "Monthly quality updates for production devices",
+      "displayName": "Contoso quality policy",
+      "id": "33333333-3333-4333-8333-333333333333",
+      "lastModifiedDateTime": "2026-09-28T10:10:00Z"
     }
   ]
 }
 ```
-

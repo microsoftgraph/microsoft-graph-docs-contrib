@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Read the properties and relationships of [ring](../resources/windowsupdates-ring.md) object.
 
-You can use this method with the following child object type: [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
+You can use this method with the following child object types: [driverUpdateRing](../resources/windowsupdates-driverupdatering.md), [featureUpdateRing](../resources/windowsupdates-featureupdatering.md), and [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -117,22 +117,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
-    "displayName": "IT Test - Ring0",
-    "description": "First deployment ring to test updates with IT devices",
-    "includedGroupAssignment": {
-      "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
-    },
-    "excludedGroupAssignment": {
-      "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
-    },
-    "deferralInDays": 3,
-    "isPaused": false,
-    "id": "a2c7637a-cda5-e59e-2385-972c4ee528d2",
-    "createdDateTime": "2020-06-09T10:00:00Z",
-    "lastModifiedDateTime": "2020-06-09T10:00:00Z",
-    "isHotpatchEnabled": true
-  }
+  "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
+  "displayName": "IT Test - Ring0",
+  "description": "First deployment ring to test updates with IT devices",
+  "includedGroupAssignment": {
+    "@odata.type": "#microsoft.graph.windowsUpdates.includedGroupAssignment"
+  },
+  "excludedGroupAssignment": {
+    "@odata.type": "#microsoft.graph.windowsUpdates.excludedGroupAssignment"
+  },
+  "deferralInDays": 3,
+  "isPaused": false,
+  "id": "a2c7637a-cda5-e59e-2385-972c4ee528d2",
+  "createdDateTime": "2020-06-09T10:00:00Z",
+  "lastModifiedDateTime": "2020-06-09T10:00:00Z",
+  "isHotpatchEnabled": true
 }
 ```

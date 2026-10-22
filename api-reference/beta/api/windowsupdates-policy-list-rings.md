@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get a list of the [ring](../resources/windowsupdates-ring.md) objects and their properties.
 
-You can use this method with the following child object type: [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
+You can use this method with the following child object types: [driverUpdateRing](../resources/windowsupdates-driverupdatering.md), [featureUpdateRing](../resources/windowsupdates-featureupdatering.md), and [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,14 +31,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To get a list of **qualityUpdateRing** objects:
+To get all ring objects for a policy or only rings of a specific derived type:
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET admin/windows/updates/policies/{policyId}/rings?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateRing')
+GET /admin/windows/updates/policies/{policyId}/rings
+GET /admin/windows/updates/policies/{policyId}/rings/microsoft.graph.windowsUpdates.driverUpdateRing
+GET /admin/windows/updates/policies/{policyId}/rings/microsoft.graph.windowsUpdates.featureUpdateRing
+GET /admin/windows/updates/policies/{policyId}/rings/microsoft.graph.windowsUpdates.qualityUpdateRing
 ```
 
 ## Optional query parameters
@@ -63,46 +66,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
-# [HTTP](#tab/http)
+The following example shows how to get a list that contains each supported ring type.
 <!-- {
   "blockType": "request",
-  "name": "list_qualityupdatering"
+  "name": "list_ring"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c/rings?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateRing')
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c/rings
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-qualityupdatering-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-qualityupdatering-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-qualityupdatering-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-qualityupdatering-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-qualityupdatering-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-qualityupdatering-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-qualityupdatering-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -111,7 +83,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateRing"
+  "@odata.type": "Collection(microsoft.graph.windowsUpdates.ring)"
 }
 -->
 ``` http
@@ -121,21 +93,68 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
-      "displayName": "Patch Tuesday Test",
-      "description": "Quality update policy to test upcoming Patch Tuesday updates",
-      "includedGroupAssignment": {
-        "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
-      },
-      "excludedGroupAssignment": {
-        "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
-      },
+      "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateRing",
+      "createdDateTime": "2026-09-28T11:00:00Z",
       "deferralInDays": 5,
+      "description": "Pilot devices for driver and firmware updates",
+      "displayName": "Driver pilot",
+      "excludedGroupAssignment": {
+        "assignments": []
+      },
+      "id": "44444444-4444-4444-8444-444444444444",
+      "includedGroupAssignment": {
+        "assignments": [
+          {
+            "groupId": "77777777-7777-4777-8777-777777777777"
+          }
+        ]
+      },
       "isPaused": false,
-      "id": "a2c7637a-cda5-e59e-2385-972c4ee528d2",
-      "createdDateTime": "2020-06-09T10:00:00Z",
-      "lastModifiedDateTime": "2020-06-09T10:00:00Z",
-      "isHotpatchEnabled": true
+      "lastModifiedDateTime": "2026-09-28T11:00:00Z"
+    },
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateRing",
+      "createdDateTime": "2026-09-28T11:05:00Z",
+      "deferralInDays": 0,
+      "description": "Pilot devices for feature updates",
+      "displayName": "Feature pilot",
+      "excludedGroupAssignment": {
+        "assignments": []
+      },
+      "id": "55555555-5555-4555-8555-555555555555",
+      "includedGroupAssignment": {
+        "assignments": [
+          {
+            "groupId": "88888888-8888-4888-8888-888888888888"
+          }
+        ]
+      },
+      "isOfferOptional": false,
+      "isPaused": false,
+      "lastModifiedDateTime": "2026-09-28T11:05:00Z",
+      "offerDurationInDays": 1,
+      "offerIntervalInDays": 0
+    },
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
+      "createdDateTime": "2026-09-28T11:10:00Z",
+      "deferralInDays": 2,
+      "description": "Production devices for monthly quality updates",
+      "displayName": "Quality production",
+      "excludedGroupAssignment": {
+        "assignments": []
+      },
+      "id": "66666666-6666-4666-8666-666666666666",
+      "includedGroupAssignment": {
+        "assignments": [
+          {
+            "groupId": "99999999-9999-4999-8999-999999999999"
+          }
+        ]
+      },
+      "isHotpatchEnabled": true,
+      "isPaused": false,
+      "lastModifiedDateTime": "2026-09-28T11:10:00Z"
     }
   ]
 }

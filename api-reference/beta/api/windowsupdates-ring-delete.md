@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Delete a [ring](../resources/windowsupdates-ring.md) object.
 
-You can use this method with the following child object type: [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
+You can use this method with the following child object types: [driverUpdateRing](../resources/windowsupdates-driverupdatering.md), [featureUpdateRing](../resources/windowsupdates-featureupdatering.md), and [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -109,4 +109,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

@@ -20,7 +20,7 @@ Inherits from [policy](../resources/windowsupdates-policy.md).
 
 ## Methods
 
-For the list of supported methods, see [policy](../resources/windowsupdates-policy.md).
+This resource is part of a polymorphic collection managed by the [policy resource](../resources/windowsupdates-policy.md) base type. Operations are performed through the base type endpoints.
 
 ## Properties
 |Property|Type|Description|
@@ -35,7 +35,8 @@ For the list of supported methods, see [policy](../resources/windowsupdates-poli
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|applicableContent|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Represents content applicable for offering to the related collection of devices. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
+|applicableCatalogs|[microsoft.graph.windowsUpdates.applicableCatalog](../resources/windowsupdates-applicablecatalog.md) collection|The quality update catalog entries that apply to devices targeted by the policy. Inherited from [policy](../resources/windowsupdates-policy.md).|
+|applicableContent|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection|The existing applicable-content collection. Inherited from [policy](../resources/windowsupdates-policy.md).|
 |approvals|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection| Represents a set of quality updates policy approval types. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). |
 |rings|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection| Represents a set of deployment rings that contains update deployment settings. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). |
 
@@ -60,4 +61,3 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
