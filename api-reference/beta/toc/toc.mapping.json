@@ -1395,6 +1395,10 @@
             "Privileged Identity Management",
             "Microsoft Entra ID Governance"
           ],
+          "complexTypes": [
+            "approverDelegate",
+            "identityGovernanceUserSettings"
+          ],
           "childNodes": [
             {
               "name": "Access drift",
