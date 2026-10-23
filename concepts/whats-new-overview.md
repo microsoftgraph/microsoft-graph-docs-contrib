@@ -31,7 +31,8 @@ Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy)
 
 ### Calendars | Places
 
-Use the **lastUpdatedTime** and **customProperties** properties on the [place](/graph/api/resources/place) resource to read when a place was last updated and manage custom string key-value metadata.
+- Use the **lastUpdatedTime** and **customProperties** properties on the [place](/graph/api/resources/place) resource to read when a place was last updated and manage custom string key-value metadata.
+- The [Place update](/graph/api/place-update) API doesn't honor administrative roles assigned to groups in Microsoft Entra ID. Instead, assign the required role directly to the user in Microsoft Entra ID, or assign it to a user or group through the Microsoft 365 admin center.
 
 ### Mail | Message trace
 
@@ -52,6 +53,10 @@ Added the `audit` member to the **appManagementRestrictionState** enumeration ty
 - Track admin activities on backup and restore resources, including policy changes, dynamic rule executions, offboarding, and restore task completions, by using the [activityLogBase](/graph/api/resources/activitylogbase?view=graph-rest-beta&preserve-view=true) resource and its derived types.
 - Removed the **tags** property on the [restoreTaskActivityLog](/graph/api/resources/restoretaskactivitylog?view=graph-rest-beta&preserve-view=true) in favor of the **restoreJobType** property. Use the **restoreJobType** property with values from the [restoreJobType](/graph/api/resources/enums?view=graph-rest-beta&preserve-view=true#restorejobtype-values) enumeration type.
 - Added the **backupPolicyDeleted** member as a new supported value for the **activityType** property on the [activityLogBase](/graph/api/resources/activitylogbase?view=graph-rest-beta&preserve-view=true) resource and its derived types.
+
+### Calendars | Places
+
+The [Place update](/graph/api/place-update?view=graph-rest-beta&preserve-view=true) API doesn't honor administrative roles assigned to groups in Microsoft Entra ID. Instead, assign the required role directly to the user in Microsoft Entra ID, or assign it to a user or group through the Microsoft 365 admin center.
 
 ### Device and app management | Cloud PC
 
