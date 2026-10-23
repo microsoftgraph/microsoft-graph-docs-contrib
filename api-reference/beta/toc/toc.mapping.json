@@ -2729,6 +2729,7 @@
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [
+                "appManagementAudit",
                 "auditActivityType",
                 "customSecurityAttributeAudit",
                 "directoryAudit",
@@ -2738,6 +2739,9 @@
                 "signInEventsActivity",
                 "signInEventsAppActivity",
                 "summarizedSignIn"
+              ],
+              "complexTypes": [
+                "appliedAppManagementPolicyRestriction"
               ]
             },
             {

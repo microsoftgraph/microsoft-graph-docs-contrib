@@ -103,6 +103,7 @@ Added support to identify recalled messages in message trace. Use `recalled` as 
 
 ### Reports | Identity and access reports
 
+- Added the [appManagementAudit](/graph/api/resources/appmanagementaudit?view=graph-rest-beta&preserve-view=true) resource type and related methods to retrieve Microsoft Entra application management audit logs. Use these APIs to understand how app management policy restrictions affected application and service principal changes.
 - Added the `passwordUpdate` member to the **eventType** property of the [appliedAuthenticationEventListener](/graph/api/resources/appliedauthenticationeventlistener?view=graph-rest-beta&preserve-view=true) resource to identify OnPasswordUpdate custom extension listeners triggered during sign-ins.
 
 ### Security

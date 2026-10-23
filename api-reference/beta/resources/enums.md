@@ -1267,6 +1267,41 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | selected           | 2     | The policy applies to specific users or groups in the organization.            |
 | unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use.                              |
 
+### appManagementAuditLogAuditResult values
+
+| Member |
+| ---- |
+| notApplicable |
+| wouldHaveBeenAllowed |
+| wouldHaveBeenBlocked |
+| unknownFutureValue |
+
+### appManagementAuditLogPolicyType values
+
+| Member |
+| ---- |
+| defaultEntraId |
+| tenant |
+| app |
+| unknownFutureValue |
+
+### appManagementAuditLogRestrictionResult values
+
+| Member |
+| ---- |
+| allowed |
+| blocked |
+| unknownFutureValue |
+
+### appManagementAuditLogRestrictionState values
+
+| Member |
+| ---- |
+| enabled |
+| disabled |
+| audit |
+| unknownFutureValue |
+
 ### appManagementRestrictionState values
 
 | Member |
