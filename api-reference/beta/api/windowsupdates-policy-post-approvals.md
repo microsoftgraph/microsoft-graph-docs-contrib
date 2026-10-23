@@ -42,6 +42,7 @@ POST /admin/windows/updates/policies/{policyId}/approvals
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -52,11 +53,12 @@ You can specify the following properties when you create a **policyApproval**.
 |Property|Type|Description|
 |:---|:---|:---|
 |catalogEntryId|String|The catalog entry ID to approve. Required.|
-|status|microsoft.graph.windowsUpdates.approvalStatus|The approval status. The possible values are: `approved`, `suspended`, `unknownFutureValue`. Required.|
+|startDateTime|DateTimeOffset|The date and time when the approved content can start being offered. If omitted, the service uses the current time. Optional.|
+|status|[windowsUpdates.approvalStatus](../resources/enums-windowsupdates.md#approvalstatus-values)|The approval status. The possible values are: `approved`, `suspended`, `unknownFutureValue`. When creating an approval, the value must be `approved`. Required.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object in the response body.
 
 ## Examples
 
@@ -76,6 +78,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
   "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
+  "startDateTime": "2026-10-05T12:00:00Z",
   "status": "approved"
 }
 ```
@@ -121,16 +124,17 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
+  "approvedBy": "user",
   "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
-  "status": "approved",
+  "createdDateTime": "2026-10-02T10:00:00Z",
   "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
-  "createdDateTime": "2020-06-09T10:00:00Z",
-  "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+  "lastModifiedDateTime": "2026-10-02T10:00:00Z",
+  "startDateTime": "2026-10-05T12:00:00Z",
+  "status": "approved"
 }
 ```
-

@@ -115,14 +115,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
-    "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
-    "status": "suspended",
-    "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
-    "createdDateTime": "2020-06-09T10:00:00Z",
-    "lastModifiedDateTime": "2020-06-09T10:00:00Z"
-  }
+  "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
+  "approvedBy": "user",
+  "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
+  "createdDateTime": "2026-10-02T10:00:00Z",
+  "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
+  "lastModifiedDateTime": "2026-10-02T10:00:00Z",
+  "startDateTime": "2026-10-05T12:00:00Z",
+  "status": "approved"
 }
 ```
-

@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 An abstract type that represents an entity that governs the overall Windows update approval deployment rules.
 
-Base type of [qualityUpdateApprovalRule](../resources/windowsupdates-qualityupdateapprovalrule.md) and [recoveryApprovalRule](../resources/windowsupdates-recoveryapprovalrule.md). 
+Base type of [driverUpdateApprovalRule](../resources/windowsupdates-driverupdateapprovalrule.md), [qualityUpdateApprovalRule](../resources/windowsupdates-qualityupdateapprovalrule.md), and [recoveryApprovalRule](../resources/windowsupdates-recoveryapprovalrule.md).
 
 ## Properties
 |Property|Type|Description|
@@ -40,4 +40,3 @@ The following JSON representation shows the resource type.
   "deferralInDays": "Int32"
 }
 ```
-
