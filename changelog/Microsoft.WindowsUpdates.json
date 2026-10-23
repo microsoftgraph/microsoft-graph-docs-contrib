@@ -3,6 +3,320 @@
     {
       "ChangeList": [
         {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "windows/updates/data/applicableCatalogSummaries/catalogEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the **catalogEntry** navigation property binding to the [applicableCatalogSummary](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-applicablecatalogsummary?view=graph-rest-beta) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "windows/updates/data/policyAssignments/deviceProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceProfile** navigation property binding to the [policyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-policyassignment?view=graph-rest-beta) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "windows/updates/policies/applicableCatalogs/catalogEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the **catalogEntry** navigation property binding to the [applicableCatalog](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-applicablecatalog?view=graph-rest-beta) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "data",
+          "ChangeType": "Addition",
+          "Description": "Added the **data** relationship to the [adminWindowsUpdates](https://learn.microsoft.com/en-us/graph/api/resources/adminwindowsupdates?view=graph-rest-beta) resource.",
+          "Target": "adminWindowsUpdates"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tenantSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantSettings** relationship to the [adminWindowsUpdates](https://learn.microsoft.com/en-us/graph/api/resources/adminwindowsupdates?view=graph-rest-beta) resource.",
+          "Target": "adminWindowsUpdates"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "approvedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvedBy** enumeration type.",
+          "Target": "approvedBy"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceClientState",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceClientState** enumeration type.",
+          "Target": "deviceClientState"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceClientSubstate",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceClientSubstate** enumeration type.",
+          "Target": "deviceClientSubstate"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceServiceState",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceServiceState** enumeration type.",
+          "Target": "deviceServiceState"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deviceServiceSubstate",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceServiceSubstate** enumeration type.",
+          "Target": "deviceServiceSubstate"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "hotpatchReadiness",
+          "ChangeType": "Addition",
+          "Description": "Added the **hotpatchReadiness** enumeration type.",
+          "Target": "hotpatchReadiness"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "osStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **osStatus** enumeration type.",
+          "Target": "osStatus"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "driverUpdateApprovalRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [driverUpdateApprovalRule](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-driverupdateapprovalrule?view=graph-rest-beta) complex type.",
+          "Target": "driverUpdateApprovalRule"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicableCatalog",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicableCatalog](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-applicablecatalog?view=graph-rest-beta) resource.",
+          "Target": "applicableCatalog"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicableCatalogSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicableCatalogSummary](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-applicablecatalogsummary?view=graph-rest-beta) resource.",
+          "Target": "applicableCatalogSummary"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicableDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicableDevice](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-applicabledevice?view=graph-rest-beta) resource.",
+          "Target": "applicableDevice"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceProfile](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-deviceprofile?view=graph-rest-beta) resource.",
+          "Target": "deviceProfile"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driverUpdateDeviceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [driverUpdateDeviceStatus](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-driverupdatedevicestatus?view=graph-rest-beta) resource.",
+          "Target": "driverUpdateDeviceStatus"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driverUpdatePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [driverUpdatePolicy](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-driverupdatepolicy?view=graph-rest-beta) resource.",
+          "Target": "driverUpdatePolicy"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driverUpdateReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [driverUpdateReport](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-driverupdatereport?view=graph-rest-beta) resource.",
+          "Target": "driverUpdateReport"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driverUpdateRing",
+          "ChangeType": "Addition",
+          "Description": "Added the [driverUpdateRing](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-driverupdatering?view=graph-rest-beta) resource.",
+          "Target": "driverUpdateRing"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "featureUpdatePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [featureUpdatePolicy](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-featureupdatepolicy?view=graph-rest-beta) resource.",
+          "Target": "featureUpdatePolicy"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "featureUpdateRing",
+          "ChangeType": "Addition",
+          "Description": "Added the [featureUpdateRing](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-featureupdatering?view=graph-rest-beta) resource.",
+          "Target": "featureUpdateRing"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mdmAppSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [mdmAppSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-mdmappsetting?view=graph-rest-beta) resource.",
+          "Target": "mdmAppSetting"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "applicableCatalogs",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicableCatalogs** relationship to the [policy](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-policy?view=graph-rest-beta) resource.",
+          "Target": "policy"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Property",
+          "ChangedApiName": "approvedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvedBy** property to the [policyApproval](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-policyapproval?view=graph-rest-beta) resource.",
+          "Target": "policyApproval"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Property",
+          "ChangedApiName": "startDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **startDateTime** property to the [policyApproval](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-policyapproval?view=graph-rest-beta) resource.",
+          "Target": "policyApproval"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-policyassignment?view=graph-rest-beta) resource.",
+          "Target": "policyAssignment"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-tenantsetting?view=graph-rest-beta) resource.",
+          "Target": "tenantSetting"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "mdmAppSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **mdmAppSettings** relationship to the [tenantSetting](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-tenantsetting?view=graph-rest-beta) resource.",
+          "Target": "tenantSetting"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "updateData",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateData](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatedata?view=graph-rest-beta) resource.",
+          "Target": "updateData"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "applicableCatalogSummaries",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicableCatalogSummaries** relationship to the [updateData](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatedata?view=graph-rest-beta) resource.",
+          "Target": "updateData"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "drivers",
+          "ChangeType": "Addition",
+          "Description": "Added the **drivers** relationship to the [updateData](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatedata?view=graph-rest-beta) resource.",
+          "Target": "updateData"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "deviceProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceProfiles** relationship to the [updateData](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatedata?view=graph-rest-beta) resource.",
+          "Target": "updateData"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "policyAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyAssignments** relationship to the [updateData](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatedata?view=graph-rest-beta) resource.",
+          "Target": "updateData"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "devices",
+          "ChangeType": "Addition",
+          "Description": "Added the **devices** relationship to the [applicableCatalog](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-applicablecatalog?view=graph-rest-beta) resource.",
+          "Target": "applicableCatalog"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "aggregatedDevices",
+          "ChangeType": "Addition",
+          "Description": "Added the **aggregatedDevices** relationship to the [applicableCatalogSummary](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-applicablecatalogsummary?view=graph-rest-beta) resource.",
+          "Target": "applicableCatalogSummary"
+        },
+        {
+          "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "deviceStatuses",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceStatuses** relationship to the [driverUpdateReport](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-driverupdatereport?view=graph-rest-beta) resource.",
+          "Target": "driverUpdateReport"
+        }
+      ],
+      "Id": "b102f85a-1bb3-4fab-b715-b49849c6829c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-09T00:00:00.0000000Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Device updates"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
           "ApiChange": "Enumeration",
           "ChangedApiName": "enrollmentState",

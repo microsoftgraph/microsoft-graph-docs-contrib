@@ -1,5 +1,5 @@
 ---
-title: "policy resource type"
+title: "windowsUpdates policy resource type"
 description: "An abstract type that governs the update deployment settings content for an associated deployment audience."
 author: "andredm7"
 ms.date: 01/27/2026
@@ -8,27 +8,28 @@ ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
 ---
 
-# policy resource type
+# windowsUpdates policy resource type
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that governs the update deployment settings content for an associated deployment audience. This audience can consist of one or more Microsoft Entra groups.
+An abstract type that governs the update deployment settings content for an associated deployment audience. This audience can consist of one or more Microsoft Entra groups. You can't instantiate this resource directly; use one of its derived types.
 
-Base type of [policy](../resources/windowsupdates-policy.md). 
+Base type of [driverUpdatePolicy](../resources/windowsupdates-driverupdatepolicy.md), [featureUpdatePolicy](../resources/windowsupdates-featureupdatepolicy.md), and [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md). Instances in a policy collection are differentiated by the **@odata.type** property, which identifies the derived type of each object.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/windowsupdates-adminwindowsupdates-list-policies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) collection|Get a list of the [policy](../resources/windowsupdates-policy.md) objects and their properties.|
-|[Create](../api/windowsupdates-adminwindowsupdates-post-policies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Create a new Windows update [policy](../resources/windowsupdates-policy.md) object.|
-|[Get](../api/windowsupdates-policy-get.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Read the properties and relationships of a [policy](../resources/windowsupdates-policy.md) object.|
-|[Update](../api/windowsupdates-policy-update.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Update the properties of a [policy](../resources/windowsupdates-policy.md) object.|
-|[Delete](../api/windowsupdates-policy-delete.md)|None|Delete a Windows update [policy](../resources/windowsupdates-policy.md) object.|
-|[List applicable content](../api/windowsupdates-policy-list-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection| List [applicable update content](../resources/windowsupdates-applicablecontent.md) to offer to Microsoft Entra groups, Windows Autopatch groups, or both.|
+|[List policies](../api/windowsupdates-adminwindowsupdates-list-policies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) collection|Get a list of the [policy](../resources/windowsupdates-policy.md) objects and their properties.|
+|[Create policy](../api/windowsupdates-adminwindowsupdates-post-policies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Create a new Windows update [policy](../resources/windowsupdates-policy.md) object.|
+|[Get policy](../api/windowsupdates-policy-get.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Read the properties and relationships of a [policy](../resources/windowsupdates-policy.md) object.|
+|[Update policy](../api/windowsupdates-policy-update.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Update the properties of a [policy](../resources/windowsupdates-policy.md) object.|
+|[Delete policy](../api/windowsupdates-policy-delete.md)|None|Delete a Windows update [policy](../resources/windowsupdates-policy.md) object.|
+|[List applicableCatalogs](../api/windowsupdates-policy-list-applicablecatalogs.md)|[microsoft.graph.windowsUpdates.applicableCatalog](../resources/windowsupdates-applicablecatalog.md) collection|List catalog entries that are applicable to devices targeted by the policy.|
+|[List applicableContent](../api/windowsupdates-policy-list-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection| List [applicable update content](../resources/windowsupdates-applicablecontent.md) to offer to Microsoft Entra groups, Windows Autopatch groups, or both.|
 |[List approvals](../api/windowsupdates-policy-list-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection| Get a list of the [policyApproval](../resources/windowsupdates-policyapproval.md) objects and their properties.|
-|[Create policy approval](../api/windowsupdates-policy-post-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new [policyApproval](../resources/windowsupdates-policyapproval.md) object.|
+|[Create policyApproval](../api/windowsupdates-policy-post-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new [policyApproval](../resources/windowsupdates-policyapproval.md) object.|
 |[List rings](../api/windowsupdates-policy-list-rings.md)|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection| Get a list of the [ring](../resources/windowsupdates-ring.md) objects and their properties.|
 |[Create ring](../api/windowsupdates-policy-post-rings.md)|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md)|Create a new [ring](../resources/windowsupdates-ring.md) object.|
 
@@ -45,9 +46,10 @@ Base type of [policy](../resources/windowsupdates-policy.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|applicableContent|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Represents content applicable for offering to the related collection of devices.|
-|approvals|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection| Represents a set of quality updates policy approval types. |
-|rings|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection| Represents a set of deployment rings that contains update deployment settings. |
+|applicableCatalogs|[microsoft.graph.windowsUpdates.applicableCatalog](../resources/windowsupdates-applicablecatalog.md) collection|The catalog entries that apply to devices targeted by the policy.|
+|applicableContent|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection|The existing applicable-content collection. For driver and feature update applicability, use **applicableCatalogs**.|
+|approvals|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|The update content approvals associated with the policy.|
+|rings|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection|The deployment rings that define targeting, deferral, and pause settings for the policy.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -69,4 +71,3 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-

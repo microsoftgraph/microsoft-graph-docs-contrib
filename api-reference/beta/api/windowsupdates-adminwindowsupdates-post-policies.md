@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Create a new Windows update [policy](../resources/windowsupdates-policy.md) object.
 
-You can use this method with the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
+You can use this method with the following child object types: [driverUpdatePolicy](../resources/windowsupdates-driverupdatepolicy.md), [featureUpdatePolicy](../resources/windowsupdates-featureupdatepolicy.md), and [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -50,9 +50,9 @@ POST /admin/windows/updates/policies
 
 In the request body, supply a JSON representation of the [policy](../resources/windowsupdates-policy.md) object.
 
-You can specify the following properties when you create a **policy**.
+Because **policy** is abstract, specify the concrete type in the `@odata.type` property. Supported values include `#microsoft.graph.windowsUpdates.driverUpdatePolicy`, `#microsoft.graph.windowsUpdates.featureUpdatePolicy`, and `#microsoft.graph.windowsUpdates.qualityUpdatePolicy`.
 
-## Properties
+You can specify the following properties when you create a **policy**.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -68,11 +68,10 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-The following example shows how to create a quality update policy.
-# [HTTP](#tab/http)
+The following example shows how to create a driver and firmware update policy.
 <!-- {
   "blockType": "request",
-  "name": "create_qualityupdatepolicy"
+  "name": "create_driverupdatepolicy"
 }
 -->
 ``` http
@@ -80,49 +79,17 @@ POST https://graph.microsoft.com/beta/admin/windows/updates/policies
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
-  "displayName": "Patch Tuesday 123",
-  "description": "Testing Patch Tuesday in test environment",
+  "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdatePolicy",
+  "displayName": "Contoso driver policy",
+  "description": "Driver and firmware updates for managed devices",
   "approvalRules": [
     {
-      "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
-      "deferralInDays": 0,
-      "classification": "nonSecurity",
-      "cadence": "outOfBand"
+      "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateApprovalRule",
+      "deferralInDays": 7
     }
   ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-qualityupdatepolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-qualityupdatepolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-qualityupdatepolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-qualityupdatepolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-qualityupdatepolicy-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-qualityupdatepolicy-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-qualityupdatepolicy-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -131,7 +98,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.policy"
+  "@odata.type": "microsoft.graph.windowsUpdates.driverUpdatePolicy"
 }
 -->
 ``` http
@@ -139,20 +106,17 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/admin/windows/updates/$metadata#policies/microsoft.graph.windowsUpdates.qualityUpdatePolicy/$entity",
-  "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
-  "displayName": "Patch Tuesday 123",
-  "description": "Testing Patch Tuesday in test environment",
-  "id": "1cf00cc5-7b19-4193-9a47-6404c57c0cbb",
-  "createdDateTime": "2025-02-12T23:39:44.971849-08:00",
-  "lastModifiedDateTime": "2025-02-12T23:39:54-08:00",
+  "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdatePolicy",
   "approvalRules": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
-      "deferralInDays": 0,
-      "classification": "nonSecurity",
-      "cadence": "outOfBand"
+      "@odata.type": "#microsoft.graph.windowsUpdates.driverUpdateApprovalRule",
+      "deferralInDays": 7
     }
-  ]
+  ],
+  "createdDateTime": "2026-09-28T10:00:00Z",
+  "description": "Driver and firmware updates for managed devices",
+  "displayName": "Contoso driver policy",
+  "id": "11111111-1111-4111-8111-111111111111",
+  "lastModifiedDateTime": "2026-09-28T10:00:00Z"
 }
 ```

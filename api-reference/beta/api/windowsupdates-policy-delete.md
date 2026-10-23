@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Delete a Windows update [policy](../resources/windowsupdates-policy.md) object.
 
-You can use this method with the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
+You can use this method with the following child object types: [driverUpdatePolicy](../resources/windowsupdates-driverupdatepolicy.md), [featureUpdatePolicy](../resources/windowsupdates-featureupdatepolicy.md), and [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -109,4 +109,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
