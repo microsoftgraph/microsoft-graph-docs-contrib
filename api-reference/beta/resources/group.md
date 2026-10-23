@@ -176,6 +176,7 @@ name. |
 | isSubscribedByMail | Boolean | Indicates whether the signed-in user is subscribed to receive email conversations. The default value is `true`. <br><br>Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
 | licenseProcessingState | String | Indicates the status of the group license assignment to all group members. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`. <br><br>Requires `$select` to retrieve. Read-only. |
 | mail | String | The SMTP address for the group, for example, "serviceadmins@contoso.com". <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
+| mailboxId | String | The identifier of the Exchange mailbox associated with a Microsoft 365 group. Treat this value as an opaque identifier and don't parse or validate its format. If the group mailbox isn't provisioned, this property returns `00000000-0000-0000-0000-000000000000`. <br><br>Requires `$select` to retrieve. Read-only. |
 | mailEnabled | Boolean | Specifies whether the group is mail-enabled. Required. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, and `eq` on `null` values). |
 | mailNickname | String | The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : <> , SPACE`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). |
 | membershipRule | String | The rule that determines members for this group if the group is a dynamic group (groupTypes contains `DynamicMembership`). For more information about the syntax of the membership rule, see [Membership Rules syntax](/azure/active-directory/enterprise-users/groups-dynamic-membership). <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
@@ -286,6 +287,7 @@ The following JSON representation shows the resource type.
     "isAssignableToRole",
     "isSubscribedByMail",
     "licenseProcessingState",
+    "mailboxId",
     "unseenConversationsCount",
     "unseenCount",
     "unseenMessagesCount"
@@ -321,6 +323,7 @@ The following JSON representation shows the resource type.
   "isSubscribedByMail": "Boolean",
   "licenseProcessingState": "String",
   "mail": "String",
+  "mailboxId": "String",
   "mailEnabled": "Boolean",
   "mailNickname": "String",
   "onPremisesDomainName": "String",
