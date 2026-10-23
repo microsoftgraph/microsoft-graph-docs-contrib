@@ -39,6 +39,7 @@ The service records this metadata as a `ComplianceEvaluationIncomplete` (`506`) 
 | length | Int64 | The length of the original content in bytes. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md). |
 | modifiedDateTime | DateTimeOffset | The date and time when the evaluated content was last modified. Required. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md). |
 | name | String | A descriptive name for the content or activity; for example, a file name or interaction name. Required. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md). |
+| sensitivityLabels | [currentLabel](../resources/currentlabel.md) collection | Caller-supplied sensitivity labels describing the content. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md). |
 | sequenceNumber | Int64 | A sequence number that indicates the order in which related content was generated or should be processed. Required when **correlationId** is used. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md). |
 
 ## Relationships
@@ -70,6 +71,11 @@ The following JSON representation shows the resource type.
   "length": "Int64",
   "modifiedDateTime": "DateTimeOffset",
   "name": "String",
-  "sequenceNumber": "Int64"
+  "sequenceNumber": "Int64",
+  "sensitivityLabels": [
+    {
+      "@odata.type": "microsoft.graph.currentLabel"
+    }
+  ]
 }
 ```

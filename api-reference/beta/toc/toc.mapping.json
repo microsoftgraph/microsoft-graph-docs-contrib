@@ -3058,6 +3058,7 @@
             "computeRightsAndInheritanceResult",
             "contentActivityMetadata",
             "contentBase",
+            "currentLabel",
             "customMetadataDictionary",
             "deviceMetadata",
             "dlpActionInfo",

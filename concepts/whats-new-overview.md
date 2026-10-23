@@ -115,6 +115,10 @@ Added 35 members, from `PlannerCustomFieldDefinition` through `MESRawEmailConten
 
 ### Security | Data security and compliance
 
+Applications can now supply one or more sensitivity labels with file content submitted to the [processContent](/graph/api/userdatasecurityandgovernance-processcontent?view=graph-rest-beta&preserve-view=true) API by using the **sensitivityLabels** property of [processContentMetadataBase](/graph/api/resources/processcontentmetadatabase?view=graph-rest-beta&preserve-view=true).
+
+Added the `unknownFutureValue` member to the [applicationMode](/graph/api/resources/enums?view=graph-rest-beta&preserve-view=true#applicationmode-values) enumeration as a sentinel for future application modes.
+
 Updated the **evaluationErrorType** enumeration to use customer-facing reasons for incomplete policy evaluations, and removed the **errorMessage** property from the [evaluationErrorDetail](/graph/api/resources/evaluationerrordetail?view=graph-rest-beta&preserve-view=true) complex type. Use **errorType** to identify why an evaluation couldn't be completed.
 
 ### Security | Workbooks

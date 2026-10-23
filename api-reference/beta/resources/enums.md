@@ -6493,6 +6493,15 @@ Possible values for user account types (group membership), per Windows definitio
 |allMessages|
 |unknownFutureValue|
 
+### applicationMode values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+|unknownFutureValue|
+
 ### classificationMethod values
 
 |Member|
