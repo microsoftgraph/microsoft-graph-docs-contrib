@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a report that corresponds to a backup policy. This report contains metrics like backup count statistics which shows the number of artifacts in various stages of protection.
+Represents a report that corresponds to a backup policy. This report contains metrics like backup count statistics that show the number of artifacts in various stages of protection.
 
 ## Properties
 |Property|Type|Description|

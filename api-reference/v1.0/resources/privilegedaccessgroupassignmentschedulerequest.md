@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Assignment schedule request
-ms.date: 07/22/2024
+ms.date: 09/16/2026
 ---
 
 # privilegedAccessGroupAssignmentScheduleRequest resource type
@@ -25,6 +25,7 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 |[Get](../api/privilegedaccessgroupassignmentschedulerequest-get.md)|[privilegedAccessGroupAssignmentScheduleRequest](../resources/privilegedaccessgroupassignmentschedulerequest.md)|Read the properties and relationships of a [privilegedAccessGroupAssignmentScheduleRequest](../resources/privilegedaccessgroupassignmentschedulerequest.md) object.|
 |[Filter by current user](../api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md)|[privilegedAccessGroupAssignmentScheduleRequest](../resources/privilegedaccessgroupassignmentschedulerequest.md) collection|Return assignment schedule requests for the calling principal.|
 |[Cancel](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md)|None|Cancel a pending request for a membership or ownership assignment to a group.|
+|[privilegedAccessGroupAssignmentScheduleRequest: updateRequest](../api/privilegedaccessgroupassignmentschedulerequest-updaterequest.md)|[privilegedAccessGroupAssignmentScheduleRequest](../resources/privilegedaccessgroupassignmentschedulerequest.md)|Submit the result of a custom extension evaluation for the request.|
 
 ## Properties
 |Property|Type|Description|

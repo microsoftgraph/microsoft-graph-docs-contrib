@@ -29,7 +29,7 @@ None.
 | maxLifetime                                 | Duration                        | String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents four days, 12 hours, 30 minutes, and five seconds. This property is required when **restrictionType** is set to `asymmetricKeyLifetime`.|
 | restrictForAppsCreatedAfterDateTime         | DateTimeOffset                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
 | restrictionType                             | appKeyCredentialRestrictionType | A unique identifier key for **keyCredentialConfiguration**. This value also represents the type of restriction being applied. Possible values are `asymmetricKeyLifetime`, `trustedCertificateAuthority`, and `unknownFutureValue`. Each value of restrictionType can be used only once per policy.|
-| state                                       | appManagementRestrictionState   | Indicates whether the restriction is evaluated. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. If `enabled`, the restriction is evaluated. If `disabled`, the restriction isn't evaluated or enforced.|
+| state                                       | appManagementRestrictionState   | Indicates whether the restriction is evaluated. The possible values are: `enabled`, `disabled`, `audit`, `unknownFutureValue`. If `enabled`, the restriction is evaluated and enforced. If `disabled`, the restriction isn't evaluated or enforced. If `audit`, the restriction is evaluated but not enforced.|
 
 ## Relationships
 

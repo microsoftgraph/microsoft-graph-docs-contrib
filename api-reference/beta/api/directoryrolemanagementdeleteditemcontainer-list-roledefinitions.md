@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 List custom [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects that have been soft-deleted from Microsoft Entra directory role management. Built-in role definitions can't be deleted and aren't returned.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -89,6 +91,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
+      "deletedDateTime": "2026-08-24T19:16:58Z",
       "description": "Can manage basic aspects of application registrations.",
       "displayName": "Application Support Administrator",
       "isBuiltIn": false,

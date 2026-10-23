@@ -153,6 +153,7 @@
             "Enhanced Restore"
           ],
           "resources": [
+            "backupReport",
             "backupRestoreRoot",
             "emailNotificationsSetting",
             "protectionPolicyBase",
@@ -163,6 +164,10 @@
             "restorePoint",
             "restoreSessionBase",
             "serviceApp"
+          ],
+          "complexTypes": [
+            "backupCountStatistics",
+            "backupPolicyReport"
           ],
           "childNodes": [
             {
@@ -297,6 +302,7 @@
             "dropInPlaceMode",
             "reservablePlaceMode",
             "resourceLink",
+            "stringDictionary",
             "unavailablePlaceMode"
           ],
           "childNodes": [
@@ -843,6 +849,7 @@
             {
               "name": "Role management",
               "resources": [
+                "directoryRoleManagementDeletedItemContainer",
                 "roleManagement",
                 "unifiedRoleDefinition",
                 "unifiedRoleAssignment"
@@ -935,6 +942,7 @@
                 "externalOriginResourceConnector"
               ],
               "complexTypes": [
+                "accessPackageAssignmentRequestParameters",
                 "externalTokenBasedSapIagConnectionInfo"
               ]
             },
@@ -995,6 +1003,15 @@
             {
               "name": "Privileged Identity Management",
               "childNodes": [
+                {
+                  "name": "Custom extensions",
+                  "resources": [
+                    "roleManagementCustomCalloutExtension"
+                  ],
+                  "complexTypes": [
+                    "unifiedRoleManagementPolicyCustomExtensionRule"
+                  ]
+                },
                 {
                   "name": "PIM for Microsoft Entra roles",
                   "overview": "../../resources/privilegedidentitymanagementv3-overview.md",

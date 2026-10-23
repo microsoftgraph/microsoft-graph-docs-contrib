@@ -25,11 +25,13 @@ Represents an entity that acts as a container for all Windows Autopatch function
 |Relationship|Type|Description|
 |:---|:---|:---|
 |catalog|[microsoft.graph.windowsUpdates.catalog](../resources/windowsupdates-catalog.md)|Catalog of content that can be approved for deployment by Windows Autopatch. Read-only.|
+|data|[microsoft.graph.windowsUpdates.updateData](../resources/windowsupdates-updatedata.md)|Read-only Windows Autopatch device, policy assignment, applicability, and driver reporting data.|
 |deploymentAudiences|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md) collection|The set of [updatableAsset](../resources/windowsupdates-updatableasset.md) resources to which a [deployment](../resources/windowsupdates-deployment.md) can apply.|
 |deployments|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md) collection|Deployments created using Windows Autopatch.|
 |policies|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) collection|A collection of policies for approving the deployment of different content to an audience over time.|
 |products|[microsoft.graph.windowsUpdates.product](../resources/windowsupdates-product.md) collection|A collection of Windows products.|
 |resourceConnections|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md) collection|Service connections to external resources such as analytics workspaces.|
+|tenantSettings|[microsoft.graph.windowsUpdates.tenantSetting](../resources/windowsupdates-tenantsetting.md)|The Windows Autopatch settings for the current tenant.|
 |updatableAssets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Assets registered with Windows Autopatch that can receive updates.|
 |updatePolicies|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) collection|A collection of policies for approving the deployment of different content to an audience over time.|
 

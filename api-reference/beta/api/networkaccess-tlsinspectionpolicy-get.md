@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Get a [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

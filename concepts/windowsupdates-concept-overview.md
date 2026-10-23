@@ -90,6 +90,14 @@ Additionally, you can configure monitoring rules that are unique to your organiz
 
 To learn more, see [Manage monitoring rules for a deployment](windowsupdates-manage-monitoring-rules.md).
 
+## Windows Autopatch policy and reporting APIs
+
+In Microsoft Graph beta, you can use the [policy](/graph/api/resources/windowsupdates-policy?view=graph-rest-beta&preserve-view=true) and [ring](/graph/api/resources/windowsupdates-ring?view=graph-rest-beta&preserve-view=true) resources to manage driver and firmware, feature, and quality update policies. You can also:
+
+- Manage tenant-level and MDM application settings through [tenantSetting](/graph/api/resources/windowsupdates-tenantsetting?view=graph-rest-beta&preserve-view=true) and [mdmAppSetting](/graph/api/resources/windowsupdates-mdmappsetting?view=graph-rest-beta&preserve-view=true).
+- Discover update applicability for policies through [applicableCatalog](/graph/api/resources/windowsupdates-applicablecatalog?view=graph-rest-beta&preserve-view=true).
+- Read device profiles, policy assignments, catalog applicability summaries, and driver deployment status through [updateData](/graph/api/resources/windowsupdates-updatedata?view=graph-rest-beta&preserve-view=true).
+
 ## API reference
 
 Looking for the API reference for this service?

@@ -32,7 +32,7 @@ None.
 | publicClient | [redirectUriPlatformAllowedSchemeConfiguration](../resources/redirecturiplatformallowedschemeconfiguration.md) | Platform-specific allowed scheme configuration for public client applications (native/mobile apps). |
 | restrictForAppsCreatedAfterDateTime | DateTimeOffset | Date and time when this restriction starts applying to newly created applications. Applications created before this date are not affected. |
 | spa | [redirectUriPlatformAllowedSchemeConfiguration](../resources/redirecturiplatformallowedschemeconfiguration.md) | Platform-specific allowed scheme configuration for single-page applications (SPAs). |
-| state | appManagementRestrictionState | Indicates whether the restriction is enabled or disabled. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. |
+| state | appManagementRestrictionState | Indicates whether the restriction is evaluated. The possible values are: `enabled`, `disabled`, `audit`, `unknownFutureValue`. If `enabled`, the restriction is evaluated and enforced. If `disabled`, the restriction isn't evaluated or enforced. If `audit`, the restriction is evaluated but not enforced. |
 | web | [redirectUriPlatformAllowedSchemeConfiguration](../resources/redirecturiplatformallowedschemeconfiguration.md) | Platform-specific allowed scheme configuration for web applications. |
 
 ## Relationships

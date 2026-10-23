@@ -26,7 +26,7 @@ Represents the count of artifacts in each of the protection stages.
 |protectedInProgress|Int32|The count of artifacts whose protection attempt is currently in progress. This metric applies to artifacts for which the process to start or resume taking backups is still required.|
 |removed|Int32|The count of artifacts not associated with any policy. This property is always `null` for a policy-level report. Nullable.|
 |total|Int32|The count of artifacts in the specified entity. The currently supported entity is a backup policy.|
-|unprotectedCompleted|Int32|The count of artifacts that are no longer actively protected. These artifacts have historical restore points, but no new backups are being taken.|
+|unprotectedCompleted|Int32|The count of artifacts that are no longer actively protected. These artifacts have historical restore points, but no new backups are taken.|
 |unprotectedFailed|Int32|The count of artifacts for which unprotection was attempted but didn't complete. These artifacts are typically in the protected state.|
 |unprotectedInProgress|Int32|The count of artifacts for which unprotection is currently in progress.|
 

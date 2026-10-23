@@ -64,7 +64,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.roomList",
   "id": "String (identifier)",
-  "customProperties": {"String": "String"},
+  "customProperties": {"@odata.type": "microsoft.graph.stringDictionary"},
   "displayName": "String",
   "geoCoordinates": {
     "@odata.type": "microsoft.graph.outlookGeoCoordinates"

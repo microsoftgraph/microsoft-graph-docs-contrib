@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customCalloutExtensionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCalloutExtensionType** enumeration type.",
+          "Target": "customCalloutExtensionType"
+        },
+        {
+          "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customExtensionResourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensionResourceType** enumeration type.",
+          "Target": "customExtensionResourceType"
+        },
+        {
+          "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "evaluationOutcome",
+          "ChangeType": "Addition",
+          "Description": "Added the **evaluationOutcome** enumeration type.",
+          "Target": "evaluationOutcome"
+        },
+        {
+          "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+          "ApiChange": "Property",
+          "ChangedApiName": "maximumRetries",
+          "ChangeType": "Change",
+          "Description": "Added support for values from `0` through `5` for the **maximumRetries** property of [customExtensionClientConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customextensionclientconfiguration?view=graph-rest-1.0) when configuring a [roleManagementCustomCalloutExtension](https://learn.microsoft.com/en-us/graph/api/resources/rolemanagementcustomcalloutextension?view=graph-rest-1.0). The supported values for other custom extensions remain `0` or `1`.",
+          "Target": "customExtensionClientConfiguration"
+        },
+        {
+          "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+          "ApiChange": "Property",
+          "ChangedApiName": "timeoutInMilliseconds",
+          "ChangeType": "Change",
+          "Description": "Added support for values from `1000` through `60000` milliseconds for the **timeoutInMilliseconds** property of [customExtensionClientConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customextensionclientconfiguration?view=graph-rest-1.0) when configuring a [roleManagementCustomCalloutExtension](https://learn.microsoft.com/en-us/graph/api/resources/rolemanagementcustomcalloutextension?view=graph-rest-1.0). The supported range for other custom extensions remains `200` through `2000` milliseconds.",
+          "Target": "customExtensionClientConfiguration"
+        },
+        {
+          "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customExtensions",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensions** relationship to the [privilegedAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/privilegedaccessroot?view=graph-rest-1.0) resource.",
+          "Target": "privilegedAccessRoot"
+        },
+        {
+          "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleManagementCustomCalloutExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleManagementCustomCalloutExtension](https://learn.microsoft.com/en-us/graph/api/resources/rolemanagementcustomcalloutextension?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "roleManagementCustomCalloutExtension"
+        },
+        {
+          "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementPolicyCustomExtensionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementPolicyCustomExtensionRule](https://learn.microsoft.com/en-us/graph/api/resources/unifiedrolemanagementpolicycustomextensionrule?view=graph-rest-1.0) resource.",
+          "Target": "unifiedRoleManagementPolicyCustomExtensionRule"
+        },
+        {
+          "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateRequest](https://learn.microsoft.com/en-us/graph/api/privilegedaccessgroupassignmentschedulerequest-updaterequest?view=graph-rest-1.0) method to the [privilegedAccessGroupAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedaccessgroupassignmentschedulerequest?view=graph-rest-1.0) resource.",
+          "Target": "privilegedAccessGroupAssignmentScheduleRequest"
+        },
+        {
+          "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateRequest](https://learn.microsoft.com/en-us/graph/api/unifiedroleassignmentschedulerequest-updaterequest?view=graph-rest-1.0) method to the [unifiedRoleAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentschedulerequest?view=graph-rest-1.0) resource.",
+          "Target": "unifiedRoleAssignmentScheduleRequest"
+        }
+      ],
+      "Id": "536ffa70-8c23-4e2f-a459-568c57e34780",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-16T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c87ef6a5-2b8c-4d1f-9e3a-7f4b2e6d8c91",
           "ApiChange": "Enumeration",
           "ChangedApiName": "isApproverInformationVisible",

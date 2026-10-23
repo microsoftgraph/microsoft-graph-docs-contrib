@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Get a list of [generativeAIInsight](../resources/networkaccess-generativeaiinsight.md) objects and their properties for Global Secure Access traffic insights.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

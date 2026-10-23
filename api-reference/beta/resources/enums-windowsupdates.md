@@ -12,6 +12,8 @@ ms.date: 08/31/2024
 
 Namespace: microsoft.graph.windowsUpdates
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 ### azureADDeviceRegistrationErrorReason values 
 
 |Member|
@@ -152,6 +154,96 @@ Namespace: microsoft.graph.windowsUpdates
 |:---|
 |approved|
 |suspended|
+|unknownFutureValue|
+
+### approvedBy values
+
+|Member|
+|:---|
+|system|
+|user|
+|unknownFutureValue|
+
+### deviceClientState values
+
+|Member|
+|:---|
+|offering|
+|onHold|
+|installing|
+|installed|
+|cancelled|
+|uninstalling|
+|uninstalled|
+|notOffering|
+|unknownFutureValue|
+
+### deviceClientSubstate values
+
+|Member|
+|:---|
+|deferred|
+|offerReady|
+|paused|
+|offerReceived|
+|downloadStart|
+|downloadComplete|
+|installStart|
+|installComplete|
+|restartRequired|
+|restartInitiated|
+|restartComplete|
+|updateInstalled|
+|rollbackComplete|
+|userCancelled|
+|deviceCancelled|
+|uninstall|
+|rollback|
+|updateUninstalled|
+|notSupported|
+|previousUpdateInProgress|
+|unknownFutureValue|
+
+### deviceServiceState values
+
+|Member|
+|:---|
+|unknown|
+|pending|
+|offering|
+|onHold|
+|cancelled|
+|notOffering|
+|unknownFutureValue|
+
+### deviceServiceSubstate values
+
+|Member|
+|:---|
+|unknown|
+|scheduled|
+|offerReady|
+|adminPaused|
+|adminCancelled|
+|removedFromDeployment|
+|notOffering|
+|unknownFutureValue|
+
+### hotpatchReadiness values
+
+|Member|
+|:---|
+|ready|
+|notReady|
+|unknownFutureValue|
+
+### osStatus values
+
+|Member|
+|:---|
+|endOfServicing|
+|inServicing|
+|nearEndOfServicing|
 |unknownFutureValue|
 
 <!--

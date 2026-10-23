@@ -32,6 +32,9 @@ This resource supports
 |[Delete task list](../api/todotasklist-delete.md)|None| Delete the specified [todoTaskList](todotasklist.md) .|
 |[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](todotask.md) collection|Get all the [todoTask](todotask.md) resources in the specified list.|
 |[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list.|
+|**Extended properties**| | |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md)|[todoTaskList](todotasklist.md)|Create one or more single-value extended properties in a new or existing [todoTaskList](todotasklist.md) object.|
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)|[todoTaskList](todotasklist.md)|Get [todoTaskList](todotasklist.md) objects that contain a single-value extended property by using `$expand` or `$filter`.|
 
 ## Properties
 |Property|Type|Description|
@@ -54,7 +57,7 @@ This resource supports
 |Relationship|Type|Description|
 |:---|:---|:---|
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the task list. Nullable.|
-|singleValueExtendedProperties|[singleValueExtendedProperty](singlevalueextendedproperty.md) collection|The collection of single-value extended properties defined for the task list. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueExtendedProperty](singlevalueextendedproperty.md) collection|The collection of single-value extended properties defined for the task list. Nullable.|
 |tasks|[todoTask](todotask.md) collection|The tasks in this task list. Read-only. Nullable.|
 
 ## JSON representation
@@ -77,6 +80,5 @@ The following JSON representation shows the resource type.
   "wellknownListName": "String"
 }
 ```
-
 
 

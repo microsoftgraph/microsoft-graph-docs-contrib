@@ -5,14 +5,14 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 07/26/2024
+ms.date: 09/16/2026
 ---
 
 # azureAdTokenAuthentication resource type
 
 Namespace: microsoft.graph
 
-Defines the Microsoft Entra application used to authenticate a logic app with a [customTaskExtension](../resources/identitygovernance-customtaskextension.md), [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md), or [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md). This object is configured in the **authenticationConfiguration** property of those resources. Only the app ID of the application is required. Derived from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
+Defines the Microsoft Entra application used to authenticate a logic app with a [customTaskExtension](../resources/identitygovernance-customtaskextension.md), [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md), [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md), or [roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md). This object is configured in the **authenticationConfiguration** property of those resources. Only the app ID of the application is required. Derived from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
 
 ## Properties
 

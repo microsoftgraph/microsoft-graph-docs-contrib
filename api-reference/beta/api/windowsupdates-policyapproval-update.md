@@ -50,7 +50,7 @@ PATCH /admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|catalogEntryId|String|The catalog entry ID to approve. Optional.|
+|startDateTime|DateTimeOffset|The date and time when the approved content can start being offered. You can't change this property for a system-created approval. Optional.|
 |status|microsoft.graph.windowsUpdates.approvalStatus|The approval status. The possible values are: `approved`, `suspended`, `unknownFutureValue`. Optional.|
 
 ## Response
@@ -74,7 +74,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
-  "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
+  "startDateTime": "2026-10-06T09:00:00Z",
   "status": "suspended"
 }
 ```
@@ -125,11 +125,12 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
+  "approvedBy": "user",
   "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
-  "status": "suspended",
+  "createdDateTime": "2026-10-02T10:00:00Z",
   "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
-  "createdDateTime": "2020-06-09T10:00:00Z",
-  "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+  "lastModifiedDateTime": "2026-10-02T10:30:00Z",
+  "startDateTime": "2026-10-06T09:00:00Z",
+  "status": "suspended"
 }
 ```
-

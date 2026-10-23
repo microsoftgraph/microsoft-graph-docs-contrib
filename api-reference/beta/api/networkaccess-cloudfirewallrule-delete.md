@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Delete a [cloudFirewallRule](../resources/networkaccess-cloudfirewallrule.md) object from a [cloudFirewallPolicy(../resources/networkaccess-cloudfirewallpolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

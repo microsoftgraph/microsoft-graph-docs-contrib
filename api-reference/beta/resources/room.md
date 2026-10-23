@@ -80,7 +80,7 @@ The following JSON representation shows the resource type.
   "bookingType": "String",
   "building": "String",
   "capacity": "Int32",
-  "customProperties": {"String": "String"},
+  "customProperties": {"@odata.type": "microsoft.graph.stringDictionary"},
   "displayDeviceName": "String",
   "displayName": "String",
   "emailAddress": "String",

@@ -835,22 +835,36 @@
             "Windows updates"
           ],
           "resources": [
+            "microsoft.graph.windowsUpdates.applicableCatalog",
+            "microsoft.graph.windowsUpdates.applicableCatalogSummary",
+            "microsoft.graph.windowsUpdates.applicableDevice",
             "microsoft.graph.windowsUpdates.azureADDevice",
             "microsoft.graph.windowsUpdates.catalog",
             "microsoft.graph.windowsUpdates.complianceChange",
             "microsoft.graph.windowsUpdates.contentApproval",
             "microsoft.graph.windowsUpdates.deployment",
             "microsoft.graph.windowsUpdates.deploymentAudience",
+            "microsoft.graph.windowsUpdates.deviceProfile",
+            "microsoft.graph.windowsUpdates.driverUpdateDeviceStatus",
+            "microsoft.graph.windowsUpdates.driverUpdatePolicy",
+            "microsoft.graph.windowsUpdates.driverUpdateReport",
+            "microsoft.graph.windowsUpdates.driverUpdateRing",
+            "microsoft.graph.windowsUpdates.featureUpdatePolicy",
+            "microsoft.graph.windowsUpdates.featureUpdateRing",
+            "microsoft.graph.windowsUpdates.mdmAppSetting",
             "microsoft.graph.windowsUpdates.operationalInsightsConnection",
             "microsoft.graph.windowsUpdates.policy",
-            "microsoft.graph.windowsUpdates.qualityUpdatePolicy",
             "microsoft.graph.windowsUpdates.policyApproval",
+            "microsoft.graph.windowsUpdates.policyAssignment",
             "microsoft.graph.windowsUpdates.product",
+            "microsoft.graph.windowsUpdates.qualityUpdatePolicy",
+            "microsoft.graph.windowsUpdates.qualityUpdateRing",
             "microsoft.graph.windowsUpdates.resourceConnection",
             "microsoft.graph.windowsUpdates.ring",
-            "microsoft.graph.windowsUpdates.qualityUpdateRing",
+            "microsoft.graph.windowsUpdates.tenantSetting",
             "microsoft.graph.windowsUpdates.updatableAsset",
             "microsoft.graph.windowsUpdates.updatableAssetGroup",
+            "microsoft.graph.windowsUpdates.updateData",
             "microsoft.graph.windowsUpdates.updatePolicy"
           ],
           "complexTypes": [
@@ -875,6 +889,7 @@
             "microsoft.graph.windowsUpdates.deploymentSettings",
             "microsoft.graph.windowsUpdates.deploymentState",
             "microsoft.graph.windowsUpdates.deploymentStateReason",
+            "microsoft.graph.windowsUpdates.driverUpdateApprovalRule",
             "microsoft.graph.windowsUpdates.driverUpdateCatalogEntry",
             "microsoft.graph.windowsUpdates.driverUpdateFilter",
             "microsoft.graph.windowsUpdates.durationDrivenRolloutSettings",
@@ -1382,6 +1397,26 @@
           ],
           "childNodes": [
             {
+              "name": "Access drift",
+              "resources": [
+                "accessDriftDetail",
+                "accessDriftReport",
+                "accessDriftSummary",
+                "driftIdentityInfo",
+                "entraAccessDriftDetail",
+                "entraDriftIdentityInfo",
+                "localDriftIdentityInfo"
+              ],
+              "complexTypes": [
+                "accessDriftReportRequest",
+                "applicationDriftResourceInfo",
+                "driftAccessPackageInfo",
+                "driftCounts",
+                "driftResourceInfo",
+                "groupDriftResourceInfo"
+              ]
+            },
+            {
               "name": "Access reviews",
               "overview": "../../resources/accessreviewsv2-overview.md",
               "resources": [
@@ -1504,6 +1539,7 @@
                 "microsoft.graph.identityGovernance.operatorBetween",
                 "microsoft.graph.identityGovernance.operatorEqualTo",
                 "microsoft.graph.identityGovernance.operatorLessThanEqualTo",
+                "microsoft.graph.identityGovernance.selectedAgentBuilderPlatformsSubjectSet",
                 "microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
                 "microsoft.graph.identityGovernance.workflowExecutionTriggerOperator",
                 "microsoft.graph.identityGovernance.workflowTriggerTimeBasedOperator"
@@ -1690,6 +1726,7 @@
                 "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onPasswordSubmitListener",
+                "onPasswordUpdateListener",
                 "onVerifiedIdClaimValidationListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
@@ -1813,6 +1850,7 @@
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
                 "onPasswordSubmitCustomExtension",
+                "onPasswordUpdateCustomExtension",
                 "onVerifiedIdClaimValidationCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]

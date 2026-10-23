@@ -5,14 +5,14 @@ author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 08/08/2024
+ms.date: 09/16/2026
 ---
 
 # customExtensionAuthenticationConfiguration resource type
 
 Namespace: microsoft.graph
 
-Abstract base type that exposes the configuration for the **authenticationConfiguration** property of the derived types that inherit from the [customCalloutExtension](../resources/customcalloutextension.md) abstract type.
+Abstract base type that exposes the configuration for the **authenticationConfiguration** property of the derived types that inherit from the [customCalloutExtension](../resources/customcalloutextension.md) abstract type, including [roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md).
 
 This abstract type is inherited by the following resource types:
 - [azureAdTokenAuthentication](../resources/azureadtokenauthentication.md)

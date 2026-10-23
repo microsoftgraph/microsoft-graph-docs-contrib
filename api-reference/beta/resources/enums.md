@@ -40,18 +40,6 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 |:---|
 |unsupportedFile|
 |passwordProtectedFile|
-|fileTooLarge|
-|archiveSizeTooLarge|
-|textExceedsMceThreshold|
-|partiallyScannedArchive|
-|partialImageExtraction|
-|imageOcrPartialResult|
-|ocrProcessingFailure|
-|ocrQuotaExhausted|
-|classificationServiceError|
-|sitExtractionFailure|
-|textExtractionFailure|
-|archiveTextExtractionError|
 |missingOrInvalidConfiguration|
 |agentFailure|
 |enforcementTimeout|
@@ -61,6 +49,11 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 |serviceTimeout|
 |serviceError|
 |serviceUnavailable|
+|contentTooLarge|
+|partiallyScanned|
+|unscannable|
+|billingNotSetup|
+|authenticationOrAuthorizationFailed|
 |unknownFutureValue|
 
 ### meetingEngagementType values
@@ -105,6 +98,40 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 |unknown|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+
+### accessDriftReportResourceType values
+
+|Member|
+|:---|
+|application|
+|group|
+|unknownFutureValue|
+
+### accessDriftResourceType values
+
+|Member|
+|:---|
+|application|
+|group|
+|unknownFutureValue|
+
+### accessDriftSource values
+
+|Member|
+|:---|
+|entra|
+|externalApplication|
+|unknownFutureValue|
+
+### accessDriftType values
+
+|Member|
+|:---|
+|unauthorized|
+|missing|
+|inSync|
 |unknownFutureValue|
 
 ### accessReviewPrincipalScopeType values
@@ -1217,6 +1244,7 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | ---- |
 | enabled |
 | disabled |
+| audit |
 | unknownFutureValue |
 
 ### appCredentialRestrictionType values
@@ -4893,6 +4921,7 @@ Possible values for user account types (group membership), per Windows definitio
 |attributeCollectionSubmit|
 |emailOtpSend|
 |passwordSubmit|
+|passwordUpdate|
 
 ### microsoftAuthenticatorAuthenticationMethodClientAppName values
 
