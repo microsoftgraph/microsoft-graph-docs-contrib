@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Read the properties and relationships of a [policy](../resources/windowsupdates-policy.md) object.
 
-You can use this method with the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
+You can use this method with the following child object types: [driverUpdatePolicy](../resources/windowsupdates-driverupdatepolicy.md), [featureUpdatePolicy](../resources/windowsupdates-featureupdatepolicy.md), and [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -117,18 +117,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
-    "displayName": "Patch Tuesday Test",
-    "description": "Quality update policy to test upcoming Patch Tuesday updates",
-    "approvalRules": [
-      {
-        "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
-      }
-    ],
-    "id": "f316bfd9-c84e-a334-cebe-071d3c64b2c1",
-    "createdDateTime": "2020-06-09T10:00:00Z",
-    "lastModifiedDateTime": "2020-06-09T10:00:00Z"
-  }
+  "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
+  "displayName": "Patch Tuesday Test",
+  "description": "Quality update policy to test upcoming Patch Tuesday updates",
+  "approvalRules": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
+    }
+  ],
+  "id": "f316bfd9-c84e-a334-cebe-071d3c64b2c1",
+  "createdDateTime": "2020-06-09T10:00:00Z",
+  "lastModifiedDateTime": "2020-06-09T10:00:00Z"
 }
 ```

@@ -19,7 +19,8 @@ Represents an entity that governs the update deployment ring specifically for qu
 Inherits from [ring](../resources/windowsupdates-ring.md).
 
 ## Methods
-For the list of supported methods, see [ring](../resources/windowsupdates-ring.md).
+
+This resource is part of a polymorphic collection managed by the [ring resource](../resources/windowsupdates-ring.md) base type. Operations are performed through the base type endpoints.
 
 ## Properties
 |Property|Type|Description|
@@ -63,4 +64,3 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-

@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Update the properties of a [ring](../resources/windowsupdates-ring.md) object.
 
-You can use this method with the following child object type: [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
+You can use this method with the following child object types: [driverUpdateRing](../resources/windowsupdates-driverupdatering.md), [featureUpdateRing](../resources/windowsupdates-featureupdatering.md), and [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -48,16 +48,22 @@ PATCH /admin/windows/updates/policies/{policyId}/rings/{ringId}
 
 ## Request body
 
+Specify the concrete type in the `@odata.type` property. Supported values include `#microsoft.graph.windowsUpdates.driverUpdateRing`, `#microsoft.graph.windowsUpdates.featureUpdateRing`, and `#microsoft.graph.windowsUpdates.qualityUpdateRing`.
+
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deferralInDays|Int32|  The quality update deferral period (days). The value must be between `0` and `30`. Optional.|
+|deferralInDays|Int32|The update deferral period in days. The value must be between `0` and `30`. Optional.|
 |description|String| The ring description. The maximum length is 1,500 characters. Optional.|
 |displayName|String| The ring display name.The maximum length is 200 characters. Optional.|
 |excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups. Optional.|
 |includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Optional.|
-|isPaused|Boolean| The pause action for the quality update ring policy. Optional.|
+|isHotpatchEnabled|Boolean|Indicates whether hotpatch updates are enabled. Applies only to **qualityUpdateRing**. Optional.|
+|isOfferOptional|Boolean|Indicates whether the feature update is offered to end users as optional. Applies only to **featureUpdateRing**. Optional.|
+|isPaused|Boolean|Indicates whether update offers for the ring are paused. Optional.|
+|offerDurationInDays|Int32|The total length of the gradual rollout window, in days. Applies only to **featureUpdateRing**. Optional.|
+|offerIntervalInDays|Int32|How often, in days, a new subset of devices is offered the update. Applies only to **featureUpdateRing**. Optional.|
 
 ## Response
 
@@ -75,7 +81,7 @@ The following example shows how to update a quality update ring.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/{ringId}
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/33333333-3333-4333-8333-333333333333/rings/66666666-6666-4666-8666-666666666666
 Content-Type: application/json
 
 {
@@ -137,10 +143,10 @@ Content-Type: application/json
   "displayName": "Ring0 - IT devices",
   "description": "First deployment ring to test updates before going to prod.",
   "includedGroupAssignment": {
-    "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
+    "@odata.type": "#microsoft.graph.windowsUpdates.includedGroupAssignment"
   },
   "excludedGroupAssignment": {
-    "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
+    "@odata.type": "#microsoft.graph.windowsUpdates.excludedGroupAssignment"
   },
   "deferralInDays": 5,
   "isPaused": false,
@@ -150,4 +156,3 @@ Content-Type: application/json
   "isHotpatchEnabled": true
 }
 ```
-

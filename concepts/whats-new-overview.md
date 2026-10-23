@@ -57,6 +57,14 @@ Added the `audit` member to the **appManagementRestrictionState** enumeration ty
 
 Updated the date when deprecated image properties on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true), [cloudPcSourceDeviceImage](/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta&preserve-view=true), and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) will stop returning data from January 31, 2024 to December 7, 2026. No replacement is planned for **recommendedSku**. Review the replacement property guidance in these resource topics and update affected integrations before the deadline.
 
+### Device and app management | Device updates
+
+- Added the [driverUpdatePolicy](/graph/api/resources/windowsupdates-driverupdatepolicy?view=graph-rest-beta&preserve-view=true), [driverUpdateRing](/graph/api/resources/windowsupdates-driverupdatering?view=graph-rest-beta&preserve-view=true), and [driverUpdateApprovalRule](/graph/api/resources/windowsupdates-driverupdateapprovalrule?view=graph-rest-beta&preserve-view=true) resource types to manage driver and firmware update approvals and deployments with Windows Autopatch.
+- Added the [featureUpdatePolicy](/graph/api/resources/windowsupdates-featureupdatepolicy?view=graph-rest-beta&preserve-view=true) and [featureUpdateRing](/graph/api/resources/windowsupdates-featureupdatering?view=graph-rest-beta&preserve-view=true) resource types to manage feature update deployments and gradual rollout settings with Windows Autopatch.
+- Added the [tenantSetting](/graph/api/resources/windowsupdates-tenantsetting?view=graph-rest-beta&preserve-view=true) and [mdmAppSetting](/graph/api/resources/windowsupdates-mdmappsetting?view=graph-rest-beta&preserve-view=true) resource types to manage tenant-level and MDM application settings for Windows Autopatch.
+- Added the [applicableCatalog](/graph/api/resources/windowsupdates-applicablecatalog?view=graph-rest-beta&preserve-view=true) and [applicableDevice](/graph/api/resources/windowsupdates-applicabledevice?view=graph-rest-beta&preserve-view=true) resource types to identify updates that apply to devices targeted by a Windows Autopatch policy.
+- Added the [updateData](/graph/api/resources/windowsupdates-updatedata?view=graph-rest-beta&preserve-view=true) resource type and related device profile, policy assignment, catalog applicability, and driver reporting resources to retrieve Windows Autopatch deployment data.
+
 ### Files
 
 Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to support SharePoint service prioritization reports. Use this report to retrieve total, standard, heavy, billed standard, and billed heavy API request counts by application and date.
