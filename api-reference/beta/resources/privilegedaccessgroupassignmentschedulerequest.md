@@ -13,6 +13,8 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents requests for operations to create, update, delete, extend, and renew a membership or ownership assignment in PIM for Groups. The privilegedAccessGroupAssignmentScheduleRequest object is also created when an authorized principal requests a just-in-time activation of an eligible access assignment to a group's membership or ownership.
 
 Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccessschedulerequest.md).
@@ -25,6 +27,7 @@ Inherits from [privilegedAccessScheduleRequest](../resources/privilegedaccesssch
 |[Get](../api/privilegedaccessgroupassignmentschedulerequest-get.md)|[privilegedAccessGroupAssignmentScheduleRequest](../resources/privilegedaccessgroupassignmentschedulerequest.md)|Read the properties and relationships of a [privilegedAccessGroupAssignmentScheduleRequest](../resources/privilegedaccessgroupassignmentschedulerequest.md) object.|
 |[Filter by current user](../api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md)|[privilegedAccessGroupAssignmentScheduleRequest](../resources/privilegedaccessgroupassignmentschedulerequest.md) collection|Return assignment schedule requests for the calling principal.|
 |[Cancel](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md)|None|Cancel a pending request for a membership or ownership assignment to a group.|
+|[privilegedAccessGroupAssignmentScheduleRequest: updateRequest](../api/privilegedaccessgroupassignmentschedulerequest-updaterequest.md)|[privilegedAccessGroupAssignmentScheduleRequest](../resources/privilegedaccessgroupassignmentschedulerequest.md)|Submit the result of a custom extension evaluation for a group assignment request.|
 
 ## Properties
 |Property|Type|Description|
@@ -91,4 +94,3 @@ The following JSON representation shows the resource type.
   "targetScheduleId": "String"
 }
 ```
-

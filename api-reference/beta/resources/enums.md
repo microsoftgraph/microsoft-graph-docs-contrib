@@ -987,6 +987,35 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | countAndNames |
 | unknownFutureValue |
 
+### customCalloutExtensionType values
+
+|Member|
+|:---|
+|preApproval|
+|postApproval|
+|grant|
+|revoke|
+|unknownFutureValue|
+
+### customExtensionResourceType values
+
+|Member|
+|:---|
+|entraRoles|
+|azureResources|
+|entraGroups|
+|unknownFutureValue|
+|applicationAuthorization|
+|appRoles|
+
+### evaluationOutcome values
+
+|Member|
+|:---|
+|approved|
+|denied|
+|unknownFutureValue|
+
 ### customExtensionCalloutInstanceStatus values
 
 | Member |

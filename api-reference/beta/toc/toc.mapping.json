@@ -1574,6 +1574,15 @@
               "name": "Privileged Identity Management iteration 3",
               "childNodes": [
                 {
+                  "name": "Custom extensions",
+                  "resources": [
+                    "roleManagementCustomCalloutExtension"
+                  ],
+                  "complexTypes": [
+                    "unifiedRoleManagementPolicyCustomExtensionRule"
+                  ]
+                },
+                {
                   "name": "PIM for Microsoft Entra roles",
                   "overview": "../../resources/privilegedidentitymanagementv3-overview.md",
                   "keywords": [
