@@ -3043,9 +3043,11 @@
             "userDataSecurityAndGovernance"
           ],
           "complexTypes": [
+            "activityMetadata",
+            "agentMetadata",
+            "agentParticipant",
             "aiAgentInfo",
             "aiInteractionEntity",
-            "activityMetadata",
             "aiInteractionPlugin",
             "autoLabeling",
             "binaryContent",
@@ -3069,6 +3071,7 @@
             "embeddingInput",
             "groupScope",
             "integratedApplicationMetadata",
+            "interactionParticipant",
             "labelActionBase",
             "labelContentRight",
             "labelPolicy",
@@ -3077,9 +3080,9 @@
             "policyBinding",
             "policyConfiguration",
             "policyLocation",
+            "policyLocationAgent",
             "policyLocationApplication",
             "policyLocationDomain",
-            "policyLocationTool",
             "policyLocationUrl",
             "policyScopeBase",
             "policyTenantScope",
@@ -3099,6 +3102,8 @@
             "scopeBase",
             "tenantScope",
             "textContent",
+            "toolParticipant",
+            "userParticipant",
             "userScope"
           ]
         },

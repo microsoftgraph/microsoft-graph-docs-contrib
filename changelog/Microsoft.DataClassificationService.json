@@ -359,6 +359,112 @@
     {
       "ChangeList": [
         {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentMetadata](https://learn.microsoft.com/en-us/graph/api/resources/agentmetadata?view=graph-rest-beta) resource for agent policy scoping and evaluation.",
+          "Target": "agentMetadata"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyLocationAgent",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyLocationAgent](https://learn.microsoft.com/en-us/graph/api/resources/policylocationagent?view=graph-rest-beta) resource for agent data loss prevention policy locations.",
+          "Target": "policyLocationAgent"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Resource",
+          "ChangedApiName": "interactionParticipant",
+          "ChangeType": "Addition",
+          "Description": "Added the abstract [interactionParticipant](https://learn.microsoft.com/en-us/graph/api/resources/interactionparticipant?view=graph-rest-beta) resource for parties in agent interactions.",
+          "Target": "interactionParticipant"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentParticipant",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentParticipant](https://learn.microsoft.com/en-us/graph/api/resources/agentparticipant?view=graph-rest-beta) resource.",
+          "Target": "agentParticipant"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Resource",
+          "ChangedApiName": "toolParticipant",
+          "ChangeType": "Addition",
+          "Description": "Added the [toolParticipant](https://learn.microsoft.com/en-us/graph/api/resources/toolparticipant?view=graph-rest-beta) resource.",
+          "Target": "toolParticipant"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userParticipant",
+          "ChangeType": "Addition",
+          "Description": "Added the [userParticipant](https://learn.microsoft.com/en-us/graph/api/resources/userparticipant?view=graph-rest-beta) resource.",
+          "Target": "userParticipant"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Property",
+          "ChangedApiName": "participants",
+          "ChangeType": "Addition",
+          "Description": "Added the **participants** property to the [activityMetadata](https://learn.microsoft.com/en-us/graph/api/resources/activitymetadata?view=graph-rest-beta) resource.",
+          "Target": "activityMetadata"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Method",
+          "ChangedApiName": "processContent",
+          "ChangeType": "Addition",
+          "Description": "Added the tenant-scoped [processContent](https://learn.microsoft.com/en-us/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta) method for agent interactions.",
+          "Target": "tenantDataSecurityAndGovernance"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Method",
+          "ChangedApiName": "compute",
+          "ChangeType": "Change",
+          "Description": "Updated [tenantProtectionScopeContainer: compute](https://learn.microsoft.com/en-us/graph/api/tenantprotectionscopecontainer-compute?view=graph-rest-beta) to support agent evaluation scopes and agent policy locations.",
+          "Target": "tenantProtectionScopeContainer"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Property",
+          "ChangedApiName": "evaluationScope",
+          "ChangeType": "Change",
+          "Description": "Updated the **evaluationScope** property of [processContentRequest](https://learn.microsoft.com/en-us/graph/api/resources/processcontentrequest?view=graph-rest-beta) to support agent evaluation.",
+          "Target": "processContentRequest"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyLocationTool",
+          "ChangeType": "Deletion",
+          "Description": "Removed the policyLocationTool resource from the [policy location](https://learn.microsoft.com/en-us/graph/api/resources/policylocation?view=graph-rest-beta) model.",
+          "Target": "policyLocationTool"
+        },
+        {
+          "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+          "ApiChange": "Property",
+          "ChangedApiName": "sourceLocation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sourceLocation** property from the [protectedApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/protectedapplicationmetadata?view=graph-rest-beta) resource.",
+          "Target": "protectedApplicationMetadata"
+        }
+      ],
+      "Id": "6eddd533-9808-4da2-9ed9-83d58170f997",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-22T21:32:05.8948029Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f0da4038-76fa-42a9-a297-c857c83fd695",
           "ApiChange": "Member",
           "ChangedApiName": "contentFiltering",

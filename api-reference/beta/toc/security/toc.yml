@@ -680,6 +680,10 @@ items:
     items:
     - name: Activity metadata
       href: ../../resources/activitymetadata.md
+    - name: Agent metadata
+      href: ../../resources/agentmetadata.md
+    - name: Agent participant
+      href: ../../resources/agentparticipant.md
     - name: Ai agent info
       href: ../../resources/aiagentinfo.md
     - name: Ai interaction entity
@@ -728,6 +732,8 @@ items:
       href: ../../resources/groupscope.md
     - name: Integrated application metadata
       href: ../../resources/integratedapplicationmetadata.md
+    - name: Interaction participant
+      href: ../../resources/interactionparticipant.md
     - name: Label action base
       href: ../../resources/labelactionbase.md
     - name: Label content right
@@ -742,12 +748,12 @@ items:
       href: ../../resources/policybinding.md
     - name: Policy configuration
       href: ../../resources/policyconfiguration.md
+    - name: Policy location agent
+      href: ../../resources/policylocationagent.md
     - name: Policy location application
       href: ../../resources/policylocationapplication.md
     - name: Policy location domain
       href: ../../resources/policylocationdomain.md
-    - name: Policy location tool
-      href: ../../resources/policylocationtool.md
     - name: Policy location URL
       href: ../../resources/policylocationurl.md
     - name: Policy scope base
@@ -786,6 +792,10 @@ items:
       href: ../../resources/tenantscope.md
     - name: Text content
       href: ../../resources/textcontent.md
+    - name: Tool participant
+      href: ../../resources/toolparticipant.md
+    - name: User participant
+      href: ../../resources/userparticipant.md
     - name: User scope
       href: ../../resources/userscope.md
 - name: Discovered cloud apps (preview)

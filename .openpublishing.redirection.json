@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "api-reference/beta/resources/policylocationtool.md",
+            "redirect_url": "/graph/api/resources/policylocationagent?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "api-reference/beta/resources/accessreviewdatauploadtriggercallbackdata.md",
             "redirect_url": "/graph/api/resources/customdataprovidedresourcepayloads-data?view=graph-rest-beta",
             "redirect_document_id": false

@@ -6437,6 +6437,15 @@ Possible values for user account types (group membership), per Windows definitio
 |ai|
 |unknownFutureValue|
 
+### evaluationScopeType values
+
+|Member|
+|:---|
+|tenant|
+|agent|
+|anonymousUser|
+|unknownFutureValue|
+
 ### trafficRoutingMethod values 
 
 |Member|
