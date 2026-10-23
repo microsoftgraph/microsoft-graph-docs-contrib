@@ -1,12 +1,12 @@
 ---
 title: "List fido2AuthenticationMethod"
 description: "Retrieve a list of the fido2AuthenticationMethod objects and their properties."
-author: "hanki71"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 07/28/2024
+ms.date: 10/15/2026
 ---
 
 # List fido2AuthenticationMethod
@@ -128,14 +128,37 @@ Content-type: application/json
     {
       "id": "-2_GRUg2-HYz6_1YG4YRAQ2",
       "displayName": "Red key",
-      "createdDateTime": "2020-08-10T06:44:09Z",
+      "createdDateTime": "2026-01-18T03:14:52Z",
       "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
       "model": "NFC key",
       "attestationCertificates": [
           "dbe793efdf1945e2df25d93653a1e8a3268a9075"
       ],
       "attestationLevel": "attested",
-      "passkeyType": "deviceBound"
+      "passkeyType": "deviceBound",
+      "provenance": {
+        "assertions": [
+          {
+            "provenanceType": "identityVerification",
+            "verificationEventId": "9c2d5e61-1a3b-4a2f-9f6e-2f8b6c4d91aa",
+            "eventDateTime": "2026-01-18T03:10:21Z",
+            "sourceCredentialId": null,
+            "sourceCredentialType": null,
+            "attestationReason": null
+          }
+        ],
+        "classification": "highAssurance",
+        "chainStatus": {
+          "state": "intact",
+          "breakReason": "none",
+          "breakDetectedAtDateTime": null,
+          "breakSource": "none"
+        },
+        "assertedBy": {
+          "actorType": "system",
+          "actorId": "00000000-0000-0000-0000-000000000000"
+        }
+      }
     },
     {
       "id": "_jpuR-TGZgk6aQCLF3BQjA2",
@@ -147,9 +170,19 @@ Content-type: application/json
           "b479e7652167f574296e76bfa76731b8ccd22ed7"
       ],
       "attestationLevel": "attested",
-      "passkeyType": "deviceBound"
+      "passkeyType": "deviceBound",
+      "provenance": {
+        "assertions": [],
+        "classification": "lowAssurance",
+        "chainStatus": {
+          "state": "intact",
+          "breakReason": "none",
+          "breakDetectedAtDateTime": null,
+          "breakSource": "none"
+        },
+        "assertedBy": null
+      }
     }
   ]
 }
 ```
-

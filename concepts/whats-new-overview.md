@@ -1,7 +1,7 @@
 ---
 title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
-author: "lauragra"
+author: "tilarso"
 ms.localizationpriority: high
 ms.date: 10/05/2026
 ms.topic: whats-new
@@ -77,6 +77,11 @@ Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?
 ### Identity and access | Identity and sign-in
 
 - Added public preview support for OnPasswordUpdate custom authentication extensions. Use the [onPasswordUpdateCustomExtension](/graph/api/resources/onpasswordupdatecustomextension?view=graph-rest-beta&preserve-view=true) resource to notify external systems after a self-service password reset and the [onPasswordUpdateListener](/graph/api/resources/onpasswordupdatelistener?view=graph-rest-beta&preserve-view=true) resource to configure when the notification occurs.
+
+### Identity and access | Identity and sign-in
+
+- Added the [identityVerificationStatus](/graph/api/resources/identityverificationstatus?view=graph-rest-beta&preserve-view=true) resource type and related methods to read a user's verification status, record verification events, apply administrative override reasons, and remove event records.
+- Added the **provenance** property to the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta&preserve-view=true) resource to inspect the trust classification, supporting assertions, and chain status of FIDO2 authentication methods. Added the [attestProvenance](/graph/api/authenticationmethod-attestprovenance?view=graph-rest-beta&preserve-view=true) action to apply an administrative attestation to credential provenance.
 
 ### Mail | Message trace
 
