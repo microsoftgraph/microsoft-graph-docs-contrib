@@ -912,6 +912,8 @@ items:
         href: ../../api/externaloriginresourceconnector-delete.md
     - name: Complex types
       items:
+      - name: Access package assignment request parameters
+        href: ../../resources/accesspackageassignmentrequestparameters.md
       - name: External token based sap iag connection info
         href: ../../resources/externaltokenbasedsapiagconnectioninfo.md
   - name: Lifecycle workflows
