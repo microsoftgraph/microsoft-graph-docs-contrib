@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appManagementAuditLogAuditResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **appManagementAuditLogAuditResult** enumeration type.",
+          "Target": "appManagementAuditLogAuditResult"
+        },
+        {
+          "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appManagementAuditLogPolicyType",
+          "ChangeType": "Addition",
+          "Description": "Added the **appManagementAuditLogPolicyType** enumeration type.",
+          "Target": "appManagementAuditLogPolicyType"
+        },
+        {
+          "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appManagementAuditLogRestrictionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **appManagementAuditLogRestrictionResult** enumeration type.",
+          "Target": "appManagementAuditLogRestrictionResult"
+        },
+        {
+          "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appManagementAuditLogRestrictionState",
+          "ChangeType": "Addition",
+          "Description": "Added the **appManagementAuditLogRestrictionState** enumeration type.",
+          "Target": "appManagementAuditLogRestrictionState"
+        },
+        {
+          "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appliedAppManagementPolicyRestriction",
+          "ChangeType": "Addition",
+          "Description": "Added the [appliedAppManagementPolicyRestriction](https://learn.microsoft.com/en-us/graph/api/resources/appliedappmanagementpolicyrestriction?view=graph-rest-beta) complex type.",
+          "Target": "appliedAppManagementPolicyRestriction"
+        },
+        {
+          "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appManagementAudit",
+          "ChangeType": "Addition",
+          "Description": "Added the [appManagementAudit](https://learn.microsoft.com/en-us/graph/api/resources/appmanagementaudit?view=graph-rest-beta) resource.",
+          "Target": "appManagementAudit"
+        },
+        {
+          "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
+          "ApiChange": "Method",
+          "ChangedApiName": "List appManagementAudit objects",
+          "ChangeType": "Addition",
+          "Description": "Added the [List appManagementAudit objects](https://learn.microsoft.com/en-us/graph/api/appmanagementaudit-list?view=graph-rest-beta) method.",
+          "Target": "appManagementAudit"
+        },
+        {
+          "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get appManagementAudit",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get appManagementAudit](https://learn.microsoft.com/en-us/graph/api/appmanagementaudit-get?view=graph-rest-beta) method.",
+          "Target": "appManagementAudit"
+        }
+      ],
+      "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-19T13:40:53.8117996Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7719e4df-c624-477a-aa5d-0acecc645f61",
           "ApiChange": "Member",
           "ChangedApiName": "passwordUpdate",

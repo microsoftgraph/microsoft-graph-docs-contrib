@@ -359,6 +359,43 @@ Content-type: application/json
 }
 ```
 
+### Example 5: Retrieve the mailbox ID for a group
+
+The following example shows how to retrieve the identifier of the Exchange mailbox associated with a Microsoft 365 group. The **mailboxId** property isn't returned by default and must be explicitly requested by using `$select`. If the group mailbox isn't provisioned, the property returns `00000000-0000-0000-0000-000000000000`.
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_group_mailbox_id"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/a77e0851-c9c3-412a-b1e2-931157befef2?$select=mailboxId
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_mailbox_id"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(mailboxId)/$entity",
+  "id": "a77e0851-c9c3-412a-b1e2-931157befef2",
+  "mailboxId": "a99e0851-c9c3-412a-b1e2-931157befef9"
+}
+```
+
 ## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)

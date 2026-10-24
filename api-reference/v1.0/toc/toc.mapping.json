@@ -2409,6 +2409,7 @@
             "microsoft.graph.multiTenantApplicationsToProvision",
             "microsoft.graph.multiTenantApplicationsToProvisionSnapshot",
             "microsoft.graph.relatedTenantsRefreshRequest",
+            "microsoft.graph.relatedTenantsRefreshStatus",
             "microsoft.graph.relationshipPolicy",
             "microsoft.graph.roleTemplate"
           ]

@@ -1395,6 +1395,10 @@
             "Privileged Identity Management",
             "Microsoft Entra ID Governance"
           ],
+          "complexTypes": [
+            "approverDelegate",
+            "identityGovernanceUserSettings"
+          ],
           "childNodes": [
             {
               "name": "Access drift",
@@ -1573,6 +1577,15 @@
             {
               "name": "Privileged Identity Management iteration 3",
               "childNodes": [
+                {
+                  "name": "Custom extensions",
+                  "resources": [
+                    "roleManagementCustomCalloutExtension"
+                  ],
+                  "complexTypes": [
+                    "unifiedRoleManagementPolicyCustomExtensionRule"
+                  ]
+                },
                 {
                   "name": "PIM for Microsoft Entra roles",
                   "overview": "../../resources/privilegedidentitymanagementv3-overview.md",
@@ -2720,6 +2733,7 @@
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [
+                "appManagementAudit",
                 "auditActivityType",
                 "customSecurityAttributeAudit",
                 "directoryAudit",
@@ -2729,6 +2743,9 @@
                 "signInEventsActivity",
                 "signInEventsAppActivity",
                 "summarizedSignIn"
+              ],
+              "complexTypes": [
+                "appliedAppManagementPolicyRestriction"
               ]
             },
             {
@@ -3034,9 +3051,11 @@
             "userDataSecurityAndGovernance"
           ],
           "complexTypes": [
+            "activityMetadata",
+            "agentMetadata",
+            "agentParticipant",
             "aiAgentInfo",
             "aiInteractionEntity",
-            "activityMetadata",
             "aiInteractionPlugin",
             "autoLabeling",
             "binaryContent",
@@ -3049,6 +3068,7 @@
             "computeRightsAndInheritanceResult",
             "contentActivityMetadata",
             "contentBase",
+            "currentLabel",
             "customMetadataDictionary",
             "deviceMetadata",
             "dlpActionInfo",
@@ -3059,6 +3079,7 @@
             "embeddingInput",
             "groupScope",
             "integratedApplicationMetadata",
+            "interactionParticipant",
             "labelActionBase",
             "labelContentRight",
             "labelPolicy",
@@ -3067,9 +3088,9 @@
             "policyBinding",
             "policyConfiguration",
             "policyLocation",
+            "policyLocationAgent",
             "policyLocationApplication",
             "policyLocationDomain",
-            "policyLocationTool",
             "policyLocationUrl",
             "policyScopeBase",
             "policyTenantScope",
@@ -3089,6 +3110,8 @@
             "scopeBase",
             "tenantScope",
             "textContent",
+            "toolParticipant",
+            "userParticipant",
             "userScope"
           ]
         },

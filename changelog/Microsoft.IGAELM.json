@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "ed5c90ad-0782-49e5-b861-3933655cc25a",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get approverDelegate",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get approverDelegate](https://learn.microsoft.com/en-us/graph/api/approverdelegate-get?view=graph-rest-beta) method to read the approver delegate that is configured for a [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta).",
+          "Target": "approverDelegate"
+        },
+        {
+          "Id": "ed5c90ad-0782-49e5-b861-3933655cc25a",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update approverDelegate",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update approverDelegate](https://learn.microsoft.com/en-us/graph/api/approverdelegate-update?view=graph-rest-beta) method to create or replace the approver delegate for a [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta).",
+          "Target": "approverDelegate"
+        }
+      ],
+      "Id": "ed5c90ad-0782-49e5-b861-3933655cc25a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-21T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cc6b034d-2072-4c36-8201-5732dc2815e0",
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAssignmentRequestParameters",

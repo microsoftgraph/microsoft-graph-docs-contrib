@@ -16,11 +16,16 @@ Namespace: microsoft.graph
 
 Represents metadata for a content entry that is a file.  
 
+Inherits from [processContentMetadataBase](../resources/processcontentmetadatabase.md).
+
+Use the inherited **sensitivityLabels** collection to supply one or more [currentLabel](../resources/currentlabel.md) objects with the file content. Each object identifies a sensitivity label and its application mode. This metadata doesn't apply or change labels on the file. For request examples with one label and two distinct labels, see [processContent](../api/userdatasecurityandgovernance-processcontent.md#example-5-file-content-with-one-sensitivity-label).
+
 ## Properties
 
 | Property         | Type                                                                                                     | Description                                                                                                           |
 | :--------------- | :------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
 | content          | [contentBase](../resources/contentbase.md)  | Represents the actual content, either as text (`textContent`) or binary data (`binaryContent`). Optional if metadata alone is sufficient for policy evaluation. **Do not use for [contentActivities](../api/activitiescontainer-post-contentactivities.md).** Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
+|contentCategory   |microsoft.graph.contentCategory                                                 | The type of content. The possible values are: `none`, `ai`, `unknownFutureValue`.  The default value is `ai`, which refers to AI generated content. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 | correlationId    | String                                                                         | An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation). Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md). |
 | createdDateTime  | DateTimeOffset                                                                 | Required. Timestamp indicating when the original content was created (for example, file creation time, message sent time). Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md). |
 | customProperties | [customMetadataDictionary](../resources/custommetadatadictionary.md)  | A dictionary containing custom metadata associated with the file, potentially extracted by the calling application. |
@@ -30,8 +35,8 @@ Represents metadata for a content entry that is a file.
 | modifiedDateTime | DateTimeOffset                                                                 | Required. Timestamp indicating when the original content was last modified. For ephemeral content like messages, this might be the same as `createdDateTime`. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 | name             | String                                                                         | Required. A descriptive name for the content (for example, file name, web page title, `Chat Message`). Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 | ownerId          | String                                                                         | The unique identifier (for example, Entra User ID or UPN) of the owner of the file.                                            |
+| sensitivityLabels | [currentLabel](../resources/currentlabel.md) collection | Caller-supplied sensitivity labels describing the content. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md). |
 | sequenceNumber   | Int64                                                                          | A sequence number indicating the order in which content was generated or should be processed, required when `correlationId` is used. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).            |
-|contentCategory   |microsoft.graph.contentCategory                                                 | The type of content. The possible values are: `none`, `ai`, `unknownFutureValue`.  The default value is `ai`, which refers to AI generated content. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 
 ## Relationships
 
@@ -51,6 +56,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.processFileMetadata",
   "identifier": "String", 
   "content": { "@odata.type": "microsoft.graph.binaryContent" }, 
+  "contentCategory": "String",
   "name": "String", 
   "correlationId": "String",
   "sequenceNumber": "Int64",
@@ -59,6 +65,11 @@ The following JSON representation shows the resource type.
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)",
   "customProperties": { "@odata.type": "microsoft.graph.customMetadataDictionary" },
-  "ownerId": "String"
+  "ownerId": "String",
+  "sensitivityLabels": [
+    {
+      "@odata.type": "microsoft.graph.currentLabel"
+    }
+  ]
 }
 ```
