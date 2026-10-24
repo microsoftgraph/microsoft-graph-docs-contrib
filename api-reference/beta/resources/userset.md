@@ -32,6 +32,8 @@ In entitlement management, the derived types of this object are configured in th
 - **reviewers** property of [assignmentReviewSettings](../resources/assignmentreviewsettings.md)
 - **allowedRequestors** property of [requestorSettings](../resources/requestorsettings.md)
 
+In approval delegation, the derived types of this object are configured in the **delegate** property of [approverDelegate](../resources/approverdelegate.md).
+
 ## Properties
 
 | Property                     | Type                      | Description |

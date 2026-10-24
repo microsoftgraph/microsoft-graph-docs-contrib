@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "fa923022-021d-4a53-8143-e7e103b4a5b7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relatedTenantsRefreshStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [relatedTenantsRefreshStatus](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-relatedTenantsRefreshStatus?view=graph-rest-1.0) resource type.",
+          "Target": "relatedTenantsRefreshStatus"
+        },
+        {
+          "Id": "fa923022-021d-4a53-8143-e7e103b4a5b7",
+          "ApiChange": "Method",
+          "ChangedApiName": "refreshStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [refreshStatus](https://learn.microsoft.com/en-us/graph/api/tenantgovernanceservices-relatedtenant-refreshstatus?view=graph-rest-1.0) method to the [relatedTenant](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-relatedtenant?view=graph-rest-1.0) resource.",
+          "Target": "relatedTenant"
+        }
+      ],
+      "Id": "fa923022-021d-4a53-8143-e7e103b4a5b7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-14T18:47:05.1308690Z",
+      "WorkloadArea": "Tenants",
+      "SubArea": "Tenant governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cc2128cc-bb8d-47f5-be18-72247114efc1",
           "ApiChange": "Relationship",
           "ChangedApiName": "tenantGovernance",

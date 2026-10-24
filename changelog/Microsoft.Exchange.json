@@ -29,6 +29,24 @@
     {
       "ChangeList": [
         {
+          "Id": "37b3e983-8dfe-4f08-9fba-7c1092257f44",
+          "ApiChange": "Property",
+          "ChangedApiName": "mailboxId",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailboxId** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "37b3e983-8dfe-4f08-9fba-7c1092257f44",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-25T05:14:36.6751874Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8ad53431-0324-4bcc-b90e-ac080df485ee",
           "ApiChange": "Property",
           "ChangedApiName": "isHidden",

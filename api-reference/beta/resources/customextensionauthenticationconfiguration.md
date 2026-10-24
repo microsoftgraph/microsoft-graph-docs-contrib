@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type that exposes the configuration for the **authenticationConfiguration** property of the derived types that inherit from the [customCalloutExtension](../resources/customcalloutextension.md) abstract type.
+Exposes the configuration for the **authenticationConfiguration** property of the derived types that inherit from the [customCalloutExtension](../resources/customcalloutextension.md) abstract type, including [roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md). This abstract type can't be instantiated directly.
 
 This abstract type is inherited by the following resource types:
 - [azureAdTokenAuthentication](../resources/azureadtokenauthentication.md)

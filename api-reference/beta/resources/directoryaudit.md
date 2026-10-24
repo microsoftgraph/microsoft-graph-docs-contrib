@@ -16,6 +16,12 @@ Namespace: microsoft.graph
 
 Represents the directory audit items and its collection.
 
+## Derived types
+
+| Type | Description |
+|:---|:---|
+| [appManagementAudit](appmanagementaudit.md) | Represents a Microsoft Entra application management audit log entry and the app management policy restrictions applied to the activity. |
+
 ## Methods
 
 | Method           | Return Type    |Description|

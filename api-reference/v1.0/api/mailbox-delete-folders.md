@@ -28,8 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/$ref
-DELETE /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders/{mailboxFolderId}/$ref
+DELETE /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}
+DELETE /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders/{mailboxFolderId}
 ```
 
 ## Request headers
@@ -52,7 +52,6 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows how to delete a mailbox folder.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_mailboxfolder",
@@ -60,14 +59,8 @@ The following example shows how to delete a mailbox folder.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/AAMkAGVmMDEzM/$ref
+DELETE https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/AAMkAGVmMDEzM
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-mailboxfolder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

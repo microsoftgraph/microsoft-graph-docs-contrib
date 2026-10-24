@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 Get the rules defined for a role management policy. The rules are a collection of following types that are derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object:
 + [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
++ [unifiedRoleManagementPolicyCustomExtensionRule](../resources/unifiedrolemanagementpolicycustomextensionrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
 + [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)
 + [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)
@@ -142,6 +143,21 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies('DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448')/rules",
     "value": [
+        {
+            "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyCustomExtensionRule",
+            "id": "CustomExtension_EndUser_Assignment",
+            "customExtensionId": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+            "displayName": "Role assignment ticket validation",
+            "customAttributes": ["department", "costCenter"],
+            "isEnabled": true,
+            "target": {
+                "caller": "EndUser",
+                "operations": ["All"],
+                "level": "Assignment",
+                "inheritableSettings": [],
+                "enforcedSettings": []
+            }
+        },
         {
             "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
             "id": "Enablement_Admin_Eligibility",
