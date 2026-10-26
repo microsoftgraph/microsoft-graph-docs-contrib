@@ -1432,6 +1432,9 @@
                 "accessReviewHistoryInstance",
                 "accessReviewPolicy",
                 "unifiedRoot"
+              ],
+              "complexTypes": [
+                "accessReviewCatalogScope"
               ]
             },
             {

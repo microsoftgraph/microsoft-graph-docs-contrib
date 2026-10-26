@@ -871,6 +871,10 @@ items:
         href: ../../api/unifiedroot-list-definitions.md
       - name: Create definition
         href: ../../api/unifiedroot-post-definitions.md
+    - name: Complex types
+      items:
+      - name: Access review catalog scope
+        href: ../../resources/accessreviewcatalogscope.md
   - name: Access reviews (deprecated)
     items:
     - name: Overview
