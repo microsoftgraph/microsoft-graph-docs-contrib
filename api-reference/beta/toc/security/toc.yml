@@ -712,6 +712,8 @@ items:
       href: ../../resources/contentactivitymetadata.md
     - name: Content base
       href: ../../resources/contentbase.md
+    - name: Current label
+      href: ../../resources/currentlabel.md
     - name: Custom metadata dictionary
       href: ../../resources/custommetadatadictionary.md
     - name: Device metadata
