@@ -97,12 +97,24 @@
             "ipApplicationSegment",
             "webApplicationSegment",
             "corsConfiguration_v2"
+          ]
+        },
+        {
+          "name": "Synchronization",
+          "overview": "../../resources/synchronization-overview.md",
+          "shouldSort": true,
+          "resources": [
+            "synchronization",
+            "synchronizationTemplate",
+            "synchronizationJob",
+            "synchronizationSchema"
           ],
           "childNodes": [
             {
               "name": "Synchronization job",
               "resources": [
-                "bulkUpload"
+                "bulkUpload",
+                "objectConnection"
               ]
             },
             {

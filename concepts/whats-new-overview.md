@@ -78,6 +78,11 @@ Updated the date when deprecated image properties on [cloudPcDeviceImage](/graph
 
 Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to support SharePoint service prioritization reports. Use this report to retrieve total, standard, heavy, billed standard, and billed heavy API request counts by application and date.
 
+### Identity and access | Directory management
+
+- Added the [objectConnection](/graph/api/resources/synchronization-objectconnection?view=graph-rest-beta&preserve-view=true) resource type and related methods to inspect or clear cached connector data store linkage records.
+- Added the **objectConnections** relationship to the [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta&preserve-view=true) resource to access linkage records for known object identifiers.
+
 ### Identity and access | Governance
 
 - Added the [accessDriftSummary](/graph/api/resources/accessdriftsummary?view=graph-rest-beta&preserve-view=true) resource type and related methods for identifying governed resources whose actual access differs from access-package intent. Use it to list and inspect drift summaries, retrieve drift details, and download bulk reconciliation reports. Access drift details identify whether each affected identity is a user or group through the **identityType** property of [entraDriftIdentityInfo](/graph/api/resources/entradriftidentityinfo?view=graph-rest-beta&preserve-view=true).
