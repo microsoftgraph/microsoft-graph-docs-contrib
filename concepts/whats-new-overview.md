@@ -115,6 +115,10 @@ Added the **incidentConfiguration** property to the [detectionAction](/graph/api
 
 Added 35 members, from `PlannerCustomFieldDefinition` through `MESRawEmailContentMetadata`, to the [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype?view=graph-rest-beta&preserve-view=true) enumeration and added the matching [auditData derived types](/graph/api/resources/security-auditdata-derived-types?view=graph-rest-beta&preserve-view=true) to represent workload-specific audit event payloads.
 
+### Security | Case management
+
+Clarified the existing maximum length of the **message** property on the [comment](/graph/api/resources/security-casemanagement-comment?view=graph-rest-beta&preserve-view=true) resource: 1,000 characters for incident cases and 5,000 characters for generic cases. These limits apply when you [create a comment activity](/graph/api/security-casemanagement-case-post-activities?view=graph-rest-beta&preserve-view=true). The 5,000-character limit also applies when you [update a comment activity](/graph/api/security-casemanagement-activity-update?view=graph-rest-beta&preserve-view=true) in a generic case; the update of comment activities in incident cases remains unsupported.
+
 ### Security | Data security and compliance
 
 Applications can now supply one or more sensitivity labels with file content submitted to the [processContent](/graph/api/userdatasecurityandgovernance-processcontent?view=graph-rest-beta&preserve-view=true) API by using the **sensitivityLabels** property of [processContentMetadataBase](/graph/api/resources/processcontentmetadatabase?view=graph-rest-beta&preserve-view=true).
