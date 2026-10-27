@@ -6,7 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
-ms.date: 09/10/2024
+ms.date: 09/30/2026
 ---
 
 # Update oneDriveForBusinessRestoreSession
@@ -49,6 +49,7 @@ PATCH /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBu
 |:---|:---|:---|
 |driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Collection of [driveRestoreArtifact](../resources/driverestoreartifact.md). Required|
 |granularDriveRestoreArtifacts|[granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) collection|A collection of [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) objects. Required.|
+|policyId|String|The identifier of the protection policy that scopes the restore session. When supplied, the service validates that referenced protection units belong to this policy. Inherited from [restoreSessionBase](../resources/restoresessionbase.md).|
 
 To remove a **driveRestoreArtifact** from a standard restore session, specify the `@removed` annotation in the request body together with the ID of the [driveRestoreArtifact](../resources/driverestoreartifact.md) object.
 
@@ -68,7 +69,6 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessrestoresession_update"
@@ -78,6 +78,7 @@ The following example shows a request.
 PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessRestoreSessions/1b014d8c-71fe-4d00-8ab2-31850bc5b32c
 
 {
+  "policyId": "99999999-aaaa-bbbb-cccc-dddddddddddd",
   "driveRestoreArtifacts@delta": [
     {
       "restorePoint": { "id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" }, //Create a new drive restore artifact and add it under the Restore Session.
@@ -117,31 +118,6 @@ PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusine
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/onedriveforbusinessrestoresession-update-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/onedriveforbusinessrestoresession-update-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessrestoresession-update-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/onedriveforbusinessrestoresession-update-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/onedriveforbusinessrestoresession-update-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/onedriveforbusinessrestoresession-update-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -208,7 +184,6 @@ HTTP/1.1 200 OK
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusiness_granular_update"
@@ -234,31 +209,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/onedriveforbusiness-granular-update-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/onedriveforbusiness-granular-update-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusiness-granular-update-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/onedriveforbusiness-granular-update-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/onedriveforbusiness-granular-update-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/onedriveforbusiness-granular-update-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -300,4 +250,3 @@ Content-Type: application/json
   ]
 }
 ```
-

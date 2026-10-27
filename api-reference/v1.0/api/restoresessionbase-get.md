@@ -6,7 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
-ms.date: 09/10/2024
+ms.date: 09/30/2026
 ---
 
 # Get restoreSessionBase
@@ -56,7 +56,6 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restoresessionbase_get"
@@ -66,35 +65,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/restoreSessions/959ba739-70b5-43c4-8c90-b2c22014f18b
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/restoresessionbase-get-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/restoresessionbase-get-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/restoresessionbase-get-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restoresessionbase-get-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/restoresessionbase-get-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/restoresessionbase-get-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/restoresessionbase-get-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -115,6 +85,7 @@ Content-Type: application/json
   "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
   "status": "active",
   "restoreJobType": "standard",
+  "policyId": "99999999-aaaa-bbbb-cccc-dddddddddddd",
   "restoreSessionArtifactCount": {
     "total": 2,
     "completed": 1,

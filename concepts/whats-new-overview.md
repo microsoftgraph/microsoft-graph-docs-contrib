@@ -22,7 +22,9 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
-Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy) method to the [backupReport](/graph/api/resources/backupreport) resource type in v1.0. Use it to retrieve policy-level protection statistics for Microsoft 365 Backup Storage.
+- Use the **policyId** property on the [restoreSessionBase](/graph/api/resources/restoresessionbase) resource to scope restore sessions to a protection policy.
+- Use the optional **policyId** parameter on the [restorePoint: search](/graph/api/restorepoint-search) method to validate protection-unit membership and improve policy-scoped routing. You can also filter the restore points collection by **protectionUnit/policyId**.
+- Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy) method to the [backupReport](/graph/api/resources/backupreport) resource type in v1.0. Use it to retrieve policy-level protection statistics for Microsoft 365 Backup Storage.
 
 ### Calendars
 
@@ -213,8 +215,8 @@ Added the **isDisabled** property to the [agentIdentityBlueprint](/graph/api/res
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
-- Added the **policyId** property to the [restoreSessionBase](/graph/api/resources/restoresessionbase?view=graph-rest-beta&preserve-view=true) resource type to scope restore sessions to a protection policy.
-- Added the optional **policyId** parameter to the [restorePoint: search](/graph/api/restorepoint-search?view=graph-rest-beta&preserve-view=true) method to validate protection-unit membership and improve policy-scoped routing. You can also filter the restore points collection by `protectionUnit/policyId`.
+- Added the **policyId** property to the [restoreSessionBase](/graph/api/resources/restoresessionbase?view=graph-rest-beta&preserve-view=true) resource to scope restore sessions to a protection policy.
+- Added the optional **policyId** parameter to the [restorePoint: search](/graph/api/restorepoint-search?view=graph-rest-beta&preserve-view=true) method to validate protection-unit membership and improve policy-scoped routing. You can also filter the restore points collection by **protectionUnit/policyId**.
 
 ### Backup storage
 
