@@ -134,6 +134,14 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 |inSync|
 |unknownFutureValue|
 
+### accessReviewCatalogResourceType values
+
+|Member|
+|:---|
+|none|
+|accessPackage|
+|unknownFutureValue|
+
 ### accessReviewPrincipalScopeType values
 
 |Member|
