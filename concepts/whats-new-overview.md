@@ -292,6 +292,10 @@ Added the [billedAggregatedUsage](/graph/api/resources/partners-billing-billedag
 
 Added the **isRecordCountLimitExceeded**, **recordCountLimit**, and **approximateReturnedRecordCount** properties to the [auditLogQuery](/graph/api/resources/security-auditlogquery?view=graph-rest-beta&preserve-view=true) resource. Use these properties to determine whether a completed query exceeded the per-search record-count limit and to inspect the applicable limit and approximate returned record count.
 
+### Security | Case management
+
+Added the [slaPolicyDefinition](/graph/api/resources/security-casemanagement-slapolicydefinition?view=graph-rest-beta&preserve-view=true) resource type and related methods for managing SLA policies for each security case type. Use these APIs to configure scope, pause, and exit criteria and warning and breach timers.
+
 ### Security | Data security and compliance
 
 - Added the `contentFiltering` member to the [userActivityTypes](/graph/api/resources/enums-security?view=graph-rest-beta&preserve-view=true#useractivitytypes-values) enumeration used by the [compute protection scopes for a user](/graph/api/userprotectionscopecontainer-compute?view=graph-rest-beta&preserve-view=true) and [compute protection scopes for a tenant](/graph/api/tenantprotectionscopecontainer-compute?view=graph-rest-beta&preserve-view=true) APIs, enabling applications to determine whether data loss prevention policies govern content filtering before evaluating content.

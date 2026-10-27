@@ -3366,6 +3366,7 @@
             "microsoft.graph.security.caseManagement.workspaceIndicatorRelation",
             "microsoft.graph.security.caseManagement.task",
             "microsoft.graph.security.caseManagement.caseTypeConfiguration",
+            "microsoft.graph.security.caseManagement.slaPolicyDefinition",
             "microsoft.graph.security.caseManagement.customFieldDefinition",
             "microsoft.graph.security.caseManagement.stringCustomFieldDefinition",
             "microsoft.graph.security.caseManagement.numberCustomFieldDefinition",
