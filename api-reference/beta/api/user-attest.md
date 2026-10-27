@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Attest to the continued need for a guest [user](../resources/user.md) in the organization.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

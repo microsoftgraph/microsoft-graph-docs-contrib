@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties of a [governanceInvitation](../resources/tenantgovernanceservices-governanceinvitation.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

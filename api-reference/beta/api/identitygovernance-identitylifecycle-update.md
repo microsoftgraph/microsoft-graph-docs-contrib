@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Update the properties of an [identityLifecycle](../resources/identitygovernance-identitylifecycle.md) object for a [servicePrincipal](../resources/serviceprincipal.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

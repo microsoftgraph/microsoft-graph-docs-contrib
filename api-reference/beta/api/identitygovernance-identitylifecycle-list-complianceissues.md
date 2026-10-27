@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [complianceIssue](../resources/identitygovernance-complianceissue.md) objects and their properties for the [identityLifecycle](../resources/identitygovernance-identitylifecycle.md) of a [servicePrincipal](../resources/serviceprincipal.md). Each issue includes the **ruleType** that generated it.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

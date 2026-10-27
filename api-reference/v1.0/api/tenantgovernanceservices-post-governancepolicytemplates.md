@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [tenantGovernancePolicyTemplate](../resources/tenantgovernanceservices-tenantgovernancepolicytemplate.md) that defines the configuration for establishing governance relationships, including role assignments and applications to provision.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
