@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 10/05/2026
+ms.date: 10/06/2026
 ms.topic: whats-new
 ---
 
@@ -37,6 +37,10 @@ Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy)
 ### Mail | Message trace
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource.
+
+### Security | Audit log query
+
+Added 35 members, from `PlannerCustomFieldDefinition` through `MESRawEmailContentMetadata`, to the [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype) enumeration and added the matching [auditData derived types](/graph/api/resources/security-auditdata-derived-types) to represent workload-specific audit event payloads.
 
 ### Tasks and plans
 
