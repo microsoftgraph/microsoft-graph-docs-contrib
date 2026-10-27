@@ -1848,12 +1848,17 @@
             {
               "name": "Conditional access",
               "resources": [
-                "conditionalAccessPolicy",
-                "whatIfAnalysisResult",
-                "namedLocation",
                 "authenticationContextClassReference",
+                "conditionalAccessPolicy",
+                "conditionalAccessPolicyPlan",
+                "conditionalAccessPolicyRule",
                 "conditionalAccessTemplate",
-                "continuousAccessEvaluationPolicy"
+                "continuousAccessEvaluationPolicy",
+                "namedLocation",
+                "whatIfAnalysisResult"
+              ],
+              "complexTypes": [
+                "conditionalAccessPolicyRuleControls"
               ],
               "childNodes": [
                 {
