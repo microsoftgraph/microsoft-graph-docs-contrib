@@ -348,6 +348,10 @@ items:
       href: ../../resources/cloudpcmanagedlicense.md
     - name: List
       href: ../../api/virtualendpoint-list-managedlicenses.md
+    - name: Submit managed license operation
+      href: ../../api/cloudpcmanagedlicense-submitmanagedlicenseoperation.md
+    - name: Retrieve managed license operation
+      href: ../../api/cloudpcmanagedlicense-retrievemanagedlicenseoperation.md
   - name: Cloud PC Azure network connection
     items:
     - name: Cloud PC Azure network connection
@@ -721,6 +725,12 @@ items:
       href: ../../resources/cloudpclaunchinfo.md
     - name: Cloud PC login result
       href: ../../resources/cloudpcloginresult.md
+    - name: Cloud PC managed license extend access
+      href: ../../resources/cloudpcmanagedlicenseextendaccess.md
+    - name: Cloud PC managed license operation
+      href: ../../resources/cloudpcmanagedlicenseoperation.md
+    - name: Cloud PC managed license operation result
+      href: ../../resources/cloudpcmanagedlicenseoperationresult.md
     - name: Cloud PC management assignment target
       href: ../../resources/cloudpcmanagementassignmenttarget.md
     - name: Cloud PC management group assignment target

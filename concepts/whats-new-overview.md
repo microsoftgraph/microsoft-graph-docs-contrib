@@ -64,7 +64,9 @@ The [Place update](/graph/api/place-update?view=graph-rest-beta&preserve-view=tr
 
 ### Device and app management | Cloud PC
 
-Updated the date when deprecated image properties on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true), [cloudPcSourceDeviceImage](/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta&preserve-view=true), and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) will stop returning data from January 31, 2024 to December 7, 2026. No replacement is planned for **recommendedSku**. Review the replacement property guidance in these resource topics and update affected integrations before the deadline.
+- Updated the date when deprecated image properties on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true), [cloudPcSourceDeviceImage](/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta&preserve-view=true), and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) will stop returning data from January 31, 2024 to December 7, 2026. No replacement is planned for **recommendedSku**. Review the replacement property guidance in these resource topics and update affected integrations before the deadline.
+- Added support for extending Windows 365 Reserve access for multiple users through the [submitManagedLicenseOperation](/graph/api/cloudpcmanagedlicense-submitmanagedlicenseoperation?view=graph-rest-beta&preserve-view=true) action on the [cloudPcManagedLicense](/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta&preserve-view=true) collection. Poll the submitted operation to check completion and inspect per-user results.
+- Use the [retrieveManagedLicenseOperation](/graph/api/cloudpcmanagedlicense-retrievemanagedlicenseoperation?view=graph-rest-beta&preserve-view=true) operation to retrieve the status and per-user results of a submitted operation.
 
 ### Device and app management | Device updates
 
