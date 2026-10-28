@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "9287cb65-a689-4b97-aa90-131d57199432",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupResource](https://learn.microsoft.com/en-us/graph/api/resources/groupresource?view=graph-rest-v1.0) resource.",
+          "Target": "groupResource"
+        },
+        {
+          "Id": "9287cb65-a689-4b97-aa90-131d57199432",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "resources",
+          "ChangeType": "Addition",
+          "Description": "Added the **resources** relationship to the [privilegedAccessGroup](https://learn.microsoft.com/en-us/graph/api/resources/privilegedaccessgroup?view=graph-rest-v1.0) resource.",
+          "Target": "privilegedAccessGroup"
+        }
+      ],
+      "Id": "9287cb65-a689-4b97-aa90-131d57199432",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-16T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c001a31b-db95-4ede-a6d1-00430bd9d545",
           "ApiChange": "Enumeration",
           "ChangedApiName": "customCalloutExtensionType",

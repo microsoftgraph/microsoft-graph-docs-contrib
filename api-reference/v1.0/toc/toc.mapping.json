@@ -1036,6 +1036,7 @@
                   "name": "PIM for Groups",
                   "overview": "../../resources/privilegedidentitymanagement-for-groups-api-overview.md",
                   "resources": [
+                    "groupResource",
                     "privilegedAccessGroupAssignmentScheduleRequest",
                     "privilegedAccessGroupAssignmentSchedule",
                     "privilegedAccessGroupAssignmentScheduleInstance",
