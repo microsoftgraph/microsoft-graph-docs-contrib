@@ -170,6 +170,12 @@ items:
       href: ../../api/user-list-memberof.md
     - name: List transitive member of
       href: ../../api/user-list-transitivememberof.md
+  - name: Identity governance
+    items:
+    - name: Get approverDelegate
+      href: ../../api/approverdelegate-get.md
+    - name: Update approverDelegate
+      href: ../../api/approverdelegate-update.md
   - name: Insights
     items:
     - name: List trending

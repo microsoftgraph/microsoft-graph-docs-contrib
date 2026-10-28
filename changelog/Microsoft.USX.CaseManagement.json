@@ -3,6 +3,128 @@
     {
       "ChangeList": [
         {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Resource",
+          "ChangedApiName": "slaPolicyDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [slaPolicyDefinition](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-slapolicydefinition?view=graph-rest-beta) resource type for configuring SLA policies for security case types.",
+          "Target": "slaPolicyDefinition"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Resource",
+          "ChangedApiName": "slaPolicyConditionBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [slaPolicyConditionBase](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-slapolicyconditionbase?view=graph-rest-beta) abstract complex type.",
+          "Target": "slaPolicyConditionBase"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Resource",
+          "ChangedApiName": "slaPolicyCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the [slaPolicyCondition](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-slapolicycondition?view=graph-rest-beta) complex type.",
+          "Target": "slaPolicyCondition"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Resource",
+          "ChangedApiName": "slaPolicyCriteriaBlock",
+          "ChangeType": "Addition",
+          "Description": "Added the [slaPolicyCriteriaBlock](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-slapolicycriteriablock?view=graph-rest-beta) complex type.",
+          "Target": "slaPolicyCriteriaBlock"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Resource",
+          "ChangedApiName": "slaPolicyRecalculateCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the [slaPolicyRecalculateCondition](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-slapolicyrecalculatecondition?view=graph-rest-beta) complex type.",
+          "Target": "slaPolicyRecalculateCondition"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Resource",
+          "ChangedApiName": "slaPolicyTimer",
+          "ChangeType": "Addition",
+          "Description": "Added the [slaPolicyTimer](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-slapolicytimer?view=graph-rest-beta) complex type.",
+          "Target": "slaPolicyTimer"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "slaPolicyConditionOperator",
+          "ChangeType": "Addition",
+          "Description": "Added the **slaPolicyConditionOperator** enumeration type.",
+          "Target": "slaPolicyConditionOperator"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "slaPolicyLogicalOperator",
+          "ChangeType": "Addition",
+          "Description": "Added the **slaPolicyLogicalOperator** enumeration type.",
+          "Target": "slaPolicyLogicalOperator"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "slaPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **slaPolicies** relationship to the [caseTypeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-casetypeconfiguration?view=graph-rest-beta) resource.",
+          "Target": "caseTypeConfiguration"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Addition",
+          "Description": "Added the [List slaPolicies](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-casetypeconfiguration-list-slapolicies?view=graph-rest-beta) method.",
+          "Target": "slaPolicyDefinition"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create slaPolicyDefinition](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-casetypeconfiguration-post-slapolicies?view=graph-rest-beta) method.",
+          "Target": "slaPolicyDefinition"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get slaPolicyDefinition](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-slapolicydefinition-get?view=graph-rest-beta) method.",
+          "Target": "slaPolicyDefinition"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update slaPolicyDefinition](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-slapolicydefinition-update?view=graph-rest-beta) method.",
+          "Target": "slaPolicyDefinition"
+        },
+        {
+          "Id": "45091c08-511e-4876-b2f0-898144420942",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete slaPolicyDefinition](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-casetypeconfiguration-delete-slapolicies?view=graph-rest-beta) method.",
+          "Target": "slaPolicyDefinition"
+        }
+      ],
+      "Id": "45091c08-511e-4876-b2f0-898144420942",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-22T06:50:42.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Case management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "546fffa6-9ea5-43ca-9379-7278f50a7683",
           "ApiChange": "Property",
           "ChangedApiName": "slaPolicies",

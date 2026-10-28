@@ -6,14 +6,14 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
-ms.date: 10/01/2024
+ms.date: 09/30/2026
 ---
 
 # restorePoint: search
 
 Namespace: microsoft.graph
 
-Search for the [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md).
+Search for the [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md). You can also provide **policyId** to scope the search to a protection policy and validate that the specified protection units belong to that policy.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -48,6 +48,7 @@ In the request body, supply a JSON representation of the following parameters.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |artifactQuery|[artifactQuery](../resources/artifactquery.md)|Contains an expression that specifies the criteria for search. Optional.|
+|policyId|String|The identifier of the protection policy that contains the specified protection units. Optional.|
 |protectionUnitIds|String collection|The ID of the protection units. Required.|
 |protectionTimePeriod|[timePeriod](../resources/timeperiod.md)|The start and end date time of the protection period. Required.|
 |restorePointPreference|[restorePointPreference](../api/restorepoint-search.md#restorepointpreference-values)|Indicates which restore point to return. The possible values are `oldest`, `latest`. Optional.|
@@ -68,6 +69,7 @@ If successful, this action returns a `200 OK` response code and a [restorePointS
 > - Calls return one restore point per protection unit.
 > - You can include a maximum of 20 protection units in a single request, and the response isn't paginated.
 > - When you provide an expression for the **artifactQuery** property, you must provide only one protection unit ID in the **protectionUnitIds** property.
+> - When you provide **policyId**, the service validates that every protection unit belongs to the specified policy.
 
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
@@ -79,7 +81,6 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restorepoint_search"
@@ -90,6 +91,7 @@ POST https://graph.microsoft.com/v1.0/solutions/backupRestore/restorePoints/sear
 Content-Type: application/json
 
 {
+    "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264",
     "protectionUnitIds": ["23014d8c-71fe-4d00-a01a-31850bc5b42a", "43014d8c-71fe-4d00-a01a-31850bc5b42b", "63014d8c-71fe-4d00-a01a-31850bc5b42c", "83014d8c-71fe-4d00-a01a-31850bc5b42d"],
     "protectionTimePeriod": {
         "startDateTime": "2021-01-01T00:00:00Z",
@@ -100,35 +102,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/restorepoint-search-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/restorepoint-search-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/restorepoint-search-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restorepoint-search-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/restorepoint-search-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/restorepoint-search-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/restorepoint-search-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -207,7 +180,6 @@ Content-Type: application/json
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restorepoint_search_artifactquery"
@@ -230,35 +202,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/restorepoint-search-artifactquery-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/restorepoint-search-artifactquery-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/restorepoint-search-artifactquery-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restorepoint-search-artifactquery-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/restorepoint-search-artifactquery-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/restorepoint-search-artifactquery-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/restorepoint-search-artifactquery-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 

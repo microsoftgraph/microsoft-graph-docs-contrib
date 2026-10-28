@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Read the latest [lifecyclePolicyReport](../resources/identitygovernance-lifecyclepolicyreport.md) for a [lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

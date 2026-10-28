@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Read the properties and relationships of a [microsoft.graph.identityGovernance.complianceIssue](../resources/identitygovernance-complianceissue.md) object for the [identityLifecycle](../resources/identitygovernance-identitylifecycle.md) of a [servicePrincipal](../resources/serviceprincipal.md). The **ruleType** property indicates which rule caused the noncompliance.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

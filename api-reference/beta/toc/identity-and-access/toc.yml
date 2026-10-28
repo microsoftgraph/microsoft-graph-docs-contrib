@@ -1661,8 +1661,10 @@ items:
           href: ../../api/rolemanagementcustomcalloutextension-update.md
         - name: Delete
           href: ../../api/privilegedaccessroot-delete-customextensions.md
-      - name: Unified role management policy custom extension rule
-        href: ../../resources/unifiedrolemanagementpolicycustomextensionrule.md
+      - name: Complex types
+        items:
+        - name: Unified role management policy custom extension rule
+          href: ../../resources/unifiedrolemanagementpolicycustomextensionrule.md
     - name: PIM for Microsoft Entra roles
       displayName: Privileged Identity Management, PIM, Identity Governance
       items:
@@ -1680,7 +1682,7 @@ items:
           href: ../../api/unifiedroleassignmentschedulerequest-get.md
         - name: Cancel
           href: ../../api/unifiedroleassignmentschedulerequest-cancel.md
-        - name: Update request
+        - name: 'unifiedRoleAssignmentScheduleRequest: updateRequest'
           href: ../../api/unifiedroleassignmentschedulerequest-updaterequest.md
         - name: Filter by current user
           href: ../../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
@@ -1886,7 +1888,7 @@ items:
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md
         - name: Cancel
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-cancel.md
-        - name: Update request
+        - name: 'privilegedAccessGroupAssignmentScheduleRequest: updateRequest'
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-updaterequest.md
       - name: Assignment schedule
         items:
@@ -2110,6 +2112,12 @@ items:
         href: ../../api/agreement-post-files.md
       - name: List localized files
         href: ../../api/agreementfile-list-localizations.md
+  - name: Complex types
+    items:
+    - name: Approver delegate
+      href: ../../resources/approverdelegate.md
+    - name: Identity governance user settings
+      href: ../../resources/identitygovernanceusersettings.md
 - name: Identity and sign-in
   items:
   - name: App role assignment

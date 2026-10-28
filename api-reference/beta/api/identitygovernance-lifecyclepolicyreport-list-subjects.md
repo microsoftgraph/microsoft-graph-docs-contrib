@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 List [lifecyclePolicySubjectReport](../resources/identitygovernance-lifecyclepolicysubjectreport.md) objects from a [lifecyclePolicyReport](../resources/identitygovernance-lifecyclepolicyreport.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

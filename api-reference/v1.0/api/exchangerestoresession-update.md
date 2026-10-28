@@ -6,7 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
-ms.date: 09/10/2024
+ms.date: 09/30/2026
 ---
 
 # Update exchangeRestoreSession
@@ -48,6 +48,7 @@ PATCH /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId
 |Property|Type|Description|
 |:---|:---|:---|
 |mailboxRestoreArtifacts|[mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) collection|A collection of [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md) objects. Required.|
+|policyId|String|The identifier of the protection policy that scopes the restore session. When supplied, the service validates that referenced protection units belong to this policy. Inherited from [restoreSessionBase](../resources/restoresessionbase.md).|
 
 To remove an **exchangeRestoreSession**, specify the @removed annotation in the request body for the restore point artifact with the ID of the [mailboxRestoreArtifact](../resources/mailboxrestoreartifact.md).
 
@@ -63,7 +64,6 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangerestoresession_update"
@@ -74,6 +74,7 @@ PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeRestoreSe
 Content-Type: application/json
 
 {
+  "policyId": "99999999-aaaa-bbbb-cccc-dddddddddddd",
   "mailboxRestoreArtifacts@delta": [
     {
       "restorePoint": { "id": "1b014d8c-71fe-4d00-a01a-31850bc5b32c" }, //Create a new mailbox restore artifact and add it under the Restore Session.
@@ -113,31 +114,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/exchangerestoresession-update-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/exchangerestoresession-update-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/exchangerestoresession-update-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/exchangerestoresession-update-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/exchangerestoresession-update-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/exchangerestoresession-update-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -199,4 +175,3 @@ Content-Type: application/json
   ]
 }
 ```
-

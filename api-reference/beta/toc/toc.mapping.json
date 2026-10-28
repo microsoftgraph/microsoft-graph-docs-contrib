@@ -97,12 +97,24 @@
             "ipApplicationSegment",
             "webApplicationSegment",
             "corsConfiguration_v2"
+          ]
+        },
+        {
+          "name": "Synchronization",
+          "overview": "../../resources/synchronization-overview.md",
+          "shouldSort": true,
+          "resources": [
+            "synchronization",
+            "synchronizationTemplate",
+            "synchronizationJob",
+            "synchronizationSchema"
           ],
           "childNodes": [
             {
               "name": "Synchronization job",
               "resources": [
-                "bulkUpload"
+                "bulkUpload",
+                "objectConnection"
               ]
             },
             {
@@ -687,6 +699,9 @@
             "cloudPcLaunchDetail",
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
+            "cloudPcManagedLicenseExtendAccess",
+            "cloudPcManagedLicenseOperation",
+            "cloudPcManagedLicenseOperationResult",
             "cloudPcManagementAssignmentTarget",
             "cloudPcManagementGroupAssignmentTarget",
             "cloudPcMicrosoftHostedNetworkConfiguration",
@@ -1833,12 +1848,17 @@
             {
               "name": "Conditional access",
               "resources": [
-                "conditionalAccessPolicy",
-                "whatIfAnalysisResult",
-                "namedLocation",
                 "authenticationContextClassReference",
+                "conditionalAccessPolicy",
+                "conditionalAccessPolicyPlan",
+                "conditionalAccessPolicyRule",
                 "conditionalAccessTemplate",
-                "continuousAccessEvaluationPolicy"
+                "continuousAccessEvaluationPolicy",
+                "namedLocation",
+                "whatIfAnalysisResult"
+              ],
+              "complexTypes": [
+                "conditionalAccessPolicyRuleControls"
               ],
               "childNodes": [
                 {
@@ -3346,6 +3366,7 @@
             "microsoft.graph.security.caseManagement.workspaceIndicatorRelation",
             "microsoft.graph.security.caseManagement.task",
             "microsoft.graph.security.caseManagement.caseTypeConfiguration",
+            "microsoft.graph.security.caseManagement.slaPolicyDefinition",
             "microsoft.graph.security.caseManagement.customFieldDefinition",
             "microsoft.graph.security.caseManagement.stringCustomFieldDefinition",
             "microsoft.graph.security.caseManagement.numberCustomFieldDefinition",

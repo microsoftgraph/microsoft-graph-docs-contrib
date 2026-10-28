@@ -55,7 +55,7 @@ Supply a JSON representation of the resource. Include `@odata.type` to identify 
 |Property|Type|Description|
 |:---|:---|:---|
 |@odata.type|String|The OData type of the concrete activity. To update a comment, use `#microsoft.graph.security.caseManagement.comment`.|
-|message|String|The comment body.|
+|message|String|The comment body. The maximum length is 5,000 characters for [generic cases](../resources/security-casemanagement-genericcase.md).|
 
 ## Response
 
