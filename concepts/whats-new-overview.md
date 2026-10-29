@@ -58,6 +58,10 @@ Added 35 members, from `PlannerCustomFieldDefinition` through `MESRawEmailConten
 
 Added support for single-value extended properties on [todoTask](/graph/api/resources/todotask) and [todoTaskList](/graph/api/resources/todotasklist) resources, enabling apps to store and retrieve custom data for Microsoft To Do tasks and task lists.
 
+### Teamwork and communications | Calls and online meetings
+
+Added the **engagements** property to the [attendanceRecord](/graph/api/resources/attendancerecord) resource. Use it to get real-time participant interaction behaviors that are captured as part of the attendance report, including reactions, hand raises, camera toggles, and microphone mute and unmute events.
+
 ### Tenants | Tenant governance
 
 Added the [refreshStatus](/graph/api/tenantgovernanceservices-relatedtenant-refreshstatus) method to get the status of the most recent related tenants refresh operation.

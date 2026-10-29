@@ -2176,7 +2176,8 @@
                 "callTranscript"
               ],
               "complexTypes": [
-                "cloudVideoInteropInfo"
+                "cloudVideoInteropInfo",
+                "meetingEngagement"
               ],
               "childNodes": [
                 {

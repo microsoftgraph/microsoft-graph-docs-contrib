@@ -13,6 +13,16 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### meetingEngagementType values
+
+|Member|
+|:---|
+|reaction|
+|hand|
+|camera|
+|microphone|
+|unknownFutureValue|
+
 ### notifyMembers values
 
 |Member|
