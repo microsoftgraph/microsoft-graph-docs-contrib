@@ -171,7 +171,9 @@ Updated the **evaluationErrorType** enumeration to use customer-facing reasons f
 
 ### Teamwork and communications | Messaging
 
-Added support for setting and unsetting custom emoji reactions on chat messages by specifying a display name (**displayName**), service-issued identifier (**reactionId**), or both. For more information, see [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true).
+- Added methods to [get a custom emoji or its raw image content](/graph/api/teamworkcustomemoji-get?view=graph-rest-beta&preserve-view=true) and [delete a custom emoji](/graph/api/teamworkcustomemoji-delete?view=graph-rest-beta&preserve-view=true) by display name.
+- Updated the [teamworkCustomEmoji](/graph/api/resources/teamworkcustomemoji?view=graph-rest-beta&preserve-view=true) resource to inherit its identifier, binary content, content type, and media-stream behavior from [teamworkHostedContent](/graph/api/resources/teamworkhostedcontent?view=graph-rest-beta&preserve-view=true).
+- Added support for setting and unsetting custom emoji reactions on chat messages by specifying a display name (**displayName**), service-issued identifier (**reactionId**), or both. For more information, see [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true).
 
 ## September 2026: New and generally available
 
