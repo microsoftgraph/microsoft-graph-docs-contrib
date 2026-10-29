@@ -50,6 +50,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource.
 
+### Reports | Partner billing reports
+
+Added the [billedAggregatedUsage](/graph/api/resources/partners-billing-billedaggregatedusage) resource and related [export](/graph/api/partners-billing-billedaggregatedusage-export) method to the v1.0 endpoint. Cloud Solution Provider partners can use the **export** method to generate billed aggregated Azure usage reports for a specific invoice.
+
 ### Security | Audit log query
 
 Added 35 members, from `PlannerCustomFieldDefinition` through `MESRawEmailContentMetadata`, to the [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype) enumeration and added the matching [auditData derived types](/graph/api/resources/security-auditdata-derived-types) to represent workload-specific audit event payloads.
