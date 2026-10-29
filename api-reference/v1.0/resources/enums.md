@@ -652,6 +652,8 @@ Namespace: microsoft.graph
 | azureResources |
 | entraGroups |
 | unknownFutureValue |
+| applicationAuthorization |
+| appRoles |
 
 ### evaluationOutcome values
 

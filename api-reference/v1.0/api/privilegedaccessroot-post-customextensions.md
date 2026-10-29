@@ -5,7 +5,7 @@ author: "amanswaika"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 09/16/2026
+ms.date: 10/19/2026
 ---
 
 # Create roleManagementCustomCalloutExtension
@@ -71,6 +71,7 @@ Content-Type: application/json
   "resourceType": "entraRoles",
   "type": "preApproval",
   "customAttributes": ["department", "costCenter"],
+  "isEnabled": true,
   "endpointConfiguration": {
     "@odata.type": "#microsoft.graph.httpRequestEndpoint",
     "targetUrl": "https://api.contoso.com/webhooks/role-assignments"
@@ -108,6 +109,7 @@ Content-Type: application/json
   "resourceType": "entraRoles",
   "type": "preApproval",
   "customAttributes": ["department", "costCenter"],
+  "isEnabled": true,
   "endpointConfiguration": {
     "@odata.type": "#microsoft.graph.httpRequestEndpoint",
     "targetUrl": "https://api.contoso.com/webhooks/role-assignments"

@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "0870c1e9-e856-4da5-9b5a-e9daacd7643c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the nullable **isEnabled** property to the **roleManagementCustomCalloutExtension** resource, available through the **customExtensions** relationship of [privilegedAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/privilegedaccessroot?view=graph-rest-1.0).",
+          "Target": "roleManagementCustomCalloutExtension"
+        },
+        {
+          "Id": "0870c1e9-e856-4da5-9b5a-e9daacd7643c",
+          "ApiChange": "Member",
+          "ChangedApiName": "applicationAuthorization",
+          "ChangeType": "Addition",
+          "Description": "Added the `applicationAuthorization` member to the **customExtensionResourceType** enumeration used by the **resourceType** property of **roleManagementCustomCalloutExtension**, available through the **customExtensions** relationship of [privilegedAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/privilegedaccessroot?view=graph-rest-1.0). Use the `Prefer: include-unknown-enum-members` request header to get this member.",
+          "Target": "customExtensionResourceType"
+        },
+        {
+          "Id": "0870c1e9-e856-4da5-9b5a-e9daacd7643c",
+          "ApiChange": "Member",
+          "ChangedApiName": "appRoles",
+          "ChangeType": "Addition",
+          "Description": "Added the `appRoles` member to the **customExtensionResourceType** enumeration used by the **resourceType** property of **roleManagementCustomCalloutExtension**, available through the **customExtensions** relationship of [privilegedAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/privilegedaccessroot?view=graph-rest-1.0). Use the `Prefer: include-unknown-enum-members` request header to get this member.",
+          "Target": "customExtensionResourceType"
+        }
+      ],
+      "Id": "0870c1e9-e856-4da5-9b5a-e9daacd7643c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-19T18:39:49.2407266Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9287cb65-a689-4b97-aa90-131d57199432",
           "ApiChange": "Resource",
           "ChangedApiName": "groupResource",

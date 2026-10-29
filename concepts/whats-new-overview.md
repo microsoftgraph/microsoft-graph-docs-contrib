@@ -38,6 +38,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Identity and access | Governance
 
+- Added the **isEnabled** property to the [roleManagementCustomCalloutExtension](/graph/api/resources/rolemanagementcustomcalloutextension) resource type in v1.0. Use it to enable or disable a PIM custom extension without deleting it.
+- Added the `applicationAuthorization` and `appRoles` members to the **customExtensionResourceType** enumeration in v1.0, extending the supported values of **resourceType** on [roleManagementCustomCalloutExtension](/graph/api/resources/rolemanagementcustomcalloutextension). Use the `Prefer: include-unknown-enum-members` request header to retrieve these values.
 - Added the [groupResource](/graph/api/resources/groupresource) resource type and the **resources** relationship to the [privilegedAccessGroup](/graph/api/resources/privilegedaccessgroup) resource. Use them to list and get groups managed through Privileged Identity Management (PIM) for groups.
 
 ### Mail | Message trace
