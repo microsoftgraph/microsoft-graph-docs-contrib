@@ -22,11 +22,7 @@ To review policies across the tenant, issue a separate request for each case typ
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security_casemanagement_casetypeconfiguration_list_slapolicies_permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_casemanagement_casetypeconfiguration_list_slapolicies" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-casemanagement-casetypeconfiguration-list-slapolicies-permissions.md)]
 
 [!INCLUDE [rbac-case-management-sla-policy-apis-read](../includes/rbac-for-apis/rbac-case-management-sla-policy-apis-read.md)]

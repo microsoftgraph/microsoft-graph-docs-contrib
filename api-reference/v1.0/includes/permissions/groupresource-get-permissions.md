@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|PrivilegedAccess.Read.AzureADGroup|PrivilegedAccess.ReadWrite.AzureADGroup|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|PrivilegedAccess.Read.AzureADGroup|PrivilegedAccess.ReadWrite.AzureADGroup|
+
