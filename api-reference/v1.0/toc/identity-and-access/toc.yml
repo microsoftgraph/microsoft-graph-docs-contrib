@@ -1257,6 +1257,14 @@ items:
       items:
       - name: Overview
         href: ../../resources/privilegedidentitymanagement-for-groups-api-overview.md
+      - name: Group resource
+        items:
+        - name: Group resource
+          href: ../../resources/groupresource.md
+        - name: Get
+          href: ../../api/groupresource-get.md
+        - name: List
+          href: ../../api/privilegedaccessgroup-list-resources.md
       - name: Assignment schedule request
         items:
         - name: Assignment schedule request

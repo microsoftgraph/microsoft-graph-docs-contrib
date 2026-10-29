@@ -36,6 +36,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Use the **lastUpdatedTime** and **customProperties** properties on the [place](/graph/api/resources/place) resource to read when a place was last updated and manage custom string key-value metadata.
 - The [Place update](/graph/api/place-update) API doesn't honor administrative roles assigned to groups in Microsoft Entra ID. Instead, assign the required role directly to the user in Microsoft Entra ID, or assign it to a user or group through the Microsoft 365 admin center.
 
+### Identity and access | Governance
+
+- Added the [groupResource](/graph/api/resources/groupresource) resource type and the **resources** relationship to the [privilegedAccessGroup](/graph/api/resources/privilegedaccessgroup) resource. Use them to list and get groups managed through Privileged Identity Management (PIM) for groups.
+
 ### Mail | Message trace
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource.
