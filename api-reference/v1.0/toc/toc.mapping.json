@@ -1261,12 +1261,18 @@
               "resources": [
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
+                "federatedTokenValidationPolicy",
                 "homeRealmDiscoveryPolicy",
                 "authenticationFlowsPolicy",
                 "authenticationStrengthPolicy",
                 "deviceRegistrationPolicy",
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy"
+              ],
+              "complexTypes": [
+                "validatingDomains",
+                "allDomains",
+                "enumeratedDomains"
               ]
             },
             {

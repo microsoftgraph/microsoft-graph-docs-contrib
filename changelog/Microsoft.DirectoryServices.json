@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "d6d1f18a-93a9-47cb-aeda-fbd9a73a8361",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedTokenValidationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedtokenvalidationpolicy?view=graph-rest-1.0) resource.",
+          "Target": "federatedTokenValidationPolicy"
+        },
+        {
+          "Id": "d6d1f18a-93a9-47cb-aeda-fbd9a73a8361",
+          "ApiChange": "Resource",
+          "ChangedApiName": "validatingDomains",
+          "ChangeType": "Addition",
+          "Description": "Added the [validatingDomains](https://learn.microsoft.com/en-us/graph/api/resources/validatingdomains?view=graph-rest-1.0) resource.",
+          "Target": "validatingDomains"
+        },
+        {
+          "Id": "d6d1f18a-93a9-47cb-aeda-fbd9a73a8361",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allDomains",
+          "ChangeType": "Addition",
+          "Description": "Added the [allDomains](https://learn.microsoft.com/en-us/graph/api/resources/alldomains?view=graph-rest-1.0) resource.",
+          "Target": "allDomains"
+        },
+        {
+          "Id": "d6d1f18a-93a9-47cb-aeda-fbd9a73a8361",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enumeratedDomains",
+          "ChangeType": "Addition",
+          "Description": "Added the [enumeratedDomains](https://learn.microsoft.com/en-us/graph/api/resources/enumerateddomains?view=graph-rest-1.0) resource.",
+          "Target": "enumeratedDomains"
+        },
+        {
+          "Id": "d6d1f18a-93a9-47cb-aeda-fbd9a73a8361",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "rootDomains",
+          "ChangeType": "Addition",
+          "Description": "Added the **rootDomains** enumeration type.",
+          "Target": "rootDomains"
+        },
+        {
+          "Id": "d6d1f18a-93a9-47cb-aeda-fbd9a73a8361",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "federatedTokenValidationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **federatedTokenValidationPolicy** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-1.0) resource.",
+          "Target": "policyRoot"
+        }
+      ],
+      "Id": "d6d1f18a-93a9-47cb-aeda-fbd9a73a8361",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-28T15:14:49.3314844Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0d95a299-3661-4efe-847d-3bd4b0c5fb7f",
           "ApiChange": "Property",
           "ChangedApiName": "deletedDateTime",

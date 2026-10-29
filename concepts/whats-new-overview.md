@@ -42,6 +42,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the `applicationAuthorization` and `appRoles` members to the **customExtensionResourceType** enumeration in v1.0, extending the supported values of **resourceType** on [roleManagementCustomCalloutExtension](/graph/api/resources/rolemanagementcustomcalloutextension). Use the `Prefer: include-unknown-enum-members` request header to retrieve these values.
 - Added the [groupResource](/graph/api/resources/groupresource) resource type and the **resources** relationship to the [privilegedAccessGroup](/graph/api/resources/privilegedaccessgroup) resource. Use them to list and get groups managed through Privileged Identity Management (PIM) for groups.
 
+### Identity and access | Identity and sign-in
+
+- Added the [federatedTokenValidationPolicy](/graph/api/resources/federatedtokenvalidationpolicy) resource to control which federated domains Microsoft Entra ID accepts tokens from on a per-tenant basis, as a defense-in-depth measure against token-replay and rogue-IdP scenarios.
+
 ### Mail | Message trace
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource.

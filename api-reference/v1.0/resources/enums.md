@@ -2321,6 +2321,18 @@ Possible values for user account types (group membership), per Windows definitio
 | confirmedCompromised |
 | unknownFutureValue |
 
+### rootDomains values
+
+| Member |
+| ----- |
+| none |
+| all |
+| allFederated |
+| allManaged |
+| enumerated |
+| allManagedAndEnumeratedFederated |
+| unknownFutureValue |
+
 ### exchangeIdFormat values
 
 | Member |
