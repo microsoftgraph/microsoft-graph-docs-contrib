@@ -49,23 +49,26 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 In the request body, supply a JSON representation of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
-The following table lists the properties that are required when you create the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
+The following table lists the properties that you can supply when you create the object.
+
+For a hybrid Microsoft Entra join connection, provide **adDomainName** and either **domainJoinCredential** or the deprecated **adDomainUsername** and **adDomainPassword** properties. Domain join credentials aren't required for a Microsoft Entra join connection.
+
+When you specify **domainJoinCredential**, set its **@odata.type** to `#microsoft.graph.cloudPcPlainTextDomainJoinCredential` or `#microsoft.graph.cloudPcKeyVaultDomainJoinCredential`. If **domainJoinCredential** and the deprecated credential properties are both supplied, **domainJoinCredential** takes precedence.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name for the Azure network connection.|
+|adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join. Required for a hybrid Microsoft Entra join connection.|
 |connectionType|[cloudPcOnPremisesConnectionType](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectiontype-values)|Specifies the method by which a provisioned Cloud PC is joined to Microsoft Entra. The `azureADJoin` option indicates the absence of an on-premises Active Directory (AD) in the current tenant that results in the Cloud PC device only joining to Microsoft Entra. The `hybridAzureADJoin` option indicates the presence of an on-premises AD in the current tenant and that the Cloud PC joins both the on-premises AD and Microsoft Entra. The selected option also determines the types of users who can be assigned and can sign into a Cloud PC. The `azureADJoin` option allows both cloud-only and hybrid users to be assigned and sign in, whereas `hybridAzureADJoin` is restricted to hybrid users only. The default value is `hybridAzureADJoin`. The possible values are: `hybridAzureADJoin`, `azureADJoin`, `unknownFutureValue`.|
-|subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
-|adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
-|adDomainPassword|String|The password associated with **adDomainUsername**.|
-|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com.|
-|displayName|String|The display name for the Azure network connection.|
-|resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|subnetId|String|The ID of the target subnet. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
-|type (deprecated)|[cloudPcOnPremisesConnectionType](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectiontype-values)|Specifies how the provisioned Cloud PC joins to Microsoft Entra ID. The default value is `hybridAzureADJoin`. The possible values are: `hybridAzureADJoin`, `azureADJoin`, `unknownFutureValue`. The **type** property is deprecated and stopped returning data on January 31, 2024. Goind forward, use the **connectionType** property.|
-|subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
-|virtualNetworkId|String|The ID of the target virtual network. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
-|type|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC joins to Microsoft Entra ID. The default value is `hybridAzureADJoin`. The possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
+|displayName|String|The display name for the Azure network connection. Required.|
+|domainJoinCredential|[cloudPcDomainJoinCredential](../resources/cloudpcdomainjoincredential.md)|The Active Directory domain join credential. Required for a hybrid Microsoft Entra join connection unless the deprecated **adDomainUsername** and **adDomainPassword** properties are supplied.|
+|organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If omitted, the default computer object container in the Active Directory domain is used. Optional.|
+|resourceGroupId|String|The ID of the target resource group. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}`. Required.|
+|subnetId|String|The ID of the target subnet. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}/subnets/{subnetName}`. Required.|
+|subscriptionId|String|The ID of the target Azure subscription associated with your tenant. Required.|
+|virtualNetworkId|String|The ID of the target virtual network. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}`. Required.|
+|adDomainPassword (deprecated)|String|The password associated with **adDomainUsername**. Required with **adDomainUsername** for a hybrid Microsoft Entra join connection when **domainJoinCredential** isn't provided. This property is deprecated and will be removed on December 31, 2026. Going forward use the **domainJoinCredential** property instead.|
+|adDomainUsername (deprecated)|String|The UPN of an Active Directory account that has permissions to create computer objects in Active Directory, for example, `dcadmin@contoso001.com`. Required with **adDomainPassword** for a hybrid Microsoft Entra join connection when **domainJoinCredential** isn't provided. This property is deprecated and will be removed on December 31, 2026. Going forward use the **domainJoinCredential** property instead.|
+|type (deprecated)|[cloudPcOnPremisesConnectionType](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectiontype-values)|Specifies how the provisioned Cloud PC joins to Microsoft Entra ID. The default value is `hybridAzureADJoin`. The possible values are: `hybridAzureADJoin`, `azureADJoin`, `unknownFutureValue`. The **type** property is deprecated and stopped returning data on January 31, 2024. Use **connectionType** instead.|
 
 ## Response
 
@@ -73,11 +76,13 @@ If successful, this method returns a `201 Created` response code and a [cloudPcO
 
 ## Examples
 
-### Request
+### Example 1: Create a connection using the adDomainPassword and adDomainUsername properties
 
+For compatibility reasons, the following example shows how to create a connection using the deprecated properties. Going forward use **domainJoinCredential** as shown in the following examples.
+
+#### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_cloudpconpremisesconnection_from_cloudpconpremisesconnection"
@@ -94,7 +99,8 @@ Content-Type: application/json
   "type": "hybridAzureADJoin",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
   "adDomainName": "contoso001.com",
-  "adDomainUsername": "dcadmin",
+  "adDomainPassword": "ExamplePassword!42",
+  "adDomainUsername": "dcadmin@contoso001.com",
   "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
   "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
   "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
@@ -102,37 +108,7 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -157,8 +133,164 @@ Content-Type: application/json
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
   "subscriptionName": "CPC customer 001 test subscription",
   "adDomainName": "contoso001.com",
-  "adDomainUsername": "dcadmin",
+  "adDomainUsername": "dcadmin@contoso001.com",
   "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
+  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
+  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
+  "healthCheckStatus": "pending"
+}
+```
+
+### Example 2: Create a connection with a password stored in Azure Key Vault
+
+The following example provides the domain join user principal name directly and references an Azure Key Vault secret for the password.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_cloudpconpremisesconnection_keyvault"
+}
+-->
+
+```http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections
+Content-Type: application/json
+
+{
+  "displayName": "test-canary-02",
+  "connectionType": "hybridAzureADJoin",
+  "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ad47",
+  "adDomainName": "contoso001.com",
+  "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
+  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
+  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
+  "domainJoinCredential": {
+    "@odata.type": "#microsoft.graph.cloudPcKeyVaultDomainJoinCredential",
+    "keyVaultResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/contoso-rg/providers/Microsoft.KeyVault/vaults/contoso-kv",
+    "secretName": "ad-domain-join-password",
+    "serviceConnectorResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/contoso-rg/providers/Microsoft.Windows365/serviceConnectors/anc-kv-connector",
+    "keyVaultIntentConfiguration": {
+      "@odata.type": "#microsoft.graph.cloudPcDomainJoinKeyVaultPasswordConfiguration",
+      "userIdentity": {
+        "@odata.type": "#microsoft.graph.cloudPcDomainJoinPlainTextUserIdentity",
+        "domainUserPrincipalName": "dcadmin@contoso001.com"
+      }
+    }
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection"
+}
+-->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
+  "id": "ac2ad805-167e-49ee-9bef-196c4ce7ffff",
+  "managedBy": "windows365",
+  "displayName": "test-canary-02",
+  "connectionType": "hybridAzureADJoin",
+  "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ad47",
+  "subscriptionName": "CPC customer 001 test subscription",
+  "adDomainName": "contoso001.com",
+  "adDomainUsername": "dcadmin@contoso001.com",
+  "domainJoinCredential": {
+    "@odata.type": "#microsoft.graph.cloudPcKeyVaultDomainJoinCredential",
+    "keyVaultResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/contoso-rg/providers/Microsoft.KeyVault/vaults/contoso-kv",
+    "secretName": "ad-domain-join-password",
+    "serviceConnectorResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/contoso-rg/providers/Microsoft.Windows365/serviceConnectors/anc-kv-connector",
+    "keyVaultIntentConfiguration": {
+      "@odata.type": "#microsoft.graph.cloudPcDomainJoinKeyVaultPasswordConfiguration",
+      "userIdentity": {
+        "@odata.type": "#microsoft.graph.cloudPcDomainJoinPlainTextUserIdentity",
+        "domainUserPrincipalName": "dcadmin@contoso001.com"
+      }
+    }
+  },
+  "organizationalUnit": "OU=Domain Controllers, DC=contoso001, DC=com",
+  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
+  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
+  "healthCheckStatus": "pending"
+}
+```
+
+### Example 3: Create a connection with a plain-text credential
+
+The following example provides the domain join user principal name and password through **domainJoinCredential**, without the deprecated credential properties.
+
+#### Request
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_cloudpconpremisesconnection_plaintext"
+}
+-->
+
+```http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections
+Content-Type: application/json
+
+{
+  "displayName": "Contoso plain-text connection",
+  "connectionType": "hybridAzureADJoin",
+  "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ad47",
+  "adDomainName": "contoso001.com",
+  "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
+  "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
+  "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
+  "domainJoinCredential": {
+    "@odata.type": "#microsoft.graph.cloudPcPlainTextDomainJoinCredential",
+    "domainUserPrincipalName": "dcadmin@contoso001.com",
+    "domainPassword": "ExamplePassword!42"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response. The **domainPassword** property isn't returned.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection"
+}
+-->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
+  "id": "5ab42e01-828b-4a80-8a5f-e80bd4b78534",
+  "managedBy": "windows365",
+  "displayName": "Contoso plain-text connection",
+  "connectionType": "hybridAzureADJoin",
+  "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ad47",
+  "adDomainName": "contoso001.com",
+  "adDomainUsername": "dcadmin@contoso001.com",
+  "domainJoinCredential": {
+    "@odata.type": "#microsoft.graph.cloudPcPlainTextDomainJoinCredential",
+    "domainUserPrincipalName": "dcadmin@contoso001.com"
+  },
   "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
   "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
   "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",

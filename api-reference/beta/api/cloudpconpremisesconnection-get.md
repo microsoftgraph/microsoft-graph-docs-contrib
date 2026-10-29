@@ -123,19 +123,31 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
-    "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc4ffff",
     "managedBy": "windows365",
-    "type": "hybridAzureADJoin",
     "connectionType": "hybridAzureADJoin",
-    "displayName": "Display Name value",
-    "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-    "subscriptionName": "Subscription Name value",
-    "adDomainName": "Active Directory Domain Name value",
-    "adDomainUsername": "Active Directory Domain User Name value",
-    "organizationalUnit": "Organization Unit value",
-    "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG",
-    "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
-    "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
+    "displayName": "Contoso Azure network connection",
+    "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ad47",
+    "subscriptionName": "Contoso subscription",
+    "adDomainName": "contoso.com",
+    "adDomainUsername": "dcadmin@contoso.com",
+    "domainJoinCredential": {
+        "@odata.type": "#microsoft.graph.cloudPcKeyVaultDomainJoinCredential",
+        "keyVaultResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/contoso-rg/providers/Microsoft.KeyVault/vaults/contoso-kv",
+        "secretName": "ad-domain-join-password",
+        "serviceConnectorResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/contoso-rg/providers/Microsoft.Windows365/serviceConnectors/anc-kv-connector",
+        "keyVaultIntentConfiguration": {
+            "@odata.type": "#microsoft.graph.cloudPcDomainJoinKeyVaultPasswordConfiguration",
+            "userIdentity": {
+                "@odata.type": "#microsoft.graph.cloudPcDomainJoinPlainTextUserIdentity",
+                "domainUserPrincipalName": "dcadmin@contoso.com"
+            }
+        }
+    },
+    "organizationalUnit": "OU=Cloud PCs,DC=contoso,DC=com",
+    "resourceGroupId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/ExampleRG",
+    "virtualNetworkId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet",
+    "subnetId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
     "healthCheckStatus": "running",
     "virtualNetworkLocation": "westus2"
 }
@@ -206,7 +218,7 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
-    "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc4ffff",
     "managedBy": "windows365",
     "displayName": "Display Name value",
     "healthCheckStatus": "failed",
