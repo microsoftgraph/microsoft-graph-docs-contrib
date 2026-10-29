@@ -1831,6 +1831,9 @@
                 "verifiableCredentialsAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
+              ],
+              "complexTypes": [
+                "telecomProviderSettings"
               ]
             },
             {
