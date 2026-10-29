@@ -508,6 +508,57 @@ Namespace: microsoft.graph
 | application |
 | unknownFutureValue |
 
+### crossTenantMigrationJobStatus values
+
+| Member |
+| --- |
+| submitted |
+| approved |
+| processing |
+| cuttingOver |
+| inProgress |
+| completed |
+| completedWithErrors |
+| failed |
+| cancelled |
+| pendingCancel |
+| adminActionRequired |
+| validateSubmitted |
+| validateProcessing |
+| validateInProgress |
+| validatePassed |
+| validateFailed |
+| pendingDelete |
+| deleted |
+| unknownFutureValue |
+
+### crossTenantMigrationJobType values
+
+| Member |
+| --- |
+| validate |
+| migrate |
+| unknownFutureValue |
+
+### crossTenantMigrationServiceStatus values
+
+| Member |
+| --- |
+| notStarted |
+| valid |
+| invalid |
+| error |
+| inProgress |
+| completed |
+| failed |
+| cancelled |
+| pendingCancel |
+| syncing |
+| synced |
+| finalizing |
+| forceComplete |
+| unknownFutureValue |
+
 ### multiFactorAuthConfiguration values
 
 | Member             | 

@@ -62,6 +62,10 @@ Added support for single-value extended properties on [todoTask](/graph/api/reso
 
 Added the **engagements** property to the [attendanceRecord](/graph/api/resources/attendancerecord) resource. Use it to get real-time participant interaction behaviors that are captured as part of the attendance report, including reactions, hand raises, camera toggles, and microphone mute and unmute events.
 
+### Tenants | Cross-tenant migration
+
+Added the [cross-tenant migration API](/graph/api/resources/crosstenant-migration-api-overview) and related methods to the v1.0 endpoint. Use the API to create migration jobs, validate their configuration, migrate user data between Microsoft 365 tenants, monitor migration status, and cancel migration jobs or individual user tasks.
+
 ### Tenants | Tenant governance
 
 Added the [refreshStatus](/graph/api/tenantgovernanceservices-relatedtenant-refreshstatus) method to get the status of the most recent related tenants refresh operation.

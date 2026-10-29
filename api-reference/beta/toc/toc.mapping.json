@@ -4050,13 +4050,14 @@
         },
         {
           "name": "Cross-tenant migration",
-          "overview": "../../resources/crosstenant-migration-overview.md",
+          "overview": "../../resources/crosstenant-migration-api-overview.md",
           "resources": [
             "crossTenantMigrationJob",
             "crossTenantMigrationTask",
             "migrationsRoot"
           ],
           "complexTypes": [
+            "crossTenantMigrationCancelResponse",
             "crossTenantMigrationServiceStatusDetails",
             "error",
             "exchangeOnlineCrossTenantMigrationSettings"

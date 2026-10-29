@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 ACCEPTED` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body. If not successful, a `409 CONFLICT` response code is returned, and the migration continues.
+If successful, this action returns a `202 Accepted` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body. If not successful, a `409 Conflict` response code is returned, and the migration continues.
 
 ## Examples
 

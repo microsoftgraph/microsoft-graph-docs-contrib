@@ -1,6 +1,6 @@
 ---
 title: "Get crossTenantMigrationTask"
-description: "Read the properties and relationships of crossTenantMigrationTask object."
+description: "Read the properties and relationships of a crossTenantMigrationTask object that provides details about the migration task for a single user in a crossTenantMigrationJob."
 author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md), which shows the details of the migration task for a single user of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). The [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) contains the [status details](../resources/crosstenantmigrationservicestatusdetails.md) of migrations for the workloads specified in the crossTenantMigrationJob. 
+Read the properties and relationships of a [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) object that provides details about the migration task for a single user in a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). The [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) contains the [status details](../resources/crosstenantmigrationservicestatusdetails.md) of migrations for the workloads specified in the **crossTenantMigrationJob**.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -43,7 +43,7 @@ GET /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/u
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -150,4 +150,3 @@ Content-Type: application/json
   ]
 }
 ```
-

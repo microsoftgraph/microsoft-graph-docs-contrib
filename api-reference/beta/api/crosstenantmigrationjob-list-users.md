@@ -1,6 +1,6 @@
 ---
 title: "List crossTenantMigrationTask objects"
-description: "Get a list of the crossTenantMigrationTask objects and their properties."
+description: "Get a list of the crossTenantMigrationTasks for users in a crossTenantMigrationJob."
 author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -44,7 +44,7 @@ GET /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/u
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$orderby`, `$count`, `$top`, and `$skiptoken` [OData query parameters](/graph/query-parameters) to customize the response. The `$orderby` query parameter sorts only the current page, `$count` returns the number of objects in the current page, and `$top` can reduce the page size but can't return more than 20 objects. To retrieve the next page, use the **@odata.nextLink** URL provided in the response.
 
 ## Request headers
 
@@ -215,4 +215,3 @@ Content-Type: application/json
   ]
 }
 ```
-

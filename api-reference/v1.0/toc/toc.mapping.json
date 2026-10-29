@@ -2402,6 +2402,21 @@
           ]
         },
         {
+          "name": "Cross-tenant migration",
+          "overview": "../../resources/crosstenant-migration-api-overview.md",
+          "resources": [
+            "crossTenantMigrationJob",
+            "crossTenantMigrationTask",
+            "migrationsRoot"
+          ],
+          "complexTypes": [
+            "crossTenantMigrationCancelResponse",
+            "crossTenantMigrationServiceStatusDetails",
+            "error",
+            "exchangeOnlineCrossTenantMigrationSettings"
+          ]
+        },
+        {
           "name": "Multitenant organization",
           "overview": "../../resources/multitenantorganization-overview.md",
           "keywords": [
