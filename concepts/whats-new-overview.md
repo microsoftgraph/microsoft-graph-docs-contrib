@@ -105,6 +105,7 @@ Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?
 ### Identity and access | Identity and sign-in
 
 - Added public preview support for OnPasswordUpdate custom authentication extensions. Use the [onPasswordUpdateCustomExtension](/graph/api/resources/onpasswordupdatecustomextension?view=graph-rest-beta&preserve-view=true) resource to notify external systems after a self-service password reset and the [onPasswordUpdateListener](/graph/api/resources/onpasswordupdatelistener?view=graph-rest-beta&preserve-view=true) resource to configure when the notification occurs.
+- Added the **identityVerificationEventsConfiguration** property to the [verifiableCredentialsAuthenticationMethodConfiguration](/graph/api/resources/verifiablecredentialsauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) resource. Use it to control tenant-wide collection and exposure of identity verification events and credential provenance information for Verified ID verification.
 - Added the [conditionalAccessPolicyPlan](/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta&preserve-view=true) resource type and related methods for grouping shared Conditional Access conditions with scenario-specific rules. Use policy plans to consolidate common targeting conditions and manage rule-specific enforcement controls.
 
 ### Groups

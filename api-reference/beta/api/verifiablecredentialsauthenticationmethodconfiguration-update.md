@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials/{id}
+PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/verifiableCredentials
 ```
 
 ## Request headers
@@ -52,10 +52,11 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/V
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|authenticationMethodState| Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`. Optional.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection| Groups of users that are excluded from the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). Optional.|
+|identityVerificationEventsConfiguration|[identityVerificationEventsConfiguration](../resources/identityverificationeventsconfiguration.md)|The tenant-level configuration that controls whether identity verification events and credential provenance information are collected and exposed for Verified ID verification. Optional.|
+|state|authenticationMethodState| Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`. Optional.|
 
-
+Omitting **identityVerificationEventsConfiguration** from a PATCH request leaves its existing value unchanged. If no configuration is stored, the setting defaults to disabled. When the stored configuration is `null` or has **isEnabled** set to `false`, no new identity verification events or credential provenance information are collected and requests to access retained events return `403 Forbidden` with the inner error code `IdentityVerificationEventsExposureDisabled`. Disabling the setting doesn't delete retained events. Retained events become readable again after the setting is re-enabled, subject to the retention policy.
 
 ## Response
 
@@ -72,21 +73,13 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials/{id}
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/verifiableCredentials
 Content-Type: application/json
 
 {
-    "state": "disabled",
-    "excludeTargets": [
-        {
-            "id": "10051f25-53a8-4f81-8a0b-9fc22887e640",
-            "targetType": "group"
-        },
-        {
-            "id": "e2c2244f-66cc-4d5b-9042-686f9fa42986",
-            "targetType": "group"
-        }
-    ]
+  "identityVerificationEventsConfiguration": {
+    "isEnabled": true
+  }
 }
 ```
 
@@ -102,4 +95,3 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-

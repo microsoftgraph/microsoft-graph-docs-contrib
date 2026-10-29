@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [verifiableCredentialsAuthenticationMethodConfiguration](../resources/verifiablecredentialsauthenticationmethodconfiguration.md) object.
+Read the properties and relationships of the [verifiableCredentialsAuthenticationMethodConfiguration](../resources/verifiablecredentialsauthenticationmethodconfiguration.md) object. The response indicates whether tenant-wide collection and exposure of identity verification events and credential provenance information are enabled.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials/{id}
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/verifiableCredentials
 ```
 
 ## Optional query parameters
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials/{id}
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/verifiableCredentials
 ```
 
 
@@ -87,33 +87,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
-    "@odata.type": "#microsoft.graph.verifiableCredentialsAuthenticationMethodConfiguration",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET policies/authenticationMethodsPolicy/authenticationMethodConfigurations('<key>')?$select=excludeTargets,state",
-    "id": "VerifiableCredentials",
-    "state": "enabled",
-    "excludeTargets": [
-        {
-            "id": "10051f25-53a8-4f81-8a0b-9fc22887e640",
-            "targetType": "group"
-        },
-        {
-            "id": "e2c2244f-66cc-4d5b-9042-686f9fa42986",
-            "targetType": "group"
-        }
-    ],
-    "includeTargets": [
-        {
-            "targetType": "group",
-            "id": "3160256b-e74c-426e-9a65-b68a71c7f054",
-            "isRegistrationRequired": false,
-            "verifiedIdProfiles": [
-                "9dda0ae1-e007-4a1d-81ec-2cf4b1274610"
-            ]
-        }
-    ]
-  }
+  "@odata.type": "#microsoft.graph.verifiableCredentialsAuthenticationMethodConfiguration",
+  "id": "VerifiableCredentials",
+  "state": "enabled",
+  "identityVerificationEventsConfiguration": {
+    "isEnabled": false
+  },
+  "excludeTargets": [],
+  "includeTargets": [
+    {
+      "targetType": "group",
+      "id": "4a55b41d-de69-4665-a689-a4721d757266",
+      "verifiedIdProfiles": [
+        "47c34124-8c18-49d7-b020-cd6ed91b3154"
+      ]
+    }
+  ]
 }
 ```
 
