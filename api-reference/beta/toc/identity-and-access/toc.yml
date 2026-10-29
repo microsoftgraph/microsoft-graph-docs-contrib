@@ -2718,6 +2718,20 @@ items:
         href: ../../api/directory-deleteditems-delete.md
   - name: Conditional access
     items:
+    - name: Authentication context class reference
+      items:
+      - name: Authentication context class reference
+        href: ../../resources/authenticationcontextclassreference.md
+      - name: List
+        href: ../../api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+      - name: Create
+        href: ../../api/conditionalaccessroot-post-authenticationcontextclassreferences.md
+      - name: Get
+        href: ../../api/authenticationcontextclassreference-get.md
+      - name: Update
+        href: ../../api/authenticationcontextclassreference-update.md
+      - name: Delete
+        href: ../../api/authenticationcontextclassreference-delete.md
     - name: Conditional access policy
       items:
       - name: Conditional access policy
@@ -2740,12 +2754,54 @@ items:
         href: ../../api/conditionalaccesspolicy-restore.md
       - name: Permanently delete a soft deleted policy
         href: ../../api/policydeletableitem-delete.md
-    - name: What If evaluation
+    - name: Conditional access policy plan
       items:
-      - name: What If evaluation
-        href: ../../resources/whatifanalysisresult.md
-      - name: Evaluate
-        href: ../../api/conditionalaccessroot-evaluate.md
+      - name: Conditional access policy plan
+        href: ../../resources/conditionalaccesspolicyplan.md
+      - name: List
+        href: ../../api/conditionalaccessroot-list-plans.md
+      - name: Create
+        href: ../../api/conditionalaccessroot-post-plans.md
+      - name: Get
+        href: ../../api/conditionalaccesspolicyplan-get.md
+      - name: Update
+        href: ../../api/conditionalaccesspolicyplan-update.md
+      - name: Delete
+        href: ../../api/conditionalaccessroot-delete-plans.md
+      - name: List rules
+        href: ../../api/conditionalaccesspolicyplan-list-rules.md
+      - name: Create rule
+        href: ../../api/conditionalaccesspolicyplan-post-rules.md
+    - name: Conditional access policy rule
+      items:
+      - name: Conditional access policy rule
+        href: ../../resources/conditionalaccesspolicyrule.md
+      - name: List
+        href: ../../api/conditionalaccesspolicyplan-list-rules.md
+      - name: Create
+        href: ../../api/conditionalaccesspolicyplan-post-rules.md
+      - name: Get
+        href: ../../api/conditionalaccesspolicyrule-get.md
+      - name: Update
+        href: ../../api/conditionalaccesspolicyrule-update.md
+      - name: Delete
+        href: ../../api/conditionalaccesspolicyplan-delete-rules.md
+    - name: Conditional access template
+      items:
+      - name: Conditional access template
+        href: ../../resources/conditionalaccesstemplate.md
+      - name: List
+        href: ../../api/conditionalaccessroot-list-templates.md
+      - name: Get
+        href: ../../api/conditionalaccesstemplate-get.md
+    - name: Continuous access evaluation policy
+      items:
+      - name: Continuous access evaluation policy
+        href: ../../resources/continuousaccessevaluationpolicy.md
+      - name: Get
+        href: ../../api/continuousaccessevaluationpolicy-get.md
+      - name: Update
+        href: ../../api/continuousaccessevaluationpolicy-update.md
     - name: Named location
       items:
       - name: Named location
@@ -2806,36 +2862,16 @@ items:
           href: ../../api/compliantnetworknamedlocation-get.md
         - name: Update
           href: ../../api/compliantnetworknamedlocation-update.md
-    - name: Authentication context class reference
+    - name: What If evaluation
       items:
-      - name: Authentication context class reference
-        href: ../../resources/authenticationcontextclassreference.md
-      - name: List
-        href: ../../api/conditionalaccessroot-list-authenticationcontextclassreferences.md
-      - name: Create
-        href: ../../api/conditionalaccessroot-post-authenticationcontextclassreferences.md
-      - name: Get
-        href: ../../api/authenticationcontextclassreference-get.md
-      - name: Update
-        href: ../../api/authenticationcontextclassreference-update.md
-      - name: Delete
-        href: ../../api/authenticationcontextclassreference-delete.md
-    - name: Conditional access template
+      - name: What If evaluation
+        href: ../../resources/whatifanalysisresult.md
+      - name: Evaluate
+        href: ../../api/conditionalaccessroot-evaluate.md
+    - name: Complex types
       items:
-      - name: Conditional access template
-        href: ../../resources/conditionalaccesstemplate.md
-      - name: List
-        href: ../../api/conditionalaccessroot-list-templates.md
-      - name: Get
-        href: ../../api/conditionalaccesstemplate-get.md
-    - name: Continuous access evaluation policy
-      items:
-      - name: Continuous access evaluation policy
-        href: ../../resources/continuousaccessevaluationpolicy.md
-      - name: Get
-        href: ../../api/continuousaccessevaluationpolicy-get.md
-      - name: Update
-        href: ../../api/continuousaccessevaluationpolicy-update.md
+      - name: Conditional access policy rule controls
+        href: ../../resources/conditionalaccesspolicyrulecontrols.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile
