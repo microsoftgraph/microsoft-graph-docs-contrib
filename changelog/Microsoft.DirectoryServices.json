@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "6698ae70-144b-4e20-ba8a-4ee9b2d0a373",
+          "ApiChange": "Property",
+          "ChangedApiName": "managerApplications",
+          "ChangeType": "Addition",
+          "Description": "Added the **managerApplications** property to the [agentUser](https://learn.microsoft.com/en-us/graph/api/resources/agentuser?view=graph-rest-1.0) resource.",
+          "Target": "agentUser"
+        }
+      ],
+      "Id": "6698ae70-144b-4e20-ba8a-4ee9b2d0a373",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-23T23:21:34.0933599Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d6d1f18a-93a9-47cb-aeda-fbd9a73a8361",
           "ApiChange": "Resource",
           "ChangedApiName": "federatedTokenValidationPolicy",

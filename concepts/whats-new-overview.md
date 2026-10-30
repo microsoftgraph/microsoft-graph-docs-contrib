@@ -36,6 +36,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Use the **lastUpdatedTime** and **customProperties** properties on the [place](/graph/api/resources/place) resource to read when a place was last updated and manage custom string key-value metadata.
 - The [Place update](/graph/api/place-update) API doesn't honor administrative roles assigned to groups in Microsoft Entra ID. Instead, assign the required role directly to the user in Microsoft Entra ID, or assign it to a user or group through the Microsoft 365 admin center.
 
+### Identity and access | Directory management
+
+- Promoted the **managerApplications** property on the [agentUser](/graph/api/resources/agentuser) resource type from beta to v1.0. Use it to read the application IDs authorized to manage the agent user's backing agent blueprint. The property is read-only and is returned only when explicitly selected with the `microsoft.graph.agentUser` type cast.
+
 ### Identity and access | Governance
 
 - Added the **isEnabled** property to the [roleManagementCustomCalloutExtension](/graph/api/resources/rolemanagementcustomcalloutextension) resource type in v1.0. Use it to enable or disable a PIM custom extension without deleting it.
