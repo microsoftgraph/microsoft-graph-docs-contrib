@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "c3074bda-53c7-415b-8dfc-ffd0b937c095",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "auditLogRecordType",
+          "ChangeType": "Addition",
+          "Description": "Added multiple members to the **auditLogRecordType** enumeration to support audit log record types for various Microsoft 365 workloads.",
+          "Target": "auditLogRecordType"
+        },
+        {
+          "Id": "c3074bda-53c7-415b-8dfc-ffd0b937c095",
+          "ApiChange": "Resource",
+          "ChangedApiName": "auditData",
+          "ChangeType": "Addition",
+          "Description": "Added multiple derived types of [auditData](https://learn.microsoft.com/en-us/graph/api/resources/security-auditdata?view=graph-rest-v1.0) to represent audit log records for various Microsoft 365 workloads.",
+          "Target": "auditData"
+        }
+      ],
+      "Id": "c3074bda-53c7-415b-8dfc-ffd0b937c095",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-06T12:34:50.8585687Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Compliance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fe4f9448-f8c4-4858-853a-284ce200e1fe",
           "ApiChange": "Enumeration",
           "ChangedApiName": "auditLogRecordType",

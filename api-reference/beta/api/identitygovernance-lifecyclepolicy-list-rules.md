@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [lifecyclePolicyRule](../resources/identitygovernance-lifecyclepolicyrule.md) objects and their properties for a [lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md). Each enabled rule is evaluated independently, and any violation makes the policy noncompliant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

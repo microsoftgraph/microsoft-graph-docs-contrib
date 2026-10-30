@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 10/05/2026
+ms.date: 10/06/2026
 ms.topic: whats-new
 ---
 
@@ -22,7 +22,9 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
-Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy) method to the [backupReport](/graph/api/resources/backupreport) resource type in v1.0. Use it to retrieve policy-level protection statistics for Microsoft 365 Backup Storage.
+- Use the **policyId** property on the [restoreSessionBase](/graph/api/resources/restoresessionbase) resource to scope restore sessions to a protection policy.
+- Use the optional **policyId** parameter on the [restorePoint: search](/graph/api/restorepoint-search) method to validate protection-unit membership and improve policy-scoped routing. You can also filter the restore points collection by **protectionUnit/policyId**.
+- Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy) method to the [backupReport](/graph/api/resources/backupreport) resource type in v1.0. Use it to retrieve policy-level protection statistics for Microsoft 365 Backup Storage.
 
 ### Calendars
 
@@ -31,15 +33,46 @@ Added the [getStatisticsByPolicy](/graph/api/backupreport-getstatisticsbypolicy)
 
 ### Calendars | Places
 
-Use the **lastUpdatedTime** and **customProperties** properties on the [place](/graph/api/resources/place) resource to read when a place was last updated and manage custom string key-value metadata.
+- Use the **lastUpdatedTime** and **customProperties** properties on the [place](/graph/api/resources/place) resource to read when a place was last updated and manage custom string key-value metadata.
+- The [Place update](/graph/api/place-update) API doesn't honor administrative roles assigned to groups in Microsoft Entra ID. Instead, assign the required role directly to the user in Microsoft Entra ID, or assign it to a user or group through the Microsoft 365 admin center.
+
+### Identity and access | Governance
+
+- Added the **isEnabled** property to the [roleManagementCustomCalloutExtension](/graph/api/resources/rolemanagementcustomcalloutextension) resource type in v1.0. Use it to enable or disable a PIM custom extension without deleting it.
+- Added the `applicationAuthorization` and `appRoles` members to the **customExtensionResourceType** enumeration in v1.0, extending the supported values of **resourceType** on [roleManagementCustomCalloutExtension](/graph/api/resources/rolemanagementcustomcalloutextension). Use the `Prefer: include-unknown-enum-members` request header to retrieve these values.
+- Added the [groupResource](/graph/api/resources/groupresource) resource type and the **resources** relationship to the [privilegedAccessGroup](/graph/api/resources/privilegedaccessgroup) resource. Use them to list and get groups managed through Privileged Identity Management (PIM) for groups.
+
+### Identity and access | Identity and sign-in
+
+- Added the [federatedTokenValidationPolicy](/graph/api/resources/federatedtokenvalidationpolicy) resource to control which federated domains Microsoft Entra ID accepts tokens from on a per-tenant basis, as a defense-in-depth measure against token-replay and rogue-IdP scenarios.
 
 ### Mail | Message trace
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource.
 
+### Reports | Partner billing reports
+
+Added the [billedAggregatedUsage](/graph/api/resources/partners-billing-billedaggregatedusage) resource and related [export](/graph/api/partners-billing-billedaggregatedusage-export) method to the v1.0 endpoint. Cloud Solution Provider partners can use the **export** method to generate billed aggregated Azure usage reports for a specific invoice.
+
+### Security | Audit log query
+
+Added 35 members, from `PlannerCustomFieldDefinition` through `MESRawEmailContentMetadata`, to the [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype) enumeration and added the matching [auditData derived types](/graph/api/resources/security-auditdata-derived-types) to represent workload-specific audit event payloads.
+
 ### Tasks and plans
 
 Added support for single-value extended properties on [todoTask](/graph/api/resources/todotask) and [todoTaskList](/graph/api/resources/todotasklist) resources, enabling apps to store and retrieve custom data for Microsoft To Do tasks and task lists.
+
+### Teamwork and communications | Calls and online meetings
+
+Added the **engagements** property to the [attendanceRecord](/graph/api/resources/attendancerecord) resource. Use it to get real-time participant interaction behaviors that are captured as part of the attendance report, including reactions, hand raises, camera toggles, and microphone mute and unmute events.
+
+### Tenants | Cross-tenant migration
+
+Added the [cross-tenant migration API](/graph/api/resources/crosstenant-migration-api-overview) and related methods to the v1.0 endpoint. Use the API to create migration jobs, validate their configuration, migrate user data between Microsoft 365 tenants, monitor migration status, and cancel migration jobs or individual user tasks.
+
+### Tenants | Tenant governance
+
+Added the [refreshStatus](/graph/api/tenantgovernanceservices-relatedtenant-refreshstatus) method to get the status of the most recent related tenants refresh operation.
 
 ## October 2026: New in preview only
 
@@ -53,9 +86,15 @@ Added the `audit` member to the **appManagementRestrictionState** enumeration ty
 - Removed the **tags** property on the [restoreTaskActivityLog](/graph/api/resources/restoretaskactivitylog?view=graph-rest-beta&preserve-view=true) in favor of the **restoreJobType** property. Use the **restoreJobType** property with values from the [restoreJobType](/graph/api/resources/enums?view=graph-rest-beta&preserve-view=true#restorejobtype-values) enumeration type.
 - Added the **backupPolicyDeleted** member as a new supported value for the **activityType** property on the [activityLogBase](/graph/api/resources/activitylogbase?view=graph-rest-beta&preserve-view=true) resource and its derived types.
 
+### Calendars | Places
+
+The [Place update](/graph/api/place-update?view=graph-rest-beta&preserve-view=true) API doesn't honor administrative roles assigned to groups in Microsoft Entra ID. Instead, assign the required role directly to the user in Microsoft Entra ID, or assign it to a user or group through the Microsoft 365 admin center.
+
 ### Device and app management | Cloud PC
 
-Updated the date when deprecated image properties on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true), [cloudPcSourceDeviceImage](/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta&preserve-view=true), and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) will stop returning data from January 31, 2024 to December 7, 2026. No replacement is planned for **recommendedSku**. Review the replacement property guidance in these resource topics and update affected integrations before the deadline.
+- Updated the date when deprecated image properties on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true), [cloudPcSourceDeviceImage](/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta&preserve-view=true), and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) will stop returning data from January 31, 2024 to December 7, 2026. No replacement is planned for **recommendedSku**. Review the replacement property guidance in these resource topics and update affected integrations before the deadline.
+- Added support for extending Windows 365 Reserve access for multiple users through the [submitManagedLicenseOperation](/graph/api/cloudpcmanagedlicense-submitmanagedlicenseoperation?view=graph-rest-beta&preserve-view=true) action on the [cloudPcManagedLicense](/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta&preserve-view=true) collection. Poll the submitted operation to check completion and inspect per-user results.
+- Use the [retrieveManagedLicenseOperation](/graph/api/cloudpcmanagedlicense-retrievemanagedlicenseoperation?view=graph-rest-beta&preserve-view=true) operation to retrieve the status and per-user results of a submitted operation.
 
 ### Device and app management | Device updates
 
@@ -69,14 +108,28 @@ Updated the date when deprecated image properties on [cloudPcDeviceImage](/graph
 
 Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to support SharePoint service prioritization reports. Use this report to retrieve total, standard, heavy, billed standard, and billed heavy API request counts by application and date.
 
+### Identity and access | Directory management
+
+- Added the [objectConnection](/graph/api/resources/synchronization-objectconnection?view=graph-rest-beta&preserve-view=true) resource type and related methods to inspect or clear cached connector data store linkage records.
+- Added the **objectConnections** relationship to the [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta&preserve-view=true) resource to access linkage records for known object identifiers.
+
 ### Identity and access | Governance
 
 - Added the [accessDriftSummary](/graph/api/resources/accessdriftsummary?view=graph-rest-beta&preserve-view=true) resource type and related methods for identifying governed resources whose actual access differs from access-package intent. Use it to list and inspect drift summaries, retrieve drift details, and download bulk reconciliation reports. Access drift details identify whether each affected identity is a user or group through the **identityType** property of [entraDriftIdentityInfo](/graph/api/resources/entradriftidentityinfo?view=graph-rest-beta&preserve-view=true).
+- Added methods to read and configure a user's [approverDelegate](/graph/api/resources/approverdelegate?view=graph-rest-beta&preserve-view=true). Use them to delegate approval of Microsoft Entra entitlement management access package assignment requests and access reviews to another user or group for a specified period of time. Users can manage their own delegate, and Identity Governance Administrators can manage the delegate of any user.
 - Added the **gracePeriodInDays** property to the [lifecyclePolicyRule](/graph/api/resources/identitygovernance-lifecyclepolicyrule?view=graph-rest-beta&preserve-view=true) resource. Use it to configure an optional grace period for each lifecycle policy rule before the policy action sequence starts.
+- Added the [roleManagementCustomCalloutExtension](/graph/api/resources/rolemanagementcustomcalloutextension?view=graph-rest-beta&preserve-view=true) resource type and related methods for integrating external approval, ticketing, compliance, and audit workflows into Privileged Identity Management role assignment lifecycle events. Use these capabilities to associate custom extensions with role management policies, submit approval or denial results for Microsoft Entra role and group assignment requests, and optionally update assignment schedules.
 
 ### Identity and access | Identity and sign-in
 
 - Added public preview support for OnPasswordUpdate custom authentication extensions. Use the [onPasswordUpdateCustomExtension](/graph/api/resources/onpasswordupdatecustomextension?view=graph-rest-beta&preserve-view=true) resource to notify external systems after a self-service password reset and the [onPasswordUpdateListener](/graph/api/resources/onpasswordupdatelistener?view=graph-rest-beta&preserve-view=true) resource to configure when the notification occurs.
+- Added support for routing SMS and voice authentication traffic through a telecom provider integration. Configure the provider endpoint, application identifier, evaluation mode, and migration percentage through the **telecomProviderSettings** property on the [smsAuthenticationMethodConfiguration](/graph/api/resources/smsauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) and [voiceAuthenticationMethodConfiguration](/graph/api/resources/voiceauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) resources.
+- Added the **identityVerificationEventsConfiguration** property to the [verifiableCredentialsAuthenticationMethodConfiguration](/graph/api/resources/verifiablecredentialsauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) resource. Use it to control tenant-wide collection and exposure of identity verification events and credential provenance information for Verified ID verification.
+- Added the [conditionalAccessPolicyPlan](/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta&preserve-view=true) resource type and related methods for grouping shared Conditional Access conditions with scenario-specific rules. Use policy plans to consolidate common targeting conditions and manage rule-specific enforcement controls.
+
+### Groups
+
+Added the **mailboxId** property to the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource type to identify the Exchange mailbox associated with a Microsoft 365 group. The property is returned only when specified in `$select`.
 
 ### Mail | Message trace
 
@@ -89,6 +142,7 @@ Added support to identify recalled messages in message trace. Use `recalled` as 
 
 ### Reports | Identity and access reports
 
+- Added the [appManagementAudit](/graph/api/resources/appmanagementaudit?view=graph-rest-beta&preserve-view=true) resource type and related methods to retrieve Microsoft Entra application management audit logs. Use these APIs to understand how app management policy restrictions affected application and service principal changes.
 - Added the `passwordUpdate` member to the **eventType** property of the [appliedAuthenticationEventListener](/graph/api/resources/appliedauthenticationeventlistener?view=graph-rest-beta&preserve-view=true) resource to identify OnPasswordUpdate custom extension listeners triggered during sign-ins.
 
 ### Security
@@ -99,7 +153,15 @@ Added the **incidentConfiguration** property to the [detectionAction](/graph/api
 
 Added 35 members, from `PlannerCustomFieldDefinition` through `MESRawEmailContentMetadata`, to the [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype?view=graph-rest-beta&preserve-view=true) enumeration and added the matching [auditData derived types](/graph/api/resources/security-auditdata-derived-types?view=graph-rest-beta&preserve-view=true) to represent workload-specific audit event payloads.
 
+### Security | Case management
+
+Clarified the existing maximum length of the **message** property on the [comment](/graph/api/resources/security-casemanagement-comment?view=graph-rest-beta&preserve-view=true) resource: 1,000 characters for incident cases and 5,000 characters for generic cases. These limits apply when you [create a comment activity](/graph/api/security-casemanagement-case-post-activities?view=graph-rest-beta&preserve-view=true). The 5,000-character limit also applies when you [update a comment activity](/graph/api/security-casemanagement-activity-update?view=graph-rest-beta&preserve-view=true) in a generic case; the update of comment activities in incident cases remains unsupported.
+
 ### Security | Data security and compliance
+
+Applications can now supply one or more sensitivity labels with file content submitted to the [processContent](/graph/api/userdatasecurityandgovernance-processcontent?view=graph-rest-beta&preserve-view=true) API by using the **sensitivityLabels** property of [processContentMetadataBase](/graph/api/resources/processcontentmetadatabase?view=graph-rest-beta&preserve-view=true).
+
+Added the `unknownFutureValue` member to the [applicationMode](/graph/api/resources/enums?view=graph-rest-beta&preserve-view=true#applicationmode-values) enumeration as a sentinel for future application modes.
 
 Updated the **evaluationErrorType** enumeration to use customer-facing reasons for incomplete policy evaluations, and removed the **errorMessage** property from the [evaluationErrorDetail](/graph/api/resources/evaluationerrordetail?view=graph-rest-beta&preserve-view=true) complex type. Use **errorType** to identify why an evaluation couldn't be completed.
 
@@ -109,7 +171,9 @@ Updated the **evaluationErrorType** enumeration to use customer-facing reasons f
 
 ### Teamwork and communications | Messaging
 
-Added support for setting and unsetting custom emoji reactions on chat messages by specifying a display name (**displayName**), service-issued identifier (**reactionId**), or both. For more information, see [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true).
+- Added methods to [get a custom emoji or its raw image content](/graph/api/teamworkcustomemoji-get?view=graph-rest-beta&preserve-view=true) and [delete a custom emoji](/graph/api/teamworkcustomemoji-delete?view=graph-rest-beta&preserve-view=true) by display name.
+- Updated the [teamworkCustomEmoji](/graph/api/resources/teamworkcustomemoji?view=graph-rest-beta&preserve-view=true) resource to inherit its identifier, binary content, content type, and media-stream behavior from [teamworkHostedContent](/graph/api/resources/teamworkhostedcontent?view=graph-rest-beta&preserve-view=true).
+- Added support for setting and unsetting custom emoji reactions on chat messages by specifying a display name (**displayName**), service-issued identifier (**reactionId**), or both. For more information, see [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta&preserve-view=true).
 
 ## September 2026: New and generally available
 
@@ -178,8 +242,8 @@ Added the **isDisabled** property to the [agentIdentityBlueprint](/graph/api/res
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
-- Added the **policyId** property to the [restoreSessionBase](/graph/api/resources/restoresessionbase?view=graph-rest-beta&preserve-view=true) resource type to scope restore sessions to a protection policy.
-- Added the optional **policyId** parameter to the [restorePoint: search](/graph/api/restorepoint-search?view=graph-rest-beta&preserve-view=true) method to validate protection-unit membership and improve policy-scoped routing. You can also filter the restore points collection by `protectionUnit/policyId`.
+- Added the **policyId** property to the [restoreSessionBase](/graph/api/resources/restoresessionbase?view=graph-rest-beta&preserve-view=true) resource to scope restore sessions to a protection policy.
+- Added the optional **policyId** parameter to the [restorePoint: search](/graph/api/restorepoint-search?view=graph-rest-beta&preserve-view=true) method to validate protection-unit membership and improve policy-scoped routing. You can also filter the restore points collection by **protectionUnit/policyId**.
 
 ### Backup storage
 
@@ -201,6 +265,10 @@ Added the `unknownFutureValue` member to the **changeType** enumeration used by 
 
 ### Device and app management | Cloud PC
 
+- Added the **domainJoinCredential** property to the [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) resource. Use it to specify Active Directory domain join credentials directly or retrieve the password from a customer-owned Azure Key Vault.
+- Added the **domainJoinCredential** parameter to the [updateAdDomainPassword](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true) action. Use it to rotate domain join credentials supplied directly or stored in Azure Key Vault.
+- Added Key Vault secret validation errors (`keyVaultSecretCheckAccessDenied`, `keyVaultSecretCheckVaultNotReachable`, `keyVaultSecretCheckNotFound`, `keyVaultSecretCheckDisabled`, `keyVaultSecretCheckExpired`, `keyVaultSecretCheckEmptyValue`, `keyVaultSecretCheckTransientServiceError`, and `keyVaultSecretCheckUnknownError`) to the [cloudPcOnPremisesConnectionHealthCheckErrorType](/graph/api/resources/cloudpconpremisesconnectionhealthcheckerrortype?view=graph-rest-beta&preserve-view=true) enumeration to help applications identify and troubleshoot access, network, secret state, and service errors.
+- Deprecated the **adDomainUsername** and **adDomainPassword** properties of [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) and the **adDomainPassword** parameter of [updateAdDomainPassword](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true). These properties and the parameter will be removed on December 31, 2026. Going forward use **domainJoinCredential** instead.
 - Added the **isDisasterRecoveryActive** property to the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to indicate whether the Cloud PC currently runs in its disaster recovery region after a failover event.
 - Use `failoverInProgress` and `failbackInProgress` as supported values for the **status** property on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) and [cloudPcStatusSummary](/graph/api/resources/cloudpcstatussummary?view=graph-rest-beta&preserve-view=true) resources.
 
@@ -220,10 +288,11 @@ Added the `unknownFutureValue` member to the **changeType** enumeration used by 
 
 ### Identity and access | Directory management
 
-- Added the [provision](/graph/api/device-provision?view=graph-rest-beta&preserve-view=true) action to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to enable approved Virtual Desktop Infrastructure (VDI) providers to provision devices in a customer's directory.
+Added the [provision](/graph/api/device-provision?view=graph-rest-beta&preserve-view=true) action to the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to enable approved Virtual Desktop Infrastructure (VDI) providers to provision devices in a customer's directory.
 
 ### Identity and access | Governance
 
+- Added the [accessReviewCatalogScope](/graph/api/resources/accessreviewcatalogscope?view=graph-rest-beta&preserve-view=true) resource to scope an access review to an entitlement management catalog. Use the **additionalCatalogResourceTypes** property to review access packages in the catalog, in addition to the groups, applications, and custom data provided resources that are always reviewed.
 - Clarified that the [Get accessPackageResourceEnvironment](/graph/api/accesspackageresourceenvironment-get?view=graph-rest-beta&preserve-view=true) method returns SharePoint Online resource environments only when it's called with delegated permissions. A SharePoint Online resource environment corresponds to a SharePoint root site, so to retrieve root site information with application permissions, use the [List sites](/graph/api/site-list?view=graph-rest-beta&preserve-view=true) method with the `$filter=siteCollection/root ne null` query option.
 - Added public preview support for lifecycle policies that govern agent identities and guest users. Use [lifecyclePolicy](/graph/api/resources/identitygovernance-lifecyclepolicy?view=graph-rest-beta&preserve-view=true) and its derived policy types to configure scope, rules, workflow enforcement, impact evaluation, and processing reports.
 - Added the [selectedAgentBuilderPlatformsSubjectSet](/graph/api/resources/identitygovernance-selectedagentbuilderplatformssubjectset?view=graph-rest-beta&preserve-view=true) resource type to include only agent identities created by selected builder platforms in an agent identity lifecycle policy scope.
@@ -253,11 +322,16 @@ Added the [billedAggregatedUsage](/graph/api/resources/partners-billing-billedag
 
 Added the **isRecordCountLimitExceeded**, **recordCountLimit**, and **approximateReturnedRecordCount** properties to the [auditLogQuery](/graph/api/resources/security-auditlogquery?view=graph-rest-beta&preserve-view=true) resource. Use these properties to determine whether a completed query exceeded the per-search record-count limit and to inspect the applicable limit and approximate returned record count.
 
+### Security | Case management
+
+Added the [slaPolicyDefinition](/graph/api/resources/security-casemanagement-slapolicydefinition?view=graph-rest-beta&preserve-view=true) resource type and related methods for managing SLA policies for each security case type. Use these APIs to configure scope, pause, and exit criteria and warning and breach timers.
+
 ### Security | Data security and compliance
 
 - Added the `contentFiltering` member to the [userActivityTypes](/graph/api/resources/enums-security?view=graph-rest-beta&preserve-view=true#useractivitytypes-values) enumeration used by the [compute protection scopes for a user](/graph/api/userprotectionscopecontainer-compute?view=graph-rest-beta&preserve-view=true) and [compute protection scopes for a tenant](/graph/api/tenantprotectionscopecontainer-compute?view=graph-rest-beta&preserve-view=true) APIs, enabling applications to determine whether data loss prevention policies govern content filtering before evaluating content.
 - Updated the [contentActivity](/graph/api/resources/contentactivity?view=graph-rest-beta&preserve-view=true) resource to support reporting Secure by Default policy evaluations that couldn't be completed. Enforcement planes can submit structured incomplete-inspection reasons through the existing content activity ingestion API.
 - Added the **policyConfiguration** property to the [policyScopeBase](/graph/api/resources/policyscopebase?view=graph-rest-beta&preserve-view=true) resource type. Enforcement planes can use the effective Secure by Default configuration returned by the protection scope APIs to determine whether to audit or block content when policy evaluation can't be completed.
+- Added support for applying Microsoft Purview data loss prevention policies to agent interactions. Use [tenantProtectionScopeContainer: compute](/graph/api/tenantprotectionscopecontainer-compute?view=graph-rest-beta&preserve-view=true) to retrieve agent policy scopes, and use the tenant-scoped [processContent](/graph/api/tenantdatasecurityandgovernance-processcontent?view=graph-rest-beta&preserve-view=true) method to evaluate content exchanged between protected agents and users, other agents, or tools.
 
 ### Tasks and plans
 

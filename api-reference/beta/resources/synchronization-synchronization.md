@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API. Identity synchronization (also called *provisioning*) allows you to automate the provisioning (creation, maintenance) and de-provisioning (removal) of user identities and roles from Microsoft Entra ID to supported cloud applications. For more information, see [How Application Provisioning works in Microsoft Entra ID](/azure/active-directory/app-provisioning/how-provisioning-works)
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -25,7 +27,8 @@ Represents the capability for Microsoft Entra identity synchronization through t
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|secrets|[synchronizationSecretKeyStringValuePair](synchronization-synchronizationsecretkeystringvaluepair.md) collection| Represents a collection of credentials to access provisioned cloud applications.|
+|id|String|The unique identifier for the synchronization configuration. Inherited from [entity](../resources/entity.md). Read-only.|
+|secrets|[synchronizationSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md) collection| Represents a collection of credentials to access provisioned cloud applications.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -37,6 +40,8 @@ Represents the capability for Microsoft Entra identity synchronization through t
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.synchronization",
   "openType": false
 }
@@ -44,6 +49,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.synchronization",
+  "id": "String (identifier)",
   "secrets": [
     {
       "@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair"

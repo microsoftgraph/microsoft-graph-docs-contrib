@@ -55,7 +55,7 @@ You can specify the following properties when creating an **activity**.
 |Property|Type|Description|
 |:---|:---|:---|
 |@odata.type|String|The OData type of the concrete activity. To create a comment, use `#microsoft.graph.security.caseManagement.comment`. Required.|
-|message|String|The comment body. Required.|
+|message|String|The comment body. The maximum length is 1,000 characters for [incident cases](../resources/security-casemanagement-incidentcase.md) and 5,000 characters for [generic cases](../resources/security-casemanagement-genericcase.md). Required.|
 
 ## Response
 

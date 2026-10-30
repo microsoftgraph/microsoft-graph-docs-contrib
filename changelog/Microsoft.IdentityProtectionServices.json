@@ -1,5 +1,183 @@
  {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessPolicyPlan",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "modifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **modifiedDateTime** property to the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "owners",
+          "ChangeType": "Addition",
+          "Description": "Added the **owners** property to the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharedConditions",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharedConditions** property to the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "tags",
+          "ChangeType": "Addition",
+          "Description": "Added the **tags** property to the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "templateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **templateId** property to the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "version",
+          "ChangeType": "Addition",
+          "Description": "Added the **version** property to the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "rules",
+          "ChangeType": "Addition",
+          "Description": "Added the **rules** relationship to the [conditionalAccessPolicyPlan](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyPlan"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessPolicyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessPolicyRule](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyrule?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyRule"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "conditions",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditions** property to the [conditionalAccessPolicyRule](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyrule?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyRule"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "controls",
+          "ChangeType": "Addition",
+          "Description": "Added the **controls** property to the [conditionalAccessPolicyRule](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyrule?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyRule"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [conditionalAccessPolicyRule](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyrule?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyRule"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the [conditionalAccessPolicyRule](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyrule?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyRule"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "state",
+          "ChangeType": "Addition",
+          "Description": "Added the **state** property to the [conditionalAccessPolicyRule](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyrule?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicyRule"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "conditionalAccessPolicyRuleControls",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessPolicyRuleControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyrulecontrols?view=graph-rest-beta) complex type.",
+          "Target": "conditionalAccessPolicyRuleControls"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "grantControls",
+          "ChangeType": "Addition",
+          "Description": "Added the **grantControls** property to the [conditionalAccessPolicyRuleControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyrulecontrols?view=graph-rest-beta) complex type.",
+          "Target": "conditionalAccessPolicyRuleControls"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Property",
+          "ChangedApiName": "sessionControls",
+          "ChangeType": "Addition",
+          "Description": "Added the **sessionControls** property to the [conditionalAccessPolicyRuleControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicyrulecontrols?view=graph-rest-beta) complex type.",
+          "Target": "conditionalAccessPolicyRuleControls"
+        },
+        {
+          "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "plans",
+          "ChangeType": "Addition",
+          "Description": "Added the **plans** relationship to the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessroot?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessRoot"
+        }
+      ],
+      "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-22T23:16:10.4863210Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
        {
       "ChangeList": [
         {

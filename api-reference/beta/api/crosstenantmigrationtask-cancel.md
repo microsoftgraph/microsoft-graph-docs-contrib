@@ -1,6 +1,6 @@
 ---
 title: "crossTenantMigrationTask: cancel"
-description: "Cancel a specific crossTenantMigrationTask (User within a CrossTenantMigrationJob)"
+description: "Cancel a specific crossTenantMigrationTask for a user in a crossTenantMigrationJob."
 author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a specific [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) for a User within a CrossTenantMigrationJob. 
+Cancel a specific [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) for a user in a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md).
 
-If the User migration can't be canceled or is in a terminal state, a `409 CONFLICT` response code is returned, and the migration continues.
+If the user migration can't be canceled or is in a terminal state, a `409 Conflict` response code is returned, and the migration continues.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -55,9 +55,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) object in the response body.
 
-If not successful, a `409 CONFLICT` response code is returned, and the migration continues.
+If not successful, a `409 Conflict` response code is returned, and the migration continues.
 
 ## Examples
 

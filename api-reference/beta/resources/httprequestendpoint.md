@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The HTTP endpoint that a custom extension calls.
+Defines the HTTP endpoint that Microsoft Entra ID calls for a custom extension, such as a [roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md).
 
 Inherits from [customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|targetUrl|String|The HTTP endpoint that a custom extension calls.|
+|targetUrl|String|The URL of the HTTP endpoint that Microsoft Entra ID calls for the custom extension.|
 
 ## Relationships
 None.
@@ -39,4 +39,3 @@ The following JSON representation shows the resource type.
   "targetUrl": "String"
 }
 ```
-

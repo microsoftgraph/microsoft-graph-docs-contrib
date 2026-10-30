@@ -22,6 +22,8 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/virtualendpoint-list-managedlicenses.md)|[cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) collection|Get information about [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) objects that the Cloud PC service manages directly.|
+|[Submit managed license operation](../api/cloudpcmanagedlicense-submitmanagedlicenseoperation.md)|[cloudPcManagedLicenseOperation](../resources/cloudpcmanagedlicenseoperation.md)|Submit an asynchronous operation on the [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) collection extend Windows 365 Reserve access for specified users.|
+|[Retrieve managed license operation](../api/cloudpcmanagedlicense-retrievemanagedlicenseoperation.md)|[cloudPcManagedLicenseOperation](../resources/cloudpcmanagedlicenseoperation.md)|Retrieve the status and per-user results of a previously submitted operation on the [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) collection.|
 
 ## Properties
 |Property|Type|Description|
@@ -89,4 +91,3 @@ The following JSON representation shows the resource type.
   "subscriptionId": "String"
 }
 ```
-

@@ -17,7 +17,7 @@ Get the [meetingAttendanceReport](../resources/meetingattendancereport.md) for a
 > [!WARNING]
 > This method doesn't support channel meetings.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

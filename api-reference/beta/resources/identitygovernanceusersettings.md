@@ -1,6 +1,6 @@
 ---
 title: "identityGovernanceUserSettings resource type"
-description: "Represents identity governance settings for a user, including the approver delegate configuration."
+description: "Represents the identity governance settings of a user."
 author: "lnalepa"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -14,16 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents identity governance settings for a user, including the approver delegate configuration. This resource is accessed via the `identityGovernance` property on the [user](user.md) resource.
+Represents the identity governance settings of a [user](../resources/user.md).
+
+This resource is configured in the **identityGovernance** property of the [user](../resources/user.md) resource. To retrieve these settings, include `$select=identityGovernance` when you [get a user](../api/user-get.md).
 
 ## Methods
-None.
+
+None. To manage the approver delegate of a user, use the [Get approverDelegate](../api/approverdelegate-get.md) and [Update approverDelegate](../api/approverdelegate-update.md) methods.
 
 ## Properties
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| approverDelegate | [approverDelegate](approverdelegate.md) | The approver delegate configuration for the user, including the delegate identity and delegation schedule. Nullable. |
+| approverDelegate | [approverDelegate](../resources/approverdelegate.md) | The user or group that approves Microsoft Entra entitlement management access package assignment requests and access reviews on behalf of the user, and the period during which the delegation is in effect. Nullable. |
 
 ## Relationships
 

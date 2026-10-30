@@ -134,6 +134,14 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 |inSync|
 |unknownFutureValue|
 
+### accessReviewCatalogResourceType values
+
+|Member|
+|:---|
+|none|
+|accessPackage|
+|unknownFutureValue|
+
 ### accessReviewPrincipalScopeType values
 
 |Member|
@@ -987,6 +995,35 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | countAndNames |
 | unknownFutureValue |
 
+### customCalloutExtensionType values
+
+|Member|
+|:---|
+|preApproval|
+|postApproval|
+|grant|
+|revoke|
+|unknownFutureValue|
+
+### customExtensionResourceType values
+
+|Member|
+|:---|
+|entraRoles|
+|azureResources|
+|entraGroups|
+|unknownFutureValue|
+|applicationAuthorization|
+|appRoles|
+
+### evaluationOutcome values
+
+|Member|
+|:---|
+|approved|
+|denied|
+|unknownFutureValue|
+
 ### customExtensionCalloutInstanceStatus values
 
 | Member |
@@ -1237,6 +1274,41 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | all                | 1     | The policy applies to all users and groups in the organization. Default value. |
 | selected           | 2     | The policy applies to specific users or groups in the organization.            |
 | unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use.                              |
+
+### appManagementAuditLogAuditResult values
+
+| Member |
+| ---- |
+| notApplicable |
+| wouldHaveBeenAllowed |
+| wouldHaveBeenBlocked |
+| unknownFutureValue |
+
+### appManagementAuditLogPolicyType values
+
+| Member |
+| ---- |
+| defaultEntraId |
+| tenant |
+| app |
+| unknownFutureValue |
+
+### appManagementAuditLogRestrictionResult values
+
+| Member |
+| ---- |
+| allowed |
+| blocked |
+| unknownFutureValue |
+
+### appManagementAuditLogRestrictionState values
+
+| Member |
+| ---- |
+| enabled |
+| disabled |
+| audit |
+| unknownFutureValue |
 
 ### appManagementRestrictionState values
 
@@ -6408,6 +6480,15 @@ Possible values for user account types (group membership), per Windows definitio
 |ai|
 |unknownFutureValue|
 
+### evaluationScopeType values
+
+|Member|
+|:---|
+|tenant|
+|agent|
+|anonymousUser|
+|unknownFutureValue|
+
 ### trafficRoutingMethod values 
 
 |Member|
@@ -6462,6 +6543,15 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |atMentionedMessagesOnly|
 |allMessages|
+|unknownFutureValue|
+
+### applicationMode values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
 |unknownFutureValue|
 
 ### classificationMethod values

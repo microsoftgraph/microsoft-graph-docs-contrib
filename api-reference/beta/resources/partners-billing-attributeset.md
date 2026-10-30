@@ -86,6 +86,8 @@ The [billedUsage: export](../api/partners-billing-billedusage-export.md) or [unb
 | UnitPrice                     | Yes  | Yes   |
 | UnitType                      | Yes  | Yes   |
 | UsageDate                     | Yes  | Yes   |
+| PartnerPrice                  | Yes  | Yes   |
+| PriceBenefits                 | Yes  | Yes   |
 
 The [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) or [unbilledReconciliation: export](../api/partners-billing-unbilledreconciliation-export.md) API response with the `full` or `basic` request parameter returns the following attributes.
 
@@ -138,6 +140,48 @@ The [billedReconciliation: export](../api/partners-billing-billedreconciliation-
 |ProductQualifiers              | Yes  | No    |
 |PromotionId                    | Yes  | Yes   |
 |ProductCategory                | Yes  | Yes   |
+|PriceBenefits                  | Yes  | Yes   |
+
+The [billedAggregatedUsage: export](../api/partners-billing-billedaggregatedusage-export.md) API response returns the following attributes.
+
+| Attribute              |
+|:-----------------------|
+| PartnerId              |
+| CustomerId             |
+| InvoiceNumber          |
+| MpnId                  |
+| Tier2MpnId             |
+| OrderDate              |
+| ProductId              |
+| SkuId                  |
+| AvailabilityId         |
+| ChargeType             |
+| UnitPrice              |
+| PartnerPrice           |
+| EffectiveUnitPrice     |
+| Quantity               |
+| BillableQuantity       |
+| Subtotal               |
+| TaxTotal               |
+| Total                  |
+| PricingCurrency        |
+| Currency               |
+| PCToBCExchangeRate     |
+| PCToBCExchangeRateDate |
+| PriceBenefits          |
+| PublisherName          |
+| PublisherId            |
+| SubscriptionId         |
+| ChargeStartDate        |
+| ChargeEndDate          |
+| TermAndBillingCycle    |
+| UnitType               |
+| BillingFrequency       |
+| MeterId                |
+| SubscriptionStartDate  |
+| SubscriptionEndDate    |
+| ReferenceId            |
+| IdMapping              |
 
 <!-- {
   "type": "#page.annotation",

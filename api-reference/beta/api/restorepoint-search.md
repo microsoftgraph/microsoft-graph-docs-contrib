@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Search for the [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md). Optionally provide **policyId** to scope the search to a protection policy and validate that the specified protection units belong to that policy.
+Search for the [restorePoint](../resources/restorepoint.md) objects associated with a [protectionUnit](../resources/protectionunitbase.md). You can also provide **policyId** to scope the search to a protection policy and validate that the specified protection units belong to that policy.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

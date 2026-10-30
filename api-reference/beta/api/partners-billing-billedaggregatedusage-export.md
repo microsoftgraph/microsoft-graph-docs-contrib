@@ -1,6 +1,6 @@
 ---
 title: "billedAggregatedUsage: export"
-description: "Export billed aggregated Azure usage data for a specific invoice."
+description: "Export billed aggregated Azure usage data for a specific invoice from a billedAggregatedUsage resource."
 author: "tingh-msft"
 ms.localizationpriority: medium
 ms.subservice: "reports"

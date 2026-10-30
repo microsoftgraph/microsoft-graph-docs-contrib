@@ -3,6 +3,144 @@
     {
       "ChangeList": [
         {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "crossTenantMigrationJobStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossTenantMigrationJobStatus** enumeration type.",
+          "Target": "crossTenantMigrationJobStatus"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "crossTenantMigrationJobType",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossTenantMigrationJobType** enumeration type.",
+          "Target": "crossTenantMigrationJobType"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "crossTenantMigrationServiceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossTenantMigrationServiceStatus** enumeration type.",
+          "Target": "crossTenantMigrationServiceStatus"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantMigrationCancelResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantMigrationCancelResponse](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantmigrationcancelresponse?view=graph-rest-1.0) resource type.",
+          "Target": "crossTenantMigrationCancelResponse"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantMigrationJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantmigrationjob?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "crossTenantMigrationJob"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantMigrationServiceStatusDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantMigrationServiceStatusDetails](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantmigrationservicestatusdetails?view=graph-rest-1.0) resource type.",
+          "Target": "crossTenantMigrationServiceStatusDetails"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantMigrationTask",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantmigrationtask?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "crossTenantMigrationTask"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Resource",
+          "ChangedApiName": "error",
+          "ChangeType": "Addition",
+          "Description": "Added the [error](https://learn.microsoft.com/en-us/graph/api/resources/error?view=graph-rest-1.0) resource type for cross-tenant migration failures.",
+          "Target": "error"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeOnlineCrossTenantMigrationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeOnlineCrossTenantMigrationSettings](https://learn.microsoft.com/en-us/graph/api/resources/exchangeonlinecrosstenantmigrationsettings?view=graph-rest-1.0) resource type.",
+          "Target": "exchangeOnlineCrossTenantMigrationSettings"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Resource",
+          "ChangedApiName": "solutionsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsroot?view=graph-rest-1.0) resource type.",
+          "Target": "solutionsRoot"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "migrations",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrations** relationship to the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsroot?view=graph-rest-1.0) resource.",
+          "Target": "solutionsRoot"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrationsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrationsRoot](https://learn.microsoft.com/en-us/graph/api/resources/migrationsroot?view=graph-rest-1.0) resource type.",
+          "Target": "migrationsRoot"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/crosstenantmigrationjob-cancel?view=graph-rest-1.0) method to the [crossTenantMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantmigrationjob?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantMigrationJob"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/crosstenantmigrationtask-cancel?view=graph-rest-1.0) method to the [crossTenantMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantmigrationtask?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantMigrationTask"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Method",
+          "ChangedApiName": "migrate",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrate](https://learn.microsoft.com/en-us/graph/api/crosstenantmigrationjob-migrate?view=graph-rest-1.0) method to the [crossTenantMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantmigrationjob?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantMigrationJob"
+        },
+        {
+          "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+          "ApiChange": "Method",
+          "ChangedApiName": "validate",
+          "ChangeType": "Addition",
+          "Description": "Added the [validate](https://learn.microsoft.com/en-us/graph/api/crosstenantmigrationjob-validate?view=graph-rest-1.0) method to the [crossTenantMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/crosstenantmigrationjob?view=graph-rest-1.0) resource.",
+          "Target": "crossTenantMigrationJob"
+        }
+      ],
+      "Id": "2909cb65-f6b9-4ba7-a86f-0bf300cfc812",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-24T20:45:33.0354728Z",
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant migration"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
           "ApiChange": "Method",
           "ChangedApiName": "migrate",

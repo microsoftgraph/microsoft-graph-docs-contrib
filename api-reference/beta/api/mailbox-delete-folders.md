@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Delete a [mailboxFolder](../resources/mailboxfolder.md) or a child **mailboxFolder** within a mailbox.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -30,8 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-DELETE /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/$ref
-DELETE /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders/{mailboxFolderId}/$ref
+DELETE /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}
+DELETE /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders/{mailboxFolderId}
 ```
 
 ## Request headers
@@ -53,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows how to delete a mailbox folder.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_mailboxfolder",
@@ -61,14 +63,8 @@ The following example shows how to delete a mailbox folder.
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/AAMkAGVmMDEzM/$ref
+DELETE https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/AAMkAGVmMDEzM
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-mailboxfolder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

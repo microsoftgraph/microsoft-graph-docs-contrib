@@ -1,6 +1,6 @@
 ---
 title: "Update crossTenantMigrationJob"
-description: "Update the properties of a crossTenantMigrationJob object."
+description: "Update the completeAfterDateTime property of a crossTenantMigrationJob object."
 author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the completeAfterDateTime of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Only updates to the completeAfterDateTime are supported. Use this function to change when the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) starts processing. If completeAfterDateTime is set to the past, the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) starts processing.
+Update the **completeAfterDateTime** property of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Only updates to **completeAfterDateTime** are supported. This property specifies when the migration job can proceed toward completion. If the value is in the past, the service treats it as already due and proceeds toward completion during its next processing cycle. This behavior doesn't bypass earlier validation or synchronization stages.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -54,7 +54,7 @@ PATCH /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completeAfterDateTime|DateTimeOffset|Required. The time when the CrossTenantMigrationJob should start processing.|
+|completeAfterDateTime|DateTimeOffset|The date and time when the migration job can proceed toward completion. The value can be in the past.|
 
 ## Response
 
@@ -124,4 +124,3 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 Content-Type: text/plain
 ```
-

@@ -232,6 +232,10 @@ items:
       href: ../../api/security-auditlogquery-list-records.md
   - name: Complex types
     items:
+    - name: A 365 ai guardrail
+      href: ../../resources/security-a365aiguardrail.md
+    - name: Ai guardrail
+      href: ../../resources/security-aiguardrail.md
     - name: AI span outputs audit record
       href: ../../resources/security-aispanoutputsauditrecord.md
     - name: Alert submission audit record
@@ -244,14 +248,32 @@ items:
       href: ../../resources/security-auditrecordtypedictionary.md
     - name: Azure AI Search audit record
       href: ../../resources/security-azureaisearchauditrecord.md
+    - name: Cloud security connector
+      href: ../../resources/security-cloudsecurityconnector.md
+    - name: Cloud security enablement
+      href: ../../resources/security-cloudsecurityenablement.md
+    - name: Cloud security management
+      href: ../../resources/security-cloudsecuritymanagement.md
+    - name: Compliance endpoint evaluation incomplete
+      href: ../../resources/security-complianceendpointevaluationincomplete.md
+    - name: Compliance evaluation incomplete
+      href: ../../resources/security-complianceevaluationincomplete.md
     - name: Compliance policy grading SharePoint audit record
       href: ../../resources/security-compliancepolicygradingsharepointauditrecord.md
     - name: Compliance SIT grading SharePoint audit record
       href: ../../resources/security-compliancesitgradingsharepointauditrecord.md
     - name: Copilot session sharing audit record
       href: ../../resources/security-copilotsessionsharingauditrecord.md
+    - name: Csc content metadata
+      href: ../../resources/security-csccontentmetadata.md
     - name: Default audit data
       href: ../../resources/security-defaultauditdata.md
+    - name: Defender automation rule
+      href: ../../resources/security-defenderautomationrule.md
+    - name: Defender generated playbook
+      href: ../../resources/security-defendergeneratedplaybook.md
+    - name: Defender integration
+      href: ../../resources/security-defenderintegration.md
     - name: Defender Security for AI configuration audit record
       href: ../../resources/security-defendersecurityforaiconfigurationauditrecord.md
     - name: Dragon Copilot access audit record
@@ -262,24 +284,60 @@ items:
       href: ../../resources/security-dragoncopilotclinicaldatarecord.md
     - name: Dragon Copilot session audit record
       href: ../../resources/security-dragoncopilotsessionrecord.md
+    - name: Dspm admin activity
+      href: ../../resources/security-dspmadminactivity.md
+    - name: Ecs content metadata
+      href: ../../resources/security-ecscontentmetadata.md
     - name: Exchange Online Protection (EOP) submission feed entity audit record
       href: ../../resources/security-eopsubmissionfeedentityauditrecord.md
+    - name: Filtering teams message file info
+      href: ../../resources/security-filteringteamsmessagefileinfo.md
+    - name: Mcs raw email content metadata
+      href: ../../resources/security-mcsrawemailcontentmetadata.md
+    - name: Mes raw email content metadata
+      href: ../../resources/security-mesrawemailcontentmetadata.md
     - name: Microsoft Defender for Application Security Hygiene (MDASH) audit record
       href: ../../resources/security-mdashauditrecord.md
     - name: Microsoft Fabric policy audit record
       href: ../../resources/security-fabricpolicyrecord.md
+    - name: Microsoft security for ai configuration
+      href: ../../resources/security-microsoftsecurityforaiconfiguration.md
+    - name: Microsoft security for ai real time protection
+      href: ../../resources/security-microsoftsecurityforairealtimeprotection.md
+    - name: Microsoft teams move messages
+      href: ../../resources/security-microsoftteamsmovemessages.md
     - name: Microsoft Teams user concern audit record
       href: ../../resources/security-microsoftteamsuserconcernauditrecord.md
     - name: MOS agent info V2 audit record
       href: ../../resources/security-mosagentinforecordv2.md
     - name: MSP vector search content metadata audit record
       href: ../../resources/security-mspvectorsearchcontentmetadataauditrecord.md
+    - name: Mtp content metadata
+      href: ../../resources/security-mtpcontentmetadata.md
+    - name: On demand exchange classification
+      href: ../../resources/security-ondemandexchangeclassification.md
+    - name: P 4 ai dag site permissions record
+      href: ../../resources/security-p4aidagsitepermissionsrecord.md
+    - name: People skills admin
+      href: ../../resources/security-peopleskillsadmin.md
+    - name: People skills user
+      href: ../../resources/security-peopleskillsuser.md
+    - name: Planner custom field definition
+      href: ../../resources/security-plannercustomfielddefinition.md
+    - name: Planner custom field definition list
+      href: ../../resources/security-plannercustomfielddefinitionlist.md
+    - name: Planner dependency
+      href: ../../resources/security-plannerdependency.md
+    - name: Planner dependency list
+      href: ../../resources/security-plannerdependencylist.md
     - name: Privacy for AI (P4AI) risk score audit record
       href: ../../resources/security-p4airiskscorerecord.md
     - name: Security Copilot identity management audit record
       href: ../../resources/security-securitycopilotidentitymanagementauditrecord.md
     - name: Security Development Lifecycle AI log audit record
       href: ../../resources/security-securitydevelopmentlifecycleailogauditrecord.md
+    - name: Share point file archive policy
+      href: ../../resources/security-sharepointfilearchivepolicy.md
     - name: Sonar detonation entity audit record
       href: ../../resources/security-sonardetonationentityauditrecord.md
     - name: Sonar file detonation entity audit record
@@ -292,8 +350,20 @@ items:
       href: ../../resources/security-sparkcorecustomlivepoolrecord.md
     - name: Submission entity audit record
       href: ../../resources/security-submissionentityauditrecord.md
+    - name: Synthetic media detection event
+      href: ../../resources/security-syntheticmediadetectionevent.md
+    - name: Universal print secure scan
+      href: ../../resources/security-universalprintsecurescan.md
     - name: Viva Glint agentic campaign audit record
       href: ../../resources/security-vivaglintagenticcampaignauditrecord.md
+    - name: Viva glint client configuration
+      href: ../../resources/security-vivaglintclientconfiguration.md
+    - name: Viva glint data retention
+      href: ../../resources/security-vivaglintdataretention.md
+    - name: Viva glint viva insights integration
+      href: ../../resources/security-vivaglintvivainsightsintegration.md
+    - name: Work iq admin activity
+      href: ../../resources/security-workiqadminactivity.md
 - name: Data security and compliance
   items:
   - name: Content activity

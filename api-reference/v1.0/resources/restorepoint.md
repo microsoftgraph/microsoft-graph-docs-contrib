@@ -6,7 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
-ms.date: 08/27/2024
+ms.date: 09/30/2026
 ---
 
 # restorePoint resource type
@@ -48,7 +48,7 @@ The following limitations apply to this API:
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|protectionUnit|[protectionUnitBase](../resources/protectionunitbase.md)|The site, drive, or mailbox units that are protected under a protection policy.|
+|protectionUnit|[protectionUnitBase](../resources/protectionunitbase.md)|The site, drive, or mailbox unit protected under a protection policy. Supports `$expand` and `$filter` on **protectionUnit/policyId** using the `eq` operator.|
 
 ## JSON representation
 

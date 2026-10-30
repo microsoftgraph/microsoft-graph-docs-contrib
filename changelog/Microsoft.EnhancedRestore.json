@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "39f8bf65-665d-4430-8bed-18c71bd3a818",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyId",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyId** property to the [restoreSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/restoresessionbase?view=graph-rest-1.0) resource.",
+          "Target": "restoreSessionBase"
+        },
+        {
+          "Id": "39f8bf65-665d-4430-8bed-18c71bd3a818",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyId",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyId** property to the [sharePointRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/sharePointRestoreSession?view=graph-rest-1.0) resource.",
+          "Target": "sharePointRestoreSession"
+        },
+        {
+          "Id": "39f8bf65-665d-4430-8bed-18c71bd3a818",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyId",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyId** property to the [exchangeRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/exchangeRestoreSession?view=graph-rest-1.0) resource.",
+          "Target": "exchangeRestoreSession"
+        },
+        {
+          "Id": "39f8bf65-665d-4430-8bed-18c71bd3a818",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyId",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyId** property to the [oneDriveForBusinessRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessRestoreSession?view=graph-rest-1.0) resource.",
+          "Target": "oneDriveForBusinessRestoreSession"
+        },
+        {
+          "Id": "39f8bf65-665d-4430-8bed-18c71bd3a818",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "policyId",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyId** parameter to the [search](https://learn.microsoft.com/en-us/graph/api/restorepoint-search?view=graph-rest-1.0) method.",
+          "Target": "search"
+        },
+        {
+          "Id": "39f8bf65-665d-4430-8bed-18c71bd3a818",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled the `$filter` query parameter on the **protectionUnit/policyId** property in the [list restorePoints](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-list-restorepoints?view=graph-rest-1.0) method.",
+          "Target": "restorePoint"
+        }
+      ],
+      "Id": "39f8bf65-665d-4430-8bed-18c71bd3a818",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-22T12:54:08.6697227Z",      
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "674ac2cc-1350-4394-9b78-a3423a7cee2c",
           "ApiChange": "Member",
           "ChangedApiName": "backupPolicyDeleted",

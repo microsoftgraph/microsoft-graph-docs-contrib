@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Delete requests are long running and finish within 48 hours. 
+Delete a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Delete requests are long-running and finish within 48 hours.
 
-A [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) that is currently in progress can't be deleted. The [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) must reach a final state before deletion can be performed. If a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) isn't in a final state, a `409 Conflict` response is returned.
+A [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) that is currently in progress can't be deleted. You can perform the deletion only after the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) reaches a final state. If a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) isn't in a final state, a `409 Conflict` response is returned.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -107,7 +107,7 @@ DELETE https://graph.microsoft.com/beta/solutions/migrations/crosstenantmigratio
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

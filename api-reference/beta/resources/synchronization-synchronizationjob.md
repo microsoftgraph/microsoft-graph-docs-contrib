@@ -45,6 +45,7 @@ Performs synchronization by periodically running in the background, polling for 
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |bulkUpload|[bulkUpload](synchronization-bulkupload.md) | The bulk upload operation for the job.|
+|objectConnections|[objectConnection](../resources/synchronization-objectconnection.md) collection|Connector data store linkage records contained by the job. During public preview, retrieve an individual connection using a known **objectId**, or delete it to clear its cached linkage. Collection listing isn't supported and returns `400 Bad Request`.|
 |schema|[synchronizationSchema](synchronization-synchronizationschema.md)| The synchronization schema configured for the job.|
 
 ## JSON representation

@@ -5,7 +5,7 @@ author: "amanswaika"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 09/16/2026
+ms.date: 10/19/2026
 ---
 
 # List roleManagementCustomCalloutExtensions
@@ -13,6 +13,8 @@ ms.date: 09/16/2026
 Namespace: microsoft.graph
 
 Get a list of roleManagementCustomCalloutExtension objects configured for Privileged Identity Management (PIM).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -41,6 +43,7 @@ This method supports the `$filter` (`eq`) OData query parameter on the **resourc
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Prefer|Use `include-unknown-enum-members` to return the `applicationAuthorization` and `appRoles` members of **customExtensionResourceType**. Optional.|
 
 ## Request body
 
@@ -63,6 +66,7 @@ The following example shows a request.
 -->
 ```http
 GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/customExtensions
+Prefer: include-unknown-enum-members
 ```
 
 ### Response
@@ -91,6 +95,7 @@ Content-Type: application/json
       "resourceType": "entraRoles",
       "type": "preApproval",
       "customAttributes": ["department", "costCenter"],
+      "isEnabled": true,
       "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
         "targetUrl": "https://api.contoso.com/webhooks/role-assignments"

@@ -1,6 +1,6 @@
 ---
 title: "caseSlaPolicyEntry resource type"
-description: "Represents a single SLA policy's denormalized status for a case."
+description: "Represents a single SLA policy's status for a case."
 author: "msklotz"
 ms.date: 08/26/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.caseManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a single SLA (service level agreement) policy's denormalized status for a [case](../resources/security-casemanagement-case.md). Returned as an entry in the **slaPolicies** collection on a case. This resource is entirely server-computed; the SLA policy engine assigns and maintains SLA policies independently of the case management API.
+Represents a single SLA (service level agreement) policy's status for a [case](../resources/security-casemanagement-case.md). Returned as an entry in the **slaPolicies** collection on a case. This resource is entirely server-computed; the SLA policy engine assigns and maintains SLA policies independently of the case management API.
 
 ## Properties
 

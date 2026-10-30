@@ -1,8 +1,8 @@
 ---
 title: "crossTenantMigrationCancelResponse resource type"
-description: "Contains cancel request response details"
+description: "Contains the result of a request to cancel a cross-tenant migration job or task."
 author: "danguilliams"
-ms.date: 10/30/2025
+ms.date: 09/24/2026
 ms.localizationpriority: medium
 ms.subservice: "t2t-migration"
 doc_type: resourcePageType
@@ -12,16 +12,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Contains cancellation request response details from a request to cancel a CrossTenantMigrationJob. 
-
+Contains the result of a request to cancel a cross-tenant migration job or task.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|status|String|The cancellation request status|
-|message|String|The customer facing description of the cancellation request|
+|message|String|The description of the cancellation request.|
+|status|String|The cancellation request status.|
 
 ## Relationships
 None.
@@ -36,7 +33,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantMigrationCancelResponse",
-  "status": "String",
-  "message": "String"
+  "message": "String",
+  "status": "String"
 }
 ```

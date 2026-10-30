@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Create a new [lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md) object in the [lifecycle workflows container](../resources/identitygovernance-lifecycleworkflowscontainer.md). A policy is created for a specific subject type and takes effect according to its priority order.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

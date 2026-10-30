@@ -36,7 +36,7 @@ To use a supported query option with a property declared only on **comment**, ca
 |id|String|The unique identifier for the resource. Inherited from [entity](../resources/entity.md). Supports `$filter`.|
 |lastModifiedBy|String|The user or service that last modified the resource. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter`.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. Inherited from [caseManagementEntity](../resources/security-casemanagement-casemanagemententity.md). Supports `$filter`.|
-|message|String|The comment body. Supports `$filter`.|
+|message|String|The comment body. The maximum length is 1,000 characters for [incident cases](../resources/security-casemanagement-incidentcase.md) and 5,000 characters for [generic cases](../resources/security-casemanagement-genericcase.md). Supports `$filter`.|
 
 ## Relationships
 None.

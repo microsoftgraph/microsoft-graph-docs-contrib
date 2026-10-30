@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Connection settings that define how long Microsoft Entra ID can wait for a response from an external app before it shuts down the connection when trying to trigger the external app. This object is configured in the **clientConfiguration** property of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) resource.
+Defines connection settings that control how long Microsoft Entra ID waits for a response from an external app before it closes the connection. This object is configured in the **clientConfiguration** property of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) and [roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md) resources.
 
 In entitlement management, this object is configured in the **clientConfiguration** property of:
 - [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)
@@ -24,8 +24,8 @@ In entitlement management, this object is configured in the **clientConfiguratio
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|timeoutInMilliseconds|Int32|The max duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it shuts down the connection. The valid range is between `200` and `2000` milliseconds. If `null`, the default for the service applies.|
-|maximumRetries|Int32|The max number of retries that Microsoft Entra ID makes to the external API. Values of 0 or 1 are supported. If `null`, the default for the service applies.|
+|maximumRetries|Int32|The maximum number of retries that Microsoft Entra ID makes to the external API. For a **roleManagementCustomCalloutExtension**, the valid range is from `0` through `5`. For other custom extensions, values of `0` or `1` are supported. If `null`, the default for the service applies.|
+|timeoutInMilliseconds|Int32|The maximum duration in milliseconds that Microsoft Entra ID waits for a response from the external app before it closes the connection. For a **roleManagementCustomCalloutExtension**, the valid range is from `1000` through `60000` milliseconds. For other custom extensions, the valid range is from `200` through `2000` milliseconds. If `null`, the default for the service applies.|
 
 ## Relationships
 None.

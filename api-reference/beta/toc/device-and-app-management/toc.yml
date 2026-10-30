@@ -348,6 +348,10 @@ items:
       href: ../../resources/cloudpcmanagedlicense.md
     - name: List
       href: ../../api/virtualendpoint-list-managedlicenses.md
+    - name: Submit managed license operation
+      href: ../../api/cloudpcmanagedlicense-submitmanagedlicenseoperation.md
+    - name: Retrieve managed license operation
+      href: ../../api/cloudpcmanagedlicense-retrievemanagedlicenseoperation.md
   - name: Cloud PC Azure network connection
     items:
     - name: Cloud PC Azure network connection
@@ -721,6 +725,12 @@ items:
       href: ../../resources/cloudpclaunchinfo.md
     - name: Cloud PC login result
       href: ../../resources/cloudpcloginresult.md
+    - name: Cloud PC managed license extend access
+      href: ../../resources/cloudpcmanagedlicenseextendaccess.md
+    - name: Cloud PC managed license operation
+      href: ../../resources/cloudpcmanagedlicenseoperation.md
+    - name: Cloud PC managed license operation result
+      href: ../../resources/cloudpcmanagedlicenseoperationresult.md
     - name: Cloud PC management assignment target
       href: ../../resources/cloudpcmanagementassignmenttarget.md
     - name: Cloud PC management group assignment target
@@ -8588,6 +8598,32 @@ items:
 - name: Device updates (preview)
   displayName: Windows updates
   items:
+  - name: Applicable catalog
+    items:
+    - name: Applicable catalog
+      href: ../../resources/windowsupdates-applicablecatalog.md
+    - name: Get applicable catalog
+      href: ../../api/windowsupdates-applicablecatalog-get.md
+    - name: List devices
+      href: ../../api/windowsupdates-applicablecatalog-list-devices.md
+  - name: Applicable catalog summary
+    items:
+    - name: Applicable catalog summary
+      href: ../../resources/windowsupdates-applicablecatalogsummary.md
+    - name: List applicableCatalogSummaries
+      href: ../../api/windowsupdates-updatedata-list-applicablecatalogsummaries.md
+    - name: Get applicable catalog summary
+      href: ../../api/windowsupdates-applicablecatalogsummary-get.md
+    - name: List aggregatedDevices
+      href: ../../api/windowsupdates-applicablecatalogsummary-list-aggregateddevices.md
+  - name: Applicable device
+    items:
+    - name: Applicable device
+      href: ../../resources/windowsupdates-applicabledevice.md
+    - name: List devices
+      href: ../../api/windowsupdates-applicablecatalog-list-devices.md
+    - name: List aggregatedDevices
+      href: ../../api/windowsupdates-applicablecatalogsummary-list-aggregateddevices.md
   - name: Microsoft Entra device
     items:
     - name: Microsoft Entra device
@@ -8678,6 +8714,52 @@ items:
       href: ../../api/windowsupdates-deploymentaudience-updateaudience.md
     - name: Update by ID
       href: ../../api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+  - name: Device profile
+    items:
+    - name: Device profile
+      href: ../../resources/windowsupdates-deviceprofile.md
+    - name: List deviceProfiles
+      href: ../../api/windowsupdates-updatedata-list-deviceprofiles.md
+    - name: Get device profile
+      href: ../../api/windowsupdates-deviceprofile-get.md
+  - name: Driver update device status
+    items:
+    - name: Driver update device status
+      href: ../../resources/windowsupdates-driverupdatedevicestatus.md
+    - name: List deviceStatuses
+      href: ../../api/windowsupdates-driverupdatereport-list-devicestatuses.md
+    - name: Get driver update device status
+      href: ../../api/windowsupdates-driverupdatedevicestatus-get.md
+  - name: Driver update policy
+    href: ../../resources/windowsupdates-driverupdatepolicy.md
+  - name: Driver update report
+    items:
+    - name: Driver update report
+      href: ../../resources/windowsupdates-driverupdatereport.md
+    - name: List drivers
+      href: ../../api/windowsupdates-updatedata-list-drivers.md
+    - name: Get driver update report
+      href: ../../api/windowsupdates-driverupdatereport-get.md
+    - name: List deviceStatuses
+      href: ../../api/windowsupdates-driverupdatereport-list-devicestatuses.md
+  - name: Driver update ring
+    href: ../../resources/windowsupdates-driverupdatering.md
+  - name: Feature update policy
+    href: ../../resources/windowsupdates-featureupdatepolicy.md
+  - name: Feature update ring
+    href: ../../resources/windowsupdates-featureupdatering.md
+  - name: Mdm app setting
+    items:
+    - name: Mdm app setting
+      href: ../../resources/windowsupdates-mdmappsetting.md
+    - name: List mdmAppSettings
+      href: ../../api/windowsupdates-tenantsetting-list-mdmappsettings.md
+    - name: Create MDM app setting
+      href: ../../api/windowsupdates-tenantsetting-post-mdmappsettings.md
+    - name: Get MDM app setting
+      href: ../../api/windowsupdates-mdmappsetting-get.md
+    - name: Update MDM app setting
+      href: ../../api/windowsupdates-mdmappsetting-update.md
   - name: Operational insights connection
     items:
     - name: Operational insights connection
@@ -8690,46 +8772,28 @@ items:
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
     - name: Delete operational insights connection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
-  - name: Policy
-    items:
-    - name: Policy
-      href: ../../resources/windowsupdates-policy.md
-    - name: List
-      href: ../../api/windowsupdates-adminwindowsupdates-list-policies.md
-    - name: Create
-      href: ../../api/windowsupdates-adminwindowsupdates-post-policies.md
-    - name: Get
-      href: ../../api/windowsupdates-policy-get.md
-    - name: Update
-      href: ../../api/windowsupdates-policy-update.md
-    - name: Delete
-      href: ../../api/windowsupdates-policy-delete.md
-    - name: List applicable content
-      href: ../../api/windowsupdates-policy-list-applicablecontent.md
-    - name: List approvals
-      href: ../../api/windowsupdates-policy-list-approvals.md
-    - name: Create policy approval
-      href: ../../api/windowsupdates-policy-post-approvals.md
-    - name: List rings
-      href: ../../api/windowsupdates-policy-list-rings.md
-    - name: Create ring
-      href: ../../api/windowsupdates-policy-post-rings.md
-  - name: Quality update policy
-    href: ../../resources/windowsupdates-qualityupdatepolicy.md
   - name: Policy approval
     items:
     - name: Policy approval
       href: ../../resources/windowsupdates-policyapproval.md
-    - name: List
+    - name: List approvals
       href: ../../api/windowsupdates-policy-list-approvals.md
-    - name: Create
+    - name: Create policyApproval
       href: ../../api/windowsupdates-policy-post-approvals.md
-    - name: Get
+    - name: Get policyApproval
       href: ../../api/windowsupdates-policyapproval-get.md
-    - name: Update
+    - name: Update policyApproval
       href: ../../api/windowsupdates-policyapproval-update.md
-    - name: Delete
+    - name: Delete policyApproval
       href: ../../api/windowsupdates-policyapproval-delete.md
+  - name: Policy assignment
+    items:
+    - name: Policy assignment
+      href: ../../resources/windowsupdates-policyassignment.md
+    - name: List policyAssignments
+      href: ../../api/windowsupdates-updatedata-list-policyassignments.md
+    - name: Get policy assignment
+      href: ../../api/windowsupdates-policyassignment-get.md
   - name: Product
     items:
     - name: Product
@@ -8740,6 +8804,10 @@ items:
       href: ../../api/windowsupdates-product-findbycatalogid.md
     - name: Find by knowledge base number
       href: ../../api/windowsupdates-product-findbykbnumber.md
+  - name: Quality update policy
+    href: ../../resources/windowsupdates-qualityupdatepolicy.md
+  - name: Quality update ring
+    href: ../../resources/windowsupdates-qualityupdatering.md
   - name: Resource connection
     items:
     - name: Resource connection
@@ -8754,18 +8822,28 @@ items:
     items:
     - name: Ring
       href: ../../resources/windowsupdates-ring.md
-    - name: List
+    - name: List rings
       href: ../../api/windowsupdates-policy-list-rings.md
-    - name: Create
+    - name: Create ring
       href: ../../api/windowsupdates-policy-post-rings.md
-    - name: Get
+    - name: Get ring
       href: ../../api/windowsupdates-ring-get.md
-    - name: Update
+    - name: Update ring
       href: ../../api/windowsupdates-ring-update.md
-    - name: Delete
+    - name: Delete ring
       href: ../../api/windowsupdates-ring-delete.md
-  - name: Quality update ring
-    href: ../../resources/windowsupdates-qualityupdatering.md
+  - name: Tenant setting
+    items:
+    - name: Tenant setting
+      href: ../../resources/windowsupdates-tenantsetting.md
+    - name: Get tenant settings
+      href: ../../api/windowsupdates-tenantsetting-get.md
+    - name: Update tenant settings
+      href: ../../api/windowsupdates-tenantsetting-update.md
+    - name: List mdmAppSettings
+      href: ../../api/windowsupdates-tenantsetting-list-mdmappsettings.md
+    - name: Create MDM app setting
+      href: ../../api/windowsupdates-tenantsetting-post-mdmappsettings.md
   - name: Updatable asset
     items:
     - name: Updatable asset
@@ -8816,6 +8894,18 @@ items:
       href: ../../api/windowsupdates-updatableassetgroup-removemembers.md
     - name: List members
       href: ../../api/windowsupdates-updatableassetgroup-list-members.md
+  - name: Update data
+    items:
+    - name: Update data
+      href: ../../resources/windowsupdates-updatedata.md
+    - name: List applicableCatalogSummaries
+      href: ../../api/windowsupdates-updatedata-list-applicablecatalogsummaries.md
+    - name: List deviceProfiles
+      href: ../../api/windowsupdates-updatedata-list-deviceprofiles.md
+    - name: List drivers
+      href: ../../api/windowsupdates-updatedata-list-drivers.md
+    - name: List policyAssignments
+      href: ../../api/windowsupdates-updatedata-list-policyassignments.md
   - name: Update policy
     items:
     - name: Update policy
@@ -8880,6 +8970,8 @@ items:
       href: ../../resources/windowsupdates-deploymentstate.md
     - name: Deployment state reason
       href: ../../resources/windowsupdates-deploymentstatereason.md
+    - name: Driver update approval rule
+      href: ../../resources/windowsupdates-driverupdateapprovalrule.md
     - name: Driver update catalog entry
       href: ../../resources/windowsupdates-driverupdatecatalogentry.md
     - name: Driver update filter

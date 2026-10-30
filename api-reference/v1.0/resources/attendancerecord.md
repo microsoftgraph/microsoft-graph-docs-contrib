@@ -5,7 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
-ms.date: 10/21/2024
+ms.date: 10/06/2026
 ---
 
 # attendanceRecord resource type
@@ -26,6 +26,7 @@ Contains information associated with an attendance record in a [meetingAttendanc
 |:--------------------|:--------|:-----------|
 | attendanceIntervals | [attendanceInterval](attendanceinterval.md) collection | List of time periods between joining and leaving a meeting. |
 | emailAddress | String | Email address of the user associated with this attendance record. |
+| engagements | [meetingEngagement](meetingengagement.md) collection | The list of real-time participant interaction behaviors during a meeting. |
 | externalRegistrationInformation | [virtualEventExternalRegistrationInformation](../resources/virtualeventexternalregistrationinformation.md) | The external information for a [virtualEventRegistration](virtualeventregistration.md). |
 | identity | [identity](identity.md) | The identity of the user associated with this attendance record. The specific type is one of the following derived types of [identity](identity.md), depending on the user type: [communicationsUserIdentity](communicationsuseridentity.md), [azureCommunicationServicesUserIdentity](azurecommunicationservicesuseridentity.md). |
 | registrationId | String | Unique identifier of a [virtualEventRegistration](virtualeventregistration.md) that is available to all participants registered for the [virtualEventWebinar](virtualeventwebinar.md). |
@@ -49,6 +50,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.attendanceRecord",
   "attendanceIntervals": [{"@odata.type": "#microsoft.graph.attendanceInterval"}],
   "emailAddress": "String",
+  "engagements": [{"@odata.type": "#microsoft.graph.meetingEngagement"}],
   "externalRegistrationInformation": {"@odata.type": "#microsoft.graph.virtualEventExternalRegistrationInformation"},
   "identity": {"@odata.type": "#microsoft.graph.identity"},
   "registrationId": "String",
