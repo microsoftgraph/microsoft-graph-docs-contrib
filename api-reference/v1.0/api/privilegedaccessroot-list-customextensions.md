@@ -5,7 +5,7 @@ author: "amanswaika"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 09/16/2026
+ms.date: 10/19/2026
 ---
 
 # List roleManagementCustomCalloutExtensions
@@ -43,6 +43,7 @@ This method supports the `$filter` (`eq`) OData query parameter on the **resourc
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Prefer|Use `include-unknown-enum-members` to return the `applicationAuthorization` and `appRoles` members of **customExtensionResourceType**. Optional.|
 
 ## Request body
 
@@ -65,6 +66,7 @@ The following example shows a request.
 -->
 ```http
 GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/customExtensions
+Prefer: include-unknown-enum-members
 ```
 
 ### Response
@@ -93,6 +95,7 @@ Content-Type: application/json
       "resourceType": "entraRoles",
       "type": "preApproval",
       "customAttributes": ["department", "costCenter"],
+      "isEnabled": true,
       "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
         "targetUrl": "https://api.contoso.com/webhooks/role-assignments"

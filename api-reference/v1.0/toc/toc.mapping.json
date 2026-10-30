@@ -1261,12 +1261,18 @@
               "resources": [
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
+                "federatedTokenValidationPolicy",
                 "homeRealmDiscoveryPolicy",
                 "authenticationFlowsPolicy",
                 "authenticationStrengthPolicy",
                 "deviceRegistrationPolicy",
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy"
+              ],
+              "complexTypes": [
+                "validatingDomains",
+                "allDomains",
+                "enumeratedDomains"
               ]
             },
             {
@@ -1547,6 +1553,7 @@
           "name": "Partner billing reports",
           "overview": "../../resources/partners-billing-api-overview.md",
           "resources": [
+            "microsoft.graph.partners.billing.billedAggregatedUsage",
             "microsoft.graph.partners.billing.billedReconciliation",
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
@@ -2170,7 +2177,8 @@
                 "callTranscript"
               ],
               "complexTypes": [
-                "cloudVideoInteropInfo"
+                "cloudVideoInteropInfo",
+                "meetingEngagement"
               ],
               "childNodes": [
                 {
@@ -2392,6 +2400,21 @@
                 "m365CapabilityResourceScopes"
               ]
             }
+          ]
+        },
+        {
+          "name": "Cross-tenant migration",
+          "overview": "../../resources/crosstenant-migration-api-overview.md",
+          "resources": [
+            "crossTenantMigrationJob",
+            "crossTenantMigrationTask",
+            "migrationsRoot"
+          ],
+          "complexTypes": [
+            "crossTenantMigrationCancelResponse",
+            "crossTenantMigrationServiceStatusDetails",
+            "error",
+            "exchangeOnlineCrossTenantMigrationSettings"
           ]
         },
         {

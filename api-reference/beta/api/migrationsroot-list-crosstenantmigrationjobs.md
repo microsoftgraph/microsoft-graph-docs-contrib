@@ -8,13 +8,13 @@ ms.subservice: "t2t-migration"
 doc_type: apiPageType
 ---
 
-# List crossTenantMigrationJob objects
+# List crossTenantMigrationJobs
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) objects and their properties. By default 20 objects are returned. More can be retrieved through the `@odata.nextLink` url provided in the response.
+Get a list of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) objects and their properties. By default, 20 objects are returned. You can retrieve more objects by using the **@odata.nextLink** URL provided in the response.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -39,7 +39,7 @@ GET /solutions/migrations/crossTenantMigrationJobs
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$orderby`, `$count`, `$top`, and `$skiptoken` [OData query parameters](/graph/query-parameters) to customize the response. The `$orderby` query parameter sorts only the current page, `$count` returns the number of objects in the current page, and `$top` can reduce the page size but can't return more than 20 objects. To retrieve the next page, use the **@odata.nextLink** URL provided in the response.
 
 ## Request headers
 
@@ -163,4 +163,3 @@ Content-Type: application/json
   ]
 }
 ```
-

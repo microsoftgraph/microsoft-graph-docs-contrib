@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "c01695ac-f54e-48cd-b640-825bd81c83d4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingEngagementType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingEngagementType** enumeration type.",
+          "Target": "meetingEngagementType"
+        },
+        {
+          "Id": "c01695ac-f54e-48cd-b640-825bd81c83d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingEngagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingEngagement](https://learn.microsoft.com/en-us/graph/api/resources/meetingEngagement?view=graph-rest-1.0) resource type.",
+          "Target": "meetingEngagement"
+        },
+        {
+          "Id": "c01695ac-f54e-48cd-b640-825bd81c83d4",
+          "ApiChange": "Property",
+          "ChangedApiName": "engagements",
+          "ChangeType": "Addition",
+          "Description": "Added the **engagements** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-1.0) resource.",
+          "Target": "attendanceRecord"
+        }
+      ],
+      "Id": "c01695ac-f54e-48cd-b640-825bd81c83d4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-06T19:33:50.4613801Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
           "ApiChange": "Property",
           "ChangedApiName": "meetingType",

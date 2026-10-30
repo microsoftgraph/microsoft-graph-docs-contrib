@@ -474,6 +474,24 @@ items:
       href: ../../api/security-casemanagement-casetypeconfiguration-list-customfields.md
     - name: List statuses
       href: ../../api/security-casemanagement-casetypeconfiguration-list-statuses.md
+    - name: List SLA policies
+      href: ../../api/security-casemanagement-casetypeconfiguration-list-slapolicies.md
+    - name: Create SLA policy
+      href: ../../api/security-casemanagement-casetypeconfiguration-post-slapolicies.md
+  - name: Sla policy definition
+    items:
+    - name: Sla policy definition
+      href: ../../resources/security-casemanagement-slapolicydefinition.md
+    - name: List
+      href: ../../api/security-casemanagement-casetypeconfiguration-list-slapolicies.md
+    - name: Create
+      href: ../../api/security-casemanagement-casetypeconfiguration-post-slapolicies.md
+    - name: Get
+      href: ../../api/security-casemanagement-slapolicydefinition-get.md
+    - name: Update
+      href: ../../api/security-casemanagement-slapolicydefinition-update.md
+    - name: Delete
+      href: ../../api/security-casemanagement-casetypeconfiguration-delete-slapolicies.md
   - name: Custom field definition
     items:
     - name: Custom field definition

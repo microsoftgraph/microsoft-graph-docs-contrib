@@ -5,7 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
-ms.date: 05/17/2024
+ms.date: 10/06/2026
 ---
 
 # List attendanceRecords
@@ -160,6 +160,33 @@ Content-Type: application/json
           "leaveDateTime": "2021-10-05T04:43:49.7702391Z",
           "durationInSeconds": 322
         }
+      ],
+      "engagements": [
+        {
+          "engagementType": "reaction",
+          "engagementSubType": "like",
+          "dateTime": "2021-10-05T04:39:30Z"
+        },
+        {
+          "engagementType": "reaction",
+          "engagementSubType": "applause",
+          "dateTime": "2021-10-05T04:40:00Z"
+        },
+        {
+          "engagementType": "hand",
+          "engagementSubType": "raiseHand",
+          "dateTime": "2021-10-05T04:41:00Z"
+        },
+        {
+          "engagementType": "camera",
+          "engagementSubType": "cameraOn",
+          "dateTime": "2021-10-05T04:42:00Z"
+        },
+        {
+          "engagementType": "microphone",
+          "engagementSubType": "unmute",
+          "dateTime": "2021-10-05T04:43:00Z"
+        }
       ]
     },
     {
@@ -176,6 +203,23 @@ Content-Type: application/json
           "joinDateTime": "2021-10-04T23:13:43.3776519Z",
           "leaveDateTime": "2021-10-04T23:18:57.5639338Z",
           "durationInSeconds": 314
+        }
+      ],
+      "engagements": [
+        {
+          "engagementType": "reaction",
+          "engagementSubType": "like",
+          "dateTime": "2021-10-04T23:14:30Z"
+        },
+        {
+          "engagementType": "reaction",
+          "engagementSubType": "applause",
+          "dateTime": "2021-10-04T23:15:00Z"
+        },
+        {
+          "engagementType": "microphone",
+          "engagementSubType": "unmute",
+          "dateTime": "2021-10-04T23:16:00Z"
         }
       ]
     }
@@ -268,7 +312,24 @@ Content-Type: application/json
       "externalRegistrationInformation": {
         "referrer": "Fabrikam",
         "registrationId": "myExternalRegistrationId"
-      }
+      },
+      "engagements": [
+        {
+          "engagementType": "reaction",
+          "engagementSubType": "like",
+          "dateTime": "2021-10-05T04:39:30Z"
+        },
+        {
+          "engagementType": "hand",
+          "engagementSubType": "raiseHand",
+          "dateTime": "2021-10-05T04:41:00Z"
+        },
+        {
+          "engagementType": "microphone",
+          "engagementSubType": "unmute",
+          "dateTime": "2021-10-05T04:43:00Z"
+        }
+      ]
     },
     {
       "emailAddress": "lisa.adkins@contoso.com",

@@ -25,25 +25,24 @@ Organizations often need to consolidate or reorganize Microsoft 365 environments
 
 ## Key features
 
-- **Create migration jobs**: Define workloads (Teams, Exchange, OneDrive and SharePoint) and resources to migrate.
+- **Create migration jobs**: Define workloads (Teams, Exchange, OneDrive, and SharePoint) and resources to migrate.
 - **Retrieve migration jobs**: Get details for all jobs or a specific job.
-- **Update migration jobs**: Modify the `completeAfterDateTime` property.
+- **Update migration jobs**: Modify the **completeAfterDateTime** property.
 - **Cancel migration jobs or specific users**: Stop migrations in progress.
 - **Validate migration jobs**: Check configuration without performing migration.
 - **Delete migration jobs**: Remove jobs and associated data for compliance.
 
 ## API status
 
-- **Preview**: Currently available in the `/beta` endpoint.
+- **Availability**: Available in the `/v1.0` and `/beta` endpoints.
 - **Scope**: User data migration only.
 - **Limitations**:
   - Job names must be unique per tenant.
   - Jobs in progress can't be deleted.
-  - `completeAfterDateTime` can't be set in the past.
 
 ## Permissions
 
-Permissions vary by operation. For the least-privileged permissions and supported permission types (delegated vs. application) for each operation, see the **Permissions** section of the corresponding API operation.
+Cross-tenant migration APIs require Microsoft Graph delegated or application permissions. Permissions vary by operation. For the least-privileged permissions and supported permission types for each operation, see the **Permissions** section of the corresponding API operation.
 
 > [!NOTE]
 > For delegated access, the signed-in user must also be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference) or a custom role that grants the permissions required for the operation. For the exact permissions and supported roles, see the **Permissions** section of each API operation.

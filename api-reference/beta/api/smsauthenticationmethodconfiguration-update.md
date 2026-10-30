@@ -49,6 +49,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/s
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
+|telecomProviderSettings|[telecomProviderSettings](../resources/telecomprovidersettings.md)|Settings for routing SMS authentication traffic through a telecom provider integration.|
 
 >**Note:** The `@odata.type` property with a value of `#microsoft.graph.smsAuthenticationMethodConfiguration` must be included in the body.
 
@@ -73,7 +74,13 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
     "id": "Sms",
-    "state": "enabled"
+    "state": "enabled",
+    "telecomProviderSettings": {
+        "url": "https://provider.contoso.com/otp",
+        "appId": "b0e2c4d6-1a3b-4c5d-8e9f-0a1b2c3d4e5f",
+        "isEvaluationModeEnabled": true,
+        "migrationPercentage": 25
+    }
 }
 ```
 

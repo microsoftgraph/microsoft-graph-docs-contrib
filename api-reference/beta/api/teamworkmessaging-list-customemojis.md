@@ -115,8 +115,10 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teamwork/messaging/customEmojis",
     "value": [
         {
+            "id": "01ZPGUWVOZAD7SNI6IYPC3QOQWMDMZQO6U",
             "displayName": "thumbsup_custom",
             "contentBytes": "iVBORw0KGgoAAAANSUhEUgAAA...",
+            "contentType": "image/png",
             "createdDateTime": "2026-03-15T10:30:00Z",
             "createdBy": {
                 "user": {
@@ -126,8 +128,10 @@ Content-type: application/json
             }
         },
         {
+            "id": "01ZPGUWVAYUTD4D6FIV5B2GJQ7V7QX3CFU",
             "displayName": "party_parrot",
             "contentBytes": "R0lGODlhAQABAIAAAAAAAP...",
+            "contentType": "image/gif",
             "createdDateTime": "2026-04-20T14:15:00Z",
             "createdBy": {
                 "user": {
@@ -143,3 +147,21 @@ Content-type: application/json
 ## Related content
 
 - [Create teamworkCustomEmoji](../api/teamworkmessaging-post-customemojis.md)
+- [Get teamworkCustomEmoji](../api/teamworkcustomemoji-get.md)
+- [Delete teamworkCustomEmoji](../api/teamworkcustomemoji-delete.md)
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List customEmojis",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: list_teamworkcustomemoji/container/contentBytes:
+      Expected type Binary but actual was String. Property: contentBytes, actual value: 'iVBORw0KGgoAAAANSUhEUgAAA...'",
+    "Error: list_teamworkcustomemoji/container/contentBytes:
+      Expected type Binary but actual was String. Property: contentBytes, actual value: 'R0lGODlhAQABAIAAAAAAAP...'"
+  ]
+}
+-->

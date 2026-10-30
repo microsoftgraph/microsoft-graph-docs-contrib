@@ -1,6 +1,6 @@
 ---
 title: "Create crossTenantMigrationJob"
-description: "Create a new crossTenantMigrationJob."
+description: "Create a new crossTenantMigrationJob object."
 author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). A job defines the migration batch but doesn't start validation or migration. After you create the job, call [validate](../api/crosstenantmigrationjob-validate.md) to verify tenant and resource configuration, then call [migrate](../api/crosstenantmigrationjob-migrate.md) to begin the actual migration.
+Create a new [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. A job defines the migration batch but doesn't start validation or migration. After you create the job, call [validate](../api/crosstenantmigrationjob-validate.md) to verify tenant and resource configuration, then call [migrate](../api/crosstenantmigrationjob-migrate.md) to begin the actual migration.
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -49,19 +49,17 @@ POST /solutions/migrations/crossTenantMigrationJobs
 
 In the request body, supply a JSON representation of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object.
 
-You can specify the following properties when creating a **crossTenantMigrationJob**.
+You can specify the following properties when you create a **crossTenantMigrationJob**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the crossTenantMigrationJob. Must be unique per tenant. Required.|
-|completeAfterDateTime|DateTimeOffset|Time when the migration batch should begin processing. Required.|
-|sourceTenantId|String|Tenant ID (GUID) of the source tenant for the migration. Required.|
+|completeAfterDateTime|DateTimeOffset|Date and time when the migration batch should start. Required.|
+|displayName|String|Name of the **crossTenantMigrationJob**. Must be unique per tenant. Required.|
 |exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|Settings for Exchange Online migrations. Optional, but required if Exchange is a specified workload.|
-|workloads|String collection|Workloads to migrate on the resources. Optional. If excluded, all available workloads are included in the migration.|
 |resourceType|String|Type of resources to migrate. Only `Users` is supported at this time. Required.|
 |resources|String collection|Object IDs (GUID) of the resources to migrate. Limit of 2,000 resources per [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). Required.|
-
-
+|sourceTenantId|String|Tenant ID (GUID) of the source tenant for the migration. Required.|
+|workloads|String collection|Workloads to migrate on the resources. Optional. If excluded, all available workloads are included in the migration.|
 
 ## Response
 

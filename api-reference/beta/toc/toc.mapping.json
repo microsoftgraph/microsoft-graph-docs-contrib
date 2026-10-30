@@ -689,6 +689,11 @@
             "cloudPcDisasterRecoveryNetworkSetting",
             "cloudPcDiscoveredApp",
             "cloudPcDomainJoinConfiguration",
+            "cloudPcDomainJoinCredential",
+            "cloudPcDomainJoinKeyVaultIntentConfiguration",
+            "cloudPcDomainJoinKeyVaultPasswordConfiguration",
+            "cloudPcDomainJoinPlainTextUserIdentity",
+            "cloudPcDomainJoinUserIdentity",
             "cloudpcexternalpartneractionreport",
             "cloudpcexternalpartneractionresult",
             "cloudpcexternalpartneragentsetting",
@@ -696,6 +701,7 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
+            "cloudPcKeyVaultDomainJoinCredential",
             "cloudPcLaunchDetail",
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
@@ -711,6 +717,7 @@
             "cloudPcOnPremisesConnectionStatusDetails",
             "cloudPcOnPremisesConnectionSubnetIpDetail",
             "cloudPcPartnerAgentInstallResult",
+            "cloudPcPlainTextDomainJoinCredential",
             "cloudPcPolicyPendingApplyStatusResult",
             "cloudPcPoolCapabilityConfiguration",
             "cloudPcProvisioningConfiguration",
@@ -1824,6 +1831,9 @@
                 "verifiableCredentialsAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
+              ],
+              "complexTypes": [
+                "telecomProviderSettings"
               ]
             },
             {
@@ -4043,13 +4053,14 @@
         },
         {
           "name": "Cross-tenant migration",
-          "overview": "../../resources/crosstenant-migration-overview.md",
+          "overview": "../../resources/crosstenant-migration-api-overview.md",
           "resources": [
             "crossTenantMigrationJob",
             "crossTenantMigrationTask",
             "migrationsRoot"
           ],
           "complexTypes": [
+            "crossTenantMigrationCancelResponse",
             "crossTenantMigrationServiceStatusDetails",
             "error",
             "exchangeOnlineCrossTenantMigrationSettings"

@@ -1,6 +1,6 @@
 ---
 title: "crossTenantMigrationServiceStatusDetails resource type"
-description: "Cross Tenant Migration Service Status Details"
+description: "Represents the status of a workload that participates in a cross-tenant migration task."
 author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,16 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the status and details of a migration done as part of a [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) 
-
+Represents the status of a workload that participates in a [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|errors|[error](../resources/error.md) collection|Errors associated with the migration for this service|
-|message|String|Service status message|
-|service|String|Service or workload the status details are associated with|
-|status|crossTenantMigrationServiceStatus|Status of the migration for the service. The possible values are: `notStarted`, `valid`, `invalid`, `error`, `inProgress`, `completed`, `failed`, `cancelled`, `pendingCancel`, `syncing`, `synced`, `finalizing`, and `forceComplete`.|
+|errors|[error](../resources/error.md) collection|Errors associated with the migration for this service.|
+|message|String|Service status message.|
+|service|String|Service or workload associated with the status details.|
+|status|crossTenantMigrationServiceStatus|Status of the migration for the service. The possible values are: `notStarted`, `valid`, `invalid`, `error`, `inProgress`, `completed`, `failed`, `cancelled`, `pendingCancel`, `syncing`, `synced`, `finalizing`, `forceComplete`, `unknownFutureValue`.|
 
 ## Relationships
 None.
