@@ -5,7 +5,7 @@ author: "amanswaika"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 09/16/2026
+ms.date: 10/19/2026
 ---
 
 # Update roleManagementCustomCalloutExtension
@@ -13,6 +13,8 @@ ms.date: 09/16/2026
 Namespace: microsoft.graph
 
 Update the properties of a roleManagementCustomCalloutExtension object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -43,6 +45,8 @@ PATCH /identityGovernance/privilegedAccess/customExtensions/{roleManagementCusto
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values.
 
+To enable or disable the custom extension, set the **isEnabled** property to `true` or `false`, respectively.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md) object in the response body.
@@ -51,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an updated [role
 
 ### Request
 
-The following example updates the client configuration and custom attributes.
+The following example enables the custom extension and updates the client configuration and custom attributes.
 
 <!-- {
   "blockType": "request",
@@ -65,6 +69,7 @@ Content-Type: application/json
 {
   "description": "Validates ticket information and cost center",
   "customAttributes": ["department", "costCenter", "employeeType"],
+  "isEnabled": true,
   "clientConfiguration": {
     "timeoutInMilliseconds": 20000,
     "maximumRetries": 5
@@ -94,6 +99,7 @@ Content-Type: application/json
   "resourceType": "entraRoles",
   "type": "preApproval",
   "customAttributes": ["department", "costCenter", "employeeType"],
+  "isEnabled": true,
   "clientConfiguration": {
     "timeoutInMilliseconds": 20000,
     "maximumRetries": 5

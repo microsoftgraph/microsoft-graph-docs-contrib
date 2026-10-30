@@ -398,6 +398,14 @@ items:
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
+    - name: App management audit
+      items:
+      - name: App management audit
+        href: ../../resources/appmanagementaudit.md
+      - name: List appManagementAudit objects
+        href: ../../api/appmanagementaudit-list.md
+      - name: Get appManagementAudit
+        href: ../../api/appmanagementaudit-get.md
     - name: Audit activity type
       items:
       - name: Audit activity type
@@ -470,6 +478,10 @@ items:
         href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md
       - name: Get summarized service principal sign-ins
         href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
+    - name: Complex types
+      items:
+      - name: Applied app management policy restriction
+        href: ../../resources/appliedappmanagementpolicyrestriction.md
   - name: Identity correlation reports (preview)
     items:
     - name: Correlated identity

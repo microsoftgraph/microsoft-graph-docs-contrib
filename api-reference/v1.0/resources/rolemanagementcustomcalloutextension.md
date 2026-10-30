@@ -5,7 +5,7 @@ author: "amanswaika"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 09/16/2026
+ms.date: 10/19/2026
 ---
 
 # roleManagementCustomCalloutExtension resource type
@@ -37,7 +37,8 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |displayName|String|The display name of the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The configuration for the external endpoint that PIM calls. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |id|String|The unique identifier for the custom extension. Inherited from [entity](../resources/entity.md).|
-|resourceType|[customExtensionResourceType](../resources/enums.md#customextensionresourcetype-values)|The PIM provider to which the extension applies. The possible values are: `entraRoles`, `azureResources`, `entraGroups`, `unknownFutureValue`. Supports `$filter` (`eq`).|
+|isEnabled|Boolean|When `true`, enables the custom extension. When `false`, disables it. Nullable.|
+|resourceType|[customExtensionResourceType](../resources/enums.md#customextensionresourcetype-values)|The PIM provider to which the extension applies. The possible values are: `entraRoles`, `azureResources`, `entraGroups`, `unknownFutureValue`, `applicationAuthorization`, `appRoles`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `applicationAuthorization`, `appRoles`. Supports `$filter` (`eq`).|
 |type|[customCalloutExtensionType](../resources/enums.md#customcalloutextensiontype-values)|The role assignment lifecycle stage at which PIM invokes the extension. The possible values are: `preApproval`, `postApproval`, `grant`, `revoke`, `unknownFutureValue`.|
 
 ## Relationships
@@ -72,6 +73,7 @@ The following JSON representation shows the resource type.
   "endpointConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
   },
+  "isEnabled": "Boolean",
   "resourceType": "String",
   "type": "String"
 }

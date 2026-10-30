@@ -1,6 +1,6 @@
 ---
 title: "caseTypeConfiguration resource type"
-description: "Exposes the allowed status tree and the custom-field schema for a single case type."
+description: "Exposes the allowed status tree, custom-field schema, and SLA policy definitions for a single case type."
 author: "noamlandress"
 ms.date: 07/20/2026
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph.security.caseManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exposes the discovery configuration for a single case type: the allowed status tree and the custom-field schema (the blank-form definition) that applies to every [case](../resources/security-casemanagement-case.md) of that type.
+Exposes the configuration for a single case type: the allowed status tree, the custom-field schema (the blank-form definition), and the [SLA policy definitions](../resources/security-casemanagement-slapolicydefinition.md) that apply to [cases](../resources/security-casemanagement-case.md) of that type.
 
-Each configuration is keyed by **id**, whose value is the case type: `genericCase`, `incidentCase`, or `exposureCase`. The configuration is reached by containment navigation from the case management root at `/security/caseManagement/caseTypeConfigurations`, so each contained status and custom field is individually addressable. The collection and all of its contained resources are read-only.
+Each configuration is keyed by **id**, whose value is the case type: `genericCase`, `incidentCase`, or `exposureCase`. The configuration is reached by containment navigation from the case management root at `/security/caseManagement/caseTypeConfigurations`, so each contained status, custom field, and SLA policy definition is individually addressable. Case type configurations, statuses, and custom-field definitions are read-only. SLA policy definitions support create, read, update, and delete operations.
 
 ## Methods
 
@@ -26,6 +26,8 @@ Each configuration is keyed by **id**, whose value is the case type: `genericCas
 |[Get](../api/security-casemanagement-casetypeconfiguration-get.md)|[microsoft.graph.security.caseManagement.caseTypeConfiguration](../resources/security-casemanagement-casetypeconfiguration.md)|Read the properties and relationships of a [caseTypeConfiguration](../resources/security-casemanagement-casetypeconfiguration.md) object.|
 |[List customFields](../api/security-casemanagement-casetypeconfiguration-list-customfields.md)|[microsoft.graph.security.caseManagement.customFieldDefinition](../resources/security-casemanagement-customfielddefinition.md) collection|Get the custom-field definitions that make up the blank-form schema for this case type.|
 |[List statuses](../api/security-casemanagement-casetypeconfiguration-list-statuses.md)|[microsoft.graph.security.caseManagement.statusDefinition](../resources/security-casemanagement-statusdefinition.md) collection|Get the top-level statuses that make up the allowed status tree for this case type.|
+|[List SLA policies](../api/security-casemanagement-casetypeconfiguration-list-slapolicies.md)|[microsoft.graph.security.caseManagement.slaPolicyDefinition](../resources/security-casemanagement-slapolicydefinition.md) collection|Get the SLA policy definitions configured for this case type.|
+|[Create SLA policy](../api/security-casemanagement-casetypeconfiguration-post-slapolicies.md)|[microsoft.graph.security.caseManagement.slaPolicyDefinition](../resources/security-casemanagement-slapolicydefinition.md)|Create an SLA policy definition for this case type.|
 
 ## Properties
 
@@ -40,6 +42,7 @@ Each configuration is keyed by **id**, whose value is the case type: `genericCas
 |Relationship|Type|Description|
 |:---|:---|:---|
 |customFields|[microsoft.graph.security.caseManagement.customFieldDefinition](../resources/security-casemanagement-customfielddefinition.md) collection|The contained custom-field definitions that make up the blank-form schema for this case type. Read-only. Supports `$count`, `$expand`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top`.|
+|slaPolicies|[microsoft.graph.security.caseManagement.slaPolicyDefinition](../resources/security-casemanagement-slapolicydefinition.md) collection|The contained SLA policy definitions configured for this case type. Supports `$filter` and `$orderby` on **createdBy**, **createdDateTime**, **description**, **displayName**, **id**, **isActive**, **lastModifiedBy**, and **lastModifiedDateTime** on the collection endpoint. For information about supported query parameters, see [List slaPolicies](../api/security-casemanagement-casetypeconfiguration-list-slapolicies.md#optional-query-parameters). Also supports `$count`, `$select`, `$skip`, and `$top` on the collection endpoint. Supports `$expand=slaPolicies` when getting a case type configuration.|
 |statuses|[microsoft.graph.security.caseManagement.statusDefinition](../resources/security-casemanagement-statusdefinition.md) collection|The contained top-level statuses that a case of this type can be set to. Read-only. Supports `$count`, `$expand`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top`.|
 
 ## JSON representation

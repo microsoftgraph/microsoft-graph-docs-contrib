@@ -1036,6 +1036,7 @@
                   "name": "PIM for Groups",
                   "overview": "../../resources/privilegedidentitymanagement-for-groups-api-overview.md",
                   "resources": [
+                    "groupResource",
                     "privilegedAccessGroupAssignmentScheduleRequest",
                     "privilegedAccessGroupAssignmentSchedule",
                     "privilegedAccessGroupAssignmentScheduleInstance",
@@ -1260,12 +1261,18 @@
               "resources": [
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
+                "federatedTokenValidationPolicy",
                 "homeRealmDiscoveryPolicy",
                 "authenticationFlowsPolicy",
                 "authenticationStrengthPolicy",
                 "deviceRegistrationPolicy",
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy"
+              ],
+              "complexTypes": [
+                "validatingDomains",
+                "allDomains",
+                "enumeratedDomains"
               ]
             },
             {
@@ -1546,6 +1553,7 @@
           "name": "Partner billing reports",
           "overview": "../../resources/partners-billing-api-overview.md",
           "resources": [
+            "microsoft.graph.partners.billing.billedAggregatedUsage",
             "microsoft.graph.partners.billing.billedReconciliation",
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
@@ -1677,37 +1685,72 @@
             "microsoft.graph.security.auditLogRecord"
           ],
           "complexTypes": [
-            "microsoft.graph.security.auditData",
-            "microsoft.graph.security.auditRecordTypeDictionary",
+            "microsoft.graph.security.a365AiGuardrail",
+            "microsoft.graph.security.aiGuardrail",
             "microsoft.graph.security.aISpanOutputsAuditRecord",
             "microsoft.graph.security.alertSubmissionAuditRecord",
             "microsoft.graph.security.alertSubmissionResultDetailAuditRecord",
+            "microsoft.graph.security.auditData",
+            "microsoft.graph.security.auditRecordTypeDictionary",
             "microsoft.graph.security.azureAISearchAuditRecord",
+            "microsoft.graph.security.cloudSecurityConnector",
+            "microsoft.graph.security.cloudSecurityEnablement",
+            "microsoft.graph.security.cloudSecurityManagement",
+            "microsoft.graph.security.complianceEndpointEvaluationIncomplete",
+            "microsoft.graph.security.complianceEvaluationIncomplete",
             "microsoft.graph.security.compliancePolicyGradingSharePointAuditRecord",
             "microsoft.graph.security.complianceSitGradingSharePointAuditRecord",
             "microsoft.graph.security.copilotSessionSharingAuditRecord",
+            "microsoft.graph.security.cscContentMetadata",
             "microsoft.graph.security.defaultAuditData",
+            "microsoft.graph.security.defenderAutomationRule",
+            "microsoft.graph.security.defenderGeneratedPlaybook",
+            "microsoft.graph.security.defenderIntegration",
             "microsoft.graph.security.defenderSecurityForAIConfigurationAuditRecord",
             "microsoft.graph.security.dragonCopilotAccessRecord",
             "microsoft.graph.security.dragonCopilotAdminRecord",
             "microsoft.graph.security.dragonCopilotClinicalDataRecord",
             "microsoft.graph.security.dragonCopilotSessionRecord",
+            "microsoft.graph.security.dspmAdminActivity",
+            "microsoft.graph.security.ecsContentMetadata",
             "microsoft.graph.security.eopSubmissionFeedEntityAuditRecord",
             "microsoft.graph.security.fabricPolicyRecord",
+            "microsoft.graph.security.filteringTeamsMessageFileInfo",
+            "microsoft.graph.security.mcsRawEmailContentMetadata",
             "microsoft.graph.security.mDASHAuditRecord",
+            "microsoft.graph.security.mesRawEmailContentMetadata",
+            "microsoft.graph.security.microsoftSecurityForAiConfiguration",
+            "microsoft.graph.security.microsoftSecurityForAiRealTimeProtection",
+            "microsoft.graph.security.microsoftTeamsMoveMessages",
             "microsoft.graph.security.microsoftTeamsUserConcernAuditRecord",
             "microsoft.graph.security.mosAgentInfoRecordV2",
             "microsoft.graph.security.mspVectorSearchContentMetadataAuditRecord",
+            "microsoft.graph.security.mtpContentMetadata",
+            "microsoft.graph.security.onDemandExchangeClassification",
+            "microsoft.graph.security.p4AiDagSitePermissionsRecord",
             "microsoft.graph.security.p4AIRiskScoreRecord",
+            "microsoft.graph.security.peopleSkillsAdmin",
+            "microsoft.graph.security.peopleSkillsUser",
+            "microsoft.graph.security.plannerCustomFieldDefinition",
+            "microsoft.graph.security.plannerCustomFieldDefinitionList",
+            "microsoft.graph.security.plannerDependency",
+            "microsoft.graph.security.plannerDependencyList",
             "microsoft.graph.security.securityCopilotIdentityManagementAuditRecord",
             "microsoft.graph.security.securityDevelopmentLifecycleAILogAuditRecord",
+            "microsoft.graph.security.sharePointFileArchivePolicy",
             "microsoft.graph.security.sonarDetonationEntityAuditRecord",
             "microsoft.graph.security.sonarFileDetonationEntityAuditRecord",
             "microsoft.graph.security.sonarSubmissionEntityAuditRecord",
             "microsoft.graph.security.sonarUrlDetonationEntityAuditRecord",
             "microsoft.graph.security.sparkCoreCustomLivePoolRecord",
             "microsoft.graph.security.submissionEntityAuditRecord",
-            "microsoft.graph.security.vivaGlintAgenticCampaignAuditRecord"
+            "microsoft.graph.security.syntheticMediaDetectionEvent",
+            "microsoft.graph.security.universalPrintSecureScan",
+            "microsoft.graph.security.vivaGlintAgenticCampaignAuditRecord",
+            "microsoft.graph.security.vivaGlintClientConfiguration",
+            "microsoft.graph.security.vivaGlintDataRetention",
+            "microsoft.graph.security.vivaGlintVivaInsightsIntegration",
+            "microsoft.graph.security.workIQAdminActivity"
           ]
         },
         {
@@ -2134,7 +2177,8 @@
                 "callTranscript"
               ],
               "complexTypes": [
-                "cloudVideoInteropInfo"
+                "cloudVideoInteropInfo",
+                "meetingEngagement"
               ],
               "childNodes": [
                 {
@@ -2359,6 +2403,21 @@
           ]
         },
         {
+          "name": "Cross-tenant migration",
+          "overview": "../../resources/crosstenant-migration-api-overview.md",
+          "resources": [
+            "crossTenantMigrationJob",
+            "crossTenantMigrationTask",
+            "migrationsRoot"
+          ],
+          "complexTypes": [
+            "crossTenantMigrationCancelResponse",
+            "crossTenantMigrationServiceStatusDetails",
+            "error",
+            "exchangeOnlineCrossTenantMigrationSettings"
+          ]
+        },
+        {
           "name": "Multitenant organization",
           "overview": "../../resources/multitenantorganization-overview.md",
           "keywords": [
@@ -2409,6 +2468,7 @@
             "microsoft.graph.multiTenantApplicationsToProvision",
             "microsoft.graph.multiTenantApplicationsToProvisionSnapshot",
             "microsoft.graph.relatedTenantsRefreshRequest",
+            "microsoft.graph.relatedTenantsRefreshStatus",
             "microsoft.graph.relationshipPolicy",
             "microsoft.graph.roleTemplate"
           ]

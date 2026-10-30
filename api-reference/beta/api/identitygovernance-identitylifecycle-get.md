@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Read the properties and relationships of an [microsoft.graph.identityGovernance.identityLifecycle](../resources/identitygovernance-identitylifecycle.md) object for a [servicePrincipal](../resources/serviceprincipal.md). Use `$expand=effectiveGoverningPolicy` to retrieve the highest-priority policy governing the identity. The **lastAttestationDateTime** property can be `null` for an identity that hasn't yet been attested.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md) objects and their properties in the [lifecycle workflows container](../resources/identitygovernance-lifecycleworkflowscontainer.md). Use `$filter` on the **policySource** property to distinguish system-managed default policies from user-created policies.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -32,6 +32,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
+|telecomProviderSettings|[telecomProviderSettings](../resources/telecomprovidersettings.md)|Settings for routing SMS authentication traffic through a telecom provider integration.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -57,7 +58,9 @@ The following JSON representation shows the resource type.
     {
       "@odata.type": "microsoft.graph.excludeTarget"
     }
-  ]
+  ],
+  "telecomProviderSettings": {
+    "@odata.type": "microsoft.graph.telecomProviderSettings"
+  }
 }
 ```
-

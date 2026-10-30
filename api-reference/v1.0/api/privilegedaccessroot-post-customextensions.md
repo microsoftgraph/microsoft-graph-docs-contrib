@@ -5,7 +5,7 @@ author: "amanswaika"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 09/16/2026
+ms.date: 10/19/2026
 ---
 
 # Create roleManagementCustomCalloutExtension
@@ -13,6 +13,8 @@ ms.date: 09/16/2026
 Namespace: microsoft.graph
 
 Create a new roleManagementCustomCalloutExtension object for Privileged Identity Management (PIM).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -69,6 +71,7 @@ Content-Type: application/json
   "resourceType": "entraRoles",
   "type": "preApproval",
   "customAttributes": ["department", "costCenter"],
+  "isEnabled": true,
   "endpointConfiguration": {
     "@odata.type": "#microsoft.graph.httpRequestEndpoint",
     "targetUrl": "https://api.contoso.com/webhooks/role-assignments"
@@ -106,6 +109,7 @@ Content-Type: application/json
   "resourceType": "entraRoles",
   "type": "preApproval",
   "customAttributes": ["department", "costCenter"],
+  "isEnabled": true,
   "endpointConfiguration": {
     "@odata.type": "#microsoft.graph.httpRequestEndpoint",
     "targetUrl": "https://api.contoso.com/webhooks/role-assignments"

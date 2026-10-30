@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "76ebc283-ee64-46cc-8f40-79ef1c29c857",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "telecomProviderSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [telecomProviderSettings](https://learn.microsoft.com/en-us/graph/api/resources/telecomprovidersettings?view=graph-rest-beta) complex type.",
+          "Target": "telecomProviderSettings"
+        },
+        {
+          "Id": "76ebc283-ee64-46cc-8f40-79ef1c29c857",
+          "ApiChange": "Property",
+          "ChangedApiName": "telecomProviderSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **telecomProviderSettings** property to the [smsAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/smsauthenticationmethodconfiguration?view=graph-rest-beta) resource.",
+          "Target": "smsAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "76ebc283-ee64-46cc-8f40-79ef1c29c857",
+          "ApiChange": "Property",
+          "ChangedApiName": "telecomProviderSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **telecomProviderSettings** property to the [voiceAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/voiceauthenticationmethodconfiguration?view=graph-rest-beta) resource.",
+          "Target": "voiceAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "76ebc283-ee64-46cc-8f40-79ef1c29c857",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-21T19:02:57.3595054Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1eb18cd6-c5d2-4c3c-8fc9-ac0e40a0b592",
           "ApiChange": "Property",
           "ChangedApiName": "requireCertificateSidAlignment",
@@ -15,6 +49,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-09-24T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fe1c4540-f0a1-478c-b3e9-13c4c557a689",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "identityVerificationEventsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityVerificationEventsConfiguration** complex type to the [verifiableCredentialsAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiablecredentialsauthenticationmethodconfiguration?view=graph-rest-beta) resource.",
+          "Target": "identityVerificationEventsConfiguration"
+        },
+        {
+          "Id": "fe1c4540-f0a1-478c-b3e9-13c4c557a689",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityVerificationEventsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityVerificationEventsConfiguration** property to the [verifiableCredentialsAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiablecredentialsauthenticationmethodconfiguration?view=graph-rest-beta) resource.",
+          "Target": "verifiableCredentialsAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "fe1c4540-f0a1-478c-b3e9-13c4c557a689",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-26T00:00:00.0000000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },

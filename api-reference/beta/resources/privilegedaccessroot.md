@@ -12,12 +12,18 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents the entry point for resources related to Privileged Identity Management (PIM).
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-None.
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List custom extensions](../api/privilegedaccessroot-list-customextensions.md)|[roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md) collection|Get a list of PIM custom extensions.|
+|[Create custom extension](../api/privilegedaccessroot-post-customextensions.md)|[roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md)|Create a PIM custom extension.|
 
 ## Properties
 |Property|Type|Description|
@@ -27,6 +33,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|customExtensions|[roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md) collection|The custom extensions configured for PIM role management operations.|
 |group|[privilegedAccessGroup](../resources/privilegedaccessgroup.md)|A group that's governed through Privileged Identity Management (PIM).|
 
 ## JSON representation
@@ -45,4 +52,3 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)"
 }
 ```
-

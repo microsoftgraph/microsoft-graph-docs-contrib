@@ -20,7 +20,7 @@ Update the **status** property of a [governanceRelationship](../resources/tenant
 
 When the governed tenant updates the `status` to `terminated` in either model, the resources that were provisioned in the governed tenant upon relationship creation are deleted.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

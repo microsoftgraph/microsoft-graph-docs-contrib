@@ -1343,6 +1343,10 @@ items:
         href: ../../api/teamworkmessaging-list-customemojis.md
       - name: Create teamworkCustomEmoji
         href: ../../api/teamworkmessaging-post-customemojis.md
+      - name: Get teamworkCustomEmoji
+        href: ../../api/teamworkcustomemoji-get.md
+      - name: Delete teamworkCustomEmoji
+        href: ../../api/teamworkcustomemoji-delete.md
     - name: Teamwork custom emoji
       items:
       - name: Teamwork custom emoji
@@ -1351,6 +1355,10 @@ items:
         href: ../../api/teamworkmessaging-list-customemojis.md
       - name: Create
         href: ../../api/teamworkmessaging-post-customemojis.md
+      - name: Get
+        href: ../../api/teamworkcustomemoji-get.md
+      - name: Delete
+        href: ../../api/teamworkcustomemoji-delete.md
     - name: Complex types
       items:
       - name: Custom emoji from identity set

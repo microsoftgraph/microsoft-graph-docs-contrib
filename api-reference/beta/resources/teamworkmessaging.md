@@ -24,6 +24,8 @@ Inherits from [entity](../resources/entity.md).
 |:-------------|:------------------|:------------------|
 | [List customEmojis](../api/teamworkmessaging-list-customemojis.md) | [teamworkCustomEmoji](../resources/teamworkcustomemoji.md) collection | Get a list of custom emojis available in the organization. |
 | [Create teamworkCustomEmoji](../api/teamworkmessaging-post-customemojis.md) | [teamworkCustomEmoji](../resources/teamworkcustomemoji.md) | Upload a new custom emoji to the organization. |
+| [Get teamworkCustomEmoji](../api/teamworkcustomemoji-get.md) | [teamworkCustomEmoji](../resources/teamworkcustomemoji.md) | Get a single [custom emoji](../resources/teamworkcustomemoji.md) or the raw image content of a custom emoji by display name from the teamwork messaging of the organization. |
+| [Delete teamworkCustomEmoji](../api/teamworkcustomemoji-delete.md) | None | Delete a [custom emoji](../resources/teamworkcustomemoji.md) by display name from the teamwork messaging of the organization. |
 
 ## Properties
 

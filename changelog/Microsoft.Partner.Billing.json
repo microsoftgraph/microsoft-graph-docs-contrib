@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "c2ba5586-9b32-49c9-b240-9cbace6e458b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAggregatedUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAggregatedUsage](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-azureaggregatedusage?view=graph-rest-1.0) resource type.",
+          "Target": "azureAggregatedUsage"
+        },
+        {
+          "Id": "c2ba5586-9b32-49c9-b240-9cbace6e458b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billedAggregatedUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [billedAggregatedUsage](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedaggregatedusage?view=graph-rest-1.0) resource type.",
+          "Target": "billedAggregatedUsage"
+        },
+        {
+          "Id": "c2ba5586-9b32-49c9-b240-9cbace6e458b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "aggregatedUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the **aggregatedUsage** relationship to the [billing](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billing?view=graph-rest-1.0) resource.",
+          "Target": "billing"
+        },
+        {
+          "Id": "c2ba5586-9b32-49c9-b240-9cbace6e458b",
+          "ApiChange": "Method",
+          "ChangedApiName": "export",
+          "ChangeType": "Addition",
+          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-billedaggregatedusage-export?view=graph-rest-1.0) method to the [billedAggregatedUsage](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billedaggregatedusage?view=graph-rest-1.0) resource.",
+          "Target": "billedAggregatedUsage"
+        }
+      ],
+      "Id": "c2ba5586-9b32-49c9-b240-9cbace6e458b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-09T17:58:47.7925888Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Partner billing reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "648c4d76-50e1-44f2-9a48-05c33349ca8d",
           "ApiChange": "Relationship",
           "ChangedApiName": "aggregatedUsage",

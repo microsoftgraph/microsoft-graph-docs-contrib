@@ -1,5 +1,5 @@
 ---
-title: "Create customEmoji"
+title: "Create teamworkCustomEmoji"
 description: "Create a new [custom emoji](../resources/teamworkcustomemoji.md) in the teamwork messaging of the organization, which adds the custom emoji to Teams for the tenant."
 author: "mea"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 06/10/2026
 ---
 
-# Create customEmoji
+# Create teamworkCustomEmoji
 
 Namespace: microsoft.graph
 
@@ -47,7 +47,8 @@ The following table lists the properties that are required when you create a cus
 
 | Property     | Type   | Description |
 |:-------------|:-------|:------------|
-| contentBytes | String | The base64-encoded image content for the emoji. Supported formats include PNG and GIF. |
+| contentBytes | Binary | The base64-encoded image content for the emoji. Supported formats include PNG and GIF. |
+| contentType | String | The media type of the custom emoji content, such as `image/png` or `image/gif`. |
 | displayName  | String | The unique display name of the custom emoji. Key. Must be unique and must not conflict with existing emoji names. |
 
 ## Response
@@ -60,7 +61,6 @@ If successful, this method returns a `201 Created` response code and a [teamwork
 
 The following example shows a request to upload a custom emoji.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_teamworkcustomemoji"
@@ -72,39 +72,10 @@ Content-Type: application/json
 
 {
     "displayName": "thumbsup_custom",
-    "contentBytes": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAABGhJREFU..."
+    "contentBytes": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAABGhJREFU...",
+    "contentType": "image/png"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-teamworkcustomemoji-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-teamworkcustomemoji-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-teamworkcustomemoji-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamworkcustomemoji-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-teamworkcustomemoji-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-teamworkcustomemoji-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-teamworkcustomemoji-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -121,8 +92,10 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teamwork/messaging/customEmojis/$entity",
+    "id": "01ZPGUWVOZAD7SNI6IYPC3QOQWMDMZQO6U",
     "displayName": "thumbsup_custom",
     "contentBytes": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAABGhJREFU...",
+    "contentType": "image/png",
     "createdDateTime": "2026-06-10T12:00:00Z",
     "createdBy": {
         "user": {
@@ -136,3 +109,19 @@ Content-type: application/json
 ## Related content
 
 - [List customEmojis](../api/teamworkmessaging-list-customemojis.md)
+- [Get teamworkCustomEmoji](../api/teamworkcustomemoji-get.md)
+- [Delete teamworkCustomEmoji](../api/teamworkcustomemoji-delete.md)
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Create teamworkCustomEmoji",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: create_teamworkcustomemoji/contentBytes:
+      Expected type Binary but actual was String. Property: contentBytes, actual value: 'iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAABGhJREFU...'"
+  ]
+}
+-->

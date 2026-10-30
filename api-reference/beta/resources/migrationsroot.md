@@ -1,6 +1,6 @@
 ---
 title: "migrationsRoot resource type"
-description: "Migrations of content"
+description: "Provides the root path from which cross-tenant migration operations are performed."
 author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The root path from which migration actions are performed.
-
+Provides the root path from which cross-tenant migration operations are performed.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,18 +22,18 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List crossTenantMigrationJobs](../api/migrationsroot-list-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) collection|List all of the crossTenantMigrationJobs for this tenant|
-|[Create crossTenantMigrationJob](../api/migrationsroot-post-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Create a new crossTenantMigrationJob to migrate content to this tenant|
+|[List crossTenantMigrationJobs](../api/migrationsroot-list-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) collection|Get a list of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) objects and their properties.|
+|[Create crossTenantMigrationJob](../api/migrationsroot-post-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Create a new [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ID|String|migrations root ID. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|The migration root ID. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|crossTenantMigrationJobs|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) collection|Migration Jobs associated with this tenant.|
+|crossTenantMigrationJobs|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) collection|Migration jobs associated with this tenant.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

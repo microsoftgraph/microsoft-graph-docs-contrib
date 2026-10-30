@@ -11,10 +11,13 @@ ms.date: 04/05/2024
 # Update unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update a rule defined for a role management policy. The rule can be one of the following types that are derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object:
 
 + [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
++ [unifiedRoleManagementPolicyCustomExtensionRule](../resources/unifiedrolemanagementpolicycustomextensionrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
 + [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)
 + [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)
@@ -72,9 +75,10 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 |Property|Type|Description|
 |:---|:---|:---|
 |claimValue|String|The value of the authentication context claim. <br/><br/>Can be updated for the **unifiedRoleManagementPolicyAuthenticationContextRule** rule type.|
+|customExtensionId|String|The unique identifier of the [roleManagementCustomCalloutExtension](../resources/rolemanagementcustomcalloutextension.md) associated with the rule.<br/><br/>Can be updated for the **unifiedRoleManagementPolicyCustomExtensionRule** rule type.|
 |enabledRules|String collection|The collection of rules that are enabled for this policy rule. For example, `MultiFactorAuthentication`, `Ticketing`, and `Justification`.<br/><br/>Can be updated for the **unifiedRoleManagementPolicyEnablementRule** rule type.|
 |isDefaultRecipientsEnabled|Boolean|Indicates whether a default recipient will receive the notification email.<br/><br/>Can be updated for the **unifiedRoleManagementPolicyNotificationRule** rule type.|
-|isEnabled|Boolean| Whether this rule is enabled. <br/><br/>Can be updated for the **unifiedRoleManagementPolicyAuthenticationContextRule** rule type.|
+|isEnabled|Boolean|Whether this rule is enabled. <br/><br/>Can be updated for the **unifiedRoleManagementPolicyAuthenticationContextRule** and **unifiedRoleManagementPolicyCustomExtensionRule** rule types.|
 |isExpirationRequired|Boolean|Indicates whether expiration is required or if it's a permanently active assignment or eligibility. <br/><br/>Can be updated for the **unifiedRoleManagementPolicyExpirationRule** rule type.|
 |maximumDuration|Duration| The maximum duration allowed for eligibility or assignment which is not permanent. Required when **isExpirationRequired** is `true`. <br/><br/>Can be updated for the **unifiedRoleManagementPolicyExpirationRule** rule type. |
 |notificationLevel|String|The level of notification. The possible values are `None`, `Critical`, `All`.<br/><br/>Can be updated for the **unifiedRoleManagementPolicyNotificationRule** rule type.|
@@ -284,6 +288,59 @@ Content-Type: application/json
         "inheritableSettings": [],
         "enforcedSettings": []
     }
+}
+```
+
+### Example 3: Enable a custom extension rule
+
+#### Request
+
+The following example associates a custom extension with a policy rule and enables the rule. Use the ID of a rule returned by the [List rules](../api/unifiedrolemanagementpolicy-list-rules.md) method.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_unifiedrolemanagementpolicyrule_customextension"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448/rules/CustomExtension_EndUser_Assignment
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyCustomExtensionRule",
+  "customExtensionId": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+  "isEnabled": true
+}
+```
+
+#### Response
+
+The following example shows the response. The response might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyCustomExtensionRule",
+  "id": "CustomExtension_EndUser_Assignment",
+  "customExtensionId": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+  "displayName": "Role assignment ticket validation",
+  "customAttributes": ["department", "costCenter"],
+  "isEnabled": true,
+  "target": {
+    "caller": "EndUser",
+    "operations": ["All"],
+    "level": "Assignment",
+    "inheritableSettings": [],
+    "enforcedSettings": []
+  }
 }
 ```
 

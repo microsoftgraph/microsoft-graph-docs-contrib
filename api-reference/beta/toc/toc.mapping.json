@@ -97,12 +97,24 @@
             "ipApplicationSegment",
             "webApplicationSegment",
             "corsConfiguration_v2"
+          ]
+        },
+        {
+          "name": "Synchronization",
+          "overview": "../../resources/synchronization-overview.md",
+          "shouldSort": true,
+          "resources": [
+            "synchronization",
+            "synchronizationTemplate",
+            "synchronizationJob",
+            "synchronizationSchema"
           ],
           "childNodes": [
             {
               "name": "Synchronization job",
               "resources": [
-                "bulkUpload"
+                "bulkUpload",
+                "objectConnection"
               ]
             },
             {
@@ -677,6 +689,11 @@
             "cloudPcDisasterRecoveryNetworkSetting",
             "cloudPcDiscoveredApp",
             "cloudPcDomainJoinConfiguration",
+            "cloudPcDomainJoinCredential",
+            "cloudPcDomainJoinKeyVaultIntentConfiguration",
+            "cloudPcDomainJoinKeyVaultPasswordConfiguration",
+            "cloudPcDomainJoinPlainTextUserIdentity",
+            "cloudPcDomainJoinUserIdentity",
             "cloudpcexternalpartneractionreport",
             "cloudpcexternalpartneractionresult",
             "cloudpcexternalpartneragentsetting",
@@ -684,9 +701,13 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
+            "cloudPcKeyVaultDomainJoinCredential",
             "cloudPcLaunchDetail",
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
+            "cloudPcManagedLicenseExtendAccess",
+            "cloudPcManagedLicenseOperation",
+            "cloudPcManagedLicenseOperationResult",
             "cloudPcManagementAssignmentTarget",
             "cloudPcManagementGroupAssignmentTarget",
             "cloudPcMicrosoftHostedNetworkConfiguration",
@@ -696,6 +717,7 @@
             "cloudPcOnPremisesConnectionStatusDetails",
             "cloudPcOnPremisesConnectionSubnetIpDetail",
             "cloudPcPartnerAgentInstallResult",
+            "cloudPcPlainTextDomainJoinCredential",
             "cloudPcPolicyPendingApplyStatusResult",
             "cloudPcPoolCapabilityConfiguration",
             "cloudPcProvisioningConfiguration",
@@ -1395,6 +1417,10 @@
             "Privileged Identity Management",
             "Microsoft Entra ID Governance"
           ],
+          "complexTypes": [
+            "approverDelegate",
+            "identityGovernanceUserSettings"
+          ],
           "childNodes": [
             {
               "name": "Access drift",
@@ -1428,6 +1454,9 @@
                 "accessReviewHistoryInstance",
                 "accessReviewPolicy",
                 "unifiedRoot"
+              ],
+              "complexTypes": [
+                "accessReviewCatalogScope"
               ]
             },
             {
@@ -1573,6 +1602,15 @@
             {
               "name": "Privileged Identity Management iteration 3",
               "childNodes": [
+                {
+                  "name": "Custom extensions",
+                  "resources": [
+                    "roleManagementCustomCalloutExtension"
+                  ],
+                  "complexTypes": [
+                    "unifiedRoleManagementPolicyCustomExtensionRule"
+                  ]
+                },
                 {
                   "name": "PIM for Microsoft Entra roles",
                   "overview": "../../resources/privilegedidentitymanagementv3-overview.md",
@@ -1793,6 +1831,9 @@
                 "verifiableCredentialsAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
+              ],
+              "complexTypes": [
+                "telecomProviderSettings"
               ]
             },
             {
@@ -1817,12 +1858,17 @@
             {
               "name": "Conditional access",
               "resources": [
-                "conditionalAccessPolicy",
-                "whatIfAnalysisResult",
-                "namedLocation",
                 "authenticationContextClassReference",
+                "conditionalAccessPolicy",
+                "conditionalAccessPolicyPlan",
+                "conditionalAccessPolicyRule",
                 "conditionalAccessTemplate",
-                "continuousAccessEvaluationPolicy"
+                "continuousAccessEvaluationPolicy",
+                "namedLocation",
+                "whatIfAnalysisResult"
+              ],
+              "complexTypes": [
+                "conditionalAccessPolicyRuleControls"
               ],
               "childNodes": [
                 {
@@ -2720,6 +2766,7 @@
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [
+                "appManagementAudit",
                 "auditActivityType",
                 "customSecurityAttributeAudit",
                 "directoryAudit",
@@ -2729,6 +2776,9 @@
                 "signInEventsActivity",
                 "signInEventsAppActivity",
                 "summarizedSignIn"
+              ],
+              "complexTypes": [
+                "appliedAppManagementPolicyRestriction"
               ]
             },
             {
@@ -3034,9 +3084,11 @@
             "userDataSecurityAndGovernance"
           ],
           "complexTypes": [
+            "activityMetadata",
+            "agentMetadata",
+            "agentParticipant",
             "aiAgentInfo",
             "aiInteractionEntity",
-            "activityMetadata",
             "aiInteractionPlugin",
             "autoLabeling",
             "binaryContent",
@@ -3049,6 +3101,7 @@
             "computeRightsAndInheritanceResult",
             "contentActivityMetadata",
             "contentBase",
+            "currentLabel",
             "customMetadataDictionary",
             "deviceMetadata",
             "dlpActionInfo",
@@ -3059,6 +3112,7 @@
             "embeddingInput",
             "groupScope",
             "integratedApplicationMetadata",
+            "interactionParticipant",
             "labelActionBase",
             "labelContentRight",
             "labelPolicy",
@@ -3067,9 +3121,9 @@
             "policyBinding",
             "policyConfiguration",
             "policyLocation",
+            "policyLocationAgent",
             "policyLocationApplication",
             "policyLocationDomain",
-            "policyLocationTool",
             "policyLocationUrl",
             "policyScopeBase",
             "policyTenantScope",
@@ -3089,6 +3143,8 @@
             "scopeBase",
             "tenantScope",
             "textContent",
+            "toolParticipant",
+            "userParticipant",
             "userScope"
           ]
         },
@@ -3320,6 +3376,7 @@
             "microsoft.graph.security.caseManagement.workspaceIndicatorRelation",
             "microsoft.graph.security.caseManagement.task",
             "microsoft.graph.security.caseManagement.caseTypeConfiguration",
+            "microsoft.graph.security.caseManagement.slaPolicyDefinition",
             "microsoft.graph.security.caseManagement.customFieldDefinition",
             "microsoft.graph.security.caseManagement.stringCustomFieldDefinition",
             "microsoft.graph.security.caseManagement.numberCustomFieldDefinition",
@@ -3996,13 +4053,14 @@
         },
         {
           "name": "Cross-tenant migration",
-          "overview": "../../resources/crosstenant-migration-overview.md",
+          "overview": "../../resources/crosstenant-migration-api-overview.md",
           "resources": [
             "crossTenantMigrationJob",
             "crossTenantMigrationTask",
             "migrationsRoot"
           ],
           "complexTypes": [
+            "crossTenantMigrationCancelResponse",
             "crossTenantMigrationServiceStatusDetails",
             "error",
             "exchangeOnlineCrossTenantMigrationSettings"

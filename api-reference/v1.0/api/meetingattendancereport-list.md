@@ -19,7 +19,7 @@ Get a list of [meetingAttendanceReport](../resources/meetingattendancereport.md)
 >- This method only returns up to 50 of the most recent reports.
 >- When you use this method to list attendance reports for a channel meeting, the API returns only the attendance reports associated with the specified meeting, consistent with the behavior for scheduled meetings.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

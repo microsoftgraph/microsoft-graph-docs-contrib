@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "c28e192b-f8e3-4384-8383-80fe031b37a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkCustomEmoji",
+          "ChangeType": "Change",
+          "Description": "Updated the [teamworkCustomEmoji](https://learn.microsoft.com/en-us/graph/api/resources/teamworkcustomemoji?view=graph-rest-beta) resource to inherit from [teamworkHostedContent](https://learn.microsoft.com/en-us/graph/api/resources/teamworkhostedcontent?view=graph-rest-beta).",
+          "Target": "teamworkCustomEmoji"
+        },
+        {
+          "Id": "c28e192b-f8e3-4384-8383-80fe031b37a8",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Addition",
+          "Description": "Added the **id** property to the [teamworkCustomEmoji](https://learn.microsoft.com/en-us/graph/api/resources/teamworkcustomemoji?view=graph-rest-beta) resource.",
+          "Target": "teamworkCustomEmoji"
+        },
+        {
+          "Id": "c28e192b-f8e3-4384-8383-80fe031b37a8",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentBytes",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **contentBytes** property on the [teamworkCustomEmoji](https://learn.microsoft.com/en-us/graph/api/resources/teamworkcustomemoji?view=graph-rest-beta) resource from String to Binary.",
+          "Target": "teamworkCustomEmoji"
+        },
+        {
+          "Id": "c28e192b-f8e3-4384-8383-80fe031b37a8",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentType** property to the [teamworkCustomEmoji](https://learn.microsoft.com/en-us/graph/api/resources/teamworkcustomemoji?view=graph-rest-beta) resource.",
+          "Target": "teamworkCustomEmoji"
+        },
+        {
+          "Id": "c28e192b-f8e3-4384-8383-80fe031b37a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get teamworkCustomEmoji](https://learn.microsoft.com/en-us/graph/api/teamworkcustomemoji-get?view=graph-rest-beta) method to the [teamworkCustomEmoji](https://learn.microsoft.com/en-us/graph/api/resources/teamworkcustomemoji?view=graph-rest-beta) resource to retrieve a custom emoji or its raw image content by display name.",
+          "Target": "teamworkCustomEmoji"
+        },
+        {
+          "Id": "c28e192b-f8e3-4384-8383-80fe031b37a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete teamworkCustomEmoji](https://learn.microsoft.com/en-us/graph/api/teamworkcustomemoji-delete?view=graph-rest-beta) method to the [teamworkCustomEmoji](https://learn.microsoft.com/en-us/graph/api/resources/teamworkcustomemoji?view=graph-rest-beta) resource to delete a custom emoji by display name.",
+          "Target": "teamworkCustomEmoji"
+        }
+      ],
+      "Id": "c28e192b-f8e3-4384-8383-80fe031b37a8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-28T19:03:06.3503101Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cae84aac-15ba-4e7e-a1b5-a6da5cbf6e9d",
           "ApiChange": "Property",
           "ChangedApiName": "reactionId",

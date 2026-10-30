@@ -1,6 +1,6 @@
 ---
 title: "Get crossTenantMigrationJob"
-description: "Read the properties and relationships of crossTenantMigrationJob object."
+description: "Read the properties and relationships of a crossTenantMigrationJob object."
 author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Includes details of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) , but not details of the individual [crossTenantMigrationTasks](../resources/crosstenantmigrationtask.md) of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md).
+Read the properties and relationships of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. This API provides details about the [migration job](../resources/crosstenantmigrationjob.md), but not about the individual [crossTenantMigrationTasks](../resources/crosstenantmigrationtask.md) objects associated with the [migration job](../resources/crosstenantmigrationjob.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -43,7 +43,7 @@ GET /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -139,4 +139,3 @@ Content-Type: application/json
   }
 }
 ```
-

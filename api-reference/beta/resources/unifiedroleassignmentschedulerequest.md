@@ -26,6 +26,7 @@ For more information about PIM scenarios you can define through the **unifiedRol
 |[Create](../api/rbacapplication-post-roleassignmentschedulerequests.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Create a request for an active and persistent role assignment or activate, deactivate, extend, or renew an eligible role assignment.|
 |[Get](../api/unifiedroleassignmentschedulerequest-get.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Retrieve a request for an active role assignment made through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|
 |[Cancel](../api/unifiedroleassignmentschedulerequest-cancel.md)|None| Cancel a request for an active role assignment. |
+|[unifiedRoleAssignmentScheduleRequest: updateRequest](../api/unifiedroleassignmentschedulerequest-updaterequest.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Submit the result of a custom extension evaluation for a role assignment request.|
 |[Filter by current user](../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) collection| Retrieve the requests for active role assignments for a particular principal.|
 
 ## Properties
@@ -97,4 +98,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

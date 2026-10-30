@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Add the signed-in [user](../resources/user.md) as a sponsor of a sponsorless guest user. The signed-in user must be a member user. This action is idempotent and returns `204 No Content` if the signed-in user is already a sponsor.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

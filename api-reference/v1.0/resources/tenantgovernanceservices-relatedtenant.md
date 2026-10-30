@@ -1,7 +1,7 @@
 ---
 title: "relatedTenant resource type"
 description: "Represents a tenant that has been discovered as related to the current tenant through tenant discovery."
-author: "hafowler"
+author: "akhil-potturi"
 ms.date: 09/14/2026
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1028
@@ -27,6 +27,7 @@ Represents a tenant that has been discovered as related to the current tenant th
 |[List](../api/tenantgovernanceservices-list-relatedtenants.md)|[microsoft.graph.relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) collection|Get a list of the [relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) objects and their properties.|
 |[Get](../api/tenantgovernanceservices-relatedtenant-get.md)|[microsoft.graph.relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md)|Read the properties and relationships of a [relatedTenant](../resources/tenantgovernanceservices-relatedtenant.md) object.|
 |[Refresh](../api/tenantgovernanceservices-relatedtenant-refresh.md)|None|Refresh the list of related tenants.|
+|[Refresh status](../api/tenantgovernanceservices-relatedtenant-refreshstatus.md)|[microsoft.graph.relatedTenantsRefreshStatus](../resources/tenantgovernanceservices-relatedtenantsrefreshstatus.md)|Get the status of the most recent [related tenants refresh operation](../api/tenantgovernanceservices-relatedtenant-refresh.md).|
 
 ## Properties
 |Property|Type|Description|

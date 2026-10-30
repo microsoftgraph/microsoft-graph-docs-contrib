@@ -1,9 +1,9 @@
 ---
 title: "tenantProtectionScopeContainer: compute"
 toc.title: "tenantProtectionScopeContainer: compute"
-description: "Compute the tenant-wide data protection policies and actions, including user or group scoping."
+description: "Compute tenant-wide data protection policies and actions, including agent policy scopes."
 author: "kylemar"
-ms.date: 02/06/2026
+ms.date: 09/02/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Compute the tenant-wide data protection policies and actions, including user/group scoping.
+Compute tenant-wide data protection policies and actions, including user, group, or agent policy scopes.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -45,22 +45,24 @@ POST /security/dataSecurityAndGovernance/protectionScopes/compute
 
 In the request body, provide JSON object with the following parameters.
 
-| Parameter             | Type                                                                                                                 | Description                                                                                                                                                         |
-| :-------------------- | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| activities            | microsoft.graph.security.userActivityTypes                                                   | Optional. Specifies the user activities the calling application supports or is interested in. This flagged enumeration allows multiple members to be selected simultaneously. The possible values are: `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`, `contentFiltering`. The `contentFiltering` value represents evaluating application content against data loss prevention policies.|
-| deviceMetadata        | [deviceMetadata](../resources/devicemetadata.md)                                    | Optional. Information about the device context (type, OS) used for contextual policy evaluation.                                                                   |
-|evaluationScope|[evaluationScope](../resources/evaluationscope.md)|Optional. Specifies the evaluation context for the request. For Agent-to-Tool (A2T) scenarios, set **type** to `agent`. If omitted, the request is evaluated using the default tenant context.|
-| integratedAppMetadata | [integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)      | Optional. Information about the calling application (name, version) integrating with Microsoft Purview.                                                                    |
-| locations             | [policyLocation](../resources/policylocation.md) collection                         | Optional. List of specific locations the application is interested in. If provided, results are trimmed to policies covering these locations. Use [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, [policy location tool](../resources/policylocationtool.md) for tool locations, or [policy location URL](../resources/policylocationurl.md) for URL locations. You must specify the `@odata.type` property to declare the type of policyLocation. For example, `"@odata.type": "microsoft.graph.policyLocationApplication"`.|
-| pivotOn               | microsoft.graph.policyPivotProperty                          | Optional. Specifies how the results should be aggregated. If omitted or `none`, results might be less aggregated. Possible values are `activity`, `location`, `none`.|
+|Parameter|Type|Description|
+|:---|:---|:---|
+|activities|microsoft.graph.security.userActivityTypes|Optional. Specifies the user activities the calling application supports or is interested in. This flagged enumeration allows multiple members to be selected simultaneously. The possible values are: `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`, `contentFiltering`. The `contentFiltering` value represents evaluating application content against data loss prevention policies.|
+|deviceMetadata|[deviceMetadata](../resources/devicemetadata.md)|Optional. Information about the device context (type, OS) used for contextual policy evaluation.|
+|evaluationScope|[evaluationScope](../resources/evaluationscope.md)|Optional. Specifies the evaluation context for the request. For Agent-to-Tool (A2T) scenarios, set **type** to `agent` to retrieve tenant-scoped agent policy information. If omitted, the request is evaluated using the default tenant context.|
+|integratedAppMetadata|[integratedApplicationMetadata](../resources/integratedapplicationmetadata.md)|Optional. Information about the calling application (name, version) integrating with Microsoft Purview.|
+|locations|[policyLocation](../resources/policylocation.md) collection|Optional. List of specific locations the application is interested in. If provided, results are trimmed to policies covering these locations. Use [policyLocationAgent](../resources/policylocationagent.md) for agent locations, [policy location application](../resources/policylocationapplication.md) for application locations, [policy location domain](../resources/policylocationdomain.md) for domain locations, or [policy location URL](../resources/policylocationurl.md) for URL locations. You must specify the `@odata.type` property to declare the type of policyLocation.|
+|pivotOn|[microsoft.graph.security.policyPivotProperty](../resources/enums-security.md#policypivotproperty-values)|Optional. Specifies how the results should be aggregated. If omitted or `none`, results might be less aggregated. Possible values are `activity`, `location`, and `none`.|
 
 ## Response
 
 If successful, this action returns a `200 OK` response code and a collection of [policyTenantScope](../resources/policytenantscope.md) objects in the response body. Each object represents a set of locations and activities governed by a common set of policy actions and execution mode, along with the user/group bindings for that specific policy configuration.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Application protection scope
+
+#### Request
 
 The following example computes the tenant-wide protection scope for text uploads, interested in a specific domain, pivoting the results by location.
 
@@ -70,23 +72,16 @@ Content-type: application/json
 
 {
     "activities": "uploadText,downloadText",
-    "evaluationScope": {
-        "type": "agent"
-    },
     "locations": [
         {
             "@odata.type": "microsoft.graph.policyLocationApplication",
             "value": "be121c8f-ecd8-4026-b699-669e0ce1bcbf"
-        },
-        {
-            "@odata.type": "microsoft.graph.policyLocationTool",
-            "value": "search@mcp"
         }
     ]
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response. It includes the effective Secure by Default configuration, which indicates that incomplete policy evaluations are audited and blocked.
 
@@ -127,5 +122,112 @@ Content-type: application/json
             }
         }
     ]
+}
+```
+
+### Example 2: Agent protection scope
+
+#### Request
+
+The following example requests tenant-scoped agent policies filtered to a specific agent location.
+<!-- {
+  "blockType": "request",
+  "name": "tenantprotectionscopecontainer_compute_agent"
+}
+-->
+```http
+POST https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/protectionScopes/compute
+Authorization: Bearer {token}
+Content-Type: application/json
+If-None-Match: "09834098340983409834"
+
+{
+  "activities": "uploadText,uploadFile,downloadText,downloadFile",
+  "locations": [
+    {
+      "@odata.type": "microsoft.graph.policyLocationAgent",
+      "value": "33333333-3333-3333-3333-333333333333",
+      "agentMetadata": {
+        "agentAdministrativeUnitId": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+        "agentBlueprintId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+        "agentCategory": "Agents.Copilot.Studio",
+        "agentOwner": "owner@contoso.com",
+        "agentPublisher": "Contoso",
+        "altAgentIds": [
+          "mcs-agent-33333333"
+        ],
+        "isEntraAgentId": true
+      }
+    }
+  ],
+  "pivotOn": "activity",
+  "integratedAppMetadata": {
+    "name": "Agent365.MCS",
+    "version": "2026.8.5.1"
+  },
+  "evaluationScope": {
+    "type": "agent"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "name": "tenantprotectionscopecontainer_compute_agent",
+  "@odata.type": "Collection(microsoft.graph.policyTenantScope)"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+ETag: "8936456543210"
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.policyTenantScope)",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.policyTenantScope",
+      "locations": [
+        {
+          "@odata.type": "#microsoft.graph.policyLocationAgent",
+          "value": "33333333-3333-3333-3333-333333333333",
+          "agentMetadata": {
+            "agentAdministrativeUnitId": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "agentBlueprintId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "agentCategory": "Agents.Copilot.Studio",
+            "agentOwner": "owner@contoso.com",
+            "agentPublisher": "Contoso",
+            "altAgentIds": [
+              "mcs-agent-33333333"
+            ],
+            "isEntraAgentId": true
+          }
+        }
+      ],
+      "locationExclusions": [],
+      "activities": "uploadText,downloadText",
+      "executionMode": "evaluateInline",
+      "policyActions": [],
+      "policyConfiguration": {
+        "errorSettings": {
+          "errorAction": "audit,block",
+          "isEnabled": true
+        },
+        "lastModifiedDateTime": "2026-09-22T12:00:00Z"
+      },
+      "policyScope": {
+        "inclusions": [
+          {
+            "@odata.type": "#microsoft.graph.tenantScope",
+            "identity": "00000000-0000-0000-0000-000000000001"
+          }
+        ],
+        "exclusions": []
+      }
+    }
+  ]
 }
 ```

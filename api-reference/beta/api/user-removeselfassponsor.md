@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Remove the signed-in [user](../resources/user.md) as a sponsor of a guest user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

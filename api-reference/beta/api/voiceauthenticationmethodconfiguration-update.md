@@ -51,6 +51,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/v
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`.|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
+|telecomProviderSettings|[telecomProviderSettings](../resources/telecomprovidersettings.md)|Settings for routing voice authentication traffic through a telecom provider integration.|
 
 >**Note:** The `@odata.type` property with a value of `#microsoft.graph.voiceAuthenticationMethodConfiguration` must be included in the body.
 
@@ -75,7 +76,13 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.voiceAuthenticationMethodConfiguration",
-  "isOfficePhoneAllowed": "false"
+  "isOfficePhoneAllowed": "false",
+  "telecomProviderSettings": {
+    "url": "https://provider.contoso.com/voice",
+    "appId": "b0e2c4d6-1a3b-4c5d-8e9f-0a1b2c3d4e5f",
+    "isEvaluationModeEnabled": false,
+    "migrationPercentage": 100
+  }
 }
 ```
 

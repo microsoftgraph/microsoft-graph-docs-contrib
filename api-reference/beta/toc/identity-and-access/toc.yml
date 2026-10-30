@@ -871,6 +871,10 @@ items:
         href: ../../api/unifiedroot-list-definitions.md
       - name: Create definition
         href: ../../api/unifiedroot-post-definitions.md
+    - name: Complex types
+      items:
+      - name: Access review catalog scope
+        href: ../../resources/accessreviewcatalogscope.md
   - name: Access reviews (deprecated)
     items:
     - name: Overview
@@ -1641,6 +1645,26 @@ items:
         href: ../../resources/identitygovernance-workflowtriggertimebasedoperator.md
   - name: Privileged Identity Management iteration 3
     items:
+    - name: Custom extensions
+      items:
+      - name: Role management custom callout extension
+        items:
+        - name: Role management custom callout extension
+          href: ../../resources/rolemanagementcustomcalloutextension.md
+        - name: List
+          href: ../../api/privilegedaccessroot-list-customextensions.md
+        - name: Create
+          href: ../../api/privilegedaccessroot-post-customextensions.md
+        - name: Get
+          href: ../../api/rolemanagementcustomcalloutextension-get.md
+        - name: Update
+          href: ../../api/rolemanagementcustomcalloutextension-update.md
+        - name: Delete
+          href: ../../api/privilegedaccessroot-delete-customextensions.md
+      - name: Complex types
+        items:
+        - name: Unified role management policy custom extension rule
+          href: ../../resources/unifiedrolemanagementpolicycustomextensionrule.md
     - name: PIM for Microsoft Entra roles
       displayName: Privileged Identity Management, PIM, Identity Governance
       items:
@@ -1658,6 +1682,8 @@ items:
           href: ../../api/unifiedroleassignmentschedulerequest-get.md
         - name: Cancel
           href: ../../api/unifiedroleassignmentschedulerequest-cancel.md
+        - name: 'unifiedRoleAssignmentScheduleRequest: updateRequest'
+          href: ../../api/unifiedroleassignmentschedulerequest-updaterequest.md
         - name: Filter by current user
           href: ../../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
       - name: Assignment schedule
@@ -1862,6 +1888,8 @@ items:
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md
         - name: Cancel
           href: ../../api/privilegedaccessgroupassignmentschedulerequest-cancel.md
+        - name: 'privilegedAccessGroupAssignmentScheduleRequest: updateRequest'
+          href: ../../api/privilegedaccessgroupassignmentschedulerequest-updaterequest.md
       - name: Assignment schedule
         items:
         - name: Assignment schedule
@@ -2084,6 +2112,12 @@ items:
         href: ../../api/agreement-post-files.md
       - name: List localized files
         href: ../../api/agreementfile-list-localizations.md
+  - name: Complex types
+    items:
+    - name: Approver delegate
+      href: ../../resources/approverdelegate.md
+    - name: Identity governance user settings
+      href: ../../resources/identitygovernanceusersettings.md
 - name: Identity and sign-in
   items:
   - name: App role assignment
@@ -2684,6 +2718,20 @@ items:
         href: ../../api/directory-deleteditems-delete.md
   - name: Conditional access
     items:
+    - name: Authentication context class reference
+      items:
+      - name: Authentication context class reference
+        href: ../../resources/authenticationcontextclassreference.md
+      - name: List
+        href: ../../api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+      - name: Create
+        href: ../../api/conditionalaccessroot-post-authenticationcontextclassreferences.md
+      - name: Get
+        href: ../../api/authenticationcontextclassreference-get.md
+      - name: Update
+        href: ../../api/authenticationcontextclassreference-update.md
+      - name: Delete
+        href: ../../api/authenticationcontextclassreference-delete.md
     - name: Conditional access policy
       items:
       - name: Conditional access policy
@@ -2706,12 +2754,54 @@ items:
         href: ../../api/conditionalaccesspolicy-restore.md
       - name: Permanently delete a soft deleted policy
         href: ../../api/policydeletableitem-delete.md
-    - name: What If evaluation
+    - name: Conditional access policy plan
       items:
-      - name: What If evaluation
-        href: ../../resources/whatifanalysisresult.md
-      - name: Evaluate
-        href: ../../api/conditionalaccessroot-evaluate.md
+      - name: Conditional access policy plan
+        href: ../../resources/conditionalaccesspolicyplan.md
+      - name: List
+        href: ../../api/conditionalaccessroot-list-plans.md
+      - name: Create
+        href: ../../api/conditionalaccessroot-post-plans.md
+      - name: Get
+        href: ../../api/conditionalaccesspolicyplan-get.md
+      - name: Update
+        href: ../../api/conditionalaccesspolicyplan-update.md
+      - name: Delete
+        href: ../../api/conditionalaccessroot-delete-plans.md
+      - name: List rules
+        href: ../../api/conditionalaccesspolicyplan-list-rules.md
+      - name: Create rule
+        href: ../../api/conditionalaccesspolicyplan-post-rules.md
+    - name: Conditional access policy rule
+      items:
+      - name: Conditional access policy rule
+        href: ../../resources/conditionalaccesspolicyrule.md
+      - name: List
+        href: ../../api/conditionalaccesspolicyplan-list-rules.md
+      - name: Create
+        href: ../../api/conditionalaccesspolicyplan-post-rules.md
+      - name: Get
+        href: ../../api/conditionalaccesspolicyrule-get.md
+      - name: Update
+        href: ../../api/conditionalaccesspolicyrule-update.md
+      - name: Delete
+        href: ../../api/conditionalaccesspolicyplan-delete-rules.md
+    - name: Conditional access template
+      items:
+      - name: Conditional access template
+        href: ../../resources/conditionalaccesstemplate.md
+      - name: List
+        href: ../../api/conditionalaccessroot-list-templates.md
+      - name: Get
+        href: ../../api/conditionalaccesstemplate-get.md
+    - name: Continuous access evaluation policy
+      items:
+      - name: Continuous access evaluation policy
+        href: ../../resources/continuousaccessevaluationpolicy.md
+      - name: Get
+        href: ../../api/continuousaccessevaluationpolicy-get.md
+      - name: Update
+        href: ../../api/continuousaccessevaluationpolicy-update.md
     - name: Named location
       items:
       - name: Named location
@@ -2772,36 +2862,16 @@ items:
           href: ../../api/compliantnetworknamedlocation-get.md
         - name: Update
           href: ../../api/compliantnetworknamedlocation-update.md
-    - name: Authentication context class reference
+    - name: What If evaluation
       items:
-      - name: Authentication context class reference
-        href: ../../resources/authenticationcontextclassreference.md
-      - name: List
-        href: ../../api/conditionalaccessroot-list-authenticationcontextclassreferences.md
-      - name: Create
-        href: ../../api/conditionalaccessroot-post-authenticationcontextclassreferences.md
-      - name: Get
-        href: ../../api/authenticationcontextclassreference-get.md
-      - name: Update
-        href: ../../api/authenticationcontextclassreference-update.md
-      - name: Delete
-        href: ../../api/authenticationcontextclassreference-delete.md
-    - name: Conditional access template
+      - name: What If evaluation
+        href: ../../resources/whatifanalysisresult.md
+      - name: Evaluate
+        href: ../../api/conditionalaccessroot-evaluate.md
+    - name: Complex types
       items:
-      - name: Conditional access template
-        href: ../../resources/conditionalaccesstemplate.md
-      - name: List
-        href: ../../api/conditionalaccessroot-list-templates.md
-      - name: Get
-        href: ../../api/conditionalaccesstemplate-get.md
-    - name: Continuous access evaluation policy
-      items:
-      - name: Continuous access evaluation policy
-        href: ../../resources/continuousaccessevaluationpolicy.md
-      - name: Get
-        href: ../../api/continuousaccessevaluationpolicy-get.md
-      - name: Update
-        href: ../../api/continuousaccessevaluationpolicy-update.md
+      - name: Conditional access policy rule controls
+        href: ../../resources/conditionalaccesspolicyrulecontrols.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile

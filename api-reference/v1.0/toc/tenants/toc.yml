@@ -267,6 +267,8 @@ items:
       href: ../../api/tenantgovernanceservices-relatedtenant-get.md
     - name: Refresh
       href: ../../api/tenantgovernanceservices-relatedtenant-refresh.md
+    - name: Refresh status
+      href: ../../api/tenantgovernanceservices-relatedtenant-refreshstatus.md
   - name: Tenant governance
     href: ../../resources/tenantgovernanceservices-tenantgovernance.md
   - name: Tenant governance policy template
@@ -341,6 +343,8 @@ items:
       href: ../../resources/tenantgovernanceservices-multitenantapplicationstoprovisionsnapshot.md
     - name: Related tenants refresh request
       href: ../../resources/tenantgovernanceservices-relatedtenantsrefreshrequest.md
+    - name: Related tenants refresh status
+      href: ../../resources/tenantgovernanceservices-relatedtenantsrefreshstatus.md
     - name: Relationship policy
       href: ../../resources/tenantgovernanceservices-relationshippolicy.md
     - name: Role template

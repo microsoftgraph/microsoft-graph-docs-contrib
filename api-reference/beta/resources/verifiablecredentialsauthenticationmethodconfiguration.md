@@ -34,6 +34,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |id|String|The authentication method policy identifier.|
+|identityVerificationEventsConfiguration|[identityVerificationEventsConfiguration](../resources/identityverificationeventsconfiguration.md)|The optional tenant-level configuration that controls whether identity verification events and credential provenance information are collected and exposed for Verified ID verification. This setting isn't scoped to individual Verified ID profiles. If no configuration is stored or the stored value is `null`, event collection and exposure are disabled. Omitting this property from a PATCH request leaves its existing value unchanged.|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
@@ -60,7 +61,10 @@ The following JSON representation shows the resource type.
     {
       "@odata.type": "microsoft.graph.excludeTarget"
     }
-  ]
+  ],
+  "identityVerificationEventsConfiguration": {
+    "@odata.type": "microsoft.graph.identityVerificationEventsConfiguration",
+    "isEnabled": "Boolean"
+  }
 }
 ```
-

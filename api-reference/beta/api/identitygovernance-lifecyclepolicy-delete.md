@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Delete a [lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md) object. This is a soft-delete operation: the policy can be restored with the [restore](identitygovernance-lifecyclepolicy-restore.md) action and appears under the deleted items container until it's permanently removed.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

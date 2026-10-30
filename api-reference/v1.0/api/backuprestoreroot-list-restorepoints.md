@@ -6,7 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
-ms.date: 09/10/2024
+ms.date: 09/30/2026
 ---
 
 # List restorePoints
@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+To filter restore points by protection unit ID:
+
 <!-- {
   "blockType": "ignored"
 }
@@ -36,11 +38,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq '{ProtectionUnitID}')&$filter=protectionDateTime lt YYYY-MM-DDTHH:mm:ssZ
 ```
 
+To filter restore points by protection unit ID and policy ID:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+GET /solutions/backupRestore/restorePoints?$expand=protectionUnit&$filter=protectionDateTime lt YYYY-MM-DDTHH:mm:ssZ and protectionUnit/id eq '{protectionUnitId}' and protectionUnit/policyId eq '{policyId}'
+```
+
 ## Optional query parameters
 
 This method supports the `$expand`, `$filter`, and `orderBy` [OData query parameters](/graph/query-parameters), as shown in the [example](../api/backuprestoreroot-list-restorepoints.md#request) later in this topic.
 
 The `$expand` and `$filter` query parameters are required.
+
+To filter by protection unit ID, use `$filter` with `eq` on **id** inside the `$expand` expression for **protectionUnit**. You can also use `$filter` with `eq` on **protectionUnit/id**. To filter by policy ID, use `eq` on **protectionUnit/policyId** in the top-level `$filter` expression. You can combine top-level filter expressions with the `and` operator.
 
 ## Request headers
 
@@ -54,7 +68,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [restorePoint](../resources/restorepoint.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [restorePoint](../resources/restorepoint.md) objects in the response body.
 
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
@@ -63,45 +77,15 @@ For a list of possible error responses, see [Backup Storage API error responses]
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_restorepoint"
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853')&$filter=protectionDateTime lt 2024-05-12T10:01:00Z
+GET https://graph.microsoft.com/v1.0/solutions/backupRestore/restorePoints?$expand=protectionUnit&$filter=protectionDateTime lt 2024-05-12T10:01:00Z and protectionUnit/id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853' and protectionUnit/policyId eq '9fec8e78-bce4-4aaf-ab1b-5451cc387264'
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-restorepoint-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-restorepoint-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-restorepoint-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-restorepoint-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-restorepoint-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-restorepoint-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-restorepoint-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
