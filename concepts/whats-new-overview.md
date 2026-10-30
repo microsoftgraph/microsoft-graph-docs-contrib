@@ -50,6 +50,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Added the [federatedTokenValidationPolicy](/graph/api/resources/federatedtokenvalidationpolicy) resource to control which federated domains Microsoft Entra ID accepts tokens from on a per-tenant basis, as a defense-in-depth measure against token-replay and rogue-IdP scenarios.
 
+### Identity and access | Identity and sign-in
+
+Added support for routing SMS and voice authentication traffic through a telecom provider integration. Configure the provider endpoint, application identifier, evaluation mode, and migration percentage through the **telecomProviderSettings** property on the [smsAuthenticationMethodConfiguration](/graph/api/resources/smsauthenticationmethodconfiguration) and [voiceAuthenticationMethodConfiguration](/graph/api/resources/voiceauthenticationmethodconfiguration) resources.
+
 ### Mail | Message trace
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace) resource.
