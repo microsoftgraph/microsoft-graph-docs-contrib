@@ -92,6 +92,7 @@ This resource is an open type that allows additional properties beyond those doc
 |licenseAssignmentStates|[licenseAssignmentState](../resources/licenseassignmentstate.md) collection|State of license assignments for this user. It also indicates licenses that are directly assigned and the ones the user inherited through group memberships. Read-only. Inherited from [user](../resources/user.md).|
 |mail|String|The SMTP address for the user, for example, `admin@contoso.com`. Changes to this property also update the user's **proxyAddresses** collection to include the value as an SMTP address. This property can't contain accent characters. NOTE: We don't recommend updating this property for Azure AD B2C user profiles. Use the **otherMails** property instead. Inherited from [user](../resources/user.md).|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Inherited from [user](../resources/user.md).|
+|managerApplications|Guid collection|The application IDs (**appId** values) authorized to manage the agent user's backing agent blueprint. Read-only. Not nullable. Returns an empty collection when no manager applications are configured. Returned only with `$select` and the `microsoft.graph.agentUser` type cast; see [Get agentUser](../api/agentuser-get.md#example-2-get-manager-applications). Doesn't support `$filter`.|
 |mobilePhone|String|The primary cellular telephone number for the user. Read-only for users synced from the on-premises directory. Inherited from [user](../resources/user.md).|
 |officeLocation|String|The office location in the user's place of business. Maximum length is 128 characters. Inherited from [user](../resources/user.md).|
 |otherMails|String collection|A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. Can store up to 250 values, each with a limit of 250 characters. NOTE: This property can't contain accent characters. Inherited from [user](../resources/user.md).|
@@ -220,6 +221,9 @@ The following JSON representation shows the resource type.
   ],
   "mail": "String",
   "mailNickname": "String",
+  "managerApplications": [
+    "Guid"
+  ],
   "mobilePhone": "String",
   "otherMails": [
     "String"

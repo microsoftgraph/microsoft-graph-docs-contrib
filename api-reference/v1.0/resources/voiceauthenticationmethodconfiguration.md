@@ -32,6 +32,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |id|String|The authentication method policy identifier.|
 |isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`. |
 |state|authenticationMethodState|Represents whether users can register this authentication method. The possible values are: `enabled`, `disabled`.|
+|telecomProviderSettings|[telecomProviderSettings](../resources/telecomprovidersettings.md)|Settings for routing voice authentication traffic through a telecom provider integration.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -58,7 +59,9 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.excludeTarget"
     }
   ],
-  "isOfficePhoneAllowed": "Boolean"
+  "isOfficePhoneAllowed": "Boolean",
+  "telecomProviderSettings": {
+    "@odata.type": "microsoft.graph.telecomProviderSettings"
+  }
 }
 ```
-

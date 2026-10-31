@@ -420,6 +420,8 @@ items:
       items:
       - name: Cloud video interop info
         href: ../../resources/cloudvideointeropinfo.md
+      - name: Meeting engagement
+        href: ../../resources/meetingengagement.md
   - name: Presence
     items:
     - name: Presence
