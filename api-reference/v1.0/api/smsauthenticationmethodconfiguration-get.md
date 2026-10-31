@@ -116,7 +116,13 @@ Content-Type: application/json
             "isUsableForSignIn": true
         }
     ],
-    "excludeTargets": []
+    "excludeTargets": [],
+    "telecomProviderSettings": {
+        "url": "https://provider.contoso.com/otp",
+        "appId": "b0e2c4d6-1a3b-4c5d-8e9f-0a1b2c3d4e5f",
+        "isEvaluationModeEnabled": true,
+        "migrationPercentage": 25
+    }
   }
 }
 ```

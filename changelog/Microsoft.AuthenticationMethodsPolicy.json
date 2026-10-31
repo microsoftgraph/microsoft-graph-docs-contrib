@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "d656018f-dc64-4d27-b611-42eba6663dd9",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "telecomProviderSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [telecomProviderSettings](https://learn.microsoft.com/en-us/graph/api/resources/telecomprovidersettings) complex type.",
+          "Target": "telecomProviderSettings"
+        },
+        {
+          "Id": "d656018f-dc64-4d27-b611-42eba6663dd9",
+          "ApiChange": "Property",
+          "ChangedApiName": "telecomProviderSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **telecomProviderSettings** property to the [smsAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/smsauthenticationmethodconfiguration) resource.",
+          "Target": "smsAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "d656018f-dc64-4d27-b611-42eba6663dd9",
+          "ApiChange": "Property",
+          "ChangedApiName": "telecomProviderSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **telecomProviderSettings** property to the [voiceAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/voiceauthenticationmethodconfiguration) resource.",
+          "Target": "voiceAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "d656018f-dc64-4d27-b611-42eba6663dd9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-21T22:09:23.2925516Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "76ebc283-ee64-46cc-8f40-79ef1c29c857",
           "ApiChange": "ComplexType",
           "ChangedApiName": "telecomProviderSettings",

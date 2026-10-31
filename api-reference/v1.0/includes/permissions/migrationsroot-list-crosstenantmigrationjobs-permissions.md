@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|CrossTenantContentMigration.Read.All|CrossTenantContentMigration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|CrossTenantContentMigration.Read.All|CrossTenantContentMigration.ReadWrite.All|
+

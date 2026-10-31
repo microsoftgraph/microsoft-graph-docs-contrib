@@ -2198,6 +2198,14 @@ items:
         href: ../../api/authorizationpolicy-get.md
       - name: Update
         href: ../../api/authorizationpolicy-update.md
+    - name: Federated token validation policy
+      items:
+      - name: Federated token validation policy
+        href: ../../resources/federatedtokenvalidationpolicy.md
+      - name: Get
+        href: ../../api/federatedtokenvalidationpolicy-get.md
+      - name: Update
+        href: ../../api/federatedtokenvalidationpolicy-update.md
     - name: Home realm discovery policy
       items:
       - name: Home realm discovery policy
@@ -2278,6 +2286,14 @@ items:
         href: ../../api/identitysecuritydefaultsenforcementpolicy-get.md
       - name: Update
         href: ../../api/identitysecuritydefaultsenforcementpolicy-update.md
+    - name: Complex types
+      items:
+      - name: All domains
+        href: ../../resources/alldomains.md
+      - name: Enumerated domains
+        href: ../../resources/enumerateddomains.md
+      - name: Validating domains
+        href: ../../resources/validatingdomains.md
   - name: Public key infrastructure
     items:
     - name: Certificate-based auth pki
