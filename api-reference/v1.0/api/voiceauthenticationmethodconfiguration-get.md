@@ -116,8 +116,13 @@ Content-Type: application/json
       }
     ],
     "excludeTargets": [],
-    "isOfficePhoneAllowed": "true"
+    "isOfficePhoneAllowed": "true",
+    "telecomProviderSettings": {
+      "url": "https://provider.contoso.com/voice",
+      "appId": "b0e2c4d6-1a3b-4c5d-8e9f-0a1b2c3d4e5f",
+      "isEvaluationModeEnabled": false,
+      "migrationPercentage": 100
+    }
   }
 }
 ```
-

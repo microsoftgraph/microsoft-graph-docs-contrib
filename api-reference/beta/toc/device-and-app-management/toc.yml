@@ -368,7 +368,7 @@ items:
       href: ../../api/cloudpconpremisesconnection-delete.md
     - name: Run health checks
       href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
-    - name: Update Active Directory domain password
+    - name: Update Active Directory domain join credential
       href: ../../api/cloudpconpremisesconnection-updateaddomainpassword.md
   - name: Cloud PC organization action detail
     href: ../../resources/cloudpcorganizationactiondetail.md
@@ -705,6 +705,16 @@ items:
       href: ../../resources/cloudpcdiscoveredapp.md
     - name: Cloud PC domain join configuration
       href: ../../resources/cloudpcdomainjoinconfiguration.md
+    - name: Cloud PC domain join credential
+      href: ../../resources/cloudpcdomainjoincredential.md
+    - name: Cloud PC domain join key vault intent configuration
+      href: ../../resources/cloudpcdomainjoinkeyvaultintentconfiguration.md
+    - name: Cloud PC domain join key vault password configuration
+      href: ../../resources/cloudpcdomainjoinkeyvaultpasswordconfiguration.md
+    - name: Cloud PC domain join plain text user identity
+      href: ../../resources/cloudpcdomainjoinplaintextuseridentity.md
+    - name: Cloud PC domain join user identity
+      href: ../../resources/cloudpcdomainjoinuseridentity.md
     - name: Cloud PC external partner action report
       href: ../../resources/cloudpcexternalpartneractionreport.md
     - name: Cloud PC external partner action result
@@ -719,6 +729,8 @@ items:
       href: ../../resources/cloudpcfrontlineshareddevicedetail.md
     - name: Cloud PC health check item
       href: ../../resources/cloudpchealthcheckitem.md
+    - name: Cloud PC key vault domain join credential
+      href: ../../resources/cloudpckeyvaultdomainjoincredential.md
     - name: Cloud PC launch detail
       href: ../../resources/cloudpclaunchdetail.md
     - name: Cloud PC launch info (deprecated)
@@ -746,9 +758,11 @@ items:
     - name: Cloud PC on-premises connection status details
       href: ../../resources/cloudpconpremisesconnectionstatusdetails.md
     - name: Cloud PC on-premises connection subnet IP detail
-      href: ../../resources/cloudpconpremisesconnectionsubnetIpdetail.md
+      href: ../../resources/cloudpconpremisesconnectionsubnetipdetail.md
     - name: Cloud PC partner agent install result
       href: ../../resources/cloudpcpartneragentinstallresult.md
+    - name: Cloud PC plain text domain join credential
+      href: ../../resources/cloudpcplaintextdomainjoincredential.md
     - name: Cloud PC policy pending apply status result
       href: ../../resources/cloudpcpolicypendingapplystatusresult.md
     - name: Cloud PC pool capability configuration

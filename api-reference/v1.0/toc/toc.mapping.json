@@ -1156,6 +1156,9 @@
                 "verifiableCredentialsAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration"
+              ],
+              "complexTypes": [
+                "telecomProviderSettings"
               ]
             },
             {

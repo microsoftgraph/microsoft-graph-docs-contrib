@@ -2559,6 +2559,10 @@ items:
         href: ../../api/x509certificateauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/x509certificateauthenticationmethodconfiguration-delete.md
+    - name: Complex types
+      items:
+      - name: Telecom provider settings
+        href: ../../resources/telecomprovidersettings.md
   - name: Authentication strengths
     items:
     - name: Overview
