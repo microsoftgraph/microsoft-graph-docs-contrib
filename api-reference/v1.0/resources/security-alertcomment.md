@@ -17,7 +17,7 @@ An analyst-generated comment that is associated with an alert or incident.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|comment|String|The comment text.|
+|comment|String|The comment text. The maximum length is 1,000 characters.|
 |createdByDisplayName|String|The person or app name that submitted the comment.|
 |createdDateTime|DateTimeOffset|The time when the comment was submitted.|
 
