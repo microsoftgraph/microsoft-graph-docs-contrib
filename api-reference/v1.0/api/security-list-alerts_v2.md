@@ -40,7 +40,7 @@ This method supports the following OData query parameters to help customize the 
 
 The following properties support `$filter` : **assignedTo**, **classification**, **determination**, **createdDateTime**, **lastUpdateDateTime**, **severity**, **serviceSource** and **status**.
 
-Use `@odata.nextLink` for pagination.
+Use `@odata.nextLink` for pagination. If you specify `$top`, the response doesn't include `@odata.nextLink`; use `$skip` with `$top` to retrieve subsequent pages. The maximum value of `$top` is 2000.
 
 The following are examples of their use:
 
