@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 List catalog entries that are applicable to devices targeted by a Windows Autopatch policy.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

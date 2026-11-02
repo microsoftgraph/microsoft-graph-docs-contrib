@@ -18,7 +18,7 @@ Create a new license [assignment](../resources/cloudlicensing-assignment.md) by 
 
 An assignment must always have a direct relationship to an allotment and to a user or group. If an assignment is created by posting to the central **assignments** collection located at `/admin/cloudLicensing/assignments`, both of those relationships must be established in the request body. Assignments can also be created by posting to the **assignments** collection of an allotment, the **assignments** collection of a user or the **assignments** collection of a group.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

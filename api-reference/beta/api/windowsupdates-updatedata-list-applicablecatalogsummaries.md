@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get a list of [applicableCatalogSummary](../resources/windowsupdates-applicablecatalogsummary.md) resources aggregated across Windows Autopatch policies.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

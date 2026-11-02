@@ -16,7 +16,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 Get the [allotment](../resources/cloudlicensing-allotment.md) that is the source of the licenses used in the assignment.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

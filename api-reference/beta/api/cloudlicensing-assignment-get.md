@@ -16,7 +16,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 Read the properties and relationships of an [assignment](../resources/cloudlicensing-assignment.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
