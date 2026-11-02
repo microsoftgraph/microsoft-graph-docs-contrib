@@ -1482,7 +1482,12 @@
       "resources": [
         "contact",
         "contactFolder",
+        "distributionList",
+        "distributionListMember",
         "outlookCategory"
+      ],
+      "complexTypes": [
+        "member"
       ],
       "childNodes": [
         {

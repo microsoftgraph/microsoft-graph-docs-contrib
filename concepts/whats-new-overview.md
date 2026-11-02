@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## November 2026: New and generally available
+
+### Mail
+
+Added the [distributionList](/graph/api/resources/distributionlist) resource type and related methods for managing personal distribution lists in a user's mailbox. Use these APIs to create, read, update, and delete distribution lists, and add or remove members.
+
 ## October 2026: New and generally available
 
 ### Backup and recovery | Microsoft 365 backup and storage
@@ -49,10 +55,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Identity and access | Identity and sign-in
 
 - Added the [federatedTokenValidationPolicy](/graph/api/resources/federatedtokenvalidationpolicy) resource to control which federated domains Microsoft Entra ID accepts tokens from on a per-tenant basis, as a defense-in-depth measure against token-replay and rogue-IdP scenarios.
-
-### Identity and access | Identity and sign-in
-
-Added support for routing SMS and voice authentication traffic through a telecom provider integration. Configure the provider endpoint, application identifier, evaluation mode, and migration percentage through the **telecomProviderSettings** property on the [smsAuthenticationMethodConfiguration](/graph/api/resources/smsauthenticationmethodconfiguration) and [voiceAuthenticationMethodConfiguration](/graph/api/resources/voiceauthenticationmethodconfiguration) resources.
+- Added support for routing SMS and voice authentication traffic through a telecom provider integration. Configure the provider endpoint, application identifier, evaluation mode, and migration percentage through the **telecomProviderSettings** property on the [smsAuthenticationMethodConfiguration](/graph/api/resources/smsauthenticationmethodconfiguration) and [voiceAuthenticationMethodConfiguration](/graph/api/resources/voiceauthenticationmethodconfiguration) resources.
 
 ### Mail | Message trace
 

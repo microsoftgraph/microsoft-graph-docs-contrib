@@ -166,6 +166,9 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 | [Create contact](../api/user-post-contacts.md)| [contact](contact.md) | Create a new contact by posting to the contacts collection. |
 | [List contact folders](../api/user-list-contactfolders.md) | [contactFolder](contactfolder.md) collection | Get the contact folder collection in the default contacts folder of the signed-in user. |
 | [Create contact folder](../api/user-post-contactfolders.md) | [contactFolder](contactfolder.md) | Create a new contactFolder by posting to the contactFolders collection. |
+| **Personal distribution lists** |||
+| [List distribution lists](../api/user-list-distributionlists.md) | [distributionList](../resources/distributionlist.md) collection | Get a list of the [personal distribution lists](../resources/distributionlist.md) in the user's mailbox. |
+| [Create distribution list](../api/user-post-distributionlists.md) | [distributionList](../resources/distributionlist.md) | Create a new [personal distribution list](../resources/distributionlist.md) in the user's mailbox. |
 | **Profile photo** |||
 | [Get](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified profilePhoto or its metadata (profilePhoto properties). |
 | [Update](../api/profilephoto-update.md) | None | Update the photo for any user in the tenant, including the signed-in user or the specified group or contact. |
