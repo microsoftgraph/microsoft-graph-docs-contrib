@@ -69,6 +69,10 @@ Added the [billedAggregatedUsage](/graph/api/resources/partners-billing-billedag
 
 Added 35 members, from `PlannerCustomFieldDefinition` through `MESRawEmailContentMetadata`, to the [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype) enumeration and added the matching [auditData derived types](/graph/api/resources/security-auditdata-derived-types) to represent workload-specific audit event payloads.
 
+### Security | Custom detection rules
+
+Added support for managing Microsoft Defender XDR custom detection rules in v1.0 through the [detectionRule](/graph/api/resources/security-detectionrule) resource.
+
 ### Tasks and plans
 
 Added support for single-value extended properties on [todoTask](/graph/api/resources/todotask) and [todoTaskList](/graph/api/resources/todotasklist) resources, enabling apps to store and retrieve custom data for Microsoft To Do tasks and task lists.
