@@ -2597,6 +2597,24 @@
       "CreatedDateTime": "2026-06-26T06:57:05.931789Z",
       "WorkloadArea": "Groups",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9bb9c924-294e-40e2-bf43-b5332cdb619c",
+          "ApiChange": "Method",
+          "ChangedApiName": "importMime",
+          "ChangeType": "Addition",
+          "Description": "Added the [importMime](https://learn.microsoft.com/en-us/graph/api/mailfolder-importmime?view=graph-rest-beta) method to the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-beta) resource.",
+          "Target": "mailFolder"
+        }
+      ],
+      "Id": "9bb9c924-294e-40e2-bf43-b5332cdb619c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-23T17:33:21.1863377Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
     }
   ]
 }
