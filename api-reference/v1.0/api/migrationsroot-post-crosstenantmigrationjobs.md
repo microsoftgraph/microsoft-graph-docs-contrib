@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 Create a new [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. A job defines the migration batch but doesn't start validation or migration. After you create the job, call [validate](../api/crosstenantmigrationjob-validate.md) to verify tenant and resource configuration, then call [migrate](../api/crosstenantmigrationjob-migrate.md) to begin the actual migration.
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

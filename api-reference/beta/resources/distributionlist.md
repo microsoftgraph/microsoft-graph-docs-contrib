@@ -22,8 +22,8 @@ Inherits from [outlookItem](../resources/outlookitem.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/user-list-distributionlists.md)|[distributionList](../resources/distributionlist.md) collection|Get a list of the [distributionList](../resources/distributionlist.md) objects in the user's mailbox.|
-|[Create](../api/user-post-distributionlists.md)|[distributionList](../resources/distributionlist.md)|Create a new [distributionList](../resources/distributionlist.md) in the user's mailbox.|
+|[List](../api/user-list-distributionlists.md)|[distributionList](../resources/distributionlist.md) collection|Get a list of the [personal distribution lists](../resources/distributionlist.md) in the user's mailbox.|
+|[Create](../api/user-post-distributionlists.md)|[distributionList](../resources/distributionlist.md)|Create a new [personal distribution list](../resources/distributionlist.md) in the user's mailbox.|
 |[Get](../api/distributionlist-get.md)|[distributionList](../resources/distributionlist.md)|Read the properties and relationships of a [distributionList](../resources/distributionlist.md) object.|
 |[Update](../api/distributionlist-update.md)|[distributionList](../resources/distributionlist.md)|Update the properties of a [distributionList](../resources/distributionlist.md) object.|
 |[Delete](../api/distributionlist-delete.md)|None|Delete a [distributionList](../resources/distributionlist.md) object.|

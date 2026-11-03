@@ -29,6 +29,384 @@
     {
       "ChangeList": [
         {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "rules",
+          "ChangeType": "Addition",
+          "Description": "Added the **rules** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-1.0) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Method",
+          "ChangedApiName": "List detectionRule objects",
+          "ChangeType": "Addition",
+          "Description": "Added the [List detectionRule objects](https://learn.microsoft.com/en-us/graph/api/security-rulesroot-list-detectionrules?view=graph-rest-1.0) method.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create detectionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create detectionRule](https://learn.microsoft.com/en-us/graph/api/security-rulesroot-post-detectionrules?view=graph-rest-1.0) method.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get detectionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get detectionRule](https://learn.microsoft.com/en-us/graph/api/security-detectionrule-get?view=graph-rest-1.0) method.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update detectionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update detectionRule](https://learn.microsoft.com/en-us/graph/api/security-detectionrule-update?view=graph-rest-1.0) method.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete detectionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete detectionRule](https://learn.microsoft.com/en-us/graph/api/security-rulesroot-delete-detectionrules?view=graph-rest-1.0) method.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "detectionRuleStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **detectionRuleStatus** enumeration type.",
+          "Target": "detectionRuleStatus"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "isolationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **isolationType** enumeration type.",
+          "Target": "isolationType"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accountEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [accountEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-accountEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "accountEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accountObjectIdAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [accountObjectIdAction](https://learn.microsoft.com/en-us/graph/api/resources/security-accountObjectIdAction?view=graph-rest-1.0) resource.",
+          "Target": "accountObjectIdAction"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accountSidAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [accountSidAction](https://learn.microsoft.com/en-us/graph/api/resources/security-accountSidAction?view=graph-rest-1.0) resource.",
+          "Target": "accountSidAction"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertCustomDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [alertCustomDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-alertCustomDetails?view=graph-rest-1.0) resource.",
+          "Target": "alertCustomDetails"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [alertTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-alertTemplate?view=graph-rest-1.0) resource.",
+          "Target": "alertTemplate"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "amazonResourceEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [amazonResourceEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-amazonResourceEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "amazonResourceEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "automatedAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [automatedAction](https://learn.microsoft.com/en-us/graph/api/resources/security-automatedAction?view=graph-rest-1.0) resource.",
+          "Target": "automatedAction"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "automatedActionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [automatedActionSet](https://learn.microsoft.com/en-us/graph/api/resources/security-automatedActionSet?view=graph-rest-1.0) resource.",
+          "Target": "automatedActionSet"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureResourceEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureResourceEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-azureResourceEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "azureResourceEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudApplicationEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudApplicationEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudApplicationEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "cloudApplicationEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detectionAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [detectionAction](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionAction?view=graph-rest-1.0) resource.",
+          "Target": "detectionAction"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceAction](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceAction?view=graph-rest-1.0) resource.",
+          "Target": "deviceAction"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dnsEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [dnsEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-dnsEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "dnsEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailAction](https://learn.microsoft.com/en-us/graph/api/resources/security-emailAction?view=graph-rest-1.0) resource.",
+          "Target": "emailAction"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [entityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-entityMapping?view=graph-rest-1.0) resource.",
+          "Target": "entityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entityMappingConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [entityMappingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-entityMappingConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "entityMappingConfiguration"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileAction](https://learn.microsoft.com/en-us/graph/api/resources/security-fileAction?view=graph-rest-1.0) resource.",
+          "Target": "fileAction"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-fileEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "fileEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "googleCloudResourceEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [googleCloudResourceEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-googleCloudResourceEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "googleCloudResourceEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-hostEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "hostEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ipEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [ipEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-ipEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "ipEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "isolateDeviceAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [isolateDeviceAction](https://learn.microsoft.com/en-us/graph/api/resources/security-isolateDeviceAction?view=graph-rest-1.0) resource.",
+          "Target": "isolateDeviceAction"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "mailboxEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailClusterEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailClusterEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-mailClusterEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "mailClusterEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailMessageEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailMessageEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-mailMessageEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "mailMessageEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mitreTactic",
+          "ChangeType": "Addition",
+          "Description": "Added the [mitreTactic](https://learn.microsoft.com/en-us/graph/api/resources/security-mitreTactic?view=graph-rest-1.0) resource.",
+          "Target": "mitreTactic"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mitreTechnique",
+          "ChangeType": "Addition",
+          "Description": "Added the [mitreTechnique](https://learn.microsoft.com/en-us/graph/api/resources/security-mitreTechnique?view=graph-rest-1.0) resource.",
+          "Target": "mitreTechnique"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oAuthApplicationEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [oAuthApplicationEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-oAuthApplicationEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "oAuthApplicationEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "organizationalScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationalScope](https://learn.microsoft.com/en-us/graph/api/resources/security-organizationalScope?view=graph-rest-1.0) resource.",
+          "Target": "organizationalScope"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "processEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [processEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-processEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "processEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "queryCondition",
+          "ChangeType": "Addition",
+          "Description": "Added the [queryCondition](https://learn.microsoft.com/en-us/graph/api/resources/security-queryCondition?view=graph-rest-1.0) resource.",
+          "Target": "queryCondition"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "registryValueEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [registryValueEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-registryValueEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "registryValueEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ruleSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [ruleSchedule](https://learn.microsoft.com/en-us/graph/api/resources/security-ruleSchedule?view=graph-rest-1.0) resource.",
+          "Target": "ruleSchedule"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityGroupEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityGroupEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-securityGroupEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "securityGroupEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stopAndQuarantineFileAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopAndQuarantineFileAction](https://learn.microsoft.com/en-us/graph/api/resources/security-stopAndQuarantineFileAction?view=graph-rest-1.0) resource.",
+          "Target": "stopAndQuarantineFileAction"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urlEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-urlEntityMapping?view=graph-rest-1.0) resource.",
+          "Target": "urlEntityMapping"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detectionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-1.0) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rulesRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [rulesRoot](https://learn.microsoft.com/en-us/graph/api/resources/security-rulesRoot?view=graph-rest-1.0) resource.",
+          "Target": "rulesRoot"
+        }
+      ],
+      "Id": "264d338b-60f7-45db-a190-fb920c959f0f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-12T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Custom detection rules"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ac5c3274-87aa-493f-ad25-51dd98e81881",
           "ApiChange": "Resource",
           "ChangedApiName": "createAlertInput",

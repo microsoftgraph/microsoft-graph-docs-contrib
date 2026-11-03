@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "dd81e826-7ee7-45ba-8e22-d8950c73a59c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "recipientType",
+          "ChangeType": "Addition",
+          "Description": "Added the **recipientType** enumeration type.",
+          "Target": "recipientType"
+        },
+        {
+          "Id": "dd81e826-7ee7-45ba-8e22-d8950c73a59c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "member",
+          "ChangeType": "Addition",
+          "Description": "Added the [member](https://learn.microsoft.com/en-us/graph/api/resources/member?view=graph-rest-1.0) resource type.",
+          "Target": "member"
+        },
+        {
+          "Id": "dd81e826-7ee7-45ba-8e22-d8950c73a59c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "distributionList",
+          "ChangeType": "Addition",
+          "Description": "Added the [distributionList](https://learn.microsoft.com/en-us/graph/api/resources/distributionlist?view=graph-rest-1.0) resource type and associated methods for managing personal distribution lists in a user's mailbox.",
+          "Target": "distributionList"
+        },
+        {
+          "Id": "dd81e826-7ee7-45ba-8e22-d8950c73a59c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "distributionListMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [distributionListMember](https://learn.microsoft.com/en-us/graph/api/resources/distributionlistmember?view=graph-rest-1.0) resource type.",
+          "Target": "distributionListMember"
+        },
+        {
+          "Id": "dd81e826-7ee7-45ba-8e22-d8950c73a59c",
+          "ApiChange": "Method",
+          "ChangedApiName": "addMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [addMembers](https://learn.microsoft.com/en-us/graph/api/distributionlist-addmembers?view=graph-rest-1.0) method to the [distributionList](https://learn.microsoft.com/en-us/graph/api/resources/distributionlist?view=graph-rest-1.0) resource.",
+          "Target": "distributionList"
+        },
+        {
+          "Id": "dd81e826-7ee7-45ba-8e22-d8950c73a59c",
+          "ApiChange": "Method",
+          "ChangedApiName": "deleteMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [deleteMembers](https://learn.microsoft.com/en-us/graph/api/distributionlist-deletemembers?view=graph-rest-1.0) method to the [distributionList](https://learn.microsoft.com/en-us/graph/api/resources/distributionlist?view=graph-rest-1.0) resource.",
+          "Target": "distributionList"
+        },
+        {
+          "Id": "dd81e826-7ee7-45ba-8e22-d8950c73a59c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "distributionLists",
+          "ChangeType": "Addition",
+          "Description": "Added the **distributionLists** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "dd81e826-7ee7-45ba-8e22-d8950c73a59c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-21T15:40:39.2300975Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "34fa0b14-2d7a-4fd8-8ce5-659d16aecf22",
           "ApiChange": "Property",
           "ChangedApiName": "isSharedWithMe",
@@ -2530,6 +2596,24 @@
       "Version": "v1.0",
       "CreatedDateTime": "2026-06-26T06:57:05.931789Z",
       "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9bb9c924-294e-40e2-bf43-b5332cdb619c",
+          "ApiChange": "Method",
+          "ChangedApiName": "importMime",
+          "ChangeType": "Addition",
+          "Description": "Added the [importMime](https://learn.microsoft.com/en-us/graph/api/mailfolder-importmime?view=graph-rest-beta) method to the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-beta) resource.",
+          "Target": "mailFolder"
+        }
+      ],
+      "Id": "9bb9c924-294e-40e2-bf43-b5332cdb619c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-23T17:33:21.1863377Z",
+      "WorkloadArea": "Mail",
       "SubArea": ""
     }
   ]
