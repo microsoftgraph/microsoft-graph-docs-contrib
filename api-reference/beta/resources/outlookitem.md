@@ -1,6 +1,6 @@
 ---
 title: "outlookItem resource type"
-description: "The following JSON representation shows the resource type."
+description: "An abstract type that represents the common properties of Outlook items."
 author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -13,6 +13,10 @@ ms.date: 04/22/2024
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+An abstract type that represents the common properties of Outlook items.
+
+Base type of [distributionList](../resources/distributionlist.md).
 
 ## Properties
 | Property	   | Type	|Description|

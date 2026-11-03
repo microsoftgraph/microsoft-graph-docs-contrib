@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Create an [mdmAppSetting](../resources/windowsupdates-mdmappsetting.md) resource for an MDM application in the current tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
