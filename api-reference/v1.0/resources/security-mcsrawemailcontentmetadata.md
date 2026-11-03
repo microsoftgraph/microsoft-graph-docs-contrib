@@ -1,5 +1,6 @@
 ---
 title: "mcsRawEmailContentMetadata resource type"
+toc.title: "MCS raw email content metadata"
 description: "Represents audit data for MCS Raw Email Content Metadata events."
 author: "diksha27"
 ms.date: 10/06/2026

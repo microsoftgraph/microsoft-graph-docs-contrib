@@ -1,5 +1,6 @@
 ---
 title: "microsoftSecurityForAiRealTimeProtection resource type"
+toc.title: "Microsoft Security for AI real-time protection"
 description: "Represents audit data for Microsoft Security for AI Real-Time Protection events."
 author: "diksha27"
 ms.date: 9/29/2026

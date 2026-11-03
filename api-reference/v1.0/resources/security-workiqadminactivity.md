@@ -1,5 +1,6 @@
 ---
 title: "workIQAdminActivity resource type"
+toc.title: "Work IQ admin activity"
 description: "Represents audit data for Work IQ Admin Activity events."
 author: "diksha27"
 ms.date: 10/06/2026
