@@ -16,7 +16,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 Get a list of the [assignmentError](../resources/cloudlicensing-assignmenterror.md) objects within an organization or affecting a specific user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
