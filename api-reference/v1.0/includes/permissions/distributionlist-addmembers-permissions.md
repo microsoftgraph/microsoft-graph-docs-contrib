@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|Contacts.ReadWrite|Not available.|
 |Delegated (personal Microsoft account)|Contacts.ReadWrite|Not available.|
 |Application|Contacts.ReadWrite|Not available.|
+
