@@ -1,5 +1,6 @@
 ---
 title: "microsoftSecurityForAiConfiguration resource type"
+toc.title: "Microsoft Security for AI configuration"
 description: "Represents audit data for Microsoft Security for AI Configuration events."
 author: "diksha27"
 ms.date: 10/06/2026

@@ -39,7 +39,6 @@ POST /users/{user-id}/teamwork/sections/reorder
 |:-------|:------|
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 | Content-Type | application/json. Required. |
-| If-Match | The value of the **@microsoft.graph.sectionsVersion** annotation returned when you [list sections](../api/userteamwork-list-sections.md), or the **@odata.etag** value from any previously retrieved [section](../resources/teamworksection.md). Required for optimistic concurrency control. |
 
 ## Request body
 
@@ -55,9 +54,6 @@ The following table lists the parameter that is required when you call this acti
 
 If successful, this action returns a `200 OK` response code and a [teamworkSection](../resources/teamworksection.md) collection in the response body, in the requested order.
 
-> [!NOTE]
-> Each returned section includes an updated **@odata.etag** value. Use this value as the `If-Match` header for any subsequent mutation operation.
-
 The following errors are possible.
 
 | Response code | Message |
@@ -65,9 +61,7 @@ The following errors are possible.
 | `400 Bad Request` | The **sectionsOrder** property is missing, empty, exceeds the supported maximum, or contains null, empty, or duplicate IDs. |
 | `400 Bad Request` | The reorder list doesn't contain every current section exactly once, contains an unknown section ID, or doesn't place the *QuickViews* system section first. |
 | `404 Not Found` | The specified user wasn't found. |
-| `409 Conflict` | A section in the reorder list was deleted concurrently with the reorder request. [List sections](../api/userteamwork-list-sections.md) again and retry with the current section IDs and version. |
-| `412 Precondition Failed` | The `If-Match` header value doesn't match the current section hierarchy version. [List sections](../api/userteamwork-list-sections.md) again to retrieve the latest **@microsoft.graph.sectionsVersion** annotation and retry. |
-| `428 Precondition Required` | The `If-Match` header is required for this operation. |
+| `409 Conflict` | The sections can't be reordered because of a concurrent change, such as the deletion of a section in the reorder list. [List sections](../api/userteamwork-list-sections.md) again and retry with the current section IDs. |
 
 ## Examples
 
@@ -75,7 +69,6 @@ The following errors are possible.
 
 The following example reorders three sections for a user.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamworksection_reorder",
@@ -84,7 +77,6 @@ The following example reorders three sections for a user.
 ```http
 POST https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections/reorder
 Content-Type: application/json
-If-Match: "1742515200"
 
 {
   "sectionsOrder": [
@@ -94,32 +86,6 @@ If-Match: "1742515200"
   ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/teamworksection-reorder-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/teamworksection-reorder-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/teamworksection-reorder-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/teamworksection-reorder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/teamworksection-reorder-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/teamworksection-reorder-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

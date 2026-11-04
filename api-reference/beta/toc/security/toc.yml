@@ -478,9 +478,9 @@ items:
       href: ../../api/security-casemanagement-casetypeconfiguration-list-slapolicies.md
     - name: Create SLA policy
       href: ../../api/security-casemanagement-casetypeconfiguration-post-slapolicies.md
-  - name: Sla policy definition
+  - name: SLA policy definition
     items:
-    - name: Sla policy definition
+    - name: SLA policy definition
       href: ../../resources/security-casemanagement-slapolicydefinition.md
     - name: List
       href: ../../api/security-casemanagement-casetypeconfiguration-list-slapolicies.md
