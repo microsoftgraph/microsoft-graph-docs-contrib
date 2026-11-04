@@ -536,7 +536,7 @@ The following example shows a request. This request requires the **ConsistencyLe
   "name": "get_to_count"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa" OR "displayName:ad"&$orderbydisplayName&$count=true
+GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa" OR "displayName:ad"&$orderby=displayName&$count=true
 ConsistencyLevel: eventual
 ```
 
