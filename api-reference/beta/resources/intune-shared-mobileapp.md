@@ -12,6 +12,8 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 > **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -31,6 +33,8 @@ An abstract class containing the base properties for Intune mobile apps.
 |[getRelatedAppStates function](../api/intune-shared-mobileapp-getrelatedappstates.md)|[mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md) collection||
 |**Policy Set**|
 |[hasPayloadLinks action](../api/intune-shared-mobileapp-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection||
+|[Configure assignments](../api/intune-apps-mobileapp-configureassignments.md)|None|Configure all deployment assignments for one deployment.|
+|[List target assignments](../api/intune-apps-deviceandappmanagementpayloadassignment-list.md)|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|List assignments for a specified deployment.|
 
 ## Properties
 |Property|Type|Description|
@@ -55,15 +59,16 @@ An abstract class containing the base properties for Intune mobile apps.
 |dependentAppCount|Int32|The total number of dependencies the child app has.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|**Apps**|
-|categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app.|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|The list of group assignments for this mobile app.|
-|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Mobile App Install Summary.|
+|categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app.|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The list of installation states for this mobile app.|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|The list of installation states for this mobile app.|
+|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Mobile App Install Summary.|
 |relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|List of relationships for this mobile app.|
+|targetAssignments|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|The deployment assignments for this payload. Use `$filter` with `eq` on `microsoft.graph.deviceAndAppManagementDeploymentAssignment/deploymentId` to specify a deployment.|
+|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|The list of installation states for this mobile app.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

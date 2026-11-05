@@ -18,6 +18,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## November 2026: New in preview only
+
+### Device and app management | Corporate management
+
+- Updated the [deployment plan](/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan?view=graph-rest-beta&preserve-view=true) documentation to use ring templates for reusable staged rollouts. Removed the deprecated **topologyDefinitions**, **allowedPlatform**, and **topologyCount** properties; use **ringTemplates**, **allowedAssignmentFilterPlatform**, and **ringCount** instead.
+- Updated the [deployment assignment](/graph/api/resources/intune-apps-deviceandappmanagementdeploymentassignment?view=graph-rest-beta&preserve-view=true) documentation to use **assignmentConfigurationId** instead of the removed **referenceAssignmentId** property. Use the inherited **assignmentDetails** property and pluralized assignment-details types instead of **assignmentDetail** and the singular types.
+- Updated rollout-status guidance to use the **assignmentResults** relationship on [deviceAndAppManagementDeployment](/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeployment?view=graph-rest-beta&preserve-view=true) instead of the deprecated property on ring assignment configurations.
+- Added documentation for [configuring deployment assignments for a configuration policy](/graph/api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-configureassignments?view=graph-rest-beta&preserve-view=true). Use this action to submit workload assignments in a batch.
+- Updated [deployment payload](/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentpayload?view=graph-rest-beta&preserve-view=true) documentation to identify the workload, entity set, and platform of each payload. Use **workloadType** instead of the deprecated **payloadType** property.
+- Added the `pendingApproval` member to the documented [deployment states](/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentstate?view=graph-rest-beta&preserve-view=true). Use the `Prefer: include-unknown-enum-members` request header to retrieve this member.
+- Documented the deprecation of legacy [topology definitions](/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymenttopologydefinition?view=graph-rest-beta&preserve-view=true) and their assignment configurations. Use ring templates and ring-template assignment configurations instead.
+
 ## October 2026: New and generally available
 
 ### Backup and recovery | Microsoft 365 backup and storage

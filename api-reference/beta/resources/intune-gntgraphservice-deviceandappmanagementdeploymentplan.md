@@ -1,6 +1,6 @@
 ---
 title: "deviceAndAppManagementDeploymentPlan resource type"
-description: "Represents a device and app management deployment plan for staged rollout scenarios."
+description: "Represents a reusable ring configuration for staged deployments."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -12,87 +12,72 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Represents a device and app management deployment plan for staged rollout scenarios.
+Represents a reusable ring configuration for staged deployments.
+
+Updating ring configuration increments **versionNumber**. A plan must always retain at least one ring template. Omitting **ringTemplates** from a PATCH request preserves the existing templates.
+
+Specifying **deploymentPlanId** when creating a [deviceAndAppManagementDeployment](../resources/intune-gntgraphservice-deviceandappmanagementdeployment.md) doesn't populate its rings automatically. The caller must copy the assignment configurations and convert each template's relative duration to an absolute UTC activation time. For example, delays of `P0D`, `P3D`, and `P4D` produce activation times at deployment start, three days later, and seven days after deployment start.
 
 ## Methods
-|Method|Return Type|Description|
+
+|Method|Return type|Description|
 |:---|:---|:---|
-|[List deviceAndAppManagementDeploymentPlans](../api/intune-gntgraphservice-deviceandappmanagementdeploymentplan-list.md)|[deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) collection|List properties and relationships of the [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) objects.|
-|[Get deviceAndAppManagementDeploymentPlan](../api/intune-gntgraphservice-deviceandappmanagementdeploymentplan-get.md)|[deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md)|Read properties and relationships of the [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) object.|
-|[Create deviceAndAppManagementDeploymentPlan](../api/intune-gntgraphservice-deviceandappmanagementdeploymentplan-create.md)|[deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md)|Create a new [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) object.|
-|[Delete deviceAndAppManagementDeploymentPlan](../api/intune-gntgraphservice-deviceandappmanagementdeploymentplan-delete.md)|None|Deletes a [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md).|
-|[Update deviceAndAppManagementDeploymentPlan](../api/intune-gntgraphservice-deviceandappmanagementdeploymentplan-update.md)|[deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md)|Update the properties of a [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) object.|
+|[List](../api/intune-gntgraphservice-deviceandappmanagementdeploymentplan-list.md)|[deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) collection|List the deployment plans.|
+|[Create](../api/intune-gntgraphservice-deviceandappmanagementdeploymentplan-create.md)|[deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md)|Create a deployment plan.|
+|[Get](../api/intune-gntgraphservice-deviceandappmanagementdeploymentplan-get.md)|[deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md)|Get a deployment plan.|
+|[Update](../api/intune-gntgraphservice-deviceandappmanagementdeploymentplan-update.md)|None|Update a deployment plan.|
+|[Delete](../api/intune-gntgraphservice-deviceandappmanagementdeploymentplan-delete.md)|None|Delete a deployment plan.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key for the resource.|
-|versionNumber|Int32|Version number of the device and app management deployment plan.|
-|displayName|String|The display name of the device and app management deployment plan.|
-|description|String|The description of the device and app management deployment plan.|
-|roleScopeTagIds|String collection|The role scope tag ids to control device and app management deployment plan visibility.|
-|topologyDefinitions|[deviceAndAppManagementDeploymentTopologyDefinition](../resources/intune-gntgraphservice-deviceandappmanagementdeploymenttopologydefinition.md) collection|The topology definitions associated with the device and app management deployment plan.|
-|allowedPlatform|[devicePlatformType](../resources/intune-gntgraphservice-deviceplatformtype.md)|The allowed assignment filter platform for the device and app management deployment plan. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`, `windowsMobileApplicationManagement`.|
-|createdDateTime|DateTimeOffset|The date and time of when the plan was created (UTC).|
-|lastModifiedDateTime|DateTimeOffset|The date and time of when the plan was last modified (UTC).|
-|topologyCount|Int32|The number of topologies in the deployment plan.|
+|allowedAssignmentFilterPlatform|[devicePlatformType](../resources/intune-gntgraphservice-deviceplatformtype.md)|The platform allowed for assignment filters. The default value is `android`. When `unknown`, assignment filters can't be configured. The possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`, `windowsMobileApplicationManagement`. Use `Prefer: include-unknown-enum-members` to retrieve `windowsMobileApplicationManagement`. Supports `$filter` (`eq`).|
+|createdDateTime|DateTimeOffset|The UTC creation date and time in ISO 8601 format. Populated by the service. Read-only.|
+|description|String|The description of the deployment plan. Maximum length is 1000 characters.|
+|displayName|String|The display name. Required during creation and can't be cleared during updates. Maximum length is 256 characters. Supports `$filter` (`contains`) and `$orderby`.|
+|id|String|The unique identifier of the deployment plan, generated when the plan is created. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The UTC last modification date and time in ISO 8601 format. Populated by the service. Read-only.|
+|ringCount|Int32|The number of ring templates, computed by the service. Read-only.|
+|ringTemplates|[deviceAndAppManagementDeploymentRingTemplate](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentringtemplate.md) collection|The reusable ring templates. Required during creation. Contains 1 through 10 templates and can't be empty or null on creation or update. Returned only when explicitly selected with `$select` on a single plan; excluded from list responses.|
+|roleScopeTagIds|String collection|The scope tag identifiers that control plan visibility. Contains 1 through 100 identifiers. Returned only when explicitly selected with `$select` on a single plan; excluded from list responses.|
+|versionNumber|Int32|The version number, incremented automatically on each edit. From 1 through 1000. The default value is 1. Read-only.|
 
 ## Relationships
-None
 
-## JSON Representation
-Here is a JSON representation of the resource.
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentPlan"
-}
--->
-``` json
+} -->
+```json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementDeploymentPlan",
-  "id": "String (identifier)",
-  "versionNumber": 1024,
+  "id": "String",
+  "versionNumber": "Int32",
   "displayName": "String",
   "description": "String",
   "roleScopeTagIds": [
     "String"
   ],
-  "topologyDefinitions": [
-    {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentTopologyDefinition",
-      "topologyDisplayName": "String",
-      "topologyOrder": 1024,
-      "topologyActivationCriteria": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementRingActivationDateTimeCriteria",
-        "startDateTime": "String (timestamp)"
-      },
-      "assignmentConfigurations": [
-        {
-          "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentTopologyAssignmentConfiguration",
-          "target": {
-            "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
-            "deviceAndAppManagementAssignmentFilterId": "String",
-            "deviceAndAppManagementAssignmentFilterType": "String",
-            "organizationalUnitId": "String",
-            "assignmentConflictSetting": {
-              "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
-              "assignmentOverride": "String",
-              "versionNumber": 1024
-            }
-          },
-          "operation": "String"
-        }
-      ]
-    }
-  ],
-  "allowedPlatform": "String",
+  "allowedAssignmentFilterPlatform": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
-  "topologyCount": 1024
+  "ringTemplates": [
+    {
+      "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentRingTemplate"
+    }
+  ],
+  "ringCount": "Int32"
 }
 ```

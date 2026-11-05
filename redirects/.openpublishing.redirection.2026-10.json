@@ -1,6 +1,101 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/api-reference/beta/api/intune-apps-deviceandappmanagementdeploymentassignment-create.md",
+      "redirect_url": "/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-apps-deviceandappmanagementdeploymentassignment-delete.md",
+      "redirect_url": "/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-apps-deviceandappmanagementdeploymentassignment-get.md",
+      "redirect_url": "/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-apps-deviceandappmanagementdeploymentassignment-list.md",
+      "redirect_url": "/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-apps-deviceandappmanagementdeploymentassignment-update.md",
+      "redirect_url": "/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-apps-deviceandappmanagementpayloadassignment-create.md",
+      "redirect_url": "/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-apps-deviceandappmanagementpayloadassignment-delete.md",
+      "redirect_url": "/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-apps-deviceandappmanagementpayloadassignment-get.md",
+      "redirect_url": "/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-apps-deviceandappmanagementpayloadassignment-update.md",
+      "redirect_url": "/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-gntgraphservice-deviceandappmanagementdeploymentring-create.md",
+      "redirect_url": "/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentring?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-gntgraphservice-deviceandappmanagementdeploymentring-delete.md",
+      "redirect_url": "/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentring?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-gntgraphservice-deviceandappmanagementdeploymentring-get.md",
+      "redirect_url": "/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentring?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-gntgraphservice-deviceandappmanagementdeploymentring-list.md",
+      "redirect_url": "/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentring?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-gntgraphservice-deviceandappmanagementdeploymentring-update.md",
+      "redirect_url": "/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentring?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration-create.md",
+      "redirect_url": "/graph/api/resources/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration-delete.md",
+      "redirect_url": "/graph/api/resources/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration-get.md",
+      "redirect_url": "/graph/api/resources/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration-list.md",
+      "redirect_url": "/graph/api/resources/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration-update.md",
+      "redirect_url": "/graph/api/resources/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration?view=graph-rest-beta&preserve-view=true",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/api-reference/v1.0/resources/crosstenant-migration-overview.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/crosstenant-migration-api-overview?view=graph-rest-1.0",
       "redirect_document_id": false

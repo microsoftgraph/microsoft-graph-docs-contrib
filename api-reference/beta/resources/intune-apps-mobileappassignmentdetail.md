@@ -1,60 +1,59 @@
 ---
 title: "mobileAppAssignmentDetail resource type"
-description: "Type capturing mobile app specific assignment details/properties excluding assignment source and target details."
+description: "Represents the deprecated mobile app assignment settings type."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ms.date: 08/01/2024
+toc.title: "mobileAppAssignmentDetail resource type (deprecated)"
+ROBOTS: NOINDEX
 ---
 
-# mobileAppAssignmentDetail resource type
+# mobileAppAssignmentDetail resource type (deprecated)
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+> [!CAUTION]
+> This type is deprecated. Use [mobileAppAssignmentDetails](../resources/intune-apps-mobileappassignmentdetails.md) instead. Removal from beta was scheduled for July 31, 2026. This topic retains the legacy definition for migration guidance.
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Type capturing mobile app specific assignment details/properties excluding assignment source and target details.
+Represents the deprecated mobile app assignment settings type.
 
+Inherits from [deviceAndAppManagementAssignmentDetail](../resources/intune-shared-deviceandappmanagementassignmentdetail.md).
 
-Inherits from [deviceAndAppManagementAssignmentDetail](../resources/intune-shared-deviceandappmanagementassignmentdetail.md)
+## Methods
+
+None.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|intent|[mobileAppEnforcementIntentType](../resources/intune-apps-mobileappenforcementintenttype.md)|Indicates the enforcement intent for the mobile app assignment. Possible values are: `requiredInstall`, `requiredUninstall`, `available`, and `availableWithoutEnrollment`. The default value is `requiredInstall`. Possible values are: `requiredInstall`, `requiredUninstall`, `available`, `availableWithoutEnrollment`, `unknownFutureValue`.|
-|settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|Indicates the app-type-specific settings properties contained within the assignment as a polymorphic type.|
+|intent|[mobileAppEnforcementIntentType](../resources/intune-apps-mobileappenforcementintenttype.md)|The app enforcement intent. The default value is `requiredInstall`. The possible values are: `requiredInstall`, `requiredUninstall`, `available`, `availableWithoutEnrollment`, `unknownFutureValue`.|
+|settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|The app-type-specific assignment settings.|
 
 ## Relationships
-None
 
-## JSON Representation
-Here is a JSON representation of the resource.
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppAssignmentDetail"
-}
--->
-``` json
+} -->
+```json
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignmentDetail",
   "intent": "String",
   "settings": {
-    "@odata.type": "microsoft.graph.winGetAppAssignmentSettings",
-    "notifications": "String",
-    "restartSettings": {
-      "@odata.type": "microsoft.graph.winGetAppRestartSettings",
-      "gracePeriodInMinutes": 1024,
-      "countdownDisplayBeforeRestartInMinutes": 1024,
-      "restartNotificationSnoozeDurationInMinutes": 1024
-    },
-    "installTimeSettings": {
-      "@odata.type": "microsoft.graph.winGetAppInstallTimeSettings",
-      "useLocalTime": true,
-      "deadlineDateTime": "String (timestamp)"
-    }
+    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
   }
 }
 ```
