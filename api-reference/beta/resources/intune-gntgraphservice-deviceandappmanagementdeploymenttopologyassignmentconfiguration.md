@@ -1,52 +1,58 @@
 ---
 title: "deviceAndAppManagementDeploymentTopologyAssignmentConfiguration resource type"
-description: "A topology assignment configuration for deployment topology definition."
+description: "Represents a deprecated assignment target change operation for a topology."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ms.date: 08/01/2024
+toc.title: "deviceAndAppManagementDeploymentTopologyAssignmentConfiguration resource type (deprecated)"
+ROBOTS: NOINDEX
 ---
 
-# deviceAndAppManagementDeploymentTopologyAssignmentConfiguration resource type
+# deviceAndAppManagementDeploymentTopologyAssignmentConfiguration resource type (deprecated)
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+> [!CAUTION]
+> This type is deprecated. Use [deviceAndAppManagementRingTemplateAssignmentConfiguration](../resources/intune-gntgraphservice-deviceandappmanagementringtemplateassignmentconfiguration.md) instead. Removal from beta was scheduled for June 20, 2026. This topic retains the legacy definition for migration guidance.
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-A topology assignment configuration for deployment topology definition.
+Represents a deprecated assignment target change operation for a topology.
+
+Used by the legacy **assignmentConfigurations** property of [deviceAndAppManagementDeploymentTopologyDefinition](../resources/intune-gntgraphservice-deviceandappmanagementdeploymenttopologydefinition.md).
+
+## Methods
+
+None.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The target assignment defined by the admin.|
-|operation|[deviceAndAppManagementAssignmentOperationType](../resources/intune-gntgraphservice-deviceandappmanagementassignmentoperationtype.md)|The target assignment operation. Possible values are: `add`, `unknownFutureValue`.|
+|operation|[deviceAndAppManagementAssignmentOperationType](../resources/intune-gntgraphservice-deviceandappmanagementassignmentoperationtype.md)|The assignment operation. The possible values are: `add`, `unknownFutureValue`.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The group target and optional assignment filter configured by the administrator.|
 
 ## Relationships
-None
 
-## JSON Representation
-Here is a JSON representation of the resource.
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentTopologyAssignmentConfiguration"
-}
--->
-``` json
+} -->
+```json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementDeploymentTopologyAssignmentConfiguration",
   "target": {
-    "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
-    "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String",
-    "organizationalUnitId": "String",
-    "assignmentConflictSetting": {
-      "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
-      "assignmentOverride": "String",
-      "versionNumber": 1024
-    }
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   },
   "operation": "String"
 }
