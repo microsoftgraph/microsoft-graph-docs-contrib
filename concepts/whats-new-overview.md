@@ -42,6 +42,10 @@ Added the [distributionList](/graph/api/resources/distributionlist) resource typ
 
 ## October 2026: New and generally available
 
+### Applications
+
+- Added the **kerberosTicket** property to the [optionalClaims](/graph/api/resources/optionalclaims) resource type to select group SID categories for Kerberos tickets. Use the configuring application's **groupMembershipClaims** setting to scope eligible memberships within those categories.
+
 ### Backup and recovery | Microsoft 365 backup and storage
 
 - Use the **policyId** property on the [restoreSessionBase](/graph/api/resources/restoresessionbase) resource to scope restore sessions to a protection policy.

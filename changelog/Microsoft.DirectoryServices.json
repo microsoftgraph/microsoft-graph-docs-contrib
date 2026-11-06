@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b5db641e-719d-40fc-aa23-7e55d7df97dc",
+          "ApiChange": "Property",
+          "ChangedApiName": "kerberosTicket",
+          "ChangeType": "Addition",
+          "Description": "Added the **kerberosTicket** property to the [optionalClaims](https://learn.microsoft.com/en-us/graph/api/resources/optionalclaims?view=graph-rest-1.0) resource to select group SID categories for Kerberos tickets, with eligible memberships scoped by the configuring application's **groupMembershipClaims** setting.",
+          "Target": "optionalClaims"
+        }
+      ],
+      "Id": "b5db641e-719d-40fc-aa23-7e55d7df97dc",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-16T00:00:00.0000000Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Application management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8ed82e61-571c-4d8e-9653-82f0b88caab9",
           "ApiChange": "Property",
           "ChangedApiName": "isHardDeleteProtectionEnabled",
