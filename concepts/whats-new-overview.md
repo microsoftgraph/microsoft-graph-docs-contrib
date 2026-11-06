@@ -161,6 +161,10 @@ Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?
 
 Added the **mailboxId** property to the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource type to identify the Exchange mailbox associated with a Microsoft 365 group. The property is returned only when specified in `$select`.
 
+### Identity and access | Directory management
+
+Added the **isHardDeleteProtectionEnabled** property to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) (excluding on-premises synchronized users), [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true), [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true), and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) resources. Enable hard deletion protection on existing objects to block permanent deletion for seven days after soft deletion. Once enabled, protection can't be disabled.
+
 ### Mail
 
 Added the [importMime](/graph/api/mailfolder-importmime?view=graph-rest-beta&preserve-view=true) method to the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) resource to create a non-draft message in a mail folder directly from MIME content. Unlike [creating a message](/graph/api/mailfolder-post-messages?view=graph-rest-beta&preserve-view=true), which always creates a draft, this method creates the message in a final, non-draft state. The message appears in the destination folder as if it was delivered; however, it doesn't go through transport, isn't stamped as sent, and never appears in the *Sent Items* folder. The action preserves the full MIME content, including internet message headers, body parts, and attachments. Use the **importMime** API to import existing mail into a mailbox, such as to migrate messages from another system.

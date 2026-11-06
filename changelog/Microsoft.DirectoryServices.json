@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "8ed82e61-571c-4d8e-9653-82f0b88caab9",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHardDeleteProtectionEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHardDeleteProtectionEnabled** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        },
+        {
+          "Id": "8ed82e61-571c-4d8e-9653-82f0b88caab9",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHardDeleteProtectionEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHardDeleteProtectionEnabled** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "8ed82e61-571c-4d8e-9653-82f0b88caab9",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHardDeleteProtectionEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHardDeleteProtectionEnabled** property to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "8ed82e61-571c-4d8e-9653-82f0b88caab9",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHardDeleteProtectionEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHardDeleteProtectionEnabled** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "8ed82e61-571c-4d8e-9653-82f0b88caab9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-15T14:14:51.8148707Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6698ae70-144b-4e20-ba8a-4ee9b2d0a373",
           "ApiChange": "Property",
           "ChangedApiName": "managerApplications",
