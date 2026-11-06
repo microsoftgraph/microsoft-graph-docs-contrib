@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "560ddbf2-74b6-4576-bb21-9e1f49b6e26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "notAppliedAllAppsExclusion",
+          "ChangeType": "Addition",
+          "Description": "Added the `notAppliedAllAppsExclusion` member to the **appliedConditionalAccessPolicyResult** enumeration.",
+          "Target": "appliedConditionalAccessPolicyResult"
+        },
+        {
+          "Id": "560ddbf2-74b6-4576-bb21-9e1f49b6e26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "reportOnlyNotAppliedAllAppsExclusion",
+          "ChangeType": "Addition",
+          "Description": "Added the `reportOnlyNotAppliedAllAppsExclusion` member to the **appliedConditionalAccessPolicyResult** enumeration.",
+          "Target": "appliedConditionalAccessPolicyResult"
+        }
+      ],
+      "Id": "560ddbf2-74b6-4576-bb21-9e1f49b6e26d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-22T17:50:55.0053834Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
           "ApiChange": "Enumeration",
           "ChangedApiName": "appManagementAuditLogAuditResult",
