@@ -1,6 +1,6 @@
 ---
 title: "Permanently delete item (directory object)"
-ms.date: 11/17/2025
+ms.date: 06/05/2026
 description: "Permanently delete a recently deleted application, group, service principal, or user from deleted items."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
@@ -22,6 +22,7 @@ Permanently delete a recently deleted directory object from [deleted items](../r
 - [agentUser](../resources/agentuser.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
+- [device](../resources/device.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
@@ -48,6 +49,7 @@ The following table shows the least privileged permission or permissions require
 | [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.ReadWrite.All | Not supported | ExternalUserProfile.ReadWrite.All |
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [device](../resources/device.md) | Device.ReadWrite.All | Not supported. | Device.ReadWrite.All |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Not supported. |
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.ReadWrite.All | Not supported | PendingExternalUserProfile.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
