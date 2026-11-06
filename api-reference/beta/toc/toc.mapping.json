@@ -3837,6 +3837,7 @@
             "pinnedChatMessageInfo",
             "targetedChatMessage",
             "team",
+            "teamworkChannelTag",
             "teamworkTag",
             "teamworkTagMember"
           ],

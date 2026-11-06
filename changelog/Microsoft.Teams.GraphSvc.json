@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "fcfc8f70-b328-44c4-9e71-ce7266bcabd0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tags",
+          "ChangeType": "Addition",
+          "Description": "Added the **tags** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "fcfc8f70-b328-44c4-9e71-ce7266bcabd0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkChannelTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkChannelTag](https://learn.microsoft.com/en-us/graph/api/resources/teamworkchanneltag?view=graph-rest-beta) resource type and associated methods to manage tags owned by a Microsoft Teams channel.",
+          "Target": "teamworkChannelTag"
+        }
+      ],
+      "Id": "fcfc8f70-b328-44c4-9e71-ce7266bcabd0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-26T22:45:54.9528401Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c28e192b-f8e3-4384-8383-80fe031b37a8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkCustomEmoji",
