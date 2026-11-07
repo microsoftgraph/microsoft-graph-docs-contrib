@@ -32,6 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/user-update-permissions.md)]
 
 #### Permissions for specific scenarios
+- To set **isHardDeleteProtectionEnabled** to `true`, the app requires the *HardDeletionSetting.ReadWrite.Enable* delegated or application permission. The caller must also have the *Microsoft Entra Backup Administrator* role.
 - *User.ReadWrite* is the least privileged permission to update details for the signed-in user.
 - Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
 - To update the **employeeLeaveDateTime** property:
@@ -98,6 +99,7 @@ To use this API to update an [agentUser](../resources/agentUser.md), you must sp
 |employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md) |Represents organization data (for example, division and costCenter) associated with a user. Include both property values when updating **employeeOrgData**; if you omit any, the system sets them to `null`.|
 |identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** replaces the entire collection and you must supply the userPrincipalName **signInType** identity in the collection. <br/><br/> **NOTE:** Adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object isn't allowed, unless the **user** object already contains a local account identity.|
 |interests|String collection|A list for the user to describe their interests.|
+| isHardDeleteProtectionEnabled | Boolean | Set to `true` to enable hard deletion protection on an existing user (excluding on-premises synchronized users). Once enabled, it can't be set to `false` or `null`. Protection blocks permanent deletion for seven days after soft deletion; it doesn't prevent soft deletion or restoration. |
 |jobTitle|String|The user's job title.|
 |mail|String|The SMTP address for the user, for example, `jeff@contoso.com`. For Azure AD B2C accounts, this property can be updated up to only 10 times with unique SMTP addresses. Changes to this property also updates the user's **proxyAddresses** collection to include the value as an SMTP address. Can't be updated to `null`.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
@@ -128,6 +130,8 @@ add, update, or delete your own app-specific data in custom properties of an ext
 > [!NOTE]
 > - The following properties cannot be updated by an app with only application permissions: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **responsibilities**, **schools**, and **skills**.
 > - To update the following properties, you must specify them in their own PATCH request, without including the other properties listed in the table above: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **responsibilities**, **schools**, and **skills**.
+
+Enabling **isHardDeleteProtectionEnabled** during user creation isn't supported. Create the user first, then enable protection with a separate PATCH request.
 
 ### Manage extensions and associated data
 
@@ -475,6 +479,29 @@ To remove the value of the schema extension from the user object, set the **ext5
 <!-- {
   "blockType": "response"
 } -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 6: Enable hard deletion protection for a user
+
+Once enabled, hard deletion protection can't be disabled. Use an existing user and the permissions and role described in [Permissions for specific scenarios](#permissions-for-specific-scenarios).
+
+#### Request
+
+<!-- { "blockType": "request", "name": "update_user_hard_delete_protection" } -->
+```http
+PATCH https://graph.microsoft.com/beta/users/04b9f5a2-ee41-4d0e-b500-8de414d178c9
+Content-Type: application/json
+
+{
+  "isHardDeleteProtectionEnabled": true
+}
+```
+
+#### Response
+
+<!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 204 No Content
 ```

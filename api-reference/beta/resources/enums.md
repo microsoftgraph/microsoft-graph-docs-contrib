@@ -1805,6 +1805,8 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | reportOnlyFailure |
 | reportOnlyNotApplied |
 | reportOnlyInterrupted |
+| notAppliedAllAppsExclusion |
+| reportOnlyNotAppliedAllAppsExclusion |
 
 ### microsoftAuthenticatorAuthenticationMode values
 
