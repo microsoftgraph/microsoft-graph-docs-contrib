@@ -9,6 +9,7 @@ ms.topic: include
 > - Agent identities, agent identity blueprints, and agent identity blueprint principals: Agent ID Administrator
 > - Administrative units: Directory Readers (read-only), Global Readers (read-only), Privileged Role Administrator
 > - Applications: Hybrid Identity Administrator, Cloud Application Administrator, Application Administrator
+> - Devices: Cloud Device Administrator, Intune Administrator, Windows 365 Administrator
 > - External user profiles: Global Reader (read-only), Skype for Business Administrator, Teams Administrator
 > - Groups: Groups Administrator (except for role-assignable groups), User Administrator (except for role-assignable groups), Privileged Role Administrator (least privileged role for role-assignable groups)
 > - Pending external user profiles: Global Reader (read-only), Skype for Business Administrator, Teams Administrator

@@ -1614,6 +1614,16 @@ Namespace: microsoft.graph
 | externalPartner |
 | externalNonPartner |
 
+### recipientType values
+
+| Member |
+| ------------------- |
+| contact |
+| oneOff |
+| mailbox |
+| privateDL |
+| unknownFutureValue |
+
 ### riskDetectionTimingType values
 
 | Member |

@@ -48,6 +48,8 @@ You can use `$select` to get specific group properties, including properties tha
 
 For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
+The **isHardDeleteProtectionEnabled** property is returned only when explicitly requested with `$select`.
+
 ## Request headers
 
 | Name          | Type   | Description               |
@@ -359,7 +361,33 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Retrieve the mailbox ID for a group
+### Example 5: Get the hard deletion protection status of a group
+
+#### Request
+
+Use `$select` to retrieve **isHardDeleteProtectionEnabled**, which isn't returned by default.
+
+<!-- { "blockType": "request", "name": "get_group_hard_delete_protection" } -->
+```http
+GET https://graph.microsoft.com/beta/groups/0d09007d-45b2-458c-b180-880dde3a302e?$select=id,displayName,isHardDeleteProtectionEnabled
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.group" } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,displayName,isHardDeleteProtectionEnabled)/$entity",
+  "id": "0d09007d-45b2-458c-b180-880dde3a302e",
+  "displayName": "Contoso Finance",
+  "isHardDeleteProtectionEnabled": true
+}
+```
+
+### Example 6: Retrieve the mailbox ID for a group
 
 The following example shows how to retrieve the identifier of the Exchange mailbox associated with a Microsoft 365 group. The **mailboxId** property isn't returned by default and must be explicitly requested by using `$select`. If the group mailbox isn't provisioned, the property returns `00000000-0000-0000-0000-000000000000`.
 

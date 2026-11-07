@@ -1,5 +1,6 @@
 ---
 title: "p4AiDagSitePermissionsRecord resource type"
+toc.title: "P4 AI DAG site permissions"
 description: "Represents audit data for P4 AI DAG Site Permissions events."
 author: "diksha27"
 ms.date: 10/06/2026

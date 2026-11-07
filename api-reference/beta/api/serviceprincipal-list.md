@@ -40,6 +40,8 @@ GET /servicePrincipals
 
 ## Optional query parameters
 
+Use `$select` to retrieve **isHardDeleteProtectionEnabled**, which isn't returned by default. The property supports `$filter` with the `eq` operator.
+
 This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page size is 100 service principal objects. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 By default, this API doesn't return the value of the **key** in the **keyCredentials** property when listing all service principals. To retrieve the public key info in **key**, the **keyCredentials** property must be specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
@@ -443,6 +445,36 @@ Content-type: application/json
 }
 ```
 
+### Example 6: List service principals with hard deletion protection enabled
+
+#### Request
+
+Filter for protected service principals and explicitly select their protection status.
+
+<!-- { "blockType": "request", "name": "list_serviceprincipals_hard_delete_protection" } -->
+```http
+GET https://graph.microsoft.com/beta/servicePrincipals?$filter=isHardDeleteProtectionEnabled eq true&$select=id,displayName,isHardDeleteProtectionEnabled
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.servicePrincipal", "isCollection": true } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,displayName,isHardDeleteProtectionEnabled)",
+  "value": [
+    {
+      "id": "c4ca17b7-4f3e-4c3a-b884-bfa4100c745d",
+      "displayName": "Contoso Finance",
+      "isHardDeleteProtectionEnabled": true
+    }
+  ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -456,6 +488,5 @@ Content-type: application/json
   ]
 }
 -->
-
 
 

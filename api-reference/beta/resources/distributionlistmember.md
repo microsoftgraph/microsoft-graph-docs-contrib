@@ -14,8 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an expanded member of a personal distribution list.
+Represents an expanded member of a [personal distribution list](../resources/distributionlist.md), with resolved contact information.
 
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
@@ -25,9 +26,9 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the member. Read-only.|
-|id|String|The unique identifier for the distribution list member. It corresponds to the value supplied as 'key' when adding a member via [addMembers](../api/distributionlist-addmembers.md). Read-only.|
+|id|String|The unique identifier for the distribution list member. It corresponds to the value supplied as 'key' when you add a member via [addMembers](../api/distributionlist-addmembers.md). Read-only.|
 |memberId|String| A system generated unique identifier. Non-empty for contact, privateDL and mailbox members. ReadOnly.|
-|type|[recipientType](../resources/enums.md#recipienttype-values)|The type of the recipient. The possible values are: `contact`, `oneOff`, `mailbox`, `privateDL`, `unknownFutureValue`. ReadOnly|
+|type|recipientType|The type of the recipient. The possible values are: `contact`, `oneOff`, `mailbox`, `privateDL`, `unknownFutureValue`. ReadOnly|
 
 ## Relationships
 
@@ -40,7 +41,8 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.distributionListMember"
+  "@odata.type": "microsoft.graph.distributionListMember",
+  "baseType": "microsoft.graph.entity"
 }
 -->
 ``` json
