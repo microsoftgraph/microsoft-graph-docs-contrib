@@ -34,6 +34,10 @@ Added the [distributionList](/graph/api/resources/distributionlist) resource typ
 
 - Devices now support soft-deletion and restoration. When a device is deleted, it's moved to the [deleted items container](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) and can be restored within 30 days. After 30 days, it's permanently deleted.
 
+### Security | Data security and compliance
+
+Added the [classificationGradingJobResponse](/graph/api/resources/classificationgradingjobresponse?view=graph-rest-beta&preserve-view=true) resource type and [classificationGradingContentLocation](/graph/api/resources/classificationgradingcontentlocation?view=graph-rest-beta&preserve-view=true) complex type to return matched text and surrounding context through the optional **contextText** property in classification grading results.
+
 ### Teamwork and communications | Messaging
 
 - Removed the `If-Match` header from [create section](/graph/api/userteamwork-post-sections?view=graph-rest-beta&preserve-view=true), [update section](/graph/api/teamworksection-update?view=graph-rest-beta&preserve-view=true), [delete section](/graph/api/teamworksection-delete?view=graph-rest-beta&preserve-view=true), [reorder sections](/graph/api/teamworksection-reorder?view=graph-rest-beta&preserve-view=true), [create section item](/graph/api/teamworksection-post-items?view=graph-rest-beta&preserve-view=true), [move section item](/graph/api/teamworksectionitem-move?view=graph-rest-beta&preserve-view=true), [reorder section items](/graph/api/teamworksectionitem-reorder?view=graph-rest-beta&preserve-view=true), and [delete section item](/graph/api/teamworksectionitem-delete?view=graph-rest-beta&preserve-view=true) methods of the [teamworkSection](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) and [teamworkSectionItem](/graph/api/resources/teamworksectionitem?view=graph-rest-beta&preserve-view=true) resources. These operations now return a `409 Conflict` response code for concurrent changes, and no longer return `412 Precondition Failed` or `428 Precondition Required`.
