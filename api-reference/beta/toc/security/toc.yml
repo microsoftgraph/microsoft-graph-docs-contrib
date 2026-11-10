@@ -642,6 +642,8 @@ items:
       href: ../../resources/security-urlentitymapping.md
 - name: Data security and compliance
   items:
+  - name: Classification grading job response
+    href: ../../resources/classificationgradingjobresponse.md
   - name: Content activity
     items:
     - name: Content activity
@@ -720,6 +722,8 @@ items:
       href: ../../resources/classifcationerrorbase.md
     - name: Classification error
       href: ../../resources/classificationerror.md
+    - name: Classification grading content location
+      href: ../../resources/classificationgradingcontentlocation.md
     - name: Classification inner error
       href: ../../resources/classificationinnererror.md
     - name: Classification request content meta data
@@ -808,6 +812,8 @@ items:
       href: ../../resources/restrictaccessactionbase.md
     - name: Scope base
       href: ../../resources/scopebase.md
+    - name: Sensitive content evidence
+      href: ../../resources/sensitivecontentevidence.md
     - name: Tenant scope
       href: ../../resources/tenantscope.md
     - name: Text content
