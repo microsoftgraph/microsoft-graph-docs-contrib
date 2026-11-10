@@ -2,7 +2,7 @@
 title: "mailboxFolder: delta"
 description: "Get a set of mailboxFolder objects that were added, deleted, or removed from the user's mailbox."
 author: "cparker-msft"
-ms.date: 08/06/2026
+ms.date: 10/20/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -128,7 +128,6 @@ The following example shows a `$deltaToken` in an **@odata.deltaLink** response 
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 254
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(mailboxFolder)",
@@ -137,12 +136,14 @@ Content-length: 254
         {
             "@odata.type": "#microsoft.graph.mailboxFolder",
             "displayName": "Inbound",
+            "isHidden": false,
             "wellKnownName": null,
             "id": "AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMzNjMwNWM0ZGE2YQAuAAAAAADbrwBIJbBSTKolRbhHUzSHAQCQ2fKdhq8oSKEDSVrdi3lRAAACgfP9AAA="
         },
         {
             "@odata.type": "#microsoft.graph.mailboxFolder",
             "displayName": "Outbound",
+            "isHidden": false,
             "wellKnownName": null,
             "id": "AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMzNjMwNWM0ZGE2YQAuAAAAAADbrwBIJbBSTKolRbhHUzSHAQCQ2fKdhq8oSKEDSVrdi3lRAAACgfP_AAA="
         }

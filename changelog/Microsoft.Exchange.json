@@ -113,6 +113,40 @@
     {
       "ChangeList": [
         {
+          "Id": "7bf1262e-2849-4664-b358-c260913d734f",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHidden",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHidden** property to the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxfolder?view=graph-rest-1.0) resource.",
+          "Target": "mailboxFolder"
+        },
+        {
+          "Id": "7bf1262e-2849-4664-b358-c260913d734f",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "includeHiddenFolders",
+          "ChangeType": "Addition",
+          "Description": "Added documentation for the existing optional `includeHiddenFolders` parameter on the [List child folders](https://learn.microsoft.com/en-us/graph/api/mailboxfolder-list-childfolders?view=graph-rest-1.0) method on the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxfolder?view=graph-rest-1.0) resource.",
+          "Target": "mailboxFolder"
+        },
+        {
+          "Id": "7bf1262e-2849-4664-b358-c260913d734f",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "includeHiddenFolders",
+          "ChangeType": "Addition",
+          "Description": "Added documentation for the existing optional `includeHiddenFolders` parameter on the [List folders](https://learn.microsoft.com/en-us/graph/api/mailbox-list-folders?view=graph-rest-1.0) method on the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxfolder?view=graph-rest-1.0) resource.",
+          "Target": "mailboxFolder"
+        }
+      ],
+      "Id": "7bf1262e-2849-4664-b358-c260913d734f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-20T14:59:50.8067721Z",
+      "WorkloadArea": "Mailbox import and export",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "34fa0b14-2d7a-4fd8-8ce5-659d16aecf22",
           "ApiChange": "Property",
           "ChangedApiName": "isSharedWithMe",

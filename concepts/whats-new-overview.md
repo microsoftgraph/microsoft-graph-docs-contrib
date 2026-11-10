@@ -30,6 +30,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the [distributionList](/graph/api/resources/distributionlist) resource type and related methods for managing personal distribution lists in a user's mailbox. Use these APIs to create, read, update, and delete distribution lists, and add or remove members.
 - Promoted the [reportMessage](/graph/api/message-reportmessage) method on the [message](/graph/api/resources/message) resource from beta to v1.0. Use this method to report a message as junk, phishing, or not junk, which improves mail filtering.
 
+### Mailbox import and export
+
+- Added the **isHidden** property to the [mailboxFolder](/graph/api/resources/mailboxfolder) resource to identify hidden mailbox folders.
+- Use the existing **includeHiddenFolders** query parameter for [listing folders](/graph/api/mailbox-list-folders) and [listing child folders](/graph/api/mailboxfolder-list-childfolders). Set it to `true` to include both hidden and nonhidden folders.
+
 ## November 2026: New in preview only
 
 ### Identity and access | Directory management
