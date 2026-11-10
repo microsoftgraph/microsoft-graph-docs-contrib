@@ -6608,3 +6608,24 @@ Possible values for user account types (group membership), per Windows definitio
 |teams|
 |coldCrawl|
 |applications|
+
+
+### investigationInputType values
+
+|Member|
+|:---|
+|defenderIncidentId|
+|defenderAlertId|
+|defenderThreatIntelligenceId|
+|azureSubscriptionId|
+|azureIdentityId|
+|keyword|
+|unknownFutureValue|
+
+### investigationOutputType values
+
+|Member|
+|:---|
+|summary|
+|artifact|
+|unknownFutureValue|
