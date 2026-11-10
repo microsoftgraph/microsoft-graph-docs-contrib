@@ -4174,6 +4174,16 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 |granular|
 
+### retentionPeriodChangeStatus values
+
+|Member|
+|:---|
+|none|
+|inProgress|
+|failed|
+|completed|
+|unknownFutureValue|
+
 ### sharePointMigrationJobErrorLevel values
 
 |Member|

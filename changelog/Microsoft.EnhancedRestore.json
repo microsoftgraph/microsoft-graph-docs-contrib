@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "backupRetentionPeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **backupRetentionPeriodInDays** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionunitbase) resource.",
+          "Target": "protectionUnitBase"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "backupRetentionPeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **backupRetentionPeriodInDays** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteprotectionunit) resource.",
+          "Target": "siteProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "backupRetentionPeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **backupRetentionPeriodInDays** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxprotectionunit) resource.",
+          "Target": "mailboxProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "backupRetentionPeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **backupRetentionPeriodInDays** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveprotectionunit) resource.",
+          "Target": "driveProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "pendingRetentionPeriodChange",
+          "ChangeType": "Addition",
+          "Description": "Added the **pendingRetentionPeriodChange** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionunitbase) resource.",
+          "Target": "protectionUnitBase"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "pendingRetentionPeriodChange",
+          "ChangeType": "Addition",
+          "Description": "Added the **pendingRetentionPeriodChange** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteprotectionunit) resource.",
+          "Target": "siteProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "pendingRetentionPeriodChange",
+          "ChangeType": "Addition",
+          "Description": "Added the **pendingRetentionPeriodChange** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxprotectionunit) resource.",
+          "Target": "mailboxProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "pendingRetentionPeriodChange",
+          "ChangeType": "Addition",
+          "Description": "Added the **pendingRetentionPeriodChange** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveprotectionunit) resource.",
+          "Target": "driveProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionPeriodChange",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionPeriodChange](https://learn.microsoft.com/en-us/graph/api/resources/retentionperiodchange) resource type to describe pending protection-unit retention changes.",
+          "Target": "retentionPeriodChange"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "retentionPeriodChangeStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **retentionPeriodChangeStatus** enumeration type.",
+          "Target": "retentionPeriodChangeStatus"
+        }
+      ],
+      "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-22T10:16:00.0000000Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4e0c96f7-fdfa-466c-887a-7babb2b61e21",
           "ApiChange": "Property",
           "ChangedApiName": "createdBy",
