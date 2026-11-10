@@ -26,7 +26,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Mail
 
-Added the [distributionList](/graph/api/resources/distributionlist) resource type and related methods for managing personal distribution lists in a user's mailbox. Use these APIs to create, read, update, and delete distribution lists, and add or remove members.
+- Added the [distributionList](/graph/api/resources/distributionlist) resource type and related methods for managing personal distribution lists in a user's mailbox. Use these APIs to create, read, update, and delete distribution lists, and add or remove members.
+- Promoted the [reportMessage](/graph/api/message-reportmessage) method on the [message](/graph/api/resources/message) resource from beta to v1.0. Use this method to report a message as junk, phishing, or not junk, which improves mail filtering.
 
 ## November 2026: New in preview only
 

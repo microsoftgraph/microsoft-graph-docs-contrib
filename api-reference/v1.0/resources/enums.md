@@ -1984,6 +1984,16 @@ Possible types of Windows settings.
 | replyToAll |
 | review |
 
+### reportAction values
+
+|Member|
+|:---|
+|unknown|
+|junk|
+|notJunk|
+|phish|
+|unknownFutureValue|
+
 ### onenoteUserRole values
 
 | Member      | Value |
