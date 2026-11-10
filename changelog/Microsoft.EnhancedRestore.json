@@ -277,6 +277,40 @@
     {
       "ChangeList": [
         {
+          "Id": "02c6628f-d6fb-4660-a950-a4382dbb5e87",
+          "ApiChange": "Property",
+          "ChangedApiName": "error",
+          "ChangeType": "Addition",
+          "Description": "Added the **error** property to the [granularRestoreArtifactBase](https://learn.microsoft.com/en-us/graph/api/resources/granularrestoreartifactbase?view=graph-rest-1.0) resource.",
+          "Target": "granularRestoreArtifactBase"
+        },
+        {
+          "Id": "02c6628f-d6fb-4660-a950-a4382dbb5e87",
+          "ApiChange": "Property",
+          "ChangedApiName": "error",
+          "ChangeType": "Addition",
+          "Description": "Added the **error** property to the [granularSiteRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granularSiteRestoreArtifact?view=graph-rest-1.0) resource.",
+          "Target": "granularSiteRestoreArtifact"
+        },
+        {
+          "Id": "02c6628f-d6fb-4660-a950-a4382dbb5e87",
+          "ApiChange": "Property",
+          "ChangedApiName": "error",
+          "ChangeType": "Addition",
+          "Description": "Added the **error** property to the [granularDriveRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granularDriveRestoreArtifact?view=graph-rest-1.0) resource.",
+          "Target": "granularDriveRestoreArtifact"
+        }
+      ],
+      "Id": "02c6628f-d6fb-4660-a950-a4382dbb5e87",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-21T15:34:21.8265917Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7bd19147-f81e-47de-9ed8-ea52768e7127",
           "ApiChange": "Property",
           "ChangedApiName": "policyId",

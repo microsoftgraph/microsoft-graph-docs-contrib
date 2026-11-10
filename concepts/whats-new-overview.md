@@ -22,6 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
+- Added the **error** property to the [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase) resource and its derived types. Use this property to get error details when a granular restore operation for an individual artifact fails or completes with an error.
 - Added audit metadata to the [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem) resource. Use this metadata to identify when a file or folder was created or last modified and who made the change when you select items for granular restore.
 - Added support for tracking backup retention periods and pending retention changes on [protectionUnitBase](/graph/api/resources/protectionunitbase). Use the **backupRetentionPeriodInDays** and **pendingRetentionPeriodChange** properties to monitor protection units as they move between policies with different retention periods.
 
