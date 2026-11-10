@@ -3076,6 +3076,7 @@
         {
           "name": "Data security and compliance",
           "resources": [
+            "classificationGradingJobResponse",
             "contentActivity",
             "microsoft.graph.security.sensitivityLabel",
             "sensitiveType",
@@ -3096,6 +3097,7 @@
             "chunkOffsets",
             "classifcationErrorBase",
             "classificationError",
+            "classificationGradingContentLocation",
             "classificationInnerError",
             "classificationRequestContentMetaData",
             "computeRightsAndInheritanceResult",
@@ -3141,6 +3143,7 @@
             "restrictAccessAction",
             "restrictAccessActionBase",
             "scopeBase",
+            "sensitiveContentEvidence",
             "tenantScope",
             "textContent",
             "toolParticipant",
