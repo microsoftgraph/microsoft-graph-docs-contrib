@@ -35,6 +35,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Devices now support soft-deletion and restoration. When a device is deleted, it's moved to the [deleted items container](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) and can be restored within 30 days. After 30 days, it's permanently deleted.
 
+### Security | Case management
+
+- Removed support for the `$skip` query parameter in the [case management APIs](/graph/api/resources/security-casemanagementroot?view=graph-rest-beta&preserve-view=true). Update affected requests to omit `$skip`.
+
 ### Security | Data security and compliance
 
 Added the [classificationGradingJobResponse](/graph/api/resources/classificationgradingjobresponse?view=graph-rest-beta&preserve-view=true) resource type and [classificationGradingContentLocation](/graph/api/resources/classificationgradingcontentlocation?view=graph-rest-beta&preserve-view=true) complex type to return matched text and surrounding context through the optional **contextText** property in classification grading results.

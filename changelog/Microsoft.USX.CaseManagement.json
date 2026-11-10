@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "ba8e18a2-48a2-44d5-9a4d-fe953e9230c9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "cases",
+          "ChangeType": "Change",
+          "Description": "Removed support for the `$skip` query parameter when [listing cases](https://learn.microsoft.com/en-us/graph/api/security-casemanagementroot-list-cases?view=graph-rest-beta).",
+          "Target": "caseManagementRoot"
+        },
+        {
+          "Id": "ba8e18a2-48a2-44d5-9a4d-fe953e9230c9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customFields",
+          "ChangeType": "Change",
+          "Description": "Removed support for the `$skip` query parameter when [listing custom-field definitions](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-casetypeconfiguration-list-customfields?view=graph-rest-beta).",
+          "Target": "caseTypeConfiguration"
+        },
+        {
+          "Id": "ba8e18a2-48a2-44d5-9a4d-fe953e9230c9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "slaPolicies",
+          "ChangeType": "Change",
+          "Description": "Removed support for the `$skip` query parameter when [listing SLA policies](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-casetypeconfiguration-list-slapolicies?view=graph-rest-beta).",
+          "Target": "caseTypeConfiguration"
+        },
+        {
+          "Id": "ba8e18a2-48a2-44d5-9a4d-fe953e9230c9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "statuses",
+          "ChangeType": "Change",
+          "Description": "Removed support for the `$skip` query parameter when [listing statuses](https://learn.microsoft.com/en-us/graph/api/security-casemanagement-casetypeconfiguration-list-statuses?view=graph-rest-beta).",
+          "Target": "caseTypeConfiguration"
+        }
+      ],
+      "Id": "ba8e18a2-48a2-44d5-9a4d-fe953e9230c9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-02T12:57:16.4099400Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Case management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "45091c08-511e-4876-b2f0-898144420942",
           "ApiChange": "Resource",
           "ChangedApiName": "slaPolicyDefinition",
