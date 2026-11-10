@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 10/06/2026
+ms.date: 10/08/2026
 ms.topic: whats-new
 ---
 
@@ -24,6 +24,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Added audit metadata to the [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem) resource. Use this metadata to identify when a file or folder was created or last modified and who made the change when you select items for granular restore.
 - Added support for tracking backup retention periods and pending retention changes on [protectionUnitBase](/graph/api/resources/protectionunitbase). Use the **backupRetentionPeriodInDays** and **pendingRetentionPeriodChange** properties to monitor protection units as they move between policies with different retention periods.
+
+### Identity and access | Directory management
+
+- Added the **isPrivileged** property to the [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition) resource type. Use it to identify roles that contain sensitive Microsoft Entra resource actions.
 
 ### Mail
 

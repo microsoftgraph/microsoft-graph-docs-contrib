@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "7af7a8fb-dd52-4972-ab2e-52de8a2ab65d",
+          "ApiChange": "Property",
+          "ChangedApiName": "isPrivileged",
+          "ChangeType": "Addition",
+          "Description": "Added the **isPrivileged** property to the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-1.0) resource.",
+          "Target": "unifiedRoleDefinition"
+        }
+      ],
+      "Id": "7af7a8fb-dd52-4972-ab2e-52de8a2ab65d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-22T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b5db641e-719d-40fc-aa23-7e55d7df97dc",
           "ApiChange": "Property",
           "ChangedApiName": "kerberosTicket",
