@@ -13,6 +13,14 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### resourceQuotaType values
+
+|Member|
+|:---|
+|agentIdentityBlueprint|
+|agentIdentity|
+|managedIdentity|
+
 ### errorActions values
 
 This flagged enumeration identifies the actions taken when policy evaluation couldn't be completed. Values can be combined; for example, `audit,block` indicates that the activity was audited and blocked. Don't combine `none` with another value.

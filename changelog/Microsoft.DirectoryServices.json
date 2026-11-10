@@ -16675,6 +16675,40 @@
       "CreatedDateTime": "2026-07-01T00:29:28.9774225Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c6197f99-8ff1-4470-8b36-7a81d1bd07e2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "resourceQuotaType",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceQuotaType** enumeration type.",
+          "Target": "resourceQuotaType"
+        },
+        {
+          "Id": "c6197f99-8ff1-4470-8b36-7a81d1bd07e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceQuota",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceQuota](https://learn.microsoft.com/en-us/graph/api/resources/resourcequota?view=graph-rest-beta) resource.",
+          "Target": "resourceQuota"
+        },
+        {
+          "Id": "c6197f99-8ff1-4470-8b36-7a81d1bd07e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceQuotas",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceQuotas** property to the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "c6197f99-8ff1-4470-8b36-7a81d1bd07e2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-10T18:00:25.2569515Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
