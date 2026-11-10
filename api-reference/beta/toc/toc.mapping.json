@@ -2923,6 +2923,23 @@
           ]
         },
         {
+          "name": "Agentic security",
+          "overview": "../../resources/agenticsecurity-apioverview.md",
+          "resources": [
+            "agenticSecurityRoot",
+            "agentRun",
+            "investigationInput",
+            "investigationOutput",
+            "investigationSession",
+            "playbookDefinition"
+          ],
+          "complexTypes": [
+            "agentInfo",
+            "agentRunFailureInfo",
+            "investigationIdentitySet"
+          ]
+        },
+        {
           "name": "Alerts and incidents",
           "resources": [
             "microsoft.graph.security.alert",

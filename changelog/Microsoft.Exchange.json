@@ -3,6 +3,50 @@
     {
       "ChangeList": [
         {
+          "Id": "7de11fcc-a1c4-40a6-ad4e-705c5a3c4591",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "IsMessageMoveRequested",
+          "ChangeType": "Change",
+          "Description": "Changed the **IsMessageMoveRequested** parameter from required to optional in the [reportMessage](https://learn.microsoft.com/en-us/graph/api/message-reportmessage?view=graph-rest-beta) method.",
+          "Target": "reportMessage"
+        }
+      ],
+      "Id": "7de11fcc-a1c4-40a6-ad4e-705c5a3c4591",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-05T19:30:26.2130800Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c5505436-7a8f-47c6-92a5-5486c9f53ed6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "reportAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **reportAction** enumeration type.",
+          "Target": "reportAction"
+        },
+        {
+          "Id": "c5505436-7a8f-47c6-92a5-5486c9f53ed6",
+          "ApiChange": "Method",
+          "ChangedApiName": "reportMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [reportMessage](https://learn.microsoft.com/en-us/graph/api/message-reportmessage?view=graph-rest-1.0) method to the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) resource.",
+          "Target": "message"
+        }
+      ],
+      "Id": "c5505436-7a8f-47c6-92a5-5486c9f53ed6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-11-02T17:11:32.2454468Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "dd81e826-7ee7-45ba-8e22-d8950c73a59c",
           "ApiChange": "Enumeration",
           "ChangedApiName": "recipientType",
@@ -64,6 +108,40 @@
       "Version": "v1.0",
       "CreatedDateTime": "2026-10-21T15:40:39.2300975Z",
       "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7bf1262e-2849-4664-b358-c260913d734f",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHidden",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHidden** property to the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxfolder?view=graph-rest-1.0) resource.",
+          "Target": "mailboxFolder"
+        },
+        {
+          "Id": "7bf1262e-2849-4664-b358-c260913d734f",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "includeHiddenFolders",
+          "ChangeType": "Addition",
+          "Description": "Added documentation for the existing optional `includeHiddenFolders` parameter on the [List child folders](https://learn.microsoft.com/en-us/graph/api/mailboxfolder-list-childfolders?view=graph-rest-1.0) method on the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxfolder?view=graph-rest-1.0) resource.",
+          "Target": "mailboxFolder"
+        },
+        {
+          "Id": "7bf1262e-2849-4664-b358-c260913d734f",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "includeHiddenFolders",
+          "ChangeType": "Addition",
+          "Description": "Added documentation for the existing optional `includeHiddenFolders` parameter on the [List folders](https://learn.microsoft.com/en-us/graph/api/mailbox-list-folders?view=graph-rest-1.0) method on the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxfolder?view=graph-rest-1.0) resource.",
+          "Target": "mailboxFolder"
+        }
+      ],
+      "Id": "7bf1262e-2849-4664-b358-c260913d734f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-20T14:59:50.8067721Z",
+      "WorkloadArea": "Mailbox import and export",
       "SubArea": ""
     },
     {

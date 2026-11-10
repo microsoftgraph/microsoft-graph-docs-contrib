@@ -31,6 +31,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|agenticSecurity|[agenticSecurityRoot](../resources/agenticsecurityroot.md)|The entry point for playbook-driven security investigation sessions and the read-only playbook catalog.|
 |alerts |[alert](../resources/alert.md) collection|Notifications for suspicious or potential security issues in a customer's tenant.|
 |alerts_v2 | [microsoft.graph.security.alert](security-alert.md) collection | A collection of alerts in Microsoft 365 Defender.|
 |auditLog|[microsoft.graph.security.auditCoreRoot](../resources/security-auditcoreroot.md)|The entry point for Microsoft Purview audit log queries and operations.|

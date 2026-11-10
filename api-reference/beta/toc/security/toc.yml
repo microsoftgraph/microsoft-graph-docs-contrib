@@ -28,6 +28,82 @@ items:
     href: ../../resources/security-huntingrowresult.md
   - name: Single property schema
     href: ../../resources/security-singlepropertyschema.md
+- name: Agentic security
+  items:
+  - name: Overview
+    href: ../../resources/agenticsecurity-apioverview.md
+  - name: Agentic security root
+    items:
+    - name: Agentic security root
+      href: ../../resources/agenticsecurityroot.md
+    - name: List playbookDefinitions
+      href: ../../api/agenticsecurityroot-list-playbookdefinitions.md
+    - name: List sessions
+      href: ../../api/agenticsecurityroot-list-sessions.md
+    - name: Create session
+      href: ../../api/agenticsecurityroot-post-sessions.md
+  - name: Agent run
+    items:
+    - name: Agent run
+      href: ../../resources/agentrun.md
+    - name: List agentRuns
+      href: ../../api/investigationsession-list-agentruns.md
+    - name: Get
+      href: ../../api/agentrun-get.md
+  - name: Investigation input
+    items:
+    - name: Investigation input
+      href: ../../resources/investigationinput.md
+    - name: List inputs
+      href: ../../api/investigationsession-list-inputs.md
+    - name: Get
+      href: ../../api/investigationinput-get.md
+  - name: Investigation output
+    items:
+    - name: Investigation output
+      href: ../../resources/investigationoutput.md
+    - name: List outputs
+      href: ../../api/investigationsession-list-outputs.md
+    - name: Get
+      href: ../../api/investigationoutput-get.md
+    - name: Get content
+      href: ../../api/investigationoutput-get-content.md
+  - name: Investigation session
+    items:
+    - name: Investigation session
+      href: ../../resources/investigationsession.md
+    - name: List sessions
+      href: ../../api/agenticsecurityroot-list-sessions.md
+    - name: Create
+      href: ../../api/agenticsecurityroot-post-sessions.md
+    - name: Get
+      href: ../../api/investigationsession-get.md
+    - name: 'investigationSession: cancel'
+      href: ../../api/investigationsession-cancel.md
+    - name: List inputs
+      href: ../../api/investigationsession-list-inputs.md
+    - name: List outputs
+      href: ../../api/investigationsession-list-outputs.md
+    - name: List agentRuns
+      href: ../../api/investigationsession-list-agentruns.md
+    - name: Get playbookDefinition
+      href: ../../api/playbookdefinition-get.md
+  - name: Playbook definition
+    items:
+    - name: Playbook definition
+      href: ../../resources/playbookdefinition.md
+    - name: List
+      href: ../../api/agenticsecurityroot-list-playbookdefinitions.md
+    - name: Get
+      href: ../../api/playbookdefinition-get.md
+  - name: Complex types
+    items:
+    - name: Agent info
+      href: ../../resources/agentinfo.md
+    - name: Agent run failure info
+      href: ../../resources/agentrunfailureinfo.md
+    - name: Investigation identity set
+      href: ../../resources/investigationidentityset.md
 - name: Alerts and incidents
   items:
   - name: Alert
@@ -642,6 +718,8 @@ items:
       href: ../../resources/security-urlentitymapping.md
 - name: Data security and compliance
   items:
+  - name: Classification grading job response
+    href: ../../resources/classificationgradingjobresponse.md
   - name: Content activity
     items:
     - name: Content activity
@@ -720,6 +798,8 @@ items:
       href: ../../resources/classifcationerrorbase.md
     - name: Classification error
       href: ../../resources/classificationerror.md
+    - name: Classification grading content location
+      href: ../../resources/classificationgradingcontentlocation.md
     - name: Classification inner error
       href: ../../resources/classificationinnererror.md
     - name: Classification request content meta data
@@ -808,6 +888,8 @@ items:
       href: ../../resources/restrictaccessactionbase.md
     - name: Scope base
       href: ../../resources/scopebase.md
+    - name: Sensitive content evidence
+      href: ../../resources/sensitivecontentevidence.md
     - name: Tenant scope
       href: ../../resources/tenantscope.md
     - name: Text content

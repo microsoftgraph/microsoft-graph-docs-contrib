@@ -2,7 +2,7 @@
 title: "List childFolders"
 description: "Get the mailboxFolder collection under the specified mailboxFolder in a mailbox."
 author: "cparker-msft"
-ms.date: 08/06/2026
+ms.date: 10/20/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -13,6 +13,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the [mailboxFolder](../resources/mailboxfolder.md) collection under the specified [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.
+
+By default, hidden child folders aren't returned. To include them, specify `includeHiddenFolders=true`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,9 +39,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders
 ```
 
-## Optional query parameters
+## Query parameters
 
-This method supports the `$select`, `$filter`, `$top`, `$skip`, `$orderby`, `$count`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following optional query parameter.
+
+| Parameter | Type | Description |
+|:---|:---|:---|
+| includeHiddenFolders | Boolean | The default value is `false`. Set it to `true` to include both hidden and nonhidden child folders, and use the **isHidden** property to distinguish them. If you use `$select`, include **isHidden** to return the property. |
+
+This method also supports the `$select`, `$filter`, `$top`, `$skip`, `$orderby`, `$count`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -57,7 +65,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List child folders
+
+#### Request
 
 The following example shows how to get the mailbox folder collection under a specified folder.
 
@@ -98,7 +108,7 @@ GET https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -111,7 +121,6 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders('NJWt2LeVEAAAIBDAAAAA==')/childFolders",
@@ -120,6 +129,7 @@ Content-length: 232
             "@odata.type": "#microsoft.graph.mailboxFolder",
             "id": "EDSVrdi3lRAAEvNS16AAA=",
             "displayName": "Folder_1",
+            "isHidden": false,
             "parentFolderId": "NJWt2LeVEAAAIBDAAAAA==",
             "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "childFolderCount": 0,
@@ -131,6 +141,7 @@ Content-length: 232
             "@odata.type": "#microsoft.graph.mailboxFolder",
             "id": "EDSVrdi3lRAAEED0yTAAA=",
             "displayName": "Folder_2",
+            "isHidden": false,
             "parentFolderId": "NJWt2LeVEAAAIBDAAAAA==",
             "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "childFolderCount": 0,
@@ -139,5 +150,53 @@ Content-length: 232
             "type": "IPF.Note"
         }
     ]
+}
+```
+
+### Example 2: Include hidden child folders
+
+The following example shows how to include both hidden and nonhidden immediate child folders. The query parameter doesn't make the request recursive.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_mailboxfolder_childfolders_including_hidden",
+  "sampleKeys": ["MBX:e0643f21@a7809c93", "NJWt2LeVEAAAIBDAAAAA=="]
+}
+-->
+```http
+GET https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/NJWt2LeVEAAAIBDAAAAA==/childFolders?includeHiddenFolders=true&$select=id,displayName,isHidden
+```
+
+#### Response
+
+The following example shows the response shortened for readability. If the response includes **@odata.nextLink**, use the entire URL unchanged to retrieve the next page.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.mailboxFolder)"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "EDSVrdi3lRAAEvNS16AAA=",
+      "displayName": "Folder_1",
+      "isHidden": false
+    },
+    {
+      "id": "EDSVrdi3lRAAEED0yUAAA=",
+      "displayName": "Application data",
+      "isHidden": true
+    }
+  ]
 }
 ```

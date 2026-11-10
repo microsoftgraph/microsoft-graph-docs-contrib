@@ -1984,6 +1984,16 @@ Possible types of Windows settings.
 | replyToAll |
 | review |
 
+### reportAction values
+
+|Member|
+|:---|
+|unknown|
+|junk|
+|notJunk|
+|phish|
+|unknownFutureValue|
+
 ### onenoteUserRole values
 
 | Member      | Value |
@@ -4163,6 +4173,16 @@ Possible values for user account types (group membership), per Windows definitio
 |bulk|
 |unknownFutureValue|
 |granular|
+
+### retentionPeriodChangeStatus values
+
+|Member|
+|:---|
+|none|
+|inProgress|
+|failed|
+|completed|
+|unknownFutureValue|
 
 ### sharePointMigrationJobErrorLevel values
 

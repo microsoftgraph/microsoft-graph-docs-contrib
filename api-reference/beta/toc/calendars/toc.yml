@@ -220,8 +220,6 @@ items:
     href: ../../api/calendargroup-list-calendars.md
   - name: Create calendar in calendar group
     href: ../../api/calendargroup-post-calendars.md
-  - name: Create calendar in calendar group
-    href: ../../api/calendargroup-post-calendars.md
 - name: Calendar permission
   items:
   - name: Calendar permission

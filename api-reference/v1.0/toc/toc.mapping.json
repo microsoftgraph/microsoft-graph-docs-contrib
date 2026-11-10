@@ -167,7 +167,8 @@
           ],
           "complexTypes": [
             "backupCountStatistics",
-            "backupPolicyReport"
+            "backupPolicyReport",
+            "retentionPeriodChange"
           ],
           "childNodes": [
             {
