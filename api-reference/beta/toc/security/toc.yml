@@ -624,6 +624,30 @@ items:
     items:
     - name: Audit info
       href: ../../resources/security-auditinfo.md
+- name: Content management (preview)
+  items:
+  - name: Content management root
+    items:
+    - name: Content management root
+      href: ../../resources/contentmanagementroot.md
+    - name: List repositories
+      href: ../../api/contentmanagementroot-list-repositories.md
+  - name: Content management repository
+    items:
+    - name: Content management repository
+      href: ../../resources/security-contentmanagement-contentmanagementrepository.md
+    - name: List
+      href: ../../api/contentmanagementroot-list-repositories.md
+    - name: Get
+      href: ../../api/security-contentmanagement-contentmanagementrepository-get.md
+    - name: Connect
+      href: ../../api/security-contentmanagement-contentmanagementrepository-connect.md
+    - name: Discover available repositories
+      href: ../../api/security-contentmanagement-contentmanagementrepository-discoveravailablerepositories.md
+    - name: Modify
+      href: ../../api/security-contentmanagement-contentmanagementrepository-modify.md
+    - name: Disconnect
+      href: ../../api/security-contentmanagement-contentmanagementrepository-disconnect.md
 - name: Custom detection rules
   items:
   - name: Detection rule
