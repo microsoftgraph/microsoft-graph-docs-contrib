@@ -19,7 +19,7 @@ applying [state tokens](/graph/delta-query-overview) in one or more of these cal
 that folder](/graph/delta-query-messages). It allows you to maintain and synchronize a local store of a user's messages without
 having to fetch the entire set of messages from the server every time.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

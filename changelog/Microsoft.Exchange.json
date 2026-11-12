@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "4d492d10-f78c-4b8d-b926-dcf099f4c154",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Change",
+          "Description": "Updated national cloud availability of the [delta](https://learn.microsoft.com/en-us/graph/api/mailfolder-delta?view=graph-rest-1.0) method on the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-1.0) resource to include China operated by 21Vianet.",
+          "Target": "mailFolder"
+        },
+        {
+          "Id": "4d492d10-f78c-4b8d-b926-dcf099f4c154",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Change",
+          "Description": "Updated national cloud availability of the [delta](https://learn.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-1.0) method on the [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) resource to include China operated by 21Vianet.",
+          "Target": "message"
+        }
+      ],
+      "Id": "4d492d10-f78c-4b8d-b926-dcf099f4c154",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-27T21:03:29.5899674Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7de11fcc-a1c4-40a6-ad4e-705c5a3c4591",
           "ApiChange": "Parameter",
           "ChangedApiName": "IsMessageMoveRequested",
