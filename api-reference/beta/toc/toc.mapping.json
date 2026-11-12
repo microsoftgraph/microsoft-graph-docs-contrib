@@ -3046,6 +3046,13 @@
           ]
         },
         {
+          "name": "Content management (preview)",
+          "resources": [
+            "contentManagementRoot",
+            "microsoft.graph.security.contentManagement.contentManagementRepository"
+          ]
+        },
+        {
           "name": "Custom detection rules",
           "resources": [
             "microsoft.graph.security.detectionRule"

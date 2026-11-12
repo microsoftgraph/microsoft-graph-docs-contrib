@@ -38,6 +38,7 @@ None.
 |attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.|
 |caseManagement|[microsoft.graph.security.caseManagementRoot](../resources/security-casemanagementroot.md)|The entry point for security case management APIs, including cases, tasks, activities, relations, and attachments.|
 |collaboration|[microsoft.graph.security.collaborationRoot](../resources/security-collaborationroot.md)|Enables read and other actions on collaborative entities in Microsoft Defender.|
+|contentManagement|[contentManagementRoot](../resources/contentmanagementroot.md)|The entry point for Microsoft Security content management APIs, including connected source-control repositories.|
 |identities|[microsoft.graph.security.identityContainer](../resources/security-identityContainer.md)|A container for security identities APIs.|
 |incidentTasks|[microsoft.graph.security.incidentTask](security-incidenttask.md) collection|A collection of tasks associated with security incidents.|
 |incidents | [microsoft.graph.security.incident](security-incident.md) collection | A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.|
