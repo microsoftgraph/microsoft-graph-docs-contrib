@@ -20,7 +20,7 @@ List the shared input references contained by an agentic session. This operation
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "investigationsession_list_inputs_permissions" } -->
+<!-- { "blockType": "permissions", "name": "investigationsession_list_inputs" } -->
 [!INCLUDE [permissions-table](../includes/permissions/investigationsession-list-inputs-permissions.md)]
 
 The signed-in user must have access to the requested resources. Granting an OAuth permission does not override the service's access controls.
