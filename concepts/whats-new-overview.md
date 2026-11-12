@@ -41,6 +41,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the **isHidden** property to the [mailboxFolder](/graph/api/resources/mailboxfolder) resource to identify hidden mailbox folders.
 - Use the existing **includeHiddenFolders** query parameter for [listing folders](/graph/api/mailbox-list-folders) and [listing child folders](/graph/api/mailboxfolder-list-childfolders). Set it to `true` to include both hidden and nonhidden folders.
 
+### Security | Data security and compliance
+
+- Added the `copyToClipboard`, `pasteFromClipboard`, `print`, and `accessDebugTools` members to the **userActivityType** and **userActivityTypes** enumerations in v1.0. These enumerations are used by [activityMetadata](/graph/api/resources/activitymetadata) and [policyScopeBase](/graph/api/resources/policyscopebase) to represent activities evaluated against data protection policies. Use the `Prefer: include-unknown-enum-members` request header to retrieve these values.
+
 ## November 2026: New in preview only
 
 ### Backup and recovery | Microsoft 365 backup and storage
