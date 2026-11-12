@@ -1,0 +1,118 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "investigationInputType",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationInputType** enumeration type.",
+          "Target": "investigationInputType"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "investigationOutputType",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationOutputType** enumeration type.",
+          "Target": "investigationOutputType"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentInfo](https://learn.microsoft.com/en-us/graph/api/resources/agentinfo?view=graph-rest-beta) resource.",
+          "Target": "agentInfo"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentRunFailureInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentRunFailureInfo](https://learn.microsoft.com/en-us/graph/api/resources/agentrunfailureinfo?view=graph-rest-beta) resource.",
+          "Target": "agentRunFailureInfo"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "investigationIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [investigationIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/investigationidentityset?view=graph-rest-beta) resource.",
+          "Target": "investigationIdentitySet"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agenticSecurityRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [agenticSecurityRoot](https://learn.microsoft.com/en-us/graph/api/resources/agenticsecurityroot?view=graph-rest-beta) resource and associated methods.",
+          "Target": "agenticSecurityRoot"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentRun",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentRun](https://learn.microsoft.com/en-us/graph/api/resources/agentrun?view=graph-rest-beta) resource and associated methods.",
+          "Target": "agentRun"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "investigationInput",
+          "ChangeType": "Addition",
+          "Description": "Added the [investigationInput](https://learn.microsoft.com/en-us/graph/api/resources/investigationinput?view=graph-rest-beta) resource and associated methods.",
+          "Target": "investigationInput"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "investigationOutput",
+          "ChangeType": "Addition",
+          "Description": "Added the [investigationOutput](https://learn.microsoft.com/en-us/graph/api/resources/investigationoutput?view=graph-rest-beta) resource and associated methods.",
+          "Target": "investigationOutput"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "investigationSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [investigationSession](https://learn.microsoft.com/en-us/graph/api/resources/investigationsession?view=graph-rest-beta) resource and associated methods.",
+          "Target": "investigationSession"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "playbookDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [playbookDefinition](https://learn.microsoft.com/en-us/graph/api/resources/playbookdefinition?view=graph-rest-beta) resource and associated methods.",
+          "Target": "playbookDefinition"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "agenticSecurity",
+          "ChangeType": "Addition",
+          "Description": "Added the **agenticSecurity** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/investigationsession-cancel?view=graph-rest-beta) method to the [investigationSession](https://learn.microsoft.com/en-us/graph/api/resources/investigationsession?view=graph-rest-beta) resource.",
+          "Target": "investigationSession"
+        }
+      ],
+      "Id": "8aff748b-f5e9-4c52-bfb3-da206ac753a0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-02T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Agentic security"
+    }
+  ]
+}

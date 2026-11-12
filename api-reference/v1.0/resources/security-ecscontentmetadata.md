@@ -1,5 +1,6 @@
 ---
 title: "ecsContentMetadata resource type"
+toc.title: "ECS content metadata"
 description: "Represents audit data for ECS Content Metadata events."
 author: "diksha27"
 ms.date: 10/06/2026

@@ -50,6 +50,8 @@ GET /users
 ```
 
 ## Optional query parameters
+
+Use `$select` to retrieve **isHardDeleteProtectionEnabled**, which isn't returned by default. The property supports `$filter` with the `eq` operator.
 This method supports [OData query parameters](/graph/query-parameters) to help customize the response:
 
 - `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, `$top`. `$skip` is not supported.
@@ -1412,6 +1414,36 @@ Content-Type: application/json
             "displayName": "Fung Lu",
             "id": "146f9fcb-64c9-4b6e-b92f-bd4892fabdcd"
         }
+  ]
+}
+```
+
+### Example 18: List users with hard deletion protection enabled
+
+#### Request
+
+Filter for protected users and explicitly select their protection status.
+
+<!-- { "blockType": "request", "name": "list_users_hard_delete_protection" } -->
+```http
+GET https://graph.microsoft.com/beta/users?$filter=isHardDeleteProtectionEnabled eq true&$select=id,displayName,isHardDeleteProtectionEnabled
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.user", "isCollection": true } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,isHardDeleteProtectionEnabled)",
+  "value": [
+    {
+      "id": "04b9f5a2-ee41-4d0e-b500-8de414d178c9",
+      "displayName": "Adele Vance",
+      "isHardDeleteProtectionEnabled": true
+    }
   ]
 }
 ```

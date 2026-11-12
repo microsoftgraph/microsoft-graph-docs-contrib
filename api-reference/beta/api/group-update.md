@@ -36,6 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions for specific scenarios
 
+- To set **isHardDeleteProtectionEnabled** to `true`, the app requires the *HardDeletionSetting.ReadWrite.Enable* delegated or application permission. The caller must also have the *Microsoft Entra Backup Administrator* role.
 - *Group.ManageProtection.All* delegated permission is the least privileged permission to update the **assignedLabels** property for cloud security groups and **writebackConfiguration** property for all groups. App-only scenarios aren't supported.
 
 ## HTTP request
@@ -65,6 +66,7 @@ The following table specifies the properties that can be updated.
 | autoSubscribeNewMembers | Boolean | Default is `false`. Indicates whether new members added to the group will be auto-subscribed to receive email notifications. **autoSubscribeNewMembers** can't be `true` when **subscriptionEnabled** is set to `false` on the group.                                                                                                                                                                                                                                                        |
 | description             | String  | An optional description for the group.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | displayName             | String  | The display name for the group. This property is required when a group is created and it cannot be cleared during updates.                                                                                                                                                                                                                                                                                                                                                                   |
+| isHardDeleteProtectionEnabled | Boolean | Set to `true` to enable hard deletion protection on an existing cloud-only group. Once enabled, it can't be set to `false` or `null`. Protection blocks permanent deletion for seven days after soft deletion; it doesn't prevent soft deletion or restoration. |
 | mailNickname            | String  | The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`.                                                                                                                                                             |
 | preferredDataLocation   | String  | The preferred data location for the Microsoft 365 group. To update this property, the calling user must be assigned at least one of the following Microsoft Entra roles: <br><ul><li> User Account Administrator <li> Directory Writer <li> Exchange Administrator <li> SharePoint Administrator </ul> <br/>For more information about this property, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | securityEnabled         | Boolean | Specifies whether the group is a security group, including Microsoft 365 groups.                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -81,6 +83,8 @@ The following table specifies the properties that can be updated.
 > - The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
 > - Application permissions are not supported when updating assignedLabels. *Group.ManageProtection.All* is the least privileged permission to update **assignedLabels** for cloud security groups.
 
+
+Enabling **isHardDeleteProtectionEnabled** during group creation isn't supported. Create the group first, then enable protection with a separate PATCH request.
 
 ### Manage extensions and associated data
 
@@ -232,6 +236,29 @@ The following example shows the response.
   "blockType": "response"
 } -->
 
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Enable hard deletion protection for a group
+
+Once enabled, hard deletion protection can't be disabled. Use an existing cloud-only group and the permissions and role described in [Permissions for specific scenarios](#permissions-for-specific-scenarios).
+
+#### Request
+
+<!-- { "blockType": "request", "name": "update_group_hard_delete_protection" } -->
+```http
+PATCH https://graph.microsoft.com/beta/groups/0d09007d-45b2-458c-b180-880dde3a302e
+Content-Type: application/json
+
+{
+  "isHardDeleteProtectionEnabled": true
+}
+```
+
+#### Response
+
+<!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 204 No Content
 ```

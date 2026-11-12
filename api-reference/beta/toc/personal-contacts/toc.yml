@@ -142,5 +142,5 @@ items:
       href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Complex types
   items:
-  - name: Member (preview)
+  - name: Member
     href: ../../resources/member.md

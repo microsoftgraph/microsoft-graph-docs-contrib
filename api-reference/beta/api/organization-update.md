@@ -57,6 +57,7 @@ In the request body, supply the values for relevant fields that should be update
 |postalCode|String| Postal code of the address for the organization. |
 |preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example, en. |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
+|resourceQuotas|[resourceQuota](../resources/resourcequota.md) collection|The quota configurations for resource types in the organization. Each `resourceType` value must be unique. Set **maxPercentage** from `0` to `100`; a value of `0` blocks creation of new resources of that type. |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
 |state|String| State name of the address for the organization. |
@@ -86,6 +87,12 @@ Content-type: application/json
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "resourceQuotas": [
+    {
+      "resourceType": "agentIdentity",
+      "maxPercentage": 70
+    }
+  ],
   "onPremisesSyncEnabled" : true,
   "privacyProfile" :
     {

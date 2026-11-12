@@ -1,5 +1,6 @@
 ---
 title: "aiGuardrail resource type"
+toc.title: "AI guardrail"
 description: "Represents audit data for AI Guardrail events."
 author: "diksha27"
 ms.date: 9/29/2026

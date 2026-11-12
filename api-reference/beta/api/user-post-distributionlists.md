@@ -1,6 +1,6 @@
 ---
 title: "Create distributionList"
-description: "Create a new distributionList in the user's mailbox."
+description: "Create a new personal distribution list in the user's mailbox."
 author: "kemwangi"
 ms.date: 06/09/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [distributionList](../resources/distributionlist.md) in the user's mailbox.
+Create a new [personal distribution list](../resources/distributionlist.md) in the user's mailbox.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

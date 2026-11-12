@@ -301,6 +301,15 @@ Namespace: microsoft.graph.security
 | prevented
 | unknownFutureValue
 
+### detectionRuleStatus values
+
+| Member             |
+| :----------------- |
+| enabled            |
+| disabled           |
+| autoDisabled       |
+| unknownFutureValue |
+
 ### eventPropagationStatus values
 
 | Member             |
