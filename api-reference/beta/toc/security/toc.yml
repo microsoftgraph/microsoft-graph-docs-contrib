@@ -636,17 +636,17 @@ items:
     items:
     - name: Content management repository
       href: ../../resources/security-contentmanagement-contentmanagementrepository.md
-    - name: List
+    - name: List repositories
       href: ../../api/contentmanagementroot-list-repositories.md
-    - name: Get
+    - name: Get contentManagementRepository
       href: ../../api/security-contentmanagement-contentmanagementrepository-get.md
-    - name: Connect
+    - name: 'contentManagementRepository: connect'
       href: ../../api/security-contentmanagement-contentmanagementrepository-connect.md
-    - name: Discover available repositories
+    - name: 'contentManagementRepository: discoverAvailableRepositories'
       href: ../../api/security-contentmanagement-contentmanagementrepository-discoveravailablerepositories.md
-    - name: Modify
+    - name: 'contentManagementRepository: modify'
       href: ../../api/security-contentmanagement-contentmanagementrepository-modify.md
-    - name: Disconnect
+    - name: 'contentManagementRepository: disconnect'
       href: ../../api/security-contentmanagement-contentmanagementrepository-disconnect.md
 - name: Custom detection rules
   items:
