@@ -2,7 +2,7 @@
 title: "message: reportMessage"
 description: "Report a message as junk, phishing, or not junk, which improves mail filtering."
 author: "ka-gunase"
-ms.date: 07/09/2025
+ms.date: 11/05/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -47,12 +47,12 @@ POST /users/{userId}/messages/{messageId}/reportMessage
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table lists the parameters that are required when you call this action.
+The following table lists the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|IsMessageMoveRequested|Boolean|Indicates whether the message should be moved out of current folder.|
-|ReportAction|reportAction|Indicates the type of action to be reported on the message that can be junk, not junk, or phishing. The possible values are: `unknown`, `junk`, `notJunk`, `phish`, `unknownFutureValue`. |
+|IsMessageMoveRequested|Boolean|Indicates whether the message should be moved out of the current folder. Optional.|
+|ReportAction|reportAction|Indicates the type of action to be reported on the message that can be junk, not junk, or phishing. The possible values are: `unknown`, `junk`, `notJunk`, `phish`, `unknownFutureValue`. Required.|
 
 ## Response
 
@@ -64,7 +64,6 @@ If successful, this action returns a `200 OK` response code and a [message](../r
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "messagethis.reportmessage"
@@ -75,36 +74,10 @@ POST https://graph.microsoft.com/beta/me/messages/AAMkADhAAATs28OAAA=/reportMess
 Content-Type: application/json
 
 {
-  "IsMessageMoveRequested": "true",
+  "IsMessageMoveRequested": true,
   "ReportAction": "junk"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/messagethisreportmessage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/messagethisreportmessage-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/messagethisreportmessage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/messagethisreportmessage-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/messagethisreportmessage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/messagethisreportmessage-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

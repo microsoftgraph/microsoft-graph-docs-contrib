@@ -32,6 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-serviceprincipal-apis-create-update-upsert](../includes/rbac-for-apis/rbac-serviceprincipal-apis-create-update-upsert.md)]
 
 ### Permissions for specific scenarios
+- To set **isHardDeleteProtectionEnabled** to `true`, the app requires the *HardDeletionSetting.ReadWrite.Enable* delegated or application permission. The caller must also have the *Microsoft Entra Backup Administrator* role. The standard application-management roles alone don't grant permission to enable hard deletion protection.
 - To update the **customSecurityAttributes** property:
   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* delegated permission.
   - In app-only scenarios using Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* application permission.
@@ -63,6 +64,7 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|The display name for the service principal.|
 |homepage|String|Home page or landing page of the application.|
 | isDisabled | Boolean | Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources. When set to `true`, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.`true` if the application is deactivated (disabled); otherwise `false`.| 
+| isHardDeleteProtectionEnabled | Boolean | Set to `true` to enable hard deletion protection on an existing service principal. Once enabled, it can't be set to `false` or `null`. Protection blocks permanent deletion for seven days after soft deletion; it doesn't prevent soft deletion or restoration. |
 |keyCredentials|[keyCredential](../resources/keycredential.md) collection|The collection of key credentials associated with the service principal. Not nullable.            |
 |loginUrl|String|Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate. Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps. When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with [SAML-based single sign-on](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). The user launches the application from Microsoft 365, the Microsoft Entra My Apps, or the Microsoft Entra SSO URL.|
 |logoutUrl|String| Specifies the URL that will be used by Microsoft's authorization service to log out a user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols.|
@@ -77,6 +79,8 @@ In the request body, supply the values for relevant fields that should be update
 |servicePrincipalNames|String collection|Contains the list of **identifiersUris**, copied over from the associated [application](../resources/application.md). Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Microsoft Entra ID. For example,<ul><li>Client apps requesting permissions to this resource can use these URIs to specify needed permissions in the **requiredResourceAccess** property of their application manifest, or in the "API permissions" blade on the App registrations experience.</li><li>Client apps can specify a resource URI that is based on the values of this property to acquire an access token, which is the URI returned in the "aud" claim.</li></ul><br>The any operator is required for filter expressions on multi-valued properties. Not nullable.|
 |tags|String collection| Not nullable. |
 |tokenEncryptionKeyId|String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Microsoft Entra ID issues tokens for this application encrypted using the key specified by this property. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
+
+Enabling **isHardDeleteProtectionEnabled** during service principal creation isn't supported. Create the service principal first, then enable protection with a separate PATCH request.
 
 ## Response
 
@@ -238,3 +242,25 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
+### Example 3: Enable hard deletion protection for a service principal
+
+Once enabled, hard deletion protection can't be disabled. Use an existing service principal and the permissions and role described in [Permissions for specific scenarios](#permissions-for-specific-scenarios).
+
+#### Request
+
+<!-- { "blockType": "request", "name": "update_serviceprincipal_hard_delete_protection" } -->
+```http
+PATCH https://graph.microsoft.com/beta/servicePrincipals/c4ca17b7-4f3e-4c3a-b884-bfa4100c745d
+Content-Type: application/json
+
+{
+  "isHardDeleteProtectionEnabled": true
+}
+```
+
+#### Response
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 204 No Content
+```

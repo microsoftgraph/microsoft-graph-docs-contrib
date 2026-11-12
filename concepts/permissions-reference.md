@@ -3966,6 +3966,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### HardDeletionSetting.ReadWrite.Enable
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 87f25f46-ce1e-47ed-935c-9d70b296f060 | 969ac762-bace-4685-8f56-a496211ea8e8 |
+| DisplayText | Enable hard deletion protection settings | Enable hard deletion protection settings |
+| Description | Allows the app to enable hard deletion protection settings on users, applications, groups, and service principals without a signed-in user. Requires Global Administrator or Backup Administrator role. | Allows the app to enable hard deletion protection settings on users, applications, groups, and service principals on behalf of the signed-in user. Requires Global Administrator or Backup Administrator role. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### HealthMonitoringAlert.Read.All
 
 | Category | Application | Delegated |

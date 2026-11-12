@@ -6,6 +6,7 @@ ms.date: 9/29/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+toc.title: "A365 AI guardrail"
 ---
 
 # a365AiGuardrail resource type

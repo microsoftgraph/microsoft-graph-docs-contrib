@@ -16,7 +16,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 Get a list of the [allotment](../resources/cloudlicensing-allotment.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

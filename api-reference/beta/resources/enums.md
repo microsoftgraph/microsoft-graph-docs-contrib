@@ -13,6 +13,14 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### resourceQuotaType values
+
+|Member|
+|:---|
+|agentIdentityBlueprint|
+|agentIdentity|
+|managedIdentity|
+
 ### errorActions values
 
 This flagged enumeration identifies the actions taken when policy evaluation couldn't be completed. Values can be combined; for example, `audit,block` indicates that the activity was audited and blocked. Don't combine `none` with another value.
@@ -1805,6 +1813,8 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | reportOnlyFailure |
 | reportOnlyNotApplied |
 | reportOnlyInterrupted |
+| notAppliedAllAppsExclusion |
+| reportOnlyNotAppliedAllAppsExclusion |
 
 ### microsoftAuthenticatorAuthenticationMode values
 
@@ -6598,3 +6608,24 @@ Possible values for user account types (group membership), per Windows definitio
 |teams|
 |coldCrawl|
 |applications|
+
+
+### investigationInputType values
+
+|Member|
+|:---|
+|defenderIncidentId|
+|defenderAlertId|
+|defenderThreatIntelligenceId|
+|azureSubscriptionId|
+|azureIdentityId|
+|keyword|
+|unknownFutureValue|
+
+### investigationOutputType values
+
+|Member|
+|:---|
+|summary|
+|artifact|
+|unknownFutureValue|

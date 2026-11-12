@@ -3,6 +3,138 @@
     {
       "ChangeList": [
         {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "backupRetentionPeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **backupRetentionPeriodInDays** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionunitbase) resource.",
+          "Target": "protectionUnitBase"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "backupRetentionPeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **backupRetentionPeriodInDays** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteprotectionunit) resource.",
+          "Target": "siteProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "backupRetentionPeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **backupRetentionPeriodInDays** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxprotectionunit) resource.",
+          "Target": "mailboxProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "backupRetentionPeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **backupRetentionPeriodInDays** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveprotectionunit) resource.",
+          "Target": "driveProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "pendingRetentionPeriodChange",
+          "ChangeType": "Addition",
+          "Description": "Added the **pendingRetentionPeriodChange** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionunitbase) resource.",
+          "Target": "protectionUnitBase"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "pendingRetentionPeriodChange",
+          "ChangeType": "Addition",
+          "Description": "Added the **pendingRetentionPeriodChange** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteprotectionunit) resource.",
+          "Target": "siteProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "pendingRetentionPeriodChange",
+          "ChangeType": "Addition",
+          "Description": "Added the **pendingRetentionPeriodChange** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxprotectionunit) resource.",
+          "Target": "mailboxProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Property",
+          "ChangedApiName": "pendingRetentionPeriodChange",
+          "ChangeType": "Addition",
+          "Description": "Added the **pendingRetentionPeriodChange** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveprotectionunit) resource.",
+          "Target": "driveProtectionUnit"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionPeriodChange",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionPeriodChange](https://learn.microsoft.com/en-us/graph/api/resources/retentionperiodchange) resource type to describe pending protection-unit retention changes.",
+          "Target": "retentionPeriodChange"
+        },
+        {
+          "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "retentionPeriodChangeStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **retentionPeriodChangeStatus** enumeration type.",
+          "Target": "retentionPeriodChangeStatus"
+        }
+      ],
+      "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-22T10:16:00.0000000Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4e0c96f7-fdfa-466c-887a-7babb2b61e21",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdBy** property to the [browseQueryResponseItem](https://learn.microsoft.com/en-us/graph/api/resources/browsequeryresponseitem?view=graph-rest-1.0) resource.",
+          "Target": "browseQueryResponseItem"
+        },
+        {
+          "Id": "4e0c96f7-fdfa-466c-887a-7babb2b61e21",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to the [browseQueryResponseItem](https://learn.microsoft.com/en-us/graph/api/resources/browsequeryresponseitem?view=graph-rest-1.0) resource.",
+          "Target": "browseQueryResponseItem"
+        },
+        {
+          "Id": "4e0c96f7-fdfa-466c-887a-7babb2b61e21",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedBy** property to the [browseQueryResponseItem](https://learn.microsoft.com/en-us/graph/api/resources/browsequeryresponseitem?view=graph-rest-1.0) resource.",
+          "Target": "browseQueryResponseItem"
+        },
+        {
+          "Id": "4e0c96f7-fdfa-466c-887a-7babb2b61e21",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [browseQueryResponseItem](https://learn.microsoft.com/en-us/graph/api/resources/browsequeryresponseitem?view=graph-rest-1.0) resource.",
+          "Target": "browseQueryResponseItem"
+        }
+      ],
+      "Id": "4e0c96f7-fdfa-466c-887a-7babb2b61e21",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-22T09:15:35.0186199Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "39f8bf65-665d-4430-8bed-18c71bd3a818",
           "ApiChange": "Property",
           "ChangedApiName": "policyId",
@@ -139,6 +271,40 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2026-10-09T09:16:05.3259879Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "02c6628f-d6fb-4660-a950-a4382dbb5e87",
+          "ApiChange": "Property",
+          "ChangedApiName": "error",
+          "ChangeType": "Addition",
+          "Description": "Added the **error** property to the [granularRestoreArtifactBase](https://learn.microsoft.com/en-us/graph/api/resources/granularrestoreartifactbase?view=graph-rest-1.0) resource.",
+          "Target": "granularRestoreArtifactBase"
+        },
+        {
+          "Id": "02c6628f-d6fb-4660-a950-a4382dbb5e87",
+          "ApiChange": "Property",
+          "ChangedApiName": "error",
+          "ChangeType": "Addition",
+          "Description": "Added the **error** property to the [granularSiteRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granularSiteRestoreArtifact?view=graph-rest-1.0) resource.",
+          "Target": "granularSiteRestoreArtifact"
+        },
+        {
+          "Id": "02c6628f-d6fb-4660-a950-a4382dbb5e87",
+          "ApiChange": "Property",
+          "ChangedApiName": "error",
+          "ChangeType": "Addition",
+          "Description": "Added the **error** property to the [granularDriveRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granularDriveRestoreArtifact?view=graph-rest-1.0) resource.",
+          "Target": "granularDriveRestoreArtifact"
+        }
+      ],
+      "Id": "02c6628f-d6fb-4660-a950-a4382dbb5e87",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-09-21T15:34:21.8265917Z",
       "WorkloadArea": "Backup and recovery",
       "SubArea": "Microsoft 365 backup and storage"
     },
