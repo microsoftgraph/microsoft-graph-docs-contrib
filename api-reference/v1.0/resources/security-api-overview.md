@@ -48,7 +48,7 @@ To migrate to the advanced hunting APIs in Microsoft Graph, update the following
 
 |Subject  |Older parameters  |Microsoft Graph  |
 |---------|---------|---------|
-|Endpoints     | [https://api.securitycenter.microsoft.com/api/advancedqueries/run](/defender-endpoint/api/run-advanced-query-api) <br/><br/> [https://api.security.microsoft.com/api/advancedhunting/run](/defender-xdr/api-advanced-hunting)        | [https://graph.microsoft.com/beta/security/runHuntingQuery](../api/security-security-runhuntingquery.md)       |
+|Endpoints     | [https://api.securitycenter.microsoft.com/api/advancedqueries/run](/defender-endpoint/api/run-advanced-query-api) <br/><br/> [https://api.security.microsoft.com/api/advancedhunting/run](/defender-xdr/api-advanced-hunting)        | [https://graph.microsoft.com/v1.0/security/runHuntingQuery](../api/security-security-runhuntingquery.md)       |
 |Resource URI|Microsoft Defender for Endpoint on `https://api.securitycenter.microsoft.com`|Microsoft Graph on `https://graph.microsoft.com`|
 |API permissions     | *AdvancedQuery.Read* (delegated) and *AdvancedQuery.Read.All* (application) under Microsoft Defender for Endpoint (formerly Windows Defender Advanced Threat Protection) <br/><br/> *AdvancedHunting.Read* (delegated) and *AdvancedHunting.Read.All* (application) under Microsoft Threat Protection       | [*ThreatHunting.Read.All*](/graph/permissions-reference#threathuntingreadall) (delegated and application)       |
 |Request body     | **Query** property. For example `{"Query":"DeviceProcessEvents \|where InitiatingProcessFileName =~ 'powershell.exe' \|where ProcessCommandLine contains 'appdata'\|project Timestamp, FileName, InitiatingProcessFileName, DeviceId\|limit 2"}`        |  **Query** and **Timespan** properties. For example, `{"Query": "DeviceProcessEvents", "Timespan": "P90D"}`      |
@@ -63,6 +63,18 @@ Microsoft Graph does't have a built-in Advanced Hunting action that was availabl
 #### Power BI flow migration
 
 If you're using a custom Power BI report created with the older API, update your Power BI query to use the Microsoft Graph parameters described in the preceding table. For more information, see [Create custom Microsoft Defender XDR reports using Microsoft Graph security API and Power BI](/defender-xdr/defender-xdr-custom-reports).
+
+## Custom detections
+
+You can create advanced hunting [custom detection rules](/defender-xdr/custom-detection-rules) specific to your security operations to proactively monitor for threats and take action. For example, you can create custom detection rules that look for known indicators or misconfigured devices. These rules automatically trigger alerts and any response actions that you specify.
+
+### Quotas
+
+1. [List detection rules](../api/security-rulesroot-list-detectionrules.md): 10 rules per minute per application, 300 rules per hour per application, and 600 rules per hour per tenant.
+2. [Get a detection rule](../api/security-detectionrule-get.md): 100 rules per minute per application, 1,500 rules per hour per application, and 1,800 rules per hour per tenant.
+3. [Create a detection rule](../api/security-rulesroot-post-detectionrules.md): 10 rules per minute per application, 1,500 rules per hour per application, and 1,800 rules per hour per tenant.
+4. [Update a detection rule](../api/security-detectionrule-update.md): 100 rules per minute per application, 1,500 rules per hour per application, and 1,800 rules per hour per tenant.
+5. [Delete a detection rule](../api/security-rulesroot-delete-detectionrules.md): 100 rules per minute per application, 1,500 rules per hour per application, and 1,800 rules per hour per tenant.
 
 ## Alerts
 Alerts are detailed warnings about suspicious activities in a customer's tenant that Microsoft or partner security providers identified and flagged for action. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.

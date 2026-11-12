@@ -3,7 +3,7 @@ title: "directory resource type (deleted items)"
 description: "Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 ms.localizationpriority: medium
 author: "FaithOmbongi"
-ms.date: 11/17/2025
+ms.date: 06/05/2026
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1028
 ms.subservice: "entra-directory-management"
@@ -28,6 +28,7 @@ Currently, deleted items functionality is supported for the following resources:
 - [application](application.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
+- [device](device.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
 - [group](group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)

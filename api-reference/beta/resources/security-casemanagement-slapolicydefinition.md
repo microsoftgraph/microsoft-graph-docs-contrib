@@ -1,5 +1,6 @@
 ---
 title: "slaPolicyDefinition resource type"
+toc.title: "SLA policy definition"
 description: "Represents a service-level agreement policy for a single case type."
 author: "msklotz"
 ms.date: 09/06/2026

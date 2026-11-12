@@ -5,7 +5,7 @@ author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 10/25/2024
+ms.date: 06/05/2026
 ---
 
 # Delete device
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a registered device.
+Delete a registered device. When deleted, the device is moved to the [deleted items](../resources/directory.md) container and is available for recovery for up to 30 days. After 30 days, the device is permanently deleted.
+- To learn more, see [deletedItems](../resources/directory.md).
+- For more information about soft deletion behavior for devices, see [Device soft delete overview (preview)](/entra/identity/devices/concept-soft-delete-devices).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get an [applicableCatalog](../resources/windowsupdates-applicablecatalog.md) resource for a Windows Autopatch policy.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

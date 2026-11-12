@@ -18,6 +18,8 @@ Get the [slaPolicyDefinition](../resources/security-casemanagement-slapolicydefi
 
 To review policies across the tenant, issue a separate request for each case type: `incidentCase`, `genericCase`, and `exposureCase`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -41,9 +43,9 @@ Replace `{caseTypeConfiguration-id}` with `incidentCase`, `genericCase`, or `exp
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top` OData query parameters at the collection level. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$orderby`, `$select`, and `$top` OData query parameters at the collection level. The `$skip` query parameter isn't supported. For general information, see [OData query parameters](/graph/query-parameters).
 
-You can combine `$filter`, `$orderby`, `$count`, `$select`, `$skip`, and `$top`. When combined with `$filter`, `$count=true` returns the number of matching policies before `$skip` and `$top` are applied.
+You can combine `$filter`, `$orderby`, `$count`, `$select`, and `$top`. When combined with `$filter`, `$count=true` returns the number of matching policies before `$top` is applied.
 
 To include policies when getting their parent [caseTypeConfiguration](../resources/security-casemanagement-casetypeconfiguration.md), use `$expand=slaPolicies` on the parent request. Policy criteria and timers are structural properties, not navigation properties, and don't require `$expand`.
 

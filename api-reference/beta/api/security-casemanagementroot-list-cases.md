@@ -38,7 +38,7 @@ GET /security/caseManagement/cases
 
 ## Optional query parameters
 
-This method supports the `$filter`, `$orderby`, `$select`, `$skip`, and `$top` OData query parameters. The `$count` query parameter isn't supported. On the base collection, `$filter`, `$orderby`, and `$select` can reference only properties declared on [case](../resources/security-casemanagement-case.md). A request that references a property declared only on a derived type, such as **incidentId**, is rejected. To use a supported query option with a derived property, cast the collection to the derived type first.
+This method supports the `$filter`, `$orderby`, `$select`, and `$top` OData query parameters. The `$count` and `$skip` query parameters aren't supported. On the base collection, `$filter`, `$orderby`, and `$select` can reference only properties declared on [case](../resources/security-casemanagement-case.md). A request that references a property declared only on a derived type, such as **incidentId**, is rejected. To use a supported query option with a derived property, cast the collection to the derived type first.
 
 For example: `GET /security/caseManagement/cases/microsoft.graph.security.caseManagement.incidentCase?$filter=incidentId eq 1006`.
 
