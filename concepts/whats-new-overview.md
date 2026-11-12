@@ -56,6 +56,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Devices now support soft-deletion and restoration. When a device is deleted, it's moved to the [deleted items container](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) and can be restored within 30 days. After 30 days, it's permanently deleted.
 
+### Identity and access | Network access
+
+- Added the [webFilteringPolicy](/graph/api/resources/networkaccess-webfilteringpolicy?view=graph-rest-beta&preserve-view=true) resource type and related methods for configuring how Global Secure Access allows or blocks web traffic based on source sessions, URLs, web categories, and HTTP request methods.
+
 ### Security
 
 - Added the **lookback** property to the [ruleSchedule](/graph/api/resources/security-ruleschedule?view=graph-rest-beta&preserve-view=true) resource to control the time window evaluated by each scheduled custom detection rule run.
