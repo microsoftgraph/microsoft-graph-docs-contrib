@@ -41,6 +41,7 @@ POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -49,11 +50,14 @@ You can specify the following properties when creating a **oneDriveForBusinessPr
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the SharePoint Protection Policy. Required|
-|driveProtectionUnits|Collection([driveProtectionUnit](../resources/driveprotectionunit.md))|Collection of the driveProtectionUnit to be added to the oneDriveForBusinessProtectionPolicy. Required.|
+|driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|Collection of the driveProtectionUnit to be added to the oneDriveForBusinessProtectionPolicy. Required.|
+|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Retention settings for the policy. Optional. If omitted, the default retention period is 365 days.|
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) object in the response body.
+
+The service returns the complete **retentionSettings** collection, rather than echoing the request collection. The response includes a fixed 14-day period (`P14D`) for the `R/PT10M` interval and the configured policy retention period for the `R/P1W` interval. The 14-day period is a service-defined backup tier, not a supported policy retention period for create or update requests.
 
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
@@ -61,8 +65,8 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ### Request
 
-The following example shows a request.
-# [HTTP](#tab/http)
+The following example shows how to create a policy with a retention period of 180 days.
+
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessprotectionpolicy_create"
@@ -70,6 +74,7 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies
+Content-Type: application/json
 
 {
   "displayName": "OneDrive For Business Protection Policy",
@@ -83,43 +88,20 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusines
     {
       "directoryObjectId": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7"
     }
+  ],
+  "retentionSettings": [
+    {
+      "interval": "R/P1W",
+      "period": "P180D"
+    }
   ]
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/onedriveforbusinessprotectionpolicy-create-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/onedriveforbusinessprotectionpolicy-create-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/onedriveforbusinessprotectionpolicy-create-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessprotectionpolicy-create-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/onedriveforbusinessprotectionpolicy-create-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/onedriveforbusinessprotectionpolicy-create-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/onedriveforbusinessprotectionpolicy-create-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
-The following example shows the response.
+The following example shows the response with the retention settings for both backup intervals, including the requested 180-day retention period.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -135,7 +117,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
 {
   "@odata.context": "/solutions/backupRestore/$metadata#oneDriveForBusinessProtectionPolicies/$entity",
   "id": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7",
-  "displayName": "OneDrive Protection Policy",
+  "displayName": "OneDrive For Business Protection Policy",
   "status": "inactive",
   "isEnabled": false,
   "createdBy": {
@@ -165,11 +147,11 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
   "retentionSettings": [
     {
       "interval": "R/PT10M",
-      "period": "P2W"
+      "period": "P14D"
     },
     {
       "interval": "R/P1W",
-      "period": "P1Y"
+      "period": "P180D"
     }
   ]
 }

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the protection policy for the OneDrive service in Microsoft 365. This method adds a [driveProtectionUnit](../resources/driveprotectionunit.md) to or removes it from a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) object.
+Update the protection policy for the OneDrive service in Microsoft 365. This method updates retention settings or adds a [driveProtectionUnit](../resources/driveprotectionunit.md) to or removes it from a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -45,11 +45,14 @@ PATCH /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveFo
 ## Request body
 In the request body, supply a JSON representation of the **oneDriveForBusinessProtectionPolicy** with the updated properties.
 
+Supply only the properties to update.
+
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). Optional|
-|driveExclusionUnits@delta|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|Optional. Collection of [driveExclusionUnit](../resources/driveexclusionunit.md) objects to be added to or removed from the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). Use this property only when you want to modify the exclusion list for policies configured with [backupPolicyProtectionMode](../resources/enums.md#backuppolicyprotectionmode-values) set to `fullServiceBackup`. |
-|driveProtectionUnits@delta|Collection([driveProtectionUnit](../resources/driveprotectionunit.md))|Collection of the driveProtectionUnit to be added/removed to the oneDriveForBusinessProtectionPolicy. Required|
+|displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
+|driveExclusionUnits@delta|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|Collection of [driveExclusionUnit](../resources/driveexclusionunit.md) objects to be added to or removed from the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). Use this property only when you want to modify the exclusion list for policies configured with [backupPolicyProtectionMode](../resources/enums.md#backuppolicyprotectionmode-values) set to `fullServiceBackup`.|
+|driveProtectionUnits@delta|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|Collection of the driveProtectionUnit to be added/removed to the oneDriveForBusinessProtectionPolicy.|
+|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Updated retention settings for the policy. If **retentionSettings** is omitted, the existing retention settings are unchanged. You can update **retentionSettings** without adding or removing protection units.|
 
 To remove a **driveProtectionUnit** from the policy, specify the `@removed` annotation in the request body for the protection unit together with the ID of the [driveProtectionUnit](../resources/driveprotectionunit.md).
 
@@ -57,11 +60,15 @@ To remove a **driveProtectionUnit** from the policy, specify the `@removed` anno
 
 If successful, this method returns a `200 OK` response code and an updated [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) in the response body.
 
+The service returns the complete **retentionSettings** collection, rather than echoing the request collection. The response includes a fixed 14-day period (`P14D`) for the `R/PT10M` interval and the configured policy retention period for the `R/P1W` interval. The 14-day period is a service-defined backup tier, not a supported policy retention period for create or update requests.
+
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 
-### Request
+### Example 1: Add or remove protection units
+The following example shows how to add or remove protection units from the policy.
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -124,7 +131,7 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusine
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -242,6 +249,62 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z"
+    }
+  ]
+}
+```
+
+### Example 2: Update the retention period
+The following example shows how to update the policy retention period to 180 days without changing its protection units.
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "onedriveforbusinessprotectionpolicy_update_retention"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+Content-Type: application/json
+
+{
+  "retentionSettings": [
+    {
+      "interval": "R/P1W",
+      "period": "P180D"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response with the retention settings for both backup intervals, including the requested 180-day retention period.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.oneDriveForBusinessProtectionPolicy"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+  "retentionSettings": [
+    {
+      "interval": "R/PT10M",
+      "period": "P14D"
+    },
+    {
+      "interval": "R/P1W",
+      "period": "P180D"
     }
   ]
 }
