@@ -1862,6 +1862,7 @@
                 "conditionalAccessPolicy",
                 "conditionalAccessPolicyPlan",
                 "conditionalAccessPolicyRule",
+                "conditionalAccessSettings",
                 "conditionalAccessTemplate",
                 "continuousAccessEvaluationPolicy",
                 "namedLocation",
