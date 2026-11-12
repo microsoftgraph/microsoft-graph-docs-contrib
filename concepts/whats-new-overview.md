@@ -109,6 +109,8 @@ Added the [classificationGradingJobResponse](/graph/api/resources/classification
 
 ### Identity and access | Directory management
 
+- Added the **deletedDateTime** property to the [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition) resource. Use it to read when a custom role definition was soft-deleted.
+
 Promoted the **managerApplications** property on the [agentUser](/graph/api/resources/agentuser) resource type from beta to v1.0. Use it to read the application IDs authorized to manage the agent user's backing agent blueprint. The property is read-only and is returned only when explicitly selected with the `microsoft.graph.agentUser` type cast.
 
 ### Identity and access | Governance

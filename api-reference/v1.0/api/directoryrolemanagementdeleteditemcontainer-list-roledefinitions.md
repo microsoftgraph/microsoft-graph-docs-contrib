@@ -1,5 +1,5 @@
 ---
-title: "List roleDefinitions"
+title: "List deleted roleDefinitions"
 description: "List custom role definitions that have been soft-deleted from Microsoft Entra directory role management."
 author: "simransaxena21"
 ms.date: 10/07/2026
@@ -8,7 +8,7 @@ ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
-# List roleDefinitions
+# List deleted roleDefinitions
 
 Namespace: microsoft.graph
 
@@ -91,6 +91,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
+      "deletedDateTime": "2026-08-24T19:16:58Z",
       "description": "Can manage basic aspects of application registrations.",
       "displayName": "Application Support Administrator",
       "isBuiltIn": false,
