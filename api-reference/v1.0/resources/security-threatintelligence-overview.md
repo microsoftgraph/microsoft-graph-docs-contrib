@@ -6,6 +6,8 @@ ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: conceptualPageType
 ms.date: 07/28/2026
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1032
 ---
 
 # Use the Microsoft Graph APIs for Microsoft Threat Intelligence
@@ -31,6 +33,10 @@ The following permissions are required to access the Microsoft Threat Intelligen
 | Application | ThreatIntelligence.Read.All |
 
 In addition, the calling user must have at minimum the **Security Reader** role assigned.
+
+## Rate limits
+
+All Microsoft Threat Intelligence APIs in Microsoft Graph have a rate limit of 300 requests per minute.
 
 ## Common use cases
 
