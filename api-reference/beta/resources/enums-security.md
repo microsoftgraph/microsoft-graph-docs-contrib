@@ -384,6 +384,14 @@ Namespace: microsoft.graph.security
 | autoDisabled       |
 | unknownFutureValue |
 
+### eventGroupingKind values
+
+| Member             |
+| :----------------- |
+| alertPerEvent      |
+| singleAlert        |
+| unknownFutureValue |
+
 ### eventPropagationStatus values
 
 | Member             |

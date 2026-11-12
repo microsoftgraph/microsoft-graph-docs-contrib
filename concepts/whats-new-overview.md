@@ -58,6 +58,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Security
 
+- Added the **lookback** property to the [ruleSchedule](/graph/api/resources/security-ruleschedule?view=graph-rest-beta&preserve-view=true) resource to control the time window evaluated by each scheduled custom detection rule run.
+- Added the **eventGroupingKind** property to the [alertTemplate](/graph/api/resources/security-alerttemplate?view=graph-rest-beta&preserve-view=true) resource and the **eventGroupingKind** enumeration type. Use `singleAlert` to group matching events from one scheduled execution into a single alert, or `alertPerEvent` to create a separate alert for each matching event.
 - Added the [resourceQuota](/graph/api/resources/resourcequota?view=graph-rest-beta&preserve-view=true) resource type and the **resourceQuotas** property on the [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) resource to let administrators monitor and configure quota allocations for resource types in their Microsoft Entra organization.
 
 ### Security | Case management
