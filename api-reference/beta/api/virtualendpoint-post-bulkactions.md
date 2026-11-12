@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "virtualendpoint_post_bulkactions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-post-bulkactions-permissions.md)]
 
+[!INCLUDE [rbac-cloudpc-create-bulk-action](../includes/rbac-for-apis/rbac-cloudpc-apis-create-bulk-action.md)]
+
 ## HTTP request
 
 <!-- {
@@ -43,23 +45,32 @@ POST /deviceManagement/virtualEndpoint/bulkActions
 ## Request body
 In the request body, supply a JSON representation of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.
 
+The **cloudPcBulkAction** resource is abstract. Specify a derived type in **@odata.type** to select the action to perform. For example, use `#microsoft.graph.cloudPcBulkSetDeviceName` to set device names by using a template, or `#microsoft.graph.cloudPcBulkPowerOff` to power off Cloud PCs.
+
 You can specify the following properties when you create a **cloudPcBulkAction**.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|cloudPcIds|String collection|IDs of the Cloud PCs the bulk action applies to. Individual Cloud PC IDs are GUID-formatted strings. Required.|
+|deviceNamingTemplate|String|The naming template for [cloudPcBulkSetDeviceName](../resources/cloudpcbulksetdevicename.md). Required for that derived type. Use an optional prefix followed by one `%RAND:x%` macro, where `x` represents the number of random alphanumeric characters and is at least 5. The generated name must be 5–15 characters long. The prefix can contain ASCII letters, digits, and hyphens, and must not start with a hyphen. The prefix length plus `x` must not exceed 15. For example, `ACRA-%RAND:5%` generates a ten-character name such as `ACRA-A1B2C`.|
 |displayName|String|Name of this bulk action. Required.|
-|cloudPcIds|String collection|IDs of the Cloud PCs the bulk action applies to. Required.|
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk actions can be initiated during maintenance window. When `true`, bulk action will use maintenance window to schedule action, When `false` means bulk action will not use the maintenance window. Default value is `false`.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and a derived [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object in the response body.
+
+The action runs asynchronously after the request is accepted. Use [Get cloudPcBulkAction](../api/cloudpcbulkaction-get.md) to check its **status** and **actionSummary**. An accepted request doesn't mean that all targeted Cloud PCs completed the action.
 
 ## Examples
 
-### Request
+### Example 1: Power off Cloud PCs
+
+The following example shows how to power off Cloud PCs.
+
+#### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_cloudpcbulkaction_from_"
@@ -70,7 +81,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkActio
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcBulkAction",
+  "@odata.type": "#microsoft.graph.cloudPcBulkPowerOff",
   "displayName": "Bulk Power Off by Andy",
   "cloudPcIds": [
     "d6e0b8ee-8836-4b8d-b038-6130a97a3a9d",
@@ -80,51 +91,21 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpcbulkaction-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcbulkaction-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-cloudpcbulkaction-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpcbulkaction-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-cloudpcbulkaction-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpcbulkaction-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-cloudpcbulkaction-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcBulkAction"
+  "@odata.type": "microsoft.graph.cloudPcBulkPowerOff"
 }
 -->
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcBulkAction",
+  "@odata.type": "#microsoft.graph.cloudPcBulkPowerOff",
   "id": "231ad98f-41b3-872b-dd37-c70bf22cbdac",
   "displayName": "Bulk Power Off by Andy",
   "cloudPcIds": [
@@ -136,5 +117,64 @@ Content-Type: application/json
   "scheduledDuringMaintenanceWindow": true,
   "status": "pending",
   "createdDateTime": "2024-02-05T10:29:57Z"
+}
+```
+
+### Example 2: Set device names for Cloud PCs
+
+The following example shows how to create a bulk action to set the device names of two Cloud PCs. The template generates a name with the prefix `ACRA-` followed by five random alphanumeric characters for each Cloud PC.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_cloudpcbulksetdevicename"
+}
+-->
+```http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkActions
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.cloudPcBulkSetDeviceName",
+  "cloudPcIds": [
+    "30d0e128-de93-41dc-89ec-33d84bb662a0",
+    "7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
+  ],
+  "deviceNamingTemplate": "ACRA-%RAND:5%",
+  "displayName": "Set device names for sales Cloud PCs",
+  "scheduledDuringMaintenanceWindow": false
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcBulkSetDeviceName"
+}
+-->
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.cloudPcBulkSetDeviceName",
+  "id": "1d164206-bf41-4fd2-8424-a3192d392273",
+  "cloudPcIds": [
+    "30d0e128-de93-41dc-89ec-33d84bb662a0",
+    "7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
+  ],
+  "createdDateTime": "2026-10-15T07:00:00Z",
+  "deviceNamingTemplate": "ACRA-%RAND:5%",
+  "displayName": "Set device names for sales Cloud PCs",
+  "scheduledDuringMaintenanceWindow": false,
+  "status": "pending"
 }
 ```

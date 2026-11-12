@@ -674,6 +674,7 @@
             "cloudPcBulkResize",
             "cloudPcBulkRestart",
             "cloudPcBulkRestore",
+            "cloudPcBulkSetDeviceName",
             "cloudPcBulkTroubleshoot",
             "cloudPcBulkRemoteActionResult",
             "cloudPcBulkCreateSnapshot",
