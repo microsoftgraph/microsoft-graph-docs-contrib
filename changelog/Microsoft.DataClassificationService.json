@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "df4a04df-6cdd-40a3-b653-504866ca91fa",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "applicationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationMode** enumeration type.",
+          "Target": "applicationMode"
+        },
+        {
+          "Id": "df4a04df-6cdd-40a3-b653-504866ca91fa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "currentLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [currentLabel](https://learn.microsoft.com/en-us/graph/api/resources/currentlabel?view=graph-rest-v1.0) resource.",
+          "Target": "currentLabel"
+        },
+        {
+          "Id": "df4a04df-6cdd-40a3-b653-504866ca91fa",
+          "ApiChange": "Property",
+          "ChangedApiName": "sensitivityLabels",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensitivityLabels** property to the [processContentMetadataBase](https://learn.microsoft.com/en-us/graph/api/resources/processcontentmetadatabase?view=graph-rest-v1.0) resource.",
+          "Target": "processContentMetadataBase"
+        }
+      ],
+      "Id": "df4a04df-6cdd-40a3-b653-504866ca91fa",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-14T19:27:17.0939364Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b34c1b18-d201-4c79-85d9-0216d14edb42",
           "ApiChange": "Member",
           "ChangedApiName": "copyToClipboard",

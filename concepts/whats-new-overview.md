@@ -44,6 +44,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Security | Data security and compliance
 
+- Applications can now supply one or more sensitivity labels with file content submitted to the [processContent](/graph/api/userdatasecurityandgovernance-processcontent) API by using the **sensitivityLabels** property of [processContentMetadataBase](/graph/api/resources/processcontentmetadatabase).
 - Added the `copyToClipboard`, `pasteFromClipboard`, `print`, and `accessDebugTools` members to the **userActivityType** and **userActivityTypes** enumerations in v1.0. These enumerations are used by [activityMetadata](/graph/api/resources/activitymetadata) and [policyScopeBase](/graph/api/resources/policyscopebase) to represent activities evaluated against data protection policies. Use the `Prefer: include-unknown-enum-members` request header to retrieve these values.
 
 ## November 2026: New in preview only

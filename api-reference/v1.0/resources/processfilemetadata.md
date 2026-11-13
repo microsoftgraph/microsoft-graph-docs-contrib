@@ -14,6 +14,10 @@ Namespace: microsoft.graph
 
 Represents metadata for a content entry that is a file.  
 
+Inherits from [processContentMetadataBase](../resources/processcontentmetadatabase.md).
+
+Use the inherited **sensitivityLabels** collection to supply one or more [currentLabel](../resources/currentlabel.md) objects with the file content. Each object identifies a sensitivity label and its application mode. This metadata doesn't apply or change labels on the file. For request examples with one label and two distinct labels, see [processContent](../api/userdatasecurityandgovernance-processcontent.md#example-5-file-content-with-one-sensitivity-label).
+
 ## Properties
 
 | Property         | Type                                                                                                     | Description                                                                                                           |
@@ -28,6 +32,7 @@ Represents metadata for a content entry that is a file.
 | modifiedDateTime | DateTimeOffset                                                                 | Required. Timestamp indicating when the original content was last modified. For ephemeral content like messages, this might be the same as `createdDateTime`. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 | name             | String                                                                         | Required. A descriptive name for the content (for example, file name, web page title, `Chat Message`). Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 | ownerId          | String                                                                         | The unique identifier (for example, Entra User ID or UPN) of the owner of the file.                                            |
+| sensitivityLabels | [currentLabel](../resources/currentlabel.md) collection | Caller-supplied sensitivity labels describing the content. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md). |
 | sequenceNumber   | Int64                                                                          | A sequence number indicating the order in which content was generated or should be processed, required when `correlationId` is used. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 
 ## Relationships
@@ -56,6 +61,11 @@ The following JSON representation shows the resource type.
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)",
   "customProperties": { "@odata.type": "microsoft.graph.customMetadataDictionary" },
-  "ownerId": "String"
+  "ownerId": "String",
+  "sensitivityLabels": [
+    {
+      "@odata.type": "microsoft.graph.currentLabel"
+    }
+  ]
 }
 ```
