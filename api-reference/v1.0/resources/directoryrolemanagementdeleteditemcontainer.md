@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method | Return type | Description |
 |:---|:---|:---|
-| [List roleDefinitions](../api/directoryrolemanagementdeleteditemcontainer-list-roledefinitions.md) | [unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection | List soft-deleted custom role definitions. |
+| [List deleted roleDefinitions](../api/directoryrolemanagementdeleteditemcontainer-list-roledefinitions.md) | [unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection | List soft-deleted custom role definitions. |
 
 ## Properties
 

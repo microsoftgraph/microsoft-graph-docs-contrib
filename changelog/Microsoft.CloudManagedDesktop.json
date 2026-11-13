@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "6d94c9c2-dbef-4964-be43-158e14bbc719",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudPcIds",
+          "ChangeType": "Change",
+          "Description": "Clarified the documentation for the **cloudPcIds** property of the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta) resource and its derived types. The API type remains `Collection(Edm.String)`.",
+          "Target": "cloudPcBulkAction"
+        },
+        {
+          "Id": "6d94c9c2-dbef-4964-be43-158e14bbc719",
+          "ApiChange": "Method",
+          "ChangedApiName": "setDeviceName",
+          "ChangeType": "Addition",
+          "Description": "Added the [setDeviceName](https://learn.microsoft.com/en-us/graph/api/cloudpc-setdevicename?view=graph-rest-beta) action to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource to set its operating system device name.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "6d94c9c2-dbef-4964-be43-158e14bbc719",
+          "ApiChange": "Member",
+          "ChangedApiName": "setDeviceName",
+          "ChangeType": "Addition",
+          "Description": "Added the `setDeviceName` member to the [cloudPcRemoteActionName](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcremoteactioncapability?view=graph-rest-beta#cloudpcremoteactionname-values) enumeration.",
+          "Target": "cloudPcRemoteActionName"
+        },
+        {
+          "Id": "6d94c9c2-dbef-4964-be43-158e14bbc719",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcBulkSetDeviceName",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcBulkSetDeviceName](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulksetdevicename?view=graph-rest-beta) resource to set Cloud PC device names by using a naming template.",
+          "Target": "cloudPcBulkSetDeviceName"
+        }
+      ],
+      "Id": "6d94c9c2-dbef-4964-be43-158e14bbc719",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-15T06:59:38.9484389Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6f3d31b1-5a31-4f73-aac0-9c6b598f4f2d",
           "ApiChange": "Property",
           "ChangedApiName": "domainJoinCredential",

@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a stored output file owned by an agentic session. Read its **id** and **kind** metadata, or use its **id** to download the stored file through the authenticated **content** route. Metadata and content requests enforce the parent session's authorization.
 
 Inherits from [entity](../resources/entity.md).
