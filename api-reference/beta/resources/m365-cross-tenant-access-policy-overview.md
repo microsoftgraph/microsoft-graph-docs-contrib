@@ -95,7 +95,12 @@ Assign the least-privileged role that matches the operation.
 
 #### Microsoft Graph permissions
 
-Calls to the API also require delegated Microsoft Graph permissions, including `Policy.ReadWrite.CrossTenantAccess` and `Policy.ReadWrite.CrossTenantCapability`. For details, see [Authentication and authorization basics](/graph/auth/auth-concepts). Configuration is available today through Microsoft Graph and the Microsoft Graph PowerShell SDK, with Microsoft Admin Center support planned after general availability.
+Application permissions are also supported; see the [API reference](#api-reference) for the permissions required by each operation, including read-only operations. The following delegated permissions allow configuration of cross-tenant access settings:
+
+- `Policy.ReadWrite.CrossTenantAccess` to configure **Microsoft Entra cross-tenant access trust settings**.
+- `Policy.ReadWrite.CrossTenantCapability` to configure **Microsoft 365 cross-tenant access capabilities**.
+
+For details, see [Authentication and authorization basics](/graph/auth/auth-concepts). Configuration is available today through Microsoft Graph and the Microsoft Graph PowerShell SDK, with Microsoft Admin Center support planned after general availability.
 
 ### Integration opportunities with other APIs
 
