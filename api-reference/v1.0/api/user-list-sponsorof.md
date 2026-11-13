@@ -5,7 +5,7 @@ author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: apiPageType
-ms.date: 07/07/2026
+ms.date: 11/13/2026
 ---
 
 # List sponsorOf
@@ -42,6 +42,7 @@ This method supports the `$filter`, `$count`, `$select`, `$expand`, `$top`, and 
 | Header        | Value |
 |:--------------|:------|
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
+| ConsistencyLevel | eventual. Required. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
 
@@ -66,6 +67,7 @@ The following example shows a request.
 -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/025e5e3e-e5b7-4eb4-ba1f-4e5b0579f1a2/sponsorOf
+ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
