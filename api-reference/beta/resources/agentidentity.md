@@ -18,6 +18,8 @@ Represents an agent identity in Microsoft Entra ID. An agent identity is an acco
 
 Inherits from [servicePrincipal](../resources/serviceprincipal.md).
 
+The **instanceMode** property identifies the topology used when the agent identity was created. A multi-instance identity is backed by an agent identity blueprint and an agent identity blueprint principal. A single-instance identity is backed directly by a blueprint whose **isSingleInstance** property is `true`, without an agent identity blueprint principal. Such a blueprint supports at most one active agent identity per tenant.
+
 This resource is an open type that allows additional properties beyond those documented here.
 
 ## Methods
@@ -79,9 +81,18 @@ This resource is an open type that allows additional properties beyond those doc
 |disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered Agent Identity Blueprint. The possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |displayName|String|The display name for the agent identity. When the agent identity is created or its display name is updated, the value can't contain prohibited characters, such as the zero-width space (U+200B). Uses the same prohibited-character rules as an [application](../resources/application.md) display name. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |id|String|The unique identifier for the agent identity. Inherited from [directoryObject](../resources/directoryobject.md). Key. Not nullable. Read-only. Inherited from [entity](../resources/entity.md).|
+|instanceMode|[instanceMode](#instancemode-values)|The topology used when the agent identity was created. Immutable after creation. Not nullable. Defaults to `multiInstance` when no stored value exists, including for agent identities created before this property was introduced. Supports `$filter` (`eq`) with the `ConsistencyLevel: eventual` header and `$count=true`.|
 |managerApplications|Guid collection|The collection of application IDs designated as managers of this agent identity's backing [agentIdentityBlueprint](../resources/agentidentityblueprint.md). Read-only; the value is server-managed and reflects the **managerApplications** of the backing agentIdentityBlueprint. To change the managers, an owner or administrator must update the **managerApplications** property on the backing agentIdentityBlueprint **in the tenant where it's registered**. For multitenant agent identity blueprints, admins in a tenant where the blueprint is only consumed can't make this change — they must ask an owner or administrator in the blueprint's home tenant. Not nullable. Returned only on `$select`.|
 |servicePrincipalType|String|Set to __ServiceIdentity__ for all agent identities. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |tags|String collection|Custom strings that can be used to categorize and identify the agent identity. Not nullable. The value is the union of strings set here and on the associated Agent Identity Blueprint entity's **tags** property. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+
+### instanceMode values
+
+| Member | Description |
+|:-------|:------------|
+|multiInstance|An agent identity backed by an agent identity blueprint and an agent identity blueprint principal. The default topology.|
+|singleInstance|An agent identity backed directly by an agent identity blueprint without an agent identity blueprint principal. At most one active agent identity per tenant per blueprint.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -120,6 +131,7 @@ The following JSON representation shows the resource type. Only a subset of all 
   "createdDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",
   "displayName": "String",
+  "instanceMode": "String",
   "managerApplications": [
     "Guid"
   ],
