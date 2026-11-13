@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Download the content of an output owned by an agentic session. This operation uses the [agentic output](../resources/investigationoutput.md) resource.
 
 [List the session's outputs](../api/investigationsession-list-outputs.md) or [get an output](../api/investigationoutput-get.md) to retrieve its metadata. Use the session **id** and returned output **id** in the **content** route. Send the GET request with a Microsoft Graph access token authorized for the parent session.

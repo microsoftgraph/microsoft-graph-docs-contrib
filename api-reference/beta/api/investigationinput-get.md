@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get an input reference contained by an agentic session. This operation uses the [agentic input](../resources/investigationinput.md) resource.
 
 ## Permissions

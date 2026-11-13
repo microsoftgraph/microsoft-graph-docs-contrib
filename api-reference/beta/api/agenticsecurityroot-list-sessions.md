@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the agentic sessions visible to the signed-in user. This operation uses the [agentic session](../resources/investigationsession.md) resource.
 
 ## Permissions

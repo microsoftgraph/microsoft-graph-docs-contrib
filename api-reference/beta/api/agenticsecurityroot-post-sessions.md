@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create an agentic session to run an existing playbook against typed inputs. This operation uses the [agentic session](../resources/investigationsession.md) resource.
 
 ## Permissions

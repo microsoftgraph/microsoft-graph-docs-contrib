@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get an agent run and its processing status. This operation uses the [agentRun](../resources/agentrun.md) resource.
 
 [List the session's agent runs](../api/investigationsession-list-agentruns.md) to find the run **id**. Use that value unchanged with the same parent session identifier; the embedded **agent** object's **key** isn't the run identifier.

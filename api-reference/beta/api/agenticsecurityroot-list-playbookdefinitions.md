@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the read-only playbook catalog available to the signed-in user. This operation uses the [playbookDefinition](../resources/playbookdefinition.md) resource.
 
 ## Permissions
@@ -61,6 +59,8 @@ GET https://graph.microsoft.com/beta/security/agenticSecurity/playbookDefinition
 
 ### Response
 
+The following example shows one playbook from the response.
+
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.playbookDefinition)" } -->
 ```http
 HTTP/1.1 200 OK
@@ -69,12 +69,13 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "8d983728-49c3-43cc-b770-14e6d45475f4",
+      "id": "732b84ae-26ad-4eb4-b4fb-f2f45d7571e6",
       "uniqueName": "investigate-incident",
-      "displayName": "Investigate incident",
-      "description": "Investigate the supplied security incident.",
+      "displayName": "Investigate attack",
+      "description": "Prepare a detailed report about an attack. This playbook outlines the full attack story, providing timelines, attack techniques, indicators, and affected assets.",
       "acceptedInputTypes": [
-        "defenderIncidentId"
+        "defenderIncidentId",
+        "defenderAlertId"
       ]
     }
   ]

@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the agent runs owned by an agentic session. This operation uses the [agentRun](../resources/agentrun.md) resource.
 
 Use this method to inspect individual agents contributing to a session. To monitor the overall playbook execution, [get the session](../api/investigationsession-get.md) and inspect its status instead of inferring the session state from one agent run.

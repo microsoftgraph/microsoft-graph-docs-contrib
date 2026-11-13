@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Request asynchronous cancellation of an agentic session. This operation uses the [agentic session](../resources/investigationsession.md) resource.
 
 ## Permissions
@@ -51,7 +49,7 @@ If successful, this method returns a `202 Accepted` response code, the current [
 [Get the same session](../api/investigationsession-get.md) to check its current state. You can use `$select=id,status,statusDetail` to request the identifier, overall processing status, and substatus. The `Location` URL also identifies this session.
 
 - If **status** is `notStarted` or `running`, cancellation isn't confirmed. Wait before reading the session again rather than polling in a tight loop.
-- A canceled session is reported as **status** `failed` with **statusDetail** `canceled`. See the [session lifecycle table](../api/investigationsession-get.md#session-status-and-status-details).
+- A canceled session is reported as **status** `failed` with **statusDetail** `stopped`. See the [session lifecycle table](../api/investigationsession-get.md#session-status-and-status-details).
 - A `succeeded` session completed successfully; that isn't evidence of cancellation. A `failed` status with another or unavailable detail doesn't, by itself, confirm that cancellation caused the failure.
 
 Use GET requests to monitor progress, not repeated cancellation requests. An HTTP `200 OK` from Get session means the read succeeded, not that cancellation finished. No fixed cancellation duration is implied, and clients must handle unavailable optional detail values.

@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get an agentic session and poll its processing status. This operation uses the [agentic session](../resources/investigationsession.md) resource.
 
 ## Permissions
@@ -64,18 +62,18 @@ The following table shows the session lifecycle mappings. Different lifecycle co
 |Active processing is waiting for input.|`running`|`waitingForInput`|
 |The session is idle and completed successfully.|`succeeded`|`completed`|
 |The session is idle but still requires input.|`running`|`waitingForInput`|
-|The session is stopping or archiving and is reported as canceled.|`failed`|`canceled`|
-|The session is stopping or archiving with input still pending, but is reported as canceled.|`failed`|`canceled`|
-|The session was stopped or archived.|`failed`|`canceled`|
-|The session was stopped or archived; pending input doesn't change that result.|`failed`|`canceled`|
-|Archiving failed and the session is reported as canceled.|`failed`|`canceled`|
-|Archiving failed; pending input doesn't change the cancellation result.|`failed`|`canceled`|
+|The session is stopping or archiving and is reported as canceled.|`failed`|`stopped`|
+|The session is stopping or archiving with input still pending, but is reported as canceled.|`failed`|`stopped`|
+|The session was stopped or archived.|`failed`|`stopped`|
+|The session was stopped or archived; pending input doesn't change that result.|`failed`|`stopped`|
+|Archiving failed and the session is reported as canceled.|`failed`|`stopped`|
+|Archiving failed; pending input doesn't change the cancellation result.|`failed`|`stopped`|
 |The underlying state is missing or unrecognized and no input is pending.|`notStarted`|`completed`|
 |The underlying state is missing or unrecognized, but input is required.|`running`|`waitingForInput`|
 
 Use **status** to determine whether processing succeeded. In the missing-state fallback, **statusDetail** can be `completed` while **status** is `notStarted`; that combination doesn't indicate success. Successful completion requires **status** to be `succeeded`. An HTTP `200 OK` only means the read succeeded.
 
-A canceled session is reported as **status** `failed` with **statusDetail** `canceled`. Don't rely on `stopped` as the cancellation detail.
+A canceled session is reported as **status** `failed` with **statusDetail** `stopped`.
 
 ## Examples
 

@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the metadata of a stored output owned by an agentic session. This operation uses the [agentic output](../resources/investigationoutput.md) resource.
 
 [List the session's outputs](../api/investigationsession-list-outputs.md) to find its output identifiers. Use the returned **id** unchanged for `{output-id}`; treat it as opaque and don't derive it from a filename.

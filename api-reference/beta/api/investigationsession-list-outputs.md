@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the stored-file outputs owned by an agentic session. This operation uses the [agentic output](../resources/investigationoutput.md) resource.
 
 ## Permissions
