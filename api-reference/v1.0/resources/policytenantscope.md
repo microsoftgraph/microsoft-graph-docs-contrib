@@ -22,7 +22,7 @@ Inherits from [policyScopeBase](../resources/policyscopebase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activities|microsoft.graph.security.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Required. This object is a multi-valued enumeration.|
+|activities|microsoft.graph.security.userActivityTypes|Specifies the user activities the calling application supports or is interested in. This flagged enumeration allows multiple members to be selected simultaneously. The possible values are: `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`, `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`. Required.|
 |executionMode|microsoft.graph.security.executionMode|Policy execution mode at the tenant level.  Possible values are `evaluateInline` and `evaluateOffline`. Inherited from `policyScopeBase`. Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations protected at the tenant level. Inherited from `policyScopeBase`. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|Enforcement actions at the tenant level. Inherited from `policyScopeBase`. Required.|

@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "e51c981f-6630-4a80-8e81-84cabeab6dc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allResourcesExclusions",
+          "ChangeType": "Addition",
+          "Description": "Added the [allResourcesExclusions](https://learn.microsoft.com/en-us/graph/api/resources/allresourcesexclusions?view=graph-rest-beta) resource.",
+          "Target": "allResourcesExclusions"
+        },
+        {
+          "Id": "e51c981f-6630-4a80-8e81-84cabeab6dc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessExclusions",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessExclusions](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessexclusions?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessExclusions"
+        },
+        {
+          "Id": "e51c981f-6630-4a80-8e81-84cabeab6dc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userActionExclusion",
+          "ChangeType": "Addition",
+          "Description": "Added the [userActionExclusion](https://learn.microsoft.com/en-us/graph/api/resources/useractionexclusion?view=graph-rest-beta) resource.",
+          "Target": "userActionExclusion"
+        },
+        {
+          "Id": "e51c981f-6630-4a80-8e81-84cabeab6dc5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** relationship to the [conditionalAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessroot?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessRoot"
+        },
+        {
+          "Id": "e51c981f-6630-4a80-8e81-84cabeab6dc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessSettings](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesssettings?view=graph-rest-beta) resource and associated methods.",
+          "Target": "conditionalAccessSettings"
+        }
+      ],
+      "Id": "e51c981f-6630-4a80-8e81-84cabeab6dc5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-28T17:11:46.0656053Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b9ce67c8-1b30-4627-ada9-34b82057f789",
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessPolicyPlan",

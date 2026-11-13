@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Provides access to playbook definitions and agentic security sessions. Use its child collections; reading, updating, or deleting this container directly isn't supported.
 
 Inherits from [entity](../resources/entity.md).

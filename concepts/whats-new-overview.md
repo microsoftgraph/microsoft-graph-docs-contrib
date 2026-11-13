@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 10/08/2026
+ms.date: 10/26/2026
 ms.topic: whats-new
 ---
 
@@ -22,6 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
+- Added request guidance and examples for using **retentionSettings** when you create or update [Exchange](/graph/api/resources/exchangeprotectionpolicy), [OneDrive for Business](/graph/api/resources/onedriveforbusinessprotectionpolicy), and [SharePoint](/graph/api/resources/sharepointprotectionpolicy) protection policies to configure how long backups are retained.
 - Added the **error** property to the [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase) resource and its derived types. Use this property to get error details when a granular restore operation for an individual artifact fails or completes with an error.
 - Added audit metadata to the [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem) resource. Use this metadata to identify when a file or folder was created or last modified and who made the change when you select items for granular restore.
 - Added support for tracking backup retention periods and pending retention changes on [protectionUnitBase](/graph/api/resources/protectionunitbase). Use the **backupRetentionPeriodInDays** and **pendingRetentionPeriodChange** properties to monitor protection units as they move between policies with different retention periods.
@@ -32,6 +33,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Mail
 
+- Updated national cloud availability in China operated by 21Vianet for the [mailFolder: delta](/graph/api/mailfolder-delta) and [message: delta](/graph/api/message-delta) methods. Use these methods to track incremental changes to mail folders and messages within a mail folder.
 - Added the [distributionList](/graph/api/resources/distributionlist) resource type and related methods for managing personal distribution lists in a user's mailbox. Use these APIs to create, read, update, and delete distribution lists, and add or remove members.
 - Promoted the [reportMessage](/graph/api/message-reportmessage) method on the [message](/graph/api/resources/message) resource from beta to v1.0. Use this method to report a message as junk, phishing, or not junk, which improves mail filtering.
 
@@ -40,14 +42,28 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the **isHidden** property to the [mailboxFolder](/graph/api/resources/mailboxfolder) resource to identify hidden mailbox folders.
 - Use the existing **includeHiddenFolders** query parameter for [listing folders](/graph/api/mailbox-list-folders) and [listing child folders](/graph/api/mailboxfolder-list-childfolders). Set it to `true` to include both hidden and nonhidden folders.
 
+### Security | Data security and compliance
+
+- Added the `copyToClipboard`, `pasteFromClipboard`, `print`, and `accessDebugTools` members to the **userActivityType** and **userActivityTypes** enumerations in v1.0. These enumerations are used by [activityMetadata](/graph/api/resources/activitymetadata) and [policyScopeBase](/graph/api/resources/policyscopebase) to represent activities evaluated against data protection policies. Use the `Prefer: include-unknown-enum-members` request header to retrieve these values.
+
 ## November 2026: New in preview only
+
+### Backup and recovery | Microsoft 365 backup and storage
+
+- Added request guidance and examples for using **retentionSettings** when you create or update [Exchange](/graph/api/resources/exchangeprotectionpolicy?view=graph-rest-beta&preserve-view=true), [OneDrive for Business](/graph/api/resources/onedriveforbusinessprotectionpolicy?view=graph-rest-beta&preserve-view=true), and [SharePoint](/graph/api/resources/sharepointprotectionpolicy?view=graph-rest-beta&preserve-view=true) protection policies to configure how long backups are retained.
 
 ### Identity and access | Directory management
 
 - Devices now support soft-deletion and restoration. When a device is deleted, it's moved to the [deleted items container](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) and can be restored within 30 days. After 30 days, it's permanently deleted.
 
+### Identity and access | Network access
+
+- Added the [webFilteringPolicy](/graph/api/resources/networkaccess-webfilteringpolicy?view=graph-rest-beta&preserve-view=true) resource type and related methods for configuring how Global Secure Access allows or blocks web traffic based on source sessions, URLs, web categories, and HTTP request methods.
+
 ### Security
 
+- Added the **lookback** property to the [ruleSchedule](/graph/api/resources/security-ruleschedule?view=graph-rest-beta&preserve-view=true) resource to control the time window evaluated by each scheduled custom detection rule run.
+- Added the **eventGroupingKind** property to the [alertTemplate](/graph/api/resources/security-alerttemplate?view=graph-rest-beta&preserve-view=true) resource and the **eventGroupingKind** enumeration type. Use `singleAlert` to group matching events from one scheduled execution into a single alert, or `alertPerEvent` to create a separate alert for each matching event.
 - Added the [resourceQuota](/graph/api/resources/resourcequota?view=graph-rest-beta&preserve-view=true) resource type and the **resourceQuotas** property on the [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) resource to let administrators monitor and configure quota allocations for resource types in their Microsoft Entra organization.
 
 ### Security | Case management
@@ -67,6 +83,13 @@ Added the [classificationGradingJobResponse](/graph/api/resources/classification
 - Removed the `If-Match` header from [create section](/graph/api/userteamwork-post-sections?view=graph-rest-beta&preserve-view=true), [update section](/graph/api/teamworksection-update?view=graph-rest-beta&preserve-view=true), [delete section](/graph/api/teamworksection-delete?view=graph-rest-beta&preserve-view=true), [reorder sections](/graph/api/teamworksection-reorder?view=graph-rest-beta&preserve-view=true), [create section item](/graph/api/teamworksection-post-items?view=graph-rest-beta&preserve-view=true), [move section item](/graph/api/teamworksectionitem-move?view=graph-rest-beta&preserve-view=true), [reorder section items](/graph/api/teamworksectionitem-reorder?view=graph-rest-beta&preserve-view=true), and [delete section item](/graph/api/teamworksectionitem-delete?view=graph-rest-beta&preserve-view=true) methods of the [teamworkSection](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) and [teamworkSectionItem](/graph/api/resources/teamworksectionitem?view=graph-rest-beta&preserve-view=true) resources. These operations now return a `409 Conflict` response code for concurrent changes, and no longer return `412 Precondition Failed` or `428 Precondition Required`.
 - Updated the [add teamworkSectionItem](/graph/api/teamworksection-post-items?view=graph-rest-beta&preserve-view=true) method to move an item from another user-defined section.
 - Added the [teamworkChannelTag](/graph/api/resources/teamworkchanneltag?view=graph-rest-beta&preserve-view=true) resource type and associated methods for managing tags owned by a Microsoft Teams channel. Use channel tags to group users within a channel and manage their tag assignments.
+
+## November 2026: New in preview only
+
+### Device and app management | Cloud PC
+
+- Added the `cloudPcReserveHealthScenario` member to the **alertRuleTemplate** enumeration type used by [alertRule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true) to monitor Windows 365 Reserve Cloud PC health conditions.
+- Added the `cloudPcReserveLicensesAvailabilityBelowThreshold`, `reserveCloudPcUnlicensedUsersAssignment`, and `cloudPcMaxUserStorageUsageThresholdExceeded` members to the **conditionCategory** enumeration type used by [ruleCondition](/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta&preserve-view=true) to monitor available Reserve licenses, unlicensed user assignments, and maximum user storage usage.
 
 ## October 2026: New and generally available
 
@@ -92,10 +115,13 @@ Added the [classificationGradingJobResponse](/graph/api/resources/classification
 
 ### Identity and access | Directory management
 
+- Added the **deletedDateTime** property to the [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition) resource. Use it to read when a custom role definition was soft-deleted.
+
 Promoted the **managerApplications** property on the [agentUser](/graph/api/resources/agentuser) resource type from beta to v1.0. Use it to read the application IDs authorized to manage the agent user's backing agent blueprint. The property is read-only and is returned only when explicitly selected with the `microsoft.graph.agentUser` type cast.
 
 ### Identity and access | Governance
 
+- Added the [timeBasedAttributeTriggerV2](/graph/api/resources/identitygovernance-timebasedattributetriggerv2) resource type for configurable time-based lifecycle workflow triggers. Select a date-type user attribute and configure an operator to run workflows on an exact date, within a rolling window, or between two offsets before or after that date.
 - Added the **isEnabled** property to the [roleManagementCustomCalloutExtension](/graph/api/resources/rolemanagementcustomcalloutextension) resource type in v1.0. Use it to enable or disable a PIM custom extension without deleting it.
 - Added the `applicationAuthorization` and `appRoles` members to the **customExtensionResourceType** enumeration in v1.0, extending the supported values of **resourceType** on [roleManagementCustomCalloutExtension](/graph/api/resources/rolemanagementcustomcalloutextension). Use the `Prefer: include-unknown-enum-members` request header to retrieve these values.
 - Added the [groupResource](/graph/api/resources/groupresource) resource type and the **resources** relationship to the [privilegedAccessGroup](/graph/api/resources/privilegedaccessgroup) resource. Use them to list and get groups managed through Privileged Identity Management (PIM) for groups.
@@ -158,6 +184,8 @@ The [Place update](/graph/api/place-update?view=graph-rest-beta&preserve-view=tr
 - Updated the date when deprecated image properties on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true), [cloudPcSourceDeviceImage](/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta&preserve-view=true), and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) will stop returning data from January 31, 2024 to December 7, 2026. No replacement is planned for **recommendedSku**. Review the replacement property guidance in these resource topics and update affected integrations before the deadline.
 - Added support for extending Windows 365 Reserve access for multiple users through the [submitManagedLicenseOperation](/graph/api/cloudpcmanagedlicense-submitmanagedlicenseoperation?view=graph-rest-beta&preserve-view=true) action on the [cloudPcManagedLicense](/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta&preserve-view=true) collection. Poll the submitted operation to check completion and inspect per-user results.
 - Use the [retrieveManagedLicenseOperation](/graph/api/cloudpcmanagedlicense-retrievemanagedlicenseoperation?view=graph-rest-beta&preserve-view=true) operation to retrieve the status and per-user results of a submitted operation.
+- Added the [setDeviceName](/graph/api/cloudpc-setdevicename?view=graph-rest-beta&preserve-view=true) action to set a Cloud PC's operating system device name without changing its display name.
+- Added the [cloudPcBulkSetDeviceName](/graph/api/resources/cloudpcbulksetdevicename?view=graph-rest-beta&preserve-view=true) resource type to set device names for multiple Cloud PCs by using a naming template.
 
 ### Device and app management | Device updates
 
@@ -186,9 +214,12 @@ Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?
 ### Identity and access | Identity and sign-in
 
 - Added public preview support for OnPasswordUpdate custom authentication extensions. Use the [onPasswordUpdateCustomExtension](/graph/api/resources/onpasswordupdatecustomextension?view=graph-rest-beta&preserve-view=true) resource to notify external systems after a self-service password reset and the [onPasswordUpdateListener](/graph/api/resources/onpasswordupdatelistener?view=graph-rest-beta&preserve-view=true) resource to configure when the notification occurs.
+- Added the [identityVerificationStatus](/graph/api/resources/identityverificationstatus?view=graph-rest-beta&preserve-view=true) resource type and related methods to read a user's verification status, record verification events, apply administrative override reasons, and remove event records.
+- Added the **provenance** property to the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta&preserve-view=true) resource to inspect the trust classification, supporting assertions, and chain status of FIDO2 authentication methods. Added the [attestProvenance](/graph/api/authenticationmethod-attestprovenance?view=graph-rest-beta&preserve-view=true) action to apply an administrative attestation to credential provenance.
 - Added support for routing SMS and voice authentication traffic through a telecom provider integration. Configure the provider endpoint, application identifier, evaluation mode, and migration percentage through the **telecomProviderSettings** property on the [smsAuthenticationMethodConfiguration](/graph/api/resources/smsauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) and [voiceAuthenticationMethodConfiguration](/graph/api/resources/voiceauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) resources.
 - Added the **identityVerificationEventsConfiguration** property to the [verifiableCredentialsAuthenticationMethodConfiguration](/graph/api/resources/verifiablecredentialsauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) resource. Use it to control tenant-wide collection and exposure of identity verification events and credential provenance information for Verified ID verification.
 - Added the [conditionalAccessPolicyPlan](/graph/api/resources/conditionalaccesspolicyplan?view=graph-rest-beta&preserve-view=true) resource type and related methods for grouping shared Conditional Access conditions with scenario-specific rules. Use policy plans to consolidate common targeting conditions and manage rule-specific enforcement controls.
+- Added the **settings** relationship to the [conditionalAccessRoot](/graph/api/resources/conditionalaccessroot?view=graph-rest-beta&preserve-view=true) resource and related methods to read, update, and reset tenant-wide user-action exclusions for Conditional Access policies that target all resources.
 
 ### Groups
 
@@ -215,6 +246,7 @@ Added support to identify recalled messages in message trace. Use `recalled` as 
 
 - Added the [appManagementAudit](/graph/api/resources/appmanagementaudit?view=graph-rest-beta&preserve-view=true) resource type and related methods to retrieve Microsoft Entra application management audit logs. Use these APIs to understand how app management policy restrictions affected application and service principal changes.
 - Added the `passwordUpdate` member to the **eventType** property of the [appliedAuthenticationEventListener](/graph/api/resources/appliedauthenticationeventlistener?view=graph-rest-beta&preserve-view=true) resource to identify OnPasswordUpdate custom extension listeners triggered during sign-ins.
+- Added methods to the [serviceActivity](/graph/api/resources/serviceactivity?view=graph-rest-beta&preserve-view=true) resource to retrieve counts of successful and failed Agent ID autonomous and interactive sign-ins during a specified time period.
 - Added the `notAppliedAllAppsExclusion` and `reportOnlyNotAppliedAllAppsExclusion` members to the **appliedConditionalAccessPolicyResult** enumeration used by the **result** property of [appliedConditionalAccessPolicy](/graph/api/resources/appliedconditionalaccesspolicy?view=graph-rest-beta&preserve-view=true). Use these values to distinguish enabled and report-only policies skipped by an enabled all-apps exclusion from policies that don't apply for other reasons.
 
 ### Security

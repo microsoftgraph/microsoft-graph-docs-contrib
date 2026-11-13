@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an external resource identifier or keyword supplied to an agentic session. Inputs are shared session context, not a record of the exact input consumed by each agent run. Supply inputs only inline when creating the session; subsequent input writes aren't supported.
 
 Inherits from [entity](../resources/entity.md).

@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "3ddd55ef-864b-4ec5-95f4-50314b3e554a",
+          "ApiChange": "Property",
+          "ChangedApiName": "deletedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **deletedDateTime** property to the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-1.0) resource.",
+          "Target": "unifiedRoleDefinition"
+        }
+      ],
+      "Id": "3ddd55ef-864b-4ec5-95f4-50314b3e554a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-10-26T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7af7a8fb-dd52-4972-ab2e-52de8a2ab65d",
           "ApiChange": "Property",
           "ChangedApiName": "isPrivileged",
@@ -16691,7 +16709,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "resourceQuota",
           "ChangeType": "Addition",
-          "Description": "Added the [resourceQuota](https://learn.microsoft.com/en-us/graph/api/resources/resourcequota?view=graph-rest-beta) resource.",
+          "Description": "Added the **resourceQuota** resource type for the **resourceQuotas** property on the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource.",
           "Target": "resourceQuota"
         },
         {

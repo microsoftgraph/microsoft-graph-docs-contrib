@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an agent's contribution to an agentic session. Read its status, timing, and failure information to monitor processing. The **agent** property describes the agent; it doesn't expose an independently addressable agent catalog.
 
 Inherits from [entity](../resources/entity.md).

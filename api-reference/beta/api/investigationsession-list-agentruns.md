@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the agent runs owned by an agentic session. This operation uses the [agentRun](../resources/agentrun.md) resource.
 
 Use this method to inspect individual agents contributing to a session. To monitor the overall playbook execution, [get the session](../api/investigationsession-get.md) and inspect its status instead of inferring the session state from one agent run.
@@ -22,7 +20,7 @@ Use this method to inspect individual agents contributing to a session. To monit
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "investigationsession_list_agentruns_permissions" } -->
+<!-- { "blockType": "permissions", "name": "investigationsession_list_agentruns" } -->
 [!INCLUDE [permissions-table](../includes/permissions/investigationsession-list-agentruns-permissions.md)]
 
 The signed-in user must have access to the requested resources. Granting an OAuth permission does not override the service's access controls.

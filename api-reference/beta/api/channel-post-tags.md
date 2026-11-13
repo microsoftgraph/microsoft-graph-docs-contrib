@@ -22,11 +22,7 @@ The **General** channel doesn't support the creation of channel-owned tags; use 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "channel-post-tags-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "channel_post_tags" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-post-tags-permissions.md)]
 
 The creation of a tag with initial members supports both delegated and application permissions. To add members after you create the tag, use [Create channel tag member](../api/teamworkchanneltag-post-members.md), which supports application permissions only.

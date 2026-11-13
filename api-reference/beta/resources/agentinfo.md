@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Describes the agent recorded in the **agent** property of an [agentRun](../resources/agentrun.md). This embedded complex type isn't an independently addressable resource.
 
 ## Methods

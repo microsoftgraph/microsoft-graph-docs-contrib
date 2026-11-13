@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Describes a run-level failure in the **failureInfo** property of an [agentRun](../resources/agentrun.md). This information is separate from the HTTP error response.
 
 ## Methods
