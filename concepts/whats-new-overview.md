@@ -52,9 +52,19 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Added request guidance and examples for using **retentionSettings** when you create or update [Exchange](/graph/api/resources/exchangeprotectionpolicy?view=graph-rest-beta&preserve-view=true), [OneDrive for Business](/graph/api/resources/onedriveforbusinessprotectionpolicy?view=graph-rest-beta&preserve-view=true), and [SharePoint](/graph/api/resources/sharepointprotectionpolicy?view=graph-rest-beta&preserve-view=true) protection policies to configure how long backups are retained.
 
+### Device and app management | Cloud PC
+
+- Added the `cloudPcReserveHealthScenario` member to the **alertRuleTemplate** enumeration type used by [alertRule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true) to monitor Windows 365 Reserve Cloud PC health conditions.
+- Added the `cloudPcReserveLicensesAvailabilityBelowThreshold`, `reserveCloudPcUnlicensedUsersAssignment`, and `cloudPcMaxUserStorageUsageThresholdExceeded` members to the **conditionCategory** enumeration type used by [ruleCondition](/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta&preserve-view=true) to monitor available Reserve licenses, unlicensed user assignments, and maximum user storage usage.
+
 ### Identity and access | Directory management
 
 - Devices now support soft-deletion and restoration. When a device is deleted, it's moved to the [deleted items container](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) and can be restored within 30 days. After 30 days, it's permanently deleted.
+
+### Identity and access | Identity and sign-in
+
+- Added the `aiElevatedAccountRisk` member to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that the user completed Microsoft-managed remediation to address their risk.
+- Added the `userPassedVerifiedIdDrivenByRiskBasedPolicy` member to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that the user remediated their risk by completing Verified ID verification under a risk-based Conditional Access policy.
 
 ### Identity and access | Network access
 
@@ -83,13 +93,6 @@ Added the [classificationGradingJobResponse](/graph/api/resources/classification
 - Removed the `If-Match` header from [create section](/graph/api/userteamwork-post-sections?view=graph-rest-beta&preserve-view=true), [update section](/graph/api/teamworksection-update?view=graph-rest-beta&preserve-view=true), [delete section](/graph/api/teamworksection-delete?view=graph-rest-beta&preserve-view=true), [reorder sections](/graph/api/teamworksection-reorder?view=graph-rest-beta&preserve-view=true), [create section item](/graph/api/teamworksection-post-items?view=graph-rest-beta&preserve-view=true), [move section item](/graph/api/teamworksectionitem-move?view=graph-rest-beta&preserve-view=true), [reorder section items](/graph/api/teamworksectionitem-reorder?view=graph-rest-beta&preserve-view=true), and [delete section item](/graph/api/teamworksectionitem-delete?view=graph-rest-beta&preserve-view=true) methods of the [teamworkSection](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) and [teamworkSectionItem](/graph/api/resources/teamworksectionitem?view=graph-rest-beta&preserve-view=true) resources. These operations now return a `409 Conflict` response code for concurrent changes, and no longer return `412 Precondition Failed` or `428 Precondition Required`.
 - Updated the [add teamworkSectionItem](/graph/api/teamworksection-post-items?view=graph-rest-beta&preserve-view=true) method to move an item from another user-defined section.
 - Added the [teamworkChannelTag](/graph/api/resources/teamworkchanneltag?view=graph-rest-beta&preserve-view=true) resource type and associated methods for managing tags owned by a Microsoft Teams channel. Use channel tags to group users within a channel and manage their tag assignments.
-
-## November 2026: New in preview only
-
-### Device and app management | Cloud PC
-
-- Added the `cloudPcReserveHealthScenario` member to the **alertRuleTemplate** enumeration type used by [alertRule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true) to monitor Windows 365 Reserve Cloud PC health conditions.
-- Added the `cloudPcReserveLicensesAvailabilityBelowThreshold`, `reserveCloudPcUnlicensedUsersAssignment`, and `cloudPcMaxUserStorageUsageThresholdExceeded` members to the **conditionCategory** enumeration type used by [ruleCondition](/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta&preserve-view=true) to monitor available Reserve licenses, unlicensed user assignments, and maximum user storage usage.
 
 ## October 2026: New and generally available
 
