@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a predefined security playbook that a user can run in an agentic session. The catalog is read-only. Select an existing definition by its **id** when creating a session; **uniqueName** is a separate catalog name, not an alternate addressing key.
 
 ## Methods

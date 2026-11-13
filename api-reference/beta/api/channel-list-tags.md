@@ -20,11 +20,7 @@ Get a list of the [teamworkChannelTag](../resources/teamworkchanneltag.md) objec
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "channel-list-tags-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "channel_list_tags" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-tags-permissions.md)]
 
 ## HTTP request

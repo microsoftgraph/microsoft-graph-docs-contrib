@@ -12,15 +12,13 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the read-only playbook catalog available to the signed-in user. This operation uses the [playbookDefinition](../resources/playbookdefinition.md) resource.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "agenticsecurityroot_list_playbookdefinitions_permissions" } -->
+<!-- { "blockType": "permissions", "name": "agenticsecurityroot_list_playbookdefinitions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agenticsecurityroot-list-playbookdefinitions-permissions.md)]
 
 The signed-in user must have access to the requested resources. Granting an OAuth permission does not override the service's access controls.
@@ -61,6 +59,8 @@ GET https://graph.microsoft.com/beta/security/agenticSecurity/playbookDefinition
 
 ### Response
 
+The following example shows one playbook from the response.
+
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.playbookDefinition)" } -->
 ```http
 HTTP/1.1 200 OK
@@ -69,12 +69,13 @@ Content-Type: application/json
 {
   "value": [
     {
-      "id": "8d983728-49c3-43cc-b770-14e6d45475f4",
+      "id": "732b84ae-26ad-4eb4-b4fb-f2f45d7571e6",
       "uniqueName": "investigate-incident",
-      "displayName": "Investigate incident",
-      "description": "Investigate the supplied security incident.",
+      "displayName": "Investigate attack",
+      "description": "Prepare a detailed report about an attack. This playbook outlines the full attack story, providing timelines, attack techniques, indicators, and affected assets.",
       "acceptedInputTypes": [
-        "defenderIncidentId"
+        "defenderIncidentId",
+        "defenderAlertId"
       ]
     }
   ]

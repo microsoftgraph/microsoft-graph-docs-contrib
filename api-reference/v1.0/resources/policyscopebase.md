@@ -20,7 +20,7 @@ Used as a base type for more specific policy scopes like [policyTenantScope](../
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activities|microsoft.graph.security.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Required. This object is a multi-valued enumeration.|
+|activities|microsoft.graph.security.userActivityTypes|Specifies the user activities the calling application supports or is interested in. This flagged enumeration allows multiple members to be selected simultaneously. The possible values are: `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`, `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`. Required.|
 |executionMode|microsoft.graph.security.executionMode |Specifies how the policy should be executed. Possible values are `evaluateInline`, `evaluateOffline`, `unknownFutureValue`. Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|The locations (like domains or URLs) to be protected. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|The enforcement actions to take if the policy conditions are met within this scope. Required.|
