@@ -31,6 +31,7 @@ A role definition is a collection of permissions in Microsoft Entra listing the 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|deletedDateTime|DateTimeOffset|The date and time when the custom role definition was deleted. The value is `null` for active and restored role definitions. Read-only.|
 |description|String| The description for the unifiedRoleDefinition. Read-only when **isBuiltIn** is `true`. |
 |displayName|String| The display name for the unifiedRoleDefinition. Read-only when **isBuiltIn** is `true`. Required.  Supports $filter (`eq`, `in`).|
 |id|String| The unique identifier for the role definition. Key, not nullable, Read-only. Inherited from [entity](../resources/entity.md). Supports $filter (`eq`, `in`). |
@@ -63,6 +64,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.unifiedRoleDefinition",
+  "deletedDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",

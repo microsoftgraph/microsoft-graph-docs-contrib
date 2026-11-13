@@ -10,8 +10,6 @@ doc_type: conceptualPageType
 
 # Use Project Perception in Microsoft Graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 [Project Perception](https://www.microsoft.com/en-us/security/business/ai-powered-cybersecurity/project-perception-agentic-system) is Microsoft's agentic security system. It brings specialized AI agents into security workflows to support proactive defense, while keeping critical decisions under human control.
 
 Use the agentic security APIs in Microsoft Graph to run supported security playbooks from your applications and workflows. Discover [playbook definitions](../resources/playbookdefinition.md), create an [agentic session](../resources/investigationsession.md) with the required inputs, monitor its progress, and retrieve [outputs](../resources/investigationoutput.md).

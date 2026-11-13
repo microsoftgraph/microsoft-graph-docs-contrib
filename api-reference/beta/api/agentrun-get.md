@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get an agent run and its processing status. This operation uses the [agentRun](../resources/agentrun.md) resource.
 
 [List the session's agent runs](../api/investigationsession-list-agentruns.md) to find the run **id**. Use that value unchanged with the same parent session identifier; the embedded **agent** object's **key** isn't the run identifier.
@@ -24,7 +22,7 @@ Use this method to inspect one agent's execution. For the overall playbook state
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "agentrun_get_permissions" } -->
+<!-- { "blockType": "permissions", "name": "agentrun_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentrun-get-permissions.md)]
 
 The signed-in user must have access to the requested resources. Granting an OAuth permission does not override the service's access controls.

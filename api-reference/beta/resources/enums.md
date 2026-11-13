@@ -6609,6 +6609,100 @@ Possible values for user account types (group membership), per Windows definitio
 |coldCrawl|
 |applications|
 
+### chainBreakReason values
+
+|Member|
+|:---|
+|none|
+|idvRevoked|
+|sourceCredentialRevoked|
+|unknownFutureValue|
+
+### chainBreakSource values
+
+|Member|
+|:---|
+|none|
+|identityProtection|
+|adminAction|
+|system|
+|unknownFutureValue|
+
+### chainState values
+
+|Member|
+|:---|
+|intact|
+|broken|
+|unknownFutureValue|
+
+### provenanceActorType values
+
+|Member|
+|:---|
+|system|
+|user|
+|application|
+|unknownFutureValue|
+
+### provenanceAssertionType values
+
+|Member|
+|:---|
+|identityVerification|
+|derivedFromCredential|
+|manualAttestation|
+|unknownFutureValue|
+
+### provenanceClassification values
+
+|Member|
+|:---|
+|highAssurance|
+|mediumAssurance|
+|lowAssurance|
+|unknownFutureValue|
+
+### verificationActorType values
+
+|Member|
+|:---|
+|user|
+|application|
+|unknownFutureValue|
+
+### verificationEventLifecycleState values
+
+|Member|
+|:---|
+|active|
+|revoked|
+|suspended|
+|invalidated|
+|issued|
+|blocked|
+|unknownFutureValue|
+
+### verificationLifecycleSource values
+
+|Member|
+|:---|
+|entra|
+|adminOverride|
+|apiOverride|
+|unknownFutureValue|
+
+### verificationState values
+
+|Member|
+|:---|
+|unverified|
+|verified|
+|revoked|
+|suspended|
+|issued|
+|blocked|
+|unknownFutureValue|
 
 ### investigationInputType values
 

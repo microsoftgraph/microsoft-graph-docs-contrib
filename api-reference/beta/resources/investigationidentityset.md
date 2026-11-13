@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Identifies the principals recorded in the **initiatedBy** property of an [agentic session](../resources/investigationsession.md) or [agentRun](../resources/agentrun.md). Recorded identities describe provenance; they don't select execution credentials or grant access.
 
 Inherits from [identitySet](../resources/identityset.md).

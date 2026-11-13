@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
-ms.date: 08/01/2024
+ms.date: 10/26/2026
 ---
 
 # Identity governance enum values
@@ -148,6 +148,14 @@ The **subjectType** enumeration is an evolvable enumeration marked with the `IsF
 |multipleConditionsExceeded|
 |unknownFutureValue|
 
+### workflowTriggerOperatorEventTiming values
+
+|Member|
+|:---|
+|before|
+|after|
+|on|
+|unknownFutureValue|
 
 
 <!--

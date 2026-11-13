@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an execution of a security playbook against typed inputs. Create a session to start asynchronous investigation work, and read its **status** and **statusDetail** to monitor progress. Inputs belong to the session, and outputs are session-owned stored files.
 
 Inherits from [entity](../resources/entity.md).
@@ -40,8 +38,8 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique, read-only identifier of the resource.|
 |initiatedBy|[investigationIdentitySet](../resources/investigationidentityset.md)|The initiating principals recorded by the service, when available. Read-only. This property doesn't select an execution identity.|
 |lastModifiedDateTime|DateTimeOffset|The UTC date and time when the resource was last updated, in ISO 8601 format. Read-only.|
-|status|longRunningOperationStatus|The service-computed processing status. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. A canceled execution has `failed` status and `canceled` **statusDetail**. A request for input has `running` status and `waitingForInput` **statusDetail**. Read-only. Supports `$filter` (`eq`, `or`, `in`) when listing sessions.|
-|statusDetail|String|Additional processing detail, including `waitingForInput` or `canceled`, when the status alone doesn't describe the source lifecycle. Read-only. Doesn't support `$filter`. For the session lifecycle combinations, see [Get agentic session](../api/investigationsession-get.md#session-status-and-status-details).|
+|status|longRunningOperationStatus|The service-computed processing status. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. A canceled execution has `failed` status and `stopped` **statusDetail**. A request for input has `running` status and `waitingForInput` **statusDetail**. Read-only. Supports `$filter` (`eq`, `or`, `in`) when listing sessions.|
+|statusDetail|String|Additional processing detail, including `waitingForInput` or `stopped`, when the status alone doesn't describe the source lifecycle. Read-only. Doesn't support `$filter`. For the session lifecycle combinations, see [Get agentic session](../api/investigationsession-get.md#session-status-and-status-details).|
 |tags|String collection|The service-generated tags for the session. Read-only. Can't be supplied when creating a session.|
 
 ## Relationships
