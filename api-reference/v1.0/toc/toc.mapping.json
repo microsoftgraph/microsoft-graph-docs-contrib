@@ -944,6 +944,9 @@
               ],
               "complexTypes": [
                 "accessPackageAssignmentRequestParameters",
+                "authenticationInfo",
+                "clientCredentialAuthenticationInfo",
+                "externalSapAcConnectionInfo",
                 "externalTokenBasedSapIagConnectionInfo"
               ]
             },
@@ -1831,6 +1834,7 @@
               "classificationInnerError",
               "computeRightsAndInheritanceResult",
               "contentBase",
+              "currentLabel",
               "customMetadataDictionary",
               "deviceMetadata",
               "dlpActionInfo",
@@ -1847,6 +1851,7 @@
               "policyTenantScope",
               "policyUserScope",
               "processContentBatchRequest",
+              "processContentMetadataBase",
               "processContentRequest",
               "processContentResponse",
               "processContentResponses",

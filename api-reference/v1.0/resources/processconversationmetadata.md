@@ -32,6 +32,7 @@ Inherits from [processContentMetadataBase](../resources/processcontentmetadataba
 |name|String|Required. A descriptive name for the content (for example, file name, web page title, or chat message). Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 |parentMessageId|String|Identifier of the parent message in a threaded conversation, if applicable.|
 |plugins|[aiInteractionPlugin](../resources/aiinteractionplugin.md) collection|List of plugins used during the generation of this message (relevant for AI/bot interactions).|
+|sensitivityLabels|[currentLabel](../resources/currentlabel.md) collection|Caller-supplied sensitivity labels describing the content. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 |sequenceNumber|Int64|A sequence number indicating the order in which content was generated or should be processed, required when **correlationId** is used. Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 |accessedResources (deprecated)|String collection|List of resources (for example, file URLs, web URLs) accessed during the generation of this message (relevant for bot interactions). The **accessedResources** property is deprecated and stopped returning data on August 20, 2025. Going forward, use the **accessedResources_v2** property.|
 
@@ -77,6 +78,11 @@ The following JSON representation shows the resource type.
   "plugins": [
     {
       "@odata.type": "microsoft.graph.aiInteractionPlugin"
+    }
+  ],
+  "sensitivityLabels": [
+    {
+      "@odata.type": "microsoft.graph.currentLabel"
     }
   ]
 }

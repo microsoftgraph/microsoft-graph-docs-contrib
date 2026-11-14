@@ -1032,6 +1032,7 @@ Namespace: microsoft.graph
 | Member |
 | ------------------ |
 | sapIag |
+| sapAc |
 | unknownFutureValue |
 
 ### accessReviewInstanceDecisionItemApplyResult values
@@ -4402,4 +4403,13 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |equals|
+|unknownFutureValue|
+
+### applicationMode values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
 |unknownFutureValue|

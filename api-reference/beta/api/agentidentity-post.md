@@ -42,6 +42,8 @@ In the request body, supply a JSON representation of a [agentIdentity](../resour
 
 The **displayName** must follow the [agent identity display-name character rules](../resources/agentidentity.md#properties).
 
+For a blueprint with **isSingleInstance** set to `true`, this operation creates an agent identity backed directly by that blueprint without creating an agent identity blueprint principal. Its **instanceMode** is `singleInstance`. For the default multi-instance topology, **instanceMode** is `multiInstance`. The service determines **instanceMode**; don't supply it in the request body.
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [agentIdentity](../resources/agentidentity.md) object in the response body.
@@ -50,8 +52,13 @@ If **displayName** contains prohibited characters, this method returns `400 Bad 
 
 For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
 
+If an active single-instance agent identity already exists for the same blueprint in the tenant, this method returns `409 Conflict`.
+
 ## Examples
-### Request
+
+### Example 1: Create a multi-instance agent identity
+
+#### Request
 The following example shows a request.
 
 ```http
@@ -68,7 +75,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -87,8 +94,47 @@ Content-type: application/json
     "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
     "createdByAppId": "f98c895e-6ce2-4f5b-a31b-da7e48f25daa",
     "displayName": "My Agent Identity",
+    "instanceMode": "multiInstance",
     "servicePrincipalType": "ServiceIdentity",
     "tags": [],
     "agentIdentityBlueprintId": "65415bb1-9267-4313-bbf5-ae259732ee12"
+}
+```
+
+### Example 2: Create a single-instance agent identity
+
+The blueprint identified by **agentIdentityBlueprintId** was created with **isSingleInstance** set to `true`.
+
+#### Request
+
+<!-- { "blockType": "request", "name": "create_single_instance_agent_identity" } -->
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentity
+Content-Type: application/json
+
+{
+  "displayName": "Contoso Single-Instance Agent",
+  "agentIdentityBlueprintId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+  "sponsors@odata.bind": [
+    "https://graph.microsoft.com/v1.0/users/acc9f0a1-9075-464f-9fe7-049bf1ae6481"
+  ]
+}
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.agentIdentity" } -->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
+  "displayName": "Contoso Single-Instance Agent",
+  "agentIdentityBlueprintId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+  "instanceMode": "singleInstance",
+  "accountEnabled": true,
+  "createdDateTime": "2026-11-02T23:00:00Z"
 }
 ```

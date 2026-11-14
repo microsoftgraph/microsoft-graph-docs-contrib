@@ -410,7 +410,7 @@ items:
       items:
       - name: Directory role management deleted item container
         href: ../../resources/directoryrolemanagementdeleteditemcontainer.md
-      - name: List roleDefinitions
+      - name: List deleted roleDefinitions
         href: ../../api/directoryrolemanagementdeleteditemcontainer-list-roledefinitions.md
     - name: Role management
       href: ../../resources/rolemanagement.md
@@ -914,6 +914,12 @@ items:
       items:
       - name: Access package assignment request parameters
         href: ../../resources/accesspackageassignmentrequestparameters.md
+      - name: Authentication info
+        href: ../../resources/authenticationinfo.md
+      - name: Client credential authentication info
+        href: ../../resources/clientcredentialauthenticationinfo.md
+      - name: External sap ac connection info
+        href: ../../resources/externalsapacconnectioninfo.md
       - name: External token based sap iag connection info
         href: ../../resources/externaltokenbasedsapiagconnectioninfo.md
   - name: Lifecycle workflows
@@ -1106,14 +1112,26 @@ items:
         href: ../../resources/identitygovernance-customtaskextensionresponsedata.md
       - name: Directory object workflow subject
         href: ../../resources/identitygovernance-directoryobjectworkflowsubject.md
+      - name: Operator between
+        href: ../../resources/identitygovernance-operatorbetween.md
+      - name: Operator equal to
+        href: ../../resources/identitygovernance-operatorequalto.md
+      - name: Operator less than equal to
+        href: ../../resources/identitygovernance-operatorlessthanequalto.md
       - name: Provisioning attribute mapping
         href: ../../resources/identitygovernance-provisioningattributemapping.md
       - name: Provisioning object workflow subject
         href: ../../resources/identitygovernance-provisioningobjectworkflowsubject.md
       - name: Subject summary
         href: ../../resources/identitygovernance-subjectsummary.md
+      - name: Time based attribute trigger v2
+        href: ../../resources/identitygovernance-timebasedattributetriggerv2.md
+      - name: Workflow execution trigger operator
+        href: ../../resources/identitygovernance-workflowexecutiontriggeroperator.md
       - name: Workflow subject
         href: ../../resources/identitygovernance-workflowsubject.md
+      - name: Workflow trigger time based operator
+        href: ../../resources/identitygovernance-workflowtriggertimebasedoperator.md
   - name: Privileged Identity Management
     items:
     - name: Custom extensions

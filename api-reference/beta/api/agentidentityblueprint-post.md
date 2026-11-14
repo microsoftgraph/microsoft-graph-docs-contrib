@@ -41,6 +41,8 @@ POST /applications/microsoft.graph.agentIdentityBlueprint
 ## Request body
 In the request body, supply a JSON representation of [agent identity blueprint](../resources/agentidentityblueprint.md) object. You must specify the **displayName** property and **sponsors** relationship.
 
+Optionally, set **isSingleInstance** to `true` to create a blueprint that supports at most one active agent identity per tenant without an agent identity blueprint principal. If omitted, it defaults to `false`, preserving the multi-instance topology. The value is immutable after creation, whether `true` or `false`.
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object in the response body.
@@ -48,6 +50,8 @@ If successful, this method returns a `201 Created` response code and an [agentId
 For information about errors returned by agent identity APIs, see [Microsoft agent identity platform error codes](/entra/agent-id/identity-platform/error-codes).
 
 ## Examples
+
+### Example 1: Create a multi-instance agent identity blueprint
 
 #### Request
 The following example shows a request.
@@ -58,6 +62,7 @@ Content-type: application/json
 
 {
   "displayName": "Display name",
+  "isSingleInstance": false,
   "sponsors@odata.bind": [
     "https://graph.microsoft.com/beta/users/e64405d7-f156-4ce1-b1f5-b0d801c367f3"
    ]
@@ -83,5 +88,43 @@ Content-type: application/json
     "publisherDomain": "contoso.com",
     "requiredResourceAccess": [],
     "signInAudience": "AzureADMyOrg"
+}
+```
+
+### Example 2: Create a single-instance agent identity blueprint
+
+#### Request
+
+<!-- { "blockType": "request", "name": "create_single_instance_agent_identity_blueprint" } -->
+```http
+POST https://graph.microsoft.com/beta/applications/microsoft.graph.agentIdentityBlueprint
+Content-Type: application/json
+
+{
+  "displayName": "Contoso Single-Instance Agent Blueprint",
+  "isSingleInstance": true,
+  "sponsors@odata.bind": [
+    "https://graph.microsoft.com/v1.0/users/acc9f0a1-9075-464f-9fe7-049bf1ae6481"
+  ],
+  "owners@odata.bind": [
+    "https://graph.microsoft.com/v1.0/users/acc9f0a1-9075-464f-9fe7-049bf1ae6481"
+  ]
+}
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.agentIdentityBlueprint" } -->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.agentIdentityBlueprint",
+  "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
+  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+  "displayName": "Contoso Single-Instance Agent Blueprint",
+  "isSingleInstance": true,
+  "createdDateTime": "2026-11-02T23:00:00Z"
 }
 ```

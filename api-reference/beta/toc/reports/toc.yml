@@ -316,6 +316,14 @@ items:
               href: ../../api/serviceactivity-getactiveusermetricsforwordweb.md
           - name: Microsoft Entra
             items:
+            - name: 'serviceActivity: getMetricsForAgentIdAutonomousSignInFailure'
+              href: ../../api/serviceactivity-getmetricsforagentidautonomoussigninfailure.md
+            - name: 'serviceActivity: getMetricsForAgentIdAutonomousSignInSuccess'
+              href: ../../api/serviceactivity-getmetricsforagentidautonomoussigninsuccess.md
+            - name: 'serviceActivity: getMetricsForAgentIdInteractiveSignInFailure'
+              href: ../../api/serviceactivity-getmetricsforagentidinteractivesigninfailure.md
+            - name: 'serviceActivity: getMetricsForAgentIdInteractiveSignInSuccess'
+              href: ../../api/serviceactivity-getmetricsforagentidinteractivesigninsuccess.md
             - name: Get MFA sign-in success metrics
               href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
             - name: Get MFA sign-in failure metrics
@@ -568,6 +576,14 @@ items:
         href: ../../api/serviceactivity-getactiveusermetricsforwordweb.md
     - name: Microsoft Entra
       items:
+      - name: 'serviceActivity: getMetricsForAgentIdAutonomousSignInFailure'
+        href: ../../api/serviceactivity-getmetricsforagentidautonomoussigninfailure.md
+      - name: 'serviceActivity: getMetricsForAgentIdAutonomousSignInSuccess'
+        href: ../../api/serviceactivity-getmetricsforagentidautonomoussigninsuccess.md
+      - name: 'serviceActivity: getMetricsForAgentIdInteractiveSignInFailure'
+        href: ../../api/serviceactivity-getmetricsforagentidinteractivesigninfailure.md
+      - name: 'serviceActivity: getMetricsForAgentIdInteractiveSignInSuccess'
+        href: ../../api/serviceactivity-getmetricsforagentidinteractivesigninsuccess.md
       - name: Get MFA sign-in success metrics
         href: ../../api/serviceactivity-getmetricsformfasigninsuccess.md
       - name: Get MFA sign-in failure metrics
