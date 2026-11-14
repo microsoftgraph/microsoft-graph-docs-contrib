@@ -944,6 +944,9 @@
               ],
               "complexTypes": [
                 "accessPackageAssignmentRequestParameters",
+                "authenticationInfo",
+                "clientCredentialAuthenticationInfo",
+                "externalSapAcConnectionInfo",
                 "externalTokenBasedSapIagConnectionInfo"
               ]
             },

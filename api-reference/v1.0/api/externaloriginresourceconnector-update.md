@@ -48,7 +48,7 @@ PATCH /identityGovernance/entitlementManagement/externalOriginResourceConnectors
 |Property|Type|Description|
 |:---|:---|:---|
 |connectionInfo|[connectionInfo](../resources/connectioninfo.md)|The connection information used to communicate with the external resource system.|
-|connectorType|connectorType|The type of connector. The possible values are: `sapIag`, `unknownFutureValue`.|
+|connectorType|connectorType|The type of connector. The possible values are: `sapIag`, `sapAc`, `unknownFutureValue`.|
 |description|String|A description of the connector.|
 |displayName|String|The display name of the connector.|
 
@@ -56,7 +56,7 @@ PATCH /identityGovernance/entitlementManagement/externalOriginResourceConnectors
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [externalOriginResourceConnector](../resources/externaloriginresourceconnector.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -119,36 +119,11 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.externalOriginResourceConnector"
+  "blockType": "response"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.externalOriginResourceConnector",
-  "id": "e363ebb8-6faa-4980-ac5b-eefc196e1cd4",
-  "displayName": "SAP IAG Connector 2.0",
-  "description": "SAP IAG Connector 2.0 description",
-  "connectorType": "sapIag",
-  "connectionInfo": {
-    "@odata.type": "microsoft.graph.externalTokenBasedSapIagConnectionInfo",
-    "url": "https://contoso.example.com",
-    "accessTokenUrl": "https://contoso.example.com/oauth/token",
-    "clientId": "e9ad8b1d-959c-4e86-8ba2-2cbf4d14bc29",
-    "keyVaultName": "Keyvault",
-    "secretName": "clientSecret",
-    "subscriptionId": "5ee98b73-d9df-43a7-8a92-36855054bdee",
-    "resourceGroup": "SAP IAG Group"
-  },
-  "createdBy": "admin@contoso.com",
-  "createdDateTime": "2026-02-23T10:15:30Z",
-  "modifiedBy": "admin@contoso.com",
-  "modifiedDateTime": "2026-02-24T11:20:10Z"
-}
+HTTP/1.1 204 No Content
 ```

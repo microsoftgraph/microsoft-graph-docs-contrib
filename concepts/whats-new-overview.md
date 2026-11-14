@@ -31,6 +31,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Added the **isPrivileged** property to the [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition) resource type. Use it to identify roles that contain sensitive Microsoft Entra resource actions.
 
+### Identity and access | Governance
+
+- Promoted SAP Access Control (SAP AC) support for [externalOriginResourceConnector](/graph/api/resources/externaloriginresourceconnector) from beta to v1.0. Use the `sapAc` connector type to configure connections to SAP AC systems for entitlement management.
+
 ### Mail
 
 - Updated national cloud availability in China operated by 21Vianet for the [mailFolder: delta](/graph/api/mailfolder-delta) and [message: delta](/graph/api/message-delta) methods. Use these methods to track incremental changes to mail folders and messages within a mail folder.

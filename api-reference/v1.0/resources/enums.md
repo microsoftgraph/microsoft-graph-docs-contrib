@@ -1032,6 +1032,7 @@ Namespace: microsoft.graph
 | Member |
 | ------------------ |
 | sapIag |
+| sapAc |
 | unknownFutureValue |
 
 ### accessReviewInstanceDecisionItemApplyResult values
