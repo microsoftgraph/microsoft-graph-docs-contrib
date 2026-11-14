@@ -710,3 +710,216 @@ Content-type: application/json
   "modifiedDateTime": "2026-02-09T22:29:40.3420825Z"
 }
 ```
+
+### Example 8: Add a Snowflake account role to an access package
+
+#### Request
+
+The following example shows a request to add a Snowflake account role to an access package.
+
+Before this request, you must have already added the access package resource `8b414a0e-f755-4f27-871f-bc54ef7ddab0` for the Snowflake application `Snowflake for Microsoft Entra ID - Demo` to the access package catalog containing this access package. The resource could have been added to the catalog by [creating an access package resource request](../api/entitlementmanagement-post-accesspackageresourcerequests.md).
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackage_snowflake_account"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+    "id": "",
+    "accessPackageResourceRole": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "originId": "TargetSystemApplication_AAD_PROVISIONER",
+        "displayName": "AAD_PROVISIONER",
+        "description": null,
+        "accessPackageResource": {
+            "id": "8b414a0e-f755-4f27-871f-bc54ef7ddab0",
+            "description": "AppId: c1a53d37-db8c-4e6b-812b-f03e10d5c1c9",
+            "displayName": "Snowflake for Microsoft Entra ID - Demo",
+            "resourceType": "Application",
+            "originId": "cd685bb7-5d41-4a95-ac5e-f925b625ea25",
+            "originSystem": "AadApplication"
+        },
+        "originSystem": "AadApplication"
+    },
+    "accessPackageResourceScope": {
+        "id": "47e7f110-8239-41fb-bebd-ce8933de27b0",
+        "displayName": "Root",
+        "description": "Root Scope",
+        "originId": "cd685bb7-5d41-4a95-ac5e-f925b625ea25",
+        "originSystem": "AadApplication",
+        "roleOriginId": null,
+        "isRootScope": true
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "901453a7-8e52-42c9-ac90-14dae1624c5d_47e7f110-8239-41fb-bebd-ce8933de27b0",
+    "createdBy": "admin@example.com",
+    "createdDateTime": "2026-02-09T22:29:40.3420825Z",
+    "modifiedBy": "admin@example.com",
+    "modifiedDateTime": "2026-02-09T22:29:40.3420825Z"
+}
+```
+
+### Example 9: Add a Snowflake database role to an access package
+
+#### Request
+
+The following example shows a request to add a Snowflake database role to an access package.
+
+Before this request, you must have already added the access package resource `7c8fda0c-1ee6-4637-80fa-8cec13df5cc1` for the Snowflake database `IGA_CONNECTOR_OBJECT_TEST` to the access package catalog containing this access package. The resource could have been added to the catalog by [creating an access package resource request](../api/entitlementmanagement-post-accesspackageresourcerequests.md).
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackage_snowflake_database"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+    "id": "",
+    "accessPackageResourceRole": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "originId": "TargetSystemApplication_IGA_CONNECTOR_OBJECT_TEST_READER",
+        "displayName": "IGA_CONNECTOR_OBJECT_TEST_READER",
+        "description": null,
+        "accessPackageResource": {
+            "id": "7c8fda0c-1ee6-4637-80fa-8cec13df5cc1",
+            "description": null,
+            "displayName": "IGA_CONNECTOR_OBJECT_TEST",
+            "resourceType": "TargetSystemApplication_database",
+            "originId": "cd685bb7-5d41-4a95-ac5e-f925b625ea25_IGA_CONNECTOR_OBJECT_TEST",
+            "originSystem": "AadApplication"
+        },
+        "originSystem": "AadApplication"
+    },
+    "accessPackageResourceScope": {
+        "id": "467ef853-a96a-4fda-bef3-ed7edcabc541",
+        "displayName": "Root",
+        "description": "Root Scope",
+        "originId": "cd685bb7-5d41-4a95-ac5e-f925b625ea25_IGA_CONNECTOR_OBJECT_TEST",
+        "originSystem": "AadApplication",
+        "roleOriginId": null,
+        "isRootScope": true
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "061963b1-896a-4be8-88ea-901ac893f5d7_467ef853-a96a-4fda-bef3-ed7edcabc541",
+    "createdBy": "admin@example.com",
+    "createdDateTime": "2026-02-09T22:29:40.3420825Z",
+    "modifiedBy": "admin@example.com",
+    "modifiedDateTime": "2026-02-09T22:29:40.3420825Z"
+}
+```
+
+### Example 10: Add a Snowflake application role to an access package
+
+#### Request
+
+The following example shows a request to add a Snowflake application role to an access package.
+
+Before this request, you must have already added the access package resource `f805b2d8-d7ff-43ba-a8c5-eb7d8732be77` for the Snowflake application `PP_TEST_APP` to the access package catalog containing this access package. The resource could have been added to the catalog by [creating an access package resource request](../api/entitlementmanagement-post-accesspackageresourcerequests.md).
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackage_snowflake_application"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+    "id": "",
+    "accessPackageResourceRole": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "originId": "TargetSystemApplication_PP_ROLE",
+        "displayName": "PP_ROLE",
+        "description": null,
+        "accessPackageResource": {
+            "id": "f805b2d8-d7ff-43ba-a8c5-eb7d8732be77",
+            "description": null,
+            "displayName": "PP_TEST_APP",
+            "resourceType": "TargetSystemApplication_application",
+            "originId": "cd685bb7-5d41-4a95-ac5e-f925b625ea25_PP_TEST_APP",
+            "originSystem": "AadApplication"
+        },
+        "originSystem": "AadApplication"
+    },
+    "accessPackageResourceScope": {
+        "id": "94fd5302-6a81-4e90-871a-5c7a893765ed",
+        "displayName": "Root",
+        "description": "Root Scope",
+        "originId": "cd685bb7-5d41-4a95-ac5e-f925b625ea25_PP_TEST_APP",
+        "originSystem": "AadApplication",
+        "roleOriginId": null,
+        "isRootScope": true
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "d7de31a5-fa4b-4bd2-8329-9239dbf14998_94fd5302-6a81-4e90-871a-5c7a893765ed",
+    "createdBy": "admin@example.com",
+    "createdDateTime": "2026-02-09T22:29:40.3420825Z",
+    "modifiedBy": "admin@example.com",
+    "modifiedDateTime": "2026-02-09T22:29:40.3420825Z"
+}
+```

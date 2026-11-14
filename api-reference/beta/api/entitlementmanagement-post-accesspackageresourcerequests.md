@@ -906,6 +906,117 @@ Content-type: application/json
 ```
 
 
+### Example 10: Add a Snowflake database to a catalog
+
+#### Request
+
+The following example shows a request for adding a Snowflake database resource to a catalog.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_snowflake_database"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+    "catalogId": "444c4502-cc17-41b0-a3a9-b2abc28d9b93",
+    "requestType": "AdminAdd",
+    "justification": "",
+    "accessPackageResource": {
+        "id": "",
+        "displayName": "IGA_CONNECTOR_OBJECT_TEST",
+        "resourceType": "TargetSystemApplication_database",
+        "originId": "cd685bb7-5d41-4a95-ac5e-f925b625ea25_IGA_CONNECTOR_OBJECT_TEST",
+        "originSystem": "AadApplication"
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "catalogId": "444c4502-cc17-41b0-a3a9-b2abc28d9b93",
+    "id": "c832bf4f-20bd-4171-a9ad-da74cd676d5c",
+    "justification": "",
+    "requestState": "Delivered",
+    "requestStatus": "Fulfilled",
+    "requestType": "AdminAdd"
+}
+```
+
+### Example 11: Add a Snowflake application to a catalog
+
+#### Request
+
+The following example shows a request for adding a Snowflake application resource to a catalog.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_snowflake_application"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+    "catalogId": "91dbeaaf-ab1c-4203-9bef-8776a2965028",
+    "requestType": "AdminAdd",
+    "justification": "",
+    "accessPackageResource": {
+        "id": "",
+        "displayName": "PP_TEST_APP",
+        "description": "PP_TEST_APP",
+        "resourceType": "TargetSystemApplication_application",
+        "originId": "cd685bb7-5d41-4a95-ac5e-f925b625ea25_PP_TEST_APP",
+        "originSystem": "AadApplication"
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "catalogId": "91dbeaaf-ab1c-4203-9bef-8776a2965028",
+    "id": "a034846b-2045-41f9-956a-7b7e87d4c37d",
+    "justification": "",
+    "requestState": "Delivered",
+    "requestStatus": "Fulfilled",
+    "requestType": "AdminAdd"
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
