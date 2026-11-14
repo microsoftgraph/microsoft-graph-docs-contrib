@@ -51,6 +51,8 @@ In the request body, supply a JSON representation of the [agentIdentityBlueprint
 
 ## Response
 
+The **isSingleInstance** property can be set when creating a blueprint and defaults to `false` if omitted. It is immutable after creation; an attempt to change it on an existing blueprint returns `400 Bad Request` with the error code `Request_BadRequest`.
+
 If an object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new agent identity blueprint object in the response body. The agent identity blueprint is assigned the uniqueName value.
 
 If an object with **uniqueName** doesn't exist and the `Prefer: create-if-missing` header is *not* specified, this method returns a `404 Not Found` error code.

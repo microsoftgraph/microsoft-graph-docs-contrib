@@ -39,6 +39,8 @@ GET /servicePrincipals/{id}/microsoft.graph.agentIdentity
 
 This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
+Use `$select=instanceMode` to read the topology of an agent identity. The value is `singleInstance` for an identity backed directly by a single-instance blueprint, or `multiInstance` for the standard topology. Agent identities without a stored value return `multiInstance` by default.
+
 ## Request headers
 
 | Name           | Description                |
@@ -55,7 +57,9 @@ If successful, this method returns a `200 OK` response code and an [agentIdentit
 
 ## Examples
 
-### Request
+### Example 1: Get an agent identity
+
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -74,7 +78,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agen
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -91,6 +95,7 @@ Content-Type: application/json
 {
   "id": "1b7313c4-05d0-4a08-88e3-7b76c003a0a2",
   "displayName": "My Agent Identity",
+  "instanceMode": "multiInstance",
   "createdDateTime": "2019-09-17T19:10:35.2742618Z",
   "createdByAppId": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "agentIdentityBlueprintId": "00001111-aaaa-2222-bbbb-3333cccc4444",
@@ -98,5 +103,29 @@ Content-Type: application/json
   "disabledByMicrosoftStatus": null,
   "servicePrincipalType": "ServiceIdentity",
   "tags": []
+}
+```
+
+### Example 2: Read the instance mode of an agent identity
+
+#### Request
+
+<!-- { "blockType": "request", "name": "get_agent_identity_instance_mode" } -->
+```http
+GET https://graph.microsoft.com/beta/servicePrincipals/59e617e5-e447-4adc-8b88-00af644d7c92/microsoft.graph.agentIdentity?$select=id,displayName,instanceMode
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.agentIdentity" } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.agentIdentity",
+  "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
+  "displayName": "Contoso Single-Instance Agent",
+  "instanceMode": "singleInstance"
 }
 ```

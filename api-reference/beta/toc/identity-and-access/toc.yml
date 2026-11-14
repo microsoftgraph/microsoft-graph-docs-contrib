@@ -2210,6 +2210,8 @@ items:
         href: ../../resources/authenticationmethod.md
       - name: List
         href: ../../api/authentication-list-methods.md
+      - name: 'authenticationMethod: attestProvenance'
+        href: ../../api/authenticationmethod-attestprovenance.md
     - name: Email
       items:
       - name: Email
@@ -2250,6 +2252,8 @@ items:
         href: ../../api/fido2authenticationmethod-delete.md
       - name: Creation options
         href: ../../api/fido2authenticationmethod-creationoptions.md
+      - name: 'authenticationMethod: attestProvenance'
+        href: ../../api/authenticationmethod-attestprovenance.md
     - name: Hardware OATH method
       items:
       - name: Hardware OATH method
@@ -2408,6 +2412,16 @@ items:
           href: ../../api/qrpin-update.md
         - name: Update PIN
           href: ../../api/qrpin-updatepin.md
+    - name: Complex types
+      items:
+      - name: Credential provenance
+        href: ../../resources/credentialprovenance.md
+      - name: Provenance asserted by
+        href: ../../resources/provenanceassertedby.md
+      - name: Provenance assertion
+        href: ../../resources/provenanceassertion.md
+      - name: Provenance chain status
+        href: ../../resources/provenancechainstatus.md
   - name: Authentication methods policies
     items:
     - name: Overview
@@ -2790,6 +2804,16 @@ items:
         href: ../../api/conditionalaccesspolicyrule-update.md
       - name: Delete
         href: ../../api/conditionalaccesspolicyplan-delete-rules.md
+    - name: Conditional access settings
+      items:
+      - name: Conditional access settings
+        href: ../../resources/conditionalaccesssettings.md
+      - name: Get conditionalAccessSettings (Conditional Access)
+        href: ../../api/conditionalaccesssettings-get.md
+      - name: Update conditionalAccessSettings (Conditional Access)
+        href: ../../api/conditionalaccesssettings-update.md
+      - name: Delete conditionalAccessSettings
+        href: ../../api/conditionalaccessroot-delete-settings.md
     - name: Conditional access template
       items:
       - name: Conditional access template
@@ -3657,6 +3681,24 @@ items:
         href: ../../api/identityuserflow-delete.md
   - name: Verified ID
     items:
+    - name: Identity verification event
+      items:
+      - name: Identity verification event
+        href: ../../resources/identityverificationevent.md
+      - name: Create
+        href: ../../api/identityverificationstatus-post-verificationevents.md
+      - name: Update
+        href: ../../api/identityverificationevent-update.md
+      - name: Delete
+        href: ../../api/identityverificationevent-delete.md
+    - name: Identity verification status
+      items:
+      - name: Identity verification status
+        href: ../../resources/identityverificationstatus.md
+      - name: Get
+        href: ../../api/identityverificationstatus-get.md
+      - name: Create verification event
+        href: ../../api/identityverificationstatus-post-verificationevents.md
     - name: Verified ID profile (preview)
       items:
       - name: Verified ID profile (preview)
@@ -3675,6 +3717,12 @@ items:
       items:
       - name: Mobile drivers license configuration
         href: ../../resources/mobiledriverslicenseconfiguration.md
+      - name: Verification event detail
+        href: ../../resources/verificationeventdetail.md
+      - name: Verification event lifecycle
+        href: ../../resources/verificationeventlifecycle.md
+      - name: Verification event override
+        href: ../../resources/verificationeventoverride.md
       - name: Verified id self service issuance
         href: ../../resources/verifiedidselfserviceissuance.md
   - name: Web application firewall

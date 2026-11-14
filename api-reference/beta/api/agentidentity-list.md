@@ -36,6 +36,8 @@ GET /servicePrincipals/microsoft.graph.agentIdentity
 
 This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page size is 100 agent identity objects. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
+Filtering on **instanceMode** with `$filter` (`eq`) requires the `ConsistencyLevel: eventual` header and `$count=true`.
+
 ## Request headers
 
 | Name | Description |
@@ -52,6 +54,8 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [agentIdentity](../resources/agentidentity.md) objects in the response body.
 
 ## Examples
+
+### Example 1: List agent identities
 
 #### Request
 
@@ -116,6 +120,7 @@ Content-type: application/json
     {
       "id": "1b7313c4-05d0-4a08-88e3-7b76c003a0a2",
       "displayName": "My Agent Identity",
+      "instanceMode": "multiInstance",
       "createdDateTime": "2019-09-17T19:10:35.2742618Z",
       "createdByAppId": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "agentIdentityBlueprintId": "00001111-aaaa-2222-bbbb-3333cccc4444",
@@ -123,6 +128,35 @@ Content-type: application/json
       "disabledByMicrosoftStatus": null,
       "servicePrincipalType": "ServiceIdentity",
       "tags": []
+    }
+  ]
+}
+```
+
+### Example 2: List single-instance agent identities
+
+#### Request
+
+<!-- { "blockType": "request", "name": "list_single_instance_agent_identities" } -->
+```http
+GET https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentity?$filter=instanceMode eq 'singleInstance'&$count=true&$select=id,displayName,instanceMode
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.agentIdentity", "isCollection": true } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.count": 1,
+  "value": [
+    {
+      "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
+      "displayName": "Contoso Single-Instance Agent",
+      "instanceMode": "singleInstance"
     }
   ]
 }
