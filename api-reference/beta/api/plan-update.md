@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "plan-update-permissions"
+  "name": "plan_update_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/plan-update-permissions.md)]
@@ -45,6 +45,9 @@ PATCH /planner/plans_v2/{planId}
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
+|If-Match|The complete ETag of the resource to update or delete. Required.|
+
+Use the complete ETag returned by the latest read of this resource as the `If-Match` value. Don't construct or compare ETags yourself. A missing, invalid, or no-longer-usable ETag results in `412 Precondition Failed`. A conflicting change can result in `409 Conflict`; read the resource again and reconcile the changes before retrying. An older ETag doesn't necessarily fail when the service can merge nonconflicting changes.
 
 ## Request body
 
@@ -53,18 +56,15 @@ PATCH /planner/plans_v2/{planId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Title of the plan. Required.|
-|container|[planContainer](../resources/plancontainer.md)|Identifies the group, Teams channel, or user that owns the plan. Required, and immutable after creation. Optional.|
-|calendar|[planCalendar](../resources/plancalendar.md)|Working-time calendar settings for the plan. Optional.|
-|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Information about whether the entity is archived, and when it was archived. Optional.|
-|planView|[planView](../resources/planview.md)|Plan-scoped view settings, including category definitions. Optional.|
-|contentSensitivityLabelAssignment|[contentSensitivityLabelAssignment](../resources/contentsensitivitylabelassignment.md)|The sensitivity label assigned to content associated with the plan. Optional.|
-|hasChat|Boolean|Indicates whether the plan has an associated chat. Optional.|
-|duration|Int32|Duration of the plan, in days. Optional.|
-|sharedWithContainers|[plannerSharedWithContainer](../resources/plannersharedwithcontainer.md) collection|The list of containers (for example, additional groups or channels) that the plan is shared with. Optional.|
-|extensions|[extensionFieldCollection](../resources/extensionfieldcollection.md)|Custom extension field values set on the entity. Supports $select. Optional.|
+|displayName|String|Title of the plan.|
+|calendar|[planCalendar](../resources/plancalendar.md)|Working-time calendar settings for the plan.|
+|planView|[planView](../resources/planview.md)|Plan-scoped view settings, including category definitions.|
+|contentSensitivityLabelAssignment|[contentSensitivityLabelAssignment](../resources/contentsensitivitylabelassignment.md)|The sensitivity label assigned to content associated with the plan.|
+|sharedWithContainers|[plannerSharedWithContainer](../resources/plannersharedwithcontainer.md) collection|The list of containers (for example, additional groups or channels) that the plan is shared with.|
+|extensions|[extensionFieldCollection](../resources/extensionfieldcollection.md)|Custom extension field values set on the entity. Supports $select.|
 
 
+Send only the properties that you want to change. Don't include immutable or service-populated properties from a GET response.
 
 ## Response
 
@@ -82,36 +82,12 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/planner/plans_v2/{planId}
+If-Match: {etag}
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.plan",
-  "displayName": "Product Launch Plan",
-  "container": {
-    "@odata.type": "microsoft.graph.planContainer"
-  },
-  "calendar": {
-    "@odata.type": "microsoft.graph.planCalendar"
-  },
-  "archivalInfo": {
-    "@odata.type": "microsoft.graph.plannerArchivalInfo"
-  },
-  "planView": {
-    "@odata.type": "microsoft.graph.planView"
-  },
-  "contentSensitivityLabelAssignment": {
-    "@odata.type": "microsoft.graph.contentSensitivityLabelAssignment"
-  },
-  "hasChat": true,
-  "duration": 30,
-  "sharedWithContainers": [
-    {
-      "@odata.type": "microsoft.graph.plannerSharedWithContainer"
-    }
-  ],
-  "extensions": {
-    "@odata.type": "microsoft.graph.extensionFieldCollection"
-  }
+  "displayName": "Product launch - phase 2"
 }
 ```
 
@@ -133,41 +109,10 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.plan",
   "id": "da037802-c736-af41-ff32-789862c95bd9",
-  "displayName": "String",
+  "displayName": "Product launch - phase 2",
   "container": {
-    "@odata.type": "microsoft.graph.planContainer"
-  },
-  "calendar": {
-    "@odata.type": "microsoft.graph.planCalendar"
-  },
-  "creationInfo": {
-    "@odata.type": "microsoft.graph.creationInfo"
-  },
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "archivalInfo": {
-    "@odata.type": "microsoft.graph.plannerArchivalInfo"
-  },
-  "planView": {
-    "@odata.type": "microsoft.graph.planView"
-  },
-  "contentSensitivityLabelAssignment": {
-    "@odata.type": "microsoft.graph.contentSensitivityLabelAssignment"
-  },
-  "hasChat": "Boolean",
-  "duration": "Integer",
-  "sharedWithContainers": [
-    {
-      "@odata.type": "microsoft.graph.plannerSharedWithContainer"
-    }
-  ],
-  "capabilities": {
-    "@odata.type": "microsoft.graph.planCapability"
-  },
-  "extensions": {
-    "@odata.type": "microsoft.graph.extensionFieldCollection"
+    "containerId": "5d5a917d-aef4-4fdc-bc99-6048a39aa329",
+    "containerType": "group"
   }
 }
 ```

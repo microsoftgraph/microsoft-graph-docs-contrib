@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerGroup** resource provides access to Planner resources for a [group](group.md). It doesn't contain any usable properties.
+The **plannerGroup** resource provides access to Planner resources for a [group](../resources/group.md). It doesn't contain any usable properties.
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List group's plans](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
-|[List plans_v2](../api/plannergroup-list-plans_v2.md) |[plan](plan.md) collection| Get a list of the [plan](plan.md) objects owned by the group.|
-|[Create plan_v2](../api/plannergroup-post-plans_v2.md) |[plan](plan.md)| Create a new [plan](plan.md) object.|
+|[List group's plans](../api/plannergroup-list-plans.md) |[plannerPlan](../resources/plannerplan.md) collection| Get a **plannerPlan** object collection.|
+|[List plans (Planner Unified plans Graph API)](../api/plannergroup-list-plans_v2.md) |[plan](../resources/plan.md) collection| Get a list of the [plan](../resources/plan.md) objects owned by the group.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -32,8 +31,8 @@ The **plannerGroup** resource provides access to Planner resources for a [group]
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.|
-|plans_v2|[plan](../resources/plan.md) collection| Read-only. Nullable. The collection of Planner Graph V4 plans owned by the group.|
+|plans|[plannerPlan](../resources/plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](../resources/plannerplan.md) owned by the group.|
+|plans_v2|[plan](../resources/plan.md) collection| Read-only. Nullable. The collection of plans in the Planner Unified plans Graph API owned by the group.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -67,5 +66,3 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-
-

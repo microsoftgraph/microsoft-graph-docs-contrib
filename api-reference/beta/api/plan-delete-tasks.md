@@ -1,5 +1,5 @@
 ---
-title: "Delete task_v2"
+title: "Delete task"
 description: "Delete a task object."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Delete task_v2
+# Delete task
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "plan-delete-tasks-permissions"
+  "name": "plan_delete_tasks_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/plan-delete-tasks-permissions.md)]
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /planner/tasks_v2/{taskId}/$ref
+DELETE /planner/tasks_v2/{taskId}
 ```
 
 ## Request headers
@@ -42,6 +42,9 @@ DELETE /planner/tasks_v2/{taskId}/$ref
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|If-Match|The complete ETag of the resource to update or delete. Required.|
+
+Use the complete ETag returned by the latest read of this resource as the `If-Match` value. Don't construct or compare ETags yourself. A missing, invalid, or no-longer-usable ETag results in `412 Precondition Failed`. A conflicting change can result in `409 Conflict`; read the resource again and reconcile the changes before retrying. An older ETag doesn't necessarily fail when the service can merge nonconflicting changes.
 
 ## Request body
 
@@ -63,16 +66,15 @@ The following example shows a request.
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/planner/tasks_v2/{taskId}
+If-Match: {etag}
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 }
 -->
 ``` http

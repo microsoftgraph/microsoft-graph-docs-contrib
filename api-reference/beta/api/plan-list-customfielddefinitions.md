@@ -1,5 +1,5 @@
 ---
-title: "List customFieldDefinition objects"
+title: "List customFieldDefinitions"
 description: "Get a list of the customFieldDefinition objects and their properties."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# List customFieldDefinition objects
+# List customFieldDefinitions
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "plan-list-customfielddefinitions-permissions"
+  "name": "plan_list_customfielddefinitions_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/plan-list-customfielddefinitions-permissions.md)]
@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/planner/plans_v2/{planId}/customFieldDefinitions
 GET /users/{usersId}/planner/plans_v2/{planId}/customFieldDefinitions
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -90,25 +86,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.customFieldDefinition",
       "id": "590f4e29-112d-432c-491b-21a16ed31803",
-      "planId": "String",
-      "displayName": "String",
-      "valueType": "String",
-      "rollupType": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "deletedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "deletedDateTime": "String (timestamp)",
-      "archivalInfo": {
-        "@odata.type": "microsoft.graph.plannerArchivalInfo"
-      }
+      "displayName": "Product launch"
     }
   ]
 }

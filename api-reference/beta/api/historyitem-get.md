@@ -1,5 +1,5 @@
 ---
-title: "Get historyItem"
+title: "Get history item"
 description: "Read the properties and relationships of historyItem object."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Get historyItem
+# Get history item
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "historyitem-get-permissions"
+  "name": "historyitem_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/historyitem-get-permissions.md)]
@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/planner/plans_v2/{planId}/historyItems/{historyItemId}
 GET /users/{usersId}/planner/plans_v2/{planId}/historyItems/{historyItemId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,20 +82,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.historyItem",
-    "id": "02636413-50f8-710f-bed1-a0f488aa4e54",
-    "planId": "String",
-    "entityId": "String",
-    "entityType": "String",
-    "eventType": "String",
-    "occurredDateTime": "String (timestamp)",
-    "actor": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "oldData": "String",
-    "newData": "String"
-  }
+  "@odata.type": "#microsoft.graph.historyItem",
+  "id": "02636413-50f8-710f-bed1-a0f488aa4e54"
 }
 ```
 

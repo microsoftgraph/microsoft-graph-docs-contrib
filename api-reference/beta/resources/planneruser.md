@@ -14,42 +14,40 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides access to Planner resources for a [user](user.md). 
+Provides access to Planner resources for a [user](../resources/user.md).
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List user's assigned tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) assigned to the user.|
-|[List user's My Day tasks](../api/planneruser-list-mydaytasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) to be shown in the user's MyDay view.|
-|[List user's favorite plans](../api/planneruser-list-favoriteplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) marked as favorite by the user.|
-|[List user's recent plans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) recently viewed by the user.|
-|[List user's plans in rosters](../api/planneruser-list-rosterplans.md)|[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) contained by the [plannerRosters](plannerroster.md) that the user is a member.|
-|[Update user's settings](../api/planneruser-update.md) | [plannerUser](planneruser.md)| Update a **plannerUser** object. |
-|[List plans_v2](../api/planneruser-list-plans_v2.md) |[plan](plan.md) collection| Get a list of the [plan](plan.md) objects associated with the user.|
-|[Create plan_v2](../api/planneruser-post-plans_v2.md) |[plan](plan.md)| Create a new [plan](plan.md) object.|
-|[List tasks_v2](../api/planneruser-list-tasks_v2.md) |[task](task.md) collection| Get a list of the [task](task.md) objects assigned to the user.|
-|[Create task_v2](../api/planneruser-post-tasks_v2.md) |[task](task.md)| Create a new [task](task.md) object.|
+|[List user's assigned tasks](../api/planneruser-list-tasks.md) |[plannerTask](../resources/plannertask.md) collection| Get the [plannerTasks](../resources/plannertask.md) assigned to the user.|
+|[List user's My Day tasks](../api/planneruser-list-mydaytasks.md) |[plannerTask](../resources/plannertask.md) collection| Get the [plannerTasks](../resources/plannertask.md) to be shown in the user's MyDay view.|
+|[List user's favorite plans](../api/planneruser-list-favoriteplans.md) |[plannerPlan](../resources/plannerplan.md) collection| Get the [plannerPlans](../resources/plannerplan.md) marked as favorite by the user.|
+|[List user's recent plans](../api/planneruser-list-recentplans.md) |[plannerPlan](../resources/plannerplan.md) collection| Get the [plannerPlans](../resources/plannerplan.md) recently viewed by the user.|
+|[List user's plans in rosters](../api/planneruser-list-rosterplans.md)|[plannerPlan](../resources/plannerplan.md) collection| Get the [plannerPlans](../resources/plannerplan.md) contained by the [plannerRosters](../resources/plannerroster.md) that the user is a member.|
+|[Update user's settings](../api/planneruser-update.md) | [plannerUser](../resources/planneruser.md)| Update a **plannerUser** object. |
+|[List plans (Planner Unified plans Graph API)](../api/planneruser-list-plans_v2.md) |[plan](../resources/plan.md) collection| Get a list of the [plan](../resources/plan.md) objects associated with the user.|
+|[List tasks (Planner Unified plans Graph API)](../api/planneruser-list-tasks_v2.md) |[task](../resources/task.md) collection| Get a list of the [task](../resources/task.md) objects assigned to the user.|
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)| A collection that contains the references to the plans that the user marked as favorites.|
 |id|String| Read-only. Unique identifier for the **plannerUser** object.|
-|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| A collection that contains the references to the plans that the user marked as favorites.|
-|recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| A collection that contains references to the plans that the user recently viewed in apps that support recent plans.|
+|recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)| A collection that contains references to the plans that the user recently viewed in apps that support recent plans.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|favoritePlans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) that the user marked as favorites.|
-|recentPlans|[plannerPlan](plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) that the user recently viewed in apps that support recent plans. |
-|rosterPlans|[plannerPlan](../resources/plannerplan.md) collection|Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) contained by the [plannerRosters](plannerroster.md) the user is a member.|
-|tasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) assigned to the user.|
-|myDayTasks|[plannerTask](plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](plannertask.md) to be shown in the My Day view of the user.|
-|plans_v2|[plan](../resources/plan.md) collection| Read-only. Nullable. The collection of Planner Graph V4 plans associated with the user.|
-|tasks_v2|[task](../resources/task.md) collection| Read-only. Nullable. The collection of Planner Graph V4 tasks assigned to the user.|
+|favoritePlans|[plannerPlan](../resources/plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](../resources/plannerplan.md) that the user marked as favorites.|
+|myDayTasks|[plannerTask](../resources/plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](../resources/plannertask.md) to be shown in the My Day view of the user.|
+|plans_v2|[plan](../resources/plan.md) collection| Read-only. Nullable. The collection of plans in the Planner Unified plans Graph API associated with the user.|
+|recentPlans|[plannerPlan](../resources/plannerplan.md) collection| Read-only. Nullable. Returns the [plannerPlans](../resources/plannerplan.md) that the user recently viewed in apps that support recent plans. |
+|rosterPlans|[plannerPlan](../resources/plannerplan.md) collection|Read-only. Nullable. Returns the [plannerPlans](../resources/plannerplan.md) contained by the [plannerRosters](../resources/plannerroster.md) the user is a member.|
+|tasks|[plannerTask](../resources/plannertask.md) collection| Read-only. Nullable. Returns the [plannerTasks](../resources/plannertask.md) assigned to the user.|
+|tasks_v2|[task](../resources/task.md) collection| Read-only. Nullable. The collection of tasks in the Planner Unified plans Graph API assigned to the user.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -84,5 +82,3 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-
-

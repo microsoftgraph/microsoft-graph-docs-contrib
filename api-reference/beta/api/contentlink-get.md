@@ -1,5 +1,5 @@
 ---
-title: "Get contentLink"
+title: "Get content link"
 description: "Read the properties and relationships of contentLink object."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Get contentLink
+# Get content link
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "contentlink-get-permissions"
+  "name": "contentlink_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/contentlink-get-permissions.md)]
@@ -39,10 +39,6 @@ GET /users/{usersId}/planner/plans_v2/{planId}/links/{contentLinkId}
 GET /me/planner/plans_v2/{planId}/tasks/{taskId}/links/{contentLinkId}
 GET /users/{usersId}/planner/plans_v2/{planId}/tasks/{taskId}/links/{contentLinkId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -88,26 +84,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.contentLink",
-    "id": "eb8b65f4-318a-9e90-8af9-67a53027e563",
-    "displayName": "String",
-    "linkType": "String",
-    "webUrl": "String",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "capabilities": {
-      "@odata.type": "microsoft.graph.contentLinkCapability"
-    },
-    "extensions": {
-      "@odata.type": "microsoft.graph.extensionFieldCollection"
-    }
-  }
+  "@odata.type": "#microsoft.graph.contentLink",
+  "id": "eb8b65f4-318a-9e90-8af9-67a53027e563",
+  "displayName": "Product launch"
 }
 ```
 

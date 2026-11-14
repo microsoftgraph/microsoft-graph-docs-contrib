@@ -167,7 +167,7 @@ Added the [slaPolicyDefinition](/graph/api/resources/security-casemanagement-sla
 
 ### Tasks and plans
 
-Added the [plan](/graph/api/resources/plan?view=graph-rest-beta&preserve-view=true) resource type for Planner Graph V4. Use these APIs to create and manage plans and tasks with richer scheduling, dependency, custom field, and chat capabilities than the existing Planner API surface.
+Added the [plan](/graph/api/resources/plan?view=graph-rest-beta&preserve-view=true) resource type for the Planner Unified plans Graph API. Use this API to create and manage plans and tasks with richer scheduling, dependency, custom field, and chat capabilities than the Planner Basic plans Graph API.
 
 ### Teamwork and communications | Messaging
 

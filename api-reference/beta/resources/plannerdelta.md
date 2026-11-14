@@ -18,6 +18,8 @@ An abstract type that represents the base type for planner entities such as a pl
 
 Base type of [plannerBucket](../resources/plannerbucket.md), [plannerGoal](../resources/plannergoal.md), [plannerHistoryItem](../resources/plannerhistoryitem.md), [plannerPlan](../resources/plannerplan.md), and [plannerTask](../resources/plannertask.md).
 
+Derived types in the Planner Unified plans Graph API include [bucket](../resources/bucket.md), [categoryDefinition](../resources/categorydefinition.md), [checklistItemV4](../resources/checklistitemv4.md), [contentLink](../resources/contentlink.md), [customChoiceOption](../resources/customchoiceoption.md), [customFieldDefinition](../resources/customfielddefinition.md), [customFieldValue](../resources/customfieldvalue.md), [dependency](../resources/dependency.md), [goal](../resources/goal.md), [historyItem](../resources/historyitem.md), [plan](../resources/plan.md), [planContextLink](../resources/plancontextlink.md), [plannerChatMessage](../resources/plannerchatmessage.md), [task](../resources/task.md), and [userAssignment](../resources/userassignment.md). Each resource's Methods section identifies its documented operations; inheritance doesn't imply CRUD support.
+
 ## Methods
 None.
 

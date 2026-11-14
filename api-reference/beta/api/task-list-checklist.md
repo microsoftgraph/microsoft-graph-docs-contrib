@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "task-list-checklist-permissions"
+  "name": "task_list_checklist_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/task-list-checklist-permissions.md)]
@@ -36,10 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /users/{usersId}/planner/plans_v2/{planId}/tasks/{taskId}/checklist
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -89,25 +85,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.checklistItemV4",
       "id": "0d03366e-da38-ca6d-a60b-f3f6d8a68345",
-      "displayName": "String",
-      "isChecked": "Boolean",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "completedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "completedDateTime": "String (timestamp)",
-      "capabilities": {
-        "@odata.type": "microsoft.graph.checklistCapability"
-      },
-      "extensions": {
-        "@odata.type": "microsoft.graph.extensionFieldCollection"
-      }
+      "displayName": "Product launch"
     }
   ]
 }

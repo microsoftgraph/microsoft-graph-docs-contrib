@@ -1,0 +1,264 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/categorydefinition-get.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/planview-list-categories?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/categorydefinition-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/categorydefinition?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/checklistitemv4-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/checklistitemv4?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/contentlink-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/contentlink?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/customchoiceoption-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/customchoiceoption?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/customfielddefinition-delete-choiceoptions.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/customchoiceoption?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/customfielddefinition-post-choiceoptions.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/customchoiceoption?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/customfielddefinition-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/customfielddefinition?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/customfieldvalue-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/customfieldvalue?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/dependency-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/dependency?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/goal-delete-tasks.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/goal?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/goal-post-tasks.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/goal?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/goal-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/goal?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/historyitem-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/historyitem?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-delete-contexts.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plancontextlink?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-delete-customfielddefinitions.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/customfielddefinition?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-delete-dependencies.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/dependency?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-delete-goals.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/goal?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-delete-historyitems.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/historyitem?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-post-contexts.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plancontextlink?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-post-customfielddefinitions.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/customfielddefinition?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-post-dependencies.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/dependency?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-post-goals.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/goal?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-post-historyitems.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/historyitem?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-post-links.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/contentlink?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plan-post-tasks.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/planner-post-tasks_v2?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plancontextlink-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plancontextlink?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plannergroup-delete-plans_v2.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plan?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plannergroup-post-plans_v2.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plan?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/planneruser-delete-plans_v2.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plan?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/planneruser-delete-tasks_v2.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/task?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/planneruser-list-v2.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/planner-list-plans_v2?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/planneruser-post-plans_v2.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plan?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/planneruser-post-tasks_v2.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/task?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/planneruser-post-v2.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/planner-post-plans_v2?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/planview-delete-categories.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/categorydefinition?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/planview-post-categories.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/categorydefinition?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/task-post-checklist.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/checklistitemv4?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/task-post-customfieldvalues.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/customfieldvalue?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/task-post-links.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/contentlink?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/task-post-userassignments.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/userassignment?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/teamschannelplanner-delete-plans_v2.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plan?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/teamschannelplanner-post-plans_v2.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plan?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/userassignment-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/userassignment?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/agentuser-delete-planner.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/planneruser?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/channel-delete-planner.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/teamschannelplanner?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/group-delete-planner.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plannergroup?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/planner-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/planner?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plannerchatmessage-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plannerchatmessage?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plannergroup-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plannergroup?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/task-post-messages.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/plannerchatmessage?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/teamschannelplanner-update.md",
+      "redirect_url": "https://learn.microsoft.com/graph/api/resources/teamschannelplanner?view=graph-rest-beta",
+      "redirect_document_id": false
+    }
+  ]
+}

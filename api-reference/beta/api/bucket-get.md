@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "bucket-get-permissions"
+  "name": "bucket_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/bucket-get-permissions.md)]
@@ -34,13 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /me/planner/plans_v2/{planId}/buckets/{bucketId}
-GET /users/{usersId}/planner/plans_v2/{planId}/buckets/{bucketId}
+GET /planner/plans_v2/{planId}/buckets/{bucketId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -67,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/planner/plans_v2/{planId}/buckets/{bucketId}
+GET https://graph.microsoft.com/beta/planner/plans_v2/{planId}/buckets/{bucketId}
 ```
 
 
@@ -86,25 +81,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.bucket",
-    "id": "206ac2f7-b3e0-e350-a95d-d7fe9091c22f",
-    "displayName": "String",
-    "planId": "String",
-    "creationInfo": {
-      "@odata.type": "microsoft.graph.creationInfo"
-    },
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "capabilities": {
-      "@odata.type": "microsoft.graph.bucketCapability"
-    },
-    "extensions": {
-      "@odata.type": "microsoft.graph.extensionFieldCollection"
-    }
-  }
+  "@odata.type": "#microsoft.graph.bucket",
+  "id": "206ac2f7-b3e0-e350-a95d-d7fe9091c22f",
+  "displayName": "Product launch"
 }
 ```
 

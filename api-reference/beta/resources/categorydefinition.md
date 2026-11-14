@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A named category that can be applied to [tasks](task.md) in a [plan](plan.md). It has no defaults beyond the universal property set.
+A named category that can be applied to [tasks](../resources/task.md) in a [plan](../resources/plan.md). It has no defaults beyond the universal property set.
 
 
 Inherits from [plannerDelta](../resources/plannerdelta.md).
@@ -23,11 +23,7 @@ Inherits from [plannerDelta](../resources/plannerdelta.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/planview-list-categories.md)|[categoryDefinition](../resources/categorydefinition.md) collection|Get a list of the categoryDefinition objects and their properties.|
-|[Create](../api/planview-post-categories.md)|[categoryDefinition](../resources/categorydefinition.md)|Create a new categoryDefinition object.|
-|[Get](../api/categorydefinition-get.md)|[categoryDefinition](../resources/categorydefinition.md)|Read the properties and relationships of [categoryDefinition](../resources/categorydefinition.md) object.|
-|[Update](../api/categorydefinition-update.md)|[categoryDefinition](../resources/categorydefinition.md)|Update the properties of a categoryDefinition object.|
-|[Delete](../api/planview-delete-categories.md)|None|Delete a categoryDefinition object.|
+|[Read plan categories](../api/planview-list-categories.md)|[plan](../resources/plan.md)|Read a plan with its category definitions expanded.|
 
 ## Properties
 |Property|Type|Description|
@@ -63,4 +59,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

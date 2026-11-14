@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "plan-delete-buckets-permissions"
+  "name": "plan_delete_buckets_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/plan-delete-buckets-permissions.md)]
@@ -34,8 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /me/planner/plans_v2/{planId}/buckets/{bucketId}/$ref
-DELETE /users/{usersId}/planner/plans_v2/{planId}/buckets/{bucketId}/$ref
+DELETE /planner/plans_v2/{planId}/buckets/{bucketId}
 ```
 
 ## Request headers
@@ -43,6 +42,9 @@ DELETE /users/{usersId}/planner/plans_v2/{planId}/buckets/{bucketId}/$ref
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|If-Match|The complete ETag of the resource to update or delete. Required.|
+
+Use the complete ETag returned by the latest read of this resource as the `If-Match` value. Don't construct or compare ETags yourself. A missing, invalid, or no-longer-usable ETag results in `412 Precondition Failed`. A conflicting change can result in `409 Conflict`; read the resource again and reconcile the changes before retrying. An older ETag doesn't necessarily fail when the service can merge nonconflicting changes.
 
 ## Request body
 
@@ -63,17 +65,16 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/planner/plans_v2/{planId}/buckets/{bucketId}
+DELETE https://graph.microsoft.com/beta/planner/plans_v2/{planId}/buckets/{bucketId}
+If-Match: {etag}
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 }
 -->
 ``` http
