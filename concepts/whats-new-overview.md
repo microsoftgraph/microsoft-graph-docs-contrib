@@ -72,6 +72,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Device and app management | Cloud PC
 
+- Added the [retrieveFlexCloudPcAccessConfiguration](/graph/api/cloudpc-retrieveflexcloudpcaccessconfiguration?view=graph-rest-beta&preserve-view=true) and [retrieveFlexCloudPcConfigurationDetail](/graph/api/cloudpc-retrieveflexcloudpcconfigurationdetail?view=graph-rest-beta&preserve-view=true) functions on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to retrieve live Windows 365 Flex access state and Flex license availability.
 - Added the `cloudPcReserveHealthScenario` member to the **alertRuleTemplate** enumeration type used by [alertRule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true) to monitor Windows 365 Reserve Cloud PC health conditions.
 - Added the `cloudPcReserveLicensesAvailabilityBelowThreshold`, `reserveCloudPcUnlicensedUsersAssignment`, and `cloudPcMaxUserStorageUsageThresholdExceeded` members to the **conditionCategory** enumeration type used by [ruleCondition](/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta&preserve-view=true) to monitor available Reserve licenses, unlicensed user assignments, and maximum user storage usage.
 

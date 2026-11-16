@@ -699,6 +699,8 @@
             "cloudpcexternalpartneractionresult",
             "cloudpcexternalpartneragentsetting",
             "cloudPcFilePathAppDetail",
+            "cloudPcFlexAccessConfiguration",
+            "cloudPcFlexConfigurationDetail",
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
