@@ -86,6 +86,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the **instanceMode** property to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource and the **instanceMode** enumeration to identify the single-instance or multi-instance topology.
 - Devices now support soft-deletion and restoration. When a device is deleted, it's moved to the [deleted items container](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) and can be restored within 30 days. After 30 days, it's permanently deleted.
 
+### Identity and access | Governance
+
+- Added three predefined tasks to the [Lifecycle Workflows task catalog](/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta&preserve-view=true) to send identity-verification links, request Verified ID presentation, and email verification status to a manager.
+- Added the **Pre-hire identity verification initiation (Preview)** and **New Hire employee onboarding with identity verification (Preview)** Joiner templates to the [Lifecycle Workflows template catalog](/graph/api/resources/identitygovernance-workflowtemplate?view=graph-rest-beta&preserve-view=true).
+
 ### Identity and access | Identity and sign-in
 
 - Added the `aiElevatedAccountRisk` member to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that the user completed Microsoft-managed remediation to address their risk.

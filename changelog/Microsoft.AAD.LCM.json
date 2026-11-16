@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "61df0a88-0a76-465a-80e5-dbd62f6585f6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskDefinition",
+          "ChangeType": "Change",
+          "Description": "Added three predefined tasks to the Lifecycle Workflows [taskDefinition](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-taskdefinition?view=graph-rest-beta) catalog: Select verification profile for identity verification (Preview), Select verification for Verified ID presentation (Preview), and Send manager verification status email (Preview). For required arguments, recipient defaults, and examples, see [Configure identity-verification onboarding tasks](https://learn.microsoft.com/en-us/graph/identitygovernance-lifecycleworkflows-task-arguments#configure-identity-verification-onboarding-tasks-beta).",
+          "Target": "taskDefinition"
+        },
+        {
+          "Id": "61df0a88-0a76-465a-80e5-dbd62f6585f6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowTemplate",
+          "ChangeType": "Change",
+          "Description": "Added two predefined Joiner templates to the Lifecycle Workflows [workflowTemplate](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowtemplate?view=graph-rest-beta) catalog: Pre-hire identity verification initiation (Preview) and New Hire employee onboarding with identity verification (Preview).",
+          "Target": "workflowTemplate"
+        }
+      ],
+      "Id": "61df0a88-0a76-465a-80e5-dbd62f6585f6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-09T15:14:43.7868913Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
           "ApiChange": "Relationship",
           "ChangedApiName": "lifecyclePolicies",

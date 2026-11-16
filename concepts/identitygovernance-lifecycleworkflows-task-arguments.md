@@ -1,13 +1,15 @@
 ---
 title: Configure Arguments for Built-In Lifecycle Workflow Tasks
 description: Learn how to configure arguments for built-in Lifecycle Workflow tasks in Microsoft Graph to automate user lifecycle processes.
-author: FaithOmbongi
-ms.author: ombongifaith
+author: rogulati
+ms.author: rogulati
 ms.reviewer: alexander.filipin
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
 ms.topic: how-to
 ms.date: 04/25/2025
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1026
 #Customer intent: As a developer automating user lifecycle processes, I want to learn how to use Microsoft Graph to configure the arguments property of built-in tasks in Lifecycle Workflows, so that I can automate basic lifecycle processes for my users.
 
 ---
@@ -16,7 +18,7 @@ ms.date: 04/25/2025
 
 Microsoft Graph Lifecycle Workflows APIs let you automate user lifecycle processes at the joiner, leaver, and mover levels. 
 
-Core to the workflows are [tasks](/graph/api/resources/identitygovernance-task) that represent specific actions that run automatically when a workflow is triggered. [30 built-in tasks](/graph/api/resources/identitygovernance-task) are available to support creating custom workflows. These tasks are configured on the **arguments** property of a task definition.
+Core to the workflows are [tasks](/graph/api/resources/identitygovernance-task) that represent specific actions that run automatically when a workflow is triggered. [Built-in tasks](/graph/api/resources/identitygovernance-task) are available to support creating custom workflows. These tasks are configured on the **arguments** property of a task definition.
 
 This article explains how to configure the arguments property for built-in tasks to streamline automation.
 
@@ -27,6 +29,9 @@ This article explains how to configure the arguments property for built-in tasks
 | Send welcome email to new hire | 70b29d51-b59a-4773-9280-8841dfd3f2ea | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. This argument doesn't customize the custom text of the email, and should be set in the same language as the custom text.<br/><br/>**name**: `to`<br/>**value**: `User`, `Managers`, `Sponsors`, or the string of a specific `userID`. If `Sponsors` is selected, you're not able to add another user in the `cc` argument. |
 | Send onboarding reminder email | 3C860712-2D37-42A4-928F-5C93935D26A1 | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. This argument doesn't customize the custom text of the email, and should be set in the same language as the custom text.<br/><br/>**name**: `to`<br/>**value**: `User`, `Managers`, `Sponsors`, or the string of a specific `userID`. If `Sponsors` is selected, you're not able to add another user in the `cc` argument. |
 | Generate Temporary Access Pass and send via email to user's manager | 1b555e50-7f65-41d5-b514-5894a026d10d | **name**: `tapLifetimeMinutes`<br/>**value**: `10` up to `43000`<br/><br/>**name**: `tapIsUsableOnce`<br/>**value**: `true` or `false`<br/><br/>**name**: `to`<br/>**value**: `User`, `Managers`, `Sponsors`, or the string of a specific `userID`. If `Sponsors` is selected, you're not able to add another user in the `cc` argument.<br/><br/>**Prerequisites**:<br/><ol><li>The user must be assigned a manager.</li><li>The user's manager must have their mail enabled.</li><li>The temporary access pass (TAP) policy must be enabled in the tenant and the user enabled to use the TAP authentication method. For more information, see [temporaryAccessPassAuthenticationMethodConfiguration resource type](/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration).</li></ol> |
+| Select verification profile for identity verification (Preview) | 9ed82537-8442-467a-8eef-9351fb7a1f9c | Available only in `/beta`. `verifiedIdProfileId` is required. For optional arguments and recipient defaults, see [Configure identity-verification onboarding tasks (beta)](#configure-identity-verification-onboarding-tasks-beta). |
+| Select verification for Verified ID presentation (Preview) | 8314685b-de26-4c90-b086-bfa0e7a263f3 | Available only in `/beta`. `verifiedIdProfileId` is required. For optional arguments and recipient defaults, see [Configure identity-verification onboarding tasks (beta)](#configure-identity-verification-onboarding-tasks-beta). |
+| Send manager verification status email (Preview) | c7a1f3e5-4b2d-4e8a-9f6c-3d5a7b1e2c4f | Available only in `/beta`. `verifiedIdProfileId` is required. For optional arguments and recipient defaults, see [Configure identity-verification onboarding tasks (beta)](#configure-identity-verification-onboarding-tasks-beta). |
 | Add user to groups | 22085229-5809-45e8-97fd-270d28d66910 | **name**: `groupID`<br/>**value**: A valid group ID or a comma-separated list of groups to which the user is added as a member. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"`. |
 | Add user to teams | e440ed8d-25a1-4618-84ce-091ed5be5594 | **name**: `teamID`<br/>**value**: A valid group ID or a comma-separated list of teams to which the user is added as a member. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"`. |
 | Update user attributes (Preview) | 2c8f4a1b-7d3e-4f9c-8a5b-6e1d2c3f4a5b | **name**: `attributeUpdates`<br/>**value**: A JSON string specifying up to 10 user attributes to update or clear. The attributes can include built-in, on-premises extensions, directory extensions, and employee org data. |
@@ -664,6 +669,113 @@ This article explains how to configure the arguments property for built-in tasks
     {
       "name": "locale",
       "value": "en-us"
+    }
+  ]
+}
+```
+
+## Configure identity-verification onboarding tasks (beta)
+
+The three identity-verification onboarding tasks are Joiner tasks available only through the Microsoft Graph `/beta` endpoint, not `/v1.0`. Use an ID verification profile configured for onboarding.
+
+[!INCLUDE [beta-disclaimer](../api-reference/includes/beta-disclaimer.md)]
+
+Use [List task definitions](/graph/api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions?view=graph-rest-beta&preserve-view=true) to retrieve the task definitions. Their task-definition **version** is `0`, which isn't a Microsoft Graph API version.
+
+All three tasks support the following arguments. Argument values are strings.
+
+| Argument | Required | Behavior |
+|----------|----------|----------|
+| `cc` | No | A user ID or comma-separated list of user IDs to copy on the email. If omitted, no CC recipients are added. |
+| `customBody` | No | A custom email body. If omitted, the standard body is used. For the two verification-link tasks, a nonempty custom body must include `{{verificationLink}}`. |
+| `customSubject` | No | A custom email subject. If omitted, the standard subject is used. |
+| `locale` | No | A language value that overrides the recipient's language setting. If omitted, the notification service resolves the locale using recipient preferences. |
+| `to` | No | The recipient selector. Supported values and defaults depend on the task, as described in the recipient table. |
+| `verifiedIdProfileId` | Yes | The ID of the ID verification profile selected for the workflow. There's no default. The manager verification-status email task uses this ID to identify which profile's verification status to report. |
+
+The `to` argument has the following task-specific behavior. Populate the user's **otherMails** property for verification-link delivery. For delivery to `Manager`, populate both the user's **manager** relationship and the manager's **mail** property.
+
+| Task | Supported `to` values | Default when `to` is omitted |
+|------|-----------------------|-----------------------------|
+| Select verification profile for identity verification (Preview) | `User/otherMails` only | `User/otherMails` |
+| Select verification for Verified ID presentation (Preview) | `User/otherMails` only | `User/otherMails` |
+| Send manager verification status email (Preview) | `User`, `Manager`, `Sponsors`, or a specific user's ID | `Manager` |
+
+The following examples show task objects, not complete HTTP request bodies. Include the objects in the **tasks** collection when you [create a workflow](/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta&preserve-view=true) with `POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows`. For an existing workflow, [create a new version](/graph/api/identitygovernance-workflow-createnewversion?view=graph-rest-beta&preserve-view=true) to change its task configuration.
+
+Replace `<id-verification-profile-id>` in each example with the ID of the profile selected for the workflow.
+
+### Send an identity-verification link
+
+This task sends the user a link to complete identity verification with the selected profile. The example explicitly selects `User/otherMails` and includes the required verification-link placeholder in the custom body.
+
+```json
+{
+  "category": "joiner",
+  "continueOnError": false,
+  "displayName": "Select verification profile for identity verification (Preview)",
+  "isEnabled": true,
+  "taskDefinitionId": "9ed82537-8442-467a-8eef-9351fb7a1f9c",
+  "arguments": [
+    {
+      "name": "verifiedIdProfileId",
+      "value": "<id-verification-profile-id>"
+    },
+    {
+      "name": "to",
+      "value": "User/otherMails"
+    },
+    {
+      "name": "customSubject",
+      "value": "Complete your identity verification"
+    },
+    {
+      "name": "customBody",
+      "value": "Complete identity verification: {{verificationLink}}"
+    }
+  ]
+}
+```
+
+### Send a Verified ID presentation link
+
+This task sends the user a link to present a Verified ID for the selected profile. The example omits `to`, so delivery defaults to `User/otherMails`. The custom body includes the required verification-link placeholder.
+
+```json
+{
+  "category": "joiner",
+  "continueOnError": false,
+  "displayName": "Select verification for Verified ID presentation (Preview)",
+  "isEnabled": true,
+  "taskDefinitionId": "8314685b-de26-4c90-b086-bfa0e7a263f3",
+  "arguments": [
+    {
+      "name": "verifiedIdProfileId",
+      "value": "<id-verification-profile-id>"
+    },
+    {
+      "name": "customBody",
+      "value": "Present your Verified ID: {{verificationLink}}"
+    }
+  ]
+}
+```
+
+### Send a manager verification-status email
+
+This task reports the verification status for the selected profile. The example supplies the required profile ID and omits all optional arguments. Delivery defaults to `Manager`, with no CC recipients and standard email content. The notification service resolves the locale using recipient preferences.
+
+```json
+{
+  "category": "joiner",
+  "continueOnError": false,
+  "displayName": "Send manager verification status email (Preview)",
+  "isEnabled": true,
+  "taskDefinitionId": "c7a1f3e5-4b2d-4e8a-9f6c-3d5a7b1e2c4f",
+  "arguments": [
+    {
+      "name": "verifiedIdProfileId",
+      "value": "<id-verification-profile-id>"
     }
   ]
 }
