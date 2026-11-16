@@ -384,7 +384,7 @@ items:
     items:
     - name: Account entity mapping
       href: ../../resources/security-accountentitymapping.md
-    - name: Account object id action
+    - name: Account object ID action
       href: ../../resources/security-accountobjectidaction.md
     - name: Account sid action
       href: ../../resources/security-accountsidaction.md

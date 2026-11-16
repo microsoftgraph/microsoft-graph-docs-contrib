@@ -25,9 +25,9 @@ items:
     items:
     - name: Overview
       href: ../../resources/browsesessionbase.md
-    - name: One drive for business browse session
+    - name: OneDrive for Business browse session
       items:
-      - name: One drive for business browse session
+      - name: OneDrive for Business browse session
         href: ../../resources/onedriveforbusinessbrowsesession.md
       - name: Create
         href: ../../api/backuprestoreroot-post-onedriveforbusinessbrowsesessions.md
@@ -37,9 +37,9 @@ items:
         href: ../../api/backuprestoreroot-list-onedriveforbusinessbrowsesessions.md
       - name: browse
         href: ../../api/onedriveforbusinessbrowsesession-browse.md
-    - name: Share point browse session
+    - name: SharePoint browse session
       items:
-      - name: Share point browse session
+      - name: SharePoint browse session
         href: ../../resources/sharepointbrowsesession.md
       - name: Create
         href: ../../api/backuprestoreroot-post-sharepointbrowsesessions.md

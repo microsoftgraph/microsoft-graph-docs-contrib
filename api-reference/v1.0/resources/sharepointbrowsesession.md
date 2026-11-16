@@ -1,5 +1,6 @@
 ---
 title: "sharePointBrowseSession resource type"
+toc.title: "SharePoint browse session"
 description: "Represents a browse session created on a restore point of a SharePoint site."
 author: "rahulprasad-ms"
 ms.date: 04/15/2026

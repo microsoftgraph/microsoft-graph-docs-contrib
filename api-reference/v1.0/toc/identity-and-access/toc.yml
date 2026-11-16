@@ -1617,7 +1617,7 @@ items:
       href: ../../resources/onusercreatestartlistener.md
     - name: On password submit listener
       href: ../../resources/onpasswordsubmitlistener.md
-    - name: On verified id claim validation listener
+    - name: On verified ID claim validation listener
       href: ../../resources/onverifiedidclaimvalidationlistener.md
   - name: Authentication methods
     items:
@@ -2095,7 +2095,7 @@ items:
       href: ../../resources/ontokenissuancestartcustomextension.md
     - name: On password submit custom extension
       href: ../../resources/onpasswordsubmitcustomextension.md
-    - name: On verified id claim validation custom extension
+    - name: On verified ID claim validation custom extension
       href: ../../resources/onverifiedidclaimvalidationcustomextension.md
   - name: Data policy operation
     items:
@@ -2201,7 +2201,7 @@ items:
           href: ../../api/identityproviderbase-delete.md
         - name: List available identity providers
           href: ../../api/identityproviderbase-availableprovidertypes.md
-      - name: Built in identity provider
+      - name: Built-in identity provider
         href: ../../resources/builtinidentityprovider.md
       - name: Social identity provider
         href: ../../resources/socialidentityprovider.md
@@ -2656,7 +2656,7 @@ items:
         href: ../../api/webapplicationfirewallprovider-verify.md
     - name: Akamai web application firewall provider
       href: ../../resources/akamaiwebapplicationfirewallprovider.md
-    - name: Cloud flare web application firewall provider
+    - name: Cloudflare web application firewall provider
       href: ../../resources/cloudflarewebapplicationfirewallprovider.md
     - name: Web application firewall verification model
       items:

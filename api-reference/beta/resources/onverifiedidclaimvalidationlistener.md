@@ -1,5 +1,6 @@
 ---
 title: "onVerifiedIdClaimValidationListener resource type"
+toc.title: "On verified ID claim validation listener"
 description: "Represents an event listener for the onVerifiedIdClaimValidation authentication event, used for validating claims from Verified ID credential presentations."
 author: "vbogomaz"
 ms.date: 03/05/2026

@@ -912,9 +912,9 @@ items:
       href: ../../resources/office365groupsactivitystorage.md
     - name: Office 365 services user counts
       href: ../../resources/office365servicesusercounts.md
-    - name: Share point API usage data point
+    - name: SharePoint API usage data point
       href: ../../resources/sharepointapiusagedatapoint.md
-    - name: Share point API usage report
+    - name: SharePoint API usage report
       href: ../../resources/sharepointapiusagereport.md
 - name: Microsoft Defender for Office 365 security reports
   items:
