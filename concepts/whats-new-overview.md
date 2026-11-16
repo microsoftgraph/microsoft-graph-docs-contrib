@@ -48,6 +48,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Promoted [identityLifecycle](/graph/api/resources/identitygovernance-identitylifecycle), [userIdentityLifecycle](/graph/api/resources/identitygovernance-useridentitylifecycle), [agentIdentityLifecycle](/graph/api/resources/identitygovernance-agentidentitylifecycle), [complianceIssue](/graph/api/resources/identitygovernance-complianceissue), and [attestationComplianceIssue](/graph/api/resources/identitygovernance-attestationcomplianceissue) from beta to v1.0 to read lifecycle state and compliance issues.
 - Promoted the **agentBuilderPlatforms**, **complianceState**, **lifecyclePolicyRelationship**, **lifecyclePolicyComplianceStatus**, **lifecyclePolicyEnforcementStatus**, **lifecyclePolicyScopeProcessingStatus**, **lifecyclePolicyScopeProcessingAttemptStatus**, **lifecyclePolicyEnforcementActionState**, **lifecyclePolicyNextEnforcementAction**, and **lifecyclePolicySource** enumerations from beta to v1.0. Added the `agentIdentity` member to **subjectType** for agent policy priority configuration.
 
+### Identity and access | Identity and sign-in
+
+- Added the **lastUsedDateTime** property to the [authenticationMethod](/graph/api/resources/authenticationmethod) resource to retrieve the latest successful use when usage data is available. The value is best effort; a `null` or absent value doesn't mean that the method was never used.
+
 ### Mail
 
 - Updated national cloud availability in China operated by 21Vianet for the [mailFolder: delta](/graph/api/mailfolder-delta) and [message: delta](/graph/api/message-delta) methods. Use these methods to track incremental changes to mail folders and messages within a mail folder.
