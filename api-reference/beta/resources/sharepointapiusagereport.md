@@ -1,5 +1,6 @@
 ---
 title: "sharePointApiUsageReport resource type"
+toc.title: "SharePoint API usage report"
 description: "Represents aggregated SharePoint Online tenant usage data containing a collection of usage data points."
 author: "ireneren"
 ms.localizationpriority: medium

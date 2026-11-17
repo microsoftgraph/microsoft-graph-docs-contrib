@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Tasks.Read|Not available.|
+|Delegated (work or school account)|Tasks.Read|Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Tasks.Read.All|Not available.|
+|Application|Tasks.Read.All|Tasks.ReadWrite.All|
 

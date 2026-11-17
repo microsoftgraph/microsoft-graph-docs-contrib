@@ -1,6 +1,6 @@
 ---
 title: "creationTimestamp resource type"
-description: "Identifies who performed an action and when, reused across Planner V4 types that need a lightweight actor-plus-timestamp pair (for example, a chatReaction author)."
+description: "Identifies who performed an action and when, reused across types in the Planner Unified plans Graph API that need a lightweight actor-plus-timestamp pair (for example, a chatReaction author)."
 author: "EshaSugla"
 ms.date: 09/10/2026
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **users** property of the [chatReaction](chatreaction.md) resource uses this type.
+The **users** property of the [chatReaction](../resources/chatreaction.md) resource uses this type.
 
-Identifies who performed an action and when, reused across Planner V4 types that need a lightweight actor-plus-timestamp pair (for example, a [chatReaction](chatreaction.md) author).
+Identifies who performed an action and when, reused across types in the Planner Unified plans Graph API that need a lightweight actor-plus-timestamp pair (for example, a [chatReaction](../resources/chatreaction.md) author).
 
 
 ## Properties
@@ -44,4 +44,3 @@ The following JSON representation shows the resource type.
   "createdDateTime": "String (timestamp)"
 }
 ```
-

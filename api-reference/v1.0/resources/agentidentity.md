@@ -2,7 +2,7 @@
 title: "agentIdentity resource type"
 description: "Represents an agent identity in a directory. An agent identity is a specialized type of service principal that represents automated agents or services that can perform actions on behalf of Agent Identity Blueprint or users within the Microsoft Entra ID ecosystem."
 author: "zallison22"
-ms.date: 08/26/2026
+ms.date: 11/02/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-agent-id"
 doc_type: resourcePageType
@@ -26,6 +26,7 @@ This resource is an open type that allows additional properties beyond those doc
 |[Get](../api/agentidentity-get.md)|[agentIdentity](../resources/agentidentity.md)|Read the properties and relationships of [agentIdentity](../resources/agentidentity.md) object.|
 |[Update](../api/agentidentity-update.md)|[agentIdentity](../resources/agentidentity.md)|Update the properties of an agentIdentity object.|
 |[Delete](../api/agentidentity-delete.md)|None|Delete an agentIdentity object.|
+|[agentIdentity: attest](../api/agentidentity-attest.md)|None|Attest continued usage and compliance of the agent identity.|
 |**App role assignments**|||
 |[List appRoleAssignedTo](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity.|
 |[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity is assigned.|
@@ -78,6 +79,7 @@ This resource is an open type that allows additional properties beyond those doc
 |appRoleAssignedTo|[appRoleAssignment](../resources/approleassignment.md) collection|App role assignments for this app or service, granted to users, groups, and other agent identities. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
 |appRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|App role assignment for another app or service, granted to this agent identity. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
 |createdObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects created by this agent identity. Read-only. Nullable. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|lifecycle|[microsoft.graph.identityGovernance.identityLifecycle](../resources/identitygovernance-identitylifecycle.md)|The lifecycle policy state of the agent identity, returned as [agentIdentityLifecycle](../resources/identitygovernance-agentidentitylifecycle.md). Read-only. Inherited from servicePrincipal.|
 |memberOf|[directoryObject](../resources/directoryobject.md) collection|Roles that this agent identity is a member of. HTTP Methods: GET Read-only. Nullable. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Delegated permission grants authorizing this agent identity to access an API on behalf of a signed-in user. Read-only. Nullable. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
 |ownedObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owned by this agent identity. Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`). Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
@@ -113,4 +115,3 @@ The following JSON representation shows the resource type. Only a subset of all 
   ]
 }
 ```
-

@@ -1319,9 +1319,9 @@ items:
         href: ../../api/insiderriskyuserapproval-get.md
       - name: Update
         href: ../../api/insiderriskyuserapproval-update.md
-    - name: Entra id protection risky user approval
+    - name: Entra ID Protection risky user approval
       items:
-      - name: Entra id protection risky user approval
+      - name: Entra ID Protection risky user approval
         href: ../../resources/entraidprotectionriskyuserapproval.md
       - name: Get
         href: ../../api/entraidprotectionriskyuserapproval-get.md
@@ -2184,7 +2184,7 @@ items:
       href: ../../resources/onpasswordsubmitlistener.md
     - name: On password update listener
       href: ../../resources/onpasswordupdatelistener.md
-    - name: On verified id claim validation listener
+    - name: On verified ID claim validation listener
       href: ../../resources/onverifiedidclaimvalidationlistener.md
     - name: On phone method load start listener
       href: ../../resources/onphonemethodloadstartlistener.md
@@ -2954,7 +2954,7 @@ items:
       href: ../../resources/onpasswordsubmitcustomextension.md
     - name: On password update custom extension
       href: ../../resources/onpasswordupdatecustomextension.md
-    - name: On verified id claim validation custom extension
+    - name: On verified ID claim validation custom extension
       href: ../../resources/onverifiedidclaimvalidationcustomextension.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
@@ -3090,7 +3090,7 @@ items:
           href: ../../api/identityproviderbase-delete.md
         - name: List available identity providers
           href: ../../api/identityproviderbase-availableprovidertypes.md
-      - name: Built in identity provider
+      - name: Built-in identity provider
         href: ../../resources/builtinidentityprovider.md
       - name: Social identity provider
         href: ../../resources/socialidentityprovider.md
@@ -3168,9 +3168,9 @@ items:
         href: ../../api/identityprovider-list-availableprovidertypes.md
     - name: OpenID Connect identity provider (deprecated)
       href: ../../resources/openidconnectprovider.md
-  - name: OAuth 2 permission grant
+  - name: OAuth2 permission grant
     items:
-    - name: OAuth 2 permission grant
+    - name: OAuth2 permission grant
       href: ../../resources/oauth2permissiongrant.md
     - name: List
       href: ../../api/oauth2permissiongrant-list.md
@@ -3723,7 +3723,7 @@ items:
         href: ../../resources/verificationeventlifecycle.md
       - name: Verification event override
         href: ../../resources/verificationeventoverride.md
-      - name: Verified id self service issuance
+      - name: Verified ID self-service issuance
         href: ../../resources/verifiedidselfserviceissuance.md
   - name: Web application firewall
     items:
@@ -3745,7 +3745,7 @@ items:
         href: ../../api/webapplicationfirewallprovider-verify.md
     - name: Akamai web application firewall provider
       href: ../../resources/akamaiwebapplicationfirewallprovider.md
-    - name: Cloud flare web application firewall provider
+    - name: Cloudflare web application firewall provider
       href: ../../resources/cloudflarewebapplicationfirewallprovider.md
     - name: Web application firewall verification model
       items:
@@ -4570,7 +4570,7 @@ items:
         href: ../../api/networkaccess-connectivity-getwebcategorybyurl.md
     - name: Forwarding rule
       href: ../../resources/networkaccess-forwardingrule.md
-    - name: M 365 forwarding rule
+    - name: Microsoft 365 forwarding rule
       href: ../../resources/networkaccess-m365forwardingrule.md
     - name: Private access forwarding rule
       href: ../../resources/networkaccess-privateaccessforwardingrule.md

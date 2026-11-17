@@ -22,12 +22,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 The following permissions apply to reading another user's status.
 
-<!-- {
-  "blockType": "permissions",
-  "name": "identityverificationstatus-get-permissions",
+<!-- { 
+  "blockType": "permissions", 
+  "name": "identityverificationstatus_get", 
   "requestUrls": ["GET /users/{id}/identityVerificationStatus"]
-}
--->
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityverificationstatus-get-permissions.md)]
 
 To read only the signed-in user's status through `/me`, use the `IdentityVerification.Read` delegated permission. This permission doesn't grant access to other users' status.

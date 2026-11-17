@@ -1,5 +1,5 @@
 ---
-title: "List bucket objects"
+title: "List buckets"
 description: "Get a list of the bucket objects and their properties."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# List bucket objects
+# List buckets
 
 Namespace: microsoft.graph
 
@@ -20,11 +20,7 @@ Get a list of the bucket objects and their properties.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "plan-list-buckets-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "plan_list_buckets" } -->
 [!INCLUDE [permissions-table](../includes/permissions/plan-list-buckets-permissions.md)]
 
 ## HTTP request
@@ -34,13 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /me/planner/plans_v2/{planId}/buckets
-GET /users/{usersId}/planner/plans_v2/{planId}/buckets
+GET /planner/plans_v2/{planId}/buckets
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -67,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/planner/plans_v2/{planId}/buckets
+GET https://graph.microsoft.com/beta/planner/plans_v2/{planId}/buckets
 ```
 
 
@@ -90,21 +81,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.bucket",
       "id": "206ac2f7-b3e0-e350-a95d-d7fe9091c22f",
-      "displayName": "String",
-      "planId": "String",
-      "creationInfo": {
-        "@odata.type": "microsoft.graph.creationInfo"
-      },
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "capabilities": {
-        "@odata.type": "microsoft.graph.bucketCapability"
-      },
-      "extensions": {
-        "@odata.type": "microsoft.graph.extensionFieldCollection"
-      }
+      "displayName": "Product launch"
     }
   ]
 }

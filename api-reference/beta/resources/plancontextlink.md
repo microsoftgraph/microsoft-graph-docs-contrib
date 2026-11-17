@@ -14,20 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A back-reference to where a [plan](plan.md) is surfaced outside Planner (for example, a Teams channel tab, a Loop page, or an Outlook calendar). `webUrl`, `displayAs`, and `isActive` are returned by default.
+A back-reference to where a [plan](../resources/plan.md) is surfaced outside Planner (for example, a Teams channel tab, a Loop page, or an Outlook calendar). `webUrl`, `displayAs`, and `isActive` are returned by default.
 
 
 Inherits from [plannerDelta](../resources/plannerdelta.md).
 
 
 ## Methods
+To create context links with a plan, use a [deep insert](../api/planner-post-plans_v2.md). This doesn't imply standalone create, update, or delete support.
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/plan-list-contexts.md)|[planContextLink](../resources/plancontextlink.md) collection|Get a list of the planContextLink objects and their properties.|
-|[Create](../api/plan-post-contexts.md)|[planContextLink](../resources/plancontextlink.md)|Create a new planContextLink object.|
 |[Get](../api/plancontextlink-get.md)|[planContextLink](../resources/plancontextlink.md)|Read the properties and relationships of [planContextLink](../resources/plancontextlink.md) object.|
-|[Update](../api/plancontextlink-update.md)|[planContextLink](../resources/plancontextlink.md)|Update the properties of a planContextLink object.|
-|[Delete](../api/plan-delete-contexts.md)|None|Delete a planContextLink object.|
 
 ## Properties
 |Property|Type|Description|
@@ -39,9 +38,9 @@ Inherits from [plannerDelta](../resources/plannerdelta.md).
 |displayNameSegments|String collection|Display name segments used to render where the plan is surfaced.|
 |id|String|The unique identifier of the entity. Read-only. Inherited from [entity](../resources/entity.md)|
 |isActive|Boolean|Indicates whether the context link is currently active.|
-|isCreation|Boolean|Indicates whether this context link represents the original creation surface for the plan.|
-|key|String|Identifier for the context the plan is surfaced in.|
-|ownerAppId|String|Application ID of the app that owns the surface the plan is linked from.|
+|isCreation|Boolean|Indicates whether this context link represents the original creation surface for the plan. Service-populated. Read-only.|
+|key|String|Client-specified identifier for the context the plan is surfaced in. Immutable after creation.|
+|ownerAppId|String|Application ID of the app that owns the surface the plan is linked from. Service-populated. Read-only.|
 |webUrl|String|URL of the surface where the plan is displayed.|
 
 ## Relationships
@@ -75,4 +74,3 @@ The following JSON representation shows the resource type.
   "createdDateTime": "String (timestamp)"
 }
 ```
-

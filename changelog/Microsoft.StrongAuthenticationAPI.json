@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "111fd41c-ab92-42ea-9921-bac85dd1811a",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastUsedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastUsedDateTime** property to the [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethod) resource in v1.0 to retrieve the latest successful use when usage data is available.",
+          "Target": "authenticationMethod"
+        }
+      ],
+      "Id": "111fd41c-ab92-42ea-9921-bac85dd1811a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-11-05T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e35f5b60-514e-44bf-8ec9-46fa529a72ba",
           "ApiChange": "Property",
           "ChangedApiName": "provenance",

@@ -233,7 +233,7 @@ items:
       href: ../../resources/crosstenantmigrationservicestatusdetails.md
     - name: Error
       href: ../../resources/error.md
-    - name: Exchange online Cross-tenant migration settings
+    - name: Exchange Online cross-tenant migration settings
       href: ../../resources/exchangeonlinecrosstenantmigrationsettings.md
 - name: Multitenant organization
   displayName: MTO

@@ -16,8 +16,55 @@ You can use the Planner API in Microsoft Graph to create tasks and assign them t
 
 Before you get started with the Planner API, it's helpful to understand how the main objects relate to each other and to Microsoft 365 groups.
 
+## Resource models for Planner Basic plans Graph API and Planner Unified plans Graph API
+
+The Planner beta API exposes two resource families. The Planner Basic plans Graph API uses [plannerPlan](../resources/plannerplan.md), [plannerTask](../resources/plannertask.md), and [plannerBucket](../resources/plannerbucket.md). The Planner Unified plans Graph API uses [plan](../resources/plan.md), [task](../resources/task.md), and [bucket](../resources/bucket.md). These are distinct Planner resource models; both use the Microsoft Graph `/beta` version segment in this reference.
+
+The plan and task collections in the Planner Unified plans Graph API use `/planner/plans_v2` and `/planner/tasks_v2`. Buckets are scoped to a plan. The Planner Unified plans Graph API supports creating, reading, updating, and deleting plans, tasks, and buckets. Its task resource exposes notes and related collections directly; there's no separate task-details object. Don't apply request shapes or response conventions from the Planner Basic plans Graph API to Planner Unified plans Graph API operations.
+
+Not every related type supports standalone CRUD. Use the operations listed on each resource, rather than inferring write support from a property or navigation relationship.
+
+Feature availability in the Planner Unified plans Graph API depends on the plan's capabilities. When updating or deleting an entity, use its complete returned ETag as `If-Match`, and follow the response contract on that operation's page.
+
+## Supported deep-insert scenarios in Planner Unified plans Graph API
+
+A **deep insert** creates a parent and related objects in one POST request. Use [Create plan](../api/planner-post-plans_v2.md) (`POST /planner/plans_v2`) or [Create task](../api/planner-post-tasks_v2.md) (`POST /planner/tasks_v2`), and include the new related objects as arrays in the parent's JSON request body.
+
+|Parent|Collection|Supported scenario|
+|:---|:---|:---|
+|Plan|`contexts`|Create a plan with [context links](../resources/plancontextlink.md) to surfaces such as Teams tabs, SharePoint pages, meeting notes, Loop pages, projects, or other contexts. These links don't create the referenced surfaces.|
+|Plan|`links`|Create a plan with [content links](../resources/contentlink.md) to existing content.|
+|Task|`checklist`|Create a task with one or more [checklist items](../resources/checklistitemv4.md), including their display names and checked states.|
+|Task|`links`|Create a task with [content links](../resources/contentlink.md) to existing content.|
+|Task|`userAssignments`|Create a task with [assignments](../resources/userassignment.md) to existing users. Identify each assignee by `user.id`; this doesn't create a user.|
+
+You can combine supported collections in the same request. For example, create a task with checklist items, content links, and user assignments together, or create a plan with both context links and content links. Each collection can contain multiple objects, subject to the applicable limits and plan capabilities.
+
+For request examples, see [Create a task with checklist items and assignees](../api/planner-post-tasks_v2.md#example-2-create-a-task-with-checklist-items-and-assignees) and [Create a plan with a context link](../api/planner-post-plans_v2.md#example-2-create-a-plan-with-a-context-link).
+
+### Feature-dependent deep inserts
+
+The following additional scenarios have availability restrictions. Don't assume that they're enabled for every tenant, deployment, or plan.
+
+|Parent|Collection|Scenario and prerequisites|
+|:---|:---|:---|
+|Plan|`planView.categories`|Initialize [category definitions](../resources/categorydefinition.md) when category writes are enabled. Supply up to 25 entries in the `categories` array inside `planView`; entries are assigned category slots in array order. If category writes aren't enabled, the supplied category entries are ignored and the plan retains its default categories.|
+|Task|`customFieldValues`|Create [custom field values](../resources/customfieldvalue.md) when custom-field functionality is enabled for the tenant and supported by the plan. Each `customFieldDefinitionId` must reference an existing [custom field definition](../resources/customfielddefinition.md) in the same plan. Supply a nonempty string `value` in the format required by that definition. This doesn't create field definitions or choice options.|
+
+When enabled, these collections can also be supplied with the other supported collections on the same parent. Their availability and validation requirements still apply.
+
+### Request rules and limitations
+
+Omit collections that you don't need, or supply empty arrays. Don't send `null` for a collection. The service generates identifiers and audit metadata for the new related objects; don't copy read-only fields from a GET response into the create request.
+
+Deep-insert support is limited to the collections listed here. Creating a plan with nested tasks, buckets, goals, custom field definitions, dependencies, or history items isn't supported. Creating a task with nested chat messages isn't supported, and creating a bucket doesn't create tasks. Setting identifiers such as `bucketId`, `parentTaskId`, or `goalIds` references existing objects; it doesn't create those objects.
+
+Supplying writable complex properties, such as `container`, `notes`, or calendar settings, isn't an independent child-resource create operation. Deep insert also doesn't imply standalone POST support on a child collection, collection replacement during PATCH, or `$ref` support.
+
+The following sections describe the Planner Basic plans Graph API resource model and its conventions.
+
 ## Plan containers
-In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. You can create a plan in a container of one of the following types: [driveItem](driveitem.md), Microsoft 365 [group](group.md), [plannerTask](plannertask.md), Planner project, [roster](plannerroster.md), [teamsChannel](channel.md), or [user](user.md).
+In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](../resources/plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. You can create a plan in a container of one of the following types: [driveItem](../resources/driveitem.md), Microsoft 365 [group](../resources/group.md), [plannerTask](../resources/plannertask.md), Planner project, [roster](../resources/plannerroster.md), [teamsChannel](../resources/channel.md), or [user](../resources/user.md).
 
 The most common type of container is a group.
 
@@ -41,7 +88,7 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 
 The `plannerTask` container type supports plans to be contained by a Planner task. Plans contained by a Planner task are deleted when the task is deleted.
 
-To [create a new plan](../api/planner-post-plans.md) in the container of a Planner task, set the **container** property on a [plan](plannerplan.md) object with **type** set to `plannerTask`, and set **id** to the ID of the Planner task.
+To [create a new plan](../api/planner-post-plans.md) in the container of a Planner task, set the **container** property on a [plan](../resources/plannerplan.md) object with **type** set to `plannerTask`, and set **id** to the ID of the Planner task.
 
 ```json
 {
@@ -66,7 +113,7 @@ Alternatively, you can specify the URL for a Planner task.
 
 The `teamsChannel` container type supports plans created in shared channels in Teams, where the channel is the container for the plan. Plans that are pinned in shared channels are deleted when the channel is deleted.
 
-To [create a new plan](../api/planner-post-plans.md) in the container of a Teams channel, set the **container** property on a [plan](plannerplan.md) object with **type** as `teamsChannel`, and the **id** should be formatted as "{team-id}/channels/{channel-id}".
+To [create a new plan](../api/planner-post-plans.md) in the container of a Teams channel, set the **container** property on a [plan](../resources/plannerplan.md) object with **type** as `teamsChannel`, and the **id** should be formatted as "{team-id}/channels/{channel-id}".
 
 ```json
 {
@@ -91,7 +138,7 @@ Alternatively, you can specify the URL for a shared channel in Teams.
 
 The user container type supports personal plans, where the user is the only user tracking their individual tasks. This provides the flexibility for users to share or collaborate on their personal plans. Plans that are created for a single user are automatically deleted when the user is deleted.
 
-To [create a new plan](../api/planner-post-plans.md) in a user's container, set the **container** property on a [plan](plannerplan.md) object with **type** being `user`.
+To [create a new plan](../api/planner-post-plans.md) in a user's container, set the **container** property on a [plan](../resources/plannerplan.md) object with **type** being `user`.
 
 ```json
 {
@@ -116,7 +163,7 @@ Users can upgrade their personal plans into group-based plans by [moving](../api
 
 ## Plans
 
-[Plans](plannerplan.md) are the containers of [tasks](plannertask.md).
+[Plans](../resources/plannerplan.md) are the containers of [tasks](../resources/plannertask.md).
 To [create a task in a plan](../api/planner-post-tasks.md), set the **planId** property on the task object to the ID of the plan while creating the task.
 Tasks currently can't be created without plans.
 To [retrieve the tasks in a plan](../api/plannerplan-list-tasks.md), make the following HTTP request.
@@ -139,7 +186,7 @@ Use the read-only **goalIds** property on a [plannerTask](../resources/plannerta
 
 ## Tasks
 
-Each task can be assigned to a user by adding an [assignment](plannerassignment.md) in the [assignments](plannerassignments.md) property on the task object.
+Each task can be assigned to a user by adding an [assignment](../resources/plannerassignment.md) in the [assignments](../resources/plannerassignments.md) property on the task object.
 The ID of the user to assign the task is the name of the open property on **assignments**, and the **orderHint** property on the assignment must be specified.
 
 ## Task and plan details
@@ -154,13 +201,13 @@ Aside from task and plan data, the Planner API also provides resources for creat
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
 | Flat list (tasks in a plan)                                                               | **orderHint** property on tasks                                                   |
 | Flat list (tasks assigned to a user)                                                      | **assigneePriority** property on tasks                                            |
-| Board view with columns for assignees (assigned to task board)                            | [assignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) object |
-| Board view with columns for progress of the task towards completion (progress task board) | [progressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) object     |
-| Board view with custom columns of tasks (bucket task board):                              | [bucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) object         |
+| Board view with columns for assignees (assigned to task board)                            | [assignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) object |
+| Board view with columns for progress of the task towards completion (progress task board) | [progressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object     |
+| Board view with custom columns of tasks (bucket task board):                              | [bucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) object         |
 
-The custom columns in the bucket task board are represented by [bucket](plannerbucket.md) objects, and their order by **orderHint** property on the object.
+The custom columns in the bucket task board are represented by [bucket](../resources/plannerbucket.md) objects, and their order by **orderHint** property on the object.
 
-The ordering principles are described in [Planner order hints](planner-order-hint-format.md).
+The ordering principles are described in [Planner order hints](../resources/planner-order-hint-format.md).
 
 ## <a name="delta">Track changes using delta query</a>
 
@@ -180,21 +227,21 @@ If you want to use the Planner delta query API, maintain a local cache of object
 
 The delta payload objects that the Planner delta query can currently return are of the following types:
 
-* [plannerTask](plannertask.md)
-* [plannerTaskDetails](plannertaskdetails.md)
-* [plannerPlan](plannerplan.md)
-* [plannerPlanDetails](plannerplandetails.md)
-* [plannerBucket](plannerbucket.md)
-* [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)
-* [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)
-* [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)
+* [plannerTask](../resources/plannertask.md)
+* [plannerTaskDetails](../resources/plannertaskdetails.md)
+* [plannerPlan](../resources/plannerplan.md)
+* [plannerPlanDetails](../resources/plannerplandetails.md)
+* [plannerBucket](../resources/plannerbucket.md)
+* [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md)
+* [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md)
+* [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md)
 
 Use the corresponding `GET` methods on the resource to obtain the initial state of objects to be populated into the local cache.
 
 
 ### Looking at history for the plan
 
-Planner supports an [API](../api/plannerplan-list-historyitems.md) to get the [history](plannerhistoryitem.md) of changes made to [tasks](plannertask.md) within a [plan](plannerplan.md).
+Planner supports an [API](../api/plannerplan-list-historyitems.md) to get the [history](../resources/plannerhistoryitem.md) of changes made to [tasks](../resources/plannertask.md) within a [plan](../resources/plannerplan.md).
 
 ### Differentiating between object creation and object modification
 
@@ -234,8 +281,8 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 In some common scenarios, `POST` and `PATCH` requests can return a 400 status code. The following are some of the common causes:
 
-* Open Type properties had the wrong type specified or no type specified, or didn't contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare **@odata.type** property with value `microsoft.graph.plannerAssignment`.
-* Order hint values didn't have the [correct format](planner-order-hint-format.md). For example, an order hint value was set directly to the value returned to the client.
+* Open Type properties had the wrong type specified or no type specified, or didn't contain any properties. For example, [plannerAssignments](../resources/plannerassignments.md) properties with complex values need to declare **@odata.type** property with value `microsoft.graph.plannerAssignment`.
+* Order hint values didn't have the [correct format](../resources/planner-order-hint-format.md). For example, an order hint value was set directly to the value returned to the client.
 * The data is logically inconsistent. For example, start date of task is later than due date of the task.
 
 ### 403 Forbidden
@@ -245,20 +292,20 @@ The following are the possible values for the limit types.
 
 | Value                         | Description                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MaximumProjectsOwnedByUser    | The maximum number of plans contained by a group limit was exceeded. The **container** property of the [plannerPlan](plannerplan.md) resource determines this limit. |
-| MaximumProjectsSharedWithUser | The maximum number of plans shared with a user limit was exceeded.  The **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource determines this limit.                   |
-| MaximumTasksCreatedByUser     | The maximum number of tasks created by a user limit was exceeded. The **createdBy** property on the [plannerTask](plannertask.md) resource determines this limit.                                    |
-| MaximumTasksAssignedToUser    | The maximum number of tasks assigned to a user limit was exceeded. The **assignments** property on the [plannerTask](plannertask.md) resource determines this limit.                                 |
-| MaximumTasksInProject         | The maximum number of tasks in a plan limit was exceeded. The **planId** property on the [plannerTask](plannertask.md) resource determines this limit.                                               |
-| MaximumActiveTasksInProject   | The maximum number of tasks that aren't completed in a plan limit was exceeded. The **planId** and **percentComplete** properties on the [plannerTask](plannertask.md) resource determines this limit. |
-| MaximumBucketsInProject       | The maximum number of buckets in a plan limit was exceeded. The **planId** property on the [plannerBucket](plannerbucket.md) resource determines this limit.                                         |
-| MaximumUsersSharedWithProject | The **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource contains too many values.                                                                                          |
-| MaximumReferencesOnTask       | The **references** property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
-| MaximumChecklistItemsOnTask   | The **checklist** property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
-| MaximumAssigneesInTasks       | The **assignments** property on the [plannerTask](plannertask.md) resource contains too many values.                                                                                                       |
-| MaximumFavoritePlansForUser   | The **favoritePlanReferences** property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                            |
-| MaximumRecentPlansForUser     | The **recentPlanReferences** property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                              |
-| MaximumContextsOnPlan         | The **contexts** property on the [plannerPlan](plannerplan.md) resource contains too many values.                                                                                                          |
+| MaximumProjectsOwnedByUser    | The maximum number of plans contained by a group limit was exceeded. The **container** property of the [plannerPlan](../resources/plannerplan.md) resource determines this limit. |
+| MaximumProjectsSharedWithUser | The maximum number of plans shared with a user limit was exceeded.  The **sharedWith** property on the [plannerPlanDetails](../resources/plannerplandetails.md) resource determines this limit.                   |
+| MaximumTasksCreatedByUser     | The maximum number of tasks created by a user limit was exceeded. The **createdBy** property on the [plannerTask](../resources/plannertask.md) resource determines this limit.                                    |
+| MaximumTasksAssignedToUser    | The maximum number of tasks assigned to a user limit was exceeded. The **assignments** property on the [plannerTask](../resources/plannertask.md) resource determines this limit.                                 |
+| MaximumTasksInProject         | The maximum number of tasks in a plan limit was exceeded. The **planId** property on the [plannerTask](../resources/plannertask.md) resource determines this limit.                                               |
+| MaximumActiveTasksInProject   | The maximum number of tasks that aren't completed in a plan limit was exceeded. The **planId** and **percentComplete** properties on the [plannerTask](../resources/plannertask.md) resource determines this limit. |
+| MaximumBucketsInProject       | The maximum number of buckets in a plan limit was exceeded. The **planId** property on the [plannerBucket](../resources/plannerbucket.md) resource determines this limit.                                         |
+| MaximumUsersSharedWithProject | The **sharedWith** property on the [plannerPlanDetails](../resources/plannerplandetails.md) resource contains too many values.                                                                                          |
+| MaximumReferencesOnTask       | The **references** property on the [plannerTaskDetails](../resources/plannertaskdetails.md) resource contains too many values.                                                                                          |
+| MaximumChecklistItemsOnTask   | The **checklist** property on the [plannerTaskDetails](../resources/plannertaskdetails.md) resource contains too many values.                                                                                           |
+| MaximumAssigneesInTasks       | The **assignments** property on the [plannerTask](../resources/plannertask.md) resource contains too many values.                                                                                                       |
+| MaximumFavoritePlansForUser   | The **favoritePlanReferences** property on the [plannerUser](../resources/planneruser.md) resource contains too many values.                                                                                            |
+| MaximumRecentPlansForUser     | The **recentPlanReferences** property on the [plannerUser](../resources/planneruser.md) resource contains too many values.                                                                                              |
+| MaximumContextsOnPlan         | The **contexts** property on the [plannerPlan](../resources/plannerplan.md) resource contains too many values.                                                                                                          |
 
 ### 412 Precondition Failed
 

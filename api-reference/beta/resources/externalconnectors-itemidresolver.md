@@ -1,5 +1,6 @@
 ---
 title: "itemIdResolver resource type"
+toc.title: "Item ID resolver"
 description: Defines the rules for resolving a given URL to a connector item's ID."
 author: "sacampbe-msft"
 ms.localizationpriority: medium

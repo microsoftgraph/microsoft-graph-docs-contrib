@@ -12,6 +12,9 @@ Lifecycle Workflows currently support the following tasks:
 | Send welcome email to new hire                                      | 70b29d51-b59a-4773-9280-8841dfd3f2ea | Joiner         |
 | Send onboarding reminder email                                      | 3C860712-2D37-42A4-928F-5C93935D26A1 | Joiner         |
 | Generate Temporary Access Pass and send via email to user's manager | 1b555e50-7f65-41d5-b514-5894a026d10d | Joiner         |
+| Select verification profile for identity verification (Preview) | 9ed82537-8442-467a-8eef-9351fb7a1f9c | Joiner |
+| Select verification for Verified ID presentation (Preview) | 8314685b-de26-4c90-b086-bfa0e7a263f3 | Joiner |
+| Send manager verification status email (Preview) | c7a1f3e5-4b2d-4e8a-9f6c-3d5a7b1e2c4f | Joiner |
 | Request user access package assignment | c1ec1e76-f374-4375-aaa6-0bb6bd4c60be  | Joiner, Mover         |
 | Assign licenses to users | 683c87a4-2ad4-420b-97d4-220d90afcd24  | Joiner, Mover         |
 | Send email to notify manager of user move | aab41899-9972-422a-9d97-f626014578b7  | Mover         |

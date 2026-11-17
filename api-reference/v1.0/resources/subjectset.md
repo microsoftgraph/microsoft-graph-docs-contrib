@@ -5,7 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 10/04/2024
+ms.date: 11/02/2026
 ---
 # subjectSet resource type
 
@@ -16,12 +16,18 @@ A shared object that is used in entitlement management access package assignment
 + In entitlement management, used in the request, approval, and assignment review settings of an access package assignment policy.
 + In role management policies, used in the approval settings that are defined in rules for role management policies.
 + In lifecycle workflows, used to configure the users that are in the scope of a workflow.
++ In lifecycle policies, used by the **scope** property of [lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md) to select guest users or agent identities for evaluation.
 
 
 This object is an abstract base type from which the following resources are derived:
 
 | Resource | Feature | Description |
 |---|---|---|
+|[selectedObjectsSubjectSet](../resources/identitygovernance-selectedobjectssubjectset.md) | Lifecycle Policies | Selects specific directory objects for policy evaluation. |
+|[allExcludingSpecificObjectsSubjectSet](../resources/identitygovernance-allexcludingspecificobjectssubjectset.md) | Lifecycle Policies | Includes all supported subjects except specified directory objects. |
+|[allExcludingGroupsSubjectSet](../resources/identitygovernance-allexcludinggroupssubjectset.md) | Lifecycle Policies | Includes supported subjects except members of specified groups. |
+|[selectedAgentBuilderPlatformsSubjectSet](../resources/identitygovernance-selectedagentbuilderplatformssubjectset.md) | Lifecycle Policies | Selects agent identities associated with specified builder platforms. |
+|[allExcludingAgentBuilderPlatformsSubjectSet](../resources/identitygovernance-allexcludingagentbuilderplatformssubjectset.md) | Lifecycle Policies | Includes agent identities except those associated with specified builder platforms. |
 |[attributeRuleMembers](../resources/attributerulemembers.md) | Entitlement Management | Represents members of a connected organization in an access package assignment policy. |
 |[connectedOrganizationMembers](../resources/connectedorganizationmembers.md) | Entitlement Management | Represents members of a connected organization in an access package assignment policy. |
 |[externalSponsors](../resources/externalsponsors.md) | Entitlement Management | Represents user's connected organization external sponsors for access package assignments. |
@@ -60,5 +66,4 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.subjectSet"
 }
 ```
-
 

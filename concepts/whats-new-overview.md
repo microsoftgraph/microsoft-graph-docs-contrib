@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 10/26/2026
+ms.date: 11/02/2026
 ms.topic: whats-new
 ---
 
@@ -30,10 +30,27 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Identity and access | Directory management
 
 - Added the **isPrivileged** property to the [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition) resource type. Use it to identify roles that contain sensitive Microsoft Entra resource actions.
+- Promoted the **lifecycle** relationship on [user](/graph/api/resources/user) to v1.0 to read guest lifecycle and compliance information.
+- Promoted the **lifecycle** relationship on [servicePrincipal](/graph/api/resources/serviceprincipal) from beta to v1.0 to read agent identity lifecycle and compliance information. [agentIdentity](/graph/api/resources/agentidentity) inherits this relationship.
+- Promoted the [user: attest](/graph/api/user-attest), [servicePrincipal: attest](/graph/api/serviceprincipal-attest), and [agentIdentity: attest](/graph/api/agentidentity-attest) methods from beta to v1.0 to attest to an identity's continued need.
+- Promoted the [addSelfAsSponsor](/graph/api/user-addselfassponsor) and [removeSelfAsSponsor](/graph/api/user-removeselfassponsor) methods on [user](/graph/api/resources/user) from beta to v1.0 for self-service guest sponsorship.
 
 ### Identity and access | Governance
 
 - Promoted SAP Access Control (SAP AC) support for [externalOriginResourceConnector](/graph/api/resources/externaloriginresourceconnector) from beta to v1.0. Use the `sapAc` connector type to configure connections to SAP AC systems for entitlement management.
+- Promoted [lifecyclePolicy](/graph/api/resources/identitygovernance-lifecyclepolicy), [agentIdentityLifecyclePolicy](/graph/api/resources/identitygovernance-agentidentitylifecyclepolicy), and [guestLifecyclePolicy](/graph/api/resources/identitygovernance-guestlifecyclepolicy) from beta to v1.0 to manage policy-based governance of agent identities and guest users. Use the **lifecyclePolicies** and **lifecyclePolicyPriorityConfigurations** relationships on [lifecycleWorkflowsContainer](/graph/api/resources/identitygovernance-lifecycleworkflowscontainer) and the [lifecyclePolicyPriorityConfiguration](/graph/api/resources/identitygovernance-lifecyclepolicypriorityconfiguration) resource to manage policies and their evaluation order.
+- Promoted the **lifecyclePolicies** relationship on [deletedItemContainer](/graph/api/resources/identitygovernance-deleteditemcontainer) and the [lifecyclePolicy: restore](/graph/api/identitygovernance-lifecyclepolicy-restore) method from beta to v1.0 to retrieve and restore soft-deleted policies.
+- Promoted [lifecyclePolicyRule](/graph/api/resources/identitygovernance-lifecyclepolicyrule), [periodicAttestationRule](/graph/api/resources/identitygovernance-periodicattestationrule), [sponsorPresenceRule](/graph/api/resources/identitygovernance-sponsorpresencerule), [inactivityRule](/graph/api/resources/identitygovernance-inactivityrule), [accessPackageAssignmentRequiredRule](/graph/api/resources/identitygovernance-accesspackageassignmentrequiredrule), and [invitationRedemptionRule](/graph/api/resources/identitygovernance-invitationredemptionrule) from beta to v1.0 to define lifecycle compliance requirements.
+- Promoted the policy scope types [selectedObjectsSubjectSet](/graph/api/resources/identitygovernance-selectedobjectssubjectset), [allExcludingSpecificObjectsSubjectSet](/graph/api/resources/identitygovernance-allexcludingspecificobjectssubjectset), [allExcludingGroupsSubjectSet](/graph/api/resources/identitygovernance-allexcludinggroupssubjectset), [selectedAgentBuilderPlatformsSubjectSet](/graph/api/resources/identitygovernance-selectedagentbuilderplatformssubjectset), and [allExcludingAgentBuilderPlatformsSubjectSet](/graph/api/resources/identitygovernance-allexcludingagentbuilderplatformssubjectset) from beta to v1.0.
+- Promoted [lifecyclePolicyEnforcementAction](/graph/api/resources/identitygovernance-lifecyclepolicyenforcementaction), [deleteOnlyEnforcementAction](/graph/api/resources/identitygovernance-deleteonlyenforcementaction), [disableOnlyEnforcementAction](/graph/api/resources/identitygovernance-disableonlyenforcementaction), [disableThenDeleteEnforcementAction](/graph/api/resources/identitygovernance-disablethendeleteenforcementaction), and [lifecyclePolicyNotificationSettings](/graph/api/resources/identitygovernance-lifecyclepolicynotificationsettings) from beta to v1.0 to configure enforcement and notifications.
+- Promoted [lifecyclePolicyReport](/graph/api/resources/identitygovernance-lifecyclepolicyreport), [lifecyclePolicySubjectReport](/graph/api/resources/identitygovernance-lifecyclepolicysubjectreport), [lifecyclePolicyScopeProcessing](/graph/api/resources/identitygovernance-lifecyclepolicyscopeprocessing), and [lifecyclePolicyScopeProcessingAttempt](/graph/api/resources/identitygovernance-lifecyclepolicyscopeprocessingattempt) from beta to v1.0 to report policy evaluation and processing outcomes.
+- Promoted the report value types [lifecyclePolicyReference](/graph/api/resources/identitygovernance-lifecyclepolicyreference), [lifecyclePolicySubjectReference](/graph/api/resources/identitygovernance-lifecyclepolicysubjectreference), [lifecyclePolicyUserSubjectReference](/graph/api/resources/identitygovernance-lifecyclepolicyusersubjectreference), [lifecyclePolicyAgentIdentitySubjectReference](/graph/api/resources/identitygovernance-lifecyclepolicyagentidentitysubjectreference), [lifecyclePolicySubjectCompliance](/graph/api/resources/identitygovernance-lifecyclepolicysubjectcompliance), and [lifecyclePolicySubjectEnforcement](/graph/api/resources/identitygovernance-lifecyclepolicysubjectenforcement) from beta to v1.0.
+- Promoted [identityLifecycle](/graph/api/resources/identitygovernance-identitylifecycle), [userIdentityLifecycle](/graph/api/resources/identitygovernance-useridentitylifecycle), [agentIdentityLifecycle](/graph/api/resources/identitygovernance-agentidentitylifecycle), [complianceIssue](/graph/api/resources/identitygovernance-complianceissue), and [attestationComplianceIssue](/graph/api/resources/identitygovernance-attestationcomplianceissue) from beta to v1.0 to read lifecycle state and compliance issues.
+- Promoted the **agentBuilderPlatforms**, **complianceState**, **lifecyclePolicyRelationship**, **lifecyclePolicyComplianceStatus**, **lifecyclePolicyEnforcementStatus**, **lifecyclePolicyScopeProcessingStatus**, **lifecyclePolicyScopeProcessingAttemptStatus**, **lifecyclePolicyEnforcementActionState**, **lifecyclePolicyNextEnforcementAction**, and **lifecyclePolicySource** enumerations from beta to v1.0. Added the `agentIdentity` member to **subjectType** for agent policy priority configuration.
+
+### Identity and access | Identity and sign-in
+
+- Added the **lastUsedDateTime** property to the [authenticationMethod](/graph/api/resources/authenticationmethod) resource to retrieve the latest successful use when usage data is available. The value is best effort; a `null` or absent value doesn't mean that the method was never used.
 
 ### Mail
 
@@ -59,6 +76,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Device and app management | Cloud PC
 
+- Added the [retrieveFlexCloudPcAccessConfiguration](/graph/api/cloudpc-retrieveflexcloudpcaccessconfiguration?view=graph-rest-beta&preserve-view=true) and [retrieveFlexCloudPcConfigurationDetail](/graph/api/cloudpc-retrieveflexcloudpcconfigurationdetail?view=graph-rest-beta&preserve-view=true) functions on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to retrieve live Windows 365 Flex access state and Flex license availability.
 - Added the `cloudPcReserveHealthScenario` member to the **alertRuleTemplate** enumeration type used by [alertRule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true) to monitor Windows 365 Reserve Cloud PC health conditions.
 - Added the `cloudPcReserveLicensesAvailabilityBelowThreshold`, `reserveCloudPcUnlicensedUsersAssignment`, and `cloudPcMaxUserStorageUsageThresholdExceeded` members to the **conditionCategory** enumeration type used by [ruleCondition](/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta&preserve-view=true) to monitor available Reserve licenses, unlicensed user assignments, and maximum user storage usage.
 
@@ -67,6 +85,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the **isSingleInstance** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource, inherited by [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true). Set it when creating a blueprint to support at most one active agent identity per tenant without an agent identity blueprint principal.
 - Added the **instanceMode** property to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource and the **instanceMode** enumeration to identify the single-instance or multi-instance topology.
 - Devices now support soft-deletion and restoration. When a device is deleted, it's moved to the [deleted items container](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) and can be restored within 30 days. After 30 days, it's permanently deleted.
+
+### Identity and access | Governance
+
+- Added three predefined tasks to the [Lifecycle Workflows task catalog](/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta&preserve-view=true) to send identity-verification links, request Verified ID presentation, and email verification status to a manager.
+- Added the **Pre-hire identity verification initiation (Preview)** and **New Hire employee onboarding with identity verification (Preview)** Joiner templates to the [Lifecycle Workflows template catalog](/graph/api/resources/identitygovernance-workflowtemplate?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Identity and sign-in
 

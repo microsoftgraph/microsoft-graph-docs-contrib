@@ -218,6 +218,10 @@ items:
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
     - name: Retrieve frontline Cloud PC detail
       href: ../../api/cloudpc-retrievefrontlinecloudpcdetail.md
+    - name: Retrieve Flex Cloud PC access configuration
+      href: ../../api/cloudpc-retrieveflexcloudpcaccessconfiguration.md
+    - name: Retrieve Flex Cloud PC configuration detail
+      href: ../../api/cloudpc-retrieveflexcloudpcconfigurationdetail.md
     - name: Trigger a Cloud PC organization action
       href: ../../api/cloudpc-organizationaction.md
     - name: Retrieve a Cloud PC organization action detail
@@ -727,6 +731,10 @@ items:
       href: ../../resources/cloudpcexternalpartneragentsetting.md
     - name: Cloud PC file path app detail
       href: ../../resources/cloudpcfilepathappdetail.md
+    - name: Cloud PC flex access configuration
+      href: ../../resources/cloudpcflexaccessconfiguration.md
+    - name: Cloud PC flex configuration detail
+      href: ../../resources/cloudpcflexconfigurationdetail.md
     - name: Cloud PC forensic storage account
       href: ../../resources/cloudpcforensicstorageaccount.md
     - name: Cloud PC frontline shared device detail
