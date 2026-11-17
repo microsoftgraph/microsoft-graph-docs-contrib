@@ -342,12 +342,15 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Create a role assignment in Defender over all and future workloads, in scope of CloudSet '123':
+### Example 4: Create a role assignment in Defender scoped to Microsoft Defender for Cloud and CloudSet '123'
 
-Use the following information for creating Intune role assignments:
+Use the following information for creating Defender role assignments:
 - To allow assignments over all and future workloads, use the `/` value in **appScopeIds**.
 - To allow assignments over workload, on all scopes, don't add any scope after the following workload IDs in **appScopeIds**: `Mdi`, `Mdc`, `Mda`, `Mde`, `Mdo`, `SecureScoreExternal`.
 - To allow assignments over specific scope, use `/<ScopeType>/<ScopeId>` in  **appScopeIds**.
+
+> [!NOTE]
+> The Defender provider doesn't accept an `@odata.type` annotation in the request body. Including it causes the request to be rejected with the error `The roleAssignment field is required.`
 
 #### Request
 
@@ -364,8 +367,7 @@ POST https://graph.microsoft.com/beta/roleManagement/defender/roleAssignments
 Content-type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
-     "displayName": "Example role assignment",
+    "displayName": "Example role assignment",
     "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
     "principalIds": [
         "8e811502-ebda-4782-8f81-071d17f0f892",
@@ -422,7 +424,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/defender/roleAssignments/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/defender/roleAssignments/$entity",
     "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
     "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
     "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
