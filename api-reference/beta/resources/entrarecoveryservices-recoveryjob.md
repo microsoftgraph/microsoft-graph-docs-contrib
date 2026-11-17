@@ -34,6 +34,7 @@ Inherits from [microsoft.graph.entraRecoveryServices.recoveryJobBase](../resourc
 |id|String|The unique identifier for the job. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
 |jobCompletionDateTime|DateTimeOffset|The date and time when the job completed. Null if the job is still running. Inherited from [recoveryJobBase](../resources/entrarecoveryservices-recoveryjobbase.md).|
 |jobStartDateTime|DateTimeOffset|The date and time when the job started. Inherited from [recoveryJobBase](../resources/entrarecoveryservices-recoveryjobbase.md).|
+|servicePlan|[microsoft.graph.entraRecoveryServices.snapshotTier](../resources/entrarecoveryservices-snapshot.md#snapshottier-values)|The service-assigned plan used to process the job. The possible values are: `basic`, `premium`, `unknownFutureValue`. The default value is `basic`. Read-only. Not nullable. Always returned. Inherited from [recoveryJobBase](../resources/entrarecoveryservices-recoveryjobbase.md).|
 |status|[microsoft.graph.entraRecoveryServices.recoveryStatus](../resources/enums-entrarecoveryservices.md)|The current status of the job. Inherited from [recoveryJobBase](../resources/entrarecoveryservices-recoveryjobbase.md). The possible values are: `initialized`, `running`, `successful`, `failed`, `abandoned`, `unknownFutureValue`, `calculating`, `loadingData`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `calculating`, `loadingData`. Supports `$filter` (`eq`, `ne`).|
 |targetStateDateTime|DateTimeOffset|The target snapshot timestamp to which the tenant is being restored. Inherited from [recoveryJobBase](../resources/entrarecoveryservices-recoveryjobbase.md). Supports `$filter` (`eq`, `ne`).|
 |totalChangedLinksCalculated|Int32|The total count of changed directory object links (relationships) calculated by the job. `null` until the job completes calculation. This value can differ from **totalLinksModified** because some link changes may fail to apply during recovery. Inherited from [recoveryJobBase](../resources/entrarecoveryservices-recoveryjobbase.md).|
@@ -59,6 +60,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.entraRecoveryServices.recoveryJob",
   "id": "String (identifier)",
+  "servicePlan": "String",
   "status": "String",
   "targetStateDateTime": "String (timestamp)",
   "jobStartDateTime": "String (timestamp)",

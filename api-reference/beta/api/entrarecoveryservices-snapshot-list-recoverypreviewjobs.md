@@ -123,6 +123,7 @@ Content-Type: application/json
   [
     {
       "id": "d3f8e7e8-7e87-4a7f-9d2c-c1c2d7e8e1f1", 
+      "servicePlan": "basic",
       "status": "successful",
       "targetStateDateTime": "2024-08-26T02:30:00Z" ,
       "jobStartDateTime":  "2024-08-26T06:40:00Z",

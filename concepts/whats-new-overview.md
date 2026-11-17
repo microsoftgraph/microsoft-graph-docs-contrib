@@ -74,6 +74,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Added request guidance and examples for using **retentionSettings** when you create or update [Exchange](/graph/api/resources/exchangeprotectionpolicy?view=graph-rest-beta&preserve-view=true), [OneDrive for Business](/graph/api/resources/onedriveforbusinessprotectionpolicy?view=graph-rest-beta&preserve-view=true), and [SharePoint](/graph/api/resources/sharepointprotectionpolicy?view=graph-rest-beta&preserve-view=true) protection policies to configure how long backups are retained.
 
+### Backup and recovery | Microsoft Entra backup and recovery
+
+- Added the [recoveryConfiguration](/graph/api/resources/entrarecoveryservices-recoveryconfiguration?view=graph-rest-beta&preserve-view=true) resource and [Get configuration](/graph/api/entrarecoveryservices-recoveryconfiguration-get?view=graph-rest-beta&preserve-view=true) API to read a tenant's premium plan status and timestamps.
+- Added the read-only **servicePlan** property to [snapshot](/graph/api/resources/entrarecoveryservices-snapshot?view=graph-rest-beta&preserve-view=true), [recoveryJobBase](/graph/api/resources/entrarecoveryservices-recoveryjobbase?view=graph-rest-beta&preserve-view=true), and its derived job types to identify the service-assigned `basic` or `premium` plan.
+
 ### Device and app management | Cloud PC
 
 - Added the [retrieveFlexCloudPcAccessConfiguration](/graph/api/cloudpc-retrieveflexcloudpcaccessconfiguration?view=graph-rest-beta&preserve-view=true) and [retrieveFlexCloudPcConfigurationDetail](/graph/api/cloudpc-retrieveflexcloudpcconfigurationdetail?view=graph-rest-beta&preserve-view=true) functions on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to retrieve live Windows 365 Flex access state and Flex license availability.

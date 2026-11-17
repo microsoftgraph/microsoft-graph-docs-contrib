@@ -117,6 +117,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.entraRecoveryServices.snapshot",
   "id": "MjAyNC0wOC0yNlQwMjozMDowMFo=",
   "createdDateTime": "2024-08-25T06:30:00Z",
+  "servicePlan": "basic",
   "totalChangedObjects": 1230000
 }
 ```

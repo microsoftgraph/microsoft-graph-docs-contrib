@@ -29,6 +29,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|configuration|[microsoft.graph.entraRecoveryServices.recoveryConfiguration](../resources/entrarecoveryservices-recoveryconfiguration.md)|The tenant's Microsoft Entra Backup and Recovery configuration. Read-only. Not nullable.|
 |jobs|[microsoft.graph.entraRecoveryServices.recoveryJobBase](../resources/entrarecoveryservices-recoveryjobbase.md) collection|Collection of all recovery jobs (both preview and recovery) for the tenant.|
 |snapshots|[microsoft.graph.entraRecoveryServices.snapshot](../resources/entrarecoveryservices-snapshot.md) collection|Collection of backup snapshots available for the tenant.|
 

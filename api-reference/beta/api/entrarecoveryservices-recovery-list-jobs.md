@@ -123,6 +123,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.entraRecoveryServices.recoveryPreviewJob",
       "id": "d3f8e7e8-7e87-4a7f-9d2c-c1c2d7e8e1f1",
+      "servicePlan": "basic",
       "status": "successful",
       "targetStateDateTime": "2024-08-26T02:30:00Z",
       "jobStartDateTime": "2024-08-26T06:40:00Z",
@@ -134,6 +135,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.entraRecoveryServices.recoveryJob",
       "id": "3f4a6b60-7c1e-4e7c-9c7b-13f8d44b20c4",
+      "servicePlan": "basic",
       "status": "successful",
       "targetStateDateTime": "2024-08-26T02:30:00Z",
       "jobStartDateTime": "2024-08-26T08:30:00Z",
