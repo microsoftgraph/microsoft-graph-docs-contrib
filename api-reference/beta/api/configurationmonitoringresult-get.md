@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [configurationMonitoringResult](../resources/configurationmonitoringresult.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -113,14 +113,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "66fa1689-22cb-49c1-8b5a-c94822b7b13b",
-    "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-    "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
-    "runInitiationDateTime": "2024-12-12T09:00:36.1084955Z",
-    "runCompletionDateTime": "2024-12-12T09:00:36.1084955Z",
-    "runStatus": "failed",
-    "driftsCount": 0
-  }
+  "id": "66fa1689-22cb-49c1-8b5a-c94822b7b13b",
+  "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
+  "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+  "runInitiationDateTime": "2026-11-02T16:30:46.3616552Z",
+  "runCompletionDateTime": "2026-11-02T16:31:09.0709177Z",
+  "runStatus": "successful",
+  "driftsCount": 1,
+  "driftsFixed": 1
 }
 ```

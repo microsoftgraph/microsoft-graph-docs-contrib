@@ -26,6 +26,8 @@ items:
       href: ../../api/configurationmanagement-list-configurationdrifts.md
     - name: Get
       href: ../../api/configurationdrift-get.md
+    - name: Remediate
+      href: ../../api/configurationdrift-remediate.md
   - name: Configuration monitor
     items:
     - name: Configuration monitor
@@ -60,6 +62,48 @@ items:
       href: ../../api/configurationsnapshotjob-get.md
     - name: Delete
       href: ../../api/configurationsnapshotjob-delete.md
+  - name: Configuration template
+    items:
+    - name: Configuration template
+      href: ../../resources/configurationtemplate.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationtemplates.md
+    - name: Create
+      href: ../../api/configurationmanagement-post-configurationtemplates.md
+    - name: Get
+      href: ../../api/configurationtemplate-get.md
+    - name: Update
+      href: ../../api/configurationtemplate-update.md
+    - name: Delete
+      href: ../../api/configurationtemplate-delete.md
+    - name: List versions
+      href: ../../api/configurationtemplate-list-versions.md
+    - name: Create version
+      href: ../../api/configurationtemplate-post-versions.md
+  - name: Configuration template version
+    items:
+    - name: Configuration template version
+      href: ../../resources/configurationtemplateversion.md
+    - name: List
+      href: ../../api/configurationtemplate-list-versions.md
+    - name: Create
+      href: ../../api/configurationtemplate-post-versions.md
+    - name: Get
+      href: ../../api/configurationtemplateversion-get.md
+    - name: Delete
+      href: ../../api/configurationtemplateversion-delete.md
+    - name: Get baseline
+      href: ../../api/configurationbaseline-get.md
+    - name: List referenced internal monitors
+      href: ../../api/configurationtemplateversion-list-referencedinternalmonitors.md
+  - name: External tenant monitors
+    href: ../../resources/externaltenantmonitors.md
+  - name: Complex types
+    items:
+    - name: Configuration drift remediated property
+      href: ../../resources/configurationdriftremediatedproperty.md
+    - name: Configuration drift remediation result
+      href: ../../resources/configurationdriftremediationresult.md
 - name: Cross-tenant access
   displayName: Cross-tenant access settings, XTAP
   items:

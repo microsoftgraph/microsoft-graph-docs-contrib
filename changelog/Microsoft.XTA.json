@@ -3,6 +3,192 @@
     {
       "ChangeList": [
         {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "configurationDriftRemediationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **configurationDriftRemediationStatus** enumeration type.",
+          "Target": "configurationDriftRemediationStatus"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Member",
+          "ChangedApiName": "applyOnce",
+          "ChangeType": "Addition",
+          "Description": "Added the `applyOnce` member to the **monitorMode** enumeration to apply a configuration monitor's baseline once.",
+          "Target": "monitorMode"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceVersion** property to the [baselineResource](https://learn.microsoft.com/en-us/graph/api/resources/baselineresource?view=graph-rest-beta) resource.",
+          "Target": "baselineResource"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationDriftRemediatedProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationDriftRemediatedProperty](https://learn.microsoft.com/en-us/graph/api/resources/configurationdriftremediatedproperty?view=graph-rest-beta) resource.",
+          "Target": "configurationDriftRemediatedProperty"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationDriftRemediationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationDriftRemediationResult](https://learn.microsoft.com/en-us/graph/api/resources/configurationdriftremediationresult?view=graph-rest-beta) resource.",
+          "Target": "configurationDriftRemediationResult"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceVersion** property to the [configurationDrift](https://learn.microsoft.com/en-us/graph/api/resources/configurationdrift?view=graph-rest-beta) resource.",
+          "Target": "configurationDrift"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "configurationTemplates",
+          "ChangeType": "Addition",
+          "Description": "Added the **configurationTemplates** relationship to the [configurationManagement](https://learn.microsoft.com/en-us/graph/api/resources/configurationmanagement?view=graph-rest-beta) resource.",
+          "Target": "configurationManagement"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Property",
+          "ChangedApiName": "runningOnBehalfOf",
+          "ChangeType": "Addition",
+          "Description": "Added the **runningOnBehalfOf** property to the [configurationMonitor](https://learn.microsoft.com/en-us/graph/api/resources/configurationmonitor?view=graph-rest-beta) resource.",
+          "Target": "configurationMonitor"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Property",
+          "ChangedApiName": "templateOwnerTenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **templateOwnerTenantId** property to the [configurationMonitor](https://learn.microsoft.com/en-us/graph/api/resources/configurationmonitor?view=graph-rest-beta) resource.",
+          "Target": "configurationMonitor"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "template",
+          "ChangeType": "Addition",
+          "Description": "Added the **template** relationship to the [configurationMonitor](https://learn.microsoft.com/en-us/graph/api/resources/configurationmonitor?view=graph-rest-beta) resource.",
+          "Target": "configurationMonitor"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Property",
+          "ChangedApiName": "driftsFixed",
+          "ChangeType": "Addition",
+          "Description": "Added the **driftsFixed** property to the [configurationMonitoringResult](https://learn.microsoft.com/en-us/graph/api/resources/configurationmonitoringresult?view=graph-rest-beta) resource.",
+          "Target": "configurationMonitoringResult"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/configurationtemplate?view=graph-rest-beta) resource and related methods.",
+          "Target": "configurationTemplate"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedBy** property to the [configurationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/configurationtemplate?view=graph-rest-beta) resource.",
+          "Target": "configurationTemplate"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [configurationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/configurationtemplate?view=graph-rest-beta) resource.",
+          "Target": "configurationTemplate"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "versions",
+          "ChangeType": "Addition",
+          "Description": "Added the **versions** relationship to the [configurationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/configurationtemplate?view=graph-rest-beta) resource.",
+          "Target": "configurationTemplate"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationTemplateVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationTemplateVersion](https://learn.microsoft.com/en-us/graph/api/resources/configurationtemplateversion?view=graph-rest-beta) resource and related methods.",
+          "Target": "configurationTemplateVersion"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Property",
+          "ChangedApiName": "templateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **templateId** property to the [configurationTemplateVersion](https://learn.microsoft.com/en-us/graph/api/resources/configurationtemplateversion?view=graph-rest-beta) resource.",
+          "Target": "configurationTemplateVersion"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "referencedInternalMonitors",
+          "ChangeType": "Addition",
+          "Description": "Added the **referencedInternalMonitors** relationship to the [configurationTemplateVersion](https://learn.microsoft.com/en-us/graph/api/resources/configurationtemplateversion?view=graph-rest-beta) resource.",
+          "Target": "configurationTemplateVersion"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalTenantMonitors",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalTenantMonitors](https://learn.microsoft.com/en-us/graph/api/resources/externaltenantmonitors?view=graph-rest-beta) resource.",
+          "Target": "externalTenantMonitors"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "monitors",
+          "ChangeType": "Addition",
+          "Description": "Added the **monitors** relationship to the [externalTenantMonitors](https://learn.microsoft.com/en-us/graph/api/resources/externaltenantmonitors?view=graph-rest-beta) resource.",
+          "Target": "externalTenantMonitors"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Method",
+          "ChangedApiName": "remediate",
+          "ChangeType": "Addition",
+          "Description": "Added the [remediate](https://learn.microsoft.com/en-us/graph/api/configurationdrift-remediate?view=graph-rest-beta) method to the [configurationDrift](https://learn.microsoft.com/en-us/graph/api/resources/configurationdrift?view=graph-rest-beta) resource.",
+          "Target": "configurationDrift"
+        },
+        {
+          "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "referencedExternalMonitors",
+          "ChangeType": "Addition",
+          "Description": "Added the **referencedExternalMonitors** relationship to the [configurationTemplateVersion](https://learn.microsoft.com/en-us/graph/api/resources/configurationtemplateversion?view=graph-rest-beta) resource to read external monitor references grouped by tenant.",
+          "Target": "configurationTemplateVersion"
+        }
+      ],
+      "Id": "9428d62c-59ec-41d8-b2dc-f6818f8a7b03",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-02T09:55:00.0000000Z",
+      "WorkloadArea": "Tenants",
+      "SubArea": "Configuration management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2fc5b50d-d6c8-4be6-8fad-4531174bca8d",
           "ApiChange": "Enumeration",
           "ChangedApiName": "baselineParameterType",
