@@ -123,7 +123,6 @@ Content-Type: application/json
   [
     {
       "id": "d3f8e7e8-7e87-4a7f-9d2c-c1c2d7e8e1f1", 
-      "servicePlan": "basic",
       "status": "successful",
       "targetStateDateTime": "2024-08-26T02:30:00Z" ,
       "jobStartDateTime":  "2024-08-26T08:30:00Z",
@@ -137,7 +136,6 @@ Content-Type: application/json
     },
     {
       "id": "a1b2c3d4-5e6f-7a8b-9c0d-e1f2a3b4c5d6", 
-      "servicePlan": "basic",
       "status": "successful",
       "targetStateDateTime": "2025-08-26T02:30:00Z" ,
       "jobStartDateTime":  "2025-08-26T08:30:00Z",

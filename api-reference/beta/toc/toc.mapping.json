@@ -187,7 +187,6 @@
           "name": "Entra backup and recovery",
           "overview": "../../resources/entrarecoveryservices-backup-recovery-overview.md",
           "resources": [
-            "microsoft.graph.entraRecoveryServices.recoveryConfiguration",
             "microsoft.graph.entraRecoveryServices.recoveryJob",
             "microsoft.graph.entraRecoveryServices.recoveryJobBase",
             "microsoft.graph.entraRecoveryServices.recoveryPreviewJob",

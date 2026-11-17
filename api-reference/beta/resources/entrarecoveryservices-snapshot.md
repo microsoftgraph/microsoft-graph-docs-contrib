@@ -29,16 +29,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time when the snapshot was created.|
 |id|String|The unique identifier for the snapshot. This is the base64-encoded representation of the snapshot timestamp. Inherited from [entity](../resources/entity.md).|
-|servicePlan|[microsoft.graph.entraRecoveryServices.snapshotTier](#snapshottier-values)|The service-assigned plan for the snapshot. The possible values are: `basic`, `premium`, `unknownFutureValue`. The default value is `basic`, including for existing and legacy snapshots. Read-only. Not nullable. Always returned. Supports `$select`. Doesn't support `$filter` or `$orderby`.|
 |totalChangedObjects|Int32|The total number of changed objects identified in this snapshot.|
-
-### snapshotTier values
-
-|Member|Description|
-|:---|:---|
-|basic|The standard plan for standard, existing, and legacy snapshots.|
-|premium|The advanced plan that supports recovery up to 30 days back with improved performance.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -61,7 +52,6 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.entraRecoveryServices.snapshot",
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
-  "servicePlan": "String",
   "totalChangedObjects": "Integer"
 }
 ```

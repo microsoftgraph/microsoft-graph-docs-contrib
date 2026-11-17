@@ -121,7 +121,6 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/recovery/snapshots('MjAyNC0wOC0yNlQwMjozMDowMFo=')/recoveryJobs/$entity",
   "@odata.type": "#microsoft.graph.entraRecoveryServices.recoveryJob",
   "id": "3f4a6b60-7c1e-4e7c-9c7b-13f8d44b20c4",
-  "servicePlan": "basic",
   "status": "running",
   "targetStateDateTime": "2024-08-26T02:30:00Z",
   "jobStartDateTime": "2024-08-26T08:30:00Z",

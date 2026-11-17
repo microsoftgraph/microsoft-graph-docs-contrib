@@ -12,16 +12,6 @@ doc_type: enumTypes
 
 Namespace: microsoft.graph.entraRecoveryServices
 
-### premiumPlanStatus values
-
-| Member |
-|:---|
-| disabled |
-| enabled |
-| protectionPaused |
-| billingStopped |
-| unknownFutureValue |
-
 ### recoveryAction values
 
 | Member |
@@ -60,14 +50,6 @@ Namespace: microsoft.graph.entraRecoveryServices
 | unknownFutureValue |
 | oAuth2PermissionGrant |
 | appRoleAssignment |
-
-### snapshotTier values
-
-| Member |
-|:---|
-| basic |
-| premium |
-| unknownFutureValue |
 
 <!-- {
   "type": "#page.annotation",
