@@ -6447,11 +6447,21 @@ Possible values for user account types (group membership), per Windows definitio
 |fixed|
 |unknownFutureValue|
 
+### configurationDriftRemediationStatus values
+
+|Member|
+|:---|
+|succeeded|
+|partiallySucceeded|
+|failed|
+|unknownFutureValue|
+
 ### monitorMode values 
 
 |Member|
 |:---|
 |monitorOnly|
+|applyOnce|
 |unknownFutureValue|
 
 ### monitorRunStatus values 

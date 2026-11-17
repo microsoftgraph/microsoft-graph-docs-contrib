@@ -124,6 +124,12 @@ Added the [classificationGradingJobResponse](/graph/api/resources/classification
 - Updated the [add teamworkSectionItem](/graph/api/teamworksection-post-items?view=graph-rest-beta&preserve-view=true) method to move an item from another user-defined section.
 - Added the [teamworkChannelTag](/graph/api/resources/teamworkchanneltag?view=graph-rest-beta&preserve-view=true) resource type and associated methods for managing tags owned by a Microsoft Teams channel. Use channel tags to group users within a channel and manage their tag assignments.
 
+### Tenants | Configuration management
+
+- Added the [configurationTemplate](/graph/api/resources/configurationtemplate?view=graph-rest-beta&preserve-view=true) resource type and related methods to manage reusable, versioned baselines and reference them from monitors.
+- Added the `applyOnce` mode to [configurationMonitor](/graph/api/resources/configurationmonitor?view=graph-rest-beta&preserve-view=true). Use it to apply a desired-state baseline once on behalf of the signed-in administrator.
+- Added the [remediate](/graph/api/configurationdrift-remediate?view=graph-rest-beta&preserve-view=true) action to restore drifted resource properties to their baseline values and inspect the success or failure result.
+
 ## October 2026: New and generally available
 
 ### Applications

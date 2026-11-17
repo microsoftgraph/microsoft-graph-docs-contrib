@@ -1,6 +1,6 @@
 ---
 title: "Get configurationBaseline"
-description: "Read the properties and relationships of a configurationBaseline object that is attached to a specific monitor."
+description: "Get the baseline attached to a monitor or a configuration template version."
 author: "swatyario"
 ms.date: 01/19/2026
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [configurationBaseline](../resources/configurationbaseline.md) object that is attached to a specific monitor.
+Get the [configurationBaseline](../resources/configurationbaseline.md) attached to a monitor or a [configurationTemplateVersion](../resources/configurationtemplateversion.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -37,6 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /admin/configurationManagement/configurationMonitors/{configurationMonitorId}/baseline
+GET /admin/configurationManagement/configurationTemplates/{configurationTemplateId}/versions/{version}/baseline
 ```
 
 ## Optional query parameters
@@ -59,7 +60,9 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Request
+### Example 1: Get a monitor's baseline
+
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -102,7 +105,7 @@ GET https://graph.microsoft.com/beta/admin/configurationManagement/configuration
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -136,7 +139,8 @@ Content-Type: application/json
         "EmailAddresses": [
           "abc@contoso.onmicrosoft.com"
         ]
-      }
+      },
+      "resourceVersion": 0
     },
     {
       "displayName": "Accepted Domain",
@@ -145,7 +149,8 @@ Content-Type: application/json
         "Identity": "contoso.onmicrosoft.com",
         "DomainType": "InternalRelay",
         "Ensure": "Present"
-      }
+      },
+      "resourceVersion": 0
     },
     {
       "displayName": "Mail Contact Resource",
@@ -156,6 +161,52 @@ Content-Type: application/json
         "ExternalEmailAddress": "SMTP:chris@fabrikam.com",
         "Alias": "Chrisa",
         "Ensure": "Present"
+      },
+      "resourceVersion": 0
+    }
+  ]
+}
+```
+
+### Example 2: Get a template version's baseline
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_template_version_baseline_request"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationTemplates/11111111-2222-3333-4444-555555555555/versions/1/baseline
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.configurationBaseline",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.configurationBaseline",
+  "displayName": "Exchange organization baseline",
+  "resources": [
+    {
+      "displayName": "Organization configuration",
+      "resourceType": "microsoft.exchange.organizationconfig",
+      "resourceVersion": 0,
+      "properties": {
+        "IsSingleInstance": "Yes",
+        "SmtpActionableMessagesEnabled": true
       }
     }
   ]

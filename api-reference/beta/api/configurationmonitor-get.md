@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [configurationMonitor](../resources/configurationmonitor.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /admin/configurationManagement/configurationMonitors/{configurationMonitorId
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters. Use `$expand=template` to retrieve a referenced template version in the same tenant. For a template owned by another tenant, use `$expand=template($select=version,templateId)`; full cross-tenant template expansion isn't supported. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,7 +59,9 @@ If successful, this method returns a `200 OK` response code and a [configuration
 
 ## Examples
 
-### Request
+### Example 1: Get a monitor
+
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/admin/configurationManagement/configuration
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -117,33 +119,83 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "fe082480-bdc2-a90c-25f8-4c7fb2fe2f81",
-    "inactivationReason": null,
-    "displayName": "Demo Monitor",
-    "description": "This is a demo monitor.",
-    "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
-    "status": "active",
-    "monitorRunFrequencyInHours": 6,
-    "mode": "monitorOnly",
-    "createdBy": {
-      "user": {
-        "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
-        "displayName": "System Administrator"
-      }
-    },
-    "createdDateTime": "2024-12-12T09:52:18.7982733Z",
-    "lastModifiedBy": {
-      "user": {
-        "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
-        "displayName": "System Administrator"
-      }
-    },
-    "lastModifiedDateTime": "2024-12-12T09:52:18.7982733Z",
-    "parameters": {
-      "FQDN": "contoso.onmicrosoft.com",
-      "TenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843"
+  "id": "fe082480-bdc2-a90c-25f8-4c7fb2fe2f81",
+  "inactivationReason": null,
+  "displayName": "Demo Monitor",
+  "description": "This is a demo monitor.",
+  "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+  "status": "active",
+  "monitorRunFrequencyInHours": 6,
+  "mode": "monitorOnly",
+  "createdBy": {
+    "user": {
+      "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
+      "displayName": "System Administrator"
     }
+  },
+  "createdDateTime": "2024-12-12T09:52:18.7982733Z",
+  "lastModifiedBy": {
+    "user": {
+      "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
+      "displayName": "System Administrator"
+    }
+  },
+  "lastModifiedDateTime": "2024-12-12T09:52:18.7982733Z",
+  "parameters": {
+    "FQDN": "contoso.onmicrosoft.com",
+    "TenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+  },
+  "runningOnBehalfOf": {
+    "user": {
+      "id": "44444444-5555-6666-7777-888888888888",
+      "displayName": "Contoso Administrator"
+    }
+  },
+  "templateOwnerTenantId": null
+}
+```
+
+### Example 2: Expand a same-tenant template reference
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_monitor_expand_template_request"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/22222222-3333-4444-5555-666666666666?$expand=template
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.configurationMonitor",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.configurationMonitor",
+  "id": "22222222-3333-4444-5555-666666666666",
+  "displayName": "Monitor from Exchange template",
+  "mode": "monitorOnly",
+  "status": "active",
+  "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+  "templateOwnerTenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+  "template": {
+    "@odata.type": "#microsoft.graph.configurationTemplateVersion",
+    "version": "1",
+    "templateId": "11111111-2222-3333-4444-555555555555",
+    "createdDateTime": "2026-11-02T09:00:00Z"
   }
 }
 ```

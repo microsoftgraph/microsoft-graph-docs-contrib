@@ -4126,7 +4126,14 @@
             "configurationDrift",
             "configurationMonitor",
             "configurationMonitoringResult",
-            "configurationSnapshotJob"
+            "configurationSnapshotJob",
+            "configurationTemplate",
+            "configurationTemplateVersion",
+            "externalTenantMonitors"
+          ],
+          "complexTypes": [
+            "configurationDriftRemediatedProperty",
+            "configurationDriftRemediationResult"
           ]
         },
         {
