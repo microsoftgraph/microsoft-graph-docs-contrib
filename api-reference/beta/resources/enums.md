@@ -1465,6 +1465,15 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | subscriptionRemoved |
 | reauthorizationRequired |
 
+### lifecyclePolicyComplianceState values
+
+| Member |
+| ---------------- |
+| compliant |
+| warning |
+| warningNotify |
+| nonCompliant |
+
 ### changeType values
 
 | Member |

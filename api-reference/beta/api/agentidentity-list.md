@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentity
+GET https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentity?$select=id,displayName,createdDateTime,createdByAppId,agentIdentityBlueprintId,accountEnabled,disabledByMicrosoftStatus,servicePrincipalType,tags,lifecyclePolicyComplianceState,lifecyclePolicyComplianceStateReason,lifecyclePolicyComplianceStateLastModifiedDateTime,lifecyclePolicyNonComplianceDisablementDateTime
 ```
 
 # [C#](#tab/csharp)
@@ -126,6 +126,10 @@ Content-type: application/json
       "agentIdentityBlueprintId": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "accountEnabled": true,
       "disabledByMicrosoftStatus": null,
+      "lifecyclePolicyComplianceState": "warning",
+      "lifecyclePolicyComplianceStateReason": "Approaching policy renewal deadline",
+      "lifecyclePolicyComplianceStateLastModifiedDateTime": "2026-04-01T10:30:00Z",
+      "lifecyclePolicyNonComplianceDisablementDateTime": null,
       "servicePrincipalType": "ServiceIdentity",
       "tags": []
     }
