@@ -2,7 +2,7 @@
 title: "granularSiteRestoreArtifact resource type"
 description: "Represents the granular artifact of the SharePoint site."
 author: "rahulprasad-ms"
-ms.date: 04/15/2026
+ms.date: 11/05/2026
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -26,6 +26,7 @@ Inherits from [granularRestoreArtifactBase](../resources/granularrestoreartifact
 |:---|:---|:---|
 |browseSessionId|String|The unique identifier of the [browseSession](../resources/browsesessionbase.md). Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md).|
 |completionDateTime|DateTimeOffset|Date time when the artifact's restoration completes. Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md).|
+|destinationType|[destinationType](../resources/driverestoreartifact.md#destinationtype-values)|The restoration destination. The possible values are: `new`, `inPlace`, `unknownFutureValue`. Nullable. Use `inPlace` to restore to the original location. Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md).|
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restoration fails or completes with an error. Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md).|
 |id|String|The unique identifier for the artifact. Inherited from [entity](../resources/entity.md).|
 |restoredItemKey|String|The unique identifier for the restored artifact. Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md).|
@@ -66,7 +67,7 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.publicError"
   },
   "completionDateTime": "String (timestamp)",
+  "destinationType": "String",
   "siteId": "String"
 }
 ```
-

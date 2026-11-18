@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 11/02/2026
+ms.date: 11/05/2026
 ms.topic: whats-new
 ---
 
@@ -22,6 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
+- Added support for in-place granular restore when you create [SharePoint](/graph/api/backuprestoreroot-post-sharepointrestoresessions) and [OneDrive for Business](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions) restore sessions. Use the **@microsoft.graph.conflictBehavior** instance annotation to fail, replace, or rename restored items when items with the same name exist.
 - Added request guidance and examples for using **retentionSettings** when you create or update [Exchange](/graph/api/resources/exchangeprotectionpolicy), [OneDrive for Business](/graph/api/resources/onedriveforbusinessprotectionpolicy), and [SharePoint](/graph/api/resources/sharepointprotectionpolicy) protection policies to configure how long backups are retained.
 - Added the **error** property to the [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase) resource and its derived types. Use this property to get error details when a granular restore operation for an individual artifact fails or completes with an error.
 - Added audit metadata to the [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem) resource. Use this metadata to identify when a file or folder was created or last modified and who made the change when you select items for granular restore.
