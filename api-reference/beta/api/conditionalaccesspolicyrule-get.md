@@ -3,7 +3,7 @@ title: "Get conditionalAccessPolicyRule"
 description: "Retrieve the properties and relationships of a conditionalAccessPolicyRule object."
 author: "ebasseri"
 ms.reviewer: conditionalaccesspm
-ms.date: 10/02/2026
+ms.date: 11/18/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "conditionalaccesspolicyrule_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/conditionalaccesspolicyrule-get-permissions.md)]
 
-[!INCLUDE [rbac-conditionalaccess-policy-plan-apis](../includes/rbac-for-apis/rbac-conditionalaccess-policy-plan-apis.md)]
+[!INCLUDE [rbac-conditionalaccess-apis-read](../includes/rbac-for-apis/rbac-conditionalaccess-apis-read.md)]
 
 ## HTTP request
 
