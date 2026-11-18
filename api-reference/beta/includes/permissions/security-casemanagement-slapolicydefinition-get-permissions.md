@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|CaseManagement.Read.All|CaseManagement.ReadWrite.All|
+|Delegated (work or school account)|CaseManagement.Read.All|CaseManagement.ConfigManage.All, CaseManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|CaseManagement.Read.All|CaseManagement.ReadWrite.All|
+|Application|CaseManagement.Read.All|CaseManagement.ConfigManage.All, CaseManagement.ReadWrite.All|
 

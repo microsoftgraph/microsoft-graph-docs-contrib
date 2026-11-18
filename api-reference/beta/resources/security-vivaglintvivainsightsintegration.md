@@ -1,5 +1,6 @@
 ---
 title: "vivaGlintVivaInsightsIntegration resource type"
+toc.title: "Viva Glint Viva Insights integration"
 description: "Represents audit data for Viva Glint Viva Insights Integration events."
 author: "diksha27"
 ms.date: 9/29/2026

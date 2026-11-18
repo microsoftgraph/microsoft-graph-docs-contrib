@@ -3,6 +3,106 @@
     {
       "ChangeList": [
         {
+          "Id": "b34c1b18-d201-4c79-85d9-0216d14edb42",
+          "ApiChange": "Member",
+          "ChangedApiName": "copyToClipboard",
+          "ChangeType": "Addition",
+          "Description": "Added the `copyToClipboard` member to the **userActivityType** enumeration used by the **activity** property of [activityMetadata](https://learn.microsoft.com/en-us/graph/api/resources/activitymetadata?view=graph-rest-v1.0).",
+          "Target": "userActivityType"
+        },
+        {
+          "Id": "b34c1b18-d201-4c79-85d9-0216d14edb42",
+          "ApiChange": "Member",
+          "ChangedApiName": "pasteFromClipboard",
+          "ChangeType": "Addition",
+          "Description": "Added the `pasteFromClipboard` member to the **userActivityType** enumeration used by the **activity** property of [activityMetadata](https://learn.microsoft.com/en-us/graph/api/resources/activitymetadata?view=graph-rest-v1.0).",
+          "Target": "userActivityType"
+        },
+        {
+          "Id": "b34c1b18-d201-4c79-85d9-0216d14edb42",
+          "ApiChange": "Member",
+          "ChangedApiName": "print",
+          "ChangeType": "Addition",
+          "Description": "Added the `print` member to the **userActivityType** enumeration used by the **activity** property of [activityMetadata](https://learn.microsoft.com/en-us/graph/api/resources/activitymetadata?view=graph-rest-v1.0).",
+          "Target": "userActivityType"
+        },
+        {
+          "Id": "b34c1b18-d201-4c79-85d9-0216d14edb42",
+          "ApiChange": "Member",
+          "ChangedApiName": "accessDebugTools",
+          "ChangeType": "Addition",
+          "Description": "Added the `accessDebugTools` member to the **userActivityType** enumeration used by the **activity** property of [activityMetadata](https://learn.microsoft.com/en-us/graph/api/resources/activitymetadata?view=graph-rest-v1.0).",
+          "Target": "userActivityType"
+        },
+        {
+          "Id": "b34c1b18-d201-4c79-85d9-0216d14edb42",
+          "ApiChange": "Member",
+          "ChangedApiName": "copyToClipboard",
+          "ChangeType": "Addition",
+          "Description": "Added the `copyToClipboard` member to the **userActivityTypes** enumeration used by the **activities** property of [policyScopeBase](https://learn.microsoft.com/en-us/graph/api/resources/policyscopebase?view=graph-rest-v1.0).",
+          "Target": "userActivityTypes"
+        },
+        {
+          "Id": "b34c1b18-d201-4c79-85d9-0216d14edb42",
+          "ApiChange": "Member",
+          "ChangedApiName": "pasteFromClipboard",
+          "ChangeType": "Addition",
+          "Description": "Added the `pasteFromClipboard` member to the **userActivityTypes** enumeration used by the **activities** property of [policyScopeBase](https://learn.microsoft.com/en-us/graph/api/resources/policyscopebase?view=graph-rest-v1.0).",
+          "Target": "userActivityTypes"
+        },
+        {
+          "Id": "b34c1b18-d201-4c79-85d9-0216d14edb42",
+          "ApiChange": "Member",
+          "ChangedApiName": "print",
+          "ChangeType": "Addition",
+          "Description": "Added the `print` member to the **userActivityTypes** enumeration used by the **activities** property of [policyScopeBase](https://learn.microsoft.com/en-us/graph/api/resources/policyscopebase?view=graph-rest-v1.0).",
+          "Target": "userActivityTypes"
+        },
+        {
+          "Id": "b34c1b18-d201-4c79-85d9-0216d14edb42",
+          "ApiChange": "Member",
+          "ChangedApiName": "accessDebugTools",
+          "ChangeType": "Addition",
+          "Description": "Added the `accessDebugTools` member to the **userActivityTypes** enumeration used by the **activities** property of [policyScopeBase](https://learn.microsoft.com/en-us/graph/api/resources/policyscopebase?view=graph-rest-v1.0).",
+          "Target": "userActivityTypes"
+        }
+      ],
+      "Id": "b34c1b18-d201-4c79-85d9-0216d14edb42",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-11-06T16:27:44.7110796Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cf5caede-e8d4-4301-96dd-7407dad1910a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classificationGradingJobResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the **classificationGradingJobResponse** resource type for classification grading results.",
+          "Target": "classificationGradingJobResponse"
+        },
+        {
+          "Id": "cf5caede-e8d4-4301-96dd-7407dad1910a",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "classificationGradingContentLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **classificationGradingContentLocation** complex type with the optional **contextText** property for matched text and surrounding document context.",
+          "Target": "classificationGradingContentLocation"
+        }
+      ],
+      "Id": "cf5caede-e8d4-4301-96dd-7407dad1910a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-04T22:20:31.5173372Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fb89a3f1-c6e3-474f-95ae-7664c9e1b976",
           "ApiChange": "Property",
           "ChangedApiName": "sensitivityLabels",

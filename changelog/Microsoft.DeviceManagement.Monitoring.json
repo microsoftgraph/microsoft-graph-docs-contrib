@@ -1,6 +1,48 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "36fb95d9-dd49-4462-ac4f-c49eace9c2ba",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudPcReserveHealthScenario",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudPcReserveHealthScenario` member to the **alertRuleTemplate** enumeration.",
+          "Target": "alertRuleTemplate"
+        },
+        {
+          "Id": "36fb95d9-dd49-4462-ac4f-c49eace9c2ba",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudPcReserveLicensesAvailabilityBelowThreshold",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudPcReserveLicensesAvailabilityBelowThreshold` member to the **conditionCategory** enumeration.",
+          "Target": "conditionCategory"
+        },
+        {
+          "Id": "36fb95d9-dd49-4462-ac4f-c49eace9c2ba",
+          "ApiChange": "Member",
+          "ChangedApiName": "reserveCloudPcUnlicensedUsersAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the `reserveCloudPcUnlicensedUsersAssignment` member to the **conditionCategory** enumeration.",
+          "Target": "conditionCategory"
+        },
+        {
+          "Id": "36fb95d9-dd49-4462-ac4f-c49eace9c2ba",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudPcMaxUserStorageUsageThresholdExceeded",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudPcMaxUserStorageUsageThresholdExceeded` member to the **conditionCategory** enumeration.",
+          "Target": "conditionCategory"
+        }
+      ],
+      "Id": "36fb95d9-dd49-4462-ac4f-c49eace9c2ba",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-30T07:09:36.9710168Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
         "ChangeList": [
           {
             "Id": "049f16d5-1009-42de-b1c3-67f2fb51e47f",

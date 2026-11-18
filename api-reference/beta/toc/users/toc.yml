@@ -276,6 +276,12 @@ items:
       href: ../../api/user-list-contactfolders.md
     - name: Create contact folder
       href: ../../api/user-post-contactfolders.md
+  - name: Personal distribution lists
+    items:
+    - name: List distribution lists
+      href: ../../api/user-list-distributionlists.md
+    - name: Create distribution list
+      href: ../../api/user-post-distributionlists.md
   - name: Profile photo
     items:
     - name: Get

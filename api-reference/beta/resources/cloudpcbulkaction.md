@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 An abstract type that represents the bulk action applied to Cloud PCs specified in a parameter.
 
-Base type of [cloudPcBulkModifyDiskEncryptionType](../resources/cloudpcbulkmodifydiskencryptiontype.md), [cloudPcBulkDisasterRecovery](../resources/cloudpcbulkdisasterrecovery.md), [cloudPcBulkDisasterRecoveryFailback](../resources/cloudpcbulkdisasterrecoveryfailback.md), [cloudPcBulkDisasterRecoveryFailover](../resources/cloudpcbulkdisasterrecoveryfailover.md), [cloudPcBulkPowerOff](../resources/cloudpcbulkpoweroff.md), [cloudPcBulkPowerOn](../resources/cloudpcbulkpoweron.md), [cloudPcBulkReinstallAgent](../resources/cloudpcbulkreinstallagent.md), [cloudPcBulkReprovision](../resources/cloudpcbulkreprovision.md), [cloudPcBulkResize](../resources/cloudpcbulkresize.md), [cloudPcBulkRestart](../resources/cloudpcbulkrestart.md), [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md), and [cloudPcBulkTroubleshoot](../resources/cloudpcbulktroubleshoot.md).
+Base type of [cloudPcBulkModifyDiskEncryptionType](../resources/cloudpcbulkmodifydiskencryptiontype.md), [cloudPcBulkDisasterRecovery](../resources/cloudpcbulkdisasterrecovery.md), [cloudPcBulkDisasterRecoveryFailback](../resources/cloudpcbulkdisasterrecoveryfailback.md), [cloudPcBulkDisasterRecoveryFailover](../resources/cloudpcbulkdisasterrecoveryfailover.md), [cloudPcBulkPowerOff](../resources/cloudpcbulkpoweroff.md), [cloudPcBulkPowerOn](../resources/cloudpcbulkpoweron.md), [cloudPcBulkReinstallAgent](../resources/cloudpcbulkreinstallagent.md), [cloudPcBulkReprovision](../resources/cloudpcbulkreprovision.md), [cloudPcBulkResize](../resources/cloudpcbulkresize.md), [cloudPcBulkRestart](../resources/cloudpcbulkrestart.md), [cloudPcBulkRestore](../resources/cloudpcbulkrestore.md), [cloudPcBulkSetDeviceName](../resources/cloudpcbulksetdevicename.md), and [cloudPcBulkTroubleshoot](../resources/cloudpcbulktroubleshoot.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -32,10 +32,10 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action.|
-|cloudPcIDs|String collection|IDs of the Cloud PCs the bulk action applies to. |
+|cloudPcIds|String collection|IDs of the Cloud PCs the bulk action applies to. Individual Cloud PC IDs are GUID-formatted strings. |
 |createdDateTime|DateTimeOffset|The date and time when the bulk action was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |displayName|String|Name of the bulk action.|
-|id|String|ID of the bulk action. Inherited from [entity](entity.md).|
+|id|String|ID of the bulk action. Inherited from [entity](../resources/entity.md).|
 |initiatedByUserPrincipalName|String|Indicates the user principal name (UPN) of the user who initiated this bulk action. Read-only.|
 |scheduledDuringMaintenanceWindow|Boolean|Indicates whether the bulk action is scheduled according to the maintenance window. When `true`, the bulk action uses the maintenance window to schedule the action; `false` means that the bulk action doesn't use the maintenance window. The default value is `false`.|
 |status|[cloudPcBulkActionStatus](#cloudpcbulkactionstatus-values)|Indicates the status of bulk actions. Possible values are `pending`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only.|

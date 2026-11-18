@@ -1,6 +1,6 @@
 ---
 title: "Get deleted item (directory object)"
-ms.date: 11/17/2025
+ms.date: 06/05/2026
 description: "Retrieve the properties of a recently deleted application, group, service principal, or user from deleted items."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
@@ -23,6 +23,7 @@ Retrieve the properties of a recently deleted directory object from [deleted ite
 - [agentUser](../resources/agentuser.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
+- [device](../resources/device.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
@@ -43,6 +44,7 @@ The following table shows the least privileged permission or permissions require
 | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.Read.All | Not supported. | AgentIdentityBlueprint.Read.All |
 | [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.Read.All | Not supported. | AgentIdentityBlueprintPrincipal.Read.All |
 | [agentUser](../resources/agentuser.md) | User.ReadBasic.All | Not supported. | User.ReadBasic.All |
+| [device](../resources/device.md) | Device.Read.All | Not supported. | Device.Read.All |
 | [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.Read.All | Not supported | ExternalUserProfile.Read.All |
 | [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.Read.All | Not supported | PendingExternalUserProfile.Read.All |

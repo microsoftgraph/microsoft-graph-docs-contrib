@@ -20,6 +20,8 @@ Tags provide a flexible way for customers to classify users or groups based on a
 
 When a tag is added, users can @mention it in a channel. Everyone who has been assigned that tag receives a notification just as they would if they were @mentioned individually. Users can also use a tag is to start a new chat with the members of that tag.
 
+Base type of [teamworkChannelTag](../resources/teamworkchanneltag.md), which represents a tag owned by a channel. Team tags and channel tags are separate collections, and their tag IDs aren't interchangeable.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -36,7 +38,7 @@ When a tag is added, users can @mention it in a channel. Everyone who has been a
 |displayName|String|Tag name as it appears to the user in Microsoft Teams.|
 |id|String|ID of the tag.|
 |memberCount|Int32|The number of users assigned to the tag.|
-|tagType|[teamworkTagType](../resources/teamworktag.md#teamworktagtype-values)|The type of tag. Default is standard.|
+|tagType|[teamworkTagType](../resources/teamworktag.md#teamworktagtype-values)|The type of tag. The possible values are: `standard`, `unknownFutureValue`. The default value is `standard`.|
 |teamId|String|ID of the team in which the tag is defined.|
 
 ### teamworkTagType values

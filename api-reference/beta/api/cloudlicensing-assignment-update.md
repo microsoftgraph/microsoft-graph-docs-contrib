@@ -16,7 +16,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 Update an [assignment](../resources/cloudlicensing-assignment.md) object to enable or disable services. Any service contained in its allotment which isn't listed in the **disabledServicePlanIds** array is enabled.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

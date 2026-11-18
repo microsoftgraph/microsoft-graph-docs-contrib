@@ -40,6 +40,8 @@ items:
     href: ../../api/message-send.md
   - name: Permanently delete
     href: ../../api/message-permanentdelete.md
+  - name: Report message
+    href: ../../api/message-reportmessage.md
   - name: Attachments
     items:
     - name: List attachments

@@ -1,5 +1,6 @@
 ---
 title: "vivaGlintDataRetention resource type"
+toc.title: "Viva Glint data retention"
 description: "Represents audit data for Viva Glint Data Retention events."
 author: "diksha27"
 ms.date: 9/29/2026

@@ -32,14 +32,15 @@ None.
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|authenticationContextClassReferences|[authenticationContextClassReference](authenticationcontextclassreference.md) collection|Read-only. Nullable. Returns a collection of the specified authentication context class references.|
-|authenticationStrength|[authenticationStrengthRoot](authenticationstrengthroot.md)|Defines the authentication strength policies, valid authentication method combinations, and authentication method mode details that can be required by a conditional access policy.|
-|namedLocations|[namedLocation](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
-|policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access policies.|
+|authenticationContextClassReferences|[authenticationContextClassReference](../resources/authenticationcontextclassreference.md) collection|Read-only. Nullable. Returns a collection of the specified authentication context class references.|
+|authenticationStrength|[authenticationStrengthRoot](../resources/authenticationstrengthroot.md)|Defines the authentication strength policies, valid authentication method combinations, and authentication method mode details that can be required by a conditional access policy.|
+|deletedItems|[caPoliciesDeletableRoot](../resources/capoliciesdeletableroot.md) collection| Read-only. Nullable. Returns a collection of the deleted Conditional Access objects.|
+|namedLocations|[namedLocation](../resources/namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
 |plans|[conditionalAccessPolicyPlan](../resources/conditionalaccesspolicyplan.md) collection|Read-only. Nullable. Returns a collection of Conditional Access policy plans.|
-|deletedItems|[caPoliciesDeletableRoot](caPoliciesDeletableRoot.md) collection| Read-only. Nullable. Returns a collection of the deleted Conditional Access objects.|
+|policies|[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access policies.|
+|settings|[conditionalAccessSettings](../resources/conditionalaccesssettings.md)|The tenant-wide Conditional Access settings, including user-action exclusions.|
 |templates|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access templates.|
-|authenticationStrengths (deprecated)|[authenticationStrengthRoot](authenticationstrengthroot.md)|**DEPRECATED**. See the **authenticationStrength** relationship instead.|
+|authenticationStrengths (deprecated)|[authenticationStrengthRoot](../resources/authenticationstrengthroot.md)|**DEPRECATED**. See the **authenticationStrength** relationship instead.|
 
 ## JSON representation
 

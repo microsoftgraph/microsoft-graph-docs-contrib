@@ -130,6 +130,8 @@ items:
     href: ../../api/mailfolder-post-childfolders.md
   - name: Create message in folder
     href: ../../api/mailfolder-post-messages.md
+  - name: Import MIME
+    href: ../../api/mailfolder-importmime.md
   - name: List messages in folder
     href: ../../api/mailfolder-list-messages.md
   - name: Update mail folder

@@ -213,6 +213,17 @@ Namespace: microsoft.graph.networkaccess
 |trace|
 |unknownFutureValue|
 
+### httpRequestMethod values
+
+|Member|
+|:---|
+|get|
+|post|
+|patch|
+|put|
+|delete|
+|unknownFutureValue|
+
 ### ikeEncryption values 
 
 |Member|
@@ -462,6 +473,14 @@ Namespace: microsoft.graph.networkaccess
 |enabled|
 |disabled|
 |reportOnly|
+|unknownFutureValue|
+
+### sessionType values
+
+|Member|
+|:---|
+|user|
+|agent|
 |unknownFutureValue|
 
 ### status values 

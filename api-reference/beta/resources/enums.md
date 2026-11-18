@@ -13,6 +13,14 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### resourceQuotaType values
+
+|Member|
+|:---|
+|agentIdentityBlueprint|
+|agentIdentity|
+|managedIdentity|
+
 ### errorActions values
 
 This flagged enumeration identifies the actions taken when policy evaluation couldn't be completed. Values can be combined; for example, `audit,block` indicates that the activity was audited and blocked. Don't combine `none` with another value.
@@ -1805,6 +1813,8 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | reportOnlyFailure |
 | reportOnlyNotApplied |
 | reportOnlyInterrupted |
+| notAppliedAllAppsExclusion |
+| reportOnlyNotAppliedAllAppsExclusion |
 
 ### microsoftAuthenticatorAuthenticationMode values
 
@@ -6598,3 +6608,118 @@ Possible values for user account types (group membership), per Windows definitio
 |teams|
 |coldCrawl|
 |applications|
+
+### chainBreakReason values
+
+|Member|
+|:---|
+|none|
+|idvRevoked|
+|sourceCredentialRevoked|
+|unknownFutureValue|
+
+### chainBreakSource values
+
+|Member|
+|:---|
+|none|
+|identityProtection|
+|adminAction|
+|system|
+|unknownFutureValue|
+
+### chainState values
+
+|Member|
+|:---|
+|intact|
+|broken|
+|unknownFutureValue|
+
+### provenanceActorType values
+
+|Member|
+|:---|
+|system|
+|user|
+|application|
+|unknownFutureValue|
+
+### provenanceAssertionType values
+
+|Member|
+|:---|
+|identityVerification|
+|derivedFromCredential|
+|manualAttestation|
+|unknownFutureValue|
+
+### provenanceClassification values
+
+|Member|
+|:---|
+|highAssurance|
+|mediumAssurance|
+|lowAssurance|
+|unknownFutureValue|
+
+### verificationActorType values
+
+|Member|
+|:---|
+|user|
+|application|
+|unknownFutureValue|
+
+### verificationEventLifecycleState values
+
+|Member|
+|:---|
+|active|
+|revoked|
+|suspended|
+|invalidated|
+|issued|
+|blocked|
+|unknownFutureValue|
+
+### verificationLifecycleSource values
+
+|Member|
+|:---|
+|entra|
+|adminOverride|
+|apiOverride|
+|unknownFutureValue|
+
+### verificationState values
+
+|Member|
+|:---|
+|unverified|
+|verified|
+|revoked|
+|suspended|
+|issued|
+|blocked|
+|unknownFutureValue|
+
+### investigationInputType values
+
+|Member|
+|:---|
+|defenderIncidentId|
+|defenderAlertId|
+|defenderThreatIntelligenceId|
+|azureSubscriptionId|
+|azureIdentityId|
+|keyword|
+|unknownFutureValue|
+
+### investigationOutputType values
+
+|Member|
+|:---|
+|summary|
+|artifact|
+|unknownFutureValue|

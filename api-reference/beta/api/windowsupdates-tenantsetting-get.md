@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get the [tenantSetting](../resources/windowsupdates-tenantsetting.md) singleton for the current tenant. When no settings have been saved, this operation returns the default settings, with **areDataProcessorServiceForWindowsFeaturesEnabled** set to `false`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

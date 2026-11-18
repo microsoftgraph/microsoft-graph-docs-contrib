@@ -85,7 +85,7 @@ Instance attributes are properties with special behaviors. These properties are 
 | Property name | Type | Description |
 |:-----------|:-----|:------------|
 | @microsoft.graph.sectionsOrder | String collection | An ordered array of section IDs that represent the user's preferred section order. |
-| @microsoft.graph.sectionsVersion | String | The current section hierarchy version. Use this value as the `If-Match` header for optimistic concurrency control on mutation operations (create, update, delete, or reorder sections, and add, remove, move, or reorder items). |
+| @microsoft.graph.sectionsVersion | String | The current section hierarchy version. The value changes whenever sections or section items are modified. |
 
 ## Relationships
 

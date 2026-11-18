@@ -16,7 +16,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 Get a list of license [assignment](../resources/cloudlicensing-assignment.md) objects within an organization.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

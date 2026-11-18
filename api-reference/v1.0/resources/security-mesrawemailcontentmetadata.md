@@ -1,5 +1,6 @@
 ---
 title: "mesRawEmailContentMetadata resource type"
+toc.title: "MES raw email content metadata"
 description: "Represents audit data for MES Raw Email Content Metadata events."
 author: "diksha27"
 ms.date: 10/06/2026

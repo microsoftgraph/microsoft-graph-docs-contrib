@@ -2,7 +2,7 @@
 title: "Update mailboxFolder"
 description: "Update mailboxFolder properties such as the displayName within a mailbox."
 author: "cparker-msft"
-ms.date: 08/06/2026
+ms.date: 10/20/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -16,6 +16,8 @@ Update [mailboxFolder](../resources/mailboxfolder.md) properties such as the **d
 
 > [!NOTE]
 > The folder **type** can't be updated. Instead, the folder needs to be deleted and a new folder can be created.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -100,12 +102,12 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/mailboxes('MBX%3A73c326ef%402829ab8a')/folders/$entity",
   "id": "AQMkAGUw==",
   "displayName": "Announcements",
+  "isHidden": false,
   "parentFolderId": "AQMkAGUc==",
   "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0648f21@aab09c93",
   "childFolderCount": 0,

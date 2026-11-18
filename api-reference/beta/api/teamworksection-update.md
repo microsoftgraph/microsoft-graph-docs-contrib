@@ -38,7 +38,6 @@ PATCH /users/{user-id}/teamwork/sections/{teamworkSection-id}
 |:-------|:------|
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 | Content-Type | application/json. Required. |
-| If-Match | The value of the **@microsoft.graph.sectionsVersion** annotation returned when you [list sections](userteamwork-list-sections.md), or the **@odata.etag** value from any previously retrieved [section](../resources/teamworksection.md). Required for optimistic concurrency control. |
 
 ## Request body
 
@@ -61,9 +60,6 @@ In the request body, supply a JSON representation of only the properties to upda
 
 If successful, this method returns a `200 OK` response code and an updated [teamworkSection](../resources/teamworksection.md) object in the response body.
 
-> [!NOTE]
-> The response includes an updated **@odata.etag** value. Use this value as the `If-Match` header for any subsequent mutation operations.
-
 The following errors are possible.
 
 | Response code | Message |
@@ -72,11 +68,10 @@ The following errors are possible.
 | `400 Bad Request` | The 'displayName' property must not be empty or whitespace, or must not exceed 50 characters. |
 | `400 Bad Request` | The property '{propertyName}' is read-only or not updatable. Only **displayName**, **displayIcon**, **isExpanded**, and **sortType** can be updated. |
 | `400 Bad Request` | The specified sort type is not valid for this section. For more information, see the [Request body](#request-body) section. |
-| `403 Forbidden` | This section is system-generated and cannot be modified. Only the **sortType** property can be updated on system-defined sections. |
-| `404 Not Found` | The specified section was not found. |
+| `403 Forbidden` | This section is system-generated and can't be modified. Only the **sortType** property can be updated on system-defined sections. |
+| `404 Not Found` | The specified section wasn't found. |
 | `409 Conflict` | A section with this display name already exists. Returned when the requested **displayName** matches an existing user-defined section or a reserved system-defined section name. The comparison is case-sensitive. |
-| `412 Precondition Failed` | The `If-Match` header value doesn't match the current section hierarchy version. [List sections](userteamwork-list-sections.md) again to retrieve the current **@microsoft.graph.sectionsVersion** annotation and retry. |
-| `428 Precondition Required` | The `If-Match` header is required for this operation. |
+| `409 Conflict` | The section can't be updated because of a concurrent change. Retry the request. |
 
 ## Examples
 
@@ -86,7 +81,6 @@ The following example shows how to update the display name of a **teamworkSectio
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamworksection_displayname",
@@ -95,42 +89,11 @@ The following example shows a request.
 ```http
 PATCH https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections/a1b2c3d4-e5f6-7890-abcd-ef1234567890
 Content-type: application/json
-If-Match: "1742515200"
 
 {
   "displayName": "Important Conversations"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-teamworksection-displayname-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-teamworksection-displayname-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-teamworksection-displayname-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamworksection-displayname-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-teamworksection-displayname-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-teamworksection-displayname-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-teamworksection-displayname-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -173,7 +136,6 @@ The following example shows how to update the sort order of a **teamworkSection*
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamworksection_sorttype",
@@ -182,42 +144,11 @@ The following example shows a request.
 ```http
 PATCH https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections/a1b2c3d4-e5f6-7890-abcd-ef1234567890
 Content-type: application/json
-If-Match: "1742515210"
 
 {
   "sortType": "unreadThenMostRecent"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-teamworksection-sorttype-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-teamworksection-sorttype-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-teamworksection-sorttype-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamworksection-sorttype-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-teamworksection-sorttype-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-teamworksection-sorttype-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-teamworksection-sorttype-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 

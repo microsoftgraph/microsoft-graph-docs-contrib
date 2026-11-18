@@ -38,6 +38,8 @@ GET /applications
 ```
 ## Optional query parameters
 
+Use `$select` to retrieve **isHardDeleteProtectionEnabled**, which isn't returned by default. The property supports `$filter` with the `eq` operator.
+
 This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some relationships also support `$filter`. The default and maximum page sizes are 100 and 999 application objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 
@@ -613,6 +615,36 @@ Content-type: application/json
 }
 ```
 
+### Example 8: List applications with hard deletion protection enabled
+
+#### Request
+
+Filter for protected applications and explicitly select their protection status.
+
+<!-- { "blockType": "request", "name": "list_applications_hard_delete_protection" } -->
+```http
+GET https://graph.microsoft.com/beta/applications?$filter=isHardDeleteProtectionEnabled eq true&$select=id,displayName,isHardDeleteProtectionEnabled
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.application", "isCollection": true } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications(id,displayName,isHardDeleteProtectionEnabled)",
+  "value": [
+    {
+      "id": "7bec5fd1-a25f-474c-a6ca-5492082c6a9b",
+      "displayName": "Contoso Finance",
+      "isHardDeleteProtectionEnabled": true
+    }
+  ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -626,6 +658,5 @@ Content-type: application/json
   ]
 }
 -->
-
 
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an [item](../resources/teamworksectionitem.md), such as a chat, channel, meeting, or community, to a user-defined [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). Each item can belong to only one section at a time. You can only add items that are currently in a system-defined section. If the item is already in another user-defined section, use the [move](teamworksectionitem-move.md) action to relocate it.
+Add an [item](../resources/teamworksectionitem.md), such as a chat, channel, meeting, or community, to a user-defined [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). An item can belong to only one section at a time. If the item is in a different user-defined section, this request moves it to the target section. If the item is already in the target section, the request succeeds without making changes.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,7 +38,6 @@ POST /users/{user-id}/teamwork/sections/{teamworkSection-id}/items
 |:-------|:------|
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 | Content-Type | application/json. Required. |
-| If-Match | The value of the **@microsoft.graph.sectionsVersion** annotation returned when you [list sections](userteamwork-list-sections.md), or the **@odata.etag** value from any previously retrieved [section](../resources/teamworksection.md). Required for optimistic concurrency control. |
 
 ## Request body
 
@@ -54,9 +53,6 @@ The following table lists the properties that you can set when you add a **teamw
 
 If successful, this method returns a `201 Created` response code and a [teamworkSectionItem](../resources/teamworksectionitem.md) object in the response body.
 
-> [!NOTE]
-> The response includes an updated **@odata.etag** value. Use this value as the `If-Match` header for any subsequent mutation operations.
-
 The following errors are possible.
 
 | Response code | Message |
@@ -65,11 +61,8 @@ The following errors are possible.
 | `400 Bad Request` | The specified item ID is not valid. Provide a valid chat, channel, meeting, or community ID. |
 | `400 Bad Request` | The maximum number of items in this section has been reached. |
 | `403 Forbidden` | Access to this resource is denied. The caller must be a member of the conversation being added. |
-| `404 Not Found` | The specified section was not found. |
-| `409 Conflict` | This item is already in this section. |
-| `409 Conflict` | This item is already associated with another section. Use the [move](teamworksectionitem-move.md) API to relocate it. The response includes a `conflictingSectionId` detail with the ID of the section that currently holds the item. |
-| `412 Precondition Failed` | The `If-Match` header value doesn't match the current section hierarchy version. [List sections](userteamwork-list-sections.md) again to retrieve the current **@microsoft.graph.sectionsVersion** annotation and retry. |
-| `428 Precondition Required` | The `If-Match` header is required for this operation. |
+| `404 Not Found` | The specified section wasn't found. |
+| `409 Conflict` | The section can't be updated because of a concurrent change. Retry the request. |
 
 ## Examples
 
@@ -81,7 +74,6 @@ The following example shows how to add a chat to a section.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_teamworksectionitem",
@@ -90,42 +82,11 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections/a1b2c3d4-e5f6-7890-abcd-ef1234567890/items
 Content-type: application/json
-If-Match: "1742515200"
 
 {
   "id": "19:d5b2c3a4-e6f7-8901-abcd-ef3456789012@thread.v2"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/add-teamworksectionitem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/add-teamworksectionitem-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-teamworksectionitem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/add-teamworksectionitem-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/add-teamworksectionitem-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/add-teamworksectionitem-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/add-teamworksectionitem-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -161,7 +122,6 @@ The following example shows how to add a Viva Engage community to a section. The
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_teamworksectionitem_community",
@@ -170,42 +130,11 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections/a1b2c3d4-e5f6-7890-abcd-ef1234567890/items
 Content-type: application/json
-If-Match: "1742515210"
 
 {
   "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTAzMzYyMTIyMTAifQ"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/add-teamworksectionitem-community-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/add-teamworksectionitem-community-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-teamworksectionitem-community-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/add-teamworksectionitem-community-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/add-teamworksectionitem-community-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/add-teamworksectionitem-community-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/add-teamworksectionitem-community-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 

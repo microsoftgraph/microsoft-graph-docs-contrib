@@ -7,7 +7,7 @@ ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 toc.title: Role definition
-ms.date: 10/07/2026
+ms.date: 10/08/2026
 ---
 
 # unifiedRoleDefinition resource type
@@ -31,11 +31,13 @@ A role definition is a collection of permissions in Microsoft Entra listing the 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|deletedDateTime|DateTimeOffset|The date and time when the custom role definition was deleted. The value is `null` for active and restored role definitions. Read-only.|
 |description|String| The description for the unifiedRoleDefinition. Read-only when **isBuiltIn** is `true`. |
 |displayName|String| The display name for the unifiedRoleDefinition. Read-only when **isBuiltIn** is `true`. Required.  Supports $filter (`eq`, `in`).|
 |id|String| The unique identifier for the role definition. Key, not nullable, Read-only. Inherited from [entity](../resources/entity.md). Supports $filter (`eq`, `in`). |
 |isBuiltIn|Boolean| Flag indicating whether the role definition is part of the default set included in Microsoft Entra or a custom definition. Read-only. Supports $filter (`eq`, `in`). |
 |isEnabled|Boolean| Flag indicating whether the role is enabled for assignment. If `false` the role is not available for assignment. Read-only when **isBuiltIn** is true. |
+|isPrivileged|Boolean| Flag indicating whether the role is privileged. Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the **allowedResourceActions** collection of **rolePermissions**. Applies only to actions in the `microsoft.directory` resource namespace. Nullable. A value of `null` indicates that the privileged classification is unavailable, not that the role is nonprivileged. Read-only. Supports `$filter` (`eq`). |
 |resourceScopes|String collection| List of the scopes or permissions the role definition applies to. Currently only `/` is supported. Read-only when **isBuiltIn** is true. **DO NOT USE. This will be deprecated soon. Attach scope to role assignment.** | 
 |rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) collection| List of permissions included in the role. Read-only when **isBuiltIn** is `true`. Required. |
 |templateId|String| Custom template identifier that can be set when **isBuiltIn** is `false` but is read-only when **isBuiltIn** is `true`. This identifier is typically used if one needs an identifier to be the same across different directories. |
@@ -62,11 +64,13 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.unifiedRoleDefinition",
+  "deletedDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
   "isBuiltIn": "Boolean",
   "isEnabled": "Boolean",
+  "isPrivileged": "Boolean",
   "resourceScopes": [
     "String"
   ],

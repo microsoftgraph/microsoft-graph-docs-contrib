@@ -60,6 +60,8 @@ PATCH /security/rules/detectionRules/{detectionRuleId}
 
 To update the incident correlation setting, specify `true` or `false` for **detectionAction**/**incidentConfiguration**/**isExcludedFromIncidentCorrelation**. A `null` or omitted value leaves the existing setting unchanged.
 
+To change the lookback window, update **schedule**/**lookback** with an ISO 8601 duration that is at least **schedule**/**frequency**. To change event grouping, update **detectionAction**/**alertTemplate**/**eventGroupingKind** with `alertPerEvent` or `singleAlert`. The `singleAlert` setting groups matching events within one scheduled execution, not across executions.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object in the response body.
@@ -68,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ### Request
 
-The following example shows a request.
+The following example updates the lookback window to four hours, groups matching events from each scheduled execution into a single alert, and excludes the rule's alerts from incident correlation.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,7 +83,14 @@ PATCH https://graph.microsoft.com/beta/security/rules/detectionRules/office-enco
 Content-Type: application/json
 
 {
+  "schedule": {
+    "frequency": "PT1H",
+    "lookback": "PT4H"
+  },
   "detectionAction": {
+    "alertTemplate": {
+      "eventGroupingKind": "singleAlert"
+    },
     "incidentConfiguration": {
       "isExcludedFromIncidentCorrelation": true
     }
@@ -149,13 +158,15 @@ Content-Type: application/json
     "queryText": "DeviceProcessEvents | where InitiatingProcessFileName in~ ('winword.exe','excel.exe','outlook.exe') | where FileName == 'powershell.exe' | where ProcessCommandLine has '-enc'"
   },
   "schedule": {
-    "frequency": "PT1H"
+    "frequency": "PT1H",
+    "lookback": "PT4H"
   },
   "detectionAction": {
     "alertTemplate": {
       "title": "Suspicious encoded PowerShell from Office",
       "description": "An Office app launched an encoded PowerShell command, which may indicate phishing-driven code execution.",
       "severity": "high",
+      "eventGroupingKind": "singleAlert",
       "recommendedActions": "Investigate the parent Office document, isolate the device, and review the user's recent email activity.",
       "entityMappings": {
         "accounts": [

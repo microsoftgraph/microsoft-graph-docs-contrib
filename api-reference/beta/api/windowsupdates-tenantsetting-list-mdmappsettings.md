@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get the [mdmAppSetting](../resources/windowsupdates-mdmappsetting.md) resources for the current tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

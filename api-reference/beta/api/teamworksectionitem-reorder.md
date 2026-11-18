@@ -39,7 +39,6 @@ POST /users/{user-id}/teamwork/sections/{teamworkSection-id}/items/reorder
 |:-------|:------|
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 | Content-Type | application/json. Required. |
-| If-Match | The value of the **@microsoft.graph.sectionsVersion** annotation returned when you [list sections](../api/userteamwork-list-sections.md), or the **@odata.etag** value from any previously retrieved [section](../resources/teamworksection.md). Required for optimistic concurrency control. |
 
 ## Request body
 
@@ -55,9 +54,6 @@ The following table lists the parameter that is required when you call this acti
 
 If successful, this action returns a `200 OK` response code and a [teamworkSectionItem](../resources/teamworksectionitem.md) collection in the response body, in the requested order.
 
-> [!NOTE]
-> Each returned item includes an updated **@odata.etag** value. Use this value as the `If-Match` header for any subsequent mutation operation.
-
 The following errors are possible.
 
 | Response code | Message |
@@ -67,9 +63,7 @@ The following errors are possible.
 | `403 Forbidden` | This section is system-generated and can't be modified. Reorder items only in user-defined sections. |
 | `404 Not Found` | The specified section wasn't found. |
 | `409 Conflict` | Reordering is only supported when the section **sortType** is `userDefinedCustomOrder`. [Update the section](../api/teamworksection-update.md) to use this sort type, then retry. |
-| `409 Conflict` | The target section was deleted concurrently with the reorder request. [List sections](../api/userteamwork-list-sections.md) again and retry with a current section ID and version. |
-| `412 Precondition Failed` | The `If-Match` header value doesn't match the current section hierarchy version. [List sections](../api/userteamwork-list-sections.md) again to retrieve the latest **@microsoft.graph.sectionsVersion** annotation and retry. |
-| `428 Precondition Required` | The `If-Match` header is required for this operation. |
+| `409 Conflict` | The items can't be reordered because of a concurrent change, such as the deletion of the target section. [List items](../api/teamworksection-list-items.md) in the section again and retry. |
 
 ## Examples
 
@@ -77,7 +71,6 @@ The following errors are possible.
 
 The following example reorders three items in the "Project Alpha" section.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamworksectionitem_reorder",
@@ -86,7 +79,6 @@ The following example reorders three items in the "Project Alpha" section.
 ```http
 POST https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections/a1b2c3d4-e5f6-7890-abcd-ef1234567890/items/reorder
 Content-Type: application/json
-If-Match: "1742515200"
 
 {
   "itemsOrder": [
@@ -96,32 +88,6 @@ If-Match: "1742515200"
   ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/teamworksectionitem-reorder-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/teamworksectionitem-reorder-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/teamworksectionitem-reorder-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/teamworksectionitem-reorder-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/teamworksectionitem-reorder-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/teamworksectionitem-reorder-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

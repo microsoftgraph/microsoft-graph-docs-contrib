@@ -4592,6 +4592,56 @@ items:
       href: ../../resources/networkaccess-urldestinationfilteringrule.md
     - name: Web category filtering rule
       href: ../../resources/networkaccess-webcategoryfilteringrule.md
+    - name: Web filtering policy
+      items:
+      - name: Web filtering policy
+        href: ../../resources/networkaccess-webfilteringpolicy.md
+      - name: List
+        href: ../../api/networkaccess-networkaccessroot-list-webfilteringpolicies.md
+      - name: Create
+        href: ../../api/networkaccess-networkaccessroot-post-webfilteringpolicies.md
+      - name: Get
+        href: ../../api/networkaccess-webfilteringpolicy-get.md
+      - name: Update
+        href: ../../api/networkaccess-webfilteringpolicy-update.md
+      - name: Delete
+        href: ../../api/networkaccess-networkaccessroot-delete-webfilteringpolicies.md
+      - name: List policyRules
+        href: ../../api/networkaccess-webfilteringpolicy-list-policyrules.md
+      - name: Create policyRule
+        href: ../../api/networkaccess-webfilteringpolicy-post-policyrules.md
+    - name: Web filtering policy link
+      items:
+      - name: Web filtering policy link
+        href: ../../resources/networkaccess-webfilteringpolicylink.md
+      - name: List
+        href: ../../api/networkaccess-webfilteringpolicylink-list.md
+      - name: Get
+        href: ../../api/networkaccess-webfilteringpolicylink-get.md
+      - name: Update
+        href: ../../api/networkaccess-webfilteringpolicylink-update.md
+      - name: Delete
+        href: ../../api/networkaccess-webfilteringpolicylink-delete.md
+      - name: Get policy
+        href: ../../api/networkaccess-webfilteringpolicylink-list-policy.md
+      - name: Add policy
+        href: ../../api/networkaccess-webfilteringpolicylink-post-policy.md
+      - name: Remove policy
+        href: ../../api/networkaccess-webfilteringpolicylink-delete-policy.md
+    - name: Web filtering rule
+      items:
+      - name: Web filtering rule
+        href: ../../resources/networkaccess-webfilteringrule.md
+      - name: List
+        href: ../../api/networkaccess-webfilteringpolicy-list-policyrules.md
+      - name: Create
+        href: ../../api/networkaccess-webfilteringpolicy-post-policyrules.md
+      - name: Get
+        href: ../../api/networkaccess-webfilteringrule-get.md
+      - name: Update
+        href: ../../api/networkaccess-webfilteringrule-update.md
+      - name: Delete
+        href: ../../api/networkaccess-webfilteringrule-delete.md
     - name: Threat intelligence policy
       items:
       - name: Threat intelligence policy
@@ -4626,6 +4676,30 @@ items:
         href: ../../api/networkaccess-threatintelligencerule-update.md
       - name: Delete
         href: ../../api/networkaccess-threatintelligencerule-delete.md
+    - name: Complex types
+      items:
+      - name: Web filtering action
+        href: ../../resources/networkaccess-webfilteringaction.md
+      - name: Web filtering action allow
+        href: ../../resources/networkaccess-webfilteringactionallow.md
+      - name: Web filtering action block
+        href: ../../resources/networkaccess-webfilteringactionblock.md
+      - name: Web filtering destination matching
+        href: ../../resources/networkaccess-webfilteringdestinationmatching.md
+      - name: Web filtering destination target
+        href: ../../resources/networkaccess-webfilteringdestinationtarget.md
+      - name: Web filtering matching conditions
+        href: ../../resources/networkaccess-webfilteringmatchingconditions.md
+      - name: Web filtering policy settings
+        href: ../../resources/networkaccess-webfilteringpolicysettings.md
+      - name: Web filtering rule settings
+        href: ../../resources/networkaccess-webfilteringrulesettings.md
+      - name: Web filtering source matching
+        href: ../../resources/networkaccess-webfilteringsourcematching.md
+      - name: Web filtering URL destination
+        href: ../../resources/networkaccess-webfilteringurldestination.md
+      - name: Web filtering web category destination
+        href: ../../resources/networkaccess-webfilteringwebcategorydestination.md
   - name: Cloud firewall
     items:
     - name: Cloud firewall policy

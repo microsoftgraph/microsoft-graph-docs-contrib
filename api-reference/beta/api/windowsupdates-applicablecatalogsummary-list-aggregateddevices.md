@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get the [applicableDevice](../resources/windowsupdates-applicabledevice.md) resources included in an update applicability summary.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

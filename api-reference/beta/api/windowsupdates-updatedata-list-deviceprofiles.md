@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get a list of [deviceProfile](../resources/windowsupdates-deviceprofile.md) resources and their Windows servicing information.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

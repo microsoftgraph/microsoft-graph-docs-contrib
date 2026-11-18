@@ -1,5 +1,6 @@
 ---
 title: "cscContentMetadata resource type"
+toc.title: "CSC content metadata"
 description: "Represents audit data for CSC Content Metadata events."
 author: "diksha27"
 ms.date: 10/06/2026

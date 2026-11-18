@@ -23,6 +23,7 @@ Describes the alert that is generated in response to a detection by a [custom de
 |customDetails|[microsoft.graph.security.alertCustomDetails](../resources/security-alertcustomdetails.md)|Custom key-value detail pairs to include in the alert. Each value identifies the detection query column that supplies the corresponding custom detail.|
 |description|String|Description of the alert triggered by the custom detection rule.|
 |entityMappings|[microsoft.graph.security.entityMappingConfiguration](../resources/security-entitymappingconfiguration.md)|Defines how detection query columns map to the entities that are attached to the resulting alert.|
+|eventGroupingKind|[microsoft.graph.security.eventGroupingKind](../resources/enums-security.md#eventgroupingkind-values)|How events matched by one rule execution are grouped into alerts. The possible values are: `alertPerEvent`, `singleAlert`, `unknownFutureValue`. `alertPerEvent` creates a separate alert for each matching event and is the default when omitted. `singleAlert` groups all matching events from one scheduled rule execution into a single alert; it doesn't merge alerts across executions. Don't use `unknownFutureValue` in requests.|
 |recommendedActions|String|Recommended actions to mitigate the threat related to the alert triggered by the custom detection rule.|
 |severity|[microsoft.graph.security.alertSeverity](../resources/security-alert.md#alertseverity-values)|Severity assigned to the alert triggered by the custom detection rule. The possible values are: `informational`, `low`, `medium`, `high`.|
 |tactics|[microsoft.graph.security.mitreTactic](../resources/security-mitretactic.md) collection|The MITRE ATT&CK tactics framing for this alert.|
@@ -69,6 +70,7 @@ The following JSON representation shows the resource type.
   ],
   "customDetails": {
     "@odata.type": "microsoft.graph.security.alertCustomDetails"
-  }
+  },
+  "eventGroupingKind": "String"
 }
 ```

@@ -16,7 +16,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 Get a [usageRight](../resources/cloudlicensing-usageright.md) object affected by an [assignmentError](../resources/cloudlicensing-assignmenterror.md). A **usageRight** object is returned only if a preexisting one is in effect and can't be updated due to this **assignmentError**.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

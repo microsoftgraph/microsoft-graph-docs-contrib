@@ -41,6 +41,8 @@ GET /groups
 
 ## Optional query parameters
 
+Use `$select` to retrieve **isHardDeleteProtectionEnabled**, which isn't returned by default. The property supports `$filter` with the `eq` operator.
+
 This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. The default and maximum page sizes are 100 and 999 group objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 To list only Microsoft 365 groups (unified groups), apply a filter on **groupTypes**:
@@ -687,6 +689,36 @@ Content-type: application/json
         }
       ],
       "members": []
+    }
+  ]
+}
+```
+
+### Example 8: List groups with hard deletion protection enabled
+
+#### Request
+
+Filter for protected groups and explicitly select their protection status.
+
+<!-- { "blockType": "request", "name": "list_groups_hard_delete_protection" } -->
+```http
+GET https://graph.microsoft.com/beta/groups?$filter=isHardDeleteProtectionEnabled eq true&$select=id,displayName,isHardDeleteProtectionEnabled
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.group", "isCollection": true } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,displayName,isHardDeleteProtectionEnabled)",
+  "value": [
+    {
+      "id": "0d09007d-45b2-458c-b180-880dde3a302e",
+      "displayName": "Contoso Finance",
+      "isHardDeleteProtectionEnabled": true
     }
   ]
 }

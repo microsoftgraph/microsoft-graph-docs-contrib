@@ -33,6 +33,7 @@ None
 |data security and compliance|[microsoft.graph.tenantDataSecurityAndGovernance](../resources/tenantdatasecurityandgovernance.md)|A container for Microsoft Purview data security and compliance APIs.|
 |identities|[microsoft.graph.security.identityContainer](../resources/security-identitycontainer.md)|A container for security identities APIs.|
 |incidents | [microsoft.graph.security.incident](security-incident.md) collection | A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.|
+|rules|[microsoft.graph.security.rulesRoot](../resources/security-rulesroot.md)|Container for the security rules configured in Microsoft Defender XDR, including [custom detection rules](../resources/security-detectionrule.md).|
 
 
 ## JSON representation
@@ -82,4 +83,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

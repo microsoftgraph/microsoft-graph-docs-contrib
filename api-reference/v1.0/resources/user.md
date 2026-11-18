@@ -130,6 +130,9 @@ This resource supports:
 | [Create contact](../api/user-post-contacts.md) | [contact](contact.md) | Create a new Contact by posting to the contacts collection. |
 | [List contact folders](../api/user-list-contactfolders.md) | [contactFolder](contactfolder.md) collection | Get the contact folder collection in the default Contacts folder of the signed-in user. |
 | [Create contact folder](../api/user-post-contactfolders.md) | [contactFolder](contactfolder.md) | Create a new ContactFolder by posting to the contactFolders collection. |
+| **Personal distribution lists** |  |  |
+| [List distribution lists](../api/user-list-distributionlists.md) | [distributionList](../resources/distributionlist.md) collection | Get a list of the [personal distribution lists](../resources/distributionlist.md) in the user's mailbox. |
+| [Create distribution list](../api/user-post-distributionlists.md) | [distributionList](../resources/distributionlist.md) | Create a new [personal distribution list](../resources/distributionlist.md) in the user's mailbox. |
 | **Profile photo** |  |  |
 | [Get](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified profilePhoto or its metadata (profilePhoto properties). |
 | [Update](../api/profilephoto-update.md) | None | Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. |
@@ -320,6 +323,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that the user created. Read-only. Nullable.|
 |dataSecurityAndGovernance|[userDataSecurityAndGovernance](../resources/userDatasecurityandgovernance.md)| The data security and governance settings for the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. Supports `$expand`. |
+|distributionLists|[distributionList](../resources/distributionlist.md) collection|The personal distribution lists in the user's mailbox. Read-only. Nullable.|
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
 |drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
 |events|[event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|

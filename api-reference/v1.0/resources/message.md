@@ -44,9 +44,10 @@ by providing a [delta](../api/message-delta.md) function.
 |[Reply-all to a message](../api/message-replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[Send draft message](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 |[Permanently delete](../api/message-permanentdelete.md)|None|Permanently delete a message and place it in the purges folder in the recoverable Items folder in the user's mailbox.|
+|[Report message](../api/message-reportmessage.md)|[message](../resources/message.md)|Report a [message](../resources/message.md) as junk, phishing, or not junk, which improves mail filtering.|
 |**Attachments**| | |
-|[List attachments](../api/message-list-attachments.md) |[Attachment](attachment.md) collection| Gets all attachments on a message.|
-|[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
+|[List attachments](../api/message-list-attachments.md) |[attachment](attachment.md) collection| Gets all attachments on a message.|
+|[Add attachment](../api/message-post-attachments.md) |[attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension object or objects identified by name or fully qualified name.|

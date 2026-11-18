@@ -16,7 +16,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 Get a list of license [assignment](../resources/cloudlicensing-assignment.md) objects which consume licenses from this allotment.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

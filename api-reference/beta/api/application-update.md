@@ -30,6 +30,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
 
+### Permissions for specific scenarios
+
+To set **isHardDeleteProtectionEnabled** to `true`, the app requires the *HardDeletionSetting.ReadWrite.Enable* delegated or application permission. The caller must also have the *Microsoft Entra Backup Administrator* role. The standard application-management roles alone don't grant permission to enable hard deletion protection.
+
 ## HTTP request
 
 You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center. Replace `{applicationObjectId}` with the **id** for the application object.
@@ -66,6 +70,7 @@ In the request body, supply the values for relevant fields that should be update
 | info                    | [informationalUrl](../resources/informationalurl.md)                        | Basic profile information of the application such as  app's marketing, support, terms of service, and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. For more information, see [Add Terms of service and privacy statement for registered Microsoft Entra apps](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement).                                                                                                                                                 |
 | isDisabled              | Boolean                                                                     | Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources. When set to `true`, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.`true` if the application is deactivated (disabled); otherwise `false`.                                                                                                                                      |
 | isFallbackPublicClient  | Boolean                                                                     | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false`, which means the fallback application type is confidential client such as web app. There are certain scenarios where Microsoft Entra ID cannot determine the client application type (for example, [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it is configured without specifying a redirect URI). In those cases, Microsoft Entra ID will interpret the application type based on the value of this property. |
+| isHardDeleteProtectionEnabled | Boolean | Set to `true` to enable hard deletion protection on an existing application. Once enabled, it can't be set to `false` or `null`. Protection blocks permanent deletion for seven days after soft deletion; it doesn't prevent soft deletion or restoration. |
 | keyCredentials          | [keyCredential](../resources/keycredential.md) collection                   | The collection of key credentials associated with the application. Not nullable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | The main logo for the application. Not nullable. Use the PUT method to update the logo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | nativeAuthenticationApisEnabled | String                                                              | Specifies whether the native authentication APIs are enabled so that the application can use them to provide native authentication. The possible values are: `none`, `all`, and `unknownFutureValue`. For more information, see [Native Authentication](/entra/external-id/customers/concept-native-authentication).|
@@ -84,6 +89,8 @@ In the request body, supply the values for relevant fields that should be update
 | web                     | [webApplication](../resources/webapplication.md)                            | Specifies settings for a web application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Specifies settings for a single-page application, including sign out URLs and redirect URIs for authorization codes and access tokens. |
 | windows                 | [windowsApplication](../resources/windowsapplication.md)                    | Specifies settings for apps running Microsoft Windows and published in the Microsoft Store or Xbox games store. Includes package SID and redirect URIs for authorization codes and access tokens. |
+
+Enabling **isHardDeleteProtectionEnabled** during application creation isn't supported. Create the application first, then enable protection with a separate PATCH request.
 
 ## Response
 
@@ -349,6 +356,29 @@ Content-type: application/json
 <!-- {
   "blockType": "response"
 } -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 5: Enable hard deletion protection for an application
+
+Once enabled, hard deletion protection can't be disabled. Use an existing application and the permissions and role described in [Permissions for specific scenarios](#permissions-for-specific-scenarios).
+
+#### Request
+
+<!-- { "blockType": "request", "name": "update_application_hard_delete_protection" } -->
+```http
+PATCH https://graph.microsoft.com/beta/applications/7bec5fd1-a25f-474c-a6ca-5492082c6a9b
+Content-Type: application/json
+
+{
+  "isHardDeleteProtectionEnabled": true
+}
+```
+
+#### Response
+
+<!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 204 No Content
 ```

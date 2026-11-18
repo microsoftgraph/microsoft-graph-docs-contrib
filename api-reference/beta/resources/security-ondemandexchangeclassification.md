@@ -1,5 +1,6 @@
 ---
 title: "onDemandExchangeClassification resource type"
+toc.title: "On-demand Exchange classification"
 description: "Represents audit data for On-Demand Exchange Classification events."
 author: "diksha27"
 ms.date: 9/29/2026

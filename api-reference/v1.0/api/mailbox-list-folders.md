@@ -2,7 +2,7 @@
 title: "List folders"
 description: "Get all the mailboxFolder objects in the specified mailbox, including any search folders."
 author: "cparker-msft"
-ms.date: 08/06/2026
+ms.date: 10/20/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -13,6 +13,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get all the [mailboxFolder](../resources/mailboxfolder.md) objects in the specified mailbox, including any search folders.
+
+By default, hidden folders aren't returned. To include them, specify `includeHiddenFolders=true`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -33,9 +35,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /admin/exchange/mailboxes/{mailboxId}/folders
 ```
 
-## Optional query parameters
+## Query parameters
 
-This method supports the `$select`, `$filter`, `$top`, `$skip`, `$orderby`, `$count`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following optional query parameter.
+
+| Parameter | Type | Description |
+|:---|:---|:---|
+| includeHiddenFolders | Boolean | The default value is `false`. Set it to `true` to include both hidden and nonhidden folders, and use the **isHidden** property to distinguish them. If you use `$select`, include **isHidden** to return the property. |
+
+This method also supports the `$select`, `$filter`, `$top`, `$skip`, `$orderby`, `$count`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -111,7 +119,6 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders",
@@ -120,6 +127,7 @@ Content-length: 232
             "@odata.type": "#microsoft.graph.mailboxFolder",
             "id": "EDSVrdi3lRAAACgfQBAAA=",
             "displayName": "Archive",
+            "isHidden": false,
             "parentFolderId": "NJWt2LeVEAAAIBCAAAAA==",
             "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "childFolderCount": 0,
@@ -131,6 +139,7 @@ Content-length: 232
             "@odata.type": "#microsoft.graph.mailboxFolder",
             "id": "NJWt2LeVEAAAIBDQAAAA==",
             "displayName": "Project Calendar",
+            "isHidden": false,
             "parentFolderId": "NJWt2LeVEAAAIBCAAAAA==",
             "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "childFolderCount": 5,
@@ -215,5 +224,53 @@ Content-length: 232
             "wellKnownName": null
         }
     ]
+}
+```
+
+### Example 3: Include hidden folders
+
+The following example shows how to include both hidden and nonhidden folders and select **isHidden** to distinguish between them.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_mailboxfolder_including_hidden",
+  "sampleKeys": ["MBX:e0643f21@a7809c93"]
+}
+-->
+```http
+GET https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders?includeHiddenFolders=true&$select=id,displayName,isHidden
+```
+
+#### Response
+
+The following example shows the response shortened for readability. If the response includes **@odata.nextLink**, use the entire URL unchanged to retrieve the next page.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.mailboxFolder)"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "EDSVrdi3lRAAACgfQBAAA=",
+      "displayName": "Archive",
+      "isHidden": false
+    },
+    {
+      "id": "EDSVrdi3lRAAEED0yUAAA=",
+      "displayName": "Application data",
+      "isHidden": true
+    }
+  ]
 }
 ```

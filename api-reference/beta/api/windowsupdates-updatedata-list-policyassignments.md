@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get a list of [policyAssignment](../resources/windowsupdates-policyassignment.md) resources that associate Windows Autopatch policies with devices.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

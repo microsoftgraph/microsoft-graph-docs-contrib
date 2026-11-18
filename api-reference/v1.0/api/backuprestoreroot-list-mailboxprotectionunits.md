@@ -153,7 +153,13 @@ HTTP/1.1 200 OK
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null,
-      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z",
+      "backupRetentionPeriodInDays": 365,
+      "pendingRetentionPeriodChange": {
+        "status": "inProgress",
+        "targetRetentionPeriodInDays": 720,
+        "effectiveFromDateTime": "2026-10-22T12:00:00Z"
+      }
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -189,7 +195,9 @@ HTTP/1.1 200 OK
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null,
-      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z",
+      "backupRetentionPeriodInDays": 365,
+      "pendingRetentionPeriodChange": null
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",

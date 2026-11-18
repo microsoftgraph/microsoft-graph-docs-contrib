@@ -22,7 +22,7 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|The run summary of this bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|cloudPcIds|String collection|The IDs of the Cloud PCs to which the bulk action applies. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
+|cloudPcIds|String collection|The IDs of the Cloud PCs to which the bulk action applies. Individual Cloud PC IDs are GUID-formatted strings. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |createdDateTime|DateTimeOffset|The date and time when the bulk action was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |displayName|String|Name of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |id|String|The ID of the bulk action. Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|

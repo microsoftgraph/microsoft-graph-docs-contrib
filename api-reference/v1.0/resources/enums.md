@@ -1614,6 +1614,16 @@ Namespace: microsoft.graph
 | externalPartner |
 | externalNonPartner |
 
+### recipientType values
+
+| Member |
+| ------------------- |
+| contact |
+| oneOff |
+| mailbox |
+| privateDL |
+| unknownFutureValue |
+
 ### riskDetectionTimingType values
 
 | Member |
@@ -1973,6 +1983,16 @@ Possible types of Windows settings.
 | reply |
 | replyToAll |
 | review |
+
+### reportAction values
+
+|Member|
+|:---|
+|unknown|
+|junk|
+|notJunk|
+|phish|
+|unknownFutureValue|
 
 ### onenoteUserRole values
 
@@ -4153,6 +4173,16 @@ Possible values for user account types (group membership), per Windows definitio
 |bulk|
 |unknownFutureValue|
 |granular|
+
+### retentionPeriodChangeStatus values
+
+|Member|
+|:---|
+|none|
+|inProgress|
+|failed|
+|completed|
+|unknownFutureValue|
 
 ### sharePointMigrationJobErrorLevel values
 

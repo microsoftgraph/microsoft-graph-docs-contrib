@@ -20,7 +20,7 @@ Represents metadata about an activity being evaluated, including its type and ot
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activity|microsoft.graph.security.userActivityType|The type of activity. Possible values are `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `copyToClipboard`, `unknownFutureValue`. Required.|
+|activity|microsoft.graph.security.userActivityType|The type of activity. Possible values are `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`, `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `copyToClipboard`, `pasteFromClipboard`, `print`, `accessDebugTools`. Required.|
 |participants|Collection([interactionParticipant](interactionparticipant.md))|The other parties in an agent interaction. Specify the concrete participant type by using the **@odata.type** property. Required when **evaluationScope.type** is `agent`; otherwise optional.|
 
 ## Relationships

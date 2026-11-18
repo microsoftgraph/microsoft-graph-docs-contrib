@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Update an [mdmAppSetting](../resources/windowsupdates-mdmappsetting.md) resource within the current tenant. The **mdmAppId** is identified by the request URL and can't be changed by this operation.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

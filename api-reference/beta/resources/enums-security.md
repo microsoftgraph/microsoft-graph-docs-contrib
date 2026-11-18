@@ -384,6 +384,14 @@ Namespace: microsoft.graph.security
 | autoDisabled       |
 | unknownFutureValue |
 
+### eventGroupingKind values
+
+| Member             |
+| :----------------- |
+| alertPerEvent      |
+| singleAlert        |
+| unknownFutureValue |
+
 ### eventPropagationStatus values
 
 | Member             |
@@ -820,8 +828,11 @@ Namespace: microsoft.graph.security
 |uploadFile|
 |downloadText|
 |downloadFile|
-|copyToClipboard|
 |unknownFutureValue|
+|copyToClipboard|
+|pasteFromClipboard|
+|print|
+|accessDebugTools|
 
 ### labelActionSource values
 

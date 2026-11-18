@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "fcfc8f70-b328-44c4-9e71-ce7266bcabd0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tags",
+          "ChangeType": "Addition",
+          "Description": "Added the **tags** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "fcfc8f70-b328-44c4-9e71-ce7266bcabd0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkChannelTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkChannelTag](https://learn.microsoft.com/en-us/graph/api/resources/teamworkchanneltag?view=graph-rest-beta) resource type and associated methods to manage tags owned by a Microsoft Teams channel.",
+          "Target": "teamworkChannelTag"
+        }
+      ],
+      "Id": "fcfc8f70-b328-44c4-9e71-ce7266bcabd0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-26T22:45:54.9528401Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c28e192b-f8e3-4384-8383-80fe031b37a8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkCustomEmoji",
@@ -4355,6 +4381,88 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-07-27T12:00:00.000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c3050f89-b293-49bf-96c8-9d87be170c76",
+          "ApiChange": "Header",
+          "ChangedApiName": "If-Match",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `If-Match` request header from the [Create teamworkSection](https://learn.microsoft.com/en-us/graph/api/userteamwork-post-sections?view=graph-rest-beta) method. Concurrent changes that prevent the operation now return `409 Conflict`.",
+          "Target": "teamworkSection"
+        },
+        {
+          "Id": "c3050f89-b293-49bf-96c8-9d87be170c76",
+          "ApiChange": "Header",
+          "ChangedApiName": "If-Match",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `If-Match` request header from the [Update teamworkSection](https://learn.microsoft.com/en-us/graph/api/teamworksection-update?view=graph-rest-beta) method. Concurrent changes that prevent the operation now return `409 Conflict`.",
+          "Target": "teamworkSection"
+        },
+        {
+          "Id": "c3050f89-b293-49bf-96c8-9d87be170c76",
+          "ApiChange": "Header",
+          "ChangedApiName": "If-Match",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `If-Match` request header from the [Delete teamworkSection](https://learn.microsoft.com/en-us/graph/api/teamworksection-delete?view=graph-rest-beta) method. Concurrent changes that prevent the operation now return `409 Conflict`.",
+          "Target": "teamworkSection"
+        },
+        {
+          "Id": "c3050f89-b293-49bf-96c8-9d87be170c76",
+          "ApiChange": "Header",
+          "ChangedApiName": "If-Match",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `If-Match` request header from the [teamworkSection: reorder](https://learn.microsoft.com/en-us/graph/api/teamworksection-reorder?view=graph-rest-beta) method. Concurrent changes that prevent the operation now return `409 Conflict`.",
+          "Target": "teamworkSection"
+        },
+        {
+          "Id": "c3050f89-b293-49bf-96c8-9d87be170c76",
+          "ApiChange": "Header",
+          "ChangedApiName": "If-Match",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `If-Match` request header from the [Create teamworkSectionItem](https://learn.microsoft.com/en-us/graph/api/teamworksection-post-items?view=graph-rest-beta) method. Concurrent changes that prevent the operation now return `409 Conflict`.",
+          "Target": "teamworkSectionItem"
+        },
+        {
+          "Id": "c3050f89-b293-49bf-96c8-9d87be170c76",
+          "ApiChange": "Header",
+          "ChangedApiName": "If-Match",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `If-Match` request header from the [teamworkSectionItem: move](https://learn.microsoft.com/en-us/graph/api/teamworksectionitem-move?view=graph-rest-beta) method. Concurrent changes that prevent the operation now return `409 Conflict`.",
+          "Target": "teamworkSectionItem"
+        },
+        {
+          "Id": "c3050f89-b293-49bf-96c8-9d87be170c76",
+          "ApiChange": "Header",
+          "ChangedApiName": "If-Match",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `If-Match` request header from the [teamworkSectionItem: reorder](https://learn.microsoft.com/en-us/graph/api/teamworksectionitem-reorder?view=graph-rest-beta) method. Concurrent changes that prevent the operation now return `409 Conflict`.",
+          "Target": "teamworkSectionItem"
+        },
+        {
+          "Id": "c3050f89-b293-49bf-96c8-9d87be170c76",
+          "ApiChange": "Header",
+          "ChangedApiName": "If-Match",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `If-Match` request header from the [Delete teamworkSectionItem](https://learn.microsoft.com/en-us/graph/api/teamworksectionitem-delete?view=graph-rest-beta) method. Concurrent changes that prevent the operation now return `409 Conflict`.",
+          "Target": "teamworkSectionItem"
+        },
+        {
+          "Id": "c3050f89-b293-49bf-96c8-9d87be170c76",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamworkSectionItem",
+          "ChangeType": "Change",
+          "Description": "Changed the [Add teamworkSectionItem](https://learn.microsoft.com/en-us/graph/api/teamworksection-post-items?view=graph-rest-beta) method to move an item from another user-defined section.",
+          "Target": "teamworkSectionItem"
+        }
+      ],
+      "Id": "c3050f89-b293-49bf-96c8-9d87be170c76",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-27T13:00:00.000Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
     }

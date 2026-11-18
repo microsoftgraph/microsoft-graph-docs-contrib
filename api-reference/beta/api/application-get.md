@@ -40,6 +40,8 @@ GET /applications(appId='{appId}')
 
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific application properties.
 
+The **isHardDeleteProtectionEnabled** property is returned only when explicitly requested with `$select`.
+
 By default, this API doesn't return the value of the **key** thumbprint in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
 
 The use of `$select` to get **keyCredentials** for applications has a throttling limit of 150 requests per minute for every tenant.
@@ -257,6 +259,32 @@ Content-type: application/json
         "@odata.type": "#microsoft.graph.unrestrictedAudience",
         "kind": "unrestricted"
     }
+}
+```
+
+### Example 3: Get the hard deletion protection status of an application
+
+#### Request
+
+Use `$select` to retrieve **isHardDeleteProtectionEnabled**, which isn't returned by default.
+
+<!-- { "blockType": "request", "name": "get_application_hard_delete_protection" } -->
+```http
+GET https://graph.microsoft.com/beta/applications/7bec5fd1-a25f-474c-a6ca-5492082c6a9b?$select=id,displayName,isHardDeleteProtectionEnabled
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.application" } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications(id,displayName,isHardDeleteProtectionEnabled)/$entity",
+  "id": "7bec5fd1-a25f-474c-a6ca-5492082c6a9b",
+  "displayName": "Contoso Finance",
+  "isHardDeleteProtectionEnabled": true
 }
 ```
 

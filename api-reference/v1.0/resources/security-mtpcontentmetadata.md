@@ -1,5 +1,6 @@
 ---
 title: "mtpContentMetadata resource type"
+toc.title: "MTP content metadata"
 description: "Represents audit data for MTP Content Metadata events."
 author: "diksha27"
 ms.date: 10/06/2026

@@ -22,7 +22,7 @@ a local store of a user's mail folders without having to fetch all the mail fold
 [!NOTE]
 Delta processing may create or update synchronization state stored in the mailbox. These writes are subject to mailbox storage quota enforcement. If a mailbox has reached its applicable storage quota, a mail folder delta request can return 403 ErrorQuotaExceeded, even when ordinary folder read requests continue to succeed. Reduce mailbox usage below the quota and retry the delta request. Applications should handle this error and direct affected users or administrators to address mailbox storage usage.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

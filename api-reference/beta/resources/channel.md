@@ -63,6 +63,8 @@ where files are shared, and where tabs are added.
 |[Unshare channel with team](../api/sharedwithchannelteaminfo-delete.md)|None|Unshare a channel with a team.|
 |[List allowed members](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of team members who have access to the shared channel.|
 |[Check user access](../api/channel-doesuserhaveaccess.md)|Boolean|Check whether a user has access to a shared channel or not.|
+|[List tags](../api/channel-list-tags.md)|[teamworkChannelTag](../resources/teamworkchanneltag.md) collection|Get a list of the [teamworkChannelTag](../resources/teamworkchanneltag.md) objects owned by the specified channel.|
+|[Create tag](../api/channel-post-tags.md)|[teamworkChannelTag](../resources/teamworkchanneltag.md)| Create a [teamworkChannelTag](../resources/teamworkchanneltag.md) owned by a channel and assign its initial members.|
 | **Planner** |  |  |
 |[List plans](../api/teamschannelplanner-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a list of [plannerPlan](../resources/plannerplan.md) objects owned by a shared [channel](../resources/channel.md) in Teams.|
 
@@ -136,6 +138,7 @@ For a POST request example, see [Request (create channel in migration state)](/m
 |planner|[teamsChannelPlanner](teamschannelplanner.md) | Selective Planner services available to this channel. Currently, only shared channels are supported. Read-only. Nullable. |
 |sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|A collection of teams with which a channel is shared.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. |
+|tags|[teamworkChannelTag](../resources/teamworkchanneltag.md) collection|The tags owned by the channel.|
 
 ## JSON representation
 

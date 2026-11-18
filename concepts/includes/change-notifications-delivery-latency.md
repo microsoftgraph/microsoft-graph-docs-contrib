@@ -20,8 +20,8 @@ The following table lists the latency to expect between an event happening in th
 | [approvals][]           | Less than 10 seconds | 40 seconds      |
 | [calendar][]            | Less than 1 minute   | 3 minutes       |
 | [callRecord][] <sup>2</sup> | Less than 30 minutes | 150 minutes |
-| [callRecording][]       | Less than 10 seconds | 60 minutes      |
-| [callTranscript][]      | Less than 10 seconds | 60 minutes      |
+| [callRecording][]       | Less than 10 seconds | 240 minutes <sup>3</sup>      |
+| [callTranscript][]      | Less than 10 seconds | 240 minutes <sup>3</sup>      |
 | [channel][]             | Less than 10 seconds | 60 minutes      |
 | [chat][]                | Less than 10 seconds | 60 minutes      |
 | [chatMessage][]         | Less than 10 seconds | 1 minute        |
@@ -31,7 +31,7 @@ The following table lists the latency to expect between an event happening in th
 | [driveItem][]           | Less than 1 minute   | 6 hours         |
 | [event][]               | Unknown              | Unknown         |
 | [group][]               | Unknown              | Unknown         |
-| [health monitoring alert][] | Unknown           | Unknown         |
+| [health monitoring alert][] | Unknown          | Unknown         |
 | [list][]                | Less than 1 minute   | 6 hours         |
 | [message][]             | Less than 1 minute   | 3 minutes       |
 | [offerShiftRequest][]   | Less than 1 minute   | 60 minutes      |
@@ -48,8 +48,9 @@ The following table lists the latency to expect between an event happening in th
 | [todoTask][]            | Less than 2 minutes  | 15 minutes      |
 | [user][]                | Unknown              | Unknown         |
 
-<sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert is created. It doesn't include the time it takes for a rule to create an alert from the data.
-<sup>2</sup> The latency provided for the **callRecord** resource is only applicable to the first version of a call record. Subsequent versions of a call record might be updated beyond the stated latencies.
+<sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert is created. It doesn't include the time it takes for a rule to create an alert from the data.<br>
+<sup>2</sup> The latency provided for the **callRecord** resource is only applicable to the first version of a call record. Subsequent versions of a call record might be updated beyond the stated latencies.<br>
+<sup>3</sup> Change notifications for **call recordings** and **call transcripts** are typically delivered within 10 seconds of recording and transcript generation, which may occur several minutes after the call ends.
 
 [aiInteraction]: /graph/api/resources/aiinteraction
 [contact]: /graph/api/resources/contact

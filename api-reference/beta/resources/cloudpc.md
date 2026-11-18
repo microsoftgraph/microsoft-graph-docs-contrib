@@ -29,6 +29,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Power off](../api/cloudpc-poweroff.md)|None|Power off a specific  Windows Frontline Cloud PC object. This action supports MEM admin scenarios.|
 |[Reboot](../api/cloudpc-reboot.md)|None|Reboot a specific Cloud PC object.|
 |[Rename](../api/cloudpc-rename.md)|None|Rename a specific Cloud PC object. Use this API to update the **displayName** for the Cloud PC entity.|
+|[Set device name](../api/cloudpc-setdevicename.md)|None|Set the operating system device name of a [Cloud PC](../resources/cloudpc.md).|
 |[Reprovision](../api/cloudpc-reprovision.md)|None|Reprovision a Cloud PC object.|
 |[Resize](../api/cloudpc-resize.md)|None|Upgrade or downgrade an existing [Cloud PC](../resources/cloudpc.md) to a configuration with a new virtual CPU (vCPU) and storage size.|
 |[Start](../api/cloudpc-start.md)|None|Start a specific Cloud PC. Currently, only Windows 365 Frontline Cloud PCs are supported. |
@@ -44,7 +45,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Get supported remote actions](../api/cloudpc-getsupportedcloudpcremoteactions.md)|[cloudPcRemoteActionCapability](../resources/cloudpcremoteactioncapability.md) collection|Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.|
 |[Retrieve remote action results](../api/cloudpc-retrievecloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) collection|Retrieve [remote action results](../resources/cloudpcremoteactionresult.md) and check the status of a specific remote action performed on the associated Cloud PC device.|
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents that failed to install on the Cloud PC.|
-|[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate that a set of Cloud PC devices meet the requirements to be bulk resized.|
+|[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudpcresizevalidationresult.md) collection|Validate that a set of Cloud PC devices meet the requirements to be bulk resized.|
 |[Create snapshot](../api/cloudpc-createsnapshot.md)|None|Create a snapshot for a specific Cloud PC device.|
 |[Retrieve snapshots](../api/cloudpc-retrievesnapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) resources for a Cloud PC.|
 |[Share snapshot](../api/cloudpc-sharesnapshot.md)|None|Share a snapshot for a specific Cloud PC device.|

@@ -14,7 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Move an [item](../resources/teamworksectionitem.md) from one user-defined [section](../resources/teamworksection.md) to another user-defined section in a user's [teamwork](../resources/userteamwork.md). Each item can belong to only one section at a time. This action removes the item from its current section and adds it to the target section. Use this action instead of [add](teamworksection-post-items.md) when the item is already in a user-defined section.
+Move an [item](../resources/teamworksectionitem.md) from one user-defined [section](../resources/teamworksection.md) to another user-defined section in a user's [teamwork](../resources/userteamwork.md). Each item can belong to only one section at a time. This action removes the item from its current section and adds it to the target section.
+
+> [!NOTE]
+> To move an item to a different user-defined section, we recommend that you use the [Add teamworkSectionItem](teamworksection-post-items.md) API. The **add** request moves the item if it's in another user-defined section.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,7 +41,6 @@ POST /users/{user-id}/teamwork/sections/{teamworkSection-id}/items/{teamworkSect
 |:-------|:------|
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 | Content-Type | application/json. Required. |
-| If-Match | The value of the **@microsoft.graph.sectionsVersion** annotation returned when you [list sections](userteamwork-list-sections.md), or the **@odata.etag** value from any previously retrieved [section](../resources/teamworksection.md). Required for optimistic concurrency control. |
 
 ## Request body
 
@@ -54,19 +56,15 @@ The following table lists the parameters that are required when you call this ac
 
 If successful, this action returns a `200 OK` response code and a [teamworkSectionItem](../resources/teamworksectionitem.md) in the response body that represents the item in the target section.
 
-> [!NOTE]
-> The response includes an updated **@odata.etag** value. Use this value as the `If-Match` header for any subsequent mutation operations.
-
 The following errors are possible.
 
 | Response code | Message |
 |:---|:---|
-| `400 Bad Request` | The 'targetSectionId' property is required and must not be empty. |
+| `400 Bad Request` | The **targetSectionId** property is required and must not be empty. |
 | `400 Bad Request` | The source and target sections must be different. |
-| `403 Forbidden` | This section is system-generated and cannot be modified. Items can't be moved into or out of system-defined sections by using this action. |
-| `404 Not Found` | The specified section was not found, or the specified item was not found in this section. |
-| `412 Precondition Failed` | The `If-Match` header value doesn't match the current section hierarchy version. [List sections](userteamwork-list-sections.md) again to retrieve the current **@microsoft.graph.sectionsVersion** annotation and retry. |
-| `428 Precondition Required` | The `If-Match` header is required for this operation. |
+| `403 Forbidden` | This section is system-generated and can't be modified. Items can't be moved into or out of system-defined sections by using this action. |
+| `404 Not Found` | The specified section wasn't found, or the specified item wasn't found in this section. |
+| `409 Conflict` | The section can't be updated because of a concurrent change. Retry the request. |
 
 ## Examples
 
@@ -74,7 +72,6 @@ The following errors are possible.
 
 The following example shows a request to move a chat from the "Favorites" section to the "Project Alpha" section.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamworksectionitem_move",
@@ -83,42 +80,11 @@ The following example shows a request to move a chat from the "Favorites" sectio
 ```http
 POST https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections/a1b2c3d4-e5f6-7890-abcd-ef1234567890/items/19:d5b2c3a4-e6f7-8901-abcd-ef3456789012@thread.v2/move
 Content-type: application/json
-If-Match: "1742515200"
 
 {
   "targetSectionId": "c3d4e5f6-a7b8-9012-cdef-123456789012"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/teamworksectionitem-move-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/teamworksectionitem-move-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/teamworksectionitem-move-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/teamworksectionitem-move-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/teamworksectionitem-move-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/teamworksectionitem-move-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/teamworksectionitem-move-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

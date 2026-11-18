@@ -42,7 +42,7 @@ GET /security/caseManagement/caseTypeConfigurations/{caseTypeConfigurationId}/cu
 
 ## Optional query parameters
 
-This method supports the `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top` OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$orderby`, `$select`, and `$top` OData query parameters. The `$skip` query parameter isn't supported. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

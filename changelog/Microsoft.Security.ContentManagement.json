@@ -1,0 +1,278 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentManagementRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "contentManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentManagement** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "repositories",
+          "ChangeType": "Addition",
+          "Description": "Added the **repositories** relationship to the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deploymentScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deploymentScopeType** enumeration type.",
+          "Target": "deploymentScopeType"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "repositoryContentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **repositoryContentType** enumeration type.",
+          "Target": "repositoryContentType"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "repositoryDeploymentFetchStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **repositoryDeploymentFetchStatus** enumeration type.",
+          "Target": "repositoryDeploymentFetchStatus"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "repositoryDeploymentResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **repositoryDeploymentResult** enumeration type.",
+          "Target": "repositoryDeploymentResult"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "repositoryDeploymentState",
+          "ChangeType": "Addition",
+          "Description": "Added the **repositoryDeploymentState** enumeration type.",
+          "Target": "repositoryDeploymentState"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "repositoryPullRequestState",
+          "ChangeType": "Addition",
+          "Description": "Added the **repositoryPullRequestState** enumeration type.",
+          "Target": "repositoryPullRequestState"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "repositoryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **repositoryType** enumeration type.",
+          "Target": "repositoryType"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deploymentIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [deploymentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-deploymentidentity?view=graph-rest-beta) resource.",
+          "Target": "deploymentIdentity"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deploymentScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [deploymentScope](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-deploymentscope?view=graph-rest-beta) resource.",
+          "Target": "deploymentScope"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "discoveredRepository",
+          "ChangeType": "Addition",
+          "Description": "Added the [discoveredRepository](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-discoveredrepository?view=graph-rest-beta) resource.",
+          "Target": "discoveredRepository"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managedIdentityDeploymentIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedIdentityDeploymentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-managedidentitydeploymentidentity?view=graph-rest-beta) resource.",
+          "Target": "managedIdentityDeploymentIdentity"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "repositoryAccessCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the [repositoryAccessCredential](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-repositoryaccesscredential?view=graph-rest-beta) resource.",
+          "Target": "repositoryAccessCredential"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "repositoryDeployment",
+          "ChangeType": "Addition",
+          "Description": "Added the [repositoryDeployment](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-repositorydeployment?view=graph-rest-beta) resource.",
+          "Target": "repositoryDeployment"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "repositoryDeploymentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [repositoryDeploymentInfo](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-repositorydeploymentinfo?view=graph-rest-beta) resource.",
+          "Target": "repositoryDeploymentInfo"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "repositoryDisconnectResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [repositoryDisconnectResult](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-repositorydisconnectresult?view=graph-rest-beta) resource.",
+          "Target": "repositoryDisconnectResult"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "repositoryOAuthCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the [repositoryOAuthCredential](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-repositoryoauthcredential?view=graph-rest-beta) resource.",
+          "Target": "repositoryOAuthCredential"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "repositoryPatCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the [repositoryPatCredential](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-repositorypatcredential?view=graph-rest-beta) resource.",
+          "Target": "repositoryPatCredential"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "repositoryPullRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [repositoryPullRequest](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-repositorypullrequest?view=graph-rest-beta) resource.",
+          "Target": "repositoryPullRequest"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "repositoryServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the [repositoryServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-repositoryserviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "repositoryServicePrincipal"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "repositorySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [repositorySettings](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-repositorysettings?view=graph-rest-beta) resource.",
+          "Target": "repositorySettings"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "repositoryWorkloadIdentityFederation",
+          "ChangeType": "Addition",
+          "Description": "Added the [repositoryWorkloadIdentityFederation](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-repositoryworkloadidentityfederation?view=graph-rest-beta) resource.",
+          "Target": "repositoryWorkloadIdentityFederation"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalDeploymentIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalDeploymentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-serviceprincipaldeploymentidentity?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipalDeploymentIdentity"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "systemData",
+          "ChangeType": "Addition",
+          "Description": "Added the [systemData](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-systemdata?view=graph-rest-beta) resource.",
+          "Target": "systemData"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentManagementRepository",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentManagementRepository](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentmanagementrepository?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRepository"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Addition",
+          "Description": "Added the [List repositories](https://learn.microsoft.com/en-us/graph/api/contentmanagementroot-list-repositories?view=graph-rest-beta) method to the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get contentManagementRepository](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-contentmanagementrepository-get?view=graph-rest-beta) method to the [contentManagementRepository](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentmanagementrepository?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRepository"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Method",
+          "ChangedApiName": "connect",
+          "ChangeType": "Addition",
+          "Description": "Added the [connect](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-contentmanagementrepository-connect?view=graph-rest-beta) method to the [contentManagementRepository](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentmanagementrepository?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRepository"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Method",
+          "ChangedApiName": "disconnect",
+          "ChangeType": "Addition",
+          "Description": "Added the [disconnect](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-contentmanagementrepository-disconnect?view=graph-rest-beta) method to the [contentManagementRepository](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentmanagementrepository?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRepository"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Method",
+          "ChangedApiName": "discoverAvailableRepositories",
+          "ChangeType": "Addition",
+          "Description": "Added the [discoverAvailableRepositories](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-contentmanagementrepository-discoveravailablerepositories?view=graph-rest-beta) method to the [contentManagementRepository](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentmanagementrepository?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRepository"
+        },
+        {
+          "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+          "ApiChange": "Method",
+          "ChangedApiName": "modify",
+          "ChangeType": "Addition",
+          "Description": "Added the [modify](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-contentmanagementrepository-modify?view=graph-rest-beta) method to the [contentManagementRepository](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentmanagementrepository?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRepository"
+        }
+      ],
+      "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-09T21:42:50.2377395Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Content management"
+    }
+  ]
+}

@@ -75,6 +75,8 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 | Open extensions | Returned only through the [Get open extension](opentypeextension-get.md) operation. |
 | Directory extensions | Returned only with `$select`. |
 
+The **isHardDeleteProtectionEnabled** property is returned only when explicitly requested with `$select`.
+
 ## Request headers
 
 | Header       | Value|
@@ -497,6 +499,32 @@ Content-type: application/json
         "courseName": "Introduction to Microsoft Graph",
         "courseId": 1
     }
+}
+```
+
+### Example 6: Get the hard deletion protection status of a user
+
+#### Request
+
+Use `$select` to retrieve **isHardDeleteProtectionEnabled**, which isn't returned by default.
+
+<!-- { "blockType": "request", "name": "get_user_hard_delete_protection" } -->
+```http
+GET https://graph.microsoft.com/beta/users/04b9f5a2-ee41-4d0e-b500-8de414d178c9?$select=id,displayName,isHardDeleteProtectionEnabled
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.user" } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,isHardDeleteProtectionEnabled)/$entity",
+  "id": "04b9f5a2-ee41-4d0e-b500-8de414d178c9",
+  "displayName": "Adele Vance",
+  "isHardDeleteProtectionEnabled": true
 }
 ```
 

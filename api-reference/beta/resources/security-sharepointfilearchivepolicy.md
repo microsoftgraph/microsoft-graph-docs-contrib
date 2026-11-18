@@ -1,5 +1,6 @@
 ---
 title: "sharePointFileArchivePolicy resource type"
+toc.title: "SharePoint file archive policy"
 description: "Represents audit data for SharePoint File Archive Policy events."
 author: "diksha27"
 ms.date: 9/29/2026

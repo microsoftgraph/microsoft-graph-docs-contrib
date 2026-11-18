@@ -13,7 +13,7 @@ ms.date: 09/10/2024
 
 Namespace: microsoft.graph
 
-Update a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). This method adds a [siteprotectionunit](../resources/siteprotectionunit.md) to or removes it from the protection policy.
+Update a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md). This method updates retention settings or adds a [siteProtectionUnit](../resources/siteprotectionunit.md) to or removes it from the protection policy.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -45,10 +45,13 @@ PATCH /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectio
 
 In the request body, provide a JSON representation of following properties to update **sharePointProtectionPolicy** object.
 
+Supply only the properties to update.
+
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Optional|
-|siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of siteProtectionUnit objects to be added to or removed from the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Required.|
+|displayName|String|Display Name of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Updated retention settings for the policy. If **retentionSettings** is omitted, the existing retention settings are unchanged. You can update **retentionSettings** without adding or removing protection units.|
+|siteProtectionUnits@delta|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|Collection of siteProtectionUnit objects to be added to or removed from the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
 
 To remove a **siteProtectionUnit** from the policy, specify the `@removed` annotation in the request body for the protection unit together with the ID of the [siteProtectionUnit](../resources/siteprotectionunit.md).
 
@@ -56,11 +59,15 @@ To remove a **siteProtectionUnit** from the policy, specify the `@removed` annot
 
 If successful, this method returns a `200 OK` response code and an updated [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) in the response body.
 
+The service returns the complete **retentionSettings** collection, rather than echoing the request collection. The response includes a fixed 14-day period (`P14D`) for the `R/PT10M` interval and the configured policy retention period for the `R/P1W` interval. The 14-day period is a service-defined backup tier, not a supported policy retention period for create or update requests.
+
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 
-### Request
+### Example 1: Add or remove protection units
+The following example shows how to add or remove protection units from the policy.
+#### Request
 
 The following example shows a request.
 
@@ -137,7 +144,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -351,6 +358,62 @@ HTTP/1.1 200 OK
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
       "error": null
+    }
+  ]
+}
+```
+
+### Example 2: Update the retention period
+The following example shows how to update the policy retention period to 180 days without changing its protection units.
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "sharepointprotectionpolicy_update_retention"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+Content-Type: application/json
+
+{
+  "retentionSettings": [
+    {
+      "interval": "R/P1W",
+      "period": "P180D"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response with the retention settings for both backup intervals.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointProtectionPolicy"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+  "retentionSettings": [
+    {
+      "interval": "R/PT10M",
+      "period": "P14D"
+    },
+    {
+      "interval": "R/P1W",
+      "period": "P180D"
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
 title: "List distributionLists"
-description: "Get a list of the distributionList objects in the user's mailbox."
+description: "Get a list of the personal distribution lists in the user's mailbox."
 author: "kemwangi"
 ms.date: 06/09/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [distributionList](../resources/distributionlist.md) objects in the user's mailbox.
+Get a list of the [personal distribution lists](../resources/distributionlist.md) in the user's mailbox.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

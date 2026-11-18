@@ -301,6 +301,15 @@ Namespace: microsoft.graph.security
 | prevented
 | unknownFutureValue
 
+### detectionRuleStatus values
+
+| Member             |
+| :----------------- |
+| enabled            |
+| disabled           |
+| autoDisabled       |
+| unknownFutureValue |
+
 ### eventPropagationStatus values
 
 | Member             |
@@ -710,6 +719,10 @@ Namespace: microsoft.graph.security
 |downloadText|
 |downloadFile|
 |unknownFutureValue|
+|copyToClipboard|
+|pasteFromClipboard|
+|print|
+|accessDebugTools|
 
 ### userActivityType values
 
@@ -720,6 +733,10 @@ Namespace: microsoft.graph.security
 |downloadText|
 |downloadFile|
 |unknownFutureValue|
+|copyToClipboard|
+|pasteFromClipboard|
+|print|
+|accessDebugTools|
 
 ### labelActionSource values
 

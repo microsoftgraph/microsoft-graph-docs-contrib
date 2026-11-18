@@ -39,6 +39,7 @@ POST /solutions/backupRestore/sharePointProtectionPolicies/
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -47,11 +48,14 @@ You can specify the following properties when creating a **sharePointProtectionP
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the SharePoint Protection Policy. Optional.|
-|siteProtectionUnits|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of the siteProtectionUnits to be added to the sharePointProtectionPolicy object. Required. Refer to [site](../resources/site.md) for the format of siteId.|
+|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Retention settings for the policy. Optional. If omitted, the default retention period is 365 days.|
+|siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|Collection of the siteProtectionUnits to be added to the sharePointProtectionPolicy object. Required. Refer to [site](../resources/site.md) for the format of siteId.|
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) object in the response body.
+
+The service returns the complete **retentionSettings** collection, rather than echoing the request collection. The response includes a fixed 14-day period (`P14D`) for the `R/PT10M` interval and the configured policy retention period for the `R/P1W` interval. The 14-day period is a service-defined backup tier, not a supported policy retention period for create or update requests.
 
 For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
@@ -59,9 +63,8 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ### Request
 
-The following example shows a request.
+The following example shows how to create a policy with a retention period of 180 days.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_create"
@@ -70,9 +73,16 @@ The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtectionPolicies
+Content-Type: application/json
 
 {
   "displayName": "SharePoint Protection Policy",
+  "retentionSettings": [
+    {
+      "interval": "R/P1W",
+      "period": "P180D"
+    }
+  ],
   "siteProtectionUnits": [
     {
       "siteId": "contoso.sharepoint.com,febad3c2-a7b2-454c-8910-272c7bcf78fc,ba7b70d0-8ba0-4cae-b19a-7cb8c739512f"
@@ -87,39 +97,9 @@ POST https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtecti
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/sharepointprotectionpolicy-create-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/sharepointprotectionpolicy-create-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/sharepointprotectionpolicy-create-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/sharepointprotectionpolicy-create-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/sharepointprotectionpolicy-create-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/sharepointprotectionpolicy-create-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/sharepointprotectionpolicy-create-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
-The following example shows the response.
+The following example shows the response with the retention settings for both backup intervals, including the requested 180-day retention period.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -163,14 +143,12 @@ Content-Location: https://graph.microsoft.com/v1.0/solutions/backupRestore/prote
   "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
   "retentionSettings": [
     {
-      //Keep the per 10 minute copies for 14 days
       "interval": "R/PT10M",
-      "period": "P2W"
+      "period": "P14D"
     },
     {
-      //Keep the per week copies for 1 year
       "interval": "R/P1W",
-      "period": "P1Y"
+      "period": "P180D"
     }
   ]
 }

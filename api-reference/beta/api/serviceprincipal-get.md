@@ -46,6 +46,8 @@ GET /servicePrincipals(appId='{appId}')
 ## Optional query parameters
 This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
+The **isHardDeleteProtectionEnabled** property is returned only when explicitly requested with `$select`.
+
 This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 By default, this API doesn't return the public key value of the **key** in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query.
@@ -396,6 +398,32 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
     "customSecurityAttributes": null
+}
+```
+
+### Example 4: Get the hard deletion protection status of a service principal
+
+#### Request
+
+Use `$select` to retrieve **isHardDeleteProtectionEnabled**, which isn't returned by default.
+
+<!-- { "blockType": "request", "name": "get_serviceprincipal_hard_delete_protection" } -->
+```http
+GET https://graph.microsoft.com/beta/servicePrincipals/c4ca17b7-4f3e-4c3a-b884-bfa4100c745d?$select=id,displayName,isHardDeleteProtectionEnabled
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.servicePrincipal" } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,displayName,isHardDeleteProtectionEnabled)/$entity",
+  "id": "c4ca17b7-4f3e-4c3a-b884-bfa4100c745d",
+  "displayName": "Contoso Finance",
+  "isHardDeleteProtectionEnabled": true
 }
 ```
 

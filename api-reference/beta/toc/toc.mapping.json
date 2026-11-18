@@ -674,6 +674,7 @@
             "cloudPcBulkResize",
             "cloudPcBulkRestart",
             "cloudPcBulkRestore",
+            "cloudPcBulkSetDeviceName",
             "cloudPcBulkTroubleshoot",
             "cloudPcBulkRemoteActionResult",
             "cloudPcBulkCreateSnapshot",
@@ -1774,10 +1775,15 @@
             {
               "name": "Verified ID",
               "resources": [
+                "identityVerificationEvent",
+                "identityVerificationStatus",
                 "verifiedIdProfile"
               ],
               "complexTypes": [
                 "mobileDriversLicenseConfiguration",
+                "verificationEventDetail",
+                "verificationEventLifecycle",
+                "verificationEventOverride",
                 "verifiedIdSelfServiceIssuance"
               ]
             },
@@ -1800,6 +1806,12 @@
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
                 "passwordlessMicrosoftAuthenticatorAuthenticationMethod"
+              ],
+              "complexTypes": [
+                "credentialProvenance",
+                "provenanceAssertedBy",
+                "provenanceAssertion",
+                "provenanceChainStatus"
               ],
               "childNodes": [
                 {
@@ -1862,6 +1874,7 @@
                 "conditionalAccessPolicy",
                 "conditionalAccessPolicyPlan",
                 "conditionalAccessPolicyRule",
+                "conditionalAccessSettings",
                 "conditionalAccessTemplate",
                 "continuousAccessEvaluationPolicy",
                 "namedLocation",
@@ -2246,9 +2259,25 @@
                 "microsoft.graph.networkaccess.fqdnFilteringRule",
                 "microsoft.graph.networkaccess.urlDestinationFilteringRule",
                 "microsoft.graph.networkaccess.webCategoryFilteringRule",
+                "microsoft.graph.networkaccess.webFilteringPolicy",
+                "microsoft.graph.networkaccess.webFilteringPolicyLink",
+                "microsoft.graph.networkaccess.webFilteringRule",
                 "microsoft.graph.networkAccess.threatIntelligencePolicy",
                 "microsoft.graph.networkAccess.threatIntelligencePolicyLink",
                 "microsoft.graph.networkAccess.threatIntelligenceRule"
+              ],
+              "complexTypes": [
+                "microsoft.graph.networkaccess.webFilteringAction",
+                "microsoft.graph.networkaccess.webFilteringActionAllow",
+                "microsoft.graph.networkaccess.webFilteringActionBlock",
+                "microsoft.graph.networkaccess.webFilteringDestinationMatching",
+                "microsoft.graph.networkaccess.webFilteringDestinationTarget",
+                "microsoft.graph.networkaccess.webFilteringMatchingConditions",
+                "microsoft.graph.networkaccess.webFilteringPolicySettings",
+                "microsoft.graph.networkaccess.webFilteringRuleSettings",
+                "microsoft.graph.networkaccess.webFilteringSourceMatching",
+                "microsoft.graph.networkaccess.webFilteringUrlDestination",
+                "microsoft.graph.networkaccess.webFilteringWebCategoryDestination"
               ]
             },
             {
@@ -2923,6 +2952,23 @@
           ]
         },
         {
+          "name": "Agentic security",
+          "overview": "../../resources/agenticsecurity-apioverview.md",
+          "resources": [
+            "agenticSecurityRoot",
+            "agentRun",
+            "investigationInput",
+            "investigationOutput",
+            "investigationSession",
+            "playbookDefinition"
+          ],
+          "complexTypes": [
+            "agentInfo",
+            "agentRunFailureInfo",
+            "investigationIdentitySet"
+          ]
+        },
+        {
           "name": "Alerts and incidents",
           "resources": [
             "microsoft.graph.security.alert",
@@ -3029,6 +3075,13 @@
           ]
         },
         {
+          "name": "Content management (preview)",
+          "resources": [
+            "contentManagementRoot",
+            "microsoft.graph.security.contentManagement.contentManagementRepository"
+          ]
+        },
+        {
           "name": "Custom detection rules",
           "resources": [
             "microsoft.graph.security.detectionRule"
@@ -3076,6 +3129,7 @@
         {
           "name": "Data security and compliance",
           "resources": [
+            "classificationGradingJobResponse",
             "contentActivity",
             "microsoft.graph.security.sensitivityLabel",
             "sensitiveType",
@@ -3096,6 +3150,7 @@
             "chunkOffsets",
             "classifcationErrorBase",
             "classificationError",
+            "classificationGradingContentLocation",
             "classificationInnerError",
             "classificationRequestContentMetaData",
             "computeRightsAndInheritanceResult",
@@ -3141,6 +3196,7 @@
             "restrictAccessAction",
             "restrictAccessActionBase",
             "scopeBase",
+            "sensitiveContentEvidence",
             "tenantScope",
             "textContent",
             "toolParticipant",
@@ -3837,6 +3893,7 @@
             "pinnedChatMessageInfo",
             "targetedChatMessage",
             "team",
+            "teamworkChannelTag",
             "teamworkTag",
             "teamworkTagMember"
           ],

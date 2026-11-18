@@ -61,6 +61,8 @@ You can specify the following properties and relationships when creating a **det
 |schedule|[microsoft.graph.security.ruleSchedule](../resources/security-ruleschedule.md)|The triggering schedule of this rule. Required.|
 |status|[microsoft.graph.security.detectionRuleStatus](../resources/enums-security.md#detectionrulestatus-values)|The current run status of the rule. The possible values are: `enabled`, `disabled`, `autoDisabled`, `unknownFutureValue`. Required.|
 
+Set **schedule**/**lookback** to control how far back each scheduled run reads events. If omitted, the service derives the lookback from **schedule**/**frequency**. Set **detectionAction**/**alertTemplate**/**eventGroupingKind** to `singleAlert` to group matching events from one scheduled execution into a single alert. Omitting the grouping setting preserves the default `alertPerEvent` behavior.
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) object in the response body.
@@ -69,7 +71,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-The following example shows a request.
+The following example creates a rule that runs hourly, evaluates a four-hour lookback window, and groups matching events from each execution into a single alert.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,13 +93,15 @@ Content-Type: application/json
     "queryText": "DeviceProcessEvents | where InitiatingProcessFileName in~ ('winword.exe','excel.exe','outlook.exe') | where FileName == 'powershell.exe' | where ProcessCommandLine has '-enc'"
   },
   "schedule": {
-    "frequency": "PT1H"
+    "frequency": "PT1H",
+    "lookback": "PT4H"
   },
   "detectionAction": {
     "alertTemplate": {
       "title": "Suspicious encoded PowerShell from Office",
       "description": "An Office app launched an encoded PowerShell command, which may indicate phishing-driven code execution.",
       "severity": "high",
+      "eventGroupingKind": "singleAlert",
       "recommendedActions": "Investigate the parent Office document, isolate the device, and review the user's recent email activity.",
       "entityMappings": {
         "accounts": [
@@ -200,13 +204,15 @@ Location: https://graph.microsoft.com/beta/security/rules/detectionRules/office-
     "queryText": "DeviceProcessEvents | where InitiatingProcessFileName in~ ('winword.exe','excel.exe','outlook.exe') | where FileName == 'powershell.exe' | where ProcessCommandLine has '-enc'"
   },
   "schedule": {
-    "frequency": "PT1H"
+    "frequency": "PT1H",
+    "lookback": "PT4H"
   },
   "detectionAction": {
     "alertTemplate": {
       "title": "Suspicious encoded PowerShell from Office",
       "description": "An Office app launched an encoded PowerShell command, which may indicate phishing-driven code execution.",
       "severity": "high",
+      "eventGroupingKind": "singleAlert",
       "recommendedActions": "Investigate the parent Office document, isolate the device, and review the user's recent email activity.",
       "entityMappings": {
         "accounts": [

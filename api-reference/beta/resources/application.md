@@ -87,6 +87,7 @@ This resource supports:
 | isDeviceOnlyAuthSupported | Boolean | Specifies whether this application supports device authentication without a user. The default is `false`.  |
 | isDisabled | Boolean | Deactivate an app without deleting it. This configuration specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources. When set to `true`, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.`true` if the application is deactivated (disabled); otherwise `false`. Learn more in [Deactivate an app registration](/entra/identity/enterprise-apps/deactivate-app-registration).|
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false`, which means the fallback application type is confidential client such as a web app. There are certain scenarios where Microsoft Entra ID can't determine the client application type. For example, the [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where the application is configured without specifying a redirect URI. In those cases Microsoft Entra ID interprets the application type based on the value of this property.|
+| isHardDeleteProtectionEnabled | Boolean | Indicates whether hard deletion protection is enabled for the application. When `true`, permanent deletion is blocked for seven days after soft deletion. The application can still be soft deleted and restored. Once enabled, protection can't be disabled or set to `null`. Enable protection on an existing application by using [Update application](../api/application-update.md); enabling it during creation isn't supported. Setting this property to `true` requires the *Microsoft Entra Backup Administrator* role. Nullable. Requires `$select` to retrieve. Supports `$filter` (`eq`). |
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | logo | Stream | The main logo for the application. Not nullable. |
 | managerApplications | Guid collection | A collection of application IDs for applications designated as managers of this application. Manager applications can create service principals for the applications they manage. Currently, only Microsoft first-party application IDs can be set as values. Maximum of 10 values. Not nullable. Read-only for third-party (3P) callers; writes by 3P callers are rejected with a `400 Bad Request` error. Requires `$select` to retrieve. |
@@ -183,6 +184,7 @@ The following JSON representation shows the resource type.
   "isDeviceOnlyAuthSupported": false,
   "isDisabled": "Boolean",
   "isFallbackPublicClient": false,
+  "isHardDeleteProtectionEnabled": "Boolean",
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
   "managerApplications": ["Guid"],
@@ -228,4 +230,3 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-

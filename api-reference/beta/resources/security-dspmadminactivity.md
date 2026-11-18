@@ -1,5 +1,6 @@
 ---
 title: "dspmAdminActivity resource type"
+toc.title: "DSPM admin activity"
 description: "Represents audit data for DSPM Admin Activity events."
 author: "diksha27"
 ms.date: 9/29/2026

@@ -172,6 +172,8 @@ items:
       href: ../../api/cloudpc-reboot.md
     - name: Rename
       href: ../../api/cloudpc-rename.md
+    - name: Set device name
+      href: ../../api/cloudpc-setdevicename.md
     - name: Reprovision
       href: ../../api/cloudpc-reprovision.md
     - name: Resize
@@ -679,6 +681,8 @@ items:
       href: ../../resources/cloudpcbulkrestart.md
     - name: Cloud PC bulk restore
       href: ../../resources/cloudpcbulkrestore.md
+    - name: Cloud PC bulk set device name
+      href: ../../resources/cloudpcbulksetdevicename.md
     - name: Cloud PC bulk set review status
       href: ../../resources/cloudpcbulksetreviewstatus.md
     - name: Cloud PC bulk troubleshoot

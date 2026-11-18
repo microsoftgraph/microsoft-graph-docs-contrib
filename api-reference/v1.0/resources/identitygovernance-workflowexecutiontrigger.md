@@ -5,7 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 10/22/2024
+ms.date: 10/26/2026
 ---
 
 # workflowExecutionTrigger resource type
@@ -15,6 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 The derived types of this abstract object are configured in the **trigger** property of the [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerandscopebasedconditions.md) resource when a lifecycle workflow runs on schedule. Inherited by the following derived types:
 
 + [timeBasedAttributeTrigger](../resources/identitygovernance-timebasedattributetrigger.md)
++ [timeBasedAttributeTriggerV2](../resources/identitygovernance-timebasedattributetriggerv2.md)
 + [attributeChangeTrigger](../resources/identitygovernance-attributechangetrigger.md)
 
 ## Properties

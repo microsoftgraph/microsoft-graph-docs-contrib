@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Update the [tenantSetting](../resources/windowsupdates-tenantsetting.md) singleton for the current tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

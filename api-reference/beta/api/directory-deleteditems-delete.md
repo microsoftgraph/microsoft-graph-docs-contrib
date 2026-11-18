@@ -1,6 +1,6 @@
 ---
 title: "Permanently delete item (directory object)"
-ms.date: 11/17/2025
+ms.date: 06/05/2026
 description: "Permanently delete a recently deleted application, group, service principal, or user from deleted items."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
@@ -22,6 +22,7 @@ Permanently delete a recently deleted directory object from [deleted items](../r
 - [agentUser](../resources/agentuser.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
+- [device](../resources/device.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
@@ -31,6 +32,11 @@ Permanently delete a recently deleted directory object from [deleted items](../r
 After an item is permanently deleted, it **cannot** be restored.
 
 Administrative units **cannot** be permanently deleted by using the **deletedItems** API. Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
+
+> [!IMPORTANT]
+> Hard deletion protection blocks permanent deletion of a protected [user](../resources/user.md) (excluding on-premises synchronized users), cloud-only [group](../resources/group.md), [application](../resources/application.md), or [servicePrincipal](../resources/serviceprincipal.md) for the first seven days after soft deletion. Protection is enabled by setting **isHardDeleteProtectionEnabled** to `true` on an existing object and can't be disabled.
+>
+> The object can still be soft deleted and [restored](../api/directory-deleteditems-restore.md). If a protected object is restored and then soft deleted again, a new seven-day protection period begins. After the protection period expires, an authorized caller can permanently delete the object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -48,6 +54,7 @@ The following table shows the least privileged permission or permissions require
 | [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.ReadWrite.All | Not supported | ExternalUserProfile.ReadWrite.All |
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [device](../resources/device.md) | Device.ReadWrite.All | Not supported. | Device.ReadWrite.All |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Not supported. |
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.ReadWrite.All | Not supported | PendingExternalUserProfile.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
@@ -74,8 +81,13 @@ Don't supply a request body for this method.
 
 If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
-### Request
+If hard deletion protection is enabled and the object is still within the seven-day protection period, this method returns `409 Conflict` with the `Request_ConflictingRequest` error code. Wait until the protection period expires before trying to permanently delete the object.
+
+## Examples
+
+### Example 1: Permanently delete an item
+
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -117,14 +129,44 @@ DELETE https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473
 
 ---
 
-### Response
-Note: The response object shown here might be shortened for readability.
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
+```
+
+### Example 2: Attempt to permanently delete a protected item
+
+#### Request
+
+The following request attempts to permanently delete an object with **isHardDeleteProtectionEnabled** set to `true` before its seven-day protection period expires.
+
+<!-- { "blockType": "request", "name": "delete_directory_deleteditem_hard_delete_protection" } -->
+```http
+DELETE https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.error" } -->
+```http
+HTTP/1.1 409 Conflict
+Content-Type: application/json
+
+{
+  "error": {
+    "code": "Request_ConflictingRequest",
+    "message": "The object cannot be permanently deleted because isHardDeleteProtectionEnabled is set to true.",
+    "innerError": {
+      "date": "2026-10-30T12:00:00",
+      "request-id": "a9ee5607-56bd-4ce1-bcf5-66a11c8358b0",
+      "client-request-id": "7fc3fe7b-2070-4f3f-8b0c-949ae8c03509"
+    }
+  }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -140,5 +182,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

@@ -25,6 +25,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|backupRetentionPeriodInDays|Int32|The policy-configured retention period of the backup, in days. Not nullable. Inherited from [protectionUnitBase](protectionunitbase.md).|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |directoryObjectId|String|The ID of the directory object.|
@@ -35,6 +36,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |lastModifiedDateTime|DateTimeOffset|The time the protection unit was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |offboardRequestedDateTime|DateTimeOffset|The date and time when protection unit offboard was requested. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|pendingRetentionPeriodChange|[retentionPeriodChange](retentionperiodchange.md)|The retention period change to be applied to the protection unit when it moves between policies with different retention periods. Read-only. `null` when no change is pending. Inherited from [protectionUnitBase](protectionunitbase.md).|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. A protection unit protected by multiple sources is indicated by comma-separated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`, `offboardRequested`, `offboarded`, `cancelOffboardRequested`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `offboardRequested`, `offboarded`, `cancelOffboardRequested`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
@@ -55,6 +57,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
+  "backupRetentionPeriodInDays": "Int32",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "directoryObjectId": "String",
@@ -65,9 +68,9 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "offboardRequestedDateTime": "String (timestamp)",
+  "pendingRetentionPeriodChange": {"@odata.type": "microsoft.graph.retentionPeriodChange"},
   "policyId": "String",
   "protectionSources": "String",
   "status": "String"
 }
 ```
-

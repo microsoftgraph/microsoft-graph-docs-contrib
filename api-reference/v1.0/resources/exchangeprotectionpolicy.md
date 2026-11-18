@@ -27,12 +27,13 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the protection rule associated to the policy.|
-|displayName|String|Name of the policy to be created. |
-|createdDateTime|DateTimeOffset|The time of creation of the policy.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
+|createdDateTime|DateTimeOffset|The time of creation of the policy.|
+|displayName|String|Name of the policy to be created. |
+|id|String|The unique identifier of the protection rule associated to the policy.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification of the policy.|
+|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Retention settings for the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 |status|[protectionPolicyStatus](../resources/exchangeProtectionPolicy.md#protectionpolicystatus-values)|Status of the policy. This value is an aggregated status of the protection units. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
 
 ### protectionPolicyStatus values
@@ -65,6 +66,11 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.exchangeProtectionPolicy",
   "id": "String (identifier)",
   "displayName": "String",
+  "retentionSettings": [
+    {
+      "@odata.type": "microsoft.graph.retentionSetting"
+    }
+  ],
   "status": "String",
   "createdDateTime": "String (timestamp)",
   "createdBy": {
@@ -76,4 +82,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

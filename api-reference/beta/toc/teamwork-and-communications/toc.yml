@@ -983,6 +983,10 @@ items:
       href: ../../api/sharedwithchannelteaminfo-list-allowedmembers.md
     - name: Check user access
       href: ../../api/channel-doesuserhaveaccess.md
+    - name: List tags
+      href: ../../api/channel-list-tags.md
+    - name: Create tag
+      href: ../../api/channel-post-tags.md
     - name: Planner
       items:
       - name: List plans
@@ -1259,6 +1263,30 @@ items:
       href: ../../api/team-getshifts.md
     - name: Get times off across all joined teams
       href: ../../api/team-gettimesoff.md
+  - name: Teamwork channel tag
+    items:
+    - name: Teamwork channel tag
+      href: ../../resources/teamworkchanneltag.md
+    - name: List
+      href: ../../api/channel-list-tags.md
+    - name: Create
+      href: ../../api/channel-post-tags.md
+    - name: Get
+      href: ../../api/teamworkchanneltag-get.md
+    - name: Update
+      href: ../../api/teamworkchanneltag-update.md
+    - name: Delete
+      href: ../../api/teamworkchanneltag-delete.md
+    - name: Channel tag membership
+      items:
+      - name: List members
+        href: ../../api/teamworkchanneltag-list-members.md
+      - name: Create member
+        href: ../../api/teamworkchanneltag-post-members.md
+      - name: Get member
+        href: ../../api/teamworkchanneltag-get-members.md
+      - name: Delete member
+        href: ../../api/teamworkchanneltag-delete-members.md
   - name: Teamwork tag
     items:
     - name: Teamwork tag
@@ -1285,6 +1313,16 @@ items:
       href: ../../api/teamworktagmember-get.md
     - name: Delete
       href: ../../api/teamworktagmember-delete.md
+    - name: Channel tag membership
+      items:
+      - name: List channel tag members
+        href: ../../api/teamworkchanneltag-list-members.md
+      - name: Create channel tag member
+        href: ../../api/teamworkchanneltag-post-members.md
+      - name: Get channel tag member
+        href: ../../api/teamworkchanneltag-get-members.md
+      - name: Delete channel tag member
+        href: ../../api/teamworkchanneltag-delete-members.md
   - name: Activity feed
     items:
     - name: Send notification to user in chat

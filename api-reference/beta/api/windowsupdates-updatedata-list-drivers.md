@@ -15,7 +15,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get a list of [driverUpdateReport](../resources/windowsupdates-driverupdatereport.md) resources for driver and firmware updates available in the tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

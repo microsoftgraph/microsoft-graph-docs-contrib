@@ -1,5 +1,6 @@
 ---
 title: "vivaGlintClientConfiguration resource type"
+toc.title: "Viva Glint client configuration"
 description: "Represents audit data for Viva Glint Client Configuration events."
 author: "diksha27"
 ms.date: 9/29/2026

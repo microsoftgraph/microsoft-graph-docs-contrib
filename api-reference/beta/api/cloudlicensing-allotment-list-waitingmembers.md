@@ -16,7 +16,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 Get a list of over-assigned [users](../resources/cloudlicensing-waitingmember.md) who are in the waiting room due to license capacity limits. Use `/admin/cloudLicensing/allotments/{allotmentId}/waitingMembers` to retrieve all [waitingMember](../resources/cloudlicensing-waitingmember.md) objects for a specific allotment. Use `/users/{userId}/cloudLicensing/waitingMembers` to retrieve all allotments that a specific user is waiting for.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

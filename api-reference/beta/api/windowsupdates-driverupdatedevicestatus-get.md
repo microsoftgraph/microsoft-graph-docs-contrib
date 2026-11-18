@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get a [driverUpdateDeviceStatus](../resources/windowsupdates-driverupdatedevicestatus.md) resource for a driver or firmware update.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

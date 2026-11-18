@@ -50,6 +50,7 @@ Represents the Microsoft Entra tenant that the user or application is authentica
 | preferredLanguage | String | The preferred language for the organization. Should follow ISO 639-1 code; for example, `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | The privacy profile of an organization. |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) collection | Not nullable. |
+| resourceQuotas | [resourceQuota](resourcequota.md) collection | The quota configurations for resource types in the organization. Each `resourceType` value must be unique in the collection. The **maxPercentage** value represents the maximum percentage of `directorySizeQuota.total` that the resource type can consume, from `0` to `100`. A value of `0` blocks creation of new resources of that type. |
 | securityComplianceNotificationMails | String collection | Not nullable.|
 | securityComplianceNotificationPhones | String collection | Not nullable.|
 | state | String | State name of the address for the organization. |
@@ -115,6 +116,7 @@ The following JSON representation shows the resource type.
   "preferredLanguage": "String",
   "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
+  "resourceQuotas": [{"@odata.type": "microsoft.graph.resourceQuota"}],
   "securityComplianceNotificationMails": ["String"],
   "securityComplianceNotificationPhones": ["String"],
   "state": "String",

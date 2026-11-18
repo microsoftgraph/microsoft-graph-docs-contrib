@@ -5,7 +5,7 @@ author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 04/18/2024
+ms.date: 10/26/2026
 ---
 
 # Create workflow
@@ -489,5 +489,520 @@ Content-Type: application/json
       "id": "2c987843-e9b1-4b1a-b924-ff1d2a9b054d"
     }
   ]
+}
+```
+
+### Example 4: Create a workflow that runs seven days before a hire date
+
+#### Request
+
+The following example creates a joiner workflow that runs exactly seven days before a user's hire date and generates a Temporary Access Pass to send to the user's manager.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_create_workflow_timebasedv2_equal_before"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+Content-Type: application/json
+
+{
+  "category": "joiner",
+  "displayName": "Pre-hire onboarding: 7 days before hire",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": {
+      "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+      "rule": "(department eq 'Engineering')"
+    },
+    "trigger": {
+      "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
+      "attribute": "employeeHireDate",
+      "operator": {
+        "@odata.type": "#microsoft.graph.identityGovernance.operatorEqualTo",
+        "eventTiming": "before",
+        "offsetInDays": 7
+      }
+    }
+  },
+  "tasks": [
+    {
+      "isEnabled": true,
+      "taskDefinitionId": "1b555e50-7f65-41d5-b514-5894a026d10d",
+      "displayName": "Generate Temporary Access Pass and send via email to user's manager",
+      "arguments": [
+        {
+          "name": "tapLifetimeMinutes",
+          "value": "480"
+        },
+        {
+          "name": "tapIsUsableOnce",
+          "value": "false"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+  "id": "c35e0d2a-8725-4aa1-b132-6b21a80635b5",
+  "category": "joiner",
+  "displayName": "Pre-hire onboarding: 7 days before hire",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "version": 1
+}
+```
+
+### Example 5: Create a workflow for users within 60 days after a leave date
+
+#### Request
+
+The following example creates a leaver workflow that scopes users whose leave date was 60 days ago or fewer and sends an offboarding email to their managers.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_create_workflow_timebasedv2_lessthanequal_after"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+Content-Type: application/json
+
+{
+  "category": "leaver",
+  "displayName": "Post-leave notification: within 60 days after leave",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": {
+      "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+      "rule": "(department eq 'Finance')"
+    },
+    "trigger": {
+      "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
+      "attribute": "employeeLeaveDateTime",
+      "operator": {
+        "@odata.type": "#microsoft.graph.identityGovernance.operatorLessThanEqualTo",
+        "eventTiming": "after",
+        "offsetInDays": 60
+      }
+    }
+  },
+  "tasks": [
+    {
+      "isEnabled": true,
+      "taskDefinitionId": "6f22ddd4-b3a5-47a4-a846-0d7c201a49ce",
+      "displayName": "Send offboarding email to user's manager after their last day",
+      "arguments": []
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+  "id": "83d68cba-56c0-4412-8bf7-1af2befc1333",
+  "category": "leaver",
+  "displayName": "Post-leave notification: within 60 days after leave",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "version": 1
+}
+```
+
+### Example 6: Create a workflow for users hired between 7 and 30 days ago
+
+#### Request
+
+The following example creates a joiner workflow that scopes users hired more than seven days and fewer than 30 days ago and sends an onboarding reminder email.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_create_workflow_timebasedv2_between_after"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+Content-Type: application/json
+
+{
+  "category": "joiner",
+  "displayName": "Post-hire check-in: 7 to 30 days after hire",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": {
+      "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+      "rule": "(department eq 'Engineering')"
+    },
+    "trigger": {
+      "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
+      "attribute": "employeeHireDate",
+      "operator": {
+        "@odata.type": "#microsoft.graph.identityGovernance.operatorBetween",
+        "eventTiming": "after",
+        "greaterThanOffsetInDays": 7,
+        "lessThanOffsetInDays": 30
+      }
+    }
+  },
+  "tasks": [
+    {
+      "isEnabled": true,
+      "taskDefinitionId": "3c860712-2d37-42a4-928f-5c93935d26a1",
+      "displayName": "Send onboarding reminder email",
+      "arguments": []
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+  "id": "445ffc46-3ccc-4e1a-bac9-aef675ee8d18",
+  "category": "joiner",
+  "displayName": "Post-hire check-in: 7 to 30 days after hire",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "version": 1
+}
+```
+
+### Example 7: Create a workflow for users between 3 and 14 days before a leave date
+
+#### Request
+
+The following example creates a leaver workflow that scopes users whose leave date is more than three days and fewer than 14 days in the future and sends an email to their managers before their last day.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_create_workflow_timebasedv2_between_before"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+Content-Type: application/json
+
+{
+  "category": "leaver",
+  "displayName": "Pre-leave prep: 3 to 14 days before leave",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": {
+      "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+      "rule": "(department eq 'Engineering')"
+    },
+    "trigger": {
+      "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
+      "attribute": "employeeLeaveDateTime",
+      "operator": {
+        "@odata.type": "#microsoft.graph.identityGovernance.operatorBetween",
+        "eventTiming": "before",
+        "greaterThanOffsetInDays": 3,
+        "lessThanOffsetInDays": 14
+      }
+    }
+  },
+  "tasks": [
+    {
+      "isEnabled": true,
+      "taskDefinitionId": "52853a3e-f4e5-4eb8-bb24-1ac09a1da935",
+      "displayName": "Send email to manager before user last day",
+      "arguments": []
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+  "id": "6bc1a524-6df8-4cfd-ac6d-caf9f88b3702",
+  "category": "leaver",
+  "displayName": "Pre-leave prep: 3 to 14 days before leave",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "version": 1
+}
+```
+
+### Example 8: Create a workflow that runs on a hire date
+
+#### Request
+
+The following example creates a joiner workflow that runs on a user's hire date and enables the user's account. When `offsetInDays` is `0`, `eventTiming` must be set to `on`.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_create_workflow_timebasedv2_equal_on"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+Content-Type: application/json
+
+{
+  "category": "joiner",
+  "displayName": "Day-of-hire: enable account",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": {
+      "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+      "rule": "(department eq 'Engineering')"
+    },
+    "trigger": {
+      "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
+      "attribute": "employeeHireDate",
+      "operator": {
+        "@odata.type": "#microsoft.graph.identityGovernance.operatorEqualTo",
+        "eventTiming": "on",
+        "offsetInDays": 0
+      }
+    }
+  },
+  "tasks": [
+    {
+      "isEnabled": true,
+      "taskDefinitionId": "6fc52c9d-398b-4305-9763-15f42c1676fc",
+      "displayName": "Enable user account",
+      "arguments": []
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+  "id": "275fb885-528a-46f1-b5cf-cfdfb7069824",
+  "category": "joiner",
+  "displayName": "Day-of-hire: enable account",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "version": 1
+}
+```
+
+### Example 9: Create a workflow that runs 30 days after a leave date
+
+#### Request
+
+The following example creates a leaver workflow that runs exactly 30 days after a user's leave date and deletes the user's account.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_create_workflow_timebasedv2_equal_after"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+Content-Type: application/json
+
+{
+  "category": "leaver",
+  "displayName": "Post-leave cleanup: 30 days after leave",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": {
+      "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+      "rule": "(department eq 'Engineering')"
+    },
+    "trigger": {
+      "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
+      "attribute": "employeeLeaveDateTime",
+      "operator": {
+        "@odata.type": "#microsoft.graph.identityGovernance.operatorEqualTo",
+        "eventTiming": "after",
+        "offsetInDays": 30
+      }
+    }
+  },
+  "tasks": [
+    {
+      "isEnabled": true,
+      "taskDefinitionId": "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff",
+      "displayName": "Delete user",
+      "arguments": []
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+  "id": "83b77dc5-751d-4640-b628-69d949b09bac",
+  "category": "leaver",
+  "displayName": "Post-leave cleanup: 30 days after leave",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "version": 1
+}
+```
+
+### Example 10: Create a workflow for users within 14 days of a leave date
+
+#### Request
+
+The following example creates a leaver workflow that scopes users whose leave date is 14 days or fewer in the future and sends an email to their managers before their last day.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_create_workflow_timebasedv2_lessthanequal_before"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows
+Content-Type: application/json
+
+{
+  "category": "leaver",
+  "displayName": "Pre-leave: within 14 days of leave",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": {
+      "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+      "rule": "(department eq 'Engineering')"
+    },
+    "trigger": {
+      "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTriggerV2",
+      "attribute": "employeeLeaveDateTime",
+      "operator": {
+        "@odata.type": "#microsoft.graph.identityGovernance.operatorLessThanEqualTo",
+        "eventTiming": "before",
+        "offsetInDays": 14
+      }
+    }
+  },
+  "tasks": [
+    {
+      "isEnabled": true,
+      "taskDefinitionId": "52853a3e-f4e5-4eb8-bb24-1ac09a1da935",
+      "displayName": "Send email to manager before user last day",
+      "arguments": []
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+  "id": "b784cf0f-1b6e-4e04-bb24-d2af0261514d",
+  "category": "leaver",
+  "displayName": "Pre-leave: within 14 days of leave",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "version": 1
 }
 ```

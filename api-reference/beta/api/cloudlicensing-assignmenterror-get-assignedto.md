@@ -16,7 +16,7 @@ Namespace: microsoft.graph.cloudLicensing
 
 Get a [user](../resources/directoryobject.md) or [group](../resources/directoryobject.md) object for a given [assignmentError](../resources/cloudlicensing-assignmenterror.md) to which licenses are assigned.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
