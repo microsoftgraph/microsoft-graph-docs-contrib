@@ -3,6 +3,192 @@
     {
       "ChangeList": [
         {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Property",
+          "ChangedApiName": "storageConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **storageConfiguration** property to [cloudPCUserSettingsPersistenceDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta). Configures the storage behavior for persisted user settings.",
+          "Target": "cloudPCUserSettingsPersistenceDetail"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Property",
+          "ChangedApiName": "autoCleanupDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoCleanupDetail** property to [cloudPCUserSettingsPersistenceDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta). The settings that enable automatic cleanup of inactive detached profiles for user settings persistence. The default value is `null`.",
+          "Target": "cloudPCUserSettingsPersistenceDetail"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Property",
+          "ChangedApiName": "snapshotConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **snapshotConfiguration** property to [cloudPCUserSettingsPersistenceDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta). The specific settings for automatic snapshots of user settings persistence profiles. The default value is `null`.",
+          "Target": "cloudPCUserSettingsPersistenceDetail"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "userProfileSnapshots",
+          "ChangeType": "Addition",
+          "Description": "Added the **userProfileSnapshots** relationship to [cloudPCUserSettingsPersistenceDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta). The collection of point-in-time snapshots of user settings persistence cloud profiles for this assignment.",
+          "Target": "cloudPCUserSettingsPersistenceDetail"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "cloudPcUserProfileSnapshot",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcUserProfileSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcuserprofilesnapshot?view=graph-rest-beta) resource type. Represents a point-in-time snapshot of a user settings persistence cloud profile.",
+          "Target": "cloudPcUserProfileSnapshot"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "cloudPcStorageConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcStorageConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcstorageconfiguration?view=graph-rest-beta) resource type. Describes the storage configuration for Cloud PC user settings persistence, including the sizing type and the allocated storage size.",
+          "Target": "cloudPcStorageConfiguration"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Property",
+          "ChangedApiName": "usageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **usageDetail** property to [cloudPCUserSettingsPersistenceProfile](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistenceprofile?view=graph-rest-beta). The usage detail of the cloud profile for a specific user, including the current used size and the last sync time. Read-Only.",
+          "Target": "cloudPCUserSettingsPersistenceProfile"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Property",
+          "ChangedApiName": "profileDiskEncryptionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **profileDiskEncryptionType** property to [cloudPCUserSettingsPersistenceProfile](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistenceprofile?view=graph-rest-beta). The cloud profile disk encryption type of this cloud profile. Possible values: `platformManagedKey`, `customerManagedKey`. Default: `platformManagedKey`. Read-Only.",
+          "Target": "cloudPCUserSettingsPersistenceProfile"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "cloudPCUserSettingsPersistenceProfileUsageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPCUserSettingsPersistenceProfileUsageDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistenceprofileusagedetail?view=graph-rest-beta) resource type. Describes the usage detail of the cloud profile for specific Cloud PC user settings persistence, including the current used size and the last sync time.",
+          "Target": "cloudPCUserSettingsPersistenceProfileUsageDetail"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPCUserSettingsPersistenceAutoCleanupDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPCUserSettingsPersistenceAutoCleanupDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistenceautocleanupdetail?view=graph-rest-beta) resource type. Describes the cloud profile auto cleanup configuration for user settings persistence.",
+          "Target": "cloudPCUserSettingsPersistenceAutoCleanupDetail"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcAutoCleanupMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcAutoCleanupMode** enumeration in [cloudPCUserSettingsPersistenceAutoCleanupDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistenceautocleanupdetail?view=graph-rest-beta). Defines the cleanup mode for detached cloud profiles in user settings persistence. This is a flags enum that supports bitwise combination of values.",
+          "Target": "cloudPcAutoCleanupMode"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcUserSettingsPersistenceSnapshotConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcUserSettingsPersistenceSnapshotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistencesnapshotconfiguration?view=graph-rest-beta) resource type. Represents the automatic snapshot settings for user settings persistence profiles.",
+          "Target": "cloudPcUserSettingsPersistenceSnapshotConfiguration"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcUserProfileBulkActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the abstract [cloudPcUserProfileBulkActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcuserprofilebulkactionresult?view=graph-rest-beta) resource type. Represents the abstract base result of a bulk action on user settings persistence cloud profile snapshots.",
+          "Target": "cloudPcUserProfileBulkActionResult"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcUserProfileSnapshotCreateBulkActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcUserProfileSnapshotCreateBulkActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcuserprofilesnapshotcreatebulkactionresult?view=graph-rest-beta) resource type. Represents the result of the `bulkCreateUserProfileSnapshot` action.",
+          "Target": "cloudPcUserProfileSnapshotCreateBulkActionResult"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcUserProfileSnapshotExportBulkActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcUserProfileSnapshotExportBulkActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcuserprofilesnapshotexportbulkactionresult?view=graph-rest-beta) resource type. Represents the result of the `bulkExportUserProfileSnapshot` action.",
+          "Target": "cloudPcUserProfileSnapshotExportBulkActionResult"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcUserProfileSnapshotStorageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcUserProfileSnapshotStorageDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcuserprofilesnapshotstoragedetail?view=graph-rest-beta) resource type. Represents the target storage details for exporting user settings persistence cloud profile snapshots.",
+          "Target": "cloudPcUserProfileSnapshotStorageDetail"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcStorageSizingType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcStorageSizingType** enumeration type to describe the storage sizing type for user settings persistence.",
+          "Target": "cloudPcStorageSizingType"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcUserSettingsPersistenceSnapshotType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcUserSettingsPersistenceSnapshotType** enumeration in [user profile snapshots](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcuserprofilesnapshot?view=graph-rest-beta). Describes the type of snapshot for a user settings persistence profile.",
+          "Target": "cloudPcUserSettingsPersistenceSnapshotType"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkCreateUserProfileSnapshot",
+          "ChangeType": "Addition",
+          "Description": "Added the [bulkCreateUserProfileSnapshot](https://learn.microsoft.com/en-us/graph/api/cloudpcusersettingspersistencedetail-bulkcreateuserprofilesnapshot?view=graph-rest-beta) action. Triggers manual snapshots for selected user settings persistence profiles.",
+          "Target": "cloudPCUserSettingsPersistenceDetail"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Method",
+          "ChangedApiName": "bulkExportUserProfileSnapshot",
+          "ChangeType": "Addition",
+          "Description": "Added the [bulkExportUserProfileSnapshot](https://learn.microsoft.com/en-us/graph/api/cloudpcusersettingspersistencedetail-bulkexportuserprofilesnapshot?view=graph-rest-beta) action. Exports selected snapshots to a customer-managed Azure storage account.",
+          "Target": "cloudPCUserSettingsPersistenceDetail"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/cloudpcuserprofilesnapshot-restore?view=graph-rest-beta) action. Restores a user settings persistence profile from the bound snapshot.",
+          "Target": "cloudPcUserProfileSnapshot"
+        },
+        {
+          "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+          "ApiChange": "Property",
+          "ChangedApiName": "userSettingsPersistenceStorageSizeCategory",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **userSettingsPersistenceStorageSizeCategory** property on the [cloudPcUserSettingsPersistenceConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistenceconfiguration?view=graph-rest-beta) resource type. After December 11, 2026, use the **allocatedStorageSizeCategory** property on the [cloudPcStorageConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcstorageconfiguration?view=graph-rest-beta) resource type instead.",
+          "Target": "cloudPcUserSettingsPersistenceConfiguration"
+        }
+      ],
+      "Id": "8605c959-8966-4817-a8d9-e30dd6234583",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-09-07T06:52:50.6187365Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },      
+    {
+      "ChangeList": [
+        {    
           "Id": "96d38f8b-2f39-4029-8226-04c503bce9e7",
           "ApiChange": "Method",
           "ChangedApiName": "retrieveFlexCloudPcAccessConfiguration",
