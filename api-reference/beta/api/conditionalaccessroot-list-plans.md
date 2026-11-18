@@ -3,7 +3,7 @@ title: "List Conditional Access policy plans"
 description: "Retrieve a list of Conditional Access policy plans and their properties."
 author: "ebasseri"
 ms.reviewer: conditionalaccesspm
-ms.date: 10/02/2026
+ms.date: 11/18/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "conditionalaccessroot_list_plans" } -->
 [!INCLUDE [permissions-table](../includes/permissions/conditionalaccessroot-list-plans-permissions.md)]
 
-[!INCLUDE [rbac-conditionalaccess-policy-plan-apis](../includes/rbac-for-apis/rbac-conditionalaccess-policy-plan-apis.md)]
+[!INCLUDE [rbac-conditionalaccess-apis-read](../includes/rbac-for-apis/rbac-conditionalaccess-apis-read.md)]
 
 ## HTTP request
 
