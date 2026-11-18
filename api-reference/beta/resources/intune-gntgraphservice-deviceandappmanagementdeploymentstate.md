@@ -1,6 +1,6 @@
 ---
 title: "deviceAndAppManagementDeploymentState enum type"
-description: "Represents the status of a deployment."
+description: "Identifies the rollout state of a deployment."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -12,19 +12,21 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Represents the status of a deployment.
+Identifies the rollout state of a deployment. Used by [deviceAndAppManagementDeployment](../resources/intune-gntgraphservice-deviceandappmanagementdeployment.md). This is an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to retrieve `pendingApproval`.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notStarted|0|Deployment has not yet started.|
-|inProgress|1|Deployment is in progress.|
-|canceled|2|Deployment has been canceled.|
-|paused|3|Deployment has been paused.|
-|completed|4|Deployment has been completed.|
-|error|5|Deployment has errors.|
-|unknownFutureValue|6|Unknown future value.|
+
+|Member|Description|
+|:---|:---|
+|notStarted|The rollout hasn't started.|
+|inProgress|The rollout is in progress.|
+|canceled|The rollout was canceled.|
+|paused|The rollout is paused.|
+|completed|The rollout is complete.|
+|error|The rollout encountered an error.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|pendingApproval|The deployment change is pending multi-admin approval.|

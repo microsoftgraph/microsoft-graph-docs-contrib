@@ -12,6 +12,8 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 > **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -35,6 +37,8 @@ Device Management Configuration Policy
 |[retrieveEnrollmentTimeDeviceMembershipTarget action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-retrieveenrollmenttimedevicemembershiptarget.md)|[enrollmentTimeDeviceMembershipTargetResult](../resources/intune-shared-enrollmenttimedevicemembershiptargetresult.md)||
 |[setEnrollmentTimeDeviceMembershipTarget action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-setenrollmenttimedevicemembershiptarget.md)|[enrollmentTimeDeviceMembershipTargetResult](../resources/intune-shared-enrollmenttimedevicemembershiptargetresult.md)||
 |[clearEnrollmentTimeDeviceMembershipTarget action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-clearenrollmenttimedevicemembershiptarget.md)|Boolean||
+|[Configure assignments](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-configureassignments.md)|None|Configure all deployment assignments for one deployment.|
+|[List target assignments](../api/intune-apps-deviceandappmanagementpayloadassignment-list.md)|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|List assignments for a specified deployment.|
 
 ## Properties
 |Property|Type|Description|
@@ -54,10 +58,12 @@ Device Management Configuration Policy
 |priorityMetaData|[deviceManagementPriorityMetaData](../resources/intune-deviceconfigv2-devicemanagementprioritymetadata.md)|Indicates the priority of each policies that are selected by the admin during enrollment process|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settings|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) collection|Policy settings|
 |assignments|[deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) collection|Policy assignments|
+|settings|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) collection|Policy settings|
+|targetAssignments|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|The deployment assignments for this payload. Use `$filter` with `eq` on `microsoft.graph.deviceAndAppManagementDeploymentAssignment/deploymentId` to specify a deployment.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

@@ -3,6 +3,200 @@
     {
       "ChangeList": [
         {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "topologyDefinitions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the deprecated **topologyDefinitions** property from the [deviceAndAppManagementDeploymentPlan](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan?view=graph-rest-beta&preserve-view=true) resource. Use **ringTemplates** instead.",
+          "Target": "deviceAndAppManagementDeploymentPlan"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "ringTemplates",
+          "ChangeType": "Change",
+          "Description": "Updated the [deviceAndAppManagementDeploymentPlan](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan?view=graph-rest-beta&preserve-view=true) documentation to use **ringTemplates** for ring configuration. Creating a plan requires at least one ring, updates must retain at least one ring, and omitting this property from an update preserves the existing rings.",
+          "Target": "deviceAndAppManagementDeploymentPlan"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedPlatform",
+          "ChangeType": "Deletion",
+          "Description": "Removed the deprecated **allowedPlatform** property from the [deviceAndAppManagementDeploymentPlan](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan?view=graph-rest-beta&preserve-view=true) resource. Use **allowedAssignmentFilterPlatform** instead.",
+          "Target": "deviceAndAppManagementDeploymentPlan"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedAssignmentFilterPlatform",
+          "ChangeType": "Change",
+          "Description": "Updated the [deviceAndAppManagementDeploymentPlan](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan?view=graph-rest-beta&preserve-view=true) documentation to use **allowedAssignmentFilterPlatform** to specify the platform allowed for assignment filters.",
+          "Target": "deviceAndAppManagementDeploymentPlan"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "topologyCount",
+          "ChangeType": "Deletion",
+          "Description": "Removed the deprecated **topologyCount** property from the [deviceAndAppManagementDeploymentPlan](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan?view=graph-rest-beta&preserve-view=true) resource. Use **ringCount** instead.",
+          "Target": "deviceAndAppManagementDeploymentPlan"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "ringCount",
+          "ChangeType": "Change",
+          "Description": "Updated the [deviceAndAppManagementDeploymentPlan](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan?view=graph-rest-beta&preserve-view=true) documentation to use the read-only **ringCount** property for the number of ring templates in a plan.",
+          "Target": "deviceAndAppManagementDeploymentPlan"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignmentDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the deprecated **assignmentDetail** property from the [deviceAndAppManagementPayloadAssignment](https://learn.microsoft.com/en-us/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true) resource. Use **assignmentDetails** instead.",
+          "Target": "deviceAndAppManagementPayloadAssignment"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignmentDetails",
+          "ChangeType": "Change",
+          "Description": "Updated the [deviceAndAppManagementPayloadAssignment](https://learn.microsoft.com/en-us/graph/api/resources/intune-apps-deviceandappmanagementpayloadassignment?view=graph-rest-beta&preserve-view=true) documentation to use **assignmentDetails** and the pluralized **deviceAndAppManagementAssignmentDetails** and **mobileAppAssignmentDetails** types for workload-specific assignment settings.",
+          "Target": "deviceAndAppManagementPayloadAssignment"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "referenceAssignmentId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the deprecated **referenceAssignmentId** property from the [deviceAndAppManagementDeploymentAssignment](https://learn.microsoft.com/en-us/graph/api/resources/intune-apps-deviceandappmanagementdeploymentassignment?view=graph-rest-beta&preserve-view=true) resource. Use **assignmentConfigurationId** instead.",
+          "Target": "deviceAndAppManagementDeploymentAssignment"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignmentConfigurationId",
+          "ChangeType": "Change",
+          "Description": "Updated the [deviceAndAppManagementDeploymentAssignment](https://learn.microsoft.com/en-us/graph/api/resources/intune-apps-deviceandappmanagementdeploymentassignment?view=graph-rest-beta&preserve-view=true) documentation to use **assignmentConfigurationId** to identify the assignment configuration in a deployment ring.",
+          "Target": "deviceAndAppManagementDeploymentAssignment"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignmentResults",
+          "ChangeType": "Deprecation",
+          "Description": "Documented the deprecation of the **assignmentResults** property on [deviceAndAppManagementRingAssignmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration?view=graph-rest-beta&preserve-view=true). Use the **assignmentResults** relationship on **deviceAndAppManagementDeployment** to retrieve per-assignment rollout status instead.",
+          "Target": "deviceAndAppManagementRingAssignmentConfiguration"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Method",
+          "ChangedApiName": "configureAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added documentation for [deviceManagementConfigurationPolicy: configureAssignments](https://learn.microsoft.com/en-us/graph/api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-configureassignments?view=graph-rest-beta&preserve-view=true) to configure deployment assignments in a batch.",
+          "Target": "deviceManagementConfigurationPolicy"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceAndAppManagementDeployment",
+          "ChangeType": "Change",
+          "Description": "Updated [deviceAndAppManagementDeployment](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeployment?view=graph-rest-beta&preserve-view=true) documentation for staged rollout creation, ring materialization, workload-specific permissions, and commit, pause, resume, and cancel actions.",
+          "Target": "deviceAndAppManagementDeployment"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceAndAppManagementDeploymentAssignmentResult",
+          "ChangeType": "Addition",
+          "Description": "Added documentation for [deviceAndAppManagementDeploymentAssignmentResult](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentassignmentresult?view=graph-rest-beta&preserve-view=true) and its assignment-state and error-code enumerations to describe per-assignment rollout status.",
+          "Target": "deviceAndAppManagementDeploymentAssignmentResult"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Member",
+          "ChangedApiName": "pendingApproval",
+          "ChangeType": "Addition",
+          "Description": "Added documentation for the `pendingApproval` member of [deviceAndAppManagementDeploymentState](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentstate?view=graph-rest-beta&preserve-view=true). Use the `Prefer: include-unknown-enum-members` request header to retrieve this member.",
+          "Target": "deviceAndAppManagementDeploymentState"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "payloadEntitySet",
+          "ChangeType": "Addition",
+          "Description": "Added documentation for the **payloadEntitySet** property and its enumeration type on [deviceAndAppManagementDeploymentPayload](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentpayload?view=graph-rest-beta&preserve-view=true) to identify the payload's workload entity set.",
+          "Target": "deviceAndAppManagementDeploymentPayload"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "payloadUnifiedPlatform",
+          "ChangeType": "Addition",
+          "Description": "Added documentation for the **payloadUnifiedPlatform** property and its enumeration type on [deviceAndAppManagementDeploymentPayload](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentpayload?view=graph-rest-beta&preserve-view=true) to identify the payload's platform.",
+          "Target": "deviceAndAppManagementDeploymentPayload"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "workloadType",
+          "ChangeType": "Addition",
+          "Description": "Added documentation for the **workloadType** property and its enumeration type on [deviceAndAppManagementDeploymentPayload](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentpayload?view=graph-rest-beta&preserve-view=true) to identify the workload that owns the payload.",
+          "Target": "deviceAndAppManagementDeploymentPayload"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Property",
+          "ChangedApiName": "payloadType",
+          "ChangeType": "Deprecation",
+          "Description": "Documented the deprecation of **payloadType** on [deviceAndAppManagementDeploymentPayload](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymentpayload?view=graph-rest-beta&preserve-view=true). Use **workloadType** instead.",
+          "Target": "deviceAndAppManagementDeploymentPayload"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceAndAppManagementAssignmentDetail",
+          "ChangeType": "Deprecation",
+          "Description": "Documented the deprecation of [deviceAndAppManagementAssignmentDetail](https://learn.microsoft.com/en-us/graph/api/resources/intune-shared-deviceandappmanagementassignmentdetail?view=graph-rest-beta&preserve-view=true). Use **deviceAndAppManagementAssignmentDetails** instead.",
+          "Target": "deviceAndAppManagementAssignmentDetail"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileAppAssignmentDetail",
+          "ChangeType": "Deprecation",
+          "Description": "Documented the deprecation of [mobileAppAssignmentDetail](https://learn.microsoft.com/en-us/graph/api/resources/intune-apps-mobileappassignmentdetail?view=graph-rest-beta&preserve-view=true). Use **mobileAppAssignmentDetails** instead.",
+          "Target": "mobileAppAssignmentDetail"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceAndAppManagementDeploymentTopologyDefinition",
+          "ChangeType": "Deprecation",
+          "Description": "Documented the deprecation of [deviceAndAppManagementDeploymentTopologyDefinition](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymenttopologydefinition?view=graph-rest-beta&preserve-view=true). Use **deviceAndAppManagementDeploymentRingTemplate** instead.",
+          "Target": "deviceAndAppManagementDeploymentTopologyDefinition"
+        },
+        {
+          "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceAndAppManagementDeploymentTopologyAssignmentConfiguration",
+          "ChangeType": "Deprecation",
+          "Description": "Documented the deprecation of [deviceAndAppManagementDeploymentTopologyAssignmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/intune-gntgraphservice-deviceandappmanagementdeploymenttopologyassignmentconfiguration?view=graph-rest-beta&preserve-view=true). Use **deviceAndAppManagementRingTemplateAssignmentConfiguration** instead.",
+          "Target": "deviceAndAppManagementDeploymentTopologyAssignmentConfiguration"
+        }
+      ],
+      "Id": "dee99dd3-f8b4-44fa-8234-d4b36b394fed",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-05T13:25:27.9213910Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1ef2d0c3-3ec9-407b-acd4-1ee9791691ce",
           "ApiChange": "Resource",
           "ChangedApiName": "samsungEFotaFirmwareVersion",
