@@ -4138,6 +4138,7 @@
         },
         {
           "name": "Tenant governance",
+          "shouldSort": true,
           "overview": "../../resources/tenantgovernanceservices-tenantgovernance-overview.md",
           "resources": [
             "microsoft.graph.governanceInvitation",
@@ -4151,6 +4152,7 @@
           "complexTypes": [
             "microsoft.graph.applicationResourcePermission",
             "microsoft.graph.applicationsRequiredResourceAccess",
+            "microsoft.graph.assignedPolicyReference",
             "microsoft.graph.b2bRegistrationMetrics",
             "microsoft.graph.b2BRegistrationMetricsBase",
             "microsoft.graph.b2BRegistrationMetricsInitial",
@@ -4165,6 +4167,7 @@
             "microsoft.graph.billingMetricsRecent",
             "microsoft.graph.delegatedAdministrationRoleAssignment",
             "microsoft.graph.delegatedAdministrationRoleAssignmentSnapshot",
+            "microsoft.graph.fetchResponse",
             "microsoft.graph.investigationActionStep",
             "microsoft.graph.investigationActionUrl",
             "microsoft.graph.multiTenantApplicationMetrics",
@@ -4173,10 +4176,184 @@
             "microsoft.graph.multiTenantApplicationMetricsRecent",
             "microsoft.graph.multiTenantApplicationsToProvision",
             "microsoft.graph.multiTenantApplicationsToProvisionSnapshot",
+            "microsoft.graph.policiesEvaluationDetail",
+            "microsoft.graph.policiesEvaluationResult",
+            "microsoft.graph.policyAppliesTo",
+            "microsoft.graph.policyDefinitionReference",
+            "microsoft.graph.policyEvaluationErrorDetail",
+            "microsoft.graph.privilegedReadSetting",
             "microsoft.graph.relatedTenantsRefreshRequest",
             "microsoft.graph.relatedTenantsRefreshStatus",
             "microsoft.graph.relationshipPolicy",
+            "microsoft.graph.resourcePolicyRule",
             "microsoft.graph.roleTemplate"
+          ],
+          "childNodes": [
+            {
+              "name": "Resource policy (preview)",
+              "shouldSort": false,
+              "overview": "../../resources/entra-resource-policy-overview.md",
+              "childNodes": [
+                {
+                  "name": "Definition",
+                  "additionalLinks": [
+                    {
+                      "name": "Definition",
+                      "href": "../../resources/resourcepolicydefinition.md"
+                    },
+                    {
+                      "name": "List definitions",
+                      "href": "../../api/resourcepolicyroot-list-definitions.md"
+                    },
+                    {
+                      "name": "List built-in definitions",
+                      "href": "../../api/resourcepolicyroot-list-builtindefinitions.md"
+                    },
+                    {
+                      "name": "Create",
+                      "href": "../../api/resourcepolicydefinition-create.md"
+                    },
+                    {
+                      "name": "Get",
+                      "href": "../../api/resourcepolicydefinition-get.md"
+                    },
+                    {
+                      "name": "Update",
+                      "href": "../../api/resourcepolicydefinition-update.md"
+                    },
+                    {
+                      "name": "Upsert",
+                      "href": "../../api/resourcepolicydefinition-upsert.md"
+                    },
+                    {
+                      "name": "Delete",
+                      "href": "../../api/resourcepolicydefinition-delete.md"
+                    }
+                  ]
+                },
+                {
+                  "name": "Definition version",
+                  "additionalLinks": [
+                    {
+                      "name": "Definition version",
+                      "href": "../../resources/resourcepolicydefinitionversion.md"
+                    },
+                    {
+                      "name": "List",
+                      "href": "../../api/resourcepolicydefinition-list-previousversions.md"
+                    },
+                    {
+                      "name": "Get",
+                      "href": "../../api/resourcepolicydefinitionversion-get.md"
+                    },
+                    {
+                      "name": "Delete",
+                      "href": "../../api/resourcepolicydefinitionversion-delete.md"
+                    }
+                  ]
+                },
+                {
+                  "name": "Assignment",
+                  "additionalLinks": [
+                    {
+                      "name": "Assignment",
+                      "href": "../../resources/resourcepolicyassignment.md"
+                    },
+                    {
+                      "name": "List",
+                      "href": "../../api/resourcepolicyroot-list-assignments.md"
+                    },
+                    {
+                      "name": "Create",
+                      "href": "../../api/resourcepolicyassignment-create.md"
+                    },
+                    {
+                      "name": "Get",
+                      "href": "../../api/resourcepolicyassignment-get.md"
+                    },
+                    {
+                      "name": "Update",
+                      "href": "../../api/resourcepolicyassignment-update.md"
+                    },
+                    {
+                      "name": "Upsert",
+                      "href": "../../api/resourcepolicyassignment-upsert.md"
+                    },
+                    {
+                      "name": "Delete",
+                      "href": "../../api/resourcepolicyassignment-delete.md"
+                    }
+                  ]
+                },
+                {
+                  "name": "Configuration",
+                  "additionalLinks": [
+                    {
+                      "name": "Configuration",
+                      "href": "../../resources/resourcepolicyconfiguration.md"
+                    },
+                    {
+                      "name": "Get",
+                      "href": "../../api/resourcepolicyconfiguration-get.md"
+                    },
+                    {
+                      "name": "Update",
+                      "href": "../../api/resourcepolicyconfiguration-update.md"
+                    },
+                    {
+                      "name": "Get federated identity credential subject",
+                      "href": "../../api/resourcepolicyconfiguration-getfederatedidentitycredentialsubject.md"
+                    }
+                  ]
+                },
+                {
+                  "name": "Deleted items",
+                  "additionalLinks": [
+                    {
+                      "name": "Deleted items",
+                      "href": "../../resources/resourcepolicydeletableroot.md"
+                    },
+                    {
+                      "name": "List deleted definitions",
+                      "href": "../../api/resourcepolicydeletableroot-list-definitions.md"
+                    },
+                    {
+                      "name": "List deleted assignments",
+                      "href": "../../api/resourcepolicydeletableroot-list-assignments.md"
+                    },
+                    {
+                      "name": "Restore definition",
+                      "href": "../../api/resourcepolicydefinition-restore.md"
+                    },
+                    {
+                      "name": "Restore assignment",
+                      "href": "../../api/resourcepolicyassignment-restore.md"
+                    },
+                    {
+                      "name": "Permanently delete definition",
+                      "href": "../../api/resourcepolicydeletableroot-delete-definitions.md"
+                    },
+                    {
+                      "name": "Permanently delete assignment",
+                      "href": "../../api/resourcepolicydeletableroot-delete-assignments.md"
+                    }
+                  ]
+                },
+                {
+                  "name": "Evaluation",
+                  "additionalLinks": [
+                    {
+                      "name": "Evaluate assigned policies",
+                      "href": "../../api/resourcepolicyroot-evaluateassignedpolicies.md"
+                    },
+                    {
+                      "name": "Evaluate policy",
+                      "href": "../../api/resourcepolicyroot-evaluatepolicy.md"
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {

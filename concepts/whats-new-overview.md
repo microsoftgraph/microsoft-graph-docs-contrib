@@ -130,6 +130,10 @@ Added the [classificationGradingJobResponse](/graph/api/resources/classification
 - Added the `applyOnce` mode to [configurationMonitor](/graph/api/resources/configurationmonitor?view=graph-rest-beta&preserve-view=true). Use it to apply a desired-state baseline once on behalf of the signed-in administrator.
 - Added the [remediate](/graph/api/configurationdrift-remediate?view=graph-rest-beta&preserve-view=true) action to restore drifted resource properties to their baseline values and inspect the success or failure result.
 
+### Tenants | Tenant governance
+
+- Added the [resource policy](/graph/api/resources/entra-resource-policy-overview) APIs to define and assign Rego policies that govern Microsoft Graph resource changes. Manage customer-authored and read-only built-in definitions, definition versions, assignments, deleted items, and tenant-wide privileged-read configuration. Evaluate assigned or inline policies with simulated fetch responses and detailed diagnostics before enabling enforcement.
+
 ## October 2026: New and generally available
 
 ### Applications

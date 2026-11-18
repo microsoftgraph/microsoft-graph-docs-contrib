@@ -1,0 +1,382 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourcePolicyRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyRoot](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicyroot?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "resourcePolicyRoot"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourcePolicyDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyDefinition](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicydefinition?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "resourcePolicyDefinition"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourcePolicyDefinitionVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyDefinitionVersion](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicydefinitionversion?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "resourcePolicyDefinitionVersion"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourcePolicyAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicyassignment?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "resourcePolicyAssignment"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourcePolicyDeletableRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyDeletableRoot](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicydeletableroot?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "resourcePolicyDeletableRoot"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourcePolicyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicyconfiguration?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "resourcePolicyConfiguration"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourcePolicyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyRule](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicyrule?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "resourcePolicyRule"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyAppliesTo",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyAppliesTo](https://learn.microsoft.com/en-us/graph/api/resources/policyappliesto?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "policyAppliesTo"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignedPolicyReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignedPolicyReference](https://learn.microsoft.com/en-us/graph/api/resources/assignedpolicyreference?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "assignedPolicyReference"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyDefinitionReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyDefinitionReference](https://learn.microsoft.com/en-us/graph/api/resources/policydefinitionreference?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "policyDefinitionReference"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fetchResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [fetchResponse](https://learn.microsoft.com/en-us/graph/api/resources/fetchresponse?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "fetchResponse"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policiesEvaluationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [policiesEvaluationResult](https://learn.microsoft.com/en-us/graph/api/resources/policiesevaluationresult?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "policiesEvaluationResult"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policiesEvaluationDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [policiesEvaluationDetail](https://learn.microsoft.com/en-us/graph/api/resources/policiesevaluationdetail?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "policiesEvaluationDetail"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyEvaluationErrorDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyEvaluationErrorDetail](https://learn.microsoft.com/en-us/graph/api/resources/policyevaluationerrordetail?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "policyEvaluationErrorDetail"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegedReadSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegedReadSetting](https://learn.microsoft.com/en-us/graph/api/resources/privilegedreadsetting?view=graph-rest-beta) resource type for resource policy management and evaluation.",
+          "Target": "privilegedReadSetting"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "resourcePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourcePolicy** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource to access resource policy management and evaluation.",
+          "Target": "admin"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "policyCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyCategory** enumeration for the [resource policy](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicyroot?view=graph-rest-beta) APIs.",
+          "Target": "policyCategory"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "policyApplicableOperations",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyApplicableOperations** enumeration for the [resource policy](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicyroot?view=graph-rest-beta) APIs.",
+          "Target": "policyApplicableOperations"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "policyEffects",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyEffects** enumeration for the [resource policy](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicyroot?view=graph-rest-beta) APIs.",
+          "Target": "policyEffects"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "requestHttpMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **requestHttpMethod** enumeration for the [resource policy](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicyroot?view=graph-rest-beta) APIs.",
+          "Target": "requestHttpMethod"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "enforcementMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **enforcementMode** enumeration for the [resource policy](https://learn.microsoft.com/en-us/graph/api/resources/resourcepolicyroot?view=graph-rest-beta) APIs.",
+          "Target": "enforcementMode"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "definitions",
+          "ChangeType": "Addition",
+          "Description": "Added the [List resourcePolicyDefinition objects](https://learn.microsoft.com/en-us/graph/api/resourcepolicyroot-list-definitions?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyRoot"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get resourcePolicyDefinition](https://learn.microsoft.com/en-us/graph/api/resourcepolicydefinition-get?view=graph-rest-beta) operation to retrieve an individual customer-authored, built-in, or deleted definition as JSON or plain-text Rego.",
+          "Target": "resourcePolicyDefinition"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "create",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create resourcePolicyDefinition](https://learn.microsoft.com/en-us/graph/api/resourcepolicydefinition-create?view=graph-rest-beta) operation with JSON and plain-text Rego request bodies.",
+          "Target": "resourcePolicyDefinition"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "update",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update resourcePolicyDefinition](https://learn.microsoft.com/en-us/graph/api/resourcepolicydefinition-update?view=graph-rest-beta) operation with JSON and plain-text Rego request bodies.",
+          "Target": "resourcePolicyDefinition"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "upsert",
+          "ChangeType": "Addition",
+          "Description": "Added the [Upsert resourcePolicyDefinition](https://learn.microsoft.com/en-us/graph/api/resourcepolicydefinition-upsert?view=graph-rest-beta) operation for declarative deployments, such as Bicep templates, using JSON or plain-text Rego policies.",
+          "Target": "resourcePolicyDefinition"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete resourcePolicyDefinition](https://learn.microsoft.com/en-us/graph/api/resourcepolicydefinition-delete?view=graph-rest-beta) and [Permanently delete resourcePolicyDefinition](https://learn.microsoft.com/en-us/graph/api/resourcepolicydeletableroot-delete-definitions?view=graph-rest-beta) operations for resource policies.",
+          "Target": "resourcePolicyDefinition"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyDefinition: restore](https://learn.microsoft.com/en-us/graph/api/resourcepolicydefinition-restore?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyDefinition"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "definitions",
+          "ChangeType": "Addition",
+          "Description": "Added the [List deleted resourcePolicyDefinition objects](https://learn.microsoft.com/en-us/graph/api/resourcepolicydeletableroot-list-definitions?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyDeletableRoot"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "assignments",
+          "ChangeType": "Addition",
+          "Description": "Added the [List resourcePolicyAssignment objects](https://learn.microsoft.com/en-us/graph/api/resourcepolicyroot-list-assignments?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyRoot"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get resourcePolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resourcepolicyassignment-get?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyAssignment"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "create",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create resourcePolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resourcepolicyassignment-create?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyAssignment"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "update",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update resourcePolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resourcepolicyassignment-update?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyAssignment"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "upsert",
+          "ChangeType": "Addition",
+          "Description": "Added the [Upsert resourcePolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resourcepolicyassignment-upsert?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyAssignment"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete resourcePolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resourcepolicyassignment-delete?view=graph-rest-beta) and [Permanently delete resourcePolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resourcepolicydeletableroot-delete-assignments?view=graph-rest-beta) operations for resource policies.",
+          "Target": "resourcePolicyAssignment"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyAssignment: restore](https://learn.microsoft.com/en-us/graph/api/resourcepolicyassignment-restore?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyAssignment"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "assignments",
+          "ChangeType": "Addition",
+          "Description": "Added the [List deleted resourcePolicyAssignment objects](https://learn.microsoft.com/en-us/graph/api/resourcepolicydeletableroot-list-assignments?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyDeletableRoot"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "builtInDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the [List built-in resourcePolicyDefinition objects](https://learn.microsoft.com/en-us/graph/api/resourcepolicyroot-list-builtindefinitions?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyRoot"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "previousVersions",
+          "ChangeType": "Addition",
+          "Description": "Added the [List previous resourcePolicyDefinitionVersion objects](https://learn.microsoft.com/en-us/graph/api/resourcepolicydefinition-list-previousversions?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyDefinition"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get resourcePolicyDefinitionVersion](https://learn.microsoft.com/en-us/graph/api/resourcepolicydefinitionversion-get?view=graph-rest-beta) operation to retrieve an individual previous version as JSON or plain-text Rego.",
+          "Target": "resourcePolicyDefinitionVersion"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete resourcePolicyDefinitionVersion](https://learn.microsoft.com/en-us/graph/api/resourcepolicydefinitionversion-delete?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyDefinitionVersion"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get resourcePolicyConfiguration](https://learn.microsoft.com/en-us/graph/api/resourcepolicyconfiguration-get?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyConfiguration"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "update",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update resourcePolicyConfiguration](https://learn.microsoft.com/en-us/graph/api/resourcepolicyconfiguration-update?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyConfiguration"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "getFederatedIdentityCredentialSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyConfiguration: getFederatedIdentityCredentialSubject](https://learn.microsoft.com/en-us/graph/api/resourcepolicyconfiguration-getfederatedidentitycredentialsubject?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyConfiguration"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "evaluateAssignedPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyRoot: evaluateAssignedPolicies](https://learn.microsoft.com/en-us/graph/api/resourcepolicyroot-evaluateassignedpolicies?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyRoot"
+        },
+        {
+          "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+          "ApiChange": "Method",
+          "ChangedApiName": "evaluatePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourcePolicyRoot: evaluatePolicy](https://learn.microsoft.com/en-us/graph/api/resourcepolicyroot-evaluatepolicy?view=graph-rest-beta) operation for resource policies.",
+          "Target": "resourcePolicyRoot"
+        }
+      ],
+      "Id": "8ae3788a-cad6-4ad5-a090-e6a09ea4b269",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-16T00:00:00.0000000Z",
+      "WorkloadArea": "Tenants",
+      "SubArea": "Tenant governance"
+    }
+  ]
+}
