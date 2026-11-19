@@ -1465,6 +1465,15 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | subscriptionRemoved |
 | reauthorizationRequired |
 
+### lifecyclePolicyComplianceState values
+
+| Member |
+| ---------------- |
+| compliant |
+| warning |
+| warningNotify |
+| nonCompliant |
+
 ### changeType values
 
 | Member |
@@ -6619,6 +6628,54 @@ Possible values for user account types (group membership), per Windows definitio
 |coldCrawl|
 |applications|
 
+### policyCategory values
+
+|Member|
+|:---|
+|notSpecified|
+|workloadIdentity|
+|identityAndTenant|
+|privilegedAccess|
+|zeroTrust|
+|agenticIdentity|
+|networkAccess|
+|unknownFutureValue|
+
+### policyApplicableOperations values
+
+|Member|
+|:---|
+|create|
+|updateOrUpsert|
+|delete|
+|invokeAction|
+|unknownFutureValue|
+
+### policyEffects values
+
+|Member|
+|:---|
+|compliant|
+|deny|
+|unknownFutureValue|
+
+### requestHttpMethod values
+
+|Member|
+|:---|
+|post|
+|patch|
+|put|
+|get|
+|delete|
+|unknownFutureValue|
+
+### enforcementMode values
+
+|Member|
+|:---|
+|doNotEnforce|
+|enforce|
 ### chainBreakReason values
 
 |Member|

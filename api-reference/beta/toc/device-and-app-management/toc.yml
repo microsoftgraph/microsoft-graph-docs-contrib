@@ -478,6 +478,14 @@ items:
       href: ../../resources/cloudpcsupportedregion.md
     - name: List
       href: ../../api/virtualendpoint-list-supportedregions.md
+  - name: Cloud PC user profile snapshot
+    items:
+    - name: Cloud PC user profile snapshot
+      href: ../../resources/cloudpcuserprofilesnapshot.md
+    - name: List
+      href: ../../api/cloudpcusersettingspersistencedetail-list-userprofilesnapshots.md
+    - name: Restore
+      href: ../../api/cloudpcuserprofilesnapshot-restore.md
   - name: Cloud PC user setting
     items:
     - name: Cloud PC user setting
@@ -498,6 +506,16 @@ items:
     items:
     - name: Cloud PC user settings persistence detail
       href: ../../resources/cloudpcusersettingspersistencedetail.md
+    - name: Get
+      href: ../../api/cloudpcusersettingspersistencedetail-get.md
+    - name: Update
+      href: ../../api/cloudpcusersettingspersistencedetail-update.md
+    - name: List user profile snapshots
+      href: ../../api/cloudpcusersettingspersistencedetail-list-userprofilesnapshots.md
+    - name: Bulk create user profile snapshot
+      href: ../../api/cloudpcusersettingspersistencedetail-bulkcreateuserprofilesnapshot.md
+    - name: Bulk export user profile snapshot
+      href: ../../api/cloudpcusersettingspersistencedetail-bulkexportuserprofilesnapshot.md
     - name: Batch delete user settings persistence profile
       href: ../../api/cloudpcusersettingspersistencedetail-batchcleanupusersettingspersistenceprofile.md
     - name: Retrieve user settings persistence profiles
@@ -811,18 +829,34 @@ items:
       href: ../../resources/cloudpcstatussummary.md
     - name: Cloud PC storage blob detail
       href: ../../resources/cloudpcstorageblobdetail.md
+    - name: Cloud PC storage configuration
+      href: ../../resources/cloudpcstorageconfiguration.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
     - name: Cloud PC supported region restriction detail
       href: ../../resources/cloudpcsupportedregionrestrictiondetail.md
+    - name: Cloud PC user profile bulk action result
+      href: ../../resources/cloudpcuserprofilebulkactionresult.md
+    - name: Cloud PC user profile snapshot create bulk action result
+      href: ../../resources/cloudpcuserprofilesnapshotcreatebulkactionresult.md
+    - name: Cloud PC user profile snapshot export bulk action result
+      href: ../../resources/cloudpcuserprofilesnapshotexportbulkactionresult.md
+    - name: Cloud PC user profile snapshot storage detail
+      href: ../../resources/cloudpcuserprofilesnapshotstoragedetail.md
     - name: Cloud PC user role scope tag info
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
       href: ../../resources/cloudpcusersettingassignment.md
+    - name: Cloud PC user settings persistence auto cleanup detail
+      href: ../../resources/cloudpcusersettingspersistenceautocleanupdetail.md
     - name: Cloud PC user settings persistence configuration
       href: ../../resources/cloudpcusersettingspersistenceconfiguration.md
     - name: Cloud PC user settings persistence profile
       href: ../../resources/cloudpcusersettingspersistenceprofile.md
+    - name: Cloud PC user settings persistence profile usage detail
+      href: ../../resources/cloudpcusersettingspersistenceprofileusagedetail.md
+    - name: Cloud PC user settings persistence snapshot configuration
+      href: ../../resources/cloudpcusersettingspersistencesnapshotconfiguration.md
     - name: Cloud PC user settings persistence usage result
       href: ../../resources/cloudpcusersettingspersistenceusageresult.md
     - name: Cloud PC Windows setting
