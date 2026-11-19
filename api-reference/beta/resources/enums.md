@@ -6790,3 +6790,20 @@ Possible values for user account types (group membership), per Windows definitio
 |summary|
 |artifact|
 |unknownFutureValue|
+
+### policyEffect values
+
+|Member|
+|:---|
+|compliant|
+|deny|
+|unknownFutureValue|
+
+### resourcePolicyDecision values
+
+|Member|
+|:---|
+|deny|
+|none|
+|compliant|
+|unknownFutureValue|

@@ -2811,6 +2811,7 @@
                 "customSecurityAttributeAudit",
                 "directoryAudit",
                 "provisioningObjectSummary",
+                "resourcePolicyEvaluationEvent",
                 "selfServiceSignUp",
                 "signIn",
                 "signInEventsActivity",
@@ -2818,7 +2819,9 @@
                 "summarizedSignIn"
               ],
               "complexTypes": [
-                "appliedAppManagementPolicyRestriction"
+                "appliedAppManagementPolicyRestriction",
+                "fetchDetail",
+                "policyEvaluationDetail"
               ]
             },
             {

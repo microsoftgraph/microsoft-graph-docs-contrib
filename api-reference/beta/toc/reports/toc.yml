@@ -442,6 +442,14 @@ items:
         href: ../../resources/provisioningobjectsummary.md
       - name: List
         href: ../../api/provisioningobjectsummary-list.md
+    - name: Resource policy evaluation event
+      items:
+      - name: Resource policy evaluation event
+        href: ../../resources/resourcepolicyevaluationevent.md
+      - name: List resourcePolicy
+        href: ../../api/auditlogroot-list-resourcepolicy.md
+      - name: Get resourcePolicyEvaluationEvent
+        href: ../../api/resourcepolicyevaluationevent-get.md
     - name: Self-service sign-up
       items:
       - name: Self-service sign-up
@@ -490,6 +498,10 @@ items:
       items:
       - name: Applied app management policy restriction
         href: ../../resources/appliedappmanagementpolicyrestriction.md
+      - name: Fetch detail
+        href: ../../resources/fetchdetail.md
+      - name: Policy evaluation detail
+        href: ../../resources/policyevaluationdetail.md
   - name: Identity correlation reports (preview)
     items:
     - name: Correlated identity
