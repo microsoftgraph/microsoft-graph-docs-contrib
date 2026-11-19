@@ -218,8 +218,8 @@ Content-Type: application/json
     "ServicePlanId",
     "ServicePlanName",
     "UsageInsight",
-    "RecommendedPlanId",
-    "RecommendedPlanName"
+    "RecommendedServicePlanId",
+    "RecommendedServicePlanName"
   ],
   "search": "",
   "skip": 0,
@@ -300,11 +300,11 @@ Content-Type: application/octet-stream
       "PropertyType": "String"
     },
     {
-      "Column": "RecommendedPlanId",
+      "Column": "RecommendedServicePlanId",
       "PropertyType": "String"
     },
     {
-      "Column": "RecommendedPlanName",
+      "Column": "RecommendedServicePlanName",
       "PropertyType": "String"
     }
   ],
