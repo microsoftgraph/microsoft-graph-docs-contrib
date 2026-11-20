@@ -301,6 +301,10 @@ Added the **isHardDeleteProtectionEnabled** property to the [user](/graph/api/re
 
 Added the [importMime](/graph/api/mailfolder-importmime?view=graph-rest-beta&preserve-view=true) method to the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) resource to create a non-draft message in a mail folder directly from MIME content. Unlike [creating a message](/graph/api/mailfolder-post-messages?view=graph-rest-beta&preserve-view=true), which always creates a draft, this method creates the message in a final, non-draft state. The message appears in the destination folder as if it was delivered; however, it doesn't go through transport, isn't stamped as sent, and never appears in the *Sent Items* folder. The action preserves the full MIME content, including internet message headers, body parts, and attachments. Use the **importMime** API to import existing mail into a mailbox, such as to migrate messages from another system.
 
+### Identity and access | Monitoring & health
+
+- Added Agent ID autonomous and interactive sign-in failure monitoring to the [health monitoring alert](/graph/api/resources/healthmonitoring-alert?view=graph-rest-beta&preserve-view=true) resource. Use the `agentId` scenario with the `agentIdAutonomousSignInFailure` and `agentIdInteractiveSignInFailure` alert types to monitor Agent ID sign-in health.
+
 ### Mail | Message trace
 
 Added support to identify recalled messages in message trace. Use `recalled` as a supported value of the **status** property of the [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace?view=graph-rest-beta&preserve-view=true) resource.

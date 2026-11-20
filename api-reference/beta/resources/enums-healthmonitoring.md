@@ -5,7 +5,7 @@ author: "huatang92"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: enumPageType
-ms.date: 06/04/2024
+ms.date: 10/21/2026
 ---
 
 # Health monitoring enum Values
@@ -39,6 +39,8 @@ Namespace: microsoft.graph.healthMonitoring
 |privateAppBlockedByConnector|
 |remoteNetworkTunnelConnectivity|
 |remoteNetworkBgpConnectivity|
+|agentIdAutonomousSignInFailure|
+|agentIdInteractiveSignInFailure|
 
 ### category values 
 
@@ -74,6 +76,7 @@ Namespace: microsoft.graph.healthMonitoring
 |conditionalAccess|
 |saml|
 |gsa|
+|agentId|
 
 <!--
 {
