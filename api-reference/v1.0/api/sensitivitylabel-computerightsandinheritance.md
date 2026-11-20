@@ -14,6 +14,11 @@ Namespace: microsoft.graph
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
+Before calling this API, ensure that your organization meets the following requirements:
+
+- **Conditional Access configuration:** If your organization uses Microsoft Entra Conditional Access policies that restrict access to cloud applications, exclude **Microsoft Information Protection Sync Service** (MIP Sync Service), application ID `870c4f2e-85b6-4d43-bdda-6ed9a579b725`, from the applicable policies. Otherwise, these policies can block sensitivity label and usage rights evaluation, resulting in authorization failures.
+- **Rights Management activation:** Ensure that Azure Rights Management (Azure RMS) is activated for your organization. Azure RMS is required for sensitivity label protection and rights evaluation.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions

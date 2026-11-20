@@ -3,6 +3,250 @@
     {
       "ChangeList": [
         {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "printJobReleaseMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **printJobReleaseMethods** enumeration type.",
+          "Target": "printJobReleaseMethods"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerProvidedReleaseSupport",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerProvidedReleaseSupport](https://learn.microsoft.com/en-us/graph/api/resources/printerProvidedReleaseSupport?view=graph-rest-beta) resource type.",
+          "Target": "printerProvidedReleaseSupport"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "pullPrintPrinters",
+          "ChangeType": "Addition",
+          "Description": "Added the **pullPrintPrinters** relationship to the [print](https://learn.microsoft.com/en-us/graph/api/resources/print?view=graph-rest-beta) resource.",
+          "Target": "print"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerProvidedReleaseSupport",
+          "ChangeType": "Addition",
+          "Description": "Added the **printerProvidedReleaseSupport** property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "pullPrintPrinters",
+          "ChangeType": "Addition",
+          "Description": "Added the **pullPrintPrinters** relationship to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Property",
+          "ChangedApiName": "holdJobsForSecureRelease",
+          "ChangeType": "Addition",
+          "Description": "Added the **holdJobsForSecureRelease** property to the [printerShare](https://learn.microsoft.com/en-us/graph/api/resources/printerShare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "pullPrintPrinter",
+          "ChangeType": "Addition",
+          "Description": "Added the **pullPrintPrinter** relationship to the [printerShare](https://learn.microsoft.com/en-us/graph/api/resources/printerShare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Property",
+          "ChangedApiName": "releasedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **releasedDateTime** property to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pullPrintPrinter",
+          "ChangeType": "Addition",
+          "Description": "Added the [pullPrintPrinter](https://learn.microsoft.com/en-us/graph/api/resources/pullPrintPrinter?view=graph-rest-beta) resource and associated methods.",
+          "Target": "pullPrintPrinter"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pullPrintPrinterCreateOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [pullPrintPrinterCreateOperation](https://learn.microsoft.com/en-us/graph/api/resources/pullPrintPrinterCreateOperation?view=graph-rest-beta) resource and an associated method.",
+          "Target": "pullPrintPrinterCreateOperation"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Method",
+          "ChangedApiName": "release",
+          "ChangeType": "Addition",
+          "Description": "Added the [release](https://learn.microsoft.com/en-us/graph/api/printJob-release?view=graph-rest-beta) method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Method",
+          "ChangedApiName": "restoreFactoryDefaults",
+          "ChangeType": "Addition",
+          "Description": "Added the [restoreFactoryDefaults](https://learn.microsoft.com/en-us/graph/api/pullPrintPrinter-restoreFactoryDefaults?view=graph-rest-beta) method to the [pullPrintPrinter](https://learn.microsoft.com/en-us/graph/api/resources/pullPrintPrinter?view=graph-rest-beta) resource.",
+          "Target": "pullPrintPrinter"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Method",
+          "ChangedApiName": "memberSuggestions",
+          "ChangeType": "Addition",
+          "Description": "Added the [memberSuggestions](https://learn.microsoft.com/en-us/graph/api/pullPrintPrinter-memberSuggestions?view=graph-rest-beta) method to the [pullPrintPrinter](https://learn.microsoft.com/en-us/graph/api/resources/pullPrintPrinter?view=graph-rest-beta) resource.",
+          "Target": "pullPrintPrinter"
+        },
+        {
+          "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+          "ApiChange": "Method",
+          "ChangedApiName": "releaseWait",
+          "ChangeType": "Addition",
+          "Description": "Added the [releaseWait](https://learn.microsoft.com/en-us/graph/api/printJob-releaseWait?view=graph-rest-beta) method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "5c510d6a-e680-413b-a6aa-4ca03b34060c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-05T17:56:27.8345008Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "printJobReleaseMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **printJobReleaseMethods** enumeration type.",
+          "Target": "printJobReleaseMethods"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerProvidedReleaseSupport",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerProvidedReleaseSupport](https://learn.microsoft.com/en-us/graph/api/resources/printerProvidedReleaseSupport?view=graph-rest-1.0) resource type.",
+          "Target": "printerProvidedReleaseSupport"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "pullPrintPrinters",
+          "ChangeType": "Addition",
+          "Description": "Added the **pullPrintPrinters** relationship to the [print](https://learn.microsoft.com/en-us/graph/api/resources/print?view=graph-rest-1.0) resource.",
+          "Target": "print"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerProvidedReleaseSupport",
+          "ChangeType": "Addition",
+          "Description": "Added the **printerProvidedReleaseSupport** property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
+          "Target": "printer"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "pullPrintPrinters",
+          "ChangeType": "Addition",
+          "Description": "Added the **pullPrintPrinters** relationship to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
+          "Target": "printer"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Property",
+          "ChangedApiName": "holdJobsForSecureRelease",
+          "ChangeType": "Addition",
+          "Description": "Added the **holdJobsForSecureRelease** property to the [printerShare](https://learn.microsoft.com/en-us/graph/api/resources/printerShare?view=graph-rest-1.0) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "pullPrintPrinter",
+          "ChangeType": "Addition",
+          "Description": "Added the **pullPrintPrinter** relationship to the [printerShare](https://learn.microsoft.com/en-us/graph/api/resources/printerShare?view=graph-rest-1.0) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Property",
+          "ChangedApiName": "releasedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **releasedDateTime** property to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pullPrintPrinter",
+          "ChangeType": "Addition",
+          "Description": "Added the [pullPrintPrinter](https://learn.microsoft.com/en-us/graph/api/resources/pullPrintPrinter?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "pullPrintPrinter"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pullPrintPrinterCreateOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [pullPrintPrinterCreateOperation](https://learn.microsoft.com/en-us/graph/api/resources/pullPrintPrinterCreateOperation?view=graph-rest-1.0) resource and an associated method.",
+          "Target": "pullPrintPrinterCreateOperation"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Method",
+          "ChangedApiName": "release",
+          "ChangeType": "Addition",
+          "Description": "Added the [release](https://learn.microsoft.com/en-us/graph/api/printJob-release?view=graph-rest-1.0) method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Method",
+          "ChangedApiName": "restoreFactoryDefaults",
+          "ChangeType": "Addition",
+          "Description": "Added the [restoreFactoryDefaults](https://learn.microsoft.com/en-us/graph/api/pullPrintPrinter-restoreFactoryDefaults?view=graph-rest-1.0) method to the [pullPrintPrinter](https://learn.microsoft.com/en-us/graph/api/resources/pullPrintPrinter?view=graph-rest-1.0) resource.",
+          "Target": "pullPrintPrinter"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Method",
+          "ChangedApiName": "memberSuggestions",
+          "ChangeType": "Addition",
+          "Description": "Added the [memberSuggestions](https://learn.microsoft.com/en-us/graph/api/pullPrintPrinter-memberSuggestions?view=graph-rest-1.0) method to the [pullPrintPrinter](https://learn.microsoft.com/en-us/graph/api/resources/pullPrintPrinter?view=graph-rest-1.0) resource.",
+          "Target": "pullPrintPrinter"
+        },
+        {
+          "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+          "ApiChange": "Method",
+          "ChangedApiName": "releaseWait",
+          "ChangeType": "Addition",
+          "Description": "Added the [releaseWait](https://learn.microsoft.com/en-us/graph/api/printJob-releaseWait?view=graph-rest-1.0) method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "b84d4aef-eca7-4e44-9ece-6ec8373f5433",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-05T17:56:27.8350129Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "40b1a909-b908-4a48-a500-0a805d2d9c20",
           "ApiChange": "Property",
           "ChangedApiName": "mediaSizes",

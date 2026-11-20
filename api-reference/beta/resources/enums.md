@@ -6549,6 +6549,17 @@ Possible values for user account types (group membership), per Windows definitio
 |applyNotSupported|
 |unknownFutureValue|
 
+### printJobReleaseMethods values
+
+|Member|
+|:---|
+|none|
+|unknown|
+|badge|
+|biometrics|
+|usernamePassword|
+|unknownFutureValue|
+
 ### evaluationScopeType values
 
 |Member|
@@ -6789,4 +6800,21 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |summary|
 |artifact|
+|unknownFutureValue|
+
+### policyEffect values
+
+|Member|
+|:---|
+|compliant|
+|deny|
+|unknownFutureValue|
+
+### resourcePolicyDecision values
+
+|Member|
+|:---|
+|deny|
+|none|
+|compliant|
 |unknownFutureValue|

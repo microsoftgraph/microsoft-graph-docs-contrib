@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "b63be62f-1536-40da-9980-bf643a8feaf4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "policyEffect",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyEffect** enumeration type.",
+          "Target": "policyEffect"
+        },
+        {
+          "Id": "b63be62f-1536-40da-9980-bf643a8feaf4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "resourcePolicyDecision",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourcePolicyDecision** enumeration type.",
+          "Target": "resourcePolicyDecision"
+        },
+        {
+          "Id": "b63be62f-1536-40da-9980-bf643a8feaf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fetchDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **fetchDetail** complex type.",
+          "Target": "fetchDetail"
+        },
+        {
+          "Id": "b63be62f-1536-40da-9980-bf643a8feaf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyEvaluationDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyEvaluationDetail** complex type.",
+          "Target": "policyEvaluationDetail"
+        },
+        {
+          "Id": "b63be62f-1536-40da-9980-bf643a8feaf4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "resourcePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourcePolicy** relationship to the [auditLogRoot](https://learn.microsoft.com/en-us/graph/api/resources/auditlogroot?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "auditLogRoot"
+        },
+        {
+          "Id": "b63be62f-1536-40da-9980-bf643a8feaf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourcePolicyEvaluationEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourcePolicyEvaluationEvent** resource.",
+          "Target": "resourcePolicyEvaluationEvent"
+        },
+        {
+          "Id": "b63be62f-1536-40da-9980-bf643a8feaf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "list",
+          "ChangeType": "Addition",
+          "Description": "Added the [List resourcePolicy](https://learn.microsoft.com/en-us/graph/api/auditlogroot-list-resourcepolicy?view=graph-rest-beta) operation.",
+          "Target": "auditLogRoot"
+        },
+        {
+          "Id": "b63be62f-1536-40da-9980-bf643a8feaf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get resourcePolicyEvaluationEvent](https://learn.microsoft.com/en-us/graph/api/resourcepolicyevaluationevent-get?view=graph-rest-beta) operation.",
+          "Target": "resourcePolicyEvaluationEvent"
+        }
+      ],
+      "Id": "b63be62f-1536-40da-9980-bf643a8feaf4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-12T13:22:09.9009278Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "37df4471-1971-4dc0-9cb0-1bcb910ace22",
           "ApiChange": "Member",
           "ChangedApiName": "aiElevatedAccountRisk",

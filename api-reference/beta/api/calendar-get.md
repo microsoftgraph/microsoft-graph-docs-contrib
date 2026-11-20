@@ -65,11 +65,14 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [calendar](../resources/calendar.md) object in the response body.
-## Example
-### Request
-The following example gets the signed-in user's default calendar.
+## Examples
 
+### Example 1: Get the default calendar
 
+The following example shows how to get the signed-in user's default calendar.
+
+#### Request
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -109,7 +112,7 @@ GET https://graph.microsoft.com/beta/me/calendar
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -151,6 +154,40 @@ Content-type: application/json
 
 ```
 
+### Example 2: Retrieve the sharing level for a calendar
+
+The following example shows how to get the effective event-information visibility for the current share recipient. The **sharingLevel** property doesn't represent edit or delegate rights.
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_calendar_sharing_level"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/9f4d2a7b-8c31-4e56-a102-7b6c4d8e9f20/calendars/AAMkAGI2TGuLAAA=?%24select=id,name,sharingLevel
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "name": "get_calendar_sharing_level",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.calendar"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('9f4d2a7b-8c31-4e56-a102-7b6c4d8e9f20')/calendars(id,name,sharingLevel)/$entity",
+  "id": "AAMkAGI2TGuLAAA=",
+  "name": "Calendar",
+  "sharingLevel": "limited"
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -164,4 +201,3 @@ Content-type: application/json
   ]
 }
 -->
-

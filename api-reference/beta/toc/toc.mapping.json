@@ -797,7 +797,9 @@
             "printTaskTrigger",
             "printer",
             "printerCreateOperation",
-            "printerShare"
+            "printerShare",
+            "pullPrintPrinter",
+            "pullPrintPrinterCreateOperation"
           ],
           "complexTypes": [
             "airPrintSettings",
@@ -818,6 +820,7 @@
             "printerDefaults",
             "printerDiscoverySettings",
             "printerLocation",
+            "printerProvidedReleaseSupport",
             "printerShareViewpoint",
             "printerStatus",
             "uploadSession",
@@ -2811,6 +2814,7 @@
                 "customSecurityAttributeAudit",
                 "directoryAudit",
                 "provisioningObjectSummary",
+                "resourcePolicyEvaluationEvent",
                 "selfServiceSignUp",
                 "signIn",
                 "signInEventsActivity",
@@ -2818,7 +2822,9 @@
                 "summarizedSignIn"
               ],
               "complexTypes": [
-                "appliedAppManagementPolicyRestriction"
+                "appliedAppManagementPolicyRestriction",
+                "fetchDetail",
+                "policyEvaluationDetail"
               ]
             },
             {
