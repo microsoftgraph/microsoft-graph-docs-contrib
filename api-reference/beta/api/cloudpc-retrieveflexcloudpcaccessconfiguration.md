@@ -18,6 +18,8 @@ Get the current access configuration of a Windows 365 Flex (formerly Windows 365
 
 Use the `/me` endpoint to retrieve the access configuration of a Cloud PC that belongs to the signed-in user. An administrator or application can use the `/deviceManagement/virtualEndpoint` endpoint to retrieve the access configuration of a targeted Cloud PC.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

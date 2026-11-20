@@ -18,6 +18,8 @@ Evaluate an inline Rego policy for a supplied API request using [resourcePolicyR
 
 This action doesn't perform the simulated API request. The reported effect and whether the request would be blocked are returned separately. Policy loading or evaluation errors can appear in the **errorDetails** property of entries in the **details** collection even when **isResultDetailed** is false.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

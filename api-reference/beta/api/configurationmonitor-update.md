@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [configurationMonitor](../resources/configurationmonitor.md), including its name, description, baseline, mode, status, or referenced version of the same template. When updating an inline baseline, provide the full monitor body as described in the request body section.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
