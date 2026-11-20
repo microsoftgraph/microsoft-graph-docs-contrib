@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the [callRecording](../resources/callrecording.md) objects from [ad hoc call](../resources/adhoccall.md) instances that a specific user initiates.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /users/{usersId}/adhocCalls/getAllRecordings 
+GET /users/{usersId}/adhocCalls/getAllRecordings(userId={userId},startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters

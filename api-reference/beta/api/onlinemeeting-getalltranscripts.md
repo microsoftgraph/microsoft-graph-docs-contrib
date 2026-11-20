@@ -24,8 +24,6 @@ For more information, see [delta query](/graph/delta-query-overview). For more e
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 > [!NOTE]
 > This API has a [known issue](/graph/known-issues#apis-that-export-online-meeting-artifacts-may-return-duplicate-items-during-service-update) related to pagination token resets during a planned service update.
 >
@@ -35,6 +33,8 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 
 > [!NOTE]
 > A tenant administrator must enable Microsoft Graph API access to meeting transcripts before apps can retrieve them. For more information, see [Manage transcript API access for Teams meetings](/microsoftteams/meeting-transcript-api-access).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
