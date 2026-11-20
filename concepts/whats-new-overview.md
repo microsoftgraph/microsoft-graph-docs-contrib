@@ -100,6 +100,7 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 ### Identity and access | Directory management
 
+- Added the **clientIdMetadataDocumentUrl** and read-only **hasClientIdMetadataDocument** properties to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource type. Use them to create agent identities backed by a client ID metadata document (CIMD), read their immutable document URLs, and find CIMD-backed identities with `$filter`.
 - Added the **lifecyclePolicyComplianceState**, **lifecyclePolicyComplianceStateLastModifiedDateTime**, **lifecyclePolicyComplianceStateReason**, and **lifecyclePolicyNonComplianceDisablementDateTime** properties to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) and [agentIdentityBlueprintPrincipal](/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-beta&preserve-view=true) resources to report lifecycle policy compliance status, context, and enforcement timestamps.
 - Added the **lifecyclePolicyComplianceState** enumeration type to represent lifecycle policy compliance states.
 - Added the **isSingleInstance** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource, inherited by [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true). Set it when creating a blueprint to support at most one active agent identity per tenant without an agent identity blueprint principal.
