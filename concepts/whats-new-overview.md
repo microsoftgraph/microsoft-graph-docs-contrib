@@ -52,6 +52,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Added request guidance and examples for using **retentionSettings** when you create or update [Exchange](/graph/api/resources/exchangeprotectionpolicy?view=graph-rest-beta&preserve-view=true), [OneDrive for Business](/graph/api/resources/onedriveforbusinessprotectionpolicy?view=graph-rest-beta&preserve-view=true), and [SharePoint](/graph/api/resources/sharepointprotectionpolicy?view=graph-rest-beta&preserve-view=true) protection policies to configure how long backups are retained.
 
+### Device and app management | Intune
+
+- Added the **keyAlgorithm** property to [userPFXCertificate](/graph/api/resources/intune-raimportcerts-userpfxcertificate?view=graph-rest-beta&preserve-view=true) to identify the public-key algorithm of an imported PFX certificate.
+- Added the **certificateAlgorithm**, **certificateKeySize**, and **hashingAlgorithm** properties to [cloudCertificationAuthorityLeafCertificate](/graph/api/resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate?view=graph-rest-beta&preserve-view=true). Use them to inspect a leaf certificate's public-key algorithm, RSA key size or elliptic curve, and signature hash independently of its issuer's key.
+- Added the `deploymentPlan` and `deployment` members to [associatedAssignmentPayloadType](/graph/api/resources/intune-policyset-associatedassignmentpayloadtype?view=graph-rest-beta&preserve-view=true) to identify assignment filters associated with deployment plans and deployments.
+- Added the **isAppInventoryCollectionEnabled** property to [androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta&preserve-view=true) to control work-profile app inventory collection on personally owned devices. Apps installed in the personal profile are never collected.
+
 ### Identity and access | Directory management
 
 - Devices now support soft-deletion and restoration. When a device is deleted, it's moved to the [deleted items container](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) and can be restored within 30 days. After 30 days, it's permanently deleted.

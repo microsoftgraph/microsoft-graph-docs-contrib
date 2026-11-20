@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -30,19 +30,20 @@ Entity that encapsulates all information required for a user's PFX certificates.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the PFX certificate.|
-|thumbprint|String|SHA-1 thumbprint of the PFX certificate.|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Certificate's intended purpose from the point-of-view of deployment. Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|String|User Principal Name of the PFX certificate.|
-|startDateTime|DateTimeOffset|Certificate's validity start date/time.|
-|expirationDateTime|DateTimeOffset|Certificate's validity expiration date/time.|
-|providerName|String|Crypto provider used to encrypt this blob.|
-|keyName|String|Name of the key (within the provider) used to encrypt the blob.|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Padding scheme used by the provider during encryption/decryption. Possible values are: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
+|createdDateTime|DateTimeOffset|Date/time when this PFX certificate was imported.|
 |encryptedPfxBlob|Binary|Encrypted PFX blob.|
 |encryptedPfxPassword|String|Encrypted PFX password.|
-|createdDateTime|DateTimeOffset|Date/time when this PFX certificate was imported.|
+|expirationDateTime|DateTimeOffset|Certificate's validity expiration date/time.|
+|id|String|Unique identifier for the PFX certificate.|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Certificate's intended purpose from the point-of-view of deployment. Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|keyAlgorithm|userPfxCertificateKeyAlgorithm|Public key algorithm inferred from the imported PFX certificate. Read-only. Nullable. The possible values are: `unknown`, `rsa`, `ecc`, `unknownFutureValue`. Existing records can return `unknown`, `null`, or omit this property until the service evaluates the certificate.|
+|keyName|String|Name of the key (within the provider) used to encrypt the blob.|
 |lastModifiedDateTime|DateTimeOffset|Date/time when this PFX certificate was last modified.|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Padding scheme used by the provider during encryption/decryption. Possible values are: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
+|providerName|String|Crypto provider used to encrypt this blob.|
+|startDateTime|DateTimeOffset|Certificate's validity start date/time.|
+|thumbprint|String|SHA-1 thumbprint of the PFX certificate.|
+|userPrincipalName|String|User Principal Name of the PFX certificate.|
 
 ## Relationships
 None
@@ -59,6 +60,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.userPFXCertificate",
   "id": "String (identifier)",
+  "keyAlgorithm": "String",
   "thumbprint": "String",
   "intendedPurpose": "String",
   "userPrincipalName": "String",

@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -59,101 +59,109 @@ If successful, this method returns a `200 OK` response code and [androidWorkProf
 
 ### Request
 Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_androidWorkProfileGeneralDeviceConfiguration"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "get_androidWorkProfileGeneralDeviceConfiguration_response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3760
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
-    "id": "6decda7e-da7e-6dec-7eda-ec6d7edaec6d",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "roleScopeTagIds": [
-      "Role Scope Tag Ids value"
+  "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
+  "id": "6decda7e-da7e-6dec-7eda-ec6d7edaec6d",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
     ],
-    "supportsScopeTags": true,
-    "deviceManagementApplicabilityRuleOsEdition": {
-      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
-      "osEditionTypes": [
-        "windows10EnterpriseN"
-      ],
-      "name": "Name value",
-      "ruleType": "exclude"
-    },
-    "deviceManagementApplicabilityRuleOsVersion": {
-      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
-      "minOSVersion": "Min OSVersion value",
-      "maxOSVersion": "Max OSVersion value",
-      "name": "Name value",
-      "ruleType": "exclude"
-    },
-    "deviceManagementApplicabilityRuleDeviceMode": {
-      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
-      "deviceMode": "sModeConfiguration",
-      "name": "Name value",
-      "ruleType": "exclude"
-    },
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "description": "Description value",
-    "displayName": "Display Name value",
-    "version": 7,
-    "passwordBlockFaceUnlock": true,
-    "passwordBlockFingerprintUnlock": true,
-    "passwordBlockIrisUnlock": true,
-    "passwordBlockTrustAgents": true,
-    "passwordExpirationDays": 6,
-    "passwordMinimumLength": 5,
-    "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
-    "passwordPreviousPasswordBlockCount": 2,
-    "passwordSignInFailureCountBeforeFactoryReset": 12,
-    "passwordRequiredType": "lowSecurityBiometric",
-    "requiredPasswordComplexity": "low",
-    "workProfileAllowAppInstallsFromUnknownSources": true,
-    "workProfileDataSharingType": "preventAny",
-    "workProfileBlockNotificationsWhileDeviceLocked": true,
-    "workProfileBlockAddingAccounts": true,
-    "workProfileBluetoothEnableContactSharing": true,
-    "workProfileBlockScreenCapture": true,
-    "workProfileBlockCrossProfileCallerId": true,
-    "workProfileBlockCamera": true,
-    "workProfileBlockCrossProfileContactsSearch": true,
-    "workProfileBlockCrossProfileCopyPaste": true,
-    "workProfileDefaultAppPermissionPolicy": "prompt",
-    "workProfilePasswordBlockFaceUnlock": true,
-    "workProfilePasswordBlockFingerprintUnlock": true,
-    "workProfilePasswordBlockIrisUnlock": true,
-    "workProfilePasswordBlockTrustAgents": true,
-    "workProfilePasswordExpirationDays": 1,
-    "workProfilePasswordMinimumLength": 0,
-    "workProfilePasswordMinNumericCharacters": 7,
-    "workProfilePasswordMinNonLetterCharacters": 9,
-    "workProfilePasswordMinLetterCharacters": 6,
-    "workProfilePasswordMinLowerCaseCharacters": 9,
-    "workProfilePasswordMinUpperCaseCharacters": 9,
-    "workProfilePasswordMinSymbolCharacters": 6,
-    "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout": 9,
-    "workProfilePasswordPreviousPasswordBlockCount": 13,
-    "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-    "workProfilePasswordRequiredType": "lowSecurityBiometric",
-    "workProfileRequiredPasswordComplexity": "low",
-    "workProfileRequirePassword": true,
-    "securityRequireVerifyApps": true,
-    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
-    "vpnEnableAlwaysOnLockdownMode": true,
-    "workProfileAllowWidgets": true,
-    "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
-    "workProfileAccountUse": "blockAll",
-    "allowedGoogleAccountDomains": [
-      "Allowed Google Account Domains value"
-    ],
-    "blockUnifiedPasswordForWorkProfile": true
-  }
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "passwordBlockFaceUnlock": true,
+  "passwordBlockFingerprintUnlock": true,
+  "passwordBlockIrisUnlock": true,
+  "passwordBlockTrustAgents": true,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
+  "passwordPreviousPasswordBlockCount": 2,
+  "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "passwordRequiredType": "lowSecurityBiometric",
+  "requiredPasswordComplexity": "low",
+  "workProfileAllowAppInstallsFromUnknownSources": true,
+  "workProfileDataSharingType": "preventAny",
+  "workProfileBlockNotificationsWhileDeviceLocked": true,
+  "workProfileBlockAddingAccounts": true,
+  "workProfileBluetoothEnableContactSharing": true,
+  "workProfileBlockScreenCapture": true,
+  "workProfileBlockCrossProfileCallerId": true,
+  "workProfileBlockCamera": true,
+  "workProfileBlockCrossProfileContactsSearch": true,
+  "workProfileBlockCrossProfileCopyPaste": true,
+  "workProfileDefaultAppPermissionPolicy": "prompt",
+  "workProfilePasswordBlockFaceUnlock": true,
+  "workProfilePasswordBlockFingerprintUnlock": true,
+  "workProfilePasswordBlockIrisUnlock": true,
+  "workProfilePasswordBlockTrustAgents": true,
+  "workProfilePasswordExpirationDays": 1,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfilePasswordMinNumericCharacters": 7,
+  "workProfilePasswordMinNonLetterCharacters": 9,
+  "workProfilePasswordMinLetterCharacters": 6,
+  "workProfilePasswordMinLowerCaseCharacters": 9,
+  "workProfilePasswordMinUpperCaseCharacters": 9,
+  "workProfilePasswordMinSymbolCharacters": 6,
+  "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout": 9,
+  "workProfilePasswordPreviousPasswordBlockCount": 13,
+  "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+  "workProfilePasswordRequiredType": "lowSecurityBiometric",
+  "workProfileRequiredPasswordComplexity": "low",
+  "workProfileRequirePassword": true,
+  "securityRequireVerifyApps": true,
+  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
+  "vpnEnableAlwaysOnLockdownMode": true,
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
+  "workProfileAccountUse": "blockAll",
+  "allowedGoogleAccountDomains": [
+    "Allowed Google Account Domains value"
+  ],
+  "blockUnifiedPasswordForWorkProfile": true,
+  "isAppInventoryCollectionEnabled": true
 }
 ```

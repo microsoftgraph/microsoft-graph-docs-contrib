@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementCloudCA.Read.All, DeviceManagementCloudCA.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementCloudCA.Read.All, DeviceManagementCloudCA.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -55,22 +55,35 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "list_cloudCertificationAuthorityLeafCertificate"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/deviceManagement/cloudCertificationAuthorityLeafCertificate
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "list_cloudCertificationAuthorityLeafCertificate_response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudCertificationAuthorityLeafCertificate",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1206
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudCertificationAuthorityLeafCertificate",
       "id": "976c94f8-94f8-976c-f894-6c97f8946c97",
+      "certificateAlgorithm": "rsa",
+      "certificateKeySize": "rsa2048",
+      "hashingAlgorithm": "sha256",
       "subjectName": "Subject Name value",
       "issuerId": "Issuer Id value",
       "issuerName": "Issuer Name value",
