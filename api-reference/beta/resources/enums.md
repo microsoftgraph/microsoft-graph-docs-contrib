@@ -6549,6 +6549,17 @@ Possible values for user account types (group membership), per Windows definitio
 |applyNotSupported|
 |unknownFutureValue|
 
+### printJobReleaseMethods values
+
+|Member|
+|:---|
+|none|
+|unknown|
+|badge|
+|biometrics|
+|usernamePassword|
+|unknownFutureValue|
+
 ### evaluationScopeType values
 
 |Member|

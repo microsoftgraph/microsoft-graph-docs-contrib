@@ -28,6 +28,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added audit metadata to the [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem) resource. Use this metadata to identify when a file or folder was created or last modified and who made the change when you select items for granular restore.
 - Added support for tracking backup retention periods and pending retention changes on [protectionUnitBase](/graph/api/resources/protectionunitbase). Use the **backupRetentionPeriodInDays** and **pendingRetentionPeriodChange** properties to monitor protection units as they move between policies with different retention periods.
 
+### Device and app management | Cloud printing
+
+- Added the [pullPrintPrinter](/graph/api/resources/pullprintprinter) resource type and related methods to create and manage virtual printers. Users can submit print jobs to a pull print printer and release them at a member printer.
+- Added support for secure release of print jobs. Set **holdJobsForSecureRelease** on a [printerShare](/graph/api/resources/printershare) to hold submitted jobs, then use [release](/graph/api/printjob-release) to release a job at a printer.
+
 ### Identity and access | Directory management
 
 - Added the **isPrivileged** property to the [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition) resource type. Use it to identify roles that contain sensitive Microsoft Entra resource actions.
@@ -87,6 +92,11 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 - Added support for managing Cloud PC user settings persistence storage sizing, automatic cleanup, and automatic snapshots. Use the [cloudPCUserSettingsPersistenceDetail](/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta&preserve-view=true) resource to configure these settings and access related operations.
 - Added the [cloudPcUserProfileSnapshot](/graph/api/resources/cloudpcuserprofilesnapshot?view=graph-rest-beta&preserve-view=true) resource type and related methods for creating, exporting, and restoring user settings persistence cloud profile snapshots.
 - Deprecated the **userSettingsPersistenceStorageSizeCategory** property on the [cloudPcUserSettingsPersistenceConfiguration](/graph/api/resources/cloudpcusersettingspersistenceconfiguration?view=graph-rest-beta&preserve-view=true) resource type. After December 11, 2026, use the **allocatedStorageSizeCategory** property on the [cloudPcStorageConfiguration](/graph/api/resources/cloudpcstorageconfiguration?view=graph-rest-beta&preserve-view=true) resource type instead.
+
+### Device and app management | Cloud printing
+
+- Added the [pullPrintPrinter](/graph/api/resources/pullprintprinter?view=graph-rest-beta&preserve-view=true) resource type and related methods to create and manage virtual printers. Users can submit print jobs to a pull print printer and release them at a member printer.
+- Added support for secure release of print jobs. Set **holdJobsForSecureRelease** on a [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) to hold submitted jobs, then use [release](/graph/api/printjob-release?view=graph-rest-beta&preserve-view=true) to release a job at a printer.
 
 ### Identity and access | Directory management
 

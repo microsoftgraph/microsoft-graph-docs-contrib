@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a long-running Universal Print operation. Base class for operation types such as [printerCreateOperation](printercreateoperation.md).
+Represents a long-running Universal Print operation. Base class for operation types such as [printerCreateOperation](printercreateoperation.md) and [pullPrintPrinterCreateOperation](pullprintprintercreateoperation.md).
 
 ## Methods
 

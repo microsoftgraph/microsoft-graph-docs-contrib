@@ -216,6 +216,10 @@ items:
       href: ../../api/print-list-taskdefinitions.md
     - name: Create taskDefinition
       href: ../../api/print-post-taskdefinitions.md
+    - name: List pullPrintPrinters
+      href: ../../api/print-list-pullprintprinters.md
+    - name: Create pullPrintPrinter
+      href: ../../api/print-post-pullprintprinters.md
   - name: Print connector
     items:
     - name: Print connector
@@ -254,6 +258,10 @@ items:
       href: ../../api/printjob-abort.md
     - name: Redirect
       href: ../../api/printjob-redirect.md
+    - name: Release
+      href: ../../api/printjob-release.md
+    - name: Release wait
+      href: ../../api/printjob-releasewait.md
   - name: Print operation
     items:
     - name: Print operation
@@ -330,6 +338,8 @@ items:
       href: ../../api/printer-post-tasktriggers.md
     - name: Delete task trigger
       href: ../../api/printer-delete-tasktrigger.md
+    - name: List pullPrintPrinters
+      href: ../../api/printer-list-pullprintprinters.md
   - name: Printer create operation
     items:
     - name: Printer create operation
@@ -364,6 +374,36 @@ items:
       href: ../../api/printershare-post-allowedgroups.md
     - name: Delete allowed group
       href: ../../api/printershare-delete-allowedgroup.md
+    - name: Get pullPrintPrinter
+      href: ../../api/printershare-list-pullprintprinter.md
+  - name: Pull print printer
+    items:
+    - name: Pull print printer
+      href: ../../resources/pullprintprinter.md
+    - name: List
+      href: ../../api/print-list-pullprintprinters.md
+    - name: Create
+      href: ../../api/print-post-pullprintprinters.md
+    - name: Get
+      href: ../../api/pullprintprinter-get.md
+    - name: Update
+      href: ../../api/pullprintprinter-update.md
+    - name: Delete
+      href: ../../api/pullprintprinter-delete.md
+    - name: Add printer
+      href: ../../api/pullprintprinter-post-printers.md
+    - name: Remove printer
+      href: ../../api/pullprintprinter-delete-printers.md
+    - name: Restore factory defaults
+      href: ../../api/pullprintprinter-restorefactorydefaults.md
+    - name: Member suggestions
+      href: ../../api/pullprintprinter-membersuggestions.md
+  - name: Pull print printer create operation
+    items:
+    - name: Pull print printer create operation
+      href: ../../resources/pullprintprintercreateoperation.md
+    - name: Get
+      href: ../../api/pullprintprintercreateoperation-get.md
   - name: Reports
     items:
     - name: Print usage by printer
@@ -430,6 +470,8 @@ items:
       href: ../../resources/printerdiscoverysettings.md
     - name: Printer location
       href: ../../resources/printerlocation.md
+    - name: Printer provided release support
+      href: ../../resources/printerprovidedreleasesupport.md
     - name: Printer share viewpoint
       href: ../../resources/printershareviewpoint.md
     - name: Printer status

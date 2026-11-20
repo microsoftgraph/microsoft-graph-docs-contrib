@@ -24,8 +24,10 @@ When accompanied by a Universal Print subscription, the Print feature enables ma
 | [Create printerShare](../api/print-post-shares.md) | [printerShare](printershare.md) | Create a new printer share by posting to the **shares** collection. |
 | [Create printer](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Create (register) a new printer with Universal Print. |
 | [Update settings](../api/print-update-settings.md) |  [printSettings](printsettings.md) | Updates tenant-wide settings for the Universal Print service. |
-| [List taskDefinitions](../api/print-list-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) collection | Get a tenant-wide list of printTaskDefinitions created within Universal Print. |
-| [Create taskDefinition](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Create a new printTaskDefinition. |
+| [List task definitions](../api/print-list-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) collection | Get a tenant-wide list of printTaskDefinitions created within Universal Print. |
+| [Create task definition](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Create a new printTaskDefinition. |
+| [List pull print printers](../api/print-list-pullprintprinters.md) | [pullPrintPrinter](pullprintprinter.md) collection | Get a list of the [pullPrintPrinter](../resources/pullprintprinter.md) objects and their properties in the tenant. |
+| [Create pull print printer](../api/print-post-pullprintprinters.md) | None | Create a new [pullPrintPrinter](../resources/pullprintprinter.md) object asynchronously. |
 
 ## Properties
 |Property|Type|Description|
@@ -38,8 +40,8 @@ When accompanied by a Universal Print subscription, the Print feature enables ma
 |connectors|[printConnector](printconnector.md) collection|The list of available print connectors.|
 |operations|[printOperation](../resources/printoperation.md) collection|The list of print long running operations.|
 |printers|[printer](printer.md) collection|The list of printers registered in the tenant.|
+|pullPrintPrinters|[pullPrintPrinter](pullprintprinter.md) collection|The list of pull print printers registered in the tenant.|
 |services|[printService](printservice.md) collection|The list of available Universal Print service endpoints.|
-|services|[printService](../resources/printservice.md) collection|The list of print service instances for various components of the printing infrastructure.|
 |shares|[printerShare](printershare.md) collection|The list of printer shares registered in the tenant.|
 |taskDefinitions|[printTaskDefinition](../resources/printtaskdefinition.md) collection|List of abstract definition for a task that can be triggered when various events occur within Universal Print.|
 
@@ -60,4 +62,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-
