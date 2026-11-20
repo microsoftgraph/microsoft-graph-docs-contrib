@@ -3,6 +3,126 @@
     {
       "ChangeList": [
         {
+          "Id": "13fbe2ca-904d-4ba0-9eb8-69f3f1d381cc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "userPfxCertificateKeyAlgorithm",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPfxCertificateKeyAlgorithm** enumeration type for the **keyAlgorithm** property of [userPFXCertificate](https://learn.microsoft.com/en-us/graph/api/resources/intune-raimportcerts-userpfxcertificate?view=graph-rest-beta).",
+          "Target": "userPfxCertificateKeyAlgorithm"
+        },
+        {
+          "Id": "13fbe2ca-904d-4ba0-9eb8-69f3f1d381cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "keyAlgorithm",
+          "ChangeType": "Addition",
+          "Description": "Added the read-only **keyAlgorithm** property to the [userPFXCertificate](https://learn.microsoft.com/en-us/graph/api/resources/intune-raimportcerts-userpfxcertificate?view=graph-rest-beta) resource to identify the public-key algorithm of an imported PFX certificate.",
+          "Target": "userPFXCertificate"
+        }
+      ],
+      "Id": "13fbe2ca-904d-4ba0-9eb8-69f3f1d381cc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-20T00:09:06.5504287Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "73eee50a-d859-4e44-a30c-2958cf6bf136",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudCertificationAuthorityCertificateAlgorithm",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudCertificationAuthorityCertificateAlgorithm** enumeration type for the **certificateAlgorithm** property of [cloudCertificationAuthorityLeafCertificate](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate?view=graph-rest-beta).",
+          "Target": "cloudCertificationAuthorityCertificateAlgorithm"
+        },
+        {
+          "Id": "73eee50a-d859-4e44-a30c-2958cf6bf136",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateAlgorithm",
+          "ChangeType": "Addition",
+          "Description": "Added the read-only **certificateAlgorithm** property to the [cloudCertificationAuthorityLeafCertificate](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate?view=graph-rest-beta) resource to identify the leaf certificate's public-key algorithm independently of its issuer.",
+          "Target": "cloudCertificationAuthorityLeafCertificate"
+        },
+        {
+          "Id": "73eee50a-d859-4e44-a30c-2958cf6bf136",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateKeySize",
+          "ChangeType": "Addition",
+          "Description": "Added the read-only **certificateKeySize** property to the [cloudCertificationAuthorityLeafCertificate](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate?view=graph-rest-beta) resource to identify the leaf certificate's RSA key size or elliptic curve.",
+          "Target": "cloudCertificationAuthorityLeafCertificate"
+        },
+        {
+          "Id": "73eee50a-d859-4e44-a30c-2958cf6bf136",
+          "ApiChange": "Property",
+          "ChangedApiName": "hashingAlgorithm",
+          "ChangeType": "Addition",
+          "Description": "Added the read-only **hashingAlgorithm** property to the [cloudCertificationAuthorityLeafCertificate](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate?view=graph-rest-beta) resource to identify the hash used in the certificate's signature.",
+          "Target": "cloudCertificationAuthorityLeafCertificate"
+        }
+      ],
+      "Id": "73eee50a-d859-4e44-a30c-2958cf6bf136",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-20T00:09:06.5502341Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e197704a-2cc4-47b0-98c7-61c2f71676ed",
+          "ApiChange": "Member",
+          "ChangedApiName": "deploymentPlan",
+          "ChangeType": "Addition",
+          "Description": "Added the `deploymentPlan` member to the [associatedAssignmentPayloadType](https://learn.microsoft.com/en-us/graph/api/resources/intune-policyset-associatedassignmentpayloadtype?view=graph-rest-beta) enumeration.",
+          "Target": "associatedAssignmentPayloadType"
+        },
+        {
+          "Id": "e197704a-2cc4-47b0-98c7-61c2f71676ed",
+          "ApiChange": "Member",
+          "ChangedApiName": "deployment",
+          "ChangeType": "Addition",
+          "Description": "Added the `deployment` member to the [associatedAssignmentPayloadType](https://learn.microsoft.com/en-us/graph/api/resources/intune-policyset-associatedassignmentpayloadtype?view=graph-rest-beta) enumeration.",
+          "Target": "associatedAssignmentPayloadType"
+        },
+        {
+          "Id": "e197704a-2cc4-47b0-98c7-61c2f71676ed",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknownFutureValue` extensibility sentinel to the [associatedAssignmentPayloadType](https://learn.microsoft.com/en-us/graph/api/resources/intune-policyset-associatedassignmentpayloadtype?view=graph-rest-beta) enumeration.",
+          "Target": "associatedAssignmentPayloadType"
+        }
+      ],
+      "Id": "e197704a-2cc4-47b0-98c7-61c2f71676ed",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-20T00:09:06.5502296Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "82a4af1b-b516-46cf-9695-17077d54c510",
+          "ApiChange": "Property",
+          "ChangedApiName": "isAppInventoryCollectionEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isAppInventoryCollectionEnabled** property to the [androidWorkProfileGeneralDeviceConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta) resource to control work-profile app inventory collection without collecting apps installed in the personal profile.",
+          "Target": "androidWorkProfileGeneralDeviceConfiguration"
+        }
+      ],
+      "Id": "82a4af1b-b516-46cf-9695-17077d54c510",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-20T00:09:06.5504214Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1ef2d0c3-3ec9-407b-acd4-1ee9791691ce",
           "ApiChange": "Resource",
           "ChangedApiName": "samsungEFotaFirmwareVersion",

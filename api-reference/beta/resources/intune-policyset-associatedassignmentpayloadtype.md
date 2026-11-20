@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -33,3 +33,6 @@ This enum represents associated assignment payload type
 |resourceAccessPolicy|23|Indicates that this filter is associated with a resource access policy (Wifi, VPN, Certificate) payload type|
 |win32app|24|Indicates that this filter is associated with a Win32 app payload type|
 |deviceManagmentConfigurationAndCompliancePolicy|29|Indicates that this filter is associated with a configuration or compliance policy on Device Configuration v2 Infrastructure payload type|
+|deploymentPlan|35|Indicates that this filter is associated with a deployment plan payload type.|
+|deployment|36|Indicates that this filter is associated with a deployment payload type.|
+|unknownFutureValue|37|Evolvable enumeration sentinel value. Do not use.|

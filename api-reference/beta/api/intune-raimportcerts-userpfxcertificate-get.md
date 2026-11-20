@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -57,33 +57,41 @@ If successful, this method returns a `200 OK` response code and [userPFXCertific
 
 ### Request
 Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_userPFXCertificate"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "get_userPFXCertificate_response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userPFXCertificate"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 742
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.userPFXCertificate",
-    "id": "045c159b-159b-045c-9b15-5c049b155c04",
-    "thumbprint": "Thumbprint value",
-    "intendedPurpose": "smimeEncryption",
-    "userPrincipalName": "User Principal Name value",
-    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
-    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
-    "providerName": "Provider Name value",
-    "keyName": "Key Name value",
-    "paddingScheme": "pkcs1",
-    "encryptedPfxBlob": "ZW5jcnlwdGVkUGZ4QmxvYg==",
-    "encryptedPfxPassword": "Encrypted Pfx Password value",
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
-  }
+  "@odata.type": "#microsoft.graph.userPFXCertificate",
+  "id": "045c159b-159b-045c-9b15-5c049b155c04",
+  "keyAlgorithm": "rsa",
+  "thumbprint": "Thumbprint value",
+  "intendedPurpose": "smimeEncryption",
+  "userPrincipalName": "User Principal Name value",
+  "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+  "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "providerName": "Provider Name value",
+  "keyName": "Key Name value",
+  "paddingScheme": "pkcs1",
+  "encryptedPfxBlob": "ZW5jcnlwdGVkUGZ4QmxvYg==",
+  "encryptedPfxPassword": "Encrypted Pfx Password value",
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
