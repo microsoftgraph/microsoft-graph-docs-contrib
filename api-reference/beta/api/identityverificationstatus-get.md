@@ -16,18 +16,19 @@ Namespace: microsoft.graph
 
 Read a user's [identityVerificationStatus](../resources/identityverificationstatus.md), including recent verification events. The response automatically includes up to 10 events, ordered by recency.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 The following permissions apply to reading another user's status.
 
-<!-- {
-  "blockType": "permissions",
-  "name": "identityverificationstatus-get-permissions",
+<!-- { 
+  "blockType": "permissions", 
+  "name": "identityverificationstatus_get", 
   "requestUrls": ["GET /users/{id}/identityVerificationStatus"]
-}
--->
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityverificationstatus-get-permissions.md)]
 
 To read only the signed-in user's status through `/me`, use the `IdentityVerification.Read` delegated permission. This permission doesn't grant access to other users' status.

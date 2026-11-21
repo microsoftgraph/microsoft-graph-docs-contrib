@@ -1,5 +1,5 @@
 ---
-title: "List plannerChatMessages for a task"
+title: "List messages"
 description: "Get a list of the plannerChatMessage objects associated with the task."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# List plannerChatMessages for a task
+# List messages
 
 Namespace: microsoft.graph
 
@@ -16,13 +16,15 @@ Namespace: microsoft.graph
 
 Get a list of the [plannerChatMessage](../resources/plannerchatmessage.md) objects associated with the task.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "task-list-messages-permissions"
+  "name": "task_list_messages_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/task-list-messages-permissions.md)]
@@ -34,12 +36,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /users/{usersId}/planner/plans_v2/{planId}/tasks/{taskId}/messages
+GET /planner/tasks_v2/{taskId}/messages
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/planner/plans_v2/{planId}/tasks/{taskId}/messages
+GET https://graph.microsoft.com/beta/planner/tasks_v2/{taskId}/messages
 ```
 
 
@@ -88,24 +86,8 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.plannerChatMessage",
-      "id": "260e1d70-6d06-3014-ceb0-4b020aa33c89",
-      "messageType": "String",
-      "content": "String",
-      "properties": {
-        "@odata.type": "microsoft.graph.chatMessageProperties"
-      },
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)",
-      "threadType": "String",
-      "parentEntityId": "String",
-      "isDeleted": "Boolean",
-      "deletedTime": "String (timestamp)",
-      "isEdited": "Boolean",
-      "editedTime": "String (timestamp)"
+      "id": "260e1d70-6d06-3014-ceb0-4b020aa33c89"
     }
   ]
 }
 ```
-

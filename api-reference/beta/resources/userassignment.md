@@ -14,8 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the assignment of a user to a [task](task.md). The assignee identity (`user`) is returned by default; `assignedBy` and `assignedDateTime` require $select.
+Represents the assignment of a user to a [task](../resources/task.md). The assignee identity (`user`) is returned by default; `assignedBy` and `assignedDateTime` require $select.
 
+To assign users when creating a task, supply **userAssignments** in the [Create task](../api/planner-post-tasks_v2.md) request. The service supplies the assignment audit fields.
 
 Inherits from [plannerDelta](../resources/plannerdelta.md).
 
@@ -24,15 +25,13 @@ Inherits from [plannerDelta](../resources/plannerdelta.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/task-list-userassignments.md)|[userAssignment](../resources/userassignment.md) collection|Get a list of the userAssignment objects and their properties.|
-|[Create](../api/task-post-userassignments.md)|[userAssignment](../resources/userassignment.md)|Create a new userAssignment object.|
 |[Get](../api/userassignment-get.md)|[userAssignment](../resources/userassignment.md)|Read the properties and relationships of [userAssignment](../resources/userassignment.md) object.|
-|[Update](../api/userassignment-update.md)|[userAssignment](../resources/userassignment.md)|Update the properties of a userAssignment object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedBy|[identitySet](../resources/identityset.md)|Identity of the user (or application) that made the assignment.|
-|assignedDateTime|DateTimeOffset|Date and time the assignment was made.|
+|assignedBy|[identitySet](../resources/identityset.md)|Identity of the user (or application) that made the assignment. Read-only.|
+|assignedDateTime|DateTimeOffset|Date and time the assignment was made. Read-only.|
 |capabilities|[userAssignmentCapability](../resources/userassignmentcapability.md)|Server-computed, read-only capability flags indicating which optional features are enabled for the entity.|
 |id|String|The unique identifier of the entity. Read-only. Inherited from [entity](../resources/entity.md)|
 |user|[identity](../resources/identity.md)|Identity of the user assigned to the task.|
@@ -66,4 +65,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

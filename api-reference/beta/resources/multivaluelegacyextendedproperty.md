@@ -1,5 +1,6 @@
 ---
 title: "multiValueLegacyExtendedProperty resource type"
+toc.title: "Multi-value legacy extended property"
 description: "An extended property that contains a collection of values."
 ms.localizationpriority: medium
 doc_type: resourcePageType

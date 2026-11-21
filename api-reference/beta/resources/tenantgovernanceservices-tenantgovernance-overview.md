@@ -1,6 +1,6 @@
 ---
 title: "Overview of Tenant Governance APIs in Microsoft Graph"
-description: "Discover, manage, and govern Microsoft Entra tenants at scale with Tenant Governance APIs in Microsoft Graph. Learn about related tenants, governance relationships and associated settings."
+description: "Discover, manage, and govern Microsoft Entra tenants with APIs for related tenants, governance relationships, configuration management, and resource policies."
 author: "akhil-potturi"
 ms.author: "potturiakhil"
 ms.reviewer: "hafowler,akhil.potturi,jeffsta"
@@ -29,6 +29,7 @@ The tenant governance APIs in Microsoft Graph enable IT administrators to progra
 - Configure cross-tenant delegated administration to centrally manage governed tenants.
 - Provision and manage multi-tenant applications across governed tenants.
 - Define governance policy templates to enforce consistent governance.
+- Prevent noncompliant resource changes using Microsoft Entra resource policy (preview).
 
 ## Discover related tenants
 
@@ -98,12 +99,19 @@ This capability enables centralized application management at scale from the gov
 
 In addition to the tenant governance APIs, you can use the [Tenant Configuration Management APIs](../resources/unified-tenant-configuration-management-api-overview.md) and their associated methods to maintain consistent tenant configurations for different workloads across governed tenants. This includes creating a baseline of settings such as security defaults, conditional access policies, and identity providers, then applying that baseline to governed tenants and tracking configuration drift over time.
 
+## Prevent noncompliant resource changes using Microsoft Entra resource policy (preview)
+
+[Microsoft Entra resource policy](../resources/entra-resource-policy-overview.md) provides policy-as-code guardrails for supported Microsoft Graph resource changes. Define rules in Rego and assign a specific policy version within a tenant to evaluate incoming requests against your organization's configuration standards. Use assignment parameters to reuse policy logic and choose whether to record evaluation outcomes or enforce the policy by blocking noncompliant requests.
+
+Resource policies complement Tenant Configuration Management: configuration baselines and drift tracking help maintain the desired state, while resource policies evaluate proposed changes during request processing. Test policies with the evaluation APIs and use the reporting APIs to review their impact in `doNotEnforce` mode before enabling enforcement.
+
 ## Audit logs
 
 All tenant governance activities are logged in the Microsoft Entra [audit logs](../resources/directoryaudit.md) of both the governing and governed tenants, providing full visibility into governance actions and changes. This includes governance relationship creation and termination, policy template updates, delegated administration activities, and multi-tenant application provisioning.
 
 ## Related content
 
+- [Microsoft Entra resource policy overview (preview)](../resources/entra-resource-policy-overview.md)
 - [relatedTenant resource type](../resources/tenantgovernanceservices-relatedtenant.md)
 - [governanceInvitation resource type](../resources/tenantgovernanceservices-governanceinvitation.md)
 - [governanceRequest resource type](../resources/tenantgovernanceservices-governancerequest.md)

@@ -1,6 +1,6 @@
 ---
 title: "dependency resource type"
-description: "An edge that expresses a dependency constraint between two items (for example, two tasks) in a plan. All four endpoint properties (`sourceItemType`, `sourceItemId`, `targetItemType`, `targetItemId`) are returned by default because they are the entity's intrinsic content."
+description: "Represents a dependency constraint between a source item and a target item in a plan in the Planner Unified plans Graph API."
 author: "EshaSugla"
 ms.date: 09/10/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An edge that expresses a dependency constraint between two items (for example, two [tasks](task.md)) in a [plan](plan.md). All four endpoint properties (`sourceItemType`, `sourceItemId`, `targetItemType`, `targetItemId`) are returned by default because they are the entity's intrinsic content.
+Represents a dependency constraint between two items, such as [tasks](../resources/task.md), in a [plan](../resources/plan.md). The **sourceItemId** and **targetItemId** properties identify the dependency endpoints.
 
 
 Inherits from [plannerDelta](../resources/plannerdelta.md).
@@ -24,10 +24,7 @@ Inherits from [plannerDelta](../resources/plannerdelta.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/plan-list-dependencies.md)|[dependency](../resources/dependency.md) collection|Get a list of the dependency objects and their properties.|
-|[Create](../api/plan-post-dependencies.md)|[dependency](../resources/dependency.md)|Create a new dependency object.|
 |[Get](../api/dependency-get.md)|[dependency](../resources/dependency.md)|Read the properties and relationships of [dependency](../resources/dependency.md) object.|
-|[Update](../api/dependency-update.md)|[dependency](../resources/dependency.md)|Update the properties of a dependency object.|
-|[Delete](../api/plan-delete-dependencies.md)|None|Delete a dependency object.|
 
 ## Properties
 |Property|Type|Description|
@@ -39,8 +36,8 @@ Inherits from [plannerDelta](../resources/plannerdelta.md).
 |id|String|The unique identifier of the entity. Read-only. Inherited from [entity](../resources/entity.md)|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user (or application) who last modified the entity. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Date and time the entity was last modified. The value is represented in ISO 8601 format and is always in UTC time. Read-only.|
-|sourceItemId|String|ID of the source item in the dependency.|
-|targetItemId|String|ID of the target item in the dependency.|
+|sourceItemId|String|ID of the source item in the dependency. Immutable after creation.|
+|targetItemId|String|ID of the target item in the dependency. Immutable after creation.|
 
 ## Relationships
 None.
@@ -77,4 +74,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

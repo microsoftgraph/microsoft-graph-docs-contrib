@@ -1,5 +1,5 @@
 ---
-title: "Get checklistItemV4"
+title: "Get checklist item"
 description: "Read the properties and relationships of checklistItemV4 object."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Get checklistItemV4
+# Get checklist item
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "checklistitemv4-get-permissions"
+  "name": "checklistitemv4_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/checklistitemv4-get-permissions.md)]
@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/planner/plans_v2/{planId}/tasks/{taskId}/checklist/{checklistItemV4Id}
 GET /users/{usersId}/planner/plans_v2/{planId}/tasks/{taskId}/checklist/{checklistItemV4Id}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,29 +82,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.checklistItemV4",
-    "id": "0d03366e-da38-ca6d-a60b-f3f6d8a68345",
-    "displayName": "String",
-    "isChecked": "Boolean",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "completedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "completedDateTime": "String (timestamp)",
-    "capabilities": {
-      "@odata.type": "microsoft.graph.checklistCapability"
-    },
-    "extensions": {
-      "@odata.type": "microsoft.graph.extensionFieldCollection"
-    }
-  }
+  "@odata.type": "#microsoft.graph.checklistItemV4",
+  "id": "0d03366e-da38-ca6d-a60b-f3f6d8a68345",
+  "displayName": "Product launch"
 }
 ```
 

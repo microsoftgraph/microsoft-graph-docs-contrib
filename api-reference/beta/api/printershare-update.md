@@ -45,9 +45,10 @@ The following table lists the properties that can be updated.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example to update which printer this printer share is associated with.|
-|displayName|String|The name of the printer share that print clients should display.|
 |allowAllUsers|Boolean|	If `true`, all users and groups are granted access to this printer share. This property supersedes the allow lists defined by the **allowedUsers** and **allowedGroups** navigation properties.|
+|displayName|String|The name of the printer share that print clients should display.|
+|holdJobsForSecureRelease|Boolean|Indicates whether print jobs sent to this printer share are held in the cloud until a user releases them at the printer. Set to `true` to enable secure release. Optional.|
+|printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example to update which printer this printer share is associated with.|
 
 > [!NOTE]
 > If the **printer** property is updated, other properties can't be updated in the same request.
@@ -55,60 +56,33 @@ The following table lists the properties that can be updated.
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [printerShare](../resources/printershare.md) object in the response body.
 ## Examples
-### Request
+
+### Example 1: Update the printer associated with a share
+
+The following example shows how to update the printer associated with a share.
+
+#### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printershare"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/print/shares/{id}
+PATCH https://graph.microsoft.com/beta/print/shares/d837c17b-3296-4384-a053-828d56e10f50
 Content-type: application/json
 
 {
-  "displayName": "ShareName",
-  "allowAllUsers": true,
-  "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
+  "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/d5f2a1b0-1111-2222-3333-444455556666"
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-printershare-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-printershare-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-printershare-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-printershare-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-printershare-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-printershare-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-printershare-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
+  "name": "update_printershare",
   "truncated": true,
   "@odata.type": "microsoft.graph.printerShare"
 } -->
@@ -128,6 +102,49 @@ Content-type: application/json
     "details": ["disconnected"],
     "description": ""
   }
+}
+```
+
+### Example 2: Enable secure release
+
+The following example enables secure release for a printer share.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_printershare_secure_release"
+} -->
+```http
+PATCH https://graph.microsoft.com/beta/print/shares/b1c2d3e4-5555-6666-7777-888899990000
+Content-Type: application/json
+
+{
+  "holdJobsForSecureRelease": true
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "name": "update_printershare_secure_release",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printerShare"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "b1c2d3e4-5555-6666-7777-888899990000",
+  "displayName": "Contoso Printer - Building 5, Floor 2",
+  "holdJobsForSecureRelease": true
 }
 ```
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the user storage list for Cloud PC [user settings persistence](../resources/cloudpcusersettingspersistencedetail.md) under the selected Cloud PC policy assignment.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfiles(configurationId='{value}')
+GET /deviceManagement/virtualEndpoint/provisioningPolicies/{cloudPcProvisioningPolicy-id}/assignments/{cloudPcProvisioningPolicyAssignment-id}/userSettingsPersistenceDetail/retrieveUserSettingsPersistenceProfiles(configurationId='{value}')
 ```
 
 ## Function parameters
@@ -62,33 +62,40 @@ The following example shows a request to retrieve the user storage list for the 
 
 <!-- {
   "blockType": "request",
-  "name": "retrieveUserSettingsPersistenceProfiles_cloudpcusersettingspersistencedetail",
+  "name": "retrieveUserSettingsPersistenceProfiles_cloudpcusersettingspersistencedetail"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/bed92b3e-4b42-4be5-af0d-ebb2d96c432f/assignments/e9d4eb36-7056-4161-93a4-2d6f8d20d6c0/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfiles(configurationId='64ff06de-9c00-4a5a-98b5-7f5abe26bfd9')
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/bed92b3e-4b42-4be5-af0d-ebb2d96c432f/assignments/e9d4eb36-7056-4161-93a4-2d6f8d20d6c0/userSettingsPersistenceDetail/retrieveUserSettingsPersistenceProfiles(configurationId='64ff06de-9c00-4a5a-98b5-7f5abe26bfd9')
 ```
 
 ### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
+  "name": "retrieveUserSettingsPersistenceProfiles_cloudpcusersettingspersistencedetail",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPCUserSettingsPersistenceProfile"
+  "@odata.type": "Collection(microsoft.graph.cloudPCUserSettingsPersistenceProfile)"
 }
 -->
 
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
-  "@odata.type": "https://graph.microsoft.com/beta/$metadata#retrieveUserSettingsPersistenceProfiles",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPCUserSettingsPersistenceProfile)",
   "value": [
     {
       "profileId": "8fd04a0b-ed49-46c0-a62d-e7980d829058",
       "userPrincipalName": "json@contoso.com",
       "profileSizeInGB": 4,
+      "profileDiskEncryptionType": "platformManagedKey",
+      "usageDetail": {
+        "profileUsedSizeInGB": 2.5,
+        "lastUsedSizeSyncDateTime": "2026-03-30T12:00:00Z"
+      },
       "lastProfileAttachedDateTime": "2020-06-03T12:43:32Z",
       "status": "connected"
     },
@@ -96,6 +103,8 @@ HTTP/1.1 200 OK
       "profileId": "95d04a0b-ed49-46c0-a62d-e7980d829058",
       "userPrincipalName": "json@contoso.com",
       "profileSizeInGB": 4,
+      "profileDiskEncryptionType": "customerManagedKey",
+      "usageDetail": null,
       "lastProfileAttachedDateTime": null,
       "status": "notConnected"
     },
@@ -103,6 +112,11 @@ HTTP/1.1 200 OK
       "profileId": "12d04a0b-ed49-46c0-a62d-e7980d829058",
       "userPrincipalName": "connie@contoso.com",
       "profileSizeInGB": 4,
+      "profileDiskEncryptionType": "platformManagedKey",
+      "usageDetail": {
+        "profileUsedSizeInGB": 1.25,
+        "lastUsedSizeSyncDateTime": "2026-03-30T12:00:00Z"
+      },
       "lastProfileAttachedDateTime": "2020-11-03T12:43:32Z",
       "status": "deleting"
     }

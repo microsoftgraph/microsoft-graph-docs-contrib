@@ -2,7 +2,7 @@
 title: "granularRestoreArtifactBase resource type"
 description: "An abstract type that represents granular restore artifacts associated with a restore session."
 author: "rahulprasad-ms"
-ms.date: 04/15/2026
+ms.date: 11/05/2026
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -23,6 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |browseSessionId|String|The unique identifier of the [browseSession](../resources/browsesessionbase.md)|
 |completionDateTime|DateTimeOffset|Date time when the artifact's restoration completes.|
+|destinationType|[destinationType](../resources/driverestoreartifact.md#destinationtype-values)|The restoration destination. The possible values are: `new`, `inPlace`, `unknownFutureValue`. Nullable. Use `inPlace` to restore to the original location.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restoration fails or completes with an error.|
 |id|String|The unique identifier for the artifact. Inherited from [entity](../resources/entity.md).|
 |restoredItemKey|String|The unique identifier for the restored artifact.|
@@ -61,7 +62,7 @@ The following JSON representation shows the resource type.
   "error": {
     "@odata.type": "microsoft.graph.publicError"
   },
-  "completionDateTime": "String (timestamp)"
+  "completionDateTime": "String (timestamp)",
+  "destinationType": "String"
 }
 ```
-

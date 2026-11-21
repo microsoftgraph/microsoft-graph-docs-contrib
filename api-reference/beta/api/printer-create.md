@@ -38,15 +38,15 @@ POST /print/printers/create
 ## Request body
 In the request body, provide a JSON object with the following properties.
 
-| Parameter      | Type    |Description| Required? |
-|:---------------|:--------|:----------|:----------|
-|displayName|String|The display name to assign to the printer.|Yes|
-|manufacturer|String|The manufacturer of the printer.|Yes|
-|model|String|The model of the printer.|Yes|
-|physicalDeviceId|String|The physical device UUID of the printer. Required if the `hasPhysicalDevice` property is true.|No|
-|hasPhysicalDevice|Boolean|True if the printer has physical output device, false otherwise. If omitted, the default value is true.|No|
-|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|The X.509 Certificate Signing Request (CSR) for the certificate created and used by the printer to identify itself.|Yes|
-|connectorId|String|Id of Connector acting as proxy to the printer.|No|
+| Parameter               | Type                                                                                 | Description |
+|:------------------------|:-------------------------------------------------------------------------------------|:------------|
+| displayName             | String                                                                               | Required. The display name to assign to the printer. |
+| manufacturer            | String                                                                               | Required. The manufacturer of the printer. |
+| model                   | String                                                                               | Required. The model of the printer. |
+| physicalDeviceId        | String                                                                               | Optional. The physical device UUID of the printer. Required if the `hasPhysicalDevice` property is true. |
+| hasPhysicalDevice       | Boolean                                                                              | Optional. True if the printer has physical output device, false otherwise. If omitted, the default value is true. |
+| certificateSigningRequest | [printCertificateSigningRequest](../resources/printcertificatesigningrequest.md) | Required. The X.509 Certificate Signing Request (CSR) for the certificate created and used by the printer to identify itself. |
+| connectorId             | String                                                                               | Optional. Id of Connector acting as proxy to the printer. |
 
 ## Response
 If successful, this method returns a `202 Accepted` response code and a link to the associated [printerCreateOperation](../resources/printercreateoperation.md) in the `Operation-Location` header.

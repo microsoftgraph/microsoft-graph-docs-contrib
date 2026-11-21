@@ -75,6 +75,10 @@ This resource is an open type that allows additional properties beyond those doc
 |displayName|String|The display name for the agent identity blueprint principal. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |id|String|The unique identifier for the agent identity blueprint principal. Inherited from [entity](../resources/entity.md). Key. Not nullable. Read-only.|
 |info|[informationalUrl](../resources/informationalurl.md)|Basic profile information of the acquired application such as app's marketing, support, terms of service and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|lifecyclePolicyComplianceState|[lifecyclePolicyComplianceState](#lifecyclepolicycompliancestate-values)|The current lifecycle policy compliance state of the agent identity blueprint principal. Read-only. Returned only on `$select`.|
+|lifecyclePolicyComplianceStateLastModifiedDateTime|DateTimeOffset|The date and time when the lifecycle policy compliance state was last updated. Read-only. Returned only on `$select`.|
+|lifecyclePolicyComplianceStateReason|String|The reason for the current lifecycle policy compliance state. Read-only. Returned only on `$select`.|
+|lifecyclePolicyNonComplianceDisablementDateTime|DateTimeOffset|The date and time when the agent identity blueprint principal was disabled because it was noncompliant with a lifecycle policy. Nullable. Read-only. Returned only on `$select`.|
 |managerApplications|Guid collection|The collection of application IDs designated as managers of this agent identity blueprint principal's backing [agentIdentityBlueprint](../resources/agentidentityblueprint.md). Read-only; the value is server-managed and reflects the **managerApplications** of the backing agentIdentityBlueprint. To change the managers, an owner or administrator must update the **managerApplications** property on the backing agentIdentityBlueprint **in the tenant where it's registered**. For multitenant agent identity blueprints, admins in a tenant where the blueprint is only consumed can't make this change — they must ask an owner or administrator in the blueprint's home tenant. Not nullable. Returned only on `$select`.|
 |publishedPermissionScopes|[permissionScope](../resources/permissionscope.md) collection|The delegated permissions exposed by the application. For more information, see the **oauth2PermissionScopes** property on the agent identity blueprint entity's **api** property. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |publisherName|String|The name of the Microsoft Entra tenant that published the application. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
@@ -83,6 +87,17 @@ This resource is an open type that allows additional properties beyond those doc
 |signInAudience|String|Specifies the Microsoft accounts that are supported for the current agent identity blueprint. Read-only. Supported values are: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount`, and `PersonalMicrosoftAccount`. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |tags|String collection|Custom strings that can be used to categorize and identify the agent identity blueprint principal. Not nullable. The value is the union of strings set here and on the associated agent identity blueprint entity's **tags** property. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |verifiedPublisher|[verifiedPublisher](../resources/verifiedpublisher.md)|Specifies the verified publisher of the application that's linked to this agent identity blueprint principal. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+
+### lifecyclePolicyComplianceState values
+
+The following values apply to both agent identity blueprint principals and agent identities. Use **lifecyclePolicyComplianceStateReason** for details about the current state.
+
+| Member | Description |
+|:---|:---|
+| compliant | The agent identity or blueprint principal complies with lifecycle policies. |
+| warning | The agent identity or blueprint principal is approaching noncompliance. |
+| warningNotify | The agent identity or blueprint principal is in a warning state and notifications have been sent. |
+| nonCompliant | The agent identity or blueprint principal has violated lifecycle policies. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -120,6 +135,10 @@ The following JSON representation shows the resource type. Only a subset of all 
   "appRoleAssignmentRequired": "Boolean",
   "disabledByMicrosoftStatus": "String",
   "displayName": "String",
+  "lifecyclePolicyComplianceState": "String",
+  "lifecyclePolicyComplianceStateLastModifiedDateTime": "String (timestamp)",
+  "lifecyclePolicyComplianceStateReason": "String",
+  "lifecyclePolicyNonComplianceDisablementDateTime": "String (timestamp)",
   "publisherName": "String",
   "servicePrincipalNames": [
     "String"
@@ -150,4 +169,3 @@ The following JSON representation shows the resource type. Only a subset of all 
   }
 }
 ```
-

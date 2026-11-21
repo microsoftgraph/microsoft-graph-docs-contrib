@@ -6,7 +6,7 @@ ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
-ms.date: 09/30/2026
+ms.date: 11/05/2026
 ---
 
 # Create sharePointRestoreSession
@@ -51,9 +51,12 @@ You can specify the following properties when you create a **sharePointRestoreSe
 
 |Property|Type|Description|
 |:---|:---|:---|
+|@microsoft.graph.conflictBehavior|String|An optional instance annotation that specifies conflict handling for every artifact in a granular restore session. The possible values are: `fail` (default), `replace`, and `rename`. With `fail`, a conflicting artifact fails to restore; `replace` overwrites the existing item; `rename` preserves the existing item and gives the restored item a nonconflicting name. If you supply this annotation for a non-granular session, the request returns `400 Bad Request`.|
 |granularSiteRestoreArtifacts|[granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) collection|A collection of [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) objects. Required.|
 |policyId|String|The identifier of the protection policy that scopes the restore session. The service validates that the referenced protection units belong to this policy. Optional. Inherited from [restoreSessionBase](../resources/restoresessionbase.md).|
 |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|A collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects. Required.|
+
+To restore granular artifacts to their original location, set **destinationType** to `inPlace` on each artifact. A single session can't mix destination types.
 
 ## Response
 
@@ -149,9 +152,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a granular restore session
+### Example 2: Create an in-place granular restore session
 
-The following example shows how to create a granular restore session.
+The following example shows how to restore SharePoint artifacts to their original location and rename restored items if same-name items already exist.
 
 #### Request
 
@@ -166,14 +169,17 @@ POST https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointRestoreS
 Content-Type: application/json
 
 {
+  "@microsoft.graph.conflictBehavior": "rename",
   "granularSiteRestoreArtifacts": [
     {
       "browseSessionId": "eJxVjEEKwjAQRfc80xeIleluFd2HRkZCgAIEu9CO3aUv78W4H_q_NgQY2gSJHT8IoOhrl5AzosZGBk6",
-      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2",
+      "destinationType": "inPlace"
     },
     {
       "browseSessionId": "eJxVjEEKwjAQRfc80xeIleluFd2HRkZCgAIEu9CO3aUv78W4H_q_NgQY2gSJHT8IoOhrl5AzosZGBk6",
-      "id": "b535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+      "id": "b535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2",
+      "destinationType": "inPlace"
     }
   ]
 }

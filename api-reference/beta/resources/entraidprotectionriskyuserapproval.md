@@ -1,5 +1,6 @@
 ---
 title: "entraIdProtectionRiskyUserApproval resource type"
+toc.title: "Entra ID Protection risky user approval"
 description: "Represents the approval configuration for risky users detected by Microsoft Entra ID Protection."
 author: "OWinfreyATL"
 ms.date: 11/06/2025

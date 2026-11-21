@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "ed542436-ed53-451d-b6c6-07dd31bded4e",
+          "ApiChange": "Member",
+          "ChangedApiName": "aiElevatedAccountRisk",
+          "ChangeType": "Addition",
+          "Description": "Added the `aiElevatedAccountRisk` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        },
+        {
+          "Id": "ed542436-ed53-451d-b6c6-07dd31bded4e",
+          "ApiChange": "Member",
+          "ChangedApiName": "userPassedVerifiedIdDrivenByRiskBasedPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the `userPassedVerifiedIdDrivenByRiskBasedPolicy` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        }
+      ],
+      "Id": "ed542436-ed53-451d-b6c6-07dd31bded4e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-26T19:53:04.5916161Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e51c981f-6630-4a80-8e81-84cabeab6dc5",
           "ApiChange": "Resource",
           "ChangedApiName": "allResourcesExclusions",

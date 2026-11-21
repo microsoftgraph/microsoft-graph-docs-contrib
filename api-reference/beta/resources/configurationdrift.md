@@ -23,6 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List](../api/configurationmanagement-list-configurationdrifts.md)|[configurationDrift](../resources/configurationdrift.md) collection|Get a list of the [configurationDrift](../resources/configurationdrift.md) objects and their properties.|
 |[Get](../api/configurationdrift-get.md)|[configurationDrift](../resources/configurationdrift.md)|Get the properties and relationships of a [configurationDrift](../resources/configurationdrift.md) object.|
+|[Remediate](../api/configurationdrift-remediate.md)|[configurationDriftRemediationResult](../resources/configurationdriftremediationresult.md)|Restore the drifted properties to their desired baseline values.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,6 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |monitorId|String|Globally unique identifier (GUID) of the monitor. System-generated. <br><br>Supports `$filter` (`eq`, `ne`).|
 |resourceInstanceIdentifier|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|An identifier that allows users to understand exactly where the drift is. <br><br>Requires `$select` to retrieve.|
 |resourceType|String|Resource for which the drift is detected. <br><br>Supports `$filter` (`eq`, `ne`, `startsWith`).|
+|resourceVersion|Int32|The processing framework for the baseline resource. A missing value or `0` identifies a DSC-based resource; `1` identifies a V2-framework resource.|
 |status|driftStatus|Status of the drift. The possible values are: `active`, `fixed`, `unknownFutureValue`. <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
 |tenantId|String|Globally unique identifier (GUID) of the tenant for which the monitor runs. Fetched automatically by the system. <br><br>Supports `$filter` (`eq`, `ne`).|
 
@@ -59,6 +61,7 @@ The following JSON representation shows the resource type.
   "monitorId": "String",
   "resourceInstanceIdentifier": {"@odata.type": "microsoft.graph.openComplexDictionaryType"},
   "resourceType": "String",
+  "resourceVersion": "Int32",
   "status": "String",
   "tenantId": "String"
 }

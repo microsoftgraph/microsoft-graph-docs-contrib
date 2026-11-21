@@ -12,8 +12,10 @@ ms.subservice: "tenant-configuration-management"
 
 In traditional Tenant Configuration Management, any administrator within an organization uses their credentials to access the resources to which they have access. However, administrators don't have full control over the tenant configuration and lack visibility into whether it deviates from the desired configuration state.
 
-The Tenant Configuration Management (TCM) APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization. The following list shows the supported workloads:
+The Tenant Configuration Management (TCM) APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization. For monitoring and snapshots, the following workloads are supported:
 
+- [Agent (preview)](utcm-agent-resources.md)
+- [Microsoft Copilot (preview)](utcm-copilot-resources.md)
 - [Microsoft Defender](/graph/utcm-securityandcompliance-resources)
 - [Microsoft Entra](/graph/utcm-entra-resources)
 - [Microsoft Exchange Online](/graph/utcm-exchange-resources)
@@ -32,6 +34,20 @@ As the Microsoft 365 ecosystem grows, keeping tenant settings aligned with the d
 ### Easily extract and understand current configuration states
 
 The [snapshot](/graph/api/resources/configurationsnapshotjob) APIs in TCM simplify the process of retrieving the current configuration across multiple workloads within a tenant. Administrators can use these snapshots to get a clear, declarative view of how settings are currently applied, which makes audits, reviews, and troubleshooting much easier.
+
+### Reuse baselines with configuration templates (preview)
+
+Configuration templates store reusable, versioned baselines that monitors can reference. Templates don't run by themselves; a monitor runs the baseline. You can retain up to three versions per template. Inline monitor baselines remain supported. For more information, see [configurationTemplate](/graph/api/resources/configurationtemplate?view=graph-rest-beta&preserve-view=true).
+
+### Remediate selected configuration drift (preview)
+
+Drift remediation attempts to restore the drifted properties of one resource instance to the desired values in its baseline. Review the [remediation result](/graph/api/configurationdrift-remediate?view=graph-rest-beta&preserve-view=true) to determine whether remediation succeeded or failed. Remediation requires delegated access and the signed-in user's workload role.
+
+### Apply a baseline once with applyOnce (preview)
+
+A monitor in `applyOnce` mode applies its baseline in a background job on behalf of the administrator who created or updated it. It can make only the changes that administrator is authorized to make. Unlike scheduled monitoring, this mode applies the baseline once and then makes the monitor inactive. For token storage and Customer Key guidance, see [Set up permissions for remediation and applyOnce (preview)](utcm-authentication-setup.md#set-up-permissions-for-remediation-and-applyonce-preview).
+
+These preview capabilities are available through the Microsoft Graph beta endpoint. TCM as a service is available only in the global service, not in national clouds. Resource support for remediation and `applyOnce` differs from monitoring and snapshots. See [Supported resources for remediation and applyOnce (preview)](utcm-remediation-applyonce-resources.md) for the currently supported resources before planning configuration changes.
 
 ## API reference
 

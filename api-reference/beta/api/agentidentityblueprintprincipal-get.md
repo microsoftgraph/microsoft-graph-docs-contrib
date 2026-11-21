@@ -76,7 +76,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal?$select=id,appId,createdDateTime,accountEnabled,appDisplayName,appOwnerOrganizationId,appRoleAssignmentRequired,appRoles,disabledByMicrosoftStatus,info,oauth2PermissionScopes,servicePrincipalType,tags,verifiedPublisher,lifecyclePolicyComplianceState,lifecyclePolicyComplianceStateReason,lifecyclePolicyComplianceStateLastModifiedDateTime,lifecyclePolicyNonComplianceDisablementDateTime
 ```
 
 # [JavaScript](#tab/javascript)
@@ -110,6 +110,10 @@ Content-Type: application/json
     "appRoleAssignmentRequired": false,
     "appRoles": [],
     "disabledByMicrosoftStatus": null,
+    "lifecyclePolicyComplianceState": "warning",
+    "lifecyclePolicyComplianceStateReason": "Approaching policy renewal deadline",
+    "lifecyclePolicyComplianceStateLastModifiedDateTime": "2026-04-01T10:30:00Z",
+    "lifecyclePolicyNonComplianceDisablementDateTime": null,
     "info": {
         "termsOfServiceUrl": null,
         "supportUrl": null,
@@ -123,4 +127,3 @@ Content-Type: application/json
     "verifiedPublisher": null
 }
 ```
-

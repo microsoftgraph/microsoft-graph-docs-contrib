@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "b0d8b584-dc5a-48a1-9997-8eacd427751a",
+          "ApiChange": "Member",
+          "ChangedApiName": "sapAc",
+          "ChangeType": "Addition",
+          "Description": "Added the `sapAc` member to the **connectorType** enumeration.",
+          "Target": "connectorType"
+        },
+        {
+          "Id": "b0d8b584-dc5a-48a1-9997-8eacd427751a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationInfo](https://learn.microsoft.com/en-us/graph/api/resources/authenticationinfo?view=graph-rest-1.0) resource.",
+          "Target": "authenticationInfo"
+        },
+        {
+          "Id": "b0d8b584-dc5a-48a1-9997-8eacd427751a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "clientCredentialAuthenticationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [clientCredentialAuthenticationInfo](https://learn.microsoft.com/en-us/graph/api/resources/clientcredentialauthenticationinfo?view=graph-rest-1.0) resource.",
+          "Target": "clientCredentialAuthenticationInfo"
+        },
+        {
+          "Id": "b0d8b584-dc5a-48a1-9997-8eacd427751a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalSapAcConnectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalSapAcConnectionInfo](https://learn.microsoft.com/en-us/graph/api/resources/externalsapacconnectioninfo?view=graph-rest-1.0) resource.",
+          "Target": "externalSapAcConnectionInfo"
+        }
+      ],
+      "Id": "b0d8b584-dc5a-48a1-9997-8eacd427751a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-11-06T18:40:58.0908996Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ed5c90ad-0782-49e5-b861-3933655cc25a",
           "ApiChange": "Method",
           "ChangedApiName": "Get approverDelegate",

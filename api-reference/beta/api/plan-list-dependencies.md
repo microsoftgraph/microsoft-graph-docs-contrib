@@ -1,5 +1,5 @@
 ---
-title: "List dependency objects"
+title: "List dependencies"
 description: "Get a list of the dependency objects and their properties."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# List dependency objects
+# List dependencies
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "plan-list-dependencies-permissions"
+  "name": "plan_list_dependencies_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/plan-list-dependencies-permissions.md)]
@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/planner/plans_v2/{planId}/dependencies
 GET /users/{usersId}/planner/plans_v2/{planId}/dependencies
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -89,23 +85,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.dependency",
-      "id": "97f05daa-0479-6fa3-cb09-28d363132000",
-      "sourceItemId": "String",
-      "targetItemId": "String",
-      "constraint": "String",
-      "creationInfo": {
-        "@odata.type": "microsoft.graph.creationInfo"
-      },
-      "archivalInfo": {
-        "@odata.type": "microsoft.graph.plannerArchivalInfo"
-      },
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "extensions": {
-        "@odata.type": "microsoft.graph.extensionFieldCollection"
-      }
+      "id": "97f05daa-0479-6fa3-cb09-28d363132000"
     }
   ]
 }

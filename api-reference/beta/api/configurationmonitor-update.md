@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [configurationMonitor](../resources/configurationmonitor.md) object, including the monitor name, description, and baseline. You must provide the full monitor body when you call this API.
+Update the properties of a [configurationMonitor](../resources/configurationmonitor.md), including its name, description, baseline, mode, status, or referenced version of the same template. When updating an inline baseline, provide the full monitor body as described in the request body section.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -24,6 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "configurationmonitor_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/configurationmonitor-update-permissions.md)]
+
+Updating or reactivating an `applyOnce` monitor supports delegated permissions only. The TCM service principal also needs delegated workload permissions, and the signed-in user needs the roles required to modify the target resources. See [Set up permissions for remediation and applyOnce](/graph/utcm-authentication-setup#set-up-permissions-for-remediation-and-applyonce-preview).
+
+For `applyOnce`, the service stores delegated tokens until the background job runs. See the token-storage and Customer Key guidance in [Set up authentication](/graph/utcm-authentication-setup).
 
 ## HTTP request
 
@@ -55,8 +59,14 @@ PATCH /admin/configurationManagement/configurationMonitors/{configurationMonitor
 |baseline|[configurationBaseline](../resources/configurationbaseline.md)|A complex object that contains details of at least one resource and one property associated with the resource to be monitored. Optional.|
 |description|String| User-friendly description of the monitor given by the user. Optional.|
 |displayName|String| User-friendly name given by the user to the monitor. Optional.|
+|mode|monitorMode|The mode of the monitor. The possible values are: `monitorOnly`, `applyOnce`, `unknownFutureValue`. Optional.|
 |parameters|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Key-value pairs that contain the values of parameters which might be used in the baseline. Optional.|
 |status|monitorStatus|Status of the monitor. The possible values are: `active`, `inactive`, `unknownFutureValue`. Optional.|
+|template|[configurationTemplateVersion](../resources/configurationtemplateversion.md)|A reference to a new version of the same template, supplied inline with **templateId** and **version**. Optional. Switching to a different template isn't supported.|
+
+For a template-linked monitor, update the inline **template** reference to use a new version; don't patch its baseline directly. Direct writes to `/configurationMonitors/{configurationMonitorId}/template` aren't supported.
+
+Changing an active `monitorOnly` monitor to `applyOnce` queues a one-time application of the baseline. If the monitor is inactive, also set **status** to `active`. To run an inactive `applyOnce` monitor again, update **status** to `active`. Updating the mode of an already-active `applyOnce` monitor doesn't queue a duplicate execution.
 
 >**Note**: The [configurationBaseline](../resources/configurationbaseline.md) resource is a contained entity. If an admin wants to update the **configurationBaseline**, they must provide the full monitor body, including values for all fields, particularly those that are relevant and can be updated.
 
@@ -173,7 +183,8 @@ Content-Type: application/json
             "abc@contoso.onmicrosoft.com",
             "[concat('testSharedMailbox@', parameters('FQDN'))]"
           ]
-        }
+        },
+        "resourceVersion": 0
       },
       {
         "displayName": "Accepted Domain",
@@ -182,7 +193,8 @@ Content-Type: application/json
           "Identity": "contoso.onmicrosoft.com",
           "DomainType": "InternalRelay",
           "Ensure": "Present"
-        }
+        },
+        "resourceVersion": 0
       },
       {
         "displayName": "Mail Contact Resource",
@@ -193,7 +205,8 @@ Content-Type: application/json
           "ExternalEmailAddress": "SMTP:chris@fabrikam.com",
           "Alias": "Chrisa",
           "Ensure": "Present"
-        }
+        },
+        "resourceVersion": 0
       }
     ]
   },
@@ -239,6 +252,107 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Change an inactive monitor to applyOnce
+
+Set both **mode** and **status** so that an inactive monitor applies its baseline. Changing only **mode** on an inactive monitor doesn't trigger execution.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_monitor_applyonce_request"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/22222222-3333-4444-5555-666666666666
+Content-Type: application/json
+
+{
+  "mode": "applyOnce",
+  "status": "active"
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response"
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Run an inactive applyOnce monitor again
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "rerun_applyonce_monitor_request"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/22222222-3333-4444-5555-666666666666
+Content-Type: application/json
+
+{
+  "status": "active"
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response"
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 5: Use a new version of the same template
+
+Supply the new inline **template** reference on the monitor. Don't send a PATCH request to its `/template` navigation endpoint.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_monitor_template_version_request"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors/22222222-3333-4444-5555-666666666666
+Content-Type: application/json
+
+{
+  "template": {
+    "templateId": "11111111-2222-3333-4444-555555555555",
+    "version": "2"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response"
 }
 -->
 ``` http
