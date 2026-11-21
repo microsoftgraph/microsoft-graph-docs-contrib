@@ -39,7 +39,7 @@ GET /servicePrincipals/{id}/microsoft.graph.agentIdentity
 
 This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
-Use `$select=instanceMode` to read the topology of an agent identity. The value is `singleInstance` for an identity backed directly by a single-instance blueprint, or `multiInstance` for the standard topology. Agent identities without a stored value return `multiInstance` by default.
+Use `$select=instanceMode` to read the topology of an agent identity. For blueprint-based creation, the value is `singleInstance` for an identity backed directly by a single-instance blueprint, or `multiInstance` for the standard topology. Agent identities without a stored value return `multiInstance` by default.
 
 ## Request headers
 
@@ -131,5 +131,32 @@ Content-Type: application/json
   "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
   "displayName": "Contoso Single-Instance Agent",
   "instanceMode": "singleInstance"
+}
+```
+
+### Example 3: Read the CIMD properties of an agent identity
+
+#### Request
+
+Use `$select` to retrieve the CIMD properties explicitly.
+
+<!-- { "blockType": "request", "name": "get_cimd_agentidentity" } -->
+```http
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity?$select=id,clientIdMetadataDocumentUrl,hasClientIdMetadataDocument
+```
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.agentIdentity" } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "11111111-2222-3333-4444-555555555555",
+  "clientIdMetadataDocumentUrl": "https://client.contoso.com/oauth/client-metadata.json",
+  "hasClientIdMetadataDocument": true
 }
 ```

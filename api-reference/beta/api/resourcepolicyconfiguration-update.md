@@ -18,6 +18,8 @@ Update the tenant-wide [resourcePolicyConfiguration](../resources/resourcepolicy
 
 Retrieve the current configuration and supply its `@odata.etag` value in the `If-Match` header to protect against concurrent changes. A stale ETag causes `412 Precondition Failed`; retrieve the latest configuration before retrying the update. When configuring the singleton for the first time, the initial GET response represents the default configuration and has no ETag.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

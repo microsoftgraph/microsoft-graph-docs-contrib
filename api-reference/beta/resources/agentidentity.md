@@ -18,7 +18,9 @@ Represents an agent identity in Microsoft Entra ID. An agent identity is an acco
 
 Inherits from [servicePrincipal](../resources/serviceprincipal.md).
 
-The **instanceMode** property identifies the topology used when the agent identity was created. A multi-instance identity is backed by an agent identity blueprint and an agent identity blueprint principal. A single-instance identity is backed directly by a blueprint whose **isSingleInstance** property is `true`, without an agent identity blueprint principal. Such a blueprint supports at most one active agent identity per tenant.
+An agent identity can also be backed by a client ID metadata document (CIMD). For a CIMD-backed identity, **clientIdMetadataDocumentUrl** is the immutable HTTPS URL that identifies the client, and **hasClientIdMetadataDocument** is `true`. Creating this identity doesn't require a caller-supplied agent identity blueprint.
+
+The **instanceMode** property identifies the topology used when the agent identity was created. For blueprint-based creation, a multi-instance identity is backed by an agent identity blueprint and an agent identity blueprint principal. A single-instance identity is backed directly by a blueprint whose **isSingleInstance** property is `true`, without an agent identity blueprint principal. Such a blueprint supports at most one active agent identity per tenant.
 
 This resource is an open type that allows additional properties beyond those documented here.
 
@@ -73,13 +75,15 @@ This resource is an open type that allows additional properties beyond those doc
 |:---|:---|:---|
 |odata.type|String| `#microsoft.graph.agentIdentity`. Distinguishes this object as an agent identity. Can be used to identify this object as an agent identity, instead of another kind of service principal. |
 |accountEnabled|Boolean|`true` if the agent identity account is enabled; otherwise, `false`. If set to `false`, then no users are able to sign in to this app, even if they're assigned to it. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|agentIdentityBlueprintId|String|The **appId** of the agent identity blueprint that defines the configuration for this agent identity.|
+|agentIdentityBlueprintId|String|The **appId** of the agent identity blueprint that defines the configuration for this agent identity. For a CIMD-backed identity, this value is derived from the CIMD URL; creating the identity doesn't create a separate agent identity blueprint object.|
 |appRoleAssignmentRequired|Boolean|Specifies whether users or other service principals need to be granted an app role assignment for this agent identity before users can sign in or apps can get tokens. The default value is `false`. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md). Supports `$filter` (`eq`, `ne`, `NOT`).|
+|clientIdMetadataDocumentUrl|String|The canonical HTTPS URL of the client ID metadata document (CIMD) that identifies this agent identity. Set when creating a CIMD-backed agent identity; can't be changed afterward. The URL must be absolute, include a host and a path with no `.` or `..` segments, and contain no user information, query, or fragment. An explicit port is allowed and preserved; URLs that differ only by an explicit port are distinct. Microsoft Entra ID validates and canonicalizes the URL but doesn't retrieve the document. Supports `$filter` (`eq`) with `$count=true` and the **ConsistencyLevel** header set to `eventual`.|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. Requires `$select` to retrieve. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |createdByAppId|String|The **appId** of the application that created this agent identity. Set internally by Microsoft Entra ID. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |createdDateTime|DateTimeOffset|The date and time the agent identity was created. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered Agent Identity Blueprint. The possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |displayName|String|The display name for the agent identity. When the agent identity is created or its display name is updated, the value can't contain prohibited characters, such as the zero-width space (U+200B). Uses the same prohibited-character rules as an [application](../resources/application.md) display name. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|hasClientIdMetadataDocument|Boolean|`true` if this agent identity is backed by a client ID metadata document (CIMD); otherwise, `false`. Read-only. Not nullable. If the service returns `null`, Microsoft Graph returns `false`. Supports `$filter` (`eq`) with `$count=true` and the **ConsistencyLevel** header set to `eventual`.|
 |id|String|The unique identifier for the agent identity. Inherited from [directoryObject](../resources/directoryobject.md). Key. Not nullable. Read-only. Inherited from [entity](../resources/entity.md).|
 |instanceMode|[instanceMode](#instancemode-values)|The topology used when the agent identity was created. Immutable after creation. Not nullable. Defaults to `multiInstance` when no stored value exists, including for agent identities created before this property was introduced. Supports `$filter` (`eq`) with the `ConsistencyLevel: eventual` header and `$count=true`.|
 |lifecyclePolicyComplianceState|[lifecyclePolicyComplianceState](../resources/agentidentityblueprintprincipal.md#lifecyclepolicycompliancestate-values)|The current lifecycle policy compliance state of the agent identity. Read-only. Returned only on `$select`.|
@@ -94,7 +98,7 @@ This resource is an open type that allows additional properties beyond those doc
 
 | Member | Description |
 |:-------|:------------|
-|multiInstance|An agent identity backed by an agent identity blueprint and an agent identity blueprint principal. The default topology.|
+|multiInstance|For blueprint-based creation, an agent identity backed by an agent identity blueprint and an agent identity blueprint principal. The default topology.|
 |singleInstance|An agent identity backed directly by an agent identity blueprint without an agent identity blueprint principal. At most one active agent identity per tenant per blueprint.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
@@ -131,10 +135,12 @@ The following JSON representation shows the resource type. Only a subset of all 
   "accountEnabled": "Boolean",
   "agentIdentityBlueprintId": "String",
   "appRoleAssignmentRequired": "Boolean",
+  "clientIdMetadataDocumentUrl": "String",
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",
   "displayName": "String",
+  "hasClientIdMetadataDocument": "Boolean",
   "instanceMode": "String",
   "lifecyclePolicyComplianceState": "String",
   "lifecyclePolicyComplianceStateLastModifiedDateTime": "String (timestamp)",

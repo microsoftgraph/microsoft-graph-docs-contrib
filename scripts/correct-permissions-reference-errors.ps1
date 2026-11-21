@@ -21,6 +21,8 @@ $corrections = @{
     "mesages" = "messages"
     "team\u2019s" = "team's"
     "calendars\u0020." = "calendars."
+    "Global Administrator or Backup Administrator role" = "Global Administrator or Entra Backup Administrator role"
+    "Allows the app to enable hard deletion protection settings on users, applications, groups, and service principals without a signed-in user\. Requires Global Administrator or (?:Entra )?Backup Administrator role" = "Allows the app to enable hard deletion protection settings on users, applications, groups, and service principals without a signed-in user"
 }
 
 # Read the file content

@@ -100,6 +100,7 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 ### Identity and access | Directory management
 
+- Added the **clientIdMetadataDocumentUrl** and read-only **hasClientIdMetadataDocument** properties to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource type. Use them to create agent identities backed by a client ID metadata document (CIMD), read their immutable document URLs, and find CIMD-backed identities with `$filter`.
 - Added the **lifecyclePolicyComplianceState**, **lifecyclePolicyComplianceStateLastModifiedDateTime**, **lifecyclePolicyComplianceStateReason**, and **lifecyclePolicyNonComplianceDisablementDateTime** properties to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) and [agentIdentityBlueprintPrincipal](/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-beta&preserve-view=true) resources to report lifecycle policy compliance status, context, and enforcement timestamps.
 - Added the **lifecyclePolicyComplianceState** enumeration type to represent lifecycle policy compliance states.
 - Added the **isSingleInstance** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource, inherited by [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true). Set it when creating a blueprint to support at most one active agent identity per tenant without an agent identity blueprint principal.
@@ -299,6 +300,10 @@ Added the **isHardDeleteProtectionEnabled** property to the [user](/graph/api/re
 ### Mail
 
 Added the [importMime](/graph/api/mailfolder-importmime?view=graph-rest-beta&preserve-view=true) method to the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) resource to create a non-draft message in a mail folder directly from MIME content. Unlike [creating a message](/graph/api/mailfolder-post-messages?view=graph-rest-beta&preserve-view=true), which always creates a draft, this method creates the message in a final, non-draft state. The message appears in the destination folder as if it was delivered; however, it doesn't go through transport, isn't stamped as sent, and never appears in the *Sent Items* folder. The action preserves the full MIME content, including internet message headers, body parts, and attachments. Use the **importMime** API to import existing mail into a mailbox, such as to migrate messages from another system.
+
+### Identity and access | Monitoring & health
+
+- Added Agent ID autonomous and interactive sign-in failure monitoring to the [health monitoring alert](/graph/api/resources/healthmonitoring-alert?view=graph-rest-beta&preserve-view=true) resource. Use the `agentId` scenario with the `agentIdAutonomousSignInFailure` and `agentIdInteractiveSignInFailure` alert types to monitor Agent ID sign-in health.
 
 ### Mail | Message trace
 

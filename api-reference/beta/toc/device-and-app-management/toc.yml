@@ -894,17 +894,17 @@ items:
       href: ../../api/printer-create.md
     - name: Update settings
       href: ../../api/print-update-settings.md
-    - name: List taskDefinitions
+    - name: List task definitions
       href: ../../api/print-list-taskdefinitions.md
-    - name: Create taskDefinition
+    - name: Create task definition
       href: ../../api/print-post-taskdefinitions.md
-    - name: Update taskDefinition
+    - name: Update task definition
       href: ../../api/print-update-taskdefinition.md
-    - name: Delete taskDefinition
+    - name: Delete task definition
       href: ../../api/print-delete-taskdefinition.md
-    - name: List pullPrintPrinters
+    - name: List pull print printers
       href: ../../api/print-list-pullprintprinters.md
-    - name: Create pullPrintPrinter
+    - name: Create pull print printer
       href: ../../api/print-post-pullprintprinters.md
   - name: Print connector
     items:
@@ -1022,7 +1022,7 @@ items:
       href: ../../api/printer-post-tasktriggers.md
     - name: Delete task trigger
       href: ../../api/printer-delete-tasktrigger.md
-    - name: List pullPrintPrinters
+    - name: List pull print printers
       href: ../../api/printer-list-pullprintprinters.md
   - name: Printer create operation
     items:
@@ -1060,7 +1060,7 @@ items:
       href: ../../api/printershare-delete-allowedgroup.md
     - name: List recent shares
       href: ../../api/print-list-recentshares.md
-    - name: Get pullPrintPrinter
+    - name: Get pull print printer
       href: ../../api/printershare-list-pullprintprinter.md
   - name: Pull print printer
     items:

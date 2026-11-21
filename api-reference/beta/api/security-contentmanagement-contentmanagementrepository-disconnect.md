@@ -16,6 +16,8 @@ Namespace: microsoft.graph.security.contentManagement
 
 Disconnect a [contentManagementRepository](../resources/security-contentmanagement-contentmanagementrepository.md). The provider **accessCredential** is optional: without it, the connection is still removed but repository-side artifacts may remain and are reported in **warning**. Remove the deployment identity to stop further pushes.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

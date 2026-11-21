@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the [configurationBaseline](../resources/configurationbaseline.md) attached to a monitor or a [configurationTemplateVersion](../resources/configurationtemplateversion.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

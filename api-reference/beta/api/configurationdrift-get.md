@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [configurationDrift](../resources/configurationdrift.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "85a23977-1cef-4e7e-9350-b282d240c4ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "clientIdMetadataDocumentUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **clientIdMetadataDocumentUrl** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource to identify a client ID metadata document (CIMD)-backed agent identity by its immutable HTTPS URL.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "85a23977-1cef-4e7e-9350-b282d240c4ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasClientIdMetadataDocument",
+          "ChangeType": "Addition",
+          "Description": "Added the read-only **hasClientIdMetadataDocument** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource to indicate whether the agent identity is backed by a client ID metadata document (CIMD).",
+          "Target": "agentIdentity"
+        }
+      ],
+      "Id": "85a23977-1cef-4e7e-9350-b282d240c4ca",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-09T17:53:17.4069822Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "lifecyclePolicyComplianceState",

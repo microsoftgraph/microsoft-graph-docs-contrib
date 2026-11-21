@@ -171,6 +171,40 @@
     {
       "ChangeList": [
         {
+          "Id": "e178818e-d19e-40c9-96ad-dbc65443c644",
+          "ApiChange": "Member",
+          "ChangedApiName": "agentIdAutonomousSignInFailure",
+          "ChangeType": "Addition",
+          "Description": "Added the `agentIdAutonomousSignInFailure` member to the [alertType](https://learn.microsoft.com/en-us/graph/api/resources/enums-healthmonitoring?view=graph-rest-beta) enumeration.",
+          "Target": "alertType"
+        },
+        {
+          "Id": "e178818e-d19e-40c9-96ad-dbc65443c644",
+          "ApiChange": "Member",
+          "ChangedApiName": "agentIdInteractiveSignInFailure",
+          "ChangeType": "Addition",
+          "Description": "Added the `agentIdInteractiveSignInFailure` member to the [alertType](https://learn.microsoft.com/en-us/graph/api/resources/enums-healthmonitoring?view=graph-rest-beta) enumeration.",
+          "Target": "alertType"
+        },
+        {
+          "Id": "e178818e-d19e-40c9-96ad-dbc65443c644",
+          "ApiChange": "Member",
+          "ChangedApiName": "agentId",
+          "ChangeType": "Addition",
+          "Description": "Added the `agentId` member to the [scenario](https://learn.microsoft.com/en-us/graph/api/resources/enums-healthmonitoring?view=graph-rest-beta) enumeration.",
+          "Target": "scenario"
+        }
+      ],
+      "Id": "e178818e-d19e-40c9-96ad-dbc65443c644",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-10-21T00:00:00.0000000Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2118d9fc-5270-4794-b760-7024e24121ec",
           "ApiChange": "Enumeration",
           "ChangedApiName": "appManagementAuditLogAuditResult",
