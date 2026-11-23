@@ -14,6 +14,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Attest to the continued need for a guest [user](../resources/user.md) in the organization.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 This API supports delegated access only. Application (app-only) access isn't supported.

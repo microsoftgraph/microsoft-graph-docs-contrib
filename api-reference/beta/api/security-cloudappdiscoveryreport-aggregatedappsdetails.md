@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Get the [aggregated details](../resources/security-discoveredcloudappdetail.md) of discovered apps by providing the time period. The supported time periods are the last 7, 30, or 90 days.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
