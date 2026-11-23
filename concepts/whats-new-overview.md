@@ -133,6 +133,7 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 ### Security | Case management
 
+- Added the **description** property to the [incidentCase](/graph/api/resources/security-casemanagement-incidentcase?view=graph-rest-beta&preserve-view=true) resource. Use it to read and update incident case descriptions.
 - Removed support for the `$skip` query parameter in the [case management APIs](/graph/api/resources/security-casemanagementroot?view=graph-rest-beta&preserve-view=true). Update affected requests to omit `$skip`.
 
 ### Security | Content management
