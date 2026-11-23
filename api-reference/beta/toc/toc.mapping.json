@@ -2474,6 +2474,10 @@
         {
           "name": "Handle archive mailbox redirects",
           "href": "/graph/handle-archive-mailbox-redirects"
+        },
+        {
+          "name": "Use Mail APIs with archive mailboxes (preview)",
+          "href": "/graph/archive-mailbox-mail-api"
         }
       ],
       "resources": [

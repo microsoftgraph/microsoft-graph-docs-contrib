@@ -121,6 +121,10 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 - Added the [webFilteringPolicy](/graph/api/resources/networkaccess-webfilteringpolicy?view=graph-rest-beta&preserve-view=true) resource type and related methods for configuring how Global Secure Access allows or blocks web traffic based on source sessions, URLs, web categories, and HTTP request methods.
 
+### Mail
+
+- [Use Mail APIs with Exchange archive mailboxes](/graph/archive-mailbox-mail-api). Learn how to access Exchange archive folders and messages, follow redirects, create folders, and synchronize changes with Microsoft Graph beta Mail APIs.
+
 ### Security
 
 - Added the **lookback** property to the [ruleSchedule](/graph/api/resources/security-ruleschedule?view=graph-rest-beta&preserve-view=true) resource to control the time window evaluated by each scheduled custom detection rule run.
