@@ -16,6 +16,12 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), an access package assignment request is created by or on behalf of a user who wants to get an access package assignment. If the request is successful, with any necessary approvals, the user receives an access package assignment, and is the subject of that resulting access package assignment. Microsoft Entra ID also creates access package assignment requests automatically for tracking access removal.
 
+The **resourceRoleRiskAnalysisResults** property provides read-only separation of duties (SoD) findings for resource roles in a request. Currently, SAP Access Control provides these findings. This SoD capability is limited to the global service's `/beta` endpoint. Reading the findings requires applicable entitlement management permissions, caller authorization, licensing, and tenant feature enablement.
+
+Detailed findings aren't included in general collection reads. They can be included in eligible [filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md) views or an [item read](../api/accesspackageassignmentrequest-get.md) by the requestor recorded on the request. An administrator or approver role alone doesn't enable findings on an item read. An empty, withheld, or reduced result collection alone doesn't establish that no conflicts exist.
+
+Request history can record a `SodAnalysisCompleted` action independently of whether detailed findings are included. Its **detail** value is a string conflict count: a positive count records conflicts, and `"0"` records zero reported conflicts, not an unconditional risk-free assessment. A missing, empty, or invalid count means the count is unknown, not zero. No such action means no completed analysis is recorded.
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -48,6 +54,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |requestState|String|One of `PendingApproval`, `Canceled`,  `Denied`, `Delivering`, `Delivered`, `PartiallyDelivered`, `DeliveryFailed`, `Submitted`, or `Scheduled`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|
 |requestType|String|One of `UserAdd`, `UserExtend`, `UserUpdate`, `UserRemove`, `AdminAdd`, `AdminRemove`, `ApproverRemove`, or `SystemRemove`. A request from the user has a **requestType** of `UserAdd`, `UserUpdate`, or `UserRemove`. Read-only.|
+|resourceRoleRiskAnalysisResults|[resourceRoleRiskAnalysisResult](../resources/resourceroleriskanalysisresult.md) collection|Risk analysis results grouped by resource role for this request. Inclusion depends on the caller and read operation. Read-only. Not nullable when included.|
 |schedule|[requestSchedule](requestschedule.md)| The range of dates that access is to be assigned to the requestor. Read-only.|
 |verifiedCredentialsData|[verifiedCredentialData](../resources/verifiedcredentialdata.md) collection| The details of the verifiable credential that the requestor presented, such as the issuer and claims. Read-only.|
 
@@ -87,6 +94,11 @@ The following JSON representation shows the resource type.
   "expirationDateTime": "String (timestamp)",
   "justification": "String",
   "parameters": {"@odata.type": "microsoft.graph.accessPackageAssignmentRequestParameters"},
+  "resourceRoleRiskAnalysisResults": [
+    {
+      "@odata.type": "microsoft.graph.resourceRoleRiskAnalysisResult"
+    }
+  ],
   "schedule": {
     "@odata.type": "microsoft.graph.requestSchedule"
   },

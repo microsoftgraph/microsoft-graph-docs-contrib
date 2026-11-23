@@ -109,6 +109,7 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 ### Identity and access | Governance
 
+- Added the **resourceRoleRiskAnalysisResults** property to the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) resource to read separation of duties (SoD) findings for requested resource roles. Use eligible [caller-specific request views](/graph/api/accesspackageassignmentrequest-filterbycurrentuser?view=graph-rest-beta&preserve-view=true) to retrieve findings, subject to caller authorization and feature availability.
 - Added three predefined tasks to the [Lifecycle Workflows task catalog](/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta&preserve-view=true) to send identity-verification links, request Verified ID presentation, and email verification status to a manager.
 - Added the **Pre-hire identity verification initiation (Preview)** and **New Hire employee onboarding with identity verification (Preview)** Joiner templates to the [Lifecycle Workflows template catalog](/graph/api/resources/identitygovernance-workflowtemplate?view=graph-rest-beta&preserve-view=true).
 
