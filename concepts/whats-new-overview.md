@@ -139,6 +139,7 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 ### Security | Content management
 
+- Added support for browsing the security content catalog and managing installed content packages in a tenant by using the [contentPackage](/graph/api/resources/security-contentmanagement-contentpackage?view=graph-rest-beta&preserve-view=true) resource.
 - Added support for connecting and managing source-control repositories that deploy security content as code by using the [contentManagementRepository](/graph/api/resources/security-contentmanagement-contentmanagementrepository?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Security | Data security and compliance

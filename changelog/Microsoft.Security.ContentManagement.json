@@ -3,6 +3,290 @@
     {
       "ChangeList": [
         {
+          "Id": "ceb7818b-ad51-47cb-a23d-53a9214e6e03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentPackageBase",
+          "ChangeType": "Addition",
+          "Description": "Added the abstract [contentPackageBase](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentpackagebase?view=graph-rest-beta) resource type for shared package identity and publisher metadata. It has no endpoint of its own.",
+          "Target": "contentPackageBase"
+        },
+        {
+          "Id": "ceb7818b-ad51-47cb-a23d-53a9214e6e03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentPackage",
+          "ChangeType": "Change",
+          "Description": "Updated [contentPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentpackage?view=graph-rest-beta) to inherit shared publisher metadata from [contentPackageBase](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentpackagebase?view=graph-rest-beta). Existing endpoints, response properties, and query capabilities are unchanged.",
+          "Target": "contentPackage"
+        },
+        {
+          "Id": "ceb7818b-ad51-47cb-a23d-53a9214e6e03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "installedPackage",
+          "ChangeType": "Change",
+          "Description": "Updated [installedPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedpackage?view=graph-rest-beta) to inherit shared publisher metadata from [contentPackageBase](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentpackagebase?view=graph-rest-beta). Existing endpoints, response properties, and write behavior are unchanged.",
+          "Target": "installedPackage"
+        }
+      ],
+      "Id": "ceb7818b-ad51-47cb-a23d-53a9214e6e03",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-23T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Content management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Json",
+          "ChangeType": "Addition",
+          "Description": "Added support for the microsoft.graph.Json type in the **dependencies** and **mainTemplate** properties of the [contentItem](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentitem?view=graph-rest-beta), [contentPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentpackage?view=graph-rest-beta), and [installedPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedpackage?view=graph-rest-beta) resources.",
+          "Target": "Json"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Org.OData.Core.V1.Description",
+          "ChangeType": "Change",
+          "Description": "Updated the description of the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource to include the Content Hub catalog and installed content.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentManagementRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "contentManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentManagement** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "installedPackageContents",
+          "ChangeType": "Addition",
+          "Description": "Added the **installedPackageContents** relationship to the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "installedPackages",
+          "ChangeType": "Addition",
+          "Description": "Added the **installedPackages** relationship to the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "packageContents",
+          "ChangeType": "Addition",
+          "Description": "Added the **packageContents** relationship to the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "packages",
+          "ChangeType": "Addition",
+          "Description": "Added the **packages** relationship to the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentAuthor",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentAuthor](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentauthor?view=graph-rest-beta) resource.",
+          "Target": "contentAuthor"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentCategories",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentCategories](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentcategories?view=graph-rest-beta) resource.",
+          "Target": "contentCategories"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentItem](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentitem?view=graph-rest-beta) resource.",
+          "Target": "contentItem"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentPackage",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentpackage?view=graph-rest-beta) resource.",
+          "Target": "contentPackage"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentPackageSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentPackageSource](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentpackagesource?view=graph-rest-beta) resource.",
+          "Target": "contentPackageSource"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentSupport",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentSupport](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentsupport?view=graph-rest-beta) resource.",
+          "Target": "contentSupport"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "installedContentItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [installedContentItem](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedcontentitem?view=graph-rest-beta) resource.",
+          "Target": "installedContentItem"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Resource",
+          "ChangedApiName": "installedPackage",
+          "ChangeType": "Addition",
+          "Description": "Added the [installedPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedpackage?view=graph-rest-beta) resource.",
+          "Target": "installedPackage"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "List installedPackageContents",
+          "ChangeType": "Addition",
+          "Description": "Added the [List installedPackageContents](https://learn.microsoft.com/en-us/graph/api/contentmanagementroot-list-installedpackagecontents?view=graph-rest-beta) method to the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "List installedPackages",
+          "ChangeType": "Addition",
+          "Description": "Added the [List installedPackages](https://learn.microsoft.com/en-us/graph/api/contentmanagementroot-list-installedpackages?view=graph-rest-beta) method to the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "List packageContents",
+          "ChangeType": "Addition",
+          "Description": "Added the [List packageContents](https://learn.microsoft.com/en-us/graph/api/contentmanagementroot-list-packagecontents?view=graph-rest-beta) method to the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "List packages",
+          "ChangeType": "Addition",
+          "Description": "Added the [List packages](https://learn.microsoft.com/en-us/graph/api/contentmanagementroot-list-packages?view=graph-rest-beta) method to the [contentManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/contentmanagementroot?view=graph-rest-beta) resource.",
+          "Target": "contentManagementRoot"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get contentPackage](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-contentpackage-get?view=graph-rest-beta) method to the [contentPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentpackage?view=graph-rest-beta) resource.",
+          "Target": "contentPackage"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "List contents",
+          "ChangeType": "Addition",
+          "Description": "Added the [List contents](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-contentpackage-list-contents?view=graph-rest-beta) method to the [contentPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentpackage?view=graph-rest-beta) resource.",
+          "Target": "contentPackage"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get contentItem](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-contentitem-get?view=graph-rest-beta) method to the [contentItem](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-contentitem?view=graph-rest-beta) resource.",
+          "Target": "contentItem"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get installedPackage](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-installedpackage-get?view=graph-rest-beta) method to the [installedPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedpackage?view=graph-rest-beta) resource.",
+          "Target": "installedPackage"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update installedPackage](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-installedpackage-update?view=graph-rest-beta) method to the [installedPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedpackage?view=graph-rest-beta) resource.",
+          "Target": "installedPackage"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete installedPackage](https://learn.microsoft.com/en-us/graph/api/contentmanagementroot-delete-installedpackages?view=graph-rest-beta) method to the [installedPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedpackage?view=graph-rest-beta) resource.",
+          "Target": "installedPackage"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "List contents",
+          "ChangeType": "Addition",
+          "Description": "Added the [List contents](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-installedpackage-list-contents?view=graph-rest-beta) method to the [installedPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedpackage?view=graph-rest-beta) resource.",
+          "Target": "installedPackage"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get installedContentItem](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-installedcontentitem-get?view=graph-rest-beta) method to the [installedContentItem](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedcontentitem?view=graph-rest-beta) resource.",
+          "Target": "installedContentItem"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update installedContentItem](https://learn.microsoft.com/en-us/graph/api/security-contentmanagement-installedcontentitem-update?view=graph-rest-beta) method to the [installedContentItem](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedcontentitem?view=graph-rest-beta) resource.",
+          "Target": "installedContentItem"
+        },
+        {
+          "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete installedContentItem](https://learn.microsoft.com/en-us/graph/api/contentmanagementroot-delete-installedpackagecontents?view=graph-rest-beta) method to the [installedContentItem](https://learn.microsoft.com/en-us/graph/api/resources/security-contentmanagement-installedcontentitem?view=graph-rest-beta) resource.",
+          "Target": "installedContentItem"
+        }
+      ],
+      "Id": "9f28b517-42f0-4a91-8176-c5e92a148d02",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-23T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Content management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "66a9c6d9-9282-4e44-b0bb-ce93fe1c7ada",
           "ApiChange": "Resource",
           "ChangedApiName": "contentManagementRoot",
