@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get all [callTranscript](../resources/calltranscript.md) objects from [ad hoc call](../resources/adhoccall.md) instances that a specific user initiates. This API enables you to programmatically access and analyze meeting transcripts for calls organized by a given user, filtered by optional date ranges.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /users/{usersId}/adhocCalls/getAllTranscripts
+GET /users/{usersId}/adhocCalls/getAllTranscripts(userId={userId},startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters

@@ -1,5 +1,6 @@
 ---
 title: "onVerifiedIdClaimValidationCustomExtension resource type"
+toc.title: "On verified ID claim validation custom extension"
 description: "Represents a custom authentication extension for the onVerifiedIdClaimValidation event, used for validating claims from Verified ID credential presentations."
 author: "vbogomaz"
 ms.date: 03/05/2026

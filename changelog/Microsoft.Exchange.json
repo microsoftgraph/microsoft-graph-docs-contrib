@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "982f258b-82db-456d-9197-63a9c9ce5e86",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharingLevelOfDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingLevelOfDetails** enumeration type.",
+          "Target": "sharingLevelOfDetails"
+        },
+        {
+          "Id": "982f258b-82db-456d-9197-63a9c9ce5e86",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharingLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingLevel** property to the [calendar](https://learn.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource.",
+          "Target": "calendar"
+        }
+      ],
+      "Id": "982f258b-82db-456d-9197-63a9c9ce5e86",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-04T11:03:21.4131671Z",
+      "WorkloadArea": "Calendars",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4d492d10-f78c-4b8d-b926-dcf099f4c154",
           "ApiChange": "Method",
           "ChangedApiName": "delta",

@@ -1,5 +1,5 @@
 ---
-title: "Get plannerChatMessage"
+title: "Get chat message"
 description: "Read the properties and relationships of plannerChatMessage object."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Get plannerChatMessage
+# Get chat message
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "plannerchatmessage-get-permissions"
+  "name": "plannerchatmessage_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/plannerchatmessage-get-permissions.md)]
@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/planner/plans_v2/{planId}/tasks/{taskId}/messages/{plannerChatMessageId}
 GET /users/{usersId}/planner/plans_v2/{planId}/tasks/{taskId}/messages/{plannerChatMessageId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,25 +82,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.plannerChatMessage",
-    "id": "260e1d70-6d06-3014-ceb0-4b020aa33c89",
-    "messageType": "String",
-    "content": "String",
-    "properties": {
-      "@odata.type": "microsoft.graph.chatMessageProperties"
-    },
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "threadType": "String",
-    "parentEntityId": "String",
-    "isDeleted": "Boolean",
-    "deletedTime": "String (timestamp)",
-    "isEdited": "Boolean",
-    "editedTime": "String (timestamp)"
-  }
+  "@odata.type": "#microsoft.graph.plannerChatMessage",
+  "id": "260e1d70-6d06-3014-ceb0-4b020aa33c89"
 }
 ```
 

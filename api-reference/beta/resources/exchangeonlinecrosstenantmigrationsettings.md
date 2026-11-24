@@ -1,5 +1,6 @@
 ---
 title: "exchangeOnlineCrossTenantMigrationSettings resource type"
+toc.title: "Exchange Online cross-tenant migration settings"
 description: "Contains Exchange Online settings for a cross-tenant migration job."
 author: "danguilliams"
 ms.date: 10/30/2025

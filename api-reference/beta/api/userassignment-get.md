@@ -1,5 +1,5 @@
 ---
-title: "Get userAssignment"
+title: "Get user assignment"
 description: "Read the properties and relationships of userAssignment object."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Get userAssignment
+# Get user assignment
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "userassignment-get-permissions"
+  "name": "userassignment_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/userassignment-get-permissions.md)]
@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/planner/plans_v2/{planId}/tasks/{taskId}/userAssignments/{userAssignmentId}
 GET /users/{usersId}/planner/plans_v2/{planId}/tasks/{taskId}/userAssignments/{userAssignmentId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,20 +82,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.userAssignment",
-    "id": "aec6cd49-aa47-7b42-5079-0a5b5197edd1",
-    "user": {
-      "@odata.type": "microsoft.graph.identity"
-    },
-    "assignedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "assignedDateTime": "String (timestamp)",
-    "capabilities": {
-      "@odata.type": "microsoft.graph.userAssignmentCapability"
-    }
-  }
+  "@odata.type": "#microsoft.graph.userAssignment",
+  "id": "aec6cd49-aa47-7b42-5079-0a5b5197edd1"
 }
 ```
 

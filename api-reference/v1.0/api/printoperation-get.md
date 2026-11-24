@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "printoperation_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/printoperation-get-permissions.md)]
 
+[!INCLUDE [rbac-universal-print-read-operations](../includes/rbac-for-apis/rbac-universal-print-apis-read-operations.md)]
+
 ## HTTP request
 
 <!-- {
@@ -128,4 +130,3 @@ Content-Type: application/json
     }
 }
 ```
-

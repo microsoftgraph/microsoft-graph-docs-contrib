@@ -167,7 +167,7 @@ Added the [slaPolicyDefinition](/graph/api/resources/security-casemanagement-sla
 
 ### Tasks and plans
 
-Added the [plan](/graph/api/resources/plan?view=graph-rest-beta&preserve-view=true) resource type for Planner Graph V4. Use these APIs to create and manage plans and tasks with richer scheduling, dependency, custom field, and chat capabilities than the existing Planner API surface.
+Added the [plan](/graph/api/resources/plan?view=graph-rest-beta&preserve-view=true) resource type for the Planner Unified plans Graph API. Use this API to create and manage plans and tasks with richer scheduling, dependency, custom field, and chat capabilities than the Planner Basic plans Graph API.
 
 ### Teamwork and communications | Messaging
 
@@ -2470,7 +2470,7 @@ Enabled the `$filter` query parameter for the [list](/graph/api/listitem-list) o
 ### Teamwork and communications | Calls and online meetings
 
 - [Fetch the recording of a Teams live event](/graph/api/onlinemeeting-get#example-6-fetch-the-recording-of-a-teams-live-event-deprecated).
-- Enabled the **allowRecording**, **allowTranscription**, **anonymizeIdentityForRoles**, **broadcastSettings**, and **watermarkProtection** as supported properties in the [update](/graph/api/onlinemeeting-update) operation of the [onlineMeeting](/graph/api/resources/onlinemeeting).
+- Enabled the **allowRecording**, **allowTranscription**, **broadcastSettings**, and **watermarkProtection** as supported properties in the [update](/graph/api/onlinemeeting-update) operation of the [onlineMeeting](/graph/api/resources/onlinemeeting).
 - Updated the latency information for [callRecord](/graph/api/resources/callrecords-callrecord). The average latency was changed from 15 to 30 minutes, and the maximum latency was changed from 60 to 150 minutes. For more information, see [subscription](/graph/api/resources/subscription).
 
 ### Teamwork and communications | Messaging

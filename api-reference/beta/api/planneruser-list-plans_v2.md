@@ -35,10 +35,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /users/{usersId}/planner/plans_v2
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 |Name|Description|
@@ -87,41 +83,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.plan",
       "id": "da037802-c736-af41-ff32-789862c95bd9",
-      "displayName": "String",
+      "displayName": "Product launch",
       "container": {
-        "@odata.type": "microsoft.graph.planContainer"
-      },
-      "calendar": {
-        "@odata.type": "microsoft.graph.planCalendar"
-      },
-      "creationInfo": {
-        "@odata.type": "microsoft.graph.creationInfo"
-      },
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "archivalInfo": {
-        "@odata.type": "microsoft.graph.plannerArchivalInfo"
-      },
-      "planView": {
-        "@odata.type": "microsoft.graph.planView"
-      },
-      "contentSensitivityLabelAssignment": {
-        "@odata.type": "microsoft.graph.contentSensitivityLabelAssignment"
-      },
-      "hasChat": "Boolean",
-      "duration": "Integer",
-      "sharedWithContainers": [
-        {
-          "@odata.type": "microsoft.graph.plannerSharedWithContainer"
-        }
-      ],
-      "capabilities": {
-        "@odata.type": "microsoft.graph.planCapability"
-      },
-      "extensions": {
-        "@odata.type": "microsoft.graph.extensionFieldCollection"
+        "containerId": "5d5a917d-aef4-4fdc-bc99-6048a39aa329",
+        "containerType": "group"
       }
     }
   ]

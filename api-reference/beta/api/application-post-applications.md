@@ -49,6 +49,8 @@ In the request body, supply a JSON representation of [application](../resources/
 
 ## Response
 
+When creating an **agentIdentityBlueprint**, optionally set **isSingleInstance** to `true` to support at most one active agent identity per tenant without an agent identity blueprint principal. If omitted, it defaults to `false`. The value is immutable after creation.
+
 If successful, this method returns `201 Created` response code and an [application](../resources/application.md) or [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object in the response body.
 
 ## Examples

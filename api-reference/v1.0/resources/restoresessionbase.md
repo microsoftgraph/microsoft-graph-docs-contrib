@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Restore session
-ms.date: 09/30/2026
+ms.date: 11/05/2026
 ms.custom: sfi-ga-nochange
 ---
 
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Represents a restore session for a [protection unit](protectionunitbase.md) that's protected by a [protection policy](protectionpolicybase.md). Restore session APIs are used by global admins, SharePoint Online admins, and Exchange Online admins to perform restore-related tasks on artifacts that are protected as part of protection policy.
 
-Restoring to both a new location and the same URL in a single restore session is not supported.
+Restoring to both a new location and the same URL in a single restore session isn't supported.
 
 > [!NOTE]
 > Restore sessions that are older than one year and in a terminal state are removed.
@@ -58,6 +58,14 @@ Restoring to both a new location and the same URL in a single restore session is
 |completed| All restore artifacts successfully restored.|
 |failed| All restore artifacts failed to restore.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
+
+### Instance attributes
+
+Instance attributes are properties with special behaviors. These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
+
+| Property | Type | Description |
+|:---|:---|:---|
+| @microsoft.graph.conflictBehavior | String | Optional. Specifies how to resolve same-name conflicts for every artifact in a granular SharePoint or OneDrive for Business restore session. The values are `fail` (default), `replace`, and `rename`. This annotation isn't a structural property and isn't supported for non-granular sessions. For a POST request example, see [Create sharePointRestoreSession](../api/backuprestoreroot-post-sharepointrestoresessions.md) and [Create oneDriveForBusinessRestoreSession](../api/backuprestoreroot-post-onedriveforbusinessrestoresessions.md).|
 
 ## Relationships
 

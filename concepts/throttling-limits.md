@@ -198,6 +198,10 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 
 [!INCLUDE [Project Rome throttling documentation](../includes/throttling-project-rome.md)]
 
+## Resource policy limits
+
+[!INCLUDE [Resource policy throttling documentation](../includes/throttling-resource-policy.md)]
+
 ## Security audit log query service limits
 
 [!INCLUDE [Security audit log query throttling documentation](../includes/throttling-security-audit-log-query.md)]

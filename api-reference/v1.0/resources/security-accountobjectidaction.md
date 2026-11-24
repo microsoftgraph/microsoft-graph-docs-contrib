@@ -1,5 +1,6 @@
 ---
 title: "accountObjectIdAction resource type"
+toc.title: "Account object ID action"
 description: "Represents an automated action that targets an account by Microsoft Entra object ID from a custom detection rule query."
 author: "mmekler"
 ms.localizationpriority: medium

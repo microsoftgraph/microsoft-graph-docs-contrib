@@ -630,8 +630,26 @@ items:
     items:
     - name: Content management root
       href: ../../resources/contentmanagementroot.md
+    - name: List installedPackageContents
+      href: ../../api/contentmanagementroot-list-installedpackagecontents.md
+    - name: List installedPackages
+      href: ../../api/contentmanagementroot-list-installedpackages.md
+    - name: List packageContents
+      href: ../../api/contentmanagementroot-list-packagecontents.md
+    - name: List packages
+      href: ../../api/contentmanagementroot-list-packages.md
     - name: List repositories
       href: ../../api/contentmanagementroot-list-repositories.md
+  - name: Content item
+    items:
+    - name: Content item
+      href: ../../resources/security-contentmanagement-contentitem.md
+    - name: List contents
+      href: ../../api/security-contentmanagement-contentpackage-list-contents.md
+    - name: List packageContents
+      href: ../../api/contentmanagementroot-list-packagecontents.md
+    - name: Get contentItem
+      href: ../../api/security-contentmanagement-contentitem-get.md
   - name: Content management repository
     items:
     - name: Content management repository
@@ -648,6 +666,56 @@ items:
       href: ../../api/security-contentmanagement-contentmanagementrepository-modify.md
     - name: 'contentManagementRepository: disconnect'
       href: ../../api/security-contentmanagement-contentmanagementrepository-disconnect.md
+  - name: Content package
+    items:
+    - name: Content package
+      href: ../../resources/security-contentmanagement-contentpackage.md
+    - name: List packages
+      href: ../../api/contentmanagementroot-list-packages.md
+    - name: Get contentPackage
+      href: ../../api/security-contentmanagement-contentpackage-get.md
+    - name: List contents
+      href: ../../api/security-contentmanagement-contentpackage-list-contents.md
+  - name: Content package base
+    href: ../../resources/security-contentmanagement-contentpackagebase.md
+  - name: Installed content item
+    items:
+    - name: Installed content item
+      href: ../../resources/security-contentmanagement-installedcontentitem.md
+    - name: List contents
+      href: ../../api/security-contentmanagement-installedpackage-list-contents.md
+    - name: List installedPackageContents
+      href: ../../api/contentmanagementroot-list-installedpackagecontents.md
+    - name: Get installedContentItem
+      href: ../../api/security-contentmanagement-installedcontentitem-get.md
+    - name: Update installedContentItem
+      href: ../../api/security-contentmanagement-installedcontentitem-update.md
+    - name: Delete installedContentItem
+      href: ../../api/contentmanagementroot-delete-installedpackagecontents.md
+  - name: Installed package
+    items:
+    - name: Installed package
+      href: ../../resources/security-contentmanagement-installedpackage.md
+    - name: List installedPackages
+      href: ../../api/contentmanagementroot-list-installedpackages.md
+    - name: Get installedPackage
+      href: ../../api/security-contentmanagement-installedpackage-get.md
+    - name: Update installedPackage
+      href: ../../api/security-contentmanagement-installedpackage-update.md
+    - name: Delete installedPackage
+      href: ../../api/contentmanagementroot-delete-installedpackages.md
+    - name: List contents
+      href: ../../api/security-contentmanagement-installedpackage-list-contents.md
+  - name: Complex types
+    items:
+    - name: Content author
+      href: ../../resources/security-contentmanagement-contentauthor.md
+    - name: Content categories
+      href: ../../resources/security-contentmanagement-contentcategories.md
+    - name: Content package source
+      href: ../../resources/security-contentmanagement-contentpackagesource.md
+    - name: Content support
+      href: ../../resources/security-contentmanagement-contentsupport.md
 - name: Custom detection rules
   items:
   - name: Detection rule

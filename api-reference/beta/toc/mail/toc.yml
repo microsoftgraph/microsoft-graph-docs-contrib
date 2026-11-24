@@ -6,6 +6,8 @@ items:
   href: ../../resources/mail-api-overview.md
 - name: Handle archive mailbox redirects
   href: /graph/handle-archive-mailbox-redirects
+- name: Use Mail APIs with archive mailboxes (preview)
+  href: /graph/archive-mailbox-mail-api
 - name: Message
   items:
   - name: Message
@@ -266,9 +268,9 @@ items:
       href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
     - name: Get single-value property
       href: ../../api/singlevaluelegacyextendedproperty-get.md
-  - name: Multivalue legacy extended property
+  - name: Multi-value legacy extended property
     items:
-    - name: Multivalue legacy extended property
+    - name: Multi-value legacy extended property
       href: ../../resources/multivaluelegacyextendedproperty.md
     - name: Create multi-value property
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md

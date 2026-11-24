@@ -5,7 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "Jackson-Woods"
-ms.date: 10/01/2024
+ms.date: 11/02/2026
 ---
 
 # servicePrincipal resource type
@@ -29,6 +29,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Upsert](../api/serviceprincipal-upsert.md) | [servicePrincipal](serviceprincipal.md) | Create a new servicePrincipal if it doesn't exist, or update the properties of an existing servicePrincipal.|
 |[Delete](../api/serviceprincipal-delete.md) | None |Delete servicePrincipal object.|
 |[Get delta](../api/serviceprincipal-delta.md)|servicePrincipal collection| Get incremental changes for service principals. |
+|[servicePrincipal: attest](../api/serviceprincipal-attest.md)|None|Attest continued usage and compliance of an agent identity through its service principal.|
 |[List created objects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Get a createdObject object collection.|
 |[List owned objects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get an ownedObject object collection.|
 |**Deleted items**| | |
@@ -126,6 +127,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects created by this service principal. Read-only. Nullable.|
 |federatedIdentityCredentials|[federatedIdentityCredential](federatedidentitycredential.md) collection |Federated identities for a specific type of service principal - managed identity. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`).|
 |homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection|The homeRealmDiscoveryPolicies assigned to this service principal. Supports `$expand`.|
+|lifecycle|[microsoft.graph.identityGovernance.identityLifecycle](../resources/identitygovernance-identitylifecycle.md)|The lifecycle policy state of the service principal. Read-only.|
 |memberOf|[directoryObject](directoryobject.md) collection|Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable. Supports `$expand`.|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that this service principal owns. Read-only. Nullable. Supports `$expand`, `$select` nested in `$expand`, and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`).|

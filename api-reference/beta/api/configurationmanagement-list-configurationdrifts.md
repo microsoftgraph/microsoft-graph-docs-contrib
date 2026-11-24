@@ -119,7 +119,7 @@ Content-Type: application/json
     {
       "id": "4e808e99-7f60-4194-8294-02ede71effd8",
       "monitorId": "b166c9cb-db29-438b-95fb-247da1dc72c3",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "resourceType": "microsoft.exchange.accepteddomain",
       "baselineResourceDisplayName": "Accepted Domain",
       "firstReportedDateTime": "2024-12-12T09:00:57.4830642Z",
@@ -133,12 +133,13 @@ Content-Type: application/json
           "currentValue": "Absent",
           "desiredValue": "Present"
         }
-      ]
+      ],
+      "resourceVersion": 0
     },
     {
       "id": "f30f8d6b-ea1e-4e1e-995e-341735ea01f4",
       "monitorId": "b166c9cb-db29-438b-95fb-247da1dc72c3",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "resourceType": "microsoft.exchange.accepteddomain",
       "baselineResourceDisplayName": "Accepted Domain",
       "firstReportedDateTime": "2024-12-12T06:00:39.2072475Z",
@@ -152,12 +153,13 @@ Content-Type: application/json
           "currentValue": "Absent",
           "desiredValue": "Present"
         }
-      ]
+      ],
+      "resourceVersion": 0
     },
     {
       "id": "9d43b643-71ab-4415-8d98-ca28c7cf0df4",
       "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "resourceType": "microsoft.exchange.mailcontact",
       "baselineResourceDisplayName": "Mail Contact Resource",
       "firstReportedDateTime": "2024-12-12T06:00:38.1402661Z",
@@ -171,7 +173,8 @@ Content-Type: application/json
           "currentValue": "Absent",
           "desiredValue": "Present"
         }
-      ]
+      ],
+      "resourceVersion": 0
     }
   ]
 }

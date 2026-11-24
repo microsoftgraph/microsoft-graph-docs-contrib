@@ -1,5 +1,6 @@
 ---
 title: "sharePointApiUsageDataPoint resource type"
+toc.title: "SharePoint API usage data point"
 description: "Represents a single data point in a SharePoint Online API usage report."
 author: "ireneren"
 ms.localizationpriority: medium

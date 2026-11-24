@@ -16,6 +16,8 @@ ms.topic: include
 |---------------------------------|--------------------|
 | Onboard pre-hire employee       | Joiner             |
 | Onboard new hire employee       | Joiner             |
+| Pre-hire identity verification initiation (Preview) | Joiner |
+| New Hire employee onboarding with identity verification (Preview) | Joiner |
 | Post-Onboarding new hire employee       | Joiner             |
 | Real-time employee change       | Mover             |
 | Employee group membership changes      | Mover             |

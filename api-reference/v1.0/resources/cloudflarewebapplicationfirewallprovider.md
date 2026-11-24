@@ -1,5 +1,6 @@
 ---
 title: "cloudFlareWebApplicationFirewallProvider resource type"
+toc.title: "Cloudflare web application firewall provider"
 description: "Represents configuration and credentials for a Cloudflare web application firewall (WAF) provider integration for Entra External ID."
 author: "more-rasika"
 ms.date: 10/10/2025

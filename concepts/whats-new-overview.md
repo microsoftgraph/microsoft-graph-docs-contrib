@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 10/26/2026
+ms.date: 11/05/2026
 ms.topic: whats-new
 ---
 
@@ -22,14 +22,41 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Backup and recovery | Microsoft 365 backup and storage
 
+- Added support for in-place granular restore when you create [SharePoint](/graph/api/backuprestoreroot-post-sharepointrestoresessions) and [OneDrive for Business](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions) restore sessions. Use the **@microsoft.graph.conflictBehavior** instance annotation to fail, replace, or rename restored items when items with the same name exist.
 - Added request guidance and examples for using **retentionSettings** when you create or update [Exchange](/graph/api/resources/exchangeprotectionpolicy), [OneDrive for Business](/graph/api/resources/onedriveforbusinessprotectionpolicy), and [SharePoint](/graph/api/resources/sharepointprotectionpolicy) protection policies to configure how long backups are retained.
 - Added the **error** property to the [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase) resource and its derived types. Use this property to get error details when a granular restore operation for an individual artifact fails or completes with an error.
 - Added audit metadata to the [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem) resource. Use this metadata to identify when a file or folder was created or last modified and who made the change when you select items for granular restore.
 - Added support for tracking backup retention periods and pending retention changes on [protectionUnitBase](/graph/api/resources/protectionunitbase). Use the **backupRetentionPeriodInDays** and **pendingRetentionPeriodChange** properties to monitor protection units as they move between policies with different retention periods.
 
+### Device and app management | Cloud printing
+
+- Added the [pullPrintPrinter](/graph/api/resources/pullprintprinter) resource type and related methods to create and manage virtual printers. Users can submit print jobs to a pull print printer and release them at a member printer.
+- Added support for secure release of print jobs. Set **holdJobsForSecureRelease** on a [printerShare](/graph/api/resources/printershare) to hold submitted jobs, then use [release](/graph/api/printjob-release) to release a job at a printer.
+
 ### Identity and access | Directory management
 
 - Added the **isPrivileged** property to the [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition) resource type. Use it to identify roles that contain sensitive Microsoft Entra resource actions.
+- Promoted the **lifecycle** relationship on [user](/graph/api/resources/user) to v1.0 to read guest lifecycle and compliance information.
+- Promoted the **lifecycle** relationship on [servicePrincipal](/graph/api/resources/serviceprincipal) from beta to v1.0 to read agent identity lifecycle and compliance information. [agentIdentity](/graph/api/resources/agentidentity) inherits this relationship.
+- Promoted the [user: attest](/graph/api/user-attest), [servicePrincipal: attest](/graph/api/serviceprincipal-attest), and [agentIdentity: attest](/graph/api/agentidentity-attest) methods from beta to v1.0 to attest to an identity's continued need.
+- Promoted the [addSelfAsSponsor](/graph/api/user-addselfassponsor) and [removeSelfAsSponsor](/graph/api/user-removeselfassponsor) methods on [user](/graph/api/resources/user) from beta to v1.0 for self-service guest sponsorship.
+
+### Identity and access | Governance
+
+- Promoted SAP Access Control (SAP AC) support for [externalOriginResourceConnector](/graph/api/resources/externaloriginresourceconnector) from beta to v1.0. Use the `sapAc` connector type to configure connections to SAP AC systems for entitlement management.
+- Promoted [lifecyclePolicy](/graph/api/resources/identitygovernance-lifecyclepolicy), [agentIdentityLifecyclePolicy](/graph/api/resources/identitygovernance-agentidentitylifecyclepolicy), and [guestLifecyclePolicy](/graph/api/resources/identitygovernance-guestlifecyclepolicy) from beta to v1.0 to manage policy-based governance of agent identities and guest users. Use the **lifecyclePolicies** and **lifecyclePolicyPriorityConfigurations** relationships on [lifecycleWorkflowsContainer](/graph/api/resources/identitygovernance-lifecycleworkflowscontainer) and the [lifecyclePolicyPriorityConfiguration](/graph/api/resources/identitygovernance-lifecyclepolicypriorityconfiguration) resource to manage policies and their evaluation order.
+- Promoted the **lifecyclePolicies** relationship on [deletedItemContainer](/graph/api/resources/identitygovernance-deleteditemcontainer) and the [lifecyclePolicy: restore](/graph/api/identitygovernance-lifecyclepolicy-restore) method from beta to v1.0 to retrieve and restore soft-deleted policies.
+- Promoted [lifecyclePolicyRule](/graph/api/resources/identitygovernance-lifecyclepolicyrule), [periodicAttestationRule](/graph/api/resources/identitygovernance-periodicattestationrule), [sponsorPresenceRule](/graph/api/resources/identitygovernance-sponsorpresencerule), [inactivityRule](/graph/api/resources/identitygovernance-inactivityrule), [accessPackageAssignmentRequiredRule](/graph/api/resources/identitygovernance-accesspackageassignmentrequiredrule), and [invitationRedemptionRule](/graph/api/resources/identitygovernance-invitationredemptionrule) from beta to v1.0 to define lifecycle compliance requirements.
+- Promoted the policy scope types [selectedObjectsSubjectSet](/graph/api/resources/identitygovernance-selectedobjectssubjectset), [allExcludingSpecificObjectsSubjectSet](/graph/api/resources/identitygovernance-allexcludingspecificobjectssubjectset), [allExcludingGroupsSubjectSet](/graph/api/resources/identitygovernance-allexcludinggroupssubjectset), [selectedAgentBuilderPlatformsSubjectSet](/graph/api/resources/identitygovernance-selectedagentbuilderplatformssubjectset), and [allExcludingAgentBuilderPlatformsSubjectSet](/graph/api/resources/identitygovernance-allexcludingagentbuilderplatformssubjectset) from beta to v1.0.
+- Promoted [lifecyclePolicyEnforcementAction](/graph/api/resources/identitygovernance-lifecyclepolicyenforcementaction), [deleteOnlyEnforcementAction](/graph/api/resources/identitygovernance-deleteonlyenforcementaction), [disableOnlyEnforcementAction](/graph/api/resources/identitygovernance-disableonlyenforcementaction), [disableThenDeleteEnforcementAction](/graph/api/resources/identitygovernance-disablethendeleteenforcementaction), and [lifecyclePolicyNotificationSettings](/graph/api/resources/identitygovernance-lifecyclepolicynotificationsettings) from beta to v1.0 to configure enforcement and notifications.
+- Promoted [lifecyclePolicyReport](/graph/api/resources/identitygovernance-lifecyclepolicyreport), [lifecyclePolicySubjectReport](/graph/api/resources/identitygovernance-lifecyclepolicysubjectreport), [lifecyclePolicyScopeProcessing](/graph/api/resources/identitygovernance-lifecyclepolicyscopeprocessing), and [lifecyclePolicyScopeProcessingAttempt](/graph/api/resources/identitygovernance-lifecyclepolicyscopeprocessingattempt) from beta to v1.0 to report policy evaluation and processing outcomes.
+- Promoted the report value types [lifecyclePolicyReference](/graph/api/resources/identitygovernance-lifecyclepolicyreference), [lifecyclePolicySubjectReference](/graph/api/resources/identitygovernance-lifecyclepolicysubjectreference), [lifecyclePolicyUserSubjectReference](/graph/api/resources/identitygovernance-lifecyclepolicyusersubjectreference), [lifecyclePolicyAgentIdentitySubjectReference](/graph/api/resources/identitygovernance-lifecyclepolicyagentidentitysubjectreference), [lifecyclePolicySubjectCompliance](/graph/api/resources/identitygovernance-lifecyclepolicysubjectcompliance), and [lifecyclePolicySubjectEnforcement](/graph/api/resources/identitygovernance-lifecyclepolicysubjectenforcement) from beta to v1.0.
+- Promoted [identityLifecycle](/graph/api/resources/identitygovernance-identitylifecycle), [userIdentityLifecycle](/graph/api/resources/identitygovernance-useridentitylifecycle), [agentIdentityLifecycle](/graph/api/resources/identitygovernance-agentidentitylifecycle), [complianceIssue](/graph/api/resources/identitygovernance-complianceissue), and [attestationComplianceIssue](/graph/api/resources/identitygovernance-attestationcomplianceissue) from beta to v1.0 to read lifecycle state and compliance issues.
+- Promoted the **agentBuilderPlatforms**, **complianceState**, **lifecyclePolicyRelationship**, **lifecyclePolicyComplianceStatus**, **lifecyclePolicyEnforcementStatus**, **lifecyclePolicyScopeProcessingStatus**, **lifecyclePolicyScopeProcessingAttemptStatus**, **lifecyclePolicyEnforcementActionState**, **lifecyclePolicyNextEnforcementAction**, and **lifecyclePolicySource** enumerations from beta to v1.0. Added the `agentIdentity` member to **subjectType** for agent policy priority configuration.
+
+### Identity and access | Identity and sign-in
+
+- Added the **lastUsedDateTime** property to the [authenticationMethod](/graph/api/resources/authenticationmethod) resource to retrieve the latest successful use when usage data is available. The value is best effort; a `null` or absent value doesn't mean that the method was never used.
 
 ### Mail
 
@@ -44,6 +71,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Security | Data security and compliance
 
+- Applications can now supply one or more sensitivity labels with file content submitted to the [processContent](/graph/api/userdatasecurityandgovernance-processcontent) API by using the **sensitivityLabels** property of [processContentMetadataBase](/graph/api/resources/processcontentmetadatabase).
 - Added the `copyToClipboard`, `pasteFromClipboard`, `print`, and `accessDebugTools` members to the **userActivityType** and **userActivityTypes** enumerations in v1.0. These enumerations are used by [activityMetadata](/graph/api/resources/activitymetadata) and [policyScopeBase](/graph/api/resources/policyscopebase) to represent activities evaluated against data protection policies. Use the `Prefer: include-unknown-enum-members` request header to retrieve these values.
 
 ## November 2026: New in preview only
@@ -52,13 +80,51 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Added request guidance and examples for using **retentionSettings** when you create or update [Exchange](/graph/api/resources/exchangeprotectionpolicy?view=graph-rest-beta&preserve-view=true), [OneDrive for Business](/graph/api/resources/onedriveforbusinessprotectionpolicy?view=graph-rest-beta&preserve-view=true), and [SharePoint](/graph/api/resources/sharepointprotectionpolicy?view=graph-rest-beta&preserve-view=true) protection policies to configure how long backups are retained.
 
+### Calendars
+
+Added the **sharingLevel** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta&preserve-view=true) resource. Use this property to get the effective level of calendar event information visible to the current share recipient, separately from edit or delegate rights.
+
+### Device and app management | Cloud PC
+
+- Added the [retrieveFlexCloudPcAccessConfiguration](/graph/api/cloudpc-retrieveflexcloudpcaccessconfiguration?view=graph-rest-beta&preserve-view=true) and [retrieveFlexCloudPcConfigurationDetail](/graph/api/cloudpc-retrieveflexcloudpcconfigurationdetail?view=graph-rest-beta&preserve-view=true) functions on the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource to retrieve live Windows 365 Flex access state and Flex license availability.
+- Added the `cloudPcReserveHealthScenario` member to the **alertRuleTemplate** enumeration type used by [alertRule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true) to monitor Windows 365 Reserve Cloud PC health conditions.
+- Added the `cloudPcReserveLicensesAvailabilityBelowThreshold`, `reserveCloudPcUnlicensedUsersAssignment`, and `cloudPcMaxUserStorageUsageThresholdExceeded` members to the **conditionCategory** enumeration type used by [ruleCondition](/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta&preserve-view=true) to monitor available Reserve licenses, unlicensed user assignments, and maximum user storage usage.
+- Added support for managing Cloud PC user settings persistence storage sizing, automatic cleanup, and automatic snapshots. Use the [cloudPCUserSettingsPersistenceDetail](/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta&preserve-view=true) resource to configure these settings and access related operations.
+- Added the [cloudPcUserProfileSnapshot](/graph/api/resources/cloudpcuserprofilesnapshot?view=graph-rest-beta&preserve-view=true) resource type and related methods for creating, exporting, and restoring user settings persistence cloud profile snapshots.
+- Deprecated the **userSettingsPersistenceStorageSizeCategory** property on the [cloudPcUserSettingsPersistenceConfiguration](/graph/api/resources/cloudpcusersettingspersistenceconfiguration?view=graph-rest-beta&preserve-view=true) resource type. After December 11, 2026, use the **allocatedStorageSizeCategory** property on the [cloudPcStorageConfiguration](/graph/api/resources/cloudpcstorageconfiguration?view=graph-rest-beta&preserve-view=true) resource type instead.
+
+### Device and app management | Cloud printing
+
+- Added the [pullPrintPrinter](/graph/api/resources/pullprintprinter?view=graph-rest-beta&preserve-view=true) resource type and related methods to create and manage virtual printers. Users can submit print jobs to a pull print printer and release them at a member printer.
+- Added support for secure release of print jobs. Set **holdJobsForSecureRelease** on a [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) to hold submitted jobs, then use [release](/graph/api/printjob-release?view=graph-rest-beta&preserve-view=true) to release a job at a printer.
+
 ### Identity and access | Directory management
 
+- Added the **clientIdMetadataDocumentUrl** and read-only **hasClientIdMetadataDocument** properties to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource type. Use them to create agent identities backed by a client ID metadata document (CIMD), read their immutable document URLs, and find CIMD-backed identities with `$filter`.
+- Added the **lifecyclePolicyComplianceState**, **lifecyclePolicyComplianceStateLastModifiedDateTime**, **lifecyclePolicyComplianceStateReason**, and **lifecyclePolicyNonComplianceDisablementDateTime** properties to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) and [agentIdentityBlueprintPrincipal](/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-beta&preserve-view=true) resources to report lifecycle policy compliance status, context, and enforcement timestamps.
+- Added the **lifecyclePolicyComplianceState** enumeration type to represent lifecycle policy compliance states.
+- Added the **isSingleInstance** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource, inherited by [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true). Set it when creating a blueprint to support at most one active agent identity per tenant without an agent identity blueprint principal.
+- Added the **instanceMode** property to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource and the **instanceMode** enumeration to identify the single-instance or multi-instance topology.
 - Devices now support soft-deletion and restoration. When a device is deleted, it's moved to the [deleted items container](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) and can be restored within 30 days. After 30 days, it's permanently deleted.
+
+### Identity and access | Governance
+
+- Added the **resourceRoleRiskAnalysisResults** property to the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) resource to read separation of duties (SoD) findings for requested resource roles. Use eligible [caller-specific request views](/graph/api/accesspackageassignmentrequest-filterbycurrentuser?view=graph-rest-beta&preserve-view=true) to retrieve findings, subject to caller authorization and feature availability.
+- Added three predefined tasks to the [Lifecycle Workflows task catalog](/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta&preserve-view=true) to send identity-verification links, request Verified ID presentation, and email verification status to a manager.
+- Added the **Pre-hire identity verification initiation (Preview)** and **New Hire employee onboarding with identity verification (Preview)** Joiner templates to the [Lifecycle Workflows template catalog](/graph/api/resources/identitygovernance-workflowtemplate?view=graph-rest-beta&preserve-view=true).
+
+### Identity and access | Identity and sign-in
+
+- Added the `aiElevatedAccountRisk` member to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that the user completed Microsoft-managed remediation to address their risk.
+- Added the `userPassedVerifiedIdDrivenByRiskBasedPolicy` member to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that the user remediated their risk by completing Verified ID verification under a risk-based Conditional Access policy.
 
 ### Identity and access | Network access
 
 - Added the [webFilteringPolicy](/graph/api/resources/networkaccess-webfilteringpolicy?view=graph-rest-beta&preserve-view=true) resource type and related methods for configuring how Global Secure Access allows or blocks web traffic based on source sessions, URLs, web categories, and HTTP request methods.
+
+### Mail
+
+- [Use Mail APIs with Exchange archive mailboxes](/graph/archive-mailbox-mail-api). Learn how to access Exchange archive folders and messages, follow redirects, create folders, and synchronize changes with Microsoft Graph beta Mail APIs.
 
 ### Security
 
@@ -68,15 +134,21 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Security | Case management
 
+- Added the **description** property to the [incidentCase](/graph/api/resources/security-casemanagement-incidentcase?view=graph-rest-beta&preserve-view=true) resource. Use it to read and update incident case descriptions.
 - Removed support for the `$skip` query parameter in the [case management APIs](/graph/api/resources/security-casemanagementroot?view=graph-rest-beta&preserve-view=true). Update affected requests to omit `$skip`.
 
 ### Security | Content management
 
+- Added support for browsing the security content catalog and managing installed content packages in a tenant by using the [contentPackage](/graph/api/resources/security-contentmanagement-contentpackage?view=graph-rest-beta&preserve-view=true) resource.
 - Added support for connecting and managing source-control repositories that deploy security content as code by using the [contentManagementRepository](/graph/api/resources/security-contentmanagement-contentmanagementrepository?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Security | Data security and compliance
 
 Added the [classificationGradingJobResponse](/graph/api/resources/classificationgradingjobresponse?view=graph-rest-beta&preserve-view=true) resource type and [classificationGradingContentLocation](/graph/api/resources/classificationgradingcontentlocation?view=graph-rest-beta&preserve-view=true) complex type to return matched text and surrounding context through the optional **contextText** property in classification grading results.
+
+### Reports | Identity and access reports
+
+- Added the [resourcePolicyEvaluationEvent](/graph/api/resources/resourcepolicyevaluationevent?view=graph-rest-beta&preserve-view=true) resource type and related read-only methods to audit Entra Resource Policy evaluations for Microsoft Graph requests. Use it to inspect net policy decisions and opt in to per-policy evaluation results for troubleshooting.
 
 ### Teamwork and communications | Messaging
 
@@ -84,12 +156,15 @@ Added the [classificationGradingJobResponse](/graph/api/resources/classification
 - Updated the [add teamworkSectionItem](/graph/api/teamworksection-post-items?view=graph-rest-beta&preserve-view=true) method to move an item from another user-defined section.
 - Added the [teamworkChannelTag](/graph/api/resources/teamworkchanneltag?view=graph-rest-beta&preserve-view=true) resource type and associated methods for managing tags owned by a Microsoft Teams channel. Use channel tags to group users within a channel and manage their tag assignments.
 
-## November 2026: New in preview only
+### Tenants | Configuration management
 
-### Device and app management | Cloud PC
+- Added the [configurationTemplate](/graph/api/resources/configurationtemplate?view=graph-rest-beta&preserve-view=true) resource type and related methods to manage reusable, versioned baselines and reference them from monitors.
+- Added the `applyOnce` mode to [configurationMonitor](/graph/api/resources/configurationmonitor?view=graph-rest-beta&preserve-view=true). Use it to apply a desired-state baseline once on behalf of the signed-in administrator.
+- Added the [remediate](/graph/api/configurationdrift-remediate?view=graph-rest-beta&preserve-view=true) action to restore drifted resource properties to their baseline values and inspect the success or failure result.
 
-- Added the `cloudPcReserveHealthScenario` member to the **alertRuleTemplate** enumeration type used by [alertRule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true) to monitor Windows 365 Reserve Cloud PC health conditions.
-- Added the `cloudPcReserveLicensesAvailabilityBelowThreshold`, `reserveCloudPcUnlicensedUsersAssignment`, and `cloudPcMaxUserStorageUsageThresholdExceeded` members to the **conditionCategory** enumeration type used by [ruleCondition](/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta&preserve-view=true) to monitor available Reserve licenses, unlicensed user assignments, and maximum user storage usage.
+### Tenants | Tenant governance
+
+- Added the [resource policy](/graph/api/resources/entra-resource-policy-overview) APIs to define and assign Rego policies that govern Microsoft Graph resource changes. Manage customer-authored and read-only built-in definitions, definition versions, assignments, deleted items, and tenant-wide privileged-read configuration. Evaluate assigned or inline policies with simulated fetch responses and detailed diagnostics before enabling enforcement.
 
 ## October 2026: New and generally available
 
@@ -232,6 +307,10 @@ Added the **isHardDeleteProtectionEnabled** property to the [user](/graph/api/re
 ### Mail
 
 Added the [importMime](/graph/api/mailfolder-importmime?view=graph-rest-beta&preserve-view=true) method to the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) resource to create a non-draft message in a mail folder directly from MIME content. Unlike [creating a message](/graph/api/mailfolder-post-messages?view=graph-rest-beta&preserve-view=true), which always creates a draft, this method creates the message in a final, non-draft state. The message appears in the destination folder as if it was delivered; however, it doesn't go through transport, isn't stamped as sent, and never appears in the *Sent Items* folder. The action preserves the full MIME content, including internet message headers, body parts, and attachments. Use the **importMime** API to import existing mail into a mailbox, such as to migrate messages from another system.
+
+### Identity and access | Monitoring & health
+
+- Added Agent ID autonomous and interactive sign-in failure monitoring to the [health monitoring alert](/graph/api/resources/healthmonitoring-alert?view=graph-rest-beta&preserve-view=true) resource. Use the `agentId` scenario with the `agentIdAutonomousSignInFailure` and `agentIdInteractiveSignInFailure` alert types to monitor Agent ID sign-in health.
 
 ### Mail | Message trace
 

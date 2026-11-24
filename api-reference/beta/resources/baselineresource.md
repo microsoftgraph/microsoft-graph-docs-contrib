@@ -22,6 +22,7 @@ Represents the information and properties of a [baselineResource](../resources/b
 |displayName|String|Unique name of the resource.|
 |properties|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Properties of a resource supported by Tenant Configuration Management.|
 |resourceType|String|Name of the resource type.|
+|resourceVersion|Int32|The processing framework for this resource. A missing value or `0` identifies a DSC-based resource; `1` identifies a V2-framework resource. Set this property to `1` for resources that require the V2 framework.|
 
 ## Relationships
 None.
@@ -38,6 +39,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.baselineResource",
   "displayName": "String",
   "properties": {"@odata.type": "microsoft.graph.openComplexDictionaryType"},
-  "resourceType": "String"
+  "resourceType": "String",
+  "resourceVersion": "Int32"
 }
 ```

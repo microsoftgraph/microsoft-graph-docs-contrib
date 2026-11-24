@@ -119,74 +119,82 @@ Content-Type: application/json
     {
       "id": "66fa1689-22cb-49c1-8b5a-c94822b7b13b",
       "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
-      "runInitiationDateTime": "2024-12-12T09:00:36.1084955Z",
-      "runCompletionDateTime": "2024-12-12T09:00:36.1084955Z",
-      "runStatus": "failed",
-      "driftsCount": 0
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "runInitiationDateTime": "2026-11-02T16:30:46.3616552Z",
+      "runCompletionDateTime": "2026-11-02T16:31:09.0709177Z",
+      "runStatus": "successful",
+      "driftsCount": 1,
+      "driftsFixed": 1
     },
     {
       "id": "3c7e14e9-2393-4ce8-8a02-584836d49c29",
       "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "runInitiationDateTime": "2024-12-12T06:00:21.6023183Z",
       "runCompletionDateTime": "2024-12-12T06:00:21.6023183Z",
       "runStatus": "successful",
-      "driftsCount": 3
+      "driftsCount": 3,
+      "driftsFixed": 0
     },
     {
       "id": "17fc9f1c-771a-4ec4-9894-48ab2d89dd2c",
       "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "runInitiationDateTime": "2024-12-12T03:00:07.9629206Z",
       "runCompletionDateTime": "2024-12-12T03:00:07.9629206Z",
       "runStatus": "failed",
-      "driftsCount": 0
+      "driftsCount": 0,
+      "driftsFixed": 0
     },
     {
       "id": "ebffda35-90c8-4157-a757-cecbc0df968c",
       "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "runInitiationDateTime": "2024-12-12T00:00:15.2616957Z",
       "runCompletionDateTime": "2024-12-12T00:00:15.2616957Z",
       "runStatus": "failed",
-      "driftsCount": 0
+      "driftsCount": 0,
+      "driftsFixed": 0
     },
     {
       "id": "962827e5-b82a-4d50-b343-be268db625c9",
       "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "runInitiationDateTime": "2024-12-11T21:00:11.4750106Z",
       "runCompletionDateTime": "2024-12-11T21:00:11.4750106Z",
       "runStatus": "failed",
-      "driftsCount": 0
+      "driftsCount": 0,
+      "driftsFixed": 0
     },
     {
       "id": "2196ccc4-85d7-4427-ab81-8a8a46422d0d",
       "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "runInitiationDateTime": "2024-12-11T18:00:38.3070963Z",
       "runCompletionDateTime": "2024-12-11T18:00:38.3070963Z",
       "runStatus": "successful",
-      "driftsCount": 3
+      "driftsCount": 3,
+      "driftsFixed": 0
     },
     {
       "id": "89acf0d8-3f6e-454d-b786-ef8370075d4a",
       "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "runInitiationDateTime": "2024-12-11T15:05:18.4677889Z",
       "runCompletionDateTime": "2024-12-11T15:05:18.4677889Z",
       "runStatus": "failed",
-      "driftsCount": 0
+      "driftsCount": 0,
+      "driftsFixed": 0
     },
     {
       "id": "80e9906d-417b-4f79-a1b3-532260d090bf",
       "monitorId": "69b6b9ba-20c9-4ffb-beef-263c07063222",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "runInitiationDateTime": "2024-12-11T12:18:34.1083345Z",
       "runCompletionDateTime": "2024-12-11T12:18:34.1083345Z",
       "runStatus": "successful",
-      "driftsCount": 3
+      "driftsCount": 3,
+      "driftsFixed": 0
     }
   ]
 }
