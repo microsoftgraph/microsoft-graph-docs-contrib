@@ -1,6 +1,6 @@
 ---
 title: "goal resource type"
-description: "A Planner V4 goal associated with a set of tasks in a plan. `status` (for example, on-track, at-risk, off-track) is returned by default; description, metrics, and narrative updates require $select."
+description: "Represents a goal in the Planner Unified plans Graph API within a plan, including its name, status, dates, priority, and notes."
 author: "EshaSugla"
 ms.date: 09/10/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A Planner V4 goal associated with a set of [tasks](task.md) in a [plan](plan.md). `status` (for example, on-track, at-risk, off-track) is returned by default; description, metrics, and narrative updates require $select.
+Represents a goal in the Planner Unified plans Graph API within a [plan](../resources/plan.md), including its name, status, dates, priority, and notes. See the **status** property for the supported status values.
 
 
 Inherits from [plannerDelta](../resources/plannerdelta.md).
@@ -24,13 +24,8 @@ Inherits from [plannerDelta](../resources/plannerdelta.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/plan-list-goals.md)|[goal](../resources/goal.md) collection|Get a list of the goal objects and their properties.|
-|[Create](../api/plan-post-goals.md)|[goal](../resources/goal.md)|Create a new goal object.|
 |[Get](../api/goal-get.md)|[goal](../resources/goal.md)|Read the properties and relationships of [goal](../resources/goal.md) object.|
-|[Update](../api/goal-update.md)|[goal](../resources/goal.md)|Update the properties of a goal object.|
-|[Delete](../api/plan-delete-goals.md)|None|Delete a goal object.|
 |[List tasks](../api/goal-list-tasks.md)|[task](../resources/task.md) collection|Get a list of the task objects and their properties.|
-|[Add task](../api/goal-post-tasks.md)|[task](../resources/task.md)|Add tasks by posting to the tasks collection.|
-|[Remove tasks](../api/goal-delete-tasks.md)|None|Remove a [task](../resources/task.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -46,7 +41,7 @@ Inherits from [plannerDelta](../resources/plannerdelta.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the user (or application) who last modified the entity. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Date and time the entity was last modified. The value is represented in ISO 8601 format and is always in UTC time. Read-only.|
 |notes|[itemBody](../resources/itembody.md)|Additional details or notes about the goal.|
-|planId|String|ID of the plan that contains the goal. Required, and immutable after creation.|
+|planId|String|ID of the plan that contains the goal. Immutable after creation.|
 |priority|Int32|Priority of the goal.|
 |startDate|Date|Date the goal starts.|
 |status|plannerGoalStatus|Progress status of the goal. The possible values are: `notStarted`, `onTrack`, `behind`, `atRisk`, `closed`, `unknownFutureValue`.|
@@ -98,4 +93,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

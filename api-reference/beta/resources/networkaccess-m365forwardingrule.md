@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ms.date: 08/01/2024
+toc.title: "Microsoft 365 forwarding rule"
 ---
 
 # m365ForwardingRule resource type

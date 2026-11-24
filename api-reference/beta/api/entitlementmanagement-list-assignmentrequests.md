@@ -27,6 +27,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
+This general collection read doesn't include detailed separation of duties (SoD) findings in **resourceRoleRiskAnalysisResults**, including when the caller is an administrator. Selecting, filtering, or expanding a request doesn't change this rule. Use an eligible [filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md) view or [item read](../api/accesspackageassignmentrequest-get.md) for detailed findings.
+
+Request history can independently contain an action of `SodAnalysisCompleted` with a **detail** string containing the reported conflict count. A positive count indicates conflicts, and `"0"` indicates zero reported conflicts, not an unconditional risk-free assessment. A missing, empty, or invalid count is unknown, not zero. An unavailable detailed-result collection must not be interpreted as no conflicts.
+
 ## HTTP request
 
 <!-- {
@@ -68,7 +72,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List assignment requests
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +116,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/as
 
 ---
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -139,4 +145,35 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Read a recorded SoD conflict count from history
 
+This shortened response illustrates a completed analysis with two reported conflicts. Detailed findings aren't included by this collection read. The presence and count of findings must not be inferred from the representation of an excluded **resourceRoleRiskAnalysisResults** property.
+
+#### Request
+
+<!-- { "blockType": "request", "name": "list_assignmentrequests_sod_history" } -->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.accessPackageAssignmentRequest)" } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "11111111-2222-4333-8444-555555555555",
+      "history": [
+        {
+          "action": "SodAnalysisCompleted",
+          "detail": "2"
+        }
+      ]
+    }
+  ]
+}
+```

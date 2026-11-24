@@ -24,8 +24,6 @@ Find more information in the [delta query](/graph/delta-query-overview) document
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 > [!NOTE]
 > This API has a [known issue](/graph/known-issues#apis-that-export-online-meeting-artifacts-may-return-duplicate-items-during-service-update) related to pagination token resets during a planned service update.
 >
@@ -33,6 +31,8 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 >
 > - [Using the `$top` query parameter might not return the **@odata.nextLink**](/graph/known-issues#apis-that-export-online-meeting-artifacts-might-not-return-nextlink-when-the-request-uses-the-top-query-parameter).
 > - [Recordings aren't exported for meetings that don't have transcription turned on](/graph/known-issues#apis-that-export-online-meeting-artifacts-dont-return-recordings-for-meetings-without-transcriptions-enabled).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

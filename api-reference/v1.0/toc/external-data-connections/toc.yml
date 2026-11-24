@@ -86,7 +86,7 @@ items:
     href: ../../resources/externalconnectors-externalactivityresult.md
   - name: External item content
     href: ../../resources/externalconnectors-externalitemcontent.md
-  - name: Item id resolver
+  - name: Item ID resolver
     href: ../../resources/externalconnectors-itemidresolver.md
   - name: Json
     href: ../../resources/json.md

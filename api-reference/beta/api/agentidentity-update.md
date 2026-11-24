@@ -54,6 +54,8 @@ In the request body, supply the values for relevant fields that should be update
 
 When changing **displayName**, it must follow the [agent identity display-name character rules](../resources/agentidentity.md#properties). Updates that don't change **displayName** aren't subject to this character validation.
 
+The **instanceMode** property is immutable. An attempt to change it returns `400 Bad Request` with the error code `Request_BadRequest`.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code.

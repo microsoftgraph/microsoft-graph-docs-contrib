@@ -14,27 +14,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides access to Planner resources for a Teams shared [channel](channel.md). This resource doesn't contain any usable properties.
+Provides access to Planner resources for a Teams shared [channel](../resources/channel.md). This resource doesn't contain any usable properties.
 
-Inherits from [entity](entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List plans](../api/teamschannelplanner-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a list of [plannerPlan](../resources/plannerplan.md) objects owned by a shared [channel](../resources/channel.md) in Teams.|
-|[List plans_v2](../api/teamschannelplanner-list-plans_v2.md) |[plan](plan.md) collection| Get a list of the [plan](plan.md) objects owned by the Teams channel.|
-|[Create plan_v2](../api/teamschannelplanner-post-plans_v2.md) |[plan](plan.md)| Create a new [plan](plan.md) object.|
+|[List plans](../api/teamschannelplanner-list-plans.md) |[plannerPlan](../resources/plannerplan.md) collection| Get a list of [plannerPlan](../resources/plannerplan.md) objects owned by a shared [channel](../resources/channel.md) in Teams.|
+|[List plans (Planner Unified plans Graph API)](../api/teamschannelplanner-list-plans_v2.md) |[plan](../resources/plan.md) collection| Get a list of the [plan](../resources/plan.md) objects owned by the Teams channel.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| The unique identifier for the **teamsChannelPlanner** object. Read-only. Inherited from [entity](entity.md).|
+|id|String| The unique identifier for the **teamsChannelPlanner** object. Read-only. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md) collection| A collection of [plannerPlan](plannerplan.md) objects owned by the Teams channel. Currently, only shared channels are supported. Read-only. Nullable.|
-|plans_v2|[plan](../resources/plan.md) collection| Read-only. Nullable. The collection of Planner Graph V4 plans owned by the Teams channel. Currently, only shared channels are supported.|
+|plans|[plannerPlan](../resources/plannerplan.md) collection| A collection of [plannerPlan](../resources/plannerplan.md) objects owned by the Teams channel. Currently, only shared channels are supported. Read-only. Nullable.|
+|plans_v2|[plan](../resources/plan.md) collection| Read-only. Nullable. The collection of plans in the Planner Unified plans Graph API owned by the Teams channel. Currently, only shared channels are supported.|
 
 ## JSON representation
 

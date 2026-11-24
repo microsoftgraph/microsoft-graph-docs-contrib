@@ -1,5 +1,6 @@
 ---
 title: "oneDriveForBusinessBrowseSession resource type"
+toc.title: "OneDrive for Business browse session"
 description: "Represents a browse session created on a restore point of a OneDrive"
 author: "manikantsinghms"
 ms.date: 09/23/2025

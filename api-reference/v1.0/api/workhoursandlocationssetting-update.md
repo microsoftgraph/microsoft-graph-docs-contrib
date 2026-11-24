@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the properties of a user's [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

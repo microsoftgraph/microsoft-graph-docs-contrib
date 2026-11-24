@@ -56,10 +56,12 @@ You can specify the following properties when you create a **oneDriveForBusiness
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@microsoft.graph.conflictBehavior|String|The conflict resolution behavior when restoring each granular restore artifact in a session. The possible values are: `fail` (default), `replace`, `rename`. Only supported for granular restore sessions. Optional.|
+|@microsoft.graph.conflictBehavior|String|An optional instance annotation that specifies conflict handling for every artifact in a granular restore session. The possible values are: `fail` (default), `replace`, and `rename`. With `fail`, a conflicting artifact fails to restore; `replace` overwrites the existing item; `rename` preserves the existing item and gives the restored item a nonconflicting name. If you supply this annotation for a non-granular session, the request returns `400 Bad Request`.|
 |driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|A collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) objects. Required.|
 |granularDriveRestoreArtifacts|[granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) collection| A collection of [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) objects. Required.|
-|policyId|String|The identifier of the protection policy that scopes the restore session. The service validates that the referenced protection units belong to this policy. Optional.|
+|policyId|String|The identifier of the protection policy that scopes the restore session. The service validates that the referenced protection units belong to this policy. Optional. Inherited from [restoreSessionBase](../resources/restoresessionbase.md).|
+
+To restore granular artifacts to their original location, set **destinationType** to `inPlace` on each artifact. A single session can't mix destination types.
 
 ## Response
 
@@ -298,13 +300,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Create a granular restore session with in-place restore and conflict behavior
+### Example 3: Create an in-place granular restore session
 
-The following example shows how to create a granular restore session that restores artifacts in place with a specified conflict resolution behavior. The `@microsoft.graph.conflictBehavior` annotation applies uniformly to all artifacts in the session. If not specified, the default behavior is `fail`.
-
-> **Note:** The `@microsoft.graph.conflictBehavior` annotation is only supported for granular restore sessions. If specified on a non-granular session, a `400 Bad Request` is returned.
-
-> Mixed destination type within a single granular restore session is not supported.
+The following example shows how to restore OneDrive for Business artifacts to their original location and replace existing same-name items.
 
 #### Request
 

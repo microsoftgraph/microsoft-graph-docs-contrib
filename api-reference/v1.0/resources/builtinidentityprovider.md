@@ -1,5 +1,6 @@
 ---
 title: "builtInIdentityProvider resource type"
+toc.title: "Built-in identity provider"
 description: "Represents built-in identity providers in a Microsoft Entra tenant."
 ms.localizationpriority: high
 doc_type: resourcePageType

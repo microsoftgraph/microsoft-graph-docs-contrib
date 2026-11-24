@@ -1,5 +1,5 @@
 ---
-title: "Get customFieldValue"
+title: "Get custom field value"
 description: "Read the properties and relationships of customFieldValue object."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Get customFieldValue
+# Get custom field value
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "customfieldvalue-get-permissions"
+  "name": "customfieldvalue_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/customfieldvalue-get-permissions.md)]
@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/planner/plans_v2/{planId}/tasks/{taskId}/customFieldValues/{customFieldValueId}
 GET /users/{usersId}/planner/plans_v2/{planId}/tasks/{taskId}/customFieldValues/{customFieldValueId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -87,9 +83,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.customFieldValue",
-  "id": "32618015-76cd-34e6-561e-21ced3b2077b",
-  "customFieldDefinitionId": "String",
-  "value": "String"
+  "id": "32618015-76cd-34e6-561e-21ced3b2077b"
 }
 ```
 

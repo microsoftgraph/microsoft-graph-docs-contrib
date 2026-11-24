@@ -22,17 +22,19 @@ Represents an entity that acts as a container for administrator functionality.
 | id       | String | The unique identifier for the device. Not nullable. Read-only. Returned by default. |
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 | cloudLicensing | [microsoft.graph.cloudLicensing.adminCloudLicensing](../resources/cloudlicensing-admincloudlicensing.md) | The root of the cloud licensing API for the entire organization. Read-only. |
-| edge | [edge](edge.md) | A container for Microsoft Edge resources. Read-only. |
-| entra | [entra](entra.md) | A container for Microsoft Entra resources. Read-only. |
+| edge | [edge](../resources/edge.md) | A container for Microsoft Edge resources. Read-only. |
+| entra | [entra](../resources/entra.md) | A container for Microsoft Entra resources. Read-only. |
 | exchange | [exchangeAdmin](../resources/exchangeadmin.md) |A container for the Exchange admin functionality. Read-only.|
 | microsoft365Apps |[adminMicrosoft365Apps](../resources/adminmicrosoft365apps.md)|A container for the Microsoft 365 apps admin functionality.|
 | people | [peopleAdminSettings](../resources/peopleadminsettings.md) | Represents a setting to control people-related admin settings in the tenant. |
 | reportSettings |[microsoft.graph.adminReportSettings](../resources/adminreportsettings.md)|A container for administrative resources to manage reports.|
-| serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | A container for service communications resources. Read-only. |
-| sharepointSettings | [sharepointSettings](../resources/sharepointSettings.md) | A container for administrative resources to manage tenant-level settings for SharePoint and OneDrive. |
+| resourcePolicy | [resourcePolicyRoot](../resources/resourcepolicyroot.md) | The resource policy definitions, assignments, configuration, and evaluation functionality. |
+| serviceAnnouncement | [serviceAnnouncement](../resources/serviceannouncement.md) | A container for service communications resources. Read-only. |
+| sharepointSettings | [sharepointSettings](../resources/sharepointsettings.md) | A container for administrative resources to manage tenant-level settings for SharePoint and OneDrive. |
 | teams|[microsoft.graph.teamsAdministration.teamsAdminRoot](../resources/teamsadministration-teamsadminroot.md)|A container for Teams administration functionalities, such as user configurations, telephone number management, and policy assignments.|
 | windows |[microsoft.graph.adminWindows](../resources/adminwindows.md)|A container for all Windows administrator functionalities. Read-only.|
 

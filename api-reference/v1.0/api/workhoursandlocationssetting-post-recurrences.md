@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Create a new [workPlanRecurrence](../resources/workplanrecurrence.md) object in a user's work plan.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

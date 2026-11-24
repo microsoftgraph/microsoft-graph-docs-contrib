@@ -26,6 +26,8 @@ items:
       href: ../../api/configurationmanagement-list-configurationdrifts.md
     - name: Get
       href: ../../api/configurationdrift-get.md
+    - name: Remediate
+      href: ../../api/configurationdrift-remediate.md
   - name: Configuration monitor
     items:
     - name: Configuration monitor
@@ -60,6 +62,48 @@ items:
       href: ../../api/configurationsnapshotjob-get.md
     - name: Delete
       href: ../../api/configurationsnapshotjob-delete.md
+  - name: Configuration template
+    items:
+    - name: Configuration template
+      href: ../../resources/configurationtemplate.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationtemplates.md
+    - name: Create
+      href: ../../api/configurationmanagement-post-configurationtemplates.md
+    - name: Get
+      href: ../../api/configurationtemplate-get.md
+    - name: Update
+      href: ../../api/configurationtemplate-update.md
+    - name: Delete
+      href: ../../api/configurationtemplate-delete.md
+    - name: List versions
+      href: ../../api/configurationtemplate-list-versions.md
+    - name: Create version
+      href: ../../api/configurationtemplate-post-versions.md
+  - name: Configuration template version
+    items:
+    - name: Configuration template version
+      href: ../../resources/configurationtemplateversion.md
+    - name: List
+      href: ../../api/configurationtemplate-list-versions.md
+    - name: Create
+      href: ../../api/configurationtemplate-post-versions.md
+    - name: Get
+      href: ../../api/configurationtemplateversion-get.md
+    - name: Delete
+      href: ../../api/configurationtemplateversion-delete.md
+    - name: Get baseline
+      href: ../../api/configurationbaseline-get.md
+    - name: List referenced internal monitors
+      href: ../../api/configurationtemplateversion-list-referencedinternalmonitors.md
+  - name: External tenant monitors
+    href: ../../resources/externaltenantmonitors.md
+  - name: Complex types
+    items:
+    - name: Configuration drift remediated property
+      href: ../../resources/configurationdriftremediatedproperty.md
+    - name: Configuration drift remediation result
+      href: ../../resources/configurationdriftremediationresult.md
 - name: Cross-tenant access
   displayName: Cross-tenant access settings, XTAP
   items:
@@ -233,7 +277,7 @@ items:
       href: ../../resources/crosstenantmigrationservicestatusdetails.md
     - name: Error
       href: ../../resources/error.md
-    - name: Exchange online Cross-tenant migration settings
+    - name: Exchange Online cross-tenant migration settings
       href: ../../resources/exchangeonlinecrosstenantmigrationsettings.md
 - name: Multitenant organization
   displayName: MTO
@@ -342,6 +386,86 @@ items:
       href: ../../api/tenantgovernanceservices-relatedtenant-refresh.md
     - name: Refresh status
       href: ../../api/tenantgovernanceservices-relatedtenant-refreshstatus.md
+  - name: Resource policy (preview)
+    items:
+    - name: Overview
+      href: ../../resources/entra-resource-policy-overview.md
+    - name: Definition
+      items:
+      - name: Definition
+        href: ../../resources/resourcepolicydefinition.md
+      - name: List definitions
+        href: ../../api/resourcepolicyroot-list-definitions.md
+      - name: List built-in definitions
+        href: ../../api/resourcepolicyroot-list-builtindefinitions.md
+      - name: Create
+        href: ../../api/resourcepolicydefinition-create.md
+      - name: Get
+        href: ../../api/resourcepolicydefinition-get.md
+      - name: Update
+        href: ../../api/resourcepolicydefinition-update.md
+      - name: Upsert
+        href: ../../api/resourcepolicydefinition-upsert.md
+      - name: Delete
+        href: ../../api/resourcepolicydefinition-delete.md
+    - name: Definition version
+      items:
+      - name: Definition version
+        href: ../../resources/resourcepolicydefinitionversion.md
+      - name: List
+        href: ../../api/resourcepolicydefinition-list-previousversions.md
+      - name: Get
+        href: ../../api/resourcepolicydefinitionversion-get.md
+      - name: Delete
+        href: ../../api/resourcepolicydefinitionversion-delete.md
+    - name: Assignment
+      items:
+      - name: Assignment
+        href: ../../resources/resourcepolicyassignment.md
+      - name: List
+        href: ../../api/resourcepolicyroot-list-assignments.md
+      - name: Create
+        href: ../../api/resourcepolicyassignment-create.md
+      - name: Get
+        href: ../../api/resourcepolicyassignment-get.md
+      - name: Update
+        href: ../../api/resourcepolicyassignment-update.md
+      - name: Upsert
+        href: ../../api/resourcepolicyassignment-upsert.md
+      - name: Delete
+        href: ../../api/resourcepolicyassignment-delete.md
+    - name: Configuration
+      items:
+      - name: Configuration
+        href: ../../resources/resourcepolicyconfiguration.md
+      - name: Get
+        href: ../../api/resourcepolicyconfiguration-get.md
+      - name: Update
+        href: ../../api/resourcepolicyconfiguration-update.md
+      - name: Get federated identity credential subject
+        href: ../../api/resourcepolicyconfiguration-getfederatedidentitycredentialsubject.md
+    - name: Deleted items
+      items:
+      - name: Deleted items
+        href: ../../resources/resourcepolicydeletableroot.md
+      - name: List deleted definitions
+        href: ../../api/resourcepolicydeletableroot-list-definitions.md
+      - name: List deleted assignments
+        href: ../../api/resourcepolicydeletableroot-list-assignments.md
+      - name: Restore definition
+        href: ../../api/resourcepolicydefinition-restore.md
+      - name: Restore assignment
+        href: ../../api/resourcepolicyassignment-restore.md
+      - name: Permanently delete definition
+        href: ../../api/resourcepolicydeletableroot-delete-definitions.md
+      - name: Permanently delete assignment
+        href: ../../api/resourcepolicydeletableroot-delete-assignments.md
+    - name: Evaluation
+      items:
+      - name: Evaluate assigned policies
+        href: ../../api/resourcepolicyroot-evaluateassignedpolicies.md
+      - name: Evaluate policy
+        href: ../../api/resourcepolicyroot-evaluatepolicy.md
   - name: Tenant governance
     href: ../../resources/tenantgovernanceservices-tenantgovernance.md
   - name: Tenant governance policy template
@@ -374,6 +498,8 @@ items:
       href: ../../resources/tenantgovernanceservices-applicationresourcepermission.md
     - name: Applications required resource access
       href: ../../resources/tenantgovernanceservices-applicationsrequiredresourceaccess.md
+    - name: Assigned policy reference
+      href: ../../resources/assignedpolicyreference.md
     - name: B 2 b registration metrics
       href: ../../resources/tenantgovernanceservices-b2bregistrationmetrics.md
     - name: B 2 b registration metrics base
@@ -402,6 +528,8 @@ items:
       href: ../../resources/tenantgovernanceservices-delegatedadministrationroleassignment.md
     - name: Delegated administration role assignment snapshot
       href: ../../resources/tenantgovernanceservices-delegatedadministrationroleassignmentsnapshot.md
+    - name: Fetch response
+      href: ../../resources/fetchresponse.md
     - name: Investigation action step
       href: ../../resources/tenantgovernanceservices-investigationactionstep.md
     - name: Investigation action URL
@@ -418,12 +546,26 @@ items:
       href: ../../resources/tenantgovernanceservices-multitenantapplicationstoprovision.md
     - name: Multitenant applications to provision snapshot
       href: ../../resources/tenantgovernanceservices-multitenantapplicationstoprovisionsnapshot.md
+    - name: Policies evaluation detail
+      href: ../../resources/policiesevaluationdetail.md
+    - name: Policies evaluation result
+      href: ../../resources/policiesevaluationresult.md
+    - name: Policy applies to
+      href: ../../resources/policyappliesto.md
+    - name: Policy definition reference
+      href: ../../resources/policydefinitionreference.md
+    - name: Policy evaluation error detail
+      href: ../../resources/policyevaluationerrordetail.md
+    - name: Privileged read setting
+      href: ../../resources/privilegedreadsetting.md
     - name: Related tenants refresh request
       href: ../../resources/tenantgovernanceservices-relatedtenantsrefreshrequest.md
     - name: Related tenants refresh status
       href: ../../resources/tenantgovernanceservices-relatedtenantsrefreshstatus.md
     - name: Relationship policy
       href: ../../resources/tenantgovernanceservices-relationshippolicy.md
+    - name: Resource policy rule
+      href: ../../resources/resourcepolicyrule.md
     - name: Role template
       href: ../../resources/tenantgovernanceservices-roletemplate.md
 - name: Tenant information

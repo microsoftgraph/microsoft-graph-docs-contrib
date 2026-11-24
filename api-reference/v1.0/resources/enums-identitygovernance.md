@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 author: "AlexFilipin"
-ms.date: 10/26/2026
+ms.date: 11/02/2026
 ---
 
 # Identity governance enum values
@@ -89,6 +89,7 @@ The **subjectType** enumeration is an evolvable enumeration marked with the `IsF
 |Member|
 |:---|
 |user|
+|agentIdentity|
 |unknownFutureValue|
 |provisioningObject|
 
@@ -164,3 +165,111 @@ The **subjectType** enumeration is an evolvable enumeration marked with the `IsF
   "namespace": "microsoft.graph.identityGovernance"
 }
 -->
+
+### lifecyclePolicyRelationship values
+
+|Member|
+|:---|
+|effective|
+|inScopeButIneffective|
+|pending|
+|unknownFutureValue|
+
+### lifecyclePolicyComplianceStatus values
+
+|Member|
+|:---|
+|notEvaluated|
+|compliant|
+|nonCompliant|
+|unknownFutureValue|
+
+### lifecyclePolicyEnforcementStatus values
+
+|Member|
+|:---|
+|notRequired|
+|notStarted|
+|processing|
+|waiting|
+|actionDue|
+|complete|
+|unknown|
+|unknownFutureValue|
+
+### lifecyclePolicyScopeProcessingStatus values
+
+|Member|
+|:---|
+|idle|
+|notStarted|
+|evaluating|
+|processing|
+|unknownFutureValue|
+
+### lifecyclePolicyScopeProcessingAttemptStatus values
+
+|Member|
+|:---|
+|notStarted|
+|evaluating|
+|processing|
+|completed|
+|failed|
+|timedOut|
+|invalidScope|
+|unknownFutureValue|
+
+### lifecyclePolicyEnforcementActionState values
+
+|Member|
+|:---|
+|none|
+|warningStateEnabled|
+|nonComplianceNotificationSent|
+|firstNotificationSent|
+|secondNotificationSent|
+|finalNotificationSent|
+|disabled|
+|deleted|
+|complianceRestored|
+|unknownFutureValue|
+
+### lifecyclePolicyNextEnforcementAction values
+
+|Member|
+|:---|
+|nonComplianceNotification|
+|firstNotification|
+|secondNotification|
+|finalNotification|
+|disable|
+|disableNotification|
+|delete|
+|unknownFutureValue|
+
+### lifecyclePolicySource values
+
+|Member|
+|:---|
+|userCreated|
+|systemDefault|
+|unknownFutureValue|
+
+### agentBuilderPlatforms values
+
+|Member|
+|:---|
+|microsoftCopilotStudio|
+|foundry|
+|unknownFutureValue|
+
+### complianceState values
+
+|Member|
+|:---|
+|compliant|
+|warning|
+|warningNotify|
+|nonCompliant|
+|unknownFutureValue|

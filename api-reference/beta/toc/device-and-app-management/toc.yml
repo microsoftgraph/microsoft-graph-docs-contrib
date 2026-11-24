@@ -218,6 +218,10 @@ items:
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
     - name: Retrieve frontline Cloud PC detail
       href: ../../api/cloudpc-retrievefrontlinecloudpcdetail.md
+    - name: Retrieve Flex Cloud PC access configuration
+      href: ../../api/cloudpc-retrieveflexcloudpcaccessconfiguration.md
+    - name: Retrieve Flex Cloud PC configuration detail
+      href: ../../api/cloudpc-retrieveflexcloudpcconfigurationdetail.md
     - name: Trigger a Cloud PC organization action
       href: ../../api/cloudpc-organizationaction.md
     - name: Retrieve a Cloud PC organization action detail
@@ -474,6 +478,14 @@ items:
       href: ../../resources/cloudpcsupportedregion.md
     - name: List
       href: ../../api/virtualendpoint-list-supportedregions.md
+  - name: Cloud PC user profile snapshot
+    items:
+    - name: Cloud PC user profile snapshot
+      href: ../../resources/cloudpcuserprofilesnapshot.md
+    - name: List
+      href: ../../api/cloudpcusersettingspersistencedetail-list-userprofilesnapshots.md
+    - name: Restore
+      href: ../../api/cloudpcuserprofilesnapshot-restore.md
   - name: Cloud PC user setting
     items:
     - name: Cloud PC user setting
@@ -494,6 +506,16 @@ items:
     items:
     - name: Cloud PC user settings persistence detail
       href: ../../resources/cloudpcusersettingspersistencedetail.md
+    - name: Get
+      href: ../../api/cloudpcusersettingspersistencedetail-get.md
+    - name: Update
+      href: ../../api/cloudpcusersettingspersistencedetail-update.md
+    - name: List user profile snapshots
+      href: ../../api/cloudpcusersettingspersistencedetail-list-userprofilesnapshots.md
+    - name: Bulk create user profile snapshot
+      href: ../../api/cloudpcusersettingspersistencedetail-bulkcreateuserprofilesnapshot.md
+    - name: Bulk export user profile snapshot
+      href: ../../api/cloudpcusersettingspersistencedetail-bulkexportuserprofilesnapshot.md
     - name: Batch delete user settings persistence profile
       href: ../../api/cloudpcusersettingspersistencedetail-batchcleanupusersettingspersistenceprofile.md
     - name: Retrieve user settings persistence profiles
@@ -727,6 +749,10 @@ items:
       href: ../../resources/cloudpcexternalpartneragentsetting.md
     - name: Cloud PC file path app detail
       href: ../../resources/cloudpcfilepathappdetail.md
+    - name: Cloud PC flex access configuration
+      href: ../../resources/cloudpcflexaccessconfiguration.md
+    - name: Cloud PC flex configuration detail
+      href: ../../resources/cloudpcflexconfigurationdetail.md
     - name: Cloud PC forensic storage account
       href: ../../resources/cloudpcforensicstorageaccount.md
     - name: Cloud PC frontline shared device detail
@@ -803,18 +829,34 @@ items:
       href: ../../resources/cloudpcstatussummary.md
     - name: Cloud PC storage blob detail
       href: ../../resources/cloudpcstorageblobdetail.md
+    - name: Cloud PC storage configuration
+      href: ../../resources/cloudpcstorageconfiguration.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
     - name: Cloud PC supported region restriction detail
       href: ../../resources/cloudpcsupportedregionrestrictiondetail.md
+    - name: Cloud PC user profile bulk action result
+      href: ../../resources/cloudpcuserprofilebulkactionresult.md
+    - name: Cloud PC user profile snapshot create bulk action result
+      href: ../../resources/cloudpcuserprofilesnapshotcreatebulkactionresult.md
+    - name: Cloud PC user profile snapshot export bulk action result
+      href: ../../resources/cloudpcuserprofilesnapshotexportbulkactionresult.md
+    - name: Cloud PC user profile snapshot storage detail
+      href: ../../resources/cloudpcuserprofilesnapshotstoragedetail.md
     - name: Cloud PC user role scope tag info
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
       href: ../../resources/cloudpcusersettingassignment.md
+    - name: Cloud PC user settings persistence auto cleanup detail
+      href: ../../resources/cloudpcusersettingspersistenceautocleanupdetail.md
     - name: Cloud PC user settings persistence configuration
       href: ../../resources/cloudpcusersettingspersistenceconfiguration.md
     - name: Cloud PC user settings persistence profile
       href: ../../resources/cloudpcusersettingspersistenceprofile.md
+    - name: Cloud PC user settings persistence profile usage detail
+      href: ../../resources/cloudpcusersettingspersistenceprofileusagedetail.md
+    - name: Cloud PC user settings persistence snapshot configuration
+      href: ../../resources/cloudpcusersettingspersistencesnapshotconfiguration.md
     - name: Cloud PC user settings persistence usage result
       href: ../../resources/cloudpcusersettingspersistenceusageresult.md
     - name: Cloud PC Windows setting
@@ -852,14 +894,18 @@ items:
       href: ../../api/printer-create.md
     - name: Update settings
       href: ../../api/print-update-settings.md
-    - name: List taskDefinitions
+    - name: List task definitions
       href: ../../api/print-list-taskdefinitions.md
-    - name: Create taskDefinition
+    - name: Create task definition
       href: ../../api/print-post-taskdefinitions.md
-    - name: Update taskDefinition
+    - name: Update task definition
       href: ../../api/print-update-taskdefinition.md
-    - name: Delete taskDefinition
+    - name: Delete task definition
       href: ../../api/print-delete-taskdefinition.md
+    - name: List pull print printers
+      href: ../../api/print-list-pullprintprinters.md
+    - name: Create pull print printer
+      href: ../../api/print-post-pullprintprinters.md
   - name: Print connector
     items:
     - name: Print connector
@@ -898,6 +944,10 @@ items:
       href: ../../api/printjob-abort.md
     - name: Redirect
       href: ../../api/printjob-redirect.md
+    - name: Release
+      href: ../../api/printjob-release.md
+    - name: Release wait
+      href: ../../api/printjob-releasewait.md
   - name: Print operation
     items:
     - name: Print operation
@@ -972,6 +1022,8 @@ items:
       href: ../../api/printer-post-tasktriggers.md
     - name: Delete task trigger
       href: ../../api/printer-delete-tasktrigger.md
+    - name: List pull print printers
+      href: ../../api/printer-list-pullprintprinters.md
   - name: Printer create operation
     items:
     - name: Printer create operation
@@ -1008,6 +1060,36 @@ items:
       href: ../../api/printershare-delete-allowedgroup.md
     - name: List recent shares
       href: ../../api/print-list-recentshares.md
+    - name: Get pull print printer
+      href: ../../api/printershare-list-pullprintprinter.md
+  - name: Pull print printer
+    items:
+    - name: Pull print printer
+      href: ../../resources/pullprintprinter.md
+    - name: List
+      href: ../../api/print-list-pullprintprinters.md
+    - name: Create
+      href: ../../api/print-post-pullprintprinters.md
+    - name: Get
+      href: ../../api/pullprintprinter-get.md
+    - name: Update
+      href: ../../api/pullprintprinter-update.md
+    - name: Delete
+      href: ../../api/pullprintprinter-delete.md
+    - name: Add printer
+      href: ../../api/pullprintprinter-post-printers.md
+    - name: Remove printer
+      href: ../../api/pullprintprinter-delete-printers.md
+    - name: Restore factory defaults
+      href: ../../api/pullprintprinter-restorefactorydefaults.md
+    - name: Member suggestions
+      href: ../../api/pullprintprinter-membersuggestions.md
+  - name: Pull print printer create operation
+    items:
+    - name: Pull print printer create operation
+      href: ../../resources/pullprintprintercreateoperation.md
+    - name: Get
+      href: ../../api/pullprintprintercreateoperation-get.md
   - name: Reports
     items:
     - name: Print usage by printer
@@ -1094,6 +1176,8 @@ items:
       href: ../../resources/printerdiscoverysettings.md
     - name: Printer location
       href: ../../resources/printerlocation.md
+    - name: Printer provided release support
+      href: ../../resources/printerprovidedreleasesupport.md
     - name: Printer share viewpoint
       href: ../../resources/printershareviewpoint.md
     - name: Printer status

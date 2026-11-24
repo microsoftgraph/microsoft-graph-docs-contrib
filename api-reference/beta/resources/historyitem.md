@@ -14,20 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An audit or activity record for a change made to a [plan](plan.md) or its child entities. `entityId`, `entityType`, `eventType`, and `occurredDateTime` (the primary sort key) are returned by default; the acting identity and before/after state are opt-in via $select.
+An audit or activity record for a change made to a [plan](../resources/plan.md) or its child entities. `entityId`, `entityType`, `eventType`, and `occurredDateTime` (the primary sort key) are returned by default; the acting identity and before/after state are opt-in via $select.
 
 
 Inherits from [plannerDelta](../resources/plannerdelta.md).
 
 
 ## Methods
+History items are service-generated audit records. The API doesn't expose standalone create, update, or delete operations for these records.
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/plan-list-historyitems.md)|[historyItem](../resources/historyitem.md) collection|Get a list of the historyItem objects and their properties.|
-|[Create](../api/plan-post-historyitems.md)|[historyItem](../resources/historyitem.md)|Create a new historyItem object.|
 |[Get](../api/historyitem-get.md)|[historyItem](../resources/historyitem.md)|Read the properties and relationships of [historyItem](../resources/historyitem.md) object.|
-|[Update](../api/historyitem-update.md)|[historyItem](../resources/historyitem.md)|Update the properties of a historyItem object.|
-|[Delete](../api/plan-delete-historyitems.md)|None|Delete a historyItem object.|
 
 ## Properties
 |Property|Type|Description|
@@ -71,4 +70,3 @@ The following JSON representation shows the resource type.
   "newData": "String"
 }
 ```
-

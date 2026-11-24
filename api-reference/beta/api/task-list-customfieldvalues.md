@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "task-list-customfieldvalues-permissions"
+  "name": "task_list_customfieldvalues_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/task-list-customfieldvalues-permissions.md)]
@@ -36,10 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /users/{usersId}/planner/plans_v2/{planId}/tasks/{taskId}/customFieldValues
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -88,9 +84,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.customFieldValue",
-      "id": "32618015-76cd-34e6-561e-21ced3b2077b",
-      "customFieldDefinitionId": "String",
-      "value": "String"
+      "id": "32618015-76cd-34e6-561e-21ced3b2077b"
     }
   ]
 }
