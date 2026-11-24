@@ -1,5 +1,5 @@
 ---
-title: "List tasks for a goal"
+title: "List tasks"
 description: "Get a list of the task objects associated with the goal."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# List tasks for a goal
+# List tasks
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "goal-list-tasks-permissions"
+  "name": "goal_list_tasks_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/goal-list-tasks-permissions.md)]
@@ -36,10 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /users/{usersId}/planner/plans_v2/{planId}/goals/{goalId}/tasks
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -89,60 +85,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.task",
       "id": "86d64a5b-109d-39c9-dd43-d7fffb6a1670",
-      "displayName": "String",
-      "planId": "String",
-      "bucketId": "String",
-      "goalIds": [
-        "String"
-      ],
-      "status": "String",
-      "priority": "Integer",
-      "percentComplete": "Integer",
-      "startDateTime": {
-        "@odata.type": "microsoft.graph.dateWithOptionalTime"
-      },
-      "dueDateTime": {
-        "@odata.type": "microsoft.graph.dateWithOptionalTime"
-      },
-      "finishDateTime": {
-        "@odata.type": "microsoft.graph.dateWithOptionalTime"
-      },
-      "notes": {
-        "@odata.type": "microsoft.graph.itemBody"
-      },
-      "creationInfo": {
-        "@odata.type": "microsoft.graph.creationInfo"
-      },
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "completedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "completedDateTime": "String (timestamp)",
-      "recurrence": {
-        "@odata.type": "microsoft.graph.plannerTaskRecurrence"
-      },
-      "archivalInfo": {
-        "@odata.type": "microsoft.graph.plannerArchivalInfo"
-      },
-      "planView": {
-        "@odata.type": "microsoft.graph.taskPlanView"
-      },
-      "personalView": {
-        "@odata.type": "microsoft.graph.taskPersonalView"
-      },
-      "parentTaskId": "String",
-      "hasChildren": "Boolean",
-      "isCritical": "Boolean",
-      "hasChat": "Boolean",
-      "capabilities": {
-        "@odata.type": "microsoft.graph.taskCapability"
-      },
-      "extensions": {
-        "@odata.type": "microsoft.graph.extensionFieldCollection"
-      }
+      "displayName": "Product launch",
+      "planId": "b3d9f9a2-3e14-4a4b-9b2b-6b6d9e6a2f31",
+      "bucketId": "9c9c7a3d-5b7f-45e9-9df9-9f8b0f7edc9a",
+      "status": "notStarted"
     }
   ]
 }

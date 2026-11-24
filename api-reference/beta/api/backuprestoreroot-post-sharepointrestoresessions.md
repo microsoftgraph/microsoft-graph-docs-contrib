@@ -53,10 +53,12 @@ You can specify the following properties when you create a **sharePointRestoreSe
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@microsoft.graph.conflictBehavior|String|The conflict resolution behavior when restoring each granular restore artifact in a session. The possible values are: `fail` (default), `replace`, `rename`. Only supported for granular restore sessions. Optional.|
+|@microsoft.graph.conflictBehavior|String|An optional instance annotation that specifies conflict handling for every artifact in a granular restore session. The possible values are: `fail` (default), `replace`, and `rename`. With `fail`, a conflicting artifact fails to restore; `replace` overwrites the existing item; `rename` preserves the existing item and gives the restored item a nonconflicting name. If you supply this annotation for a non-granular session, the request returns `400 Bad Request`.|
 |granularSiteRestoreArtifacts|[granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) collection|A collection of [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) objects. Required.|
-|policyId|String|The identifier of the protection policy that scopes the restore session. The service validates that the referenced protection units belong to this policy. Optional.|
+|policyId|String|The identifier of the protection policy that scopes the restore session. The service validates that the referenced protection units belong to this policy. Optional. Inherited from [restoreSessionBase](../resources/restoresessionbase.md).|
 |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|A collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects. Required.|
+
+To restore granular artifacts to their original location, set **destinationType** to `inPlace` on each artifact. A single session can't mix destination types.
 
 ## Response
 
@@ -297,13 +299,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Create a granular restore session with in-place restore and conflict behavior
+### Example 3: Create an in-place granular restore session
 
-The following example shows how to create a granular restore session that restores artifacts in place with a specified conflict resolution behavior. The `@microsoft.graph.conflictBehavior` annotation applies uniformly to all artifacts in the session. If not specified, the default behavior is `fail`.
-
-> **Note:** The `@microsoft.graph.conflictBehavior` annotation is only supported for granular restore sessions. If specified on a non-granular session, a `400 Bad Request` is returned.
-
-> Mixed destination type within a single granular restore session is not supported.
+The following example shows how to restore SharePoint artifacts to their original location and rename restored items if same-name items already exist.
 
 #### Request
 The following example shows a request.

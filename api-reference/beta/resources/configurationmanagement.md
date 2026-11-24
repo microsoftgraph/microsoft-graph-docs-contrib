@@ -23,11 +23,12 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+| configurationDrifts | [configurationDrift](../resources/configurationdrift.md) collection | A container for configuration drift resources. |
 | configurationMonitors | [configurationMonitor](../resources/configurationmonitor.md) collection | A container for configuration monitor resources. |
 | configurationMonitoringResults | [configurationMonitoringResult](../resources/configurationmonitoringresult.md) collection | A container for configuration monitoring results resources. |
-| configurationDrifts | [configurationDrift](../resources/configurationdrift.md) collection | A container for configuration drift resources. |
 | configurationSnapshotJobs | [configurationSnapshotJob](../resources/configurationsnapshotjob.md) collection | A container for snapshot job resources. |
 | configurationSnapshots | [configurationBaseline](../resources/configurationbaseline.md) collection | A container for configuration snapshot baselines. |
+| configurationTemplates | [configurationTemplate](../resources/configurationtemplate.md) collection | A container for reusable, versioned configuration templates. |
 
 ## JSON representation
 The following JSON representation shows the resource type.

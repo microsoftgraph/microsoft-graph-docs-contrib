@@ -999,16 +999,24 @@ items:
         href: utcm-authentication-setup.md
       - name: Supported resources
         items:
-        - name: Entra resources
-          href: utcm-entra-resources.md
-        - name: Exchange resources
-          href: utcm-exchange-resources.md
-        - name: Intune resources
-          href: utcm-intune-resources.md
-        - name: Security and Compliance resources
-          href: utcm-securityandcompliance-resources.md
-        - name: Teams resources
-          href: utcm-teams-resources.md
+        - name: Monitoring and snapshots
+          items:
+          - name: Agent resources (preview)
+            href: utcm-agent-resources.md
+          - name: Copilot resources (preview)
+            href: utcm-copilot-resources.md
+          - name: Entra resources
+            href: utcm-entra-resources.md
+          - name: Exchange resources
+            href: utcm-exchange-resources.md
+          - name: Intune resources
+            href: utcm-intune-resources.md
+          - name: Security and Compliance resources
+            href: utcm-securityandcompliance-resources.md
+          - name: Teams resources
+            href: utcm-teams-resources.md
+        - name: Remediation and applyOnce (preview)
+          href: utcm-remediation-applyonce-resources.md
   - name: To-do tasks
     displayName: Microsoft To Do
     items:

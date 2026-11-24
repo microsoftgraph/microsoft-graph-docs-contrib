@@ -3,6 +3,148 @@
     {
       "ChangeList": [
         {
+          "Id": "85a23977-1cef-4e7e-9350-b282d240c4ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "clientIdMetadataDocumentUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **clientIdMetadataDocumentUrl** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource to identify a client ID metadata document (CIMD)-backed agent identity by its immutable HTTPS URL.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "85a23977-1cef-4e7e-9350-b282d240c4ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasClientIdMetadataDocument",
+          "ChangeType": "Addition",
+          "Description": "Added the read-only **hasClientIdMetadataDocument** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource to indicate whether the agent identity is backed by a client ID metadata document (CIMD).",
+          "Target": "agentIdentity"
+        }
+      ],
+      "Id": "85a23977-1cef-4e7e-9350-b282d240c4ca",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-09T17:53:17.4069822Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyComplianceState",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyComplianceState** enumeration type.",
+          "Target": "lifecyclePolicyComplianceState"
+        },
+        {
+          "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "lifecyclePolicyComplianceState",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyComplianceState** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "lifecyclePolicyComplianceStateLastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyComplianceStateLastModifiedDateTime** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "lifecyclePolicyComplianceStateReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyComplianceStateReason** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "lifecyclePolicyNonComplianceDisablementDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyNonComplianceDisablementDateTime** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "lifecyclePolicyComplianceState",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyComplianceState** property to the [agentIdentityBlueprintPrincipal](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprintPrincipal"
+        },
+        {
+          "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "lifecyclePolicyComplianceStateLastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyComplianceStateLastModifiedDateTime** property to the [agentIdentityBlueprintPrincipal](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprintPrincipal"
+        },
+        {
+          "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "lifecyclePolicyComplianceStateReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyComplianceStateReason** property to the [agentIdentityBlueprintPrincipal](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprintPrincipal"
+        },
+        {
+          "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "lifecyclePolicyNonComplianceDisablementDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyNonComplianceDisablementDateTime** property to the [agentIdentityBlueprintPrincipal](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprintPrincipal"
+        }
+      ],
+      "Id": "f503e7a1-c301-4d85-a378-e19ee9df0d4a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-10T23:15:10.9080986Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ef8e1624-840e-491f-8e90-7c5fdd632d19",
+          "ApiChange": "Property",
+          "ChangedApiName": "isSingleInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the **isSingleInstance** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource, inherited by [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true), to support a single agent identity per tenant without an agent identity blueprint principal.",
+          "Target": "application"
+        },
+        {
+          "Id": "ef8e1624-840e-491f-8e90-7c5fdd632d19",
+          "ApiChange": "Property",
+          "ChangedApiName": "instanceMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **instanceMode** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource to identify its single-instance or multi-instance topology.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "ef8e1624-840e-491f-8e90-7c5fdd632d19",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "instanceMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [instanceMode](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true#instancemode-values) enumeration used by [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true), with the members multiInstance, singleInstance, and unknownFutureValue.",
+          "Target": "instanceMode"
+        }
+      ],
+      "Id": "ef8e1624-840e-491f-8e90-7c5fdd632d19",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-02T23:38:48.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3ddd55ef-864b-4ec5-95f4-50314b3e554a",
           "ApiChange": "Property",
           "ChangedApiName": "deletedDateTime",

@@ -1,6 +1,6 @@
 ---
 title: "bucket resource type"
-description: "A Planner V4 bucket (a custom column used to group tasks within a plan). A bucket has no defaults beyond the universal property set (`id`, `displayName`, `createdBy`, `createdDateTime`, `lastModifiedBy`, `lastModifiedDateTime`); it doesn't carry `archivalInfo`."
+description: "Represents a bucket in the Planner Unified plans Graph API, a custom column used to group tasks within a plan."
 author: "EshaSugla"
 ms.date: 09/10/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A Planner V4 bucket (a custom column used to group [tasks](task.md) within a [plan](plan.md)). A bucket has no defaults beyond the universal property set (`id`, `displayName`, `createdBy`, `createdDateTime`, `lastModifiedBy`, `lastModifiedDateTime`); it doesn't carry `archivalInfo`.
+Represents a bucket in the Planner Unified plans Graph API, a custom column used to group [tasks](../resources/task.md) within a [plan](../resources/plan.md). Creation metadata is exposed through **creationInfo**, not top-level **createdBy** and **createdDateTime** properties. Buckets don't have an **archivalInfo** property.
 
 
 Inherits from [plannerDelta](../resources/plannerdelta.md).
@@ -75,4 +75,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

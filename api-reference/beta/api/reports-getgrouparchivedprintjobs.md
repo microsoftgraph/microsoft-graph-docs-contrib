@@ -39,11 +39,11 @@ GET /reports/getGroupArchivedPrintJobs(groupId='{groupId}',startDateTime='{start
 
 In the request URL, provide the following function parameters with values:
 
-| Parameter     | Type                 | Required? | Description                                                          |
-|---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `groupId`     | `Edm.String`         | Yes       | The ID of the group to return data for.                              |
-| `startDateTime` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from.|
-| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.|
+| Parameter       | Type                 | Description                                                             |
+|-----------------|----------------------|-------------------------------------------------------------------------|
+| groupId         | String               | Required. The ID of the group to return data for.                       |
+| startDateTime   | DateTimeOffset       | Optional. The start date (inclusive) for the time period to include data from. |
+| endDateTime     | DateTimeOffset       | Optional. The end date (inclusive) for the time period to include data from. |
 
 >**Note:** If a value is not required, pass the parameter with null value.
 ## Response

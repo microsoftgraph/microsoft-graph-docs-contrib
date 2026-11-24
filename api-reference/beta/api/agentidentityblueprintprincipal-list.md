@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal
+GET https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal?$select=id,appId,createdDateTime,createdByAppId,accountEnabled,appDisplayName,appOwnerOrganizationId,appRoleAssignmentRequired,appRoles,disabledByMicrosoftStatus,info,oauth2PermissionScopes,servicePrincipalType,tags,verifiedPublisher,lifecyclePolicyComplianceState,lifecyclePolicyComplianceStateReason,lifecyclePolicyComplianceStateLastModifiedDateTime,lifecyclePolicyNonComplianceDisablementDateTime
 ```
 
 # [C#](#tab/csharp)
@@ -126,6 +126,10 @@ Content-type: application/json
       "appRoleAssignmentRequired": false,
       "appRoles": [],
       "disabledByMicrosoftStatus": null,
+      "lifecyclePolicyComplianceState": "warning",
+      "lifecyclePolicyComplianceStateReason": "Approaching policy renewal deadline",
+      "lifecyclePolicyComplianceStateLastModifiedDateTime": "2026-04-01T10:30:00Z",
+      "lifecyclePolicyNonComplianceDisablementDateTime": null,
       "info": {
         "termsOfServiceUrl": null,
         "supportUrl": null,
@@ -141,5 +145,4 @@ Content-type: application/json
   ]
 }
 ```
-
 

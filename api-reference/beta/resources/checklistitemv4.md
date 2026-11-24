@@ -14,19 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A checklist item on a [task](task.md), consisting of a title and a checked/unchecked state. `isChecked` is the only default beyond the universal `displayName`.
+A checklist item on a [task](../resources/task.md), consisting of a title and a checked/unchecked state. `isChecked` is the only default beyond the universal `displayName`.
 
 
 Inherits from [plannerDelta](../resources/plannerdelta.md).
 
 
 ## Methods
+To create checklist items with a task, use a [deep insert](../api/planner-post-tasks_v2.md). This resource doesn't expose a standalone create or update operation.
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/task-list-checklist.md)|[checklistItemV4](../resources/checklistitemv4.md) collection|Get a list of the checklistItemV4 objects and their properties.|
-|[Create](../api/task-post-checklist.md)|[checklistItemV4](../resources/checklistitemv4.md)|Create a new checklistItemV4 object.|
 |[Get](../api/checklistitemv4-get.md)|[checklistItemV4](../resources/checklistitemv4.md)|Read the properties and relationships of [checklistItemV4](../resources/checklistitemv4.md) object.|
-|[Update](../api/checklistitemv4-update.md)|[checklistItemV4](../resources/checklistitemv4.md)|Update the properties of a checklistItemV4 object.|
 
 ## Properties
 |Property|Type|Description|
@@ -80,4 +80,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

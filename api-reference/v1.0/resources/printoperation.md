@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents a long-running Universal Print operation. Base class for operation types such as [printerCreateOperation](printercreateoperation.md).
+Represents a long-running Universal Print operation. Base class for operation types such as [printerCreateOperation](printercreateoperation.md) and [pullPrintPrinterCreateOperation](pullprintprintercreateoperation.md).
 
 ## Methods
 |Method|Return type|Description|

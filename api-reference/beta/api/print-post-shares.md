@@ -40,11 +40,11 @@ In the request body, supply a JSON representation of the [printerShare](../resou
 
 The following table shows the properties that can be provided when you create the [printerShare](../resources/printershare.md).
 
-|Property|Type|Description|Required?|
-|:---|:---|:---|:---|
-|printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example.|Yes|
-|displayName|String|The name of the printer share that print clients should display. Maximum length allowed is 50 characters.|Yes|
-|allowAllUsers|Boolean|	If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the allowedUsers and allowedGroups navigation properties.|No|
+|Property|Type|Description|
+|:---|:---|:---|
+|printer|microsoft.graph.printer|Required. The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example.|
+|displayName|String|Required. The name of the printer share that print clients should display. Maximum length allowed is 50 characters.|
+|allowAllUsers|Boolean|Optional. If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the allowedUsers and allowedGroups navigation properties.|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [printerShare](../resources/printershare.md) object in the response body.

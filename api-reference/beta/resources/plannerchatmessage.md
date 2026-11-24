@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A chat message associated with a [task](task.md) or a [plan](plan.md), surfaced on the task through the `messages` navigation property.
+A chat message associated with a [task](../resources/task.md) or a [plan](../resources/plan.md), surfaced on the task through the `messages` navigation property.
 
 
 Inherits from [plannerDelta](../resources/plannerdelta.md).
@@ -24,9 +24,7 @@ Inherits from [plannerDelta](../resources/plannerdelta.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/task-list-messages.md)|[plannerChatMessage](../resources/plannerchatmessage.md) collection|Get a list of the plannerChatMessage objects and their properties.|
-|[Create](../api/task-post-messages.md)|[plannerChatMessage](../resources/plannerchatmessage.md)|Create a new plannerChatMessage object.|
 |[Get](../api/plannerchatmessage-get.md)|[plannerChatMessage](../resources/plannerchatmessage.md)|Read the properties and relationships of [plannerChatMessage](../resources/plannerchatmessage.md) object.|
-|[Update](../api/plannerchatmessage-update.md)|[plannerChatMessage](../resources/plannerchatmessage.md)|Update the properties of a plannerChatMessage object.|
 
 ## Properties
 |Property|Type|Description|
@@ -78,4 +76,3 @@ The following JSON representation shows the resource type.
   "editedTime": "String (timestamp)"
 }
 ```
-

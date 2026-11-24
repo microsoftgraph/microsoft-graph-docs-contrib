@@ -31,6 +31,7 @@ Inherits from [printerBase](../resources/printerbase.md).
 | [List allowed groups](../api/printershare-list-allowedgroups.md) | [group](group.md) collection | Retrieve a list of groups that have been granted access to submit print jobs to the associated printer share. |
 | [Create allowed group](../api/printershare-post-allowedgroups.md) | None | Grant the specified group access to submit print jobs to the associated printer share. |
 | [Delete allowed group](../api/printershare-delete-allowedgroup.md) | None | Revoke printer share access from the specified group. |
+| [Get pull print printer](../api/printershare-list-pullprintprinter.md) | [pullPrintPrinter](pullprintprinter.md) | Get the [pullPrintPrinter](../resources/pullprintprinter.md) that is associated with a [printerShare](../resources/printershare.md). |
 
 ## Properties
 |Property|Type|Description|
@@ -40,6 +41,7 @@ Inherits from [printerBase](../resources/printerbase.md).
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the printer share was created. Read-only.|
 |defaults|[printerDefaults](printerdefaults.md)|The default print settings of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
 |displayName|String|The name of the printer share that print clients should display. Inherited from [printerBase](../resources/printerbase.md).|
+|holdJobsForSecureRelease|Boolean|Indicates whether print jobs that are sent to this printer share are held in the cloud until a user releases them at the printer.|
 |id|String| The printerShare's identifier. Inherited from [printerBase](../resources/printerbase.md). Read-only.|
 |isAcceptingJobs|Boolean|Whether the printer associated with this printer share is currently accepting new print jobs. Inherited from [printerBase](../resources/printerbase.md).|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer associated with this printer share. Inherited from [printerBase](../resources/printerbase.md).|
@@ -52,10 +54,12 @@ Inherits from [printerBase](../resources/printerbase.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|printer|[printer](printer.md)|The printer that this printer share is related to. |
-|allowedUsers|[user](user.md) collection|The users who have access to print using the printer.|
 |allowedGroups|[group](group.md)|The groups whose users have access to print using the printer.|
+|allowedUsers|[user](user.md) collection|The users who have access to print using the printer.|
 |jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer associated with this printer share.|
+|printer|[printer](printer.md)|The printer associated with this printer share. |
+|pullPrintPrinter|[pullPrintPrinter](pullprintprinter.md)|The pull print printer that is associated with this printer share.|
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
@@ -88,7 +92,8 @@ The following JSON representation shows the resource type.
   },
   "allowAllUsers": "Boolean",
   "createdDateTime": "String (timestamp)",
-  "viewPoint": {"@odata.type": "microsoft.graph.printerShareViewpoint"}
+  "viewPoint": {"@odata.type": "microsoft.graph.printerShareViewpoint"},
+  "holdJobsForSecureRelease": "Boolean"
 }
 ```
 

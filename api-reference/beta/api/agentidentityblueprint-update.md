@@ -63,6 +63,8 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
+The **isSingleInstance** property is immutable after creation. An attempt to change it, in either direction, returns `400 Bad Request` with the error code `Request_BadRequest`.
+
 If successful, this method returns a `204 No Content` response code.
 
 For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).

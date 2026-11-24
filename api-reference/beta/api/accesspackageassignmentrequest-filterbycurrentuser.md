@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackageassignmentrequest_filterbycurrentuser" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageassignmentrequest-filterbycurrentuser-permissions.md)]
 
+For detailed separation of duties (SoD) findings, use the delegated **EntitlementManagement.Read.All** permission or the higher-privileged **EntitlementManagement.ReadWrite.All** permission. The signed-in user must also have the appropriate relationship to the request, applicable licensing, and tenant feature enablement. These conditions don't replace permission consent or normal authorization checks.
+
 ## HTTP request
 
 > [!NOTE]
@@ -42,7 +44,21 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|[accessPackageAssignmentRequestFilterByCurrentUserOptions](../resources/accesspackageassignmentrequestfilterbycurrentuseroptions.md)|The list of current user options that can be used to filter on the access package assignment requests list.|
+|`on`|[accessPackageAssignmentRequestFilterByCurrentUserOptions](../resources/accesspackageassignmentrequestfilterbycurrentuseroptions.md)|Required. The relationship between the signed-in user and the assignment requests to retrieve.|
+
+The value of `on` also determines whether **resourceRoleRiskAnalysisResults** can include detailed SoD findings:
+
+|Value|SoD findings|
+|:---|:---|
+|`approver`|Can include findings for requests the caller is authorized to review.|
+|`createdBy`|Can include findings for requests created by the caller.|
+|`requestForOthers`|Can include findings for requests the caller made for others.|
+|`target`|History only; detailed findings aren't included.|
+|`targetOrRequestor`|History only, even when the caller is the recorded requestor or the query filters to a single request ID.|
+
+Other caller relationships, such as manager or owner, don't enable detailed findings. On inclusion-eligible views, an empty collection alone doesn't prove no conflicts exist. On excluded views, don't rely on a particular empty, null, or omitted wire representation to determine whether analysis ran.
+
+Request history can independently record `SodAnalysisCompleted`. Its **detail** string contains a positive conflict count or `"0"` for zero reported conflicts. A missing, empty, or invalid count means unknown, not zero. If the action is absent, no completed analysis is recorded.
 
 ## Request headers
 |Name|Description|
@@ -60,7 +76,9 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
 
 The following example gets the status of access package assignment requests targeted for the signed-in user.
 
-### Request
+### Example 1: Get requests targeted for the signed-in user
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +120,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
@@ -141,5 +159,80 @@ Content-Type: application/json
             }
         }
     ]
+}
+```
+
+### Example 2: Read SoD findings as an authorized approver
+
+This example shows a shortened collection response when the feature is enabled and the caller is authorized to approve the request. There are no separate create, update, or delete operations for these findings.
+
+#### Request
+
+<!-- { "blockType": "request", "name": "filter_assignmentrequests_sod_approver" } -->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests/filterByCurrentUser(on='approver')
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.accessPackageAssignmentRequest)" } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "11111111-2222-4333-8444-555555555555",
+      "resourceRoleRiskAnalysisResults": [
+        {
+          "riskAnalysisResults": [
+            {
+              "externalReferenceUrl": null,
+              "violations": [
+                {
+                  "description": "Conflicting purchasing and payment permissions.",
+                  "level": "High"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Example 3: Read history without detailed findings
+
+The `targetOrRequestor` view doesn't include detailed findings, even when the signed-in user is the recorded requestor. This shortened response shows that completed-analysis history remains independent of detail inclusion. The function returns a collection, not a single object.
+
+#### Request
+
+<!-- { "blockType": "request", "name": "filter_assignmentrequests_sod_history" } -->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests/filterByCurrentUser(on='targetOrRequestor')
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.accessPackageAssignmentRequest)" } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "11111111-2222-4333-8444-555555555555",
+      "history": [
+        {
+          "action": "SodAnalysisCompleted",
+          "detail": "2"
+        }
+      ]
+    }
+  ]
 }
 ```

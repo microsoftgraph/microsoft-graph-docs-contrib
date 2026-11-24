@@ -33,30 +33,33 @@ This resource supports [subscribing to change notifications](/graph/universal-pr
 | [List task triggers](../api/printer-list-tasktriggers.md) | None | List [printTaskTriggers](printtasktrigger.md) associated with this printer. |
 | [Create task trigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Create a [printTaskTrigger](printtasktrigger.md) that runs when print events occur. |
 | [Delete task trigger](../api/printer-delete-tasktrigger.md) | None | Delete a [printTaskTrigger](printtasktrigger.md) that is associated with the printer. |
+| [List pull print printers](../api/printer-list-pullprintprinters.md) | [pullPrintPrinter](pullprintprinter.md) collection | Get the [pullPrintPrinter](../resources/pullprintprinter.md) objects that a [printer](../resources/printer.md) is a member of. |
 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|The printer's identifier. Read-only.|
+|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer. Inherited from [printerBase](./printerbase.md).|
+|defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings. Inherited from [printerBase](./printerbase.md).|
 |displayName|String|The name of the printer. Inherited from [printerBase](./printerbase.md).|
+|hasPhysicalDevice|Boolean|True if the printer has a physical device for printing. Read-only.|
+|id|String|The identifier of the printer. Read-only.|
+|isAcceptingJobs|Boolean| If `true`, the printer is currently accepting new print jobs. Inherited from [printerBase](./printerbase.md).|
+|isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
+|lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
+|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer. Inherited from [printerBase](./printerbase.md).|
 |manufacturer|String|The manufacturer reported by the printer. Inherited from [printerBase](./printerbase.md).|
 |model|String|The model name reported by the printer. Inherited from [printerBase](./printerbase.md).|
+|printerProvidedReleaseSupport|[printerProvidedReleaseSupport](printerprovidedreleasesupport.md)|The secure release capabilities that the physical printer reports as supported. Read-only.|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the printer was registered. Read-only.|
 |status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors. Inherited from [printerBase](./printerbase.md).|
-|isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
-|hasPhysicalDevice|Boolean|True if the printer has a physical device for printing. Read-only.|
-|isAcceptingJobs|Boolean| If `true`, the printer is currently accepting new print jobs. Inherited from [printerBase](./printerbase.md).|
-|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer. Inherited from [printerBase](./printerbase.md).|
-|defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings. Inherited from [printerBase](./printerbase.md).|
-|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer. Inherited from [printerBase](./printerbase.md).|
-|lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
 
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|jobs|[printJob](printjob.md) collection| The list of jobs that the printer queues for printing.|
-|shares|[printerShare](printershare.md) collection| The list of printerShares that are associated with the printer. Currently, only one printerShare can be associated with the printer. Read-only. Nullable.|
 |connectors|[printConnector](printconnector.md)|The connectors that are associated with the printer.|
+|jobs|[printJob](printjob.md) collection| The list of jobs that the printer queues for printing.|
+|pullPrintPrinters|[pullPrintPrinter](pullprintprinter.md) collection|The pull print printers that this printer is a member of.|
+|shares|[printerShare](printershare.md) collection| The list of printerShares that are associated with the printer. Currently, only one printerShare can be associated with the printer. Read-only. Nullable.|
 |taskTriggers|[printTaskTrigger](printtasktrigger.md) collection|A list of task triggers that are associated with the printer.|
 
 ## JSON representation
@@ -87,7 +90,8 @@ The following JSON representation shows the resource type.
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
   "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"},
-  "lastSeenDateTime": "String (timestamp)"
+  "lastSeenDateTime": "String (timestamp)",
+  "printerProvidedReleaseSupport": {"@odata.type": "microsoft.graph.printerProvidedReleaseSupport"}
 }
 ```
 
@@ -100,5 +104,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

@@ -43,11 +43,14 @@ By default, this API doesn't return the value of the **key** thumbprint in the *
 
 The use of `$select` to get **keyCredentials** for agentIdentityBlueprints has a throttling limit of 150 requests per minute for every tenant.
 
+Filtering on **isSingleInstance** with `$filter` (`eq`) requires the `ConsistencyLevel: eventual` header and `$count=true`.
+
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|ConsistencyLevel|`eventual`. Required with `$count=true` when filtering on **isSingleInstance**.|
 
 ## Request body
 
@@ -59,7 +62,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List agent identity blueprints
+
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -102,7 +107,7 @@ GET https://graph.microsoft.com/beta/applications/microsoft.graph.agentIdentityB
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -184,3 +189,31 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: List single-instance agent identity blueprints
+
+#### Request
+
+<!-- { "blockType": "request", "name": "list_single_instance_agent_identity_blueprints" } -->
+```http
+GET https://graph.microsoft.com/beta/applications/microsoft.graph.agentIdentityBlueprint?$filter=isSingleInstance eq true&$count=true&$select=id,displayName,isSingleInstance
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.agentIdentityBlueprint", "isCollection": true } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.count": 1,
+  "value": [
+    {
+      "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
+      "displayName": "Contoso Single-Instance Agent Blueprint",
+      "isSingleInstance": true
+    }
+  ]
+}
+```

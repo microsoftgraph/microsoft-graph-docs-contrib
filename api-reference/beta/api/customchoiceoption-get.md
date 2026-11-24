@@ -1,5 +1,5 @@
 ---
-title: "Get customChoiceOption"
+title: "Get choice option"
 description: "Read the properties and relationships of customChoiceOption object."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Get customChoiceOption
+# Get choice option
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "customchoiceoption-get-permissions"
+  "name": "customchoiceoption_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/customchoiceoption-get-permissions.md)]
@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/planner/plans_v2/{planId}/customFieldDefinitions/{customFieldDefinitionId}/choiceOptions/{customChoiceOptionId}
 GET /users/{usersId}/planner/plans_v2/{planId}/customFieldDefinitions/{customFieldDefinitionId}/choiceOptions/{customChoiceOptionId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,14 +82,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.customChoiceOption",
-    "id": "2eb17e1c-d4c2-52c5-9207-d5e023b47665",
-    "displayName": "String",
-    "extensions": {
-      "@odata.type": "microsoft.graph.extensionFieldCollection"
-    }
-  }
+  "@odata.type": "#microsoft.graph.customChoiceOption",
+  "id": "2eb17e1c-d4c2-52c5-9207-d5e023b47665",
+  "displayName": "Product launch"
 }
 ```
 

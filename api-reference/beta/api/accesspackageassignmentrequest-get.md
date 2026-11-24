@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
+For separation of duties (SoD) findings, use the delegated **EntitlementManagement.Read.All** permission or the higher-privileged **EntitlementManagement.ReadWrite.All** permission. Application permission to read the parent request doesn't establish access to detailed SoD findings. In addition to the permissions and applicable licensing, the tenant must have the feature enabled, and the signed-in user's object ID must match the requestor recorded on the request. An administrator or approver role alone doesn't enable **resourceRoleRiskAnalysisResults** on this item read.
+
 ## HTTP request
 
 > [!NOTE]
@@ -42,6 +44,8 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 ## Optional query parameters
 
 This method supports the `$expand` OData query parameter to expand the relationships, to retrieve the `accessPackage`, `requestor` and `acccessPackageAssignment`.  For example, to retrieve the target of the access package assignment, include `$expand=accessPackageAssignment($expand=target)` in the query.  For general information, see [OData query parameters](/graph/query-parameters).
+
+Use `$expand=resourceRoleRiskAnalysisResults/resourceRole` to retrieve the evaluated resource role when the caller is eligible to receive SoD findings. Expansion doesn't grant access to otherwise excluded findings.
 
 ## Request headers
 
@@ -59,7 +63,9 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ## Examples
 
-### Request
+### Example 1: Get an assignment request
+
+#### Request
 
 The following example shows a request.
 
@@ -103,7 +109,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -144,6 +150,44 @@ Content-type: application/json
             "detail": "Request has been allowed"
         }
     ]
+}
+```
+
+### Example 2: Get SoD findings as the recorded requestor
+
+This example shows a shortened response when the feature is enabled, analysis has completed, and the signed-in user is the requestor recorded on the request. Findings are read-only. An empty or unavailable collection alone doesn't mean no conflicts exist; request history can record completion and a known or unknown conflict count independently.
+
+#### Request
+
+<!-- { "blockType": "request", "name": "get_assignmentrequest_sod_requestor" } -->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentRequests/11111111-2222-4333-8444-555555555555
+```
+
+#### Response
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.accessPackageAssignmentRequest" } -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "11111111-2222-4333-8444-555555555555",
+  "resourceRoleRiskAnalysisResults": [
+    {
+      "riskAnalysisResults": [
+        {
+          "externalReferenceUrl": "https://risk.example.com/reports/analysis-123",
+          "violations": [
+            {
+              "description": "Conflicting purchasing and payment permissions.",
+              "level": "High"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
 ```
 

@@ -58,6 +58,8 @@ PUT /applications(appId='{appId}')/logo
 | Content-Type | application/json. Required. |
 
 ## Request body
+
+The **isSingleInstance** property is immutable after creation. You can't change a blueprint between the single-instance and multi-instance topologies. An attempt to change this value returns `400 Bad Request` with the error code `Request_BadRequest`.
 In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include unchanged values.
 
 | Property                | Type                                                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |

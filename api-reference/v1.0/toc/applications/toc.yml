@@ -188,6 +188,8 @@ items:
     href: ../../api/serviceprincipal-delete.md
   - name: Get delta
     href: ../../api/serviceprincipal-delta.md
+  - name: 'servicePrincipal: attest'
+    href: ../../api/serviceprincipal-attest.md
   - name: List created objects
     href: ../../api/serviceprincipal-list-createdobjects.md
   - name: List owned objects

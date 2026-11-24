@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "dependency-get-permissions"
+  "name": "dependency_get_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/dependency-get-permissions.md)]
@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/planner/plans_v2/{planId}/dependencies/{dependencyId}
 GET /users/{usersId}/planner/plans_v2/{planId}/dependencies/{dependencyId}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,26 +82,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.dependency",
-    "id": "97f05daa-0479-6fa3-cb09-28d363132000",
-    "sourceItemId": "String",
-    "targetItemId": "String",
-    "constraint": "String",
-    "creationInfo": {
-      "@odata.type": "microsoft.graph.creationInfo"
-    },
-    "archivalInfo": {
-      "@odata.type": "microsoft.graph.plannerArchivalInfo"
-    },
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "extensions": {
-      "@odata.type": "microsoft.graph.extensionFieldCollection"
-    }
-  }
+  "@odata.type": "#microsoft.graph.dependency",
+  "id": "97f05daa-0479-6fa3-cb09-28d363132000"
 }
 ```
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The value of a [customFieldDefinition](customfielddefinition.md) set on a [task](task.md). `customFieldDefinitionId` references the owning plan's custom field definition.
+The value of a [customFieldDefinition](../resources/customfielddefinition.md) set on a [task](../resources/task.md). `customFieldDefinitionId` references the owning plan's custom field definition.
 
 
 Inherits from [plannerDelta](../resources/plannerdelta.md).
@@ -24,9 +24,7 @@ Inherits from [plannerDelta](../resources/plannerdelta.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/task-list-customfieldvalues.md)|[customFieldValue](../resources/customfieldvalue.md) collection|Get a list of the customFieldValue objects and their properties.|
-|[Create](../api/task-post-customfieldvalues.md)|[customFieldValue](../resources/customfieldvalue.md)|Create a new customFieldValue object.|
 |[Get](../api/customfieldvalue-get.md)|[customFieldValue](../resources/customfieldvalue.md)|Read the properties and relationships of [customFieldValue](../resources/customfieldvalue.md) object.|
-|[Update](../api/customfieldvalue-update.md)|[customFieldValue](../resources/customfieldvalue.md)|Update the properties of a customFieldValue object.|
 
 ## Properties
 |Property|Type|Description|

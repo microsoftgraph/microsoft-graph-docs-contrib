@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **planView** property of the [plan](plan.md) resource uses this type.
+The **planView** property of the [plan](../resources/plan.md) resource uses this type.
 
-Plan-scoped view metadata for a [plan](plan.md), including the plan's category definitions.
+Plan-scoped view metadata for a [plan](../resources/plan.md), including the plan's category definitions. To [read categories](../api/planview-list-categories.md), expand **planView** and its **categories** relationship on the owning plan.
 
 
 ## Properties
@@ -39,4 +39,3 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.planView"
 }
 ```
-

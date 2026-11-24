@@ -18,16 +18,17 @@ Apply or update the administrative override reason on an [identityVerificationEv
 
 This operation doesn't change the verification facts, lifecycle state, or the user's aggregate verification status.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "identityverificationevent-update-permissions",
+<!-- { 
+  "blockType": "permissions", 
+  "name": "identityverificationevent_update", 
   "requestUrls": ["PATCH /users/{id}/identityVerificationStatus/verificationEvents/{id}"]
-}
--->
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityverificationevent-update-permissions.md)]
 
 ## HTTP request

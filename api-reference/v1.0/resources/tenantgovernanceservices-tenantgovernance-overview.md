@@ -1,6 +1,6 @@
 ---
 title: "Overview of Tenant Governance APIs in Microsoft Graph"
-description: "Discover, manage, and govern Microsoft Entra tenants at scale with Tenant Governance APIs in Microsoft Graph. Learn about related tenants, governance relationships and associated settings."
+description: "Discover, manage, and govern Microsoft Entra tenants with APIs for related tenants, governance relationships, and configuration management."
 author: "akhil-potturi"
 ms.author: "potturiakhil"
 ms.reviewer: "hafowler,akhil.potturi,jeffsta"
@@ -27,6 +27,8 @@ The tenant governance APIs in Microsoft Graph enable IT administrators to progra
 - Configure cross-tenant delegated administration to centrally manage governed tenants.
 - Provision and manage multi-tenant applications across governed tenants.
 - Define governance policy templates to enforce consistent governance.
+
+For policy-as-code guardrails that help prevent noncompliant resource changes, see [Microsoft Entra resource policy (preview)](/graph/api/resources/entra-resource-policy-overview). Resource policy APIs are available only through the Microsoft Graph beta endpoint, not v1.0.
 
 ## Discover related tenants
 
