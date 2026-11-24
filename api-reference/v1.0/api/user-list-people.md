@@ -20,7 +20,7 @@ You can get this information via the People API. For examples, see the [Examples
 > For new development, we recommend using the Microsoft Search API (`POST /search/query` with `entityTypes: ["person"]`) instead of the People API (`GET /me/people` and `GET /users/{id | userPrincipalName}/people`). The People API is in maintenance mode.
 > For more information, see [searchEntity: query](../api/search-query.md) and [Use the Microsoft Search API to search people](/graph/search-concept-person).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

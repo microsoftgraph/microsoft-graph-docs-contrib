@@ -77,6 +77,7 @@ For [incidentCase](../resources/security-casemanagement-incidentcase.md) objects
 |:---|:---|:---|
 |assignedTo|String|The user assigned to the incident case.|
 |classification|[microsoft.graph.security.caseManagement.incidentClassification](../resources/security-casemanagement-incidentcase.md#incidentclassification-values)|The classification assigned to the incident.|
+|description|String|The description of the incident case. Nullable. Separate from **summary**.|
 |determination|[microsoft.graph.security.caseManagement.incidentDetermination](../resources/security-casemanagement-incidentcase.md#incidentdetermination-values)|The determination assigned to the incident.|
 |displayName|String|The display name of the incident case.|
 |severity|[microsoft.graph.security.caseManagement.incidentSeverity](../resources/security-casemanagement-incidentcase.md#incidentseverity-values)|The severity assigned to the incident.|
@@ -106,7 +107,7 @@ If successful, this method returns one of the following response codes:
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "security_casemanagement_update_case"
@@ -133,36 +134,6 @@ Content-Type: application/json
   }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/security-casemanagement-update-case-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/security-casemanagement-update-case-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/security-casemanagement-update-case-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/security-casemanagement-update-case-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/security-casemanagement-update-case-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/security-casemanagement-update-case-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/security-casemanagement-update-case-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -218,6 +189,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.caseManagement.incidentCase",
   "displayName": "Incident Case MS-002",
+  "description": "Investigation of suspicious sign-ins and related activity.",
   "status": "InProgress",
   "classification": "truePositive",
   "determination": "phishing",

@@ -109,6 +109,7 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 ### Identity and access | Governance
 
+- Added the **resourceRoleRiskAnalysisResults** property to the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) resource to read separation of duties (SoD) findings for requested resource roles. Use eligible [caller-specific request views](/graph/api/accesspackageassignmentrequest-filterbycurrentuser?view=graph-rest-beta&preserve-view=true) to retrieve findings, subject to caller authorization and feature availability.
 - Added three predefined tasks to the [Lifecycle Workflows task catalog](/graph/api/resources/identitygovernance-lifecycleworkflows-overview?view=graph-rest-beta&preserve-view=true) to send identity-verification links, request Verified ID presentation, and email verification status to a manager.
 - Added the **Pre-hire identity verification initiation (Preview)** and **New Hire employee onboarding with identity verification (Preview)** Joiner templates to the [Lifecycle Workflows template catalog](/graph/api/resources/identitygovernance-workflowtemplate?view=graph-rest-beta&preserve-view=true).
 
@@ -121,6 +122,10 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 - Added the [webFilteringPolicy](/graph/api/resources/networkaccess-webfilteringpolicy?view=graph-rest-beta&preserve-view=true) resource type and related methods for configuring how Global Secure Access allows or blocks web traffic based on source sessions, URLs, web categories, and HTTP request methods.
 
+### Mail
+
+- [Use Mail APIs with Exchange archive mailboxes](/graph/archive-mailbox-mail-api). Learn how to access Exchange archive folders and messages, follow redirects, create folders, and synchronize changes with Microsoft Graph beta Mail APIs.
+
 ### Security
 
 - Added the **lookback** property to the [ruleSchedule](/graph/api/resources/security-ruleschedule?view=graph-rest-beta&preserve-view=true) resource to control the time window evaluated by each scheduled custom detection rule run.
@@ -129,10 +134,12 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 ### Security | Case management
 
+- Added the **description** property to the [incidentCase](/graph/api/resources/security-casemanagement-incidentcase?view=graph-rest-beta&preserve-view=true) resource. Use it to read and update incident case descriptions.
 - Removed support for the `$skip` query parameter in the [case management APIs](/graph/api/resources/security-casemanagementroot?view=graph-rest-beta&preserve-view=true). Update affected requests to omit `$skip`.
 
 ### Security | Content management
 
+- Added support for browsing the security content catalog and managing installed content packages in a tenant by using the [contentPackage](/graph/api/resources/security-contentmanagement-contentpackage?view=graph-rest-beta&preserve-view=true) resource.
 - Added support for connecting and managing source-control repositories that deploy security content as code by using the [contentManagementRepository](/graph/api/resources/security-contentmanagement-contentmanagementrepository?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Security | Data security and compliance

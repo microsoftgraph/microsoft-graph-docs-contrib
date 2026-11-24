@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "b09fe2d2-2177-4ce6-bc94-25213c30274e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceRoleRiskAnalysisResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceRoleRiskAnalysisResult](https://learn.microsoft.com/en-us/graph/api/resources/resourceroleriskanalysisresult?view=graph-rest-beta) resource.",
+          "Target": "resourceRoleRiskAnalysisResult"
+        },
+        {
+          "Id": "b09fe2d2-2177-4ce6-bc94-25213c30274e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "riskAnalysisResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [riskAnalysisResult](https://learn.microsoft.com/en-us/graph/api/resources/riskanalysisresult?view=graph-rest-beta) resource.",
+          "Target": "riskAnalysisResult"
+        },
+        {
+          "Id": "b09fe2d2-2177-4ce6-bc94-25213c30274e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "riskAnalysisViolation",
+          "ChangeType": "Addition",
+          "Description": "Added the [riskAnalysisViolation](https://learn.microsoft.com/en-us/graph/api/resources/riskanalysisviolation?view=graph-rest-beta) resource.",
+          "Target": "riskAnalysisViolation"
+        },
+        {
+          "Id": "b09fe2d2-2177-4ce6-bc94-25213c30274e",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceRoleRiskAnalysisResults",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceRoleRiskAnalysisResults** property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+      "Id": "b09fe2d2-2177-4ce6-bc94-25213c30274e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-05T22:40:59.6760159Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b0d8b584-dc5a-48a1-9997-8eacd427751a",
           "ApiChange": "Member",
           "ChangedApiName": "sapAc",

@@ -23,9 +23,9 @@ This resource is part of a polymorphic collection managed by the [case resource]
 
 Creating **incidentCase** objects with `POST /security/caseManagement/cases` isn't supported.
 
-Use the base type [Update](../api/security-casemanagement-case-update.md) method to update **assignedTo**, **classification**, **customFields**, **determination**, **displayName**, **dueDateTime**, **severity**, and **status**.
+Use the base type [Update](../api/security-casemanagement-case-update.md) method to update **assignedTo**, **classification**, **customFields**, **description**, **determination**, **displayName**, **dueDateTime**, **severity**, and **status**.
 
-The **assignedTo**, **classification**, **determination**, **displayName**, **severity**, and **status** properties are synchronized with the underlying incident. A PATCH request that includes any of these properties returns `202 Accepted` with no response body. The changes might take a few minutes to synchronize and appear on the case.
+The **assignedTo**, **classification**, **description**, **determination**, **displayName**, **severity**, and **status** properties are synchronized with the underlying incident. A PATCH request that includes any of these properties returns `202 Accepted` with no response body. The changes might take a few minutes to synchronize and appear on the case.
 
 The **customFields** and **dueDateTime** properties aren't synchronized. A PATCH request that updates only these properties returns `200 OK` with the updated **incidentCase** object in the response body. A request that includes properties from both groups returns `202 Accepted` with no response body.
 
@@ -49,6 +49,7 @@ To use a supported query option with a property declared only on **incidentCase*
 |customFields|[microsoft.graph.security.caseManagement.customFieldValues](../resources/security-casemanagement-customfieldvalues.md)|Tenant-defined custom field values keyed by the exact **displayName** of each custom field definition. The property and its dynamic fields don't support `$filter`. Inherited from [case](../resources/security-casemanagement-case.md).|
 |dataSensitivityLabels|String collection|The data sensitivity labels associated with the incident. Supports `$filter`.|
 |dataStreams|String collection|The data streams associated with the incident. Supports `$filter`.|
+|description|String|The description of the incident case. Nullable. Separate from **summary**.|
 |detectionSources|String collection|The detection sources that identified the incident. Supports `$filter`.|
 |determination|[microsoft.graph.security.caseManagement.incidentDetermination](#incidentdetermination-values)|The determination assigned to the incident. Supports `$filter`.|
 |displayName|String|The display name of the incident case. Inherited from [case](../resources/security-casemanagement-case.md). Supports `$filter` and `$orderby`.|
@@ -149,6 +150,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "status": "String",
   "customFields": {"@odata.type": "#microsoft.graph.security.caseManagement.customFieldValues"},
+  "description": "String",
   "assignedTo": "String",
   "emailNotificationRecipients": [
     "String"

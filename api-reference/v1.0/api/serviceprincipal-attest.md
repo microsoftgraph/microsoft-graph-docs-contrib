@@ -14,6 +14,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Attest an agent identity through its [servicePrincipal](../resources/serviceprincipal.md) to confirm it still meets the requirements of its governing [lifecyclePolicy](../resources/identitygovernance-lifecyclepolicy.md). Attestation updates the identity's lifecycle state and can clear attestation-related compliance issues.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

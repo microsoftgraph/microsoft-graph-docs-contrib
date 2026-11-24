@@ -2474,6 +2474,10 @@
         {
           "name": "Handle archive mailbox redirects",
           "href": "/graph/handle-archive-mailbox-redirects"
+        },
+        {
+          "name": "Use Mail APIs with archive mailboxes (preview)",
+          "href": "/graph/archive-mailbox-mail-api"
         }
       ],
       "resources": [
@@ -3095,7 +3099,18 @@
           "name": "Content management (preview)",
           "resources": [
             "contentManagementRoot",
-            "microsoft.graph.security.contentManagement.contentManagementRepository"
+            "microsoft.graph.security.contentManagement.contentItem",
+            "microsoft.graph.security.contentManagement.contentManagementRepository",
+            "microsoft.graph.security.contentManagement.contentPackage",
+            "microsoft.graph.security.contentManagement.contentPackageBase",
+            "microsoft.graph.security.contentManagement.installedContentItem",
+            "microsoft.graph.security.contentManagement.installedPackage"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.contentManagement.contentAuthor",
+            "microsoft.graph.security.contentManagement.contentCategories",
+            "microsoft.graph.security.contentManagement.contentPackageSource",
+            "microsoft.graph.security.contentManagement.contentSupport"
           ]
         },
         {
