@@ -1,5 +1,5 @@
 ---
-title: "Update task_v2"
+title: "Update task"
 description: "Update the properties of a task object."
 author: "EshaSugla"
 ms.date: 09/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "planner"
 doc_type: apiPageType
 ---
 
-# Update task_v2
+# Update task
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "task-update-permissions"
+  "name": "task_update_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/task-update-permissions.md)]
@@ -45,6 +45,9 @@ PATCH /planner/tasks_v2/{taskId}
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
+|If-Match|The complete ETag of the resource to update or delete. Required.|
+
+Use the complete ETag returned by the latest read of this resource as the `If-Match` value. Don't construct or compare ETags yourself. A missing, invalid, or no-longer-usable ETag results in `412 Precondition Failed`. A conflicting change can result in `409 Conflict`; read the resource again and reconcile the changes before retrying. An older ETag doesn't necessarily fail when the service can merge nonconflicting changes.
 
 ## Request body
 
@@ -53,27 +56,28 @@ PATCH /planner/tasks_v2/{taskId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Title of the task. Required.|
-|planId|String|ID of the plan that contains the task. Immutable after creation. Optional.|
-|bucketId|String|ID of the bucket that the task belongs to. Optional.|
-|goalIds|String collection|IDs of the goals that the task is associated with. Optional.|
-|status|plannerTaskStatus|Indicates progress on the task. The possible values are: `notStarted`, `inProgress`, `completed`, `blocked`, `unknownFutureValue`. Optional.|
-|priority|Int32|Priority of the task. Supported values range from 0 (urgent) to 10 (low). Required.|
-|percentComplete|Int32|Percentage of the task's completion, ranging from 0 to 100. Required.|
-|startDateTime|[dateWithOptionalTime](../resources/datewithoptionaltime.md)|Date and, optionally, time the task is scheduled to start. Optional.|
-|dueDateTime|[dateWithOptionalTime](../resources/datewithoptionaltime.md)|Date and, optionally, time the task is due. Optional.|
-|finishDateTime|[dateWithOptionalTime](../resources/datewithoptionaltime.md)|Date and, optionally, time the task was finished. Optional.|
-|notes|[itemBody](../resources/itembody.md)|Additional details or notes about the task. Optional.|
-|recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Recurrence pattern for the task, if it repeats. Optional.|
-|planView|[taskPlanView](../resources/taskplanview.md)|Task view settings scoped to the plan, such as applied category IDs. Optional.|
-|personalView|[taskPersonalView](../resources/taskpersonalview.md)|Per-user personal view settings for the task, such as My Day membership. Optional.|
-|parentTaskId|String|ID of the parent task, if this task is a subtask. Optional.|
-|hasChildren|Boolean|Indicates whether the task has subtasks. Optional.|
-|isCritical|Boolean|Indicates whether the task is on the critical path, as computed from its dependencies. Optional.|
-|hasChat|Boolean|Indicates whether the task has an associated chat. Optional.|
-|extensions|[extensionFieldCollection](../resources/extensionfieldcollection.md)|Custom extension field values set on the entity. Supports $select. Optional.|
+|displayName|String|Title of the task.|
+|bucketId|String|ID of the bucket that the task belongs to.|
+|goalIds|String collection|IDs of the goals that the task is associated with.|
+|status|plannerTaskStatus|Indicates progress on the task. The possible values are: `notStarted`, `inProgress`, `completed`, `blocked`, `unknownFutureValue`.|
+|priority|Int32|Priority of the task. Supported values range from 0 (urgent) to 10 (low).|
+|percentComplete|Int32|Percentage of the task's completion, ranging from 0 to 100.|
+|startDateTime|[dateWithOptionalTime](../resources/datewithoptionaltime.md)|Date and, optionally, time the task is scheduled to start.|
+|dueDateTime|[dateWithOptionalTime](../resources/datewithoptionaltime.md)|Date and, optionally, time the task is due.|
+|finishDateTime|[dateWithOptionalTime](../resources/datewithoptionaltime.md)|Date and, optionally, time the task was finished.|
+|notes|[itemBody](../resources/itembody.md)|Additional details or notes about the task.|
+|recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Recurrence pattern for the task, if it repeats.|
+|planView|[taskPlanView](../resources/taskplanview.md)|Task view settings scoped to the plan, such as applied category IDs.|
+|personalView|[taskPersonalView](../resources/taskpersonalview.md)|Per-user personal view settings for the task, such as My Day membership.|
+|parentTaskId|String|ID of the parent task, if this task is a subtask.|
+|extensions|[extensionFieldCollection](../resources/extensionfieldcollection.md)|Custom extension field values set on the entity. Supports $select.|
 
 
+Send only the properties that you want to change. Don't include immutable or service-populated properties from a GET response.
+
+For **startDateTime**, **dueDateTime**, and **finishDateTime**, specify only **date**. The **time**, **timeZone**, and **isTimeSpecified** components aren't writable.
+
+Properties such as **parentTaskId** and **recurrence** depend on the plan's supported features. Don't treat this table as a guarantee that every feature is available for every plan.
 
 ## Response
 
@@ -91,68 +95,12 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/planner/tasks_v2/{taskId}
+If-Match: {etag}
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.task",
-  "displayName": "Prepare quarterly report",
-  "planId": "b3d9f9a2-3e14-4a4b-9b2b-6b6d9e6a2f31",
-  "bucketId": "9c9c7a3d-5b7f-45e9-9df9-9f8b0f7edc9a",
-  "goalIds": [
-    "3f8a1c9d-6b42-4e7a-9d31-8c2f6b9a4e17"
-  ],
-  "status": "notStarted",
-  "priority": 5,
-  "percentComplete": 0,
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateWithOptionalTime",
-    "date": "2026-06-01",
-    "isTimeSpecified": false
-  },
-  "dueDateTime": {
-    "@odata.type": "microsoft.graph.dateWithOptionalTime",
-    "date": "2026-06-15",
-    "isTimeSpecified": false
-  },
-  "notes": {
-    "@odata.type": "microsoft.graph.itemBody",
-    "content": "Compile Q2 sales figures and prepare summary slides.",
-    "contentType": "text"
-  },
-  "recurrence": {
-    "@odata.type": "microsoft.graph.plannerTaskRecurrence",
-    "schedule": {
-      "@odata.type": "microsoft.graph.plannerRecurrenceSchedule",
-      "patternStartDateTime": "2026-06-01T00:00:00Z",
-      "pattern": {
-        "@odata.type": "microsoft.graph.recurrencePattern",
-        "type": "weekly",
-        "interval": 1,
-        "daysOfWeek": [
-          "monday"
-        ],
-        "firstDayOfWeek": "sunday"
-      }
-    }
-  },
-  "planView": {
-    "@odata.type": "microsoft.graph.taskPlanView",
-    "appliedCategoryIds": [
-      "e4f8a3c6-9d21-4b7a-8e42-6c1f9a3d5b28"
-    ]
-  },
-  "personalView": {
-    "@odata.type": "microsoft.graph.taskPersonalView",
-    "isOnMyDay": true
-  },
-  "parentTaskId": "2c8f4b6a-9d31-4e7c-8a52-3f6b9d2e4c81",
-  "hasChildren": false,
-  "isCritical": false,
-  "hasChat": false,
-  "extensions": {
-    "@odata.type": "microsoft.graph.extensionFieldCollection",
-    "projectCode": "PRJ-4521"
-  }
+  "percentComplete": 25
 }
 ```
 
@@ -174,60 +122,8 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.task",
   "id": "86d64a5b-109d-39c9-dd43-d7fffb6a1670",
-  "displayName": "String",
-  "planId": "String",
-  "bucketId": "String",
-  "goalIds": [
-    "String"
-  ],
-  "status": "String",
-  "priority": "Integer",
-  "percentComplete": "Integer",
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateWithOptionalTime"
-  },
-  "dueDateTime": {
-    "@odata.type": "microsoft.graph.dateWithOptionalTime"
-  },
-  "finishDateTime": {
-    "@odata.type": "microsoft.graph.dateWithOptionalTime"
-  },
-  "notes": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "creationInfo": {
-    "@odata.type": "microsoft.graph.creationInfo"
-  },
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "completedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "completedDateTime": "String (timestamp)",
-  "recurrence": {
-    "@odata.type": "microsoft.graph.plannerTaskRecurrence"
-  },
-  "archivalInfo": {
-    "@odata.type": "microsoft.graph.plannerArchivalInfo"
-  },
-  "planView": {
-    "@odata.type": "microsoft.graph.taskPlanView"
-  },
-  "personalView": {
-    "@odata.type": "microsoft.graph.taskPersonalView"
-  },
-  "parentTaskId": "String",
-  "hasChildren": "Boolean",
-  "isCritical": "Boolean",
-  "hasChat": "Boolean",
-  "capabilities": {
-    "@odata.type": "microsoft.graph.taskCapability"
-  },
-  "extensions": {
-    "@odata.type": "microsoft.graph.extensionFieldCollection"
-  }
+  "displayName": "Product launch",
+  "planId": "b3d9f9a2-3e14-4a4b-9b2b-6b6d9e6a2f31",
+  "bucketId": "9c9c7a3d-5b7f-45e9-9df9-9f8b0f7edc9a"
 }
 ```
-

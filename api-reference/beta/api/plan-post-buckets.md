@@ -16,13 +16,15 @@ Namespace: microsoft.graph
 
 Create a new bucket object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "plan-post-buckets-permissions"
+  "name": "plan_post_buckets_permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/plan-post-buckets-permissions.md)]
@@ -34,8 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/planner/plans_v2/{planId}/buckets
-POST /users/{usersId}/planner/plans_v2/{planId}/buckets
+POST /planner/plans_v2/{planId}/buckets
 ```
 
 ## Request headers
@@ -54,9 +55,8 @@ You can specify the following properties when creating a **bucket**.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Title of the bucket. Required.|
-|planId|String|ID of the plan that contains the bucket. Immutable after creation. Optional.|
+|planId|String|ID of the plan that contains the bucket. Required. Must match `planId` in the URL. Immutable after creation.|
 |extensions|[extensionFieldCollection](../resources/extensionfieldcollection.md)|Custom extension field values set on the entity. Supports $select. Optional.|
-
 
 
 ## Response
@@ -74,16 +74,13 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/planner/plans_v2/{planId}/buckets
+POST https://graph.microsoft.com/beta/planner/plans_v2/b3d9f9a2-3e14-4a4b-9b2b-6b6d9e6a2f31/buckets
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.bucket",
   "displayName": "In progress",
-  "planId": "b3d9f9a2-3e14-4a4b-9b2b-6b6d9e6a2f31",
-  "extensions": {
-    "@odata.type": "microsoft.graph.extensionFieldCollection"
-  }
+  "planId": "b3d9f9a2-3e14-4a4b-9b2b-6b6d9e6a2f31"
 }
 ```
 
@@ -105,21 +102,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.bucket",
   "id": "206ac2f7-b3e0-e350-a95d-d7fe9091c22f",
-  "displayName": "String",
-  "planId": "String",
-  "creationInfo": {
-    "@odata.type": "microsoft.graph.creationInfo"
-  },
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "capabilities": {
-    "@odata.type": "microsoft.graph.bucketCapability"
-  },
-  "extensions": {
-    "@odata.type": "microsoft.graph.extensionFieldCollection"
-  }
+  "displayName": "In progress"
 }
 ```
-

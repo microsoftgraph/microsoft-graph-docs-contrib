@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "7433dcc3-a3cc-4b33-8197-2916c33ee354",
+          "ApiChange": "Property",
+          "ChangedApiName": "destinationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **destinationType** property to the [granularRestoreArtifactBase](https://learn.microsoft.com/en-us/graph/api/resources/granularrestoreartifactbase) resource. Use `inPlace` to restore granular SharePoint and OneDrive for Business artifacts to their original location.",
+          "Target": "granularRestoreArtifactBase"
+        },
+        {
+          "Id": "7433dcc3-a3cc-4b33-8197-2916c33ee354",
+          "ApiChange": "Property",
+          "ChangedApiName": "destinationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **destinationType** property to the [granularDriveRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granulardriverestoreartifact) resource.",
+          "Target": "granularDriveRestoreArtifact"
+        },
+        {
+          "Id": "7433dcc3-a3cc-4b33-8197-2916c33ee354",
+          "ApiChange": "Property",
+          "ChangedApiName": "destinationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **destinationType** property to the [granularSiteRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granularsiterestoreartifact) resource.",
+          "Target": "granularSiteRestoreArtifact"
+        },
+        {
+          "Id": "7433dcc3-a3cc-4b33-8197-2916c33ee354",
+          "ApiChange": "Term",
+          "ChangedApiName": "conflictBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **@microsoft.graph.conflictBehavior** instance annotation for granular [SharePoint](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-post-sharepointrestoresessions) and [OneDrive for Business](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions) restore sessions. Use `fail`, `replace`, or `rename` to control same-name conflicts across the session.",
+          "Target": "restoreSessionBase"
+        }
+      ],
+      "Id": "7433dcc3-a3cc-4b33-8197-2916c33ee354",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-11-18T00:00:00.0000000Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d7f23c59-14b2-4d05-9537-70cf9f42e672",
           "ApiChange": "Property",
           "ChangedApiName": "backupRetentionPeriodInDays",

@@ -65,6 +65,10 @@
     "override": "Certificate-based"
   },
   {
+    "term": "checklist item v 4",
+    "override": "Checklist item"
+  },
+  {
     "term": "cloud pc",
     "override": "Cloud PC"
   },

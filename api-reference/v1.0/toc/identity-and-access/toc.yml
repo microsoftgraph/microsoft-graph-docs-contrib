@@ -410,7 +410,7 @@ items:
       items:
       - name: Directory role management deleted item container
         href: ../../resources/directoryrolemanagementdeleteditemcontainer.md
-      - name: List roleDefinitions
+      - name: List deleted roleDefinitions
         href: ../../api/directoryrolemanagementdeleteditemcontainer-list-roledefinitions.md
     - name: Role management
       href: ../../resources/rolemanagement.md
@@ -914,6 +914,12 @@ items:
       items:
       - name: Access package assignment request parameters
         href: ../../resources/accesspackageassignmentrequestparameters.md
+      - name: Authentication info
+        href: ../../resources/authenticationinfo.md
+      - name: Client credential authentication info
+        href: ../../resources/clientcredentialauthenticationinfo.md
+      - name: External sap ac connection info
+        href: ../../resources/externalsapacconnectioninfo.md
       - name: External token based sap iag connection info
         href: ../../resources/externaltokenbasedsapiagconnectioninfo.md
   - name: Lifecycle workflows
@@ -1096,24 +1102,142 @@ items:
         href: ../../api/identitygovernance-insights-workflowsprocessedsummary.md
       - name: Get workflows processed by category
         href: ../../api/identitygovernance-insights-workflowsprocessedbycategory.md
+    - name: Access package assignment required rule
+      href: ../../resources/identitygovernance-accesspackageassignmentrequiredrule.md
+    - name: Agent identity lifecycle
+      href: ../../resources/identitygovernance-agentidentitylifecycle.md
+    - name: Agent identity lifecycle policy
+      href: ../../resources/identitygovernance-agentidentitylifecyclepolicy.md
+    - name: Attestation compliance issue
+      href: ../../resources/identitygovernance-attestationcomplianceissue.md
+    - name: Compliance issue
+      href: ../../resources/identitygovernance-complianceissue.md
+    - name: Guest lifecycle policy
+      href: ../../resources/identitygovernance-guestlifecyclepolicy.md
+    - name: Identity lifecycle
+      href: ../../resources/identitygovernance-identitylifecycle.md
+    - name: Inactivity rule
+      href: ../../resources/identitygovernance-inactivityrule.md
+    - name: Invitation redemption rule
+      href: ../../resources/identitygovernance-invitationredemptionrule.md
+    - name: Lifecycle policy
+      items:
+      - name: Lifecycle policy
+        href: ../../resources/identitygovernance-lifecyclepolicy.md
+      - name: List
+        href: ../../api/identitygovernance-lifecycleworkflowscontainer-list-lifecyclepolicies.md
+      - name: Create
+        href: ../../api/identitygovernance-lifecycleworkflowscontainer-post-lifecyclepolicies.md
+      - name: List versions
+        href: ../../api/identitygovernance-lifecyclepolicy-list-versions.md
+      - name: List lifecyclePolicies
+        href: ../../api/identitygovernance-deleteditemcontainer-list-lifecyclepolicies.md
+      - name: Get
+        href: ../../api/identitygovernance-lifecyclepolicy-get.md
+      - name: Update
+        href: ../../api/identitygovernance-lifecyclepolicy-update.md
+      - name: Delete
+        href: ../../api/identitygovernance-lifecyclepolicy-delete.md
+      - name: 'lifecyclePolicy: restore'
+        href: ../../api/identitygovernance-lifecyclepolicy-restore.md
+      - name: Get report
+        href: ../../api/identitygovernance-lifecyclepolicy-list-report.md
+    - name: Lifecycle policy priority configuration
+      items:
+      - name: Lifecycle policy priority configuration
+        href: ../../resources/identitygovernance-lifecyclepolicypriorityconfiguration.md
+      - name: Get lifecyclePolicyPriorityConfiguration
+        href: ../../api/identitygovernance-lifecyclepolicypriorityconfiguration-get.md
+      - name: Update lifecyclePolicyPriorityConfiguration
+        href: ../../api/identitygovernance-lifecyclepolicypriorityconfiguration-update.md
+    - name: Lifecycle policy report
+      items:
+      - name: Lifecycle policy report
+        href: ../../resources/identitygovernance-lifecyclepolicyreport.md
+      - name: Get report
+        href: ../../api/identitygovernance-lifecyclepolicy-list-report.md
+      - name: List subjects
+        href: ../../api/identitygovernance-lifecyclepolicyreport-list-subjects.md
+    - name: Lifecycle policy rule
+      href: ../../resources/identitygovernance-lifecyclepolicyrule.md
+    - name: Lifecycle policy subject report
+      items:
+      - name: Lifecycle policy subject report
+        href: ../../resources/identitygovernance-lifecyclepolicysubjectreport.md
+      - name: List subjects
+        href: ../../api/identitygovernance-lifecyclepolicyreport-list-subjects.md
+    - name: Periodic attestation rule
+      href: ../../resources/identitygovernance-periodicattestationrule.md
+    - name: Sponsor presence rule
+      href: ../../resources/identitygovernance-sponsorpresencerule.md
+    - name: User identity lifecycle
+      href: ../../resources/identitygovernance-useridentitylifecycle.md
     - name: Complex types
       items:
+      - name: All excluding agent builder platforms subject set
+        href: ../../resources/identitygovernance-allexcludingagentbuilderplatformssubjectset.md
+      - name: All excluding groups subject set
+        href: ../../resources/identitygovernance-allexcludinggroupssubjectset.md
+      - name: All excluding specific objects subject set
+        href: ../../resources/identitygovernance-allexcludingspecificobjectssubjectset.md
       - name: Attribute set entry
         href: ../../resources/identitygovernance-attributesetentry.md
       - name: Awaited workflow processing result
         href: ../../resources/identitygovernance-awaitedworkflowprocessingresult.md
       - name: Custom task extension response data
         href: ../../resources/identitygovernance-customtaskextensionresponsedata.md
+      - name: Delete only enforcement action
+        href: ../../resources/identitygovernance-deleteonlyenforcementaction.md
       - name: Directory object workflow subject
         href: ../../resources/identitygovernance-directoryobjectworkflowsubject.md
+      - name: Disable only enforcement action
+        href: ../../resources/identitygovernance-disableonlyenforcementaction.md
+      - name: Disable then delete enforcement action
+        href: ../../resources/identitygovernance-disablethendeleteenforcementaction.md
+      - name: Lifecycle policy agent identity subject reference
+        href: ../../resources/identitygovernance-lifecyclepolicyagentidentitysubjectreference.md
+      - name: Lifecycle policy enforcement action
+        href: ../../resources/identitygovernance-lifecyclepolicyenforcementaction.md
+      - name: Lifecycle policy notification settings
+        href: ../../resources/identitygovernance-lifecyclepolicynotificationsettings.md
+      - name: Lifecycle policy reference
+        href: ../../resources/identitygovernance-lifecyclepolicyreference.md
+      - name: Lifecycle policy scope processing
+        href: ../../resources/identitygovernance-lifecyclepolicyscopeprocessing.md
+      - name: Lifecycle policy scope processing attempt
+        href: ../../resources/identitygovernance-lifecyclepolicyscopeprocessingattempt.md
+      - name: Lifecycle policy subject compliance
+        href: ../../resources/identitygovernance-lifecyclepolicysubjectcompliance.md
+      - name: Lifecycle policy subject enforcement
+        href: ../../resources/identitygovernance-lifecyclepolicysubjectenforcement.md
+      - name: Lifecycle policy subject reference
+        href: ../../resources/identitygovernance-lifecyclepolicysubjectreference.md
+      - name: Lifecycle policy user subject reference
+        href: ../../resources/identitygovernance-lifecyclepolicyusersubjectreference.md
+      - name: Operator between
+        href: ../../resources/identitygovernance-operatorbetween.md
+      - name: Operator equal to
+        href: ../../resources/identitygovernance-operatorequalto.md
+      - name: Operator less than equal to
+        href: ../../resources/identitygovernance-operatorlessthanequalto.md
       - name: Provisioning attribute mapping
         href: ../../resources/identitygovernance-provisioningattributemapping.md
       - name: Provisioning object workflow subject
         href: ../../resources/identitygovernance-provisioningobjectworkflowsubject.md
+      - name: Selected agent builder platforms subject set
+        href: ../../resources/identitygovernance-selectedagentbuilderplatformssubjectset.md
+      - name: Selected objects subject set
+        href: ../../resources/identitygovernance-selectedobjectssubjectset.md
       - name: Subject summary
         href: ../../resources/identitygovernance-subjectsummary.md
+      - name: Time based attribute trigger v2
+        href: ../../resources/identitygovernance-timebasedattributetriggerv2.md
+      - name: Workflow execution trigger operator
+        href: ../../resources/identitygovernance-workflowexecutiontriggeroperator.md
       - name: Workflow subject
         href: ../../resources/identitygovernance-workflowsubject.md
+      - name: Workflow trigger time based operator
+        href: ../../resources/identitygovernance-workflowtriggertimebasedoperator.md
   - name: Privileged Identity Management
     items:
     - name: Custom extensions
@@ -1493,7 +1617,7 @@ items:
       href: ../../resources/onusercreatestartlistener.md
     - name: On password submit listener
       href: ../../resources/onpasswordsubmitlistener.md
-    - name: On verified id claim validation listener
+    - name: On verified ID claim validation listener
       href: ../../resources/onverifiedidclaimvalidationlistener.md
   - name: Authentication methods
     items:
@@ -1971,7 +2095,7 @@ items:
       href: ../../resources/ontokenissuancestartcustomextension.md
     - name: On password submit custom extension
       href: ../../resources/onpasswordsubmitcustomextension.md
-    - name: On verified id claim validation custom extension
+    - name: On verified ID claim validation custom extension
       href: ../../resources/onverifiedidclaimvalidationcustomextension.md
   - name: Data policy operation
     items:
@@ -2077,7 +2201,7 @@ items:
           href: ../../api/identityproviderbase-delete.md
         - name: List available identity providers
           href: ../../api/identityproviderbase-availableprovidertypes.md
-      - name: Built in identity provider
+      - name: Built-in identity provider
         href: ../../resources/builtinidentityprovider.md
       - name: Social identity provider
         href: ../../resources/socialidentityprovider.md
@@ -2532,7 +2656,7 @@ items:
         href: ../../api/webapplicationfirewallprovider-verify.md
     - name: Akamai web application firewall provider
       href: ../../resources/akamaiwebapplicationfirewallprovider.md
-    - name: Cloud flare web application firewall provider
+    - name: Cloudflare web application firewall provider
       href: ../../resources/cloudflarewebapplicationfirewallprovider.md
     - name: Web application firewall verification model
       items:

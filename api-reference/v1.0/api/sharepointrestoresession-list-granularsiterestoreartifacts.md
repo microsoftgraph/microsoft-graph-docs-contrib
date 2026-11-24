@@ -2,7 +2,7 @@
 title: "List granularSiteRestoreArtifacts"
 description: "Get a list of the granularSiteRestoreArtifact objects and their properties."
 author: "rahulprasad-ms"
-ms.date: 04/15/2026
+ms.date: 11/05/2026
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -130,6 +130,7 @@ Content-Type: application/json
       "restorePointDateTime": "0001-01-01T00:00:00Z",
       "startDateTime": "0001-01-01T00:00:00Z",
       "completionDateTime": "0001-01-01T00:00:00Z",
+      "destinationType": "inPlace",
       "siteId": "f3846f8d-80a6-4480-ae20-5966ebdf2009"
     },
     {
@@ -143,6 +144,7 @@ Content-Type: application/json
       "restorePointDateTime": "0001-01-01T00:00:00Z",
       "startDateTime": "0001-01-01T00:00:00Z",
       "completionDateTime": "0001-01-01T00:00:00Z",
+      "destinationType": "inPlace",
       "siteId": "f3846f8d-80a6-4480-ae20-5966ebdf2009"
     }
   ]
@@ -218,4 +220,3 @@ Content-Type: application/json
   ]
 }
 ```
-

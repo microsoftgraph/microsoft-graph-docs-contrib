@@ -33,6 +33,7 @@ Represents a printer that is intended to be discoverable by users and printing a
 | [Create allowed group](../api/printershare-post-allowedgroups.md) | None | Grant the specified group access to submit print jobs to the associated printer share. |
 | [Delete allowed group](../api/printershare-delete-allowedgroup.md) | None | Revoke printer share access from the specified group. |
 | [List recent shares](../api/print-list-recentshares.md) | [printerShare](printershare.md) collection | Get a list of recently used **printerShares** by the signed-in user. |
+| [Get pull print printer](../api/printershare-list-pullprintprinter.md) | [pullPrintPrinter](pullprintprinter.md) | Get the [pullPrintPrinter](../resources/pullprintprinter.md) that is associated with a [printerShare](../resources/printershare.md). |
 
 ## Properties
 | Property     | Type        | Description |
@@ -42,6 +43,7 @@ Represents a printer that is intended to be discoverable by users and printing a
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the printer share was created. Read-only.|
 |defaults|[printerDefaults](printerdefaults.md)|The default print settings of the printer associated with this printer share. Inherited from [printerBase](./printerbase.md).|
 |displayName|String|The name of the printer share that print clients should display. Inherited from [printerBase](./printerbase.md).|
+|holdJobsForSecureRelease|Boolean|Indicates whether print jobs that are sent to this printer share are held in the cloud until a user releases them at the printer.|
 |id|String| The printerShare's identifier. Read-only.|
 |isAcceptingJobs|Boolean|Whether the printer associated with this printer share is currently accepting new print jobs. Inherited from [printerBase](./printerbase.md).|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer associated with this printer share. Inherited from [printerBase](./printerbase.md).|
@@ -56,7 +58,8 @@ Represents a printer that is intended to be discoverable by users and printing a
 |allowedGroups|[group](group.md) collection|The groups whose users have access to print using the printer.|
 |allowedUsers|[user](user.md) collection|The users who have access to print using the printer.|
 |jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer associated with this printer share.|
-|printer|[printer](printer.md)|The printer that this printer share is related to. |
+|printer|[printer](printer.md)|The printer associated with this printer share. |
+|pullPrintPrinter|[pullPrintPrinter](pullprintprinter.md)|The pull print printer that is associated with this printer share.|
 
 ## JSON representation
 
@@ -85,7 +88,8 @@ The following JSON representation shows the resource type.
   "manufacturer": "String",
   "model": "String",
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
-  "viewPoint": {"@odata.type": "microsoft.graph.printerShareViewpoint"}
+  "viewPoint": {"@odata.type": "microsoft.graph.printerShareViewpoint"},
+  "holdJobsForSecureRelease": "Boolean"
 }
 ```
 
@@ -98,5 +102,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

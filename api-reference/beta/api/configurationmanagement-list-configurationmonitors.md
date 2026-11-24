@@ -121,7 +121,7 @@ Content-Type: application/json
       "inactivationReason": null,
       "displayName": "Demo Monitor",
       "description": "This is a Monitor with EXO resources",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "status": "active",
       "monitorRunFrequencyInHours": 6,
       "mode": "monitorOnly",
@@ -141,15 +141,22 @@ Content-Type: application/json
       },
       "parameters": {
         "FQDN": "contoso.onmicrosoft.com",
-        "TenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843"
-      }
+        "TenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      },
+      "runningOnBehalfOf": {
+        "user": {
+          "id": "44444444-5555-6666-7777-888888888888",
+          "displayName": "Contoso Administrator"
+        }
+      },
+      "templateOwnerTenantId": null
     },
     {
       "id": "b166c9cb-db29-438b-95fb-247da1dc72c3",
       "inactivationReason": null,
       "displayName": "Demo Monitor 1",
       "description": "It is a monitor that is monitoring all accepted domains of the tenant",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "status": "active",
       "monitorRunFrequencyInHours": 6,
       "mode": "monitorOnly",
@@ -169,15 +176,22 @@ Content-Type: application/json
       },
       "parameters": {
         "FQDN": "contoso.onmicrosoft.com",
-        "TenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843"
-      }
+        "TenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      },
+      "runningOnBehalfOf": {
+        "user": {
+          "id": "44444444-5555-6666-7777-888888888888",
+          "displayName": "Contoso Administrator"
+        }
+      },
+      "templateOwnerTenantId": null
     },
     {
       "id": "a1cbec62-453e-421f-94b5-7a4288bc122a",
       "inactivationReason": null,
       "displayName": "Sample Monitor",
       "description": "Sample EXO Monitor with SharedMailbox AcceptedDomain and MailContact",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "status": "active",
       "monitorRunFrequencyInHours": 6,
       "mode": "monitorOnly",
@@ -197,8 +211,15 @@ Content-Type: application/json
       },
       "parameters": {
         "FQDN": "contoso.onmicrosoft.com",
-        "TenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843"
-      }
+        "TenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      },
+      "runningOnBehalfOf": {
+        "user": {
+          "id": "44444444-5555-6666-7777-888888888888",
+          "displayName": "Contoso Administrator"
+        }
+      },
+      "templateOwnerTenantId": null
     }
   ]
 }
@@ -272,7 +293,7 @@ Content-Type: application/json
       "inactivationReason": "Service unavailable - unable to process monitor",
       "displayName": "Sample Monitor",
       "description": "Sample EXO Monitor with SharedMailbox AcceptedDomain and MailContact",
-      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "tenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
       "status": "active",
       "monitorRunFrequencyInHours": 6,
       "mode": "monitorOnly",
@@ -292,8 +313,15 @@ Content-Type: application/json
       },
       "parameters": {
         "FQDN": "contoso.onmicrosoft.com",
-        "TenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843"
-      }
+        "TenantId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+      },
+      "runningOnBehalfOf": {
+        "user": {
+          "id": "44444444-5555-6666-7777-888888888888",
+          "displayName": "Contoso Administrator"
+        }
+      },
+      "templateOwnerTenantId": null
     }
   ]
 }

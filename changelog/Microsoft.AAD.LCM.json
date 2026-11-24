@@ -3,6 +3,450 @@
     {
       "ChangeList": [
         {
+          "Id": "61df0a88-0a76-465a-80e5-dbd62f6585f6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskDefinition",
+          "ChangeType": "Change",
+          "Description": "Added three predefined tasks to the Lifecycle Workflows [taskDefinition](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-taskdefinition?view=graph-rest-beta) catalog: Select verification profile for identity verification (Preview), Select verification for Verified ID presentation (Preview), and Send manager verification status email (Preview). For required arguments, recipient defaults, and examples, see [Configure identity-verification onboarding tasks](https://learn.microsoft.com/en-us/graph/identitygovernance-lifecycleworkflows-task-arguments#configure-identity-verification-onboarding-tasks-beta).",
+          "Target": "taskDefinition"
+        },
+        {
+          "Id": "61df0a88-0a76-465a-80e5-dbd62f6585f6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workflowTemplate",
+          "ChangeType": "Change",
+          "Description": "Added two predefined Joiner templates to the Lifecycle Workflows [workflowTemplate](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowtemplate?view=graph-rest-beta) catalog: Pre-hire identity verification initiation (Preview) and New Hire employee onboarding with identity verification (Preview).",
+          "Target": "workflowTemplate"
+        }
+      ],
+      "Id": "61df0a88-0a76-465a-80e5-dbd62f6585f6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-09T15:14:43.7868913Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lifecyclePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicies** relationship to the [deletedItemContainer](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-deleteditemcontainer) resource.",
+          "Target": "deletedItemContainer"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "agentBuilderPlatforms",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentBuilderPlatforms** enumeration type.",
+          "Target": "agentBuilderPlatforms"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "complianceState",
+          "ChangeType": "Addition",
+          "Description": "Added the **complianceState** enumeration type.",
+          "Target": "complianceState"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyComplianceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyComplianceStatus** enumeration type.",
+          "Target": "lifecyclePolicyComplianceStatus"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyEnforcementActionState",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyEnforcementActionState** enumeration type.",
+          "Target": "lifecyclePolicyEnforcementActionState"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyEnforcementStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyEnforcementStatus** enumeration type.",
+          "Target": "lifecyclePolicyEnforcementStatus"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyNextEnforcementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyNextEnforcementAction** enumeration type.",
+          "Target": "lifecyclePolicyNextEnforcementAction"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyRelationship** enumeration type.",
+          "Target": "lifecyclePolicyRelationship"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyScopeProcessingAttemptStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyScopeProcessingAttemptStatus** enumeration type.",
+          "Target": "lifecyclePolicyScopeProcessingAttemptStatus"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicyScopeProcessingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyScopeProcessingStatus** enumeration type.",
+          "Target": "lifecyclePolicyScopeProcessingStatus"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lifecyclePolicySource",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicySource** enumeration type.",
+          "Target": "lifecyclePolicySource"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Member",
+          "ChangedApiName": "agentIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the `agentIdentity` member to the **subjectType** enumeration.",
+          "Target": "subjectType"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allExcludingAgentBuilderPlatformsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [allExcludingAgentBuilderPlatformsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-allexcludingagentbuilderplatformssubjectset) resource.",
+          "Target": "allExcludingAgentBuilderPlatformsSubjectSet"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allExcludingGroupsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [allExcludingGroupsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-allexcludinggroupssubjectset) resource.",
+          "Target": "allExcludingGroupsSubjectSet"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allExcludingSpecificObjectsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [allExcludingSpecificObjectsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-allexcludingspecificobjectssubjectset) resource.",
+          "Target": "allExcludingSpecificObjectsSubjectSet"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deleteOnlyEnforcementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [deleteOnlyEnforcementAction](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-deleteonlyenforcementaction) resource.",
+          "Target": "deleteOnlyEnforcementAction"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "disableOnlyEnforcementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [disableOnlyEnforcementAction](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-disableonlyenforcementaction) resource.",
+          "Target": "disableOnlyEnforcementAction"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "disableThenDeleteEnforcementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [disableThenDeleteEnforcementAction](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-disablethendeleteenforcementaction) resource.",
+          "Target": "disableThenDeleteEnforcementAction"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyAgentIdentitySubjectReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyAgentIdentitySubjectReference](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyagentidentitysubjectreference) resource.",
+          "Target": "lifecyclePolicyAgentIdentitySubjectReference"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyEnforcementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyEnforcementAction](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyenforcementaction) resource.",
+          "Target": "lifecyclePolicyEnforcementAction"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyNotificationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyNotificationSettings](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicynotificationsettings) resource.",
+          "Target": "lifecyclePolicyNotificationSettings"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyReference](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyreference) resource.",
+          "Target": "lifecyclePolicyReference"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyScopeProcessing",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyScopeProcessing](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyscopeprocessing) resource.",
+          "Target": "lifecyclePolicyScopeProcessing"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyScopeProcessingAttempt",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyScopeProcessingAttempt](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyscopeprocessingattempt) resource.",
+          "Target": "lifecyclePolicyScopeProcessingAttempt"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicySubjectCompliance",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicySubjectCompliance](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicysubjectcompliance) resource.",
+          "Target": "lifecyclePolicySubjectCompliance"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicySubjectEnforcement",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicySubjectEnforcement](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicysubjectenforcement) resource.",
+          "Target": "lifecyclePolicySubjectEnforcement"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicySubjectReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicySubjectReference](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicysubjectreference) resource.",
+          "Target": "lifecyclePolicySubjectReference"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyUserSubjectReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyUserSubjectReference](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyusersubjectreference) resource.",
+          "Target": "lifecyclePolicyUserSubjectReference"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selectedAgentBuilderPlatformsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [selectedAgentBuilderPlatformsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-selectedagentbuilderplatformssubjectset) resource.",
+          "Target": "selectedAgentBuilderPlatformsSubjectSet"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selectedObjectsSubjectSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [selectedObjectsSubjectSet](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-selectedobjectssubjectset) resource.",
+          "Target": "selectedObjectsSubjectSet"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequiredRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequiredRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-accesspackageassignmentrequiredrule) resource.",
+          "Target": "accessPackageAssignmentRequiredRule"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentIdentityLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentIdentityLifecycle](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-agentidentitylifecycle) resource.",
+          "Target": "agentIdentityLifecycle"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentIdentityLifecyclePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentIdentityLifecyclePolicy](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-agentidentitylifecyclepolicy) resource.",
+          "Target": "agentIdentityLifecyclePolicy"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attestationComplianceIssue",
+          "ChangeType": "Addition",
+          "Description": "Added the [attestationComplianceIssue](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-attestationcomplianceissue) resource.",
+          "Target": "attestationComplianceIssue"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceIssue",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceIssue](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-complianceissue) resource.",
+          "Target": "complianceIssue"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "guestLifecyclePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [guestLifecyclePolicy](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-guestlifecyclepolicy) resource.",
+          "Target": "guestLifecyclePolicy"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityLifecycle](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-identitylifecycle) resource.",
+          "Target": "identityLifecycle"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inactivityRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [inactivityRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-inactivityrule) resource.",
+          "Target": "inactivityRule"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invitationRedemptionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [invitationRedemptionRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-invitationredemptionrule) resource.",
+          "Target": "invitationRedemptionRule"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicy](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicy) resource.",
+          "Target": "lifecyclePolicy"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyPriorityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyPriorityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicypriorityconfiguration) resource.",
+          "Target": "lifecyclePolicyPriorityConfiguration"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyReport](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyreport) resource.",
+          "Target": "lifecyclePolicyReport"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicyRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicyrule) resource.",
+          "Target": "lifecyclePolicyRule"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lifecyclePolicySubjectReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [lifecyclePolicySubjectReport](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicysubjectreport) resource.",
+          "Target": "lifecyclePolicySubjectReport"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lifecyclePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicies** relationship to the [lifecycleWorkflowsContainer](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleworkflowscontainer) resource.",
+          "Target": "lifecycleWorkflowsContainer"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lifecyclePolicyPriorityConfigurations",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecyclePolicyPriorityConfigurations** relationship to the [lifecycleWorkflowsContainer](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecycleworkflowscontainer) resource.",
+          "Target": "lifecycleWorkflowsContainer"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "periodicAttestationRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [periodicAttestationRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-periodicattestationrule) resource.",
+          "Target": "periodicAttestationRule"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sponsorPresenceRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [sponsorPresenceRule](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-sponsorpresencerule) resource.",
+          "Target": "sponsorPresenceRule"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userIdentityLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the [userIdentityLifecycle](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-useridentitylifecycle) resource.",
+          "Target": "userIdentityLifecycle"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Method",
+          "ChangedApiName": "attest",
+          "ChangeType": "Addition",
+          "Description": "Added the [attest](https://learn.microsoft.com/en-us/graph/api/agentidentity-attest) method to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/identitygovernance-lifecyclepolicy-restore) method to the [lifecyclePolicy](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-lifecyclepolicy) resource.",
+          "Target": "lifecyclePolicy"
+        }
+      ],
+      "Id": "f95bd072-066d-4ccf-920a-603b68ebc5a9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-11-02T13:59:33.3099042Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a0169123-663f-4edc-a638-50ddece3abc0",
           "ApiChange": "Enumeration",
           "ChangedApiName": "workflowTriggerOperatorEventTiming",
@@ -65,6 +509,64 @@
       "CreatedDateTime": "2026-10-26T19:29:14.9356685Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f60f64d3-f283-4447-857d-a3a6c3c16054",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecycle** relationship to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "f60f64d3-f283-4447-857d-a3a6c3c16054",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "lifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecycle** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "f60f64d3-f283-4447-857d-a3a6c3c16054",
+          "ApiChange": "Method",
+          "ChangedApiName": "addSelfAsSponsor",
+          "ChangeType": "Addition",
+          "Description": "Added the [addSelfAsSponsor](https://learn.microsoft.com/en-us/graph/api/user-addselfassponsor) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "f60f64d3-f283-4447-857d-a3a6c3c16054",
+          "ApiChange": "Method",
+          "ChangedApiName": "attest",
+          "ChangeType": "Addition",
+          "Description": "Added the [attest](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-attest) method to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "f60f64d3-f283-4447-857d-a3a6c3c16054",
+          "ApiChange": "Method",
+          "ChangedApiName": "attest",
+          "ChangeType": "Addition",
+          "Description": "Added the [attest](https://learn.microsoft.com/en-us/graph/api/user-attest) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "f60f64d3-f283-4447-857d-a3a6c3c16054",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeSelfAsSponsor",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeSelfAsSponsor](https://learn.microsoft.com/en-us/graph/api/user-removeselfassponsor) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "f60f64d3-f283-4447-857d-a3a6c3c16054",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-11-02T13:59:33.3107876Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [

@@ -6,7 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
-ms.date: 01/10/2025
+ms.date: 11/02/2026
 ms.custom: sfi-ga-blocked
 ---
 
@@ -36,6 +36,10 @@ This resource supports:
 | [Retry service provisioning](../api/user-retryserviceprovisioning.md) | None | Retry the user service provisioning. |
 | [Revoke sign-in sessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. It forces the user to sign in to those applications again. |
 | [Export personal data](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request, made by a company administrator to export an organizational user's data. |
+| **Lifecycle policies** |  |  |
+| [user: attest](../api/user-attest.md) | None | Attest to the continued need for a guest user. |
+| [user: addSelfAsSponsor](../api/user-addselfassponsor.md) | None | Add the signed-in user as a sponsor of a sponsorless guest user. |
+| [user: removeSelfAsSponsor](../api/user-removeselfassponsor.md) | None | Remove the signed-in user as a sponsor of a guest user. |
 | **App role assignments** |  |  |
 | [List](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles assigned to this user. |
 | [Add](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this user. |
@@ -331,6 +335,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance. |
 |insights|[itemInsights](iteminsights.md) | Represents relationships between a user and items such as OneDrive for work or school documents, calculated using advanced analytics and machine learning techniques. Read-only. Nullable.|
 |licenseDetails|[licenseDetails](licensedetails.md) collection|A collection of this user's license details. Read-only.|
+|lifecycle|[microsoft.graph.identityGovernance.userIdentityLifecycle](../resources/identitygovernance-useridentitylifecycle.md)|The user's lifecycle policy state, including compliance and attestation information. Read-only.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user's manager. Read-only. Supports `$expand`.|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable. Supports `$expand`. |

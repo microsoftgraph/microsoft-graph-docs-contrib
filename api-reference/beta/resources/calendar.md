@@ -63,6 +63,18 @@ Represents a container for [event](event.md) resources. It can be a calendar for
 |isTallyingResponses|Boolean|Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.|
 |name|String|The calendar name.|
 |owner |[emailAddress](emailaddress.md) | If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the **owner** property is set to the user. For a calendar shared with the user, the **owner** property is set to the person who shared that calendar with the user. Read-only.|
+|sharingLevel|[sharingLevelOfDetails](#sharinglevelofdetails-values)|The effective level of calendar event information visible to the current share recipient. This value doesn't indicate edit or delegate rights. The **canViewPrivateItems** property controls visibility of private event details separately. Read-only.|
+
+### sharingLevelOfDetails values
+
+| Member | Description |
+|:-------|:------------|
+| unknown | The service can't determine the effective level of event information visible to the share recipient. |
+| none | No calendar event information is visible. |
+| availability | Only free/busy availability is visible. |
+| limited | Free/busy availability, subject, and location are visible. |
+| full | Full event details permitted by the sharing access control list (ACL) are visible. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -106,7 +118,8 @@ The following JSON representation shows the resource type.
   "isSharedWithMe": "boolean",
   "isTallyingResponses": "boolean",
   "name": "string",
-  "owner": {"@odata.type": "microsoft.graph.emailAddress"}
+  "owner": {"@odata.type": "microsoft.graph.emailAddress"},
+  "sharingLevel": "String"
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -121,5 +134,3 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-
-

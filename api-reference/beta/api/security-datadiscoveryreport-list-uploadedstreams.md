@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Get visibility into all the manually uploaded streams from your firewalls and proxies.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

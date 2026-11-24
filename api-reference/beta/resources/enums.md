@@ -1493,6 +1493,15 @@ This flagged enumeration identifies the actions taken when policy evaluation cou
 | subscriptionRemoved |
 | reauthorizationRequired |
 
+### lifecyclePolicyComplianceState values
+
+| Member |
+| ---------------- |
+| compliant |
+| warning |
+| warningNotify |
+| nonCompliant |
+
 ### changeType values
 
 | Member |
@@ -6475,11 +6484,21 @@ Possible values for user account types (group membership), per Windows definitio
 |fixed|
 |unknownFutureValue|
 
+### configurationDriftRemediationStatus values
+
+|Member|
+|:---|
+|succeeded|
+|partiallySucceeded|
+|failed|
+|unknownFutureValue|
+
 ### monitorMode values 
 
 |Member|
 |:---|
 |monitorOnly|
+|applyOnce|
 |unknownFutureValue|
 
 ### monitorRunStatus values 
@@ -6556,6 +6575,17 @@ Possible values for user account types (group membership), per Windows definitio
 |appliedWithUnknownFailure|
 |appliedSuccessfullyButObjectNotFound|
 |applyNotSupported|
+|unknownFutureValue|
+
+### printJobReleaseMethods values
+
+|Member|
+|:---|
+|none|
+|unknown|
+|badge|
+|biometrics|
+|usernamePassword|
 |unknownFutureValue|
 
 ### evaluationScopeType values
@@ -6637,6 +6667,54 @@ Possible values for user account types (group membership), per Windows definitio
 |coldCrawl|
 |applications|
 
+### policyCategory values
+
+|Member|
+|:---|
+|notSpecified|
+|workloadIdentity|
+|identityAndTenant|
+|privilegedAccess|
+|zeroTrust|
+|agenticIdentity|
+|networkAccess|
+|unknownFutureValue|
+
+### policyApplicableOperations values
+
+|Member|
+|:---|
+|create|
+|updateOrUpsert|
+|delete|
+|invokeAction|
+|unknownFutureValue|
+
+### policyEffects values
+
+|Member|
+|:---|
+|compliant|
+|deny|
+|unknownFutureValue|
+
+### requestHttpMethod values
+
+|Member|
+|:---|
+|post|
+|patch|
+|put|
+|get|
+|delete|
+|unknownFutureValue|
+
+### enforcementMode values
+
+|Member|
+|:---|
+|doNotEnforce|
+|enforce|
 ### chainBreakReason values
 
 |Member|
@@ -6750,4 +6828,21 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |summary|
 |artifact|
+|unknownFutureValue|
+
+### policyEffect values
+
+|Member|
+|:---|
+|compliant|
+|deny|
+|unknownFutureValue|
+
+### resourcePolicyDecision values
+
+|Member|
+|:---|
+|deny|
+|none|
+|compliant|
 |unknownFutureValue|

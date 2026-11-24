@@ -1,5 +1,6 @@
 ---
 title: "verifiedIdSelfServiceIssuance resource type"
+toc.title: "Verified ID self-service issuance"
 description: "Configuration for self-service issuance in a Verified ID profile."
 author: "tilarso"
 ms.date: 07/22/2026

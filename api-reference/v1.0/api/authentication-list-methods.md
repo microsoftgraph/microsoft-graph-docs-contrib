@@ -72,6 +72,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [authenticationMethod](../resources/authenticationmethod.md) objects in the response body.
 
+The **lastUsedDateTime** property is read-only and populated on a best-effort basis. It can be `null` or absent when usage data is unavailable or the method doesn't support usage tracking. A `null` or absent value doesn't mean that the method was never used.
+
 ## Examples
 
 ### Request
@@ -147,7 +149,8 @@ Content-type: application/json
       "attestationCertificates": [
           "dbe793efdf1945e2df25d93653a1e8a3268a9075"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "lastUsedDateTime": null
     },
     {
     "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",

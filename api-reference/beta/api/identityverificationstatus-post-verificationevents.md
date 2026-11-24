@@ -16,16 +16,17 @@ Namespace: microsoft.graph
 
 Record an [identityVerificationEvent](../resources/identityverificationevent.md) in a user's [identityVerificationStatus](../resources/identityverificationstatus.md). The service recomputes the user's aggregate status when it records the event.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "identityverificationstatus-post-verificationevents-permissions",
+<!-- { 
+  "blockType": "permissions", 
+  "name": "identityverificationstatus_post_verificationevents", 
   "requestUrls": ["POST /users/{id}/identityVerificationStatus/verificationEvents"]
-}
--->
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/identityverificationstatus-post-verificationevents-permissions.md)]
 
 ## HTTP request
