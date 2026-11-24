@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "d25d4781-73e9-4ad6-bd5a-1627fd52b3c2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "winGetRepositoryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **winGetRepositoryType** enumeration type for the **repositoryType** property of [winGetApp](https://learn.microsoft.com/en-us/graph/api/resources/intune-apps-wingetapp?view=graph-rest-beta).",
+          "Target": "winGetRepositoryType"
+        },
+        {
+          "Id": "d25d4781-73e9-4ad6-bd5a-1627fd52b3c2",
+          "ApiChange": "Property",
+          "ChangedApiName": "repositoryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **repositoryType** property to the [winGetApp](https://learn.microsoft.com/en-us/graph/api/resources/intune-apps-wingetapp?view=graph-rest-beta) resource to identify its source repository. The property is required at creation time and can't be changed on existing apps.",
+          "Target": "winGetApp"
+        },
+        {
+          "Id": "d25d4781-73e9-4ad6-bd5a-1627fd52b3c2",
+          "ApiChange": "Property",
+          "ChangedApiName": "repositoryDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **repositoryDetail** property to the [winGetApp](https://learn.microsoft.com/en-us/graph/api/resources/intune-apps-wingetapp?view=graph-rest-beta) resource to specify repository-specific details, such as a Microsoft Store market code.",
+          "Target": "winGetApp"
+        }
+      ],
+      "Id": "d25d4781-73e9-4ad6-bd5a-1627fd52b3c2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-24T05:56:00.0000000Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "13fbe2ca-904d-4ba0-9eb8-69f3f1d381cc",
           "ApiChange": "Enumeration",
           "ChangedApiName": "userPfxCertificateKeyAlgorithm",

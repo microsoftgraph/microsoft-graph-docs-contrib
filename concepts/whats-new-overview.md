@@ -54,6 +54,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Device and app management | Intune
 
+- Added the **repositoryType** and **repositoryDetail** properties to [winGetApp](/graph/api/resources/intune-apps-wingetapp?view=graph-rest-beta&preserve-view=true), and the **winGetRepositoryType** enumeration type, to identify the app's source repository and Microsoft Store market.
 - Added the **keyAlgorithm** property to [userPFXCertificate](/graph/api/resources/intune-raimportcerts-userpfxcertificate?view=graph-rest-beta&preserve-view=true) to identify the public-key algorithm of an imported PFX certificate.
 - Added the **certificateAlgorithm**, **certificateKeySize**, and **hashingAlgorithm** properties to [cloudCertificationAuthorityLeafCertificate](/graph/api/resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate?view=graph-rest-beta&preserve-view=true). Use them to inspect a leaf certificate's public-key algorithm, RSA key size or elliptic curve, and signature hash independently of its issuer's key.
 - Added the `deploymentPlan` and `deployment` members to [associatedAssignmentPayloadType](/graph/api/resources/intune-policyset-associatedassignmentpayloadtype?view=graph-rest-beta&preserve-view=true) to identify assignment filters associated with deployment plans and deployments.

@@ -15,6 +15,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+### winGetRepositoryType values
+
+|Member|
+|:---|
+|microsoftStore|
+|windowsPackageManagerCommunity|
+|unknownFutureValue|
+
 ### cloudCertificationAuthorityCertificateAlgorithm values
 
 |Member|
