@@ -6,6 +6,8 @@ items:
   href: ../../resources/mailbox-import-export-api-overview.md
 - name: Handle archive mailbox redirects
   href: /graph/handle-archive-mailbox-redirects
+- name: Work with archive mailboxes
+  href: /graph/work-with-archive-mailboxes
 - name: Mailbox
   items:
   - name: Mailbox
