@@ -124,7 +124,8 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 ### Mail
 
-- [Use Mail APIs with Exchange archive mailboxes](/graph/archive-mailbox-mail-api). Learn how to access Exchange archive folders and messages, follow redirects, create folders, and synchronize changes with Microsoft Graph beta Mail APIs.
+- [Use the mailbox import and export APIs with archive mailboxes](/graph/work-with-archive-mailboxes). Learn how to discover an archive mailbox, manage its folders, and export and import archive mailbox items by using Microsoft Graph.
+- [Use mail APIs with Exchange archive mailboxes](/graph/archive-mailbox-mail-api). Learn how to access Exchange archive folders and messages, follow redirects, create folders, and synchronize changes with Microsoft Graph beta mail APIs.
 
 ### Security
 

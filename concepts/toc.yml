@@ -700,6 +700,8 @@ items:
       href: import-exchange-mailbox-item.md
     - name: Handle archive mailbox redirects
       href: handle-archive-mailbox-redirects.md
+    - name: Work with archive mailboxes (preview)
+      href: work-with-archive-mailboxes.md
   - name: Notes
     items:
     - name: Overview
