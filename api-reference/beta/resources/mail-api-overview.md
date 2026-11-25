@@ -17,9 +17,9 @@ ai-usage: ai-assisted
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
 With the appropriate delegated or application [mail permissions](/graph/permissions-reference#mail-permissions), your app can access the mail data of the signed-in user or any user in a tenant. For more information on access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
 
-The Microsoft Graph API supports accessing data in users' _primary_ mailboxes and in [shared mailboxes](https://support.office.com/article/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd). The data can be calendar, mail, or personal contacts stored in a mailbox in the cloud on Exchange Online as part of Microsoft 365, or on Exchange on-premises in a [hybrid deployment](/graph/hybrid-rest-support).
+The Microsoft Graph API supports accessing data in users' *primary* mailboxes and in [shared mailboxes](https://support.office.com/article/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd). The data can be calendar, mail, or personal contacts stored in a mailbox in the cloud on Exchange Online as part of Microsoft 365, or on Exchange on-premises in a [hybrid deployment](/graph/hybrid-rest-support).
 
-Microsoft Graph beta Mail APIs provide preview access to Exchange Online archive mailboxes. For supported operations and limitations, see [Use Mail APIs with Exchange archive mailboxes (preview)](/graph/archive-mailbox-mail-api). In-place archive mailboxes [on Exchange Server](/Exchange/policy-and-compliance/in-place-archiving/in-place-archiving?view=exchserver-2019&preserve-view=true) remain unsupported.
+Microsoft Graph beta mail APIs provide preview access to Exchange Online archive mailboxes. For supported operations and limitations, see [Use mail APIs with Exchange archive mailboxes (preview)](/graph/archive-mailbox-mail-api). In-place archive mailboxes [on Exchange Server](/Exchange/policy-and-compliance/in-place-archiving/in-place-archiving?view=exchserver-2019&preserve-view=true) remain unsupported.
 
 ## Using the mail REST API
 
