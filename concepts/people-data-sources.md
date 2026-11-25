@@ -27,9 +27,11 @@ The Copilot connectors for people data include Microsoft-built connectors and a 
 
 For more information, see [Microsoft 365 Copilot connectors for people data](/graph/peopleconnectors).
 
-## Organizational data in Microsoft 365
+<a name="organizational-data-in-microsoft-365"></a>
 
-This source includes organizational data managed in the [Organizational data in Microsoft 365](/viva/organizational-data) platform.
+## Microsoft 365 Organizational Data Service
+
+This source includes organizational data managed in the [Microsoft 365 Organizational Data Service](/viva/organizational-data) platform.
 
 ## SharePoint
 
@@ -65,7 +67,7 @@ The following table shows the set of built-in people data sources.
 | ID | Source system |
 | --- | --- |
 | `4ce763dd-9214-4eff-af7c-da491cc3782d` | Microsoft Entra ID. In the API output, this source appears as type `AAD`. |
-| `7986c642-b494-4140-8df4-f5ed125e2c67` | Organizational data in Microsoft 365. In the API output, this source appears as type `OrganizationalDataInMicrosoft365`. |
+| `7986c642-b494-4140-8df4-f5ed125e2c67` | Microsoft 365 Organizational Data Service. In the API output, this source appears as type `OrganizationalDataInMicrosoft365`. |
 | `6cdc4422-8c05-40c5-902e-8ade707725ab` | SharePoint profile data (UPA) from the user profile sync process. This source also includes user edits from the Microsoft 365 user profile editor, such as the **AboutMe** resume. In the API output, this source appears as type `UPA`. |
 | `9a3e0ce2-cf4b-477e-b3b3-df246318e251` | Microsoft account (MSA). Only applicable for consumer (Microsoft Live) profiles. |
 | `46a57efc-33f8-4eec-a512-b90039ad6187` | Profile data written through the `/user/profile` endpoint in Microsoft Graph beta. User-initiated edits via a Microsoft 365 edit experience might not end up in this source. In the API output, this source appears as type `user`. |
