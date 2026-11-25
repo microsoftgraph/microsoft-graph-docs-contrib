@@ -241,20 +241,20 @@ items:
       href: toolkit/upgrade.md
   - name: Deploy in IaC with templates
     href: /graph/templates?toc=/graph/toc.json
-  - name: Use the MCP Server for Enterprise
+  - name: Use the MCP Server for IT Admins
     items:
     - name: Overview
       href: mcp-server/overview.md
     - name: Get started
       href: mcp-server/get-started.md
     - name: Use from Copilot Studio
-      href: mcp-server/use-enterprise-mcp-server-copilot-studio.md
+      href: mcp-server/use-it-admins-mcp-server-copilot-studio.md
     - name: Use from Microsoft Foundry
-      href: mcp-server/use-enterprise-mcp-server-microsoft-foundry.md
+      href: mcp-server/use-it-admins-mcp-server-microsoft-foundry.md
     - name: Sample prompts
       href: mcp-server/mcp-server-sample-prompts.md
     - name: Explore the repository
-      href: https://github.com/mcp/microsoft/EnterpriseMCP
+      href: https://github.com/microsoft/EnterpriseMCP
 - name: Services and features
   expanded: true
   items:
