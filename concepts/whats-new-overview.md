@@ -121,6 +121,7 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 - Added the `aiElevatedAccountRisk` member to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that the user completed Microsoft-managed remediation to address their risk.
 - Added the `userPassedVerifiedIdDrivenByRiskBasedPolicy` member to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that the user remediated their risk by completing Verified ID verification under a risk-based Conditional Access policy.
+- Added the `verifiedID` member to the **conditionalAccessGrantControl** enumeration type to require identity verification through Microsoft Entra Verified ID. Use this control in the **builtInControls** property of [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Network access
 

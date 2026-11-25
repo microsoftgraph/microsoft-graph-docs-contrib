@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "745391ec-42a5-41d7-bfbd-b281a40de940",
+          "ApiChange": "Member",
+          "ChangedApiName": "verifiedID",
+          "ChangeType": "Addition",
+          "Description": "Added the `verifiedID` member to the **conditionalAccessGrantControl** enumeration for use in [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta).",
+          "Target": "conditionalAccessGrantControl"
+        }
+      ],
+      "Id": "745391ec-42a5-41d7-bfbd-b281a40de940",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-09T17:35:32.6116656Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ed542436-ed53-451d-b6c6-07dd31bded4e",
           "ApiChange": "Member",
           "ChangedApiName": "aiElevatedAccountRisk",
