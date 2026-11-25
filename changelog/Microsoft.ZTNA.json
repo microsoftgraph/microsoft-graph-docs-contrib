@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "704f1b94-21b2-42fe-97be-a4bab2208992",
+          "ApiChange": "Member",
+          "ChangedApiName": "entra",
+          "ChangeType": "Addition",
+          "Description": "Added the `entra` member to the **trafficForwardingType** enumeration used by the [forwardingProfile](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-forwardingprofile?view=graph-rest-beta) and [forwardingPolicy](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-forwardingpolicy?view=graph-rest-beta) resources. Use the `Prefer: include-unknown-enum-members` request header to retrieve this value.",
+          "Target": "trafficForwardingType"
+        }
+      ],
+      "Id": "704f1b94-21b2-42fe-97be-a4bab2208992",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-16T18:07:53.2429347Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ea7e5144-6f0f-4b76-bef3-bfe738195dbe",
           "ApiChange": "Enumeration",
           "ChangedApiName": "httpRequestMethod",

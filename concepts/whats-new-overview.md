@@ -124,6 +124,7 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 
 ### Identity and access | Network access
 
+- Added the `entra` member to the **trafficForwardingType** enumeration used by [forwardingProfile](/graph/api/resources/networkaccess-forwardingprofile?view=graph-rest-beta&preserve-view=true) and [forwardingPolicy](/graph/api/resources/networkaccess-forwardingpolicy?view=graph-rest-beta&preserve-view=true).
 - Added the [webFilteringPolicy](/graph/api/resources/networkaccess-webfilteringpolicy?view=graph-rest-beta&preserve-view=true) resource type and related methods for configuring how Global Secure Access allows or blocks web traffic based on source sessions, URLs, web categories, and HTTP request methods.
 
 ### Mail
