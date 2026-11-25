@@ -1,8 +1,8 @@
 ---
 title: "Access Microsoft Graph activity logs for tenant monitoring"
 description: "Microsoft Graph activity logs provide a detailed audit trail of all API requests in your tenant, helping you monitor and investigate activities. Learn how to access and use these logs."
-author: FaithOmbongi
-ms.author: ombongifaith
+author: Licantrop0
+ms.author: lucaspol
 ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: high
@@ -16,7 +16,7 @@ ms.date: 11/25/2025
 
 **Microsoft Graph activity logs** provide an audit trail of all HTTP requests that the Microsoft Graph service receives and processes for a tenant. Tenant admins can turn on log collection and set up downstream destinations by using diagnostic settings in Azure Monitor. The logs go to Log Analytics for analysis. You can export them to Azure Storage for long-term storage, or stream them with Azure Event Hubs to external SIEM tools for alerting, analysis, or archiving.
 
-You get logs for API requests from line-of-business apps, API clients, SDKs, AI Clients querying the [Microsoft MCP Server for Enterprise](./mcp-server/overview.md), and Microsoft apps like Outlook, Microsoft Teams, or the Microsoft admin portals.
+You get logs for API requests from line-of-business apps, API clients, SDKs, AI clients querying [Microsoft MCP Server for IT Admins](./mcp-server/overview.md), and Microsoft apps like Outlook, Microsoft Teams, or the Microsoft admin portals.
 
 This service is available in these [national cloud deployments](/graph/deployments).
 
@@ -40,7 +40,7 @@ To use Microsoft Graph activity logs, you need the following privileges.
 This article shows the data about API requests that's available for Microsoft Graph activity logs in the Logs Analytics interface.
 
 > [!TIP]
-> Requests to the [Microsoft MCP Server for Enterprise](./mcp-server/overview.md) have a **RequestUri** that includes `/enterprise`.
+> Requests made through [Microsoft MCP Server for IT Admins](./mcp-server/overview.md) have the **AppId** `e8c77dc2-69b3-43f4-bc51-3213c9d915b4`. For a sample query, see [Logs](./mcp-server/overview.md#logs).
 
 > [!WARNING]
 > Don't store secrets or other sensitive information—such as passwords, credentials, access or refresh tokens, or connection strings—in directory object attributes or any other auditable resource exposed by Microsoft Graph. Microsoft Graph activity logs, along with other audit and sign-in logs, capture details about API requests, including request URIs. Any sensitive value that's passed in a request or stored on such a resource can be recorded in these logs, where it's readable by tenant administrators and by any downstream Log Analytics workspace, Azure Storage account, or SIEM system to which the logs are exported. Directory object attributes aren't a secure store for secrets; use a dedicated secret store such as [Azure Key Vault](/azure/key-vault/general/overview) instead.
@@ -54,7 +54,7 @@ This article shows the data about API requests that's available for Microsoft Gr
 - Build detections and behavioral analysis to spot suspicious or unusual use of Microsoft Graph APIs.
 - Investigate unexpected or suspicious privileged assignment of application permissions.
 - Spot problematic or unexpected behaviors for client applications, like extreme call volumes.
-- Monitor AI client interactions with Microsoft Graph APIs, including requests from AI applications and the [Microsoft MCP Server for Enterprise](./mcp-server/overview.md).
+- Monitor AI client interactions with Microsoft Graph APIs, including requests from AI applications and [Microsoft MCP Server for IT Admins](./mcp-server/overview.md).
 - Correlate Microsoft Graph requests made by a user or app with sign-in information.
 
 ## Set up Microsoft Graph activity logs

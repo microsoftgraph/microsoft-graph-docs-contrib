@@ -22,7 +22,7 @@ highlightedContent:
     - title: Microsoft Graph REST API
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
-    - title: Microsoft MCP Server for Enterprise
+    - title: Microsoft MCP Server for IT Admins
       itemType: whats-new
       url: /graph/mcp-server/overview
     - title: API Changelog
@@ -112,7 +112,7 @@ tools:
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: /graph/templates/
       # Card
-    - title: Microsoft MCP Server for Enterprise
+    - title: Microsoft MCP Server for IT Admins
       imageSrc: ./images/index/i_backlog.svg
       url: /graph/mcp-server/overview
 

@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Graph permissions reference "
 description: "Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests."
-author: FaithOmbongi
-ms.author: ombongifaith
+author: Licantrop0
+ms.author: lucaspol
 ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
@@ -5202,6 +5202,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | - | b31fa710-c9b3-4d9e-8f5e-8036eecddab9 |
 | DisplayText | - | Read and write all managed tenant information |
 | Description | - | Allows the app to read and write all managed tenant information on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### MCP.Server.Access
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | e0cdafaf-ffab-413a-9fe4-c85afbe0fa56 |
+| DisplayText | - | Access the Microsoft Graph MCP server |
+| Description | - | Allows the app to connect to and call the Microsoft Graph Model Context Protocol (MCP) server on behalf of the signed-in user. |
 | AdminConsentRequired | - | Yes |
 
 ---
