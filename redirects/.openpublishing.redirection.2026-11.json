@@ -259,6 +259,16 @@
       "source_path_from_root": "/api-reference/beta/api/teamschannelplanner-update.md",
       "redirect_url": "https://learn.microsoft.com/graph/api/resources/teamschannelplanner?view=graph-rest-beta",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/concepts/mcp-server/use-enterprise-mcp-server-copilot-studio.md",
+      "redirect_url": "https://learn.microsoft.com/graph/mcp-server/use-it-admins-mcp-server-copilot-studio",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/concepts/mcp-server/use-enterprise-mcp-server-microsoft-foundry.md",
+      "redirect_url": "https://learn.microsoft.com/graph/mcp-server/use-it-admins-mcp-server-microsoft-foundry",
+      "redirect_document_id": true
     }
   ]
 }

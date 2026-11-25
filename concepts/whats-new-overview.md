@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 11/05/2026
+ms.date: 11/17/2026
 ms.topic: whats-new
 ---
 
@@ -68,6 +68,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Added the **isHidden** property to the [mailboxFolder](/graph/api/resources/mailboxfolder) resource to identify hidden mailbox folders.
 - Use the existing **includeHiddenFolders** query parameter for [listing folders](/graph/api/mailbox-list-folders) and [listing child folders](/graph/api/mailboxfolder-list-childfolders). Set it to `true` to include both hidden and nonhidden folders.
+
+### Microsoft MCP Server for IT Admins
+
+- Updated the [Microsoft MCP Server for IT Admins](/graph/mcp-server/overview) documentation. Microsoft MCP Server for Enterprise is now Microsoft MCP Server for IT Admins at `https://mcp.svc.cloud.microsoft/admin`, and the `/enterprise` endpoint is deprecated. AI agents can now create, update, and delete Microsoft Entra data after the user confirms each change, and read Microsoft Intune data. Setup takes an app registration with Microsoft Graph delegated permissions, and no longer requires provisioning the MCP server or granting its `MCP.*` scopes.
 
 ### Security | Data security and compliance
 

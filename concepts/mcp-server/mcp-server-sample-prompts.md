@@ -1,26 +1,28 @@
 ---
-title: Sample prompts for Microsoft MCP Server for Enterprise
-description: "Explore example natural language prompts to query Microsoft Entra identity data using the Microsoft MCP Server for Enterprise."
-author: msewaweru
-ms.author: eunicewaweru
-ms.reviewer: Licantrop0
+title: Sample prompts for Microsoft MCP Server for IT Admins
+description: "Explore example natural language prompts that query and manage Microsoft Entra data with Microsoft MCP Server for IT Admins."
+author: Licantrop0
+ms.author: lucaspol
 ms.subservice: ent-mcp-server
 ms.topic: how-to
-ms.date: 01/21/2026
+ms.date: 11/17/2026
 
-#customer intent: As an IT administrator or developer, I want to see example prompts that show me how to query my tenant's identity, security, and device data using natural language with the Microsoft MCP Server for Enterprise.
+#customer intent: As an IT administrator or developer, I want to see example prompts that show me how to query and manage my tenant's identity, security, and device data with natural language through Microsoft MCP Server for IT Admins.
 ---
 
-# Sample prompts for Microsoft MCP Server for Enterprise
+# Sample prompts for Microsoft MCP Server for IT Admins
 
-Query your Microsoft Entra tenant data using natural language. The Microsoft MCP Server for Enterprise translates your questions into Microsoft Graph API calls, providing conversational access to identity, device, security, and compliance information. This article provides sample prompts organized by common scenarios to help you get started.
+Microsoft MCP Server for IT Admins translates natural language questions and requests into Microsoft Graph API calls against your Microsoft Entra tenant. This article lists sample prompts by scenario. The prompts in [Write actions](#write-actions) change data in your tenant.
 
 > [!TIP]
-> When using these prompts, the MCP-enabled AI agent shows you the underlying Microsoft Graph API calls it executes. You can use these API calls in your own scripts, applications, or automation workflows.
+> The MCP-enabled AI agent shows you the Microsoft Graph API calls it runs for each prompt. You can reuse these calls in your own scripts, applications, or automation workflows.
 
 ## Prerequisites
 
-Before using these prompts, ensure you've completed the setup in [Get started with Microsoft MCP Server for Enterprise](get-started.md). Your MCP client must have the appropriate delegated permissions for the operations you want to perform.
+- Complete the setup in [Get started with Microsoft MCP Server for IT Admins](get-started.md).
+- Your MCP client's app registration needs the three [required permissions](get-started.md#required-permissions), plus the Microsoft Graph delegated permissions that each prompt lists, with admin consent.
+- The signed-in user needs the Microsoft Entra roles for each operation. The MCP server runs every request with that user's permissions.
+- To show user names and emails in results, such as group members, owners, or role assignees, the app also needs `User.ReadBasic.All` or `User.Read.All`. Without it, Microsoft Graph returns only the object IDs of users.
 
 ## User management
 
@@ -30,7 +32,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Returns the total count of users in your Microsoft Entra tenant.
 
-**Required scope:** `MCP.User.Read.All`
+**Required permission:** `User.ReadBasic.All`
 
 ---
 
@@ -38,7 +40,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves basic information about users including display name, user principal name, and email address.
 
-**Required scope:** `MCP.User.Read.All`
+**Required permission:** `User.ReadBasic.All`
 
 ---
 
@@ -46,7 +48,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists users ordered by creation date, showing the most recently created accounts first.
 
-**Required scope:** `MCP.User.Read.All`
+**Required permission:** `User.Read.All`
 
 ---
 
@@ -54,7 +56,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Counts external users (guests) in your tenant.
 
-**Required scope:** `MCP.User.Read.All`
+**Required permission:** `User.Read.All`
 
 ### User sign-in activity
 
@@ -62,7 +64,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Identifies inactive user accounts based on sign-in activity data.
 
-**Required scopes:** `MCP.User.Read.All`, `MCP.AuditLog.Read.All`
+**Required permissions:** `User.Read.All`, `AuditLog.Read.All`
 
 ---
 
@@ -70,7 +72,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves the most recent sign-in timestamp for a specific user.
 
-**Required scopes:** `MCP.User.Read.All`, `MCP.AuditLog.Read.All`
+**Required permissions:** `User.Read.All`, `AuditLog.Read.All`
 
 ---
 
@@ -78,7 +80,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists failed sign-in attempts for a specific user, including error details.
 
-**Required scope:** `MCP.AuditLog.Read.All`
+**Required permission:** `AuditLog.Read.All`
 
 ### User account status
 
@@ -86,7 +88,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Returns users where `accountEnabled` is set to false.
 
-**Required scope:** `MCP.User.Read.All`
+**Required permission:** `User.Read.All`
 
 ---
 
@@ -94,7 +96,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves users from the directory's deleted items collection.
 
-**Required scope:** `MCP.User.Read.All`
+**Required permission:** `User.Read.All`
 
 ---
 
@@ -102,7 +104,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Identifies users where `onPremisesSyncEnabled` is true.
 
-**Required scope:** `MCP.User.Read.All`
+**Required permission:** `User.Read.All`
 
 ## Group management
 
@@ -112,7 +114,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Returns the total count of groups.
 
-**Required scope:** `MCP.GroupMember.Read.All`
+**Required permission:** `GroupMember.Read.All`
 
 ---
 
@@ -120,7 +122,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves groups where `securityEnabled` is true.
 
-**Required scope:** `MCP.GroupMember.Read.All`
+**Required permission:** `GroupMember.Read.All`
 
 ---
 
@@ -128,7 +130,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists groups that aren't synchronized from on-premises Active Directory.
 
-**Required scope:** `MCP.GroupMember.Read.All`
+**Required permission:** `GroupMember.Read.All`
 
 ---
 
@@ -136,7 +138,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Identifies ownerless groups that may need attention.
 
-**Required scope:** `MCP.GroupMember.Read.All`
+**Required permission:** `GroupMember.Read.All`
 
 ### Group membership
 
@@ -144,7 +146,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves all users who are members of the specified group.
 
-**Required scope:** `MCP.GroupMember.Read.All`
+**Required permission:** `GroupMember.Read.All`
 
 ---
 
@@ -152,7 +154,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists all group memberships for a specific user.
 
-**Required scopes:** `MCP.User.Read.All`, `MCP.GroupMember.Read.All`
+**Required permissions:** `User.Read.All`, `GroupMember.Read.All`
 
 ---
 
@@ -160,7 +162,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists Microsoft 365 groups that have Teams enabled.
 
-**Required scope:** `MCP.GroupMember.Read.All`
+**Required permission:** `GroupMember.Read.All`
 
 ## Application and service principal management
 
@@ -170,7 +172,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Counts both application registrations and service principals.
 
-**Required scope:** `MCP.Application.Read.All`
+**Required permission:** `Application.Read.All`
 
 ---
 
@@ -178,7 +180,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves all application registrations with basic details.
 
-**Required scope:** `MCP.Application.Read.All`
+**Required permission:** `Application.Read.All`
 
 ---
 
@@ -186,7 +188,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists service principals where the app owner organization differs from your tenant.
 
-**Required scope:** `MCP.Application.Read.All`
+**Required permission:** `Application.Read.All`
 
 ### Application ownership and details
 
@@ -194,7 +196,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists all applications and service principals owned by a specific user.
 
-**Required scopes:** `MCP.User.Read.All`, `MCP.Application.Read.All`
+**Required permissions:** `User.Read.All`, `Application.Read.All`
 
 ---
 
@@ -202,15 +204,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves the owner information for a specific application.
 
-**Required scope:** `MCP.Application.Read.All`
-
----
-
-**Prompt:** "List Teams apps installed for me"
-
-**What it does:** Shows Microsoft Teams applications installed for the signed-in user.
-
-**Required scope:** `MCP.Application.Read.All`
+**Required permission:** `Application.Read.All`
 
 ## Security and compliance
 
@@ -218,9 +212,9 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **Prompt:** "Is MFA enabled for all administrators?"
 
-**What it does:** Checks security defaults and conditional access policies that enforce MFA for admin roles.
+**What it does:** Checks security defaults and Conditional Access policies that enforce MFA for admin roles.
 
-**Required scopes:** `MCP.Policy.Read.All`, `MCP.Policy.Read.ConditionalAccess`
+**Required permission:** `Policy.Read.All`
 
 ---
 
@@ -228,15 +222,15 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists which authentication methods users have registered and whether they're MFA-capable.
 
-**Required scopes:** `MCP.Reports.Read.All`, `MCP.UserAuthenticationMethod.Read.All`
+**Required permission:** `AuditLog.Read.All`
 
 ---
 
-**Prompt:** "Which conditional access policies require MFA?"
+**Prompt:** "Which Conditional Access policies require MFA?"
 
-**What it does:** Lists enabled conditional access policies that include MFA as a grant control.
+**What it does:** Lists enabled Conditional Access policies that include MFA as a grant control.
 
-**Required scope:** `MCP.Policy.Read.ConditionalAccess`
+**Required permission:** `Policy.Read.All`
 
 ---
 
@@ -244,23 +238,23 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves sign-in logs where multi-factor authentication was required and completed.
 
-**Required scope:** `MCP.AuditLog.Read.All`
+**Required permission:** `AuditLog.Read.All`
 
 ### Conditional access policies
 
-**Prompt:** "List all enabled conditional access policies"
+**Prompt:** "List all enabled Conditional Access policies"
 
-**What it does:** Retrieves conditional access policies that are currently active.
+**What it does:** Retrieves Conditional Access policies that are currently active.
 
-**Required scope:** `MCP.Policy.Read.ConditionalAccess`
+**Required permission:** `Policy.Read.All`
 
 ---
 
 **Prompt:** "What authentication contexts are defined in my tenant?"
 
-**What it does:** Lists custom authentication context class references used in conditional access.
+**What it does:** Lists custom authentication context class references used in Conditional Access.
 
-**Required scope:** `MCP.Policy.Read.All`
+**Required permission:** `AuthenticationContext.Read.All`
 
 ### Risk and identity protection
 
@@ -268,7 +262,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists users with active risk detections from Microsoft Entra ID Protection.
 
-**Required scope:** `MCP.IdentityRiskyUser.Read.All`
+**Required permission:** `IdentityRiskyUser.Read.All`
 
 ---
 
@@ -276,7 +270,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves recent risk detections such as anonymous IP usage, atypical travel, or leaked credentials.
 
-**Required scope:** `MCP.IdentityRiskEvent.Read.All`
+**Required permission:** `IdentityRiskEvent.Read.All`
 
 ---
 
@@ -284,7 +278,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists service principals with suspicious activity detected.
 
-**Required scope:** `MCP.IdentityRiskyServicePrincipal.Read.All`
+**Required permission:** `IdentityRiskyServicePrincipal.Read.All`
 
 ### Audit and monitoring
 
@@ -292,7 +286,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves recent audit log entries for directory modifications.
 
-**Required scope:** `MCP.AuditLog.Read.All`
+**Required permission:** `AuditLog.Read.All`
 
 ---
 
@@ -300,7 +294,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Finds audit log entries for password reset operations on a specific user.
 
-**Required scope:** `MCP.AuditLog.Read.All`
+**Required permission:** `AuditLog.Read.All`
 
 ---
 
@@ -308,7 +302,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Shows audit log entries for modifications to a specific group.
 
-**Required scope:** `MCP.AuditLog.Read.All`
+**Required permission:** `AuditLog.Read.All`
 
 ## License management
 
@@ -316,7 +310,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists all subscribed SKUs with their capability status.
 
-**Required scope:** `MCP.Organization.Read.All`
+**Required permission:** `LicenseAssignment.Read.All`
 
 ---
 
@@ -324,7 +318,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Shows the difference between purchased and consumed licenses for each SKU.
 
-**Required scope:** `MCP.Organization.Read.All`
+**Required permission:** `LicenseAssignment.Read.All`
 
 ---
 
@@ -332,7 +326,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists users with a specific license SKU assigned.
 
-**Required scopes:** `MCP.User.Read.All`, `MCP.LicenseAssignment.Read.All`
+**Required permissions:** `User.Read.All`, `LicenseAssignment.Read.All`
 
 ## Device management
 
@@ -340,7 +334,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Counts all devices in Microsoft Entra.
 
-**Required scope:** `MCP.Device.Read.All`
+**Required permission:** `Device.Read.All`
 
 ---
 
@@ -348,7 +342,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves devices where the operating system is Windows.
 
-**Required scope:** `MCP.Device.Read.All`
+**Required permission:** `Device.Read.All`
 
 ---
 
@@ -356,7 +350,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Identifies potentially inactive or orphaned device registrations.
 
-**Required scope:** `MCP.Device.Read.All`
+**Required permission:** `Device.Read.All`
 
 ---
 
@@ -364,7 +358,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists devices registered to a specific user.
 
-**Required scopes:** `MCP.User.Read.All`, `MCP.Device.Read.All`
+**Required permissions:** `User.Read.All`, `Device.Read.All`
 
 ## Role assignments and privileged access
 
@@ -372,7 +366,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Shows users assigned to the Global Administrator role.
 
-**Required scope:** `MCP.RoleManagement.Read.Directory`
+**Required permission:** `RoleManagement.Read.Directory`
 
 ---
 
@@ -380,7 +374,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists all directory role assignments for a specific user.
 
-**Required scopes:** `MCP.User.Read.All`, `MCP.RoleManagement.Read.Directory`
+**Required permissions:** `User.Read.All`, `RoleManagement.Read.Directory`
 
 ---
 
@@ -388,7 +382,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists time-bounded role assignments through PIM that are currently active.
 
-**Required scope:** `MCP.RoleAssignmentSchedule.Read.Directory`
+**Required permission:** `RoleAssignmentSchedule.Read.Directory`
 
 ---
 
@@ -396,7 +390,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Shows users with eligible (not active) PIM assignments for a specific role.
 
-**Required scope:** `MCP.RoleEligibilitySchedule.Read.Directory`
+**Required permissions:** `RoleEligibilitySchedule.Read.Directory`, `RoleManagement.Read.Directory`
 
 ## Administrative units
 
@@ -404,7 +398,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves all administrative units configured in your tenant.
 
-**Required scope:** `MCP.AdministrativeUnit.Read.All`
+**Required permission:** `AdministrativeUnit.Read.All`
 
 ---
 
@@ -412,7 +406,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists members of a specific administrative unit.
 
-**Required scope:** `MCP.AdministrativeUnit.Read.All`
+**Required permission:** `AdministrativeUnit.Read.All`
 
 ---
 
@@ -420,7 +414,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists administrative units with the restricted management feature enabled.
 
-**Required scope:** `MCP.AdministrativeUnit.Read.All`
+**Required permission:** `AdministrativeUnit.Read.All`
 
 ## Identity governance
 
@@ -430,7 +424,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Shows ongoing access reviews for groups, applications, or roles.
 
-**Required scope:** `MCP.AccessReview.Read.All`
+**Required permission:** `AccessReview.Read.All`
 
 ---
 
@@ -438,7 +432,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Identifies access reviews that haven't been completed by their due date.
 
-**Required scope:** `MCP.AccessReview.Read.All`
+**Required permission:** `AccessReview.Read.All`
 
 ### Entitlement management
 
@@ -446,7 +440,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves access packages configured for entitlement management.
 
-**Required scope:** `MCP.EntitlementManagement.Read.All`
+**Required permission:** `EntitlementManagement.Read.All`
 
 ---
 
@@ -454,7 +448,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Lists access package assignment requests awaiting approval.
 
-**Required scope:** `MCP.EntitlementManagement.Read.All`
+**Required permission:** `EntitlementManagement.Read.All`
 
 ## Organization and domain information
 
@@ -462,7 +456,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves your organization's tenant identifier.
 
-**Required scope:** `MCP.Organization.Read.All`
+**Required permission:** `User.Read` (one of the required permissions)
 
 ---
 
@@ -470,7 +464,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Shows all domains associated with your organization and their verification status.
 
-**Required scope:** `MCP.Domain.Read.All`
+**Required permission:** `Domain.Read.All`
 
 ---
 
@@ -478,23 +472,23 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves organization details including technical contacts.
 
-**Required scope:** `MCP.Organization.Read.All`
+**Required permission:** `Organization.Read.All`
 
 ## Reports and insights
 
 **Prompt:** "Show me directory recommendations"
 
-**What it does:** Lists Microsoft Entra recommendations for improving your tenant's security and configuration.
+**What it does:** Lists Microsoft Entra recommendations for improving your tenant's security and configuration. This prompt uses the Microsoft Graph beta endpoint.
 
-**Required scope:** `MCP.DirectoryRecommendations.Read.All`
+**Required permission:** `DirectoryRecommendations.Read.All`
 
 ---
 
 **Prompt:** "What are the high-priority security recommendations?"
 
-**What it does:** Filters recommendations by priority level.
+**What it does:** Filters recommendations by priority level. This prompt uses the Microsoft Graph beta endpoint.
 
-**Required scope:** `MCP.DirectoryRecommendations.Read.All`
+**Required permission:** `DirectoryRecommendations.Read.All`
 
 ---
 
@@ -502,7 +496,7 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves recent directory audit log entries to monitor administrative actions and changes in your tenant.
 
-**Required scope:** `MCP.AuditLog.Read.All`
+**Required permission:** `AuditLog.Read.All`
 
 ## Synchronization and provisioning
 
@@ -510,15 +504,15 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Retrieves provisioning activity for automated user provisioning to applications.
 
-**Required scope:** `MCP.ProvisioningLog.Read.All`
+**Required permissions:** `AuditLog.Read.All`, `Directory.Read.All`
 
 ---
 
 **Prompt:** "Show me sync service audit logs"
 
-**What it does:** Retrieves audit log entries for synchronization service activities, providing visibility into sync operations and changes.
+**What it does:** Retrieves audit log entries for synchronization service activities.
 
-**Required scope:** `MCP.AuditLog.Read.All`
+**Required permission:** `AuditLog.Read.All`
 
 ---
 
@@ -526,30 +520,92 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **What it does:** Identifies failed provisioning attempts with error details.
 
-**Required scope:** `MCP.ProvisioningLog.Read.All`
+**Required permissions:** `AuditLog.Read.All`, `Directory.Read.All`
 
+## Write actions
+
+These prompts change data in your tenant. Before the MCP server calls Microsoft Graph, it asks you to confirm each change. Write actions work only in MCP clients that support elicitation on MCP protocol version 2026-07-28. For the list, see [Supported clients](get-started.md#supported-clients). Try these prompts on test accounts and groups before you use them on production objects. To find users and groups by name or email, the agent also needs read permissions such as `User.ReadBasic.All` and `Group.Read.All`. Before you confirm a change, check the object it targets in the confirmation prompt.
+
+### Users
+
+**Prompt:** "Create a user account for [display name] with the user principal name [user principal name]"
+
+**What it does:** Creates a user account. The agent asks for required values that the prompt doesn't include, including an initial password. Your AI client might store the conversation, so don't type a password that you use elsewhere. Ask the agent to set a temporary password that the user must change at first sign-in.
+
+**Required permission:** `User.Create`
+
+**Required role:** User Administrator
+
+---
+
+**Prompt:** "Change the job title of [user email] to [job title]"
+
+**What it does:** Updates a property on a user account.
+
+**Required permission:** `User.ReadUpdate.All`
+
+**Required role:** User Administrator
+
+---
+
+**Prompt:** "Disable the account for [user email]"
+
+**What it does:** Sets `accountEnabled` to false so the user can't sign in.
+
+**Required permissions:** `User.EnableDisableAccount.All`, `User.Read.All`
+
+**Required role:** User Administrator for non-admin users. Disabling an administrator requires a higher role, such as Privileged Authentication Administrator.
+
+### Groups
+
+**Prompt:** "Add [user email] to [group name]"
+
+**What it does:** Adds a user as a member of a group.
+
+**Required permissions:** `GroupMember.ReadWrite.All`, `User.ReadBasic.All`
+
+**Required role:** Groups Administrator, or owner of the group
+
+To add members to a role-assignable group, the app also needs `RoleManagement.ReadWrite.Directory`, and the user needs at least the Privileged Role Administrator role.
+
+---
+
+**Prompt:** "Create a security group named [group name]"
+
+**What it does:** Creates a security group.
+
+**Required permission:** `Group.ReadWrite.All`
+
+**Required role:** Groups Administrator
+
+---
+
+**Prompt:** "Delete the group [group name]"
+
+**What it does:** Deletes a group.
+
+**Required permission:** `Group.ReadWrite.All`
+
+**Required role:** Groups Administrator
+
+To delete a role-assignable group, the app also needs `RoleManagement.ReadWrite.Directory`, and the user must be the group's creator or have at least the Privileged Role Administrator role.
 
 ## Tips for effective prompts
 
 - **Be specific**: Include user emails, group names, or other identifiers when asking about specific resources.
-- **Use natural language**: You don't need to know Graph API syntax—ask questions as you would to a colleague.
+- **Use natural language**: You don't need to know Graph API syntax. Ask questions as you would ask a colleague.
 - **Chain queries**: After getting results, you can ask follow-up questions like "Show me more details about the first user" or "When did they last sign in?"
-- **Check the API calls**: Review the Microsoft Graph API calls that the MCP Server generates—you can use them in your own automation.
+- **Check the API calls**: Review the Microsoft Graph API calls that the MCP server generates, and reuse them in your own automation.
 - **Combine scenarios**: Try multi-step questions like "List all inactive users who have licenses assigned and are not administrators."
 
-## Limitations
+## Scope
 
-Remember that the Microsoft MCP Server for Enterprise currently supports **read-only** operations. You cannot use it to:
-
-- Create, update, or delete users, groups, or other resources
-- Modify configurations or settings
-- Approve or deny requests
-- Reset passwords or perform other write operations
-
-For write operations, use the Azure portal, PowerShell cmdlets, or Microsoft Graph API directly.
+- Microsoft Entra data supports read and write prompts.
+- Microsoft Intune data supports read prompts only, and the Intune reporting APIs aren't supported.
+- Microsoft 365 APIs, such as mail, files, and Teams, aren't supported. For those, use [Work IQ MCP](/microsoft-365/copilot/extensibility/work-iq/mcp/overview).
 
 ## Related content
 
-- [Overview of Microsoft MCP Server for Enterprise](overview.md)
-- [Get started with Microsoft MCP Server for Enterprise](get-started.md)
+- [Overview of Microsoft MCP Server for IT Admins](overview.md)
+- [Get started with Microsoft MCP Server for IT Admins](get-started.md)
 - [Microsoft Graph permissions reference](../permissions-reference.md)
