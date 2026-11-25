@@ -1,0 +1,30 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "baaac452-6c02-48a4-a333-ea7197082356",
+          "ApiChange": "Member",
+          "ChangedApiName": "windowsCPC",
+          "ChangeType": "Addition",
+          "Description": "Added the `windowsCPC` member to the **deviceManagementConfigurationWindowsSkus** enumeration.",
+          "Target": "deviceManagementConfigurationWindowsSkus"
+        },
+        {
+          "Id": "baaac452-6c02-48a4-a333-ea7197082356",
+          "ApiChange": "Member",
+          "ChangedApiName": "windowsServer",
+          "ChangeType": "Addition",
+          "Description": "Added the `windowsServer` member to the **deviceManagementConfigurationWindowsSkus** enumeration.",
+          "Target": "deviceManagementConfigurationWindowsSkus"
+        }
+      ],
+      "Id": "baaac452-6c02-48a4-a333-ea7197082356",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-04T17:53:57.4962107Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    }
+  ]
+}

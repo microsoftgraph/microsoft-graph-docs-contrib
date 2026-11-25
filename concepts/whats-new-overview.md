@@ -271,6 +271,10 @@ The [Place update](/graph/api/place-update?view=graph-rest-beta&preserve-view=tr
 - Added the [setDeviceName](/graph/api/cloudpc-setdevicename?view=graph-rest-beta&preserve-view=true) action to set a Cloud PC's operating system device name without changing its display name.
 - Added the [cloudPcBulkSetDeviceName](/graph/api/resources/cloudpcbulksetdevicename?view=graph-rest-beta&preserve-view=true) resource type to set device names for multiple Cloud PCs by using a naming template.
 
+### Device and app management | Device configuration
+
+- Added the `windowsServer` member to the [deviceManagementConfigurationWindowsSkus](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationwindowsskus?view=graph-rest-beta&preserve-view=true) enumeration type to identify settings that apply to the Windows Server SKU family. Use the `Prefer: include-unknown-enum-members` request header to retrieve this value.
+
 ### Device and app management | Device updates
 
 - Added the [driverUpdatePolicy](/graph/api/resources/windowsupdates-driverupdatepolicy?view=graph-rest-beta&preserve-view=true), [driverUpdateRing](/graph/api/resources/windowsupdates-driverupdatering?view=graph-rest-beta&preserve-view=true), and [driverUpdateApprovalRule](/graph/api/resources/windowsupdates-driverupdateapprovalrule?view=graph-rest-beta&preserve-view=true) resource types to manage driver and firmware update approvals and deployments with Windows Autopatch.
