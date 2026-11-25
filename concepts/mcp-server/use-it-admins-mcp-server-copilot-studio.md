@@ -1,40 +1,37 @@
 ---
-title: "Use Microsoft MCP Server for Enterprise from Copilot Studio"
-description: "Learn how to connect a Microsoft Copilot Studio agent to the Microsoft MCP Server for Enterprise to query Microsoft Graph data using natural language."
-author: msewaweru
-ms.author: eunicewaweru
-ms.reviewer: Licantrop0
+title: "Use Microsoft MCP Server for IT Admins from Copilot Studio"
+description: "Learn how to connect a Microsoft Copilot Studio agent to Microsoft MCP Server for IT Admins to query Microsoft Graph data with natural language."
+author: Licantrop0
+ms.author: lucaspol
 ms.subservice: ent-mcp-server
 ms.topic: how-to
 ms.custom: msecd-doc-authoring-106
-ms.date: 03/25/2026
+ms.date: 11/17/2026
 
-#customer intent: As a developer or an IT administrator, I want to connect a Copilot Studio agent to the Microsoft MCP Server for Enterprise so that I can query Microsoft Graph data using natural language.
+#customer intent: As a developer or an IT administrator, I want to connect a Copilot Studio agent to Microsoft MCP Server for IT Admins so that I can query Microsoft Graph data with natural language.
 ---
 
-# Use Microsoft MCP Server for Enterprise from Copilot Studio
+# Use Microsoft MCP Server for IT Admins from Copilot Studio
 
-The [Microsoft MCP Server for Enterprise](/graph/mcp-server/overview) enables AI agents to query enterprise data in your Microsoft Entra tenant by using natural language. Learn how to connect a Microsoft Copilot Studio agent to the Microsoft MCP Server for Enterprise using a custom connector.
-
-> [!VIDEO 074a71f0-54a2-4c61-8ec4-5343167f56ea]
+[Microsoft MCP Server for IT Admins](overview.md) lets AI agents query data in your Microsoft Entra tenant by using natural language. This article shows how to connect a Microsoft Copilot Studio agent to the MCP server through a custom connector to run read queries.
 
 ## Prerequisites
 
 - A Microsoft Entra tenant.
 - An admin user account in the tenant with the following roles assigned in the [Microsoft Entra admin center](https://entra.microsoft.com):
-  - **Cloud Application Administrator** — required to create and configure the connector.
-  - Appropriate directory roles for the Graph operations your agent performs — required so the MCP Server can execute Graph API calls on behalf of the signed-in user.
+  - **Cloud Application Administrator**, to create and configure the connector.
+  - The directory roles for the Graph operations your agent performs, so the MCP server can call Graph APIs on behalf of the signed-in user.
   Sign in to both Copilot Studio and Power Apps with this tenant admin account.
-- Complete the MCP Server provisioning steps in [Get started with the Microsoft MCP Server for Enterprise](/graph/mcp-server/get-started). For more information, see [MCP Server for Enterprise documentation](https://aka.ms/MCPServerForEnterprise).
 - A [client app registration](/entra/identity-platform/quickstart-register-app) in Microsoft Entra. You need the following from your app registration:
   - **Application (client) ID**
-  - Assign the `MCP.*` API permissions to your app registration and grant admin consent. For more information, see [MCP Server for Enterprise documentation](https://aka.ms/MCPServerForEnterprise).
+  - A **Web** redirect URI (confidential client), which you add in a later step. Desktop clients use **Mobile and desktop applications** instead.
+  - The three [required Microsoft Graph delegated permissions](get-started.md#required-permissions) and the Graph permissions for your scenarios, with admin consent.
 - A Power Platform environment that isn't blocked by Data Loss Prevention (DLP) policies. Avoid using the default environment, as tenant-level DLP policies often restrict custom connectors there. Use a **Developer** or **Sandbox** environment instead. If needed, create one from the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) > **Environments** > **+ New**.
 - A Copilot Studio agent. If you don't have one, [create an agent in Copilot Studio](/microsoft-copilot-studio/fundamentals-get-started).
 
 ## Create the MCP connector in Copilot Studio
 
-Create a connector to the Microsoft MCP Server for Enterprise from Copilot Studio. You complete the wizard later, after you configure the security settings in Power Apps and the federated credentials in your app registration.
+Create a connector to Microsoft MCP Server for IT Admins from Copilot Studio. You complete the wizard later, after you configure the security settings in Power Apps and the federated credentials in your app registration.
 
 1. In [Copilot Studio](https://copilotstudio.microsoft.com), select the environment where you want to create the connector (for example, a Developer or Sandbox environment). Use the environment picker in the top-right corner.
 1. Open your agent and select the **Tools** tab.
@@ -44,9 +41,9 @@ Create a connector to the Microsoft MCP Server for Enterprise from Copilot Studi
 
     | Field | Value |
     |---|---|
-    | **Server name** | `MCP-Server-for-Enterprise` |
-    | **Server description** | `A Model Context Protocol (MCP) server that enables AI assistants to securely interact with Microsoft Graph API for enterprise identity and access management operations.` |
-    | **Server URL** | `https://mcp.svc.cloud.microsoft/enterprise` |
+    | **Server name** | `MCP-Server-for-IT-Admins` |
+    | **Server description** | `A Model Context Protocol (MCP) server that lets AI assistants query Microsoft Entra data through the Microsoft Graph API.` |
+    | **Server URL** | `https://mcp.svc.cloud.microsoft/admin` |
 
 1. In the **Authentication** section, select **OAuth 2.0** > **Manual**.
 1. Fill in the following OAuth fields:
@@ -58,7 +55,7 @@ Create a connector to the Microsoft MCP Server for Enterprise from Copilot Studi
     | **Authorization URL** | `https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize` |
     | **Token URL template** | `https://login.microsoftonline.com/organizations/oauth2/v2.0/token` |
     | **Refresh URL** | `https://login.microsoftonline.com/organizations/oauth2/v2.0/token` |
-    | **Scopes** | `api://e8c77dc2-69b3-43f4-bc51-3213c9d915b4/.default` |
+    | **Scopes** | Enter these three scopes, separated by spaces:<br>`https://mcp.svc.cloud.microsoft/admin/MCP.Server.Access`<br>`https://mcp.svc.cloud.microsoft/admin/User.Read`<br>`https://mcp.svc.cloud.microsoft/admin/EntitlementMgmt-SubjectAccess.ReadWrite` |
 
 1. Select **Create**. Wait for the connector to initialize.
 1. Copy the **Redirect URL** from the confirmation page. You need this URL in the next step.
@@ -86,7 +83,7 @@ Update the connector's security settings to use a managed identity for authentic
 1. Make sure you're in the same environment where you created the connector in Copilot Studio. Use the environment picker in the top-right corner.
 1. On the left pane, select **More** > **Discover all**.
 1. Under **Data**, select **Custom connectors**.
-1. Find your connector (named **MCP-Server-for-Enterprise**) in the list.
+1. Find your connector (named **MCP-Server-for-IT-Admins**) in the list.
 1. Select the pencil (**Edit**) icon next to your connector to open the connector wizard.
 
 ### Update the security settings
@@ -100,7 +97,7 @@ Update the connector's security settings to use a managed identity for authentic
     | Field | Value |
     |---|---|
     | **Tenant ID** | Your Microsoft Entra tenant ID. |
-    | **Resource URL** | `https://mcp.svc.cloud.microsoft/enterprise/` |
+    | **Resource URL** | `https://mcp.svc.cloud.microsoft/admin` |
     | **Enable on-behalf-of login** | Set to **true**. |
 
 1. Select **Update Connector** in the top-right corner and wait for the update to complete.
@@ -125,7 +122,7 @@ Configure federated credentials on your app registration so the custom connector
     | **Issuer** | The **Issuer** value from the managed identity displayed on the custom connector. |
     | **Type** | Select **Explicit subject identifier**. |
     | **Value** | The **Subject** value from the managed identity displayed on the custom connector. |
-    | **Name** | Use the exact name of the custom connector (for example, `MCP-Server-for-Enterprise`). |
+    | **Name** | Use the exact name of the custom connector (for example, `MCP-Server-for-IT-Admins`). |
 
 1. Select **Add**.
 
@@ -150,24 +147,25 @@ Return to the Copilot Studio wizard to finalize the MCP tool and verify that the
 1. Select **Test** in the upper-right corner to open a test session.
 1. Ask a question such as, "How many users are in my tenant?"
 1. The agent should:
-    1. Invoke the MCP Server tools to understand the intent.
+    1. Invoke the MCP server tools to understand the intent.
     1. Execute the appropriate Microsoft Graph API call.
     1. Return a natural language answer that summarizes the tenant data.
 
 > [!NOTE]
-> The Microsoft MCP Server for Enterprise currently supports **read-only** operations. Write actions aren't yet allowed.
+> Copilot Studio isn't listed as a client that supports write actions, so use this connector for read queries. Write actions require an MCP client that supports elicitation on MCP protocol version 2026-07-28. For those clients, see [Supported clients](get-started.md#supported-clients).
 
 ## Troubleshooting
 
 | Issue | Cause | Resolution |
 |---|---|---|
 | Custom connector creation blocked by DLP policy | Tenant-level Data Loss Prevention policies restrict custom connectors in the current environment. | Create a Developer or Sandbox environment from the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) and recreate the connector there. |
-| 403 Forbidden when the agent queries Graph data | The signed-in user lacks the necessary Entra directory roles, or the connection token doesn't reflect recently assigned permissions. | Verify the user has the appropriate Entra roles for the requested Graph operations. If roles were recently assigned, delete the existing connection in Power Apps and create a new one to obtain a fresh token. |
+| 403 Forbidden when the agent queries Graph data | The app registration lacks the Microsoft Graph delegated permission or admin consent for the operation, the signed-in user lacks the necessary Entra directory roles, or the connection token doesn't reflect recently assigned permissions. | Add the Graph permission to the app registration and grant admin consent, and verify that the user has the appropriate Entra roles, activating them in PIM if needed. If permissions or roles changed recently, delete the existing connection in Power Apps and create a new one to obtain a fresh token. |
 | Connection fails after creating federated credentials | The federated credential Issuer, Subject, or Name values don't match the managed identity on the custom connector. | In the app registration, verify the federated credential values match the managed identity displayed on the custom connector exactly. Delete and recreate the federated credential if needed. |
+| Invalid scope error when the agent connects | The connector still uses the Microsoft MCP Server for Enterprise configuration (the `api://e8c77dc2-69b3-43f4-bc51-3213c9d915b4/.default` scope or the `/enterprise` URL). | Update the **Server URL**, **Scopes**, and **Resource URL** values to the ones in this article, and then create a new connection. |
 
 ## Related content
 
-- [Overview of Microsoft MCP Server for Enterprise](/graph/mcp-server/overview)
-- [Get started with the Microsoft MCP Server for Enterprise](/graph/mcp-server/get-started)
+- [Overview of Microsoft MCP Server for IT Admins](overview.md)
+- [Get started with Microsoft MCP Server for IT Admins](get-started.md)
 - [Use a custom connector from a Power Automate flow](/connectors/custom-connectors/use-custom-connector-flow)
 
