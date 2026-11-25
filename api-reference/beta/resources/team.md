@@ -35,6 +35,10 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 |[Update member](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Remove member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
 |[Remove members in bulk](../api/conversationmember-remove.md)|[actionResultPart](../resources/actionresultpart.md) collection|Remove multiple members from a [team](../resources/team.md) in a single request.|
+|[List join requests](../api/team-list-joinrequests.md)|[teamJoinRequest](../resources/teamjoinrequest.md) collection|Get a list of the pending [join requests](../resources/teamjoinrequest.md) for a team.|
+|[Get join request](../api/teamjoinrequest-get.md)|[teamJoinRequest](../resources/teamjoinrequest.md)|Get a pending [join request](../resources/teamjoinrequest.md) for a [team](../resources/team.md).|
+|[Approve join requests](../api/teamjoinrequest-approve.md)|[teamJoinRequestActionResult](../resources/teamjoinrequestactionresult.md) collection|Approve up to 20 pending [requests](../resources/teamjoinrequest.md) to join a [team](../resources/team.md).|
+|[Reject join requests](../api/teamjoinrequest-reject.md)|[teamJoinRequestActionResult](../resources/teamjoinrequestactionresult.md) collection|Reject up to 20 pending [requests](../resources/teamjoinrequest.md) to join a [team](../resources/team.md).|
 |[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
@@ -100,6 +104,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 |channels|[channel](channel.md) collection|The collection of channels and messages associated with the team.|
 |incomingChannels|[channel](channel.md) collection|List of [channels](../resources/channel.md) shared with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
+|joinRequests|[teamJoinRequest](../resources/teamjoinrequest.md) collection|The pending requests from users to join the team. Only team owners can read this collection.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user-delegated permissions, no owner can be specified (the current user is the owner). The owner must be specified as an object ID (GUID), not a UPN. |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |

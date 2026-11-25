@@ -4027,12 +4027,14 @@
           "name": "Messaging",
           "resources": [
             "channel",
+            "channelJoinRequest",
             "chat",
             "deletedChat",
             "chatMessage",
             "pinnedChatMessageInfo",
             "targetedChatMessage",
             "team",
+            "teamJoinRequest",
             "teamworkChannelTag",
             "teamworkTag",
             "teamworkTagMember"
@@ -4081,8 +4083,10 @@
             }
           ],
           "complexTypes": [
+            "channelJoinRequestActionResult",
             "chatMessageBody",
-            "forwardToChatResult"
+            "forwardToChatResult",
+            "teamJoinRequestActionResult"
           ]
         },
         {

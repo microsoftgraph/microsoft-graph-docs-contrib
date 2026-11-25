@@ -947,6 +947,14 @@ items:
       href: ../../api/channel-update-members.md
     - name: Remove channel member
       href: ../../api/channel-delete-members.md
+    - name: List join requests
+      href: ../../api/channel-list-joinrequests.md
+    - name: Get join request
+      href: ../../api/channeljoinrequest-get.md
+    - name: Approve join requests
+      href: ../../api/channeljoinrequest-approve.md
+    - name: Reject join requests
+      href: ../../api/channeljoinrequest-reject.md
     - name: Start migration
       href: ../../api/channel-startmigration.md
     - name: Complete migration
@@ -991,6 +999,18 @@ items:
       items:
       - name: List plans
         href: ../../api/teamschannelplanner-list-plans.md
+  - name: Channel join request
+    items:
+    - name: Channel join request
+      href: ../../resources/channeljoinrequest.md
+    - name: List
+      href: ../../api/channel-list-joinrequests.md
+    - name: Get
+      href: ../../api/channeljoinrequest-get.md
+    - name: Approve
+      href: ../../api/channeljoinrequest-approve.md
+    - name: Reject
+      href: ../../api/channeljoinrequest-reject.md
   - name: Chat
     items:
     - name: Chat
@@ -1221,6 +1241,14 @@ items:
       href: ../../api/team-delete-members.md
     - name: Remove members in bulk
       href: ../../api/conversationmember-remove.md
+    - name: List join requests
+      href: ../../api/team-list-joinrequests.md
+    - name: Get join request
+      href: ../../api/teamjoinrequest-get.md
+    - name: Approve join requests
+      href: ../../api/teamjoinrequest-approve.md
+    - name: Reject join requests
+      href: ../../api/teamjoinrequest-reject.md
     - name: Archive team
       href: ../../api/team-archive.md
     - name: Unarchive team
@@ -1263,6 +1291,18 @@ items:
       href: ../../api/team-getshifts.md
     - name: Get times off across all joined teams
       href: ../../api/team-gettimesoff.md
+  - name: Team join request
+    items:
+    - name: Team join request
+      href: ../../resources/teamjoinrequest.md
+    - name: List
+      href: ../../api/team-list-joinrequests.md
+    - name: Get
+      href: ../../api/teamjoinrequest-get.md
+    - name: Approve
+      href: ../../api/teamjoinrequest-approve.md
+    - name: Reject
+      href: ../../api/teamjoinrequest-reject.md
   - name: Teamwork channel tag
     items:
     - name: Teamwork channel tag
@@ -1403,10 +1443,14 @@ items:
         href: ../../resources/customemojifromidentityset.md
   - name: Complex types
     items:
+    - name: Channel join request action result
+      href: ../../resources/channeljoinrequestactionresult.md
     - name: Chat message body
       href: ../../resources/chatmessagebody.md
     - name: Forward to chat result
       href: ../../resources/forwardtochatresult.md
+    - name: Team join request action result
+      href: ../../resources/teamjoinrequestactionresult.md
 - name: Shift management
   items:
   - name: Day note
