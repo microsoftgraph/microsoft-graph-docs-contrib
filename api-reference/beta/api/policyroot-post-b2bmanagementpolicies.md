@@ -54,11 +54,8 @@ You can specify the following properties when creating a **b2bManagementPolicy**
 |:---|:---|:---|
 |deletedDateTime|DateTimeOffset| Date and Time when the policy object was deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |definition|String collection| A string collection containing a JSON string that defines the rules and settings for a policy. Inherited from [stsPolicy](../resources/stspolicy.md). Required.|
-|description|String| Description for this policy. Inherited from [policyBase](../resources/policybase.md). Required.|
 |displayName|String| Display name for this policy. Inherited from [policyBase](../resources/policybase.md). Required.|
 |isOrganizationDefault|Boolean| If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Inherited from [stsPolicy](../resources/stspolicy.md). Optional.|
-
-
 
 ## Response
 
@@ -82,7 +79,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.b2bManagementPolicy",
   "deletedDateTime": null,
-  "description": "Policy used for B2B features",
   "displayName": "Policy1",
   "definition": [
     "{
@@ -123,7 +119,6 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.b2bManagementPolicy",
   "id": "f596ef0d-42f9-0359-1aaa-12d02b38802a",
   "deletedDateTime": null,
-  "description": "Policy used for B2B features",
   "displayName": "Policy1",
   "definition": [
     "{

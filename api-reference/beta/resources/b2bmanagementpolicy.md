@@ -37,7 +37,6 @@ Inherits from [stsPolicy](../resources/stspolicy.md).
 |:---|:---|:---|
 |deletedDateTime|DateTimeOffset| Date and Time when the policy object was deleted. Inherited from [directoryObject](../resources/directoryobject.md). |
 |definition|String collection| A string collection containing a JSON string that defines the rules and settings for a policy. Inherited from [stsPolicy](../resources/stspolicy.md). Required.|
-|description|String| Description for this policy. Inherited from [policyBase](../resources/policybase.md). Required.|
 |displayName|String| Display name for this policy. Inherited from [policyBase](../resources/policybase.md). Required.|
 |id|String|The unique identifier for the policy. Inherited from [entity](../resources/entity.md).|
 |isOrganizationDefault|Boolean| If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Inherited from [stsPolicy](../resources/stspolicy.md). Optional.|
