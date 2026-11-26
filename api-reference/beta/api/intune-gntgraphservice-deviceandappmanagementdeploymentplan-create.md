@@ -1,6 +1,6 @@
 ---
 title: "Create deviceAndAppManagementDeploymentPlan"
-description: "Create a new deviceAndAppManagementDeploymentPlan object."
+description: "Create a deviceAndAppManagementDeploymentPlan object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -12,158 +12,169 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Create a new [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) object.
+Create a [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+The plan must retain at least one ring template. Sending an empty or null **ringTemplates** collection returns `400 Bad Request`. Omitting the collection from an update preserves the existing templates. The first ring must use `P0D`; subsequent ring delays must be at least one hour.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-## HTTP Request
-<!-- {
-  "blockType": "ignored"
-}
--->
+<!-- { "blockType": "permissions", "name": "intune-gntgraphservice-deviceandappmanagementdeploymentplan-create-permissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/intune-gntgraphservice-deviceandappmanagementdeploymentplan-create-permissions.md)]
+
+## HTTP request
+
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /deviceManagement/deploymentPlans
 ```
 
 ## Request headers
-|Header|Value|
+
+|Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Accept|application/json|
+|Content-Type|`application/json`. Required.|
 
 ## Request body
-In the request body, supply a JSON representation for the deviceAndAppManagementDeploymentPlan object.
 
-The following table shows the properties that are required when you create the deviceAndAppManagementDeploymentPlan.
+In the request body, supply a JSON representation of a [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key for the resource.|
-|versionNumber|Int32|Version number of the device and app management deployment plan.|
-|displayName|String|The display name of the device and app management deployment plan.|
-|description|String|The description of the device and app management deployment plan.|
-|roleScopeTagIds|String collection|The role scope tag ids to control device and app management deployment plan visibility.|
-|topologyDefinitions|[deviceAndAppManagementDeploymentTopologyDefinition](../resources/intune-gntgraphservice-deviceandappmanagementdeploymenttopologydefinition.md) collection|The topology definitions associated with the device and app management deployment plan.|
-|allowedPlatform|[devicePlatformType](../resources/intune-gntgraphservice-deviceplatformtype.md)|The allowed assignment filter platform for the device and app management deployment plan. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`, `windowsMobileApplicationManagement`.|
-|createdDateTime|DateTimeOffset|The date and time of when the plan was created (UTC).|
-|lastModifiedDateTime|DateTimeOffset|The date and time of when the plan was last modified (UTC).|
-|topologyCount|Int32|The number of topologies in the deployment plan.|
-
-
+|allowedAssignmentFilterPlatform|[devicePlatformType](../resources/intune-gntgraphservice-deviceplatformtype.md)|Optional. The platform allowed for assignment filters. The default value is `android`. When `unknown`, assignment filters can't be configured. The possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`, `windowsMobileApplicationManagement`. Use `Prefer: include-unknown-enum-members` to retrieve `windowsMobileApplicationManagement`. |
+|description|String|Optional. The description of the deployment plan. Maximum length is 1000 characters.|
+|displayName|String|Required. The display name. Required during creation and can't be cleared during updates. Maximum length is 256 characters. |
+|ringTemplates|[deviceAndAppManagementDeploymentRingTemplate](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentringtemplate.md) collection|Required. The reusable ring templates. Required during creation. Contains 1 through 10 templates and can't be empty or null on creation or update. |
+|roleScopeTagIds|String collection|Optional. The scope tag identifiers that control plan visibility. Contains 1 through 100 identifiers. |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) object in the response body.
+
+### Errors
+
+Returns `400 Bad Request` for invalid ring templates, incompatible assignment-filter platforms, or an update exceeding the maximum plan version of 1000.
 
 ## Example
 
 ### Request
-Here is an example of the request.
+
+The following example shows a request.
+
+<!-- { "blockType": "request", "name": "intune-gntgraphservice-deviceandappmanagementdeploymentplan-create-1-request" } -->
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deploymentPlans
-Content-type: application/json
-Content-length: 1570
+Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.deviceAndAppManagementDeploymentPlan",
-  "versionNumber": 13,
-  "displayName": "Display Name value",
-  "description": "Description value",
+  "displayName": "Contoso standard rollout",
+  "description": "Pilot followed by early adopters",
+  "allowedAssignmentFilterPlatform": "windows10AndLater",
   "roleScopeTagIds": [
-    "Role Scope Tag Ids value"
+    "0"
   ],
-  "topologyDefinitions": [
+  "ringTemplates": [
     {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentTopologyDefinition",
-      "topologyDisplayName": "Topology Display Name value",
-      "topologyOrder": 13,
-      "topologyActivationCriteria": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementRingActivationDateTimeCriteria",
-        "startDateTime": "2016-12-31T23:58:46.7156189-08:00"
+      "displayName": "IT pilot",
+      "order": 1,
+      "activationCriteria": {
+        "@odata.type": "#microsoft.graph.deviceAndAppManagementRingActivationDurationCriteria",
+        "duration": "P0D"
       },
       "assignmentConfigurations": [
         {
-          "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentTopologyAssignmentConfiguration",
           "target": {
-            "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
-            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-            "deviceAndAppManagementAssignmentFilterType": "include",
-            "organizationalUnitId": "Organizational Unit Id value",
-            "assignmentConflictSetting": {
-              "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
-              "assignmentOverride": "denied",
-              "versionNumber": 13
-            }
+            "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+            "groupId": "574b799a-b815-408b-85d3-8a57bab64bdf"
           },
-          "operation": "unknownFutureValue"
+          "operation": "add"
+        }
+      ]
+    },
+    {
+      "displayName": "Early adopters",
+      "order": 2,
+      "activationCriteria": {
+        "@odata.type": "#microsoft.graph.deviceAndAppManagementRingActivationDurationCriteria",
+        "duration": "P3D"
+      },
+      "assignmentConfigurations": [
+        {
+          "target": {
+            "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+            "groupId": "c79ffc2a-5d79-4690-8db2-20f6eb5cb023"
+          },
+          "operation": "add"
         }
       ]
     }
-  ],
-  "allowedPlatform": "androidForWork",
-  "topologyCount": 13
+  ]
 }
 ```
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+The following example shows the response.
+
+<!-- {"blockType": "response", "name": "intune-gntgraphservice-deviceandappmanagementdeploymentplan-create-1-response", "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentPlan"} -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1742
 
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementDeploymentPlan",
-  "id": "137dc698-c698-137d-98c6-7d1398c67d13",
-  "versionNumber": 13,
-  "displayName": "Display Name value",
-  "description": "Description value",
+  "id": "f47b2c1d-8e9a-4f63-b2c7-3d5e8a9f1c4b",
+  "versionNumber": 1,
+  "displayName": "Contoso standard rollout",
+  "description": "Pilot followed by early adopters",
+  "allowedAssignmentFilterPlatform": "windows10AndLater",
   "roleScopeTagIds": [
-    "Role Scope Tag Ids value"
+    "0"
   ],
-  "topologyDefinitions": [
+  "ringTemplates": [
     {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentTopologyDefinition",
-      "topologyDisplayName": "Topology Display Name value",
-      "topologyOrder": 13,
-      "topologyActivationCriteria": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementRingActivationDateTimeCriteria",
-        "startDateTime": "2016-12-31T23:58:46.7156189-08:00"
+      "displayName": "IT pilot",
+      "order": 1,
+      "activationCriteria": {
+        "@odata.type": "#microsoft.graph.deviceAndAppManagementRingActivationDurationCriteria",
+        "duration": "P0D"
       },
       "assignmentConfigurations": [
         {
-          "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentTopologyAssignmentConfiguration",
           "target": {
-            "@odata.type": "microsoft.graph.organizationalUnitAssignmentTarget",
-            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-            "deviceAndAppManagementAssignmentFilterType": "include",
-            "organizationalUnitId": "Organizational Unit Id value",
-            "assignmentConflictSetting": {
-              "@odata.type": "microsoft.graph.organizationalUnitAssignmentConflictSetting",
-              "assignmentOverride": "denied",
-              "versionNumber": 13
-            }
+            "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+            "groupId": "574b799a-b815-408b-85d3-8a57bab64bdf"
           },
-          "operation": "unknownFutureValue"
+          "operation": "add"
+        }
+      ]
+    },
+    {
+      "displayName": "Early adopters",
+      "order": 2,
+      "activationCriteria": {
+        "@odata.type": "#microsoft.graph.deviceAndAppManagementRingActivationDurationCriteria",
+        "duration": "P3D"
+      },
+      "assignmentConfigurations": [
+        {
+          "target": {
+            "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+            "groupId": "c79ffc2a-5d79-4690-8db2-20f6eb5cb023"
+          },
+          "operation": "add"
         }
       ]
     }
   ],
-  "allowedPlatform": "androidForWork",
-  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "topologyCount": 13
+  "createdDateTime": "2026-11-05T13:00:00Z",
+  "lastModifiedDateTime": "2026-11-05T13:00:00Z",
+  "ringCount": 2
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "deviceAndAppManagementDeploymentRing resource type"
-description: "Device and app management deployment ring with status data."
+description: "Represents a deployment ring with activation criteria and assignment target change operations."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -12,37 +12,39 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 > **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Device and app management deployment ring with status data.
+Represents a deployment ring with activation criteria and assignment target change operations.
+
+Rings are created as part of a [deviceAndAppManagementDeployment](../resources/intune-gntgraphservice-deviceandappmanagementdeployment.md) and are immutable. A background task evaluates the next ring only after the preceding ring has activated. When the activation criteria are met, the service applies the ring's assignment target change operations.
+
+An `add` operation extends the assignments from preceding rings. An all-licensed-users or all-devices target is allowed only in the final ring. An all-licensed-users target replaces the assignment targets from preceding rings.
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List deviceAndAppManagementDeploymentRings](../api/intune-gntgraphservice-deviceandappmanagementdeploymentring-list.md)|[deviceAndAppManagementDeploymentRing](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentring.md) collection|List properties and relationships of the [deviceAndAppManagementDeploymentRing](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentring.md) objects.|
-|[Get deviceAndAppManagementDeploymentRing](../api/intune-gntgraphservice-deviceandappmanagementdeploymentring-get.md)|[deviceAndAppManagementDeploymentRing](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentring.md)|Read properties and relationships of the [deviceAndAppManagementDeploymentRing](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentring.md) object.|
-|[Create deviceAndAppManagementDeploymentRing](../api/intune-gntgraphservice-deviceandappmanagementdeploymentring-create.md)|[deviceAndAppManagementDeploymentRing](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentring.md)|Create a new [deviceAndAppManagementDeploymentRing](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentring.md) object.|
-|[Delete deviceAndAppManagementDeploymentRing](../api/intune-gntgraphservice-deviceandappmanagementdeploymentring-delete.md)|None|Deletes a [deviceAndAppManagementDeploymentRing](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentring.md).|
-|[Update deviceAndAppManagementDeploymentRing](../api/intune-gntgraphservice-deviceandappmanagementdeploymentring-update.md)|[deviceAndAppManagementDeploymentRing](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentring.md)|Update the properties of a [deviceAndAppManagementDeploymentRing](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentring.md) object.|
+
+None. To retrieve all rings for a deployment, use [Get deviceAndAppManagementDeployment](../api/intune-gntgraphservice-deviceandappmanagementdeployment-get.md) with `$expand=rings`. Individual ring operations aren't supported.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key for the resource.|
-|displayName|String|The display name of the deployment ring.|
-|order|Int32|The order in which this ring should be processed relative to other rings.|
-|activationCriteria|[deviceAndAppManagementRingActivationCriteria](../resources/intune-gntgraphservice-deviceandappmanagementringactivationcriteria.md)|The criteria that must be met for current deployment ring activation.|
-|state|[deviceAndAppManagementDeploymentRingState](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentringstate.md)|Device and app management deployment ring status. Possible values are: `notActivated`, `activating`, `canceled`, `paused`, `activated`, `error`, `unknownFutureValue`.|
+|activationCriteria|[deviceAndAppManagementRingActivationCriteria](../resources/intune-gntgraphservice-deviceandappmanagementringactivationcriteria.md)|The criteria that must be met for ring activation. Required during deployment creation. Use [deviceAndAppManagementRingActivationDateTimeCriteria](../resources/intune-gntgraphservice-deviceandappmanagementringactivationdatetimecriteria.md) to specify an absolute UTC activation time.|
+|displayName|String|The display name of the deployment ring. Required during deployment creation. Maximum length is 256 characters.|
+|id|String|The unique identifier of the ring. Generated by the service when the deployment is created. Read-only.|
+|order|Int32|The processing order relative to other rings, from 1 through 100. Required during deployment creation. The default value is 1. Ring N+1 isn't evaluated for activation until ring N has activated.|
+|state|[deviceAndAppManagementDeploymentRingState](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentringstate.md)|The deployment ring state. Read-only. The possible values are: `notActivated`, `activating`, `canceled`, `paused`, `activated`, `error`, `unknownFutureValue`. The default value is `notActivated`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignmentConfigurations|[deviceAndAppManagementRingAssignmentConfiguration](../resources/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration.md) collection|The collection of assignment configurations associated with this deployment ring.|
+|assignmentConfigurations|[deviceAndAppManagementRingAssignmentConfiguration](../resources/intune-gntgraphservice-deviceandappmanagementringassignmentconfiguration.md) collection|The assignment configurations for this ring. Contains 1 through 100 configurations. Returned only when expanded with `$expand=rings($expand=assignmentConfigurations)` on a deployment.|
 
-## JSON Representation
-Here is a JSON representation of the resource.
+## JSON representation
+
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

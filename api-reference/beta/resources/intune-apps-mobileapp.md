@@ -12,6 +12,8 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 > **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -29,7 +31,8 @@ An abstract class containing the base properties for Intune mobile apps. Note: L
 |[convertFromMobileAppCatalogPackage function](../api/intune-apps-mobileapp-convertfrommobileappcatalogpackage.md)|[mobileApp](../resources/intune-shared-mobileapp.md)||
 |[updateRelationships action](../api/intune-apps-mobileapp-updaterelationships.md)|None||
 |[getPublishingConstraints function](../api/intune-apps-mobileapp-getpublishingconstraints.md)|[mobileAppPublishingConstraints](../resources/intune-apps-mobileapppublishingconstraints.md)||
-|[configureAssignments action](../api/intune-apps-mobileapp-configureassignments.md)|None||
+|[Configure assignments](../api/intune-apps-mobileapp-configureassignments.md)|None|Configure all deployment assignments for one deployment.|
+|[List target assignments](../api/intune-apps-deviceandappmanagementpayloadassignment-list.md)|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|List assignments for a specified deployment.|
 
 ## Properties
 |Property|Type|Description|
@@ -56,12 +59,13 @@ An abstract class containing the base properties for Intune mobile apps. Note: L
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. This property is read-only.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app.|
 |assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|The list of group assignments for this mobile app.|
-|targetAssignments|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|The list of target assignments for this mobile app. Initially, this property will just expose deployment assignments.|
+|categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app.|
 |relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|The set of direct relationships for this app.|
+|targetAssignments|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|The deployment assignments for this payload. Use `$filter` with `eq` on `microsoft.graph.deviceAndAppManagementDeploymentAssignment/deploymentId` to specify a deployment.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

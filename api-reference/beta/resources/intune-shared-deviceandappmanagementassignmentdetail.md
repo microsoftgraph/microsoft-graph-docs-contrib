@@ -1,38 +1,51 @@
 ---
 title: "deviceAndAppManagementAssignmentDetail resource type"
-description: "Abstract polymorphic base class for capturing all properties besides the following common properties for payload assignment - group, assignment filter, identifier information. If a workload assignment has no other properties besides the common assignment properties, then the workload does not need to create a derived type. For example, DCv2 has no other assignment properties and so won't need a derived type."
+description: "Represents the deprecated abstract base type for workload-specific assignment settings."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
 ms.date: 08/01/2024
+toc.title: "deviceAndAppManagementAssignmentDetail resource type (deprecated)"
+ROBOTS: NOINDEX
 ---
 
-# deviceAndAppManagementAssignmentDetail resource type
+# deviceAndAppManagementAssignmentDetail resource type (deprecated)
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+> [!CAUTION]
+> This type is deprecated. Use [deviceAndAppManagementAssignmentDetails](../resources/intune-shared-deviceandappmanagementassignmentdetails.md) instead. Removal from beta was scheduled for July 31, 2026. This topic retains the legacy definition for migration guidance.
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Abstract polymorphic base class for capturing all properties besides the following common properties for payload assignment - group, assignment filter, identifier information. If a workload assignment has no other properties besides the common assignment properties, then the workload does not need to create a derived type. For example, DCv2 has no other assignment properties and so won't need a derived type.
+Represents the deprecated abstract base type for workload-specific assignment settings.
+
+This abstract type can't be instantiated directly. Its derived type is [mobileAppAssignmentDetail](../resources/intune-apps-mobileappassignmentdetail.md).
+
+## Methods
+
+None.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+None.
 
 ## Relationships
-None
 
-## JSON Representation
-Here is a JSON representation of the resource.
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentDetail"
-}
--->
-``` json
+} -->
+```json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentDetail"
 }

@@ -1,6 +1,6 @@
 ---
 title: "deviceAndAppManagementPayloadAssignment resource type"
-description: "Polymorphic base type for device and app management assignment containing assignment identifier, assignment source identification details, assignment target and assignment details."
+description: "Represents the base type for device and app management payload assignments."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -12,68 +12,54 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Polymorphic base type for device and app management assignment containing assignment identifier, assignment source identification details, assignment target and assignment details.
+Represents the base type for device and app management payload assignments.
+
+Exposed through the **targetAssignments** relationship of a mobile app or a device management configuration policy, not through a standalone entity set. The collection can contain base and derived instances, differentiated by `@odata.type`. The currently supported deployment assignment type is [deviceAndAppManagementDeploymentAssignment](../resources/intune-apps-deviceandappmanagementdeploymentassignment.md).
+
+Use the workload's **configureAssignments** action to configure all assignments for one deployment in a single request. Individual assignment CRUD operations aren't supported.
 
 ## Methods
-|Method|Return Type|Description|
+
+|Method|Return type|Description|
 |:---|:---|:---|
-|[List deviceAndAppManagementPayloadAssignments](../api/intune-apps-deviceandappmanagementpayloadassignment-list.md)|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|List properties and relationships of the [deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) objects.|
-|[Get deviceAndAppManagementPayloadAssignment](../api/intune-apps-deviceandappmanagementpayloadassignment-get.md)|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md)|Read properties and relationships of the [deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) object.|
-|[Create deviceAndAppManagementPayloadAssignment](../api/intune-apps-deviceandappmanagementpayloadassignment-create.md)|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md)|Create a new [deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) object.|
-|[Delete deviceAndAppManagementPayloadAssignment](../api/intune-apps-deviceandappmanagementpayloadassignment-delete.md)|None|Deletes a [deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md).|
-|[Update deviceAndAppManagementPayloadAssignment](../api/intune-apps-deviceandappmanagementpayloadassignment-update.md)|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md)|Update the properties of a [deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) object.|
+|[List](../api/intune-apps-deviceandappmanagementpayloadassignment-list.md)|[deviceAndAppManagementPayloadAssignment](../resources/intune-apps-deviceandappmanagementpayloadassignment.md) collection|List deployment assignments for a mobile app or configuration policy.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for this assignment. Returned by default. This property is read-only.|
-|payloadId|String|The unique identifier (Guid) for the payload associated with this assignment. Returned by default.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The target group for this assignment. This value will be supplied on write operation only for direct/policy set assignments. This value will not be supplied on write operation for deployment assignments. However, it is populated when reading any assignment.|
-|assignmentDetail|[deviceAndAppManagementAssignmentDetail](../resources/intune-shared-deviceandappmanagementassignmentdetail.md)|Type encapsulating additional properties for an assignment except for assignment target (group, assignment filter, identifier information).|
+|assignmentDetails|[deviceAndAppManagementAssignmentDetails](../resources/intune-shared-deviceandappmanagementassignmentdetails.md)|The workload-specific assignment settings, excluding target and identifier information. Use [mobileAppAssignmentDetails](../resources/intune-apps-mobileappassignmentdetails.md) for mobile app assignments. Omit for workloads that don't require additional settings.|
+|id|String|The unique assignment identifier. Its format varies by workload. Returned by default. Read-only.|
+|payloadId|String|The unique identifier of the associated payload. Returned by default.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The group target and optional assignment filter. Populated when assignments are read. Don't supply this property when configuring deployment assignments; the deployment defines the target.|
 
 ## Relationships
-None
 
-## JSON Representation
-Here is a JSON representation of the resource.
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementPayloadAssignment"
-}
--->
-``` json
+} -->
+```json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementPayloadAssignment",
-  "id": "String (identifier)",
+  "id": "String",
   "payloadId": "String",
   "target": {
-    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
-    "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   },
-  "assignmentDetail": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentDetail",
-    "intent": "String",
-    "settings": {
-      "@odata.type": "microsoft.graph.winGetAppAssignmentSettings",
-      "notifications": "String",
-      "restartSettings": {
-        "@odata.type": "microsoft.graph.winGetAppRestartSettings",
-        "gracePeriodInMinutes": 1024,
-        "countdownDisplayBeforeRestartInMinutes": 1024,
-        "restartNotificationSnoozeDurationInMinutes": 1024
-      },
-      "installTimeSettings": {
-        "@odata.type": "microsoft.graph.winGetAppInstallTimeSettings",
-        "useLocalTime": true,
-        "deadlineDateTime": "String (timestamp)"
-      }
-    }
+  "assignmentDetails": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentDetails"
   }
 }
 ```

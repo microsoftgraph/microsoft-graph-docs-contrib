@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceAndAppManagementDeploymentPlan"
-description: "Deletes a deviceAndAppManagementDeploymentPlan."
+description: "Delete a deviceAndAppManagementDeploymentPlan object."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -12,54 +12,56 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Deletes a [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md).
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+Delete a [deviceAndAppManagementDeploymentPlan](../resources/intune-gntgraphservice-deviceandappmanagementdeploymentplan.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-## HTTP Request
-<!-- {
-  "blockType": "ignored"
-}
--->
+<!-- { "blockType": "permissions", "name": "intune-gntgraphservice-deviceandappmanagementdeploymentplan-delete-permissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/intune-gntgraphservice-deviceandappmanagementdeploymentplan-delete-permissions.md)]
+
+## HTTP request
+
+<!-- { "blockType": "ignored" } -->
 ```http
-DELETE /deviceManagement/deploymentPlans/{deviceAndAppManagementDeploymentPlanId}
+DELETE /deviceManagement/deploymentPlans/{deviceAndAppManagementDeploymentPlan-id}
 ```
 
 ## Request headers
-|Header|Value|
+
+|Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
-Here is an example of the request.
+
+The following example shows a request.
+
+<!-- { "blockType": "request", "name": "intune-gntgraphservice-deviceandappmanagementdeploymentplan-delete-1-request" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deploymentPlans/{deviceAndAppManagementDeploymentPlanId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deploymentPlans/f47b2c1d-8e9a-4f63-b2c7-3d5e8a9f1c4b
 ```
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+The following example shows the response.
+
+<!-- {"blockType": "response", "name": "intune-gntgraphservice-deviceandappmanagementdeploymentplan-delete-1-response"} -->
 ```http
 HTTP/1.1 204 No Content
 ```

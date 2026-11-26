@@ -1,6 +1,6 @@
 ---
 title: "List deviceAndAppManagementDeployments"
-description: "List properties and relationships of the deviceAndAppManagementDeployment objects."
+description: "Get a list of deviceAndAppManagementDeployment objects."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -12,81 +12,90 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-List properties and relationships of the [deviceAndAppManagementDeployment](../resources/intune-gntgraphservice-deviceandappmanagementdeployment.md) objects.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+Get a list of [deviceAndAppManagementDeployment](../resources/intune-gntgraphservice-deviceandappmanagementdeployment.md) objects.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-## HTTP Request
-<!-- {
-  "blockType": "ignored"
-}
--->
+<!-- { "blockType": "permissions", "name": "intune-gntgraphservice-deviceandappmanagementdeployment-list-permissions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/intune-gntgraphservice-deviceandappmanagementdeployment-list-permissions.md)]
+
+For mobile app payloads, use a listed **DeviceManagementApps** permission. For configuration policy payloads, use **DeviceManagementConfiguration.ReadWrite.All**.
+
+## HTTP request
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /deviceManagement/deployments
 ```
 
+## Optional query parameters
+
+Supports `$filter` with `contains` on **displayName**, `eq` on **mode**, `eq` and `ne` on **state**, and `any` with `eq` on **payloads/payloadId** or **payloads/payloadEntitySet**. Supports `$orderby` on **displayName**. The maximum page size is 50. Follow `@odata.nextLink` for subsequent pages. **rings** aren't returned by this operation.
+
 ## Request headers
-|Header|Value|
+
+|Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Accept|application/json|
+|Prefer|`include-unknown-enum-members`. Optional. Use to retrieve the `pendingApproval` state.|
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [deviceAndAppManagementDeployment](../resources/intune-gntgraphservice-deviceandappmanagementdeployment.md) objects in the response body.
 
 ## Example
 
 ### Request
-Here is an example of the request.
+
+The following example shows a request.
+
+<!-- { "blockType": "request", "name": "intune-gntgraphservice-deviceandappmanagementdeployment-list-1-request" } -->
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deployments
+GET https://graph.microsoft.com/beta/deviceManagement/deployments?$filter=mode eq microsoft.graph.deviceAndAppManagementDeploymentMode'active'
 ```
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+The following example shows the response.
+
+<!-- {"blockType": "response", "name": "intune-gntgraphservice-deviceandappmanagementdeployment-list-1-response", "@odata.type": "microsoft.graph.deviceAndAppManagementDeployment"} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 868
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceAndAppManagementDeployment",
-      "id": "5ce15db1-5db1-5ce1-b15d-e15cb15de15c",
-      "deploymentPlanId": "Deployment Plan Id value",
-      "displayName": "Display Name value",
-      "description": "Description value",
+      "id": "7f3c1bd0-4c1c-4b1e-a4cf-2b2e3c9c2f7a",
+      "deploymentPlanId": null,
+      "displayName": "Contoso app rollout",
+      "description": "Pilot rollout of the Contoso app",
       "payloads": [
         {
-          "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentPayload",
-          "payloadId": "Payload Id value",
-          "payloadDisplayName": "Payload Display Name value",
-          "payloadType": "Payload Type value"
+          "payloadId": "3c7d9f4e-6b3d-4f7e-9f84-2d3cba91f0a2",
+          "payloadDisplayName": "Contoso app",
+          "payloadEntitySet": "mobileApps",
+          "payloadUnifiedPlatform": "windows",
+          "workloadType": "application"
         }
       ],
-      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "createdDateTime": "2026-11-05T13:00:00Z",
+      "lastModifiedDateTime": "2026-11-05T13:00:00Z",
       "mode": "active",
       "state": "inProgress",
-      "ringCount": 9,
-      "startDateTime": "2016-12-31T23:58:46.7156189-08:00"
+      "ringCount": 1,
+      "startDateTime": "2026-11-05T13:00:00Z"
     }
   ]
 }

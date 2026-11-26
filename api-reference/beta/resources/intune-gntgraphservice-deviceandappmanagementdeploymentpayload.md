@@ -1,6 +1,6 @@
 ---
 title: "deviceAndAppManagementDeploymentPayload resource type"
-description: "Device and app management deployment payload data."
+description: "Represents metadata for a payload in a staged deployment."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -12,34 +12,49 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Device and app management deployment payload data.
+Represents metadata for a payload in a staged deployment.
+
+Used by the **payloads** property of [deviceAndAppManagementDeployment](../resources/intune-gntgraphservice-deviceandappmanagementdeployment.md).
+
+## Methods
+
+None.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|payloadId|String|The payload id.|
-|payloadDisplayName|String|The payload display name.|
-|payloadType|String|The payload type.|
+|payloadDisplayName|String|The payload display name, supplied by the workload service. Maximum length is 256 characters. The default value is an empty string. Read-only.|
+|payloadEntitySet|[deviceAndAppManagementPayloadEntitySetType](../resources/intune-gntgraphservice-deviceandappmanagementpayloadentitysettype.md)|The Graph entity set containing the payload. Required. The possible values are: `unknown`, `mobileApps`, `configurationPolicies`, `deviceConfigurations`, `unknownFutureValue`.|
+|payloadId|String|The unique payload identifier. Required. Maximum length is 36 characters.|
+|payloadUnifiedPlatform|[deviceAndAppManagementPayloadUnifiedPlatformType](../resources/intune-gntgraphservice-deviceandappmanagementpayloadunifiedplatformtype.md)|The platform computed from payload metadata. Read-only. This flagged enumeration allows multiple members to be selected simultaneously. The possible values are: `unknown`, `android`, `appleMobile`, `linux`, `macOS`, `web`, `windows`, `unknownFutureValue`.|
+|workloadType|[deviceAndAppManagementWorkloadType](../resources/intune-gntgraphservice-deviceandappmanagementworkloadtype.md)|The workload type computed from payload metadata. Read-only. The possible values are: `unknown`, `deviceConfiguration`, `application`, `unknownFutureValue`.|
+|payloadType (deprecated)|String|The legacy payload type. Maximum length is 50 characters. Deprecated on June 19, 2026, with removal scheduled for August 31, 2026. Use **workloadType** instead.|
 
 ## Relationships
-None
 
-## JSON Representation
-Here is a JSON representation of the resource.
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementDeploymentPayload"
-}
--->
-``` json
+} -->
+```json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementDeploymentPayload",
   "payloadId": "String",
   "payloadDisplayName": "String",
-  "payloadType": "String"
+  "payloadEntitySet": "String",
+  "payloadType": "String",
+  "payloadUnifiedPlatform": "String",
+  "workloadType": "String"
 }
 ```
