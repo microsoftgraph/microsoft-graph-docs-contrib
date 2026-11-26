@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelJoinRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelJoinRequest](https://learn.microsoft.com/en-us/graph/api/resources/channeljoinrequest?view=graph-rest-beta) resource type and associated methods to list, get, approve, and reject pending requests to join a private or shared channel.",
+          "Target": "channelJoinRequest"
+        },
+        {
+          "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelJoinRequestActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelJoinRequestActionResult](https://learn.microsoft.com/en-us/graph/api/resources/channeljoinrequestactionresult?view=graph-rest-beta) resource type.",
+          "Target": "channelJoinRequestActionResult"
+        },
+        {
+          "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "joinRequests",
+          "ChangeType": "Addition",
+          "Description": "Added the **joinRequests** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+          "ApiChange": "Method",
+          "ChangedApiName": "approve",
+          "ChangeType": "Addition",
+          "Description": "Added the [approve](https://learn.microsoft.com/en-us/graph/api/channeljoinrequest-approve?view=graph-rest-beta) method to the [channelJoinRequest](https://learn.microsoft.com/en-us/graph/api/resources/channeljoinrequest?view=graph-rest-beta) resource.",
+          "Target": "channelJoinRequest"
+        },
+        {
+          "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+          "ApiChange": "Method",
+          "ChangedApiName": "reject",
+          "ChangeType": "Addition",
+          "Description": "Added the [reject](https://learn.microsoft.com/en-us/graph/api/channeljoinrequest-reject?view=graph-rest-beta) method to the [channelJoinRequest](https://learn.microsoft.com/en-us/graph/api/resources/channeljoinrequest?view=graph-rest-beta) resource.",
+          "Target": "channelJoinRequest"
+        },
+        {
+          "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamJoinRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamJoinRequest](https://learn.microsoft.com/en-us/graph/api/resources/teamjoinrequest?view=graph-rest-beta) resource type and associated methods to list, get, approve, and reject pending requests to join a team.",
+          "Target": "teamJoinRequest"
+        },
+        {
+          "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamJoinRequestActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamJoinRequestActionResult](https://learn.microsoft.com/en-us/graph/api/resources/teamjoinrequestactionresult?view=graph-rest-beta) resource type.",
+          "Target": "teamJoinRequestActionResult"
+        },
+        {
+          "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "joinRequests",
+          "ChangeType": "Addition",
+          "Description": "Added the **joinRequests** relationship to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+          "ApiChange": "Method",
+          "ChangedApiName": "approve",
+          "ChangeType": "Addition",
+          "Description": "Added the [approve](https://learn.microsoft.com/en-us/graph/api/teamjoinrequest-approve?view=graph-rest-beta) method to the [teamJoinRequest](https://learn.microsoft.com/en-us/graph/api/resources/teamjoinrequest?view=graph-rest-beta) resource.",
+          "Target": "teamJoinRequest"
+        },
+        {
+          "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+          "ApiChange": "Method",
+          "ChangedApiName": "reject",
+          "ChangeType": "Addition",
+          "Description": "Added the [reject](https://learn.microsoft.com/en-us/graph/api/teamjoinrequest-reject?view=graph-rest-beta) method to the [teamJoinRequest](https://learn.microsoft.com/en-us/graph/api/resources/teamjoinrequest?view=graph-rest-beta) resource.",
+          "Target": "teamJoinRequest"
+        }
+      ],
+      "Id": "0adebc5e-4fe8-4015-9aaf-ad694998dc8a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-11-15T00:56:07.5783910Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fcfc8f70-b328-44c4-9e71-ce7266bcabd0",
           "ApiChange": "Relationship",
           "ChangedApiName": "tags",

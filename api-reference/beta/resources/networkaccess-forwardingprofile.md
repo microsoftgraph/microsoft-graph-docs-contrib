@@ -38,7 +38,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 |name|String|Profile name. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
 |priority|Int32|Profile priority.|
 |state|microsoft.graph.networkaccess.status|Determines whether the profile is active or inactive. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). The possible values are: `enabled`, `disabled`.|
-|trafficForwardingType|microsoft.graph.networkaccess.trafficForwardingType|Profile traffic type. The possible values are: `m365`, `internet`, `private`.|
+|trafficForwardingType|[microsoft.graph.networkaccess.trafficForwardingType](../resources/enums-networkaccess.md#trafficforwardingtype-values)|Profile traffic type. The possible values are: `m365`, `internet`, `private`, `unknownFutureValue`, `entra`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this evolvable enum: `entra`.|
 |version|String|Version.|
 
 ## Relationships
@@ -74,4 +74,3 @@ The following JSON representation shows the resource type.
   "priority": "Integer"
 }
 ```
-

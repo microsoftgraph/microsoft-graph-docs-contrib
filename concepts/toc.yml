@@ -698,6 +698,8 @@ items:
       href: mailbox-import-export-concept-overview.md
     - name: Import mailbox item
       href: import-exchange-mailbox-item.md
+    - name: Archive mailboxes (preview)
+      href: archive-mailbox-mail-api.md
     - name: Handle archive mailbox redirects
       href: handle-archive-mailbox-redirects.md
     - name: Work with archive mailboxes (preview)

@@ -11,7 +11,7 @@ ms.topic: how-to
 
 # Manage profile source precedence in Microsoft 365
 
-Profile source precedence is a feature that empowers tenant admins with control over the source of profile data for their organization's users. Profile data might originate from Microsoft Entra ID, organizational data in Microsoft 365, Copilot connectors for people data, SharePoint, or other sources. When multiple sources provide overlapping data, a tenant administrator can configure the authoritative source of profile data for users in their organization. This capability primarily applies to HR and work position data in the user profile, which is treated as single-valued.
+Profile source precedence is a feature that empowers tenant admins with control over the source of profile data for their organization's users. Profile data might originate from Microsoft Entra ID, Microsoft 365 Organizational Data Service, Copilot connectors for people data, SharePoint, or other sources. When multiple sources provide overlapping data, a tenant administrator can configure the authoritative source of profile data for users in their organization. This capability primarily applies to HR and work position data in the user profile, which is treated as single-valued.
 
 For more details about people data sources and source IDs, see [Manage profile source settings for an organization](/graph/profilesource-configure-settings).
 
@@ -19,7 +19,7 @@ The source precedence related to HR and work position data is based on a default
 
 1. Copilot connectors for people data, if configured, including connectors to popular HR systems and custom connectors. An organization might configure more than one connection. The most recently configured connection has the highest priority. Each connection has a unique source ID defined by the admin.
 1. Microsoft Entra ID. The source ID is `4ce763dd-9214-4eff-af7c-da491cc3782d`.
-1. Organizational data in Microsoft 365. The source ID is `7986c642-b494-4140-8df4-f5ed125e2c67`. For details on the customer sources associated with this Microsoft 365 source, see [Organizational data in Microsoft 365](/viva/organizational-data).
+1. Microsoft 365 Organizational Data Service. The source ID is `7986c642-b494-4140-8df4-f5ed125e2c67`. For details on the customer sources associated with this Microsoft 365 source, see [Microsoft 365 Organizational Data Service](/viva/organizational-data).
 
 Other sources of people data exist, but only the listed sources are relevant when you choose the authoritative value for HR or work position data and when you apply tenant admin source precedence configuration as described in this article.
 
@@ -27,7 +27,7 @@ Other sources of people data exist, but only the listed sources are relevant whe
 > * The SharePoint User Profile Application (UPA) source is relevant for a source precedence corner case. For example, if a user configures an executive assistant through the people card and the HR system defines a different executive assistant for the same user, the people card prioritizes the user-entered value when the values differ. This order can't be changed.
 > * If HR or work position data is written using the profile API user source (`/me/profile` or `/users/{id | userPrincipalName}/profile` on Microsoft Graph beta, including through Graph Explorer), this data doesn't override connector or Entra ID sources. When you read the profile data using the Microsoft Graph API, the data appears in OData as a separate instance in the **workPosition** entity collection.
 
-An administrator can change the order of the sources listed previously; for example, by giving Entra ID a higher priority than a connector or by changing the priority across multiple connector sources. The priority of customer sources behind Organizational data in Microsoft 365 is managed separately in the [Organizational data in Microsoft 365](/viva/organizational-data) platform.
+An administrator can change the order of the sources listed previously; for example, by giving Entra ID a higher priority than a connector or by changing the priority across multiple connector sources. The priority of customer sources behind Microsoft 365 Organizational Data Service is managed separately in the [Microsoft 365 Organizational Data Service](/viva/organizational-data) platform.
 
 ## How source precedence affects people representation
 

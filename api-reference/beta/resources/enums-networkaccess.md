@@ -516,6 +516,7 @@ Namespace: microsoft.graph.networkaccess
 |internet|
 |private|
 |unknownFutureValue|
+|entra|
 
 ### trafficType values 
 
