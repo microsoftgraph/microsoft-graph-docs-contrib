@@ -2472,12 +2472,12 @@
       ],
       "additionalLinks": [
         {
-          "name": "Handle archive mailbox redirects",
-          "href": "/graph/handle-archive-mailbox-redirects"
+          "name": "Archive mailboxes (preview)",
+          "href": "/graph/archive-mailbox-mail-api"
         },
         {
-          "name": "Use Mail APIs with archive mailboxes (preview)",
-          "href": "/graph/archive-mailbox-mail-api"
+          "name": "Handle archive mailbox redirects",
+          "href": "/graph/handle-archive-mailbox-redirects"
         }
       ],
       "resources": [
@@ -4027,12 +4027,14 @@
           "name": "Messaging",
           "resources": [
             "channel",
+            "channelJoinRequest",
             "chat",
             "deletedChat",
             "chatMessage",
             "pinnedChatMessageInfo",
             "targetedChatMessage",
             "team",
+            "teamJoinRequest",
             "teamworkChannelTag",
             "teamworkTag",
             "teamworkTagMember"
@@ -4081,8 +4083,10 @@
             }
           ],
           "complexTypes": [
+            "channelJoinRequestActionResult",
             "chatMessageBody",
-            "forwardToChatResult"
+            "forwardToChatResult",
+            "teamJoinRequestActionResult"
           ]
         },
         {

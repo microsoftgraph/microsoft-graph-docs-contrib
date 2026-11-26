@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementConfigurationWindowsSkus enum type"
-description: "Intune Deviceconfigv2 Devicemanagementconfigurationwindowsskus Resources ."
+description: "Specifies the Windows SKU families to which a device management configuration setting applies."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -17,8 +17,12 @@ Namespace: microsoft.graph
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 
+Specifies the Windows SKU families to which a [deviceManagementConfigurationWindowsSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationwindowssettingapplicability.md) resource applies.
 
 ## Members
+
+This enum is evolvable. Use the `Prefer: include-unknown-enum-members` request header to get the `windowsServer` member; otherwise, this member is returned as `unknownFutureValue`.
+
 |Member|Value|Description|
 |:---|:---|:---|
 |unknown|0||
@@ -36,5 +40,6 @@ Namespace: microsoft.graph
 |holographicForBusiness|12||
 |windowsMultiSession|13||
 |surfaceHub|14||
-|windowsCPC|18||
-|unknownFutureValue|19||
+|windowsCPC|18|The setting applies to the Windows CPC SKU family.|
+|unknownFutureValue|19|Evolvable enumeration sentinel value. Don't use.|
+|windowsServer|20|The setting applies to the Windows Server SKU family.|

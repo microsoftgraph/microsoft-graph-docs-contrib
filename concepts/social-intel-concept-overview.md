@@ -33,7 +33,7 @@ The Microsoft 365 User Profile is built based on multiple people data sources:
 - Microsoft Entra ID: Identity and account data, including people data that the tenant admin syncs to Microsoft Entra ID.
 - Copilot connectors for people data, which customers can configure to ingest company data related to people into Microsoft 365.
 - SharePoint: Many customers use the SharePoint user profile to upload and manage people data, both for specific SharePoint usage and customer-specific people data.
-- Organizational data in Microsoft 365: For organizations that manage organizational data via the [Organizational data in Microsoft 365](/viva/organizational-data) platform.
+- Microsoft 365 Organizational Data Service: For organizations that manage organizational data via the [Microsoft 365 Organizational Data Service](/viva/organizational-data) platform.
 - People Skills: AI-inferred skill data for users.
 - User edits: Users can edit certain parts of the user profile. For more information, see [Update your profile](https://support.microsoft.com/office/update-your-profile-0ddb9ebf-2850-4533-b07f-cba2c90acbc1).
 

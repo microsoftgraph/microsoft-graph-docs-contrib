@@ -45,6 +45,10 @@ where files are shared, and where tabs are added.
 |[Unarchive channel](../api/channel-unarchive.md) | None | Unarchive a channel.|
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
+|[List join requests](../api/channel-list-joinrequests.md)|[channelJoinRequest](../resources/channeljoinrequest.md) collection|Get a list of the pending [join requests](../resources/channeljoinrequest.md) for a private or shared [channel](../resources/channel.md).|
+|[Get join request](../api/channeljoinrequest-get.md)|[channelJoinRequest](../resources/channeljoinrequest.md)|Get a pending [join request](../resources/channeljoinrequest.md) for a private or shared [channel](../resources/channel.md).|
+|[Approve join requests](../api/channeljoinrequest-approve.md)|[channelJoinRequestActionResult](../resources/channeljoinrequestactionresult.md) collection|Approve up to 20 pending [requests](../resources/channeljoinrequest.md) to join a private or shared [channel](../resources/channel.md).|
+|[Reject join requests](../api/channeljoinrequest-reject.md)|[channelJoinRequestActionResult](../resources/channeljoinrequestactionresult.md) collection|Reject up to 20 pending [requests](../resources/channeljoinrequest.md) to join a private or shared [channel](../resources/channel.md).|
 |[Start migration](../api/channel-startmigration.md)|[channel](channel.md)| Start the migration of external messages by enabling migration mode in an existing [channel](../resources/channel.md).|
 |[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Complete migration on existing [channels](../resources/channel.md) or new channels.|
 |[List tabs in channel](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a channel.|
@@ -132,6 +136,7 @@ For a POST request example, see [Request (create channel in migration state)](/m
 |allMembers|[conversationMember](conversationmember.md) collection |A collection of membership records associated with the channel. It includes both direct and indirect members of shared channels.|
 |enabledApps|[teamsApp](../resources/teamsapp.md) collection| A collection of enabled apps in the channel.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
+|joinRequests|[channelJoinRequest](../resources/channeljoinrequest.md) collection|The pending requests from users to join the channel. Only channel owners can read this collection. Supported only for private and shared channels.|
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
 |messages|[chatMessage](chatmessage.md) collection| A collection of all the messages in the channel. Nullable.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |

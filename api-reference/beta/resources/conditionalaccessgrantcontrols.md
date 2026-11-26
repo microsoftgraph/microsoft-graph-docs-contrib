@@ -21,10 +21,12 @@ Represents grant controls that must be fulfilled to pass the policy.
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| builtInControls | conditionalAccessGrantControl collection | List of values of built-in controls required by the policy. Possible values: `block`, `mfa`, `compliantDevice`, `domainJoinedDevice`, `approvedApplication`, `compliantApplication`, `passwordChange`, `unknownFutureValue`, `riskRemediation`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this evolvable enum: `riskRemediation`.|
+| builtInControls | conditionalAccessGrantControl collection | List of values of built-in controls required by the policy. Possible values: `block`, `mfa`, `compliantDevice`, `domainJoinedDevice`, `approvedApplication`, `compliantApplication`, `passwordChange`, `unknownFutureValue`, `riskRemediation`, `verifiedID`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `riskRemediation`, `verifiedID`.|
 | customAuthenticationFactors | String collection | List of custom controls IDs required by the policy. For more information, see [Custom controls](/entra/identity/conditional-access/controls). |
 | operator | String | Defines the relationship of the grant controls. Possible values: `AND`, `OR`. |
 | termsOfUse | String collection | List of [terms of use](/graph/api/resources/agreement) IDs required by the policy. |
+
+The `verifiedID` control requires identity verification through Microsoft Entra Verified ID. Include the `Prefer: include-unknown-enum-members` request header when you read a policy that uses this control.
 
 ### Special considerations when using `passwordChange` as a control
 
