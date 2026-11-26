@@ -32,7 +32,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |description|String|Forwarding policy description. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |id|String|Identifier for the forwarding policy. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |name|String|Forwarding policy name. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|trafficForwardingType|microsoft.graph.networkaccess.trafficForwardingType|Traffic type for forwarding policy. The possible values are: `m365`, `internet`, `private`.|
+|trafficForwardingType|[microsoft.graph.networkaccess.trafficForwardingType](../resources/enums-networkaccess.md#trafficforwardingtype-values)|Traffic type for forwarding policy. The possible values are: `m365`, `internet`, `private`, `unknownFutureValue`, `entra`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this evolvable enum: `entra`.|
 |version|String|Forwarding policy version. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 
 ## Relationships
@@ -60,4 +60,3 @@ The following JSON representation shows the resource type.
   "trafficForwardingType": "String"
 }
 ```
-
