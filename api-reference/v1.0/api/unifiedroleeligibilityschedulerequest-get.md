@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # Get unifiedRoleEligibilityScheduleRequest
 Namespace: microsoft.graph
 
-In PIM, read the details of a request for for a role eligibility request made through the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object.
+In PIM, read the details of a request for a role eligibility request made through the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
