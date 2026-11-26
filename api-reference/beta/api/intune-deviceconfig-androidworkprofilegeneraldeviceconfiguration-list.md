@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -55,16 +55,26 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "list_androidWorkProfileGeneralDeviceConfiguration"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "list_androidWorkProfileGeneralDeviceConfiguration_response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3938
 
 {
   "value": [
@@ -150,7 +160,8 @@ Content-Length: 3938
       "allowedGoogleAccountDomains": [
         "Allowed Google Account Domains value"
       ],
-      "blockUnifiedPasswordForWorkProfile": true
+      "blockUnifiedPasswordForWorkProfile": true,
+      "isAppInventoryCollectionEnabled": true
     }
   ]
 }

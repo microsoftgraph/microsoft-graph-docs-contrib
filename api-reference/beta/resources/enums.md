@@ -13,6 +13,34 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+### winGetRepositoryType values
+
+|Member|
+|:---|
+|microsoftStore|
+|windowsPackageManagerCommunity|
+|unknownFutureValue|
+
+### cloudCertificationAuthorityCertificateAlgorithm values
+
+|Member|
+|:---|
+|unknown|
+|rsa|
+|ecc|
+|unknownFutureValue|
+
+### userPfxCertificateKeyAlgorithm values
+
+|Member|
+|:---|
+|unknown|
+|rsa|
+|ecc|
+|unknownFutureValue|
+
 ### resourceQuotaType values
 
 |Member|

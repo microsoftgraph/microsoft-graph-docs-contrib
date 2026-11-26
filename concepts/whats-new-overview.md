@@ -102,6 +102,14 @@ Added the **sharingLevel** property to the [calendar](/graph/api/resources/calen
 - Added the [pullPrintPrinter](/graph/api/resources/pullprintprinter?view=graph-rest-beta&preserve-view=true) resource type and related methods to create and manage virtual printers. Users can submit print jobs to a pull print printer and release them at a member printer.
 - Added support for secure release of print jobs. Set **holdJobsForSecureRelease** on a [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) to hold submitted jobs, then use [release](/graph/api/printjob-release?view=graph-rest-beta&preserve-view=true) to release a job at a printer.
 
+### Device and app management | Intune
+
+- Added the **repositoryType** and **repositoryDetail** properties to [winGetApp](/graph/api/resources/intune-apps-wingetapp?view=graph-rest-beta&preserve-view=true), and the **winGetRepositoryType** enumeration type, to identify the app's source repository and Microsoft Store market.
+- Added the **keyAlgorithm** property to [userPFXCertificate](/graph/api/resources/intune-raimportcerts-userpfxcertificate?view=graph-rest-beta&preserve-view=true) to identify the public-key algorithm of an imported PFX certificate.
+- Added the **certificateAlgorithm**, **certificateKeySize**, and **hashingAlgorithm** properties to [cloudCertificationAuthorityLeafCertificate](/graph/api/resources/intune-cloudpkigraphservice-cloudcertificationauthorityleafcertificate?view=graph-rest-beta&preserve-view=true). Use them to inspect a leaf certificate's public-key algorithm, RSA key size or elliptic curve, and signature hash independently of its issuer's key.
+- Added the `deploymentPlan` and `deployment` members to [associatedAssignmentPayloadType](/graph/api/resources/intune-policyset-associatedassignmentpayloadtype?view=graph-rest-beta&preserve-view=true) to identify assignment filters associated with deployment plans and deployments.
+- Added the **isAppInventoryCollectionEnabled** property to [androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta&preserve-view=true) to control work-profile app inventory collection on personally owned devices. Apps installed in the personal profile are never collected.
+
 ### Identity and access | Directory management
 
 - Added the **clientIdMetadataDocumentUrl** and read-only **hasClientIdMetadataDocument** properties to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource type. Use them to create agent identities backed by a client ID metadata document (CIMD), read their immutable document URLs, and find CIMD-backed identities with `$filter`.

@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -57,52 +57,53 @@ If successful, this method returns a `200 OK` response code and [winGetApp](../r
 
 ### Request
 Here is an example of the request.
+<!-- { "blockType": "request", "name": "intune_apps_wingetapp_get_request" } -->
 ```http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- { "blockType": "response", "name": "intune_apps_wingetapp_get_response" } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1242
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.winGetApp",
-    "id": "22032c2e-2c2e-2203-2e2c-03222e2c0322",
-    "displayName": "Display Name value",
-    "description": "Description value",
-    "publisher": "Publisher value",
-    "largeIcon": {
-      "@odata.type": "microsoft.graph.mimeContent",
-      "type": "Type value",
-      "value": "dmFsdWU="
-    },
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "isFeatured": true,
-    "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "informationUrl": "https://example.com/informationUrl/",
-    "owner": "Owner value",
-    "developer": "Developer value",
-    "notes": "Notes value",
-    "uploadState": 11,
-    "publishingState": "processing",
-    "isAssigned": true,
-    "roleScopeTagIds": [
-      "Role Scope Tag Ids value"
-    ],
-    "dependentAppCount": 1,
-    "supersedingAppCount": 3,
-    "supersededAppCount": 2,
-    "manifestHash": "Manifest Hash value",
-    "packageIdentifier": "Package Identifier value",
-    "installExperience": {
-      "@odata.type": "microsoft.graph.winGetAppInstallExperience",
-      "runAsAccount": "user"
-    }
+  "@odata.type": "#microsoft.graph.winGetApp",
+  "id": "22032c2e-2c2e-2203-2e2c-03222e2c0322",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "publisher": "Publisher value",
+  "largeIcon": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "Type value",
+    "value": "dmFsdWU="
+  },
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "isFeatured": true,
+  "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
+  "informationUrl": "https://example.com/informationUrl/",
+  "owner": "Owner value",
+  "developer": "Developer value",
+  "notes": "Notes value",
+  "uploadState": 11,
+  "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
+  "manifestHash": "Manifest Hash value",
+  "repositoryDetail": "US",
+  "repositoryType": "microsoftStore",
+  "packageIdentifier": "Package Identifier value",
+  "installExperience": {
+    "@odata.type": "microsoft.graph.winGetAppInstallExperience",
+    "runAsAccount": "user"
   }
 }
 ```
