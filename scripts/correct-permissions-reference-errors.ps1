@@ -23,6 +23,8 @@ $corrections = @{
     "calendars\u0020." = "calendars."
     "Global Administrator or Backup Administrator role" = "Global Administrator or Entra Backup Administrator role"
     "Allows the app to enable hard deletion protection settings on users, applications, groups, and service principals without a signed-in user\. Requires Global Administrator or (?:Entra )?Backup Administrator role" = "Allows the app to enable hard deletion protection settings on users, applications, groups, and service principals without a signed-in user"
+    "Allows the application to manage file storage container types on behalf of the signed in user\. The user must be a SharePoint Embedded Admin or Global Admin" = "Allows the app to create, read, update, and delete file storage container types on behalf of the signed-in user"
+    "Allows the application to manage file storage container type registrations on behalf of the signed in user\. The user must be a SharePoint Embedded Admin or Global Admin" = "Allows the application to manage file storage container type registrations on behalf of the signed-in user"
 }
 
 # Read the file content

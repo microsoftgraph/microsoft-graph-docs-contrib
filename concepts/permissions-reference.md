@@ -3759,7 +3759,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 8e6ec84c-5fcd-4cc7-ac8a-2296efc0ed9b |
 | DisplayText | - | Manage file storage container types on behalf of the signed in user |
-| Description | - | Allows the application to manage file storage container types on behalf of the signed in user. The user must be a SharePoint Embedded Admin or Global Admin. |
+| Description | - | Allows the app to create, read, update, and delete file storage container types on behalf of the signed-in user. |
 | AdminConsentRequired | - | No |
 
 ---
@@ -3770,7 +3770,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | c319a7df-930e-44c0-a43b-7e5e9c7f4f24 |
 | DisplayText | - | Manage file storage container type registrations on behalf of the signed in user |
-| Description | - | Allows the application to manage file storage container type registrations on behalf of the signed in user. The user must be a SharePoint Embedded Admin or Global Admin. |
+| Description | - | Allows the application to manage file storage container type registrations on behalf of the signed-in user. |
 | AdminConsentRequired | - | No |
 
 ---
