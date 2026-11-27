@@ -47,7 +47,6 @@ In the request body, supply the values for relevant fields that should be update
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. For more information about the JSON schema for this property, see [Properties of a token lifetime policy definition](../resources/tokenlifetimepolicy.md#properties-of-a-token-lifetime-policy-definition). Required.|
-|description|String| Description for this policy.|
 |displayName|String| Display name for this policy. Required.|
 |isOrganizationDefault|Boolean|If set to `true`, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is `false`.|
 
