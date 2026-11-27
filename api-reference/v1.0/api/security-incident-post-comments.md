@@ -43,7 +43,7 @@ In the request body, use `@odata.type` to specify the parameter type of [alertCo
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|comment|String|The comment to be added.|
+|comment|String|The comment to be added. The maximum length is 1,000 characters.|
 
 ## Response
 
